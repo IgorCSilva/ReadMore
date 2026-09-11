@@ -1,0 +1,4 @@
+users/
+.env
+secret.md
+apps-script/progress_import.csv

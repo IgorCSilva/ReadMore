@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Learning by Images — Viewer</title>
+<style>
+  :root {
+    --bg: #111318;
+    --card: #1a1d24;
+    --text: #eef0f3;
+    --muted: #8b91a0;
+    --accent: #4f8cff;
+    --confident: #35c07a;
+    --learning: #e0a530;
+    --border: #2a2e38;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f5f6f8;
+      --card: #ffffff;
+      --text: #1a1d24;
+      --muted: #666d7a;
+      --accent: #2f6fe4;
+      --confident: #1f9a5a;
+      --learning: #b8790a;
+      --border: #e1e3e8;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  body {
+    display: flex; justify-content: center;
+    min-height: 100vh; padding: 24px;
+  }
+  .layout {
+    display: flex; flex-direction: column;
+    gap: 24px;
+    width: 100%; max-width: 900px;
+  }
+  @media (min-width: 768px) {
+    .layout { flex-direction: row; align-items: flex-start; }
+  }
+  .sidebar {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex; flex-direction: column; gap: 14px;
+  }
+  @media (min-width: 768px) {
+    .sidebar { width: 220px; flex-shrink: 0; position: sticky; top: 24px; }
+  }
+  .sidebar-title {
+    font-size: 12px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--muted);
+  }
+  .checkbox-row {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 14px; cursor: pointer; user-select: none;
+  }
+  #lang-select {
+    background: var(--bg); color: var(--text);
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 6px 8px; font-size: 14px; margin-top: -6px;
+  }
+  .current-user {
+    font-size: 13px; color: var(--text);
+    word-break: break-all;
+    margin-top: -6px;
+  }
+  .switch-user-btn {
+    background: var(--bg); color: var(--text);
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px 10px; font-size: 13px; cursor: pointer;
+  }
+  .switch-user-btn:hover {
+    border-color: var(--accent); color: var(--accent);
+  }
+  .checkbox-row input[type="checkbox"] {
+    width: 16px; height: 16px; accent-color: var(--accent); cursor: pointer;
+  }
+  .hidden-words-hint {
+    font-size: 12px; color: var(--muted); margin-top: -8px;
+  }
+  .hidden-words-list {
+    display: flex; flex-wrap: wrap; gap: 6px;
+  }
+  .hidden-words-empty {
+    font-size: 13px; color: var(--muted); font-style: italic;
+  }
+  .hidden-word-chip {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 3px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    color: var(--text);
+  }
+  .hidden-word-chip:hover {
+    border-color: var(--accent); color: var(--accent);
+  }
+  .main {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 18px;
+    flex: 1; width: 100%; min-width: 0;
+  }
+  .empty-state {
+    display: none;
+    width: min(90vw, 640px);
+    color: var(--muted); font-size: 14px; text-align: center;
+    padding: 60px 20px;
+    border: 1px dashed var(--border);
+    border-radius: 16px;
+  }
+  .topbar {
+    display: flex; align-items: center; gap: 12px;
+    color: var(--muted); font-size: 14px;
+  }
+  .badge {
+    padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .badge.confident { background: color-mix(in srgb, var(--confident) 20%, transparent); color: var(--confident); }
+  .badge.learning { background: color-mix(in srgb, var(--learning) 20%, transparent); color: var(--learning); }
+
+  .card {
+    width: min(90vw, 640px);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    display: flex; flex-direction: column;
+  }
+  .sentence-area {
+    padding: 18px 24px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  .sentence-label {
+    font-size: 12px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--muted);
+  }
+  .sentence {
+    font-size: 16px; color: var(--text); line-height: 1.4; font-style: italic;
+  }
+  .image-wrap {
+    width: 100%; aspect-ratio: 4 / 3;
+    background: repeating-conic-gradient(var(--border) 0% 25%, transparent 0% 50%) 50% / 20px 20px;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+  }
+  .image-wrap img {
+    max-width: 100%; max-height: 100%; object-fit: contain;
+    display: block;
+  }
+  .missing {
+    flex-direction: column; align-items: center; justify-content: center;
+    gap: 16px; width: 100%; height: 100%;
+    color: var(--muted); font-size: 14px; text-align: center; padding: 24px;
+    background: color-mix(in srgb, var(--bg) 90%, transparent);
+  }
+  .missing-cue-label, .missing-sentence-label {
+    display: none;
+    font-size: 2px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--muted); margin-bottom: 6px;
+  }
+  .missing-cue {
+    font-size: 18px; color: var(--text); line-height: 1.4;
+    margin-bottom: 32px;
+  }
+  .missing-sentence {
+    font-size: 24px; color: var(--text); line-height: 1.4;
+  }
+  .cue-area {
+    padding: 18px 24px 0;
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+  .cue-label {
+    font-size: 12px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--muted); margin-bottom: 6px;
+  }
+  .cue {
+    font-size: 15px; color: var(--text); line-height: 1.4;
+  }
+  .word-area {
+    padding: 20px 24px 24px;
+    text-align: center;
+  }
+  .label-row {
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    margin-bottom: 6px;
+  }
+  .response-label {
+    font-size: 12px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.08em; color: var(--muted);
+  }
+  .speak-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 24px; height: 24px; padding: 0;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+    color: var(--text); font-size: 13px; cursor: pointer;
+  }
+  .speak-btn:hover {
+    border-color: var(--accent); color: var(--accent);
+  }
+  .speak-btn:disabled {
+    opacity: 0.4; cursor: not-allowed;
+  }
+  .word {
+    font-size: 28px; font-weight: 700;
+    min-height: 38px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .word.hidden-word {
+    filter: blur(10px);
+    opacity: 0.5;
+  }
+  .hint {
+    margin-top: 10px; font-size: 13px; color: var(--muted);
+  }
+  .controls {
+    display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 16px;
+    color: var(--muted); font-size: 13px;
+  }
+  kbd {
+    background: var(--card); border: 1px solid var(--border);
+    border-bottom-width: 2px; border-radius: 6px;
+    padding: 2px 7px; font-size: 12px; font-family: inherit; color: var(--text);
+  }
+  .progress {
+    width: min(90vw, 640px); height: 4px; background: var(--border);
+    border-radius: 2px; overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%; background: var(--accent); width: 0%;
+    transition: width 0.15s ease;
+  }
+  .error-banner {
+    display: none;
+    width: min(90vw, 640px);
+    background: color-mix(in srgb, #e0453a 15%, transparent);
+    border: 1px solid #e0453a;
+    color: #e0453a;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .error-banner code {
+    background: rgba(0,0,0,0.15);
+    padding: 1px 5px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar-title">User</div>
+      <div class="current-user" id="current-user-email"></div>
+      <button type="button" class="switch-user-btn" id="switch-user-btn">Log in with another email</button>
+
+      <div class="sidebar-title">Configuration</div>
+      <label class="checkbox-row" for="lang-select" style="cursor:default;">
+        <span>Language</span>
+      </label>
+      <select id="lang-select"></select>
+      <label class="checkbox-row">
+        <input type="checkbox" id="filter-confident" checked>
+        <span>Confident words</span>
+      </label>
+      <label class="checkbox-row">
+        <input type="checkbox" id="filter-learning" checked>
+        <span>Learning words</span>
+      </label>
+
+      <div class="sidebar-title">Hidden words</div>
+      <div class="hidden-words-hint">Click a word to show it again</div>
+      <div class="hidden-words-list" id="hidden-words-list"></div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <span id="counter">1 / 1</span>
+        <span class="badge confident" id="badge">confident</span>
+      </div>
+
+      <div class="error-banner" id="error-banner"></div>
+
+      <div class="progress"><div class="progress-fill" id="progress-fill"></div></div>
+
+      <div class="card" id="card">
+        <div class="sentence-area">
+          <div class="label-row">
+            <div class="sentence-label">Sentence</div>
+            <button type="button" class="speak-btn" id="speak-sentence-btn" title="Play sentence" aria-label="Play sentence">🔊</button>
+          </div>
+          <div class="sentence" id="sentence"></div>
+        </div>
+        <div class="image-wrap">
+          <img id="img" alt="">
+          <div class="missing" id="missing">
+            <div>
+              <div class="missing-cue-label">Cue</div>
+              <div class="missing-cue" id="missing-cue"></div>
+            </div>
+            <div>
+              <div class="label-row">
+                <div class="missing-sentence-label">Sentence</div>
+                <button type="button" class="speak-btn" id="speak-missing-sentence-btn" title="Play sentence" aria-label="Play sentence">🔊</button>
+              </div>
+              <div class="missing-sentence" id="missing-sentence"></div>
+            </div>
+          </div>
+        </div>
+        <div class="cue-area">
+          <div class="cue-label">Cue</div>
+          <div class="cue" id="cue"></div>
+        </div>
+        <div class="word-area">
+          <div class="label-row">
+            <div class="response-label">Response</div>
+            <button type="button" class="speak-btn" id="speak-btn" title="Play pronunciation" aria-label="Play pronunciation">🔊</button>
+          </div>
+          <div class="word hidden-word" id="word">•••••</div>
+          <div class="hint">click word to reveal</div>
+        </div>
+      </div>
+
+      <div class="empty-state" id="empty-state">No words match the selected filters.</div>
+
+      <div class="controls">
+        <span><kbd>←</kbd> <kbd>→</kbd> browse</span>
+        <span><kbd>space</kbd> mark shown + next</span>
+        <span><kbd>enter</kbd> I know this + next</span>
+      </div>
+    </main>
+  </div>
+
+<script>
+
+  const EXT_FALLBACKS = ["png", "jpg", "jpeg", "webp", "gif", "jfif"];
+  const EMAIL_STORAGE_KEY = "readmore_user_email";
+  const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  let USER_EMAIL = null;
+  let LANG = "english";
+  let ALL_ENTRIES = [];
+  let ENTRIES = [];
+  let HIDDEN_ENTRIES = [];
+  let index = 0;
+  let revealed = false;
+
+  const langSelectEl = document.getElementById("lang-select");
+  const currentUserEmailEl = document.getElementById("current-user-email");
+  const switchUserBtn = document.getElementById("switch-user-btn");
+
+  function promptForEmail(message) {
+    let email = null;
+    while (!email || !EMAIL_RE.test(email)) {
+      email = window.prompt(message);
+      if (email === null) continue; // keep asking, there's no usable default
+      email = email.trim();
+    }
+    return email;
+  }
+
+  function setUserEmail(email) {
+    USER_EMAIL = email;
+    localStorage.setItem(EMAIL_STORAGE_KEY, email);
+    currentUserEmailEl.textContent = email;
+  }
+
+  function getUserEmail() {
+    const stored = localStorage.getItem(EMAIL_STORAGE_KEY);
+    if (stored && EMAIL_RE.test(stored)) return stored;
+    return promptForEmail("Enter your email to load your word list:");
+  }
+
+  async function switchUser() {
+    const email = promptForEmail("Enter the email to log in with:");
+    setUserEmail(email);
+    try {
+      await loadAndRenderEntries();
+    } catch (err) {
+      showError(err);
+    }
+  }
+
+  switchUserBtn.addEventListener("click", switchUser);
+
+  async function loadLanguages() {
+    const res = await fetch("/languages", { cache: "no-store" });
+    if (!res.ok) throw new Error(`/languages responded with ${res.status}`);
+    const data = await res.json();
+    return data.languages || [];
+  }
+
+  const img = document.getElementById("img");
+  const missing = document.getElementById("missing");
+  const missingCueEl = document.getElementById("missing-cue");
+  const missingSentenceEl = document.getElementById("missing-sentence");
+  const wordEl = document.getElementById("word");
+  const cueEl = document.getElementById("cue");
+  const sentenceEl = document.getElementById("sentence");
+  const sentenceAreaEl = document.querySelector(".sentence-area");
+  const cueAreaEl = document.querySelector(".cue-area");
+  const counterEl = document.getElementById("counter");
+  const badgeEl = document.getElementById("badge");
+  const progressFill = document.getElementById("progress-fill");
+  const errorBanner = document.getElementById("error-banner");
+  const cardEl = document.getElementById("card");
+  const controlsEl = document.querySelector(".controls");
+  const progressEl = document.querySelector(".progress");
+  const emptyStateEl = document.getElementById("empty-state");
+  const filterConfidentEl = document.getElementById("filter-confident");
+  const filterLearningEl = document.getElementById("filter-learning");
+  const hiddenListEl = document.getElementById("hidden-words-list");
+  const speakBtn = document.getElementById("speak-btn");
+  const speakSentenceBtn = document.getElementById("speak-sentence-btn");
+  const speakMissingSentenceBtn = document.getElementById("speak-missing-sentence-btn");
+
+  const SPEECH_SUPPORTED = "speechSynthesis" in window;
+
+  function speakWordLocal(text) {
+    if (!SPEECH_SUPPORTED || !text) return;
+    window.speechSynthesis.cancel(); // stop anything already speaking
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = "en-US";
+    window.speechSynthesis.speak(utterance);
+  }
+
+  function speakWord(text) {
+    if (!text) return;
+    const url = `/tts?text=${encodeURIComponent(text)}`;
+    const audio = new Audio(url);
+    audio.addEventListener("error", () => {
+      console.warn("TTS proxy unavailable (is server.py running?), falling back to local speech synthesis.");
+      speakWordLocal(text);
+    });
+    audio.play().catch(() => {
+      console.warn("TTS playback blocked/failed, falling back to local speech synthesis.");
+      speakWordLocal(text);
+    });
+  }
+
+  speakBtn.addEventListener("click", () => {
+    if (ENTRIES.length === 0) return;
+    speakWord(ENTRIES[index].word);
+  });
+
+  function speakCurrentSentence() {
+    if (ENTRIES.length === 0) return;
+    const entry = ENTRIES[index];
+    const filledSentence = entry.sentence.replace(/_+/g, entry.word);
+    speakWord(filledSentence);
+  }
+
+  speakSentenceBtn.addEventListener("click", speakCurrentSentence);
+  speakMissingSentenceBtn.addEventListener("click", speakCurrentSentence);
+
+  async function loadEntries() {
+    const url = `/data?user=${encodeURIComponent(USER_EMAIL)}&lang=${encodeURIComponent(LANG)}`;
+    const res = await fetch(url, { cache: "no-store" });
+    if (!res.ok) {
+      throw new Error(`${url} responded with ${res.status}`);
+    }
+    const data = await res.json();
+
+    const entries = data.words.map((e) => {
+      const dot = e.filename.lastIndexOf(".");
+      const base = dot >= 0 ? e.filename.slice(0, dot) : e.filename;
+      const ext = dot >= 0 ? e.filename.slice(dot + 1) : "png";
+      return {
+        wordId: e.word_id,
+        word: e.original,
+        base,
+        ext,
+        confident: e.confident,
+        cue: e.cue || "",
+        sentence: e.sentence || "",
+        shownCount: e.shown_count || 0,
+        show: e.show !== false,
+      };
+    });
+
+    entries.sort((a, b) => a.shownCount - b.shownCount);
+    return entries;
+  }
+
+  function showError(err) {
+    console.error(err);
+    errorBanner.style.display = "block";
+    errorBanner.innerHTML =
+      `Couldn't load your word list (${err.message}).<br>` +
+      `Make sure <code>server.py</code> is running and you opened this page via ` +
+      `<code>http://127.0.0.1:PORT/viewer.html</code>, not a <code>file://</code> path.`;
+  }
+
+  function extCandidates(entry) {
+    const list = [entry.ext, ...EXT_FALLBACKS];
+    return [...new Set(list)];
+  }
+
+  function loadImage(entry) {
+    const candidates = extCandidates(entry);
+    let i = 0;
+
+    img.style.display = "block";
+    missing.style.display = "none";
+    sentenceAreaEl.style.display = "block";
+    cueAreaEl.style.display = "block";
+
+    function tryNext() {
+      if (i >= candidates.length) {
+        img.style.display = "none";
+        missing.style.display = "flex";
+        sentenceAreaEl.style.display = "none";
+        cueAreaEl.style.display = "none";
+        missingCueEl.textContent = entry.cue;
+        missingSentenceEl.textContent = entry.sentence;
+        return;
+      }
+      const ext = candidates[i];
+      i++;
+      img.onerror = tryNext;
+      img.src = `images/${entry.base}.${ext}`;
+    }
+    tryNext();
+  }
+
+  function applyFilter() {
+    const showConfident = filterConfidentEl.checked;
+    const showLearning = filterLearningEl.checked;
+
+    ENTRIES = ALL_ENTRIES.filter(
+      (e) => (e.confident && showConfident) || (!e.confident && showLearning)
+    );
+    index = 0;
+    updateVisibility();
+  }
+
+  function updateVisibility() {
+    if (ENTRIES.length === 0) {
+      cardEl.style.display = "none";
+      progressEl.style.display = "none";
+      controlsEl.style.display = "none";
+      emptyStateEl.style.display = "block";
+      counterEl.textContent = "0 / 0";
+      badgeEl.style.display = "none";
+    } else {
+      cardEl.style.display = "flex";
+      progressEl.style.display = "block";
+      controlsEl.style.display = "flex";
+      emptyStateEl.style.display = "none";
+      badgeEl.style.display = "inline";
+      render();
+    }
+  }
+
+  function render() {
+    if (ENTRIES.length === 0) return;
+    const entry = ENTRIES[index];
+    loadImage(entry);
+
+    sentenceEl.textContent = entry.sentence;
+    cueEl.textContent = entry.cue;
+
+    revealed = false;
+    wordEl.textContent = entry.word;
+    wordEl.classList.add("hidden-word");
+
+    counterEl.textContent = `${index + 1} / ${ENTRIES.length}`;
+    badgeEl.textContent = entry.confident ? "confident" : "learning";
+    badgeEl.className = "badge " + (entry.confident ? "confident" : "learning");
+
+    progressFill.style.width = `${((index + 1) / ENTRIES.length) * 100}%`;
+  }
+
+  function recordShown(entry) {
+    fetch("/increment", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ user: USER_EMAIL, lang: LANG, word_id: entry.wordId }),
+    }).catch((err) => {
+      console.warn("Couldn't record shown_count (is server.py running?):", err);
+    });
+  }
+
+  function next() {
+    if (ENTRIES.length === 0) return;
+    index = (index + 1) % ENTRIES.length;
+    render();
+  }
+  function prev() {
+    if (ENTRIES.length === 0) return;
+    index = (index - 1 + ENTRIES.length) % ENTRIES.length;
+    render();
+  }
+  function toggleReveal() {
+    revealed = !revealed;
+    wordEl.classList.toggle("hidden-word", !revealed);
+  }
+
+  function markShownAndAdvance() {
+    if (ENTRIES.length === 0) return;
+    recordShown(ENTRIES[index]);
+    next();
+  }
+
+  function markKnownAndAdvance() {
+    if (ENTRIES.length === 0) return;
+    const entry = ENTRIES[index];
+
+    fetch("/mark-known", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ user: USER_EMAIL, lang: LANG, word_id: entry.wordId }),
+    }).catch((err) => {
+      console.warn("Couldn't mark word as known (is server.py running?):", err);
+    });
+
+    entry.show = false;
+    ALL_ENTRIES = ALL_ENTRIES.filter((e) => e.word !== entry.word);
+    ENTRIES = ENTRIES.filter((e) => e.word !== entry.word);
+    HIDDEN_ENTRIES.push(entry);
+    HIDDEN_ENTRIES.sort((a, b) => a.word.toLowerCase().localeCompare(b.word.toLowerCase()));
+    renderHiddenList();
+    if (index >= ENTRIES.length) index = 0;
+    updateVisibility();
+  }
+
+  function unhideWord(entry) {
+    fetch("/show-word", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ user: USER_EMAIL, lang: LANG, word_id: entry.wordId }),
+    }).catch((err) => {
+      console.warn("Couldn't show word again (is server.py running?):", err);
+    });
+
+    entry.show = true;
+    HIDDEN_ENTRIES = HIDDEN_ENTRIES.filter((e) => e.word !== entry.word);
+    ALL_ENTRIES.push(entry);
+    ALL_ENTRIES.sort((a, b) => a.shownCount - b.shownCount);
+    renderHiddenList();
+    applyFilter();
+  }
+
+  function renderHiddenList() {
+    hiddenListEl.innerHTML = "";
+    if (HIDDEN_ENTRIES.length === 0) {
+      const empty = document.createElement("div");
+      empty.className = "hidden-words-empty";
+      empty.textContent = "No hidden words yet.";
+      hiddenListEl.appendChild(empty);
+      return;
+    }
+    for (const entry of HIDDEN_ENTRIES) {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "hidden-word-chip";
+      chip.textContent = entry.word;
+      chip.title = "Click to show this word again";
+      chip.addEventListener("click", () => unhideWord(entry));
+      hiddenListEl.appendChild(chip);
+    }
+  }
+
+  wordEl.addEventListener("click", toggleReveal);
+
+  window.addEventListener("keydown", (e) => {
+    if (e.target.tagName === "INPUT") return;
+    if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); next(); }
+    else if (e.key === "ArrowLeft" || e.key === "ArrowUp") { e.preventDefault(); prev(); }
+    else if (e.key === " ") { e.preventDefault(); markShownAndAdvance(); }
+    else if (e.key === "Enter") { e.preventDefault(); markKnownAndAdvance(); }
+  });
+
+  function handleFilterChange(e) {
+    if (!filterConfidentEl.checked && !filterLearningEl.checked) {
+      e.target.checked = true; // don't allow turning both off
+      return;
+    }
+    applyFilter();
+  }
+
+  filterConfidentEl.addEventListener("change", handleFilterChange);
+  filterLearningEl.addEventListener("change", handleFilterChange);
+
+  async function loadAndRenderEntries() {
+    const entries = await loadEntries();
+    ALL_ENTRIES = entries.filter((e) => e.show);
+    HIDDEN_ENTRIES = entries.filter((e) => !e.show);
+    HIDDEN_ENTRIES.sort((a, b) => a.word.toLowerCase().localeCompare(b.word.toLowerCase()));
+    renderHiddenList();
+    applyFilter();
+  }
+
+  langSelectEl.addEventListener("change", () => {
+    LANG = langSelectEl.value;
+    loadAndRenderEntries().catch(showError);
+  });
+
+  async function init() {
+    try {
+      setUserEmail(getUserEmail());
+
+      const languages = await loadLanguages();
+      langSelectEl.innerHTML = "";
+      for (const lang of languages) {
+        const opt = document.createElement("option");
+        opt.value = lang;
+        opt.textContent = lang[0].toUpperCase() + lang.slice(1);
+        langSelectEl.appendChild(opt);
+      }
+      LANG = languages.includes(LANG) ? LANG : (languages[0] || LANG);
+      langSelectEl.value = LANG;
+
+      await loadAndRenderEntries();
+    } catch (err) {
+      showError(err);
+    }
+  }
+
+  init();
+</script>
+</body>
+</html>
