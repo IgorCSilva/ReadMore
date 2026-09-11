@@ -236,6 +236,31 @@
     border-bottom-width: 2px; border-radius: 6px;
     padding: 2px 7px; font-size: 12px; font-family: inherit; color: var(--text);
   }
+  .action-bar {
+    width: min(90vw, 640px);
+    display: flex; align-items: stretch; gap: 10px;
+  }
+  .action-btn {
+    flex: 1;
+    min-height: 48px;
+    background: var(--card); color: var(--text);
+    border: 1px solid var(--border); border-radius: 12px;
+    font-size: 15px; font-weight: 600;
+    cursor: pointer;
+  }
+  .action-btn:hover {
+    border-color: var(--accent); color: var(--accent);
+  }
+  .action-btn-icon {
+    flex: 0 0 56px;
+    font-size: 18px;
+  }
+  .action-btn-primary {
+    background: var(--accent); color: #fff; border-color: var(--accent);
+  }
+  .action-btn-primary:hover {
+    opacity: 0.9; color: #fff;
+  }
   .progress {
     width: min(90vw, 640px); height: 4px; background: var(--border);
     border-radius: 2px; overflow: hidden;
@@ -344,6 +369,13 @@
         <span><kbd>space</kbd> mark shown + next</span>
         <span><kbd>enter</kbd> I know this + next</span>
       </div>
+
+      <div class="action-bar" id="action-bar">
+        <button type="button" class="action-btn action-btn-icon" id="prev-btn" title="Previous word" aria-label="Previous word">←</button>
+        <button type="button" class="action-btn" id="know-btn">I know</button>
+        <button type="button" class="action-btn action-btn-primary" id="next-word-btn">Next</button>
+        <button type="button" class="action-btn action-btn-icon" id="next-btn" title="Next word" aria-label="Next word">→</button>
+      </div>
     </main>
   </div>
 
@@ -421,6 +453,11 @@
   const errorBanner = document.getElementById("error-banner");
   const cardEl = document.getElementById("card");
   const controlsEl = document.querySelector(".controls");
+  const actionBarEl = document.getElementById("action-bar");
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+  const knowBtn = document.getElementById("know-btn");
+  const nextWordBtn = document.getElementById("next-word-btn");
   const progressEl = document.querySelector(".progress");
   const emptyStateEl = document.getElementById("empty-state");
   const filterConfidentEl = document.getElementById("filter-confident");
@@ -555,6 +592,7 @@
       cardEl.style.display = "none";
       progressEl.style.display = "none";
       controlsEl.style.display = "none";
+      actionBarEl.style.display = "none";
       emptyStateEl.style.display = "block";
       counterEl.textContent = "0 / 0";
       badgeEl.style.display = "none";
@@ -562,6 +600,7 @@
       cardEl.style.display = "flex";
       progressEl.style.display = "block";
       controlsEl.style.display = "flex";
+      actionBarEl.style.display = "flex";
       emptyStateEl.style.display = "none";
       badgeEl.style.display = "inline";
       render();
@@ -678,6 +717,11 @@
   }
 
   wordEl.addEventListener("click", toggleReveal);
+
+  prevBtn.addEventListener("click", prev);
+  nextBtn.addEventListener("click", next);
+  knowBtn.addEventListener("click", markKnownAndAdvance);
+  nextWordBtn.addEventListener("click", markShownAndAdvance);
 
   window.addEventListener("keydown", (e) => {
     if (e.target.tagName === "INPUT") return;

@@ -106,7 +106,10 @@ def _sheets_request(method, params=None, body=None):
             with urllib.request.urlopen(req, timeout=SHEETS_TIMEOUT) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
             break
-        except (urllib.error.URLError, urllib.error.HTTPError) as err:
+        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as err:
+            # A read timeout that happens after the connection is already open
+            # surfaces as a bare TimeoutError, not wrapped in URLError — must
+            # be caught explicitly or it skips the retry loop entirely.
             last_err = err
             if attempt < attempts - 1:
                 time.sleep(1)
