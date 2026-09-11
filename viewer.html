@@ -41,7 +41,7 @@
     gap: 24px;
     width: 100%; max-width: 900px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 960px) {
     .layout { flex-direction: row; align-items: flex-start; }
   }
   .sidebar {
@@ -52,7 +52,7 @@
     padding: 20px;
     display: flex; flex-direction: column; gap: 14px;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 960px) {
     .sidebar { width: 220px; flex-shrink: 0; position: sticky; top: 24px; }
   }
   .sidebar-title {
@@ -117,6 +117,24 @@
     padding: 60px 20px;
     border: 1px dashed var(--border);
     border-radius: 16px;
+  }
+  .loading {
+    display: none;
+    width: min(90vw, 640px);
+    flex-direction: column; align-items: center; justify-content: center;
+    gap: 14px;
+    padding: 60px 20px;
+    color: var(--muted); font-size: 14px;
+  }
+  .spinner {
+    width: 30px; height: 30px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
   }
   .topbar {
     display: flex; align-items: center; gap: 12px;
@@ -206,7 +224,7 @@
     display: inline-flex; align-items: center; justify-content: center;
     width: 24px; height: 24px; padding: 0;
     background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
-    color: var(--text); font-size: 13px; cursor: pointer;
+    color: var(--text); font-size: 23px; cursor: pointer;
   }
   .speak-btn:hover {
     border-color: var(--accent); color: var(--accent);
@@ -321,6 +339,11 @@
       </div>
 
       <div class="error-banner" id="error-banner"></div>
+
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <div>Loading your words…</div>
+      </div>
 
       <div class="progress"><div class="progress-fill" id="progress-fill"></div></div>
 
@@ -451,6 +474,7 @@
   const badgeEl = document.getElementById("badge");
   const progressFill = document.getElementById("progress-fill");
   const errorBanner = document.getElementById("error-banner");
+  const loadingEl = document.getElementById("loading");
   const cardEl = document.getElementById("card");
   const controlsEl = document.querySelector(".controls");
   const actionBarEl = document.getElementById("action-bar");
@@ -542,6 +566,19 @@
       `Couldn't load your word list (${err.message}).<br>` +
       `Make sure <code>server.py</code> is running and you opened this page via ` +
       `<code>http://127.0.0.1:PORT/viewer.html</code>, not a <code>file://</code> path.`;
+  }
+
+  function setLoading(isLoading) {
+    loadingEl.style.display = isLoading ? "flex" : "none";
+    if (isLoading) {
+      errorBanner.style.display = "none";
+      cardEl.style.display = "none";
+      progressEl.style.display = "none";
+      controlsEl.style.display = "none";
+      actionBarEl.style.display = "none";
+      emptyStateEl.style.display = "none";
+      badgeEl.style.display = "none";
+    }
   }
 
   function extCandidates(entry) {
@@ -743,12 +780,17 @@
   filterLearningEl.addEventListener("change", handleFilterChange);
 
   async function loadAndRenderEntries() {
-    const entries = await loadEntries();
-    ALL_ENTRIES = entries.filter((e) => e.show);
-    HIDDEN_ENTRIES = entries.filter((e) => !e.show);
-    HIDDEN_ENTRIES.sort((a, b) => a.word.toLowerCase().localeCompare(b.word.toLowerCase()));
-    renderHiddenList();
-    applyFilter();
+    setLoading(true);
+    try {
+      const entries = await loadEntries();
+      ALL_ENTRIES = entries.filter((e) => e.show);
+      HIDDEN_ENTRIES = entries.filter((e) => !e.show);
+      HIDDEN_ENTRIES.sort((a, b) => a.word.toLowerCase().localeCompare(b.word.toLowerCase()));
+      renderHiddenList();
+      applyFilter();
+    } finally {
+      setLoading(false);
+    }
   }
 
   langSelectEl.addEventListener("change", () => {
@@ -759,6 +801,7 @@
   async function init() {
     try {
       setUserEmail(getUserEmail());
+      setLoading(true);
 
       const languages = await loadLanguages();
       langSelectEl.innerHTML = "";
