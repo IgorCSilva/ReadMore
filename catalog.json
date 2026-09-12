@@ -1,1872 +1,253 @@
 {
     "english": {
         "words": [
-            {
-                "word_id": "en-0001",
-                "original": "hello",
-                "filename": "hello",
-                "sentence": "_____, how are you?",
-                "cue": "Uma saudação comum dita ao encontrar alguém."
-            },
-            {
-                "word_id": "en-0002",
-                "original": "hi",
-                "filename": "hi",
-                "sentence": "_____! Nice to see you.",
-                "cue": "Uma forma casual e mais curta de cumprimentar alguém."
-            },
-            {
-                "word_id": "en-0003",
-                "original": "goodbye",
-                "filename": "goodbye",
-                "sentence": "_____, see you tomorrow.",
-                "cue": "O que você diz ao sair ou terminar uma conversa."
-            },
-            {
-                "word_id": "en-0004",
-                "original": "please",
-                "filename": "please",
-                "sentence": "Can you help me, _____?",
-                "cue": "Uma palavra educada acrescentada ao pedir algo."
-            },
-            {
-                "word_id": "en-0005",
-                "original": "thank you",
-                "filename": "thank_you",
-                "sentence": "_____ for your help.",
-                "cue": "O que você diz para expressar gratidão."
-            },
-            {
-                "word_id": "en-0006",
-                "original": "what",
-                "filename": "what",
-                "sentence": "_____ is your name?",
-                "cue": "A palavra interrogativa usada para perguntar sobre uma coisa."
-            },
-            {
-                "word_id": "en-0007",
-                "original": "I",
-                "filename": "i",
-                "sentence": "_____ am from Brazil.",
-                "cue": "O pronome que você usa para se referir a si mesmo como quem fala."
-            },
-            {
-                "word_id": "en-0008",
-                "original": "am",
-                "filename": "am",
-                "sentence": "I _____ happy today.",
-                "cue": "A forma do verbo 'to be' usada com 'I'."
-            },
-            {
-                "word_id": "en-0009",
-                "original": "name",
-                "filename": "name",
-                "sentence": "What is your _____?",
-                "cue": "Como você chama uma pessoa ou coisa para identificá-la."
-            },
-            {
-                "word_id": "en-0010",
-                "original": "is",
-                "filename": "is",
-                "sentence": "She _____ a doctor.",
-                "cue": "A forma do verbo 'to be' usada com he/she/it."
-            },
-            {
-                "word_id": "en-0011",
-                "original": "my",
-                "filename": "my",
-                "sentence": "This is _____ favorite book.",
-                "cue": "A palavra possessiva que significa 'pertencente a mim'."
-            },
-            {
-                "word_id": "en-0012",
-                "original": "your",
-                "filename": "your",
-                "sentence": "Is this _____ phone?",
-                "cue": "A palavra possessiva que significa 'pertencente a você'."
-            },
-            {
-                "word_id": "en-0013",
-                "original": "you",
-                "filename": "you",
-                "sentence": "Where are _____ from?",
-                "cue": "O pronome usado para se referir à pessoa com quem você está falando."
-            },
-            {
-                "word_id": "en-0014",
-                "original": "nice to meet you",
-                "filename": "nice_to_meet_you",
-                "sentence": "_____, I'm Ana.",
-                "cue": "Uma expressão usada para cumprimentar alguém que você está conhecendo pela primeira vez."
-            },
-            {
-                "word_id": "en-0015",
-                "original": "from",
-                "filename": "from",
-                "sentence": "I'm _____ Brazil.",
-                "cue": "A preposição que mostra um ponto de partida ou origem."
-            },
-            {
-                "word_id": "en-0016",
-                "original": "he",
-                "filename": "he",
-                "sentence": "_____ is my brother.",
-                "cue": "O pronome usado para um homem já mencionado."
-            },
-            {
-                "word_id": "en-0017",
-                "original": "she",
-                "filename": "she",
-                "sentence": "_____ is my sister.",
-                "cue": "O pronome usado para uma mulher já mencionada."
-            },
-            {
-                "word_id": "en-0018",
-                "original": "it",
-                "filename": "it",
-                "sentence": "_____ is a good book.",
-                "cue": "O pronome usado para uma coisa, animal ou ideia (não uma pessoa)."
-            },
-            {
-                "word_id": "en-0019",
-                "original": "we",
-                "filename": "we",
-                "sentence": "_____ are friends.",
-                "cue": "O pronome para você e pelo menos mais uma pessoa."
-            },
-            {
-                "word_id": "en-0020",
-                "original": "they",
-                "filename": "they",
-                "sentence": "_____ are from Canada.",
-                "cue": "O pronome para duas ou mais pessoas ou coisas já mencionadas."
-            },
-            {
-                "word_id": "en-0021",
-                "original": "are",
-                "filename": "are",
-                "sentence": "You _____ very kind.",
-                "cue": "A forma do verbo 'to be' usada com you/we/they."
-            },
-            {
-                "word_id": "en-0022",
-                "original": "bye",
-                "filename": "bye",
-                "sentence": "_____! Have a good day.",
-                "cue": "Uma forma curta e casual de se despedir."
-            },
-            {
-                "word_id": "en-0023",
-                "original": "yes",
-                "filename": "yes",
-                "sentence": "_____, I would like some coffee.",
-                "cue": "A palavra usada para dar uma resposta afirmativa."
-            },
-            {
-                "word_id": "en-0024",
-                "original": "no",
-                "filename": "no",
-                "sentence": "_____, I don't want any sugar.",
-                "cue": "A palavra usada para dar uma resposta negativa."
-            },
-            {
-                "word_id": "en-0025",
-                "original": "a",
-                "filename": "a",
-                "sentence": "I have _____ dog.",
-                "cue": "O artigo indefinido usado antes de um substantivo singular que começa com som de consoante."
-            },
-            {
-                "word_id": "en-0026",
-                "original": "an",
-                "filename": "an",
-                "sentence": "She ate _____ apple.",
-                "cue": "O artigo indefinido usado antes de um substantivo singular que começa com som de vogal."
-            },
-            {
-                "word_id": "en-0027",
-                "original": "the",
-                "filename": "the",
-                "sentence": "_____ restaurant is very good.",
-                "cue": "O artigo definido usado antes de um substantivo específico e conhecido."
-            },
-            {
-                "word_id": "en-0028",
-                "original": "zero",
-                "filename": "zero",
-                "sentence": "The temperature is _____ degrees.",
-                "cue": "O número que vem antes do um; representa nada."
-            },
-            {
-                "word_id": "en-0029",
-                "original": "one",
-                "filename": "one",
-                "sentence": "I only have _____ brother.",
-                "cue": "O primeiro número de contagem."
-            },
-            {
-                "word_id": "en-0030",
-                "original": "two",
-                "filename": "two",
-                "sentence": "She has _____ daughters.",
-                "cue": "O número depois do um."
-            },
-            {
-                "word_id": "en-0031",
-                "original": "three",
-                "filename": "three",
-                "sentence": "We waited _____ hours.",
-                "cue": "O número depois do dois."
-            },
-            {
-                "word_id": "en-0032",
-                "original": "four",
-                "filename": "four",
-                "sentence": "The table has _____ chairs.",
-                "cue": "O número depois do três."
-            },
-            {
-                "word_id": "en-0033",
-                "original": "five",
-                "filename": "five",
-                "sentence": "He gave me _____ dollars.",
-                "cue": "O número depois do quatro."
-            },
-            {
-                "word_id": "en-0034",
-                "original": "six",
-                "filename": "six",
-                "sentence": "The movie starts at _____ o'clock.",
-                "cue": "O número depois do cinco."
-            },
-            {
-                "word_id": "en-0035",
-                "original": "seven",
-                "filename": "seven",
-                "sentence": "There are _____ days in a week.",
-                "cue": "O número depois do seis."
-            },
-            {
-                "word_id": "en-0036",
-                "original": "eight",
-                "filename": "eight",
-                "sentence": "The store opens at _____ a.m.",
-                "cue": "O número depois do sete."
-            },
-            {
-                "word_id": "en-0037",
-                "original": "nine",
-                "filename": "nine",
-                "sentence": "We have _____ classes today.",
-                "cue": "O número depois do oito."
-            },
-            {
-                "word_id": "en-0038",
-                "original": "ten",
-                "filename": "ten",
-                "sentence": "I counted to _____.",
-                "cue": "O número depois do nove."
-            },
-            {
-                "word_id": "en-0039",
-                "original": "internet",
-                "filename": "internet",
-                "sentence": "I need the _____ to check my email.",
-                "cue": "A rede global que você usa para navegar em sites e enviar e-mails."
-            },
-            {
-                "word_id": "en-0040",
-                "original": "hotel",
-                "filename": "hotel",
-                "sentence": "We are staying at a nice _____.",
-                "cue": "Um lugar onde viajantes pagam para dormir por uma noite."
-            },
-            {
-                "word_id": "en-0041",
-                "original": "taxi",
-                "filename": "taxi",
-                "sentence": "Let's take a _____ to the airport.",
-                "cue": "Um carro que você paga para andar, geralmente chamado na rua."
-            },
-            {
-                "word_id": "en-0042",
-                "original": "restaurant",
-                "filename": "restaurant",
-                "sentence": "They opened a new _____ downtown.",
-                "cue": "Um lugar onde você paga para comer uma refeição preparada."
-            },
-            {
-                "word_id": "en-0043",
-                "original": "hamburger",
-                "filename": "hamburger",
-                "sentence": "I would like a _____ with cheese.",
-                "cue": "Um sanduíche com um disco de carne cozida em um pão redondo."
-            },
-            {
-                "word_id": "en-0044",
-                "original": "chocolate",
-                "filename": "chocolate",
-                "sentence": "She loves _____ cake.",
-                "cue": "Um doce, geralmente marrom, feito de cacau."
-            },
-            {
-                "word_id": "en-0045",
-                "original": "music",
-                "filename": "music",
-                "sentence": "I like listening to _____ in the morning.",
-                "cue": "Som organizado, como músicas, que você escuta."
-            },
-            {
-                "word_id": "en-0046",
-                "original": "radio",
-                "filename": "radio",
-                "sentence": "He turned on the _____ in the car.",
-                "cue": "Um aparelho que reproduz áudio/música transmitidos."
-            },
-            {
-                "word_id": "en-0047",
-                "original": "television",
-                "filename": "television",
-                "sentence": "We watched _____ all evening.",
-                "cue": "Um aparelho de tela em que você assiste a programas e notícias."
-            },
-            {
-                "word_id": "en-0048",
-                "original": "computer",
-                "filename": "computer",
-                "sentence": "I use my _____ for work.",
-                "cue": "Um dispositivo eletrônico que você usa para digitar, navegar e rodar programas."
-            },
-            {
-                "word_id": "en-0049",
-                "original": "where",
-                "filename": "where",
-                "sentence": "_____ do you live?",
-                "cue": "A palavra interrogativa usada para perguntar sobre um lugar."
-            },
-            {
-                "word_id": "en-0050",
-                "original": "who",
-                "filename": "who",
-                "sentence": "_____ is that man?",
-                "cue": "A palavra interrogativa usada para perguntar sobre uma pessoa."
-            },
-            {
-                "word_id": "en-0051",
-                "original": "how",
-                "filename": "how",
-                "sentence": "_____ are you feeling today?",
-                "cue": "A palavra interrogativa usada para perguntar sobre modo ou método."
-            },
-            {
-                "word_id": "en-0052",
-                "original": "why",
-                "filename": "why",
-                "sentence": "_____ are you so tired?",
-                "cue": "A palavra interrogativa usada para perguntar sobre um motivo."
-            },
-            {
-                "word_id": "en-0053",
-                "original": "have",
-                "filename": "have",
-                "sentence": "I _____ two brothers.",
-                "cue": "O verbo que significa possuir ou ter algo."
-            },
-            {
-                "word_id": "en-0054",
-                "original": "like",
-                "filename": "like",
-                "sentence": "I really _____ this song.",
-                "cue": "O verbo que expressa gostar ou apreciar algo."
-            },
-            {
-                "word_id": "en-0055",
-                "original": "want",
-                "filename": "want",
-                "sentence": "I _____ a glass of water.",
-                "cue": "O verbo que expressa o desejo por algo."
-            },
-            {
-                "word_id": "en-0056",
-                "original": "go",
-                "filename": "go",
-                "sentence": "Let's _____ to the park.",
-                "cue": "O verbo que significa se mover de um lugar em direção a outro."
-            },
-            {
-                "word_id": "en-0057",
-                "original": "this",
-                "filename": "this",
-                "sentence": "_____ is my new car.",
-                "cue": "A palavra usada para apontar algo próximo (singular)."
-            },
-            {
-                "word_id": "en-0058",
-                "original": "that",
-                "filename": "that",
-                "sentence": "_____ is a beautiful house over there.",
-                "cue": "A palavra usada para apontar algo mais distante (singular)."
-            },
-            {
-                "word_id": "en-0059",
-                "original": "good",
-                "filename": "good",
-                "sentence": "This coffee tastes really _____.",
-                "cue": "Uma qualidade positiva geral — o oposto de bad."
-            },
-            {
-                "word_id": "en-0060",
-                "original": "bad",
-                "filename": "bad",
-                "sentence": "The weather was really _____ today.",
-                "cue": "Uma qualidade negativa geral — o oposto de good."
-            },
-            {
-                "word_id": "en-0061",
-                "original": "big",
-                "filename": "big",
-                "sentence": "They live in a _____ house.",
-                "cue": "Descreve algo grande em tamanho."
-            },
-            {
-                "word_id": "en-0062",
-                "original": "small",
-                "filename": "small",
-                "sentence": "She has a _____ apartment.",
-                "cue": "Descreve algo pequeno em tamanho."
-            },
-            {
-                "word_id": "en-0063",
-                "original": "and",
-                "filename": "and",
-                "sentence": "I bought bread _____ milk.",
-                "cue": "A palavra usada para conectar dois itens ou ideias."
-            },
-            {
-                "word_id": "en-0064",
-                "original": "not",
-                "filename": "not",
-                "sentence": "I am _____ hungry right now.",
-                "cue": "A palavra usada para negar uma afirmação."
-            },
-            {
-                "word_id": "en-0065",
-                "original": "here",
-                "filename": "here",
-                "sentence": "Please come _____.",
-                "cue": "Refere-se a este lugar, perto de quem fala."
-            },
-            {
-                "word_id": "en-0066",
-                "original": "there",
-                "filename": "there",
-                "sentence": "The keys are over _____.",
-                "cue": "Refere-se àquele lugar, longe de quem fala."
-            },
-            {
-                "word_id": "en-0067",
-                "original": "nice",
-                "filename": "nice",
-                "sentence": "It was really _____ to meet you.",
-                "cue": "Uma qualidade agradável e simpática."
-            },
-            {
-                "word_id": "en-0068",
-                "original": "to",
-                "filename": "to",
-                "sentence": "I want _____ learn English.",
-                "cue": "A partícula usada antes da forma base de um verbo (infinitivo)."
-            },
-            {
-                "word_id": "en-0069",
-                "original": "meet",
-                "filename": "meet",
-                "sentence": "It's great to _____ you.",
-                "cue": "O verbo para encontrar ou ser apresentado a alguém."
-            },
-            {
-                "word_id": "en-0070",
-                "original": "too",
-                "filename": "too",
-                "sentence": "I'm hungry _____.",
-                "cue": "O advérbio que significa 'também'."
-            },
-            {
-                "word_id": "en-0071",
-                "original": "fine",
-                "filename": "fine",
-                "sentence": "I'm _____, thank you.",
-                "cue": "Uma palavra que significa bem ou tudo certo, geralmente usada para responder como você está."
-            },
-            {
-                "word_id": "en-0072",
-                "original": "welcome",
-                "filename": "welcome",
-                "sentence": "You're _____!",
-                "cue": "O que você diz em resposta a 'thank you'."
-            },
-            {
-                "word_id": "en-0073",
-                "original": "hey",
-                "filename": "hey",
-                "sentence": "_____, how's it going?",
-                "cue": "Uma interjeição casual para chamar a atenção de alguém ou cumprimentá-lo."
-            },
-            {
-                "word_id": "en-0074",
-                "original": "see",
-                "filename": "see",
-                "sentence": "I can _____ the mountains from here.",
-                "cue": "O verbo para perceber algo com os olhos."
-            },
-            {
-                "word_id": "en-0075",
-                "original": "later",
-                "filename": "later",
-                "sentence": "I'll call you _____.",
-                "cue": "Refere-se a um momento depois de agora."
-            },
-            {
-                "word_id": "en-0076",
-                "original": "morning",
-                "filename": "morning",
-                "sentence": "I drink coffee every _____.",
-                "cue": "A parte do dia entre o amanhecer e o meio-dia."
-            },
-            {
-                "word_id": "en-0077",
-                "original": "afternoon",
-                "filename": "afternoon",
-                "sentence": "We're meeting in the _____.",
-                "cue": "A parte do dia entre o meio-dia e o anoitecer."
-            },
-            {
-                "word_id": "en-0078",
-                "original": "evening",
-                "filename": "evening",
-                "sentence": "We have plans for this _____.",
-                "cue": "A parte do dia quando começa a escurecer."
-            },
-            {
-                "word_id": "en-0079",
-                "original": "night",
-                "filename": "night",
-                "sentence": "I sleep eight hours every _____.",
-                "cue": "A parte do dia quando está escuro, para dormir."
-            },
-            {
-                "word_id": "en-0080",
-                "original": "day",
-                "filename": "day",
-                "sentence": "It was a wonderful _____.",
-                "cue": "Um período completo de 24 horas, ou o momento em que está claro."
-            },
-            {
-                "word_id": "en-0081",
-                "original": "friend",
-                "filename": "friend",
-                "sentence": "She's my best _____.",
-                "cue": "Uma pessoa de quem você gosta e com quem passa tempo, que não é da família."
-            },
-            {
-                "word_id": "en-0082",
-                "original": "everyone",
-                "filename": "everyone",
-                "sentence": "_____ is invited to the party.",
-                "cue": "Todas as pessoas de um grupo."
-            },
-            {
-                "word_id": "en-0083",
-                "original": "introduce",
-                "filename": "introduce",
-                "sentence": "Let me _____ you to my sister.",
-                "cue": "O verbo para apresentar duas pessoas uma à outra pelo nome."
-            },
-            {
-                "word_id": "en-0084",
-                "original": "family",
-                "filename": "family",
-                "sentence": "My _____ lives in Brazil.",
-                "cue": "O grupo de pessoas relacionadas a você, como pais e irmãos."
-            },
-            {
-                "word_id": "en-0085",
-                "original": "mother",
-                "filename": "mother",
-                "sentence": "My _____ makes great coffee.",
-                "cue": "Sua mãe."
-            },
-            {
-                "word_id": "en-0086",
-                "original": "father",
-                "filename": "father",
-                "sentence": "My _____ works at a hospital.",
-                "cue": "Seu pai."
-            },
-            {
-                "word_id": "en-0087",
-                "original": "parents",
-                "filename": "parents",
-                "sentence": "My _____ live in São Paulo.",
-                "cue": "Sua mãe e seu pai juntos."
-            },
-            {
-                "word_id": "en-0088",
-                "original": "sister",
-                "filename": "sister",
-                "sentence": "My _____ is older than me.",
-                "cue": "Uma irmã."
-            },
-            {
-                "word_id": "en-0089",
-                "original": "brother",
-                "filename": "brother",
-                "sentence": "My _____ plays soccer.",
-                "cue": "Um irmão."
-            },
-            {
-                "word_id": "en-0090",
-                "original": "grandmother",
-                "filename": "grandmother",
-                "sentence": "My _____ tells great stories.",
-                "cue": "A mãe da sua mãe ou do seu pai."
-            },
-            {
-                "word_id": "en-0091",
-                "original": "grandfather",
-                "filename": "grandfather",
-                "sentence": "My _____ served in the army.",
-                "cue": "O pai da sua mãe ou do seu pai."
-            },
-            {
-                "word_id": "en-0092",
-                "original": "grandparents",
-                "filename": "grandparents",
-                "sentence": "My _____ live on a farm.",
-                "cue": "Sua avó e seu avô juntos."
-            },
-            {
-                "word_id": "en-0093",
-                "original": "son",
-                "filename": "son",
-                "sentence": "Their _____ is studying medicine.",
-                "cue": "O filho homem de uma pessoa."
-            },
-            {
-                "word_id": "en-0094",
-                "original": "daughter",
-                "filename": "daughter",
-                "sentence": "Their _____ just started college.",
-                "cue": "A filha mulher de uma pessoa."
-            },
-            {
-                "word_id": "en-0095",
-                "original": "child",
-                "filename": "child",
-                "sentence": "The _____ is playing in the yard.",
-                "cue": "Uma pessoa jovem, ainda não adulta."
-            },
-            {
-                "word_id": "en-0096",
-                "original": "husband",
-                "filename": "husband",
-                "sentence": "Her _____ works at a bank.",
-                "cue": "O cônjuge homem de uma mulher."
-            },
-            {
-                "word_id": "en-0097",
-                "original": "wife",
-                "filename": "wife",
-                "sentence": "His _____ is a teacher.",
-                "cue": "A cônjuge mulher de um homem."
-            },
-            {
-                "word_id": "en-0098",
-                "original": "baby",
-                "filename": "baby",
-                "sentence": "The _____ is sleeping in the crib.",
-                "cue": "Uma criança bem pequena, recém-nascida."
-            },
-            {
-                "word_id": "en-0099",
-                "original": "aunt",
-                "filename": "aunt",
-                "sentence": "My _____ lives in France.",
-                "cue": "A irmã da sua mãe ou do seu pai (ou a esposa do seu tio)."
-            },
-            {
-                "word_id": "en-0100",
-                "original": "uncle",
-                "filename": "uncle",
-                "sentence": "My _____ owns a small shop.",
-                "cue": "O irmão da sua mãe ou do seu pai (ou o marido da sua tia)."
-            },
-            {
-                "word_id": "en-0101",
-                "original": "cousin",
-                "filename": "cousin",
-                "sentence": "My _____ is visiting this weekend.",
-                "cue": "O filho ou filha do seu tio ou tia."
-            },
-            {
-                "word_id": "en-0102",
-                "original": "number",
-                "filename": "number",
-                "sentence": "What is your phone _____?",
-                "cue": "Um número usado para contar ou fazer contas, como 1, 2, 3."
-            },
-            {
-                "word_id": "en-0103",
-                "original": "year",
-                "filename": "year",
-                "sentence": "I moved here one _____ ago.",
-                "cue": "Um período de 365 dias."
-            },
-            {
-                "word_id": "en-0104",
-                "original": "old",
-                "filename": "old",
-                "sentence": "This building is very _____.",
-                "cue": "Descreve algo ou alguém que existe há muito tempo — o oposto de young/new."
-            },
-            {
-                "word_id": "en-0105",
-                "original": "age",
-                "filename": "age",
-                "sentence": "What is your _____?",
-                "cue": "Quantos anos alguém tem de vida."
-            },
-            {
-                "word_id": "en-0106",
-                "original": "young",
-                "filename": "young",
-                "sentence": "She is too _____ to drive.",
-                "cue": "Descreve algo ou alguém que não existe há muito tempo — o oposto de old."
-            },
-            {
-                "word_id": "en-0107",
-                "original": "birthday",
-                "filename": "birthday",
-                "sentence": "Today is my sister's _____.",
-                "cue": "O aniversário anual do dia em que alguém nasceu."
-            },
-            {
-                "word_id": "en-0108",
-                "original": "many",
-                "filename": "many",
-                "sentence": "There are _____ people at the party.",
-                "cue": "Uma palavra que significa uma grande quantidade de algo."
-            },
-            {
-                "word_id": "en-0109",
-                "original": "count",
-                "filename": "count",
-                "sentence": "Can you _____ to twenty?",
-                "cue": "O verbo para dizer números em ordem para encontrar um total."
-            },
-            {
-                "word_id": "en-0110",
-                "original": "eleven",
-                "filename": "eleven",
-                "sentence": "The bus leaves at _____ o'clock.",
-                "cue": "O número depois do dez."
-            },
-            {
-                "word_id": "en-0111",
-                "original": "twelve",
-                "filename": "twelve",
-                "sentence": "There are _____ months in a year.",
-                "cue": "O número depois do onze."
-            },
-            {
-                "word_id": "en-0112",
-                "original": "thirteen",
-                "filename": "thirteen",
-                "sentence": "She turned _____ last week.",
-                "cue": "O número depois do doze."
-            },
-            {
-                "word_id": "en-0113",
-                "original": "fourteen",
-                "filename": "fourteen",
-                "sentence": "My cousin is _____ years old.",
-                "cue": "O número depois do treze."
-            },
-            {
-                "word_id": "en-0114",
-                "original": "fifteen",
-                "filename": "fifteen",
-                "sentence": "We waited _____ minutes for the bus.",
-                "cue": "O número depois do quatorze."
-            },
-            {
-                "word_id": "en-0115",
-                "original": "sixteen",
-                "filename": "sixteen",
-                "sentence": "He got his license at _____.",
-                "cue": "O número depois do quinze."
-            },
-            {
-                "word_id": "en-0116",
-                "original": "seventeen",
-                "filename": "seventeen",
-                "sentence": "She'll be _____ next month.",
-                "cue": "O número depois do dezesseis."
-            },
-            {
-                "word_id": "en-0117",
-                "original": "eighteen",
-                "filename": "eighteen",
-                "sentence": "You can vote at _____ in most countries.",
-                "cue": "O número depois do dezessete."
-            },
-            {
-                "word_id": "en-0118",
-                "original": "nineteen",
-                "filename": "nineteen",
-                "sentence": "My brother is _____ years old.",
-                "cue": "O número depois do dezoito."
-            },
-            {
-                "word_id": "en-0119",
-                "original": "twenty",
-                "filename": "twenty",
-                "sentence": "There are _____ students in my class.",
-                "cue": "O número depois do dezenove."
-            },
-            {
-                "word_id": "en-0120",
-                "original": "live",
-                "filename": "live",
-                "sentence": "I _____ in a small apartment.",
-                "cue": "O verbo para ter sua casa em um determinado lugar."
-            },
-            {
-                "word_id": "en-0121",
-                "original": "country",
-                "filename": "country",
-                "sentence": "Which _____ are you from?",
-                "cue": "Uma nação com seu próprio governo e fronteiras."
-            },
-            {
-                "word_id": "en-0122",
-                "original": "city",
-                "filename": "city",
-                "sentence": "This is a very busy _____.",
-                "cue": "Uma cidade grande onde muitas pessoas vivem."
-            },
-            {
-                "word_id": "en-0123",
-                "original": "world",
-                "filename": "world",
-                "sentence": "She wants to travel the _____.",
-                "cue": "O planeta Terra e tudo/todos que existem nele."
-            },
-            {
-                "word_id": "en-0124",
-                "original": "language",
-                "filename": "language",
-                "sentence": "English is a difficult _____ to learn.",
-                "cue": "Um sistema de palavras usado pelas pessoas para se comunicar, como inglês ou português."
-            },
-            {
-                "word_id": "en-0125",
-                "original": "speak",
-                "filename": "speak",
-                "sentence": "Do you _____ Portuguese?",
-                "cue": "O verbo para usar a voz para dizer palavras em um idioma."
-            },
-            {
-                "word_id": "en-0126",
-                "original": "Brazilian",
-                "filename": "brazilian",
-                "sentence": "She is _____ and speaks Portuguese.",
-                "cue": "Descreve alguém ou algo do Brasil."
-            },
-            {
-                "word_id": "en-0127",
-                "original": "American",
-                "filename": "american",
-                "sentence": "He is _____, from New York.",
-                "cue": "Descreve alguém ou algo dos Estados Unidos."
-            },
-            {
-                "word_id": "en-0128",
-                "original": "English",
-                "filename": "english",
-                "sentence": "I'm learning to speak _____.",
-                "cue": "O idioma falado na Inglaterra, nos Estados Unidos e em muitos outros países."
-            },
-            {
-                "word_id": "en-0129",
-                "original": "Spanish",
-                "filename": "spanish",
-                "sentence": "They speak _____ in Mexico.",
-                "cue": "O idioma falado na Espanha e na maior parte da América Latina."
-            },
-            {
-                "word_id": "en-0130",
-                "original": "French",
-                "filename": "french",
-                "sentence": "She studied _____ in college.",
-                "cue": "O idioma falado na França."
-            },
-            {
-                "word_id": "en-0131",
-                "original": "Portuguese",
-                "filename": "portuguese",
-                "sentence": "_____ is spoken in Brazil and Portugal.",
-                "cue": "O idioma falado em Portugal e no Brasil."
-            },
-            {
-                "word_id": "en-0132",
-                "original": "Chinese",
-                "filename": "chinese",
-                "sentence": "He is learning _____ this year.",
-                "cue": "O idioma falado na China."
-            },
-            {
-                "word_id": "en-0133",
-                "original": "Japanese",
-                "filename": "japanese",
-                "sentence": "She speaks _____ fluently.",
-                "cue": "O idioma falado no Japão."
-            },
-            {
-                "word_id": "en-0134",
-                "original": "Italian",
-                "filename": "italian",
-                "sentence": "We ate at an _____ restaurant.",
-                "cue": "O idioma falado na Itália."
-            },
-            {
-                "word_id": "en-0135",
-                "original": "German",
-                "filename": "german",
-                "sentence": "He studied _____ in school.",
-                "cue": "O idioma falado na Alemanha."
-            },
-            {
-                "word_id": "en-0136",
-                "original": "Canadian",
-                "filename": "canadian",
-                "sentence": "My neighbor is _____.",
-                "cue": "Descreve alguém ou algo do Canadá."
-            },
-            {
-                "word_id": "en-0137",
-                "original": "Mexican",
-                "filename": "mexican",
-                "sentence": "We tried some _____ food last night.",
-                "cue": "Descreve alguém ou algo do México."
-            },
-            {
-                "word_id": "en-0138",
-                "original": "capital",
-                "filename": "capital",
-                "sentence": "Paris is the _____ of France.",
-                "cue": "A cidade principal de um país, geralmente onde fica o governo."
-            },
-            {
-                "word_id": "en-0139",
-                "original": "continent",
-                "filename": "continent",
-                "sentence": "Africa is a huge _____.",
-                "cue": "Uma das grandes massas de terra da Terra, como África ou Ásia."
-            },
-            {
-                "word_id": "en-0140",
-                "original": "map",
-                "filename": "map",
-                "sentence": "Can you show me on the _____?",
-                "cue": "Um desenho que mostra onde os lugares estão localizados."
-            },
-            {
-                "word_id": "en-0141",
-                "original": "flag",
-                "filename": "flag",
-                "sentence": "The _____ has three colors.",
-                "cue": "Um pedaço de tecido com cores/símbolos que representa um país."
-            },
-            {
-                "word_id": "en-0142",
-                "original": "culture",
-                "filename": "culture",
-                "sentence": "Brazilian _____ is very rich.",
-                "cue": "Os costumes, a arte e o modo de vida compartilhados por um grupo de pessoas."
-            },
-            {
-                "word_id": "en-0143",
-                "original": "far",
-                "filename": "far",
-                "sentence": "The airport is very _____ from here.",
-                "cue": "Descreve uma longa distância — o oposto de near/close."
-            },
-            {
-                "word_id": "en-0144",
-                "original": "in",
-                "filename": "in",
-                "sentence": "The keys are _____ the drawer.",
-                "cue": "A preposição que mostra que algo está dentro de um lugar."
-            },
-            {
-                "word_id": "en-0145",
-                "original": "well",
-                "filename": "well",
-                "sentence": "_____, let me think about it.",
-                "cue": "Uma interjeição usada para fazer uma pausa ou transição antes de falar."
-            },
-            {
-                "word_id": "en-0146",
-                "original": "so",
-                "filename": "so",
-                "sentence": "I was tired, _____ I went to bed early.",
-                "cue": "Uma palavra usada para mostrar um resultado ou significar 'portanto'."
-            },
-            {
-                "word_id": "en-0147",
-                "original": "really",
-                "filename": "really",
-                "sentence": "I _____ enjoyed the movie.",
-                "cue": "Um advérbio usado para enfatizar que algo é verdade."
-            },
-            {
-                "word_id": "en-0148",
-                "original": "actually",
-                "filename": "actually",
-                "sentence": "I _____ don't like coffee.",
-                "cue": "Um advérbio usado para corrigir ou esclarecer o que acabou de ser dito."
-            },
-            {
-                "word_id": "en-0149",
-                "original": "anyway",
-                "filename": "anyway",
-                "sentence": "_____, let's get back to work.",
-                "cue": "Uma palavra usada para retomar um assunto anterior ou encerrar algo."
-            },
-            {
-                "word_id": "en-0150",
-                "original": "excuse me",
-                "filename": "excuse_me",
-                "sentence": "_____, can you help me?",
-                "cue": "Uma frase educada para chamar a atenção de alguém ou se desculpar rapidamente."
-            },
-            {
-                "word_id": "en-0151",
-                "original": "sure",
-                "filename": "sure",
-                "sentence": "_____, I'd be happy to help.",
-                "cue": "Uma palavra que significa 'sim, com certeza' ou que expressa concordância."
-            },
-            {
-                "word_id": "en-0152",
-                "original": "of course",
-                "filename": "of_course",
-                "sentence": "_____ I'll help you!",
-                "cue": "Uma frase que significa 'claro que sim'."
-            },
-            {
-                "word_id": "en-0153",
-                "original": "great",
-                "filename": "great",
-                "sentence": "That's _____ news!",
-                "cue": "Uma palavra para algo excelente ou maravilhoso."
-            },
-            {
-                "word_id": "en-0154",
-                "original": "maybe",
-                "filename": "maybe",
-                "sentence": "_____ we should try a different restaurant.",
-                "cue": "Uma palavra que expressa incerteza, significando 'possivelmente'."
-            },
-            {
-                "word_id": "en-0155",
-                "original": "sorry",
-                "filename": "sorry",
-                "sentence": "I'm so _____ for being late.",
-                "cue": "O que você diz para se desculpar."
-            },
-            {
-                "word_id": "en-0156",
-                "original": "okay",
-                "filename": "okay",
-                "sentence": "_____, let's go now.",
-                "cue": "Uma palavra casual que significa 'tudo bem' ou concordar com algo."
-            },
-            {
-                "word_id": "en-0157",
-                "original": "wow",
-                "filename": "wow",
-                "sentence": "_____, that's amazing!",
-                "cue": "Uma interjeição que mostra surpresa ou espanto."
-            },
-            {
-                "word_id": "en-0158",
-                "original": "oh",
-                "filename": "oh",
-                "sentence": "_____, I forgot my keys.",
-                "cue": "Uma interjeição que mostra percepção repentina ou reação."
-            },
-            {
-                "word_id": "en-0159",
-                "original": "exactly",
-                "filename": "exactly",
-                "sentence": "That's _____ what I meant.",
-                "cue": "Uma palavra usada para concordar fortemente que algo está exatamente correto."
-            },
-            {
-                "word_id": "en-0160",
-                "original": "right",
-                "filename": "right",
-                "sentence": "You're _____, I made a mistake.",
-                "cue": "Uma palavra que significa correto, ou que pede concordância."
-            },
-            {
-                "word_id": "en-0161",
-                "original": "true",
-                "filename": "true",
-                "sentence": "Is it _____ that you're moving away?",
-                "cue": "Descreve uma afirmação que corresponde à realidade — o oposto de false."
-            },
-            {
-                "word_id": "en-0162",
-                "original": "absolutely",
-                "filename": "absolutely",
-                "sentence": "_____, that's a great idea.",
-                "cue": "Uma forma enfática de dizer 'sim, completamente'."
-            },
-            {
-                "word_id": "en-0163",
-                "original": "alright",
-                "filename": "alright",
-                "sentence": "_____, let's meet at noon.",
-                "cue": "Uma palavra casual parecida com 'okay'."
-            },
-            {
-                "word_id": "en-0164",
-                "original": "cool",
-                "filename": "cool",
-                "sentence": "That's a really _____ jacket.",
-                "cue": "Uma palavra informal para algo impressionante ou bom."
-            },
-            {
-                "word_id": "en-0165",
-                "original": "awesome",
-                "filename": "awesome",
-                "sentence": "This trip has been _____!",
-                "cue": "Uma palavra informal para algo incrível."
-            },
-            {
-                "word_id": "en-0166",
-                "original": "agree",
-                "filename": "agree",
-                "sentence": "I _____ with your opinion.",
-                "cue": "O verbo para ter a mesma opinião que alguém."
-            },
-            {
-                "word_id": "en-0167",
-                "original": "disagree",
-                "filename": "disagree",
-                "sentence": "I _____ with that decision.",
-                "cue": "O verbo para ter uma opinião diferente da de alguém."
-            },
-            {
-                "word_id": "en-0168",
-                "original": "think",
-                "filename": "think",
-                "sentence": "I _____ it will rain tomorrow.",
-                "cue": "O verbo para usar a mente para formar uma opinião ou ideia."
-            },
-            {
-                "word_id": "en-0169",
-                "original": "interesting",
-                "filename": "interesting",
-                "sentence": "That's a very _____ story.",
-                "cue": "Descreve algo que chama sua atenção ou curiosidade."
-            },
-            {
-                "word_id": "en-0170",
-                "original": "boring",
-                "filename": "boring",
-                "sentence": "The lecture was really _____.",
-                "cue": "Descreve algo que não consegue prender seu interesse."
-            },
-            {
-                "word_id": "en-0171",
-                "original": "water",
-                "filename": "water",
-                "sentence": "Can I have a glass of _____?",
-                "cue": "O líquido claro que você bebe; também encontrado em rios e oceanos."
-            },
-            {
-                "word_id": "en-0172",
-                "original": "coffee",
-                "filename": "coffee",
-                "sentence": "I drink _____ every morning.",
-                "cue": "Uma bebida quente feita de grãos torrados e moídos."
-            },
-            {
-                "word_id": "en-0173",
-                "original": "tea",
-                "filename": "tea",
-                "sentence": "Would you like some _____?",
-                "cue": "Uma bebida quente feita deixando folhas de molho na água."
-            },
-            {
-                "word_id": "en-0174",
-                "original": "bread",
-                "filename": "bread",
-                "sentence": "We bought fresh _____ this morning.",
-                "cue": "Um alimento assado feito de farinha, geralmente fatiado para sanduíches."
-            },
-            {
-                "word_id": "en-0175",
-                "original": "rice",
-                "filename": "rice",
-                "sentence": "We had chicken and _____ for dinner.",
-                "cue": "Grãos brancos ou marrons pequenos, um alimento básico em muitas culturas."
-            },
-            {
-                "word_id": "en-0176",
-                "original": "meat",
-                "filename": "meat",
-                "sentence": "He doesn't eat _____.",
-                "cue": "Carne animal comida como alimento, como carne bovina ou frango."
-            },
-            {
-                "word_id": "en-0177",
-                "original": "fish",
-                "filename": "fish",
-                "sentence": "They caught _____ at the lake.",
-                "cue": "Um animal que vive na água e também é comido como alimento."
-            },
-            {
-                "word_id": "en-0178",
-                "original": "egg",
-                "filename": "egg",
-                "sentence": "I had an _____ for breakfast.",
-                "cue": "Um alimento oval posto por uma galinha, geralmente frito ou cozido."
-            },
-            {
-                "word_id": "en-0179",
-                "original": "cheese",
-                "filename": "cheese",
-                "sentence": "This pizza has a lot of _____.",
-                "cue": "Um alimento derivado do leite, geralmente fatiado ou derretido."
-            },
-            {
-                "word_id": "en-0180",
-                "original": "milk",
-                "filename": "milk",
-                "sentence": "Can you pass the _____?",
-                "cue": "Um líquido branco de vacas, geralmente bebido ou usado para cozinhar."
-            },
-            {
-                "word_id": "en-0181",
-                "original": "fruit",
-                "filename": "fruit",
-                "sentence": "She eats _____ every day.",
-                "cue": "Um alimento doce que cresce em plantas, como uma maçã ou banana."
-            },
-            {
-                "word_id": "en-0182",
-                "original": "vegetable",
-                "filename": "vegetable",
-                "sentence": "Carrots are my favorite _____.",
-                "cue": "Um alimento salgado de origem vegetal, como cenoura ou brócolis."
-            },
-            {
-                "word_id": "en-0183",
-                "original": "table",
-                "filename": "table",
-                "sentence": "The plates are on the _____.",
-                "cue": "Um móvel com um tampo plano, usado para comer ou trabalhar."
-            },
-            {
-                "word_id": "en-0184",
-                "original": "hungry",
-                "filename": "hungry",
-                "sentence": "I'm really _____ right now.",
-                "cue": "Descreve a sensação de precisar comer."
-            },
-            {
-                "word_id": "en-0185",
-                "original": "thirsty",
-                "filename": "thirsty",
-                "sentence": "After the run, I was very _____.",
-                "cue": "Descreve a sensação de precisar beber."
-            },
-            {
-                "word_id": "en-0186",
-                "original": "delicious",
-                "filename": "delicious",
-                "sentence": "This soup is absolutely _____.",
-                "cue": "Descreve uma comida com um sabor muito bom."
-            },
-            {
-                "word_id": "en-0187",
-                "original": "do",
-                "filename": "do",
-                "sentence": "_____ you like pizza?",
-                "cue": "O verbo auxiliar usado para formar perguntas e negativas no presente."
-            },
-            {
-                "word_id": "en-0188",
-                "original": "does",
-                "filename": "does",
-                "sentence": "_____ she work here?",
-                "cue": "O verbo auxiliar 'do' usado com he/she/it."
-            },
-            {
-                "word_id": "en-0189",
-                "original": "menu",
-                "filename": "menu",
-                "sentence": "Can I see the _____, please?",
-                "cue": "A lista de pratos que você pode pedir em um restaurante."
-            },
-            {
-                "word_id": "en-0190",
-                "original": "cup",
-                "filename": "cup",
-                "sentence": "He filled the _____ with tea.",
-                "cue": "Um pequeno recipiente em que você bebe bebidas quentes."
-            },
-            {
-                "word_id": "en-0191",
-                "original": "glass",
-                "filename": "glass",
-                "sentence": "She poured water into the _____.",
-                "cue": "Um recipiente, geralmente de vidro, para beber bebidas frias."
-            },
-            {
-                "word_id": "en-0192",
-                "original": "plate",
-                "filename": "plate",
-                "sentence": "Put the food on the _____.",
-                "cue": "Um prato raso em que você coloca comida para comer."
-            },
-            {
-                "word_id": "en-0193",
-                "original": "bill",
-                "filename": "bill",
-                "sentence": "Can we have the _____, please?",
-                "cue": "O papel que mostra quanto você deve, para pagar em um restaurante."
-            },
-            {
-                "word_id": "en-0194",
-                "original": "waiter",
-                "filename": "waiter",
-                "sentence": "The _____ brought our food quickly.",
-                "cue": "A pessoa que anota seu pedido e serve sua comida em um restaurante."
-            },
-            {
-                "word_id": "en-0195",
-                "original": "order",
-                "filename": "order",
-                "sentence": "Can I _____ a coffee, please?",
-                "cue": "O verbo para pedir comida ou um item que você quer comprar."
-            },
-            {
-                "word_id": "en-0196",
-                "original": "sugar",
-                "filename": "sugar",
-                "sentence": "Do you want _____ in your tea?",
-                "cue": "Uma substância branca e doce adicionada a bebidas e alimentos."
-            },
-            {
-                "word_id": "en-0197",
-                "original": "ice",
-                "filename": "ice",
-                "sentence": "I'd like my drink with _____.",
-                "cue": "Água congelada, geralmente adicionada a bebidas geladas."
-            },
-            {
-                "word_id": "en-0198",
-                "original": "straw",
-                "filename": "straw",
-                "sentence": "Can I have a _____ for my drink?",
-                "cue": "Um tubo fino usado para beber uma bebida."
-            },
-            {
-                "word_id": "en-0199",
-                "original": "napkin",
-                "filename": "napkin",
-                "sentence": "Could you pass me a _____?",
-                "cue": "Um pedaço de pano ou papel usado para limpar a boca/mãos ao comer."
-            },
-            {
-                "word_id": "en-0200",
-                "original": "medium",
-                "filename": "medium",
-                "sentence": "I'll have a _____ soda, please.",
-                "cue": "Um tamanho ou quantidade intermediária entre pequeno e grande."
-            },
-            {
-                "word_id": "en-0201",
-                "original": "to go",
-                "filename": "to_go",
-                "sentence": "Can I get this order _____?",
-                "cue": "Uma expressão que significa que você quer sua comida embalada para levar, não para comer ali."
-            },
-            {
-                "word_id": "en-0202",
-                "original": "price",
-                "filename": "price",
-                "sentence": "What's the _____ of this shirt?",
-                "cue": "Quanto custa alguma coisa."
-            },
-            {
-                "word_id": "en-0203",
-                "original": "cash",
-                "filename": "cash",
-                "sentence": "Do you accept _____?",
-                "cue": "Dinheiro físico — moedas e notas — ao contrário de um cartão."
-            },
-            {
-                "word_id": "en-0204",
-                "original": "card",
-                "filename": "card",
-                "sentence": "I'll pay with a _____.",
-                "cue": "Um pequeno retângulo de plástico usado para pagar eletronicamente."
-            },
-            {
-                "word_id": "en-0205",
-                "original": "pay",
-                "filename": "pay",
-                "sentence": "Can I _____ with a credit card?",
-                "cue": "O verbo para dar dinheiro em troca de algo."
-            },
-            {
-                "word_id": "en-0206",
-                "original": "would",
-                "filename": "would",
-                "sentence": "I _____ like a glass of water, please.",
-                "cue": "O verbo modal usado para fazer um pedido educado, como em 'I'd like...'."
-            },
-            {
-                "word_id": "en-0207",
-                "original": "across",
-                "filename": "across",
-                "sentence": "The store is just _____ the street.",
-                "cue": "A preposição que significa de um lado a outro de algo."
-            },
-            {
-                "word_id": "en-0208",
-                "original": "by",
-                "filename": "by",
-                "sentence": "We traveled _____ train.",
-                "cue": "A preposição usada para dizer como você viaja, como em '__ bus'."
-            },
-            {
-                "word_id": "en-0209",
-                "original": "bus",
-                "filename": "bus",
-                "sentence": "I take the _____ to work every day.",
-                "cue": "Um veículo grande de estrada que transporta muitos passageiros."
-            },
-            {
-                "word_id": "en-0210",
-                "original": "way",
-                "filename": "way",
-                "sentence": "Can you show me the _____ to the station?",
-                "cue": "Um caminho, rota ou modo de fazer algo."
-            },
-            {
-                "word_id": "en-0211",
-                "original": "stop",
-                "filename": "stop",
-                "sentence": "Please _____ talking during the movie.",
-                "cue": "O verbo que significa parar de se mover ou de fazer algo."
-            },
-            {
-                "word_id": "en-0212",
-                "original": "sometimes",
-                "filename": "sometimes",
-                "sentence": "I _____ eat breakfast late.",
-                "cue": "Um advérbio que significa ocasionalmente, não sempre."
-            },
-            {
-                "word_id": "en-0213",
-                "original": "stay",
-                "filename": "stay",
-                "sentence": "We plan to _____ here for a week.",
-                "cue": "O verbo que significa permanecer em um lugar em vez de sair."
-            },
-            {
-                "word_id": "en-0214",
-                "original": "motel",
-                "filename": "motel",
-                "sentence": "We slept at a cheap _____ off the highway.",
-                "cue": "Um hotel barato à beira da estrada, geralmente para viajantes de carro."
-            },
-            {
-                "word_id": "en-0215",
-                "original": "little",
-                "filename": "little",
-                "sentence": "There's a _____ shop around the corner.",
-                "cue": "Descreve algo pequeno em tamanho ou quantidade."
-            },
-            {
-                "word_id": "en-0216",
-                "original": "town",
-                "filename": "town",
-                "sentence": "They live in a small _____.",
-                "cue": "Uma área pequena onde as pessoas moram, menor que uma cidade."
-            },
-            {
-                "word_id": "en-0217",
-                "original": "when",
-                "filename": "when",
-                "sentence": "_____ does the movie start?",
-                "cue": "A palavra interrogativa/conjunção usada para perguntar sobre tempo."
-            },
-            {
-                "word_id": "en-0218",
-                "original": "come",
-                "filename": "come",
-                "sentence": "Please _____ to my party.",
-                "cue": "O verbo que significa se mover em direção a quem fala."
-            },
-            {
-                "word_id": "en-0219",
-                "original": "down",
-                "filename": "down",
-                "sentence": "Please sit _____ and relax.",
-                "cue": "O advérbio que significa em direção a uma posição mais baixa."
-            },
-            {
-                "word_id": "en-0220",
-                "original": "room",
-                "filename": "room",
-                "sentence": "Our _____ is on the third floor.",
-                "cue": "Um espaço separado dentro de um prédio, como um quarto."
-            },
-            {
-                "word_id": "en-0221",
-                "original": "for",
-                "filename": "for",
-                "sentence": "This gift is _____ you.",
-                "cue": "A preposição que mostra propósito ou para quem algo é destinado."
-            },
-            {
-                "word_id": "en-0222",
-                "original": "something",
-                "filename": "something",
-                "sentence": "I need to tell you _____ important.",
-                "cue": "Um pronome para algo não especificado."
-            },
-            {
-                "word_id": "en-0223",
-                "original": "eat",
-                "filename": "eat",
-                "sentence": "Let's _____ dinner together.",
-                "cue": "O verbo para colocar comida na boca e engolir."
-            },
-            {
-                "word_id": "en-0224",
-                "original": "girl",
-                "filename": "girl",
-                "sentence": "The _____ is playing in the park.",
-                "cue": "Uma pessoa jovem do sexo feminino."
-            },
-            {
-                "word_id": "en-0225",
-                "original": "on",
-                "filename": "on",
-                "sentence": "The book is _____ the table.",
-                "cue": "A preposição que significa posicionado sobre uma superfície."
-            },
-            {
-                "word_id": "en-0226",
-                "original": "motorcycle",
-                "filename": "motorcycle",
-                "sentence": "He rides a _____ to work.",
-                "cue": "Um veículo motorizado de duas rodas que você usa como uma bicicleta."
-            },
-            {
-                "word_id": "en-0227",
-                "original": "with",
-                "filename": "with",
-                "sentence": "I went to the park _____ my friend.",
-                "cue": "A preposição que significa acompanhado de ou usando."
-            },
-            {
-                "word_id": "en-0228",
-                "original": "long",
-                "filename": "long",
-                "sentence": "It was a _____ trip.",
-                "cue": "Descreve algo que se estende por uma grande distância ou tempo — o oposto de short."
-            },
-            {
-                "word_id": "en-0229",
-                "original": "blond",
-                "filename": "blond",
-                "sentence": "She has _____ hair.",
-                "cue": "Descreve cabelo de cor clara (amarelada)."
-            },
-            {
-                "word_id": "en-0230",
-                "original": "hair",
-                "filename": "hair",
-                "sentence": "Her _____ is very long.",
-                "cue": "Os fios que crescem na sua cabeça."
-            },
-            {
-                "word_id": "en-0231",
-                "original": "know",
-                "filename": "know",
-                "sentence": "I don't _____ the answer.",
-                "cue": "O verbo para ter informação ou estar familiarizado com algo."
-            },
-            {
-                "word_id": "en-0232",
-                "original": "famous",
-                "filename": "famous",
-                "sentence": "He is a _____ actor.",
-                "cue": "Descreve alguém amplamente conhecido pelo público."
-            },
-            {
-                "word_id": "en-0233",
-                "original": "then",
-                "filename": "then",
-                "sentence": "We had dinner and _____ watched a movie.",
-                "cue": "Um advérbio que significa 'naquele momento' ou 'em seguida, depois disso'."
-            },
-            {
-                "word_id": "en-0234",
-                "original": "next",
-                "filename": "next",
-                "sentence": "What's the _____ step?",
-                "cue": "Descreve o que vem logo depois, em lugar ou tempo."
-            },
-            {
-                "word_id": "en-0235",
-                "original": "news",
-                "filename": "news",
-                "sentence": "Did you hear the _____ today?",
-                "cue": "Informações recentes sobre eventos, geralmente na TV ou em um aplicativo."
-            },
-            {
-                "word_id": "en-0236",
-                "original": "about",
-                "filename": "about",
-                "sentence": "This book is _____ history.",
-                "cue": "A preposição que significa 'sobre o assunto de'."
-            },
-            {
-                "word_id": "en-0237",
-                "original": "supermarket",
-                "filename": "supermarket",
-                "sentence": "I need to go to the _____ for groceries.",
-                "cue": "Uma loja grande onde você compra mantimentos."
-            },
-            {
-                "word_id": "en-0238",
-                "original": "robbery",
-                "filename": "robbery",
-                "sentence": "There was a _____ at the bank.",
-                "cue": "Um crime em que algo é roubado, geralmente com força ou ameaça."
-            },
-            {
-                "word_id": "en-0239",
-                "original": "police",
-                "filename": "police",
-                "sentence": "The _____ arrived quickly.",
-                "cue": "As pessoas/organização responsáveis por fazer cumprir a lei."
-            },
-            {
-                "word_id": "en-0240",
-                "original": "look for",
-                "filename": "look_for",
-                "sentence": "I'm going to _____ my keys.",
-                "cue": "O verbo frasal que significa procurar por algo."
-            },
-            {
-                "word_id": "en-0241",
-                "original": "somebody",
-                "filename": "somebody",
-                "sentence": "_____ left their bag here.",
-                "cue": "Um pronome para uma pessoa não especificada."
-            }
+            {"word_id": "en-0001", "original": "hello", "filename": "hello", "sentence": "_____, how are you?", "cue": "Uma saudação comum dita ao encontrar alguém."},
+            {"word_id": "en-0002", "original": "hi", "filename": "hi", "sentence": "_____! Nice to see you.", "cue": "Uma forma casual e mais curta de cumprimentar alguém."},
+            {"word_id": "en-0003", "original": "goodbye", "filename": "goodbye", "sentence": "_____, see you tomorrow.", "cue": "O que você diz ao sair ou terminar uma conversa."},
+            {"word_id": "en-0004", "original": "please", "filename": "please", "sentence": "Can you help me, _____?", "cue": "Uma palavra educada acrescentada ao pedir algo."},
+            {"word_id": "en-0005", "original": "thank you", "filename": "thank_you", "sentence": "_____ for your help.", "cue": "O que você diz para expressar gratidão."},
+            {"word_id": "en-0006", "original": "what", "filename": "what", "sentence": "_____ is your name?", "cue": "A palavra interrogativa usada para perguntar sobre uma coisa."},
+            {"word_id": "en-0007", "original": "I", "filename": "i", "sentence": "_____ am from Brazil.", "cue": "O pronome que você usa para se referir a si mesmo como quem fala."},
+            {"word_id": "en-0008", "original": "am", "filename": "am", "sentence": "I _____ happy today.", "cue": "A forma do verbo 'to be' usada com 'I'."},
+            {"word_id": "en-0009", "original": "name", "filename": "name", "sentence": "What is your _____?", "cue": "Como você chama uma pessoa ou coisa para identificá-la."},
+            {"word_id": "en-0010", "original": "is", "filename": "is", "sentence": "She _____ a doctor.", "cue": "A forma do verbo 'to be' usada com he/she/it."},
+            {"word_id": "en-0011", "original": "my", "filename": "my", "sentence": "This is _____ favorite book.", "cue": "A palavra possessiva que significa 'pertencente a mim'."},
+            {"word_id": "en-0012", "original": "your", "filename": "your", "sentence": "Is this _____ phone?", "cue": "A palavra possessiva que significa 'pertencente a você'."},
+            {"word_id": "en-0013", "original": "you", "filename": "you", "sentence": "Where are _____ from?", "cue": "O pronome usado para se referir à pessoa com quem você está falando."},
+            {"word_id": "en-0014", "original": "nice to meet you", "filename": "nice_to_meet_you", "sentence": "_____, I'm Ana.", "cue": "Uma expressão usada para cumprimentar alguém que você está conhecendo pela primeira vez."},
+            {"word_id": "en-0015", "original": "from", "filename": "from", "sentence": "I'm _____ Brazil.", "cue": "A preposição que mostra um ponto de partida ou origem."},
+            {"word_id": "en-0016", "original": "he", "filename": "he", "sentence": "_____ is my brother.", "cue": "O pronome usado para um homem já mencionado."},
+            {"word_id": "en-0017", "original": "she", "filename": "she", "sentence": "_____ is my sister.", "cue": "O pronome usado para uma mulher já mencionada."},
+            {"word_id": "en-0018", "original": "it", "filename": "it", "sentence": "_____ is a good book.", "cue": "O pronome usado para uma coisa, animal ou ideia (não uma pessoa)."},
+            {"word_id": "en-0019", "original": "we", "filename": "we", "sentence": "_____ are friends.", "cue": "O pronome para você e pelo menos mais uma pessoa."},
+            {"word_id": "en-0020", "original": "they", "filename": "they", "sentence": "_____ are from Canada.", "cue": "O pronome para duas ou mais pessoas ou coisas já mencionadas."},
+            {"word_id": "en-0021", "original": "are", "filename": "are", "sentence": "You _____ very kind.", "cue": "A forma do verbo 'to be' usada com you/we/they."},
+            {"word_id": "en-0022", "original": "bye", "filename": "bye", "sentence": "_____! Have a good day.", "cue": "Uma forma curta e casual de se despedir."},
+            {"word_id": "en-0023", "original": "yes", "filename": "yes", "sentence": "_____, I would like some coffee.", "cue": "A palavra usada para dar uma resposta afirmativa."},
+            {"word_id": "en-0024", "original": "no", "filename": "no", "sentence": "_____, I don't want any sugar.", "cue": "A palavra usada para dar uma resposta negativa."},
+            {"word_id": "en-0025", "original": "a", "filename": "a", "sentence": "I have _____ dog.", "cue": "O artigo indefinido usado antes de um substantivo singular que começa com som de consoante."},
+            {"word_id": "en-0026", "original": "an", "filename": "an", "sentence": "She ate _____ apple.", "cue": "O artigo indefinido usado antes de um substantivo singular que começa com som de vogal."},
+            {"word_id": "en-0027", "original": "the", "filename": "the", "sentence": "_____ restaurant is very good.", "cue": "O artigo definido usado antes de um substantivo específico e conhecido."},
+            {"word_id": "en-0028", "original": "zero", "filename": "zero", "sentence": "The temperature is _____ degrees.", "cue": "O número que vem antes do um; representa nada."},
+            {"word_id": "en-0029", "original": "one", "filename": "one", "sentence": "I only have _____ brother.", "cue": "O primeiro número de contagem."},
+            {"word_id": "en-0030", "original": "two", "filename": "two", "sentence": "She has _____ daughters.", "cue": "O número depois do um."},
+            {"word_id": "en-0031", "original": "three", "filename": "three", "sentence": "We waited _____ hours.", "cue": "O número depois do dois."},
+            {"word_id": "en-0032", "original": "four", "filename": "four", "sentence": "The table has _____ chairs.", "cue": "O número depois do três."},
+            {"word_id": "en-0033", "original": "five", "filename": "five", "sentence": "He gave me _____ dollars.", "cue": "O número depois do quatro."},
+            {"word_id": "en-0034", "original": "six", "filename": "six", "sentence": "The movie starts at _____ o'clock.", "cue": "O número depois do cinco."},
+            {"word_id": "en-0035", "original": "seven", "filename": "seven", "sentence": "There are _____ days in a week.", "cue": "O número depois do seis."},
+            {"word_id": "en-0036", "original": "eight", "filename": "eight", "sentence": "The store opens at _____ a.m.", "cue": "O número depois do sete."},
+            {"word_id": "en-0037", "original": "nine", "filename": "nine", "sentence": "We have _____ classes today.", "cue": "O número depois do oito."},
+            {"word_id": "en-0038", "original": "ten", "filename": "ten", "sentence": "I counted to _____.", "cue": "O número depois do nove."},
+            {"word_id": "en-0039", "original": "internet", "filename": "internet", "sentence": "I need the _____ to check my email.", "cue": "A rede global que você usa para navegar em sites e enviar e-mails."},
+            {"word_id": "en-0040", "original": "hotel", "filename": "hotel", "sentence": "We are staying at a nice _____.", "cue": "Um lugar onde viajantes pagam para dormir por uma noite."},
+            {"word_id": "en-0041", "original": "taxi", "filename": "taxi", "sentence": "Let's take a _____ to the airport.", "cue": "Um carro que você paga para andar, geralmente chamado na rua."},
+            {"word_id": "en-0042", "original": "restaurant", "filename": "restaurant", "sentence": "They opened a new _____ downtown.", "cue": "Um lugar onde você paga para comer uma refeição preparada."},
+            {"word_id": "en-0043", "original": "hamburger", "filename": "hamburger", "sentence": "I would like a _____ with cheese.", "cue": "Um sanduíche com um disco de carne cozida em um pão redondo."},
+            {"word_id": "en-0044", "original": "chocolate", "filename": "chocolate", "sentence": "She loves _____ cake.", "cue": "Um doce, geralmente marrom, feito de cacau."},
+            {"word_id": "en-0045", "original": "music", "filename": "music", "sentence": "I like listening to _____ in the morning.", "cue": "Som organizado, como músicas, que você escuta."},
+            {"word_id": "en-0046", "original": "radio", "filename": "radio", "sentence": "He turned on the _____ in the car.", "cue": "Um aparelho que reproduz áudio/música transmitidos."},
+            {"word_id": "en-0047", "original": "television", "filename": "television", "sentence": "We watched _____ all evening.", "cue": "Um aparelho de tela em que você assiste a programas e notícias."},
+            {"word_id": "en-0048", "original": "computer", "filename": "computer", "sentence": "I use my _____ for work.", "cue": "Um dispositivo eletrônico que você usa para digitar, navegar e rodar programas."},
+            {"word_id": "en-0049", "original": "where", "filename": "where", "sentence": "_____ do you live?", "cue": "A palavra interrogativa usada para perguntar sobre um lugar."},
+            {"word_id": "en-0050", "original": "who", "filename": "who", "sentence": "_____ is that man?", "cue": "A palavra interrogativa usada para perguntar sobre uma pessoa."},
+            {"word_id": "en-0051", "original": "how", "filename": "how", "sentence": "_____ are you feeling today?", "cue": "A palavra interrogativa usada para perguntar sobre modo ou método."},
+            {"word_id": "en-0052", "original": "why", "filename": "why", "sentence": "_____ are you so tired?", "cue": "A palavra interrogativa usada para perguntar sobre um motivo."},
+            {"word_id": "en-0053", "original": "have", "filename": "have", "sentence": "I _____ two brothers.", "cue": "O verbo que significa possuir ou ter algo."},
+            {"word_id": "en-0054", "original": "like", "filename": "like", "sentence": "I really _____ this song.", "cue": "O verbo que expressa gostar ou apreciar algo."},
+            {"word_id": "en-0055", "original": "want", "filename": "want", "sentence": "I _____ a glass of water.", "cue": "O verbo que expressa o desejo por algo."},
+            {"word_id": "en-0056", "original": "go", "filename": "go", "sentence": "Let's _____ to the park.", "cue": "O verbo que significa se mover de um lugar em direção a outro."},
+            {"word_id": "en-0057", "original": "this", "filename": "this", "sentence": "_____ is my new car.", "cue": "A palavra usada para apontar algo próximo (singular)."},
+            {"word_id": "en-0058", "original": "that", "filename": "that", "sentence": "_____ is a beautiful house over there.", "cue": "A palavra usada para apontar algo mais distante (singular)."},
+            {"word_id": "en-0059", "original": "good", "filename": "good", "sentence": "This coffee tastes really _____.", "cue": "Uma qualidade positiva geral — o oposto de bad."},
+            {"word_id": "en-0060", "original": "bad", "filename": "bad", "sentence": "The weather was really _____ today.", "cue": "Uma qualidade negativa geral — o oposto de good."},
+            {"word_id": "en-0061", "original": "big", "filename": "big", "sentence": "They live in a _____ house.", "cue": "Descreve algo grande em tamanho."},
+            {"word_id": "en-0062", "original": "small", "filename": "small", "sentence": "She has a _____ apartment.", "cue": "Descreve algo pequeno em tamanho."},
+            {"word_id": "en-0063", "original": "and", "filename": "and", "sentence": "I bought bread _____ milk.", "cue": "A palavra usada para conectar dois itens ou ideias."},
+            {"word_id": "en-0064", "original": "not", "filename": "not", "sentence": "I am _____ hungry right now.", "cue": "A palavra usada para negar uma afirmação."},
+            {"word_id": "en-0065", "original": "here", "filename": "here", "sentence": "Please come _____.", "cue": "Refere-se a este lugar, perto de quem fala."},
+            {"word_id": "en-0066", "original": "there", "filename": "there", "sentence": "The keys are over _____.", "cue": "Refere-se àquele lugar, longe de quem fala."},
+            {"word_id": "en-0067", "original": "nice", "filename": "nice", "sentence": "It was really _____ to meet you.", "cue": "Uma qualidade agradável e simpática."},
+            {"word_id": "en-0068", "original": "to", "filename": "to", "sentence": "I want _____ learn English.", "cue": "A partícula usada antes da forma base de um verbo (infinitivo)."},
+            {"word_id": "en-0069", "original": "meet", "filename": "meet", "sentence": "It's great to _____ you.", "cue": "O verbo para encontrar ou ser apresentado a alguém."},
+            {"word_id": "en-0070", "original": "too", "filename": "too", "sentence": "I'm hungry _____.", "cue": "O advérbio que significa 'também'."},
+            {"word_id": "en-0071", "original": "fine", "filename": "fine", "sentence": "I'm _____, thank you.", "cue": "Uma palavra que significa bem ou tudo certo, geralmente usada para responder como você está."},
+            {"word_id": "en-0072", "original": "welcome", "filename": "welcome", "sentence": "You're _____!", "cue": "O que você diz em resposta a 'thank you'."},
+            {"word_id": "en-0073", "original": "hey", "filename": "hey", "sentence": "_____, how's it going?", "cue": "Uma interjeição casual para chamar a atenção de alguém ou cumprimentá-lo."},
+            {"word_id": "en-0074", "original": "see", "filename": "see", "sentence": "I can _____ the mountains from here.", "cue": "O verbo para perceber algo com os olhos."},
+            {"word_id": "en-0075", "original": "later", "filename": "later", "sentence": "I'll call you _____.", "cue": "Refere-se a um momento depois de agora."},
+            {"word_id": "en-0076", "original": "morning", "filename": "morning", "sentence": "I drink coffee every _____.", "cue": "A parte do dia entre o amanhecer e o meio-dia."},
+            {"word_id": "en-0077", "original": "afternoon", "filename": "afternoon", "sentence": "We're meeting in the _____.", "cue": "A parte do dia entre o meio-dia e o anoitecer."},
+            {"word_id": "en-0078", "original": "evening", "filename": "evening", "sentence": "We have plans for this _____.", "cue": "A parte do dia quando começa a escurecer."},
+            {"word_id": "en-0079", "original": "night", "filename": "night", "sentence": "I sleep eight hours every _____.", "cue": "A parte do dia quando está escuro, para dormir."},
+            {"word_id": "en-0080", "original": "day", "filename": "day", "sentence": "It was a wonderful _____.", "cue": "Um período completo de 24 horas, ou o momento em que está claro."},
+            {"word_id": "en-0081", "original": "friend", "filename": "friend", "sentence": "She's my best _____.", "cue": "Uma pessoa de quem você gosta e com quem passa tempo, que não é da família."},
+            {"word_id": "en-0082", "original": "everyone", "filename": "everyone", "sentence": "_____ is invited to the party.", "cue": "Todas as pessoas de um grupo."},
+            {"word_id": "en-0083", "original": "introduce", "filename": "introduce", "sentence": "Let me _____ you to my sister.", "cue": "O verbo para apresentar duas pessoas uma à outra pelo nome."},
+            {"word_id": "en-0084", "original": "family", "filename": "family", "sentence": "My _____ lives in Brazil.", "cue": "O grupo de pessoas relacionadas a você, como pais e irmãos."},
+            {"word_id": "en-0085", "original": "mother", "filename": "mother", "sentence": "My _____ makes great coffee.", "cue": "Sua mãe."},
+            {"word_id": "en-0086", "original": "father", "filename": "father", "sentence": "My _____ works at a hospital.", "cue": "Seu pai."},
+            {"word_id": "en-0087", "original": "parents", "filename": "parents", "sentence": "My _____ live in São Paulo.", "cue": "Sua mãe e seu pai juntos."},
+            {"word_id": "en-0088", "original": "sister", "filename": "sister", "sentence": "My _____ is older than me.", "cue": "Uma irmã."},
+            {"word_id": "en-0089", "original": "brother", "filename": "brother", "sentence": "My _____ plays soccer.", "cue": "Um irmão."},
+            {"word_id": "en-0090", "original": "grandmother", "filename": "grandmother", "sentence": "My _____ tells great stories.", "cue": "A mãe da sua mãe ou do seu pai."},
+            {"word_id": "en-0091", "original": "grandfather", "filename": "grandfather", "sentence": "My _____ served in the army.", "cue": "O pai da sua mãe ou do seu pai."},
+            {"word_id": "en-0092", "original": "grandparents", "filename": "grandparents", "sentence": "My _____ live on a farm.", "cue": "Sua avó e seu avô juntos."},
+            {"word_id": "en-0093", "original": "son", "filename": "son", "sentence": "Their _____ is studying medicine.", "cue": "O filho homem de uma pessoa."},
+            {"word_id": "en-0094", "original": "daughter", "filename": "daughter", "sentence": "Their _____ just started college.", "cue": "A filha mulher de uma pessoa."},
+            {"word_id": "en-0095", "original": "child", "filename": "child", "sentence": "The _____ is playing in the yard.", "cue": "Uma pessoa jovem, ainda não adulta."},
+            {"word_id": "en-0096", "original": "husband", "filename": "husband", "sentence": "Her _____ works at a bank.", "cue": "O cônjuge homem de uma mulher."},
+            {"word_id": "en-0097", "original": "wife", "filename": "wife", "sentence": "His _____ is a teacher.", "cue": "A cônjuge mulher de um homem."},
+            {"word_id": "en-0098", "original": "baby", "filename": "baby", "sentence": "The _____ is sleeping in the crib.", "cue": "Uma criança bem pequena, recém-nascida."},
+            {"word_id": "en-0099", "original": "aunt", "filename": "aunt", "sentence": "My _____ lives in France.", "cue": "A irmã da sua mãe ou do seu pai (ou a esposa do seu tio)."},
+            {"word_id": "en-0100", "original": "uncle", "filename": "uncle", "sentence": "My _____ owns a small shop.", "cue": "O irmão da sua mãe ou do seu pai (ou o marido da sua tia)."},
+            {"word_id": "en-0101", "original": "cousin", "filename": "cousin", "sentence": "My _____ is visiting this weekend.", "cue": "O filho ou filha do seu tio ou tia."},
+            {"word_id": "en-0102", "original": "number", "filename": "number", "sentence": "What is your phone _____?", "cue": "Um número usado para contar ou fazer contas, como 1, 2, 3."},
+            {"word_id": "en-0103", "original": "year", "filename": "year", "sentence": "I moved here one _____ ago.", "cue": "Um período de 365 dias."},
+            {"word_id": "en-0104", "original": "old", "filename": "old", "sentence": "This building is very _____.", "cue": "Descreve algo ou alguém que existe há muito tempo — o oposto de young/new."},
+            {"word_id": "en-0105", "original": "age", "filename": "age", "sentence": "What is your _____?", "cue": "Quantos anos alguém tem de vida."},
+            {"word_id": "en-0106", "original": "young", "filename": "young", "sentence": "She is too _____ to drive.", "cue": "Descreve algo ou alguém que não existe há muito tempo — o oposto de old."},
+            {"word_id": "en-0107", "original": "birthday", "filename": "birthday", "sentence": "Today is my sister's _____.", "cue": "O aniversário anual do dia em que alguém nasceu."},
+            {"word_id": "en-0108", "original": "many", "filename": "many", "sentence": "There are _____ people at the party.", "cue": "Uma palavra que significa uma grande quantidade de algo."},
+            {"word_id": "en-0109", "original": "count", "filename": "count", "sentence": "Can you _____ to twenty?", "cue": "O verbo para dizer números em ordem para encontrar um total."},
+            {"word_id": "en-0110", "original": "eleven", "filename": "eleven", "sentence": "The bus leaves at _____ o'clock.", "cue": "O número depois do dez."},
+            {"word_id": "en-0111", "original": "twelve", "filename": "twelve", "sentence": "There are _____ months in a year.", "cue": "O número depois do onze."},
+            {"word_id": "en-0112", "original": "thirteen", "filename": "thirteen", "sentence": "She turned _____ last week.", "cue": "O número depois do doze."},
+            {"word_id": "en-0113", "original": "fourteen", "filename": "fourteen", "sentence": "My cousin is _____ years old.", "cue": "O número depois do treze."},
+            {"word_id": "en-0114", "original": "fifteen", "filename": "fifteen", "sentence": "We waited _____ minutes for the bus.", "cue": "O número depois do quatorze."},
+            {"word_id": "en-0115", "original": "sixteen", "filename": "sixteen", "sentence": "He got his license at _____.", "cue": "O número depois do quinze."},
+            {"word_id": "en-0116", "original": "seventeen", "filename": "seventeen", "sentence": "She'll be _____ next month.", "cue": "O número depois do dezesseis."},
+            {"word_id": "en-0117", "original": "eighteen", "filename": "eighteen", "sentence": "You can vote at _____ in most countries.", "cue": "O número depois do dezessete."},
+            {"word_id": "en-0118", "original": "nineteen", "filename": "nineteen", "sentence": "My brother is _____ years old.", "cue": "O número depois do dezoito."},
+            {"word_id": "en-0119", "original": "twenty", "filename": "twenty", "sentence": "There are _____ students in my class.", "cue": "O número depois do dezenove."},
+            {"word_id": "en-0120", "original": "live", "filename": "live", "sentence": "I _____ in a small apartment.", "cue": "O verbo para ter sua casa em um determinado lugar."},
+            {"word_id": "en-0121", "original": "country", "filename": "country", "sentence": "Which _____ are you from?", "cue": "Uma nação com seu próprio governo e fronteiras."},
+            {"word_id": "en-0122", "original": "city", "filename": "city", "sentence": "This is a very busy _____.", "cue": "Uma cidade grande onde muitas pessoas vivem."},
+            {"word_id": "en-0123", "original": "world", "filename": "world", "sentence": "She wants to travel the _____.", "cue": "O planeta Terra e tudo/todos que existem nele."},
+            {"word_id": "en-0124", "original": "language", "filename": "language", "sentence": "English is a difficult _____ to learn.", "cue": "Um sistema de palavras usado pelas pessoas para se comunicar, como inglês ou português."},
+            {"word_id": "en-0125", "original": "speak", "filename": "speak", "sentence": "Do you _____ Portuguese?", "cue": "O verbo para usar a voz para dizer palavras em um idioma."},
+            {"word_id": "en-0126", "original": "Brazilian", "filename": "brazilian", "sentence": "She is _____ and speaks Portuguese.", "cue": "Descreve alguém ou algo do Brasil."},
+            {"word_id": "en-0127", "original": "American", "filename": "american", "sentence": "He is _____, from New York.", "cue": "Descreve alguém ou algo dos Estados Unidos."},
+            {"word_id": "en-0128", "original": "English", "filename": "english", "sentence": "I'm learning to speak _____.", "cue": "O idioma falado na Inglaterra, nos Estados Unidos e em muitos outros países."},
+            {"word_id": "en-0129", "original": "Spanish", "filename": "spanish", "sentence": "They speak _____ in Mexico.", "cue": "O idioma falado na Espanha e na maior parte da América Latina."},
+            {"word_id": "en-0130", "original": "French", "filename": "french", "sentence": "She studied _____ in college.", "cue": "O idioma falado na França."},
+            {"word_id": "en-0131", "original": "Portuguese", "filename": "portuguese", "sentence": "_____ is spoken in Brazil and Portugal.", "cue": "O idioma falado em Portugal e no Brasil."},
+            {"word_id": "en-0132", "original": "Chinese", "filename": "chinese", "sentence": "He is learning _____ this year.", "cue": "O idioma falado na China."},
+            {"word_id": "en-0133", "original": "Japanese", "filename": "japanese", "sentence": "She speaks _____ fluently.", "cue": "O idioma falado no Japão."},
+            {"word_id": "en-0134", "original": "Italian", "filename": "italian", "sentence": "We ate at an _____ restaurant.", "cue": "O idioma falado na Itália."},
+            {"word_id": "en-0135", "original": "German", "filename": "german", "sentence": "He studied _____ in school.", "cue": "O idioma falado na Alemanha."},
+            {"word_id": "en-0136", "original": "Canadian", "filename": "canadian", "sentence": "My neighbor is _____.", "cue": "Descreve alguém ou algo do Canadá."},
+            {"word_id": "en-0137", "original": "Mexican", "filename": "mexican", "sentence": "We tried some _____ food last night.", "cue": "Descreve alguém ou algo do México."},
+            {"word_id": "en-0138", "original": "capital", "filename": "capital", "sentence": "Paris is the _____ of France.", "cue": "A cidade principal de um país, geralmente onde fica o governo."},
+            {"word_id": "en-0139", "original": "continent", "filename": "continent", "sentence": "Africa is a huge _____.", "cue": "Uma das grandes massas de terra da Terra, como África ou Ásia."},
+            {"word_id": "en-0140", "original": "map", "filename": "map", "sentence": "Can you show me on the _____?", "cue": "Um desenho que mostra onde os lugares estão localizados."},
+            {"word_id": "en-0141", "original": "flag", "filename": "flag", "sentence": "The _____ has three colors.", "cue": "Um pedaço de tecido com cores/símbolos que representa um país."},
+            {"word_id": "en-0142", "original": "culture", "filename": "culture", "sentence": "Brazilian _____ is very rich.", "cue": "Os costumes, a arte e o modo de vida compartilhados por um grupo de pessoas."},
+            {"word_id": "en-0143", "original": "far", "filename": "far", "sentence": "The airport is very _____ from here.", "cue": "Descreve uma longa distância — o oposto de near/close."},
+            {"word_id": "en-0144", "original": "in", "filename": "in", "sentence": "The keys are _____ the drawer.", "cue": "A preposição que mostra que algo está dentro de um lugar."},
+            {"word_id": "en-0145", "original": "well", "filename": "well", "sentence": "_____, let me think about it.", "cue": "Uma interjeição usada para fazer uma pausa ou transição antes de falar."},
+            {"word_id": "en-0146", "original": "so", "filename": "so", "sentence": "I was tired, _____ I went to bed early.", "cue": "Uma palavra usada para mostrar um resultado ou significar 'portanto'."},
+            {"word_id": "en-0147", "original": "really", "filename": "really", "sentence": "I _____ enjoyed the movie.", "cue": "Um advérbio usado para enfatizar que algo é verdade."},
+            {"word_id": "en-0148", "original": "actually", "filename": "actually", "sentence": "I _____ don't like coffee.", "cue": "Um advérbio usado para corrigir ou esclarecer o que acabou de ser dito."},
+            {"word_id": "en-0149", "original": "anyway", "filename": "anyway", "sentence": "_____, let's get back to work.", "cue": "Uma palavra usada para retomar um assunto anterior ou encerrar algo."},
+            {"word_id": "en-0150", "original": "excuse me", "filename": "excuse_me", "sentence": "_____, can you help me?", "cue": "Uma frase educada para chamar a atenção de alguém ou se desculpar rapidamente."},
+            {"word_id": "en-0151", "original": "sure", "filename": "sure", "sentence": "_____, I'd be happy to help.", "cue": "Uma palavra que significa 'sim, com certeza' ou que expressa concordância."},
+            {"word_id": "en-0152", "original": "of course", "filename": "of_course", "sentence": "_____ I'll help you!", "cue": "Uma frase que significa 'claro que sim'."},
+            {"word_id": "en-0153", "original": "great", "filename": "great", "sentence": "That's _____ news!", "cue": "Uma palavra para algo excelente ou maravilhoso."},
+            {"word_id": "en-0154", "original": "maybe", "filename": "maybe", "sentence": "_____ we should try a different restaurant.", "cue": "Uma palavra que expressa incerteza, significando 'possivelmente'."},
+            {"word_id": "en-0155", "original": "sorry", "filename": "sorry", "sentence": "I'm so _____ for being late.", "cue": "O que você diz para se desculpar."},
+            {"word_id": "en-0156", "original": "okay", "filename": "okay", "sentence": "_____, let's go now.", "cue": "Uma palavra casual que significa 'tudo bem' ou concordar com algo."},
+            {"word_id": "en-0157", "original": "wow", "filename": "wow", "sentence": "_____, that's amazing!", "cue": "Uma interjeição que mostra surpresa ou espanto."},
+            {"word_id": "en-0158", "original": "oh", "filename": "oh", "sentence": "_____, I forgot my keys.", "cue": "Uma interjeição que mostra percepção repentina ou reação."},
+            {"word_id": "en-0159", "original": "exactly", "filename": "exactly", "sentence": "That's _____ what I meant.", "cue": "Uma palavra usada para concordar fortemente que algo está exatamente correto."},
+            {"word_id": "en-0160", "original": "right", "filename": "right", "sentence": "You're _____, I made a mistake.", "cue": "Uma palavra que significa correto, ou que pede concordância."},
+            {"word_id": "en-0161", "original": "true", "filename": "true", "sentence": "Is it _____ that you're moving away?", "cue": "Descreve uma afirmação que corresponde à realidade — o oposto de false."},
+            {"word_id": "en-0162", "original": "absolutely", "filename": "absolutely", "sentence": "_____, that's a great idea.", "cue": "Uma forma enfática de dizer 'sim, completamente'."},
+            {"word_id": "en-0163", "original": "alright", "filename": "alright", "sentence": "_____, let's meet at noon.", "cue": "Uma palavra casual parecida com 'okay'."},
+            {"word_id": "en-0164", "original": "cool", "filename": "cool", "sentence": "That's a really _____ jacket.", "cue": "Uma palavra informal para algo impressionante ou bom."},
+            {"word_id": "en-0165", "original": "awesome", "filename": "awesome", "sentence": "This trip has been _____!", "cue": "Uma palavra informal para algo incrível."},
+            {"word_id": "en-0166", "original": "agree", "filename": "agree", "sentence": "I _____ with your opinion.", "cue": "O verbo para ter a mesma opinião que alguém."},
+            {"word_id": "en-0167", "original": "disagree", "filename": "disagree", "sentence": "I _____ with that decision.", "cue": "O verbo para ter uma opinião diferente da de alguém."},
+            {"word_id": "en-0168", "original": "think", "filename": "think", "sentence": "I _____ it will rain tomorrow.", "cue": "O verbo para usar a mente para formar uma opinião ou ideia."},
+            {"word_id": "en-0169", "original": "interesting", "filename": "interesting", "sentence": "That's a very _____ story.", "cue": "Descreve algo que chama sua atenção ou curiosidade."},
+            {"word_id": "en-0170", "original": "boring", "filename": "boring", "sentence": "The lecture was really _____.", "cue": "Descreve algo que não consegue prender seu interesse."},
+            {"word_id": "en-0171", "original": "water", "filename": "water", "sentence": "Can I have a glass of _____?", "cue": "O líquido claro que você bebe; também encontrado em rios e oceanos."},
+            {"word_id": "en-0172", "original": "coffee", "filename": "coffee", "sentence": "I drink _____ every morning.", "cue": "Uma bebida quente feita de grãos torrados e moídos."},
+            {"word_id": "en-0173", "original": "tea", "filename": "tea", "sentence": "Would you like some _____?", "cue": "Uma bebida quente feita deixando folhas de molho na água."},
+            {"word_id": "en-0174", "original": "bread", "filename": "bread", "sentence": "We bought fresh _____ this morning.", "cue": "Um alimento assado feito de farinha, geralmente fatiado para sanduíches."},
+            {"word_id": "en-0175", "original": "rice", "filename": "rice", "sentence": "We had chicken and _____ for dinner.", "cue": "Grãos brancos ou marrons pequenos, um alimento básico em muitas culturas."},
+            {"word_id": "en-0176", "original": "meat", "filename": "meat", "sentence": "He doesn't eat _____.", "cue": "Carne animal comida como alimento, como carne bovina ou frango."},
+            {"word_id": "en-0177", "original": "fish", "filename": "fish", "sentence": "They caught _____ at the lake.", "cue": "Um animal que vive na água e também é comido como alimento."},
+            {"word_id": "en-0178", "original": "egg", "filename": "egg", "sentence": "I had an _____ for breakfast.", "cue": "Um alimento oval posto por uma galinha, geralmente frito ou cozido."},
+            {"word_id": "en-0179", "original": "cheese", "filename": "cheese", "sentence": "This pizza has a lot of _____.", "cue": "Um alimento derivado do leite, geralmente fatiado ou derretido."},
+            {"word_id": "en-0180", "original": "milk", "filename": "milk", "sentence": "Can you pass the _____?", "cue": "Um líquido branco de vacas, geralmente bebido ou usado para cozinhar."},
+            {"word_id": "en-0181", "original": "fruit", "filename": "fruit", "sentence": "She eats _____ every day.", "cue": "Um alimento doce que cresce em plantas, como uma maçã ou banana."},
+            {"word_id": "en-0182", "original": "vegetable", "filename": "vegetable", "sentence": "Carrots are my favorite _____.", "cue": "Um alimento salgado de origem vegetal, como cenoura ou brócolis."},
+            {"word_id": "en-0183", "original": "table", "filename": "table", "sentence": "The plates are on the _____.", "cue": "Um móvel com um tampo plano, usado para comer ou trabalhar."},
+            {"word_id": "en-0184", "original": "hungry", "filename": "hungry", "sentence": "I'm really _____ right now.", "cue": "Descreve a sensação de precisar comer."},
+            {"word_id": "en-0185", "original": "thirsty", "filename": "thirsty", "sentence": "After the run, I was very _____.", "cue": "Descreve a sensação de precisar beber."},
+            {"word_id": "en-0186", "original": "delicious", "filename": "delicious", "sentence": "This soup is absolutely _____.", "cue": "Descreve uma comida com um sabor muito bom."},
+            {"word_id": "en-0187", "original": "do", "filename": "do", "sentence": "_____ you like pizza?", "cue": "O verbo auxiliar usado para formar perguntas e negativas no presente."},
+            {"word_id": "en-0188", "original": "does", "filename": "does", "sentence": "_____ she work here?", "cue": "O verbo auxiliar 'do' usado com he/she/it."},
+            {"word_id": "en-0189", "original": "menu", "filename": "menu", "sentence": "Can I see the _____, please?", "cue": "A lista de pratos que você pode pedir em um restaurante."},
+            {"word_id": "en-0190", "original": "cup", "filename": "cup", "sentence": "He filled the _____ with tea.", "cue": "Um pequeno recipiente em que você bebe bebidas quentes."},
+            {"word_id": "en-0191", "original": "glass", "filename": "glass", "sentence": "She poured water into the _____.", "cue": "Um recipiente, geralmente de vidro, para beber bebidas frias."},
+            {"word_id": "en-0192", "original": "plate", "filename": "plate", "sentence": "Put the food on the _____.", "cue": "Um prato raso em que você coloca comida para comer."},
+            {"word_id": "en-0193", "original": "bill", "filename": "bill", "sentence": "Can we have the _____, please?", "cue": "O papel que mostra quanto você deve, para pagar em um restaurante."},
+            {"word_id": "en-0194", "original": "waiter", "filename": "waiter", "sentence": "The _____ brought our food quickly.", "cue": "A pessoa que anota seu pedido e serve sua comida em um restaurante."},
+            {"word_id": "en-0195", "original": "order", "filename": "order", "sentence": "Can I _____ a coffee, please?", "cue": "O verbo para pedir comida ou um item que você quer comprar."},
+            {"word_id": "en-0196", "original": "sugar", "filename": "sugar", "sentence": "Do you want _____ in your tea?", "cue": "Uma substância branca e doce adicionada a bebidas e alimentos."},
+            {"word_id": "en-0197", "original": "ice", "filename": "ice", "sentence": "I'd like my drink with _____.", "cue": "Água congelada, geralmente adicionada a bebidas geladas."},
+            {"word_id": "en-0198", "original": "straw", "filename": "straw", "sentence": "Can I have a _____ for my drink?", "cue": "Um tubo fino usado para beber uma bebida."},
+            {"word_id": "en-0199", "original": "napkin", "filename": "napkin", "sentence": "Could you pass me a _____?", "cue": "Um pedaço de pano ou papel usado para limpar a boca/mãos ao comer."},
+            {"word_id": "en-0200", "original": "medium", "filename": "medium", "sentence": "I'll have a _____ soda, please.", "cue": "Um tamanho ou quantidade intermediária entre pequeno e grande."},
+            {"word_id": "en-0201", "original": "to go", "filename": "to_go", "sentence": "Can I get this order _____?", "cue": "Uma expressão que significa que você quer sua comida embalada para levar, não para comer ali."},
+            {"word_id": "en-0202", "original": "price", "filename": "price", "sentence": "What's the _____ of this shirt?", "cue": "Quanto custa alguma coisa."},
+            {"word_id": "en-0203", "original": "cash", "filename": "cash", "sentence": "Do you accept _____?", "cue": "Dinheiro físico — moedas e notas — ao contrário de um cartão."},
+            {"word_id": "en-0204", "original": "card", "filename": "card", "sentence": "I'll pay with a _____.", "cue": "Um pequeno retângulo de plástico usado para pagar eletronicamente."},
+            {"word_id": "en-0205", "original": "pay", "filename": "pay", "sentence": "Can I _____ with a credit card?", "cue": "O verbo para dar dinheiro em troca de algo."},
+            {"word_id": "en-0206", "original": "would", "filename": "would", "sentence": "I _____ like a glass of water, please.", "cue": "O verbo modal usado para fazer um pedido educado, como em 'I'd like...'."},
+            {"word_id": "en-0207", "original": "across", "filename": "across", "sentence": "The store is just _____ the street.", "cue": "A preposição que significa de um lado a outro de algo."},
+            {"word_id": "en-0208", "original": "by", "filename": "by", "sentence": "We traveled _____ train.", "cue": "A preposição usada para dizer como você viaja, como em '__ bus'."},
+            {"word_id": "en-0209", "original": "bus", "filename": "bus", "sentence": "I take the _____ to work every day.", "cue": "Um veículo grande de estrada que transporta muitos passageiros."},
+            {"word_id": "en-0210", "original": "way", "filename": "way", "sentence": "Can you show me the _____ to the station?", "cue": "Um caminho, rota ou modo de fazer algo."},
+            {"word_id": "en-0211", "original": "stop", "filename": "stop", "sentence": "Please _____ talking during the movie.", "cue": "O verbo que significa parar de se mover ou de fazer algo."},
+            {"word_id": "en-0212", "original": "sometimes", "filename": "sometimes", "sentence": "I _____ eat breakfast late.", "cue": "Um advérbio que significa ocasionalmente, não sempre."},
+            {"word_id": "en-0213", "original": "stay", "filename": "stay", "sentence": "We plan to _____ here for a week.", "cue": "O verbo que significa permanecer em um lugar em vez de sair."},
+            {"word_id": "en-0214", "original": "motel", "filename": "motel", "sentence": "We slept at a cheap _____ off the highway.", "cue": "Um hotel barato à beira da estrada, geralmente para viajantes de carro."},
+            {"word_id": "en-0215", "original": "little", "filename": "little", "sentence": "There's a _____ shop around the corner.", "cue": "Descreve algo pequeno em tamanho ou quantidade."},
+            {"word_id": "en-0216", "original": "town", "filename": "town", "sentence": "They live in a small _____.", "cue": "Uma área pequena onde as pessoas moram, menor que uma cidade."},
+            {"word_id": "en-0217", "original": "when", "filename": "when", "sentence": "_____ does the movie start?", "cue": "A palavra interrogativa/conjunção usada para perguntar sobre tempo."},
+            {"word_id": "en-0218", "original": "come", "filename": "come", "sentence": "Please _____ to my party.", "cue": "O verbo que significa se mover em direção a quem fala."},
+            {"word_id": "en-0219", "original": "down", "filename": "down", "sentence": "Please sit _____ and relax.", "cue": "O advérbio que significa em direção a uma posição mais baixa."},
+            {"word_id": "en-0220", "original": "room", "filename": "room", "sentence": "Our _____ is on the third floor.", "cue": "Um espaço separado dentro de um prédio, como um quarto."},
+            {"word_id": "en-0221", "original": "for", "filename": "for", "sentence": "This gift is _____ you.", "cue": "A preposição que mostra propósito ou para quem algo é destinado."},
+            {"word_id": "en-0222", "original": "something", "filename": "something", "sentence": "I need to tell you _____ important.", "cue": "Um pronome para algo não especificado."},
+            {"word_id": "en-0223", "original": "eat", "filename": "eat", "sentence": "Let's _____ dinner together.", "cue": "O verbo para colocar comida na boca e engolir."},
+            {"word_id": "en-0224", "original": "girl", "filename": "girl", "sentence": "The _____ is playing in the park.", "cue": "Uma pessoa jovem do sexo feminino."},
+            {"word_id": "en-0225", "original": "on", "filename": "on", "sentence": "The book is _____ the table.", "cue": "A preposição que significa posicionado sobre uma superfície."},
+            {"word_id": "en-0226", "original": "motorcycle", "filename": "motorcycle", "sentence": "He rides a _____ to work.", "cue": "Um veículo motorizado de duas rodas que você usa como uma bicicleta."},
+            {"word_id": "en-0227", "original": "with", "filename": "with", "sentence": "I went to the park _____ my friend.", "cue": "A preposição que significa acompanhado de ou usando."},
+            {"word_id": "en-0228", "original": "long", "filename": "long", "sentence": "It was a _____ trip.", "cue": "Descreve algo que se estende por uma grande distância ou tempo — o oposto de short."},
+            {"word_id": "en-0229", "original": "blond", "filename": "blond", "sentence": "She has _____ hair.", "cue": "Descreve cabelo de cor clara (amarelada)."},
+            {"word_id": "en-0230", "original": "hair", "filename": "hair", "sentence": "Her _____ is very long.", "cue": "Os fios que crescem na sua cabeça."},
+            {"word_id": "en-0231", "original": "know", "filename": "know", "sentence": "I don't _____ the answer.", "cue": "O verbo para ter informação ou estar familiarizado com algo."},
+            {"word_id": "en-0232", "original": "famous", "filename": "famous", "sentence": "He is a _____ actor.", "cue": "Descreve alguém amplamente conhecido pelo público."},
+            {"word_id": "en-0233", "original": "then", "filename": "then", "sentence": "We had dinner and _____ watched a movie.", "cue": "Um advérbio que significa 'naquele momento' ou 'em seguida, depois disso'."},
+            {"word_id": "en-0234", "original": "next", "filename": "next", "sentence": "What's the _____ step?", "cue": "Descreve o que vem logo depois, em lugar ou tempo."},
+            {"word_id": "en-0235", "original": "news", "filename": "news", "sentence": "Did you hear the _____ today?", "cue": "Informações recentes sobre eventos, geralmente na TV ou em um aplicativo."},
+            {"word_id": "en-0236", "original": "about", "filename": "about", "sentence": "This book is _____ history.", "cue": "A preposição que significa 'sobre o assunto de'."},
+            {"word_id": "en-0237", "original": "supermarket", "filename": "supermarket", "sentence": "I need to go to the _____ for groceries.", "cue": "Uma loja grande onde você compra mantimentos."},
+            {"word_id": "en-0238", "original": "robbery", "filename": "robbery", "sentence": "There was a _____ at the bank.", "cue": "Um crime em que algo é roubado, geralmente com força ou ameaça."},
+            {"word_id": "en-0239", "original": "police", "filename": "police", "sentence": "The _____ arrived quickly.", "cue": "As pessoas/organização responsáveis por fazer cumprir a lei."},
+            {"word_id": "en-0240", "original": "look for", "filename": "look_for", "sentence": "I'm going to _____ my keys.", "cue": "O verbo frasal que significa procurar por algo."},
+            {"word_id": "en-0241", "original": "somebody", "filename": "somebody", "sentence": "_____ left their bag here.", "cue": "Um pronome para uma pessoa não especificada."}
         ],
-        "chapters": [
-            {
-                "chapter_id": "ch-A0-EL",
-                "number": 1,
-                "title": "Vida cotidiana e rotinas",
-                "description": "Desenvolver vocabulário e padrões do *simple present* para frases curtas em primeira pessoa sobre si mesmo e o próprio dia.",
-                "topics": [
-                    {
-                        "topic_id": "top-A0-EL-1",
-                        "number": 1,
-                        "title": "Saudações e Apresentação Pessoal",
-                        "description": "Nomes, saudações básicas, frases do tipo \"Eu sou\" / \"Meu nome é\". Atividades de construção: leitura de crachá ou de uma breve apresentação pessoal.",
-                        "word_ids": ["en-0001", "en-0002", "en-0003", "en-0004", "en-0005", "en-0006", "en-0007", "en-0008", "en-0009", "en-0010", "en-0011", "en-0012", "en-0013", "en-0014", "en-0015"],
-                        "texts": [
-                            {
-                                "text_id": "txt-01",
-                                "number": 1,
-                                "title": "Primeiro Dia na Escola",
-                                "body": "Ana **is** uma aluna nova. Ela diz: '**Hello**! **I** **am** Ana. **Your** **name**?' A colega responde: '**Hi**! **My** **name** **is** Sofia. **Nice to meet you**!'"
-                            },
-                            {
-                                "text_id": "txt-02",
-                                "number": 2,
-                                "title": "Novos Vizinhos",
-                                "body": "Igor: **Hello**! **I** **am** Igor.  \nMarina: **Hi**! **My** **name** **is** Marina. **Nice to meet you**!  \nIgor: **Nice to meet you**! **Goodbye**!  \nMarina: **Goodbye**!"
-                            },
-                            {
-                                "text_id": "txt-03",
-                                "number": 3,
-                                "title": "Meu Diário",
-                                "body": "2 de setembro  \nQuerido diário, hoje **I** **am** muito feliz porque **I** conheci Carlos. Ele disse: '**Hello**! **My** **name** **is** Tom. **Thank you**!' **Goodbye**, diário!"
-                            },
-                            {
-                                "text_id": "txt-04",
-                                "number": 4,
-                                "title": "Uma Carta para Minha Nova Colega de Quarto",
-                                "body": "Querida Marina,  \n**Hello**! **My** **name** **is** Ana. **I** **am** **from** o Brasil. **Please**, me escreva!  \nUm abraço,  \nAna"
-                            },
-                            {
-                                "text_id": "txt-05",
-                                "number": 5,
-                                "title": "Perguntas e Respostas",
-                                "body": "Pergunta: **Your** **name**?  \nResposta: **My** **name** **is** Sofia.  \nPergunta: **I** **am** **from** o Brasil. **You**?  \nResposta: **I** **am** **from** Portugal."
-                            },
-                            {
-                                "text_id": "txt-06",
-                                "number": 6,
-                                "title": "Frases para Turistas",
-                                "body": "Ao viajar, **you** pode usar estas frases para conhecer pessoas nesse país:  \n— **Hello**! **I** **am** Marina.  \n— **Please**, **your** **name**?  \n— **Nice to meet you**!  \n— **Goodbye**!"
-                            },
-                            {
-                                "text_id": "txt-07",
-                                "number": 7,
-                                "title": "Nova Funcionária",
-                                "body": "A empresa recebeu uma nova funcionária hoje. Ela **is** Ana. Ana disse: \"**Hello**! **I** **am** muito feliz. **Nice to meet you**!\""
-                            },
-                            {
-                                "text_id": "txt-08",
-                                "number": 8,
-                                "title": "Na Sala de Espera",
-                                "body": "Carlos espera na sala do médico. Ele vê Sofia e diz: \"**Hi**! **I** **am** Carlos. **Your** **name**?\" Sofia responde: \"**My** **name** **is** Sofia. **Nice to meet you**!\""
-                            },
-                            {
-                                "text_id": "txt-09",
-                                "number": 9,
-                                "title": "Uma Ligação Telefônica",
-                                "body": "Recepcionista: **Hello**! **My** **name** **is** Marina.  \nCliente: **Hi**! **I** **am** Igor. **Thank you**!  \nRecepcionista: **What**? **Please**, **your** **name** de novo?  \nCliente: **My** **name** **is** Igor. **Goodbye**!"
-                            },
-                            {
-                                "text_id": "txt-10",
-                                "number": 10,
-                                "title": "Mensagem Online",
-                                "body": "**Hi** Sofia,  \n**Hello**! **My** **name** **is** Ana. **I** **am** **from** o Brasil. **Nice to meet you**! **Goodbye**!  \nUm abraço,  \nAna"
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                "chapter_id": "ch-A1.2",
-                "number": 1,
-                "title": "Comida do dia a dia",
-                "description": "Aprenda palavras e frases relacionadas a alimentos, bebidas e refeições diárias.",
-                "topics": [
-                    {
-                        "topic_id": "top-A1.2.2",
-                        "number": 2,
-                        "title": "Fazer pedidos de forma simples",
-                        "description": "Aprenda a fazer pedidos de comida e bebida em restaurantes e cafés.",
-                        "word_ids": [
-                            "en-0188",
-                            "en-0189",
-                            "en-0190",
-                            "en-0191",
-                            "en-0192",
-                            "en-0193",
-                            "en-0194",
-                            "en-0195",
-                            "en-0196",
-                            "en-0197",
-                            "en-0198",
-                            "en-0199",
-                            "en-0200",
-                            "en-0201",
-                            "en-0202",
-                            "en-0203",
-                            "en-0204",
-                            "en-0205"
-                        ],
-                        "texts": [
-                            {
-                                "text_id": "txt-21",
-                                "number": 21,
-                                "title": "Uma Manhã Perfeita no Café",
-                                "body": "**I** **am** **really** **hungry** hoje, **so** **I** **go** para **a** **restaurant**. **I** **would** **like** **a** **menu**, **please**. **The** **waiter** **has** **a** **big** **menu** **for** **me**. **I** **order** **a** **medium** **coffee**, **with** **sugar** **and** **ice**. **I** **have** **a** **cup** **and** **a** **glass**. **I** **want** **a** **napkin**, **too**. **The** **price** **is** **good**, **and** **I** **pay** **with** **cash**. **This** **is** **true** — **I** **think** **it** **is** **awesome**!"
-                            },
-                            {
-                                "text_id": "txt-22",
-                                "number": 22,
-                                "title": "Pedindo a Sobremesa",
-                                "body": "Igor: **Excuse me**! **Do** **you** **have** **a** **table** **for** **two**? **Do** **you** **know** **about** **the** **menu**?\nWaiter: **Of course**! **Would** **you** **like** **a** **plate**, **too**?\nIgor: **Yes**, **please**. **I** **would** **like** **a** **hamburger**, **with** **a** **straw** **for** **my** **water**.\nWaiter: **Does** **your** **friend** **want** **something**, **too**?\nIgor: **Yes**, **she** **would** **like** **cheese** **and** **bread**.\nWaiter: **Alright**! **I** **have** **your** **bill** **here**.\nIgor: **Anyway**, **the** **price** **is** **good**. **I** **would** **like** **to** **pay** **with** **a** **card**."
-                            },
-                            {
-                                "text_id": "txt-23",
-                                "number": 23,
-                                "title": "Lista de Compras Para uma Festa",
-                                "body": "**I** **would** **like** **to** **go** para **a** **supermarket** **for** **a** festa. Esta **is** **my** lista:\n\n— **cups** **and** **glasses**  \n— **sugar** **and** **ice**  \n— **napkins** **and** **straws**  \n— **a** **long** **table**  \n— **cash**, **not** **a** **card**\n\n**I** **would** **like** **everyone** **to** **come**. **This** **is** **a** **really** **great** festa!"
-                            },
-                            {
-                                "text_id": "txt-24",
-                                "number": 24,
-                                "title": "Notícia: Café Famoso Recebe Prêmio",
-                                "body": "**A** **famous** **restaurant** **in** **the** **city** **would** **like** **everyone** **to** **know** **about** um novo prêmio. **The** **waiter** **is** **really** **nice**, **and** **the** **menu** **is** **long**. **Everyone** **thinks** **the** **price** **is** **good**. **This** **is** **true**! **The** **restaurant** **is** **not** **far** **from** **the** **supermarket**. **Many** pessoas **come** **here** **many** **days**."
-                            },
-                            {
-                                "text_id": "txt-25",
-                                "number": 25,
-                                "title": "Meu Diário — Pedido Especial",
-                                "body": "11 de setembro.\n\n**Sorry**, diary — **I** **would** **like** **to** **speak** **about** **my** **day**. **Anyway**, **I** **order** **a** **medium** **coffee**, **to go**. **The** **waiter** **knows** **me** **well**. **Of course**, **I** **want** **sugar** **too**. **I** **have** **a** **cup**, **too**. **Excuse me**, **I** **think** **I** **want** **a** **napkin**. **The** **price** **is** **good**, **and** **I** **pay**. **This** **is** **true** — **I** **really** **like** **coffee**!"
-                            },
-                            {
-                                "text_id": "txt-26",
-                                "number": 26,
-                                "title": "Carta Sobre uma Viagem de Ônibus",
-                                "body": "Querido amigo,\n\n**I** **would** **like** **to** **speak** **about** minha viagem. **I** **go** **by** **bus** **across** **the** **city**. **I** **have** **a** **room** **in** **a** **motel**, **not** far **from** **the** **supermarket**. **The** **room** **is** **little**, mas **it** **is** **really** **nice**. **I** **would** **like** **to** **pay** **with** **cash**, **not** **a** **card**. **The** **price** **is** **good**. **I** **think** **about** **you** muito. **See** **you** **later**!\n\nUm abraço,  \nSofia"
-                            },
-                            {
-                                "text_id": "txt-27",
-                                "number": 27,
-                                "title": "Entrevista: Segredos de um Bom Garçom",
-                                "body": "Pergunta: **Do** **you** **like** **this** **restaurant**?  \nResposta: **Yes**! **I** **think** **it** **is** **really** **great**.  \nPergunta: **Does** **everyone** **want** **a** **menu**?  \nResposta: **Yes**, **and** **I** **have** **a** **table** **for** **everyone**.  \nPergunta: **Do** **you** **order** **here**?  \nResposta: **Yes**, **I** **would** **like** **to** **order** **here** **too**.  \nPergunta: **How** **do** **you** **want** **to** **pay**?  \nResposta: **I** **would** **like** **cash** ou **a** **card**.  \nPergunta: **Is** **the** **price** **good**?  \nResposta: **Absolutely**! **Everyone** **agrees**."
-                            },
-                            {
-                                "text_id": "txt-28",
-                                "number": 28,
-                                "title": "Na Casa de um Amigo",
-                                "body": "Sofia: **Hi**! **Would** **you** **like** **a** **cup** de **tea**?  \nMarco: **Sure**! **Do** **you** **have** **sugar**?  \nSofia: **Yes**, **and** **I** **have** **a** **glass** **for** **water**, **too**.  \nMarco: **Alright**! **I** **would** **like** **a** **napkin**.  \nSofia: **Of course**! **Oh**, **I** **have** **ice**, **too**.  \nMarco: **This** **is** **really** **nice**. **Thank you**!  \nSofia: **See** **you** **later**!"
-                            },
-                            {
-                                "text_id": "txt-29",
-                                "number": 29,
-                                "title": "Um Cliente Exigente",
-                                "body": "Um cliente **is** **in** **the** **restaurant**. **He** **does** **not** **like** **the** **plate**. **He** **thinks** **the** **meat** **is** **not** **good**, **and** **the** **vegetable** **is** **not** **good**, **too**. **He** **would** **like** **a** **medium** **coffee**, **with** **a** **straw**. **He** **wants** **the** **bill**. **This** **is** **true** — **he** **does** **not** **agree** **with** **the** **price**. **The** **waiter** **is** **really** **nice**, mas **the** cliente **disagrees**."
-                            },
-                            {
-                                "text_id": "txt-30",
-                                "number": 30,
-                                "title": "Notícia: Preço do Café Sobe na Cidade",
-                                "body": "**Coffee** **prices** **are** **not** **good** **in** **the** **city**. **Everyone** **would** **like** **a** **good** **price**, mas **the** **supermarket** **and** **the** **restaurant** **do** **not** **agree**. **Many** pessoas **think** **this** **is** **not** **true**. **They** **would** **like** **to** **know** **about** **it**. **The** **city** **is** **long**, **and** **many** **towns** **have** **prices**, **too**."
-                            }
-                        ]
-                    }
-                ]
-            }
-        ]
+        "chapters": [{"chapter_id": "ch-A0-EL", "number": 1, "title": "Vida cotidiana e rotinas", "description": "Desenvolver vocabulário e padrões do *simple present* para frases curtas em primeira pessoa sobre si mesmo e o próprio dia.", "topics": [{"topic_id": "top-A0-EL-1", "number": 1, "title": "Saudações e Apresentação Pessoal", "description": "Nomes, saudações básicas, frases do tipo \"Eu sou\" / \"Meu nome é\". Atividades de construção: leitura de crachá ou de uma breve apresentação pessoal.", "word_ids": ["en-0001", "en-0002", "en-0003", "en-0004", "en-0005", "en-0006", "en-0007", "en-0008", "en-0009", "en-0010", "en-0011", "en-0012", "en-0013", "en-0014", "en-0015"], "texts": [{"text_id": "txt-01", "number": 1, "title": "Primeiro Dia na Escola", "body": "Ana **is** uma aluna nova. Ela diz: '**Hello**! **I** **am** Ana. **Your** **name**?' A colega responde: '**Hi**! **My** **name** **is** Sofia. **Nice to meet you**!'"}, {"text_id": "txt-02", "number": 2, "title": "Novos Vizinhos", "body": "Igor: **Hello**! **I** **am** Igor.  \nMarina: **Hi**! **My** **name** **is** Marina. **Nice to meet you**!  \nIgor: **Nice to meet you**! **Goodbye**!  \nMarina: **Goodbye**!"}, {"text_id": "txt-03", "number": 3, "title": "Meu Diário", "body": "2 de setembro  \nQuerido diário, hoje **I** **am** muito feliz porque **I** conheci Carlos. Ele disse: '**Hello**! **My** **name** **is** Tom. **Thank you**!' **Goodbye**, diário!"}, {"text_id": "txt-04", "number": 4, "title": "Uma Carta para Minha Nova Colega de Quarto", "body": "Querida Marina,  \n**Hello**! **My** **name** **is** Ana. **I** **am** **from** o Brasil. **Please**, me escreva!  \nUm abraço,  \nAna"}, {"text_id": "txt-05", "number": 5, "title": "Perguntas e Respostas", "body": "Pergunta: **Your** **name**?  \nResposta: **My** **name** **is** Sofia.  \nPergunta: **I** **am** **from** o Brasil. **You**?  \nResposta: **I** **am** **from** Portugal."}, {"text_id": "txt-06", "number": 6, "title": "Frases para Turistas", "body": "Ao viajar, **you** pode usar estas frases para conhecer pessoas nesse país:  \n— **Hello**! **I** **am** Marina.  \n— **Please**, **your** **name**?  \n— **Nice to meet you**!  \n— **Goodbye**!"}, {"text_id": "txt-07", "number": 7, "title": "Nova Funcionária", "body": "A empresa recebeu uma nova funcionária hoje. Ela **is** Ana. Ana disse: \"**Hello**! **I** **am** muito feliz. **Nice to meet you**!\""}, {"text_id": "txt-08", "number": 8, "title": "Na Sala de Espera", "body": "Carlos espera na sala do médico. Ele vê Sofia e diz: \"**Hi**! **I** **am** Carlos. **Your** **name**?\" Sofia responde: \"**My** **name** **is** Sofia. **Nice to meet you**!\""}, {"text_id": "txt-09", "number": 9, "title": "Uma Ligação Telefônica", "body": "Recepcionista: **Hello**! **My** **name** **is** Marina.  \nCliente: **Hi**! **I** **am** Igor. **Thank you**!  \nRecepcionista: **What**? **Please**, **your** **name** de novo?  \nCliente: **My** **name** **is** Igor. **Goodbye**!"}, {"text_id": "txt-10", "number": 10, "title": "Mensagem Online", "body": "**Hi** Sofia,  \n**Hello**! **My** **name** **is** Ana. **I** **am** **from** o Brasil. **Nice to meet you**! **Goodbye**!  \nUm abraço,  \nAna"}], "status": "ready"}, {"topic_id": "top-A0-EL-2", "number": 2, "title": "Família e pessoas ao meu redor", "description": "Vocabulário relacionado à família, possessivos simples (\"minha mãe\", \"seu irmão\"). Atividade de desenvolvimento: leitura de uma breve descrição da família.", "word_ids": [], "texts": [{"text_id": "txt-01", "number": 1, "title": "Primeiro Dia na Escola", "body": "Ana **is** uma aluna nova. Ela diz: '**Hello**! **I** **am** Ana. **Your** **name**?' A colega responde: '**Hi**! **My** **name** **is** Sofia. **Nice to meet you**!'"}, {"text_id": "txt-02", "number": 2, "title": "Novos Vizinhos", "body": "Igor: **Hello**! **I** **am** Igor.  \nMarina: **Hi**! **My** **name** **is** Marina. **Nice to meet you**!  \nIgor: **Nice to meet you**! **Goodbye**!  \nMarina: **Goodbye**!"}, {"text_id": "txt-03", "number": 3, "title": "Meu Diário", "body": "2 de setembro  \nQuerido diário, hoje **I** **am** muito feliz porque **I** conheci Carlos. Ele disse: '**Hello**! **My** **name** **is** Tom. **Thank you**!' **Goodbye**, diário!"}, {"text_id": "txt-04", "number": 4, "title": "Uma Carta para Minha Nova Colega de Quarto", "body": "Querida Marina,  \n**Hello**! **My** **name** **is** Ana. **I** **am** **from** o Brasil. **Please**, me escreva!  \nUm abraço,  \nAna"}, {"text_id": "txt-05", "number": 5, "title": "Perguntas e Respostas", "body": "Pergunta: **Your** **name**?  \nResposta: **My** **name** **is** Sofia.  \nPergunta: **I** **am** **from** o Brasil. **You**?  \nResposta: **I** **am** **from** Portugal."}, {"text_id": "txt-06", "number": 6, "title": "Frases para Turistas", "body": "Ao viajar, **you** pode usar estas frases para conhecer pessoas nesse país:  \n— **Hello**! **I** **am** Marina.  \n— **Please**, **your** **name**?  \n— **Nice to meet you**!  \n— **Goodbye**!"}, {"text_id": "txt-07", "number": 7, "title": "Nova Funcionária", "body": "A empresa recebeu uma nova funcionária hoje. Ela **is** Ana. Ana disse: \"**Hello**! **I** **am** muito feliz. **Nice to meet you**!\""}, {"text_id": "txt-08", "number": 8, "title": "Na Sala de Espera", "body": "Carlos espera na sala do médico. Ele vê Sofia e diz: \"**Hi**! **I** **am** Carlos. **Your** **name**?\" Sofia responde: \"**My** **name** **is** Sofia. **Nice to meet you**!\""}, {"text_id": "txt-09", "number": 9, "title": "Uma Ligação Telefônica", "body": "Recepcionista: **Hello**! **My** **name** **is** Marina.  \nCliente: **Hi**! **I** **am** Igor. **Thank you**!  \nRecepcionista: **What**? **Please**, **your** **name** de novo?  \nCliente: **My** **name** **is** Igor. **Goodbye**!"}, {"text_id": "txt-10", "number": 10, "title": "Mensagem Online", "body": "**Hi** Sofia,  \n**Hello**! **My** **name** **is** Ana. **I** **am** **from** o Brasil. **Nice to meet you**! **Goodbye**!  \nUm abraço,  \nAna"}], "status": "in_development"}], "status": "ready"}, {"chapter_id": "ch-A0-SS", "number": 2, "title": "Histórias Curtas e Narrativas Simples", "description": "Aplique vocabulário do cotidiano a cenas narradas bem curtas, com início, meio e fim.", "topics": [{"topic_id": "top-A0-SS-1", "number": 1, "title": "Um breve dia na vida", "description": "Uma breve recontagem em terceira pessoa que reutiliza o vocabulário A0-EL. *Dependência opcional: A0-EL-4.", "word_ids": [], "texts": [], "status": "in_development"}], "status": "in_development"}, {"chapter_id": "ch-A1.2", "number": 1, "title": "Comida do dia a dia", "description": "Aprenda palavras e frases relacionadas a alimentos, bebidas e refeições diárias.", "topics": [{"topic_id": "top-A1.2.2", "number": 2, "title": "Fazer pedidos de forma simples", "description": "Aprenda a fazer pedidos de comida e bebida em restaurantes e cafés.", "word_ids": ["en-0188", "en-0189", "en-0190", "en-0191", "en-0192", "en-0193", "en-0194", "en-0195", "en-0196", "en-0197", "en-0198", "en-0199", "en-0200", "en-0201", "en-0202", "en-0203", "en-0204", "en-0205"], "texts": [{"text_id": "txt-21", "number": 21, "title": "Uma Manhã Perfeita no Café", "body": "**I** **am** **really** **hungry** hoje, **so** **I** **go** para **a** **restaurant**. **I** **would** **like** **a** **menu**, **please**. **The** **waiter** **has** **a** **big** **menu** **for** **me**. **I** **order** **a** **medium** **coffee**, **with** **sugar** **and** **ice**. **I** **have** **a** **cup** **and** **a** **glass**. **I** **want** **a** **napkin**, **too**. **The** **price** **is** **good**, **and** **I** **pay** **with** **cash**. **This** **is** **true** — **I** **think** **it** **is** **awesome**!"}, {"text_id": "txt-22", "number": 22, "title": "Pedindo a Sobremesa", "body": "Igor: **Excuse me**! **Do** **you** **have** **a** **table** **for** **two**? **Do** **you** **know** **about** **the** **menu**?\nWaiter: **Of course**! **Would** **you** **like** **a** **plate**, **too**?\nIgor: **Yes**, **please**. **I** **would** **like** **a** **hamburger**, **with** **a** **straw** **for** **my** **water**.\nWaiter: **Does** **your** **friend** **want** **something**, **too**?\nIgor: **Yes**, **she** **would** **like** **cheese** **and** **bread**.\nWaiter: **Alright**! **I** **have** **your** **bill** **here**.\nIgor: **Anyway**, **the** **price** **is** **good**. **I** **would** **like** **to** **pay** **with** **a** **card**."}, {"text_id": "txt-23", "number": 23, "title": "Lista de Compras Para uma Festa", "body": "**I** **would** **like** **to** **go** para **a** **supermarket** **for** **a** festa. Esta **is** **my** lista:\n\n— **cups** **and** **glasses**  \n— **sugar** **and** **ice**  \n— **napkins** **and** **straws**  \n— **a** **long** **table**  \n— **cash**, **not** **a** **card**\n\n**I** **would** **like** **everyone** **to** **come**. **This** **is** **a** **really** **great** festa!"}, {"text_id": "txt-24", "number": 24, "title": "Notícia: Café Famoso Recebe Prêmio", "body": "**A** **famous** **restaurant** **in** **the** **city** **would** **like** **everyone** **to** **know** **about** um novo prêmio. **The** **waiter** **is** **really** **nice**, **and** **the** **menu** **is** **long**. **Everyone** **thinks** **the** **price** **is** **good**. **This** **is** **true**! **The** **restaurant** **is** **not** **far** **from** **the** **supermarket**. **Many** pessoas **come** **here** **many** **days**."}, {"text_id": "txt-25", "number": 25, "title": "Meu Diário — Pedido Especial", "body": "11 de setembro.\n\n**Sorry**, diary — **I** **would** **like** **to** **speak** **about** **my** **day**. **Anyway**, **I** **order** **a** **medium** **coffee**, **to go**. **The** **waiter** **knows** **me** **well**. **Of course**, **I** **want** **sugar** **too**. **I** **have** **a** **cup**, **too**. **Excuse me**, **I** **think** **I** **want** **a** **napkin**. **The** **price** **is** **good**, **and** **I** **pay**. **This** **is** **true** — **I** **really** **like** **coffee**!"}, {"text_id": "txt-26", "number": 26, "title": "Carta Sobre uma Viagem de Ônibus", "body": "Querido amigo,\n\n**I** **would** **like** **to** **speak** **about** minha viagem. **I** **go** **by** **bus** **across** **the** **city**. **I** **have** **a** **room** **in** **a** **motel**, **not** far **from** **the** **supermarket**. **The** **room** **is** **little**, mas **it** **is** **really** **nice**. **I** **would** **like** **to** **pay** **with** **cash**, **not** **a** **card**. **The** **price** **is** **good**. **I** **think** **about** **you** muito. **See** **you** **later**!\n\nUm abraço,  \nSofia"}, {"text_id": "txt-27", "number": 27, "title": "Entrevista: Segredos de um Bom Garçom", "body": "Pergunta: **Do** **you** **like** **this** **restaurant**?  \nResposta: **Yes**! **I** **think** **it** **is** **really** **great**.  \nPergunta: **Does** **everyone** **want** **a** **menu**?  \nResposta: **Yes**, **and** **I** **have** **a** **table** **for** **everyone**.  \nPergunta: **Do** **you** **order** **here**?  \nResposta: **Yes**, **I** **would** **like** **to** **order** **here** **too**.  \nPergunta: **How** **do** **you** **want** **to** **pay**?  \nResposta: **I** **would** **like** **cash** ou **a** **card**.  \nPergunta: **Is** **the** **price** **good**?  \nResposta: **Absolutely**! **Everyone** **agrees**."}, {"text_id": "txt-28", "number": 28, "title": "Na Casa de um Amigo", "body": "Sofia: **Hi**! **Would** **you** **like** **a** **cup** de **tea**?  \nMarco: **Sure**! **Do** **you** **have** **sugar**?  \nSofia: **Yes**, **and** **I** **have** **a** **glass** **for** **water**, **too**.  \nMarco: **Alright**! **I** **would** **like** **a** **napkin**.  \nSofia: **Of course**! **Oh**, **I** **have** **ice**, **too**.  \nMarco: **This** **is** **really** **nice**. **Thank you**!  \nSofia: **See** **you** **later**!"}, {"text_id": "txt-29", "number": 29, "title": "Um Cliente Exigente", "body": "Um cliente **is** **in** **the** **restaurant**. **He** **does** **not** **like** **the** **plate**. **He** **thinks** **the** **meat** **is** **not** **good**, **and** **the** **vegetable** **is** **not** **good**, **too**. **He** **would** **like** **a** **medium** **coffee**, **with** **a** **straw**. **He** **wants** **the** **bill**. **This** **is** **true** — **he** **does** **not** **agree** **with** **the** **price**. **The** **waiter** **is** **really** **nice**, mas **the** cliente **disagrees**."}, {"text_id": "txt-30", "number": 30, "title": "Notícia: Preço do Café Sobe na Cidade", "body": "**Coffee** **prices** **are** **not** **good** **in** **the** **city**. **Everyone** **would** **like** **a** **good** **price**, mas **the** **supermarket** **and** **the** **restaurant** **do** **not** **agree**. **Many** pessoas **think** **this** **is** **not** **true**. **They** **would** **like** **to** **know** **about** **it**. **The** **city** **is** **long**, **and** **many** **towns** **have** **prices**, **too**."}, {"text_id": "txt-31", "number": 31, "title": "Meu Diário — Um Pedido Para Levar", "body": "12 de setembro.\n\n**Oh**, hoje **I** **would** **like** **to** **order** **something** **to go**. **I** **go** para **the** **restaurant** **and** **I** **see** **a** **table** **for** **me**. **The** **waiter** **has** **a** **menu**. **I** **would** **like** **a** **medium** **coffee** **and** **a** **plate**, **to go**. **He** **knows** **me** **well**. **This** **is** **really** **good**. **I** **think** **it** **is** **awesome**!"}, {"text_id": "txt-32", "number": 32, "title": "Carta Sobre Meu Restaurante Favorito", "body": "Querida Ana,\n\n**Anyway**, **I** **would** **like** **to** **speak** **about** **a** **restaurant** **I** **really** **like**. **The** **waiter** **knows** **me** **well**. **I** **would** **like** **to** **order** **a** **napkin** **and** **a** **bill**, **to go**. **Does** **he** **know** **my** **name**? **Yes**! **This** **is** **true**. **See** **you** **later**!\n\nUm abraço,  \nSofia"}, {"text_id": "txt-33", "number": 33, "title": "Lista Para um Piquenique", "body": "**I** **would** **like** **to** **come** **for** **a** piquenique. Esta **is** **my** lista:\n\n— **a** **medium** **coffee**, **to go**  \n— **a** **straw**, **too**  \n— **cheese** **and** **bread**  \n— **water**, **to go**  \n— **napkins**\n\n**I** **would** **like** **everyone** **to** **come** **from** **the** **supermarket**. **This** **is** **a** **really** **great** day!"}, {"text_id": "txt-34", "number": 34, "title": "Pedido Rápido no Balcão", "body": "Igor: **Excuse me**! **Do** **you** **have** **a** **table**?  \nWaiter: **Of course**! **Do** **you** **want** **a** **menu**?  \nIgor: **No**, **thank you**. **I** **would** **like** **to** **order** **a** **plate**, **to go**.  \nWaiter: **Alright**! **Do** **you** **want** **sugar**?  \nIgor: **Yes**, **please**.  \nWaiter: **Here** **is** **your** **bill**.  \nIgor: **Thank you**! **I** **would** **like** **to** **pay** **with** **cash**."}, {"text_id": "txt-35", "number": 35, "title": "Entrevista: Comida Para Levar", "body": "Pergunta: **Do** **you** **like** **this** **restaurant**?  \nResposta: **Yes**! **I** **think** **it** **is** **great**.  \nPergunta: **Are** **you** **sorry** **the** **price** **is** **not** **good**?  \nResposta: **No**, **I** **am** **not** **sorry**. **The** **price** **is** **good**.  \nPergunta: **Does** **the** **waiter** **have** **straws**?  \nResposta: **Yes**, **and** **napkins**, **too**.  \nPergunta: **Do** **you** **want** **the** **bill**, **to go**?  \nResposta: **Yes**, **I** **would** **like** **it**, **to go**."}, {"text_id": "txt-36", "number": 36, "title": "Almoço no Escritório", "body": "**Sofia** **and** **Marco** **come** **from** **the** escritório. **They** **would** **like** **to** **order** **coffee**, **to go**. **Oh**! **They** **do** **not** **have** **a** **napkin**. **Sofia** **wants** **a** **napkin** **for** **her** **coffee**. **Marco** **would** **like** **a** **hamburger**, **to go**, **too**. **This** **is** **a** **really** **good** day."}, {"text_id": "txt-37", "number": 37, "title": "Notícia: Novo Serviço Para Levar", "body": "**The** **restaurant** **in** **the** **city** **would** **like** **everyone** **to** **know** **about** um novo serviço, **to go**. **Everyone** **would** **like** **to** **order** **a** **medium** **plate**, **to go**. **You** **do** **not** **want** **a** **table**. **The** **bill** **is** **good**, **too**. **The** **menu** **is** **big**, **and** **alright**, **the** **price** **is** **good**!"}, {"text_id": "txt-38", "number": 38, "title": "Um Pedido Por Telefone", "body": "Sofia: **Excuse me**! **I** **would** **like** **to** **order** **a** **hamburger**, **to go**. **Do** **you** **have** **a** **table**, **too**?  \nWaiter: **Of course**! **Do** **you** **want** **cheese**?  \nSofia: **Yes**, **please**. **Anyway**, **does** **the** **restaurant** **have** **water**, **to go**, **too**?  \nWaiter: **Yes**! **Do** **you** **want** **to** **pay** **with** **cash**?  \nSofia: **I** **would** **like** **to** **pay** **with** **a** **card**.  \nWaiter: **Alright**! **Thank you**!"}, {"text_id": "txt-39", "number": 39, "title": "Uma Cliente Apressada", "body": "**Oh**! **A** cliente **comes** **from** **a** **taxi** **and** **would** **like** **to** **order** **a** **medium** **coffee**, **to go**. **She** **does** **not** **want** **a** **table**. **She** **would** **like** **the** **bill**, **too**. **The** **waiter** **knows** **her** **well**. **This** **is** **really** **good**!"}, {"text_id": "txt-40", "number": 40, "title": "Lista do Dia: Pedidos Para Levar", "body": "Hoje, **the** **restaurant** **has** **many** pedidos **to go**. **The** **waiter** **has** **a** **menu** **for** **everyone**. Esta **is** **the** lista:\n\n— **a** **medium** **coffee**, **to go**  \n— **a** **plate** **and** **a** **straw**  \n— **the** **bill**, **please**  \n— **a** **napkin**, **too**  \n— **cheese** **and** **bread**\n\n**Everyone** **would** **like** **a** **good** **price**. **This** **is** **a** **really** **great** day!"}], "status": "ready"}], "status": "ready"}]
     },
     "spanish": {
-        "words": [],
+        "words": [
+        ],
         "chapters": []
     }
 }

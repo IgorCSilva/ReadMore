@@ -382,6 +382,12 @@
   .item-card:hover {
     border-color: var(--accent);
   }
+  .item-card:disabled {
+    opacity: 0.5; cursor: not-allowed;
+  }
+  .item-card:disabled:hover {
+    border-color: var(--border);
+  }
   .item-card-title {
     font-size: 16px; font-weight: 700;
   }
@@ -1095,14 +1101,18 @@
     return span;
   }
 
-  function itemCard(number, title, description, onClick) {
+  function itemCard(number, title, description, status, onClick) {
     const card = document.createElement("button");
     card.type = "button";
     card.className = "item-card";
     card.innerHTML =
       `<div class="item-card-title">${number}. ${escapeHtml(title)}</div>` +
       (description ? `<div class="item-card-description">${escapeHtml(description)}</div>` : "");
-    card.addEventListener("click", onClick);
+    if (status === "in_development") {
+      card.disabled = true;
+    } else {
+      card.addEventListener("click", onClick);
+    }
     return card;
   }
 
@@ -1125,7 +1135,7 @@
 
     for (const chapter of CHAPTERS) {
       chaptersListEl.appendChild(
-        itemCard(chapter.number, chapter.title, chapter.description, () => showTopics(chapter))
+        itemCard(chapter.number, chapter.title, chapter.description, chapter.status, () => showTopics(chapter))
       );
     }
   }
@@ -1143,7 +1153,7 @@
 
     for (const topic of chapter.topics) {
       topicsListEl.appendChild(
-        itemCard(topic.number, topic.title, topic.description, () => showTopicWorkspace(topic))
+        itemCard(topic.number, topic.title, topic.description, topic.status, () => showTopicWorkspace(topic))
       );
     }
   }

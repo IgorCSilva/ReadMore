@@ -10,11 +10,15 @@ Data model
 ----------
 catalog.json   shared content, keyed by language. Each language has:
                  "words": [{word_id, original, filename, sentence, cue}, ...]
-                 "chapters": [{chapter_id, number, title, description, topics: [
-                   {topic_id, number, title, description, word_ids: [...new
-                    words this topic introduces...], texts: [{text_id, number,
-                    title, body}, ...]}
+                 "chapters": [{chapter_id, number, title, description, status,
+                   topics: [
+                   {topic_id, number, title, description, status, word_ids: [
+                    ...new words this topic introduces...], texts: [{text_id,
+                    number, title, body}, ...]}
                  ]}]
+               "status" is "ready" or "in_development" (missing = "ready");
+               in_development chapters/topics still travel to the client but
+               render disabled there — filtering never happens server-side.
                Same for every user, read-only, baked into the image/repo.
                A text's "body" uses **word** for bold spans.
 Google Sheet   per-user data, reached through a Google Apps Script "Web App"
