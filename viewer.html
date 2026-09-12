@@ -34,7 +34,8 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
   body {
-    display: flex; justify-content: center;
+    display: flex; flex-direction: column; align-items: center;
+    gap: 24px;
     min-height: 100vh; padding: 24px;
   }
   .layout {
@@ -304,103 +305,253 @@
     padding: 1px 5px;
     border-radius: 4px;
   }
+
+  .global-topbar {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 12px;
+    width: 100%; max-width: 900px;
+  }
+  .global-topbar-user {
+    display: flex; align-items: center; gap: 10px;
+    flex-wrap: wrap;
+  }
+  .topbar-user-email {
+    font-size: 13px; color: var(--text);
+    word-break: break-all;
+  }
+  #topic-flashcards-panel, #topic-texts-panel {
+    display: flex; justify-content: center;
+    width: 100%;
+  }
+  .tabs {
+    display: flex; gap: 8px;
+    width: 100%; max-width: 900px;
+  }
+  .tab-btn {
+    background: transparent; color: var(--muted);
+    border: none; border-bottom: 2px solid transparent;
+    padding: 8px 4px; font-size: 15px; font-weight: 600;
+    cursor: pointer;
+  }
+  .tab-btn:hover {
+    color: var(--text);
+  }
+  .tab-btn.active {
+    color: var(--text); border-bottom-color: var(--accent);
+  }
+
+  .texts-page {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 18px;
+    width: 100%; max-width: 900px;
+  }
+  #topic-workspace {
+    display: flex; flex-direction: column; align-items: center;
+    gap: 18px;
+    width: 100%;
+  }
+  .breadcrumb {
+    width: 100%;
+    font-size: 13px; color: var(--muted);
+  }
+  .breadcrumb button {
+    background: none; border: none; padding: 0;
+    color: var(--muted); font-size: 13px; cursor: pointer;
+    text-decoration: underline;
+  }
+  .breadcrumb button:hover {
+    color: var(--accent);
+  }
+  .breadcrumb .sep {
+    margin: 0 6px;
+  }
+  .breadcrumb .current {
+    color: var(--text);
+  }
+  .item-list {
+    display: flex; flex-direction: column; gap: 12px;
+    width: 100%;
+  }
+  .item-card {
+    display: block; width: 100%; text-align: left;
+    background: var(--card); color: var(--text);
+    border: 1px solid var(--border); border-radius: 14px;
+    padding: 16px 18px;
+    cursor: pointer;
+  }
+  .item-card:hover {
+    border-color: var(--accent);
+  }
+  .item-card-title {
+    font-size: 16px; font-weight: 700;
+  }
+  .item-card-description {
+    margin-top: 4px;
+    font-size: 13px; color: var(--muted); line-height: 1.4;
+  }
+  .text-reader {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--border); border-radius: 16px;
+    padding: 24px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .text-reader-number {
+    font-size: 12px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.06em; color: var(--muted);
+  }
+  .text-reader-title {
+    margin: 4px 0 0; font-size: 20px;
+  }
+  .text-reader-body {
+    font-size: 17px; line-height: 1.8; color: var(--text);
+  }
+  .text-reader-body p {
+    margin: 0 0 14px;
+  }
+  .text-reader-body p:last-child {
+    margin-bottom: 0;
+  }
+  .text-reader-body strong {
+    color: var(--accent);
+  }
 </style>
 </head>
 <body>
 
-  <div class="layout">
-    <aside class="sidebar">
-      <div class="sidebar-title">User</div>
-      <div class="current-user" id="current-user-email"></div>
+  <div class="global-topbar" id="global-topbar">
+    <div class="global-topbar-user">
+      <span class="topbar-user-email" id="current-user-email"></span>
       <button type="button" class="switch-user-btn" id="switch-user-btn">Log in with another email</button>
+    </div>
+    <select id="lang-select"></select>
+  </div>
 
-      <div class="sidebar-title">Configuration</div>
-      <label class="checkbox-row" for="lang-select" style="cursor:default;">
-        <span>Language</span>
-      </label>
-      <select id="lang-select"></select>
-      <label class="checkbox-row">
-        <input type="checkbox" id="filter-confident" checked>
-        <span>Confident words</span>
-      </label>
-      <label class="checkbox-row">
-        <input type="checkbox" id="filter-learning" checked>
-        <span>Learning words</span>
-      </label>
+  <div class="texts-page">
+    <div class="breadcrumb" id="texts-breadcrumb"></div>
 
-      <div class="sidebar-title">Hidden words</div>
-      <div class="hidden-words-hint">Click a word to show it again</div>
-      <div class="hidden-words-list" id="hidden-words-list"></div>
-    </aside>
+    <div class="error-banner" id="texts-error-banner"></div>
 
-    <main class="main">
-      <div class="topbar">
-        <span id="counter">1 / 1</span>
-        <span class="badge confident" id="badge">confident</span>
+    <div class="loading" id="texts-loading">
+      <div class="spinner"></div>
+      <div>Loading chapters…</div>
+    </div>
+
+    <div class="empty-state" id="texts-empty-state">No chapters available yet.</div>
+
+    <div class="item-list" id="chapters-list" style="display:none"></div>
+
+    <div class="item-list" id="topics-list" style="display:none"></div>
+
+    <div id="topic-workspace" style="display:none">
+      <div class="tabs" id="topic-tabs">
+        <button type="button" class="tab-btn active" id="topic-tab-flashcards" data-tab="flashcards">Flashcards</button>
+        <button type="button" class="tab-btn" id="topic-tab-texts" data-tab="texts">Texts</button>
       </div>
 
-      <div class="error-banner" id="error-banner"></div>
+      <div id="topic-flashcards-panel">
+        <div class="layout">
+          <aside class="sidebar">
+            <div class="sidebar-title">Filter</div>
+            <label class="checkbox-row">
+              <input type="checkbox" id="filter-confident" checked>
+              <span>Confident words</span>
+            </label>
+            <label class="checkbox-row">
+              <input type="checkbox" id="filter-learning" checked>
+              <span>Learning words</span>
+            </label>
 
-      <div class="loading" id="loading">
-        <div class="spinner"></div>
-        <div>Loading your words…</div>
-      </div>
+            <div class="sidebar-title">Hidden words</div>
+            <div class="hidden-words-hint">Click a word to show it again</div>
+            <div class="hidden-words-list" id="hidden-words-list"></div>
+          </aside>
 
-      <div class="progress"><div class="progress-fill" id="progress-fill"></div></div>
-
-      <div class="card" id="card">
-        <div class="sentence-area">
-          <div class="label-row">
-            <div class="sentence-label">Sentence</div>
-            <button type="button" class="speak-btn" id="speak-sentence-btn" title="Play sentence" aria-label="Play sentence">🔊</button>
-          </div>
-          <div class="sentence" id="sentence"></div>
-        </div>
-        <div class="image-wrap">
-          <img id="img" alt="">
-          <div class="missing" id="missing">
-            <div>
-              <div class="missing-cue-label">Cue</div>
-              <div class="missing-cue" id="missing-cue"></div>
+          <main class="main">
+            <div class="topbar">
+              <span id="counter">1 / 1</span>
+              <span class="badge confident" id="badge">confident</span>
             </div>
-            <div>
-              <div class="label-row">
-                <div class="missing-sentence-label">Sentence</div>
-                <button type="button" class="speak-btn" id="speak-missing-sentence-btn" title="Play sentence" aria-label="Play sentence">🔊</button>
+
+            <div class="error-banner" id="error-banner"></div>
+
+            <div class="loading" id="loading">
+              <div class="spinner"></div>
+              <div>Loading your words…</div>
+            </div>
+
+            <div class="progress"><div class="progress-fill" id="progress-fill"></div></div>
+
+            <div class="card" id="card">
+              <div class="sentence-area">
+                <div class="label-row">
+                  <div class="sentence-label">Sentence</div>
+                  <button type="button" class="speak-btn" id="speak-sentence-btn" title="Play sentence" aria-label="Play sentence">🔊</button>
+                </div>
+                <div class="sentence" id="sentence"></div>
               </div>
-              <div class="missing-sentence" id="missing-sentence"></div>
+              <div class="image-wrap">
+                <img id="img" alt="">
+                <div class="missing" id="missing">
+                  <div>
+                    <div class="missing-cue-label">Cue</div>
+                    <div class="missing-cue" id="missing-cue"></div>
+                  </div>
+                  <div>
+                    <div class="label-row">
+                      <div class="missing-sentence-label">Sentence</div>
+                      <button type="button" class="speak-btn" id="speak-missing-sentence-btn" title="Play sentence" aria-label="Play sentence">🔊</button>
+                    </div>
+                    <div class="missing-sentence" id="missing-sentence"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="cue-area">
+                <div class="cue-label">Cue</div>
+                <div class="cue" id="cue"></div>
+              </div>
+              <div class="word-area">
+                <div class="label-row">
+                  <div class="response-label">Response</div>
+                  <button type="button" class="speak-btn" id="speak-btn" title="Play pronunciation" aria-label="Play pronunciation">🔊</button>
+                </div>
+                <div class="word hidden-word" id="word">•••••</div>
+                <div class="hint">click word to reveal</div>
+              </div>
             </div>
+
+            <div class="empty-state" id="empty-state">No words match the selected filters.</div>
+
+            <div class="controls">
+              <span><kbd>←</kbd> <kbd>→</kbd> browse</span>
+              <span><kbd>space</kbd> mark shown + next</span>
+              <span><kbd>enter</kbd> I know this + next</span>
+            </div>
+
+            <div class="action-bar" id="action-bar">
+              <button type="button" class="action-btn action-btn-icon" id="prev-btn" title="Previous word" aria-label="Previous word">←</button>
+              <button type="button" class="action-btn" id="know-btn">I know</button>
+              <button type="button" class="action-btn action-btn-primary" id="next-word-btn">Next</button>
+              <button type="button" class="action-btn action-btn-icon" id="next-btn" title="Next word" aria-label="Next word">→</button>
+            </div>
+          </main>
+        </div>
+      </div>
+
+      <div id="topic-texts-panel" style="display:none">
+        <div class="text-reader" id="text-reader">
+          <div>
+            <div class="text-reader-number" id="text-reader-number"></div>
+            <h2 class="text-reader-title" id="text-reader-title"></h2>
+          </div>
+          <div class="text-reader-body" id="text-reader-body"></div>
+          <div class="action-bar">
+            <button type="button" class="action-btn action-btn-icon" id="text-prev-btn" title="Previous text" aria-label="Previous text">←</button>
+            <button type="button" class="action-btn action-btn-icon" id="text-next-btn" title="Next text" aria-label="Next text">→</button>
           </div>
         </div>
-        <div class="cue-area">
-          <div class="cue-label">Cue</div>
-          <div class="cue" id="cue"></div>
-        </div>
-        <div class="word-area">
-          <div class="label-row">
-            <div class="response-label">Response</div>
-            <button type="button" class="speak-btn" id="speak-btn" title="Play pronunciation" aria-label="Play pronunciation">🔊</button>
-          </div>
-          <div class="word hidden-word" id="word">•••••</div>
-          <div class="hint">click word to reveal</div>
-        </div>
       </div>
-
-      <div class="empty-state" id="empty-state">No words match the selected filters.</div>
-
-      <div class="controls">
-        <span><kbd>←</kbd> <kbd>→</kbd> browse</span>
-        <span><kbd>space</kbd> mark shown + next</span>
-        <span><kbd>enter</kbd> I know this + next</span>
-      </div>
-
-      <div class="action-bar" id="action-bar">
-        <button type="button" class="action-btn action-btn-icon" id="prev-btn" title="Previous word" aria-label="Previous word">←</button>
-        <button type="button" class="action-btn" id="know-btn">I know</button>
-        <button type="button" class="action-btn action-btn-primary" id="next-word-btn">Next</button>
-        <button type="button" class="action-btn action-btn-icon" id="next-btn" title="Next word" aria-label="Next word">→</button>
-      </div>
-    </main>
+    </div>
   </div>
 
 <script>
@@ -408,6 +559,25 @@
   const EXT_FALLBACKS = ["png", "jpg", "jpeg", "webp", "gif", "jfif"];
   const EMAIL_STORAGE_KEY = "readmore_user_email";
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  // /data and /chapters are both backed by Google Sheets on the server side,
+  // which occasionally has a slow/failed round trip even after the server's
+  // own retries are exhausted. One extra client-side retry clears most of
+  // those without the user having to notice or reload manually.
+  async function fetchJsonWithRetry(url, attempts = 2) {
+    let lastErr;
+    for (let attempt = 0; attempt < attempts; attempt++) {
+      try {
+        const res = await fetch(url, { cache: "no-store" });
+        if (!res.ok) throw new Error(`${url} responded with ${res.status}`);
+        return await res.json();
+      } catch (err) {
+        lastErr = err;
+        if (attempt < attempts - 1) await new Promise((r) => setTimeout(r, 1500));
+      }
+    }
+    throw lastErr;
+  }
 
   let USER_EMAIL = null;
   let LANG = "english";
@@ -446,11 +616,7 @@
   async function switchUser() {
     const email = promptForEmail("Enter the email to log in with:");
     setUserEmail(email);
-    try {
-      await loadAndRenderEntries();
-    } catch (err) {
-      showError(err);
-    }
+    await loadAndRenderChapters();
   }
 
   switchUserBtn.addEventListener("click", switchUser);
@@ -533,11 +699,7 @@
 
   async function loadEntries() {
     const url = `/data?user=${encodeURIComponent(USER_EMAIL)}&lang=${encodeURIComponent(LANG)}`;
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) {
-      throw new Error(`${url} responded with ${res.status}`);
-    }
-    const data = await res.json();
+    const data = await fetchJsonWithRetry(url);
 
     const entries = data.words.map((e) => {
       const dot = e.filename.lastIndexOf(".");
@@ -617,10 +779,12 @@
   function applyFilter() {
     const showConfident = filterConfidentEl.checked;
     const showLearning = filterLearningEl.checked;
+    const topicWordIds = currentTopic ? new Set(currentTopic.word_ids) : null;
 
-    ENTRIES = ALL_ENTRIES.filter(
-      (e) => (e.confident && showConfident) || (!e.confident && showLearning)
-    );
+    ENTRIES = ALL_ENTRIES.filter((e) => {
+      if (topicWordIds && !topicWordIds.has(e.wordId)) return false;
+      return (e.confident && showConfident) || (!e.confident && showLearning);
+    });
     index = 0;
     updateVisibility();
   }
@@ -736,14 +900,16 @@
 
   function renderHiddenList() {
     hiddenListEl.innerHTML = "";
-    if (HIDDEN_ENTRIES.length === 0) {
+    const topicWordIds = currentTopic ? new Set(currentTopic.word_ids) : null;
+    const visible = topicWordIds ? HIDDEN_ENTRIES.filter((e) => topicWordIds.has(e.wordId)) : HIDDEN_ENTRIES;
+    if (visible.length === 0) {
       const empty = document.createElement("div");
       empty.className = "hidden-words-empty";
       empty.textContent = "No hidden words yet.";
       hiddenListEl.appendChild(empty);
       return;
     }
-    for (const entry of HIDDEN_ENTRIES) {
+    for (const entry of visible) {
       const chip = document.createElement("button");
       chip.type = "button";
       chip.className = "hidden-word-chip";
@@ -796,13 +962,229 @@
 
   langSelectEl.addEventListener("change", () => {
     LANG = langSelectEl.value;
-    loadAndRenderEntries().catch(showError);
+    loadAndRenderChapters();
+  });
+
+  // ---- Topic workspace tabs (Flashcards / Texts within a topic) ----
+
+  let currentTopicTab = "flashcards";
+  const topicWorkspaceEl = document.getElementById("topic-workspace");
+  const topicTabFlashcardsBtn = document.getElementById("topic-tab-flashcards");
+  const topicTabTextsBtn = document.getElementById("topic-tab-texts");
+  const topicFlashcardsPanelEl = document.getElementById("topic-flashcards-panel");
+  const topicTextsPanelEl = document.getElementById("topic-texts-panel");
+
+  function switchTopicTab(tab) {
+    currentTopicTab = tab;
+    topicTabFlashcardsBtn.classList.toggle("active", tab === "flashcards");
+    topicTabTextsBtn.classList.toggle("active", tab === "texts");
+    topicFlashcardsPanelEl.style.display = tab === "flashcards" ? "flex" : "none";
+    topicTextsPanelEl.style.display = tab === "texts" ? "flex" : "none";
+    if (tab === "flashcards") {
+      loadAndRenderEntries().catch(showError);
+    } else {
+      currentTextIndex = 0;
+      renderCurrentText();
+    }
+  }
+
+  topicTabFlashcardsBtn.addEventListener("click", () => switchTopicTab("flashcards"));
+  topicTabTextsBtn.addEventListener("click", () => switchTopicTab("texts"));
+
+  // ---- Texts ----
+
+  let CHAPTERS = [];
+  let currentChapter = null;
+  let currentTopic = null;
+  let currentTextIndex = 0;
+
+  const textsBreadcrumbEl = document.getElementById("texts-breadcrumb");
+  const textsErrorBanner = document.getElementById("texts-error-banner");
+  const textsLoadingEl = document.getElementById("texts-loading");
+  const textsEmptyStateEl = document.getElementById("texts-empty-state");
+  const chaptersListEl = document.getElementById("chapters-list");
+  const topicsListEl = document.getElementById("topics-list");
+  const textReaderNumberEl = document.getElementById("text-reader-number");
+  const textReaderTitleEl = document.getElementById("text-reader-title");
+  const textReaderBodyEl = document.getElementById("text-reader-body");
+  const textPrevBtn = document.getElementById("text-prev-btn");
+  const textNextBtn = document.getElementById("text-next-btn");
+
+  function escapeHtml(str) {
+    const div = document.createElement("div");
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function renderTextBody(body) {
+    return body
+      .split("\n")
+      .map((line) => `<p>${escapeHtml(line).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")}</p>`)
+      .join("");
+  }
+
+  function showTextsError(err) {
+    console.error(err);
+    textsErrorBanner.style.display = "block";
+    textsErrorBanner.innerHTML = `Couldn't load chapters (${err.message}).`;
+  }
+
+  async function fetchChapters() {
+    const url = `/chapters?user=${encodeURIComponent(USER_EMAIL)}&lang=${encodeURIComponent(LANG)}`;
+    const data = await fetchJsonWithRetry(url);
+    return data.chapters || [];
+  }
+
+  async function loadAndRenderChapters() {
+    textsErrorBanner.style.display = "none";
+    textsEmptyStateEl.style.display = "none";
+    chaptersListEl.style.display = "none";
+    topicsListEl.style.display = "none";
+    topicWorkspaceEl.style.display = "none";
+    textsLoadingEl.style.display = "flex";
+    try {
+      CHAPTERS = await fetchChapters();
+      currentChapter = null;
+      currentTopic = null;
+      renderChaptersList();
+    } catch (err) {
+      showTextsError(err);
+    } finally {
+      textsLoadingEl.style.display = "none";
+    }
+  }
+
+  function renderBreadcrumb() {
+    textsBreadcrumbEl.innerHTML = "";
+
+    const chaptersBtn = document.createElement("button");
+    chaptersBtn.type = "button";
+    chaptersBtn.textContent = "Chapters";
+    chaptersBtn.addEventListener("click", renderChaptersList);
+    textsBreadcrumbEl.appendChild(chaptersBtn);
+
+    if (!currentChapter) return;
+
+    textsBreadcrumbEl.appendChild(sepEl());
+    if (!currentTopic) {
+      textsBreadcrumbEl.appendChild(currentSpan(currentChapter.title));
+      return;
+    }
+
+    const chapterBtn = document.createElement("button");
+    chapterBtn.type = "button";
+    chapterBtn.textContent = currentChapter.title;
+    chapterBtn.addEventListener("click", () => showTopics(currentChapter));
+    textsBreadcrumbEl.appendChild(chapterBtn);
+
+    textsBreadcrumbEl.appendChild(sepEl());
+    textsBreadcrumbEl.appendChild(currentSpan(currentTopic.title));
+  }
+
+  function sepEl() {
+    const sep = document.createElement("span");
+    sep.className = "sep";
+    sep.textContent = "›";
+    return sep;
+  }
+
+  function currentSpan(text) {
+    const span = document.createElement("span");
+    span.className = "current";
+    span.textContent = text;
+    return span;
+  }
+
+  function itemCard(number, title, description, onClick) {
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = "item-card";
+    card.innerHTML =
+      `<div class="item-card-title">${number}. ${escapeHtml(title)}</div>` +
+      (description ? `<div class="item-card-description">${escapeHtml(description)}</div>` : "");
+    card.addEventListener("click", onClick);
+    return card;
+  }
+
+  function renderChaptersList() {
+    currentChapter = null;
+    currentTopic = null;
+    renderBreadcrumb();
+
+    topicsListEl.style.display = "none";
+    topicWorkspaceEl.style.display = "none";
+    chaptersListEl.innerHTML = "";
+
+    if (CHAPTERS.length === 0) {
+      chaptersListEl.style.display = "none";
+      textsEmptyStateEl.style.display = "block";
+      return;
+    }
+    textsEmptyStateEl.style.display = "none";
+    chaptersListEl.style.display = "flex";
+
+    for (const chapter of CHAPTERS) {
+      chaptersListEl.appendChild(
+        itemCard(chapter.number, chapter.title, chapter.description, () => showTopics(chapter))
+      );
+    }
+  }
+
+  function showTopics(chapter) {
+    currentChapter = chapter;
+    currentTopic = null;
+    renderBreadcrumb();
+
+    chaptersListEl.style.display = "none";
+    topicWorkspaceEl.style.display = "none";
+    textsEmptyStateEl.style.display = "none";
+    topicsListEl.innerHTML = "";
+    topicsListEl.style.display = "flex";
+
+    for (const topic of chapter.topics) {
+      topicsListEl.appendChild(
+        itemCard(topic.number, topic.title, topic.description, () => showTopicWorkspace(topic))
+      );
+    }
+  }
+
+  function showTopicWorkspace(topic) {
+    currentTopic = topic;
+    renderBreadcrumb();
+
+    chaptersListEl.style.display = "none";
+    topicsListEl.style.display = "none";
+    topicWorkspaceEl.style.display = "flex";
+
+    switchTopicTab("flashcards");
+  }
+
+  function renderCurrentText() {
+    const text = currentTopic.texts[currentTextIndex];
+    textReaderNumberEl.textContent = `Text ${text.number}`;
+    textReaderTitleEl.textContent = text.title;
+    textReaderBodyEl.innerHTML = renderTextBody(text.body);
+
+    textPrevBtn.disabled = currentTextIndex === 0;
+    textNextBtn.disabled = currentTextIndex === currentTopic.texts.length - 1;
+  }
+
+  textPrevBtn.addEventListener("click", () => {
+    if (currentTextIndex > 0) {
+      currentTextIndex--;
+      renderCurrentText();
+    }
+  });
+  textNextBtn.addEventListener("click", () => {
+    if (currentTextIndex < currentTopic.texts.length - 1) {
+      currentTextIndex++;
+      renderCurrentText();
+    }
   });
 
   async function init() {
     try {
       setUserEmail(getUserEmail());
-      setLoading(true);
 
       const languages = await loadLanguages();
       langSelectEl.innerHTML = "";
@@ -815,9 +1197,9 @@
       LANG = languages.includes(LANG) ? LANG : (languages[0] || LANG);
       langSelectEl.value = LANG;
 
-      await loadAndRenderEntries();
+      await loadAndRenderChapters();
     } catch (err) {
-      showError(err);
+      showTextsError(err);
     }
   }
 

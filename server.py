@@ -8,16 +8,24 @@ Then open http://127.0.0.1:8000/viewer.html
 
 Data model
 ----------
-catalog.json   shared word catalog, keyed by language, each entry has a
-               stable "word_id" plus the shared fields (original, filename,
-               sentence, cue). Same for every user. Read-only, baked into
-               the image/repo.
-Google Sheet   per-user progress (confident, shown_count, show), one row per
-               (email, lang, word_id). A user only has rows for words
-               assigned to them; a brand-new user simply has no rows.
-               Reached through a Google Apps Script "Web App" front end
-               (see apps-script/Code.gs) over plain HTTP, so progress
-               survives regardless of the host's filesystem being ephemeral.
+catalog.json   shared content, keyed by language. Each language has:
+                 "words": [{word_id, original, filename, sentence, cue}, ...]
+                 "chapters": [{chapter_id, number, title, description, topics: [
+                   {topic_id, number, title, description, word_ids: [...new
+                    words this topic introduces...], texts: [{text_id, number,
+                    title, body}, ...]}
+                 ]}]
+               Same for every user, read-only, baked into the image/repo.
+               A text's "body" uses **word** for bold spans.
+Google Sheet   per-user data, reached through a Google Apps Script "Web App"
+               front end (see apps-script/Code.gs) over plain HTTP, so it
+               survives regardless of the host's filesystem being ephemeral:
+                 "progress" tab: one row per (email, lang, word_id) holding
+                   confident/shown_count/show. A user only has rows for words
+                   assigned to them; a brand-new user simply has no rows.
+                 "topics" tab: one row per (email, lang, topic_id). A row's
+                   presence means that topic (and its texts) is visible to
+                   that user; a topic with no row is hidden.
                Configured via the SHEETS_WEBAPP_URL / SHEETS_API_TOKEN env
                vars (see .env.example).
 
@@ -25,6 +33,7 @@ Endpoints
 ---------
 GET  /languages                        -> list of languages in the catalog
 GET  /data?user=<email>&lang=<lang>    -> merged catalog+progress for that user/lang
+GET  /chapters?user=<email>&lang=<lang> -> chapters/topics/texts visible to that user
 POST /increment    {user, lang, word_id}
 POST /mark-known   {user, lang, word_id}
 POST /show-word    {user, lang, word_id}
@@ -144,12 +153,18 @@ def upsert_progress(email, lang, word_id, confident, shown_count, show):
     })
 
 
+def load_enabled_topics(email, lang):
+    """Set of topic_ids visible to this user for this language."""
+    data = _sheets_request("GET", params={"action": "get_topics", "email": email, "lang": lang})
+    return set(data.get("topic_ids", []))
+
+
 class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=DIR, **kwargs)
 
     def log_message(self, fmt, *args):
-        if self.path.startswith(("/increment", "/mark-known", "/show-word", "/data", "/languages", "/tts")):
+        if self.path.startswith(("/increment", "/mark-known", "/show-word", "/data", "/chapters", "/languages", "/tts")):
             super().log_message(fmt, *args)
         # keep static GET logs quiet
 
@@ -163,6 +178,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return
         if parsed.path == "/data":
             self.handle_data(parsed)
+            return
+        if parsed.path == "/chapters":
+            self.handle_chapters(parsed)
             return
 
         # Only /viewer.html and images/ are servable as static files; everything
@@ -225,7 +243,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return
 
         words = []
-        for entry in catalog[lang]:
+        for entry in catalog[lang]["words"]:
             word_id = entry["word_id"]
             if word_id not in progress:
                 continue
@@ -233,6 +251,40 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             words.append({**entry, **p})
 
         self._send_json(200, {"lang": lang, "words": words})
+
+    def handle_chapters(self, parsed):
+        query = urllib.parse.parse_qs(parsed.query)
+        email = (query.get("user", [""])[0]).strip()
+        lang = (query.get("lang", [""])[0]).strip() or "english"
+
+        if not EMAIL_RE.fullmatch(email):
+            self._send_json(400, {"error": "missing or invalid 'user' query param"})
+            return
+
+        try:
+            catalog = load_catalog()
+        except (OSError, json.JSONDecodeError) as err:
+            self._send_json(500, {"error": f"couldn't read catalog: {err}"})
+            return
+
+        if lang not in catalog:
+            self._send_json(404, {"error": f"unknown language: {lang}"})
+            return
+
+        try:
+            enabled_topic_ids = load_enabled_topics(email, lang)
+        except SheetsError as err:
+            self._send_json(502, {"error": str(err)})
+            return
+
+        chapters = []
+        for chapter in catalog[lang].get("chapters", []):
+            visible_topics = [t for t in chapter.get("topics", []) if t["topic_id"] in enabled_topic_ids]
+            if not visible_topics:
+                continue
+            chapters.append({**chapter, "topics": visible_topics})
+
+        self._send_json(200, {"lang": lang, "chapters": chapters})
 
     def handle_tts(self, parsed):
         query = urllib.parse.parse_qs(parsed.query)
