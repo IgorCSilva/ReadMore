@@ -44,6 +44,7 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { getChapters, getLanguages } from './shared/api'
+import { formatLanguagePairLabel } from './shared/languages'
 import { escapeHtml } from './shared/text'
 import Flashcards from './features/catalog/Flashcards.vue'
 import Texts from './features/texts/Texts.vue'
@@ -307,7 +308,7 @@ onMounted(() => {
       for (const lang of languages) {
         const opt = document.createElement("option");
         opt.value = lang;
-        opt.textContent = lang[0].toUpperCase() + lang.slice(1);
+        opt.textContent = formatLanguagePairLabel(lang);
         langSelectEl.appendChild(opt);
       }
       LANG = languages.includes(LANG) ? LANG : (languages[0] || LANG);

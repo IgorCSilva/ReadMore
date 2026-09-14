@@ -29,11 +29,12 @@ from backend.app.domain.exceptions import (
     TtsUpstreamError,
     WordNotAssignedError,
 )
-from backend.app.domain.value_objects import Email
+from backend.app.domain.value_objects import Email, LanguagePair
 from backend.app.infrastructure.dtos.chapters import ChapterDTO, ChaptersResponse
 from backend.app.infrastructure.dtos.progress_actions import ProgressActionRequest
 from backend.app.infrastructure.dtos.user_words import UserWordDTO, UserWordsResponse
 from backend.app.infrastructure.dtos.words import WordDTO, WordsResponse
+from backend.app.infrastructure.legacy_language_names import parse_language_pair
 from backend.app.infrastructure.repositories.google_sheets_client import SheetsError
 from backend.app.infrastructure.repositories.google_sheets_progress_repository import (
     GoogleSheetsProgressRepository,
@@ -125,10 +126,13 @@ def get_tts_port() -> GoogleTranslateTtsClient:
 
 def _parse_progress_action(
     payload: ProgressActionRequest,
-) -> tuple[Email, str, str] | JSONResponse:
+) -> tuple[Email, LanguagePair, str] | JSONResponse:
     """Shared validation for /increment, /mark-known, /show-word: same checks,
-    same error messages/shapes as backend/server.py's do_POST."""
-    lang = payload.lang.strip() or "english"
+    same error messages/shapes as backend/server.py's do_POST. A malformed
+    lang value raises LanguageNotFoundError, caught by the registered
+    exception handler — not handled locally like the other two checks,
+    since unlike them it isn't specific to these three routes."""
+    lang = parse_language_pair(payload.lang.strip() or "english")
     try:
         email = Email(payload.user.strip())
     except ValueError:
@@ -143,7 +147,8 @@ def get_languages(
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
 ):
     use_case = ListLanguages(catalog_repository)
-    return {"languages": use_case.execute()}
+    pairs = use_case.execute()
+    return {"languages": [str(pair) for pair in pairs]}
 
 
 @app.get("/words", response_model=WordsResponse)
@@ -151,10 +156,10 @@ def get_words(
     lang: str = "english",
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
 ):
-    lang = lang.strip() or "english"
+    language_pair = parse_language_pair(lang.strip() or "english")
     use_case = GetWords(catalog_repository)
-    words = use_case.execute(lang)
-    return WordsResponse(lang=lang, words=[WordDTO.from_entity(w) for w in words])
+    words = use_case.execute(language_pair)
+    return WordsResponse(lang=str(language_pair), words=[WordDTO.from_entity(w) for w in words])
 
 
 @app.get("/data", response_model=UserWordsResponse)
@@ -164,7 +169,7 @@ def get_data(
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
     progress_repository: GoogleSheetsProgressRepository = Depends(get_progress_repository),
 ):
-    lang = lang.strip() or "english"
+    language_pair = parse_language_pair(lang.strip() or "english")
     try:
         email = Email(user.strip())
     except ValueError:
@@ -173,9 +178,9 @@ def get_data(
         )
 
     use_case = GetUserWords(catalog_repository, progress_repository)
-    pairs = use_case.execute(email, lang)
+    pairs = use_case.execute(email, language_pair)
     return UserWordsResponse(
-        lang=lang,
+        lang=str(language_pair),
         words=[UserWordDTO.from_word_and_progress(word, record) for word, record in pairs],
     )
 
@@ -187,7 +192,7 @@ def get_chapters_route(
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
     topics_repository: GoogleSheetsTopicsRepository = Depends(get_topics_repository),
 ):
-    lang = lang.strip() or "english"
+    language_pair = parse_language_pair(lang.strip() or "english")
     try:
         email = Email(user.strip())
     except ValueError:
@@ -196,8 +201,10 @@ def get_chapters_route(
         )
 
     use_case = GetChapters(catalog_repository, topics_repository)
-    chapters = use_case.execute(email, lang)
-    return ChaptersResponse(lang=lang, chapters=[ChapterDTO.from_entity(c) for c in chapters])
+    chapters = use_case.execute(email, language_pair)
+    return ChaptersResponse(
+        lang=str(language_pair), chapters=[ChapterDTO.from_entity(c) for c in chapters]
+    )
 
 
 @app.get("/tts")

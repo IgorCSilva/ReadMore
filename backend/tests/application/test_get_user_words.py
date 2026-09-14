@@ -5,24 +5,27 @@ from backend.app.application.ports.progress_repository import ProgressRepository
 from backend.app.application.use_cases.get_user_words import GetUserWords
 from backend.app.domain.entities import Chapter, ProgressRecord, Word
 from backend.app.domain.exceptions import LanguageNotFoundError
-from backend.app.domain.value_objects import Email
+from backend.app.domain.value_objects import Email, LanguagePair
+
+PT_EN = LanguagePair(origin="pt", target="en")
+PT_DE = LanguagePair(origin="pt", target="de")
 
 
 class FakeCatalogRepository(CatalogRepository):
     """Only get_words is exercised in this file — get_chapters is unused here."""
 
-    def __init__(self, words_by_lang: dict[str, list[Word]]) -> None:
+    def __init__(self, words_by_lang: dict[LanguagePair, list[Word]]) -> None:
         self._words_by_lang = words_by_lang
 
-    def list_languages(self) -> list[str]:
+    def list_languages(self) -> list[LanguagePair]:
         return list(self._words_by_lang.keys())
 
-    def get_words(self, lang: str) -> list[Word]:
+    def get_words(self, lang: LanguagePair) -> list[Word]:
         if lang not in self._words_by_lang:
-            raise LanguageNotFoundError(lang)
+            raise LanguageNotFoundError(str(lang))
         return self._words_by_lang[lang]
 
-    def get_chapters(self, lang: str) -> list[Chapter]:
+    def get_chapters(self, lang: LanguagePair) -> list[Chapter]:
         raise NotImplementedError
 
 
@@ -30,10 +33,10 @@ class FakeProgressRepository(ProgressRepository):
     def __init__(self, records: dict[str, ProgressRecord]) -> None:
         self._records = dict(records)
 
-    def get_user_progress(self, email: Email, lang: str) -> dict[str, ProgressRecord]:
+    def get_user_progress(self, email: Email, lang: LanguagePair) -> dict[str, ProgressRecord]:
         return dict(self._records)
 
-    def upsert_progress(self, email: Email, lang: str, record: ProgressRecord) -> None:
+    def upsert_progress(self, email: Email, lang: LanguagePair, record: ProgressRecord) -> None:
         raise NotImplementedError
 
 
@@ -48,10 +51,10 @@ def test_returns_only_words_the_user_has_progress_for():
     progress = {"en-0001": ProgressRecord(word_id="en-0001", confident=False, shown_count=1, show=True)}
 
     use_case = GetUserWords(
-        FakeCatalogRepository({"english": words}),
+        FakeCatalogRepository({PT_EN: words}),
         FakeProgressRepository(progress),
     )
-    result = use_case.execute(Email("igor.carneiro@gmail.com"), "english")
+    result = use_case.execute(Email("igor.carneiro@gmail.com"), PT_EN)
 
     assert len(result) == 1
     word, record = result[0]
@@ -61,8 +64,8 @@ def test_returns_only_words_the_user_has_progress_for():
 
 def test_raises_for_unknown_language():
     use_case = GetUserWords(
-        FakeCatalogRepository({"english": []}),
+        FakeCatalogRepository({PT_EN: []}),
         FakeProgressRepository({}),
     )
     with pytest.raises(LanguageNotFoundError):
-        use_case.execute(Email("igor.carneiro@gmail.com"), "klingon")
+        use_case.execute(Email("igor.carneiro@gmail.com"), PT_DE)

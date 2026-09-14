@@ -1,7 +1,7 @@
 from backend.app.application.ports.catalog_repository import CatalogRepository
 from backend.app.application.ports.progress_repository import ProgressRepository
 from backend.app.domain.entities import ProgressRecord, Word
-from backend.app.domain.value_objects import Email
+from backend.app.domain.value_objects import Email, LanguagePair
 
 
 class GetUserWords:
@@ -17,7 +17,7 @@ class GetUserWords:
         self._catalog_repository = catalog_repository
         self._progress_repository = progress_repository
 
-    def execute(self, email: Email, lang: str) -> list[tuple[Word, ProgressRecord]]:
+    def execute(self, email: Email, lang: LanguagePair) -> list[tuple[Word, ProgressRecord]]:
         words = self._catalog_repository.get_words(lang)
         progress = self._progress_repository.get_user_progress(email, lang)
 

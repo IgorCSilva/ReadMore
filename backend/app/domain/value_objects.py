@@ -51,3 +51,13 @@ class LanguagePair:
 
     def __str__(self) -> str:
         return f"{self.origin}-{self.target}"
+
+    @classmethod
+    def parse(cls, raw: str) -> "LanguagePair":
+        """Parses "origin-target" (e.g. "pt-en"). Raises ValueError for
+        anything else, including a bare name with no hyphen."""
+        parts = raw.split("-", 1)
+        if len(parts) != 2:
+            raise ValueError(f"expected 'origin-target' format, got: {raw!r}")
+        origin, target = parts
+        return cls(origin=origin, target=target)

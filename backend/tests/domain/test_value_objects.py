@@ -37,3 +37,14 @@ class TestLanguagePair:
     def test_rejects_empty_language(self, origin, target):
         with pytest.raises(ValueError):
             LanguagePair(origin=origin, target=target)
+
+    def test_parse_splits_on_first_hyphen(self):
+        assert LanguagePair.parse("pt-en") == LanguagePair(origin="pt", target="en")
+
+    def test_parse_rejects_a_bare_name_with_no_hyphen(self):
+        with pytest.raises(ValueError):
+            LanguagePair.parse("english")
+
+    def test_parse_rejects_same_origin_and_target(self):
+        with pytest.raises(ValueError):
+            LanguagePair.parse("en-en")
