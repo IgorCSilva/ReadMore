@@ -1,2 +1,5 @@
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# So "from app.domain... import ..." resolves regardless of the cwd pytest
+# is invoked from (rootdir here is backend/, since this file lives there).
+pythonpath = ["."]
