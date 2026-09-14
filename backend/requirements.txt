@@ -1,0 +1,2 @@
+# Runtime dependencies. The server is stdlib-only today; this file starts
+# getting populated in Phase 1 of RESTRUCTURE_PLAN.md (FastAPI, Pydantic).
