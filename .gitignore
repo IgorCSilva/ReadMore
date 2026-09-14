@@ -1,7 +1,7 @@
 users/
 .env
 secret.md
-apps-script/progress_import.csv
+backend/apps-script/progress_import.csv
 __pycache__/
 *.pyc
 notes.md
