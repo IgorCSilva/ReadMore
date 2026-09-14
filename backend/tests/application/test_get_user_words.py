@@ -3,12 +3,14 @@ import pytest
 from backend.app.application.ports.catalog_repository import CatalogRepository
 from backend.app.application.ports.progress_repository import ProgressRepository
 from backend.app.application.use_cases.get_user_words import GetUserWords
-from backend.app.domain.entities import ProgressRecord, Word
+from backend.app.domain.entities import Chapter, ProgressRecord, Word
 from backend.app.domain.exceptions import LanguageNotFoundError
 from backend.app.domain.value_objects import Email
 
 
 class FakeCatalogRepository(CatalogRepository):
+    """Only get_words is exercised in this file — get_chapters is unused here."""
+
     def __init__(self, words_by_lang: dict[str, list[Word]]) -> None:
         self._words_by_lang = words_by_lang
 
@@ -19,6 +21,9 @@ class FakeCatalogRepository(CatalogRepository):
         if lang not in self._words_by_lang:
             raise LanguageNotFoundError(lang)
         return self._words_by_lang[lang]
+
+    def get_chapters(self, lang: str) -> list[Chapter]:
+        raise NotImplementedError
 
 
 class FakeProgressRepository(ProgressRepository):

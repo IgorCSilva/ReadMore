@@ -4,9 +4,9 @@ import pytest
 
 from backend.app.domain.entities import ProgressRecord
 from backend.app.domain.value_objects import Email
+from backend.app.infrastructure.repositories.google_sheets_client import SheetsError
 from backend.app.infrastructure.repositories.google_sheets_progress_repository import (
     GoogleSheetsProgressRepository,
-    SheetsError,
 )
 
 SHEETS_WEBAPP_URL = os.environ.get("SHEETS_WEBAPP_URL", "")

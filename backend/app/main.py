@@ -12,6 +12,7 @@ from pathlib import Path
 from fastapi import Depends, FastAPI, Request
 from fastapi.responses import JSONResponse
 
+from backend.app.application.use_cases.get_chapters import GetChapters
 from backend.app.application.use_cases.get_user_words import GetUserWords
 from backend.app.application.use_cases.get_words import GetWords
 from backend.app.application.use_cases.increment_shown_count import IncrementShownCount
@@ -20,12 +21,16 @@ from backend.app.application.use_cases.mark_word_known import MarkWordKnown
 from backend.app.application.use_cases.show_word_again import ShowWordAgain
 from backend.app.domain.exceptions import LanguageNotFoundError, WordNotAssignedError
 from backend.app.domain.value_objects import Email
+from backend.app.infrastructure.dtos.chapters import ChapterDTO, ChaptersResponse
 from backend.app.infrastructure.dtos.progress_actions import ProgressActionRequest
 from backend.app.infrastructure.dtos.user_words import UserWordDTO, UserWordsResponse
 from backend.app.infrastructure.dtos.words import WordDTO, WordsResponse
+from backend.app.infrastructure.repositories.google_sheets_client import SheetsError
 from backend.app.infrastructure.repositories.google_sheets_progress_repository import (
     GoogleSheetsProgressRepository,
-    SheetsError,
+)
+from backend.app.infrastructure.repositories.google_sheets_topics_repository import (
+    GoogleSheetsTopicsRepository,
 )
 from backend.app.infrastructure.repositories.json_catalog_repository import JsonCatalogRepository
 
@@ -59,6 +64,10 @@ def get_catalog_repository() -> JsonCatalogRepository:
 
 def get_progress_repository() -> GoogleSheetsProgressRepository:
     return GoogleSheetsProgressRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
+
+
+def get_topics_repository() -> GoogleSheetsTopicsRepository:
+    return GoogleSheetsTopicsRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
 
 
 def _parse_progress_action(
@@ -116,6 +125,26 @@ def get_data(
         lang=lang,
         words=[UserWordDTO.from_word_and_progress(word, record) for word, record in pairs],
     )
+
+
+@app.get("/chapters", response_model=ChaptersResponse)
+def get_chapters_route(
+    user: str = "",
+    lang: str = "english",
+    catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
+    topics_repository: GoogleSheetsTopicsRepository = Depends(get_topics_repository),
+):
+    lang = lang.strip() or "english"
+    try:
+        email = Email(user.strip())
+    except ValueError:
+        return JSONResponse(
+            status_code=400, content={"error": "missing or invalid 'user' query param"}
+        )
+
+    use_case = GetChapters(catalog_repository, topics_repository)
+    chapters = use_case.execute(email, lang)
+    return ChaptersResponse(lang=lang, chapters=[ChapterDTO.from_entity(c) for c in chapters])
 
 
 @app.post("/increment")

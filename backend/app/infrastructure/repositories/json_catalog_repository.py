@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 
 from backend.app.application.ports.catalog_repository import CatalogRepository
-from backend.app.domain.entities import Word
+from backend.app.domain.entities import Chapter, Text, Topic, Word
 from backend.app.domain.exceptions import LanguageNotFoundError
 
 
@@ -33,3 +33,42 @@ class JsonCatalogRepository(CatalogRepository):
             )
             for w in catalog[lang]["words"]
         ]
+
+    def get_chapters(self, lang: str) -> list[Chapter]:
+        catalog = self._load()
+        if lang not in catalog:
+            raise LanguageNotFoundError(lang)
+        return [self._to_chapter(c) for c in catalog[lang].get("chapters", [])]
+
+    @staticmethod
+    def _to_chapter(data: dict) -> Chapter:
+        return Chapter(
+            chapter_id=data["chapter_id"],
+            number=data["number"],
+            title=data["title"],
+            description=data["description"],
+            topics=[JsonCatalogRepository._to_topic(t) for t in data.get("topics", [])],
+            status=data.get("status", "ready"),
+        )
+
+    @staticmethod
+    def _to_topic(data: dict) -> Topic:
+        return Topic(
+            topic_id=data["topic_id"],
+            number=data["number"],
+            title=data["title"],
+            description=data["description"],
+            word_ids=data.get("word_ids", []),
+            texts=[JsonCatalogRepository._to_text(t) for t in data.get("texts", [])],
+            status=data.get("status", "ready"),
+            exercises=data.get("exercises", []),
+        )
+
+    @staticmethod
+    def _to_text(data: dict) -> Text:
+        return Text(
+            text_id=data["text_id"],
+            number=data["number"],
+            title=data["title"],
+            body=data["body"],
+        )

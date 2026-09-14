@@ -7,7 +7,7 @@ method per vertical slice as later restructure steps port more endpoints.
 """
 from abc import ABC, abstractmethod
 
-from backend.app.domain.entities import Word
+from backend.app.domain.entities import Chapter, Word
 
 
 class CatalogRepository(ABC):
@@ -18,3 +18,8 @@ class CatalogRepository(ABC):
     @abstractmethod
     def get_words(self, lang: str) -> list[Word]:
         """All words for a language. Raises LanguageNotFoundError if unknown."""
+
+    @abstractmethod
+    def get_chapters(self, lang: str) -> list[Chapter]:
+        """All chapters (with nested topics/texts) for a language, unfiltered
+        by per-user topic visibility. Raises LanguageNotFoundError if unknown."""

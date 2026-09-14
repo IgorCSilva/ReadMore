@@ -1,10 +1,10 @@
 from backend.app.application.ports.catalog_repository import CatalogRepository
 from backend.app.application.use_cases.list_languages import ListLanguages
-from backend.app.domain.entities import Word
+from backend.app.domain.entities import Chapter, Word
 
 
 class FakeCatalogRepository(CatalogRepository):
-    """Only list_languages is exercised in this file — get_words is unused here."""
+    """Only list_languages is exercised in this file — the rest is unused here."""
 
     def __init__(self, languages: list[str]) -> None:
         self._languages = languages
@@ -13,6 +13,9 @@ class FakeCatalogRepository(CatalogRepository):
         return self._languages
 
     def get_words(self, lang: str) -> list[Word]:
+        raise NotImplementedError
+
+    def get_chapters(self, lang: str) -> list[Chapter]:
         raise NotImplementedError
 
 
