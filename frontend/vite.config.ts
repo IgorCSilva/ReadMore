@@ -1,5 +1,7 @@
 import vue from '@vitejs/plugin-vue'
-import { defineConfig } from 'vite'
+// vitest/config re-exports vite's defineConfig with its type extended to
+// accept a top-level "test" key, so one file covers both vite and vitest.
+import { defineConfig } from 'vitest/config'
 
 // backend/app/main.py serves the same origin in production; the proxy below
 // reproduces that for the dev server so App.vue's relative fetch("/data"),
@@ -23,5 +25,9 @@ export default defineConfig({
       '/show-word': BACKEND,
       '/images': BACKEND,
     },
+  },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./vitest.setup.ts'],
   },
 })
