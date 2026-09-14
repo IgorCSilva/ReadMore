@@ -1,5 +1,5 @@
-from app.application.ports.catalog_repository import CatalogRepository
-from app.application.use_cases.list_languages import ListLanguages
+from backend.app.application.ports.catalog_repository import CatalogRepository
+from backend.app.application.use_cases.list_languages import ListLanguages
 
 
 class FakeCatalogRepository(CatalogRepository):

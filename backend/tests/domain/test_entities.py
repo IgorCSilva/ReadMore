@@ -1,4 +1,4 @@
-from app.domain.entities import Chapter, Text, Topic, Word
+from backend.app.domain.entities import Chapter, Text, Topic, Word
 
 
 def test_word_holds_catalog_fields():

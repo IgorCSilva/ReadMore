@@ -1,6 +1,6 @@
 import pytest
 
-from app.domain.value_objects import Email, LanguagePair, WordId
+from backend.app.domain.value_objects import Email, LanguagePair, WordId
 
 
 class TestEmail:

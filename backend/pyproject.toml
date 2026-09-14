@@ -1,5 +1,7 @@
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-# So "from app.domain... import ..." resolves regardless of the cwd pytest
-# is invoked from (rootdir here is backend/, since this file lives there).
-pythonpath = ["."]
+# So "from backend.app.domain... import ..." resolves regardless of the cwd
+# pytest is invoked from. Points one level up from this file (backend/) to
+# the repo root, matching how uvicorn runs the app in practice
+# (uvicorn backend.app.main:app, invoked from the repo root).
+pythonpath = [".."]

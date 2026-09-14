@@ -1,4 +1,4 @@
-from app.application.ports.catalog_repository import CatalogRepository
+from backend.app.application.ports.catalog_repository import CatalogRepository
 
 
 class ListLanguages:
