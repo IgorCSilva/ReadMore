@@ -1,7 +1,7 @@
-"""FastAPI entrypoint — Phase 1 of RESTRUCTURE_PLAN.md.
+"""FastAPI entrypoint — completes Phase 1 of RESTRUCTURE_PLAN.md.
 
-Stands up alongside backend/server.py, not replacing it yet. Endpoints are
-ported one at a time (see RESTRUCTURE_PLAN.md Phase 1) behind the layered
+Replaces backend/server.py entirely: every endpoint plus static serving of
+frontend/ (viewer.html, images/) now lives here, behind the layered
 domain/application/infrastructure structure. This is the composition root:
 it's the only place concrete infrastructure classes get instantiated and
 handed to use cases via FastAPI's Depends.
@@ -11,7 +11,9 @@ from pathlib import Path
 
 from fastapi import Depends, FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse, Response
+from fastapi.responses import FileResponse, JSONResponse, RedirectResponse, Response
+from fastapi.staticfiles import StaticFiles
+from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from backend.app.application.use_cases.get_chapters import GetChapters
 from backend.app.application.use_cases.get_user_words import GetUserWords
@@ -44,6 +46,8 @@ from backend.app.infrastructure.repositories.google_translate_tts_client import 
 from backend.app.infrastructure.repositories.json_catalog_repository import JsonCatalogRepository
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
+ROOT_DIR = BACKEND_DIR.parent
+FRONTEND_DIR = ROOT_DIR / "frontend"
 CATALOG_PATH = BACKEND_DIR / "catalog.json"
 
 SHEETS_WEBAPP_URL = os.environ.get("SHEETS_WEBAPP_URL", "")
@@ -80,6 +84,28 @@ async def sheets_error_handler(request: Request, exc: SheetsError):
 @app.exception_handler(TtsUpstreamError)
 async def tts_upstream_error_handler(request: Request, exc: TtsUpstreamError):
     return JSONResponse(status_code=502, content={"error": str(exc)})
+
+
+@app.exception_handler(StarletteHTTPException)
+async def http_exception_handler(request: Request, exc: StarletteHTTPException):
+    # Matches backend/server.py's _send_json(404, {"error": "not found"}) for
+    # any path that isn't a known API route or an allowed static asset.
+    if exc.status_code == 404:
+        return JSONResponse(status_code=404, content={"error": "not found"})
+    return JSONResponse(status_code=exc.status_code, content={"error": exc.detail})
+
+
+app.mount("/images", StaticFiles(directory=FRONTEND_DIR / "images"), name="images")
+
+
+@app.get("/")
+def redirect_to_viewer():
+    return RedirectResponse(url="/viewer.html", status_code=302)
+
+
+@app.get("/viewer.html")
+def get_viewer():
+    return FileResponse(FRONTEND_DIR / "viewer.html")
 
 
 def get_catalog_repository() -> JsonCatalogRepository:

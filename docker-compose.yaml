@@ -4,10 +4,10 @@ services:
     container_name: readmore
     # Local dev only: install backend deps (repo is bind-mounted below, so the
     # requirements files are already visible here) then keep the container idle
-    # so you exec in manually (docker compose exec readmore python3
-    # backend/server.py, docker compose exec readmore pytest backend/tests -v).
-    # Real hosts run the image's own CMD directly and ignore this file, so they
-    # still get the actual server.
+    # so you exec in manually (docker compose exec readmore uvicorn
+    # backend.app.main:app --host 0.0.0.0 --port 8000, docker compose exec
+    # readmore pytest backend/tests -v). Real hosts run the image's own CMD
+    # directly and ignore this file, so they still get the actual server.
     command: ["sh", "-c", "pip install -r backend/requirements.txt -r backend/requirements-dev.txt && tail -f /dev/null"]
     ports:
       - "8000:8000"
