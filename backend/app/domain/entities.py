@@ -1,0 +1,47 @@
+"""Domain entities — have identity, plain dataclasses, no I/O.
+
+Field shapes mirror catalog.json's current schema (documented in
+backend/server.py's module docstring) so the catalog repository (later
+steps) can map 1:1 without translation. Topic.exercises stays untyped
+(list[dict]) for now — modeling it is out of scope for this step.
+"""
+from dataclasses import dataclass, field
+
+
+@dataclass
+class Word:
+    word_id: str
+    original: str
+    filename: str
+    sentence: str
+    cue: str
+
+
+@dataclass
+class Text:
+    text_id: str
+    number: int
+    title: str
+    body: str
+
+
+@dataclass
+class Topic:
+    topic_id: str
+    number: int
+    title: str
+    description: str
+    word_ids: list[str]
+    texts: list[Text] = field(default_factory=list)
+    status: str = "ready"
+    exercises: list[dict] = field(default_factory=list)
+
+
+@dataclass
+class Chapter:
+    chapter_id: str
+    number: int
+    title: str
+    description: str
+    topics: list[Topic] = field(default_factory=list)
+    status: str = "ready"
