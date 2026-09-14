@@ -5,8 +5,10 @@ import { defineConfig } from 'vitest/config'
 
 // backend/app/main.py serves the same origin in production; the proxy below
 // reproduces that for the dev server so App.vue's relative fetch("/data"),
-// img.src="images/...", etc. keep working unchanged. "readmore" is the
-// backend service's name on the shared docker-compose network.
+// etc. keep working unchanged. "readmore" is the backend service's name on
+// the shared docker-compose network. /images isn't listed: it's served from
+// frontend/public/images/, which Vite serves directly in dev (and copies
+// into dist/images/ on build), so it never needs to reach the backend.
 const BACKEND = 'http://readmore:8000'
 
 export default defineConfig({
@@ -23,7 +25,6 @@ export default defineConfig({
       '/increment': BACKEND,
       '/mark-known': BACKEND,
       '/show-word': BACKEND,
-      '/images': BACKEND,
     },
   },
   test: {

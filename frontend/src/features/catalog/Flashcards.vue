@@ -175,7 +175,7 @@ onMounted(() => {
     if (!text) return;
     const audio = new Audio(ttsUrl(text));
     audio.addEventListener("error", () => {
-      console.warn("TTS proxy unavailable (is server.py running?), falling back to local speech synthesis.");
+      console.warn("TTS proxy unavailable (is the backend running?), falling back to local speech synthesis.");
       speakWordLocal(text);
     });
     audio.play().catch(() => {
@@ -228,8 +228,8 @@ onMounted(() => {
     errorBanner.style.display = "block";
     errorBanner.innerHTML =
       `Couldn't load your word list (${err.message}).<br>` +
-      `Make sure <code>server.py</code> is running and you opened this page via ` +
-      `<code>http://127.0.0.1:PORT/viewer.html</code>, not a <code>file://</code> path.`;
+      `Make sure the backend is running and you're accessing this app at its own ` +
+      `address, not a <code>file://</code> path.`;
   }
 
   function setLoading(isLoading) {
@@ -331,7 +331,7 @@ onMounted(() => {
 
   function recordShown(entry) {
     incrementShownCount(USER_EMAIL, LANG, entry.wordId).catch((err) => {
-      console.warn("Couldn't record shown_count (is server.py running?):", err);
+      console.warn("Couldn't record shown_count (is the backend running?):", err);
     });
   }
 
@@ -361,7 +361,7 @@ onMounted(() => {
     const entry = ENTRIES[index];
 
     markWordKnown(USER_EMAIL, LANG, entry.wordId).catch((err) => {
-      console.warn("Couldn't mark word as known (is server.py running?):", err);
+      console.warn("Couldn't mark word as known (is the backend running?):", err);
     });
 
     entry.show = false;
@@ -376,7 +376,7 @@ onMounted(() => {
 
   function unhideWord(entry) {
     showWordAgain(USER_EMAIL, LANG, entry.wordId).catch((err) => {
-      console.warn("Couldn't show word again (is server.py running?):", err);
+      console.warn("Couldn't show word again (is the backend running?):", err);
     });
 
     entry.show = true;

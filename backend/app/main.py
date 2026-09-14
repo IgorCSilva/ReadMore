@@ -1,17 +1,18 @@
 """FastAPI entrypoint — completes Phase 1 of RESTRUCTURE_PLAN.md.
 
 Replaces backend/server.py entirely: every endpoint plus static serving of
-frontend/ (viewer.html, images/) now lives here, behind the layered
-domain/application/infrastructure structure. This is the composition root:
-it's the only place concrete infrastructure classes get instantiated and
-handed to use cases via FastAPI's Depends.
+frontend/dist/ (the Vite build output — see RESTRUCTURE_PLAN.md Step 2.7)
+now lives here, behind the layered domain/application/infrastructure
+structure. This is the composition root: it's the only place concrete
+infrastructure classes get instantiated and handed to use cases via
+FastAPI's Depends.
 """
 import os
 from pathlib import Path
 
 from fastapi import Depends, FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, JSONResponse, RedirectResponse, Response
+from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
@@ -47,7 +48,7 @@ from backend.app.infrastructure.repositories.json_catalog_repository import Json
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 ROOT_DIR = BACKEND_DIR.parent
-FRONTEND_DIR = ROOT_DIR / "frontend"
+DIST_DIR = ROOT_DIR / "frontend" / "dist"
 CATALOG_PATH = BACKEND_DIR / "catalog.json"
 
 SHEETS_WEBAPP_URL = os.environ.get("SHEETS_WEBAPP_URL", "")
@@ -95,17 +96,15 @@ async def http_exception_handler(request: Request, exc: StarletteHTTPException):
     return JSONResponse(status_code=exc.status_code, content={"error": exc.detail})
 
 
-app.mount("/images", StaticFiles(directory=FRONTEND_DIR / "images"), name="images")
+# dist/assets holds Vite's hashed JS/CSS bundles; dist/images is the
+# frontend/public/images/ directory Vite copies through unchanged on build.
+app.mount("/assets", StaticFiles(directory=DIST_DIR / "assets"), name="assets")
+app.mount("/images", StaticFiles(directory=DIST_DIR / "images"), name="images")
 
 
 @app.get("/")
-def redirect_to_viewer():
-    return RedirectResponse(url="/viewer.html", status_code=302)
-
-
-@app.get("/viewer.html")
-def get_viewer():
-    return FileResponse(FRONTEND_DIR / "viewer.html")
+def get_index():
+    return FileResponse(DIST_DIR / "index.html")
 
 
 def get_catalog_repository() -> JsonCatalogRepository:
