@@ -152,6 +152,16 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import {
+  getChapters,
+  getLanguages,
+  getUserWords,
+  getWords,
+  incrementShownCount,
+  markWordKnown,
+  showWordAgain,
+  ttsUrl,
+} from './shared/api'
 
 // Lifted from viewer.html's end-of-body <script> unchanged (Step 2.1 of
 // RESTRUCTURE_PLAN.md Phase 2 — behavior-preserving re-platform, not a
@@ -164,25 +174,6 @@ onMounted(() => {
   const EXT_FALLBACKS = ["png", "jpg", "jpeg", "webp", "gif", "jfif"];
   const EMAIL_STORAGE_KEY = "readmore_user_email";
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-  // /data and /chapters are both backed by Google Sheets on the server side,
-  // which occasionally has a slow/failed round trip even after the server's
-  // own retries are exhausted. One extra client-side retry clears most of
-  // those without the user having to notice or reload manually.
-  async function fetchJsonWithRetry(url, attempts = 2) {
-    let lastErr;
-    for (let attempt = 0; attempt < attempts; attempt++) {
-      try {
-        const res = await fetch(url, { cache: "no-store" });
-        if (!res.ok) throw new Error(`${url} responded with ${res.status}`);
-        return await res.json();
-      } catch (err) {
-        lastErr = err;
-        if (attempt < attempts - 1) await new Promise((r) => setTimeout(r, 1500));
-      }
-    }
-    throw lastErr;
-  }
 
   let USER_EMAIL = null;
   let LANG = "english";
@@ -227,9 +218,7 @@ onMounted(() => {
   switchUserBtn.addEventListener("click", switchUser);
 
   async function loadLanguages() {
-    const res = await fetch("/languages", { cache: "no-store" });
-    if (!res.ok) throw new Error(`/languages responded with ${res.status}`);
-    const data = await res.json();
+    const data = await getLanguages();
     return data.languages || [];
   }
 
@@ -275,8 +264,7 @@ onMounted(() => {
 
   function speakWord(text) {
     if (!text) return;
-    const url = `/tts?text=${encodeURIComponent(text)}`;
-    const audio = new Audio(url);
+    const audio = new Audio(ttsUrl(text));
     audio.addEventListener("error", () => {
       console.warn("TTS proxy unavailable (is server.py running?), falling back to local speech synthesis.");
       speakWordLocal(text);
@@ -303,8 +291,7 @@ onMounted(() => {
   speakMissingSentenceBtn.addEventListener("click", speakCurrentSentence);
 
   async function loadEntries() {
-    const url = `/data?user=${encodeURIComponent(USER_EMAIL)}&lang=${encodeURIComponent(LANG)}`;
-    const data = await fetchJsonWithRetry(url);
+    const data = await getUserWords(USER_EMAIL, LANG);
 
     const entries = data.words.map((e) => {
       const dot = e.filename.lastIndexOf(".");
@@ -434,11 +421,7 @@ onMounted(() => {
   }
 
   function recordShown(entry) {
-    fetch("/increment", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ user: USER_EMAIL, lang: LANG, word_id: entry.wordId }),
-    }).catch((err) => {
+    incrementShownCount(USER_EMAIL, LANG, entry.wordId).catch((err) => {
       console.warn("Couldn't record shown_count (is server.py running?):", err);
     });
   }
@@ -468,11 +451,7 @@ onMounted(() => {
     if (ENTRIES.length === 0) return;
     const entry = ENTRIES[index];
 
-    fetch("/mark-known", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ user: USER_EMAIL, lang: LANG, word_id: entry.wordId }),
-    }).catch((err) => {
+    markWordKnown(USER_EMAIL, LANG, entry.wordId).catch((err) => {
       console.warn("Couldn't mark word as known (is server.py running?):", err);
     });
 
@@ -487,11 +466,7 @@ onMounted(() => {
   }
 
   function unhideWord(entry) {
-    fetch("/show-word", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ user: USER_EMAIL, lang: LANG, word_id: entry.wordId }),
-    }).catch((err) => {
+    showWordAgain(USER_EMAIL, LANG, entry.wordId).catch((err) => {
       console.warn("Couldn't show word again (is server.py running?):", err);
     });
 
@@ -642,8 +617,7 @@ onMounted(() => {
   }
 
   async function fetchChapters() {
-    const url = `/chapters?user=${encodeURIComponent(USER_EMAIL)}&lang=${encodeURIComponent(LANG)}`;
-    const data = await fetchJsonWithRetry(url);
+    const data = await getChapters(USER_EMAIL, LANG);
     return data.chapters || [];
   }
 
@@ -815,7 +789,7 @@ onMounted(() => {
 
   async function loadWordsById(lang) {
     if (WORDS_BY_ID && wordsLoadedForLang === lang) return WORDS_BY_ID;
-    const data = await fetchJsonWithRetry(`/words?lang=${encodeURIComponent(lang)}`);
+    const data = await getWords(lang);
     const byId = {};
     for (const w of data.words) byId[w.word_id] = w;
     WORDS_BY_ID = byId;
