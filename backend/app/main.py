@@ -2,13 +2,16 @@
 
 Stands up alongside backend/server.py, not replacing it yet. Endpoints are
 ported one at a time (see RESTRUCTURE_PLAN.md Phase 1) behind the layered
-domain/application/infrastructure structure; this file currently reads
-catalog.json directly since no layering has been introduced yet.
+domain/application/infrastructure structure. This is the composition root:
+it's the only place concrete infrastructure classes get instantiated and
+handed to use cases via FastAPI's Depends.
 """
-import json
 from pathlib import Path
 
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
+
+from backend.app.application.use_cases.list_languages import ListLanguages
+from backend.app.infrastructure.repositories.json_catalog_repository import JsonCatalogRepository
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 CATALOG_PATH = BACKEND_DIR / "catalog.json"
@@ -16,12 +19,13 @@ CATALOG_PATH = BACKEND_DIR / "catalog.json"
 app = FastAPI()
 
 
-def load_catalog() -> dict:
-    with open(CATALOG_PATH, "r", encoding="utf-8") as f:
-        return json.load(f)
+def get_catalog_repository() -> JsonCatalogRepository:
+    return JsonCatalogRepository(CATALOG_PATH)
 
 
 @app.get("/languages")
-def get_languages():
-    catalog = load_catalog()
-    return {"languages": list(catalog.keys())}
+def get_languages(
+    catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
+):
+    use_case = ListLanguages(catalog_repository)
+    return {"languages": use_case.execute()}
