@@ -53,6 +53,14 @@ const USERS_HEADERS = ["email", "language_pair", "topic_ids"];
 
 const USER_PROGRESS_HEADERS = ["language_pair", "word_id", "confident", "shown_count", "show"];
 
+// Same mapping as backend/app/infrastructure/legacy_language_names.py — kept
+// in sync by hand, not shared code (Apps Script and Python can't share a
+// module), so any pair added there must be added here too.
+const LEGACY_LANG_TO_PAIR = {
+  english: "pt-en",
+  spanish: "pt-es",
+};
+
 function setup() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   ensureSheet(ss, PROGRESS_SHEET_NAME, PROGRESS_HEADERS);
@@ -115,6 +123,7 @@ function handle(params) {
   if (params.action === "v2_get_progress") return actionV2GetProgress(params);
   if (params.action === "v2_upsert_progress") return actionV2UpsertProgress(params);
   if (params.action === "v2_get_topics") return actionV2GetTopics(params);
+  if (params.action === "v2_migrate") return actionV2Migrate(params);
   return jsonResponse(400, { error: "unknown action: " + params.action });
 }
 
@@ -313,6 +322,130 @@ function actionV2GetTopics(params) {
       }
     }
     return jsonResponse(200, { topic_ids: [] });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+// One-off migration (RESTRUCTURE_PLAN.md Step 4.3): copies the existing
+// shared progress/topics tabs into the new per-user-tab / users-tab schema.
+// Purely additive — never reads back into or modifies the old tabs — and
+// idempotent (skips rows already present in the destination), so it's safe
+// to call more than once. Removed again once Step 4.4 cuts the backend over
+// and drops the old schema.
+function actionV2Migrate(params) {
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const unknownLangRows = [];
+    const emailsSeen = {};
+
+    // --- progress -> per-user progress tabs (1:1 row copy) ---
+    const progressRows = getSheet(PROGRESS_SHEET_NAME).getDataRange().getValues();
+    let progressRead = 0;
+    let progressMigrated = 0;
+    let progressSkippedExisting = 0;
+    const userProgressSheets = {};
+    const userProgressExisting = {};
+
+    for (let i = 1; i < progressRows.length; i++) {
+      const row = progressRows[i];
+      const email = String(row[0] || "");
+      const lang = row[1];
+      const wordId = row[2];
+      if (!email || !lang || !wordId) continue;
+      progressRead++;
+
+      const pair = LEGACY_LANG_TO_PAIR[lang];
+      if (!pair) {
+        unknownLangRows.push({ sheet: "progress", email: email, lang: lang });
+        continue;
+      }
+
+      const emailLower = email.toLowerCase();
+      emailsSeen[emailLower] = true;
+      if (!userProgressSheets[emailLower]) {
+        const sheet = getOrCreateUserProgressSheet(ss, emailLower);
+        userProgressSheets[emailLower] = sheet;
+        const existingRows = sheet.getDataRange().getValues();
+        const existingKeys = {};
+        for (let j = 1; j < existingRows.length; j++) {
+          existingKeys[existingRows[j][0] + "|" + existingRows[j][1]] = true;
+        }
+        userProgressExisting[emailLower] = existingKeys;
+      }
+
+      const key = pair + "|" + wordId;
+      if (userProgressExisting[emailLower][key]) {
+        progressSkippedExisting++;
+        continue;
+      }
+      userProgressSheets[emailLower].appendRow([pair, wordId, !!row[3], Number(row[4]) || 0, !!row[5]]);
+      userProgressExisting[emailLower][key] = true;
+      progressMigrated++;
+    }
+
+    // --- topics -> users tab (grouped, topic_ids joined) ---
+    const topicsRows = getSheet(TOPICS_SHEET_NAME).getDataRange().getValues();
+    let topicsRead = 0;
+    const groups = {};
+
+    for (let i = 1; i < topicsRows.length; i++) {
+      const row = topicsRows[i];
+      const email = String(row[0] || "");
+      const lang = row[1];
+      const topicId = row[2];
+      if (!email || !lang || !topicId) continue;
+      topicsRead++;
+
+      const pair = LEGACY_LANG_TO_PAIR[lang];
+      if (!pair) {
+        unknownLangRows.push({ sheet: "topics", email: email, lang: lang });
+        continue;
+      }
+
+      const emailLower = email.toLowerCase();
+      emailsSeen[emailLower] = true;
+      const key = emailLower + "|" + pair;
+      if (!groups[key]) {
+        groups[key] = { email: emailLower, pair: pair, topicIds: [] };
+      }
+      groups[key].topicIds.push(topicId);
+    }
+
+    const usersSheet = getSheet(USERS_SHEET_NAME);
+    const usersRows = usersSheet.getDataRange().getValues();
+    const existingUserPairs = {};
+    for (let i = 1; i < usersRows.length; i++) {
+      existingUserPairs[usersRows[i][0] + "|" + usersRows[i][1]] = true;
+    }
+
+    let usersMigrated = 0;
+    let usersSkippedExisting = 0;
+    const groupKeys = Object.keys(groups);
+    for (let i = 0; i < groupKeys.length; i++) {
+      const group = groups[groupKeys[i]];
+      const key = group.email + "|" + group.pair;
+      if (existingUserPairs[key]) {
+        usersSkippedExisting++;
+        continue;
+      }
+      usersSheet.appendRow([group.email, group.pair, group.topicIds.join(", ")]);
+      existingUserPairs[key] = true;
+      usersMigrated++;
+    }
+
+    return jsonResponse(200, {
+      progress_rows_read: progressRead,
+      progress_rows_migrated: progressMigrated,
+      progress_rows_skipped_existing: progressSkippedExisting,
+      topics_rows_read: topicsRead,
+      users_rows_migrated: usersMigrated,
+      users_rows_skipped_existing: usersSkippedExisting,
+      emails_seen: Object.keys(emailsSeen).sort(),
+      unknown_lang_rows: unknownLangRows,
+    });
   } finally {
     lock.releaseLock();
   }
