@@ -38,6 +38,10 @@ Endpoints
 GET  /languages                        -> list of languages in the catalog
 GET  /data?user=<email>&lang=<lang>    -> merged catalog+progress for that user/lang
 GET  /chapters?user=<email>&lang=<lang> -> chapters/topics/texts visible to that user
+GET  /words?lang=<lang>                -> raw catalog words for that language (no
+                                           per-user filtering; used by exercises to
+                                           resolve a word_id to its filename/cue
+                                           independent of flashcard assignment)
 POST /increment    {user, lang, word_id}
 POST /mark-known   {user, lang, word_id}
 POST /show-word    {user, lang, word_id}
@@ -168,7 +172,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         super().__init__(*args, directory=DIR, **kwargs)
 
     def log_message(self, fmt, *args):
-        if self.path.startswith(("/increment", "/mark-known", "/show-word", "/data", "/chapters", "/languages", "/tts")):
+        if self.path.startswith(("/increment", "/mark-known", "/show-word", "/data", "/chapters", "/words", "/languages", "/tts")):
             super().log_message(fmt, *args)
         # keep static GET logs quiet
 
@@ -185,6 +189,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             return
         if parsed.path == "/chapters":
             self.handle_chapters(parsed)
+            return
+        if parsed.path == "/words":
+            self.handle_words(parsed)
             return
 
         # Only /viewer.html and images/ are servable as static files; everything
@@ -289,6 +296,22 @@ class Handler(http.server.SimpleHTTPRequestHandler):
             chapters.append({**chapter, "topics": visible_topics})
 
         self._send_json(200, {"lang": lang, "chapters": chapters})
+
+    def handle_words(self, parsed):
+        query = urllib.parse.parse_qs(parsed.query)
+        lang = (query.get("lang", [""])[0]).strip() or "english"
+
+        try:
+            catalog = load_catalog()
+        except (OSError, json.JSONDecodeError) as err:
+            self._send_json(500, {"error": f"couldn't read catalog: {err}"})
+            return
+
+        if lang not in catalog:
+            self._send_json(404, {"error": f"unknown language: {lang}"})
+            return
+
+        self._send_json(200, {"lang": lang, "words": catalog[lang]["words"]})
 
     def handle_tts(self, parsed):
         query = urllib.parse.parse_qs(parsed.query)
