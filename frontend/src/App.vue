@@ -33,19 +33,7 @@
 
       <Flashcards ref="flashcardsRef" />
 
-      <div id="topic-texts-panel" style="display:none">
-        <div class="text-reader" id="text-reader">
-          <div>
-            <div class="text-reader-number" id="text-reader-number"></div>
-            <h2 class="text-reader-title" id="text-reader-title"></h2>
-          </div>
-          <div class="text-reader-body" id="text-reader-body"></div>
-          <div class="action-bar">
-            <button type="button" class="action-btn action-btn-icon" id="text-prev-btn" title="Previous text" aria-label="Previous text">←</button>
-            <button type="button" class="action-btn action-btn-icon" id="text-next-btn" title="Next text" aria-label="Next text">→</button>
-          </div>
-        </div>
-      </div>
+      <Texts ref="textsRef" />
 
       <div id="topic-exercises-panel" style="display:none">
         <div class="texts-page">
@@ -66,12 +54,15 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { getChapters, getLanguages, getWords } from './shared/api'
+import { escapeHtml } from './shared/text'
 import Flashcards from './features/catalog/Flashcards.vue'
+import Texts from './features/texts/Texts.vue'
 
-// Template ref to the Flashcards child — declared at top level (not inside
-// onMounted) since Vue only binds template refs (ref="flashcardsRef" in the
-// template above) to variables visible at setup() scope.
+// Template refs to the tab children — declared at top level (not inside
+// onMounted) since Vue only binds template refs (ref="..." in the template
+// above) to variables visible at setup() scope.
 const flashcardsRef = ref(null)
+const textsRef = ref(null)
 
 // Lifted from viewer.html's end-of-body <script> unchanged (Step 2.1 of
 // RESTRUCTURE_PLAN.md Phase 2 — behavior-preserving re-platform, not a
@@ -154,8 +145,7 @@ onMounted(() => {
     if (tab === "flashcards") {
       flashcardsRef.value?.load(USER_EMAIL, LANG, currentTopic);
     } else if (tab === "texts") {
-      currentTextIndex = 0;
-      renderCurrentText();
+      textsRef.value?.show(currentTopic);
     } else {
       renderExercises().catch(showExercisesError);
     }
@@ -170,7 +160,6 @@ onMounted(() => {
   let CHAPTERS = [];
   let currentChapter = null;
   let currentTopic = null;
-  let currentTextIndex = 0;
 
   const textsBreadcrumbEl = document.getElementById("texts-breadcrumb");
   const textsErrorBanner = document.getElementById("texts-error-banner");
@@ -178,24 +167,6 @@ onMounted(() => {
   const textsEmptyStateEl = document.getElementById("texts-empty-state");
   const chaptersListEl = document.getElementById("chapters-list");
   const topicsListEl = document.getElementById("topics-list");
-  const textReaderNumberEl = document.getElementById("text-reader-number");
-  const textReaderTitleEl = document.getElementById("text-reader-title");
-  const textReaderBodyEl = document.getElementById("text-reader-body");
-  const textPrevBtn = document.getElementById("text-prev-btn");
-  const textNextBtn = document.getElementById("text-next-btn");
-
-  function escapeHtml(str) {
-    const div = document.createElement("div");
-    div.textContent = str;
-    return div.innerHTML;
-  }
-
-  function renderTextBody(body) {
-    return body
-      .split("\n")
-      .map((line) => `<p>${escapeHtml(line).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")}</p>`)
-      .join("");
-  }
 
   function showTextsError(err) {
     console.error(err);
@@ -335,29 +306,6 @@ onMounted(() => {
 
     switchTopicTab("flashcards");
   }
-
-  function renderCurrentText() {
-    const text = currentTopic.texts[currentTextIndex];
-    textReaderNumberEl.textContent = `Text ${text.number}`;
-    textReaderTitleEl.textContent = text.title;
-    textReaderBodyEl.innerHTML = renderTextBody(text.body);
-
-    textPrevBtn.disabled = currentTextIndex === 0;
-    textNextBtn.disabled = currentTextIndex === currentTopic.texts.length - 1;
-  }
-
-  textPrevBtn.addEventListener("click", () => {
-    if (currentTextIndex > 0) {
-      currentTextIndex--;
-      renderCurrentText();
-    }
-  });
-  textNextBtn.addEventListener("click", () => {
-    if (currentTextIndex < currentTopic.texts.length - 1) {
-      currentTextIndex++;
-      renderCurrentText();
-    }
-  });
 
   // ---- Exercises ----
 
