@@ -27,6 +27,20 @@
 //   email | lang | topic_id
 // e.g.  patricia.ramos@gmail.com | english | ch-01-tp-01
 // A topic with no matching row is simply not visible to that user.
+//
+// --- New schema (RESTRUCTURE_REQUIREMENTS.md §6), rolling out alongside the
+// above, not replacing it yet ---
+// A "users" sheet replaces "topics": one row per (email, language_pair), with
+// an enabled-topics *list* instead of one row per topic:
+//   email | language_pair | topic_ids
+// e.g.  patricia.ramos@gmail.com | pt-en | top-01, top-02
+// Reached via the v2_get_topics action.
+//
+// Per-user progress tabs replace the shared "progress" sheet: one sheet per
+// user, named "<email>-progress" (lowercased), auto-created on first
+// v2_upsert_progress call for that user:
+//   language_pair | word_id | confident | shown_count | show
+// Reached via the v2_get_progress / v2_upsert_progress actions.
 
 const PROGRESS_SHEET_NAME = "progress";
 const PROGRESS_HEADERS = ["email", "lang", "word_id", "confident", "shown_count", "show"];
@@ -34,10 +48,34 @@ const PROGRESS_HEADERS = ["email", "lang", "word_id", "confident", "shown_count"
 const TOPICS_SHEET_NAME = "topics";
 const TOPICS_HEADERS = ["email", "lang", "topic_id"];
 
+const USERS_SHEET_NAME = "users";
+const USERS_HEADERS = ["email", "language_pair", "topic_ids"];
+
+const USER_PROGRESS_HEADERS = ["language_pair", "word_id", "confident", "shown_count", "show"];
+
 function setup() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   ensureSheet(ss, PROGRESS_SHEET_NAME, PROGRESS_HEADERS);
   ensureSheet(ss, TOPICS_SHEET_NAME, TOPICS_HEADERS);
+  ensureSheet(ss, USERS_SHEET_NAME, USERS_HEADERS);
+}
+
+function userProgressSheetName(email) {
+  return email.toLowerCase() + "-progress";
+}
+
+function getUserProgressSheetIfExists(ss, email) {
+  return ss.getSheetByName(userProgressSheetName(email));
+}
+
+function getOrCreateUserProgressSheet(ss, email) {
+  const name = userProgressSheetName(email);
+  let sheet = ss.getSheetByName(name);
+  if (!sheet) {
+    sheet = ss.insertSheet(name);
+    sheet.appendRow(USER_PROGRESS_HEADERS);
+  }
+  return sheet;
 }
 
 function ensureSheet(ss, name, headers) {
@@ -74,6 +112,9 @@ function handle(params) {
   if (params.action === "upsert") return actionUpsert(params);
   if (params.action === "get_topics") return actionGetTopics(params);
   if (params.action === "remap_word_ids") return actionRemapWordIds(params);
+  if (params.action === "v2_get_progress") return actionV2GetProgress(params);
+  if (params.action === "v2_upsert_progress") return actionV2UpsertProgress(params);
+  if (params.action === "v2_get_topics") return actionV2GetTopics(params);
   return jsonResponse(400, { error: "unknown action: " + params.action });
 }
 
@@ -181,6 +222,97 @@ function actionRemapWordIds(params) {
       }
     }
     return jsonResponse(200, { updated: updated });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+// --- New per-user-tab actions (RESTRUCTURE_REQUIREMENTS.md §6). These are
+// additive: the actions above are untouched, so existing callers keep
+// working exactly as before while these roll out. ---
+
+function actionV2GetProgress(params) {
+  const email = params.email;
+  const lang = params.lang;
+  if (!email || !lang) return jsonResponse(400, { error: "missing email or lang" });
+
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = getUserProgressSheetIfExists(ss, email);
+    const words = {};
+    if (sheet) {
+      const rows = sheet.getDataRange().getValues();
+      for (let i = 1; i < rows.length; i++) {
+        const row = rows[i];
+        if (row[0] === lang) {
+          words[row[1]] = {
+            confident: !!row[2],
+            shown_count: Number(row[3]) || 0,
+            show: !!row[4],
+          };
+        }
+      }
+    }
+    return jsonResponse(200, { words: words });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function actionV2UpsertProgress(params) {
+  const email = params.email;
+  const lang = params.lang;
+  const wordId = params.word_id;
+  if (!email || !lang || !wordId) {
+    return jsonResponse(400, { error: "missing email, lang or word_id" });
+  }
+
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = getOrCreateUserProgressSheet(ss, email);
+    const rows = sheet.getDataRange().getValues();
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      if (row[0] === lang && row[1] === wordId) {
+        sheet.getRange(i + 1, 3, 1, 3).setValues([[
+          !!params.confident,
+          Number(params.shown_count) || 0,
+          !!params.show,
+        ]]);
+        return jsonResponse(200, { ok: true });
+      }
+    }
+    return jsonResponse(404, { error: "word not assigned to user: " + wordId });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function actionV2GetTopics(params) {
+  const email = params.email;
+  const lang = params.lang;
+  if (!email || !lang) return jsonResponse(400, { error: "missing email or lang" });
+
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const rows = getSheet(USERS_SHEET_NAME).getDataRange().getValues();
+    const emailLower = email.toLowerCase();
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      if (row[0] === emailLower && row[1] === lang) {
+        const topicIds = String(row[2] || "")
+          .split(",")
+          .map(function (s) { return s.trim(); })
+          .filter(function (s) { return s.length > 0; });
+        return jsonResponse(200, { topic_ids: topicIds });
+      }
+    }
+    return jsonResponse(200, { topic_ids: [] });
   } finally {
     lock.releaseLock();
   }

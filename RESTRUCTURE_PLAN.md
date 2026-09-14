@@ -214,9 +214,20 @@ topics) directly in `RESTRUCTURE_REQUIREMENTS.md` §6 before writing any code.
 - **Commit**: `docs: finalize users-tab schema`
 
 ### Step 4.2 — Add per-user progress tab support to `Code.gs`, behind a feature flag
-Extend the Apps Script to read/write per-user tabs (`<email>-progress`) while the
-existing shared `progress` tab keeps working, so nothing breaks mid-migration.
-- **Test locally**: Apps Script's own test deployment — call the updated web app URL manually via `curl` for a test user/tab and confirm rows land in the right sheet.
+Extend the Apps Script to read/write per-user tabs (`<email>-progress`) and the new
+`users` tab via new `v2_get_progress`/`v2_upsert_progress`/`v2_get_topics` actions,
+additive alongside the existing `get`/`upsert`/`get_topics` actions (untouched), so
+the existing shared `progress`/`topics` tabs keep working and nothing breaks
+mid-migration — the "feature flag" is simply which action name a caller uses.
+`actionRemapWordIds`'s per-user-tab iteration (RESTRUCTURE_REQUIREMENTS.md §6) is
+deferred to Step 4.4, where the old shared-tab path is actually removed.
+- **Test locally**: Apps Script can't run in Docker — deploy the updated `Code.gs` to
+  the real Apps Script project (run `setup()` once for the new `users` tab, then
+  re-deploy the existing web app so the already-configured `SHEETS_WEBAPP_URL`
+  serves the new code). Once deployed, Claude can `curl` the real webapp URL from
+  inside the backend container using a fake test email (never `igor.carneiro@gmail.com`
+  or `patricia.ramos@gmail.com`) to verify the v2 actions, since they're fully
+  additive and can't touch the old tabs.
 - **Commit**: `feat(apps-script): support per-user progress tabs`
 
 ### Step 4.3 — Write and run the data migration for the two real users
@@ -228,7 +239,9 @@ into their new per-user tabs and the new `users` tab.
 
 ### Step 4.4 — Point `GoogleSheets*Repository` at the new schema, remove the old path
 Update the backend repositories to read/write per-user tabs and the `users` tab
-exclusively; remove the shared-tab fallback from `Code.gs`.
+exclusively (via the `v2_*` actions); remove the old `get`/`upsert`/`get_topics`
+actions and the shared `progress`/`topics` tabs from `Code.gs`. Also carries
+`actionRemapWordIds`'s per-user-tab iteration, deferred here from Step 4.2.
 - **Test locally**: Full manual pass logged in as both real users, confirming progress and enabled topics behave identically to before.
 - **Commit**: `feat: cut over to per-user sheet schema, remove legacy shared tabs`
 
