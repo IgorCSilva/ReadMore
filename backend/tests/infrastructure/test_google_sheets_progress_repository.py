@@ -28,11 +28,9 @@ def test_raises_when_webapp_url_or_token_missing():
 def test_get_user_progress_reads_real_sheet():
     """Read-only on purpose: never calls upsert_progress here, so running the
     test suite can't mutate real user data in the production spreadsheet.
-    Passing PT_EN (not the legacy "english" string) exercises this
-    repository's LanguagePair -> legacy-name translation for real: the real
-    sheet is still keyed on "english", so a non-empty result here proves
-    to_legacy_name() is actually reaching the right rows, not just correct
-    in isolation."""
+    A non-empty result proves this is actually reaching
+    igor.carneiro@gmail.com's real "igor.carneiro@gmail.com-progress" tab,
+    not just correct in isolation."""
     repository = GoogleSheetsProgressRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
 
     progress = repository.get_user_progress(Email("igor.carneiro@gmail.com"), PT_EN)

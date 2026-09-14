@@ -26,9 +26,8 @@ def test_raises_when_webapp_url_or_token_missing():
 )
 def test_get_enabled_topic_ids_reads_real_sheet():
     """Read-only — this action has no corresponding write, so there's nothing
-    to restore afterward. Passing PT_EN (not "english") exercises this
-    repository's LanguagePair -> legacy-name translation against the real
-    sheet, same reasoning as the progress repository's equivalent test."""
+    to restore afterward. A non-empty result proves this is actually reaching
+    igor.carneiro@gmail.com's real row in the "users" sheet."""
     repository = GoogleSheetsTopicsRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
 
     topic_ids = repository.get_enabled_topic_ids(Email("igor.carneiro@gmail.com"), PT_EN)

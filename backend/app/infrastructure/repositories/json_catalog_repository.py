@@ -1,10 +1,9 @@
 """Concrete CatalogRepository implementation, reading catalog.json from disk.
 
 catalog.json is keyed by explicit origin-target language pair (e.g. "pt-en")
-as of RESTRUCTURE_PLAN.md Step 3.1. As of Step 3.2, callers always pass a
-LanguagePair (parsed from raw request input at the HTTP boundary — see
-infrastructure/legacy_language_names.py), so this repository no longer needs
-its own legacy-name translation shim; it operates on the pair directly.
+as of RESTRUCTURE_PLAN.md Step 3.1. Callers always pass a LanguagePair
+(parsed from raw request input at the HTTP boundary in main.py), so this
+repository operates on the pair directly with no translation needed.
 """
 import json
 from pathlib import Path

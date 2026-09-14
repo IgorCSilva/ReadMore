@@ -34,7 +34,6 @@ from backend.app.infrastructure.dtos.chapters import ChapterDTO, ChaptersRespons
 from backend.app.infrastructure.dtos.progress_actions import ProgressActionRequest
 from backend.app.infrastructure.dtos.user_words import UserWordDTO, UserWordsResponse
 from backend.app.infrastructure.dtos.words import WordDTO, WordsResponse
-from backend.app.infrastructure.legacy_language_names import parse_language_pair
 from backend.app.infrastructure.repositories.google_sheets_client import SheetsError
 from backend.app.infrastructure.repositories.google_sheets_progress_repository import (
     GoogleSheetsProgressRepository,
@@ -124,6 +123,17 @@ def get_tts_port() -> GoogleTranslateTtsClient:
     return GoogleTranslateTtsClient()
 
 
+def _parse_lang(raw: str) -> LanguagePair:
+    """Raises LanguageNotFoundError for anything that isn't a valid
+    'origin-target' pair key — the same "unknown language" a caller would
+    see if the value simply didn't match a catalog entry, since from the
+    caller's perspective it doesn't."""
+    try:
+        return LanguagePair.parse(raw)
+    except ValueError:
+        raise LanguageNotFoundError(raw) from None
+
+
 def _parse_progress_action(
     payload: ProgressActionRequest,
 ) -> tuple[Email, LanguagePair, str] | JSONResponse:
@@ -132,7 +142,7 @@ def _parse_progress_action(
     lang value raises LanguageNotFoundError, caught by the registered
     exception handler — not handled locally like the other two checks,
     since unlike them it isn't specific to these three routes."""
-    lang = parse_language_pair(payload.lang.strip() or "english")
+    lang = _parse_lang(payload.lang.strip() or "pt-en")
     try:
         email = Email(payload.user.strip())
     except ValueError:
@@ -153,10 +163,10 @@ def get_languages(
 
 @app.get("/words", response_model=WordsResponse)
 def get_words(
-    lang: str = "english",
+    lang: str = "pt-en",
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
 ):
-    language_pair = parse_language_pair(lang.strip() or "english")
+    language_pair = _parse_lang(lang.strip() or "pt-en")
     use_case = GetWords(catalog_repository)
     words = use_case.execute(language_pair)
     return WordsResponse(lang=str(language_pair), words=[WordDTO.from_entity(w) for w in words])
@@ -165,11 +175,11 @@ def get_words(
 @app.get("/data", response_model=UserWordsResponse)
 def get_data(
     user: str = "",
-    lang: str = "english",
+    lang: str = "pt-en",
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
     progress_repository: GoogleSheetsProgressRepository = Depends(get_progress_repository),
 ):
-    language_pair = parse_language_pair(lang.strip() or "english")
+    language_pair = _parse_lang(lang.strip() or "pt-en")
     try:
         email = Email(user.strip())
     except ValueError:
@@ -188,11 +198,11 @@ def get_data(
 @app.get("/chapters", response_model=ChaptersResponse)
 def get_chapters_route(
     user: str = "",
-    lang: str = "english",
+    lang: str = "pt-en",
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
     topics_repository: GoogleSheetsTopicsRepository = Depends(get_topics_repository),
 ):
-    language_pair = parse_language_pair(lang.strip() or "english")
+    language_pair = _parse_lang(lang.strip() or "pt-en")
     try:
         email = Email(user.strip())
     except ValueError:
