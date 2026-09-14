@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Static file server + per-user learning data + GET /tts endpoint.
 
-Run from this directory (or anywhere, it locates itself):
-    python3 server.py [port]   # default port 8000
+Project layout: this file and catalog.json live in backend/; static assets
+(viewer.html, images/) live in frontend/ at the project root. Run from
+anywhere, it locates itself:
+    python3 backend/server.py [port]   # default port 8000
 
 Then open http://127.0.0.1:8000/viewer.html
 
@@ -64,6 +66,8 @@ import urllib.parse
 import urllib.request
 
 DIR = os.path.dirname(os.path.abspath(__file__))
+ROOT_DIR = os.path.dirname(DIR)
+FRONTEND_DIR = os.path.join(ROOT_DIR, "frontend")
 CATALOG_PATH = os.path.join(DIR, "catalog.json")
 LOCK = threading.Lock()
 
@@ -169,7 +173,7 @@ def load_enabled_topics(email, lang):
 
 class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
-        super().__init__(*args, directory=DIR, **kwargs)
+        super().__init__(*args, directory=FRONTEND_DIR, **kwargs)
 
     def log_message(self, fmt, *args):
         if self.path.startswith(("/increment", "/mark-known", "/show-word", "/data", "/chapters", "/words", "/languages", "/tts")):
