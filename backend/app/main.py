@@ -10,6 +10,7 @@ import os
 from pathlib import Path
 
 from fastapi import Depends, FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 from backend.app.application.use_cases.get_chapters import GetChapters
@@ -41,6 +42,16 @@ SHEETS_WEBAPP_URL = os.environ.get("SHEETS_WEBAPP_URL", "")
 SHEETS_API_TOKEN = os.environ.get("SHEETS_API_TOKEN", "")
 
 app = FastAPI()
+
+# backend/server.py's _send_json sets Access-Control-Allow-Origin: * on every
+# response (success or error), and handles OPTIONS preflight itself. This
+# replicates that for every route uniformly rather than per-endpoint.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.exception_handler(LanguageNotFoundError)
