@@ -19,3 +19,21 @@ services:
       - SHEETS_WEBAPP_URL=${SHEETS_WEBAPP_URL}
       - SHEETS_API_TOKEN=${SHEETS_API_TOKEN}
     restart: unless-stopped
+
+  frontend:
+    image: node:20-slim
+    container_name: readmore-frontend
+    working_dir: /app/frontend
+    # Local dev only, same pattern as the readmore service: bind-mounted repo,
+    # idle so you exec in manually (docker compose exec frontend npm run dev,
+    # docker compose exec frontend npm run test). Not part of the production
+    # image — Vite's build output gets served by the backend in a later step
+    # (RESTRUCTURE_PLAN.md Phase 2). node_modules isn't installed here
+    # automatically since package.json doesn't exist until Step 2.1 scaffolds
+    # it; run `npm install` manually the first time.
+    command: ["tail", "-f", "/dev/null"]
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+    restart: unless-stopped
