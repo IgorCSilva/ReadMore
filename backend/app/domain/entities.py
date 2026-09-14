@@ -45,3 +45,14 @@ class Chapter:
     description: str
     topics: list[Topic] = field(default_factory=list)
     status: str = "ready"
+
+
+@dataclass
+class ProgressRecord:
+    """One user's progress on one word, for one language: mirrors a single
+    (email, lang, word_id) row in the Sheets-backed progress store."""
+
+    word_id: str
+    confident: bool
+    shown_count: int
+    show: bool

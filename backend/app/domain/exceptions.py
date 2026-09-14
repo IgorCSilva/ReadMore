@@ -9,3 +9,9 @@ class LanguageNotFoundError(Exception):
     def __init__(self, lang: str) -> None:
         self.lang = lang
         super().__init__(f"unknown language: {lang}")
+
+
+class WordNotAssignedError(Exception):
+    def __init__(self, word_id: str) -> None:
+        self.word_id = word_id
+        super().__init__(f"word not assigned to user: {word_id}")

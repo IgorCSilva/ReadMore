@@ -1,4 +1,4 @@
-from backend.app.domain.entities import Chapter, Text, Topic, Word
+from backend.app.domain.entities import Chapter, ProgressRecord, Text, Topic, Word
 
 
 def test_word_holds_catalog_fields():
@@ -82,3 +82,11 @@ def test_chapter_can_hold_topics():
         topics=[topic],
     )
     assert chapter.topics == [topic]
+
+
+def test_progress_record_holds_catalog_fields():
+    record = ProgressRecord(word_id="en-0001", confident=False, shown_count=3, show=True)
+    assert record.word_id == "en-0001"
+    assert record.confident is False
+    assert record.shown_count == 3
+    assert record.show is True
