@@ -12,19 +12,30 @@ def _write_catalog(tmp_path, data: dict):
     return catalog_path
 
 
-def test_list_languages_reads_top_level_keys_from_catalog_file(tmp_path):
-    catalog_path = _write_catalog(tmp_path, {"english": {}, "spanish": {}})
+def test_list_languages_maps_pair_keys_back_to_legacy_names(tmp_path):
+    # catalog.json is stored pair-keyed (Step 3.1), but list_languages()
+    # still reports the legacy bare-target-language names for now — see
+    # json_catalog_repository.py's module docstring for why.
+    catalog_path = _write_catalog(tmp_path, {"pt-en": {}, "pt-es": {}})
 
     repository = JsonCatalogRepository(catalog_path)
 
     assert repository.list_languages() == ["english", "spanish"]
 
 
+def test_list_languages_passes_through_unmapped_keys_unchanged(tmp_path):
+    catalog_path = _write_catalog(tmp_path, {"fr-de": {}})
+
+    repository = JsonCatalogRepository(catalog_path)
+
+    assert repository.list_languages() == ["fr-de"]
+
+
 def test_get_words_maps_catalog_entries_to_word_entities(tmp_path):
     catalog_path = _write_catalog(
         tmp_path,
         {
-            "english": {
+            "pt-en": {
                 "words": [
                     {
                         "word_id": "en-0001",
@@ -49,8 +60,31 @@ def test_get_words_maps_catalog_entries_to_word_entities(tmp_path):
     assert words[0].cue == "\U0001F44B"
 
 
+def test_get_words_also_accepts_the_pair_key_directly(tmp_path):
+    catalog_path = _write_catalog(
+        tmp_path,
+        {
+            "pt-en": {
+                "words": [
+                    {
+                        "word_id": "en-0001",
+                        "original": "hello",
+                        "filename": "hello.webp",
+                        "sentence": "Hello, how are you?",
+                        "cue": "wave",
+                    }
+                ]
+            }
+        },
+    )
+
+    repository = JsonCatalogRepository(catalog_path)
+
+    assert repository.get_words("pt-en") == repository.get_words("english")
+
+
 def test_get_words_raises_for_unknown_language(tmp_path):
-    catalog_path = _write_catalog(tmp_path, {"english": {"words": []}})
+    catalog_path = _write_catalog(tmp_path, {"pt-en": {"words": []}})
 
     repository = JsonCatalogRepository(catalog_path)
 
@@ -62,7 +96,7 @@ def test_get_chapters_maps_nested_catalog_entries_to_entities(tmp_path):
     catalog_path = _write_catalog(
         tmp_path,
         {
-            "english": {
+            "pt-en": {
                 "chapters": [
                     {
                         "chapter_id": "ch-01",
@@ -116,7 +150,7 @@ def test_get_chapters_defaults_status_to_ready_when_missing(tmp_path):
     catalog_path = _write_catalog(
         tmp_path,
         {
-            "english": {
+            "pt-en": {
                 "chapters": [
                     {
                         "chapter_id": "ch-01",
@@ -146,7 +180,7 @@ def test_get_chapters_defaults_status_to_ready_when_missing(tmp_path):
 
 
 def test_get_chapters_raises_for_unknown_language(tmp_path):
-    catalog_path = _write_catalog(tmp_path, {"english": {"chapters": []}})
+    catalog_path = _write_catalog(tmp_path, {"pt-en": {"chapters": []}})
 
     repository = JsonCatalogRepository(catalog_path)
 
