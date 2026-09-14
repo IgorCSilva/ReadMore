@@ -11,7 +11,7 @@ from pathlib import Path
 
 from fastapi import Depends, FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, Response
 
 from backend.app.application.use_cases.get_chapters import GetChapters
 from backend.app.application.use_cases.get_user_words import GetUserWords
@@ -20,7 +20,12 @@ from backend.app.application.use_cases.increment_shown_count import IncrementSho
 from backend.app.application.use_cases.list_languages import ListLanguages
 from backend.app.application.use_cases.mark_word_known import MarkWordKnown
 from backend.app.application.use_cases.show_word_again import ShowWordAgain
-from backend.app.domain.exceptions import LanguageNotFoundError, WordNotAssignedError
+from backend.app.application.use_cases.synthesize_speech import SynthesizeSpeech
+from backend.app.domain.exceptions import (
+    LanguageNotFoundError,
+    TtsUpstreamError,
+    WordNotAssignedError,
+)
 from backend.app.domain.value_objects import Email
 from backend.app.infrastructure.dtos.chapters import ChapterDTO, ChaptersResponse
 from backend.app.infrastructure.dtos.progress_actions import ProgressActionRequest
@@ -32,6 +37,9 @@ from backend.app.infrastructure.repositories.google_sheets_progress_repository i
 )
 from backend.app.infrastructure.repositories.google_sheets_topics_repository import (
     GoogleSheetsTopicsRepository,
+)
+from backend.app.infrastructure.repositories.google_translate_tts_client import (
+    GoogleTranslateTtsClient,
 )
 from backend.app.infrastructure.repositories.json_catalog_repository import JsonCatalogRepository
 
@@ -69,6 +77,11 @@ async def sheets_error_handler(request: Request, exc: SheetsError):
     return JSONResponse(status_code=502, content={"error": str(exc)})
 
 
+@app.exception_handler(TtsUpstreamError)
+async def tts_upstream_error_handler(request: Request, exc: TtsUpstreamError):
+    return JSONResponse(status_code=502, content={"error": str(exc)})
+
+
 def get_catalog_repository() -> JsonCatalogRepository:
     return JsonCatalogRepository(CATALOG_PATH)
 
@@ -79,6 +92,10 @@ def get_progress_repository() -> GoogleSheetsProgressRepository:
 
 def get_topics_repository() -> GoogleSheetsTopicsRepository:
     return GoogleSheetsTopicsRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
+
+
+def get_tts_port() -> GoogleTranslateTtsClient:
+    return GoogleTranslateTtsClient()
 
 
 def _parse_progress_action(
@@ -156,6 +173,23 @@ def get_chapters_route(
     use_case = GetChapters(catalog_repository, topics_repository)
     chapters = use_case.execute(email, lang)
     return ChaptersResponse(lang=lang, chapters=[ChapterDTO.from_entity(c) for c in chapters])
+
+
+@app.get("/tts")
+def get_tts(
+    text: str = "",
+    tts_port: GoogleTranslateTtsClient = Depends(get_tts_port),
+):
+    text = text.strip()
+    if not text:
+        return JSONResponse(status_code=400, content={"error": "missing 'text' query param"})
+
+    audio_bytes, content_type = SynthesizeSpeech(tts_port).execute(text)
+    return Response(
+        content=audio_bytes,
+        media_type=content_type,
+        headers={"Cache-Control": "no-store"},
+    )
 
 
 @app.post("/increment")

@@ -15,3 +15,9 @@ class WordNotAssignedError(Exception):
     def __init__(self, word_id: str) -> None:
         self.word_id = word_id
         super().__init__(f"word not assigned to user: {word_id}")
+
+
+class TtsUpstreamError(Exception):
+    def __init__(self, detail: str) -> None:
+        self.detail = detail
+        super().__init__(f"TTS upstream failed: {detail}")
