@@ -94,6 +94,7 @@ import { onMounted } from 'vue'
 import { getUserWords, ttsUrl } from '../../shared/api'
 import { cacheKey, writeCache } from '../../shared/cache'
 import { readStale, refreshInBackground } from '../../shared/dataSync'
+import { formatWordByGender, getGender } from '../../shared/genders'
 import { hasQueuedAction, performWrite } from '../../shared/writeQueue'
 
 // Extracted from App.vue's monolithic script (Step 2.4 of RESTRUCTURE_PLAN.md
@@ -206,6 +207,7 @@ onMounted(() => {
       return {
         wordId: e.word_id,
         word: e.original,
+        genderId: e.gender_id || "not_apply",
         base,
         ext,
         confident: e.confident,
@@ -335,7 +337,8 @@ onMounted(() => {
     cueEl.textContent = entry.cue;
 
     revealed = false;
-    wordEl.textContent = entry.word;
+    wordEl.textContent = formatWordByGender(entry.word, entry.genderId);
+    wordEl.style.color = getGender(entry.genderId).color || "";
     wordEl.classList.add("hidden-word");
 
     counterEl.textContent = `${index + 1} / ${ENTRIES.length}`;

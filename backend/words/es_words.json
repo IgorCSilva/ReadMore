@@ -2,86 +2,103 @@
   {
     "word_id": "es-wd-0001",
     "root_word_id": "wd-0001",
-    "word": "hola"
+    "word": "hola",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0002",
     "root_word_id": "wd-0002",
-    "word": "hola"
+    "word": "hola",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0003",
     "root_word_id": "wd-0003",
-    "word": "adiós"
+    "word": "adiós",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0004",
     "root_word_id": "wd-0004",
-    "word": "por favor"
+    "word": "por favor",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0005",
     "root_word_id": "wd-0005",
-    "word": "gracias"
+    "word": "gracias",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0006",
     "root_word_id": "wd-0006",
-    "word": "qué"
+    "word": "qué",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0007",
     "root_word_id": "wd-0013",
-    "word": "tú"
+    "word": "tú",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0008",
     "root_word_id": "wd-0014",
-    "word": "mucho gusto"
+    "word": "mucho gusto",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0009",
     "root_word_id": "wd-0022",
-    "word": "adiós"
+    "word": "adiós",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0010",
     "root_word_id": "wd-0051",
-    "word": "cómo"
+    "word": "cómo",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0011",
     "root_word_id": "wd-0063",
-    "word": "y"
+    "word": "y",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0012",
     "root_word_id": "wd-0260",
-    "word": "me"
+    "word": "me",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0013",
     "root_word_id": "wd-0261",
-    "word": "llamo"
+    "word": "llamo",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0014",
     "root_word_id": "wd-0262",
-    "word": "te"
+    "word": "te",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0015",
     "root_word_id": "wd-0263",
-    "word": "llamas"
+    "word": "llamas",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0016",
     "root_word_id": "wd-0264",
-    "word": "se"
+    "word": "se",
+    "gender_id": "not_apply"
   },
   {
     "word_id": "es-wd-0017",
     "root_word_id": "wd-0265",
-    "word": "llama"
+    "word": "llama",
+    "gender_id": "not_apply"
   }
 ]

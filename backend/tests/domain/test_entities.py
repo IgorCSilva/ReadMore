@@ -8,12 +8,25 @@ def test_word_holds_catalog_fields():
         filename="hello.webp",
         sentence="Hello, how are you?",
         cue="\U0001F44B",
+        gender_id="not_apply",
     )
     assert word.word_id == "en-0001"
     assert word.original == "hello"
     assert word.filename == "hello.webp"
     assert word.sentence == "Hello, how are you?"
     assert word.cue == "\U0001F44B"
+    assert word.gender_id == "not_apply"
+
+
+def test_word_defaults_gender_id_to_not_apply():
+    word = Word(
+        word_id="en-0001",
+        original="hello",
+        filename="hello.webp",
+        sentence="Hello, how are you?",
+        cue="\U0001F44B",
+    )
+    assert word.gender_id == "not_apply"
 
 
 def test_text_holds_catalog_fields():

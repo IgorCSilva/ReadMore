@@ -11,6 +11,7 @@ class UserWordDTO(BaseModel):
     filename: str
     sentence: str
     cue: str
+    gender_id: str
     confident: bool
     shown_count: int
     show: bool
@@ -23,6 +24,7 @@ class UserWordDTO(BaseModel):
             filename=word.filename,
             sentence=word.sentence,
             cue=word.cue,
+            gender_id=word.gender_id,
             confident=record.confident,
             shown_count=record.shown_count,
             show=record.show,

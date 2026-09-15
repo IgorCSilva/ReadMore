@@ -14,6 +14,7 @@ class WordDTO(BaseModel):
     filename: str
     sentence: str
     cue: str
+    gender_id: str
 
     @classmethod
     def from_entity(cls, word: Word) -> "WordDTO":
@@ -23,6 +24,7 @@ class WordDTO(BaseModel):
             filename=word.filename,
             sentence=word.sentence,
             cue=word.cue,
+            gender_id=word.gender_id,
         )
 
 
