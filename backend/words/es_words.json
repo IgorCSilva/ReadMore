@@ -1,0 +1,87 @@
+[
+  {
+    "word_id": "es-wd-0001",
+    "root_word_id": "wd-0001",
+    "word": "hola"
+  },
+  {
+    "word_id": "es-wd-0002",
+    "root_word_id": "wd-0002",
+    "word": "hola"
+  },
+  {
+    "word_id": "es-wd-0003",
+    "root_word_id": "wd-0003",
+    "word": "adiós"
+  },
+  {
+    "word_id": "es-wd-0004",
+    "root_word_id": "wd-0004",
+    "word": "por favor"
+  },
+  {
+    "word_id": "es-wd-0005",
+    "root_word_id": "wd-0005",
+    "word": "gracias"
+  },
+  {
+    "word_id": "es-wd-0006",
+    "root_word_id": "wd-0006",
+    "word": "qué"
+  },
+  {
+    "word_id": "es-wd-0007",
+    "root_word_id": "wd-0013",
+    "word": "tú"
+  },
+  {
+    "word_id": "es-wd-0008",
+    "root_word_id": "wd-0014",
+    "word": "mucho gusto"
+  },
+  {
+    "word_id": "es-wd-0009",
+    "root_word_id": "wd-0022",
+    "word": "adiós"
+  },
+  {
+    "word_id": "es-wd-0010",
+    "root_word_id": "wd-0051",
+    "word": "cómo"
+  },
+  {
+    "word_id": "es-wd-0011",
+    "root_word_id": "wd-0063",
+    "word": "y"
+  },
+  {
+    "word_id": "es-wd-0012",
+    "root_word_id": "wd-0260",
+    "word": "me"
+  },
+  {
+    "word_id": "es-wd-0013",
+    "root_word_id": "wd-0261",
+    "word": "llamo"
+  },
+  {
+    "word_id": "es-wd-0014",
+    "root_word_id": "wd-0262",
+    "word": "te"
+  },
+  {
+    "word_id": "es-wd-0015",
+    "root_word_id": "wd-0263",
+    "word": "llamas"
+  },
+  {
+    "word_id": "es-wd-0016",
+    "root_word_id": "wd-0264",
+    "word": "se"
+  },
+  {
+    "word_id": "es-wd-0017",
+    "root_word_id": "wd-0265",
+    "word": "llama"
+  }
+]

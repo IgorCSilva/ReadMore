@@ -1,15 +1,22 @@
-"""Concrete CatalogRepository implementation, reading from four JSON files
-under backend/words/ and backend/content/.
+"""Concrete CatalogRepository implementation, reading from JSON files under
+backend/words/ and backend/content/.
 
 As of the words-catalog redesign (see contents/language_reading_journey_phases/
 readmore_adaptation/'s phase docs for the content-authoring side), catalog.json
-holds only a shared, concept-based `words` list — one row per concept, with a
-field per TARGET language it has a spelling for (e.g. row["en"] = "hello") —
-origin is dropped from the key since one target language never appears under
-two different origins in this app so far. Everything pair-specific lives
-elsewhere: content/<pair>.json (chapters/topics/texts/exercises), sentences.json
-and cues.json (flat, keyed by "<lang-code>_<word_id>" — lang-code is either the
-pair's origin or target code, letting the same word_id resolve either variant).
+holds only a shared, language-agnostic `words` list keyed by the stable global
+word_id — one row per concept, carrying just `filename` (always an English
+slug, used for image lookup, shared across every target language's spelling of
+that concept). Which target languages a concept has a spelling in, and what
+that spelling is, lives in backend/words/<target>_words.json instead — one row
+per (target language, concept) pair: `{word_id: "<target>-wd-NNNN" (sequential
+per language), root_word_id: "<catalog word_id>", word: "<spelling>"}`.
+`root_word_id` is the join key back to catalog.json and is never renumbered or
+reused, same stability guarantee as catalog.json's own word_id. Everything
+pair-specific lives elsewhere: content/<pair>.json (chapters/topics/texts/
+exercises — topics' word_ids use the same per-target-language ids, resolved
+back to root_word_id by get_chapters below), sentences.json and cues.json
+(flat, keyed by "<lang-code>_<root_word_id>" — lang-code is either the pair's
+origin or target code, letting the same root_word_id resolve either variant).
 """
 import json
 from pathlib import Path
@@ -54,6 +61,24 @@ class JsonCatalogRepository(CatalogRepository):
             raise LanguageNotFoundError(str(lang))
         return self._load_json(path)
 
+    def _load_lang_words(self, target_code: str) -> list[dict]:
+        """Rows from backend/words/<target>_words.json: {word_id, root_word_id,
+        word}, one per concept this target language has a spelling for.
+        Missing file (no words authored for this target language yet) is not
+        an error — resolves to no words, same as an empty list would."""
+        path = self._catalog_path.parent / f"{target_code}_words.json"
+        if not path.exists():
+            return []
+        return self._load_json(path)
+
+    def _load_word_map(self, target_code: str) -> dict[str, str]:
+        """Per-target-language friendly id -> catalog root_word_id (e.g.
+        "es-wd-0001" -> "wd-0001"). Lets content/<pair>.json's topics.word_ids
+        read as a clean sequence per language while every other consumer
+        (frontend, exercises, Sheets-backed progress) keeps resolving on
+        catalog.json's stable global word_id, unchanged."""
+        return {row["word_id"]: row["root_word_id"] for row in self._load_lang_words(target_code)}
+
     def list_languages(self) -> list[LanguagePair]:
         return [
             LanguagePair.parse(path.stem)
@@ -64,14 +89,15 @@ class JsonCatalogRepository(CatalogRepository):
         self, lang: LanguagePair, sentence_lang: str = "target", cue_lang: str = "origin"
     ) -> list[Word]:
         pair_key = str(lang)
-        # catalog.json rows key their spelling by target-language code alone
-        # (e.g. "en", not "pt-en") — origin is dropped since, for this app so
-        # far, one target language never appears under two different origins.
-        target_code = lang.target
-        rows = [w for w in self._load_words() if target_code in w]
-        if not rows and not (self._content_dir / f"{pair_key}.json").exists():
+        # backend/words/<target>_words.json is the source of which concepts
+        # this target language has a spelling for, and what it is — origin is
+        # dropped since, for this app so far, one target language never
+        # appears under two different origins.
+        lang_words = self._load_lang_words(lang.target)
+        if not lang_words and not (self._content_dir / f"{pair_key}.json").exists():
             raise LanguageNotFoundError(pair_key)
 
+        catalog_by_id = {w["word_id"]: w for w in self._load_words()}
         sentences = self._load_json(self._sentences_path)
         cues = self._load_json(self._cues_path)
         sentence_code = _resolve_lang_code(lang, sentence_lang)
@@ -79,38 +105,39 @@ class JsonCatalogRepository(CatalogRepository):
 
         return [
             Word(
-                word_id=w["word_id"],
-                original=w[target_code],
-                filename=w["filename"],
-                sentence=sentences.get(f"{sentence_code}_{w['word_id']}", ""),
-                cue=cues.get(f"{cue_code}_{w['word_id']}", ""),
+                word_id=row["root_word_id"],
+                original=row["word"],
+                filename=catalog_by_id[row["root_word_id"]]["filename"],
+                sentence=sentences.get(f"{sentence_code}_{row['root_word_id']}", ""),
+                cue=cues.get(f"{cue_code}_{row['root_word_id']}", ""),
             )
-            for w in rows
+            for row in lang_words
         ]
 
     def get_chapters(self, lang: LanguagePair) -> list[Chapter]:
         content = self._load_content(lang)
-        return [self._to_chapter(c) for c in content.get("chapters", [])]
+        word_map = self._load_word_map(lang.target)
+        return [self._to_chapter(c, word_map) for c in content.get("chapters", [])]
 
     @staticmethod
-    def _to_chapter(data: dict) -> Chapter:
+    def _to_chapter(data: dict, word_map: dict[str, str]) -> Chapter:
         return Chapter(
             chapter_id=data["chapter_id"],
             number=data["number"],
             title=data["title"],
             description=data["description"],
-            topics=[JsonCatalogRepository._to_topic(t) for t in data.get("topics", [])],
+            topics=[JsonCatalogRepository._to_topic(t, word_map) for t in data.get("topics", [])],
             status=data.get("status", "ready"),
         )
 
     @staticmethod
-    def _to_topic(data: dict) -> Topic:
+    def _to_topic(data: dict, word_map: dict[str, str]) -> Topic:
         return Topic(
             topic_id=data["topic_id"],
             number=data["number"],
             title=data["title"],
             description=data["description"],
-            word_ids=data.get("word_ids", []),
+            word_ids=[word_map.get(w, w) for w in data.get("word_ids", [])],
             texts=[JsonCatalogRepository._to_text(t) for t in data.get("texts", [])],
             status=data.get("status", "ready"),
             exercises=data.get("exercises", []),

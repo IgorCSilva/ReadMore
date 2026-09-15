@@ -20,6 +20,7 @@ def _repository(
     content: dict[str, dict] | None = None,
     sentences: dict[str, str] | None = None,
     cues: dict[str, str] | None = None,
+    word_maps: dict[str, list[dict]] | None = None,
 ) -> JsonCatalogRepository:
     words_dir = tmp_path / "words"
     words_dir.mkdir()
@@ -30,6 +31,8 @@ def _repository(
         _write_json(content_dir / f"{pair}.json", data)
     sentences_path = _write_json(words_dir / "sentences.json", sentences or {})
     cues_path = _write_json(words_dir / "cues.json", cues or {})
+    for target_code, rows in (word_maps or {}).items():
+        _write_json(words_dir / f"{target_code}_words.json", rows)
     return JsonCatalogRepository(catalog_path, content_dir, sentences_path, cues_path)
 
 
@@ -45,12 +48,14 @@ def test_list_languages_parses_content_dir_filenames_as_pairs(tmp_path):
 def test_get_words_maps_catalog_entries_to_word_entities(tmp_path):
     repository = _repository(
         tmp_path,
-        # catalog rows key their spelling by target-language code alone
-        # ("en"), not the full pair ("pt-en") — origin doesn't matter here.
-        words=[{"word_id": "wd-0001", "filename": "hello.webp", "en": "hello"}],
+        # catalog.json is language-agnostic: word_id + filename only. Which
+        # target languages a concept has a spelling in, and what it is, comes
+        # from <target>_words.json instead — origin doesn't matter here.
+        words=[{"word_id": "wd-0001", "filename": "hello.webp"}],
         content={"pt-en": {"chapters": []}},
         sentences={"en_wd-0001": "Hello, how are you?", "pt_wd-0001": "Olá, como você está?"},
         cues={"pt_wd-0001": "\U0001F44B", "en_wd-0001": "wave"},
+        word_maps={"en": [{"word_id": "en-wd-0001", "root_word_id": "wd-0001", "word": "hello"}]},
     )
 
     words = repository.get_words(PT_EN)
@@ -65,14 +70,15 @@ def test_get_words_maps_catalog_entries_to_word_entities(tmp_path):
     assert word.cue == "\U0001F44B"
 
 
-def test_get_words_only_returns_rows_that_carry_the_requested_targets_code(tmp_path):
+def test_get_words_only_returns_concepts_the_requested_target_language_has_a_spelling_for(tmp_path):
     repository = _repository(
         tmp_path,
         words=[
-            {"word_id": "wd-0001", "filename": "hello.webp", "en": "hello", "es": "hola"},
-            {"word_id": "wd-0002", "filename": "bye.webp", "es": "adiós"},
+            {"word_id": "wd-0001", "filename": "hello.webp"},
+            {"word_id": "wd-0002", "filename": "bye.webp"},
         ],
         content={"pt-en": {"chapters": []}},
+        word_maps={"en": [{"word_id": "en-wd-0001", "root_word_id": "wd-0001", "word": "hello"}]},
     )
 
     words = repository.get_words(PT_EN)
@@ -83,10 +89,11 @@ def test_get_words_only_returns_rows_that_carry_the_requested_targets_code(tmp_p
 def test_get_words_sentence_lang_and_cue_lang_select_the_variant(tmp_path):
     repository = _repository(
         tmp_path,
-        words=[{"word_id": "wd-0001", "filename": "hello.webp", "en": "hello"}],
+        words=[{"word_id": "wd-0001", "filename": "hello.webp"}],
         content={"pt-en": {"chapters": []}},
         sentences={"en_wd-0001": "Hello, how are you?", "pt_wd-0001": "Olá, como você está?"},
         cues={"pt_wd-0001": "Uma saudação.", "en_wd-0001": "A greeting."},
+        word_maps={"en": [{"word_id": "en-wd-0001", "root_word_id": "wd-0001", "word": "hello"}]},
     )
 
     origin_sentence_target_cue = repository.get_words(PT_EN, sentence_lang="origin", cue_lang="target")[0]
@@ -101,10 +108,11 @@ def test_get_words_sentence_lang_and_cue_lang_select_the_variant(tmp_path):
 def test_get_words_falls_back_to_empty_string_when_a_variant_is_not_yet_authored(tmp_path):
     repository = _repository(
         tmp_path,
-        words=[{"word_id": "wd-0001", "filename": "hello.webp", "en": "hello"}],
+        words=[{"word_id": "wd-0001", "filename": "hello.webp"}],
         content={"pt-en": {"chapters": []}},
         sentences={"en_wd-0001": "Hello, how are you?"},
         cues={"pt_wd-0001": "Uma saudação."},
+        word_maps={"en": [{"word_id": "en-wd-0001", "root_word_id": "wd-0001", "word": "hello"}]},
     )
 
     word = repository.get_words(PT_EN, sentence_lang="origin", cue_lang="target")[0]
@@ -177,6 +185,43 @@ def test_get_chapters_maps_nested_content_entries_to_entities(tmp_path):
     assert len(topic.texts) == 1
     assert topic.texts[0].text_id == "txt-01"
     assert topic.texts[0].body == "**Hi**!"
+
+
+def test_get_chapters_resolves_per_language_word_ids_to_the_catalog_root_id(tmp_path):
+    repository = _repository(
+        tmp_path,
+        content={
+            "pt-en": {
+                "chapters": [
+                    {
+                        "chapter_id": "ch-01",
+                        "number": 1,
+                        "title": "T",
+                        "description": "D",
+                        "topics": [
+                            {
+                                "topic_id": "top-01",
+                                "number": 1,
+                                "title": "T",
+                                "description": "D",
+                                "word_ids": ["en-wd-0001", "en-wd-0002"],
+                            }
+                        ],
+                    }
+                ]
+            }
+        },
+        word_maps={
+            "en": [
+                {"word_id": "en-wd-0001", "root_word_id": "wd-0003", "word": "goodbye"},
+                {"word_id": "en-wd-0002", "root_word_id": "wd-0001", "word": "hello"},
+            ]
+        },
+    )
+
+    topic = repository.get_chapters(PT_EN)[0].topics[0]
+
+    assert topic.word_ids == ["wd-0003", "wd-0001"]
 
 
 def test_get_chapters_defaults_status_to_ready_when_missing(tmp_path):
