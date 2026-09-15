@@ -31,9 +31,11 @@
 // One progress sheet per user, named "<email>-progress" (email lowercased),
 // auto-created on that user's first upsert_progress call:
 //   language_pair | word_id | confident | shown_count | show
-// Reached via the get_progress / upsert_progress actions. To assign a word
-// to a user, add a row directly to their "<email>-progress" sheet — there's
-// no "assign" action, only get/upsert on words already present.
+// Reached via the get_progress / upsert_progress actions. A word is enabled
+// for a user purely by being in a topic enabled for them (the "users" sheet
+// above) — there's no separate per-word assignment step. upsert_progress
+// adds a new row the first time a given (language_pair, word_id) is
+// interacted with, and updates it on every call after that.
 
 const USERS_SHEET_NAME = "users";
 const USERS_HEADERS = ["email", "language_pair", "topic_ids"];
@@ -155,7 +157,17 @@ function actionUpsertProgress(params) {
         return jsonResponse(200, { ok: true });
       }
     }
-    return jsonResponse(404, { error: "word not assigned to user: " + wordId });
+    // First interaction with this word for this user+lang: add the row now
+    // rather than requiring it to be pre-seeded (word enablement lives at
+    // the topic level, in the "users" sheet, not per progress row).
+    sheet.appendRow([
+      lang,
+      wordId,
+      !!params.confident,
+      Number(params.shown_count) || 0,
+      !!params.show,
+    ]);
+    return jsonResponse(200, { ok: true });
   } finally {
     lock.releaseLock();
   }

@@ -208,6 +208,7 @@ def get_data(
     cue_lang: str = "origin",
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
     progress_repository: GoogleSheetsProgressRepository = Depends(get_progress_repository),
+    topics_repository: GoogleSheetsTopicsRepository = Depends(get_topics_repository),
 ):
     language_pair = _parse_lang(lang.strip() or "pt-en")
     sentence_choice = _parse_lang_choice(sentence_lang, "target", "sentence_lang")
@@ -223,7 +224,7 @@ def get_data(
             status_code=400, content={"error": "missing or invalid 'user' query param"}
         )
 
-    use_case = GetUserWords(catalog_repository, progress_repository)
+    use_case = GetUserWords(catalog_repository, progress_repository, topics_repository)
     pairs = use_case.execute(email, language_pair, sentence_choice, cue_choice)
     return UserWordsResponse(
         lang=str(language_pair),
@@ -273,6 +274,8 @@ def get_tts(
 @app.post("/increment")
 def post_increment(
     payload: ProgressActionRequest,
+    catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
+    topics_repository: GoogleSheetsTopicsRepository = Depends(get_topics_repository),
     progress_repository: GoogleSheetsProgressRepository = Depends(get_progress_repository),
 ):
     parsed = _parse_progress_action(payload)
@@ -280,13 +283,16 @@ def post_increment(
         return parsed
     email, lang, word_id = parsed
 
-    shown_count = IncrementShownCount(progress_repository).execute(email, lang, word_id)
+    use_case = IncrementShownCount(catalog_repository, topics_repository, progress_repository)
+    shown_count = use_case.execute(email, lang, word_id)
     return {"word_id": word_id, "shown_count": shown_count}
 
 
 @app.post("/mark-known")
 def post_mark_known(
     payload: ProgressActionRequest,
+    catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
+    topics_repository: GoogleSheetsTopicsRepository = Depends(get_topics_repository),
     progress_repository: GoogleSheetsProgressRepository = Depends(get_progress_repository),
 ):
     parsed = _parse_progress_action(payload)
@@ -294,13 +300,16 @@ def post_mark_known(
         return parsed
     email, lang, word_id = parsed
 
-    MarkWordKnown(progress_repository).execute(email, lang, word_id)
+    use_case = MarkWordKnown(catalog_repository, topics_repository, progress_repository)
+    use_case.execute(email, lang, word_id)
     return {"word_id": word_id, "show": False}
 
 
 @app.post("/show-word")
 def post_show_word(
     payload: ProgressActionRequest,
+    catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
+    topics_repository: GoogleSheetsTopicsRepository = Depends(get_topics_repository),
     progress_repository: GoogleSheetsProgressRepository = Depends(get_progress_repository),
 ):
     parsed = _parse_progress_action(payload)
@@ -308,5 +317,6 @@ def post_show_word(
         return parsed
     email, lang, word_id = parsed
 
-    ShowWordAgain(progress_repository).execute(email, lang, word_id)
+    use_case = ShowWordAgain(catalog_repository, topics_repository, progress_repository)
+    use_case.execute(email, lang, word_id)
     return {"word_id": word_id, "show": True}
