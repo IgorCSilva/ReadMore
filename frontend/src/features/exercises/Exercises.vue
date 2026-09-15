@@ -29,7 +29,8 @@ import { escapeHtml } from '../../shared/text'
 
 const EXT_FALLBACKS = ["png", "jpg", "jpeg", "webp", "gif", "jfif"];
 
-let LANG = "english";
+let LANG = "pt-en";
+let CUE_LANG = "origin";
 let currentTopic = null;
 
 let show;
@@ -37,6 +38,7 @@ let show;
 onMounted(() => {
   let WORDS_BY_ID = null;
   let wordsLoadedForLang = null;
+  let wordsLoadedForCueLang = null;
 
   const exercisesErrorBanner = document.getElementById("exercises-error-banner");
   const exercisesEmptyStateEl = document.getElementById("exercises-empty-state");
@@ -54,38 +56,43 @@ onMounted(() => {
     return byId;
   }
 
-  async function fetchWords(lang) {
-    const data = await getWords(lang);
+  async function fetchWords(lang, cueLang) {
+    const data = await getWords(lang, undefined, cueLang);
     return data.words;
   }
 
-  async function loadWordsById(lang) {
-    if (WORDS_BY_ID && wordsLoadedForLang === lang) return WORDS_BY_ID;
+  async function loadWordsById(lang, cueLang) {
+    if (WORDS_BY_ID && wordsLoadedForLang === lang && wordsLoadedForCueLang === cueLang) {
+      return WORDS_BY_ID;
+    }
 
-    const key = cacheKey("words", lang);
+    const key = cacheKey("words", lang, cueLang);
     const cached = readStale(key);
     if (cached) {
       WORDS_BY_ID = indexById(cached.data);
       wordsLoadedForLang = lang;
+      wordsLoadedForCueLang = cueLang;
       refreshInBackground({
         key,
         label: "word list",
-        fetchFn: () => fetchWords(lang),
+        fetchFn: () => fetchWords(lang, cueLang),
         onFresh: (words) => {
           WORDS_BY_ID = indexById(words);
           wordsLoadedForLang = lang;
-          // Only re-render if the user hasn't switched languages since this
-          // refresh started.
-          if (LANG === lang) renderExercises().catch(showExercisesError);
+          wordsLoadedForCueLang = cueLang;
+          // Only re-render if the user hasn't switched languages/cue choice
+          // since this refresh started.
+          if (LANG === lang && CUE_LANG === cueLang) renderExercises().catch(showExercisesError);
         },
       });
       return WORDS_BY_ID;
     }
 
-    const words = await fetchWords(lang);
+    const words = await fetchWords(lang, cueLang);
     writeCache(key, words);
     WORDS_BY_ID = indexById(words);
     wordsLoadedForLang = lang;
+    wordsLoadedForCueLang = cueLang;
     return WORDS_BY_ID;
   }
 
@@ -272,7 +279,7 @@ onMounted(() => {
       return;
     }
 
-    await loadWordsById(LANG);
+    await loadWordsById(LANG, CUE_LANG);
 
     exercisesEmptyStateEl.style.display = "none";
     exercisesListEl.style.display = "flex";
@@ -296,8 +303,9 @@ onMounted(() => {
     }
   }
 
-  show = (lang, topic) => {
+  show = (lang, topic, cueLang) => {
     LANG = lang;
+    CUE_LANG = cueLang || "origin";
     currentTopic = topic;
     return renderExercises().catch(showExercisesError);
   };

@@ -17,8 +17,14 @@ class GetUserWords:
         self._catalog_repository = catalog_repository
         self._progress_repository = progress_repository
 
-    def execute(self, email: Email, lang: LanguagePair) -> list[tuple[Word, ProgressRecord]]:
-        words = self._catalog_repository.get_words(lang)
+    def execute(
+        self,
+        email: Email,
+        lang: LanguagePair,
+        sentence_lang: str = "target",
+        cue_lang: str = "origin",
+    ) -> list[tuple[Word, ProgressRecord]]:
+        words = self._catalog_repository.get_words(lang, sentence_lang, cue_lang)
         progress = self._progress_repository.get_user_progress(email, lang)
 
         result = []

@@ -71,7 +71,10 @@ describe('Flashcards', () => {
   })
 
   it('renders instantly from a cached word list and refreshes in the background', async () => {
-    writeCache(cacheKey('user-words', 'test@example.com', 'english'), [WORD])
+    // load() is called below with no sentence/cue-lang args, so Flashcards.vue
+    // falls back to its own defaults ("target"/"origin") when building the
+    // cache key — matched here.
+    writeCache(cacheKey('user-words', 'test@example.com', 'english', 'target', 'origin'), [WORD])
     // The background refresh call — never resolved in this test, so we can
     // assert on the immediate cache-backed render without racing it.
     vi.mocked(api.getUserWords).mockReturnValue(new Promise(() => {}))
@@ -80,7 +83,7 @@ describe('Flashcards', () => {
     await wrapper.vm.load('test@example.com', 'english', null)
 
     expect(wrapper.find('#word').text()).toBe('hello')
-    expect(api.getUserWords).toHaveBeenCalledWith('test@example.com', 'english')
+    expect(api.getUserWords).toHaveBeenCalledWith('test@example.com', 'english', 'target', 'origin')
     expect(getNotifications()[0]).toMatchObject({ type: 'info' })
 
     wrapper.unmount()

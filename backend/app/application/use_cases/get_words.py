@@ -7,5 +7,7 @@ class GetWords:
     def __init__(self, catalog_repository: CatalogRepository) -> None:
         self._catalog_repository = catalog_repository
 
-    def execute(self, lang: LanguagePair) -> list[Word]:
-        return self._catalog_repository.get_words(lang)
+    def execute(
+        self, lang: LanguagePair, sentence_lang: str = "target", cue_lang: str = "origin"
+    ) -> list[Word]:
+        return self._catalog_repository.get_words(lang, sentence_lang, cue_lang)

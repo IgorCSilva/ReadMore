@@ -8,6 +8,8 @@
       <button type="button" class="switch-user-btn" id="switch-user-btn">Log in with another email</button>
     </div>
     <select id="lang-select"></select>
+    <label class="lang-choice-label">Sentence: <select id="sentence-lang-select"></select></label>
+    <label class="lang-choice-label">Cue: <select id="cue-lang-select"></select></label>
   </div>
 
   <div class="texts-page">
@@ -48,7 +50,7 @@ import { onMounted, ref } from 'vue'
 import { getChapters, getLanguages } from './shared/api'
 import { cacheKey, writeCache } from './shared/cache'
 import { readStale, refreshInBackground } from './shared/dataSync'
-import { formatLanguagePairLabel } from './shared/languages'
+import { formatLanguagePairLabel, formatLanguageName } from './shared/languages'
 import { escapeHtml } from './shared/text'
 import { flushQueuedWrites } from './shared/writeQueue'
 import Flashcards from './features/catalog/Flashcards.vue'
@@ -75,9 +77,13 @@ onMounted(() => {
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   let USER_EMAIL = null;
-  let LANG = "english";
+  let LANG = "pt-en";
+  let SENTENCE_LANG = "target";
+  let CUE_LANG = "origin";
 
   const langSelectEl = document.getElementById("lang-select");
+  const sentenceLangSelectEl = document.getElementById("sentence-lang-select");
+  const cueLangSelectEl = document.getElementById("cue-lang-select");
   const currentUserEmailEl = document.getElementById("current-user-email");
   const switchUserBtn = document.getElementById("switch-user-btn");
 
@@ -127,9 +133,45 @@ onMounted(() => {
     return data.languages || [];
   }
 
+  // Sentence/cue language pickers only ever offer the current pair's own
+  // two languages ("origin" or "target") — never an unrelated language, per
+  // the app's own restriction (a pt-en learner can't pick Spanish here).
+  function populateLangChoiceSelects() {
+    const [origin, target] = LANG.split("-");
+    const originLabel = formatLanguageName(origin);
+    const targetLabel = formatLanguageName(target);
+
+    function fillSelect(selectEl, selected) {
+      selectEl.innerHTML = "";
+      const originOpt = document.createElement("option");
+      originOpt.value = "origin";
+      originOpt.textContent = originLabel;
+      const targetOpt = document.createElement("option");
+      targetOpt.value = "target";
+      targetOpt.textContent = targetLabel;
+      selectEl.appendChild(originOpt);
+      selectEl.appendChild(targetOpt);
+      selectEl.value = selected;
+    }
+
+    fillSelect(sentenceLangSelectEl, SENTENCE_LANG);
+    fillSelect(cueLangSelectEl, CUE_LANG);
+  }
+
   langSelectEl.addEventListener("change", () => {
     LANG = langSelectEl.value;
+    populateLangChoiceSelects();
     loadAndRenderChapters();
+  });
+
+  sentenceLangSelectEl.addEventListener("change", () => {
+    SENTENCE_LANG = sentenceLangSelectEl.value;
+    switchTopicTab(currentTopicTab);
+  });
+
+  cueLangSelectEl.addEventListener("change", () => {
+    CUE_LANG = cueLangSelectEl.value;
+    switchTopicTab(currentTopicTab);
   });
 
   // ---- Topic workspace tabs (Flashcards / Texts within a topic) ----
@@ -152,11 +194,11 @@ onMounted(() => {
     topicTextsPanelEl.style.display = tab === "texts" ? "flex" : "none";
     topicExercisesPanelEl.style.display = tab === "exercises" ? "flex" : "none";
     if (tab === "flashcards") {
-      flashcardsRef.value?.load(USER_EMAIL, LANG, currentTopic);
+      flashcardsRef.value?.load(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
     } else if (tab === "texts") {
       textsRef.value?.show(currentTopic);
     } else {
-      exercisesRef.value?.show(LANG, currentTopic);
+      exercisesRef.value?.show(LANG, currentTopic, CUE_LANG);
     }
   }
 
@@ -357,6 +399,7 @@ onMounted(() => {
       }
       LANG = languages.includes(LANG) ? LANG : (languages[0] || LANG);
       langSelectEl.value = LANG;
+      populateLangChoiceSelects();
 
       await loadAndRenderChapters();
     } catch (err) {
@@ -438,10 +481,17 @@ onMounted(() => {
     display: flex; align-items: center; gap: 10px;
     font-size: 14px; cursor: pointer; user-select: none;
   }
-  #lang-select {
+  #lang-select, #sentence-lang-select, #cue-lang-select {
     background: var(--bg); color: var(--text);
     border: 1px solid var(--border); border-radius: 8px;
-    padding: 6px 8px; font-size: 14px; margin-top: -6px;
+    padding: 6px 8px; font-size: 14px;
+  }
+  #lang-select {
+    margin-top: -6px;
+  }
+  .lang-choice-label {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 13px; color: var(--muted);
   }
   .current-user {
     font-size: 13px; color: var(--text);

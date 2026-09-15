@@ -49,7 +49,13 @@ from backend.app.infrastructure.repositories.json_catalog_repository import Json
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 ROOT_DIR = BACKEND_DIR.parent
 DIST_DIR = ROOT_DIR / "frontend" / "dist"
-CATALOG_PATH = BACKEND_DIR / "catalog.json"
+WORDS_DIR = BACKEND_DIR / "words"
+CATALOG_PATH = WORDS_DIR / "catalog.json"
+CONTENT_DIR = BACKEND_DIR / "content"
+SENTENCES_PATH = WORDS_DIR / "sentences.json"
+CUES_PATH = WORDS_DIR / "cues.json"
+
+LANG_CHOICES = {"origin", "target"}
 
 SHEETS_WEBAPP_URL = os.environ.get("SHEETS_WEBAPP_URL", "")
 SHEETS_API_TOKEN = os.environ.get("SHEETS_API_TOKEN", "")
@@ -108,7 +114,7 @@ def get_index():
 
 
 def get_catalog_repository() -> JsonCatalogRepository:
-    return JsonCatalogRepository(CATALOG_PATH)
+    return JsonCatalogRepository(CATALOG_PATH, CONTENT_DIR, SENTENCES_PATH, CUES_PATH)
 
 
 def get_progress_repository() -> GoogleSheetsProgressRepository:
@@ -132,6 +138,19 @@ def _parse_lang(raw: str) -> LanguagePair:
         return LanguagePair.parse(raw)
     except ValueError:
         raise LanguageNotFoundError(raw) from None
+
+
+def _parse_lang_choice(raw: str, default: str, param_name: str) -> str | JSONResponse:
+    """Validates a sentence_lang/cue_lang query param against {"origin",
+    "target"} — the only two choices meaningful for any pair, since each
+    just picks which of the pair's own two languages to resolve in."""
+    choice = raw.strip() or default
+    if choice not in LANG_CHOICES:
+        return JSONResponse(
+            status_code=400,
+            content={"error": f"invalid '{param_name}': must be 'origin' or 'target'"},
+        )
+    return choice
 
 
 def _parse_progress_action(
@@ -164,11 +183,20 @@ def get_languages(
 @app.get("/words", response_model=WordsResponse)
 def get_words(
     lang: str = "pt-en",
+    sentence_lang: str = "target",
+    cue_lang: str = "origin",
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
 ):
     language_pair = _parse_lang(lang.strip() or "pt-en")
+    sentence_choice = _parse_lang_choice(sentence_lang, "target", "sentence_lang")
+    if isinstance(sentence_choice, JSONResponse):
+        return sentence_choice
+    cue_choice = _parse_lang_choice(cue_lang, "origin", "cue_lang")
+    if isinstance(cue_choice, JSONResponse):
+        return cue_choice
+
     use_case = GetWords(catalog_repository)
-    words = use_case.execute(language_pair)
+    words = use_case.execute(language_pair, sentence_choice, cue_choice)
     return WordsResponse(lang=str(language_pair), words=[WordDTO.from_entity(w) for w in words])
 
 
@@ -176,10 +204,18 @@ def get_words(
 def get_data(
     user: str = "",
     lang: str = "pt-en",
+    sentence_lang: str = "target",
+    cue_lang: str = "origin",
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
     progress_repository: GoogleSheetsProgressRepository = Depends(get_progress_repository),
 ):
     language_pair = _parse_lang(lang.strip() or "pt-en")
+    sentence_choice = _parse_lang_choice(sentence_lang, "target", "sentence_lang")
+    if isinstance(sentence_choice, JSONResponse):
+        return sentence_choice
+    cue_choice = _parse_lang_choice(cue_lang, "origin", "cue_lang")
+    if isinstance(cue_choice, JSONResponse):
+        return cue_choice
     try:
         email = Email(user.strip())
     except ValueError:
@@ -188,7 +224,7 @@ def get_data(
         )
 
     use_case = GetUserWords(catalog_repository, progress_repository)
-    pairs = use_case.execute(email, language_pair)
+    pairs = use_case.execute(email, language_pair, sentence_choice, cue_choice)
     return UserWordsResponse(
         lang=str(language_pair),
         words=[UserWordDTO.from_word_and_progress(word, record) for word, record in pairs],

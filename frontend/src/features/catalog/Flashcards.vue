@@ -114,7 +114,9 @@ import { hasQueuedAction, performWrite } from '../../shared/writeQueue'
 const EXT_FALLBACKS = ["png", "jpg", "jpeg", "webp", "gif", "jfif"];
 
 let USER_EMAIL = null;
-let LANG = "english";
+let LANG = "pt-en";
+let SENTENCE_LANG = "target";
+let CUE_LANG = "origin";
 let currentTopic = null;
 let ALL_ENTRIES = [];
 let ENTRIES = [];
@@ -233,7 +235,7 @@ onMounted(() => {
   // it's read, since the write queue can change between when this was
   // cached and when it's read back.
   async function fetchRawWords() {
-    const data = await getUserWords(USER_EMAIL, LANG);
+    const data = await getUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
     return data.words;
   }
 
@@ -455,7 +457,7 @@ onMounted(() => {
   }
 
   async function loadAndRenderEntries() {
-    const key = cacheKey("user-words", USER_EMAIL, LANG);
+    const key = cacheKey("user-words", USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
     const cached = readStale(key);
     if (cached) {
       applyEntries(cached.data);
@@ -478,9 +480,11 @@ onMounted(() => {
     }
   }
 
-  load = (userEmail, lang, topic) => {
+  load = (userEmail, lang, topic, sentenceLang, cueLang) => {
     USER_EMAIL = userEmail;
     LANG = lang;
+    SENTENCE_LANG = sentenceLang || "target";
+    CUE_LANG = cueLang || "origin";
     currentTopic = topic;
     return loadAndRenderEntries().catch(showError);
   };
