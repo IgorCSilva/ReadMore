@@ -91,13 +91,10 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import {
-  getUserWords,
-  incrementShownCount,
-  markWordKnown,
-  showWordAgain,
-  ttsUrl,
-} from '../../shared/api'
+import { getUserWords, ttsUrl } from '../../shared/api'
+import { cacheKey, writeCache } from '../../shared/cache'
+import { readStale, refreshInBackground } from '../../shared/dataSync'
+import { hasQueuedAction, performWrite } from '../../shared/writeQueue'
 
 // Extracted from App.vue's monolithic script (Step 2.4 of RESTRUCTURE_PLAN.md
 // Phase 2) — same imperative/document.getElementById style as the rest of
@@ -199,10 +196,8 @@ onMounted(() => {
   speakSentenceBtn.addEventListener("click", speakCurrentSentence);
   speakMissingSentenceBtn.addEventListener("click", speakCurrentSentence);
 
-  async function loadEntries() {
-    const data = await getUserWords(USER_EMAIL, LANG);
-
-    const entries = data.words.map((e) => {
+  function transformWords(words) {
+    const entries = words.map((e) => {
       const dot = e.filename.lastIndexOf(".");
       const base = dot >= 0 ? e.filename.slice(0, dot) : e.filename;
       const ext = dot >= 0 ? e.filename.slice(dot + 1) : "png";
@@ -220,7 +215,26 @@ onMounted(() => {
     });
 
     entries.sort((a, b) => a.shownCount - b.shownCount);
+
+    // A queued mark-known/show-word write hasn't reached the server yet, so
+    // freshly-fetched data (cached or just-refreshed) can still show the old
+    // "show" value — override it with the user's own not-yet-synced intent
+    // so a background refresh can't silently undo their last action.
+    for (const entry of entries) {
+      if (hasQueuedAction(USER_EMAIL, LANG, entry.wordId, "mark-known")) entry.show = false;
+      else if (hasQueuedAction(USER_EMAIL, LANG, entry.wordId, "show-word")) entry.show = true;
+    }
+
     return entries;
+  }
+
+  // Caches the raw API words, not the transformed entries — the queued-write
+  // override in transformWords() needs to be re-applied fresh every time
+  // it's read, since the write queue can change between when this was
+  // cached and when it's read back.
+  async function fetchRawWords() {
+    const data = await getUserWords(USER_EMAIL, LANG);
+    return data.words;
   }
 
   function showError(err) {
@@ -330,9 +344,7 @@ onMounted(() => {
   }
 
   function recordShown(entry) {
-    incrementShownCount(USER_EMAIL, LANG, entry.wordId).catch((err) => {
-      console.warn("Couldn't record shown_count (is the backend running?):", err);
-    });
+    performWrite("increment", USER_EMAIL, LANG, entry.wordId);
   }
 
   function next() {
@@ -360,9 +372,7 @@ onMounted(() => {
     if (ENTRIES.length === 0) return;
     const entry = ENTRIES[index];
 
-    markWordKnown(USER_EMAIL, LANG, entry.wordId).catch((err) => {
-      console.warn("Couldn't mark word as known (is the backend running?):", err);
-    });
+    performWrite("mark-known", USER_EMAIL, LANG, entry.wordId);
 
     entry.show = false;
     ALL_ENTRIES = ALL_ENTRIES.filter((e) => e.word !== entry.word);
@@ -375,9 +385,7 @@ onMounted(() => {
   }
 
   function unhideWord(entry) {
-    showWordAgain(USER_EMAIL, LANG, entry.wordId).catch((err) => {
-      console.warn("Couldn't show word again (is the backend running?):", err);
-    });
+    performWrite("show-word", USER_EMAIL, LANG, entry.wordId);
 
     entry.show = true;
     HIDDEN_ENTRIES = HIDDEN_ENTRIES.filter((e) => e.word !== entry.word);
@@ -435,15 +443,36 @@ onMounted(() => {
   filterConfidentEl.addEventListener("change", handleFilterChange);
   filterLearningEl.addEventListener("change", handleFilterChange);
 
+  // Background-refresh callback too: safe to call any time, re-renders from
+  // whatever ALL_ENTRIES/HIDDEN_ENTRIES the new data produces.
+  function applyEntries(rawWords) {
+    const entries = transformWords(rawWords);
+    ALL_ENTRIES = entries.filter((e) => e.show);
+    HIDDEN_ENTRIES = entries.filter((e) => !e.show);
+    HIDDEN_ENTRIES.sort((a, b) => a.word.toLowerCase().localeCompare(b.word.toLowerCase()));
+    renderHiddenList();
+    applyFilter();
+  }
+
   async function loadAndRenderEntries() {
+    const key = cacheKey("user-words", USER_EMAIL, LANG);
+    const cached = readStale(key);
+    if (cached) {
+      applyEntries(cached.data);
+      refreshInBackground({
+        key,
+        label: "word list",
+        fetchFn: fetchRawWords,
+        onFresh: applyEntries,
+      });
+      return;
+    }
+
     setLoading(true);
     try {
-      const entries = await loadEntries();
-      ALL_ENTRIES = entries.filter((e) => e.show);
-      HIDDEN_ENTRIES = entries.filter((e) => !e.show);
-      HIDDEN_ENTRIES.sort((a, b) => a.word.toLowerCase().localeCompare(b.word.toLowerCase()));
-      renderHiddenList();
-      applyFilter();
+      const rawWords = await fetchRawWords();
+      writeCache(key, rawWords);
+      applyEntries(rawWords);
     } finally {
       setLoading(false);
     }

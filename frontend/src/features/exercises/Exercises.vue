@@ -15,6 +15,8 @@
 <script setup>
 import { onMounted } from 'vue'
 import { getWords } from '../../shared/api'
+import { cacheKey, writeCache } from '../../shared/cache'
+import { readStale, refreshInBackground } from '../../shared/dataSync'
 import { escapeHtml } from '../../shared/text'
 
 // Extracted from App.vue's monolithic script (Step 2.6 of RESTRUCTURE_PLAN.md
@@ -46,12 +48,43 @@ onMounted(() => {
     exercisesErrorBanner.innerHTML = `Couldn't load exercises (${err.message}).`;
   }
 
+  function indexById(words) {
+    const byId = {};
+    for (const w of words) byId[w.word_id] = w;
+    return byId;
+  }
+
+  async function fetchWords(lang) {
+    const data = await getWords(lang);
+    return data.words;
+  }
+
   async function loadWordsById(lang) {
     if (WORDS_BY_ID && wordsLoadedForLang === lang) return WORDS_BY_ID;
-    const data = await getWords(lang);
-    const byId = {};
-    for (const w of data.words) byId[w.word_id] = w;
-    WORDS_BY_ID = byId;
+
+    const key = cacheKey("words", lang);
+    const cached = readStale(key);
+    if (cached) {
+      WORDS_BY_ID = indexById(cached.data);
+      wordsLoadedForLang = lang;
+      refreshInBackground({
+        key,
+        label: "word list",
+        fetchFn: () => fetchWords(lang),
+        onFresh: (words) => {
+          WORDS_BY_ID = indexById(words);
+          wordsLoadedForLang = lang;
+          // Only re-render if the user hasn't switched languages since this
+          // refresh started.
+          if (LANG === lang) renderExercises().catch(showExercisesError);
+        },
+      });
+      return WORDS_BY_ID;
+    }
+
+    const words = await fetchWords(lang);
+    writeCache(key, words);
+    WORDS_BY_ID = indexById(words);
     wordsLoadedForLang = lang;
     return WORDS_BY_ID;
   }

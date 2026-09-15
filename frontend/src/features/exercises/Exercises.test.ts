@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import { describe, expect, it, vi } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import * as api from '../../shared/api'
 import Exercises from './Exercises.vue'
 
@@ -16,6 +16,10 @@ const WORD = {
 }
 
 describe('Exercises', () => {
+  beforeEach(() => {
+    localStorage.clear()
+  })
+
   it('renders a fill-in-the-blank exercise with its cue image', async () => {
     vi.mocked(api.getWords).mockResolvedValue({ lang: 'english', words: [WORD] })
 

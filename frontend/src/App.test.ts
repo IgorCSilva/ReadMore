@@ -12,6 +12,7 @@ describe('App', () => {
     expect(wrapper.find('#topic-tab-flashcards').exists()).toBe(true)
     expect(wrapper.find('#topic-tab-texts').exists()).toBe(true)
     expect(wrapper.find('#topic-tab-exercises').exists()).toBe(true)
+    expect(wrapper.find('.toast-container').exists()).toBe(true)
 
     wrapper.unmount()
   })

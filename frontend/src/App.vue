@@ -1,5 +1,7 @@
 <template>
 
+  <Notifications />
+
   <div class="global-topbar" id="global-topbar">
     <div class="global-topbar-user">
       <span class="topbar-user-email" id="current-user-email"></span>
@@ -44,9 +46,13 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { getChapters, getLanguages } from './shared/api'
+import { cacheKey, writeCache } from './shared/cache'
+import { readStale, refreshInBackground } from './shared/dataSync'
 import { formatLanguagePairLabel } from './shared/languages'
 import { escapeHtml } from './shared/text'
+import { flushQueuedWrites } from './shared/writeQueue'
 import Flashcards from './features/catalog/Flashcards.vue'
+import Notifications from './shared/Notifications.vue'
 import Texts from './features/texts/Texts.vue'
 import Exercises from './features/exercises/Exercises.vue'
 
@@ -104,6 +110,17 @@ onMounted(() => {
   }
 
   switchUserBtn.addEventListener("click", switchUser);
+
+  // Writes made while offline sit in a local queue (see shared/writeQueue.ts)
+  // until they can be retried: once on load (in case any were queued from a
+  // previous session and we're already back online), whenever the browser
+  // reports connectivity again, and on a slow interval as a fallback for the
+  // cases where the "online" event doesn't fire reliably. flushQueuedWrites()
+  // is a cheap no-op when the queue is empty, so the interval costs nothing
+  // in the common case.
+  flushQueuedWrites();
+  window.addEventListener("online", flushQueuedWrites);
+  setInterval(flushQueuedWrites, 30000);
 
   async function loadLanguages() {
     const data = await getLanguages();
@@ -171,8 +188,34 @@ onMounted(() => {
     return data.chapters || [];
   }
 
+  // Background-refresh callback: updates the underlying data unconditionally,
+  // but only re-renders the top-level chapters list if the user is still
+  // looking at it — a refresh landing mid-topic-workspace shouldn't yank
+  // them back out to the chapters list.
+  function applyFreshChapters(chapters) {
+    CHAPTERS = chapters;
+    if (!currentChapter) renderChaptersList();
+  }
+
   async function loadAndRenderChapters() {
     textsErrorBanner.style.display = "none";
+
+    const key = cacheKey("chapters", USER_EMAIL, LANG);
+    const cached = readStale(key);
+    if (cached) {
+      CHAPTERS = cached.data;
+      currentChapter = null;
+      currentTopic = null;
+      renderChaptersList();
+      refreshInBackground({
+        key,
+        label: "chapters",
+        fetchFn: fetchChapters,
+        onFresh: applyFreshChapters,
+      });
+      return;
+    }
+
     textsEmptyStateEl.style.display = "none";
     chaptersListEl.style.display = "none";
     topicsListEl.style.display = "none";
@@ -180,6 +223,7 @@ onMounted(() => {
     textsLoadingEl.style.display = "flex";
     try {
       CHAPTERS = await fetchChapters();
+      writeCache(key, CHAPTERS);
       currentChapter = null;
       currentTopic = null;
       renderChaptersList();
