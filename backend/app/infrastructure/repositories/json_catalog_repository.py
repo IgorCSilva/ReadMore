@@ -110,6 +110,7 @@ class JsonCatalogRepository(CatalogRepository):
                 filename=catalog_by_id[row["root_word_id"]]["filename"],
                 sentence=sentences.get(f"{sentence_code}_{row['root_word_id']}", ""),
                 cue=cues.get(f"{cue_code}_{row['root_word_id']}", ""),
+                gender_id=row.get("gender_id", "not_apply"),
             )
             for row in lang_words
         ]

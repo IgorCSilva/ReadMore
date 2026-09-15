@@ -15,6 +15,7 @@ class Word:
     filename: str
     sentence: str
     cue: str
+    gender_id: str = "not_apply"
 
 
 @dataclass

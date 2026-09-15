@@ -70,6 +70,28 @@ def test_get_words_maps_catalog_entries_to_word_entities(tmp_path):
     assert word.cue == "\U0001F44B"
 
 
+def test_get_words_maps_gender_id_and_defaults_to_not_apply_when_missing(tmp_path):
+    repository = _repository(
+        tmp_path,
+        words=[
+            {"word_id": "wd-0001", "filename": "father.webp"},
+            {"word_id": "wd-0002", "filename": "hello.webp"},
+        ],
+        content={"pt-en": {"chapters": []}},
+        word_maps={
+            "en": [
+                {"word_id": "en-wd-0001", "root_word_id": "wd-0001", "word": "father", "gender_id": "masculine"},
+                {"word_id": "en-wd-0002", "root_word_id": "wd-0002", "word": "hello"},
+            ]
+        },
+    )
+
+    words = repository.get_words(PT_EN)
+
+    assert words[0].gender_id == "masculine"
+    assert words[1].gender_id == "not_apply"
+
+
 def test_get_words_only_returns_concepts_the_requested_target_language_has_a_spelling_for(tmp_path):
     repository = _repository(
         tmp_path,

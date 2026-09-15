@@ -9,6 +9,7 @@ export interface Word {
   filename: string
   sentence: string
   cue: string
+  gender_id: string
 }
 
 export interface WordsResponse {

@@ -20,3 +20,16 @@ export function formatLanguagePairLabel(pair: string): string {
 export function formatLanguageName(code: string): string {
   return LANGUAGE_NAMES[code] ?? code
 }
+
+// BCP-47 locale tags for the Web Speech API fallback (SpeechSynthesisUtterance.lang)
+// — the browser's local TTS needs a full locale tag, not the bare 2-letter
+// code the backend's /tts proxy (Google Translate's `tl` param) accepts.
+const SPEECH_LOCALES: Record<string, string> = {
+  pt: 'pt-BR',
+  en: 'en-US',
+  es: 'es-ES',
+}
+
+export function speechLocaleFor(code: string): string {
+  return SPEECH_LOCALES[code] ?? code
+}

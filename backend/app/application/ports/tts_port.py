@@ -8,6 +8,7 @@ from abc import ABC, abstractmethod
 
 class TtsPort(ABC):
     @abstractmethod
-    def synthesize(self, text: str) -> tuple[bytes, str]:
-        """Returns (audio_bytes, content_type) for the given text. Raises
-        TtsUpstreamError if the upstream provider fails."""
+    def synthesize(self, text: str, lang: str) -> tuple[bytes, str]:
+        """Returns (audio_bytes, content_type) speaking `text` in `lang` (a
+        bare language code, e.g. "en", "es", "pt"). Raises TtsUpstreamError
+        if the upstream provider fails."""

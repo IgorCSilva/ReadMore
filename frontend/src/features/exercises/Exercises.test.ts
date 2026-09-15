@@ -13,6 +13,7 @@ const WORD = {
   filename: 'hello.webp',
   sentence: 'Hi!',
   cue: 'a greeting',
+  gender_id: 'not_apply',
 }
 
 describe('Exercises', () => {

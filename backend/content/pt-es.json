@@ -224,11 +224,7 @@
               "title": "Exercício 6",
               "items": [
                 {
-                  "sentence": "Dicas para se despedir educadamente:",
-                  "word_ids": []
-                },
-                {
-                  "sentence": "— _____!",
+                  "sentence": "Dicas para se despedir educadamente: — _____!",
                   "word_ids": [
                     "wd-0003"
                   ]
@@ -259,41 +255,25 @@
               "title": "Exercício 7",
               "items": [
                 {
-                  "sentence": "Pergunta: Como perguntamos o nome de alguém, de forma informal, em espanhol?",
-                  "word_ids": []
-                },
-                {
-                  "sentence": "Resposta: ¿_____ te llamas?",
+                  "sentence": "Pergunta: Como perguntamos o nome de alguém, de forma informal, em espanhol? Resposta: ¿_____ te llamas?",
                   "word_ids": [
                     "wd-0051"
                   ]
                 },
                 {
-                  "sentence": "Pergunta: Qual pronome usamos para \"você\" nessa pergunta informal?",
-                  "word_ids": []
-                },
-                {
-                  "sentence": "Resposta: _____",
+                  "sentence": "Pergunta: Qual pronome usamos para \"você\" nessa pergunta informal? Resposta: _____",
                   "word_ids": [
                     "wd-0013"
                   ]
                 },
                 {
-                  "sentence": "Pergunta: Como respondemos dizendo o nome de outra pessoa (3ª pessoa)?",
-                  "word_ids": []
-                },
-                {
-                  "sentence": "Resposta: Ella _____ Ana.",
+                  "sentence": "Pergunta: Como respondemos dizendo o nome de outra pessoa (3ª pessoa)? Resposta: Ella _____ Ana.",
                   "word_ids": [
                     "wd-0265"
                   ]
                 },
                 {
-                  "sentence": "Pergunta: Qual pronome reflexivo usamos para \"ele/ela\" nessa resposta?",
-                  "word_ids": []
-                },
-                {
-                  "sentence": "Resposta: _____",
+                  "sentence": "Pergunta: Qual pronome reflexivo usamos para \"ele/ela\" nessa resposta? Resposta: _____",
                   "word_ids": [
                     "wd-0264"
                   ]
@@ -540,11 +520,7 @@
               "title": "Exercício 17",
               "items": [
                 {
-                  "sentence": "Ana: ¡Hola! ¿Cómo te llamas?",
-                  "word_ids": []
-                },
-                {
-                  "sentence": "Carlos: _____ llamo Carlos. ¿Y _____?",
+                  "sentence": "Ana: ¡Hola! ¿Cómo te llamas? Carlos: _____ llamo Carlos. ¿Y _____?",
                   "word_ids": [
                     "wd-0260",
                     "wd-0013"

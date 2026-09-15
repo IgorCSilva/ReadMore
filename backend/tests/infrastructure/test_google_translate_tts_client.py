@@ -8,7 +8,7 @@ def test_synthesize_returns_audio_bytes_and_content_type():
     the Sheets-backed repositories, so there's nothing to gate this on."""
     client = GoogleTranslateTtsClient()
 
-    audio_bytes, content_type = client.synthesize("hello")
+    audio_bytes, content_type = client.synthesize("hello", "en")
 
     assert isinstance(audio_bytes, bytes)
     assert len(audio_bytes) > 0
