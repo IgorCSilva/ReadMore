@@ -257,13 +257,15 @@ def get_chapters_route(
 @app.get("/tts")
 def get_tts(
     text: str = "",
+    lang: str = "en",
     tts_port: GoogleTranslateTtsClient = Depends(get_tts_port),
 ):
     text = text.strip()
     if not text:
         return JSONResponse(status_code=400, content={"error": "missing 'text' query param"})
+    lang = lang.strip() or "en"
 
-    audio_bytes, content_type = SynthesizeSpeech(tts_port).execute(text)
+    audio_bytes, content_type = SynthesizeSpeech(tts_port).execute(text, lang)
     return Response(
         content=audio_bytes,
         media_type=content_type,

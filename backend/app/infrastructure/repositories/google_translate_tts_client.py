@@ -1,10 +1,4 @@
-"""GoogleTranslateTtsClient — proxies Google Translate's TTS endpoint.
-
-Same contract as backend/server.py's handle_tts, lifted unchanged — including
-the target language being hardcoded to English (tl=en) regardless of the
-text's actual language. That's an existing limitation of today's behavior,
-not something to silently fix during a behavior-preserving restructure.
-"""
+"""GoogleTranslateTtsClient — proxies Google Translate's TTS endpoint."""
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -22,11 +16,12 @@ class GoogleTranslateTtsClient(TtsPort):
     def __init__(self, timeout: int = 10) -> None:
         self._timeout = timeout
 
-    def synthesize(self, text: str) -> tuple[bytes, str]:
+    def synthesize(self, text: str, lang: str) -> tuple[bytes, str]:
         google_url = (
             "https://translate.google.com/translate_tts?ie=UTF-8&q="
             + urllib.parse.quote(text)
-            + "&tl=en&client=tw-ob"
+            + "&tl=" + urllib.parse.quote(lang)
+            + "&client=tw-ob"
         )
         req = urllib.request.Request(
             google_url,

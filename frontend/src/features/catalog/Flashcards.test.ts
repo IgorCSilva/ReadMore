@@ -17,7 +17,8 @@ vi.mock('../../shared/api', async (importOriginal) => {
     incrementShownCount: vi.fn(() => Promise.resolve(new Response())),
     markWordKnown: vi.fn(() => Promise.resolve(new Response())),
     showWordAgain: vi.fn(() => Promise.resolve(new Response())),
-    ttsUrl: (text: string) => `/tts?text=${encodeURIComponent(text)}`,
+    ttsUrl: (text: string, lang: string) =>
+      `/tts?text=${encodeURIComponent(text)}&lang=${encodeURIComponent(lang)}`,
   }
 })
 
@@ -27,6 +28,7 @@ const WORD = {
   filename: 'hello.webp',
   sentence: 'Hi, ___!',
   cue: 'a greeting',
+  gender_id: 'not_apply',
   confident: false,
   shown_count: 0,
   show: true,
@@ -108,6 +110,20 @@ describe('Flashcards', () => {
       wordId: 'en-0001',
     })
     expect(getNotifications().some((n) => n.type === 'warning')).toBe(true)
+
+    wrapper.unmount()
+  })
+
+  it('decorates the word and colors it according to its gender_id', async () => {
+    const father = { ...WORD, word_id: 'en-0002', original: 'father', gender_id: 'masculine' }
+    vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'english', words: [father] })
+
+    const wrapper = mount(Flashcards, { attachTo: document.body })
+    await wrapper.vm.load('test@example.com', 'english', null)
+
+    const wordEl = wrapper.find('#word')
+    expect(wordEl.text()).toBe('|father')
+    expect((wordEl.element as HTMLElement).style.color).toBe('rgb(79, 140, 255)')
 
     wrapper.unmount()
   })

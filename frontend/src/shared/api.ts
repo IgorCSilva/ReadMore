@@ -65,8 +65,8 @@ export function getWords(lang: string, sentenceLang?: string, cueLang?: string):
   return fetchJsonWithRetry<WordsResponse>(url)
 }
 
-export function ttsUrl(text: string): string {
-  return `/tts?text=${encodeURIComponent(text)}`
+export function ttsUrl(text: string, lang: string): string {
+  return `/tts?text=${encodeURIComponent(text)}&lang=${encodeURIComponent(lang)}`
 }
 
 // Thrown when fetch() itself rejects — offline, DNS failure, server

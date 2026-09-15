@@ -95,6 +95,7 @@ import { getUserWords, ttsUrl } from '../../shared/api'
 import { cacheKey, writeCache } from '../../shared/cache'
 import { readStale, refreshInBackground } from '../../shared/dataSync'
 import { formatWordByGender, getGender } from '../../shared/genders'
+import { speechLocaleFor } from '../../shared/languages'
 import { hasQueuedAction, performWrite } from '../../shared/writeQueue'
 
 // Extracted from App.vue's monolithic script (Step 2.4 of RESTRUCTURE_PLAN.md
@@ -163,37 +164,50 @@ onMounted(() => {
 
   const SPEECH_SUPPORTED = "speechSynthesis" in window;
 
-  function speakWordLocal(text) {
+  // LANG is "origin-target" (e.g. "pt-es"); the word itself is always the
+  // target-language spelling, while the sentence follows whichever side
+  // SENTENCE_LANG currently points at.
+  function targetLangCode() {
+    const [, target] = LANG.split("-");
+    return target || LANG;
+  }
+
+  function originLangCode() {
+    const [origin] = LANG.split("-");
+    return origin || LANG;
+  }
+
+  function speakWordLocal(text, langCode) {
     if (!SPEECH_SUPPORTED || !text) return;
     window.speechSynthesis.cancel(); // stop anything already speaking
     const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = "en-US";
+    utterance.lang = speechLocaleFor(langCode);
     window.speechSynthesis.speak(utterance);
   }
 
-  function speakWord(text) {
+  function speakWord(text, langCode) {
     if (!text) return;
-    const audio = new Audio(ttsUrl(text));
+    const audio = new Audio(ttsUrl(text, langCode));
     audio.addEventListener("error", () => {
       console.warn("TTS proxy unavailable (is the backend running?), falling back to local speech synthesis.");
-      speakWordLocal(text);
+      speakWordLocal(text, langCode);
     });
     audio.play().catch(() => {
       console.warn("TTS playback blocked/failed, falling back to local speech synthesis.");
-      speakWordLocal(text);
+      speakWordLocal(text, langCode);
     });
   }
 
   speakBtn.addEventListener("click", () => {
     if (ENTRIES.length === 0) return;
-    speakWord(ENTRIES[index].word);
+    speakWord(ENTRIES[index].word, targetLangCode());
   });
 
   function speakCurrentSentence() {
     if (ENTRIES.length === 0) return;
     const entry = ENTRIES[index];
     const filledSentence = entry.sentence.replace(/_+/g, entry.word);
-    speakWord(filledSentence);
+    speakWord(filledSentence, SENTENCE_LANG === "origin" ? originLangCode() : targetLangCode());
   }
 
   speakSentenceBtn.addEventListener("click", speakCurrentSentence);
