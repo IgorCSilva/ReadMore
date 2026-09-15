@@ -19,7 +19,8 @@ COPY backend/requirements.txt ./backend/
 RUN pip install --no-cache-dir -r backend/requirements.txt
 
 COPY backend/app/ ./backend/app/
-COPY backend/catalog.json ./backend/
+COPY backend/words/ ./backend/words/
+COPY backend/content/ ./backend/content/
 COPY --from=frontend-build /app/frontend/dist ./frontend/dist
 
 ENV HOST=0.0.0.0
