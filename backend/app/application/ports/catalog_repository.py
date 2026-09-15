@@ -17,8 +17,13 @@ class CatalogRepository(ABC):
         """All language pairs present in the catalog."""
 
     @abstractmethod
-    def get_words(self, lang: LanguagePair) -> list[Word]:
-        """All words for a language pair. Raises LanguageNotFoundError if unknown."""
+    def get_words(
+        self, lang: LanguagePair, sentence_lang: str = "target", cue_lang: str = "origin"
+    ) -> list[Word]:
+        """All words for a language pair. sentence_lang/cue_lang select which
+        of the pair's two languages ("origin" or "target") each word's
+        sentence/cue is resolved in — independently of each other, and of
+        `lang` itself. Raises LanguageNotFoundError if `lang` is unknown."""
 
     @abstractmethod
     def get_chapters(self, lang: LanguagePair) -> list[Chapter]:

@@ -8,6 +8,8 @@
       <button type="button" class="switch-user-btn" id="switch-user-btn">Log in with another email</button>
     </div>
     <select id="lang-select"></select>
+    <label class="lang-choice-label">Sentence: <select id="sentence-lang-select"></select></label>
+    <label class="lang-choice-label">Cue: <select id="cue-lang-select"></select></label>
   </div>
 
   <div class="texts-page">
@@ -48,7 +50,7 @@ import { onMounted, ref } from 'vue'
 import { getChapters, getLanguages } from './shared/api'
 import { cacheKey, writeCache } from './shared/cache'
 import { readStale, refreshInBackground } from './shared/dataSync'
-import { formatLanguagePairLabel } from './shared/languages'
+import { formatLanguagePairLabel, formatLanguageName } from './shared/languages'
 import { escapeHtml } from './shared/text'
 import { flushQueuedWrites } from './shared/writeQueue'
 import Flashcards from './features/catalog/Flashcards.vue'
@@ -75,9 +77,13 @@ onMounted(() => {
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   let USER_EMAIL = null;
-  let LANG = "english";
+  let LANG = "pt-en";
+  let SENTENCE_LANG = "target";
+  let CUE_LANG = "origin";
 
   const langSelectEl = document.getElementById("lang-select");
+  const sentenceLangSelectEl = document.getElementById("sentence-lang-select");
+  const cueLangSelectEl = document.getElementById("cue-lang-select");
   const currentUserEmailEl = document.getElementById("current-user-email");
   const switchUserBtn = document.getElementById("switch-user-btn");
 
@@ -127,9 +133,56 @@ onMounted(() => {
     return data.languages || [];
   }
 
+  // Drives which of the CSS accent trios (--accent/-soft/-strong, defined
+  // in the <style> block's :root[data-lang=...] rules) is active — every
+  // component that reads var(--accent) picks this up automatically, no
+  // other wiring needed. Falls back to "en" for a target this app doesn't
+  // have its own accent for yet, rather than leaving data-lang unset.
+  function setDataLang() {
+    const [, target] = LANG.split("-");
+    document.documentElement.setAttribute("data-lang", target === "es" ? "es" : "en");
+  }
+
+  // Sentence/cue language pickers only ever offer the current pair's own
+  // two languages ("origin" or "target") — never an unrelated language, per
+  // the app's own restriction (a pt-en learner can't pick Spanish here).
+  function populateLangChoiceSelects() {
+    const [origin, target] = LANG.split("-");
+    const originLabel = formatLanguageName(origin);
+    const targetLabel = formatLanguageName(target);
+
+    function fillSelect(selectEl, selected) {
+      selectEl.innerHTML = "";
+      const originOpt = document.createElement("option");
+      originOpt.value = "origin";
+      originOpt.textContent = originLabel;
+      const targetOpt = document.createElement("option");
+      targetOpt.value = "target";
+      targetOpt.textContent = targetLabel;
+      selectEl.appendChild(originOpt);
+      selectEl.appendChild(targetOpt);
+      selectEl.value = selected;
+    }
+
+    fillSelect(sentenceLangSelectEl, SENTENCE_LANG);
+    fillSelect(cueLangSelectEl, CUE_LANG);
+  }
+
   langSelectEl.addEventListener("change", () => {
     LANG = langSelectEl.value;
+    setDataLang();
+    populateLangChoiceSelects();
     loadAndRenderChapters();
+  });
+
+  sentenceLangSelectEl.addEventListener("change", () => {
+    SENTENCE_LANG = sentenceLangSelectEl.value;
+    switchTopicTab(currentTopicTab);
+  });
+
+  cueLangSelectEl.addEventListener("change", () => {
+    CUE_LANG = cueLangSelectEl.value;
+    switchTopicTab(currentTopicTab);
   });
 
   // ---- Topic workspace tabs (Flashcards / Texts within a topic) ----
@@ -152,11 +205,11 @@ onMounted(() => {
     topicTextsPanelEl.style.display = tab === "texts" ? "flex" : "none";
     topicExercisesPanelEl.style.display = tab === "exercises" ? "flex" : "none";
     if (tab === "flashcards") {
-      flashcardsRef.value?.load(USER_EMAIL, LANG, currentTopic);
+      flashcardsRef.value?.load(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
     } else if (tab === "texts") {
       textsRef.value?.show(currentTopic);
     } else {
-      exercisesRef.value?.show(LANG, currentTopic);
+      exercisesRef.value?.show(LANG, currentTopic, CUE_LANG);
     }
   }
 
@@ -280,8 +333,12 @@ onMounted(() => {
     card.type = "button";
     card.className = "item-card";
     card.innerHTML =
-      `<div class="item-card-title">${number}. ${escapeHtml(title)}</div>` +
-      (description ? `<div class="item-card-description">${escapeHtml(description)}</div>` : "");
+      `<div class="item-card-chip">${number}</div>` +
+      `<div class="item-card-body">` +
+      `<div class="item-card-title">${escapeHtml(title)}</div>` +
+      (description ? `<div class="item-card-description">${escapeHtml(description)}</div>` : "") +
+      `</div>` +
+      `<div class="item-card-arrow">→</div>`;
     if (status === "in_development") {
       card.disabled = true;
     } else {
@@ -357,6 +414,8 @@ onMounted(() => {
       }
       LANG = languages.includes(LANG) ? LANG : (languages[0] || LANG);
       langSelectEl.value = LANG;
+      setDataLang();
+      populateLangChoiceSelects();
 
       await loadAndRenderChapters();
     } catch (err) {
@@ -383,10 +442,16 @@ onMounted(() => {
     --card: #1a1d24;
     --text: #eef0f3;
     --muted: #8b91a0;
-    --accent: #4f8cff;
     --confident: #35c07a;
     --learning: #e0a530;
     --border: #2a2e38;
+
+    /* raw per-target-language accent trio — theme-owned; which one is
+       active is a separate, independent concern (see the data-lang block
+       below), so this and a future manual dark/light toggle never redefine
+       the same property. */
+    --accent-en: #4f8cff;    --accent-en-soft: #1b2a47;  --accent-en-strong: #3f74e0;
+    --accent-es: #ff8b5e;    --accent-es-soft: #3a2418;  --accent-es-strong: #ff7038;
   }
   @media (prefers-color-scheme: light) {
     :root {
@@ -394,11 +459,29 @@ onMounted(() => {
       --card: #ffffff;
       --text: #1a1d24;
       --muted: #666d7a;
-      --accent: #2f6fe4;
       --confident: #1f9a5a;
       --learning: #b8790a;
       --border: #e1e3e8;
+
+      --accent-en: #2f6fe4;    --accent-en-soft: #e7efff;  --accent-en-strong: #1f56c4;
+      --accent-es: #dd5a28;    --accent-es-soft: #fce8dd;  --accent-es-strong: #b8461c;
     }
+  }
+
+  /* which target language's accent trio is active right now — kept to just
+     these three tokens so the toggle stays independent of the theme blocks
+     above. Set via data-lang on <html>, updated in JS whenever LANG changes
+     (see setDataLang in the script below). Defaults to English so the app
+     still renders correctly before init() resolves the real language. */
+  :root, :root[data-lang="en"] {
+    --accent: var(--accent-en);
+    --accent-soft: var(--accent-en-soft);
+    --accent-strong: var(--accent-en-strong);
+  }
+  :root[data-lang="es"] {
+    --accent: var(--accent-es);
+    --accent-soft: var(--accent-es-soft);
+    --accent-strong: var(--accent-es-strong);
   }
   * { box-sizing: border-box; }
   html, body {
@@ -438,10 +521,17 @@ onMounted(() => {
     display: flex; align-items: center; gap: 10px;
     font-size: 14px; cursor: pointer; user-select: none;
   }
-  #lang-select {
+  #lang-select, #sentence-lang-select, #cue-lang-select {
     background: var(--bg); color: var(--text);
     border: 1px solid var(--border); border-radius: 8px;
-    padding: 6px 8px; font-size: 14px; margin-top: -6px;
+    padding: 6px 8px; font-size: 14px;
+  }
+  #lang-select {
+    margin-top: -6px;
+  }
+  .lang-choice-label {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 13px; color: var(--muted);
   }
   .current-user {
     font-size: 13px; color: var(--text);
@@ -650,9 +740,10 @@ onMounted(() => {
   }
   .action-btn-primary {
     background: var(--accent); color: #fff; border-color: var(--accent);
+    transition: background 0.15s ease, border-color 0.15s ease;
   }
   .action-btn-primary:hover {
-    opacity: 0.9; color: #fff;
+    background: var(--accent-strong); border-color: var(--accent-strong); color: #fff;
   }
   .progress {
     width: min(90vw, 640px); height: 4px; background: var(--border);
@@ -746,26 +837,58 @@ onMounted(() => {
     width: 100%;
   }
   .item-card {
-    display: block; width: 100%; text-align: left;
+    display: flex; align-items: flex-start; gap: 14px; width: 100%; text-align: left;
     background: var(--card); color: var(--text);
-    border: 1px solid var(--border); border-radius: 14px;
-    padding: 16px 18px;
+    border: 1px solid var(--border); border-radius: 16px;
+    padding: 15px 18px;
     cursor: pointer;
+    transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
   }
   .item-card:hover {
     border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -14px var(--accent);
+  }
+  .item-card:active {
+    transform: translateY(0);
   }
   .item-card:disabled {
-    opacity: 0.5; cursor: not-allowed;
+    opacity: 0.6; cursor: not-allowed;
   }
   .item-card:disabled:hover {
-    border-color: var(--border);
+    border-color: var(--border); transform: none; box-shadow: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .item-card { transition: border-color 0.15s ease; }
+    .item-card:hover { transform: none; }
+  }
+  .item-card-chip {
+    flex-shrink: 0; width: 36px; height: 36px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums;
+    background: var(--accent-soft); color: var(--accent-strong);
+  }
+  .item-card:disabled .item-card-chip {
+    background: var(--border); color: var(--muted);
+  }
+  .item-card-body {
+    display: flex; flex-direction: column; gap: 2px; min-width: 0;
+  }
+  .item-card-arrow {
+    flex-shrink: 0; align-self: center; margin-left: auto;
+    color: var(--accent); font-size: 17px; opacity: 0; transform: translateX(-4px);
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+  .item-card:hover .item-card-arrow {
+    opacity: 1; transform: translateX(0);
+  }
+  .item-card:disabled .item-card-arrow {
+    display: none;
   }
   .item-card-title {
     font-size: 16px; font-weight: 700;
   }
   .item-card-description {
-    margin-top: 4px;
     font-size: 13px; color: var(--muted); line-height: 1.4;
   }
   .text-reader {

@@ -31,8 +31,27 @@ export async function getLanguages(): Promise<LanguagesResponse> {
   return (await res.json()) as LanguagesResponse
 }
 
-export function getUserWords(user: string, lang: string): Promise<UserWordsResponse> {
-  const url = `/data?user=${encodeURIComponent(user)}&lang=${encodeURIComponent(lang)}`
+// sentenceLang/cueLang select which of the pair's two languages ("origin" or
+// "target") each word's sentence/cue comes back in — see App.vue's pickers.
+// Omitted entirely when not given, so the server's own defaults (today's
+// behavior: sentence in the target language, cue in the origin language)
+// apply without this module needing to know what those defaults are.
+function langChoiceParams(sentenceLang?: string, cueLang?: string): string {
+  let params = ''
+  if (sentenceLang) params += `&sentence_lang=${encodeURIComponent(sentenceLang)}`
+  if (cueLang) params += `&cue_lang=${encodeURIComponent(cueLang)}`
+  return params
+}
+
+export function getUserWords(
+  user: string,
+  lang: string,
+  sentenceLang?: string,
+  cueLang?: string,
+): Promise<UserWordsResponse> {
+  const url =
+    `/data?user=${encodeURIComponent(user)}&lang=${encodeURIComponent(lang)}` +
+    langChoiceParams(sentenceLang, cueLang)
   return fetchJsonWithRetry<UserWordsResponse>(url)
 }
 
@@ -41,8 +60,9 @@ export function getChapters(user: string, lang: string): Promise<ChaptersRespons
   return fetchJsonWithRetry<ChaptersResponse>(url)
 }
 
-export function getWords(lang: string): Promise<WordsResponse> {
-  return fetchJsonWithRetry<WordsResponse>(`/words?lang=${encodeURIComponent(lang)}`)
+export function getWords(lang: string, sentenceLang?: string, cueLang?: string): Promise<WordsResponse> {
+  const url = `/words?lang=${encodeURIComponent(lang)}` + langChoiceParams(sentenceLang, cueLang)
+  return fetchJsonWithRetry<WordsResponse>(url)
 }
 
 export function ttsUrl(text: string): string {

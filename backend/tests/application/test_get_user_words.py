@@ -16,11 +16,15 @@ class FakeCatalogRepository(CatalogRepository):
 
     def __init__(self, words_by_lang: dict[LanguagePair, list[Word]]) -> None:
         self._words_by_lang = words_by_lang
+        self.last_call: tuple[LanguagePair, str, str] | None = None
 
     def list_languages(self) -> list[LanguagePair]:
         return list(self._words_by_lang.keys())
 
-    def get_words(self, lang: LanguagePair) -> list[Word]:
+    def get_words(
+        self, lang: LanguagePair, sentence_lang: str = "target", cue_lang: str = "origin"
+    ) -> list[Word]:
+        self.last_call = (lang, sentence_lang, cue_lang)
         if lang not in self._words_by_lang:
             raise LanguageNotFoundError(str(lang))
         return self._words_by_lang[lang]
@@ -69,3 +73,12 @@ def test_raises_for_unknown_language():
     )
     with pytest.raises(LanguageNotFoundError):
         use_case.execute(Email("igor.carneiro@gmail.com"), PT_DE)
+
+
+def test_forwards_sentence_lang_and_cue_lang_to_the_repository():
+    repository = FakeCatalogRepository({PT_EN: []})
+    use_case = GetUserWords(repository, FakeProgressRepository({}))
+
+    use_case.execute(Email("igor.carneiro@gmail.com"), PT_EN, sentence_lang="origin", cue_lang="target")
+
+    assert repository.last_call == (PT_EN, "origin", "target")

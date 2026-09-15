@@ -1,0 +1,744 @@
+{
+  "chapters": [
+    {
+      "chapter_id": "ch-A0-EL",
+      "number": 1,
+      "title": "Vida cotidiana e rotinas",
+      "description": "Desenvolver vocabulário e padrões do *simple present* para frases curtas em primeira pessoa sobre si mesmo e o próprio dia.",
+      "topics": [
+        {
+          "topic_id": "top-A0-EL-1",
+          "number": 1,
+          "title": "Saudações e Apresentação Pessoal",
+          "description": "Nomes, saudações básicas, frases do tipo \"Eu sou\" / \"Meu nome é\". Atividades de construção: leitura de crachá ou de uma breve apresentação pessoal.",
+          "word_ids": [
+            "en-wd-0001",
+            "en-wd-0002",
+            "en-wd-0003",
+            "en-wd-0004",
+            "en-wd-0005",
+            "en-wd-0006",
+            "en-wd-0007",
+            "en-wd-0008",
+            "en-wd-0009",
+            "en-wd-0010",
+            "en-wd-0011",
+            "en-wd-0012",
+            "en-wd-0013",
+            "en-wd-0014",
+            "en-wd-0015"
+          ],
+          "texts": [
+            {
+              "text_id": "txt-01",
+              "number": 1,
+              "title": "Primeiro Dia na Escola",
+              "body": "Ana **is** uma aluna nova. Ela diz: '**Hello**! **I** **am** Ana. **Your** **name**?' A colega responde: '**Hi**! **My** **name** **is** Sofia. **Nice to meet you**!'"
+            },
+            {
+              "text_id": "txt-02",
+              "number": 2,
+              "title": "Novos Vizinhos",
+              "body": "Igor: **Hello**! **I** **am** Igor.  \nMarina: **Hi**! **My** **name** **is** Marina. **Nice to meet you**!  \nIgor: **Nice to meet you**! **Goodbye**!  \nMarina: **Goodbye**!"
+            },
+            {
+              "text_id": "txt-03",
+              "number": 3,
+              "title": "Meu Diário",
+              "body": "2 de setembro  \nQuerido diário, hoje **I** **am** muito feliz porque **I** conheci Carlos. Ele disse: '**Hello**! **My** **name** **is** Tom. **Thank you**!' **Goodbye**, diário!"
+            },
+            {
+              "text_id": "txt-04",
+              "number": 4,
+              "title": "Uma Carta para Minha Nova Colega de Quarto",
+              "body": "Querida Marina,  \n**Hello**! **My** **name** **is** Ana. **I** **am** **from** o Brasil. **Please**, me escreva!  \nUm abraço,  \nAna"
+            },
+            {
+              "text_id": "txt-05",
+              "number": 5,
+              "title": "Perguntas e Respostas",
+              "body": "Pergunta: **Your** **name**?  \nResposta: **My** **name** **is** Sofia.  \nPergunta: **I** **am** **from** o Brasil. **You**?  \nResposta: **I** **am** **from** Portugal."
+            },
+            {
+              "text_id": "txt-06",
+              "number": 6,
+              "title": "Frases para Turistas",
+              "body": "Ao viajar, **you** pode usar estas frases para conhecer pessoas nesse país:  \n— **Hello**! **I** **am** Marina.  \n— **Please**, **your** **name**?  \n— **Nice to meet you**!  \n— **Goodbye**!"
+            },
+            {
+              "text_id": "txt-07",
+              "number": 7,
+              "title": "Nova Funcionária",
+              "body": "A empresa recebeu uma nova funcionária hoje. Ela **is** Ana. Ana disse: \"**Hello**! **I** **am** muito feliz. **Nice to meet you**!\""
+            },
+            {
+              "text_id": "txt-08",
+              "number": 8,
+              "title": "Na Sala de Espera",
+              "body": "Carlos espera na sala do médico. Ele vê Sofia e diz: \"**Hi**! **I** **am** Carlos. **Your** **name**?\" Sofia responde: \"**My** **name** **is** Sofia. **Nice to meet you**!\""
+            },
+            {
+              "text_id": "txt-09",
+              "number": 9,
+              "title": "Uma Ligação Telefônica",
+              "body": "Recepcionista: **Hello**! **My** **name** **is** Marina.  \nCliente: **Hi**! **I** **am** Igor. **Thank you**!  \nRecepcionista: **What**? **Please**, **your** **name** de novo?  \nCliente: **My** **name** **is** Igor. **Goodbye**!"
+            },
+            {
+              "text_id": "txt-10",
+              "number": 10,
+              "title": "Mensagem Online",
+              "body": "**Hi** Sofia,  \n**Hello**! **My** **name** **is** Ana. **I** **am** **from** o Brasil. **Nice to meet you**! **Goodbye**!  \nUm abraço,  \nAna"
+            }
+          ],
+          "status": "ready",
+          "exercises": [
+            {
+              "exercise_id": "ex-01",
+              "number": 1,
+              "title": "Exercício 1",
+              "items": [
+                {
+                  "sentence": "_____! Eu sou Marina.",
+                  "word_ids": [
+                    "wd-0001"
+                  ]
+                },
+                {
+                  "sentence": "_____, me diga seu nome.",
+                  "word_ids": [
+                    "wd-0004"
+                  ]
+                },
+                {
+                  "sentence": "_____ por conversar comigo!",
+                  "word_ids": [
+                    "wd-0005"
+                  ]
+                },
+                {
+                  "sentence": "_____? Não entendi.",
+                  "word_ids": [
+                    "wd-0006"
+                  ]
+                },
+                {
+                  "sentence": "_____! Até amanhã.",
+                  "word_ids": [
+                    "wd-0003"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-02",
+              "number": 2,
+              "title": "Exercício 2",
+              "items": [
+                {
+                  "sentence": "Igor: _____ _____ Igor.",
+                  "word_ids": [
+                    "wd-0007",
+                    "wd-0008"
+                  ]
+                },
+                {
+                  "sentence": "Marina: _____ _____ _____ Marina.",
+                  "word_ids": [
+                    "wd-0011",
+                    "wd-0009",
+                    "wd-0010"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-03",
+              "number": 3,
+              "title": "Exercício 3",
+              "items": [
+                {
+                  "sentence": "Ana conhece uma pessoa nova. Ela pergunta: \"(1)_____ nome?\" A pessoa responde: \"Meu nome é Carlos. (2)_____!\" Ana diz: \"Eu sou (3)_____ o Brasil. E (4)_____?\"",
+                  "word_ids": [
+                    "wd-0012",
+                    "wd-0014",
+                    "wd-0015",
+                    "wd-0013"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-04",
+              "number": 4,
+              "title": "Exercício 4",
+              "type": "classify",
+              "word_bank": [
+                "wd-0002",
+                "wd-0008",
+                "wd-0003",
+                "wd-0011",
+                "wd-0010",
+                "wd-0004",
+                "wd-0007",
+                "wd-0014"
+              ],
+              "categories": [
+                {
+                  "title": "Saudações e Despedidas"
+                },
+                {
+                  "title": "Verbo \"to be\""
+                },
+                {
+                  "title": "Pronomes e Possessivos"
+                },
+                {
+                  "title": "Cortesia"
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-05",
+              "number": 5,
+              "title": "Exercício 5",
+              "type": "open_response",
+              "lines": [
+                {
+                  "speaker": "Sofia",
+                  "text": "**Hello**! **I** **am** Sofia."
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "diga seu nome e cumprimente de volta"
+                },
+                {
+                  "speaker": "Sofia",
+                  "text": "**Nice to meet you**!"
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "responda educadamente e diga tchau"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "topic_id": "top-A0-EL-2",
+          "number": 2,
+          "title": "Família e pessoas ao meu redor",
+          "description": "Vocabulário relacionado à família, possessivos simples (\"minha mãe\", \"seu irmão\"). Atividade de desenvolvimento: leitura de uma breve descrição da família.",
+          "word_ids": [],
+          "texts": [
+            {
+              "text_id": "txt-01",
+              "number": 1,
+              "title": "Primeiro Dia na Escola",
+              "body": "Ana **is** uma aluna nova. Ela diz: '**Hello**! **I** **am** Ana. **Your** **name**?' A colega responde: '**Hi**! **My** **name** **is** Sofia. **Nice to meet you**!'"
+            },
+            {
+              "text_id": "txt-02",
+              "number": 2,
+              "title": "Novos Vizinhos",
+              "body": "Igor: **Hello**! **I** **am** Igor.  \nMarina: **Hi**! **My** **name** **is** Marina. **Nice to meet you**!  \nIgor: **Nice to meet you**! **Goodbye**!  \nMarina: **Goodbye**!"
+            },
+            {
+              "text_id": "txt-03",
+              "number": 3,
+              "title": "Meu Diário",
+              "body": "2 de setembro  \nQuerido diário, hoje **I** **am** muito feliz porque **I** conheci Carlos. Ele disse: '**Hello**! **My** **name** **is** Tom. **Thank you**!' **Goodbye**, diário!"
+            },
+            {
+              "text_id": "txt-04",
+              "number": 4,
+              "title": "Uma Carta para Minha Nova Colega de Quarto",
+              "body": "Querida Marina,  \n**Hello**! **My** **name** **is** Ana. **I** **am** **from** o Brasil. **Please**, me escreva!  \nUm abraço,  \nAna"
+            },
+            {
+              "text_id": "txt-05",
+              "number": 5,
+              "title": "Perguntas e Respostas",
+              "body": "Pergunta: **Your** **name**?  \nResposta: **My** **name** **is** Sofia.  \nPergunta: **I** **am** **from** o Brasil. **You**?  \nResposta: **I** **am** **from** Portugal."
+            },
+            {
+              "text_id": "txt-06",
+              "number": 6,
+              "title": "Frases para Turistas",
+              "body": "Ao viajar, **you** pode usar estas frases para conhecer pessoas nesse país:  \n— **Hello**! **I** **am** Marina.  \n— **Please**, **your** **name**?  \n— **Nice to meet you**!  \n— **Goodbye**!"
+            },
+            {
+              "text_id": "txt-07",
+              "number": 7,
+              "title": "Nova Funcionária",
+              "body": "A empresa recebeu uma nova funcionária hoje. Ela **is** Ana. Ana disse: \"**Hello**! **I** **am** muito feliz. **Nice to meet you**!\""
+            },
+            {
+              "text_id": "txt-08",
+              "number": 8,
+              "title": "Na Sala de Espera",
+              "body": "Carlos espera na sala do médico. Ele vê Sofia e diz: \"**Hi**! **I** **am** Carlos. **Your** **name**?\" Sofia responde: \"**My** **name** **is** Sofia. **Nice to meet you**!\""
+            },
+            {
+              "text_id": "txt-09",
+              "number": 9,
+              "title": "Uma Ligação Telefônica",
+              "body": "Recepcionista: **Hello**! **My** **name** **is** Marina.  \nCliente: **Hi**! **I** **am** Igor. **Thank you**!  \nRecepcionista: **What**? **Please**, **your** **name** de novo?  \nCliente: **My** **name** **is** Igor. **Goodbye**!"
+            },
+            {
+              "text_id": "txt-10",
+              "number": 10,
+              "title": "Mensagem Online",
+              "body": "**Hi** Sofia,  \n**Hello**! **My** **name** **is** Ana. **I** **am** **from** o Brasil. **Nice to meet you**! **Goodbye**!  \nUm abraço,  \nAna"
+            }
+          ],
+          "status": "in_development"
+        }
+      ],
+      "status": "ready"
+    },
+    {
+      "chapter_id": "ch-A0-SS",
+      "number": 2,
+      "title": "Histórias Curtas e Narrativas Simples",
+      "description": "Aplique vocabulário do cotidiano a cenas narradas bem curtas, com início, meio e fim.",
+      "topics": [
+        {
+          "topic_id": "top-A0-SS-1",
+          "number": 1,
+          "title": "Um breve dia na vida",
+          "description": "Uma breve recontagem em terceira pessoa que reutiliza o vocabulário A0-EL. *Dependência opcional: A0-EL-4.",
+          "word_ids": [],
+          "texts": [],
+          "status": "in_development"
+        }
+      ],
+      "status": "in_development"
+    },
+    {
+      "chapter_id": "ch-A1.2",
+      "number": 1,
+      "title": "Comida do dia a dia",
+      "description": "Aprenda palavras e frases relacionadas a alimentos, bebidas e refeições diárias.",
+      "topics": [
+        {
+          "topic_id": "top-A1.2.2",
+          "number": 2,
+          "title": "Fazer pedidos de forma simples",
+          "description": "Aprenda a fazer pedidos de comida e bebida em restaurantes e cafés.",
+          "word_ids": [
+            "en-wd-0188",
+            "en-wd-0189",
+            "en-wd-0190",
+            "en-wd-0191",
+            "en-wd-0192",
+            "en-wd-0193",
+            "en-wd-0194",
+            "en-wd-0195",
+            "en-wd-0196",
+            "en-wd-0197",
+            "en-wd-0198",
+            "en-wd-0199",
+            "en-wd-0200",
+            "en-wd-0201",
+            "en-wd-0202",
+            "en-wd-0203",
+            "en-wd-0204",
+            "en-wd-0205"
+          ],
+          "texts": [
+            {
+              "text_id": "txt-21",
+              "number": 21,
+              "title": "Uma Manhã Perfeita no Café",
+              "body": "**I** **am** **really** **hungry** hoje, **so** **I** **go** para **a** **restaurant**. **I** **would** **like** **a** **menu**, **please**. **The** **waiter** **has** **a** **big** **menu** **for** **me**. **I** **order** **a** **medium** **coffee**, **with** **sugar** **and** **ice**. **I** **have** **a** **cup** **and** **a** **glass**. **I** **want** **a** **napkin**, **too**. **The** **price** **is** **good**, **and** **I** **pay** **with** **cash**. **This** **is** **true** — **I** **think** **it** **is** **awesome**!"
+            },
+            {
+              "text_id": "txt-22",
+              "number": 22,
+              "title": "Pedindo a Sobremesa",
+              "body": "Igor: **Excuse me**! **Do** **you** **have** **a** **table** **for** **two**? **Do** **you** **know** **about** **the** **menu**?\nWaiter: **Of course**! **Would** **you** **like** **a** **plate**, **too**?\nIgor: **Yes**, **please**. **I** **would** **like** **a** **hamburger**, **with** **a** **straw** **for** **my** **water**.\nWaiter: **Does** **your** **friend** **want** **something**, **too**?\nIgor: **Yes**, **she** **would** **like** **cheese** **and** **bread**.\nWaiter: **Alright**! **I** **have** **your** **bill** **here**.\nIgor: **Anyway**, **the** **price** **is** **good**. **I** **would** **like** **to** **pay** **with** **a** **card**."
+            },
+            {
+              "text_id": "txt-23",
+              "number": 23,
+              "title": "Lista de Compras Para uma Festa",
+              "body": "**I** **would** **like** **to** **go** para **a** **supermarket** **for** **a** festa. Esta **is** **my** lista:\n\n— **cups** **and** **glasses**  \n— **sugar** **and** **ice**  \n— **napkins** **and** **straws**  \n— **a** **long** **table**  \n— **cash**, **not** **a** **card**\n\n**I** **would** **like** **everyone** **to** **come**. **This** **is** **a** **really** **great** festa!"
+            },
+            {
+              "text_id": "txt-24",
+              "number": 24,
+              "title": "Notícia: Café Famoso Recebe Prêmio",
+              "body": "**A** **famous** **restaurant** **in** **the** **city** **would** **like** **everyone** **to** **know** **about** um novo prêmio. **The** **waiter** **is** **really** **nice**, **and** **the** **menu** **is** **long**. **Everyone** **thinks** **the** **price** **is** **good**. **This** **is** **true**! **The** **restaurant** **is** **not** **far** **from** **the** **supermarket**. **Many** pessoas **come** **here** **many** **days**."
+            },
+            {
+              "text_id": "txt-25",
+              "number": 25,
+              "title": "Meu Diário — Pedido Especial",
+              "body": "11 de setembro.\n\n**Sorry**, diary — **I** **would** **like** **to** **speak** **about** **my** **day**. **Anyway**, **I** **order** **a** **medium** **coffee**, **to go**. **The** **waiter** **knows** **me** **well**. **Of course**, **I** **want** **sugar** **too**. **I** **have** **a** **cup**, **too**. **Excuse me**, **I** **think** **I** **want** **a** **napkin**. **The** **price** **is** **good**, **and** **I** **pay**. **This** **is** **true** — **I** **really** **like** **coffee**!"
+            },
+            {
+              "text_id": "txt-26",
+              "number": 26,
+              "title": "Carta Sobre uma Viagem de Ônibus",
+              "body": "Querido amigo,\n\n**I** **would** **like** **to** **speak** **about** minha viagem. **I** **go** **by** **bus** **across** **the** **city**. **I** **have** **a** **room** **in** **a** **motel**, **not** far **from** **the** **supermarket**. **The** **room** **is** **little**, mas **it** **is** **really** **nice**. **I** **would** **like** **to** **pay** **with** **cash**, **not** **a** **card**. **The** **price** **is** **good**. **I** **think** **about** **you** muito. **See** **you** **later**!\n\nUm abraço,  \nSofia"
+            },
+            {
+              "text_id": "txt-27",
+              "number": 27,
+              "title": "Entrevista: Segredos de um Bom Garçom",
+              "body": "Pergunta: **Do** **you** **like** **this** **restaurant**?  \nResposta: **Yes**! **I** **think** **it** **is** **really** **great**.  \nPergunta: **Does** **everyone** **want** **a** **menu**?  \nResposta: **Yes**, **and** **I** **have** **a** **table** **for** **everyone**.  \nPergunta: **Do** **you** **order** **here**?  \nResposta: **Yes**, **I** **would** **like** **to** **order** **here** **too**.  \nPergunta: **How** **do** **you** **want** **to** **pay**?  \nResposta: **I** **would** **like** **cash** ou **a** **card**.  \nPergunta: **Is** **the** **price** **good**?  \nResposta: **Absolutely**! **Everyone** **agrees**."
+            },
+            {
+              "text_id": "txt-28",
+              "number": 28,
+              "title": "Na Casa de um Amigo",
+              "body": "Sofia: **Hi**! **Would** **you** **like** **a** **cup** de **tea**?  \nMarco: **Sure**! **Do** **you** **have** **sugar**?  \nSofia: **Yes**, **and** **I** **have** **a** **glass** **for** **water**, **too**.  \nMarco: **Alright**! **I** **would** **like** **a** **napkin**.  \nSofia: **Of course**! **Oh**, **I** **have** **ice**, **too**.  \nMarco: **This** **is** **really** **nice**. **Thank you**!  \nSofia: **See** **you** **later**!"
+            },
+            {
+              "text_id": "txt-29",
+              "number": 29,
+              "title": "Um Cliente Exigente",
+              "body": "Um cliente **is** **in** **the** **restaurant**. **He** **does** **not** **like** **the** **plate**. **He** **thinks** **the** **meat** **is** **not** **good**, **and** **the** **vegetable** **is** **not** **good**, **too**. **He** **would** **like** **a** **medium** **coffee**, **with** **a** **straw**. **He** **wants** **the** **bill**. **This** **is** **true** — **he** **does** **not** **agree** **with** **the** **price**. **The** **waiter** **is** **really** **nice**, mas **the** cliente **disagrees**."
+            },
+            {
+              "text_id": "txt-30",
+              "number": 30,
+              "title": "Notícia: Preço do Café Sobe na Cidade",
+              "body": "**Coffee** **prices** **are** **not** **good** **in** **the** **city**. **Everyone** **would** **like** **a** **good** **price**, mas **the** **supermarket** **and** **the** **restaurant** **do** **not** **agree**. **Many** pessoas **think** **this** **is** **not** **true**. **They** **would** **like** **to** **know** **about** **it**. **The** **city** **is** **long**, **and** **many** **towns** **have** **prices**, **too**."
+            },
+            {
+              "text_id": "txt-31",
+              "number": 31,
+              "title": "Meu Diário — Um Pedido Para Levar",
+              "body": "12 de setembro.\n\n**Oh**, hoje **I** **would** **like** **to** **order** **something** **to go**. **I** **go** para **the** **restaurant** **and** **I** **see** **a** **table** **for** **me**. **The** **waiter** **has** **a** **menu**. **I** **would** **like** **a** **medium** **coffee** **and** **a** **plate**, **to go**. **He** **knows** **me** **well**. **This** **is** **really** **good**. **I** **think** **it** **is** **awesome**!"
+            },
+            {
+              "text_id": "txt-32",
+              "number": 32,
+              "title": "Carta Sobre Meu Restaurante Favorito",
+              "body": "Querida Ana,\n\n**Anyway**, **I** **would** **like** **to** **speak** **about** **a** **restaurant** **I** **really** **like**. **The** **waiter** **knows** **me** **well**. **I** **would** **like** **to** **order** **a** **napkin** **and** **a** **bill**, **to go**. **Does** **he** **know** **my** **name**? **Yes**! **This** **is** **true**. **See** **you** **later**!\n\nUm abraço,  \nSofia"
+            },
+            {
+              "text_id": "txt-33",
+              "number": 33,
+              "title": "Lista Para um Piquenique",
+              "body": "**I** **would** **like** **to** **come** **for** **a** piquenique. Esta **is** **my** lista:\n\n— **a** **medium** **coffee**, **to go**  \n— **a** **straw**, **too**  \n— **cheese** **and** **bread**  \n— **water**, **to go**  \n— **napkins**\n\n**I** **would** **like** **everyone** **to** **come** **from** **the** **supermarket**. **This** **is** **a** **really** **great** day!"
+            },
+            {
+              "text_id": "txt-34",
+              "number": 34,
+              "title": "Pedido Rápido no Balcão",
+              "body": "Igor: **Excuse me**! **Do** **you** **have** **a** **table**?  \nWaiter: **Of course**! **Do** **you** **want** **a** **menu**?  \nIgor: **No**, **thank you**. **I** **would** **like** **to** **order** **a** **plate**, **to go**.  \nWaiter: **Alright**! **Do** **you** **want** **sugar**?  \nIgor: **Yes**, **please**.  \nWaiter: **Here** **is** **your** **bill**.  \nIgor: **Thank you**! **I** **would** **like** **to** **pay** **with** **cash**."
+            },
+            {
+              "text_id": "txt-35",
+              "number": 35,
+              "title": "Entrevista: Comida Para Levar",
+              "body": "Pergunta: **Do** **you** **like** **this** **restaurant**?  \nResposta: **Yes**! **I** **think** **it** **is** **great**.  \nPergunta: **Are** **you** **sorry** **the** **price** **is** **not** **good**?  \nResposta: **No**, **I** **am** **not** **sorry**. **The** **price** **is** **good**.  \nPergunta: **Does** **the** **waiter** **have** **straws**?  \nResposta: **Yes**, **and** **napkins**, **too**.  \nPergunta: **Do** **you** **want** **the** **bill**, **to go**?  \nResposta: **Yes**, **I** **would** **like** **it**, **to go**."
+            },
+            {
+              "text_id": "txt-36",
+              "number": 36,
+              "title": "Almoço no Escritório",
+              "body": "**Sofia** **and** **Marco** **come** **from** **the** escritório. **They** **would** **like** **to** **order** **coffee**, **to go**. **Oh**! **They** **do** **not** **have** **a** **napkin**. **Sofia** **wants** **a** **napkin** **for** **her** **coffee**. **Marco** **would** **like** **a** **hamburger**, **to go**, **too**. **This** **is** **a** **really** **good** day."
+            },
+            {
+              "text_id": "txt-37",
+              "number": 37,
+              "title": "Notícia: Novo Serviço Para Levar",
+              "body": "**The** **restaurant** **in** **the** **city** **would** **like** **everyone** **to** **know** **about** um novo serviço, **to go**. **Everyone** **would** **like** **to** **order** **a** **medium** **plate**, **to go**. **You** **do** **not** **want** **a** **table**. **The** **bill** **is** **good**, **too**. **The** **menu** **is** **big**, **and** **alright**, **the** **price** **is** **good**!"
+            },
+            {
+              "text_id": "txt-38",
+              "number": 38,
+              "title": "Um Pedido Por Telefone",
+              "body": "Sofia: **Excuse me**! **I** **would** **like** **to** **order** **a** **hamburger**, **to go**. **Do** **you** **have** **a** **table**, **too**?  \nWaiter: **Of course**! **Do** **you** **want** **cheese**?  \nSofia: **Yes**, **please**. **Anyway**, **does** **the** **restaurant** **have** **water**, **to go**, **too**?  \nWaiter: **Yes**! **Do** **you** **want** **to** **pay** **with** **cash**?  \nSofia: **I** **would** **like** **to** **pay** **with** **a** **card**.  \nWaiter: **Alright**! **Thank you**!"
+            },
+            {
+              "text_id": "txt-39",
+              "number": 39,
+              "title": "Uma Cliente Apressada",
+              "body": "**Oh**! **A** cliente **comes** **from** **a** **taxi** **and** **would** **like** **to** **order** **a** **medium** **coffee**, **to go**. **She** **does** **not** **want** **a** **table**. **She** **would** **like** **the** **bill**, **too**. **The** **waiter** **knows** **her** **well**. **This** **is** **really** **good**!"
+            },
+            {
+              "text_id": "txt-40",
+              "number": 40,
+              "title": "Lista do Dia: Pedidos Para Levar",
+              "body": "Hoje, **the** **restaurant** **has** **many** pedidos **to go**. **The** **waiter** **has** **a** **menu** **for** **everyone**. Esta **is** **the** lista:\n\n— **a** **medium** **coffee**, **to go**  \n— **a** **plate** **and** **a** **straw**  \n— **the** **bill**, **please**  \n— **a** **napkin**, **too**  \n— **cheese** **and** **bread**\n\n**Everyone** **would** **like** **a** **good** **price**. **This** **is** **a** **really** **great** day!"
+            }
+          ],
+          "status": "ready"
+        },
+        {
+          "topic_id": "top-A1.2.3",
+          "number": 3,
+          "title": "Frutas e Vegetais",
+          "description": "Vocabulário expandido de alimentos e contagem simples.",
+          "status": "ready",
+          "word_ids": [
+            "en-wd-0242",
+            "en-wd-0243",
+            "en-wd-0244",
+            "en-wd-0245",
+            "en-wd-0246",
+            "en-wd-0247",
+            "en-wd-0248",
+            "en-wd-0249",
+            "en-wd-0250",
+            "en-wd-0251",
+            "en-wd-0252",
+            "en-wd-0253",
+            "en-wd-0254",
+            "en-wd-0255",
+            "en-wd-0256",
+            "en-wd-0257",
+            "en-wd-0258",
+            "en-wd-0259"
+          ],
+          "texts": [
+            {
+              "text_id": "txt-01",
+              "number": 1,
+              "title": "Uma Manhã no Mercado",
+              "body": "**Oh**, hoje **I** **would** **like** **to** **buy** **some** fruit. **I** **go** para **the** **market**. **The** **market** **has** **many** **apples**, **bananas** **and** **oranges**, **on** **a** **table**. **I** **do** **not** **want** **any** **grapes** hoje. **How** **many** **apples** **do** **I** **want**? **Many**! **Of course**, **I** **would** **like** **some** **strawberries** **too**. **Anyway**, **the** **price** **is** **good**. **I** **pay** **with** **cash**, **and** **I** **think** **this** **is** **a** **really** **great** **market**."
+            },
+            {
+              "text_id": "txt-02",
+              "number": 2,
+              "title": "Comprando Vegetais",
+              "body": "Igor: **Excuse me**! **Do** **you** **have** **any** **tomatoes**?  \nVendedor: **Yes**! **I** **have** **tomatoes**, **potatoes** **and** **carrots**.  \nIgor: **I** **would** **like** **to** **order** **some** **potatoes**, **please**. **How** **many** **carrots** **do** **you** **have**?  \nVendedor: **I** **have** **many** **carrots**. **Do** **you** **want** **onion**, **too**?  \nIgor: **Yes**, **a few** **onions**. **I** **do** **not** **want** **much** rice hoje.  \nVendedor: **Alright**! **Here** **is** **your** **bill**.  \nIgor: **Thank you**! **I** **would** **like** **this**, **to go**, **and** **I** **would** **like** **to** **pay** **with** **a** **card**."
+            },
+            {
+              "text_id": "txt-03",
+              "number": 3,
+              "title": "Lista de Compras no Mercado",
+              "body": "**Oh**! **I** **would** **like** **to** **go** para **the** **market** **for** **a few** coisas. Esta **is** **my** lista:\n\n— **a** **kilo** de **grapes**  \n— **a little** **lettuce**  \n— **some** **strawberries**  \n— **a few** **tomatoes**  \n— **medium** **onions**\n\n**Of course**, **I** **would** **like** **to** **pay** **with** **cash**. **The** **price** **is** **good**."
+            },
+            {
+              "text_id": "txt-04",
+              "number": 4,
+              "title": "Entrevista: O Que Você Compra?",
+              "body": "Pergunta: **How** **many** **apples** **do** **you** **buy**?  \nResposta: **I** **buy** **many** **apples** — **maybe** **fourteen**.  \nPergunta: **How** **much** rice **do** **you** **buy**?  \nResposta: **I** **buy** **a little** rice.  \nPergunta: **Do** **you** **want** **any** **bananas**?  \nResposta: **Yes**, **I** **would** **like** **some** **bananas**, **too**.  \nPergunta: **Is** **the** **market** **far**?  \nResposta: **No**, **it** **is** **not** **far**. **It** **is** **here**!"
+            },
+            {
+              "text_id": "txt-05",
+              "number": 5,
+              "title": "Meu Diário — Dia de Compras",
+              "body": "13 de setembro.\n\n**Well**, hoje **I** **go** para **the** **market**. **I** **would** **like** **to** **buy** **some** **apples** **and** **a** **kilo** de **bananas**. **The** **market** **is** **small**, mas **it** **has** **many** **vegetables**. **I** **buy** **a few** **carrots**, **three** **tomatoes** **and** **a little** **lettuce**. **I** **do** **not** **buy** **any** **onion** hoje. **How** **much** rice **do** **I** **buy**? **A little**. **The** **price** **is** **good**, **and** **I** **pay** **with** **cash**. **This** **is** **a** **really** **nice** **day**."
+            },
+            {
+              "text_id": "txt-06",
+              "number": 6,
+              "title": "Carta Sobre o Mercado da Cidade",
+              "body": "Cara Sofia,\n\n**I** **would** **like** **to** **speak** **about** **the** **market** **in** **this** **town**. **It** **is** **across** **the** **city**, mas **I** **go** **by** **bus**. **This** **market** **is** **famous** **in** **the** **world**! **The** **market** **has** **many** **oranges**, **tomatoes** **and** **potatoes**. **I** **buy** **some** **fruit** **and** **a little** **vegetable**, **too**. **I** **would** **like** **to** **introduce** **my** **young** **friend** — **she** **buys** **here**, **too**. **The** **price** **is** **good**, **and** **everyone** **would** **like** **to** **buy** **here**. **See** **you** **later**!\n\nUm abraço,  \nIgor"
+            },
+            {
+              "text_id": "txt-07",
+              "number": 7,
+              "title": "Notícia: Novo Mercado Abre na Cidade",
+              "body": "**A** nova **market** **is** **in** **the** **city**. **Everyone** **would** **like** **to** **know** **about** **it**. **This** **market** **is** **eighteen** **years** **old**, **and** **it** **is** **in** **the** **capital**. **The** **market** **has** **many** **apples**, **bananas**, **oranges**, **tomatoes** **and** **onions**. **Everyone** **would** **like** **to** **count** **the** **apples**. **The** **news** **is** **good**: **the** **price** **is** **not** **big**. **Somebody** **from** **the** **town** **thinks** **this** **market** **is** **really** **great**. **Many** pessoas **would** **like** **to** **buy** **here**."
+            },
+            {
+              "text_id": "txt-08",
+              "number": 8,
+              "title": "No Motel, Perto do Mercado",
+              "body": "Sofia: **Excuse me**! **Do** **you** **know** **the** **way**? **I** **would** **like** **to** **stay** **in** **a** **motel**.  \nMarco: **Yes**! **The** **motel** **is** **down** **this** **way**.  \nSofia: **Thank you**! **I** **would** **like** **to** **buy** **some** **apples**, **too**.  \nMarco: **Alright**! **Somebody** **is** **looking for** **you**.  \nSofia: **Oh**! **Who** **is** **it**?  \nMarco: **I** **do** **not** **know**. **Maybe** **the** **police**?  \nSofia: **The** **police**? **Is** **this** **about** **the** **robbery**?  \nMarco: **I** **think** **so**. **Everyone** **in** **town** **knows** **about** **it**."
+            },
+            {
+              "text_id": "txt-09",
+              "number": 9,
+              "title": "Uma Viagem de Motocicleta ao Mercado da Cidade Vizinha",
+              "body": "**Sofia** **has** **a** **motorcycle**. **She** **has** **long**, **blond** **hair**. **She** **is** **Canadian**. **She** **would** **like** **to** **go** **across** **the** **city**, para **the** **next** **town** — **it** **is** **not** **the** **capital**. **The** **market** **there** **is** **famous**. **She** **buys** **some** **grapes** **and** **a** **kilo** de **strawberries**. **She** **would** **like** **to** **buy** **a little** **cheese**, **too**. **Everyone** **in** **the** **next** **town** **knows** **her**. **This** **is** **a** **really** **good** **day** **for** **Sofia**."
+            },
+            {
+              "text_id": "txt-10",
+              "number": 10,
+              "title": "Lista Para uma Viagem de Ônibus",
+              "body": "**I** **would** **like** **to** **go** **by** **bus** **across** **the** country. Esta **is** **my** lista **for** **the** viagem:\n\n— **some** **apples** **and** **bananas**  \n— **a little** **water**  \n— **a few** **hamburgers**  \n— **my** **map** **and** **a** **flag**  \n— **cash**, **not** **a** **card**\n\n**I** **would** **like** **to** **stay** **in** **a** **motel** **in** **this** **town**. **I** **think** esta viagem **is** **really** **great**."
+            }
+          ],
+          "exercises": [
+            {
+              "exercise_id": "ex-01",
+              "number": 1,
+              "title": "Exercício 1",
+              "items": [
+                {
+                  "sentence": "Eu quero uma _____.",
+                  "word_ids": [
+                    "wd-0242"
+                  ]
+                },
+                {
+                  "sentence": "Eu gosto de uma _____.",
+                  "word_ids": [
+                    "wd-0243"
+                  ]
+                },
+                {
+                  "sentence": "Eu quero uma _____.",
+                  "word_ids": [
+                    "wd-0244"
+                  ]
+                },
+                {
+                  "sentence": "Eu tenho um _____.",
+                  "word_ids": [
+                    "wd-0247"
+                  ]
+                },
+                {
+                  "sentence": "Eu quero uma _____.",
+                  "word_ids": [
+                    "wd-0248"
+                  ]
+                },
+                {
+                  "sentence": "Este é o _____.",
+                  "word_ids": [
+                    "wd-0257"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-02",
+              "number": 2,
+              "title": "Exercício 2",
+              "items": [
+                {
+                  "sentence": "Igor: Eu quero um _____ de _____.",
+                  "word_ids": [
+                    "wd-0259",
+                    "wd-0249"
+                  ]
+                },
+                {
+                  "sentence": "Vendedor: Você quer _____ também?",
+                  "word_ids": [
+                    "wd-0250"
+                  ]
+                },
+                {
+                  "sentence": "Igor: Não, mas eu quero _____ e _____.",
+                  "word_ids": [
+                    "wd-0251",
+                    "wd-0246"
+                  ]
+                },
+                {
+                  "sentence": "Vendedor: E _____? Eu tenho muitas.",
+                  "word_ids": [
+                    "wd-0245"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-03",
+              "number": 3,
+              "title": "Exercício 3",
+              "items": [
+                {
+                  "sentence": "Notícia sobre a cidade: — o mercado fica _____ a cidade",
+                  "word_ids": [
+                    "wd-0207"
+                  ]
+                },
+                {
+                  "sentence": "— eu vou _____ _____",
+                  "word_ids": [
+                    "wd-0208",
+                    "wd-0209"
+                  ]
+                },
+                {
+                  "sentence": "— eu fico em um _____",
+                  "word_ids": [
+                    "wd-0214"
+                  ]
+                },
+                {
+                  "sentence": "— a cidade _____ tem um mercado famoso",
+                  "word_ids": [
+                    "wd-0234"
+                  ]
+                },
+                {
+                  "sentence": "— a polícia procura alguém por causa de um _____",
+                  "word_ids": [
+                    "wd-0238"
+                  ]
+                },
+                {
+                  "sentence": "— este mercado é muito _____",
+                  "word_ids": [
+                    "wd-0232"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-04",
+              "number": 4,
+              "title": "Exercício 4",
+              "type": "classify",
+              "word_bank": [
+                "wd-0242",
+                "wd-0249",
+                "wd-0255",
+                "wd-0254",
+                "wd-0226",
+                "wd-0244"
+              ],
+              "categories": [
+                {
+                  "title": "Frutas e Vegetais"
+                },
+                {
+                  "title": "Quantidade"
+                },
+                {
+                  "title": "Viagem"
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-05",
+              "number": 5,
+              "title": "Exercício 5",
+              "type": "open_response",
+              "lines": [
+                {
+                  "speaker": "Vendedor",
+                  "text": "**Do you want some apples? How many do you want?**"
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "diga que quer algumas maçãs, três ou quatro"
+                },
+                {
+                  "speaker": "Vendedor",
+                  "text": "**Do you want any bananas?**"
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "diga que sim, você quer um quilo"
+                },
+                {
+                  "speaker": "Vendedor",
+                  "text": "**The price is good. Do you want to pay with cash or a card?**"
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "diga que quer pagar com dinheiro"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "status": "ready"
+    }
+  ]
+}

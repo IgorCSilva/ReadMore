@@ -1,0 +1,1297 @@
+[
+  {
+    "word_id": "en-wd-0001",
+    "root_word_id": "wd-0001",
+    "word": "hello"
+  },
+  {
+    "word_id": "en-wd-0002",
+    "root_word_id": "wd-0002",
+    "word": "hi"
+  },
+  {
+    "word_id": "en-wd-0003",
+    "root_word_id": "wd-0003",
+    "word": "goodbye"
+  },
+  {
+    "word_id": "en-wd-0004",
+    "root_word_id": "wd-0004",
+    "word": "please"
+  },
+  {
+    "word_id": "en-wd-0005",
+    "root_word_id": "wd-0005",
+    "word": "thank you"
+  },
+  {
+    "word_id": "en-wd-0006",
+    "root_word_id": "wd-0006",
+    "word": "what"
+  },
+  {
+    "word_id": "en-wd-0007",
+    "root_word_id": "wd-0007",
+    "word": "I"
+  },
+  {
+    "word_id": "en-wd-0008",
+    "root_word_id": "wd-0008",
+    "word": "am"
+  },
+  {
+    "word_id": "en-wd-0009",
+    "root_word_id": "wd-0009",
+    "word": "name"
+  },
+  {
+    "word_id": "en-wd-0010",
+    "root_word_id": "wd-0010",
+    "word": "is"
+  },
+  {
+    "word_id": "en-wd-0011",
+    "root_word_id": "wd-0011",
+    "word": "my"
+  },
+  {
+    "word_id": "en-wd-0012",
+    "root_word_id": "wd-0012",
+    "word": "your"
+  },
+  {
+    "word_id": "en-wd-0013",
+    "root_word_id": "wd-0013",
+    "word": "you"
+  },
+  {
+    "word_id": "en-wd-0014",
+    "root_word_id": "wd-0014",
+    "word": "nice to meet you"
+  },
+  {
+    "word_id": "en-wd-0015",
+    "root_word_id": "wd-0015",
+    "word": "from"
+  },
+  {
+    "word_id": "en-wd-0016",
+    "root_word_id": "wd-0016",
+    "word": "he"
+  },
+  {
+    "word_id": "en-wd-0017",
+    "root_word_id": "wd-0017",
+    "word": "she"
+  },
+  {
+    "word_id": "en-wd-0018",
+    "root_word_id": "wd-0018",
+    "word": "it"
+  },
+  {
+    "word_id": "en-wd-0019",
+    "root_word_id": "wd-0019",
+    "word": "we"
+  },
+  {
+    "word_id": "en-wd-0020",
+    "root_word_id": "wd-0020",
+    "word": "they"
+  },
+  {
+    "word_id": "en-wd-0021",
+    "root_word_id": "wd-0021",
+    "word": "are"
+  },
+  {
+    "word_id": "en-wd-0022",
+    "root_word_id": "wd-0022",
+    "word": "bye"
+  },
+  {
+    "word_id": "en-wd-0023",
+    "root_word_id": "wd-0023",
+    "word": "yes"
+  },
+  {
+    "word_id": "en-wd-0024",
+    "root_word_id": "wd-0024",
+    "word": "no"
+  },
+  {
+    "word_id": "en-wd-0025",
+    "root_word_id": "wd-0025",
+    "word": "a"
+  },
+  {
+    "word_id": "en-wd-0026",
+    "root_word_id": "wd-0026",
+    "word": "an"
+  },
+  {
+    "word_id": "en-wd-0027",
+    "root_word_id": "wd-0027",
+    "word": "the"
+  },
+  {
+    "word_id": "en-wd-0028",
+    "root_word_id": "wd-0028",
+    "word": "zero"
+  },
+  {
+    "word_id": "en-wd-0029",
+    "root_word_id": "wd-0029",
+    "word": "one"
+  },
+  {
+    "word_id": "en-wd-0030",
+    "root_word_id": "wd-0030",
+    "word": "two"
+  },
+  {
+    "word_id": "en-wd-0031",
+    "root_word_id": "wd-0031",
+    "word": "three"
+  },
+  {
+    "word_id": "en-wd-0032",
+    "root_word_id": "wd-0032",
+    "word": "four"
+  },
+  {
+    "word_id": "en-wd-0033",
+    "root_word_id": "wd-0033",
+    "word": "five"
+  },
+  {
+    "word_id": "en-wd-0034",
+    "root_word_id": "wd-0034",
+    "word": "six"
+  },
+  {
+    "word_id": "en-wd-0035",
+    "root_word_id": "wd-0035",
+    "word": "seven"
+  },
+  {
+    "word_id": "en-wd-0036",
+    "root_word_id": "wd-0036",
+    "word": "eight"
+  },
+  {
+    "word_id": "en-wd-0037",
+    "root_word_id": "wd-0037",
+    "word": "nine"
+  },
+  {
+    "word_id": "en-wd-0038",
+    "root_word_id": "wd-0038",
+    "word": "ten"
+  },
+  {
+    "word_id": "en-wd-0039",
+    "root_word_id": "wd-0039",
+    "word": "internet"
+  },
+  {
+    "word_id": "en-wd-0040",
+    "root_word_id": "wd-0040",
+    "word": "hotel"
+  },
+  {
+    "word_id": "en-wd-0041",
+    "root_word_id": "wd-0041",
+    "word": "taxi"
+  },
+  {
+    "word_id": "en-wd-0042",
+    "root_word_id": "wd-0042",
+    "word": "restaurant"
+  },
+  {
+    "word_id": "en-wd-0043",
+    "root_word_id": "wd-0043",
+    "word": "hamburger"
+  },
+  {
+    "word_id": "en-wd-0044",
+    "root_word_id": "wd-0044",
+    "word": "chocolate"
+  },
+  {
+    "word_id": "en-wd-0045",
+    "root_word_id": "wd-0045",
+    "word": "music"
+  },
+  {
+    "word_id": "en-wd-0046",
+    "root_word_id": "wd-0046",
+    "word": "radio"
+  },
+  {
+    "word_id": "en-wd-0047",
+    "root_word_id": "wd-0047",
+    "word": "television"
+  },
+  {
+    "word_id": "en-wd-0048",
+    "root_word_id": "wd-0048",
+    "word": "computer"
+  },
+  {
+    "word_id": "en-wd-0049",
+    "root_word_id": "wd-0049",
+    "word": "where"
+  },
+  {
+    "word_id": "en-wd-0050",
+    "root_word_id": "wd-0050",
+    "word": "who"
+  },
+  {
+    "word_id": "en-wd-0051",
+    "root_word_id": "wd-0051",
+    "word": "how"
+  },
+  {
+    "word_id": "en-wd-0052",
+    "root_word_id": "wd-0052",
+    "word": "why"
+  },
+  {
+    "word_id": "en-wd-0053",
+    "root_word_id": "wd-0053",
+    "word": "have"
+  },
+  {
+    "word_id": "en-wd-0054",
+    "root_word_id": "wd-0054",
+    "word": "like"
+  },
+  {
+    "word_id": "en-wd-0055",
+    "root_word_id": "wd-0055",
+    "word": "want"
+  },
+  {
+    "word_id": "en-wd-0056",
+    "root_word_id": "wd-0056",
+    "word": "go"
+  },
+  {
+    "word_id": "en-wd-0057",
+    "root_word_id": "wd-0057",
+    "word": "this"
+  },
+  {
+    "word_id": "en-wd-0058",
+    "root_word_id": "wd-0058",
+    "word": "that"
+  },
+  {
+    "word_id": "en-wd-0059",
+    "root_word_id": "wd-0059",
+    "word": "good"
+  },
+  {
+    "word_id": "en-wd-0060",
+    "root_word_id": "wd-0060",
+    "word": "bad"
+  },
+  {
+    "word_id": "en-wd-0061",
+    "root_word_id": "wd-0061",
+    "word": "big"
+  },
+  {
+    "word_id": "en-wd-0062",
+    "root_word_id": "wd-0062",
+    "word": "small"
+  },
+  {
+    "word_id": "en-wd-0063",
+    "root_word_id": "wd-0063",
+    "word": "and"
+  },
+  {
+    "word_id": "en-wd-0064",
+    "root_word_id": "wd-0064",
+    "word": "not"
+  },
+  {
+    "word_id": "en-wd-0065",
+    "root_word_id": "wd-0065",
+    "word": "here"
+  },
+  {
+    "word_id": "en-wd-0066",
+    "root_word_id": "wd-0066",
+    "word": "there"
+  },
+  {
+    "word_id": "en-wd-0067",
+    "root_word_id": "wd-0067",
+    "word": "nice"
+  },
+  {
+    "word_id": "en-wd-0068",
+    "root_word_id": "wd-0068",
+    "word": "to"
+  },
+  {
+    "word_id": "en-wd-0069",
+    "root_word_id": "wd-0069",
+    "word": "meet"
+  },
+  {
+    "word_id": "en-wd-0070",
+    "root_word_id": "wd-0070",
+    "word": "too"
+  },
+  {
+    "word_id": "en-wd-0071",
+    "root_word_id": "wd-0071",
+    "word": "fine"
+  },
+  {
+    "word_id": "en-wd-0072",
+    "root_word_id": "wd-0072",
+    "word": "welcome"
+  },
+  {
+    "word_id": "en-wd-0073",
+    "root_word_id": "wd-0073",
+    "word": "hey"
+  },
+  {
+    "word_id": "en-wd-0074",
+    "root_word_id": "wd-0074",
+    "word": "see"
+  },
+  {
+    "word_id": "en-wd-0075",
+    "root_word_id": "wd-0075",
+    "word": "later"
+  },
+  {
+    "word_id": "en-wd-0076",
+    "root_word_id": "wd-0076",
+    "word": "morning"
+  },
+  {
+    "word_id": "en-wd-0077",
+    "root_word_id": "wd-0077",
+    "word": "afternoon"
+  },
+  {
+    "word_id": "en-wd-0078",
+    "root_word_id": "wd-0078",
+    "word": "evening"
+  },
+  {
+    "word_id": "en-wd-0079",
+    "root_word_id": "wd-0079",
+    "word": "night"
+  },
+  {
+    "word_id": "en-wd-0080",
+    "root_word_id": "wd-0080",
+    "word": "day"
+  },
+  {
+    "word_id": "en-wd-0081",
+    "root_word_id": "wd-0081",
+    "word": "friend"
+  },
+  {
+    "word_id": "en-wd-0082",
+    "root_word_id": "wd-0082",
+    "word": "everyone"
+  },
+  {
+    "word_id": "en-wd-0083",
+    "root_word_id": "wd-0083",
+    "word": "introduce"
+  },
+  {
+    "word_id": "en-wd-0084",
+    "root_word_id": "wd-0084",
+    "word": "family"
+  },
+  {
+    "word_id": "en-wd-0085",
+    "root_word_id": "wd-0085",
+    "word": "mother"
+  },
+  {
+    "word_id": "en-wd-0086",
+    "root_word_id": "wd-0086",
+    "word": "father"
+  },
+  {
+    "word_id": "en-wd-0087",
+    "root_word_id": "wd-0087",
+    "word": "parents"
+  },
+  {
+    "word_id": "en-wd-0088",
+    "root_word_id": "wd-0088",
+    "word": "sister"
+  },
+  {
+    "word_id": "en-wd-0089",
+    "root_word_id": "wd-0089",
+    "word": "brother"
+  },
+  {
+    "word_id": "en-wd-0090",
+    "root_word_id": "wd-0090",
+    "word": "grandmother"
+  },
+  {
+    "word_id": "en-wd-0091",
+    "root_word_id": "wd-0091",
+    "word": "grandfather"
+  },
+  {
+    "word_id": "en-wd-0092",
+    "root_word_id": "wd-0092",
+    "word": "grandparents"
+  },
+  {
+    "word_id": "en-wd-0093",
+    "root_word_id": "wd-0093",
+    "word": "son"
+  },
+  {
+    "word_id": "en-wd-0094",
+    "root_word_id": "wd-0094",
+    "word": "daughter"
+  },
+  {
+    "word_id": "en-wd-0095",
+    "root_word_id": "wd-0095",
+    "word": "child"
+  },
+  {
+    "word_id": "en-wd-0096",
+    "root_word_id": "wd-0096",
+    "word": "husband"
+  },
+  {
+    "word_id": "en-wd-0097",
+    "root_word_id": "wd-0097",
+    "word": "wife"
+  },
+  {
+    "word_id": "en-wd-0098",
+    "root_word_id": "wd-0098",
+    "word": "baby"
+  },
+  {
+    "word_id": "en-wd-0099",
+    "root_word_id": "wd-0099",
+    "word": "aunt"
+  },
+  {
+    "word_id": "en-wd-0100",
+    "root_word_id": "wd-0100",
+    "word": "uncle"
+  },
+  {
+    "word_id": "en-wd-0101",
+    "root_word_id": "wd-0101",
+    "word": "cousin"
+  },
+  {
+    "word_id": "en-wd-0102",
+    "root_word_id": "wd-0102",
+    "word": "number"
+  },
+  {
+    "word_id": "en-wd-0103",
+    "root_word_id": "wd-0103",
+    "word": "year"
+  },
+  {
+    "word_id": "en-wd-0104",
+    "root_word_id": "wd-0104",
+    "word": "old"
+  },
+  {
+    "word_id": "en-wd-0105",
+    "root_word_id": "wd-0105",
+    "word": "age"
+  },
+  {
+    "word_id": "en-wd-0106",
+    "root_word_id": "wd-0106",
+    "word": "young"
+  },
+  {
+    "word_id": "en-wd-0107",
+    "root_word_id": "wd-0107",
+    "word": "birthday"
+  },
+  {
+    "word_id": "en-wd-0108",
+    "root_word_id": "wd-0108",
+    "word": "many"
+  },
+  {
+    "word_id": "en-wd-0109",
+    "root_word_id": "wd-0109",
+    "word": "count"
+  },
+  {
+    "word_id": "en-wd-0110",
+    "root_word_id": "wd-0110",
+    "word": "eleven"
+  },
+  {
+    "word_id": "en-wd-0111",
+    "root_word_id": "wd-0111",
+    "word": "twelve"
+  },
+  {
+    "word_id": "en-wd-0112",
+    "root_word_id": "wd-0112",
+    "word": "thirteen"
+  },
+  {
+    "word_id": "en-wd-0113",
+    "root_word_id": "wd-0113",
+    "word": "fourteen"
+  },
+  {
+    "word_id": "en-wd-0114",
+    "root_word_id": "wd-0114",
+    "word": "fifteen"
+  },
+  {
+    "word_id": "en-wd-0115",
+    "root_word_id": "wd-0115",
+    "word": "sixteen"
+  },
+  {
+    "word_id": "en-wd-0116",
+    "root_word_id": "wd-0116",
+    "word": "seventeen"
+  },
+  {
+    "word_id": "en-wd-0117",
+    "root_word_id": "wd-0117",
+    "word": "eighteen"
+  },
+  {
+    "word_id": "en-wd-0118",
+    "root_word_id": "wd-0118",
+    "word": "nineteen"
+  },
+  {
+    "word_id": "en-wd-0119",
+    "root_word_id": "wd-0119",
+    "word": "twenty"
+  },
+  {
+    "word_id": "en-wd-0120",
+    "root_word_id": "wd-0120",
+    "word": "live"
+  },
+  {
+    "word_id": "en-wd-0121",
+    "root_word_id": "wd-0121",
+    "word": "country"
+  },
+  {
+    "word_id": "en-wd-0122",
+    "root_word_id": "wd-0122",
+    "word": "city"
+  },
+  {
+    "word_id": "en-wd-0123",
+    "root_word_id": "wd-0123",
+    "word": "world"
+  },
+  {
+    "word_id": "en-wd-0124",
+    "root_word_id": "wd-0124",
+    "word": "language"
+  },
+  {
+    "word_id": "en-wd-0125",
+    "root_word_id": "wd-0125",
+    "word": "speak"
+  },
+  {
+    "word_id": "en-wd-0126",
+    "root_word_id": "wd-0126",
+    "word": "Brazilian"
+  },
+  {
+    "word_id": "en-wd-0127",
+    "root_word_id": "wd-0127",
+    "word": "American"
+  },
+  {
+    "word_id": "en-wd-0128",
+    "root_word_id": "wd-0128",
+    "word": "English"
+  },
+  {
+    "word_id": "en-wd-0129",
+    "root_word_id": "wd-0129",
+    "word": "Spanish"
+  },
+  {
+    "word_id": "en-wd-0130",
+    "root_word_id": "wd-0130",
+    "word": "French"
+  },
+  {
+    "word_id": "en-wd-0131",
+    "root_word_id": "wd-0131",
+    "word": "Portuguese"
+  },
+  {
+    "word_id": "en-wd-0132",
+    "root_word_id": "wd-0132",
+    "word": "Chinese"
+  },
+  {
+    "word_id": "en-wd-0133",
+    "root_word_id": "wd-0133",
+    "word": "Japanese"
+  },
+  {
+    "word_id": "en-wd-0134",
+    "root_word_id": "wd-0134",
+    "word": "Italian"
+  },
+  {
+    "word_id": "en-wd-0135",
+    "root_word_id": "wd-0135",
+    "word": "German"
+  },
+  {
+    "word_id": "en-wd-0136",
+    "root_word_id": "wd-0136",
+    "word": "Canadian"
+  },
+  {
+    "word_id": "en-wd-0137",
+    "root_word_id": "wd-0137",
+    "word": "Mexican"
+  },
+  {
+    "word_id": "en-wd-0138",
+    "root_word_id": "wd-0138",
+    "word": "capital"
+  },
+  {
+    "word_id": "en-wd-0139",
+    "root_word_id": "wd-0139",
+    "word": "continent"
+  },
+  {
+    "word_id": "en-wd-0140",
+    "root_word_id": "wd-0140",
+    "word": "map"
+  },
+  {
+    "word_id": "en-wd-0141",
+    "root_word_id": "wd-0141",
+    "word": "flag"
+  },
+  {
+    "word_id": "en-wd-0142",
+    "root_word_id": "wd-0142",
+    "word": "culture"
+  },
+  {
+    "word_id": "en-wd-0143",
+    "root_word_id": "wd-0143",
+    "word": "far"
+  },
+  {
+    "word_id": "en-wd-0144",
+    "root_word_id": "wd-0144",
+    "word": "in"
+  },
+  {
+    "word_id": "en-wd-0145",
+    "root_word_id": "wd-0145",
+    "word": "well"
+  },
+  {
+    "word_id": "en-wd-0146",
+    "root_word_id": "wd-0146",
+    "word": "so"
+  },
+  {
+    "word_id": "en-wd-0147",
+    "root_word_id": "wd-0147",
+    "word": "really"
+  },
+  {
+    "word_id": "en-wd-0148",
+    "root_word_id": "wd-0148",
+    "word": "actually"
+  },
+  {
+    "word_id": "en-wd-0149",
+    "root_word_id": "wd-0149",
+    "word": "anyway"
+  },
+  {
+    "word_id": "en-wd-0150",
+    "root_word_id": "wd-0150",
+    "word": "excuse me"
+  },
+  {
+    "word_id": "en-wd-0151",
+    "root_word_id": "wd-0151",
+    "word": "sure"
+  },
+  {
+    "word_id": "en-wd-0152",
+    "root_word_id": "wd-0152",
+    "word": "of course"
+  },
+  {
+    "word_id": "en-wd-0153",
+    "root_word_id": "wd-0153",
+    "word": "great"
+  },
+  {
+    "word_id": "en-wd-0154",
+    "root_word_id": "wd-0154",
+    "word": "maybe"
+  },
+  {
+    "word_id": "en-wd-0155",
+    "root_word_id": "wd-0155",
+    "word": "sorry"
+  },
+  {
+    "word_id": "en-wd-0156",
+    "root_word_id": "wd-0156",
+    "word": "okay"
+  },
+  {
+    "word_id": "en-wd-0157",
+    "root_word_id": "wd-0157",
+    "word": "wow"
+  },
+  {
+    "word_id": "en-wd-0158",
+    "root_word_id": "wd-0158",
+    "word": "oh"
+  },
+  {
+    "word_id": "en-wd-0159",
+    "root_word_id": "wd-0159",
+    "word": "exactly"
+  },
+  {
+    "word_id": "en-wd-0160",
+    "root_word_id": "wd-0160",
+    "word": "right"
+  },
+  {
+    "word_id": "en-wd-0161",
+    "root_word_id": "wd-0161",
+    "word": "true"
+  },
+  {
+    "word_id": "en-wd-0162",
+    "root_word_id": "wd-0162",
+    "word": "absolutely"
+  },
+  {
+    "word_id": "en-wd-0163",
+    "root_word_id": "wd-0163",
+    "word": "alright"
+  },
+  {
+    "word_id": "en-wd-0164",
+    "root_word_id": "wd-0164",
+    "word": "cool"
+  },
+  {
+    "word_id": "en-wd-0165",
+    "root_word_id": "wd-0165",
+    "word": "awesome"
+  },
+  {
+    "word_id": "en-wd-0166",
+    "root_word_id": "wd-0166",
+    "word": "agree"
+  },
+  {
+    "word_id": "en-wd-0167",
+    "root_word_id": "wd-0167",
+    "word": "disagree"
+  },
+  {
+    "word_id": "en-wd-0168",
+    "root_word_id": "wd-0168",
+    "word": "think"
+  },
+  {
+    "word_id": "en-wd-0169",
+    "root_word_id": "wd-0169",
+    "word": "interesting"
+  },
+  {
+    "word_id": "en-wd-0170",
+    "root_word_id": "wd-0170",
+    "word": "boring"
+  },
+  {
+    "word_id": "en-wd-0171",
+    "root_word_id": "wd-0171",
+    "word": "water"
+  },
+  {
+    "word_id": "en-wd-0172",
+    "root_word_id": "wd-0172",
+    "word": "coffee"
+  },
+  {
+    "word_id": "en-wd-0173",
+    "root_word_id": "wd-0173",
+    "word": "tea"
+  },
+  {
+    "word_id": "en-wd-0174",
+    "root_word_id": "wd-0174",
+    "word": "bread"
+  },
+  {
+    "word_id": "en-wd-0175",
+    "root_word_id": "wd-0175",
+    "word": "rice"
+  },
+  {
+    "word_id": "en-wd-0176",
+    "root_word_id": "wd-0176",
+    "word": "meat"
+  },
+  {
+    "word_id": "en-wd-0177",
+    "root_word_id": "wd-0177",
+    "word": "fish"
+  },
+  {
+    "word_id": "en-wd-0178",
+    "root_word_id": "wd-0178",
+    "word": "egg"
+  },
+  {
+    "word_id": "en-wd-0179",
+    "root_word_id": "wd-0179",
+    "word": "cheese"
+  },
+  {
+    "word_id": "en-wd-0180",
+    "root_word_id": "wd-0180",
+    "word": "milk"
+  },
+  {
+    "word_id": "en-wd-0181",
+    "root_word_id": "wd-0181",
+    "word": "fruit"
+  },
+  {
+    "word_id": "en-wd-0182",
+    "root_word_id": "wd-0182",
+    "word": "vegetable"
+  },
+  {
+    "word_id": "en-wd-0183",
+    "root_word_id": "wd-0183",
+    "word": "table"
+  },
+  {
+    "word_id": "en-wd-0184",
+    "root_word_id": "wd-0184",
+    "word": "hungry"
+  },
+  {
+    "word_id": "en-wd-0185",
+    "root_word_id": "wd-0185",
+    "word": "thirsty"
+  },
+  {
+    "word_id": "en-wd-0186",
+    "root_word_id": "wd-0186",
+    "word": "delicious"
+  },
+  {
+    "word_id": "en-wd-0187",
+    "root_word_id": "wd-0187",
+    "word": "do"
+  },
+  {
+    "word_id": "en-wd-0188",
+    "root_word_id": "wd-0188",
+    "word": "does"
+  },
+  {
+    "word_id": "en-wd-0189",
+    "root_word_id": "wd-0189",
+    "word": "menu"
+  },
+  {
+    "word_id": "en-wd-0190",
+    "root_word_id": "wd-0190",
+    "word": "cup"
+  },
+  {
+    "word_id": "en-wd-0191",
+    "root_word_id": "wd-0191",
+    "word": "glass"
+  },
+  {
+    "word_id": "en-wd-0192",
+    "root_word_id": "wd-0192",
+    "word": "plate"
+  },
+  {
+    "word_id": "en-wd-0193",
+    "root_word_id": "wd-0193",
+    "word": "bill"
+  },
+  {
+    "word_id": "en-wd-0194",
+    "root_word_id": "wd-0194",
+    "word": "waiter"
+  },
+  {
+    "word_id": "en-wd-0195",
+    "root_word_id": "wd-0195",
+    "word": "order"
+  },
+  {
+    "word_id": "en-wd-0196",
+    "root_word_id": "wd-0196",
+    "word": "sugar"
+  },
+  {
+    "word_id": "en-wd-0197",
+    "root_word_id": "wd-0197",
+    "word": "ice"
+  },
+  {
+    "word_id": "en-wd-0198",
+    "root_word_id": "wd-0198",
+    "word": "straw"
+  },
+  {
+    "word_id": "en-wd-0199",
+    "root_word_id": "wd-0199",
+    "word": "napkin"
+  },
+  {
+    "word_id": "en-wd-0200",
+    "root_word_id": "wd-0200",
+    "word": "medium"
+  },
+  {
+    "word_id": "en-wd-0201",
+    "root_word_id": "wd-0201",
+    "word": "to go"
+  },
+  {
+    "word_id": "en-wd-0202",
+    "root_word_id": "wd-0202",
+    "word": "price"
+  },
+  {
+    "word_id": "en-wd-0203",
+    "root_word_id": "wd-0203",
+    "word": "cash"
+  },
+  {
+    "word_id": "en-wd-0204",
+    "root_word_id": "wd-0204",
+    "word": "card"
+  },
+  {
+    "word_id": "en-wd-0205",
+    "root_word_id": "wd-0205",
+    "word": "pay"
+  },
+  {
+    "word_id": "en-wd-0206",
+    "root_word_id": "wd-0206",
+    "word": "would"
+  },
+  {
+    "word_id": "en-wd-0207",
+    "root_word_id": "wd-0207",
+    "word": "across"
+  },
+  {
+    "word_id": "en-wd-0208",
+    "root_word_id": "wd-0208",
+    "word": "by"
+  },
+  {
+    "word_id": "en-wd-0209",
+    "root_word_id": "wd-0209",
+    "word": "bus"
+  },
+  {
+    "word_id": "en-wd-0210",
+    "root_word_id": "wd-0210",
+    "word": "way"
+  },
+  {
+    "word_id": "en-wd-0211",
+    "root_word_id": "wd-0211",
+    "word": "stop"
+  },
+  {
+    "word_id": "en-wd-0212",
+    "root_word_id": "wd-0212",
+    "word": "sometimes"
+  },
+  {
+    "word_id": "en-wd-0213",
+    "root_word_id": "wd-0213",
+    "word": "stay"
+  },
+  {
+    "word_id": "en-wd-0214",
+    "root_word_id": "wd-0214",
+    "word": "motel"
+  },
+  {
+    "word_id": "en-wd-0215",
+    "root_word_id": "wd-0215",
+    "word": "little"
+  },
+  {
+    "word_id": "en-wd-0216",
+    "root_word_id": "wd-0216",
+    "word": "town"
+  },
+  {
+    "word_id": "en-wd-0217",
+    "root_word_id": "wd-0217",
+    "word": "when"
+  },
+  {
+    "word_id": "en-wd-0218",
+    "root_word_id": "wd-0218",
+    "word": "come"
+  },
+  {
+    "word_id": "en-wd-0219",
+    "root_word_id": "wd-0219",
+    "word": "down"
+  },
+  {
+    "word_id": "en-wd-0220",
+    "root_word_id": "wd-0220",
+    "word": "room"
+  },
+  {
+    "word_id": "en-wd-0221",
+    "root_word_id": "wd-0221",
+    "word": "for"
+  },
+  {
+    "word_id": "en-wd-0222",
+    "root_word_id": "wd-0222",
+    "word": "something"
+  },
+  {
+    "word_id": "en-wd-0223",
+    "root_word_id": "wd-0223",
+    "word": "eat"
+  },
+  {
+    "word_id": "en-wd-0224",
+    "root_word_id": "wd-0224",
+    "word": "girl"
+  },
+  {
+    "word_id": "en-wd-0225",
+    "root_word_id": "wd-0225",
+    "word": "on"
+  },
+  {
+    "word_id": "en-wd-0226",
+    "root_word_id": "wd-0226",
+    "word": "motorcycle"
+  },
+  {
+    "word_id": "en-wd-0227",
+    "root_word_id": "wd-0227",
+    "word": "with"
+  },
+  {
+    "word_id": "en-wd-0228",
+    "root_word_id": "wd-0228",
+    "word": "long"
+  },
+  {
+    "word_id": "en-wd-0229",
+    "root_word_id": "wd-0229",
+    "word": "blond"
+  },
+  {
+    "word_id": "en-wd-0230",
+    "root_word_id": "wd-0230",
+    "word": "hair"
+  },
+  {
+    "word_id": "en-wd-0231",
+    "root_word_id": "wd-0231",
+    "word": "know"
+  },
+  {
+    "word_id": "en-wd-0232",
+    "root_word_id": "wd-0232",
+    "word": "famous"
+  },
+  {
+    "word_id": "en-wd-0233",
+    "root_word_id": "wd-0233",
+    "word": "then"
+  },
+  {
+    "word_id": "en-wd-0234",
+    "root_word_id": "wd-0234",
+    "word": "next"
+  },
+  {
+    "word_id": "en-wd-0235",
+    "root_word_id": "wd-0235",
+    "word": "news"
+  },
+  {
+    "word_id": "en-wd-0236",
+    "root_word_id": "wd-0236",
+    "word": "about"
+  },
+  {
+    "word_id": "en-wd-0237",
+    "root_word_id": "wd-0237",
+    "word": "supermarket"
+  },
+  {
+    "word_id": "en-wd-0238",
+    "root_word_id": "wd-0238",
+    "word": "robbery"
+  },
+  {
+    "word_id": "en-wd-0239",
+    "root_word_id": "wd-0239",
+    "word": "police"
+  },
+  {
+    "word_id": "en-wd-0240",
+    "root_word_id": "wd-0240",
+    "word": "look for"
+  },
+  {
+    "word_id": "en-wd-0241",
+    "root_word_id": "wd-0241",
+    "word": "somebody"
+  },
+  {
+    "word_id": "en-wd-0242",
+    "root_word_id": "wd-0242",
+    "word": "apple"
+  },
+  {
+    "word_id": "en-wd-0243",
+    "root_word_id": "wd-0243",
+    "word": "banana"
+  },
+  {
+    "word_id": "en-wd-0244",
+    "root_word_id": "wd-0244",
+    "word": "orange"
+  },
+  {
+    "word_id": "en-wd-0245",
+    "root_word_id": "wd-0245",
+    "word": "grape"
+  },
+  {
+    "word_id": "en-wd-0246",
+    "root_word_id": "wd-0246",
+    "word": "strawberry"
+  },
+  {
+    "word_id": "en-wd-0247",
+    "root_word_id": "wd-0247",
+    "word": "tomato"
+  },
+  {
+    "word_id": "en-wd-0248",
+    "root_word_id": "wd-0248",
+    "word": "potato"
+  },
+  {
+    "word_id": "en-wd-0249",
+    "root_word_id": "wd-0249",
+    "word": "carrot"
+  },
+  {
+    "word_id": "en-wd-0250",
+    "root_word_id": "wd-0250",
+    "word": "onion"
+  },
+  {
+    "word_id": "en-wd-0251",
+    "root_word_id": "wd-0251",
+    "word": "lettuce"
+  },
+  {
+    "word_id": "en-wd-0252",
+    "root_word_id": "wd-0252",
+    "word": "some"
+  },
+  {
+    "word_id": "en-wd-0253",
+    "root_word_id": "wd-0253",
+    "word": "any"
+  },
+  {
+    "word_id": "en-wd-0254",
+    "root_word_id": "wd-0254",
+    "word": "much"
+  },
+  {
+    "word_id": "en-wd-0255",
+    "root_word_id": "wd-0255",
+    "word": "a few"
+  },
+  {
+    "word_id": "en-wd-0256",
+    "root_word_id": "wd-0256",
+    "word": "a little"
+  },
+  {
+    "word_id": "en-wd-0257",
+    "root_word_id": "wd-0257",
+    "word": "market"
+  },
+  {
+    "word_id": "en-wd-0258",
+    "root_word_id": "wd-0258",
+    "word": "buy"
+  },
+  {
+    "word_id": "en-wd-0259",
+    "root_word_id": "wd-0259",
+    "word": "kilo"
+  }
+]

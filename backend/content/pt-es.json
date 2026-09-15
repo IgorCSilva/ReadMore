@@ -1,0 +1,637 @@
+{
+  "chapters": [
+    {
+      "chapter_id": "ch-A0-EL",
+      "number": 1,
+      "title": "Vida cotidiana e rotinas",
+      "description": "Desenvolver vocabulário e padrões do presente simples para frases curtas em primeira pessoa sobre si mesmo e o próprio dia.",
+      "topics": [
+        {
+          "topic_id": "top-A0-EL-1",
+          "number": 1,
+          "title": "Saudações e Apresentação Pessoal",
+          "description": "Nomes, saudações básicas, a expressão reflexiva \"me llamo\" (chamo-me), a forma mais natural de dizer o próprio nome em espanhol. Atividades de construção: leitura de crachá ou de uma breve apresentação pessoal.",
+          "word_ids": [
+            "es-wd-0001",
+            "es-wd-0003",
+            "es-wd-0004",
+            "es-wd-0005",
+            "es-wd-0012",
+            "es-wd-0013",
+            "es-wd-0010",
+            "es-wd-0014",
+            "es-wd-0015",
+            "es-wd-0016",
+            "es-wd-0017",
+            "es-wd-0008",
+            "es-wd-0011",
+            "es-wd-0007",
+            "es-wd-0006"
+          ],
+          "texts": [
+            {
+              "text_id": "txt-01",
+              "number": 1,
+              "title": "Uma Vizinha Nova",
+              "body": "Hoje eu conheci uma vizinha nova no corredor do prédio, e ela veio cumprimentar todo mundo com um alegre ¡**hola**! Curiosa para praticar seu português, ela quis inverter os papéis e eu perguntei em espanhol: ¿**cómo** **te** **llamas**? Ela sorriu e respondeu que **se** **llama** Marisol. Depois ela olhou para mim novamente e perguntou: ¿**y** **tú**? Então eu disse meu nome também. Quando tentei explicar de onde eu vinha, ela franziu a testa e só conseguiu falar: ¿**qué**?, porque eu misturei tudo em português rápido demais."
+            },
+            {
+              "text_id": "txt-02",
+              "number": 2,
+              "title": "Aula de Espanhol",
+              "body": "No primeiro dia de aula de espanhol, o professor pediu para praticarmos cumprimentos em duplas. Meu colega ao lado olhou para mim e disse ¡**hola**!, meio nervoso. Ele quis testar a pergunta certa e murmurou baixinho: **te** **llamas**... ou **se** **llama**, dependendo de quem a gente pergunta? Fiquei confuso com a gramática e só consegui responder: ¿**qué**?, sem entender a diferença. No fim da aula, ele foi embora e disse um simples ¡**adiós**!, correndo para o próximo compromisso."
+            },
+            {
+              "text_id": "txt-03",
+              "number": 3,
+              "title": "Festa de Aniversário",
+              "body": "Na festa de aniversário do meu vizinho, uma pessoa nova chegou perto e disse ¡**hola**! com um sorriso largo. Ela contou que veio com uma amiga que **se** **llama** Camila e que estava perto da mesa de comida. Quando as apresentações terminaram, ela disse ¡**mucho gusto**! e apertou minha mão. Mais tarde, perto da saída, ela pediu, olhando para mim: **por favor**, **llamas** quando chegar em casa?, preocupada com o caminho escuro até o carro. Antes de sair, ela ainda perguntou algo rápido e, sem entender bem, eu só respondi ¿**qué**?, confuso com a pressa. Ela riu e, na saída, disse ¡**adiós**! enquanto acenava da porta."
+            },
+            {
+              "text_id": "txt-04",
+              "number": 4,
+              "title": "Primeiro Dia no Escritório",
+              "body": "No meu primeiro dia no escritório novo, o chefe apresentou um colega novo e disse: 'Este **se** **llama** Rodrigo, ele vai ajudar vocês essa semana.' Rodrigo sorriu, disse ¡**hola**! e apertou minha mão com um sincero ¡**mucho gusto**!. Antes de voltar ao trabalho, ele pediu: **por favor**, avisa quando precisar de algo, e eu agradeci dizendo ¡**gracias**!. No fim do expediente, ele já estava de saída e falou um breve ¡**adiós**!, prometendo continuar ajudando amanhã."
+            },
+            {
+              "text_id": "txt-05",
+              "number": 5,
+              "title": "Viagem de Trem",
+              "body": "Durante uma viagem de trem pela Espanha, sentei ao lado de uma senhora simpática que puxou conversa com um caloroso ¡**hola**! e, assim que nos apresentamos, completou com um sorridente ¡**mucho gusto**! Conversamos um pouco e ela contou que sua neta **se** **llama** Valentina **y** mora em Buenos Aires. Quando o trem parou numa estação pequena, ela pediu: **por favor**, **me** ajuda com essa mala?, e eu ajudei sem pensar duas vezes. Ela agradeceu dizendo ¡**gracias**!, e ao descer, sorriu e acenou. Antes que as portas fechassem, ainda ouvi seu ¡**adiós**! ecoando pela plataforma."
+            },
+            {
+              "text_id": "txt-06",
+              "number": 6,
+              "title": "Novo Colega de Quarto",
+              "body": "Quando cheguei ao apartamento novo, meu futuro colega de quarto abriu a porta e, antes mesmo de eu falar qualquer coisa, já foi dizendo: '**Me** **llamo** Javier **y** você deve ser o novo colega.' Fiquei surpreso com a mistura de espanhol e sorri, respondendo em português. Ele riu e completou com um ¡**mucho gusto**!. Ajudei a carregar minhas malas e ele pediu: **por favor**, deixa isso perto da janela, apontando meu quarto. Agradeci dizendo ¡**gracias**! pela ajuda, e quando ele saiu para o trabalho, disse um simples ¡**adiós**!"
+            },
+            {
+              "text_id": "txt-07",
+              "number": 7,
+              "title": "Intercâmbio de Idiomas",
+              "body": "No encontro de intercâmbio de idiomas, o organizador pediu que cada um dissesse seu nome em espanhol. Fiquei nervoso, mas comecei: ¡**hola**, **me** **llamo** Marcos! A pessoa ao meu lado sorriu e perguntou: ¿**y** **tú**, **cómo** **te** **llamas**? Rimos juntos da minha cara de nervoso. Ela então disse seu nome também, e trocamos um ¡**mucho gusto**! sincero. Antes de mudarmos de roda, ela pediu: **por favor**, **me** manda seu contato depois, e eu agradeci dizendo ¡**gracias**! pela paciência com meu espanhol ainda hesitante."
+            },
+            {
+              "text_id": "txt-08",
+              "number": 8,
+              "title": "Na Cafeteria",
+              "body": "Enquanto esperava meu café numa cafeteria, uma pessoa na fila puxou assunto e perguntou, meio hesitante: ¿**cómo** **te** **llamas**? Respondi e completei brincando: '**me** **llamo** o típico turista perdido.' Ela riu e disse seu nome também, então perguntei de volta: ¿**y** **tú**, já mora aqui há muito tempo? Conversamos enquanto esperávamos, e quando meu pedido ficou pronto, agradeci ao barista dizendo ¡**gracias**! antes de dizer tchau para a nova conhecida com um aceno."
+            },
+            {
+              "text_id": "txt-09",
+              "number": 9,
+              "title": "Grupo de Estudos",
+              "body": "No grupo de estudos, um colega novo chegou perto e, brincando de praticar espanhol, perguntou: ¿**cómo** **te** **llamas**? Eu respondi e completei: '**me** **llamo** Bianca, **y** **tú**?' Ele sorriu, disse seu nome, mas confundiu a pronúncia e perguntou de novo: '**llamas**... como mesmo?', tentando confirmar. Eu repeti devagar, e ele, ainda perdido com tanta informação nova, só conseguiu balbuciar ¿**qué**? antes de todo mundo rir da situação."
+            },
+            {
+              "text_id": "txt-10",
+              "number": 10,
+              "title": "No Parque",
+              "body": "No parque, uma criança chegou perto, curiosa, enquanto eu lia um livro em espanhol. Ela disse seu nome toda animada e depois perguntou: ¿**y** **tú**, **cómo** **te** **llamas**? Contei meu nome, e ela quis saber também sobre o cachorro que estava comigo: ¿**y** o cachorro, **cómo** **se** **llama**? Expliquei que o nome dele era Rex, e ela riu, repetindo baixinho para si mesma até decorar. De repente, a mãe dela chamou de longe, e a menina, sem entender bem a distância, só gritou ¿**qué**? de volta. Antes de correr para perto da mãe, ela ainda perguntou: 'Eu **te** **llamo** amanhã para brincar de novo?', misturando um pouco de espanhol com sua empolgação."
+            }
+          ],
+          "exercises": [
+            {
+              "exercise_id": "ex-01",
+              "number": 1,
+              "title": "Exercício 1",
+              "items": [
+                {
+                  "sentence": "¡_____! Eu sou a Marina.",
+                  "word_ids": [
+                    "wd-0001"
+                  ]
+                },
+                {
+                  "sentence": "_____, me diga seu nome.",
+                  "word_ids": [
+                    "wd-0004"
+                  ]
+                },
+                {
+                  "sentence": "_____ por conversar comigo!",
+                  "word_ids": [
+                    "wd-0005"
+                  ]
+                },
+                {
+                  "sentence": "_____? Não entendi.",
+                  "word_ids": [
+                    "wd-0006"
+                  ]
+                },
+                {
+                  "sentence": "_____! Até amanhã.",
+                  "word_ids": [
+                    "wd-0003"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-02",
+              "number": 2,
+              "title": "Exercício 2",
+              "items": [
+                {
+                  "sentence": "Marina: ¡Hola! ¿_____ _____ _____?",
+                  "word_ids": [
+                    "wd-0051",
+                    "wd-0262",
+                    "wd-0263"
+                  ]
+                },
+                {
+                  "sentence": "Igor: _____ _____ Igor.",
+                  "word_ids": [
+                    "wd-0260",
+                    "wd-0261"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-03",
+              "number": 3,
+              "title": "Exercício 3",
+              "items": [
+                {
+                  "sentence": "Ana conhece uma pessoa nova. Ele _____ _____ Carlos. Ana diz: \"_____! ¿_____ _____?\"",
+                  "word_ids": [
+                    "wd-0264",
+                    "wd-0265",
+                    "wd-0014",
+                    "wd-0063",
+                    "wd-0013"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-04",
+              "number": 4,
+              "title": "Exercício 4",
+              "type": "classify",
+              "word_bank": [
+                "wd-0001",
+                "wd-0003",
+                "wd-0261",
+                "wd-0260",
+                "wd-0262",
+                "wd-0004",
+                "wd-0005",
+                "wd-0014"
+              ],
+              "categories": [
+                {
+                  "title": "Saudações e Despedidas"
+                },
+                {
+                  "title": "Pronomes Reflexivos e Verbo \"llamarse\""
+                },
+                {
+                  "title": "Cortesia"
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-05",
+              "number": 5,
+              "title": "Exercício 5",
+              "type": "open_response",
+              "lines": [
+                {
+                  "speaker": "Sofia",
+                  "text": "¡**Hola**! **Me** **llamo** Sofia."
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "cumprimente e diga seu nome"
+                },
+                {
+                  "speaker": "Sofia",
+                  "text": "¡**Mucho gusto**!"
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "responda educadamente e diga tchau"
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-06",
+              "number": 6,
+              "title": "Exercício 6",
+              "items": [
+                {
+                  "sentence": "Dicas para se despedir educadamente:",
+                  "word_ids": []
+                },
+                {
+                  "sentence": "— _____!",
+                  "word_ids": [
+                    "wd-0003"
+                  ]
+                },
+                {
+                  "sentence": "— _____ por tudo!",
+                  "word_ids": [
+                    "wd-0005"
+                  ]
+                },
+                {
+                  "sentence": "— _____, escreva quando chegar.",
+                  "word_ids": [
+                    "wd-0004"
+                  ]
+                },
+                {
+                  "sentence": "— Cuide-se _____ até a próxima!",
+                  "word_ids": [
+                    "wd-0063"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-07",
+              "number": 7,
+              "title": "Exercício 7",
+              "items": [
+                {
+                  "sentence": "Pergunta: Como perguntamos o nome de alguém, de forma informal, em espanhol?",
+                  "word_ids": []
+                },
+                {
+                  "sentence": "Resposta: ¿_____ te llamas?",
+                  "word_ids": [
+                    "wd-0051"
+                  ]
+                },
+                {
+                  "sentence": "Pergunta: Qual pronome usamos para \"você\" nessa pergunta informal?",
+                  "word_ids": []
+                },
+                {
+                  "sentence": "Resposta: _____",
+                  "word_ids": [
+                    "wd-0013"
+                  ]
+                },
+                {
+                  "sentence": "Pergunta: Como respondemos dizendo o nome de outra pessoa (3ª pessoa)?",
+                  "word_ids": []
+                },
+                {
+                  "sentence": "Resposta: Ella _____ Ana.",
+                  "word_ids": [
+                    "wd-0265"
+                  ]
+                },
+                {
+                  "sentence": "Pergunta: Qual pronome reflexivo usamos para \"ele/ela\" nessa resposta?",
+                  "word_ids": []
+                },
+                {
+                  "sentence": "Resposta: _____",
+                  "word_ids": [
+                    "wd-0264"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-08",
+              "number": 8,
+              "title": "Exercício 8",
+              "items": [
+                {
+                  "sentence": "¿Cómo _____ llamas?",
+                  "word_ids": [
+                    "wd-0262"
+                  ]
+                },
+                {
+                  "sentence": "¿Cómo te _____?",
+                  "word_ids": [
+                    "wd-0263"
+                  ]
+                },
+                {
+                  "sentence": "¿_____? No escuché bien.",
+                  "word_ids": [
+                    "wd-0006"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-09",
+              "number": 9,
+              "title": "Exercício 9",
+              "type": "classify",
+              "word_bank": [
+                "wd-0003",
+                "wd-0004",
+                "wd-0013",
+                "wd-0264",
+                "wd-0051",
+                "wd-0063"
+              ],
+              "categories": [
+                {
+                  "title": "Despedida e Cortesia"
+                },
+                {
+                  "title": "Pronomes"
+                },
+                {
+                  "title": "Outras Palavras"
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-10",
+              "number": 10,
+              "title": "Exercício 10",
+              "type": "open_response",
+              "lines": [
+                {
+                  "speaker": "Ana",
+                  "text": "¡**Hola**! **Me** **llamo** Ana. ¿**Cómo** **te** **llamas**?"
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "diga seu nome"
+                },
+                {
+                  "speaker": "Ana",
+                  "text": "¡**Mucho gusto**!"
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "responda educadamente e se despeça"
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-11",
+              "number": 11,
+              "title": "Exercício 11",
+              "items": [
+                {
+                  "sentence": "¡_____! Buenos días.",
+                  "word_ids": [
+                    "wd-0001"
+                  ]
+                },
+                {
+                  "sentence": "¡_____! Nos vemos.",
+                  "word_ids": [
+                    "wd-0003"
+                  ]
+                },
+                {
+                  "sentence": "_____, ayúdame.",
+                  "word_ids": [
+                    "wd-0004"
+                  ]
+                },
+                {
+                  "sentence": "¿_____ se llama tu perro?",
+                  "word_ids": [
+                    "wd-0051"
+                  ]
+                },
+                {
+                  "sentence": "¿_____? No escuché.",
+                  "word_ids": [
+                    "wd-0006"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-12",
+              "number": 12,
+              "title": "Exercício 12",
+              "items": [
+                {
+                  "sentence": "Marina: ¡Hola! ¿_____ _____ _____?",
+                  "word_ids": [
+                    "wd-0051",
+                    "wd-0013",
+                    "wd-0263"
+                  ]
+                },
+                {
+                  "sentence": "Igor: _____ llamo Igor. Y él _____ _____ Carlos.",
+                  "word_ids": [
+                    "wd-0260",
+                    "wd-0264",
+                    "wd-0265"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-13",
+              "number": 13,
+              "title": "Exercício 13",
+              "items": [
+                {
+                  "sentence": "Ana pregunta: \"¿Y _____?\" Carlos responde: \"_____!\"",
+                  "word_ids": [
+                    "wd-0013",
+                    "wd-0014"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-14",
+              "number": 14,
+              "title": "Exercício 14",
+              "type": "classify",
+              "word_bank": [
+                "wd-0001",
+                "wd-0003",
+                "wd-0013",
+                "wd-0264",
+                "wd-0004",
+                "wd-0005"
+              ],
+              "categories": [
+                {
+                  "title": "Saudações e Despedidas"
+                },
+                {
+                  "title": "Pronomes"
+                },
+                {
+                  "title": "Cortesia"
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-15",
+              "number": 15,
+              "title": "Exercício 15",
+              "type": "open_response",
+              "lines": [
+                {
+                  "speaker": "Sofia",
+                  "text": "¡**Hola**! ¿**Cómo** **te** **llamas**?"
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "diga seu nome e pergunte o dela também"
+                },
+                {
+                  "speaker": "Sofia",
+                  "text": "**Me** **llamo** Sofia. ¡**Mucho gusto**!"
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "responda educadamente, agradeça e se despeça"
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-16",
+              "number": 16,
+              "title": "Exercício 16",
+              "items": [
+                {
+                  "sentence": "_____, ayúdame con esto.",
+                  "word_ids": [
+                    "wd-0004"
+                  ]
+                },
+                {
+                  "sentence": "¿Y _____? También quiero saber tu nombre.",
+                  "word_ids": [
+                    "wd-0013"
+                  ]
+                },
+                {
+                  "sentence": "¿_____? Repite, por favor.",
+                  "word_ids": [
+                    "wd-0006"
+                  ]
+                },
+                {
+                  "sentence": "¡_____! Buen día.",
+                  "word_ids": [
+                    "wd-0001"
+                  ]
+                },
+                {
+                  "sentence": "¡_____! Muy amable.",
+                  "word_ids": [
+                    "wd-0005"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-17",
+              "number": 17,
+              "title": "Exercício 17",
+              "items": [
+                {
+                  "sentence": "Ana: ¡Hola! ¿Cómo te llamas?",
+                  "word_ids": []
+                },
+                {
+                  "sentence": "Carlos: _____ llamo Carlos. ¿Y _____?",
+                  "word_ids": [
+                    "wd-0260",
+                    "wd-0013"
+                  ]
+                },
+                {
+                  "sentence": "Ana: Me llamo Ana. _____!",
+                  "word_ids": [
+                    "wd-0014"
+                  ]
+                },
+                {
+                  "sentence": "Carlos: _____, Ana, ¿cómo se llama tu amigo?",
+                  "word_ids": [
+                    "wd-0004"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-18",
+              "number": 18,
+              "title": "Exercício 18",
+              "items": [
+                {
+                  "sentence": "Marina no escuchó bien y preguntó: \"¿_____?\" Su amiga repitió su nombre y Marina dijo: \"_____!\"",
+                  "word_ids": [
+                    "wd-0006",
+                    "wd-0005"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-19",
+              "number": 19,
+              "title": "Exercício 19",
+              "type": "classify",
+              "word_bank": [
+                "wd-0004",
+                "wd-0005",
+                "wd-0013",
+                "wd-0006",
+                "wd-0001",
+                "wd-0003"
+              ],
+              "categories": [
+                {
+                  "title": "Cortesia"
+                },
+                {
+                  "title": "Pronomes e Interrogativos"
+                },
+                {
+                  "title": "Saudações"
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-20",
+              "number": 20,
+              "title": "Exercício 20",
+              "type": "open_response",
+              "lines": [
+                {
+                  "speaker": "Pedro",
+                  "text": "¡**Hola**! ¿**Cómo** **te** **llamas**?"
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "diga seu nome e pergunte por favor o nome dele"
+                },
+                {
+                  "speaker": "Pedro",
+                  "text": "**Me** **llamo** Pedro. ¡**Mucho gusto**!"
+                },
+                {
+                  "speaker": "Você",
+                  "hint": "agradeça, diga que foi um prazer e se despeça"
+                }
+              ]
+            }
+          ],
+          "status": "ready"
+        }
+      ],
+      "status": "ready"
+    }
+  ]
+}

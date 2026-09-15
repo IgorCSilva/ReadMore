@@ -1,0 +1,1064 @@
+{
+  "words": [
+    {
+      "word_id": "wd-0001",
+      "filename": "hello"
+    },
+    {
+      "word_id": "wd-0002",
+      "filename": "hi"
+    },
+    {
+      "word_id": "wd-0003",
+      "filename": "goodbye"
+    },
+    {
+      "word_id": "wd-0004",
+      "filename": "please"
+    },
+    {
+      "word_id": "wd-0005",
+      "filename": "thank_you"
+    },
+    {
+      "word_id": "wd-0006",
+      "filename": "what"
+    },
+    {
+      "word_id": "wd-0007",
+      "filename": "i"
+    },
+    {
+      "word_id": "wd-0008",
+      "filename": "am"
+    },
+    {
+      "word_id": "wd-0009",
+      "filename": "name"
+    },
+    {
+      "word_id": "wd-0010",
+      "filename": "is"
+    },
+    {
+      "word_id": "wd-0011",
+      "filename": "my"
+    },
+    {
+      "word_id": "wd-0012",
+      "filename": "your"
+    },
+    {
+      "word_id": "wd-0013",
+      "filename": "you"
+    },
+    {
+      "word_id": "wd-0014",
+      "filename": "nice_to_meet_you"
+    },
+    {
+      "word_id": "wd-0015",
+      "filename": "from"
+    },
+    {
+      "word_id": "wd-0016",
+      "filename": "he"
+    },
+    {
+      "word_id": "wd-0017",
+      "filename": "she"
+    },
+    {
+      "word_id": "wd-0018",
+      "filename": "it"
+    },
+    {
+      "word_id": "wd-0019",
+      "filename": "we"
+    },
+    {
+      "word_id": "wd-0020",
+      "filename": "they"
+    },
+    {
+      "word_id": "wd-0021",
+      "filename": "are"
+    },
+    {
+      "word_id": "wd-0022",
+      "filename": "bye"
+    },
+    {
+      "word_id": "wd-0023",
+      "filename": "yes"
+    },
+    {
+      "word_id": "wd-0024",
+      "filename": "no"
+    },
+    {
+      "word_id": "wd-0025",
+      "filename": "a"
+    },
+    {
+      "word_id": "wd-0026",
+      "filename": "an"
+    },
+    {
+      "word_id": "wd-0027",
+      "filename": "the"
+    },
+    {
+      "word_id": "wd-0028",
+      "filename": "zero"
+    },
+    {
+      "word_id": "wd-0029",
+      "filename": "one"
+    },
+    {
+      "word_id": "wd-0030",
+      "filename": "two"
+    },
+    {
+      "word_id": "wd-0031",
+      "filename": "three"
+    },
+    {
+      "word_id": "wd-0032",
+      "filename": "four"
+    },
+    {
+      "word_id": "wd-0033",
+      "filename": "five"
+    },
+    {
+      "word_id": "wd-0034",
+      "filename": "six"
+    },
+    {
+      "word_id": "wd-0035",
+      "filename": "seven"
+    },
+    {
+      "word_id": "wd-0036",
+      "filename": "eight"
+    },
+    {
+      "word_id": "wd-0037",
+      "filename": "nine"
+    },
+    {
+      "word_id": "wd-0038",
+      "filename": "ten"
+    },
+    {
+      "word_id": "wd-0039",
+      "filename": "internet"
+    },
+    {
+      "word_id": "wd-0040",
+      "filename": "hotel"
+    },
+    {
+      "word_id": "wd-0041",
+      "filename": "taxi"
+    },
+    {
+      "word_id": "wd-0042",
+      "filename": "restaurant"
+    },
+    {
+      "word_id": "wd-0043",
+      "filename": "hamburger"
+    },
+    {
+      "word_id": "wd-0044",
+      "filename": "chocolate"
+    },
+    {
+      "word_id": "wd-0045",
+      "filename": "music"
+    },
+    {
+      "word_id": "wd-0046",
+      "filename": "radio"
+    },
+    {
+      "word_id": "wd-0047",
+      "filename": "television"
+    },
+    {
+      "word_id": "wd-0048",
+      "filename": "computer"
+    },
+    {
+      "word_id": "wd-0049",
+      "filename": "where"
+    },
+    {
+      "word_id": "wd-0050",
+      "filename": "who"
+    },
+    {
+      "word_id": "wd-0051",
+      "filename": "how"
+    },
+    {
+      "word_id": "wd-0052",
+      "filename": "why"
+    },
+    {
+      "word_id": "wd-0053",
+      "filename": "have"
+    },
+    {
+      "word_id": "wd-0054",
+      "filename": "like"
+    },
+    {
+      "word_id": "wd-0055",
+      "filename": "want"
+    },
+    {
+      "word_id": "wd-0056",
+      "filename": "go"
+    },
+    {
+      "word_id": "wd-0057",
+      "filename": "this"
+    },
+    {
+      "word_id": "wd-0058",
+      "filename": "that"
+    },
+    {
+      "word_id": "wd-0059",
+      "filename": "good"
+    },
+    {
+      "word_id": "wd-0060",
+      "filename": "bad"
+    },
+    {
+      "word_id": "wd-0061",
+      "filename": "big"
+    },
+    {
+      "word_id": "wd-0062",
+      "filename": "small"
+    },
+    {
+      "word_id": "wd-0063",
+      "filename": "and"
+    },
+    {
+      "word_id": "wd-0064",
+      "filename": "not"
+    },
+    {
+      "word_id": "wd-0065",
+      "filename": "here"
+    },
+    {
+      "word_id": "wd-0066",
+      "filename": "there"
+    },
+    {
+      "word_id": "wd-0067",
+      "filename": "nice"
+    },
+    {
+      "word_id": "wd-0068",
+      "filename": "to"
+    },
+    {
+      "word_id": "wd-0069",
+      "filename": "meet"
+    },
+    {
+      "word_id": "wd-0070",
+      "filename": "too"
+    },
+    {
+      "word_id": "wd-0071",
+      "filename": "fine"
+    },
+    {
+      "word_id": "wd-0072",
+      "filename": "welcome"
+    },
+    {
+      "word_id": "wd-0073",
+      "filename": "hey"
+    },
+    {
+      "word_id": "wd-0074",
+      "filename": "see"
+    },
+    {
+      "word_id": "wd-0075",
+      "filename": "later"
+    },
+    {
+      "word_id": "wd-0076",
+      "filename": "morning"
+    },
+    {
+      "word_id": "wd-0077",
+      "filename": "afternoon"
+    },
+    {
+      "word_id": "wd-0078",
+      "filename": "evening"
+    },
+    {
+      "word_id": "wd-0079",
+      "filename": "night"
+    },
+    {
+      "word_id": "wd-0080",
+      "filename": "day"
+    },
+    {
+      "word_id": "wd-0081",
+      "filename": "friend"
+    },
+    {
+      "word_id": "wd-0082",
+      "filename": "everyone"
+    },
+    {
+      "word_id": "wd-0083",
+      "filename": "introduce"
+    },
+    {
+      "word_id": "wd-0084",
+      "filename": "family"
+    },
+    {
+      "word_id": "wd-0085",
+      "filename": "mother"
+    },
+    {
+      "word_id": "wd-0086",
+      "filename": "father"
+    },
+    {
+      "word_id": "wd-0087",
+      "filename": "parents"
+    },
+    {
+      "word_id": "wd-0088",
+      "filename": "sister"
+    },
+    {
+      "word_id": "wd-0089",
+      "filename": "brother"
+    },
+    {
+      "word_id": "wd-0090",
+      "filename": "grandmother"
+    },
+    {
+      "word_id": "wd-0091",
+      "filename": "grandfather"
+    },
+    {
+      "word_id": "wd-0092",
+      "filename": "grandparents"
+    },
+    {
+      "word_id": "wd-0093",
+      "filename": "son"
+    },
+    {
+      "word_id": "wd-0094",
+      "filename": "daughter"
+    },
+    {
+      "word_id": "wd-0095",
+      "filename": "child"
+    },
+    {
+      "word_id": "wd-0096",
+      "filename": "husband"
+    },
+    {
+      "word_id": "wd-0097",
+      "filename": "wife"
+    },
+    {
+      "word_id": "wd-0098",
+      "filename": "baby"
+    },
+    {
+      "word_id": "wd-0099",
+      "filename": "aunt"
+    },
+    {
+      "word_id": "wd-0100",
+      "filename": "uncle"
+    },
+    {
+      "word_id": "wd-0101",
+      "filename": "cousin"
+    },
+    {
+      "word_id": "wd-0102",
+      "filename": "number"
+    },
+    {
+      "word_id": "wd-0103",
+      "filename": "year"
+    },
+    {
+      "word_id": "wd-0104",
+      "filename": "old"
+    },
+    {
+      "word_id": "wd-0105",
+      "filename": "age"
+    },
+    {
+      "word_id": "wd-0106",
+      "filename": "young"
+    },
+    {
+      "word_id": "wd-0107",
+      "filename": "birthday"
+    },
+    {
+      "word_id": "wd-0108",
+      "filename": "many"
+    },
+    {
+      "word_id": "wd-0109",
+      "filename": "count"
+    },
+    {
+      "word_id": "wd-0110",
+      "filename": "eleven"
+    },
+    {
+      "word_id": "wd-0111",
+      "filename": "twelve"
+    },
+    {
+      "word_id": "wd-0112",
+      "filename": "thirteen"
+    },
+    {
+      "word_id": "wd-0113",
+      "filename": "fourteen"
+    },
+    {
+      "word_id": "wd-0114",
+      "filename": "fifteen"
+    },
+    {
+      "word_id": "wd-0115",
+      "filename": "sixteen"
+    },
+    {
+      "word_id": "wd-0116",
+      "filename": "seventeen"
+    },
+    {
+      "word_id": "wd-0117",
+      "filename": "eighteen"
+    },
+    {
+      "word_id": "wd-0118",
+      "filename": "nineteen"
+    },
+    {
+      "word_id": "wd-0119",
+      "filename": "twenty"
+    },
+    {
+      "word_id": "wd-0120",
+      "filename": "live"
+    },
+    {
+      "word_id": "wd-0121",
+      "filename": "country"
+    },
+    {
+      "word_id": "wd-0122",
+      "filename": "city"
+    },
+    {
+      "word_id": "wd-0123",
+      "filename": "world"
+    },
+    {
+      "word_id": "wd-0124",
+      "filename": "language"
+    },
+    {
+      "word_id": "wd-0125",
+      "filename": "speak"
+    },
+    {
+      "word_id": "wd-0126",
+      "filename": "brazilian"
+    },
+    {
+      "word_id": "wd-0127",
+      "filename": "american"
+    },
+    {
+      "word_id": "wd-0128",
+      "filename": "english"
+    },
+    {
+      "word_id": "wd-0129",
+      "filename": "spanish"
+    },
+    {
+      "word_id": "wd-0130",
+      "filename": "french"
+    },
+    {
+      "word_id": "wd-0131",
+      "filename": "portuguese"
+    },
+    {
+      "word_id": "wd-0132",
+      "filename": "chinese"
+    },
+    {
+      "word_id": "wd-0133",
+      "filename": "japanese"
+    },
+    {
+      "word_id": "wd-0134",
+      "filename": "italian"
+    },
+    {
+      "word_id": "wd-0135",
+      "filename": "german"
+    },
+    {
+      "word_id": "wd-0136",
+      "filename": "canadian"
+    },
+    {
+      "word_id": "wd-0137",
+      "filename": "mexican"
+    },
+    {
+      "word_id": "wd-0138",
+      "filename": "capital"
+    },
+    {
+      "word_id": "wd-0139",
+      "filename": "continent"
+    },
+    {
+      "word_id": "wd-0140",
+      "filename": "map"
+    },
+    {
+      "word_id": "wd-0141",
+      "filename": "flag"
+    },
+    {
+      "word_id": "wd-0142",
+      "filename": "culture"
+    },
+    {
+      "word_id": "wd-0143",
+      "filename": "far"
+    },
+    {
+      "word_id": "wd-0144",
+      "filename": "in"
+    },
+    {
+      "word_id": "wd-0145",
+      "filename": "well"
+    },
+    {
+      "word_id": "wd-0146",
+      "filename": "so"
+    },
+    {
+      "word_id": "wd-0147",
+      "filename": "really"
+    },
+    {
+      "word_id": "wd-0148",
+      "filename": "actually"
+    },
+    {
+      "word_id": "wd-0149",
+      "filename": "anyway"
+    },
+    {
+      "word_id": "wd-0150",
+      "filename": "excuse_me"
+    },
+    {
+      "word_id": "wd-0151",
+      "filename": "sure"
+    },
+    {
+      "word_id": "wd-0152",
+      "filename": "of_course"
+    },
+    {
+      "word_id": "wd-0153",
+      "filename": "great"
+    },
+    {
+      "word_id": "wd-0154",
+      "filename": "maybe"
+    },
+    {
+      "word_id": "wd-0155",
+      "filename": "sorry"
+    },
+    {
+      "word_id": "wd-0156",
+      "filename": "okay"
+    },
+    {
+      "word_id": "wd-0157",
+      "filename": "wow"
+    },
+    {
+      "word_id": "wd-0158",
+      "filename": "oh"
+    },
+    {
+      "word_id": "wd-0159",
+      "filename": "exactly"
+    },
+    {
+      "word_id": "wd-0160",
+      "filename": "right"
+    },
+    {
+      "word_id": "wd-0161",
+      "filename": "true"
+    },
+    {
+      "word_id": "wd-0162",
+      "filename": "absolutely"
+    },
+    {
+      "word_id": "wd-0163",
+      "filename": "alright"
+    },
+    {
+      "word_id": "wd-0164",
+      "filename": "cool"
+    },
+    {
+      "word_id": "wd-0165",
+      "filename": "awesome"
+    },
+    {
+      "word_id": "wd-0166",
+      "filename": "agree"
+    },
+    {
+      "word_id": "wd-0167",
+      "filename": "disagree"
+    },
+    {
+      "word_id": "wd-0168",
+      "filename": "think"
+    },
+    {
+      "word_id": "wd-0169",
+      "filename": "interesting"
+    },
+    {
+      "word_id": "wd-0170",
+      "filename": "boring"
+    },
+    {
+      "word_id": "wd-0171",
+      "filename": "water"
+    },
+    {
+      "word_id": "wd-0172",
+      "filename": "coffee"
+    },
+    {
+      "word_id": "wd-0173",
+      "filename": "tea"
+    },
+    {
+      "word_id": "wd-0174",
+      "filename": "bread"
+    },
+    {
+      "word_id": "wd-0175",
+      "filename": "rice"
+    },
+    {
+      "word_id": "wd-0176",
+      "filename": "meat"
+    },
+    {
+      "word_id": "wd-0177",
+      "filename": "fish"
+    },
+    {
+      "word_id": "wd-0178",
+      "filename": "egg"
+    },
+    {
+      "word_id": "wd-0179",
+      "filename": "cheese"
+    },
+    {
+      "word_id": "wd-0180",
+      "filename": "milk"
+    },
+    {
+      "word_id": "wd-0181",
+      "filename": "fruit"
+    },
+    {
+      "word_id": "wd-0182",
+      "filename": "vegetable"
+    },
+    {
+      "word_id": "wd-0183",
+      "filename": "table"
+    },
+    {
+      "word_id": "wd-0184",
+      "filename": "hungry"
+    },
+    {
+      "word_id": "wd-0185",
+      "filename": "thirsty"
+    },
+    {
+      "word_id": "wd-0186",
+      "filename": "delicious"
+    },
+    {
+      "word_id": "wd-0187",
+      "filename": "do"
+    },
+    {
+      "word_id": "wd-0188",
+      "filename": "does"
+    },
+    {
+      "word_id": "wd-0189",
+      "filename": "menu"
+    },
+    {
+      "word_id": "wd-0190",
+      "filename": "cup"
+    },
+    {
+      "word_id": "wd-0191",
+      "filename": "glass"
+    },
+    {
+      "word_id": "wd-0192",
+      "filename": "plate"
+    },
+    {
+      "word_id": "wd-0193",
+      "filename": "bill"
+    },
+    {
+      "word_id": "wd-0194",
+      "filename": "waiter"
+    },
+    {
+      "word_id": "wd-0195",
+      "filename": "order"
+    },
+    {
+      "word_id": "wd-0196",
+      "filename": "sugar"
+    },
+    {
+      "word_id": "wd-0197",
+      "filename": "ice"
+    },
+    {
+      "word_id": "wd-0198",
+      "filename": "straw"
+    },
+    {
+      "word_id": "wd-0199",
+      "filename": "napkin"
+    },
+    {
+      "word_id": "wd-0200",
+      "filename": "medium"
+    },
+    {
+      "word_id": "wd-0201",
+      "filename": "to_go"
+    },
+    {
+      "word_id": "wd-0202",
+      "filename": "price"
+    },
+    {
+      "word_id": "wd-0203",
+      "filename": "cash"
+    },
+    {
+      "word_id": "wd-0204",
+      "filename": "card"
+    },
+    {
+      "word_id": "wd-0205",
+      "filename": "pay"
+    },
+    {
+      "word_id": "wd-0206",
+      "filename": "would"
+    },
+    {
+      "word_id": "wd-0207",
+      "filename": "across"
+    },
+    {
+      "word_id": "wd-0208",
+      "filename": "by"
+    },
+    {
+      "word_id": "wd-0209",
+      "filename": "bus"
+    },
+    {
+      "word_id": "wd-0210",
+      "filename": "way"
+    },
+    {
+      "word_id": "wd-0211",
+      "filename": "stop"
+    },
+    {
+      "word_id": "wd-0212",
+      "filename": "sometimes"
+    },
+    {
+      "word_id": "wd-0213",
+      "filename": "stay"
+    },
+    {
+      "word_id": "wd-0214",
+      "filename": "motel"
+    },
+    {
+      "word_id": "wd-0215",
+      "filename": "little"
+    },
+    {
+      "word_id": "wd-0216",
+      "filename": "town"
+    },
+    {
+      "word_id": "wd-0217",
+      "filename": "when"
+    },
+    {
+      "word_id": "wd-0218",
+      "filename": "come"
+    },
+    {
+      "word_id": "wd-0219",
+      "filename": "down"
+    },
+    {
+      "word_id": "wd-0220",
+      "filename": "room"
+    },
+    {
+      "word_id": "wd-0221",
+      "filename": "for"
+    },
+    {
+      "word_id": "wd-0222",
+      "filename": "something"
+    },
+    {
+      "word_id": "wd-0223",
+      "filename": "eat"
+    },
+    {
+      "word_id": "wd-0224",
+      "filename": "girl"
+    },
+    {
+      "word_id": "wd-0225",
+      "filename": "on"
+    },
+    {
+      "word_id": "wd-0226",
+      "filename": "motorcycle"
+    },
+    {
+      "word_id": "wd-0227",
+      "filename": "with"
+    },
+    {
+      "word_id": "wd-0228",
+      "filename": "long"
+    },
+    {
+      "word_id": "wd-0229",
+      "filename": "blond"
+    },
+    {
+      "word_id": "wd-0230",
+      "filename": "hair"
+    },
+    {
+      "word_id": "wd-0231",
+      "filename": "know"
+    },
+    {
+      "word_id": "wd-0232",
+      "filename": "famous"
+    },
+    {
+      "word_id": "wd-0233",
+      "filename": "then"
+    },
+    {
+      "word_id": "wd-0234",
+      "filename": "next"
+    },
+    {
+      "word_id": "wd-0235",
+      "filename": "news"
+    },
+    {
+      "word_id": "wd-0236",
+      "filename": "about"
+    },
+    {
+      "word_id": "wd-0237",
+      "filename": "supermarket"
+    },
+    {
+      "word_id": "wd-0238",
+      "filename": "robbery"
+    },
+    {
+      "word_id": "wd-0239",
+      "filename": "police"
+    },
+    {
+      "word_id": "wd-0240",
+      "filename": "look_for"
+    },
+    {
+      "word_id": "wd-0241",
+      "filename": "somebody"
+    },
+    {
+      "word_id": "wd-0242",
+      "filename": "apple"
+    },
+    {
+      "word_id": "wd-0243",
+      "filename": "banana"
+    },
+    {
+      "word_id": "wd-0244",
+      "filename": "orange"
+    },
+    {
+      "word_id": "wd-0245",
+      "filename": "grape"
+    },
+    {
+      "word_id": "wd-0246",
+      "filename": "strawberry"
+    },
+    {
+      "word_id": "wd-0247",
+      "filename": "tomato"
+    },
+    {
+      "word_id": "wd-0248",
+      "filename": "potato"
+    },
+    {
+      "word_id": "wd-0249",
+      "filename": "carrot"
+    },
+    {
+      "word_id": "wd-0250",
+      "filename": "onion"
+    },
+    {
+      "word_id": "wd-0251",
+      "filename": "lettuce"
+    },
+    {
+      "word_id": "wd-0252",
+      "filename": "some"
+    },
+    {
+      "word_id": "wd-0253",
+      "filename": "any"
+    },
+    {
+      "word_id": "wd-0254",
+      "filename": "much"
+    },
+    {
+      "word_id": "wd-0255",
+      "filename": "a_few"
+    },
+    {
+      "word_id": "wd-0256",
+      "filename": "a_little"
+    },
+    {
+      "word_id": "wd-0257",
+      "filename": "market"
+    },
+    {
+      "word_id": "wd-0258",
+      "filename": "buy"
+    },
+    {
+      "word_id": "wd-0259",
+      "filename": "kilo"
+    },
+    {
+      "word_id": "wd-0260",
+      "filename": "reflexive_me"
+    },
+    {
+      "word_id": "wd-0261",
+      "filename": "i_am_called"
+    },
+    {
+      "word_id": "wd-0262",
+      "filename": "reflexive_you"
+    },
+    {
+      "word_id": "wd-0263",
+      "filename": "you_are_called"
+    },
+    {
+      "word_id": "wd-0264",
+      "filename": "reflexive_himself_herself"
+    },
+    {
+      "word_id": "wd-0265",
+      "filename": "is_called"
+    }
+  ]
+}
