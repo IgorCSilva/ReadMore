@@ -1,0 +1,6 @@
+# Runtime dependencies for the FastAPI app under backend/app/ (Phase 1 of
+# RESTRUCTURE_PLAN.md). backend/server.py itself stays stdlib-only until it's
+# retired at the end of Phase 1.
+fastapi
+uvicorn
+pydantic

@@ -1,5 +1,5 @@
 {
-  "english": {
+  "pt-en": {
     "words": [
       {
         "word_id": "en-0001",
@@ -2558,7 +2558,7 @@
       }
     ]
   },
-  "spanish": {
+  "pt-es": {
     "words": [],
     "chapters": []
   }
