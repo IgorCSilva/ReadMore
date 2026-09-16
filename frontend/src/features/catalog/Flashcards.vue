@@ -33,43 +33,45 @@
         <div class="progress"><div class="progress-fill" id="progress-fill"></div></div>
 
         <div class="card-viewport">
-        <div class="card" id="card">
-          <div class="sentence-area">
-            <div class="label-row">
-              <div class="sentence-label">Sentence</div>
-              <button type="button" class="speak-btn" id="speak-sentence-btn" title="Play sentence" aria-label="Play sentence">🔊</button>
-            </div>
-            <div class="sentence" id="sentence"></div>
-          </div>
-          <div class="image-wrap">
-            <img id="img" alt="">
-            <div class="missing" id="missing">
-              <div>
-                <div class="missing-cue-label">Cue</div>
-                <div class="missing-cue" id="missing-cue"></div>
-              </div>
-              <div>
+          <div class="card-track" id="card-track">
+            <div class="card" v-for="role in CARD_ROLES" :key="role" :data-role="role">
+              <div class="sentence-area">
                 <div class="label-row">
-                  <div class="missing-sentence-label">Sentence</div>
-                  <button type="button" class="speak-btn" id="speak-missing-sentence-btn" title="Play sentence" aria-label="Play sentence">🔊</button>
+                  <div class="sentence-label">Sentence</div>
+                  <button type="button" class="speak-btn speak-sentence-btn" title="Play sentence" aria-label="Play sentence">🔊</button>
                 </div>
-                <div class="missing-sentence" id="missing-sentence"></div>
+                <div class="sentence"></div>
+              </div>
+              <div class="image-wrap">
+                <img class="card-img" alt="">
+                <div class="missing">
+                  <div>
+                    <div class="missing-cue-label">Cue</div>
+                    <div class="missing-cue"></div>
+                  </div>
+                  <div>
+                    <div class="label-row">
+                      <div class="missing-sentence-label">Sentence</div>
+                      <button type="button" class="speak-btn speak-missing-sentence-btn" title="Play sentence" aria-label="Play sentence">🔊</button>
+                    </div>
+                    <div class="missing-sentence"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="cue-area">
+                <div class="cue-label">Cue</div>
+                <div class="cue"></div>
+              </div>
+              <div class="word-area">
+                <div class="label-row">
+                  <div class="response-label">Response</div>
+                  <button type="button" class="speak-btn speak-word-btn" title="Play pronunciation" aria-label="Play pronunciation">🔊</button>
+                </div>
+                <div class="word hidden-word">•••••</div>
+                <div class="hint">click word to reveal</div>
               </div>
             </div>
           </div>
-          <div class="cue-area">
-            <div class="cue-label">Cue</div>
-            <div class="cue" id="cue"></div>
-          </div>
-          <div class="word-area">
-            <div class="label-row">
-              <div class="response-label">Response</div>
-              <button type="button" class="speak-btn" id="speak-btn" title="Play pronunciation" aria-label="Play pronunciation">🔊</button>
-            </div>
-            <div class="word hidden-word" id="word">•••••</div>
-            <div class="hint">click word to reveal</div>
-          </div>
-        </div>
         </div>
 
         <div class="empty-state" id="empty-state">No words match the selected filters.</div>
@@ -114,7 +116,30 @@ import { hasQueuedAction, performWrite } from '../../shared/writeQueue'
 // sorting hundreds of rules into per-component scopes is a separate, larger
 // effort than "extract this tab's markup/logic" and risks subtle visual
 // regressions if done hastily — not attempted in this step.
+//
+// ---- Three-slide carousel, not one mutated card ----
+//
+// An earlier version reused a single card element and rewrote its content
+// (including the <img> src) the moment a slide animation reached its
+// off-screen midpoint. That raced the image fetch against the slide-back-in
+// animation: an <img> keeps painting its previous frame until the new
+// resource finishes loading, so an uncached image let the *previous* card's
+// picture ride into view before flipping to the correct one partway through
+// the animation.
+//
+// This version keeps three permanent DOM cards (data-role="prev"/"current"/
+// "next") in a flex track and only ever slides the track's transform. Each
+// slide's content is populated well before it's ever visible: the "next"
+// and "prev" slides are already fully loaded, off-screen, while "current"
+// is on screen. Advancing just animates the track by one card-width (pure
+// CSS, no content changes involved) and then, once that's done and the new
+// current slide is already sitting in place, relabels the three slides'
+// roles (via each card's inline `order` style, not by moving DOM nodes) and
+// republishes content only into whichever slide just became the new
+// off-screen prev/next — invisible at that moment, so there's nothing for
+// the user to see mutate. See render() and commitSlide() below.
 
+const CARD_ROLES = ["prev", "current", "next"];
 const EXT_FALLBACKS = ["png", "jpg", "jpeg", "webp", "gif", "jfif"];
 
 let USER_EMAIL = null;
@@ -126,7 +151,6 @@ let ALL_ENTRIES = [];
 let ENTRIES = [];
 let HIDDEN_ENTRIES = [];
 let index = 0;
-let revealed = false;
 
 // Assigned inside onMounted, once DOM refs exist; the wrapper below is what
 // defineExpose captures, and it's only ever called by the parent after this
@@ -134,21 +158,13 @@ let revealed = false;
 let load;
 
 onMounted(() => {
-  const img = document.getElementById("img");
-  const missing = document.getElementById("missing");
-  const missingCueEl = document.getElementById("missing-cue");
-  const missingSentenceEl = document.getElementById("missing-sentence");
-  const wordEl = document.getElementById("word");
-  const cueEl = document.getElementById("cue");
-  const sentenceEl = document.getElementById("sentence");
-  const sentenceAreaEl = document.querySelector(".sentence-area");
-  const cueAreaEl = document.querySelector(".cue-area");
+  const trackEl = document.getElementById("card-track");
+  const cardViewportEl = document.querySelector(".card-viewport");
   const counterEl = document.getElementById("counter");
   const badgeEl = document.getElementById("badge");
   const progressFill = document.getElementById("progress-fill");
   const errorBanner = document.getElementById("error-banner");
   const loadingEl = document.getElementById("loading");
-  const cardEl = document.getElementById("card");
   const controlsEl = document.querySelector(".controls");
   const actionBarEl = document.getElementById("action-bar");
   const prevBtn = document.getElementById("prev-btn");
@@ -160,9 +176,39 @@ onMounted(() => {
   const filterConfidentEl = document.getElementById("filter-confident");
   const filterLearningEl = document.getElementById("filter-learning");
   const hiddenListEl = document.getElementById("hidden-words-list");
-  const speakBtn = document.getElementById("speak-btn");
-  const speakSentenceBtn = document.getElementById("speak-sentence-btn");
-  const speakMissingSentenceBtn = document.getElementById("speak-missing-sentence-btn");
+
+  // One persistent slot object per physical card element — these three DOM
+  // nodes (and their descendants) are never created/destroyed again; only
+  // their content and `role` (which drives their visual left/mid/right
+  // position via CSS `order`, see setSlotRole) ever change.
+  const slots = Array.from(trackEl.children).map((el) => ({
+    el,
+    role: el.dataset.role,
+    entry: null,
+    revealed: false,
+    imgEl: el.querySelector(".card-img"),
+    missingEl: el.querySelector(".missing"),
+    missingCueEl: el.querySelector(".missing-cue"),
+    missingSentenceEl: el.querySelector(".missing-sentence"),
+    sentenceEl: el.querySelector(".sentence"),
+    sentenceAreaEl: el.querySelector(".sentence-area"),
+    cueEl: el.querySelector(".cue"),
+    cueAreaEl: el.querySelector(".cue-area"),
+    wordEl: el.querySelector(".word"),
+    speakWordBtn: el.querySelector(".speak-word-btn"),
+    speakSentenceBtn: el.querySelector(".speak-sentence-btn"),
+    speakMissingSentenceBtn: el.querySelector(".speak-missing-sentence-btn"),
+  }));
+
+  function getSlotByRole(role) {
+    return slots.find((s) => s.role === role);
+  }
+
+  function setSlotRole(slot, role) {
+    slot.role = role;
+    slot.el.dataset.role = role;
+    slot.el.style.order = String(CARD_ROLES.indexOf(role));
+  }
 
   const SPEECH_SUPPORTED = "speechSynthesis" in window;
 
@@ -200,20 +246,33 @@ onMounted(() => {
     });
   }
 
-  speakBtn.addEventListener("click", () => {
-    if (ENTRIES.length === 0) return;
-    speakWord(ENTRIES[index].word, targetLangCode());
-  });
+  // Speak buttons/word-reveal exist on all three slides (so a mid-drag peek
+  // at a neighbor still looks like a real card), but only ever act for the
+  // slide currently playing the "current" role — the other two are either
+  // fully off-screen or, at most, mid-drag peeking in from an edge.
+  function toggleReveal(slot) {
+    if (slot.role !== "current") return;
+    slot.revealed = !slot.revealed;
+    slot.wordEl.classList.toggle("hidden-word", !slot.revealed);
+  }
 
-  function speakCurrentSentence() {
-    if (ENTRIES.length === 0) return;
-    const entry = ENTRIES[index];
-    const filledSentence = entry.sentence.replace(/_+/g, entry.word);
+  function speakSlotWord(slot) {
+    if (slot.role !== "current" || !slot.entry) return;
+    speakWord(slot.entry.word, targetLangCode());
+  }
+
+  function speakSlotSentence(slot) {
+    if (slot.role !== "current" || !slot.entry) return;
+    const filledSentence = slot.entry.sentence.replace(/_+/g, slot.entry.word);
     speakWord(filledSentence, SENTENCE_LANG === "origin" ? originLangCode() : targetLangCode());
   }
 
-  speakSentenceBtn.addEventListener("click", speakCurrentSentence);
-  speakMissingSentenceBtn.addEventListener("click", speakCurrentSentence);
+  for (const slot of slots) {
+    slot.wordEl.addEventListener("click", () => toggleReveal(slot));
+    slot.speakWordBtn.addEventListener("click", () => speakSlotWord(slot));
+    slot.speakSentenceBtn.addEventListener("click", () => speakSlotSentence(slot));
+    slot.speakMissingSentenceBtn.addEventListener("click", () => speakSlotSentence(slot));
+  }
 
   function transformWords(words) {
     const entries = words.map((e) => {
@@ -270,7 +329,7 @@ onMounted(() => {
     loadingEl.style.display = isLoading ? "flex" : "none";
     if (isLoading) {
       errorBanner.style.display = "none";
-      cardEl.style.display = "none";
+      cardViewportEl.style.display = "none";
       progressEl.style.display = "none";
       controlsEl.style.display = "none";
       actionBarEl.style.display = "none";
@@ -284,16 +343,11 @@ onMounted(() => {
     return [...new Set(list)];
   }
 
-  // <img>'s src assignment below doesn't clear the currently-painted frame
-  // until the new resource finishes loading — fine for a static swap, but
-  // the slide animation moves the card off/on screen around that same
-  // assignment, so an uncached image lets the *previous* card's picture
-  // ride along into the new card's slot until the fetch catches up. Warming
-  // the browser's cache for whichever entry a swipe/prev/next would land on
-  // — started as soon as the current card renders, well before the user
-  // acts — means that fetch has usually already finished by the time it's
-  // needed, so the src assignment in loadImage() resolves instantly instead
-  // of stalling on the network.
+  // Cache-warming for entries that aren't one of the three live slides yet
+  // (see preloadImage calls below) — a detached Image() probe fetches into
+  // the browser's own HTTP cache so that, by the time that entry actually
+  // reaches a slide's real <img>, the src assignment resolves instantly
+  // instead of stalling on the network.
   const preloadedImageUrls = new Set();
 
   function preloadImage(entry) {
@@ -313,31 +367,44 @@ onMounted(() => {
     tryNext();
   }
 
-  function loadImage(entry) {
+  function loadImageForSlot(slot, entry) {
     const candidates = extCandidates(entry);
     let i = 0;
 
-    img.style.display = "block";
-    missing.style.display = "none";
-    sentenceAreaEl.style.display = "block";
-    cueAreaEl.style.display = "block";
+    slot.imgEl.style.display = "block";
+    slot.missingEl.style.display = "none";
+    slot.sentenceAreaEl.style.display = "block";
+    slot.cueAreaEl.style.display = "block";
 
     function tryNext() {
       if (i >= candidates.length) {
-        img.style.display = "none";
-        missing.style.display = "flex";
-        sentenceAreaEl.style.display = "none";
-        cueAreaEl.style.display = "none";
-        missingCueEl.textContent = entry.cue;
-        missingSentenceEl.textContent = entry.sentence;
+        slot.imgEl.style.display = "none";
+        slot.missingEl.style.display = "flex";
+        slot.sentenceAreaEl.style.display = "none";
+        slot.cueAreaEl.style.display = "none";
+        slot.missingCueEl.textContent = entry.cue;
+        slot.missingSentenceEl.textContent = entry.sentence;
         return;
       }
       const ext = candidates[i];
       i++;
-      img.onerror = tryNext;
-      img.src = `images/${entry.base}.${ext}`;
+      slot.imgEl.onerror = tryNext;
+      slot.imgEl.src = `images/${entry.base}.${ext}`;
     }
     tryNext();
+  }
+
+  function populateSlot(slot, entry) {
+    slot.entry = entry;
+    slot.revealed = false;
+    loadImageForSlot(slot, entry);
+
+    slot.sentenceEl.textContent = entry.sentence;
+    slot.cueEl.textContent = entry.cue;
+
+    slot.wordEl.textContent = formatWordByGender(entry.word, entry.genderId);
+    slot.wordEl.style.color = getGender(entry.genderId).color || "";
+    slot.wordEl.classList.add("hidden-word");
   }
 
   function applyFilter() {
@@ -355,7 +422,7 @@ onMounted(() => {
 
   function updateVisibility() {
     if (ENTRIES.length === 0) {
-      cardEl.style.display = "none";
+      cardViewportEl.style.display = "none";
       progressEl.style.display = "none";
       controlsEl.style.display = "none";
       actionBarEl.style.display = "none";
@@ -363,7 +430,7 @@ onMounted(() => {
       counterEl.textContent = "0 / 0";
       badgeEl.style.display = "none";
     } else {
-      cardEl.style.display = "flex";
+      cardViewportEl.style.display = "block";
       progressEl.style.display = "block";
       controlsEl.style.display = "flex";
       actionBarEl.style.display = "flex";
@@ -373,27 +440,41 @@ onMounted(() => {
     }
   }
 
+  function updateChrome() {
+    counterEl.textContent = `${index + 1} / ${ENTRIES.length}`;
+    badgeEl.textContent = ENTRIES[index].confident ? "confident" : "learning";
+    badgeEl.className = "badge " + (ENTRIES[index].confident ? "confident" : "learning");
+    progressFill.style.width = `${((index + 1) / ENTRIES.length) * 100}%`;
+  }
+
+  // Full rebuild: (re)populates all three slides from scratch against the
+  // current index/ENTRIES, for every non-animated transition (initial load,
+  // filter changes, know/hide changes, and the "Next"/space-bar advance,
+  // which has never animated). Always resets slot roles back to their
+  // literal prev/current/next order first, so it recovers cleanly no matter
+  // what an interrupted slide animation left behind.
   function render() {
     if (ENTRIES.length === 0) return;
-    const entry = ENTRIES[index];
-    loadImage(entry);
 
-    sentenceEl.textContent = entry.sentence;
-    cueEl.textContent = entry.cue;
+    const prevEntry = ENTRIES[(index - 1 + ENTRIES.length) % ENTRIES.length];
+    const currentEntry = ENTRIES[index];
+    const nextEntry = ENTRIES[(index + 1) % ENTRIES.length];
 
-    revealed = false;
-    wordEl.textContent = formatWordByGender(entry.word, entry.genderId);
-    wordEl.style.color = getGender(entry.genderId).color || "";
-    wordEl.classList.add("hidden-word");
+    setSlotRole(slots[0], "prev");
+    setSlotRole(slots[1], "current");
+    setSlotRole(slots[2], "next");
 
-    counterEl.textContent = `${index + 1} / ${ENTRIES.length}`;
-    badgeEl.textContent = entry.confident ? "confident" : "learning";
-    badgeEl.className = "badge " + (entry.confident ? "confident" : "learning");
+    populateSlot(slots[0], prevEntry);
+    populateSlot(slots[1], currentEntry);
+    populateSlot(slots[2], nextEntry);
 
-    progressFill.style.width = `${((index + 1) / ENTRIES.length) * 100}%`;
+    setTrackTransition(false);
+    setTrackOffset(0);
 
-    preloadImage(ENTRIES[(index + 1) % ENTRIES.length]);
-    preloadImage(ENTRIES[(index - 1 + ENTRIES.length) % ENTRIES.length]);
+    updateChrome();
+
+    preloadImage(ENTRIES[(index + 2) % ENTRIES.length]);
+    preloadImage(ENTRIES[(index - 2 + ENTRIES.length) % ENTRIES.length]);
   }
 
   function recordShown(entry) {
@@ -420,36 +501,66 @@ onMounted(() => {
   let drag = null; // { pointerId, startX, currentX, moved }
 
   function cardWidthPx() {
-    return cardEl.getBoundingClientRect().width || 1;
+    return cardViewportEl.getBoundingClientRect().width || 1;
   }
 
-  function setCardTransition(enabled) {
-    cardEl.style.transition = enabled ? `transform ${SLIDE_MS}ms ease, opacity ${SLIDE_MS}ms ease` : "none";
+  function setTrackTransition(enabled) {
+    trackEl.style.transition = enabled ? `transform ${SLIDE_MS}ms ease` : "none";
   }
 
-  function setCardOffset(dx) {
-    cardEl.style.transform = dx ? `translateX(${dx}px) rotate(${dx / 24}deg)` : "";
-    cardEl.style.opacity = String(Math.max(1 - Math.abs(dx) / (cardWidthPx() * 1.5), 0.4));
+  // The track's resting position always shows the "current" (middle) slide
+  // — that's the -cardWidthPx() baseline below — offset by however far a
+  // drag has moved it so far.
+  function setTrackOffset(dx) {
+    trackEl.style.transform = `translateX(${-cardWidthPx() + dx}px)`;
   }
 
-  // Slides the current card out toward `direction`, calls `advance` (next or
-  // prev) once it's off-screen, then slides the new card in from the
-  // opposite side — used by the drag gesture below and by the prev/next
-  // buttons and arrow keys, so every way of changing cards feels the same.
-  function slideAndAdvance(direction, advance) {
+  // Relabels the three slides' roles once a slide animation has finished —
+  // called with the track already sitting one card-width over, so the slide
+  // that's visually arrived in the center is simply renamed "current"
+  // rather than having its content replaced. Only the slide rotating into
+  // the new off-screen prev/next position (recycled from whichever slide
+  // just scrolled fully out of view) gets fresh content, and it does so
+  // while invisible — never the one on screen.
+  function commitSlide(direction) {
+    const prevSlot = getSlotByRole("prev");
+    const currentSlot = getSlotByRole("current");
+    const nextSlot = getSlotByRole("next");
+
+    if (direction === "left") {
+      index = (index + 1) % ENTRIES.length;
+      setSlotRole(currentSlot, "prev");
+      setSlotRole(nextSlot, "current");
+      setSlotRole(prevSlot, "next");
+      populateSlot(prevSlot, ENTRIES[(index + 1) % ENTRIES.length]);
+      preloadImage(ENTRIES[(index + 2) % ENTRIES.length]);
+    } else {
+      index = (index - 1 + ENTRIES.length) % ENTRIES.length;
+      setSlotRole(prevSlot, "current");
+      setSlotRole(currentSlot, "next");
+      setSlotRole(nextSlot, "prev");
+      populateSlot(nextSlot, ENTRIES[(index - 1 + ENTRIES.length) % ENTRIES.length]);
+      preloadImage(ENTRIES[(index - 2 + ENTRIES.length) % ENTRIES.length]);
+    }
+
+    setTrackTransition(false);
+    setTrackOffset(0);
+    void trackEl.offsetWidth; // flush the reset before re-enabling the transition
+    setTrackTransition(true);
+
+    updateChrome();
+  }
+
+  // Animates the track by one card-width toward `direction`, then commits
+  // the role rotation above once it settles — used by the drag gesture
+  // below and by the prev/next buttons and arrow keys, so every way of
+  // changing cards feels the same.
+  function slideAndAdvance(direction) {
     if (ENTRIES.length === 0) return;
-    const outX = (direction === "left" ? -1 : 1) * cardWidthPx() * 1.1;
-    setCardTransition(true);
-    setCardOffset(outX);
-
-    window.setTimeout(() => {
-      advance();
-      setCardTransition(false);
-      setCardOffset(-outX);
-      void cardEl.offsetWidth; // flush the "from" position before transitioning
-      setCardTransition(true);
-      setCardOffset(0);
-    }, SLIDE_MS);
+    const dx = direction === "left" ? -cardWidthPx() : cardWidthPx();
+    setTrackTransition(true);
+    setTrackOffset(dx);
+    window.setTimeout(() => commitSlide(direction), SLIDE_MS);
   }
 
   function onCardPointerDown(e) {
@@ -458,7 +569,7 @@ onMounted(() => {
     drag = { pointerId: e.pointerId, startX: e.clientX, currentX: e.clientX, moved: false };
     // No setPointerCapture here: capturing on every press — even a plain tap
     // on the word or a speak button — makes the browser retarget the
-    // resulting click event to the card instead of whatever was actually
+    // resulting click event to the track instead of whatever was actually
     // tapped, silently breaking word-reveal and the speak buttons. Capture
     // is only acquired below once a press has actually turned into a drag.
   }
@@ -469,18 +580,18 @@ onMounted(() => {
     const dx = drag.currentX - drag.startX;
     if (!drag.moved && Math.abs(dx) > SWIPE_MOVE_THRESHOLD) {
       drag.moved = true;
-      cardEl.classList.add("dragging");
-      cardEl.setPointerCapture?.(e.pointerId);
-      setCardTransition(false);
+      trackEl.classList.add("dragging");
+      trackEl.setPointerCapture?.(e.pointerId);
+      setTrackTransition(false);
     }
-    if (drag.moved) setCardOffset(dx);
+    if (drag.moved) setTrackOffset(dx);
   }
 
   function endCardDrag(e) {
     if (!drag || drag.pointerId !== e.pointerId) return;
     const { currentX, startX, moved } = drag;
-    try { cardEl.releasePointerCapture(e.pointerId); } catch { /* already released */ }
-    cardEl.classList.remove("dragging");
+    try { trackEl.releasePointerCapture(e.pointerId); } catch { /* already released */ }
+    trackEl.classList.remove("dragging");
     drag = null;
 
     if (!moved) return; // a plain tap/click — let the native click event through (word reveal)
@@ -488,24 +599,19 @@ onMounted(() => {
     const dx = currentX - startX;
     const threshold = cardWidthPx() * SWIPE_ADVANCE_RATIO;
     if (dx <= -threshold) {
-      slideAndAdvance("left", next);
+      slideAndAdvance("left");
     } else if (dx >= threshold) {
-      slideAndAdvance("right", prev);
+      slideAndAdvance("right");
     } else {
-      setCardTransition(true);
-      setCardOffset(0);
+      setTrackTransition(true);
+      setTrackOffset(0);
     }
   }
 
-  cardEl.addEventListener("pointerdown", onCardPointerDown);
-  cardEl.addEventListener("pointermove", onCardPointerMove);
-  cardEl.addEventListener("pointerup", endCardDrag);
-  cardEl.addEventListener("pointercancel", endCardDrag);
-
-  function toggleReveal() {
-    revealed = !revealed;
-    wordEl.classList.toggle("hidden-word", !revealed);
-  }
+  trackEl.addEventListener("pointerdown", onCardPointerDown);
+  trackEl.addEventListener("pointermove", onCardPointerMove);
+  trackEl.addEventListener("pointerup", endCardDrag);
+  trackEl.addEventListener("pointercancel", endCardDrag);
 
   function markShownAndAdvance() {
     if (ENTRIES.length === 0) return;
@@ -562,17 +668,15 @@ onMounted(() => {
     }
   }
 
-  wordEl.addEventListener("click", toggleReveal);
-
-  prevBtn.addEventListener("click", () => slideAndAdvance("right", prev));
-  nextBtn.addEventListener("click", () => slideAndAdvance("left", next));
+  prevBtn.addEventListener("click", () => slideAndAdvance("right"));
+  nextBtn.addEventListener("click", () => slideAndAdvance("left"));
   knowBtn.addEventListener("click", markKnownAndAdvance);
   nextWordBtn.addEventListener("click", markShownAndAdvance);
 
   window.addEventListener("keydown", (e) => {
     if (e.target.tagName === "INPUT") return;
-    if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); slideAndAdvance("left", next); }
-    else if (e.key === "ArrowLeft" || e.key === "ArrowUp") { e.preventDefault(); slideAndAdvance("right", prev); }
+    if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); slideAndAdvance("left"); }
+    else if (e.key === "ArrowLeft" || e.key === "ArrowUp") { e.preventDefault(); slideAndAdvance("right"); }
     else if (e.key === " ") { e.preventDefault(); markShownAndAdvance(); }
     else if (e.key === "Enter") { e.preventDefault(); markKnownAndAdvance(); }
   });
