@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import * as api from '../../shared/api'
 import { cacheKey, writeCache } from '../../shared/cache'
 import { getNotifications } from '../../shared/notifications'
@@ -126,5 +126,100 @@ describe('Flashcards', () => {
     expect((wordEl.element as HTMLElement).style.color).toBe('rgb(79, 140, 255)')
 
     wrapper.unmount()
+  })
+
+  describe('swipe/drag navigation', () => {
+    const FATHER = { ...WORD, word_id: 'en-0002', original: 'father' }
+
+    beforeEach(() => {
+      // getBoundingClientRect is always zero-size in jsdom, which would make
+      // the swipe-commit threshold (a fraction of card width) meaningless —
+      // pin a realistic width so "past threshold" vs "not" is actually
+      // distinguishable in these tests.
+      vi.spyOn(HTMLDivElement.prototype, 'getBoundingClientRect').mockReturnValue({
+        width: 640,
+      } as DOMRect)
+      vi.useFakeTimers()
+    })
+
+    afterEach(() => {
+      vi.useRealTimers()
+      vi.restoreAllMocks()
+    })
+
+    // wrapper.trigger() builds a plain MouseEvent for unrecognized event
+    // names, whose clientX is a read-only getter — it can't be overridden by
+    // merging extra properties the way trigger() does for other fields. The
+    // component only reads clientX/pointerId/pointerType/button, so a real
+    // PointerEvent constructed with an init dict (and dispatched directly)
+    // is what's needed here instead.
+    function pointerEvent(type: string, init: PointerEventInit) {
+      return new PointerEvent(type, { bubbles: true, cancelable: true, ...init })
+    }
+
+    async function drag(wrapper: ReturnType<typeof mount>, from: number, to: number) {
+      const card = wrapper.find('#card').element
+      card.dispatchEvent(pointerEvent('pointerdown', { pointerId: 1, clientX: from, pointerType: 'mouse', button: 0 }))
+      card.dispatchEvent(pointerEvent('pointermove', { pointerId: 1, clientX: to }))
+      card.dispatchEvent(pointerEvent('pointerup', { pointerId: 1, clientX: to }))
+      await vi.advanceTimersByTimeAsync(0)
+    }
+
+    it('advances to the next card on a leftward drag past the threshold', async () => {
+      vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'english', words: [WORD, FATHER] })
+      const wrapper = mount(Flashcards, { attachTo: document.body })
+      await wrapper.vm.load('test@example.com', 'english', null)
+
+      await drag(wrapper, 300, 100) // -200px, past 25% of 640px
+
+      await vi.advanceTimersByTimeAsync(300)
+      expect(wrapper.find('#word').text()).toBe('father')
+
+      wrapper.unmount()
+    })
+
+    it('goes to the previous card on a rightward drag past the threshold', async () => {
+      vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'english', words: [WORD, FATHER] })
+      const wrapper = mount(Flashcards, { attachTo: document.body })
+      await wrapper.vm.load('test@example.com', 'english', null)
+
+      await drag(wrapper, 100, 300) // +200px
+
+      await vi.advanceTimersByTimeAsync(300)
+      expect(wrapper.find('#word').text()).toBe('father') // wraps to the last card
+
+      wrapper.unmount()
+    })
+
+    it('snaps back without advancing when the drag stays under the threshold', async () => {
+      vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'english', words: [WORD, FATHER] })
+      const wrapper = mount(Flashcards, { attachTo: document.body })
+      await wrapper.vm.load('test@example.com', 'english', null)
+
+      await drag(wrapper, 300, 260) // -40px, under 25% of 640px
+
+      await vi.advanceTimersByTimeAsync(300)
+      expect(wrapper.find('#word').text()).toBe('hello')
+      expect((wrapper.find('#card').element as HTMLElement).style.transform).toBe('')
+
+      wrapper.unmount()
+    })
+
+    it('a plain click (no movement) still reveals the word, not a swipe', async () => {
+      vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'english', words: [WORD, FATHER] })
+      const wrapper = mount(Flashcards, { attachTo: document.body })
+      await wrapper.vm.load('test@example.com', 'english', null)
+
+      const wordEl = wrapper.find('#word')
+      await drag(wrapper, 300, 300) // no movement at all
+
+      await vi.advanceTimersByTimeAsync(300)
+      expect(wrapper.find('#word').text()).toBe('hello') // unchanged card
+
+      await wordEl.trigger('click')
+      expect(wordEl.classes()).not.toContain('hidden-word')
+
+      wrapper.unmount()
+    })
   })
 })
