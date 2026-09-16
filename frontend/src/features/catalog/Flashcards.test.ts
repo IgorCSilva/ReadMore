@@ -39,6 +39,13 @@ function clearNotifications() {
   list.splice(0, list.length)
 }
 
+// The visible flashcard is always whichever of the three permanent slides
+// (see Flashcards.vue's carousel comment) currently carries
+// data-role="current" — there's no longer a single #word/#card id.
+function currentWord(wrapper: ReturnType<typeof mount>) {
+  return wrapper.find('[data-role="current"] .word')
+}
+
 describe('Flashcards', () => {
   beforeEach(() => {
     localStorage.clear()
@@ -56,7 +63,7 @@ describe('Flashcards', () => {
     const wrapper = mount(Flashcards, { attachTo: document.body })
     await wrapper.vm.load('test@example.com', 'english', null)
 
-    const wordEl = wrapper.find('#word')
+    const wordEl = currentWord(wrapper)
     expect(wordEl.text()).toBe('hello')
     expect(wordEl.classes()).toContain('hidden-word')
 
@@ -84,7 +91,7 @@ describe('Flashcards', () => {
     const wrapper = mount(Flashcards, { attachTo: document.body })
     await wrapper.vm.load('test@example.com', 'english', null)
 
-    expect(wrapper.find('#word').text()).toBe('hello')
+    expect(currentWord(wrapper).text()).toBe('hello')
     expect(api.getUserWords).toHaveBeenCalledWith('test@example.com', 'english', 'target', 'origin')
     expect(getNotifications()[0]).toMatchObject({ type: 'info' })
 
@@ -121,9 +128,30 @@ describe('Flashcards', () => {
     const wrapper = mount(Flashcards, { attachTo: document.body })
     await wrapper.vm.load('test@example.com', 'english', null)
 
-    const wordEl = wrapper.find('#word')
+    const wordEl = currentWord(wrapper)
     expect(wordEl.text()).toBe('|father')
     expect((wordEl.element as HTMLElement).style.color).toBe('rgb(79, 140, 255)')
+
+    wrapper.unmount()
+  })
+
+  it('pre-populates the neighboring slides with real content before any swipe happens', async () => {
+    // Regression test for a flicker bug: an earlier version only populated
+    // the visible card, and filled in the next/prev slide's content (image
+    // included) mid-slide-animation, racing an uncached image fetch against
+    // the animation and letting the previous picture briefly ride along.
+    // The fix keeps three permanent slides and populates prev/next ahead of
+    // time, so this must already be true right after the initial render —
+    // well before any drag or arrow-key ever happens.
+    const father = { ...WORD, word_id: 'en-0002', original: 'father' }
+    vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'english', words: [WORD, father] })
+
+    const wrapper = mount(Flashcards, { attachTo: document.body })
+    await wrapper.vm.load('test@example.com', 'english', null)
+
+    expect(currentWord(wrapper).text()).toBe('hello')
+    expect(wrapper.find('[data-role="next"] .word').text()).toBe('father')
+    expect(wrapper.find('[data-role="prev"] .word').text()).toBe('father')
 
     wrapper.unmount()
   })
@@ -158,10 +186,10 @@ describe('Flashcards', () => {
     }
 
     async function drag(wrapper: ReturnType<typeof mount>, from: number, to: number) {
-      const card = wrapper.find('#card').element
-      card.dispatchEvent(pointerEvent('pointerdown', { pointerId: 1, clientX: from, pointerType: 'mouse', button: 0 }))
-      card.dispatchEvent(pointerEvent('pointermove', { pointerId: 1, clientX: to }))
-      card.dispatchEvent(pointerEvent('pointerup', { pointerId: 1, clientX: to }))
+      const track = wrapper.find('#card-track').element
+      track.dispatchEvent(pointerEvent('pointerdown', { pointerId: 1, clientX: from, pointerType: 'mouse', button: 0 }))
+      track.dispatchEvent(pointerEvent('pointermove', { pointerId: 1, clientX: to }))
+      track.dispatchEvent(pointerEvent('pointerup', { pointerId: 1, clientX: to }))
       await vi.advanceTimersByTimeAsync(0)
     }
 
@@ -173,7 +201,7 @@ describe('Flashcards', () => {
       await drag(wrapper, 300, 100) // -200px, past 25% of 640px
 
       await vi.advanceTimersByTimeAsync(300)
-      expect(wrapper.find('#word').text()).toBe('father')
+      expect(currentWord(wrapper).text()).toBe('father')
 
       wrapper.unmount()
     })
@@ -186,7 +214,7 @@ describe('Flashcards', () => {
       await drag(wrapper, 100, 300) // +200px
 
       await vi.advanceTimersByTimeAsync(300)
-      expect(wrapper.find('#word').text()).toBe('father') // wraps to the last card
+      expect(currentWord(wrapper).text()).toBe('father') // wraps to the last card
 
       wrapper.unmount()
     })
@@ -199,8 +227,10 @@ describe('Flashcards', () => {
       await drag(wrapper, 300, 260) // -40px, under 25% of 640px
 
       await vi.advanceTimersByTimeAsync(300)
-      expect(wrapper.find('#word').text()).toBe('hello')
-      expect((wrapper.find('#card').element as HTMLElement).style.transform).toBe('')
+      expect(currentWord(wrapper).text()).toBe('hello')
+      // Baseline (no drag offset): -1 card-width (640px, per the mock above),
+      // which keeps the "current" slide centered in the viewport.
+      expect((wrapper.find('#card-track').element as HTMLElement).style.transform).toBe('translateX(-640px)')
 
       wrapper.unmount()
     })
@@ -210,12 +240,12 @@ describe('Flashcards', () => {
       const wrapper = mount(Flashcards, { attachTo: document.body })
       await wrapper.vm.load('test@example.com', 'english', null)
 
-      const wordEl = wrapper.find('#word')
       await drag(wrapper, 300, 300) // no movement at all
 
       await vi.advanceTimersByTimeAsync(300)
-      expect(wrapper.find('#word').text()).toBe('hello') // unchanged card
+      expect(currentWord(wrapper).text()).toBe('hello') // unchanged card
 
+      const wordEl = currentWord(wrapper)
       await wordEl.trigger('click')
       expect(wordEl.classes()).not.toContain('hidden-word')
 
