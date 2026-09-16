@@ -743,11 +743,21 @@ onMounted(() => {
   .badge.learning { background: color-mix(in srgb, var(--learning) 20%, transparent); color: var(--learning); }
 
   .card-viewport {
-    width: 100%;
+    width: min(90vw, 640px);
     overflow-x: hidden;
-    display: flex; justify-content: center;
+  }
+  .card-track {
+    display: flex;
+    touch-action: pan-y;
+    cursor: grab;
+    will-change: transform;
+  }
+  .card-track.dragging {
+    cursor: grabbing;
+    user-select: none;
   }
   .card {
+    flex: 0 0 min(90vw, 640px);
     width: min(90vw, 640px);
     background: var(--card);
     border: 1px solid var(--border);
@@ -755,13 +765,7 @@ onMounted(() => {
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0,0,0,0.25);
     display: flex; flex-direction: column;
-    touch-action: pan-y;
-    cursor: grab;
-    will-change: transform, opacity;
-  }
-  .card.dragging {
-    cursor: grabbing;
-    user-select: none;
+    margin: 0px 20px 0px -10px;
   }
   .sentence-area {
     padding: 18px 24px;
@@ -855,6 +859,11 @@ onMounted(() => {
   .controls {
     display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 16px;
     color: var(--muted); font-size: 13px;
+    /* Hidden purely via CSS — Flashcards.vue still toggles this element's
+       inline display style (none/flex) as words/filters change, so
+       !important is needed here to keep it hidden regardless of that,
+       without touching the component's markup or script. */
+    display: none !important;
   }
   kbd {
     background: var(--card); border: 1px solid var(--border);
@@ -864,6 +873,10 @@ onMounted(() => {
   .action-bar {
     width: min(90vw, 640px);
     display: flex; align-items: stretch; gap: 10px;
+    /* Hidden purely via CSS — same reasoning as .controls above: Flashcards.vue
+       still toggles this element's inline display style, so !important keeps
+       it hidden without any script/markup change. */
+    display: none !important;
   }
   .action-btn {
     flex: 1;
