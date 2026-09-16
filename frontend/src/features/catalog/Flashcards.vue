@@ -284,6 +284,35 @@ onMounted(() => {
     return [...new Set(list)];
   }
 
+  // <img>'s src assignment below doesn't clear the currently-painted frame
+  // until the new resource finishes loading — fine for a static swap, but
+  // the slide animation moves the card off/on screen around that same
+  // assignment, so an uncached image lets the *previous* card's picture
+  // ride along into the new card's slot until the fetch catches up. Warming
+  // the browser's cache for whichever entry a swipe/prev/next would land on
+  // — started as soon as the current card renders, well before the user
+  // acts — means that fetch has usually already finished by the time it's
+  // needed, so the src assignment in loadImage() resolves instantly instead
+  // of stalling on the network.
+  const preloadedImageUrls = new Set();
+
+  function preloadImage(entry) {
+    if (!entry) return;
+    const candidates = extCandidates(entry);
+    let i = 0;
+    function tryNext() {
+      if (i >= candidates.length) return;
+      const url = `images/${entry.base}.${candidates[i]}`;
+      i++;
+      if (preloadedImageUrls.has(url)) return;
+      const probe = new Image();
+      probe.onload = () => preloadedImageUrls.add(url);
+      probe.onerror = tryNext;
+      probe.src = url;
+    }
+    tryNext();
+  }
+
   function loadImage(entry) {
     const candidates = extCandidates(entry);
     let i = 0;
@@ -362,6 +391,9 @@ onMounted(() => {
     badgeEl.className = "badge " + (entry.confident ? "confident" : "learning");
 
     progressFill.style.width = `${((index + 1) / ENTRIES.length) * 100}%`;
+
+    preloadImage(ENTRIES[(index + 1) % ENTRIES.length]);
+    preloadImage(ENTRIES[(index - 1 + ENTRIES.length) % ENTRIES.length]);
   }
 
   function recordShown(entry) {
