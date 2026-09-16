@@ -36,15 +36,35 @@
 // above) — there's no separate per-word assignment step. upsert_progress
 // adds a new row the first time a given (language_pair, word_id) is
 // interacted with, and updates it on every call after that.
+//
+// A shared "corrections" sheet, one row per user-submitted correction, not
+// scoped to a single user:
+//   chapter_number | topic_number | lang | current | correction | created_at
+// `current`/`correction` are comma-joined lists of the raw strings the user
+// typed (supports N->N variant mappings, e.g. "meu, minha" -> "mi"). `lang`
+// is metadata only (which language pair the report was made against), not
+// used to filter which content a correction applies to. Reached via the
+// get_corrections / add_correction actions.
 
 const USERS_SHEET_NAME = "users";
 const USERS_HEADERS = ["email", "language_pair", "topic_ids"];
 
 const USER_PROGRESS_HEADERS = ["language_pair", "word_id", "confident", "shown_count", "show"];
 
+const CORRECTIONS_SHEET_NAME = "corrections";
+const CORRECTIONS_HEADERS = [
+  "chapter_number",
+  "topic_number",
+  "lang",
+  "current",
+  "correction",
+  "created_at",
+];
+
 function setup() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   ensureSheet(ss, USERS_SHEET_NAME, USERS_HEADERS);
+  ensureSheet(ss, CORRECTIONS_SHEET_NAME, CORRECTIONS_HEADERS);
 }
 
 function userProgressSheetName(email) {
@@ -99,6 +119,8 @@ function handle(params) {
   if (params.action === "upsert_progress") return actionUpsertProgress(params);
   if (params.action === "get_topics") return actionGetTopics(params);
   if (params.action === "remap_word_ids") return actionRemapWordIds(params);
+  if (params.action === "get_corrections") return actionGetCorrections(params);
+  if (params.action === "add_correction") return actionAddCorrection(params);
   return jsonResponse(400, { error: "unknown action: " + params.action });
 }
 
@@ -230,6 +252,78 @@ function actionRemapWordIds(params) {
       }
     }
     return jsonResponse(200, { updated: updated });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function getOrCreateCorrectionsSheet(ss) {
+  let sheet = ss.getSheetByName(CORRECTIONS_SHEET_NAME);
+  if (!sheet) {
+    sheet = ss.insertSheet(CORRECTIONS_SHEET_NAME);
+    sheet.appendRow(CORRECTIONS_HEADERS);
+  }
+  return sheet;
+}
+
+function actionGetCorrections(params) {
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = ss.getSheetByName(CORRECTIONS_SHEET_NAME);
+    const corrections = [];
+    if (sheet) {
+      const rows = sheet.getDataRange().getValues();
+      for (let i = 1; i < rows.length; i++) {
+        const row = rows[i];
+        corrections.push({
+          chapter_number: Number(row[0]) || 0,
+          topic_number: Number(row[1]) || 0,
+          lang: row[2],
+          current: row[3],
+          correction: row[4],
+        });
+      }
+    }
+    return jsonResponse(200, { corrections: corrections });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function actionAddCorrection(params) {
+  const chapterNumber = params.chapter_number;
+  const topicNumber = params.topic_number;
+  const current = params.current;
+  const correction = params.correction;
+  if (
+    chapterNumber === undefined ||
+    chapterNumber === null ||
+    topicNumber === undefined ||
+    topicNumber === null ||
+    !current ||
+    !correction
+  ) {
+    return jsonResponse(400, {
+      error: "missing chapter_number, topic_number, current or correction",
+    });
+  }
+
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = getOrCreateCorrectionsSheet(ss);
+    sheet.appendRow([
+      Number(chapterNumber) || 0,
+      Number(topicNumber) || 0,
+      params.lang || "",
+      current,
+      correction,
+      new Date(),
+    ]);
+    return jsonResponse(200, { ok: true });
   } finally {
     lock.releaseLock();
   }

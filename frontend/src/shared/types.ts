@@ -91,3 +91,11 @@ export interface ShowWordResponse {
 export interface ErrorResponse {
   error: string
 }
+
+export interface CorrectionRequest {
+  chapter_number: number
+  topic_number: number
+  lang: string
+  current: string[]
+  correction: string[]
+}

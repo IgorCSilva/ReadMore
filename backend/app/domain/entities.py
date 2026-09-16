@@ -57,3 +57,15 @@ class ProgressRecord:
     confident: bool
     shown_count: int
     show: bool
+
+
+@dataclass
+class Correction:
+    """A user-submitted current->correction report, scoped to the chapter
+    and topic it was made in. current/correction each hold one or more
+    variant strings (N->N mapping, e.g. "meu"/"minha" both -> "mi")."""
+
+    chapter_number: int
+    topic_number: int
+    current: list[str]
+    correction: list[str]

@@ -16,6 +16,7 @@ from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
+from backend.app.application.use_cases.add_correction import AddCorrection
 from backend.app.application.use_cases.get_chapters import GetChapters
 from backend.app.application.use_cases.get_user_words import GetUserWords
 from backend.app.application.use_cases.get_words import GetWords
@@ -25,16 +26,21 @@ from backend.app.application.use_cases.mark_word_known import MarkWordKnown
 from backend.app.application.use_cases.show_word_again import ShowWordAgain
 from backend.app.application.use_cases.synthesize_speech import SynthesizeSpeech
 from backend.app.domain.exceptions import (
+    InvalidCorrectionError,
     LanguageNotFoundError,
     TtsUpstreamError,
     WordNotAssignedError,
 )
 from backend.app.domain.value_objects import Email, LanguagePair
 from backend.app.infrastructure.dtos.chapters import ChapterDTO, ChaptersResponse
+from backend.app.infrastructure.dtos.corrections import CorrectionCreateRequest
 from backend.app.infrastructure.dtos.progress_actions import ProgressActionRequest
 from backend.app.infrastructure.dtos.user_words import UserWordDTO, UserWordsResponse
 from backend.app.infrastructure.dtos.words import WordDTO, WordsResponse
 from backend.app.infrastructure.repositories.google_sheets_client import SheetsError
+from backend.app.infrastructure.repositories.google_sheets_corrections_repository import (
+    GoogleSheetsCorrectionsRepository,
+)
 from backend.app.infrastructure.repositories.google_sheets_progress_repository import (
     GoogleSheetsProgressRepository,
 )
@@ -83,6 +89,11 @@ async def word_not_assigned_handler(request: Request, exc: WordNotAssignedError)
     return JSONResponse(status_code=404, content={"error": str(exc)})
 
 
+@app.exception_handler(InvalidCorrectionError)
+async def invalid_correction_handler(request: Request, exc: InvalidCorrectionError):
+    return JSONResponse(status_code=400, content={"error": str(exc)})
+
+
 @app.exception_handler(SheetsError)
 async def sheets_error_handler(request: Request, exc: SheetsError):
     return JSONResponse(status_code=502, content={"error": str(exc)})
@@ -123,6 +134,10 @@ def get_progress_repository() -> GoogleSheetsProgressRepository:
 
 def get_topics_repository() -> GoogleSheetsTopicsRepository:
     return GoogleSheetsTopicsRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
+
+
+def get_corrections_repository() -> GoogleSheetsCorrectionsRepository:
+    return GoogleSheetsCorrectionsRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
 
 
 def get_tts_port() -> GoogleTranslateTtsClient:
@@ -238,6 +253,7 @@ def get_chapters_route(
     lang: str = "pt-en",
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
     topics_repository: GoogleSheetsTopicsRepository = Depends(get_topics_repository),
+    corrections_repository: GoogleSheetsCorrectionsRepository = Depends(get_corrections_repository),
 ):
     language_pair = _parse_lang(lang.strip() or "pt-en")
     try:
@@ -247,11 +263,27 @@ def get_chapters_route(
             status_code=400, content={"error": "missing or invalid 'user' query param"}
         )
 
-    use_case = GetChapters(catalog_repository, topics_repository)
+    use_case = GetChapters(catalog_repository, topics_repository, corrections_repository)
     chapters = use_case.execute(email, language_pair)
     return ChaptersResponse(
         lang=str(language_pair), chapters=[ChapterDTO.from_entity(c) for c in chapters]
     )
+
+
+@app.post("/corrections")
+def post_correction(
+    payload: CorrectionCreateRequest,
+    corrections_repository: GoogleSheetsCorrectionsRepository = Depends(get_corrections_repository),
+):
+    use_case = AddCorrection(corrections_repository)
+    use_case.execute(
+        payload.chapter_number,
+        payload.topic_number,
+        payload.lang.strip() or "pt-en",
+        payload.current,
+        payload.correction,
+    )
+    return {"ok": True}
 
 
 @app.get("/tts")

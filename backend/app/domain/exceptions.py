@@ -21,3 +21,9 @@ class TtsUpstreamError(Exception):
     def __init__(self, detail: str) -> None:
         self.detail = detail
         super().__init__(f"TTS upstream failed: {detail}")
+
+
+class InvalidCorrectionError(Exception):
+    def __init__(self, detail: str) -> None:
+        self.detail = detail
+        super().__init__(f"invalid correction: {detail}")

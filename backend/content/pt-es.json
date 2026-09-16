@@ -605,6 +605,684 @@
             }
           ],
           "status": "ready"
+        },
+        {
+          "topic_id": "top-A0-EL-2",
+          "number": 2,
+          "title": "Família e Pessoas ao Meu Redor",
+          "description": "Vocabulário de família, possessivos simples (\"minha mãe\", \"seu irmão\"). Atividades de construção: leitura de uma breve descrição familiar.",
+          "word_ids": [
+            "es-wd-0018",
+            "es-wd-0019",
+            "es-wd-0020",
+            "es-wd-0021",
+            "es-wd-0022",
+            "es-wd-0023",
+            "es-wd-0024",
+            "es-wd-0025",
+            "es-wd-0026",
+            "es-wd-0027",
+            "es-wd-0028",
+            "es-wd-0029",
+            "es-wd-0030",
+            "es-wd-0031",
+            "es-wd-0032",
+            "es-wd-0033",
+            "es-wd-0034",
+            "es-wd-0035",
+            "es-wd-0036",
+            "es-wd-0037"
+          ],
+          "texts": [
+            {
+              "text_id": "txt-01",
+              "number": 1,
+              "title": "A Família da Nova Vizinha",
+              "body": "Ontem conheci a nova vizinha, Carla, e a cumprimentei com um animado **hola** assim que ela abriu o portão. Sentamos na varanda e Carla contou sobre a **familia** dela: mora com o **tío**, a **tía** e um **primo** que estuda na **mi** turma. Perguntei sobre os pais dela: '**él** trabalha longe? E **ella** também mora aqui?'. Ela respondeu que sim, os dois sempre perto de **su** **abuela**. Contei que **tengo** apenas uma **hermana** mais nova, e ela quis saber, curiosa: 'quantos animais **tienes**?'. Antes de eu ir embora, Carla sorriu e apontou para o **mi** cachorro: '**tu** cachorro é fofo'."
+            },
+            {
+              "text_id": "txt-02",
+              "number": 2,
+              "title": "Videochamada de Domingo com a Família",
+              "body": "Todo domingo a **familia** faz uma videochamada com os parentes que moram na Espanha, e hoje não foi diferente. Antes de encerrar, **mi** **abuela** sempre diz **adiós** com a mão erguida para a câmera. Na tela, apareceram **mi** **abuela**, **tía** Rosa e **primo** Diego acenando juntos. Perguntei: '**él**, o marido de Rosa, ainda mora com **ella** na mesma casa?', e **mi** **abuela** confirmou que sim, bem ao lado de **su** jardim enorme. Contei que **tengo** provas essa semana, e Diego brincou perguntando: '¿cuántos años **tienes**?'. Antes de desligar, ele virou a câmera para o gato dele e disse: 'aquí está **tu** amigo peludo'."
+            },
+            {
+              "text_id": "txt-03",
+              "number": 3,
+              "title": "Frases de Família no Jantar de Domingo",
+              "body": "No jantar de domingo, pedi por favor para passarem o arroz e aproveitei para praticar frases da aula de espanhol sobre a **familia**. Apontando para **mi** **madre**, sussurrei: '**mi** mamá **es** muito paciente'. **Mi** **primo** mais novo, sentado ao lado, quis testar a frase também e apontou para **él**, dizendo que era a vez dele de arrumar a mesa. Perguntei: '**ella**, **mi** **hermana** mais velha, já terminou **su** parte da limpeza na cozinha?'. Ela riu e respondeu que **tengo** sorte por não lavar a louça hoje, e perguntou: '**tienes** tempo para ajudar depois?'. No fim do jantar, **mi** **abuela** apontou para mim e brincou: '**tu** turno de cozinhar chegará logo'."
+            },
+            {
+              "text_id": "txt-04",
+              "number": 4,
+              "title": "Cartaz sobre a Família",
+              "body": "**Mi** **hermana** passou a tarde organizando **mi** quarto sozinha, então dei um forte **gracias** e um abraço quando terminamos. Contei a ela que a professora pediu um cartaz sobre a **familia**, então comecei a escrever: '**mi** **madre** **es** enfermeira'. Ela sugeriu desenhar também os avós, apontando para o retrato na parede: '**él**', nosso **abuelo**, sempre ajudava **su** esposa na cozinha. Perguntei: '**ella**, nossa **abuela**, cozinha melhor que você?', e **mi** **hermana** respondeu que **tengo** que provar a comida dela num domingo desses. Antes de sair do quarto, ela virou e perguntou: '¿**tienes** cola aí, ou **tu** caderno de colagem sumiu de novo?'"
+            },
+            {
+              "text_id": "txt-05",
+              "number": 5,
+              "title": "Mensagem do Pai que Mora na Espanha",
+              "body": "**Mi** **padre** mora na Espanha há dois anos e sempre me manda mensagens misturando as línguas. Hoje ele escreveu: 'extraño mucho a **mi** **familia**, sobre todo a **tu** **madre**'. Fiquei emocionado e mostrei a mensagem para **ella**, que sorriu e disse que **tengo** sorte de ter um **padre** tão carinhoso mesmo de longe. Respondi contando que o jardim novo da casa dele, que ele chama de **su** orgulho, parecia lindo nas fotos, e perguntei: 'ainda **tienes** saudades de nós também?'. Ele respondeu, com um coração: '**es** difícil estar longe, pero pienso em vocês toda hora'."
+            },
+            {
+              "text_id": "txt-06",
+              "number": 6,
+              "title": "Apresentando a Nova Namorada do Pai",
+              "body": "No almoço de apresentação da nova namorada do **mi** **padre**, todos ficaram em silêncio até que resolvi quebrar o gelo: disse **mi** nome, sorrindo, e contei que sempre **llamo** **mi** **hermana** pelo celular quando fico nervoso em festas assim. Ela contou rapidamente sobre a **familia** dela e depois ouviu sobre a nossa: '**mi** **padre** **es** muito brincalhão', falei, tentando deixar o clima leve. Ela perguntou como estava **mi** **madre**, já que as duas tinham estudado juntas antigamente, e também quis saber, curiosa: 'e o **hermano** de vocês, vem para o almoço?'. Contei que ele estava em casa terminando **su** lição de casa, e que **tengo** certeza de que ele chegaria atrasado, como sempre. Ela riu e perguntou: '¿**tienes** fotos dele quando era pequeno?', e eu prometi mostrar, apontando para uma cadeira vazia: '**tu** lugar já está reservado aqui'."
+            },
+            {
+              "text_id": "txt-07",
+              "number": 7,
+              "title": "Chamada de Vídeo com Toda a Família",
+              "body": "Liguei o vídeo e comecei a chamada perguntando **cómo** estava todo mundo por aí. Toda a **familia** apareceu na tela ao mesmo tempo, apertada no sofá da sala. Do outro lado da tela, **mi** **padre** segurava o celular tentando enquadrar todo mundo, mas **mi** **hermana** reclamou que ele **es** péssimo nisso. Enquanto isso, **mi** **madre** entrava e saía de quadro, procurando os óculos que tinha acabado de perder. **Mi** **hermano** e **mi** **hermana** discutiam sobre quem ia segurar o celular depois. Contei que **tengo** uma novidade para dar, mas pedi para deixarem por último, e **mi** **padre** perguntou, curioso: '¿**tienes** certeza de que quer contar agora?'. Ri e prometi: '**tu** turno de saber chega logo depois do **mi**'."
+            },
+            {
+              "text_id": "txt-08",
+              "number": 8,
+              "title": "Manhã Corrida em Família",
+              "body": "Toda manhã, **mi** **hermana** mais nova acorda de mau humor, então sempre te conto uma piada boba antes de sairmos, parte de uma tradição da **familia**. Ela **es** a pessoa mais fácil de fazer rir que eu conheço. Enquanto isso, **madre** e **padre** correm pela cozinha organizando mochilas e a comida do dia. **Mi** **hermano** mais velho já saiu cedo para o estágio, e **mi** **padre** sempre brinca que sou o '**hijo** preguiçoso' da casa, porque demoro para acordar. **Mi** **madre** apareceu na porta perguntando: '¿**tienes** tudo pronto pra escola?', e respondi que sim, avisando à **mi** **hermana**: '**tu** almoço já está na sacola'."
+            },
+            {
+              "text_id": "txt-09",
+              "number": 9,
+              "title": "Apresentando uma Amiga à Família",
+              "body": "Uma amiga da **mi** prima apareceu na festa e, tentando praticar espanhol, perguntei sorrindo: '**llamas** para pedir uma pizza?'. Ela tinha vindo para conhecer a **familia** toda, já que namorava um amigo nosso há um tempo. Apresentei todo mundo, começando por **mi** **padre**, e disse que ele **es** o cozinheiro oficial da casa aos domingos. **Mi** **madre** apareceu logo depois, trazendo uma salada enorme, enquanto **mi** **hermano** e **mi** **hermana** corriam para organizar as mesas. **Mi** **abuela**, orgulhosa, dizia que ali estavam reunidos **su** **hijo** favorito e **su** **hija** mais dedicada, apontando para **mi** **padre** e **mi** **tía**. Antes de ir embora, apontei para o quintal cheio de gente e disse, brincando: 'agora **tu** lugar aqui também está garantido'."
+            },
+            {
+              "text_id": "txt-10",
+              "number": 10,
+              "title": "A Foto Antiga da Família",
+              "body": "Ninguém se lembrava exatamente de que ano era aquela foto amarelada guardada na gaveta da sala. Era um retrato antigo de toda a **familia** reunida no quintal da casa velha. No centro, **mi** **padre** ainda criança sorria sem um dos dentes da frente, e **mi** **abuela** sempre dizia que ele **es** idêntico ao **hijo** mais novo hoje em dia. Ao lado dele, **madre** aparecia séria, com uma trança comprida até a cintura. Atrás dos dois, dava para ver **mi** **hermano** e **mi** **hermana** mais velhos brigando por causa de uma bola. **Mi** bisavô segurava no colo o **hijo** mais novo e, na outra mão, segurava a **hija** do meio, ambos rindo para a câmera. No canto da foto, quase cortado, aparecia **mi** **abuelo**, ainda sem os óculos que usaria pelo resto da vida."
+            },
+            {
+              "text_id": "txt-11",
+              "number": 11,
+              "title": "Árvore Genealógica para a Escola",
+              "body": "Para o trabalho de árvore genealógica, escrevi no topo da folha: '**mi** **madre** **es** professora', e logo abaixo completei com o nome do **mi** **padre**, que trabalha com informática. Nos ramos seguintes, desenhei **mi** **hermano** mais velho e **mi** **hermana** caçula, ligados por uma linha até os avós. Do lado paterno, coloquei os nomes do **abuelo** e da **abuela**, que moram na Argentina há décadas. Por fim, a professora pediu para incluir, caso houvesse, o nome de algum **hijo** ou **hija** já existente - como ainda não tenho filhos, deixei esse espaço em branco e ganhei risadas da turma."
+            },
+            {
+              "text_id": "txt-12",
+              "number": 12,
+              "title": "Carta Descrevendo Minha Família",
+              "body": "Na carta para **mi** amiga espanhola, expliquei como **es** organizada a **mi** casa: moro com **madre**, **padre** e meus dois irmãos. Contei que **mi** **hermano** joga futebol todo sábado, enquanto **mi** **hermana** prefere desenhar o dia inteiro. Também mencionei que sou o **hijo** do meio, nem o mais velho nem o mais novo, o que às vezes é engraçado. Do lado da **familia** da **mi** **madre**, **mi** **tía** teve uma **hija** recém-nascida, **mi** priminha mais nova. Contei também sobre os avós: o **abuelo** mora sozinho desde que a **abuela** faleceu, e um **tío** solteiro mora com ele para fazer companhia."
+            },
+            {
+              "text_id": "txt-13",
+              "number": 13,
+              "title": "Festa de Bodas dos Avós",
+              "body": "Na festa de bodas dos meus avós, a casa inteira estava decorada com fotos antigas da **familia**. **Mi** **padre** fez um discurso emocionado, lembrando o dia em que conheceu **madre**, décadas atrás. **Mi** **hermano** ficou responsável pela música, enquanto **mi** **hermana** organizava as mesas com balões dourados. Do lado da mesa principal, estavam o **hijo** mais velho dos meus avós e **su** **hija** caçula, os dois emocionados assistindo aos pais dançarem. Um **tío** distante, que raramente aparece, veio direto do aeroporto só para a festa, e uma **tía** querida trouxe o bolo que ela mesma fez. No fim da noite, o **abuelo** e a **abuela** dançaram juntos a mesma música do casamento, sessenta anos atrás."
+            },
+            {
+              "text_id": "txt-14",
+              "number": 14,
+              "title": "Planejando as Férias no Grupo da Família",
+              "body": "No grupo de mensagens da **familia**, **mi** **padre** sugeriu marcar uma viagem grande para as férias de julho. **Mi** **hermano** votou por praia, enquanto **mi** **hermana** insistiu numa cidade de montanha com clima friozinho. **Mi** **abuela** respondeu dizendo que o **hijo** mais novo dela, **mi** **tío** caçula, sempre concordava com tudo só para evitar discussão, e a **hija** mais velha, **mi** **madre**, ria dos comentários no grupo. Um **abuelo** já com quase noventa anos mandou um áudio dizendo que topava qualquer lugar, desde que tivesse rede para a cadeira. A **abuela**, mais cautelosa, quis saber: 'o lugar vai ter médico por perto?'. Um **tío** que mora longe avisou que só conseguiria ir no fim de semana, e uma **tía** sugeriu dividir a viagem em dois grupos. Até o **primo** mais novo, que geralmente nem lê as mensagens, apareceu só para votar em praia."
+            },
+            {
+              "text_id": "txt-15",
+              "number": 15,
+              "title": "Discussão Boba no Almoço da Vovó",
+              "body": "No almoço de domingo na casa da vovó, **mi** **hermano** e **mi** **hermana** começaram a discutir bobagem por causa do controle remoto, como sempre. **Mi** **abuela**, tentando fazer as pazes, contou uma história antiga sobre quando **mi** **padre**, o **hijo** mais teimoso dela, brigava direto com a **hermana** dele, a **hija** mais paciente da casa. Do outro lado da mesa, o **abuelo** ria sozinho lembrando das próprias confusões de infância, enquanto a **abuela** balançava a cabeça, incrédula com tanta gritaria repetida geração após geração. Um **tío** que estava de visita tentou intervir, e uma **tía** só observava tudo rindo baixinho. No meio da bagunça, **mi** **primo** mais novo perguntou baixinho: '**él** pode pegar mais um pedaço de bolo?', ignorando completamente a discussão."
+            },
+            {
+              "text_id": "txt-16",
+              "number": 16,
+              "title": "Ajudando o Primo com a Lição de Casa",
+              "body": "Passei a tarde ajudando **mi** **primo** com a lição de matemática, já que **él** sempre trava nos problemas de fração. A **hermana** dele apareceu na sala só para atrapalhar, rindo de cada erro que ele cometia. O **padre** dele, que é **hijo** único, sempre reclama que ninguém mais ajuda com as tarefas de casa além de mim. A **madre** dele, por outro lado, é a **hija** mais nova de uma **familia** enorme, cheia de parentes espalhados pela cidade. Foi justamente o **abuelo** dele quem ensinou frações pra mim, décadas atrás, e a **abuela** sempre lembra dessa história toda vez que nos visita. Um **tío** dele passou na sala só para pegar as chaves do carro, e uma **tía** ligou perguntando: 'o jantar já está pronto?'. Antes de eu ir embora, **ella**, a **madre** do garoto, agradeceu pela paciência que tive com o **hijo** dela."
+            },
+            {
+              "text_id": "txt-17",
+              "number": 17,
+              "title": "Adivinhando Quem é Quem na Foto Antiga",
+              "body": "No grupo de figurinhas da **familia**, alguém postou uma foto antiga e todo mundo começou a tentar identificar quem era quem. Uma prima jurava que o bebê da foto era o **hijo** mais velho da bisavó, mas **mi** **madre** corrigiu dizendo que na verdade era a **hija** dela, só que com o cabelo cortado bem curto. O **abuelo** da foto, irreconhecível de tão jovem, tinha os mesmos olhos do **mi** **padre** hoje em dia, e a **abuela** ao lado dele usava um vestido idêntico ao que guardamos até hoje no armário. Um **tío** entrou na conversa dizendo que reconhecia até os sapatos, e uma **tía** mandou um áudio rindo, jurando que aquele **primo** era exatamente igual ao **hijo** dela agora. Alguém perguntou: '**él** ou **ella** sabe o ano exato da foto?', e **mi** **abuela** respondeu, num áudio longo, contando cada detalhe de **su** memória sobre aquele dia."
+            },
+            {
+              "text_id": "txt-18",
+              "number": 18,
+              "title": "Apresentação de Slides sobre a Família",
+              "body": "Na apresentação de slides sobre **mi** **familia**, o primeiro retrato era da **mi** **abuela** ao lado da **hija** mais nova dela, **mi** **tía** caçula, ainda bebê na foto. No slide seguinte, mostrei o **abuelo** paterno junto com a **abuela** materna, duas pessoas que nunca tinham estado juntas pessoalmente, mas que a professora achou engraçado ver lado a lado. Expliquei que tenho um **tío** que mora em outro país e uma **tía** que nunca saiu da cidade natal, contrastes que sempre acho engraçados. Um colega perguntou sobre o **primo** que aparecia numa das fotos, e respondi que **él** era **hijo** dela, e que **ella** sempre cuida muito bem de **su** **hijo** único. Terminei dizendo que **tengo** orgulho de cada nome daquela árvore genealógica."
+            },
+            {
+              "text_id": "txt-19",
+              "number": 19,
+              "title": "A Chegada dos Avós para as Festas",
+              "body": "Quando o **abuelo** e a **abuela** chegam para passar as festas, a casa toda muda de energia. **Mi** **madre** corre para arrumar o quarto de hóspedes, e **mi** **padre** vai buscar o **tío** e a **tía** que vêm na mesma viagem, direto do aeroporto. **Mi** **primo** mais novo, que mora com eles, sempre chega de mau humor por causa da viagem longa, mas **él** melhora assim que vê a mesa de doces. **Mi** **abuela**, animada, pergunta logo: '**ella**, **mi** **madre**, já preparou tudo direitinho?', orgulhosa de **su** **hija** caçula virar uma anfitriã tão organizada. No jantar, percebi que ainda **tengo** o mesmo apetite de criança, e **mi** **abuela** brincou perguntando: '¿**tienes** espaço pra mais um pedaço de torta?'"
+            },
+            {
+              "text_id": "txt-20",
+              "number": 20,
+              "title": "Viagem de Carro para a Praia",
+              "body": "Na viagem de carro para a praia, a **abuela** foi quem escolheu a playlist inteira, para o desespero geral dos mais novos no banco de trás. Do lado dela, um **tío** dormia com a boca aberta desde a primeira hora, enquanto uma **tía** ia narrando cada paisagem pela janela, parecendo um documentário. **Mi** **primo** mais novo brigava com o cinto de segurança o tempo todo, e **él** só parava de reclamar quando alguém prometia parar num posto para comprar salgadinho. **Mi** **madre**, ao volante, perguntou: '**ella**, a **abuela**, precisa de uma pausa?', e a **abuela** respondeu rápido, do jeito de sempre, orgulhosa de **su** resistência para viagens longas. No banco do meio, contei nos dedos quantas horas ainda **tengo** de viagem pela frente, e perguntei ao **mi** **padre**: '¿**tienes** ideia de quanto falta?'. Ele riu e respondeu que era melhor eu aproveitar a paisagem, apontando pela janela: '**tu** lado da estrada está mais bonito agora'."
+            }
+          ],
+          "exercises": [
+            {
+              "exercise_id": "ex-01",
+              "number": 1,
+              "title": "Exercício 1",
+              "type": "fill_in_the_blank",
+              "items": [
+                {
+                  "sentence": "Marina reuniu fotos de todos os parentes — tios, primos, avós — para montar um álbum sobre a _____ dela.",
+                  "word_ids": [
+                    "wd-0084"
+                  ]
+                },
+                {
+                  "sentence": "A caçula da casa de Marina sempre arma confusão; a _____ mais nova adora brigar por besteira.",
+                  "word_ids": [
+                    "wd-0088"
+                  ]
+                },
+                {
+                  "sentence": "No Dia dos Pais, o cartão dizia: 'Um abraço do _____ mais orgulhoso da casa, para o senhor mais querido.'",
+                  "word_ids": [
+                    "wd-0093"
+                  ]
+                },
+                {
+                  "sentence": "A bisavó de Marina sempre apresentava, com orgulho, a _____ mais dedicada da casa: a mulher que cuidava de todos.",
+                  "word_ids": [
+                    "wd-0094"
+                  ]
+                },
+                {
+                  "sentence": "Aquele senhor de bigode branco aparece em quase todas as fotos antigas da casa; todos concordam que foi o _____ mais lembrado de duas gerações atrás.",
+                  "word_ids": [
+                    "wd-0091"
+                  ]
+                },
+                {
+                  "sentence": "Doces escondidos só para os netos são sempre coisa da _____; todo mundo na casa sabe disso.",
+                  "word_ids": [
+                    "wd-0090"
+                  ]
+                },
+                {
+                  "sentence": "Ao apresentar o marido, a mulher mais falante da festa disse, sorrindo: 'Aqui está _____ esposo.'",
+                  "word_ids": [
+                    "wd-0267"
+                  ]
+                },
+                {
+                  "sentence": "Quando alguém pergunta quantos irmãos há em casa, a resposta de sempre soa assim: '_____ apenas uma, mais nova.'",
+                  "word_ids": [
+                    "wd-0268"
+                  ]
+                },
+                {
+                  "sentence": "A prima aponta para o prato vazio e pergunta, brincando em espanhol: '_____ fome ainda?'",
+                  "word_ids": [
+                    "wd-0269"
+                  ]
+                },
+                {
+                  "sentence": "Apontando para o retrato na parede, alguém perguntou, sorrindo: 'Esse aí não seria _____ parente favorito?'",
+                  "word_ids": [
+                    "wd-0012"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-02",
+              "number": 2,
+              "title": "Exercício 2",
+              "type": "sentence_completion",
+              "items": [
+                {
+                  "situation": "Alguém pergunta com quem Bruno mora.",
+                  "sentence": "A resposta de sempre: mora com toda a _____ reunida numa casa só.",
+                  "word_ids": [
+                    "wd-0084"
+                  ]
+                },
+                {
+                  "situation": "Alguém aponta para uma senhora na festa.",
+                  "sentence": "A explicação chega rápido: 'Aquela ali, _____ parente mais querida, veio de longe para a festa.'",
+                  "word_ids": [
+                    "wd-0011"
+                  ]
+                },
+                {
+                  "situation": "Um senhor mostra orgulhoso a foto do herdeiro da casa para um amigo.",
+                  "sentence": "A legenda da foto diz, com orgulho: 'Aqui está o _____.'",
+                  "word_ids": [
+                    "wd-0093"
+                  ]
+                },
+                {
+                  "situation": "Uma mulher apresenta a caçula da casa para as visitas.",
+                  "sentence": "A apresentação acontece assim: 'Aqui está a _____ mais nova da casa.'",
+                  "word_ids": [
+                    "wd-0094"
+                  ]
+                },
+                {
+                  "situation": "Você mostra uma foto antiga em preto e branco.",
+                  "sentence": "Explico que o senhor de terno era o _____ mais querido da casa.",
+                  "word_ids": [
+                    "wd-0091"
+                  ]
+                },
+                {
+                  "situation": "Alguém sente cheiro de bolo saindo da cozinha.",
+                  "sentence": "Digo: 'Só pode ser aquela _____ testando uma receita nova.'",
+                  "word_ids": [
+                    "wd-0090"
+                  ]
+                },
+                {
+                  "situation": "Um homem desconhecido chega à festa da casa.",
+                  "sentence": "A prima aponta e resume: 'Aquele ali virou o _____ mais engraçado da festa.'",
+                  "word_ids": [
+                    "wd-0100"
+                  ]
+                },
+                {
+                  "situation": "Alguém pergunta quantos primos você tem.",
+                  "sentence": "Você responde: '_____ mais de dez primos, um grupo enorme.'",
+                  "word_ids": [
+                    "wd-0268"
+                  ]
+                },
+                {
+                  "situation": "Um amigo espanhol quer saber quanta gente mora com você.",
+                  "sentence": "A pergunta chega assim: 'Você _____ muita gente em casa?'",
+                  "word_ids": [
+                    "wd-0269"
+                  ]
+                },
+                {
+                  "situation": "Você mostra o álbum de fotos para um amigo.",
+                  "sentence": "O amigo aponta e pergunta: 'Esse aí do lado seria _____ parente preferido?'",
+                  "word_ids": [
+                    "wd-0012"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-03",
+              "number": 3,
+              "title": "Exercício 3",
+              "type": "vocabulary_classification",
+              "word_bank": [
+                "wd-0084",
+                "wd-0094",
+                "wd-0091",
+                "wd-0090",
+                "wd-0100",
+                "wd-0099",
+                "wd-0011",
+                "wd-0010",
+                "wd-0269",
+                "wd-0012"
+              ],
+              "categories": [
+                {
+                  "title": "Parientes"
+                },
+                {
+                  "title": "Otras palabras"
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-04",
+              "number": 4,
+              "title": "Exercício 4",
+              "type": "comprehension_question_answering",
+              "items": [
+                {
+                  "statement": "Sofía sempre diz: '**mi** **familia** **es** grande', com muita gente na mesma casa.",
+                  "question": "O que dá para entender sobre o tamanho da casa de Sofía?"
+                },
+                {
+                  "statement": "Sofía contou que a **madre** dela trabalha todos os sábados no hospital.",
+                  "question": "Em que dia da semana essa pessoa trabalha?"
+                },
+                {
+                  "statement": "Sofía contou que o **abuelo** dela adora contar histórias, e que a **abuela** cozinha muito bem.",
+                  "question": "Segundo a frase, qual dessas duas pessoas conta histórias, e qual cozinha muito bem?"
+                },
+                {
+                  "statement": "Sofía avisou que o **tío** dela vem do Chile neste fim de semana, e que a **tía** mora pertinho.",
+                  "question": "De onde vem um dos parentes de Sofía mencionados no texto?"
+                },
+                {
+                  "statement": "Sofía contou que o **primo** favorito dela mora em outra cidade; só o vê nas férias.",
+                  "question": "Com que frequência Sofía vê esse parente favorito?"
+                },
+                {
+                  "statement": "Alguém apontou para uma foto e perguntou: 'Aquele ali seria **tu** amigo com o boné?'",
+                  "question": "O que a pessoa está perguntando sobre o menino da foto?"
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-05",
+              "number": 5,
+              "title": "Exercício 5",
+              "type": "guided_production",
+              "items": [
+                {
+                  "model": "Sofía tem o costume de dizer: '**mi** **madre** **es** muito atenciosa'.",
+                  "prompt": "Agora tente você: descreva outra pessoa da casa usando a mesma estrutura em espanhol."
+                },
+                {
+                  "model": "Sofía sempre lembra que toda **familia** tem tradições especiais.",
+                  "prompt": "Conte, em poucas palavras, uma tradição especial da casa onde você mora."
+                },
+                {
+                  "model": "Sofía contou que o **padre** dela adora cozinhar aos domingos.",
+                  "prompt": "Diga o que alguém da casa costuma fazer aos domingos."
+                },
+                {
+                  "model": "Sofía contou que a **abuela** dela mora bem pertinho de casa.",
+                  "prompt": "Onde mora um parente idoso que você visita com frequência?"
+                },
+                {
+                  "model": "Sofía contou que o **tío** dela sempre viaja junto com a **tía**.",
+                  "prompt": "Cite algo que dois parentes seus costumam fazer juntos."
+                },
+                {
+                  "model": "Sofía contou que o **primo** dela mora longe, mas **él** sempre escreve cartas.",
+                  "prompt": "Fale sobre onde mora algum parente da mesma idade que você."
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-06",
+              "number": 6,
+              "title": "Exercício 6",
+              "type": "guided_open_response",
+              "items": [
+                {
+                  "lines": [
+                    {
+                      "speaker": "Amigo",
+                      "text": "Sofía sempre diz: '**mi** **madre** **es** muito dedicada'."
+                    },
+                    {
+                      "speaker": "Você",
+                      "hint": "fale uma característica de alguém da casa, usando uma frase parecida"
+                    }
+                  ]
+                },
+                {
+                  "lines": [
+                    {
+                      "speaker": "Amigo",
+                      "text": "Sofía contou que o **padre** dela joga futebol aos sábados, e que o **hermano** dela também gosta de jogar."
+                    },
+                    {
+                      "speaker": "Você",
+                      "hint": "conte uma atividade que alguém da casa costuma fazer aos sábados"
+                    }
+                  ]
+                },
+                {
+                  "lines": [
+                    {
+                      "speaker": "Amigo",
+                      "text": "Sofía contou que o **tío** dela faz todo mundo rir, e que a **tía** dela canta muito bem."
+                    },
+                    {
+                      "speaker": "Você",
+                      "hint": "descreva brevemente uma característica ou talento de um parente seu"
+                    }
+                  ]
+                },
+                {
+                  "lines": [
+                    {
+                      "speaker": "Amigo",
+                      "text": "Sofía contou que o **primo** dela mora longe, mas **él** sempre escreve cartas."
+                    },
+                    {
+                      "speaker": "Você",
+                      "hint": "fale sobre algum parente que mora longe"
+                    }
+                  ]
+                },
+                {
+                  "lines": [
+                    {
+                      "speaker": "Amigo",
+                      "text": "Sofía sempre organiza as festas da casa; **ella** convida todo mundo."
+                    },
+                    {
+                      "speaker": "Você",
+                      "hint": "diga quem, na casa onde você mora, costuma organizar as reuniões"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-07",
+              "number": 7,
+              "title": "Exercício 7",
+              "type": "short_contextual_dialogue",
+              "lines": [
+                {
+                  "speaker": "Lucía",
+                  "text": "Você conhece bem a Sofía?"
+                },
+                {
+                  "speaker": "Marco",
+                  "text": "Conheço. **Su** **madre** trabalha num hospital."
+                },
+                {
+                  "speaker": "Lucía",
+                  "text": "E esse outro, o que faz?"
+                },
+                {
+                  "speaker": "Marco",
+                  "text": "O **padre** **es** carpinteiro."
+                },
+                {
+                  "speaker": "Lucía",
+                  "text": "Tem irmãos?"
+                },
+                {
+                  "speaker": "Marco",
+                  "text": "Tem sim, um **hermano** mais novo. Também uma **hermana** mais velha."
+                },
+                {
+                  "speaker": "Lucía",
+                  "text": "Algum parente por perto?"
+                },
+                {
+                  "speaker": "Marco",
+                  "text": "Uma **tía** mora pertinho. Também um **primo**."
+                },
+                {
+                  "speaker": "Lucía",
+                  "text": "São simpáticos?"
+                },
+                {
+                  "speaker": "Marco",
+                  "text": "**Él** fica sempre tranquilo. **Ella** fica sempre alegre."
+                }
+              ],
+              "question": "Segundo o diálogo, quem trabalha num hospital?"
+            },
+            {
+              "exercise_id": "ex-08",
+              "number": 8,
+              "title": "Exercício 8",
+              "type": "fill_in_the_blank",
+              "items": [
+                {
+                  "sentence": "Alguém apontou para a senhora ao piano: 'Aqui está a _____ da casa.'",
+                  "word_ids": [
+                    "wd-0085"
+                  ]
+                },
+                {
+                  "sentence": "No churrasco, todos elogiavam o assado, e a pessoa responsável respondeu orgulhosa: 'Aprendi tudo vendo o _____ cozinhar.'",
+                  "word_ids": [
+                    "wd-0086"
+                  ]
+                },
+                {
+                  "sentence": "Nessa casa, as brigas bobas por causa de videogame são sempre com o mais novo, aquele _____ que sempre quer jogar sozinho, sem dividir o controle.",
+                  "word_ids": [
+                    "wd-0089"
+                  ]
+                },
+                {
+                  "sentence": "Divido o quarto com a mais velha da casa, a _____ favorita para fofocar.",
+                  "word_ids": [
+                    "wd-0088"
+                  ]
+                },
+                {
+                  "sentence": "No hospital, o senhor mais idoso da casa repetia orgulhoso: 'Aqui está o _____ mais velho.'",
+                  "word_ids": [
+                    "wd-0093"
+                  ]
+                },
+                {
+                  "sentence": "Toda festa na casa, aquele garoto brincalhão aparece, o _____ que vem do interior.",
+                  "word_ids": [
+                    "wd-0266"
+                  ]
+                },
+                {
+                  "sentence": "Perguntei quem tinha trazido o bolo, e apontaram: '_____ trouxe, o marido daquela senhora ali.'",
+                  "word_ids": [
+                    "wd-0016"
+                  ]
+                },
+                {
+                  "sentence": "Quando perguntei quem tinha organizado tudo, disseram: '_____ organizou, a mais velha da casa.'",
+                  "word_ids": [
+                    "wd-0017"
+                  ]
+                },
+                {
+                  "sentence": "Alguém sempre elogia a esposa dizendo que a casa dela, quer dizer, _____ casa, está sempre impecável.",
+                  "word_ids": [
+                    "wd-0267"
+                  ]
+                },
+                {
+                  "sentence": "Quando perguntam sobre irmãos, respondo: '_____ dois, um mais novo e um mais velho.'",
+                  "word_ids": [
+                    "wd-0268"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-09",
+              "number": 9,
+              "title": "Exercício 9",
+              "type": "sentence_completion",
+              "items": [
+                {
+                  "situation": "Alguém pergunta quem ensinou você a cozinhar.",
+                  "sentence": "Respondo: 'Foi o _____ lá de casa, nas tardes de domingo.'",
+                  "word_ids": [
+                    "wd-0086"
+                  ]
+                },
+                {
+                  "situation": "Perguntam: 'Você briga muito em casa?'",
+                  "sentence": "Digo: 'Só com o _____ mais novo, por besteira.'",
+                  "word_ids": [
+                    "wd-0089"
+                  ]
+                },
+                {
+                  "situation": "Perguntam quem empresta roupa para você.",
+                  "sentence": "Respondo: 'A _____ mais velha, sempre.'",
+                  "word_ids": [
+                    "wd-0088"
+                  ]
+                },
+                {
+                  "situation": "Um senhor idoso fala orgulhoso de alguém da casa.",
+                  "sentence": "A pessoa diz: 'O _____ virou médico.'",
+                  "word_ids": [
+                    "wd-0093"
+                  ]
+                },
+                {
+                  "situation": "A pessoa mais velha da casa fala de uma parente que mora longe, e comenta:",
+                  "sentence": "'A _____ vive na Espanha agora.'",
+                  "word_ids": [
+                    "wd-0094"
+                  ]
+                },
+                {
+                  "situation": "Perguntam quem chegou primeiro na festa.",
+                  "sentence": "Respondo: '_____ chegou primeiro, aquele parente sempre pontual.'",
+                  "word_ids": [
+                    "wd-0016"
+                  ]
+                },
+                {
+                  "situation": "Perguntam quem fez o bolo de aniversário.",
+                  "sentence": "Digo: '_____ fez, a mulher mais experiente da cozinha, como sempre.'",
+                  "word_ids": [
+                    "wd-0017"
+                  ]
+                },
+                {
+                  "situation": "Comentam sobre o jardim bonito do vizinho.",
+                  "sentence": "Digo: 'Verdade, _____ jardim fica sempre impecável.'",
+                  "word_ids": [
+                    "wd-0267"
+                  ]
+                },
+                {
+                  "situation": "Perguntam quantos primos você tem.",
+                  "sentence": "Respondo: '_____ uns quinze, um grupo enorme.'",
+                  "word_ids": [
+                    "wd-0268"
+                  ]
+                },
+                {
+                  "situation": "Um amigo espanhol pergunta pelos avós, curioso com a idade deles.",
+                  "sentence": "A pergunta chega assim: 'Ainda _____ os avós vivos?'",
+                  "word_ids": [
+                    "wd-0269"
+                  ]
+                }
+              ]
+            },
+            {
+              "exercise_id": "ex-10",
+              "number": 10,
+              "title": "Exercício 10",
+              "type": "vocabulary_classification",
+              "word_bank": [
+                "wd-0089",
+                "wd-0088",
+                "wd-0093",
+                "wd-0094",
+                "wd-0091",
+                "wd-0017",
+                "wd-0267",
+                "wd-0268",
+                "wd-0269",
+                "wd-0012"
+              ],
+              "categories": [
+                {
+                  "title": "Parientes"
+                },
+                {
+                  "title": "Otras palabras"
+                }
+              ]
+            }
+          ],
+          "status": "ready"
         }
       ],
       "status": "ready"

@@ -2,6 +2,8 @@
 
   <Notifications />
 
+  <CorrectSentenceFab />
+
   <div class="global-topbar" id="global-topbar">
     <div class="global-topbar-user">
       <span class="topbar-user-email" id="current-user-email"></span>
@@ -49,10 +51,12 @@
 import { onMounted, ref } from 'vue'
 import { getChapters, getLanguages } from './shared/api'
 import { cacheKey, writeCache } from './shared/cache'
+import { setCurrentSelection } from './shared/currentSelection'
 import { readStale, refreshInBackground } from './shared/dataSync'
 import { formatLanguagePairLabel, formatLanguageName } from './shared/languages'
 import { escapeHtml } from './shared/text'
 import { flushQueuedWrites } from './shared/writeQueue'
+import CorrectSentenceFab from './features/corrections/CorrectSentenceFab.vue'
 import Flashcards from './features/catalog/Flashcards.vue'
 import Notifications from './shared/Notifications.vue'
 import Texts from './features/texts/Texts.vue'
@@ -113,6 +117,7 @@ onMounted(() => {
     const email = promptForEmail("Enter the email to log in with:");
     setUserEmail(email);
     await loadAndRenderChapters();
+    syncHash(false);
   }
 
   switchUserBtn.addEventListener("click", switchUser);
@@ -168,11 +173,12 @@ onMounted(() => {
     fillSelect(cueLangSelectEl, CUE_LANG);
   }
 
-  langSelectEl.addEventListener("change", () => {
+  langSelectEl.addEventListener("change", async () => {
     LANG = langSelectEl.value;
     setDataLang();
     populateLangChoiceSelects();
-    loadAndRenderChapters();
+    await loadAndRenderChapters();
+    syncHash(false);
   });
 
   sentenceLangSelectEl.addEventListener("change", () => {
@@ -213,9 +219,9 @@ onMounted(() => {
     }
   }
 
-  topicTabFlashcardsBtn.addEventListener("click", () => switchTopicTab("flashcards"));
-  topicTabTextsBtn.addEventListener("click", () => switchTopicTab("texts"));
-  topicTabExercisesBtn.addEventListener("click", () => switchTopicTab("exercises"));
+  topicTabFlashcardsBtn.addEventListener("click", () => { switchTopicTab("flashcards"); syncHash(true); });
+  topicTabTextsBtn.addEventListener("click", () => { switchTopicTab("texts"); syncHash(true); });
+  topicTabExercisesBtn.addEventListener("click", () => { switchTopicTab("exercises"); syncHash(true); });
 
   // ---- Texts ----
 
@@ -250,7 +256,11 @@ onMounted(() => {
     if (!currentChapter) renderChaptersList();
   }
 
-  async function loadAndRenderChapters() {
+  // restoreState (only ever passed by init(), from the page's initial URL
+  // hash) makes the first render land on that chapter/topic/tab instead of
+  // the chapters list — every other caller (language/user switch) omits it
+  // and gets the normal reset-to-chapters-list behavior.
+  async function loadAndRenderChapters(restoreState = null) {
     textsErrorBanner.style.display = "none";
 
     const key = cacheKey("chapters", USER_EMAIL, LANG);
@@ -259,7 +269,7 @@ onMounted(() => {
       CHAPTERS = cached.data;
       currentChapter = null;
       currentTopic = null;
-      renderChaptersList();
+      applyHashState(restoreState);
       refreshInBackground({
         key,
         label: "chapters",
@@ -279,7 +289,7 @@ onMounted(() => {
       writeCache(key, CHAPTERS);
       currentChapter = null;
       currentTopic = null;
-      renderChaptersList();
+      applyHashState(restoreState);
     } catch (err) {
       showTextsError(err);
     } finally {
@@ -288,12 +298,18 @@ onMounted(() => {
   }
 
   function renderBreadcrumb() {
+    setCurrentSelection({
+      lang: LANG,
+      chapterNumber: currentChapter?.number ?? null,
+      topicNumber: currentTopic?.number ?? null,
+    });
+
     textsBreadcrumbEl.innerHTML = "";
 
     const chaptersBtn = document.createElement("button");
     chaptersBtn.type = "button";
     chaptersBtn.textContent = "Chapters";
-    chaptersBtn.addEventListener("click", renderChaptersList);
+    chaptersBtn.addEventListener("click", () => { renderChaptersList(); syncHash(true); });
     textsBreadcrumbEl.appendChild(chaptersBtn);
 
     if (!currentChapter) return;
@@ -307,7 +323,7 @@ onMounted(() => {
     const chapterBtn = document.createElement("button");
     chapterBtn.type = "button";
     chapterBtn.textContent = currentChapter.title;
-    chapterBtn.addEventListener("click", () => showTopics(currentChapter));
+    chapterBtn.addEventListener("click", () => { showTopics(currentChapter); syncHash(true); });
     textsBreadcrumbEl.appendChild(chapterBtn);
 
     textsBreadcrumbEl.appendChild(sepEl());
@@ -347,6 +363,86 @@ onMounted(() => {
     return card;
   }
 
+  // The URL hash encodes exactly where the user is — #/<lang>/<chapterId>/
+  // <topicId>/<tab> (chapter/topic/tab segments only present once drilled
+  // in that far) — so a reload or a link sent to someone else lands on the
+  // same chapter/topic/tab instead of always the chapters list. Kept in the
+  // hash rather than a real path since the backend only serves index.html
+  // for "/" (see main.py) and has no catch-all route for arbitrary paths;
+  // the hash never leaves the browser, so it needs no server-side support.
+  const VALID_TABS = ["flashcards", "texts", "exercises"];
+
+  function buildHash() {
+    const parts = [LANG];
+    if (currentChapter) {
+      parts.push(currentChapter.chapter_id);
+      if (currentTopic) {
+        parts.push(currentTopic.topic_id, currentTopicTab);
+      }
+    }
+    return "#/" + parts.map(encodeURIComponent).join("/");
+  }
+
+  function parseHash() {
+    const raw = window.location.hash.replace(/^#\/?/, "");
+    if (!raw) return null;
+    const [lang, chapterId, topicId, tab] = raw.split("/").map((s) => decodeURIComponent(s || ""));
+    if (!lang) return null;
+    return { lang, chapterId: chapterId || null, topicId: topicId || null, tab: tab || null };
+  }
+
+  // Called after every real navigation click (chapter/topic/tab/breadcrumb)
+  // so the back/forward buttons step through them — push=true adds a new
+  // history entry. Language/user switches call this with push=false
+  // instead: they still keep the URL in sync, but don't become a
+  // back-button step, which keeps popstate below simple (it never has to
+  // reload chapters for a different language, only re-navigate within the
+  // currently-loaded one).
+  function syncHash(push) {
+    const hash = buildHash();
+    if (push) {
+      history.pushState(null, "", hash);
+    } else {
+      history.replaceState(null, "", hash);
+    }
+  }
+
+  // Navigates to whatever a parsed hash describes, within the currently
+  // loaded CHAPTERS — falls back a level at a time (topic missing -> its
+  // chapter's topic list; chapter missing -> chapters list) rather than
+  // failing outright, so a stale/tampered link still lands somewhere valid.
+  function applyHashState(state) {
+    if (!state || state.lang !== LANG) {
+      renderChaptersList();
+      return;
+    }
+    const chapter = CHAPTERS.find((c) => c.chapter_id === state.chapterId);
+    if (!chapter) {
+      renderChaptersList();
+      return;
+    }
+    if (!state.topicId) {
+      showTopics(chapter);
+      return;
+    }
+    const topic = chapter.topics.find((t) => t.topic_id === state.topicId);
+    if (!topic) {
+      showTopics(chapter);
+      return;
+    }
+    // showTopicWorkspace only sets currentTopic — in the normal click-through
+    // flow currentChapter is already set by the showTopics() step the user
+    // passed through to get here. Restoring can jump straight to the
+    // workspace without that step, so it must set currentChapter itself.
+    currentChapter = chapter;
+    showTopicWorkspace(topic, VALID_TABS.includes(state.tab) ? state.tab : "flashcards");
+  }
+
+  // Same-language in-page history only (see syncHash's docstring for why
+  // language switches don't push) — reacts to the browser's own
+  // back/forward, so it must not itself push/replace any history entry.
+  window.addEventListener("popstate", () => applyHashState(parseHash()));
+
   function renderChaptersList() {
     currentChapter = null;
     currentTopic = null;
@@ -366,7 +462,10 @@ onMounted(() => {
 
     for (const chapter of CHAPTERS) {
       chaptersListEl.appendChild(
-        itemCard(chapter.number, chapter.title, chapter.description, chapter.status, () => showTopics(chapter))
+        itemCard(chapter.number, chapter.title, chapter.description, chapter.status, () => {
+          showTopics(chapter);
+          syncHash(true);
+        })
       );
     }
   }
@@ -384,12 +483,15 @@ onMounted(() => {
 
     for (const topic of chapter.topics) {
       topicsListEl.appendChild(
-        itemCard(topic.number, topic.title, topic.description, topic.status, () => showTopicWorkspace(topic))
+        itemCard(topic.number, topic.title, topic.description, topic.status, () => {
+          showTopicWorkspace(topic);
+          syncHash(true);
+        })
       );
     }
   }
 
-  function showTopicWorkspace(topic) {
+  function showTopicWorkspace(topic, tab = "flashcards") {
     currentTopic = topic;
     renderBreadcrumb();
 
@@ -397,7 +499,7 @@ onMounted(() => {
     topicsListEl.style.display = "none";
     topicWorkspaceEl.style.display = "flex";
 
-    switchTopicTab("flashcards");
+    switchTopicTab(tab);
   }
 
   async function init() {
@@ -412,12 +514,20 @@ onMounted(() => {
         opt.textContent = formatLanguagePairLabel(lang);
         langSelectEl.appendChild(opt);
       }
-      LANG = languages.includes(LANG) ? LANG : (languages[0] || LANG);
+      // A hash naming a language this catalog actually has wins over the
+      // default — this is what makes a shared link ("here's this Spanish
+      // topic") open the right content regardless of whichever language
+      // the recipient last had selected.
+      const hashState = parseHash();
+      LANG = (hashState && languages.includes(hashState.lang))
+        ? hashState.lang
+        : (languages.includes(LANG) ? LANG : (languages[0] || LANG));
       langSelectEl.value = LANG;
       setDataLang();
       populateLangChoiceSelects();
 
-      await loadAndRenderChapters();
+      await loadAndRenderChapters(hashState && hashState.lang === LANG ? hashState : null);
+      syncHash(false); // normalizes the URL (no hash, or a hash that didn't fully resolve)
     } catch (err) {
       showTextsError(err);
     }
@@ -965,6 +1075,28 @@ onMounted(() => {
   }
   .exercise-open-response {
     display: flex; flex-direction: column; gap: 10px;
+  }
+  .exercise-item-group {
+    display: flex; flex-direction: column; gap: 8px;
+  }
+  .exercise-guided-list, .exercise-open-ended, .exercise-dialogue-comprehension {
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .exercise-situation, .exercise-context {
+    font-size: 14px; color: var(--muted); font-style: italic;
+    padding: 0 2px;
+  }
+  .exercise-context strong {
+    color: var(--accent); font-style: normal;
+  }
+  .exercise-prompt {
+    flex: none;
+  }
+  .exercise-open-ended-input {
+    flex: 1; min-width: 180px; width: auto;
+  }
+  .exercise-question-row {
+    margin-top: 4px;
   }
   .exercise-cue-wrap {
     position: relative;

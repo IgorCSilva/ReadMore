@@ -1,5 +1,6 @@
 import type {
   ChaptersResponse,
+  CorrectionRequest,
   LanguagesResponse,
   ProgressActionRequest,
   UserWordsResponse,
@@ -92,7 +93,7 @@ export class HttpError extends Error {
   }
 }
 
-async function postProgressAction(path: string, body: ProgressActionRequest): Promise<Response> {
+async function postJson(path: string, body: unknown): Promise<Response> {
   let res: Response
   try {
     res = await fetch(path, {
@@ -110,6 +111,10 @@ async function postProgressAction(path: string, body: ProgressActionRequest): Pr
   return res
 }
 
+function postProgressAction(path: string, body: ProgressActionRequest): Promise<Response> {
+  return postJson(path, body)
+}
+
 export function incrementShownCount(user: string, lang: string, wordId: string): Promise<Response> {
   return postProgressAction('/increment', { user, lang, word_id: wordId })
 }
@@ -120,4 +125,8 @@ export function markWordKnown(user: string, lang: string, wordId: string): Promi
 
 export function showWordAgain(user: string, lang: string, wordId: string): Promise<Response> {
   return postProgressAction('/show-word', { user, lang, word_id: wordId })
+}
+
+export function submitCorrection(payload: CorrectionRequest): Promise<Response> {
+  return postJson('/corrections', payload)
 }

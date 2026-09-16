@@ -177,11 +177,11 @@ onMounted(() => {
     return input;
   }
 
-  // item.sentence has one "_____" per blank; item.word_ids has one entry per
-  // blank, in order, so splitting the sentence on the marker always yields
+  // sentence has one "_____" per blank; word_ids has one entry per blank, in
+  // order, so splitting the sentence on the marker always yields
   // word_ids.length + 1 pieces to interleave input+cue pairs into.
-  function renderExerciseItem(item, index) {
-    const parts = item.sentence.split("_____");
+  function buildBlankRow(sentence, wordIds, index) {
+    const parts = sentence.split("_____");
 
     const row = document.createElement("div");
     row.className = "exercise-item";
@@ -193,7 +193,7 @@ onMounted(() => {
 
     if (parts[0]) row.appendChild(document.createTextNode(parts[0]));
 
-    item.word_ids.forEach((wordId, i) => {
+    wordIds.forEach((wordId, i) => {
       const word = WORDS_BY_ID ? WORDS_BY_ID[wordId] : null;
       row.appendChild(makeExerciseInput());
       row.appendChild(buildCueEl(word));
@@ -202,6 +202,25 @@ onMounted(() => {
     });
 
     return row;
+  }
+
+  function renderExerciseItem(item, index) {
+    return buildBlankRow(item.sentence, item.word_ids, index);
+  }
+
+  // sentence_completion: same blank-fill row as fill_in_the_blank, with a
+  // leading "situation" line giving the prompt's context.
+  function renderSentenceCompletionItem(item, index) {
+    const wrap = document.createElement("div");
+    wrap.className = "exercise-item-group";
+
+    const situation = document.createElement("div");
+    situation.className = "exercise-situation";
+    situation.textContent = item.situation;
+    wrap.appendChild(situation);
+
+    wrap.appendChild(buildBlankRow(item.sentence, item.word_ids, index));
+    return wrap;
   }
 
   function renderClassifyExercise(exercise) {
@@ -240,11 +259,14 @@ onMounted(() => {
     return wrap;
   }
 
-  function renderOpenResponseExercise(exercise) {
+  // Shared by open_response (flat top-level lines) and guided_open_response
+  // (one lines[] per item) — a line either has already-written `text` (bold
+  // spans rendered) or a blank `hint` turn for the reader to self-check.
+  function renderOpenResponseLines(lines) {
     const wrap = document.createElement("div");
     wrap.className = "exercise-open-response";
 
-    for (const line of exercise.lines) {
+    for (const line of lines) {
       const row = document.createElement("div");
       row.className = "exercise-item";
 
@@ -265,6 +287,96 @@ onMounted(() => {
 
       wrap.appendChild(row);
     }
+
+    return wrap;
+  }
+
+  function renderOpenResponseExercise(exercise) {
+    return renderOpenResponseLines(exercise.lines);
+  }
+
+  // guided_open_response: several independent mini-exchanges, each its own
+  // lines[] (unlike open_response's single flat conversation) — render each
+  // as its own numbered group.
+  function renderGuidedOpenResponseExercise(exercise) {
+    const wrap = document.createElement("div");
+    wrap.className = "exercise-guided-list";
+
+    exercise.items.forEach((item, i) => {
+      const group = document.createElement("div");
+      group.className = "exercise-item-group";
+
+      const number = document.createElement("div");
+      number.className = "exercise-number";
+      number.textContent = `${i + 1}.`;
+      group.appendChild(number);
+
+      group.appendChild(renderOpenResponseLines(item.lines));
+      wrap.appendChild(group);
+    });
+
+    return wrap;
+  }
+
+  // comprehension_question_answering ({statement, question}) and
+  // guided_production ({model, prompt}) share the same interaction: read a
+  // bolded context sentence, then answer/produce freely with no word cue.
+  function renderOpenEndedExercise(exercise) {
+    const wrap = document.createElement("div");
+    wrap.className = "exercise-open-ended";
+
+    exercise.items.forEach((item, i) => {
+      const context = item.statement !== undefined ? item.statement : item.model;
+      const prompt = item.question !== undefined ? item.question : item.prompt;
+
+      const group = document.createElement("div");
+      group.className = "exercise-item-group";
+
+      const contextEl = document.createElement("div");
+      contextEl.className = "exercise-context";
+      contextEl.innerHTML = boldInline(context);
+      group.appendChild(contextEl);
+
+      const row = document.createElement("div");
+      row.className = "exercise-item";
+
+      const number = document.createElement("span");
+      number.className = "exercise-number";
+      number.textContent = `${i + 1}.`;
+      row.appendChild(number);
+
+      const promptEl = document.createElement("span");
+      promptEl.className = "exercise-prompt";
+      promptEl.textContent = prompt;
+      row.appendChild(promptEl);
+
+      row.appendChild(makeExerciseInput("exercise-open-ended-input"));
+      group.appendChild(row);
+
+      wrap.appendChild(group);
+    });
+
+    return wrap;
+  }
+
+  // short_contextual_dialogue: a fully-written dialogue (no blanks) followed
+  // by one trailing reading-comprehension question, answered freely.
+  function renderDialogueComprehensionExercise(exercise) {
+    const wrap = document.createElement("div");
+    wrap.className = "exercise-dialogue-comprehension";
+
+    wrap.appendChild(renderOpenResponseLines(exercise.lines));
+
+    const row = document.createElement("div");
+    row.className = "exercise-item exercise-question-row";
+
+    const promptEl = document.createElement("span");
+    promptEl.className = "exercise-prompt";
+    promptEl.textContent = exercise.question;
+    row.appendChild(promptEl);
+
+    row.appendChild(makeExerciseInput("exercise-open-ended-input"));
+    wrap.appendChild(row);
 
     return wrap;
   }
@@ -291,11 +403,23 @@ onMounted(() => {
       title.textContent = exercise.title;
       exercisesListEl.appendChild(title);
 
-      if (exercise.type === "classify") {
+      const type = exercise.type;
+      if (type === "classify" || type === "vocabulary_classification") {
         exercisesListEl.appendChild(renderClassifyExercise(exercise));
-      } else if (exercise.type === "open_response") {
+      } else if (type === "open_response") {
         exercisesListEl.appendChild(renderOpenResponseExercise(exercise));
+      } else if (type === "guided_open_response") {
+        exercisesListEl.appendChild(renderGuidedOpenResponseExercise(exercise));
+      } else if (type === "sentence_completion") {
+        exercise.items.forEach((item, i) => {
+          exercisesListEl.appendChild(renderSentenceCompletionItem(item, i));
+        });
+      } else if (type === "comprehension_question_answering" || type === "guided_production") {
+        exercisesListEl.appendChild(renderOpenEndedExercise(exercise));
+      } else if (type === "short_contextual_dialogue") {
+        exercisesListEl.appendChild(renderDialogueComprehensionExercise(exercise));
       } else {
+        // undefined (legacy) or "fill_in_the_blank": plain items array.
         exercise.items.forEach((item, i) => {
           exercisesListEl.appendChild(renderExerciseItem(item, i));
         });

@@ -25,6 +25,7 @@ export default defineConfig({
       '/increment': BACKEND,
       '/mark-known': BACKEND,
       '/show-word': BACKEND,
+      '/corrections': BACKEND,
     },
   },
   test: {

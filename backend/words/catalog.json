@@ -1059,6 +1059,22 @@
     {
       "word_id": "wd-0265",
       "filename": "is_called"
+    },
+    {
+      "word_id": "wd-0266",
+      "filename": "male_cousin"
+    },
+    {
+      "word_id": "wd-0267",
+      "filename": "his_her"
+    },
+    {
+      "word_id": "wd-0268",
+      "filename": "i_have"
+    },
+    {
+      "word_id": "wd-0269",
+      "filename": "you_have"
     }
   ]
 }
