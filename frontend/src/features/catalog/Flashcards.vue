@@ -32,6 +32,7 @@
 
         <div class="progress"><div class="progress-fill" id="progress-fill"></div></div>
 
+        <div class="card-viewport">
         <div class="card" id="card">
           <div class="sentence-area">
             <div class="label-row">
@@ -68,6 +69,7 @@
             <div class="word hidden-word" id="word">•••••</div>
             <div class="hint">click word to reveal</div>
           </div>
+        </div>
         </div>
 
         <div class="empty-state" id="empty-state">No words match the selected filters.</div>
@@ -376,6 +378,98 @@ onMounted(() => {
     index = (index - 1 + ENTRIES.length) % ENTRIES.length;
     render();
   }
+
+  // ---- Swipe/drag to advance (Pointer Events cover touch + mouse alike) ----
+
+  const SLIDE_MS = 220;
+  const SWIPE_MOVE_THRESHOLD = 6; // px of motion before a press counts as a drag, not a click
+  const SWIPE_ADVANCE_RATIO = 0.25; // fraction of card width that commits to next/prev
+
+  let drag = null; // { pointerId, startX, currentX, moved }
+
+  function cardWidthPx() {
+    return cardEl.getBoundingClientRect().width || 1;
+  }
+
+  function setCardTransition(enabled) {
+    cardEl.style.transition = enabled ? `transform ${SLIDE_MS}ms ease, opacity ${SLIDE_MS}ms ease` : "none";
+  }
+
+  function setCardOffset(dx) {
+    cardEl.style.transform = dx ? `translateX(${dx}px) rotate(${dx / 24}deg)` : "";
+    cardEl.style.opacity = String(Math.max(1 - Math.abs(dx) / (cardWidthPx() * 1.5), 0.4));
+  }
+
+  // Slides the current card out toward `direction`, calls `advance` (next or
+  // prev) once it's off-screen, then slides the new card in from the
+  // opposite side — used by the drag gesture below and by the prev/next
+  // buttons and arrow keys, so every way of changing cards feels the same.
+  function slideAndAdvance(direction, advance) {
+    if (ENTRIES.length === 0) return;
+    const outX = (direction === "left" ? -1 : 1) * cardWidthPx() * 1.1;
+    setCardTransition(true);
+    setCardOffset(outX);
+
+    window.setTimeout(() => {
+      advance();
+      setCardTransition(false);
+      setCardOffset(-outX);
+      void cardEl.offsetWidth; // flush the "from" position before transitioning
+      setCardTransition(true);
+      setCardOffset(0);
+    }, SLIDE_MS);
+  }
+
+  function onCardPointerDown(e) {
+    if (ENTRIES.length === 0) return;
+    if (e.pointerType === "mouse" && e.button !== 0) return;
+    drag = { pointerId: e.pointerId, startX: e.clientX, currentX: e.clientX, moved: false };
+    // No setPointerCapture here: capturing on every press — even a plain tap
+    // on the word or a speak button — makes the browser retarget the
+    // resulting click event to the card instead of whatever was actually
+    // tapped, silently breaking word-reveal and the speak buttons. Capture
+    // is only acquired below once a press has actually turned into a drag.
+  }
+
+  function onCardPointerMove(e) {
+    if (!drag || drag.pointerId !== e.pointerId) return;
+    drag.currentX = e.clientX;
+    const dx = drag.currentX - drag.startX;
+    if (!drag.moved && Math.abs(dx) > SWIPE_MOVE_THRESHOLD) {
+      drag.moved = true;
+      cardEl.classList.add("dragging");
+      cardEl.setPointerCapture?.(e.pointerId);
+      setCardTransition(false);
+    }
+    if (drag.moved) setCardOffset(dx);
+  }
+
+  function endCardDrag(e) {
+    if (!drag || drag.pointerId !== e.pointerId) return;
+    const { currentX, startX, moved } = drag;
+    try { cardEl.releasePointerCapture(e.pointerId); } catch { /* already released */ }
+    cardEl.classList.remove("dragging");
+    drag = null;
+
+    if (!moved) return; // a plain tap/click — let the native click event through (word reveal)
+
+    const dx = currentX - startX;
+    const threshold = cardWidthPx() * SWIPE_ADVANCE_RATIO;
+    if (dx <= -threshold) {
+      slideAndAdvance("left", next);
+    } else if (dx >= threshold) {
+      slideAndAdvance("right", prev);
+    } else {
+      setCardTransition(true);
+      setCardOffset(0);
+    }
+  }
+
+  cardEl.addEventListener("pointerdown", onCardPointerDown);
+  cardEl.addEventListener("pointermove", onCardPointerMove);
+  cardEl.addEventListener("pointerup", endCardDrag);
+  cardEl.addEventListener("pointercancel", endCardDrag);
+
   function toggleReveal() {
     revealed = !revealed;
     wordEl.classList.toggle("hidden-word", !revealed);
@@ -438,15 +532,15 @@ onMounted(() => {
 
   wordEl.addEventListener("click", toggleReveal);
 
-  prevBtn.addEventListener("click", prev);
-  nextBtn.addEventListener("click", next);
+  prevBtn.addEventListener("click", () => slideAndAdvance("right", prev));
+  nextBtn.addEventListener("click", () => slideAndAdvance("left", next));
   knowBtn.addEventListener("click", markKnownAndAdvance);
   nextWordBtn.addEventListener("click", markShownAndAdvance);
 
   window.addEventListener("keydown", (e) => {
     if (e.target.tagName === "INPUT") return;
-    if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); next(); }
-    else if (e.key === "ArrowLeft" || e.key === "ArrowUp") { e.preventDefault(); prev(); }
+    if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); slideAndAdvance("left", next); }
+    else if (e.key === "ArrowLeft" || e.key === "ArrowUp") { e.preventDefault(); slideAndAdvance("right", prev); }
     else if (e.key === " ") { e.preventDefault(); markShownAndAdvance(); }
     else if (e.key === "Enter") { e.preventDefault(); markKnownAndAdvance(); }
   });

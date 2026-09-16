@@ -12,6 +12,10 @@
     <select id="lang-select"></select>
     <label class="lang-choice-label">Sentence: <select id="sentence-lang-select"></select></label>
     <label class="lang-choice-label">Cue: <select id="cue-lang-select"></select></label>
+    <label class="lang-choice-label gender-style-toggle">
+      <input type="checkbox" id="gender-style-texts-checkbox">
+      Gender style in texts
+    </label>
   </div>
 
   <div class="texts-page">
@@ -79,17 +83,27 @@ onMounted(() => {
 
   const EMAIL_STORAGE_KEY = "readmore_user_email";
   const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const GENDER_STYLE_TEXTS_STORAGE_KEY = "readmore_gender_style_texts";
 
   let USER_EMAIL = null;
   let LANG = "pt-en";
   let SENTENCE_LANG = "target";
   let CUE_LANG = "origin";
+  let GENDER_STYLE_TEXTS = localStorage.getItem(GENDER_STYLE_TEXTS_STORAGE_KEY) === "true";
 
   const langSelectEl = document.getElementById("lang-select");
   const sentenceLangSelectEl = document.getElementById("sentence-lang-select");
   const cueLangSelectEl = document.getElementById("cue-lang-select");
+  const genderStyleTextsCheckbox = document.getElementById("gender-style-texts-checkbox");
   const currentUserEmailEl = document.getElementById("current-user-email");
   const switchUserBtn = document.getElementById("switch-user-btn");
+
+  genderStyleTextsCheckbox.checked = GENDER_STYLE_TEXTS;
+  genderStyleTextsCheckbox.addEventListener("change", () => {
+    GENDER_STYLE_TEXTS = genderStyleTextsCheckbox.checked;
+    localStorage.setItem(GENDER_STYLE_TEXTS_STORAGE_KEY, String(GENDER_STYLE_TEXTS));
+    switchTopicTab(currentTopicTab);
+  });
 
   function promptForEmail(message) {
     let email = null;
@@ -213,7 +227,7 @@ onMounted(() => {
     if (tab === "flashcards") {
       flashcardsRef.value?.load(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
     } else if (tab === "texts") {
-      textsRef.value?.show(currentTopic);
+      textsRef.value?.show(currentTopic, LANG, GENDER_STYLE_TEXTS);
     } else {
       exercisesRef.value?.show(LANG, currentTopic, CUE_LANG);
     }
@@ -643,6 +657,12 @@ onMounted(() => {
     display: flex; align-items: center; gap: 6px;
     font-size: 13px; color: var(--muted);
   }
+  .gender-style-toggle {
+    cursor: pointer;
+  }
+  .gender-style-toggle input[type="checkbox"] {
+    width: 15px; height: 15px; accent-color: var(--accent); cursor: pointer;
+  }
   .current-user {
     font-size: 13px; color: var(--text);
     word-break: break-all;
@@ -722,6 +742,11 @@ onMounted(() => {
   .badge.confident { background: color-mix(in srgb, var(--confident) 20%, transparent); color: var(--confident); }
   .badge.learning { background: color-mix(in srgb, var(--learning) 20%, transparent); color: var(--learning); }
 
+  .card-viewport {
+    width: 100%;
+    overflow-x: hidden;
+    display: flex; justify-content: center;
+  }
   .card {
     width: min(90vw, 640px);
     background: var(--card);
@@ -730,6 +755,13 @@ onMounted(() => {
     overflow: hidden;
     box-shadow: 0 8px 30px rgba(0,0,0,0.25);
     display: flex; flex-direction: column;
+    touch-action: pan-y;
+    cursor: grab;
+    will-change: transform, opacity;
+  }
+  .card.dragging {
+    cursor: grabbing;
+    user-select: none;
   }
   .sentence-area {
     padding: 18px 24px;
@@ -923,6 +955,7 @@ onMounted(() => {
     display: flex; flex-direction: column; align-items: center;
     gap: 18px;
     width: 100%;
+    padding-bottom: 60px;
   }
   .breadcrumb {
     width: 100%;
@@ -1001,30 +1034,54 @@ onMounted(() => {
   .item-card-description {
     font-size: 13px; color: var(--muted); line-height: 1.4;
   }
-  .text-reader {
+  .texts-list {
+    width: 100%;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .text-accordion-item {
     width: 100%;
     background: var(--card);
     border: 1px solid var(--border); border-radius: 16px;
-    padding: 24px;
-    display: flex; flex-direction: column; gap: 16px;
+    overflow: hidden;
   }
-  .text-reader-number {
-    font-size: 12px; font-weight: 600; text-transform: uppercase;
-    letter-spacing: 0.06em; color: var(--muted);
+  .text-accordion-header {
+    width: 100%;
+    display: flex; align-items: center; gap: 14px;
+    padding: 16px 20px;
+    background: none; border: none; text-align: left;
+    font: inherit; color: var(--text);
+    cursor: pointer;
   }
-  .text-reader-title {
-    margin: 4px 0 0; font-size: 20px;
+  .text-accordion-header:hover {
+    color: var(--accent);
   }
-  .text-reader-body {
+  .text-accordion-number {
+    flex-shrink: 0; width: 36px; height: 36px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums;
+    background: var(--accent-soft); color: var(--accent-strong);
+  }
+  .text-accordion-title {
+    flex: 1; font-size: 16px; font-weight: 700;
+  }
+  .text-accordion-chevron {
+    flex-shrink: 0; color: var(--muted); font-size: 13px;
+    transition: transform 0.2s ease;
+  }
+  .text-accordion-item.expanded .text-accordion-chevron {
+    transform: rotate(180deg); color: var(--accent);
+  }
+  .text-accordion-body {
+    padding: 0 20px 20px;
     font-size: 17px; line-height: 1.8; color: var(--text);
   }
-  .text-reader-body p {
+  .text-accordion-body p {
     margin: 0 0 14px;
   }
-  .text-reader-body p:last-child {
+  .text-accordion-body p:last-child {
     margin-bottom: 0;
   }
-  .text-reader-body strong {
+  .text-accordion-body strong {
     color: var(--accent);
   }
 
@@ -1090,7 +1147,7 @@ onMounted(() => {
     color: var(--accent); font-style: normal;
   }
   .exercise-prompt {
-    flex: none;
+    display: flex; flex-wrap: wrap;
   }
   .exercise-open-ended-input {
     flex: 1; min-width: 180px; width: auto;
