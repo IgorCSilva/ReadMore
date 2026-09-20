@@ -1038,43 +1038,47 @@
     },
     {
       "word_id": "wd-0260",
-      "filename": "reflexive_me"
+      "filename": "see_you_soon"
     },
     {
       "word_id": "wd-0261",
-      "filename": "i_am_called"
+      "filename": "see_you_later"
     },
     {
       "word_id": "wd-0262",
-      "filename": "reflexive_you"
+      "filename": "pleasure"
     },
     {
       "word_id": "wd-0263",
-      "filename": "you_are_called"
+      "filename": "everything"
     },
     {
       "word_id": "wd-0264",
-      "filename": "reflexive_himself_herself"
+      "filename": "reflexive_me"
     },
     {
       "word_id": "wd-0265",
-      "filename": "is_called"
+      "filename": "i_am_called"
     },
     {
       "word_id": "wd-0266",
-      "filename": "male_cousin"
+      "filename": "reflexive_himself_herself"
     },
     {
       "word_id": "wd-0267",
-      "filename": "his_her"
+      "filename": "is_called"
     },
     {
       "word_id": "wd-0268",
-      "filename": "i_have"
+      "filename": "i_am_permanently"
     },
     {
       "word_id": "wd-0269",
-      "filename": "you_have"
+      "filename": "brazilian_feminine"
+    },
+    {
+      "word_id": "wd-0270",
+      "filename": "good_feminine"
     }
   ]
 }

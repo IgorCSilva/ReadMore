@@ -10,3 +10,22 @@ vi.stubGlobal(
   'prompt',
   vi.fn(() => 'test@example.com'),
 )
+
+// jsdom doesn't implement window.matchMedia at all — Typing.vue reads
+// prefers-reduced-motion on mount, which would otherwise throw
+// "matchMedia is not a function" for every test that mounts it. Reports
+// "no preference" (matches: false) unconditionally; nothing today needs a
+// test that simulates the reduced-motion preference actually being on.
+vi.stubGlobal(
+  'matchMedia',
+  vi.fn().mockImplementation((query: string) => ({
+    matches: false,
+    media: query,
+    onchange: null,
+    addListener: vi.fn(),
+    removeListener: vi.fn(),
+    addEventListener: vi.fn(),
+    removeEventListener: vi.fn(),
+    dispatchEvent: vi.fn(),
+  })),
+)
