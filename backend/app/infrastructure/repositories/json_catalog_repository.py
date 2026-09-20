@@ -22,7 +22,7 @@ import json
 from pathlib import Path
 
 from backend.app.application.ports.catalog_repository import CatalogRepository
-from backend.app.domain.entities import Chapter, Text, Topic, Word
+from backend.app.domain.entities import Chapter, Sentence, Text, Topic, Word
 from backend.app.domain.exceptions import LanguageNotFoundError
 from backend.app.domain.value_objects import LanguagePair
 
@@ -80,10 +80,18 @@ class JsonCatalogRepository(CatalogRepository):
         return {row["word_id"]: row["root_word_id"] for row in self._load_lang_words(target_code)}
 
     def list_languages(self) -> list[LanguagePair]:
-        return [
-            LanguagePair.parse(path.stem)
-            for path in sorted(self._content_dir.glob("*.json"))
-        ]
+        # content_dir also holds per-language word lists (e.g. es.json, used by
+        # the words-adaptation phase to author a target's vocabulary before
+        # it's adapted into a pair) alongside actual "<origin>-<target>.json"
+        # pair files — skip anything whose stem doesn't parse as a pair rather
+        # than assuming every *.json here is one.
+        pairs = []
+        for path in sorted(self._content_dir.glob("*.json")):
+            try:
+                pairs.append(LanguagePair.parse(path.stem))
+            except ValueError:
+                continue
+        return pairs
 
     def get_words(
         self, lang: LanguagePair, sentence_lang: str = "target", cue_lang: str = "origin"
@@ -140,6 +148,7 @@ class JsonCatalogRepository(CatalogRepository):
             description=data["description"],
             word_ids=[word_map.get(w, w) for w in data.get("word_ids", [])],
             texts=[JsonCatalogRepository._to_text(t) for t in data.get("texts", [])],
+            sentences=[JsonCatalogRepository._to_sentence(s) for s in data.get("sentences", [])],
             status=data.get("status", "ready"),
             exercises=data.get("exercises", []),
         )
@@ -151,4 +160,11 @@ class JsonCatalogRepository(CatalogRepository):
             number=data["number"],
             title=data["title"],
             body=data["body"],
+        )
+
+    @staticmethod
+    def _to_sentence(data: dict) -> Sentence:
+        return Sentence(
+            sentence_number=data["sentence_number"],
+            content=data["content"],
         )

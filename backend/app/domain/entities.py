@@ -27,6 +27,12 @@ class Text:
 
 
 @dataclass
+class Sentence:
+    sentence_number: int
+    content: str
+
+
+@dataclass
 class Topic:
     topic_id: str
     number: int
@@ -34,6 +40,7 @@ class Topic:
     description: str
     word_ids: list[str]
     texts: list[Text] = field(default_factory=list)
+    sentences: list[Sentence] = field(default_factory=list)
     status: str = "ready"
     exercises: list[dict] = field(default_factory=list)
 
