@@ -37,13 +37,22 @@
     <div id="topic-workspace" style="display:none">
       <div class="tabs" id="topic-tabs">
         <button type="button" class="tab-btn active" id="topic-tab-flashcards" data-tab="flashcards">Flashcards</button>
-        <button type="button" class="tab-btn" id="topic-tab-texts" data-tab="texts">Texts</button>
+        <button type="button" class="tab-btn" id="topic-tab-texts" data-tab="texts" style="display:none">Texts</button>
+        <button type="button" class="tab-btn" id="topic-tab-sentences" data-tab="sentences">Sentences</button>
+        <button type="button" class="tab-btn" id="topic-tab-reading" data-tab="reading">Reading</button>
+        <button type="button" class="tab-btn" id="topic-tab-typing" data-tab="typing">Typing</button>
         <button type="button" class="tab-btn" id="topic-tab-exercises" data-tab="exercises">Exercises</button>
       </div>
 
       <Flashcards ref="flashcardsRef" />
 
       <Texts ref="textsRef" />
+
+      <Sentences ref="sentencesRef" />
+
+      <Reading ref="readingRef" />
+
+      <Typing ref="typingRef" />
 
       <Exercises ref="exercisesRef" />
     </div>
@@ -64,6 +73,9 @@ import CorrectSentenceFab from './features/corrections/CorrectSentenceFab.vue'
 import Flashcards from './features/catalog/Flashcards.vue'
 import Notifications from './shared/Notifications.vue'
 import Texts from './features/texts/Texts.vue'
+import Sentences from './features/sentences/Sentences.vue'
+import Reading from './features/reading/Reading.vue'
+import Typing from './features/typing/Typing.vue'
 import Exercises from './features/exercises/Exercises.vue'
 
 // Template refs to the tab children — declared at top level (not inside
@@ -71,6 +83,9 @@ import Exercises from './features/exercises/Exercises.vue'
 // above) to variables visible at setup() scope.
 const flashcardsRef = ref(null)
 const textsRef = ref(null)
+const sentencesRef = ref(null)
+const readingRef = ref(null)
+const typingRef = ref(null)
 const exercisesRef = ref(null)
 
 // Lifted from viewer.html's end-of-body <script> unchanged (Step 2.1 of
@@ -211,23 +226,47 @@ onMounted(() => {
   const topicWorkspaceEl = document.getElementById("topic-workspace");
   const topicTabFlashcardsBtn = document.getElementById("topic-tab-flashcards");
   const topicTabTextsBtn = document.getElementById("topic-tab-texts");
+  const topicTabSentencesBtn = document.getElementById("topic-tab-sentences");
+  const topicTabReadingBtn = document.getElementById("topic-tab-reading");
+  const topicTabTypingBtn = document.getElementById("topic-tab-typing");
   const topicTabExercisesBtn = document.getElementById("topic-tab-exercises");
   const topicFlashcardsPanelEl = document.getElementById("topic-flashcards-panel");
   const topicTextsPanelEl = document.getElementById("topic-texts-panel");
+  const topicSentencesPanelEl = document.getElementById("topic-sentences-panel");
+  const topicReadingPanelEl = document.getElementById("topic-reading-panel");
+  const topicTypingPanelEl = document.getElementById("topic-typing-panel");
   const topicExercisesPanelEl = document.getElementById("topic-exercises-panel");
 
   function switchTopicTab(tab) {
+    // Typing keeps a rAF loop spawning/moving words while its tab is
+    // active — pause() before leaving it so an off-screen tab doesn't keep
+    // spawning and missing words in the background indefinitely.
+    if (currentTopicTab === "typing" && tab !== "typing") {
+      typingRef.value?.pause();
+    }
     currentTopicTab = tab;
     topicTabFlashcardsBtn.classList.toggle("active", tab === "flashcards");
     topicTabTextsBtn.classList.toggle("active", tab === "texts");
+    topicTabSentencesBtn.classList.toggle("active", tab === "sentences");
+    topicTabReadingBtn.classList.toggle("active", tab === "reading");
+    topicTabTypingBtn.classList.toggle("active", tab === "typing");
     topicTabExercisesBtn.classList.toggle("active", tab === "exercises");
     topicFlashcardsPanelEl.style.display = tab === "flashcards" ? "flex" : "none";
     topicTextsPanelEl.style.display = tab === "texts" ? "flex" : "none";
+    topicSentencesPanelEl.style.display = tab === "sentences" ? "flex" : "none";
+    topicReadingPanelEl.style.display = tab === "reading" ? "flex" : "none";
+    topicTypingPanelEl.style.display = tab === "typing" ? "flex" : "none";
     topicExercisesPanelEl.style.display = tab === "exercises" ? "flex" : "none";
     if (tab === "flashcards") {
       flashcardsRef.value?.load(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
     } else if (tab === "texts") {
       textsRef.value?.show(currentTopic, LANG, GENDER_STYLE_TEXTS);
+    } else if (tab === "sentences") {
+      sentencesRef.value?.show(currentTopic);
+    } else if (tab === "reading") {
+      readingRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
+    } else if (tab === "typing") {
+      typingRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
     } else {
       exercisesRef.value?.show(LANG, currentTopic, CUE_LANG);
     }
@@ -235,6 +274,9 @@ onMounted(() => {
 
   topicTabFlashcardsBtn.addEventListener("click", () => { switchTopicTab("flashcards"); syncHash(true); });
   topicTabTextsBtn.addEventListener("click", () => { switchTopicTab("texts"); syncHash(true); });
+  topicTabSentencesBtn.addEventListener("click", () => { switchTopicTab("sentences"); syncHash(true); });
+  topicTabReadingBtn.addEventListener("click", () => { switchTopicTab("reading"); syncHash(true); });
+  topicTabTypingBtn.addEventListener("click", () => { switchTopicTab("typing"); syncHash(true); });
   topicTabExercisesBtn.addEventListener("click", () => { switchTopicTab("exercises"); syncHash(true); });
 
   // ---- Texts ----
@@ -384,7 +426,7 @@ onMounted(() => {
   // hash rather than a real path since the backend only serves index.html
   // for "/" (see main.py) and has no catch-all route for arbitrary paths;
   // the hash never leaves the browser, so it needs no server-side support.
-  const VALID_TABS = ["flashcards", "texts", "exercises"];
+  const VALID_TABS = ["flashcards", "texts", "sentences", "reading", "typing", "exercises"];
 
   function buildHash() {
     const parts = [LANG];
@@ -1096,6 +1138,212 @@ onMounted(() => {
   }
   .text-accordion-body strong {
     color: var(--accent);
+  }
+
+  .sentences-list {
+    width: 100%;
+    display: flex; flex-direction: column; gap: 12px;
+  }
+  .sentence-item {
+    width: 100%;
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 16px 20px;
+    background: var(--card);
+    border: 1px solid var(--border); border-radius: 16px;
+    font-size: 17px; line-height: 1.6; color: var(--text);
+  }
+  .sentence-item-number {
+    flex-shrink: 0; width: 36px; height: 36px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums;
+    background: var(--accent-soft); color: var(--accent-strong);
+  }
+  .sentence-item-content strong {
+    color: var(--accent);
+  }
+
+  .reading-stage {
+    width: 100%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 20px;
+    min-height: 50vh;
+  }
+  .reading-counter {
+    font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums;
+  }
+  .reading-word-area {
+    display: flex; align-items: center; justify-content: center;
+    width: min(90vw, 640px);
+    min-height: 220px;
+    padding: 40px;
+    background: var(--card);
+    border: 1px solid var(--border); border-radius: 24px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .reading-word-area:hover {
+    border-color: var(--accent);
+  }
+  .reading-word {
+    font-size: clamp(32px, 8vw, 64px); font-weight: 800;
+    text-align: center; word-break: break-word;
+    color: var(--text);
+  }
+  .reading-hint {
+    font-size: 13px; color: var(--muted);
+  }
+
+  /* Typing tab — this stage stays a dark canvas regardless of the app's
+     light/dark theme (literal colors below, not var(--bg)/var(--card)):
+     the mechanic itself is white-on-black letter opacity, so it doesn't
+     adapt. Completed words still use var(--accent) — the app's existing
+     per-language accent (see the :root[data-lang] rules) — so a finished
+     word reads as "this language's color" in either theme. */
+  #topic-typing-panel {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+  }
+  .typing-stage {
+    position: relative;
+    width: 100%;
+    min-height: 50vh;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #2a2e38;
+    background:
+      radial-gradient(ellipse at 50% -10%, rgba(255, 255, 255, 0.05), transparent 55%),
+      repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.012) 0px, rgba(255, 255, 255, 0.012) 1px, transparent 1px, transparent 3px),
+      linear-gradient(180deg, #0d1016, #0a0c10);
+  }
+  .typing-danger-zone {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: min(11%, 110px);
+    background: linear-gradient(90deg, rgba(255, 92, 108, 0.16), transparent);
+    border-right: 1px dashed rgba(255, 92, 108, 0.35);
+  }
+  .typing-hud {
+    position: absolute;
+    top: 12px; right: 16px;
+    display: flex; gap: 14px;
+    font-size: 12px; color: #8b91a0;
+    font-variant-numeric: tabular-nums;
+    z-index: 2;
+  }
+  .typing-hud b {
+    color: #eef0f3;
+  }
+  .typing-hud-missed b {
+    color: #ff5c6c;
+  }
+  .typing-lanes {
+    position: absolute;
+    inset: 0;
+  }
+  .typing-lane-guide {
+    position: absolute;
+    left: 0; right: 0; height: 1px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.08) 0 6px, transparent 6px 14px);
+    background-size: 14px 1px;
+  }
+  .typing-flyers {
+    position: absolute;
+    inset: 0;
+  }
+  .typing-flyer {
+    position: absolute;
+    top: 0; left: 0;
+    display: flex;
+    font-family: ui-monospace, "SFMono-Regular", "Cascadia Code", "Roboto Mono", Consolas, monospace;
+    font-weight: 700;
+    font-size: clamp(18px, 2.4vw, 28px);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    will-change: transform;
+    filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.5));
+  }
+  .typing-letter {
+    display: inline-block;
+    /* Preserves a lone space character's width instead of it collapsing
+       away under normal whitespace rules — multi-word target vocabulary
+       (e.g. "de nada") would otherwise render as "denada". */
+    white-space: pre;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.12s ease, transform 0.12s ease;
+  }
+  .typing-letter.typed {
+    color: #ffffff;
+  }
+  .typing-letter.pop {
+    transform: translateY(-4px) scale(1.08);
+  }
+  .typing-flyer.done .typing-letter {
+    color: var(--accent);
+  }
+  .typing-flyer.done {
+    animation: typing-done-pop 0.42s ease forwards;
+  }
+  .typing-flyer.missed .typing-letter {
+    color: #ff5c6c;
+    transition: color 0.25s ease, opacity 0.5s ease 0.1s;
+  }
+  .typing-flyer.missed {
+    animation: typing-missed-fall 0.5s ease forwards;
+  }
+  @keyframes typing-done-pop {
+    0% { transform: scale(1); }
+    45% { transform: scale(1.16); }
+    100% { transform: translateY(-22px) scale(1); opacity: 0; }
+  }
+  @keyframes typing-missed-fall {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(10px); opacity: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .typing-flyer.done { animation: none; }
+    .typing-flyer.missed { animation: none; }
+    .typing-letter.pop { transform: none; }
+  }
+  .typing-controls {
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+  }
+  .typing-hint {
+    font-size: 13px; color: var(--muted);
+  }
+  .typing-controls-actions {
+    display: flex; align-items: center; gap: 12px;
+    flex-shrink: 0;
+  }
+  .typing-speed-label {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 13px; color: var(--muted);
+  }
+  #typing-speed-select {
+    background: var(--bg); color: var(--text);
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 6px 8px; font-size: 13px;
+  }
+  .typing-reset-btn {
+    background: var(--bg); color: var(--text);
+    border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px 10px; font-size: 13px; cursor: pointer;
+  }
+  .typing-reset-btn:hover {
+    border-color: var(--accent); color: var(--accent);
+  }
+  .typing-key-capture {
+    position: absolute;
+    width: 1px; height: 1px;
+    margin: -1px; padding: 0; border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .exercise-list {

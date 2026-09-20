@@ -35,6 +35,11 @@ export interface Text {
   body: string
 }
 
+export interface Sentence {
+  sentence_number: number
+  content: string
+}
+
 export interface Topic {
   topic_id: string
   number: number
@@ -42,6 +47,7 @@ export interface Topic {
   description: string
   word_ids: string[]
   texts: Text[]
+  sentences: Sentence[]
   status: string
   // Left untyped on purpose, matching backend/app/domain/entities.py's
   // Topic.exercises (list[dict]) — modeling every exercise variant's shape
