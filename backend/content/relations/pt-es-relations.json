@@ -1,0 +1,45 @@
+{
+  "chapter_1": {
+    "topic_1": {
+      "pt": {
+        "olá": "hola",
+        "obrigado": "gracias",
+        "obrigada": "gracias",
+        "oi": "hola",
+        "tchau": "chao",
+        "e": "y",
+        "bom": "bueno",
+        "boa": "buena",
+        "dia": "día",
+        "tarde": "tarde",
+        "noite": "noche",
+        "tudo": "todo",
+        "bem": "bien",
+        "como": "cómo",
+        "você": "tú",
+        "estou": "estoy",
+        "está": "estás",
+        "nome": "nombre",
+        "meu": "mi",
+        "é": "es",
+        "eu": "yo",
+        "me": "me",
+        "chamo": "llamo",
+        "de": "de",
+        "sim": "sí",
+        "não": "no",
+        "de nada": "de nada"
+      }
+    }
+  },
+  "chapter_4": {
+    "topic_5": {
+      "pt": {
+        "brasileiro": "brasileño",
+        "brasileira": "brasileña",
+        "fala": "hablas",
+        "português": "portugués"
+      }
+    }
+  }
+}

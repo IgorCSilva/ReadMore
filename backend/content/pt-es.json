@@ -1,3 +1,458 @@
 {
-  "chapters": []
+  "chapters": [
+    {
+      "chapter_id": "ch-A0-EL",
+      "number": 1,
+      "title": "Vida cotidiana e rotinas",
+      "description": "Desenvolver vocabulário e padrões do presente simples para frases curtas em primeira pessoa sobre si mesmo e o próprio dia.",
+      "status": "ready",
+      "topics": [
+        {
+          "topic_id": "top-A0-EL-1",
+          "number": 1,
+          "title": "Saudações e Apresentação Pessoal",
+          "description": "Nomes, saudações básicas, a expressão reflexiva \"me llamo\" (chamo-me), a forma mais natural de dizer o próprio nome em espanhol. Atividades de construção: leitura de crachá ou de uma breve apresentação pessoal.",
+          "status": "ready",
+          "word_ids": [
+            "es-wd-0001",
+            "es-wd-0002",
+            "es-wd-0003",
+            "es-wd-0004",
+            "es-wd-0005",
+            "es-wd-0006",
+            "es-wd-0007",
+            "es-wd-0008",
+            "es-wd-0009",
+            "es-wd-0010",
+            "es-wd-0011",
+            "es-wd-0012",
+            "es-wd-0013",
+            "es-wd-0014",
+            "es-wd-0015",
+            "es-wd-0016",
+            "es-wd-0017",
+            "es-wd-0018",
+            "es-wd-0019",
+            "es-wd-0020",
+            "es-wd-0021",
+            "es-wd-0022",
+            "es-wd-0023",
+            "es-wd-0024",
+            "es-wd-0025",
+            "es-wd-0030",
+            "es-wd-0031",
+            "es-wd-0032",
+            "es-wd-0033",
+            "es-wd-0034",
+            "es-wd-0035",
+            "es-wd-0036"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "Contou a história **de** um jeito engraçado."
+            },
+            {
+              "sentence_number": 2,
+              "content": "Ouvi um **gracias** e logo um **de nada**."
+            },
+            {
+              "sentence_number": 3,
+              "content": "Ela confirmou tudo com um simples **sí**."
+            },
+            {
+              "sentence_number": 4,
+              "content": "Respondeu com um simples **bien**."
+            },
+            {
+              "sentence_number": 5,
+              "content": "Achei o resultado bem **bueno**."
+            },
+            {
+              "sentence_number": 6,
+              "content": "Ela repetiu baixinho: **me** **llamo** Marina."
+            },
+            {
+              "sentence_number": 7,
+              "content": "Perguntei se estava **todo** **bien** por aí."
+            },
+            {
+              "sentence_number": 8,
+              "content": "Entre nós dois, **yo** cheguei primeiro."
+            },
+            {
+              "sentence_number": 9,
+              "content": "Foi **yo** quem disse **hola** primeiro."
+            },
+            {
+              "sentence_number": 10,
+              "content": "Ele respondeu **no** sem pensar duas vezes."
+            },
+            {
+              "sentence_number": 11,
+              "content": "Ele acenou e falou **chao**."
+            },
+            {
+              "sentence_number": 12,
+              "content": "Disse **hola** ao entrar e **chao** ao sair."
+            },
+            {
+              "sentence_number": 13,
+              "content": "Bastou um **sí** para animar todo mundo."
+            },
+            {
+              "sentence_number": 14,
+              "content": "O **nombre** completo **es** difícil de escrever."
+            },
+            {
+              "sentence_number": 15,
+              "content": "Escrevi que **estoy** **de** férias essa semana."
+            },
+            {
+              "sentence_number": 16,
+              "content": "Ela contou que **estoy** atrasada de novo."
+            },
+            {
+              "sentence_number": 17,
+              "content": "Trabalho de **tarde** **y** descanso à noite."
+            },
+            {
+              "sentence_number": 18,
+              "content": "Tentei lembrar como completar a frase com **llamo**."
+            },
+            {
+              "sentence_number": 19,
+              "content": "Ficamos acordados quase toda a **noche**."
+            },
+            {
+              "sentence_number": 20,
+              "content": "Só disse **hola** e sorriu."
+            },
+            {
+              "sentence_number": 21,
+              "content": "Combinamos de nos ver **tarde**."
+            },
+            {
+              "sentence_number": 22,
+              "content": "Ela quis saber se **tú** **estás** ocupado."
+            },
+            {
+              "sentence_number": 23,
+              "content": "Ele hesitou entre um **no** e um ¿**cómo**?"
+            },
+            {
+              "sentence_number": 24,
+              "content": "Descobri que aquilo **es** verdade."
+            },
+            {
+              "sentence_number": 25,
+              "content": "Bastou um **hola** para quebrar o gelo."
+            },
+            {
+              "sentence_number": 26,
+              "content": "Ela garantiu que estava **bien**."
+            },
+            {
+              "sentence_number": 27,
+              "content": "Terminei a ligação com um simples **chao**."
+            },
+            {
+              "sentence_number": 28,
+              "content": "Ele disse que **es** simples de entender."
+            },
+            {
+              "sentence_number": 29,
+              "content": "Ele trabalha durante a **noche**."
+            },
+            {
+              "sentence_number": 30,
+              "content": "Ele **me** chamou de longe."
+            },
+            {
+              "sentence_number": 31,
+              "content": "Essa é **mi** cidade natal."
+            },
+            {
+              "sentence_number": 32,
+              "content": "Fui **yo** quem organizou tudo."
+            },
+            {
+              "sentence_number": 33,
+              "content": "Ela sorriu e sussurrou **gracias**."
+            },
+            {
+              "sentence_number": 34,
+              "content": "Ela tem uma energia **buena**."
+            },
+            {
+              "sentence_number": 35,
+              "content": "Ele conheceu **mi** família ontem."
+            },
+            {
+              "sentence_number": 36,
+              "content": "No meio da frase, ele usou um **y**."
+            },
+            {
+              "sentence_number": 37,
+              "content": "Perguntei se **tú** vinhas, e respondi que **estoy** indo também."
+            },
+            {
+              "sentence_number": 38,
+              "content": "Ela só disse **de nada** e seguiu em frente."
+            },
+            {
+              "sentence_number": 39,
+              "content": "A resposta foi só **sí** ou **no**."
+            },
+            {
+              "sentence_number": 40,
+              "content": "Ela listou os nomes usando **y** entre eles."
+            },
+            {
+              "sentence_number": 41,
+              "content": "Aprendi a usar a palavra **y** hoje."
+            },
+            {
+              "sentence_number": 42,
+              "content": "Contei sobre **mi** viagem recente."
+            },
+            {
+              "sentence_number": 43,
+              "content": "Ela escreveu o **nombre** errado no crachá."
+            },
+            {
+              "sentence_number": 44,
+              "content": "Ela ensinou **cómo** pronunciar a palavra certa."
+            },
+            {
+              "sentence_number": 45,
+              "content": "Ela disse que **tú** parecia cansado."
+            },
+            {
+              "sentence_number": 46,
+              "content": "Bastou um **de nada** gentil para encerrar."
+            },
+            {
+              "sentence_number": 47,
+              "content": "Isso ficou perto **de** **mi** casa nova."
+            },
+            {
+              "sentence_number": 48,
+              "content": "Essa lembrança é **de** um tempo bom."
+            },
+            {
+              "sentence_number": 49,
+              "content": "Não sabia explicar **cómo** aquilo funcionava."
+            },
+            {
+              "sentence_number": 50,
+              "content": "**me** avisaram na última hora."
+            },
+            {
+              "sentence_number": 51,
+              "content": "Ela abriu a porta com um **hola** animado."
+            },
+            {
+              "sentence_number": 52,
+              "content": "Um **chao** rápido, e ela já tinha saído."
+            },
+            {
+              "sentence_number": 53,
+              "content": "Ela cuidou de **todo** durante a viagem."
+            },
+            {
+              "sentence_number": 54,
+              "content": "Ele comentou que o clima estava **bueno**."
+            },
+            {
+              "sentence_number": 55,
+              "content": "No fim, **es** **todo** o que eu sabia dizer."
+            },
+            {
+              "sentence_number": 56,
+              "content": "Disseram que o filme era **bueno**."
+            },
+            {
+              "sentence_number": 57,
+              "content": "Perguntou **cómo** eu tinha chegado até ali."
+            },
+            {
+              "sentence_number": 58,
+              "content": "Agradeci com um **gracias** sincero."
+            },
+            {
+              "sentence_number": 59,
+              "content": "Um **no** encerrou a discussão."
+            },
+            {
+              "sentence_number": 60,
+              "content": "Consideraram a proposta **buena** desde o início."
+            },
+            {
+              "sentence_number": 61,
+              "content": "Saímos **y** voltamos já de **noche**."
+            },
+            {
+              "sentence_number": 62,
+              "content": "Ela apontou e disse que era **yo**."
+            },
+            {
+              "sentence_number": 63,
+              "content": "Contei que **tú** também viria à festa."
+            },
+            {
+              "sentence_number": 64,
+              "content": "Foi um **día** cheio de novidades."
+            },
+            {
+              "sentence_number": 65,
+              "content": "Ele resolveu **todo** sozinho."
+            },
+            {
+              "sentence_number": 66,
+              "content": "Esqueci o **nombre** dele na hora."
+            },
+            {
+              "sentence_number": 67,
+              "content": "Ele avisou que **estoy** perto de chegar."
+            },
+            {
+              "sentence_number": 68,
+              "content": "Ele respondeu **de nada** com um sorriso."
+            },
+            {
+              "sentence_number": 69,
+              "content": "Achei que ficou tudo **bien** no fim."
+            },
+            {
+              "sentence_number": 70,
+              "content": "Foi um **día** de sol, com uma energia bem **buena** no ar."
+            },
+            {
+              "sentence_number": 71,
+              "content": "Ele veio **de** longe para chegar aqui."
+            },
+            {
+              "sentence_number": 72,
+              "content": "Respondeu com um **sí** firme."
+            },
+            {
+              "sentence_number": 73,
+              "content": "Perguntei: ¿**cómo** **estás**?"
+            },
+            {
+              "sentence_number": 74,
+              "content": "**me** chamaram de novo, e **yo** respondi na hora."
+            },
+            {
+              "sentence_number": 75,
+              "content": "À **noche**, ela ainda tentava decorar a palavra **llamo**."
+            },
+            {
+              "sentence_number": 76,
+              "content": "A festa foi até tarde da **noche**."
+            },
+            {
+              "sentence_number": 77,
+              "content": "Desejei uma **buena** **tarde** para ela."
+            },
+            {
+              "sentence_number": 78,
+              "content": "Escreveu só um ¿**estás** aí?"
+            },
+            {
+              "sentence_number": 79,
+              "content": "Fizemos **todo** com calma."
+            },
+            {
+              "sentence_number": 80,
+              "content": "Perguntou se **estás** com fome."
+            },
+            {
+              "sentence_number": 81,
+              "content": "Ela **me** contou a novidade."
+            },
+            {
+              "sentence_number": 82,
+              "content": "Despediu-se com **chao** e um sincero **gracias**."
+            },
+            {
+              "sentence_number": 83,
+              "content": "Coloquei **mi** **nombre** no crachá."
+            },
+            {
+              "sentence_number": 84,
+              "content": "Ele lembrou do **día** com carinho."
+            },
+            {
+              "sentence_number": 85,
+              "content": "Chegou já **tarde** demais."
+            },
+            {
+              "sentence_number": 86,
+              "content": "Ela confirmou que **es** assim mesmo."
+            },
+            {
+              "sentence_number": 87,
+              "content": "Achei **bien**, mas o clima seguia meio **bueno**."
+            },
+            {
+              "sentence_number": 88,
+              "content": "Um simples **gracias** já bastava."
+            },
+            {
+              "sentence_number": 89,
+              "content": "Perguntei se **tú** já tinha comido."
+            },
+            {
+              "sentence_number": 90,
+              "content": "Ele quis saber se **estás** livre amanhã."
+            },
+            {
+              "sentence_number": 91,
+              "content": "Ela balançou a cabeça e disse **no**."
+            },
+            {
+              "sentence_number": 92,
+              "content": "Perguntaram meu **nombre** completo."
+            },
+            {
+              "sentence_number": 93,
+              "content": "Elogiaram a ideia chamando-a de **buena**."
+            },
+            {
+              "sentence_number": 94,
+              "content": "Escrevi que **estoy** cansado hoje."
+            },
+            {
+              "sentence_number": 95,
+              "content": "Ela repetiu a palavra **llamo** devagar."
+            },
+            {
+              "sentence_number": 96,
+              "content": "Ele confundiu **llamo** com outra palavra parecida."
+            },
+            {
+              "sentence_number": 97,
+              "content": "Contei os dias até aquele **día** especial."
+            },
+            {
+              "sentence_number": 98,
+              "content": "Ela só liga **tarde** da noite."
+            },
+            {
+              "sentence_number": 99,
+              "content": "O **día** estava **bueno** para caminhar."
+            },
+            {
+              "sentence_number": 100,
+              "content": "Ela respondeu **de nada** e depois um **sí** tímido."
+            }
+          ],
+          "exercises": []
+        }
+      ]
+    }
+  ]
 }

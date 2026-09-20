@@ -1,0 +1,799 @@
+{
+  "chapter_1": {
+    "title": "Everyday Life & Routines",
+    "topics": {
+      "topic_1": {
+        "title": "Greetings & Introducing Yourself",
+        "words": [
+          "oi",
+          "tchau",
+          "e",
+          "bom",
+          "boa",
+          "dia",
+          "tarde",
+          "noite",
+          "bem",
+          "tudo",
+          "como",
+          "você",
+          "estou",
+          "está",
+          "nome",
+          "meu",
+          "é",
+          "eu",
+          "me",
+          "chamo",
+          "de",
+          "sim",
+          "não",
+          "obrigado",
+          "obrigada",
+          "de nada"
+        ]
+      },
+      "topic_2": {
+        "title": "Family & People Around Me",
+        "words": [
+          "família",
+          "pai",
+          "mãe",
+          "filho",
+          "filha",
+          "irmão",
+          "irmã",
+          "avô",
+          "avó",
+          "tio",
+          "tia",
+          "primo",
+          "prima",
+          "marido",
+          "esposa",
+          "minha",
+          "seu",
+          "sua",
+          "nós",
+          "nosso",
+          "nossa",
+          "o",
+          "a",
+          "todos",
+          "todas",
+          "com",
+          "sem"
+        ]
+      },
+      "topic_3": {
+        "title": "At Home",
+        "words": [
+          "casa",
+          "quarto",
+          "sala",
+          "cozinha",
+          "banheiro",
+          "porta",
+          "janela",
+          "mesa",
+          "cadeira",
+          "cama",
+          "geladeira",
+          "fogão",
+          "televisão",
+          "uma",
+          "aqui",
+          "ali",
+          "tem",
+          "na",
+          "no",
+          "em",
+          "isto",
+          "isso"
+        ]
+      },
+      "topic_4": {
+        "title": "Daily Routine (Morning to Night)",
+        "words": [
+          "acordar",
+          "levantar",
+          "tomar banho",
+          "escovar os dentes",
+          "vestir",
+          "tomar café",
+          "sair",
+          "ir",
+          "chegar",
+          "trabalhar",
+          "voltar",
+          "almoçar",
+          "jantar",
+          "descansar",
+          "ler",
+          "dormir",
+          "acordo",
+          "levanto",
+          "depois",
+          "ter",
+          "fazer"
+        ]
+      },
+      "topic_5": {
+        "title": "Food & Meals",
+        "words": [
+          "comida",
+          "bebida",
+          "água",
+          "café",
+          "leite",
+          "pão",
+          "arroz",
+          "feijão",
+          "carne",
+          "ovo",
+          "fruta",
+          "maçã",
+          "verdura",
+          "gostar",
+          "comer",
+          "beber",
+          "quero",
+          "nada",
+          "muito",
+          "pouco",
+          "mais",
+          "menos"
+        ]
+      },
+      "topic_6": {
+        "title": "Numbers, Time & Simple Prices",
+        "words": [
+          "zero",
+          "um",
+          "dois",
+          "três",
+          "quatro",
+          "cinco",
+          "seis",
+          "sete",
+          "oito",
+          "nove",
+          "dez",
+          "hora",
+          "minuto",
+          "agora",
+          "hoje",
+          "amanhã",
+          "quanto custa",
+          "preço",
+          "real",
+          "segunda-feira",
+          "terça-feira",
+          "quarta-feira",
+          "quinta-feira",
+          "sexta-feira",
+          "sábado",
+          "domingo",
+          "semana"
+        ]
+      }
+    }
+  },
+  "chapter_2": {
+    "title": "Short Stories & Simple Narratives",
+    "topics": {
+      "topic_1": {
+        "title": "A Short Day in the Life",
+        "words": [
+          "ele",
+          "ela",
+          "eles",
+          "elas",
+          "vocês",
+          "vai",
+          "sai",
+          "chega",
+          "trabalha",
+          "volta",
+          "lê",
+          "assiste à televisão",
+          "de manhã",
+          "à tarde",
+          "à noite",
+          "antes"
+        ]
+      },
+      "topic_2": {
+        "title": "A Simple Surprise",
+        "words": [
+          "então",
+          "de repente",
+          "mas",
+          "porque",
+          "quando",
+          "um dia",
+          "encontrar",
+          "ver",
+          "ouvir",
+          "abrir",
+          "fechar",
+          "entrar",
+          "acontecer",
+          "aparecer",
+          "desaparecer",
+          "surpresa",
+          "presente",
+          "ninguém"
+        ]
+      },
+      "topic_3": {
+        "title": "Meeting Someone New",
+        "words": [
+          "conhecer",
+          "novo",
+          "nova",
+          "primeira vez",
+          "apresentar",
+          "perguntar",
+          "responder",
+          "dizer",
+          "conversar",
+          "cumprimentar",
+          "vizinho",
+          "vizinha",
+          "estranho",
+          "estranha",
+          "amigo",
+          "amiga",
+          "que",
+          "se",
+          "chama",
+          "prazer"
+        ]
+      },
+      "topic_4": {
+        "title": "A Simple Animal Story",
+        "words": [
+          "animal",
+          "cachorro",
+          "gato",
+          "pássaro",
+          "pequeno",
+          "pequena",
+          "grande",
+          "correr",
+          "andar",
+          "brincar",
+          "latir",
+          "miar",
+          "voar",
+          "parar",
+          "perto",
+          "longe"
+        ]
+      }
+    }
+  },
+  "chapter_3": {
+    "title": "Getting Around & Travel Basics",
+    "topics": {
+      "topic_1": {
+        "title": "Asking for Directions",
+        "words": [
+          "esquerda",
+          "direita",
+          "frente",
+          "reto",
+          "rua",
+          "esquina",
+          "caminho",
+          "direção",
+          "mapa",
+          "lugar",
+          "endereço",
+          "onde fica",
+          "como chegar",
+          "por aqui",
+          "por ali",
+          "virar",
+          "atravessar",
+          "passar"
+        ]
+      },
+      "topic_2": {
+        "title": "Transportation Basics",
+        "words": [
+          "ônibus",
+          "carro",
+          "táxi",
+          "trem",
+          "metrô",
+          "avião",
+          "bicicleta",
+          "estação",
+          "parada",
+          "passageiro",
+          "motorista",
+          "passagem",
+          "embarcar",
+          "desembarcar",
+          "viajar",
+          "partir",
+          "dirigir",
+          "transporte"
+        ]
+      },
+      "topic_3": {
+        "title": "At the Airport/Station",
+        "words": [
+          "aeroporto",
+          "chegada",
+          "partida",
+          "portão",
+          "terminal",
+          "plataforma",
+          "voo",
+          "atrasado",
+          "atrasada",
+          "aberto",
+          "aberta",
+          "fechado",
+          "fechada",
+          "entrada",
+          "saída",
+          "bagagem",
+          "documento",
+          "segurança"
+        ]
+      },
+      "topic_4": {
+        "title": "Booking a Simple Trip",
+        "words": [
+          "reserva",
+          "reservar",
+          "data",
+          "destino",
+          "viagem",
+          "ida",
+          "ida e volta",
+          "horário",
+          "confirmado",
+          "confirmada",
+          "disponível",
+          "indisponível",
+          "cartão",
+          "número",
+          "comprar",
+          "escolher"
+        ]
+      },
+      "topic_5": {
+        "title": "Asking for Help While Traveling",
+        "words": [
+          "ajuda",
+          "socorro",
+          "perdido",
+          "perdida",
+          "problema",
+          "precisar",
+          "poder",
+          "desculpe",
+          "por favor",
+          "não entendo",
+          "não sei",
+          "pode repetir",
+          "passaporte",
+          "celular",
+          "polícia",
+          "hospital"
+        ]
+      }
+    }
+  },
+  "chapter_4": {
+    "title": "Culture & Traditions",
+    "topics": {
+      "topic_1": {
+        "title": "Holidays & Celebrations",
+        "words": [
+          "feriado",
+          "festa",
+          "natal",
+          "páscoa",
+          "carnaval",
+          "ano-novo",
+          "aniversário",
+          "casamento",
+          "bolo",
+          "decoração",
+          "música",
+          "dança",
+          "celebrar",
+          "convidar",
+          "dar",
+          "receber",
+          "feliz",
+          "especial"
+        ]
+      },
+      "topic_2": {
+        "title": "Simple Table Manners & Customs",
+        "words": [
+          "prato",
+          "copo",
+          "xícara",
+          "garfo",
+          "faca",
+          "colher",
+          "sentar",
+          "pedir",
+          "oferecer",
+          "educado",
+          "educada",
+          "respeitar",
+          "compartilhar",
+          "mastigar",
+          "silêncio"
+        ]
+      },
+      "topic_3": {
+        "title": "Clothes & Everyday Style",
+        "words": [
+          "camisa",
+          "calça",
+          "vestido",
+          "casaco",
+          "sapato",
+          "meia",
+          "roupa",
+          "usar",
+          "tamanho",
+          "elegante",
+          "vermelho",
+          "azul",
+          "amarelo",
+          "preto",
+          "branco",
+          "rosa",
+          "roxo",
+          "laranja",
+          "marrom",
+          "cinza",
+          "cor",
+          "bonito",
+          "bonita",
+          "velho",
+          "velha",
+          "ruim"
+        ]
+      },
+      "topic_4": {
+        "title": "Music & Simple Hobbies",
+        "words": [
+          "filme",
+          "jogo",
+          "esporte",
+          "futebol",
+          "desenho",
+          "fotografia",
+          "violão",
+          "cantar",
+          "tocar",
+          "jogar",
+          "nadar",
+          "passear",
+          "colecionar",
+          "praticar",
+          "divertir-se",
+          "hobby"
+        ]
+      },
+      "topic_5": {
+        "title": "Greetings Around the World",
+        "words": [
+          "cumprimento",
+          "beijo",
+          "abraço",
+          "bem-vindo",
+          "bem-vinda",
+          "cultura",
+          "diferente",
+          "igual",
+          "brasileiro",
+          "brasileira",
+          "fala",
+          "português",
+          "sou",
+          "onde"
+        ]
+      }
+    }
+  },
+  "chapter_5": {
+    "title": "Technology & Gadgets",
+    "topics": {
+      "topic_1": {
+        "title": "My Phone",
+        "words": [
+          "telefone",
+          "tela",
+          "botão",
+          "bateria",
+          "câmera",
+          "fone",
+          "aplicativo",
+          "contato",
+          "foto",
+          "vídeo",
+          "ligação",
+          "mensagem",
+          "internet",
+          "carregar",
+          "ligar",
+          "desligar"
+        ]
+      },
+      "topic_2": {
+        "title": "Using a Computer",
+        "words": [
+          "computador",
+          "teclado",
+          "mouse",
+          "arquivo",
+          "pasta",
+          "site",
+          "clicar",
+          "digitar",
+          "salvar",
+          "apagar",
+          "baixar",
+          "enviar",
+          "conectar",
+          "desconectar"
+        ]
+      },
+      "topic_3": {
+        "title": "The Internet & Messages",
+        "words": [
+          "rede",
+          "página",
+          "link",
+          "texto",
+          "e-mail",
+          "conta",
+          "perfil",
+          "senha",
+          "nome de usuário",
+          "online",
+          "offline",
+          "postar",
+          "bloquear",
+          "notificação"
+        ]
+      },
+      "topic_4": {
+        "title": "Photos & Simple Apps",
+        "words": [
+          "imagem",
+          "álbum",
+          "galeria",
+          "filtro",
+          "ícone",
+          "arrastar",
+          "selecionar",
+          "editar",
+          "cortar",
+          "tirar",
+          "gravar",
+          "curtir",
+          "comentar",
+          "deletar"
+        ]
+      },
+      "topic_5": {
+        "title": "Simple Machines at Home",
+        "words": [
+          "eletrodoméstico",
+          "micro-ondas",
+          "máquina de lavar",
+          "secadora",
+          "ventilador",
+          "ar-condicionado",
+          "cafeteira",
+          "tomada",
+          "fio",
+          "energia",
+          "limpar",
+          "lavar",
+          "secar",
+          "esquentar",
+          "esfriar",
+          "funcionar"
+        ]
+      }
+    }
+  },
+  "chapter_6": {
+    "title": "Nature & Simple Science",
+    "topics": {
+      "topic_1": {
+        "title": "Weather Basics",
+        "words": [
+          "tempo",
+          "sol",
+          "nuvem",
+          "chuva",
+          "vento",
+          "calor",
+          "frio",
+          "quente",
+          "ensolarado",
+          "nublado",
+          "seco",
+          "úmido",
+          "temperatura",
+          "céu",
+          "neve",
+          "chover",
+          "ventar",
+          "fazer frio"
+        ]
+      },
+      "topic_2": {
+        "title": "Animals Around Us",
+        "words": [
+          "cavalo",
+          "vaca",
+          "porco",
+          "galinha",
+          "ovelha",
+          "macaco",
+          "leão",
+          "elefante",
+          "girafa",
+          "urso",
+          "cobra",
+          "sapo",
+          "abelha",
+          "borboleta",
+          "aranha",
+          "floresta",
+          "fazenda",
+          "rio",
+          "mar",
+          "vive"
+        ]
+      },
+      "topic_3": {
+        "title": "The Seasons",
+        "words": [
+          "primavera",
+          "verão",
+          "outono",
+          "inverno",
+          "florescer",
+          "flores",
+          "folha",
+          "cair",
+          "crescer",
+          "mudar",
+          "nascer",
+          "praia",
+          "férias",
+          "guarda-chuva"
+        ]
+      },
+      "topic_4": {
+        "title": "Plants & Simple Nature Facts",
+        "words": [
+          "planta",
+          "árvore",
+          "flor",
+          "semente",
+          "fruto",
+          "jardim",
+          "terra",
+          "luz",
+          "plantar",
+          "regar",
+          "verde",
+          "vivo",
+          "viva",
+          "natureza"
+        ]
+      },
+      "topic_5": {
+        "title": "Day & Night, Sun & Moon",
+        "words": [
+          "manhã",
+          "lua",
+          "estrela",
+          "planeta",
+          "espaço",
+          "escuro",
+          "claro",
+          "brilhar",
+          "pôr",
+          "horizonte",
+          "do",
+          "durante"
+        ]
+      }
+    }
+  },
+  "chapter_7": {
+    "title": "Simple News & Announcements",
+    "topics": {
+      "topic_1": {
+        "title": "A Simple Weather Announcement",
+        "words": [
+          "previsão",
+          "alerta",
+          "aviso",
+          "condição",
+          "máxima",
+          "mínima",
+          "probabilidade",
+          "forte",
+          "fraca",
+          "céu aberto",
+          "tempo estável",
+          "tempo frio",
+          "durante o dia",
+          "pela manhã",
+          "alerta de chuva",
+          "alerta de tempestade"
+        ]
+      },
+      "topic_2": {
+        "title": "A Simple Event Announcement",
+        "words": [
+          "evento",
+          "reunião",
+          "atividade",
+          "programação",
+          "local",
+          "gratuito",
+          "inscrição",
+          "inscrever",
+          "começar",
+          "terminar",
+          "participar",
+          "público"
+        ]
+      },
+      "topic_3": {
+        "title": "A School/Community Notice",
+        "words": [
+          "escola",
+          "comunidade",
+          "comunicado",
+          "funcionamento",
+          "reabrir",
+          "atendimento",
+          "serviço",
+          "professor",
+          "aluno",
+          "atenção"
+        ]
+      },
+      "topic_4": {
+        "title": "A One-Line Headline",
+        "words": [
+          "notícia",
+          "manchete",
+          "cidade",
+          "governo",
+          "empresa",
+          "resultado",
+          "início",
+          "fim",
+          "aumentar",
+          "diminuir",
+          "anunciar",
+          "segundo"
+        ]
+      }
+    }
+  }
+}
