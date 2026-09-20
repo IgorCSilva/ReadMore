@@ -1,7 +1,7 @@
 """HTTP-boundary DTOs for the /chapters endpoint."""
 from pydantic import BaseModel
 
-from backend.app.domain.entities import Chapter, Text, Topic
+from backend.app.domain.entities import Chapter, Sentence, Text, Topic
 
 
 class TextDTO(BaseModel):
@@ -13,6 +13,15 @@ class TextDTO(BaseModel):
     @classmethod
     def from_entity(cls, text: Text) -> "TextDTO":
         return cls(text_id=text.text_id, number=text.number, title=text.title, body=text.body)
+
+
+class SentenceDTO(BaseModel):
+    sentence_number: int
+    content: str
+
+    @classmethod
+    def from_entity(cls, sentence: Sentence) -> "SentenceDTO":
+        return cls(sentence_number=sentence.sentence_number, content=sentence.content)
 
 
 class TopicDTO(BaseModel):
@@ -27,6 +36,7 @@ class TopicDTO(BaseModel):
     description: str
     word_ids: list[str]
     texts: list[TextDTO]
+    sentences: list[SentenceDTO]
     status: str
     exercises: list[dict]
 
@@ -39,6 +49,7 @@ class TopicDTO(BaseModel):
             description=topic.description,
             word_ids=topic.word_ids,
             texts=[TextDTO.from_entity(t) for t in topic.texts],
+            sentences=[SentenceDTO.from_entity(s) for s in topic.sentences],
             status=topic.status,
             exercises=topic.exercises,
         )

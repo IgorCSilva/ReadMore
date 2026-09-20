@@ -45,6 +45,18 @@ def test_list_languages_parses_content_dir_filenames_as_pairs(tmp_path):
     ]
 
 
+def test_list_languages_skips_non_pair_files_in_content_dir(tmp_path):
+    # content_dir also holds per-language word lists (es.json, pt.json, ...)
+    # used by the words-adaptation phase — these have no hyphen in the stem
+    # and must not be mistaken for a "<origin>-<target>.json" pair file.
+    repository = _repository(
+        tmp_path,
+        content={"pt-en": {"chapters": []}, "es": {"chapter_1": {"topic_1": []}}},
+    )
+
+    assert repository.list_languages() == [LanguagePair(origin="pt", target="en")]
+
+
 def test_get_words_maps_catalog_entries_to_word_entities(tmp_path):
     repository = _repository(
         tmp_path,
@@ -184,6 +196,9 @@ def test_get_chapters_maps_nested_content_entries_to_entities(tmp_path):
                                         "body": "**Hi**!",
                                     }
                                 ],
+                                "sentences": [
+                                    {"sentence_number": 1, "content": "Said **hi** and left."}
+                                ],
                                 "exercises": [{"exercise_id": "ex-01"}],
                             }
                         ],
@@ -207,6 +222,9 @@ def test_get_chapters_maps_nested_content_entries_to_entities(tmp_path):
     assert len(topic.texts) == 1
     assert topic.texts[0].text_id == "txt-01"
     assert topic.texts[0].body == "**Hi**!"
+    assert len(topic.sentences) == 1
+    assert topic.sentences[0].sentence_number == 1
+    assert topic.sentences[0].content == "Said **hi** and left."
 
 
 def test_get_chapters_resolves_per_language_word_ids_to_the_catalog_root_id(tmp_path):
