@@ -1022,12 +1022,16 @@ onMounted(() => {
   .tabs {
     display: flex; gap: 8px;
     width: 100%; max-width: 900px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
   }
   .tab-btn {
     background: transparent; color: var(--muted);
     border: none; border-bottom: 2px solid transparent;
     padding: 8px 4px; font-size: 15px; font-weight: 600;
     cursor: pointer;
+    flex: none; white-space: nowrap;
   }
   .tab-btn:hover {
     color: var(--text);
@@ -1393,6 +1397,7 @@ onMounted(() => {
   }
   .dictation-stage {
     width: 100%;
+    max-width: min(90vw, 360px);
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     gap: 20px;
     min-height: 50vh;
@@ -1464,9 +1469,7 @@ onMounted(() => {
   }
   .dictation-check-btn {
     display: none;
-    position: fixed;
-    right: 16px; bottom: 16px;
-    z-index: 900;
+    align-self: flex-end;
     align-items: center; justify-content: center;
     width: 56px; height: 56px;
     border-radius: 50%;

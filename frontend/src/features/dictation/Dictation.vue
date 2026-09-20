@@ -10,6 +10,8 @@
     <div class="empty-state" id="dictation-empty-state">No learning words for this topic yet.</div>
 
     <div class="dictation-stage" id="dictation-stage">
+      <div class="dictation-hint">Listen, then type the word</div>
+      
       <div class="dictation-counter" id="dictation-counter"></div>
 
       <div class="dictation-reveal-area">
@@ -19,10 +21,8 @@
 
       <input type="text" class="dictation-input" id="dictation-input" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false">
 
-      <div class="dictation-hint">Listen, then type the word</div>
+      <button type="button" class="dictation-check-btn" id="dictation-check-btn" title="Check answer" aria-label="Check answer">✓</button>
     </div>
-
-    <button type="button" class="dictation-check-btn" id="dictation-check-btn" title="Check answer" aria-label="Check answer">✓</button>
   </div>
 </template>
 
