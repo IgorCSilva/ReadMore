@@ -41,6 +41,8 @@
         <button type="button" class="tab-btn" id="topic-tab-sentences" data-tab="sentences">Sentences</button>
         <button type="button" class="tab-btn" id="topic-tab-reading" data-tab="reading">Reading</button>
         <button type="button" class="tab-btn" id="topic-tab-typing" data-tab="typing">Typing</button>
+        <button type="button" class="tab-btn" id="topic-tab-dictation" data-tab="dictation">Dictation</button>
+        <button type="button" class="tab-btn" id="topic-tab-quiz" data-tab="quiz">Quiz</button>
         <button type="button" class="tab-btn" id="topic-tab-exercises" data-tab="exercises">Exercises</button>
       </div>
 
@@ -53,6 +55,10 @@
       <Reading ref="readingRef" />
 
       <Typing ref="typingRef" />
+
+      <Dictation ref="dictationRef" />
+
+      <Quiz ref="quizRef" />
 
       <Exercises ref="exercisesRef" />
     </div>
@@ -76,6 +82,8 @@ import Texts from './features/texts/Texts.vue'
 import Sentences from './features/sentences/Sentences.vue'
 import Reading from './features/reading/Reading.vue'
 import Typing from './features/typing/Typing.vue'
+import Dictation from './features/dictation/Dictation.vue'
+import Quiz from './features/quiz/Quiz.vue'
 import Exercises from './features/exercises/Exercises.vue'
 
 // Template refs to the tab children — declared at top level (not inside
@@ -86,6 +94,8 @@ const textsRef = ref(null)
 const sentencesRef = ref(null)
 const readingRef = ref(null)
 const typingRef = ref(null)
+const dictationRef = ref(null)
+const quizRef = ref(null)
 const exercisesRef = ref(null)
 
 // Lifted from viewer.html's end-of-body <script> unchanged (Step 2.1 of
@@ -229,12 +239,16 @@ onMounted(() => {
   const topicTabSentencesBtn = document.getElementById("topic-tab-sentences");
   const topicTabReadingBtn = document.getElementById("topic-tab-reading");
   const topicTabTypingBtn = document.getElementById("topic-tab-typing");
+  const topicTabDictationBtn = document.getElementById("topic-tab-dictation");
+  const topicTabQuizBtn = document.getElementById("topic-tab-quiz");
   const topicTabExercisesBtn = document.getElementById("topic-tab-exercises");
   const topicFlashcardsPanelEl = document.getElementById("topic-flashcards-panel");
   const topicTextsPanelEl = document.getElementById("topic-texts-panel");
   const topicSentencesPanelEl = document.getElementById("topic-sentences-panel");
   const topicReadingPanelEl = document.getElementById("topic-reading-panel");
   const topicTypingPanelEl = document.getElementById("topic-typing-panel");
+  const topicDictationPanelEl = document.getElementById("topic-dictation-panel");
+  const topicQuizPanelEl = document.getElementById("topic-quiz-panel");
   const topicExercisesPanelEl = document.getElementById("topic-exercises-panel");
 
   function switchTopicTab(tab) {
@@ -244,18 +258,33 @@ onMounted(() => {
     if (currentTopicTab === "typing" && tab !== "typing") {
       typingRef.value?.pause();
     }
+    // Dictation plays TTS audio for the current word — pause() before
+    // leaving it so playback doesn't keep going once the tab is off-screen.
+    if (currentTopicTab === "dictation" && tab !== "dictation") {
+      dictationRef.value?.pause();
+    }
+    // Quiz's answer round auto-advances on a timer, same reason as Dictation
+    // above — pause() before leaving so it doesn't jump to the next question
+    // while off-screen.
+    if (currentTopicTab === "quiz" && tab !== "quiz") {
+      quizRef.value?.pause();
+    }
     currentTopicTab = tab;
     topicTabFlashcardsBtn.classList.toggle("active", tab === "flashcards");
     topicTabTextsBtn.classList.toggle("active", tab === "texts");
     topicTabSentencesBtn.classList.toggle("active", tab === "sentences");
     topicTabReadingBtn.classList.toggle("active", tab === "reading");
     topicTabTypingBtn.classList.toggle("active", tab === "typing");
+    topicTabDictationBtn.classList.toggle("active", tab === "dictation");
+    topicTabQuizBtn.classList.toggle("active", tab === "quiz");
     topicTabExercisesBtn.classList.toggle("active", tab === "exercises");
     topicFlashcardsPanelEl.style.display = tab === "flashcards" ? "flex" : "none";
     topicTextsPanelEl.style.display = tab === "texts" ? "flex" : "none";
     topicSentencesPanelEl.style.display = tab === "sentences" ? "flex" : "none";
     topicReadingPanelEl.style.display = tab === "reading" ? "flex" : "none";
     topicTypingPanelEl.style.display = tab === "typing" ? "flex" : "none";
+    topicDictationPanelEl.style.display = tab === "dictation" ? "flex" : "none";
+    topicQuizPanelEl.style.display = tab === "quiz" ? "flex" : "none";
     topicExercisesPanelEl.style.display = tab === "exercises" ? "flex" : "none";
     if (tab === "flashcards") {
       flashcardsRef.value?.load(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
@@ -267,6 +296,10 @@ onMounted(() => {
       readingRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
     } else if (tab === "typing") {
       typingRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
+    } else if (tab === "dictation") {
+      dictationRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
+    } else if (tab === "quiz") {
+      quizRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
     } else {
       exercisesRef.value?.show(LANG, currentTopic, CUE_LANG);
     }
@@ -277,6 +310,8 @@ onMounted(() => {
   topicTabSentencesBtn.addEventListener("click", () => { switchTopicTab("sentences"); syncHash(true); });
   topicTabReadingBtn.addEventListener("click", () => { switchTopicTab("reading"); syncHash(true); });
   topicTabTypingBtn.addEventListener("click", () => { switchTopicTab("typing"); syncHash(true); });
+  topicTabDictationBtn.addEventListener("click", () => { switchTopicTab("dictation"); syncHash(true); });
+  topicTabQuizBtn.addEventListener("click", () => { switchTopicTab("quiz"); syncHash(true); });
   topicTabExercisesBtn.addEventListener("click", () => { switchTopicTab("exercises"); syncHash(true); });
 
   // ---- Texts ----
@@ -426,7 +461,7 @@ onMounted(() => {
   // hash rather than a real path since the backend only serves index.html
   // for "/" (see main.py) and has no catch-all route for arbitrary paths;
   // the hash never leaves the browser, so it needs no server-side support.
-  const VALID_TABS = ["flashcards", "texts", "sentences", "reading", "typing", "exercises"];
+  const VALID_TABS = ["flashcards", "texts", "sentences", "reading", "typing", "dictation", "quiz", "exercises"];
 
   function buildHash() {
     const parts = [LANG];
@@ -1344,6 +1379,175 @@ onMounted(() => {
     clip-path: inset(50%);
     overflow: hidden;
     white-space: nowrap;
+  }
+
+  /* Dictation tab — listen to a word, type it, check per-letter accuracy.
+     .dictation-letter.correct uses var(--accent), the same per-target-
+     language color used everywhere else in the app. */
+  #topic-dictation-panel {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+  }
+  .dictation-stage {
+    width: 100%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 20px;
+    min-height: 50vh;
+  }
+  .dictation-counter {
+    font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums;
+  }
+  .dictation-reveal-area {
+    display: flex; align-items: center; justify-content: center;
+    min-height: 100px;
+  }
+  .dictation-audio-btn {
+    display: flex; align-items: center; justify-content: center;
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    background: var(--accent); color: #fff;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    transition: transform 0.1s ease, background 0.15s ease;
+  }
+  .dictation-audio-btn:hover {
+    background: var(--accent-strong);
+  }
+  .dictation-audio-btn:active {
+    transform: scale(0.96);
+  }
+  .dictation-result-word {
+    display: none;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1px;
+    font-size: 28px; font-weight: 700;
+    min-height: 96px;
+  }
+  .dictation-letter-correct, .dictation-letter-missing, .dictation-letter-wrong {
+    display: inline-block;
+    white-space: pre;
+  }
+  .dictation-letter-correct {
+    color: var(--accent);
+  }
+  .dictation-letter-missing {
+    color: var(--muted);
+    opacity: 0.5;
+  }
+  .dictation-letter-wrong {
+    color: #e0453a;
+    font-size: 0.7em;
+  }
+  .dictation-input {
+    width: min(90vw, 360px);
+    background: transparent;
+    color: var(--text);
+    border: none;
+    border-bottom: 2px solid var(--border);
+    text-align: center;
+    font-size: 28px; font-weight: 700; font-family: inherit;
+    padding: 6px 4px;
+  }
+  .dictation-input:focus {
+    outline: none;
+    border-bottom-color: var(--accent);
+  }
+  .dictation-hint {
+    font-size: 13px; color: var(--muted);
+  }
+  .dictation-check-btn {
+    display: none;
+    position: fixed;
+    right: 16px; bottom: 16px;
+    z-index: 900;
+    align-items: center; justify-content: center;
+    width: 56px; height: 56px;
+    border-radius: 50%;
+    background: var(--accent); color: #fff;
+    border: none;
+    font-size: 22px; font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  .dictation-check-btn:hover {
+    filter: brightness(1.1);
+  }
+  .dictation-check-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* Quiz tab — picture (or cue fallback, reusing Flashcards' .image-wrap/
+     .missing) with four word options in a 2x2 grid. .quiz-option-correct
+     reuses the per-target-language accent trio; .quiz-option-wrong/-reveal
+     are a fixed red/green pair since they signal right-vs-wrong, not
+     language identity. */
+  #topic-quiz-panel {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .quiz-stage {
+    width: 100%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 20px;
+    min-height: 50vh;
+  }
+  .quiz-counter {
+    font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums;
+  }
+  .quiz-image-wrap {
+    width: min(90vw, 420px);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+  }
+  .quiz-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    width: min(90vw, 420px);
+  }
+  .quiz-option {
+    aspect-ratio: 1 / 1;
+    display: flex; align-items: center; justify-content: center;
+    padding: 12px;
+    border-radius: 14px;
+    border: 2px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 18px; font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.1s ease, border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+  }
+  .quiz-option:hover:not(:disabled) {
+    border-color: var(--accent);
+  }
+  .quiz-option:disabled {
+    cursor: not-allowed;
+  }
+  .quiz-option-correct {
+    border-color: var(--accent-strong);
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+  }
+  .quiz-option-wrong {
+    border-color: #e0453a;
+    background: color-mix(in srgb, #e0453a 15%, transparent);
+    color: #e0453a;
+  }
+  .quiz-option-reveal {
+    border-color: var(--confident);
+    background: color-mix(in srgb, var(--confident) 20%, transparent);
+    color: var(--confident);
   }
 
   .exercise-list {
