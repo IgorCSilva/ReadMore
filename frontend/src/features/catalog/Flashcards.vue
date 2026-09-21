@@ -95,11 +95,10 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import { getUserWords, ttsUrl } from '../../shared/api'
-import { cacheKey, writeCache } from '../../shared/cache'
-import { readStale, refreshInBackground } from '../../shared/dataSync'
+import { ttsUrl } from '../../shared/api'
 import { formatWordByGender, getGender } from '../../shared/genders'
 import { speechLocaleFor } from '../../shared/languages'
+import { loadUserWords, patchUserWord } from '../../shared/userWords'
 import { hasQueuedAction, performWrite } from '../../shared/writeQueue'
 
 // Extracted from App.vue's monolithic script (Step 2.4 of RESTRUCTURE_PLAN.md
@@ -305,15 +304,6 @@ onMounted(() => {
     }
 
     return entries;
-  }
-
-  // Caches the raw API words, not the transformed entries — the queued-write
-  // override in transformWords() needs to be re-applied fresh every time
-  // it's read, since the write queue can change between when this was
-  // cached and when it's read back.
-  async function fetchRawWords() {
-    const data = await getUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
-    return data.words;
   }
 
   function showError(err) {
@@ -624,6 +614,12 @@ onMounted(() => {
     const entry = ENTRIES[index];
 
     performWrite("mark-known", USER_EMAIL, LANG, entry.wordId);
+    // Other tabs read the shared word list once per (user, lang,
+    // sentenceLang, cueLang) session now, not on every tab switch — patch
+    // it in place so switching to another tab still reflects this
+    // immediately, the way it used to happen by timing accident whenever
+    // that tab's own independent background refresh landed afterward.
+    patchUserWord(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG, entry.wordId, { show: false });
 
     entry.show = false;
     ALL_ENTRIES = ALL_ENTRIES.filter((e) => e.word !== entry.word);
@@ -637,6 +633,7 @@ onMounted(() => {
 
   function unhideWord(entry) {
     performWrite("show-word", USER_EMAIL, LANG, entry.wordId);
+    patchUserWord(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG, entry.wordId, { show: true });
 
     entry.show = true;
     HIDDEN_ENTRIES = HIDDEN_ENTRIES.filter((e) => e.word !== entry.word);
@@ -704,23 +701,9 @@ onMounted(() => {
   }
 
   async function loadAndRenderEntries() {
-    const key = cacheKey("user-words", USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
-    const cached = readStale(key);
-    if (cached) {
-      applyEntries(cached.data);
-      refreshInBackground({
-        key,
-        label: "word list",
-        fetchFn: fetchRawWords,
-        onFresh: applyEntries,
-      });
-      return;
-    }
-
     setLoading(true);
     try {
-      const rawWords = await fetchRawWords();
-      writeCache(key, rawWords);
+      const rawWords = await loadUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
       applyEntries(rawWords);
     } finally {
       setLoading(false);

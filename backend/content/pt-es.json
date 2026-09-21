@@ -16,9 +16,6 @@
           "word_ids": [
             "es-wd-0001",
             "es-wd-0002",
-            "es-wd-0003",
-            "es-wd-0004",
-            "es-wd-0005",
             "es-wd-0006",
             "es-wd-0007",
             "es-wd-0008",
@@ -34,11 +31,7 @@
             "es-wd-0018",
             "es-wd-0019",
             "es-wd-0020",
-            "es-wd-0021",
-            "es-wd-0022",
             "es-wd-0023",
-            "es-wd-0024",
-            "es-wd-0025",
             "es-wd-0030",
             "es-wd-0031",
             "es-wd-0032",
@@ -451,6 +444,1317 @@
             }
           ],
           "exercises": []
+        },
+        {
+          "topic_id": "top-A0-EL-2",
+          "number": 2,
+          "title": "Família e pessoas ao meu redor",
+          "description": "Vocabulário relacionado à família, possessivos simples (\"minha mãe\", \"seu irmão\"). Atividade de desenvolvimento: leitura de uma breve descrição da família.",
+          "status": "ready",
+          "word_ids": [
+            "es-wd-0037",
+            "es-wd-0038",
+            "es-wd-0039",
+            "es-wd-0040",
+            "es-wd-0041",
+            "es-wd-0042",
+            "es-wd-0043",
+            "es-wd-0044",
+            "es-wd-0045",
+            "es-wd-0046",
+            "es-wd-0047",
+            "es-wd-0048",
+            "es-wd-0049",
+            "es-wd-0050",
+            "es-wd-0051",
+            "es-wd-0052",
+            "es-wd-0053",
+            "es-wd-0054",
+            "es-wd-0055",
+            "es-wd-0056",
+            "es-wd-0057",
+            "es-wd-0058",
+            "es-wd-0059",
+            "es-wd-0060",
+            "es-wd-0061",
+            "es-wd-0062"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "Él **no** consegue viver **sin** **su** **esposa** por muito tempo."
+            },
+            {
+              "sentence_number": 2,
+              "content": "**Nosotros** somos uma **familia** muito unida, **y** **estoy** muito feliz por isso."
+            },
+            {
+              "sentence_number": 3,
+              "content": "**Nuestra** **prima** vai se mudar para perto **de** aqui."
+            },
+            {
+              "sentence_number": 4,
+              "content": "**Nuestra** **tía** trabalha em um banco no centro."
+            },
+            {
+              "sentence_number": 5,
+              "content": "**Nuestro** **hijo** aprendeu a nadar este verão."
+            },
+            {
+              "sentence_number": 6,
+              "content": "**Nosotras**, **mi** **hermana** **y** **yo**, sempre cozinhamos juntas aos domingos."
+            },
+            {
+              "sentence_number": 7,
+              "content": "**Su** **tía** mora **con** **su** **abuela** desde que ficou viúva."
+            },
+            {
+              "sentence_number": 8,
+              "content": "**El** **hermano** **y** **la** **hermana** discutem por qualquer coisa, mas se amam muito."
+            },
+            {
+              "sentence_number": 9,
+              "content": "Moro **con** **mi** **familia** desde que nasci."
+            },
+            {
+              "sentence_number": 10,
+              "content": "**El** **esposo** **y** **la** **esposa** comemoram vinte anos **de** casados este mês."
+            },
+            {
+              "sentence_number": 11,
+              "content": "**Gracias** por cuidar **de** **mi** **abuela** enquanto **estoy** viajando."
+            },
+            {
+              "sentence_number": 12,
+              "content": "**La** **hermana** mais nova ainda mora **con** **su** **madre** **y** **su** **padre**."
+            },
+            {
+              "sentence_number": 13,
+              "content": "**Nuestro** **primo** gosta muito **de** jogar videogame."
+            },
+            {
+              "sentence_number": 14,
+              "content": "**La** receita **de** bolo **es** **de** **su** **madre**, ela nunca erra."
+            },
+            {
+              "sentence_number": 15,
+              "content": "**Nuestra** **hija** ganhou um prêmio na escola."
+            },
+            {
+              "sentence_number": 16,
+              "content": "**El** **abuelo** conta as mesmas piadas há vinte anos."
+            },
+            {
+              "sentence_number": 17,
+              "content": "**Hola**! Esta **es** **mi** **hija**, **y** este **es** **mi** **hijo**."
+            },
+            {
+              "sentence_number": 18,
+              "content": "**Nosotras**, **yo** **y** **mi** **abuela**, cozinhamos juntas todo domingo."
+            },
+            {
+              "sentence_number": 19,
+              "content": "**Todas** as tias trouxeram um prato diferente para **la** festa."
+            },
+            {
+              "sentence_number": 20,
+              "content": "**Su** **familia** mora longe, então eles se veem pouco."
+            },
+            {
+              "sentence_number": 21,
+              "content": "**Su** **hija** estuda medicina em outra cidade."
+            },
+            {
+              "sentence_number": 22,
+              "content": "**El** **hermano** mais velho sempre protege os mais novos."
+            },
+            {
+              "sentence_number": 23,
+              "content": "**El** **hermano** mais novo copia **todo** que **el** mais velho faz."
+            },
+            {
+              "sentence_number": 24,
+              "content": "**Sí**, **mi** **familia** vem toda no Natal, **no** falta ninguém."
+            },
+            {
+              "sentence_number": 25,
+              "content": "**Con** **su** **hijo** **y** **su** **hija**, ela nunca fica entediada."
+            },
+            {
+              "sentence_number": 26,
+              "content": "**Mi** **madre** liga **todos** os dias para saber **cómo** **estoy**."
+            },
+            {
+              "sentence_number": 27,
+              "content": "**La** **prima** mais nova sempre imita **su** **hermana** mais velha."
+            },
+            {
+              "sentence_number": 28,
+              "content": "**Mi** **primo** **y** **mi** **prima** vêm nos visitar neste fim **de** semana."
+            },
+            {
+              "sentence_number": 29,
+              "content": "**Nosotros** ajudamos **nuestro** **padre** a pintar **la** casa no último fim **de** semana."
+            },
+            {
+              "sentence_number": 30,
+              "content": "**El** **primo** **y** **la** **prima** **son** inseparáveis desde criança."
+            },
+            {
+              "sentence_number": 31,
+              "content": "**Nosotros** **estamos** muito orgulhosos **de** **nuestro** **hijo**, que se formou este ano."
+            },
+            {
+              "sentence_number": 32,
+              "content": "**Su** **abuela** vive sozinha, mas toda **la** **familia** visita **con** frequência."
+            },
+            {
+              "sentence_number": 33,
+              "content": "**Su** **esposo** cozinha melhor que **su** **esposa**, segundo ela mesma."
+            },
+            {
+              "sentence_number": 34,
+              "content": "**Yo** **me** **llamo** Ana **y** **mi** **madre** também se chama Ana."
+            },
+            {
+              "sentence_number": 35,
+              "content": "**Todo** mundo **de** **la** **familia** adora as histórias **de** **el** **abuelo**."
+            },
+            {
+              "sentence_number": 36,
+              "content": "**Nuestro** **tío** **y** **nuestra** **tía** moram na mesma rua **de** **nuestros** avós."
+            },
+            {
+              "sentence_number": 37,
+              "content": "Ela chegou **sin** **su** **hermano**, que ficou doente em casa."
+            },
+            {
+              "sentence_number": 38,
+              "content": "**Todas** as manhãs, **la** **abuela** reza **con** toda **la** **familia**."
+            },
+            {
+              "sentence_number": 39,
+              "content": "**La** **madre** disse que estava **todo** **bien** **con** **la** **familia**."
+            },
+            {
+              "sentence_number": 40,
+              "content": "**La** **tía** trouxe um presente para cada criança."
+            },
+            {
+              "sentence_number": 41,
+              "content": "**Sin** **su** **abuelo**, **el** Natal **no** seria **el** mesmo."
+            },
+            {
+              "sentence_number": 42,
+              "content": "**Mi** **nombre** **es** igual ao **de** **mi** **abuela**."
+            },
+            {
+              "sentence_number": 43,
+              "content": "**Nuestra** **abuela** mora em uma fazenda pequena."
+            },
+            {
+              "sentence_number": 44,
+              "content": "**La** **madre** prepara **el** jantar enquanto conversa **con** **su** **hija**."
+            },
+            {
+              "sentence_number": 45,
+              "content": "**La** **esposa** dele **es** professora **de** matemática."
+            },
+            {
+              "sentence_number": 46,
+              "content": "**Bueno**, **el** **padre** **es** muito paciente **con** **su** **hijo**."
+            },
+            {
+              "sentence_number": 47,
+              "content": "**Nosotras** decidimos organizar **la** festa **de** aniversário **de** **la** **abuela** este ano."
+            },
+            {
+              "sentence_number": 48,
+              "content": "Ela **es** **la** **esposa** **de** **mi** **tío**, mas **yo** **la** considero uma segunda **madre**."
+            },
+            {
+              "sentence_number": 49,
+              "content": "**La** **abuela** faz **el** melhor bolo **de** chocolate **de** toda **la** familia."
+            },
+            {
+              "sentence_number": 50,
+              "content": "**Todas** as primas vieram **con** os pais no aniversário."
+            },
+            {
+              "sentence_number": 51,
+              "content": "**El** **tío** **y** **su** **esposa** vieram **sin** os filhos desta vez."
+            },
+            {
+              "sentence_number": 52,
+              "content": "**Con** **su** **familia** ao lado, ele se sentiu mais forte."
+            },
+            {
+              "sentence_number": 53,
+              "content": "**Nosotras** — **mi** **madre**, **mi** **hermana** **y** **yo** — viajamos sozinhas este verão."
+            },
+            {
+              "sentence_number": 54,
+              "content": "**El** **primo** **es** mais novo que **la** **prima**."
+            },
+            {
+              "sentence_number": 55,
+              "content": "**Nosotros** viajamos juntos **todos** os verões desde que **su** **hija** era pequena."
+            },
+            {
+              "sentence_number": 56,
+              "content": "**El** **abuelo** **y** **el** **padre** dela têm **el** mesmo jeito **de** rir."
+            },
+            {
+              "sentence_number": 57,
+              "content": "**Mi** amigo apresentou **su** **esposa** para toda **la** **familia**."
+            },
+            {
+              "sentence_number": 58,
+              "content": "Somos **nosotras** quem organiza **la** festa **de** aniversário todo ano."
+            },
+            {
+              "sentence_number": 59,
+              "content": "**Nuestro** **abuelo** guarda fotos antigas **de** toda **la** **familia**."
+            },
+            {
+              "sentence_number": 60,
+              "content": "**Su** **esposo** viaja muito **con** **el** trabalho, então ela cuida **de** **todos** sozinha."
+            },
+            {
+              "sentence_number": 61,
+              "content": "Perguntei para **el** **hijo** se ele já almoçou."
+            },
+            {
+              "sentence_number": 62,
+              "content": "**Mi** **hermana** mora perto **de** **mi** casa."
+            },
+            {
+              "sentence_number": 63,
+              "content": "**Nuestra** **madre** ensinou **nuestras** hijas a cozinhar desde pequenas."
+            },
+            {
+              "sentence_number": 64,
+              "content": "**Su** **primo** trabalha na mesma empresa que **yo**."
+            },
+            {
+              "sentence_number": 65,
+              "content": "**Sin** **la** ajuda **de** **su** **hermano**, ele **no** teria terminado **la** mudança."
+            },
+            {
+              "sentence_number": 66,
+              "content": "**Todos** concordaram que **la** comida **de** **la** **abuela** **es** **la** melhor."
+            },
+            {
+              "sentence_number": 67,
+              "content": "**El** **hijo** mais velho ajuda **el** **padre** na loja aos sábados."
+            },
+            {
+              "sentence_number": 68,
+              "content": "**Es** difícil imaginar uma festa **sin** **todos** os primos reunidos."
+            },
+            {
+              "sentence_number": 69,
+              "content": "**Mi** **tío** mora em outra cidade **y** vem nos visitar no verão."
+            },
+            {
+              "sentence_number": 70,
+              "content": "**De** **nada**, cuidar **de** **la** **familia** **es** um prazer."
+            },
+            {
+              "sentence_number": 71,
+              "content": "**Nuestra** **familia** **es** pequena, mas muito unida."
+            },
+            {
+              "sentence_number": 72,
+              "content": "**Todos** os primos chegaram **con** presentes para **la** **abuela**."
+            },
+            {
+              "sentence_number": 73,
+              "content": "**Nuestra** **prima** casou **con** um médico muito gentil."
+            },
+            {
+              "sentence_number": 74,
+              "content": "**El** **padre** trabalha em um hospital **y** chega cansado à **noche**."
+            },
+            {
+              "sentence_number": 75,
+              "content": "**Mi** **abuelo** serviu no exército quando era jovem."
+            },
+            {
+              "sentence_number": 76,
+              "content": "**La** **hija** ajuda **su** **madre** na cozinha todo domingo."
+            },
+            {
+              "sentence_number": 77,
+              "content": "**Todas** as primas, **sin** exceção, adoram **el** bolo **de** **la** **abuela**."
+            },
+            {
+              "sentence_number": 78,
+              "content": "**Su** **abuela** ensina receitas antigas para os netos."
+            },
+            {
+              "sentence_number": 79,
+              "content": "**El** **primo** chegou **de** surpresa para **el** almoço."
+            },
+            {
+              "sentence_number": 80,
+              "content": "**Chao**, avise **su** **madre** que chegamos **bien**."
+            },
+            {
+              "sentence_number": 81,
+              "content": "**Cómo** vai **su** **hermana**? Faz tempo que **no** **la** vejo."
+            },
+            {
+              "sentence_number": 82,
+              "content": "Ela contou que **su** **padre** **es** muito engraçado."
+            },
+            {
+              "sentence_number": 83,
+              "content": "**Su** **hijo** parece muito **con** **el** **padre**, mas tem os olhos **de** **la** **madre**."
+            },
+            {
+              "sentence_number": 84,
+              "content": "**Nuestra** **hermana** vai se casar no próximo ano."
+            },
+            {
+              "sentence_number": 85,
+              "content": "**El** **tío** sempre chega atrasado à festa."
+            },
+            {
+              "sentence_number": 86,
+              "content": "**Mi** **hermano** **y** **mi** **hermana** brigam sempre, mas **son** muito unidos."
+            },
+            {
+              "sentence_number": 87,
+              "content": "**El** **esposo** dela trabalha em um banco muito conhecido."
+            },
+            {
+              "sentence_number": 88,
+              "content": "**Nosotros** decidimos passar **el** Natal **con** toda **la** **familia** este ano."
+            },
+            {
+              "sentence_number": 89,
+              "content": "**Todas** as noites, **mi** **familia** janta reunida na mesma mesa."
+            },
+            {
+              "sentence_number": 90,
+              "content": "**El** **padre** **y** **la** **madre** viajam juntos neste fim **de** semana."
+            },
+            {
+              "sentence_number": 91,
+              "content": "**La** **prima** mora em Madrid **y** estuda arquitetura."
+            },
+            {
+              "sentence_number": 92,
+              "content": "**La** **familia** toda se reúne no Natal, **sin** exceção."
+            },
+            {
+              "sentence_number": 93,
+              "content": "**El** **tío** **y** **la** **tía** discutem sobre política toda vez que se encontram."
+            },
+            {
+              "sentence_number": 94,
+              "content": "**El** **abuelo** **y** **la** **abuela** dançam juntos em toda festa."
+            },
+            {
+              "sentence_number": 95,
+              "content": "**La** **madre** cuida **de** **su** **hijo** **con** muita paciência."
+            },
+            {
+              "sentence_number": 96,
+              "content": "**Todos** os domingos, **nuestra** **familia** almoça junta na casa **de** **la** **abuela**."
+            },
+            {
+              "sentence_number": 97,
+              "content": "**El** **esposo** dela chegou mais cedo hoje, ainda **con** **el** uniforme do trabalho."
+            },
+            {
+              "sentence_number": 98,
+              "content": "Perguntei **su** **nombre** completo, mas ele só disse **su** primeiro **nombre**."
+            },
+            {
+              "sentence_number": 99,
+              "content": "**Toda** **la** **familia** foi ao aniversário **de** **la** **abuela**."
+            },
+            {
+              "sentence_number": 100,
+              "content": "**El** **hijo** **y** **la** **hija** brincam juntos no quintal."
+            }
+          ],
+          "exercises": []
+        },
+        {
+          "topic_id": "top-A0-EL-3",
+          "number": 3,
+          "title": "Em Casa",
+          "description": "Vocabulário da casa (cômodos e objetos comuns) e a expressão existencial \"hay\" (equivalente a \"tem\"/\"há\"), como em \"hay una mesa\". Atividade de desenvolvimento: leitura de uma breve descrição de uma casa ou cômodo.",
+          "status": "ready",
+          "word_ids": [
+            "es-wd-0063",
+            "es-wd-0064",
+            "es-wd-0065",
+            "es-wd-0066",
+            "es-wd-0067",
+            "es-wd-0068",
+            "es-wd-0069",
+            "es-wd-0070",
+            "es-wd-0071",
+            "es-wd-0072",
+            "es-wd-0073",
+            "es-wd-0074",
+            "es-wd-0075",
+            "es-wd-0076",
+            "es-wd-0077",
+            "es-wd-0078",
+            "es-wd-0079",
+            "es-wd-0080",
+            "es-wd-0081",
+            "es-wd-0082",
+            "es-wd-0083",
+            "es-wd-0084",
+            "es-wd-0085",
+            "es-wd-0086",
+            "es-wd-0087"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "**La** **sala** **tiene** **una** **puerta** **de** vidro."
+            },
+            {
+              "sentence_number": 2,
+              "content": "**Mi** **primo** **y** **su** **esposa** compraram **una** **casa** pequena."
+            },
+            {
+              "sentence_number": 3,
+              "content": "**Hay** **un** **refrigerador** **en la** **cocina**."
+            },
+            {
+              "sentence_number": 4,
+              "content": "**El** **baño** **tiene** **una** **ventana** pequena."
+            },
+            {
+              "sentence_number": 5,
+              "content": "**La** **casa** **tiene** **una** **ventana** enorme."
+            },
+            {
+              "sentence_number": 6,
+              "content": "**Mi** **familia** **y** **yo** amamos ficar **en** **casa** juntos."
+            },
+            {
+              "sentence_number": 7,
+              "content": "**El** **refrigerador** fica **allí**, **en la** **cocina**."
+            },
+            {
+              "sentence_number": 8,
+              "content": "**¿Su** **casa** **tiene** **una** **televisión** grande?"
+            },
+            {
+              "sentence_number": 9,
+              "content": "**Mi** **padre** limpa **la** **casa** **todos** os sábados."
+            },
+            {
+              "sentence_number": 10,
+              "content": "**Mi** **cuarto** **tiene** **una** **cama** confortável."
+            },
+            {
+              "sentence_number": 11,
+              "content": "**Hay** **una** **silla** velha **en el** **cuarto**."
+            },
+            {
+              "sentence_number": 12,
+              "content": "**Aquello** parece muito estranho, ninguém sabe **de** onde veio."
+            },
+            {
+              "sentence_number": 13,
+              "content": "**¿Hay** **una** **ventana** **en el** **baño**?"
+            },
+            {
+              "sentence_number": 14,
+              "content": "**Hay** **un** **refrigerador** vazio **en la** **cocina** hoje."
+            },
+            {
+              "sentence_number": 15,
+              "content": "**La** **mesa** fica **aquí**, **y** **la** **silla** fica **allí**."
+            },
+            {
+              "sentence_number": 16,
+              "content": "**La** **sala** **tiene** **una** **televisión** grande **y** **una** **mesa** pequena."
+            },
+            {
+              "sentence_number": 17,
+              "content": "Existe **un** **baño** pequeno perto **de** **la** **cocina**."
+            },
+            {
+              "sentence_number": 18,
+              "content": "**Mi** **madre** prepara **la** comida **en la** **cocina** **todas** as manhãs."
+            },
+            {
+              "sentence_number": 19,
+              "content": "**Hay** **una** **cama** nova **aquí**, **y** **una** velha **allí**."
+            },
+            {
+              "sentence_number": 20,
+              "content": "**Mi** **abuelo** descansa **en la** **cama** depois do almoço."
+            },
+            {
+              "sentence_number": 21,
+              "content": "**Allí** **es** **el** **cuarto** **de** **mi** **hermano**."
+            },
+            {
+              "sentence_number": 22,
+              "content": "**Mi** **primo** estuda **en la** **sala**, perto **de** **la** **televisión**."
+            },
+            {
+              "sentence_number": 23,
+              "content": "**La** **casa** **de** **mi** **tío** **tiene** **un** **cuarto**, **una** **cocina** **y** **un** **baño**."
+            },
+            {
+              "sentence_number": 24,
+              "content": "**Mi** **cama** fica **aquí**, perto **de** **la** **ventana**."
+            },
+            {
+              "sentence_number": 25,
+              "content": "**Mi** **hermana** quer **una** **televisión** nova para **su** **cuarto**."
+            },
+            {
+              "sentence_number": 26,
+              "content": "**Su** **casa** **tiene** **un** **baño** **y** **un** **cuarto**."
+            },
+            {
+              "sentence_number": 27,
+              "content": "**Hay** **un** **cuarto** **y** **una** **sala** **en** **mi** **casa**."
+            },
+            {
+              "sentence_number": 28,
+              "content": "**Mi** **madre** fecha **la** **puerta** à **noche**."
+            },
+            {
+              "sentence_number": 29,
+              "content": "**Mi** **hermano** sempre deixa **la** **ventana** **de** **su** **cuarto** aberta."
+            },
+            {
+              "sentence_number": 30,
+              "content": "**Hay** **una** **cama** **en el** **cuarto**."
+            },
+            {
+              "sentence_number": 31,
+              "content": "**La** roupa fica **en el** armário, **en el** **cuarto**."
+            },
+            {
+              "sentence_number": 32,
+              "content": "**El** **cuarto** **de** **mi** **hermana** **tiene** **una** **cama** rosa."
+            },
+            {
+              "sentence_number": 33,
+              "content": "Vi **una** **silla** muito bonita **en la** loja ontem."
+            },
+            {
+              "sentence_number": 34,
+              "content": "**Allí** fica **la** **casa** **de** **mi** **primo**."
+            },
+            {
+              "sentence_number": 35,
+              "content": "**Aquí** **es** **mi** **cuarto** favorito."
+            },
+            {
+              "sentence_number": 36,
+              "content": "**Eso** **es** **de** **mi** **hermana**, ela esqueceu **aquí**."
+            },
+            {
+              "sentence_number": 37,
+              "content": "**Hay** **una** **silla** **en la** **cocina**."
+            },
+            {
+              "sentence_number": 38,
+              "content": "**Esto** **es** **mi** **cama** nova."
+            },
+            {
+              "sentence_number": 39,
+              "content": "**Su** **familia** **tiene** **una** **casa** nova este ano."
+            },
+            {
+              "sentence_number": 40,
+              "content": "**Esto** aquí **es** **mi** **casa**, **y** **aquello** **allí** **es** **la** **casa** **de** **mi** vizinho."
+            },
+            {
+              "sentence_number": 41,
+              "content": "**Hay** **una** **mesa** grande **en la** **cocina** **de** **mi** **abuela**."
+            },
+            {
+              "sentence_number": 42,
+              "content": "**Hay** **una** **televisión** **en la** **sala**."
+            },
+            {
+              "sentence_number": 43,
+              "content": "**Eso**, **allí**, **es** **el** presente **de** **mi** **madre**."
+            },
+            {
+              "sentence_number": 44,
+              "content": "**¿Hay** **una** **estufa** **en** **su** **cocina**?"
+            },
+            {
+              "sentence_number": 45,
+              "content": "**Esto** **no** **es** **mi** **silla**, **es** **de** **mi** **abuelo**."
+            },
+            {
+              "sentence_number": 46,
+              "content": "**Mi** **padre** trocou **la** **ventana** **de** **la** **cocina**."
+            },
+            {
+              "sentence_number": 47,
+              "content": "Quero comprar **un** **refrigerador** novo para **mi** **cocina**."
+            },
+            {
+              "sentence_number": 48,
+              "content": "À **noche**, sempre fechamos **la** **puerta** **de** **la** **casa**."
+            },
+            {
+              "sentence_number": 49,
+              "content": "Abri **la** **ventana** **de** **mi** **cuarto** pela manhã."
+            },
+            {
+              "sentence_number": 50,
+              "content": "**Mi** **hermano** dorme **en la** **sala**, **en el** sofá."
+            },
+            {
+              "sentence_number": 51,
+              "content": "**Eso** **es** **una** **estufa** muito antiga, **de** **mi** **abuela**."
+            },
+            {
+              "sentence_number": 52,
+              "content": "**Aquello**, perto **de** **la** **ventana**, **es** **una** **mesa** velha."
+            },
+            {
+              "sentence_number": 53,
+              "content": "**Mi** **madre** comprou **una** **mesa** nova para **la** **sala**."
+            },
+            {
+              "sentence_number": 54,
+              "content": "**Nuestra** **familia** se reúne **en la** **sala** todo domingo."
+            },
+            {
+              "sentence_number": 55,
+              "content": "**Mi** **tía** **tiene** **una** **casa** enorme **en la** praia."
+            },
+            {
+              "sentence_number": 56,
+              "content": "**Hay** **una** **puerta** grande **en la** entrada."
+            },
+            {
+              "sentence_number": 57,
+              "content": "Por favor, feche **la** **puerta** **de** **la** **cocina**."
+            },
+            {
+              "sentence_number": 58,
+              "content": "**Eso** que fica **allí** **es** **una** **mesa** velha **de** **mi** **abuelo**."
+            },
+            {
+              "sentence_number": 59,
+              "content": "**Esto** **es** **mi** **silla** favorita, sempre fico **aquí**."
+            },
+            {
+              "sentence_number": 60,
+              "content": "**Mi** **casa** **tiene** **una** **sala** grande."
+            },
+            {
+              "sentence_number": 61,
+              "content": "**Hay** **una** **mesa** **en la** **sala**."
+            },
+            {
+              "sentence_number": 62,
+              "content": "**Aquello** **allí**, perto **de** **la** **puerta**, **es** **una** caixa velha."
+            },
+            {
+              "sentence_number": 63,
+              "content": "**Mi** **madre** arruma **el** **cuarto** **todas** as manhãs."
+            },
+            {
+              "sentence_number": 64,
+              "content": "Toda **mi** **familia** janta **en** **casa** aos sábados."
+            },
+            {
+              "sentence_number": 65,
+              "content": "**Aquí** **hay** **una** **mesa**, **y** **allí** **hay** **una** **cama**."
+            },
+            {
+              "sentence_number": 66,
+              "content": "**Eso** **no** **es** **mi** **televisión**, **es** **de** **mi** **hermano**."
+            },
+            {
+              "sentence_number": 67,
+              "content": "**Mi** **hermano** **y** **yo** dividimos **un** **cuarto** pequeno."
+            },
+            {
+              "sentence_number": 68,
+              "content": "Precisamos **de** **un** **cuarto** extra **en** **mi** **casa**."
+            },
+            {
+              "sentence_number": 69,
+              "content": "**Nuestro** **abuelo** vive numa **casa** **con** **un** jardim bonito."
+            },
+            {
+              "sentence_number": 70,
+              "content": "**La** **cocina** **tiene** **una** **estufa** nova também."
+            },
+            {
+              "sentence_number": 71,
+              "content": "**Yo** abro **la** **ventana** **todas** as manhãs."
+            },
+            {
+              "sentence_number": 72,
+              "content": "**Mi** **casa** **tiene** **una** **puerta** **y** **una** **ventana** azuis."
+            },
+            {
+              "sentence_number": 73,
+              "content": "**Mi** **padre** fica sempre **en** **casa** aos domingos."
+            },
+            {
+              "sentence_number": 74,
+              "content": "**Esto** **es** **una** **silla** nova para **la** **sala**."
+            },
+            {
+              "sentence_number": 75,
+              "content": "**Mi** **hermana** **tiene** **su** própria **sala** **de** jogos."
+            },
+            {
+              "sentence_number": 76,
+              "content": "**La** **silla** azul fica **aquí**, **y** **la** roxa fica **allí**."
+            },
+            {
+              "sentence_number": 77,
+              "content": "**Sin** **una** **cocina** grande, **es** difícil cozinhar para toda **la** **familia**."
+            },
+            {
+              "sentence_number": 78,
+              "content": "**Aquello** **es** muito antigo, veio **de** **la** **casa** **de** minha **abuela**."
+            },
+            {
+              "sentence_number": 79,
+              "content": "**La** **puerta** **de** **mi** **cuarto** quebrou ontem."
+            },
+            {
+              "sentence_number": 80,
+              "content": "**La** **puerta** fica **aquí**, **y** **la** **ventana** fica **allí**."
+            },
+            {
+              "sentence_number": 81,
+              "content": "Ninguém fecha **la** **puerta** **de** **la** **sala**."
+            },
+            {
+              "sentence_number": 82,
+              "content": "Meus livros ficam **en el** **cuarto**, **en la** **mesa** pequena."
+            },
+            {
+              "sentence_number": 83,
+              "content": "**Mi** **cocina** **tiene** **un** **refrigerador**, **una** **estufa** **y** **una** **mesa**."
+            },
+            {
+              "sentence_number": 84,
+              "content": "Hoje **yo** vou ficar **en** **casa** **y** descansar."
+            },
+            {
+              "sentence_number": 85,
+              "content": "**El** ano passado, compramos **una** **mesa**, **una** **silla** **y** **una** **cama** novas para **la** **casa**."
+            },
+            {
+              "sentence_number": 86,
+              "content": "**Nuestra** **casa** **tiene** **una** **cocina** nova."
+            },
+            {
+              "sentence_number": 87,
+              "content": "**Esto** **es** **mi** **refrigerador** novo, comprei ontem."
+            },
+            {
+              "sentence_number": 88,
+              "content": "**No** **hay** **una** **televisión** **en el** **baño**."
+            },
+            {
+              "sentence_number": 89,
+              "content": "**Mi** **abuela** guarda **todo** **aquí**, nunca **allí**."
+            },
+            {
+              "sentence_number": 90,
+              "content": "**La** **puerta** principal **de** **la** **casa** **es** muito pesada."
+            },
+            {
+              "sentence_number": 91,
+              "content": "**Hay** **una** **estufa** nova **y** **un** **refrigerador** novo **en** **mi** **casa**."
+            },
+            {
+              "sentence_number": 92,
+              "content": "Vamos comprar **una** **cama** nova para **el** **cuarto**."
+            },
+            {
+              "sentence_number": 93,
+              "content": "**Hay** **una** **estufa** **en la** **cocina**, muito antiga."
+            },
+            {
+              "sentence_number": 94,
+              "content": "**Con** **mi** **familia**, **mi** **casa** nunca fica vazia."
+            },
+            {
+              "sentence_number": 95,
+              "content": "**Mi** **padre** instalou **una** **puerta** nova **en la** **cocina**."
+            },
+            {
+              "sentence_number": 96,
+              "content": "**Mi** **abuela** **tiene** **una** **ventana** cheia **de** flores."
+            },
+            {
+              "sentence_number": 97,
+              "content": "**Mi** **casa** **tiene** **un** **cuarto** pequeno."
+            },
+            {
+              "sentence_number": 98,
+              "content": "Compramos **una** **estufa** nova **y** **un** **refrigerador** também."
+            },
+            {
+              "sentence_number": 99,
+              "content": "**La** **casa** **de** **mi** **abuela** **tiene** **una** **puerta** azul."
+            },
+            {
+              "sentence_number": 100,
+              "content": "**La** **cocina** **tiene** **un** **refrigerador** moderno."
+            }
+          ],
+          "exercises": []
+        },
+        {
+          "topic_id": "top-A0-EL-4",
+          "number": 4,
+          "title": "Rotina Diária (Da Manhã à Noite)",
+          "description": "Verbos de rotina diária (despertar, levantar-se, tomar banho, vestir-se, trabalhar, voltar) no presente simples, incluindo a construção reflexiva do espanhol (\"me despierto\", \"me levanto\") — diferente do português, que não exige pronome reflexivo nesses verbos. Atividade de desenvolvimento: leitura de um breve relato em primeira pessoa sobre um dia típico.",
+          "word_ids": [
+            "es-wd-0088",
+            "es-wd-0089",
+            "es-wd-0090",
+            "es-wd-0091",
+            "es-wd-0092",
+            "es-wd-0093",
+            "es-wd-0094",
+            "es-wd-0095",
+            "es-wd-0096",
+            "es-wd-0097",
+            "es-wd-0098",
+            "es-wd-0099",
+            "es-wd-0100",
+            "es-wd-0101",
+            "es-wd-0102",
+            "es-wd-0103",
+            "es-wd-0104",
+            "es-wd-0105",
+            "es-wd-0106",
+            "es-wd-0107",
+            "es-wd-0108",
+            "es-wd-0019"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "**Después** **de** **cenar**, **yo** leio **un** pouco **en la** **sala**."
+            },
+            {
+              "sentence_number": 2,
+              "content": "Minha **madre** **me** pede para **hacer** **la** lição."
+            },
+            {
+              "sentence_number": 3,
+              "content": "Minha **abuela** dorme cedo **y** acorda cedo também."
+            },
+            {
+              "sentence_number": 4,
+              "content": "**Mi** **primo** chega **tarde** porque trabalha longe."
+            },
+            {
+              "sentence_number": 5,
+              "content": "**Yo** janto **con** **mi** **esposo** **todas** as noites."
+            },
+            {
+              "sentence_number": 6,
+              "content": "Ela quer **tener** **una** rotina diferente da minha."
+            },
+            {
+              "sentence_number": 7,
+              "content": "**Yo** tenho que **despertarse** cedo amanhã."
+            },
+            {
+              "sentence_number": 8,
+              "content": "**Después** **de** **descansar**, **yo** durmo tranquilo."
+            },
+            {
+              "sentence_number": 9,
+              "content": "**Después** **yo** vou **trabajar** **con** **mi** **padre**."
+            },
+            {
+              "sentence_number": 10,
+              "content": "**Después** **de** **ducharse**, **yo** **me** visto **y** saio."
+            },
+            {
+              "sentence_number": 11,
+              "content": "**Su** rotina **es** parecida **con** minha rotina **de** trabalho?"
+            },
+            {
+              "sentence_number": 12,
+              "content": "**Después** **de** **trabajar**, **yo** vou para **casa**."
+            },
+            {
+              "sentence_number": 13,
+              "content": "Minha **madre** prefere **cenar** cedo **todos** os dias."
+            },
+            {
+              "sentence_number": 14,
+              "content": "**Yo** chego cedo **y** preciso **ir** **trabajar** até **tarde**."
+            },
+            {
+              "sentence_number": 15,
+              "content": "**Después** **de** **levantarse**, **yo** vou **ducharse**."
+            },
+            {
+              "sentence_number": 16,
+              "content": "**Yo** prefiro **levantarse** **con** calma pela manhã."
+            },
+            {
+              "sentence_number": 17,
+              "content": "Antes **de** **salir**, **yo** preciso **vestirse**."
+            },
+            {
+              "sentence_number": 18,
+              "content": "**Yo** **despierto** cedo **todos** os dias."
+            },
+            {
+              "sentence_number": 19,
+              "content": "Nos fins **de** semana, **yo** **despierto** mais **tarde** do que **de** costume."
+            },
+            {
+              "sentence_number": 20,
+              "content": "**Es** importante **cepillarse los dientes** **después** **de** comer."
+            },
+            {
+              "sentence_number": 21,
+              "content": "**Yo** **me** sinto **bien** **después** **de** **dormir** bastante."
+            },
+            {
+              "sentence_number": 22,
+              "content": "**Todos** os dias, **yo** preciso **cepillarse los dientes** **después** **de** **tomar café**."
+            },
+            {
+              "sentence_number": 23,
+              "content": "**Después** **de** **leer**, **yo** descanso antes **de** **dormir**."
+            },
+            {
+              "sentence_number": 24,
+              "content": "**Yo** vou para **el** trabalho **y** preciso **llegar** cedo."
+            },
+            {
+              "sentence_number": 25,
+              "content": "**Levantarse** cedo **es** **bueno** para **el** corpo."
+            },
+            {
+              "sentence_number": 26,
+              "content": "**Yo** **me** **levanto** rápido, **sin** perder tempo."
+            },
+            {
+              "sentence_number": 27,
+              "content": "Ele gosta **de** **despertarse** cedo **todos** os dias."
+            },
+            {
+              "sentence_number": 28,
+              "content": "**Yo** preciso **salir** **de** **casa** às sete da manhã."
+            },
+            {
+              "sentence_number": 29,
+              "content": "**Nosotros** vamos **y** precisamos **volver** juntos **todos** os dias."
+            },
+            {
+              "sentence_number": 30,
+              "content": "**Después** **de** **leer** **un** pouco, **yo** vou **dormir**."
+            },
+            {
+              "sentence_number": 31,
+              "content": "Minha **tía** **me** liga toda manhã cedo."
+            },
+            {
+              "sentence_number": 32,
+              "content": "**Nosotros** temos **el** mesmo horário para **dormir**."
+            },
+            {
+              "sentence_number": 33,
+              "content": "**Mi** **hermano** **me** chama para **tomar café**."
+            },
+            {
+              "sentence_number": 34,
+              "content": "**Yo** gosto **de** **almorzar** **con** meus colegas às doze."
+            },
+            {
+              "sentence_number": 35,
+              "content": "**Después** **de** **llegar**, **yo** tomo banho **de** novo."
+            },
+            {
+              "sentence_number": 36,
+              "content": "**Cómo** **es** **su** rotina **de** manhã?"
+            },
+            {
+              "sentence_number": 37,
+              "content": "**Yo** chego **en** **casa** **y** vou **cepillarse los dientes** logo **después**."
+            },
+            {
+              "sentence_number": 38,
+              "content": "**Es** **bueno** **tener** **una** rotina organizada **en el** trabalho."
+            },
+            {
+              "sentence_number": 39,
+              "content": "**Yo** **despierto** primeiro, **y** minha **madre** acorda alguns minutos **después**."
+            },
+            {
+              "sentence_number": 40,
+              "content": "**Nosotros** gostamos **de** **tener** **una** rotina parecida **en el** trabalho."
+            },
+            {
+              "sentence_number": 41,
+              "content": "**Mi** **hermano** chega **y** vai **ducharse** antes **de** **cenar**."
+            },
+            {
+              "sentence_number": 42,
+              "content": "**Nosotros** jantamos juntos **y** **después** lemos **un** pouco."
+            },
+            {
+              "sentence_number": 43,
+              "content": "**Después** **de** **vestirse**, **yo** saio correndo **de** **casa**."
+            },
+            {
+              "sentence_number": 44,
+              "content": "Minha **madre** também gosta **de** **tomar café** **de** manhã."
+            },
+            {
+              "sentence_number": 45,
+              "content": "**Yo** gosto **de** **leer** **un** pouco **todas** as noites."
+            },
+            {
+              "sentence_number": 46,
+              "content": "**Yo** prefiro **cenar** cedo, antes das oito."
+            },
+            {
+              "sentence_number": 47,
+              "content": "**Yo** tenho que **ir**, já **es** **tarde**."
+            },
+            {
+              "sentence_number": 48,
+              "content": "**Yo** vou ao mercado **después** **de** **almorzar**."
+            },
+            {
+              "sentence_number": 49,
+              "content": "**Yo** **despierto** **bien** cedo, antes **de** **todos** **en** **casa**."
+            },
+            {
+              "sentence_number": 50,
+              "content": "**Después** do almoço, **yo** preciso **volver** para **el** trabalho."
+            },
+            {
+              "sentence_number": 51,
+              "content": "**Todos** os dias **yo** preciso **almorzar** **en la** mesma **mesa**."
+            },
+            {
+              "sentence_number": 52,
+              "content": "**Yo** **despierto**, **me** **levanto** **y** vou **ducharse**."
+            },
+            {
+              "sentence_number": 53,
+              "content": "**Mi** **padre** prefere **leer** **el** jornal **de** manhã."
+            },
+            {
+              "sentence_number": 54,
+              "content": "Minha **esposa** janta comigo **después** do trabalho."
+            },
+            {
+              "sentence_number": 55,
+              "content": "**Vestirse** rápido **es** necessário quando **estoy** atrasado."
+            },
+            {
+              "sentence_number": 56,
+              "content": "**Después** **de** **despertarse**, **yo** **me** **levanto** da **cama**."
+            },
+            {
+              "sentence_number": 57,
+              "content": "**Después** do trabalho, **yo** preciso **volver** para **casa**."
+            },
+            {
+              "sentence_number": 58,
+              "content": "**Yo** tenho que **hacer** **la** lição antes **de** **dormir**."
+            },
+            {
+              "sentence_number": 59,
+              "content": "**Mi** **hermano** costuma **llegar** **tarde** **en el** trabalho."
+            },
+            {
+              "sentence_number": 60,
+              "content": "**Yo** **levanto**, tomo banho **y** visto **la** roupa rápido."
+            },
+            {
+              "sentence_number": 61,
+              "content": "Minha **familia** gosta **de** **cenar** junta **todas** as noites."
+            },
+            {
+              "sentence_number": 62,
+              "content": "**Yo** preciso **almorzar** rápido **y** **volver** para **el** trabalho."
+            },
+            {
+              "sentence_number": 63,
+              "content": "Minha **hermana** prefere **levantarse** cedo, segundo ela."
+            },
+            {
+              "sentence_number": 64,
+              "content": "Ele faz **la** rotina dele **sin** pressa."
+            },
+            {
+              "sentence_number": 65,
+              "content": "Minha **hermana** precisa **salir** **y** **llegar** antes **de** mim."
+            },
+            {
+              "sentence_number": 66,
+              "content": "**Yo** vou **volver** **tarde** hoje, por causa da chuva."
+            },
+            {
+              "sentence_number": 67,
+              "content": "**Yo** preciso **hacer** muitas coisas hoje."
+            },
+            {
+              "sentence_number": 68,
+              "content": "**Yo** **me** **levanto** **y** já vou direto **tomar café**."
+            },
+            {
+              "sentence_number": 69,
+              "content": "**Es** importante **tener** **una** rotina simples **todos** os dias."
+            },
+            {
+              "sentence_number": 70,
+              "content": "Ela gosta **de** **leer** antes **de** **dormir**."
+            },
+            {
+              "sentence_number": 71,
+              "content": "**Cómo** **tú** acorda tão cedo?"
+            },
+            {
+              "sentence_number": 72,
+              "content": "**Después** **de** **cenar**, **yo** descanso **un** pouco."
+            },
+            {
+              "sentence_number": 73,
+              "content": "**Yo** tenho que **ir** para **la** escola cedo."
+            },
+            {
+              "sentence_number": 74,
+              "content": "**Después** **de** **almorzar**, **yo** descanso por dez minutos."
+            },
+            {
+              "sentence_number": 75,
+              "content": "**Yo** vou **llegar** **en el** trabalho às oito."
+            },
+            {
+              "sentence_number": 76,
+              "content": "Minha **familia** prefere **volver** para **casa** às seis."
+            },
+            {
+              "sentence_number": 77,
+              "content": "**Yo** preciso **descansar** **después** **de** **un** **día** longo."
+            },
+            {
+              "sentence_number": 78,
+              "content": "**Después** **yo** preciso **cepillarse los dientes** antes **de** **salir**."
+            },
+            {
+              "sentence_number": 79,
+              "content": "**Todos** os dias **yo** preciso **descansar** **un** pouco **después** do almoço."
+            },
+            {
+              "sentence_number": 80,
+              "content": "**Yo** gosto **de** **tomar café** antes **de** **salir** **de** **casa**."
+            },
+            {
+              "sentence_number": 81,
+              "content": "**Después** **de** **despertarse**, **yo** **me** sinto descansado."
+            },
+            {
+              "sentence_number": 82,
+              "content": "**Yo** vou **dormir** cedo hoje."
+            },
+            {
+              "sentence_number": 83,
+              "content": "Minha **familia** toda dorme **después** das dez."
+            },
+            {
+              "sentence_number": 84,
+              "content": "**Nosotros** gostamos **de** **levantarse** cedo juntos."
+            },
+            {
+              "sentence_number": 85,
+              "content": "**Yo** preciso **hacer** **el** almoço para minha **familia**."
+            },
+            {
+              "sentence_number": 86,
+              "content": "**Yo** prefiro **ducharse** **de** manhã."
+            },
+            {
+              "sentence_number": 87,
+              "content": "Ele **tiene** que **trabajar** até **tarde** hoje."
+            },
+            {
+              "sentence_number": 88,
+              "content": "**Yo** vou para **casa** **después** **de** **trabajar**."
+            },
+            {
+              "sentence_number": 89,
+              "content": "Ela **tiene** **una** **cama** confortável para **dormir** **bien**."
+            },
+            {
+              "sentence_number": 90,
+              "content": "**Después** **de** **tomar café**, **yo** saio para **el** trabalho."
+            },
+            {
+              "sentence_number": 91,
+              "content": "Minha **familia** gosta **de** **descansar** junta **todos** os dias."
+            },
+            {
+              "sentence_number": 92,
+              "content": "**Yo** **despierto** **y** preciso **tener** oito horas **de** sono **todas** as noites."
+            },
+            {
+              "sentence_number": 93,
+              "content": "**Yo** gosto **de** **descansar** **en la** **cama** **después** do trabalho."
+            },
+            {
+              "sentence_number": 94,
+              "content": "**Después** **de** **despertarse**, **yo** vou **cepillarse los dientes** **y** **tomar café**."
+            },
+            {
+              "sentence_number": 95,
+              "content": "Ele precisa **salir** cedo para **el** trabalho **todos** os dias."
+            },
+            {
+              "sentence_number": 96,
+              "content": "**Yo** tenho pouco tempo para **vestirse** **de** manhã."
+            },
+            {
+              "sentence_number": 97,
+              "content": "**Mi** **padre** sai **de** **casa** **y** precisa **ir** **trabajar**."
+            },
+            {
+              "sentence_number": 98,
+              "content": "**Yo** preciso **ir** **trabajar** **de** ônibus hoje."
+            },
+            {
+              "sentence_number": 99,
+              "content": "**Nosotros** chegamos **tarde** hoje por causa do trânsito, **y** **yo** preciso **vestirse** rápido."
+            },
+            {
+              "sentence_number": 100,
+              "content": "**Después** **de** **hacer** **el** almoço, **yo** descanso **un** pouco **en la** **sala**."
+            }
+          ],
+          "status": "ready"
         }
       ]
     }

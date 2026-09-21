@@ -30,6 +30,93 @@
         "não": "no",
         "de nada": "de nada"
       }
+    },
+    "topic_2": {
+      "pt": {
+        "família": "familia",
+        "pai": "padre",
+        "mãe": "madre",
+        "filho": "hijo",
+        "filha": "hija",
+        "irmão": "hermano",
+        "irmã": "hermana",
+        "avô": "abuelo",
+        "avó": "abuela",
+        "tio": "tío",
+        "tia": "tía",
+        "primo": "primo",
+        "prima": "prima",
+        "marido": "esposo",
+        "esposa": "esposa",
+        "seu": "su",
+        "sua": "su",
+        "nós": [
+          "nosotros",
+          "nosotras"
+        ],
+        "nosso": "nuestro",
+        "nossa": "nuestra",
+        "o": "el",
+        "a": "la",
+        "todos": "todos",
+        "todas": "todas",
+        "com": "con",
+        "sem": "sin"
+      }
+    },
+    "topic_3": {
+      "pt": {
+        "casa": "casa",
+        "quarto": "cuarto",
+        "sala": "sala",
+        "cozinha": "cocina",
+        "banheiro": "baño",
+        "porta": "puerta",
+        "janela": "ventana",
+        "mesa": "mesa",
+        "cadeira": "silla",
+        "cama": "cama",
+        "geladeira": "refrigerador",
+        "fogão": "estufa",
+        "televisão": "televisión",
+        "um": "un",
+        "uma": "una",
+        "aqui": "aquí",
+        "ali": "allí",
+        "tem": "tiene",
+        "há": "hay",
+        "na": "en la",
+        "no": "en el",
+        "em": "en",
+        "isto": "esto",
+        "isso": "eso",
+        "aquilo": "aquello"
+      }
+    },
+    "topic_4": {
+      "pt": {
+        "acordar": "despertarse",
+        "levantar": "levantarse",
+        "tomar banho": "ducharse",
+        "escovar os dentes": "cepillarse los dientes",
+        "vestir": "vestirse",
+        "tomar café": "tomar café",
+        "sair": "salir",
+        "ir": "ir",
+        "chegar": "llegar",
+        "trabalhar": "trabajar",
+        "voltar": "volver",
+        "almoçar": "almorzar",
+        "jantar": "cenar",
+        "descansar": "descansar",
+        "ler": "leer",
+        "dormir": "dormir",
+        "acordo": "despierto",
+        "levanto": "levanto",
+        "depois": "después",
+        "ter": "tener",
+        "fazer": "hacer"
+      }
     }
   },
   "chapter_4": {

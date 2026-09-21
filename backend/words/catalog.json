@@ -1079,6 +1079,198 @@
     {
       "word_id": "wd-0270",
       "filename": "good_feminine"
+    },
+    {
+      "word_id": "wd-0271",
+      "filename": "cousin_feminine"
+    },
+    {
+      "word_id": "wd-0272",
+      "filename": "his_her_their_possessive"
+    },
+    {
+      "word_id": "wd-0273",
+      "filename": "we_feminine"
+    },
+    {
+      "word_id": "wd-0274",
+      "filename": "our"
+    },
+    {
+      "word_id": "wd-0275",
+      "filename": "our_feminine"
+    },
+    {
+      "word_id": "wd-0276",
+      "filename": "the_feminine"
+    },
+    {
+      "word_id": "wd-0277",
+      "filename": "all"
+    },
+    {
+      "word_id": "wd-0278",
+      "filename": "all_feminine"
+    },
+    {
+      "word_id": "wd-0279",
+      "filename": "without"
+    },
+    {
+      "word_id": "wd-0280",
+      "filename": "house"
+    },
+    {
+      "word_id": "wd-0281",
+      "filename": "bedroom"
+    },
+    {
+      "word_id": "wd-0282",
+      "filename": "living_room"
+    },
+    {
+      "word_id": "wd-0283",
+      "filename": "kitchen"
+    },
+    {
+      "word_id": "wd-0284",
+      "filename": "bathroom"
+    },
+    {
+      "word_id": "wd-0285",
+      "filename": "door"
+    },
+    {
+      "word_id": "wd-0286",
+      "filename": "window"
+    },
+    {
+      "word_id": "wd-0287",
+      "filename": "chair"
+    },
+    {
+      "word_id": "wd-0288",
+      "filename": "bed"
+    },
+    {
+      "word_id": "wd-0289",
+      "filename": "refrigerator"
+    },
+    {
+      "word_id": "wd-0290",
+      "filename": "stove"
+    },
+    {
+      "word_id": "wd-0291",
+      "filename": "indefinite_article"
+    },
+    {
+      "word_id": "wd-0292",
+      "filename": "indefinite_article_feminine"
+    },
+    {
+      "word_id": "wd-0293",
+      "filename": "has"
+    },
+    {
+      "word_id": "wd-0294",
+      "filename": "there_is"
+    },
+    {
+      "word_id": "wd-0295",
+      "filename": "in_the_feminine"
+    },
+    {
+      "word_id": "wd-0296",
+      "filename": "in_the_masculine"
+    },
+    {
+      "word_id": "wd-0297",
+      "filename": "this_neuter"
+    },
+    {
+      "word_id": "wd-0298",
+      "filename": "that_neuter"
+    },
+    {
+      "word_id": "wd-0299",
+      "filename": "that_over_there_neuter"
+    },
+    {
+      "word_id": "wd-0300",
+      "filename": "wake_up"
+    },
+    {
+      "word_id": "wd-0301",
+      "filename": "get_up"
+    },
+    {
+      "word_id": "wd-0302",
+      "filename": "shower"
+    },
+    {
+      "word_id": "wd-0303",
+      "filename": "brush_teeth"
+    },
+    {
+      "word_id": "wd-0304",
+      "filename": "get_dressed"
+    },
+    {
+      "word_id": "wd-0305",
+      "filename": "have_coffee"
+    },
+    {
+      "word_id": "wd-0306",
+      "filename": "leave"
+    },
+    {
+      "word_id": "wd-0307",
+      "filename": "arrive"
+    },
+    {
+      "word_id": "wd-0308",
+      "filename": "work"
+    },
+    {
+      "word_id": "wd-0309",
+      "filename": "return"
+    },
+    {
+      "word_id": "wd-0310",
+      "filename": "have_lunch"
+    },
+    {
+      "word_id": "wd-0311",
+      "filename": "have_dinner"
+    },
+    {
+      "word_id": "wd-0312",
+      "filename": "rest"
+    },
+    {
+      "word_id": "wd-0313",
+      "filename": "read"
+    },
+    {
+      "word_id": "wd-0314",
+      "filename": "sleep"
+    },
+    {
+      "word_id": "wd-0315",
+      "filename": "i_wake_up"
+    },
+    {
+      "word_id": "wd-0316",
+      "filename": "i_get_up"
+    },
+    {
+      "word_id": "wd-0317",
+      "filename": "after"
+    },
+    {
+      "word_id": "wd-0318",
+      "filename": "make"
     }
   ]
 }

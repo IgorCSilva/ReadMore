@@ -12,6 +12,7 @@
     <div class="reading-stage" id="reading-stage">
       <div class="reading-counter" id="reading-counter"></div>
       <button type="button" class="reading-word-area" id="reading-word-area">
+        <span class="reinforcement-badge" id="reading-reinforcement-badge" style="display:none" title="Reinforcement word">&#128170;</span>
         <span class="reading-word" id="reading-word"></span>
       </button>
       <div class="reading-hint">Tap the word for the next one</div>
@@ -21,9 +22,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import { getUserWords } from '../../shared/api'
-import { cacheKey, writeCache } from '../../shared/cache'
-import { readStale, refreshInBackground } from '../../shared/dataSync'
+import { loadUserWords } from '../../shared/userWords'
 import { formatWordByGender, getGender } from '../../shared/genders'
 
 // New tab, to the right of Sentences: a bare, one-word-at-a-time reading
@@ -56,6 +55,7 @@ let LANG = "pt-en";
 let SENTENCE_LANG = "target";
 let CUE_LANG = "origin";
 let currentTopic = null;
+let REINFORCEMENT_WORD_IDS = [];
 let WORDS = [];
 let index = 0;
 
@@ -69,6 +69,7 @@ onMounted(() => {
   const counterEl = document.getElementById("reading-counter");
   const wordAreaEl = document.getElementById("reading-word-area");
   const wordEl = document.getElementById("reading-word");
+  const reinforcementBadgeEl = document.getElementById("reading-reinforcement-badge");
 
   function showError(err) {
     console.error(err);
@@ -98,6 +99,7 @@ onMounted(() => {
     counterEl.textContent = `${index + 1} / ${WORDS.length}`;
     wordEl.textContent = formatWordByGender(entry.word, entry.genderId);
     wordEl.style.color = getGender(entry.genderId).color || "";
+    reinforcementBadgeEl.style.display = entry.isReinforcement ? "flex" : "none";
   }
 
   function next() {
@@ -110,11 +112,27 @@ onMounted(() => {
 
   function transformAndFilter(rawWords) {
     const byId = new Map(rawWords.map((w) => [w.word_id, w]));
-    const entries = (currentTopic?.word_ids || [])
+    const toEntry = (w, isReinforcement) => ({
+      wordId: w.word_id,
+      word: w.original,
+      genderId: w.gender_id || "not_apply",
+      isReinforcement,
+    });
+    const topicEntries = (currentTopic?.word_ids || [])
       .map((id) => byId.get(id))
       .filter((w) => w && w.show !== false && !w.confident)
-      .map((w) => ({ wordId: w.word_id, word: w.original, genderId: w.gender_id || "not_apply" }));
-    return shuffle(entries);
+      .map((w) => toEntry(w, false));
+    // Reinforcement words bypass the !confident and show!==false filters —
+    // the whole point of reinforcement is reviewing words regardless of
+    // whether they've been marked confident or hidden as "known", since
+    // they're pulled from earlier topics a user has typically already
+    // finished (and thus already marked known) by the time they're due for
+    // review.
+    const reinforcementEntries = (REINFORCEMENT_WORD_IDS || [])
+      .map((id) => byId.get(id))
+      .filter((w) => w)
+      .map((w) => toEntry(w, true));
+    return shuffle([...topicEntries, ...reinforcementEntries]);
   }
 
   function applyWords(rawWords) {
@@ -123,41 +141,23 @@ onMounted(() => {
     render();
   }
 
-  async function fetchRawWords() {
-    const data = await getUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
-    return data.words;
-  }
-
   async function loadAndRender() {
-    const key = cacheKey("user-words", USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
-    const cached = readStale(key);
-    if (cached) {
-      applyWords(cached.data);
-      refreshInBackground({
-        key,
-        label: "word list",
-        fetchFn: fetchRawWords,
-        onFresh: applyWords,
-      });
-      return;
-    }
-
     setLoading(true);
     try {
-      const rawWords = await fetchRawWords();
-      writeCache(key, rawWords);
+      const rawWords = await loadUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
       applyWords(rawWords);
     } finally {
       setLoading(false);
     }
   }
 
-  show = (userEmail, lang, topic, sentenceLang, cueLang) => {
+  show = (userEmail, lang, topic, sentenceLang, cueLang, reinforcementWordIds) => {
     USER_EMAIL = userEmail;
     LANG = lang;
     SENTENCE_LANG = sentenceLang || "target";
     CUE_LANG = cueLang || "origin";
     currentTopic = topic;
+    REINFORCEMENT_WORD_IDS = reinforcementWordIds || [];
     index = 0;
     return loadAndRender().catch(showError);
   };
