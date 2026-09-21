@@ -1290,6 +1290,713 @@
           "es-wd-0045"
         ]
       }
+    ],
+    "topic_3": [
+      {
+        "id": "es-sent-0154",
+        "sentence": "Mi casa es muy cómoda.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0063",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0155",
+        "sentence": "La casa de mis abuelos es grande.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0063",
+          "es-wd-0023",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0156",
+        "sentence": "Ellos compraron una casa nueva.",
+        "word_ids": [
+          "es-wd-0077",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0157",
+        "sentence": "Mi cuarto es pequeño pero ordenado.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0064",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0158",
+        "sentence": "El cuarto de mi hermano tiene una ventana grande.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0064",
+          "es-wd-0023",
+          "es-wd-0016",
+          "es-wd-0042",
+          "es-wd-0080",
+          "es-wd-0077",
+          "es-wd-0069"
+        ]
+      },
+      {
+        "id": "es-sent-0159",
+        "sentence": "Necesitamos un cuarto extra para los invitados.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0064"
+        ]
+      },
+      {
+        "id": "es-sent-0160",
+        "sentence": "La sala tiene un sofá cómodo.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0065",
+          "es-wd-0080",
+          "es-wd-0076"
+        ]
+      },
+      {
+        "id": "es-sent-0161",
+        "sentence": "Nos reunimos en la sala para ver películas.",
+        "word_ids": [
+          "es-wd-0082",
+          "es-wd-0065"
+        ]
+      },
+      {
+        "id": "es-sent-0162",
+        "sentence": "Mi sala es pequeña pero acogedora.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0065",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0163",
+        "sentence": "Mi madre prepara la comida en la cocina.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0039",
+          "es-wd-0058",
+          "es-wd-0082",
+          "es-wd-0066"
+        ]
+      },
+      {
+        "id": "es-sent-0164",
+        "sentence": "La cocina de mi casa es muy moderna.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0066",
+          "es-wd-0023",
+          "es-wd-0016",
+          "es-wd-0063",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0165",
+        "sentence": "Limpiamos la cocina después de comer.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0066",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0166",
+        "sentence": "El baño está al final del pasillo.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0067"
+        ]
+      },
+      {
+        "id": "es-sent-0167",
+        "sentence": "Mi baño tiene una ventana pequeña.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0067",
+          "es-wd-0080",
+          "es-wd-0077",
+          "es-wd-0069"
+        ]
+      },
+      {
+        "id": "es-sent-0168",
+        "sentence": "Necesitamos limpiar el baño hoy.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0067"
+        ]
+      },
+      {
+        "id": "es-sent-0169",
+        "sentence": "Por favor, cierra la puerta.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0068"
+        ]
+      },
+      {
+        "id": "es-sent-0170",
+        "sentence": "La puerta de mi cuarto es azul.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0068",
+          "es-wd-0023",
+          "es-wd-0016",
+          "es-wd-0064",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0171",
+        "sentence": "Alguien tocó la puerta.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0068"
+        ]
+      },
+      {
+        "id": "es-sent-0172",
+        "sentence": "Abro la ventana todas las mañanas.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0069",
+          "es-wd-0060"
+        ]
+      },
+      {
+        "id": "es-sent-0173",
+        "sentence": "La ventana de la cocina da al jardín.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0069",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0066"
+        ]
+      },
+      {
+        "id": "es-sent-0174",
+        "sentence": "Hace frío, cierra la ventana.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0069"
+        ]
+      },
+      {
+        "id": "es-sent-0175",
+        "sentence": "La comida está sobre la mesa.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0058",
+          "es-wd-0070"
+        ]
+      },
+      {
+        "id": "es-sent-0176",
+        "sentence": "Compramos una mesa nueva para el comedor.",
+        "word_ids": [
+          "es-wd-0077",
+          "es-wd-0070",
+          "es-wd-0057"
+        ]
+      },
+      {
+        "id": "es-sent-0177",
+        "sentence": "Los platos están en la mesa.",
+        "word_ids": [
+          "es-wd-0082",
+          "es-wd-0070"
+        ]
+      },
+      {
+        "id": "es-sent-0178",
+        "sentence": "Esta silla es muy cómoda.",
+        "word_ids": [
+          "es-wd-0071",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0179",
+        "sentence": "Hay una silla al lado de la mesa.",
+        "word_ids": [
+          "es-wd-0081",
+          "es-wd-0077",
+          "es-wd-0071",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0070"
+        ]
+      },
+      {
+        "id": "es-sent-0180",
+        "sentence": "Mi silla favorita está en la sala.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0071",
+          "es-wd-0082",
+          "es-wd-0065"
+        ]
+      },
+      {
+        "id": "es-sent-0181",
+        "sentence": "Mi cama es muy suave.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0072",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0182",
+        "sentence": "Los niños duermen en su cama.",
+        "word_ids": [
+          "es-wd-0084",
+          "es-wd-0052",
+          "es-wd-0072"
+        ]
+      },
+      {
+        "id": "es-sent-0183",
+        "sentence": "Hicimos la cama esta mañana.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0072"
+        ]
+      },
+      {
+        "id": "es-sent-0184",
+        "sentence": "El refrigerador está lleno de comida.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0073",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0185",
+        "sentence": "Compramos un refrigerador nuevo.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0073"
+        ]
+      },
+      {
+        "id": "es-sent-0186",
+        "sentence": "La leche está fría en el refrigerador.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0083",
+          "es-wd-0073"
+        ]
+      },
+      {
+        "id": "es-sent-0187",
+        "sentence": "Mi madre cocina en la estufa.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0039",
+          "es-wd-0066",
+          "es-wd-0082",
+          "es-wd-0074"
+        ]
+      },
+      {
+        "id": "es-sent-0188",
+        "sentence": "La estufa de mi cocina es nueva.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0074",
+          "es-wd-0023",
+          "es-wd-0016",
+          "es-wd-0066",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0189",
+        "sentence": "Apaga la estufa, por favor.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0074"
+        ]
+      },
+      {
+        "id": "es-sent-0190",
+        "sentence": "Vemos la televisión después de cenar.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0075",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0191",
+        "sentence": "La televisión de la sala es muy grande.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0075",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0065",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0192",
+        "sentence": "Mi hermano ve mucha televisión.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0042",
+          "es-wd-0075"
+        ]
+      },
+      {
+        "id": "es-sent-0193",
+        "sentence": "Tengo un hermano y una hermana.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0042",
+          "es-wd-0033",
+          "es-wd-0077",
+          "es-wd-0043"
+        ]
+      },
+      {
+        "id": "es-sent-0194",
+        "sentence": "Compré un regalo para mi madre.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0016",
+          "es-wd-0039"
+        ]
+      },
+      {
+        "id": "es-sent-0195",
+        "sentence": "Hay un cuarto extra en mi casa.",
+        "word_ids": [
+          "es-wd-0081",
+          "es-wd-0076",
+          "es-wd-0064",
+          "es-wd-0084",
+          "es-wd-0016",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0196",
+        "sentence": "Tengo una hermana menor.",
+        "word_ids": [
+          "es-wd-0077",
+          "es-wd-0043"
+        ]
+      },
+      {
+        "id": "es-sent-0197",
+        "sentence": "Vi una silla muy bonita en la tienda.",
+        "word_ids": [
+          "es-wd-0077",
+          "es-wd-0071",
+          "es-wd-0082"
+        ]
+      },
+      {
+        "id": "es-sent-0198",
+        "sentence": "Hay una mesa nueva en el comedor.",
+        "word_ids": [
+          "es-wd-0081",
+          "es-wd-0077",
+          "es-wd-0070",
+          "es-wd-0083"
+        ]
+      },
+      {
+        "id": "es-sent-0199",
+        "sentence": "Ven aquí, por favor.",
+        "word_ids": [
+          "es-wd-0078"
+        ]
+      },
+      {
+        "id": "es-sent-0200",
+        "sentence": "Mi casa está aquí, cerca del parque.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0063",
+          "es-wd-0078"
+        ]
+      },
+      {
+        "id": "es-sent-0201",
+        "sentence": "Aquí vivo con mi familia.",
+        "word_ids": [
+          "es-wd-0078",
+          "es-wd-0061",
+          "es-wd-0016",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0202",
+        "sentence": "Las llaves están allí, sobre la mesa.",
+        "word_ids": [
+          "es-wd-0079",
+          "es-wd-0058",
+          "es-wd-0070"
+        ]
+      },
+      {
+        "id": "es-sent-0203",
+        "sentence": "Mi abuela vive allí.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0045",
+          "es-wd-0079"
+        ]
+      },
+      {
+        "id": "es-sent-0204",
+        "sentence": "Allí está mi cuarto favorito.",
+        "word_ids": [
+          "es-wd-0079",
+          "es-wd-0016",
+          "es-wd-0064"
+        ]
+      },
+      {
+        "id": "es-sent-0205",
+        "sentence": "Mi casa tiene tres cuartos.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0063",
+          "es-wd-0080"
+        ]
+      },
+      {
+        "id": "es-sent-0206",
+        "sentence": "El cuarto tiene una cama y una silla.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0064",
+          "es-wd-0080",
+          "es-wd-0077",
+          "es-wd-0072",
+          "es-wd-0033",
+          "es-wd-0077",
+          "es-wd-0071"
+        ]
+      },
+      {
+        "id": "es-sent-0207",
+        "sentence": "Ella tiene una familia muy grande.",
+        "word_ids": [
+          "es-wd-0080",
+          "es-wd-0077",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0208",
+        "sentence": "Hay una mesa en la sala.",
+        "word_ids": [
+          "es-wd-0081",
+          "es-wd-0077",
+          "es-wd-0070",
+          "es-wd-0082",
+          "es-wd-0065"
+        ]
+      },
+      {
+        "id": "es-sent-0209",
+        "sentence": "¿Hay un baño aquí?",
+        "word_ids": [
+          "es-wd-0081",
+          "es-wd-0076",
+          "es-wd-0067",
+          "es-wd-0078"
+        ]
+      },
+      {
+        "id": "es-sent-0210",
+        "sentence": "No hay televisión en el cuarto.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0081",
+          "es-wd-0075",
+          "es-wd-0083",
+          "es-wd-0064"
+        ]
+      },
+      {
+        "id": "es-sent-0211",
+        "sentence": "La comida está en la mesa.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0082",
+          "es-wd-0070"
+        ]
+      },
+      {
+        "id": "es-sent-0212",
+        "sentence": "Nos sentamos en la sala.",
+        "word_ids": [
+          "es-wd-0082",
+          "es-wd-0065"
+        ]
+      },
+      {
+        "id": "es-sent-0213",
+        "sentence": "Mi madre cocina en la cocina.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0039",
+          "es-wd-0066",
+          "es-wd-0082",
+          "es-wd-0066"
+        ]
+      },
+      {
+        "id": "es-sent-0214",
+        "sentence": "Los libros están en el cuarto.",
+        "word_ids": [
+          "es-wd-0083",
+          "es-wd-0064"
+        ]
+      },
+      {
+        "id": "es-sent-0215",
+        "sentence": "La leche está en el refrigerador.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0083",
+          "es-wd-0073"
+        ]
+      },
+      {
+        "id": "es-sent-0216",
+        "sentence": "Nos bañamos en el baño.",
+        "word_ids": [
+          "es-wd-0083",
+          "es-wd-0067"
+        ]
+      },
+      {
+        "id": "es-sent-0217",
+        "sentence": "Vivo en casa con mi familia.",
+        "word_ids": [
+          "es-wd-0084",
+          "es-wd-0063",
+          "es-wd-0061",
+          "es-wd-0016",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0218",
+        "sentence": "Hoy me quedo en casa.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0084",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0219",
+        "sentence": "Ella trabaja en casa.",
+        "word_ids": [
+          "es-wd-0084",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0220",
+        "sentence": "Esto es mi cama nueva.",
+        "word_ids": [
+          "es-wd-0085",
+          "es-wd-0017",
+          "es-wd-0016",
+          "es-wd-0072"
+        ]
+      },
+      {
+        "id": "es-sent-0221",
+        "sentence": "¿Qué es esto?",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0085"
+        ]
+      },
+      {
+        "id": "es-sent-0222",
+        "sentence": "Esto es muy interesante.",
+        "word_ids": [
+          "es-wd-0085",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0223",
+        "sentence": "Eso es de mi hermano.",
+        "word_ids": [
+          "es-wd-0086",
+          "es-wd-0017",
+          "es-wd-0023",
+          "es-wd-0016",
+          "es-wd-0042"
+        ]
+      },
+      {
+        "id": "es-sent-0224",
+        "sentence": "No entiendo eso.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0086"
+        ]
+      },
+      {
+        "id": "es-sent-0225",
+        "sentence": "Eso no está bien.",
+        "word_ids": [
+          "es-wd-0086",
+          "es-wd-0036",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0226",
+        "sentence": "Aquello parece muy antiguo.",
+        "word_ids": [
+          "es-wd-0087"
+        ]
+      },
+      {
+        "id": "es-sent-0227",
+        "sentence": "¿Qué es aquello?",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0087"
+        ]
+      },
+      {
+        "id": "es-sent-0228",
+        "sentence": "Aquello es una mesa vieja.",
+        "word_ids": [
+          "es-wd-0087",
+          "es-wd-0017",
+          "es-wd-0077",
+          "es-wd-0070"
+        ]
+      }
     ]
   }
 }

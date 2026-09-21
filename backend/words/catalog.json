@@ -1115,6 +1115,86 @@
     {
       "word_id": "wd-0279",
       "filename": "without"
+    },
+    {
+      "word_id": "wd-0280",
+      "filename": "house"
+    },
+    {
+      "word_id": "wd-0281",
+      "filename": "bedroom"
+    },
+    {
+      "word_id": "wd-0282",
+      "filename": "living_room"
+    },
+    {
+      "word_id": "wd-0283",
+      "filename": "kitchen"
+    },
+    {
+      "word_id": "wd-0284",
+      "filename": "bathroom"
+    },
+    {
+      "word_id": "wd-0285",
+      "filename": "door"
+    },
+    {
+      "word_id": "wd-0286",
+      "filename": "window"
+    },
+    {
+      "word_id": "wd-0287",
+      "filename": "chair"
+    },
+    {
+      "word_id": "wd-0288",
+      "filename": "bed"
+    },
+    {
+      "word_id": "wd-0289",
+      "filename": "refrigerator"
+    },
+    {
+      "word_id": "wd-0290",
+      "filename": "stove"
+    },
+    {
+      "word_id": "wd-0291",
+      "filename": "indefinite_article"
+    },
+    {
+      "word_id": "wd-0292",
+      "filename": "indefinite_article_feminine"
+    },
+    {
+      "word_id": "wd-0293",
+      "filename": "has"
+    },
+    {
+      "word_id": "wd-0294",
+      "filename": "there_is"
+    },
+    {
+      "word_id": "wd-0295",
+      "filename": "in_the_feminine"
+    },
+    {
+      "word_id": "wd-0296",
+      "filename": "in_the_masculine"
+    },
+    {
+      "word_id": "wd-0297",
+      "filename": "this_neuter"
+    },
+    {
+      "word_id": "wd-0298",
+      "filename": "that_neuter"
+    },
+    {
+      "word_id": "wd-0299",
+      "filename": "that_over_there_neuter"
     }
   ]
 }

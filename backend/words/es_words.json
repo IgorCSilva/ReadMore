@@ -370,5 +370,155 @@
     "root_word_id": "wd-0279",
     "word": "sin",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0063",
+    "root_word_id": "wd-0280",
+    "word": "casa",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0064",
+    "root_word_id": "wd-0281",
+    "word": "cuarto",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0065",
+    "root_word_id": "wd-0282",
+    "word": "sala",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0066",
+    "root_word_id": "wd-0283",
+    "word": "cocina",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0067",
+    "root_word_id": "wd-0284",
+    "word": "baño",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0068",
+    "root_word_id": "wd-0285",
+    "word": "puerta",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0069",
+    "root_word_id": "wd-0286",
+    "word": "ventana",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0070",
+    "root_word_id": "wd-0183",
+    "word": "mesa",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0071",
+    "root_word_id": "wd-0287",
+    "word": "silla",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0072",
+    "root_word_id": "wd-0288",
+    "word": "cama",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0073",
+    "root_word_id": "wd-0289",
+    "word": "refrigerador",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0074",
+    "root_word_id": "wd-0290",
+    "word": "estufa",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0075",
+    "root_word_id": "wd-0047",
+    "word": "televisión",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0076",
+    "root_word_id": "wd-0291",
+    "word": "un",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0077",
+    "root_word_id": "wd-0292",
+    "word": "una",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0078",
+    "root_word_id": "wd-0065",
+    "word": "aquí",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0079",
+    "root_word_id": "wd-0066",
+    "word": "allí",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0080",
+    "root_word_id": "wd-0293",
+    "word": "tiene",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0081",
+    "root_word_id": "wd-0294",
+    "word": "hay",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0082",
+    "root_word_id": "wd-0295",
+    "word": "en la",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0083",
+    "root_word_id": "wd-0296",
+    "word": "en el",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0084",
+    "root_word_id": "wd-0144",
+    "word": "en",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0085",
+    "root_word_id": "wd-0297",
+    "word": "esto",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0086",
+    "root_word_id": "wd-0298",
+    "word": "eso",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0087",
+    "root_word_id": "wd-0299",
+    "word": "aquello",
+    "gender_id": "not_apply"
   }
 ]

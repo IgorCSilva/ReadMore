@@ -883,6 +883,444 @@
             }
           ],
           "exercises": []
+        },
+        {
+          "topic_id": "top-A0-EL-3",
+          "number": 3,
+          "title": "Em Casa",
+          "description": "Vocabulário da casa (cômodos e objetos comuns) e a expressão existencial \"hay\" (equivalente a \"tem\"/\"há\"), como em \"hay una mesa\". Atividade de desenvolvimento: leitura de uma breve descrição de uma casa ou cômodo.",
+          "status": "ready",
+          "word_ids": [
+            "es-wd-0063",
+            "es-wd-0064",
+            "es-wd-0065",
+            "es-wd-0066",
+            "es-wd-0067",
+            "es-wd-0068",
+            "es-wd-0069",
+            "es-wd-0070",
+            "es-wd-0071",
+            "es-wd-0072",
+            "es-wd-0073",
+            "es-wd-0074",
+            "es-wd-0075",
+            "es-wd-0076",
+            "es-wd-0077",
+            "es-wd-0078",
+            "es-wd-0079",
+            "es-wd-0080",
+            "es-wd-0081",
+            "es-wd-0082",
+            "es-wd-0083",
+            "es-wd-0084",
+            "es-wd-0085",
+            "es-wd-0086",
+            "es-wd-0087"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "**La** **sala** **tiene** **una** **puerta** **de** vidro."
+            },
+            {
+              "sentence_number": 2,
+              "content": "**Mi** **primo** **y** **su** **esposa** compraram **una** **casa** pequena."
+            },
+            {
+              "sentence_number": 3,
+              "content": "**Hay** **un** **refrigerador** **en la** **cocina**."
+            },
+            {
+              "sentence_number": 4,
+              "content": "**El** **baño** **tiene** **una** **ventana** pequena."
+            },
+            {
+              "sentence_number": 5,
+              "content": "**La** **casa** **tiene** **una** **ventana** enorme."
+            },
+            {
+              "sentence_number": 6,
+              "content": "**Mi** **familia** **y** **yo** amamos ficar **en** **casa** juntos."
+            },
+            {
+              "sentence_number": 7,
+              "content": "**El** **refrigerador** fica **allí**, **en la** **cocina**."
+            },
+            {
+              "sentence_number": 8,
+              "content": "**¿Su** **casa** **tiene** **una** **televisión** grande?"
+            },
+            {
+              "sentence_number": 9,
+              "content": "**Mi** **padre** limpa **la** **casa** **todos** os sábados."
+            },
+            {
+              "sentence_number": 10,
+              "content": "**Mi** **cuarto** **tiene** **una** **cama** confortável."
+            },
+            {
+              "sentence_number": 11,
+              "content": "**Hay** **una** **silla** velha **en el** **cuarto**."
+            },
+            {
+              "sentence_number": 12,
+              "content": "**Aquello** parece muito estranho, ninguém sabe **de** onde veio."
+            },
+            {
+              "sentence_number": 13,
+              "content": "**¿Hay** **una** **ventana** **en el** **baño**?"
+            },
+            {
+              "sentence_number": 14,
+              "content": "**Hay** **un** **refrigerador** vazio **en la** **cocina** hoje."
+            },
+            {
+              "sentence_number": 15,
+              "content": "**La** **mesa** fica **aquí**, **y** **la** **silla** fica **allí**."
+            },
+            {
+              "sentence_number": 16,
+              "content": "**La** **sala** **tiene** **una** **televisión** grande **y** **una** **mesa** pequena."
+            },
+            {
+              "sentence_number": 17,
+              "content": "Existe **un** **baño** pequeno perto **de** **la** **cocina**."
+            },
+            {
+              "sentence_number": 18,
+              "content": "**Mi** **madre** prepara **la** comida **en la** **cocina** **todas** as manhãs."
+            },
+            {
+              "sentence_number": 19,
+              "content": "**Hay** **una** **cama** nova **aquí**, **y** **una** velha **allí**."
+            },
+            {
+              "sentence_number": 20,
+              "content": "**Mi** **abuelo** descansa **en la** **cama** depois do almoço."
+            },
+            {
+              "sentence_number": 21,
+              "content": "**Allí** **es** **el** **cuarto** **de** **mi** **hermano**."
+            },
+            {
+              "sentence_number": 22,
+              "content": "**Mi** **primo** estuda **en la** **sala**, perto **de** **la** **televisión**."
+            },
+            {
+              "sentence_number": 23,
+              "content": "**La** **casa** **de** **mi** **tío** **tiene** **un** **cuarto**, **una** **cocina** **y** **un** **baño**."
+            },
+            {
+              "sentence_number": 24,
+              "content": "**Mi** **cama** fica **aquí**, perto **de** **la** **ventana**."
+            },
+            {
+              "sentence_number": 25,
+              "content": "**Mi** **hermana** quer **una** **televisión** nova para **su** **cuarto**."
+            },
+            {
+              "sentence_number": 26,
+              "content": "**Su** **casa** **tiene** **un** **baño** **y** **un** **cuarto**."
+            },
+            {
+              "sentence_number": 27,
+              "content": "**Hay** **un** **cuarto** **y** **una** **sala** **en** **mi** **casa**."
+            },
+            {
+              "sentence_number": 28,
+              "content": "**Mi** **madre** fecha **la** **puerta** à **noche**."
+            },
+            {
+              "sentence_number": 29,
+              "content": "**Mi** **hermano** sempre deixa **la** **ventana** **de** **su** **cuarto** aberta."
+            },
+            {
+              "sentence_number": 30,
+              "content": "**Hay** **una** **cama** **en el** **cuarto**."
+            },
+            {
+              "sentence_number": 31,
+              "content": "**La** roupa fica **en el** armário, **en el** **cuarto**."
+            },
+            {
+              "sentence_number": 32,
+              "content": "**El** **cuarto** **de** **mi** **hermana** **tiene** **una** **cama** rosa."
+            },
+            {
+              "sentence_number": 33,
+              "content": "Vi **una** **silla** muito bonita **en la** loja ontem."
+            },
+            {
+              "sentence_number": 34,
+              "content": "**Allí** fica **la** **casa** **de** **mi** **primo**."
+            },
+            {
+              "sentence_number": 35,
+              "content": "**Aquí** **es** **mi** **cuarto** favorito."
+            },
+            {
+              "sentence_number": 36,
+              "content": "**Eso** **es** **de** **mi** **hermana**, ela esqueceu **aquí**."
+            },
+            {
+              "sentence_number": 37,
+              "content": "**Hay** **una** **silla** **en la** **cocina**."
+            },
+            {
+              "sentence_number": 38,
+              "content": "**Esto** **es** **mi** **cama** nova."
+            },
+            {
+              "sentence_number": 39,
+              "content": "**Su** **familia** **tiene** **una** **casa** nova este ano."
+            },
+            {
+              "sentence_number": 40,
+              "content": "**Esto** aquí **es** **mi** **casa**, **y** **aquello** **allí** **es** **la** **casa** **de** **mi** vizinho."
+            },
+            {
+              "sentence_number": 41,
+              "content": "**Hay** **una** **mesa** grande **en la** **cocina** **de** **mi** **abuela**."
+            },
+            {
+              "sentence_number": 42,
+              "content": "**Hay** **una** **televisión** **en la** **sala**."
+            },
+            {
+              "sentence_number": 43,
+              "content": "**Eso**, **allí**, **es** **el** presente **de** **mi** **madre**."
+            },
+            {
+              "sentence_number": 44,
+              "content": "**¿Hay** **una** **estufa** **en** **su** **cocina**?"
+            },
+            {
+              "sentence_number": 45,
+              "content": "**Esto** **no** **es** **mi** **silla**, **es** **de** **mi** **abuelo**."
+            },
+            {
+              "sentence_number": 46,
+              "content": "**Mi** **padre** trocou **la** **ventana** **de** **la** **cocina**."
+            },
+            {
+              "sentence_number": 47,
+              "content": "Quero comprar **un** **refrigerador** novo para **mi** **cocina**."
+            },
+            {
+              "sentence_number": 48,
+              "content": "À **noche**, sempre fechamos **la** **puerta** **de** **la** **casa**."
+            },
+            {
+              "sentence_number": 49,
+              "content": "Abri **la** **ventana** **de** **mi** **cuarto** pela manhã."
+            },
+            {
+              "sentence_number": 50,
+              "content": "**Mi** **hermano** dorme **en la** **sala**, **en el** sofá."
+            },
+            {
+              "sentence_number": 51,
+              "content": "**Eso** **es** **una** **estufa** muito antiga, **de** **mi** **abuela**."
+            },
+            {
+              "sentence_number": 52,
+              "content": "**Aquello**, perto **de** **la** **ventana**, **es** **una** **mesa** velha."
+            },
+            {
+              "sentence_number": 53,
+              "content": "**Mi** **madre** comprou **una** **mesa** nova para **la** **sala**."
+            },
+            {
+              "sentence_number": 54,
+              "content": "**Nuestra** **familia** se reúne **en la** **sala** todo domingo."
+            },
+            {
+              "sentence_number": 55,
+              "content": "**Mi** **tía** **tiene** **una** **casa** enorme **en la** praia."
+            },
+            {
+              "sentence_number": 56,
+              "content": "**Hay** **una** **puerta** grande **en la** entrada."
+            },
+            {
+              "sentence_number": 57,
+              "content": "Por favor, feche **la** **puerta** **de** **la** **cocina**."
+            },
+            {
+              "sentence_number": 58,
+              "content": "**Eso** que fica **allí** **es** **una** **mesa** velha **de** **mi** **abuelo**."
+            },
+            {
+              "sentence_number": 59,
+              "content": "**Esto** **es** **mi** **silla** favorita, sempre fico **aquí**."
+            },
+            {
+              "sentence_number": 60,
+              "content": "**Mi** **casa** **tiene** **una** **sala** grande."
+            },
+            {
+              "sentence_number": 61,
+              "content": "**Hay** **una** **mesa** **en la** **sala**."
+            },
+            {
+              "sentence_number": 62,
+              "content": "**Aquello** **allí**, perto **de** **la** **puerta**, **es** **una** caixa velha."
+            },
+            {
+              "sentence_number": 63,
+              "content": "**Mi** **madre** arruma **el** **cuarto** **todas** as manhãs."
+            },
+            {
+              "sentence_number": 64,
+              "content": "Toda **mi** **familia** janta **en** **casa** aos sábados."
+            },
+            {
+              "sentence_number": 65,
+              "content": "**Aquí** **hay** **una** **mesa**, **y** **allí** **hay** **una** **cama**."
+            },
+            {
+              "sentence_number": 66,
+              "content": "**Eso** **no** **es** **mi** **televisión**, **es** **de** **mi** **hermano**."
+            },
+            {
+              "sentence_number": 67,
+              "content": "**Mi** **hermano** **y** **yo** dividimos **un** **cuarto** pequeno."
+            },
+            {
+              "sentence_number": 68,
+              "content": "Precisamos **de** **un** **cuarto** extra **en** **mi** **casa**."
+            },
+            {
+              "sentence_number": 69,
+              "content": "**Nuestro** **abuelo** vive numa **casa** **con** **un** jardim bonito."
+            },
+            {
+              "sentence_number": 70,
+              "content": "**La** **cocina** **tiene** **una** **estufa** nova também."
+            },
+            {
+              "sentence_number": 71,
+              "content": "**Yo** abro **la** **ventana** **todas** as manhãs."
+            },
+            {
+              "sentence_number": 72,
+              "content": "**Mi** **casa** **tiene** **una** **puerta** **y** **una** **ventana** azuis."
+            },
+            {
+              "sentence_number": 73,
+              "content": "**Mi** **padre** fica sempre **en** **casa** aos domingos."
+            },
+            {
+              "sentence_number": 74,
+              "content": "**Esto** **es** **una** **silla** nova para **la** **sala**."
+            },
+            {
+              "sentence_number": 75,
+              "content": "**Mi** **hermana** **tiene** **su** própria **sala** **de** jogos."
+            },
+            {
+              "sentence_number": 76,
+              "content": "**La** **silla** azul fica **aquí**, **y** **la** roxa fica **allí**."
+            },
+            {
+              "sentence_number": 77,
+              "content": "**Sin** **una** **cocina** grande, **es** difícil cozinhar para toda **la** **familia**."
+            },
+            {
+              "sentence_number": 78,
+              "content": "**Aquello** **es** muito antigo, veio **de** **la** **casa** **de** minha **abuela**."
+            },
+            {
+              "sentence_number": 79,
+              "content": "**La** **puerta** **de** **mi** **cuarto** quebrou ontem."
+            },
+            {
+              "sentence_number": 80,
+              "content": "**La** **puerta** fica **aquí**, **y** **la** **ventana** fica **allí**."
+            },
+            {
+              "sentence_number": 81,
+              "content": "Ninguém fecha **la** **puerta** **de** **la** **sala**."
+            },
+            {
+              "sentence_number": 82,
+              "content": "Meus livros ficam **en el** **cuarto**, **en la** **mesa** pequena."
+            },
+            {
+              "sentence_number": 83,
+              "content": "**Mi** **cocina** **tiene** **un** **refrigerador**, **una** **estufa** **y** **una** **mesa**."
+            },
+            {
+              "sentence_number": 84,
+              "content": "Hoje **yo** vou ficar **en** **casa** **y** descansar."
+            },
+            {
+              "sentence_number": 85,
+              "content": "**El** ano passado, compramos **una** **mesa**, **una** **silla** **y** **una** **cama** novas para **la** **casa**."
+            },
+            {
+              "sentence_number": 86,
+              "content": "**Nuestra** **casa** **tiene** **una** **cocina** nova."
+            },
+            {
+              "sentence_number": 87,
+              "content": "**Esto** **es** **mi** **refrigerador** novo, comprei ontem."
+            },
+            {
+              "sentence_number": 88,
+              "content": "**No** **hay** **una** **televisión** **en el** **baño**."
+            },
+            {
+              "sentence_number": 89,
+              "content": "**Mi** **abuela** guarda **todo** **aquí**, nunca **allí**."
+            },
+            {
+              "sentence_number": 90,
+              "content": "**La** **puerta** principal **de** **la** **casa** **es** muito pesada."
+            },
+            {
+              "sentence_number": 91,
+              "content": "**Hay** **una** **estufa** nova **y** **un** **refrigerador** novo **en** **mi** **casa**."
+            },
+            {
+              "sentence_number": 92,
+              "content": "Vamos comprar **una** **cama** nova para **el** **cuarto**."
+            },
+            {
+              "sentence_number": 93,
+              "content": "**Hay** **una** **estufa** **en la** **cocina**, muito antiga."
+            },
+            {
+              "sentence_number": 94,
+              "content": "**Con** **mi** **familia**, **mi** **casa** nunca fica vazia."
+            },
+            {
+              "sentence_number": 95,
+              "content": "**Mi** **padre** instalou **una** **puerta** nova **en la** **cocina**."
+            },
+            {
+              "sentence_number": 96,
+              "content": "**Mi** **abuela** **tiene** **una** **ventana** cheia **de** flores."
+            },
+            {
+              "sentence_number": 97,
+              "content": "**Mi** **casa** **tiene** **un** **cuarto** pequeno."
+            },
+            {
+              "sentence_number": 98,
+              "content": "Compramos **una** **estufa** nova **y** **un** **refrigerador** também."
+            },
+            {
+              "sentence_number": 99,
+              "content": "**La** **casa** **de** **mi** **abuela** **tiene** **una** **puerta** azul."
+            },
+            {
+              "sentence_number": 100,
+              "content": "**La** **cocina** **tiene** **un** **refrigerador** moderno."
+            }
+          ],
+          "exercises": []
         }
       ]
     }
