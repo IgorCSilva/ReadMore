@@ -4,6 +4,8 @@
 
   <CorrectSentenceFab />
 
+  <UpdateAvailableBanner ref="updateBannerRef" />
+
   <div class="global-topbar" id="global-topbar">
     <div class="global-topbar-user">
       <span class="topbar-user-email" id="current-user-email"></span>
@@ -43,7 +45,16 @@
         <button type="button" class="tab-btn" id="topic-tab-typing" data-tab="typing">Typing</button>
         <button type="button" class="tab-btn" id="topic-tab-dictation" data-tab="dictation">Dictation</button>
         <button type="button" class="tab-btn" id="topic-tab-quiz" data-tab="quiz">Quiz</button>
+        <button type="button" class="tab-btn" id="topic-tab-phrases" data-tab="phrases">Phrases</button>
         <button type="button" class="tab-btn" id="topic-tab-exercises" data-tab="exercises">Exercises</button>
+        <button type="button" class="tab-btn" id="topic-tab-reinforcement" data-tab="reinforcement">Reinforcement</button>
+      </div>
+
+      <div class="tabs" id="reinforcement-tabs" style="display:none">
+        <button type="button" class="tab-btn active" id="reinforcement-tab-reading" data-tab="reading">Reading</button>
+        <button type="button" class="tab-btn" id="reinforcement-tab-dictation" data-tab="dictation">Dictation</button>
+        <button type="button" class="tab-btn" id="reinforcement-tab-quiz" data-tab="quiz">Quiz</button>
+        <button type="button" class="tab-btn" id="reinforcement-tab-phrases" data-tab="phrases">Phrases</button>
       </div>
 
       <Flashcards ref="flashcardsRef" />
@@ -60,6 +71,8 @@
 
       <Quiz ref="quizRef" />
 
+      <Phrases ref="phrasesRef" />
+
       <Exercises ref="exercisesRef" />
     </div>
   </div>
@@ -68,7 +81,7 @@
 
 <script setup>
 import { onMounted, ref } from 'vue'
-import { getChapters, getLanguages } from './shared/api'
+import { getChapters, getLanguages, getReinforcementWords } from './shared/api'
 import { cacheKey, writeCache } from './shared/cache'
 import { setCurrentSelection } from './shared/currentSelection'
 import { readStale, refreshInBackground } from './shared/dataSync'
@@ -78,12 +91,14 @@ import { flushQueuedWrites } from './shared/writeQueue'
 import CorrectSentenceFab from './features/corrections/CorrectSentenceFab.vue'
 import Flashcards from './features/catalog/Flashcards.vue'
 import Notifications from './shared/Notifications.vue'
+import UpdateAvailableBanner from './shared/UpdateAvailableBanner.vue'
 import Texts from './features/texts/Texts.vue'
 import Sentences from './features/sentences/Sentences.vue'
 import Reading from './features/reading/Reading.vue'
 import Typing from './features/typing/Typing.vue'
 import Dictation from './features/dictation/Dictation.vue'
 import Quiz from './features/quiz/Quiz.vue'
+import Phrases from './features/phrases/Phrases.vue'
 import Exercises from './features/exercises/Exercises.vue'
 
 // Template refs to the tab children — declared at top level (not inside
@@ -96,7 +111,9 @@ const readingRef = ref(null)
 const typingRef = ref(null)
 const dictationRef = ref(null)
 const quizRef = ref(null)
+const phrasesRef = ref(null)
 const exercisesRef = ref(null)
+const updateBannerRef = ref(null)
 
 // Lifted from viewer.html's end-of-body <script> unchanged (Step 2.1 of
 // RESTRUCTURE_PLAN.md Phase 2 — behavior-preserving re-platform, not a
@@ -222,17 +239,31 @@ onMounted(() => {
 
   sentenceLangSelectEl.addEventListener("change", () => {
     SENTENCE_LANG = sentenceLangSelectEl.value;
+    watchUpdateBanner();
     switchTopicTab(currentTopicTab);
   });
 
   cueLangSelectEl.addEventListener("change", () => {
     CUE_LANG = cueLangSelectEl.value;
+    watchUpdateBanner();
     switchTopicTab(currentTopicTab);
   });
 
   // ---- Topic workspace tabs (Flashcards / Texts within a topic) ----
 
   let currentTopicTab = "flashcards";
+  // Which of the Reinforcement tab's own sub-tabs (reusing the Reading/
+  // Dictation/Quiz/Phrases panels/components below) is active — only
+  // meaningful while currentTopicTab === "reinforcement".
+  let currentReinforcementSubTab = "reading";
+  const REINFORCEMENT_SUB_TABS = ["reading", "dictation", "quiz", "phrases"];
+  // Passed as the `topic` arg to Reading/Dictation/Quiz/Phrases' show() when
+  // driving them from the Reinforcement tab, so their own transformAndFilter/
+  // buildPool/buildRounds logic (unchanged) sees no topic word_ids of its
+  // own and renders reinforcement words only — see each component's
+  // transformAndFilter/buildPool for how an empty word_ids list falls
+  // through to just the reinforcement entries.
+  const EMPTY_TOPIC = { word_ids: [] };
   const topicWorkspaceEl = document.getElementById("topic-workspace");
   const topicTabFlashcardsBtn = document.getElementById("topic-tab-flashcards");
   const topicTabTextsBtn = document.getElementById("topic-tab-texts");
@@ -241,7 +272,14 @@ onMounted(() => {
   const topicTabTypingBtn = document.getElementById("topic-tab-typing");
   const topicTabDictationBtn = document.getElementById("topic-tab-dictation");
   const topicTabQuizBtn = document.getElementById("topic-tab-quiz");
+  const topicTabPhrasesBtn = document.getElementById("topic-tab-phrases");
   const topicTabExercisesBtn = document.getElementById("topic-tab-exercises");
+  const topicTabReinforcementBtn = document.getElementById("topic-tab-reinforcement");
+  const reinforcementTabsEl = document.getElementById("reinforcement-tabs");
+  const reinforcementTabReadingBtn = document.getElementById("reinforcement-tab-reading");
+  const reinforcementTabDictationBtn = document.getElementById("reinforcement-tab-dictation");
+  const reinforcementTabQuizBtn = document.getElementById("reinforcement-tab-quiz");
+  const reinforcementTabPhrasesBtn = document.getElementById("reinforcement-tab-phrases");
   const topicFlashcardsPanelEl = document.getElementById("topic-flashcards-panel");
   const topicTextsPanelEl = document.getElementById("topic-texts-panel");
   const topicSentencesPanelEl = document.getElementById("topic-sentences-panel");
@@ -249,9 +287,72 @@ onMounted(() => {
   const topicTypingPanelEl = document.getElementById("topic-typing-panel");
   const topicDictationPanelEl = document.getElementById("topic-dictation-panel");
   const topicQuizPanelEl = document.getElementById("topic-quiz-panel");
+  const topicPhrasesPanelEl = document.getElementById("topic-phrases-panel");
   const topicExercisesPanelEl = document.getElementById("topic-exercises-panel");
 
+  // Tells UpdateAvailableBanner which (user, lang, sentenceLang, cueLang)
+  // key to watch for a pending shared-word-list update — called from every
+  // place that establishes or changes that tuple, so the banner always
+  // reflects the key actually in use. Applying the update re-invokes
+  // whichever tab is currently active.
+  function watchUpdateBanner() {
+    updateBannerRef.value?.watch(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG, () => switchTopicTab(currentTopicTab));
+  }
+
+  // Drives a Reading/Dictation/Quiz/Phrases panel from the Reinforcement
+  // tab's sub-nav, reusing each component's own show() unchanged — passing
+  // EMPTY_TOPIC means only that tab's reinforcement entries render (see
+  // EMPTY_TOPIC's comment above). Pure data call; panel visibility and
+  // active-button state are handled by callers (switchTopicTab /
+  // switchReinforcementSubTab) so this can be reused by both.
+  function showReinforcementSubTab(subTab) {
+    if (subTab === "reading") {
+      readingRef.value?.show(USER_EMAIL, LANG, EMPTY_TOPIC, SENTENCE_LANG, CUE_LANG, REINFORCEMENT.reading);
+    } else if (subTab === "dictation") {
+      dictationRef.value?.show(USER_EMAIL, LANG, EMPTY_TOPIC, SENTENCE_LANG, CUE_LANG, REINFORCEMENT.dictation);
+    } else if (subTab === "quiz") {
+      quizRef.value?.show(USER_EMAIL, LANG, EMPTY_TOPIC, SENTENCE_LANG, CUE_LANG, REINFORCEMENT.quiz);
+    } else if (subTab === "phrases") {
+      phrasesRef.value?.show(USER_EMAIL, LANG, EMPTY_TOPIC, SENTENCE_LANG, CUE_LANG, CHAPTERS, REINFORCEMENT.phrases);
+    }
+  }
+
+  // Same pause-on-leave reasoning as switchTopicTab's dictation/quiz/phrases
+  // checks below — needed here too since the Reinforcement tab drives those
+  // same components/panels.
+  function pauseReinforcementSubTab(subTab) {
+    if (subTab === "dictation") dictationRef.value?.pause();
+    else if (subTab === "quiz") quizRef.value?.pause();
+    else if (subTab === "phrases") phrasesRef.value?.pause();
+  }
+
+  // Switches among the Reinforcement tab's own sub-tabs, without leaving
+  // the Reinforcement top-level tab (see switchTopicTab for that case).
+  function switchReinforcementSubTab(subTab) {
+    if (currentReinforcementSubTab !== subTab) {
+      pauseReinforcementSubTab(currentReinforcementSubTab);
+    }
+    currentReinforcementSubTab = subTab;
+    reinforcementTabReadingBtn.classList.toggle("active", subTab === "reading");
+    reinforcementTabDictationBtn.classList.toggle("active", subTab === "dictation");
+    reinforcementTabQuizBtn.classList.toggle("active", subTab === "quiz");
+    reinforcementTabPhrasesBtn.classList.toggle("active", subTab === "phrases");
+    topicReadingPanelEl.style.display = subTab === "reading" ? "flex" : "none";
+    topicDictationPanelEl.style.display = subTab === "dictation" ? "flex" : "none";
+    topicQuizPanelEl.style.display = subTab === "quiz" ? "flex" : "none";
+    topicPhrasesPanelEl.style.display = subTab === "phrases" ? "flex" : "none";
+    showReinforcementSubTab(subTab);
+  }
+
   function switchTopicTab(tab) {
+    // The Reading/Dictation/Quiz/Phrases panels/components are shared
+    // between their own top-level tabs and the Reinforcement tab's
+    // sub-tabs — the actually-active one of the four is currentTopicTab
+    // itself normally, but currentReinforcementSubTab while "reinforcement"
+    // is active. Used below so leaving either path pauses the right thing.
+    const prevActivePanel = currentTopicTab === "reinforcement" ? currentReinforcementSubTab : currentTopicTab;
+    const nextActivePanel = tab === "reinforcement" ? currentReinforcementSubTab : tab;
+
     // Typing keeps a rAF loop spawning/moving words while its tab is
     // active — pause() before leaving it so an off-screen tab doesn't keep
     // spawning and missing words in the background indefinitely.
@@ -260,14 +361,19 @@ onMounted(() => {
     }
     // Dictation plays TTS audio for the current word — pause() before
     // leaving it so playback doesn't keep going once the tab is off-screen.
-    if (currentTopicTab === "dictation" && tab !== "dictation") {
+    if (prevActivePanel === "dictation" && nextActivePanel !== "dictation") {
       dictationRef.value?.pause();
     }
     // Quiz's answer round auto-advances on a timer, same reason as Dictation
     // above — pause() before leaving so it doesn't jump to the next question
     // while off-screen.
-    if (currentTopicTab === "quiz" && tab !== "quiz") {
+    if (prevActivePanel === "quiz" && nextActivePanel !== "quiz") {
       quizRef.value?.pause();
+    }
+    // Phrases plays sentence audio and auto-advances on success, same
+    // reasons as Dictation/Quiz above.
+    if (prevActivePanel === "phrases" && nextActivePanel !== "phrases") {
+      phrasesRef.value?.pause();
     }
     currentTopicTab = tab;
     topicTabFlashcardsBtn.classList.toggle("active", tab === "flashcards");
@@ -277,15 +383,28 @@ onMounted(() => {
     topicTabTypingBtn.classList.toggle("active", tab === "typing");
     topicTabDictationBtn.classList.toggle("active", tab === "dictation");
     topicTabQuizBtn.classList.toggle("active", tab === "quiz");
+    topicTabPhrasesBtn.classList.toggle("active", tab === "phrases");
     topicTabExercisesBtn.classList.toggle("active", tab === "exercises");
+    topicTabReinforcementBtn.classList.toggle("active", tab === "reinforcement");
+    reinforcementTabsEl.style.display = tab === "reinforcement" ? "flex" : "none";
+    if (tab === "reinforcement") {
+      reinforcementTabReadingBtn.classList.toggle("active", currentReinforcementSubTab === "reading");
+      reinforcementTabDictationBtn.classList.toggle("active", currentReinforcementSubTab === "dictation");
+      reinforcementTabQuizBtn.classList.toggle("active", currentReinforcementSubTab === "quiz");
+      reinforcementTabPhrasesBtn.classList.toggle("active", currentReinforcementSubTab === "phrases");
+    }
     topicFlashcardsPanelEl.style.display = tab === "flashcards" ? "flex" : "none";
     topicTextsPanelEl.style.display = tab === "texts" ? "flex" : "none";
     topicSentencesPanelEl.style.display = tab === "sentences" ? "flex" : "none";
-    topicReadingPanelEl.style.display = tab === "reading" ? "flex" : "none";
     topicTypingPanelEl.style.display = tab === "typing" ? "flex" : "none";
-    topicDictationPanelEl.style.display = tab === "dictation" ? "flex" : "none";
-    topicQuizPanelEl.style.display = tab === "quiz" ? "flex" : "none";
     topicExercisesPanelEl.style.display = tab === "exercises" ? "flex" : "none";
+    // Reading/Dictation/Quiz/Phrases panels follow nextActivePanel rather
+    // than `tab` directly, so under "reinforcement" the one matching
+    // currentReinforcementSubTab stays visible instead of all four hiding.
+    topicReadingPanelEl.style.display = nextActivePanel === "reading" ? "flex" : "none";
+    topicDictationPanelEl.style.display = nextActivePanel === "dictation" ? "flex" : "none";
+    topicQuizPanelEl.style.display = nextActivePanel === "quiz" ? "flex" : "none";
+    topicPhrasesPanelEl.style.display = nextActivePanel === "phrases" ? "flex" : "none";
     if (tab === "flashcards") {
       flashcardsRef.value?.load(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
     } else if (tab === "texts") {
@@ -293,13 +412,17 @@ onMounted(() => {
     } else if (tab === "sentences") {
       sentencesRef.value?.show(currentTopic);
     } else if (tab === "reading") {
-      readingRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
+      readingRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG, REINFORCEMENT.reading);
     } else if (tab === "typing") {
       typingRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
     } else if (tab === "dictation") {
-      dictationRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
+      dictationRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG, REINFORCEMENT.dictation);
     } else if (tab === "quiz") {
-      quizRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG);
+      quizRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG, REINFORCEMENT.quiz);
+    } else if (tab === "phrases") {
+      phrasesRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG, CHAPTERS, REINFORCEMENT.phrases);
+    } else if (tab === "reinforcement") {
+      showReinforcementSubTab(currentReinforcementSubTab);
     } else {
       exercisesRef.value?.show(LANG, currentTopic, CUE_LANG);
     }
@@ -312,13 +435,25 @@ onMounted(() => {
   topicTabTypingBtn.addEventListener("click", () => { switchTopicTab("typing"); syncHash(true); });
   topicTabDictationBtn.addEventListener("click", () => { switchTopicTab("dictation"); syncHash(true); });
   topicTabQuizBtn.addEventListener("click", () => { switchTopicTab("quiz"); syncHash(true); });
+  topicTabPhrasesBtn.addEventListener("click", () => { switchTopicTab("phrases"); syncHash(true); });
   topicTabExercisesBtn.addEventListener("click", () => { switchTopicTab("exercises"); syncHash(true); });
+  topicTabReinforcementBtn.addEventListener("click", () => { switchTopicTab("reinforcement"); syncHash(true); });
+  reinforcementTabReadingBtn.addEventListener("click", () => { switchReinforcementSubTab("reading"); syncHash(true); });
+  reinforcementTabDictationBtn.addEventListener("click", () => { switchReinforcementSubTab("dictation"); syncHash(true); });
+  reinforcementTabQuizBtn.addEventListener("click", () => { switchReinforcementSubTab("quiz"); syncHash(true); });
+  reinforcementTabPhrasesBtn.addEventListener("click", () => { switchReinforcementSubTab("phrases"); syncHash(true); });
 
   // ---- Texts ----
 
   let CHAPTERS = [];
   let currentChapter = null;
   let currentTopic = null;
+  // Reinforcement word_ids for the currently-open topic, split across the
+  // four REINFORCEMENT_TABS (see backend/app/application/services/
+  // reinforcement_words.py) — refreshed by loadReinforcementWords()
+  // whenever showTopicWorkspace opens a topic, consumed by switchTopicTab's
+  // show() calls for reading/dictation/quiz/phrases.
+  let REINFORCEMENT = {};
 
   const textsBreadcrumbEl = document.getElementById("texts-breadcrumb");
   const textsErrorBanner = document.getElementById("texts-error-banner");
@@ -461,7 +596,7 @@ onMounted(() => {
   // hash rather than a real path since the backend only serves index.html
   // for "/" (see main.py) and has no catch-all route for arbitrary paths;
   // the hash never leaves the browser, so it needs no server-side support.
-  const VALID_TABS = ["flashcards", "texts", "sentences", "reading", "typing", "dictation", "quiz", "exercises"];
+  const VALID_TABS = ["flashcards", "texts", "sentences", "reading", "typing", "dictation", "quiz", "phrases", "exercises", "reinforcement"];
 
   function buildHash() {
     const parts = [LANG];
@@ -469,6 +604,9 @@ onMounted(() => {
       parts.push(currentChapter.chapter_id);
       if (currentTopic) {
         parts.push(currentTopic.topic_id, currentTopicTab);
+        if (currentTopicTab === "reinforcement") {
+          parts.push(currentReinforcementSubTab);
+        }
       }
     }
     return "#/" + parts.map(encodeURIComponent).join("/");
@@ -477,9 +615,9 @@ onMounted(() => {
   function parseHash() {
     const raw = window.location.hash.replace(/^#\/?/, "");
     if (!raw) return null;
-    const [lang, chapterId, topicId, tab] = raw.split("/").map((s) => decodeURIComponent(s || ""));
+    const [lang, chapterId, topicId, tab, subTab] = raw.split("/").map((s) => decodeURIComponent(s || ""));
     if (!lang) return null;
-    return { lang, chapterId: chapterId || null, topicId: topicId || null, tab: tab || null };
+    return { lang, chapterId: chapterId || null, topicId: topicId || null, tab: tab || null, subTab: subTab || null };
   }
 
   // Called after every real navigation click (chapter/topic/tab/breadcrumb)
@@ -526,7 +664,11 @@ onMounted(() => {
     // passed through to get here. Restoring can jump straight to the
     // workspace without that step, so it must set currentChapter itself.
     currentChapter = chapter;
-    showTopicWorkspace(topic, VALID_TABS.includes(state.tab) ? state.tab : "flashcards");
+    const tab = VALID_TABS.includes(state.tab) ? state.tab : "flashcards";
+    if (tab === "reinforcement" && REINFORCEMENT_SUB_TABS.includes(state.subTab)) {
+      currentReinforcementSubTab = state.subTab;
+    }
+    showTopicWorkspace(topic, tab);
   }
 
   // Same-language in-page history only (see syncHash's docstring for why
@@ -582,7 +724,18 @@ onMounted(() => {
     }
   }
 
-  function showTopicWorkspace(topic, tab = "flashcards") {
+  async function loadReinforcementWords(chapterNumber, topicNumber) {
+    try {
+      REINFORCEMENT = await getReinforcementWords(LANG, chapterNumber, topicNumber);
+    } catch (err) {
+      // Reinforcement is a spaced-review enhancement, not core content —
+      // a failed fetch shouldn't block the topic itself from opening.
+      console.error("Couldn't load reinforcement words", err);
+      REINFORCEMENT = {};
+    }
+  }
+
+  async function showTopicWorkspace(topic, tab = "flashcards") {
     currentTopic = topic;
     renderBreadcrumb();
 
@@ -590,6 +743,8 @@ onMounted(() => {
     topicsListEl.style.display = "none";
     topicWorkspaceEl.style.display = "flex";
 
+    watchUpdateBanner();
+    await loadReinforcementWords(currentChapter.number, topic.number);
     switchTopicTab(tab);
   }
 
@@ -1552,6 +1707,154 @@ onMounted(() => {
     background: color-mix(in srgb, var(--confident) 20%, transparent);
     color: var(--confident);
   }
+
+  /* Small 💪 corner marker for a reinforcement word (carried over from an
+     earlier topic, per reinforcement_words_by_tab) — shared across
+     Reading/Dictation/Quiz/Phrases, wherever that tab shows the word. */
+  .reinforcement-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 22px; height: 22px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    font-size: 12px;
+    line-height: 1;
+  }
+  .reading-word-area, .quiz-option, .phrase-option {
+    position: relative;
+  }
+  #reading-reinforcement-badge, #dictation-reinforcement-badge {
+    position: static;
+    margin-bottom: 6px;
+  }
+
+  /* Phrases tab — listen to a natural sentence, tap its known words in
+     order from an 8-option bank. Shares Dictation's audio-button look and
+     Quiz's option color/border language (correct/wrong), generalized to a
+     variable-length option list instead of a fixed 2x2 grid. */
+  #topic-phrases-panel {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  .phrases-stage {
+    width: 100%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 20px;
+    min-height: 50vh;
+  }
+  .phrases-counter {
+    font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums;
+  }
+  .phrase-audio-area {
+    position: relative;
+    display: flex; align-items: center; justify-content: center;
+    width: min(90vw, 420px);
+    min-height: 96px;
+  }
+  .phrase-audio-btn {
+    display: flex; align-items: center; justify-content: center;
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    background: var(--accent); color: #fff;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    transition: transform 0.1s ease, background 0.15s ease;
+  }
+  .phrase-audio-btn:hover { background: var(--accent-strong); }
+  .phrase-audio-btn:active { transform: scale(0.96); }
+  .phrase-sentence-display {
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .phrase-blank {
+    display: inline-block;
+    min-width: 2.5em;
+    border-bottom: 2px solid var(--muted);
+    color: transparent;
+  }
+  .phrase-toggle-btn {
+    position: absolute;
+    right: 0; bottom: -8px;
+    width: 36px; height: 36px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .phrase-toggle-btn:hover { border-color: var(--accent); }
+  .phrase-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: min(90vw, 560px);
+  }
+  .phrase-option {
+    display: flex; align-items: center; justify-content: center;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: 2px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 16px; font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s ease, opacity 0.15s ease, border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+  }
+  .phrase-option:hover:not(:disabled) {
+    border-color: var(--accent);
+  }
+  .phrase-option.dimmed {
+    opacity: 0.5;
+  }
+  .phrase-option-correct {
+    border-color: var(--accent-strong);
+    background: var(--accent-soft);
+    color: var(--accent-strong);
+    opacity: 1;
+  }
+  .phrase-option-wrong {
+    border-color: #e0453a;
+    background: color-mix(in srgb, #e0453a 15%, transparent);
+    color: #e0453a;
+    opacity: 1;
+  }
+  .phrase-option-order-badge {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 22px; height: 22px;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 50%;
+    background: var(--accent-strong);
+    color: #fff;
+    font-size: 12px; font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .phrase-proceed-btn {
+    padding: 10px 24px;
+    border-radius: 999px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-size: 15px; font-weight: 600;
+    cursor: pointer;
+  }
+  .phrase-proceed-btn:hover { background: var(--accent-strong); }
 
   .exercise-list {
     display: flex; flex-direction: column; gap: 14px;

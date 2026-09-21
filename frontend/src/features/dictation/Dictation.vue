@@ -16,6 +16,7 @@
 
       <div class="dictation-reveal-area">
         <button type="button" class="dictation-audio-btn" id="dictation-audio-btn" title="Play pronunciation" aria-label="Play pronunciation">🔊</button>
+        <span class="reinforcement-badge" id="dictation-reinforcement-badge" style="display:none" title="Reinforcement word">&#128170;</span>
         <div class="dictation-result-word" id="dictation-result-word"></div>
       </div>
 
@@ -28,10 +29,9 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import { getUserWords, ttsUrl } from '../../shared/api'
-import { cacheKey, writeCache } from '../../shared/cache'
-import { readStale, refreshInBackground } from '../../shared/dataSync'
+import { ttsUrl } from '../../shared/api'
 import { speechLocaleFor } from '../../shared/languages'
+import { loadUserWords } from '../../shared/userWords'
 
 // New tab, to the right of Typing: hear a word (TTS), type it back, then
 // check per-letter accuracy against the target spelling. Word pool is the
@@ -75,6 +75,7 @@ let LANG = "pt-en";
 let SENTENCE_LANG = "target";
 let CUE_LANG = "origin";
 let currentTopic = null;
+let REINFORCEMENT_WORD_IDS = [];
 let WORDS = [];
 let index = 0;
 
@@ -89,6 +90,7 @@ onMounted(() => {
   const counterEl = document.getElementById("dictation-counter");
   const audioBtn = document.getElementById("dictation-audio-btn");
   const resultWordEl = document.getElementById("dictation-result-word");
+  const reinforcementBadgeEl = document.getElementById("dictation-reinforcement-badge");
   const inputEl = document.getElementById("dictation-input");
   const checkBtn = document.getElementById("dictation-check-btn");
 
@@ -225,6 +227,7 @@ onMounted(() => {
     inputEl.value = "";
     resultWordEl.innerHTML = "";
     resultWordEl.style.display = "none";
+    reinforcementBadgeEl.style.display = "none";
     audioBtn.style.display = "flex";
     checkBtn.disabled = false;
     inputEl.focus({ preventScroll: true });
@@ -242,6 +245,7 @@ onMounted(() => {
     const typed = inputEl.value;
     audioBtn.style.display = "none";
     resultWordEl.style.display = "flex";
+    reinforcementBadgeEl.style.display = entry.isReinforcement ? "flex" : "none";
     renderDiff(typed, entry.word);
     if (isWordCorrect(typed, entry.word)) {
       checkBtn.disabled = true;
@@ -277,11 +281,18 @@ onMounted(() => {
 
   function transformAndFilter(rawWords) {
     const byId = new Map(rawWords.map((w) => [w.word_id, w]));
-    const entries = (currentTopic?.word_ids || [])
+    const toEntry = (w, isReinforcement) => ({ wordId: w.word_id, word: w.original, isReinforcement });
+    const topicEntries = (currentTopic?.word_ids || [])
       .map((id) => byId.get(id))
       .filter((w) => w && w.show !== false && !w.confident)
-      .map((w) => ({ wordId: w.word_id, word: w.original }));
-    return shuffle(entries);
+      .map((w) => toEntry(w, false));
+    // Reinforcement words bypass the !confident and show!==false filters —
+    // see Reading.vue's transformAndFilter for the same reasoning.
+    const reinforcementEntries = (REINFORCEMENT_WORD_IDS || [])
+      .map((id) => byId.get(id))
+      .filter((w) => w)
+      .map((w) => toEntry(w, true));
+    return shuffle([...topicEntries, ...reinforcementEntries]);
   }
 
   function applyWords(rawWords) {
@@ -289,37 +300,10 @@ onMounted(() => {
     if (index >= WORDS.length) index = 0;
   }
 
-  async function fetchRawWords() {
-    const data = await getUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
-    return data.words;
-  }
-
   async function loadAndStart() {
-    const key = cacheKey("user-words", USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
-    const cached = readStale(key);
-    if (cached) {
-      applyWords(cached.data);
-      renderStage();
-      refreshInBackground({
-        key,
-        label: "word list",
-        fetchFn: fetchRawWords,
-        // Only (re)starts the stage if there was no word list yet — once the
-        // user is mid-round, a background refresh landing shouldn't reshuffle
-        // the pool out from under an in-progress typed answer.
-        onFresh: (rawWords) => {
-          const hadWords = WORDS.length > 0;
-          applyWords(rawWords);
-          if (!hadWords) renderStage();
-        },
-      });
-      return;
-    }
-
     setLoading(true);
     try {
-      const rawWords = await fetchRawWords();
-      writeCache(key, rawWords);
+      const rawWords = await loadUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
       applyWords(rawWords);
       renderStage();
     } finally {
@@ -327,12 +311,13 @@ onMounted(() => {
     }
   }
 
-  show = (userEmail, lang, topic, sentenceLang, cueLang) => {
+  show = (userEmail, lang, topic, sentenceLang, cueLang, reinforcementWordIds) => {
     USER_EMAIL = userEmail;
     LANG = lang;
     SENTENCE_LANG = sentenceLang || "target";
     CUE_LANG = cueLang || "origin";
     currentTopic = topic;
+    REINFORCEMENT_WORD_IDS = reinforcementWordIds || [];
     index = 0;
     return loadAndStart().catch(showError);
   };

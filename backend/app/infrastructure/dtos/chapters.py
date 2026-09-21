@@ -1,7 +1,7 @@
 """HTTP-boundary DTOs for the /chapters endpoint."""
 from pydantic import BaseModel
 
-from backend.app.domain.entities import Chapter, Sentence, Text, Topic
+from backend.app.domain.entities import Chapter, Phrase, Sentence, Text, Topic
 
 
 class TextDTO(BaseModel):
@@ -24,6 +24,16 @@ class SentenceDTO(BaseModel):
         return cls(sentence_number=sentence.sentence_number, content=sentence.content)
 
 
+class PhraseDTO(BaseModel):
+    id: str
+    sentence: str
+    word_ids: list[str]
+
+    @classmethod
+    def from_entity(cls, phrase: Phrase) -> "PhraseDTO":
+        return cls(id=phrase.id, sentence=phrase.sentence, word_ids=phrase.word_ids)
+
+
 class TopicDTO(BaseModel):
     """exercises always serializes as a list (defaulting to []), unlike
     backend/server.py's raw passthrough which omits the key entirely for
@@ -37,6 +47,7 @@ class TopicDTO(BaseModel):
     word_ids: list[str]
     texts: list[TextDTO]
     sentences: list[SentenceDTO]
+    phrases: list[PhraseDTO]
     status: str
     exercises: list[dict]
 
@@ -50,6 +61,7 @@ class TopicDTO(BaseModel):
             word_ids=topic.word_ids,
             texts=[TextDTO.from_entity(t) for t in topic.texts],
             sentences=[SentenceDTO.from_entity(s) for s in topic.sentences],
+            phrases=[PhraseDTO.from_entity(p) for p in topic.phrases],
             status=topic.status,
             exercises=topic.exercises,
         )

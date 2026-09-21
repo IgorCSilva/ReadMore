@@ -29,9 +29,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import { getUserWords } from '../../shared/api'
-import { cacheKey, writeCache } from '../../shared/cache'
-import { readStale, refreshInBackground } from '../../shared/dataSync'
+import { loadUserWords } from '../../shared/userWords'
 
 // New tab: shows a word's picture (or its cue, if no image file exists) and
 // four word options in a 2x2 grid — pick the one the picture depicts. Same
@@ -63,6 +61,7 @@ let LANG = "pt-en";
 let SENTENCE_LANG = "target";
 let CUE_LANG = "origin";
 let currentTopic = null;
+let REINFORCEMENT_WORD_IDS = [];
 let WORDS = [];
 let index = 0;
 
@@ -149,6 +148,13 @@ onMounted(() => {
       btn.type = "button";
       btn.className = "quiz-option";
       btn.textContent = option.word;
+      if (option.isReinforcement) {
+        const badge = document.createElement("span");
+        badge.className = "reinforcement-badge";
+        badge.textContent = "\u{1F4AA}";
+        badge.title = "Reinforcement word";
+        btn.appendChild(badge);
+      }
       btn.addEventListener("click", () => handlePick(btn, option, entry));
       optionsEl.appendChild(btn);
       return { btn, option };
@@ -200,16 +206,23 @@ onMounted(() => {
 
   function transformAndFilter(rawWords) {
     const byId = new Map(rawWords.map((w) => [w.word_id, w]));
-    const entries = (currentTopic?.word_ids || [])
+    const toEntry = (w, isReinforcement) => {
+      const dot = w.filename.lastIndexOf(".");
+      const base = dot >= 0 ? w.filename.slice(0, dot) : w.filename;
+      const ext = dot >= 0 ? w.filename.slice(dot + 1) : "png";
+      return { wordId: w.word_id, word: w.original, base, ext, cue: w.cue || "", isReinforcement };
+    };
+    const topicEntries = (currentTopic?.word_ids || [])
       .map((id) => byId.get(id))
       .filter((w) => w && w.show !== false && !w.confident)
-      .map((w) => {
-        const dot = w.filename.lastIndexOf(".");
-        const base = dot >= 0 ? w.filename.slice(0, dot) : w.filename;
-        const ext = dot >= 0 ? w.filename.slice(dot + 1) : "png";
-        return { wordId: w.word_id, word: w.original, base, ext, cue: w.cue || "" };
-      });
-    return shuffle(entries);
+      .map((w) => toEntry(w, false));
+    // Reinforcement words bypass the !confident and show!==false filters —
+    // see Reading.vue's transformAndFilter for the same reasoning.
+    const reinforcementEntries = (REINFORCEMENT_WORD_IDS || [])
+      .map((id) => byId.get(id))
+      .filter((w) => w)
+      .map((w) => toEntry(w, true));
+    return shuffle([...topicEntries, ...reinforcementEntries]);
   }
 
   function applyWords(rawWords) {
@@ -217,37 +230,10 @@ onMounted(() => {
     if (index >= WORDS.length) index = 0;
   }
 
-  async function fetchRawWords() {
-    const data = await getUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
-    return data.words;
-  }
-
   async function loadAndStart() {
-    const key = cacheKey("user-words", USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
-    const cached = readStale(key);
-    if (cached) {
-      applyWords(cached.data);
-      renderStage();
-      refreshInBackground({
-        key,
-        label: "word list",
-        fetchFn: fetchRawWords,
-        // Only (re)starts the round if there was no usable pool yet — once
-        // the user is mid-round, a background refresh landing shouldn't
-        // reshuffle the options out from under them.
-        onFresh: (rawWords) => {
-          const hadWords = uniqueWordCount(WORDS) >= 2;
-          applyWords(rawWords);
-          if (!hadWords) renderStage();
-        },
-      });
-      return;
-    }
-
     setLoading(true);
     try {
-      const rawWords = await fetchRawWords();
-      writeCache(key, rawWords);
+      const rawWords = await loadUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
       applyWords(rawWords);
       renderStage();
     } finally {
@@ -255,12 +241,13 @@ onMounted(() => {
     }
   }
 
-  show = (userEmail, lang, topic, sentenceLang, cueLang) => {
+  show = (userEmail, lang, topic, sentenceLang, cueLang, reinforcementWordIds) => {
     USER_EMAIL = userEmail;
     LANG = lang;
     SENTENCE_LANG = sentenceLang || "target";
     CUE_LANG = cueLang || "origin";
     currentTopic = topic;
+    REINFORCEMENT_WORD_IDS = reinforcementWordIds || [];
     index = 0;
     return loadAndStart().catch(showError);
   };

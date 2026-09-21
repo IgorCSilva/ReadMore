@@ -1079,6 +1079,42 @@
     {
       "word_id": "wd-0270",
       "filename": "good_feminine"
+    },
+    {
+      "word_id": "wd-0271",
+      "filename": "cousin_feminine"
+    },
+    {
+      "word_id": "wd-0272",
+      "filename": "his_her_their_possessive"
+    },
+    {
+      "word_id": "wd-0273",
+      "filename": "we_feminine"
+    },
+    {
+      "word_id": "wd-0274",
+      "filename": "our"
+    },
+    {
+      "word_id": "wd-0275",
+      "filename": "our_feminine"
+    },
+    {
+      "word_id": "wd-0276",
+      "filename": "the_feminine"
+    },
+    {
+      "word_id": "wd-0277",
+      "filename": "all"
+    },
+    {
+      "word_id": "wd-0278",
+      "filename": "all_feminine"
+    },
+    {
+      "word_id": "wd-0279",
+      "filename": "without"
     }
   ]
 }

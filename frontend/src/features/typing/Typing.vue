@@ -45,9 +45,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
-import { getUserWords } from '../../shared/api'
-import { cacheKey, writeCache } from '../../shared/cache'
-import { readStale, refreshInBackground } from '../../shared/dataSync'
+import { loadUserWords } from '../../shared/userWords'
 
 // New tab, to the right of Reading: words fly right-to-left across a set of
 // lanes; typing them correctly is the point ("stimulate reading" via active
@@ -449,30 +447,10 @@ onMounted(() => {
     focusCapture();
   }
 
-  async function fetchRawWords() {
-    const data = await getUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
-    return data.words;
-  }
-
   async function loadAndStart() {
-    const key = cacheKey("user-words", USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
-    const cached = readStale(key);
-    if (cached) {
-      applyWords(cached.data);
-      beginRound();
-      refreshInBackground({
-        key,
-        label: "word list",
-        fetchFn: fetchRawWords,
-        onFresh: applyWords,
-      });
-      return;
-    }
-
     setLoading(true);
     try {
-      const rawWords = await fetchRawWords();
-      writeCache(key, rawWords);
+      const rawWords = await loadUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
       applyWords(rawWords);
       beginRound();
     } finally {

@@ -30,6 +30,36 @@
         "não": "no",
         "de nada": "de nada"
       }
+    },
+    "topic_2": {
+      "pt": {
+        "família": "familia",
+        "pai": "padre",
+        "mãe": "madre",
+        "filho": "hijo",
+        "filha": "hija",
+        "irmão": "hermano",
+        "irmã": "hermana",
+        "avô": "abuelo",
+        "avó": "abuela",
+        "tio": "tío",
+        "tia": "tía",
+        "primo": "primo",
+        "prima": "prima",
+        "marido": "esposo",
+        "esposa": "esposa",
+        "seu": "su",
+        "sua": "su",
+        "nós": ["nosotros", "nosotras"],
+        "nosso": "nuestro",
+        "nossa": "nuestra",
+        "o": "el",
+        "a": "la",
+        "todos": "todos",
+        "todas": "todas",
+        "com": "con",
+        "sem": "sin"
+      }
     }
   },
   "chapter_4": {
