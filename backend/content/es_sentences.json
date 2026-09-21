@@ -1997,6 +1997,590 @@
           "es-wd-0070"
         ]
       }
+    ],
+    "topic_4": [
+      {
+        "id": "es-sent-0229",
+        "sentence": "Es importante despertarse temprano.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0088"
+        ]
+      },
+      {
+        "id": "es-sent-0230",
+        "sentence": "Hay que despertarse antes de las siete.",
+        "word_ids": [
+          "es-wd-0081",
+          "es-wd-0088",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0231",
+        "sentence": "Despertarse temprano es difícil los lunes.",
+        "word_ids": [
+          "es-wd-0088",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0232",
+        "sentence": "Es bueno levantarse temprano.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0006",
+          "es-wd-0089"
+        ]
+      },
+      {
+        "id": "es-sent-0233",
+        "sentence": "Hay que levantarse rápido por la mañana.",
+        "word_ids": [
+          "es-wd-0081",
+          "es-wd-0089",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0234",
+        "sentence": "Levantarse tarde es agradable los domingos.",
+        "word_ids": [
+          "es-wd-0089",
+          "es-wd-0008",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0235",
+        "sentence": "Es necesario ducharse todos los días.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0090",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0236",
+        "sentence": "Hay que ducharse antes de salir.",
+        "word_ids": [
+          "es-wd-0081",
+          "es-wd-0090",
+          "es-wd-0023",
+          "es-wd-0094"
+        ]
+      },
+      {
+        "id": "es-sent-0237",
+        "sentence": "Ducharse por la mañana es refrescante.",
+        "word_ids": [
+          "es-wd-0090",
+          "es-wd-0058",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0238",
+        "sentence": "Es importante cepillarse los dientes después de comer.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0091",
+          "es-wd-0106",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0239",
+        "sentence": "Hay que cepillarse los dientes dos veces al día.",
+        "word_ids": [
+          "es-wd-0081",
+          "es-wd-0091",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0240",
+        "sentence": "Cepillarse los dientes es un hábito saludable.",
+        "word_ids": [
+          "es-wd-0091",
+          "es-wd-0017",
+          "es-wd-0076"
+        ]
+      },
+      {
+        "id": "es-sent-0241",
+        "sentence": "Es necesario vestirse rápido por la mañana.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0092",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0242",
+        "sentence": "Hay que vestirse antes de salir de casa.",
+        "word_ids": [
+          "es-wd-0081",
+          "es-wd-0092",
+          "es-wd-0023",
+          "es-wd-0094",
+          "es-wd-0023",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0243",
+        "sentence": "Vestirse bien es importante para el trabajo.",
+        "word_ids": [
+          "es-wd-0092",
+          "es-wd-0011",
+          "es-wd-0017",
+          "es-wd-0057"
+        ]
+      },
+      {
+        "id": "es-sent-0244",
+        "sentence": "Me gusta tomar café por la mañana.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0093",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0245",
+        "sentence": "Voy a tomar café antes de salir.",
+        "word_ids": [
+          "es-wd-0093",
+          "es-wd-0023",
+          "es-wd-0094"
+        ]
+      },
+      {
+        "id": "es-sent-0246",
+        "sentence": "Tomar café es parte de mi rutina.",
+        "word_ids": [
+          "es-wd-0093",
+          "es-wd-0017",
+          "es-wd-0023",
+          "es-wd-0016"
+        ]
+      },
+      {
+        "id": "es-sent-0247",
+        "sentence": "Necesito salir temprano hoy.",
+        "word_ids": [
+          "es-wd-0094"
+        ]
+      },
+      {
+        "id": "es-sent-0248",
+        "sentence": "Voy a salir después del trabajo.",
+        "word_ids": [
+          "es-wd-0094",
+          "es-wd-0106"
+        ]
+      },
+      {
+        "id": "es-sent-0249",
+        "sentence": "Es difícil salir de casa con lluvia.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0094",
+          "es-wd-0023",
+          "es-wd-0063",
+          "es-wd-0061"
+        ]
+      },
+      {
+        "id": "es-sent-0250",
+        "sentence": "Quiero ir contigo.",
+        "word_ids": [
+          "es-wd-0095"
+        ]
+      },
+      {
+        "id": "es-sent-0251",
+        "sentence": "Necesito ir a la escuela temprano.",
+        "word_ids": [
+          "es-wd-0095",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0252",
+        "sentence": "Prefiero ir a pie.",
+        "word_ids": [
+          "es-wd-0095"
+        ]
+      },
+      {
+        "id": "es-sent-0253",
+        "sentence": "Voy a llegar tarde hoy.",
+        "word_ids": [
+          "es-wd-0096",
+          "es-wd-0008"
+        ]
+      },
+      {
+        "id": "es-sent-0254",
+        "sentence": "Es importante llegar a tiempo.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0096"
+        ]
+      },
+      {
+        "id": "es-sent-0255",
+        "sentence": "Prefiero llegar temprano al trabajo.",
+        "word_ids": [
+          "es-wd-0096"
+        ]
+      },
+      {
+        "id": "es-sent-0256",
+        "sentence": "Me gusta trabajar en equipo.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0097",
+          "es-wd-0084"
+        ]
+      },
+      {
+        "id": "es-sent-0257",
+        "sentence": "Necesito trabajar hasta tarde hoy.",
+        "word_ids": [
+          "es-wd-0097",
+          "es-wd-0008"
+        ]
+      },
+      {
+        "id": "es-sent-0258",
+        "sentence": "Voy a trabajar desde casa mañana.",
+        "word_ids": [
+          "es-wd-0097",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0259",
+        "sentence": "Voy a volver temprano hoy.",
+        "word_ids": [
+          "es-wd-0098"
+        ]
+      },
+      {
+        "id": "es-sent-0260",
+        "sentence": "Prefiero volver a pie.",
+        "word_ids": [
+          "es-wd-0098"
+        ]
+      },
+      {
+        "id": "es-sent-0261",
+        "sentence": "Es tarde, tengo que volver a casa.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0008",
+          "es-wd-0098",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0262",
+        "sentence": "Me gusta almorzar con mis amigos.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0099",
+          "es-wd-0061"
+        ]
+      },
+      {
+        "id": "es-sent-0263",
+        "sentence": "Voy a almorzar a las doce.",
+        "word_ids": [
+          "es-wd-0099"
+        ]
+      },
+      {
+        "id": "es-sent-0264",
+        "sentence": "Necesito almorzar antes de la reunión.",
+        "word_ids": [
+          "es-wd-0099",
+          "es-wd-0023",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0265",
+        "sentence": "Me gusta cenar temprano.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0100"
+        ]
+      },
+      {
+        "id": "es-sent-0266",
+        "sentence": "Vamos a cenar juntos esta noche.",
+        "word_ids": [
+          "es-wd-0100",
+          "es-wd-0009"
+        ]
+      },
+      {
+        "id": "es-sent-0267",
+        "sentence": "Prefiero cenar en casa.",
+        "word_ids": [
+          "es-wd-0100",
+          "es-wd-0084",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0268",
+        "sentence": "Necesito descansar un poco.",
+        "word_ids": [
+          "es-wd-0101",
+          "es-wd-0076"
+        ]
+      },
+      {
+        "id": "es-sent-0269",
+        "sentence": "Es importante descansar después del trabajo.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0101",
+          "es-wd-0106"
+        ]
+      },
+      {
+        "id": "es-sent-0270",
+        "sentence": "Voy a descansar todo el fin de semana.",
+        "word_ids": [
+          "es-wd-0101",
+          "es-wd-0010",
+          "es-wd-0057",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0271",
+        "sentence": "Me gusta leer antes de dormir.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0102",
+          "es-wd-0023",
+          "es-wd-0103"
+        ]
+      },
+      {
+        "id": "es-sent-0272",
+        "sentence": "Voy a leer un libro nuevo.",
+        "word_ids": [
+          "es-wd-0102",
+          "es-wd-0076"
+        ]
+      },
+      {
+        "id": "es-sent-0273",
+        "sentence": "Es bueno leer todos los días.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0006",
+          "es-wd-0102",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0274",
+        "sentence": "Necesito dormir ocho horas.",
+        "word_ids": [
+          "es-wd-0103"
+        ]
+      },
+      {
+        "id": "es-sent-0275",
+        "sentence": "Me gusta dormir hasta tarde los domingos.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0103",
+          "es-wd-0008"
+        ]
+      },
+      {
+        "id": "es-sent-0276",
+        "sentence": "Es importante dormir bien.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0103",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0277",
+        "sentence": "Me despierto temprano cada día.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0104",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0278",
+        "sentence": "Me despierto a las siete de la mañana.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0104",
+          "es-wd-0023",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0279",
+        "sentence": "Los domingos me despierto más tarde.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0104",
+          "es-wd-0008"
+        ]
+      },
+      {
+        "id": "es-sent-0280",
+        "sentence": "Me levanto rápido por la mañana.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0105",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0281",
+        "sentence": "Me levanto de la cama sin problema.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0105",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0072",
+          "es-wd-0062"
+        ]
+      },
+      {
+        "id": "es-sent-0282",
+        "sentence": "Todos los días me levanto a las seis.",
+        "word_ids": [
+          "es-wd-0059",
+          "es-wd-0019",
+          "es-wd-0105"
+        ]
+      },
+      {
+        "id": "es-sent-0283",
+        "sentence": "Desayuno y después voy al trabajo.",
+        "word_ids": [
+          "es-wd-0033",
+          "es-wd-0106"
+        ]
+      },
+      {
+        "id": "es-sent-0284",
+        "sentence": "Primero estudio, después descanso.",
+        "word_ids": [
+          "es-wd-0106"
+        ]
+      },
+      {
+        "id": "es-sent-0285",
+        "sentence": "Después de comer, voy a caminar.",
+        "word_ids": [
+          "es-wd-0106",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0286",
+        "sentence": "Me gusta tener una rutina fija.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0107",
+          "es-wd-0077"
+        ]
+      },
+      {
+        "id": "es-sent-0287",
+        "sentence": "Es importante tener una buena rutina.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0107",
+          "es-wd-0077",
+          "es-wd-0034"
+        ]
+      },
+      {
+        "id": "es-sent-0288",
+        "sentence": "Voy a tener más tiempo libre mañana.",
+        "word_ids": [
+          "es-wd-0107"
+        ]
+      },
+      {
+        "id": "es-sent-0289",
+        "sentence": "Tengo mucho que hacer hoy.",
+        "word_ids": [
+          "es-wd-0108"
+        ]
+      },
+      {
+        "id": "es-sent-0290",
+        "sentence": "Necesito hacer la tarea antes de dormir.",
+        "word_ids": [
+          "es-wd-0108",
+          "es-wd-0058",
+          "es-wd-0023",
+          "es-wd-0103"
+        ]
+      },
+      {
+        "id": "es-sent-0291",
+        "sentence": "Voy a hacer el almuerzo para mi familia.",
+        "word_ids": [
+          "es-wd-0108",
+          "es-wd-0057",
+          "es-wd-0016",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0292",
+        "sentence": "Me gusta tener una rutina simple.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0107",
+          "es-wd-0077"
+        ]
+      },
+      {
+        "id": "es-sent-0293",
+        "sentence": "Mi madre me llama para desayunar.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0039",
+          "es-wd-0019",
+          "es-wd-0022"
+        ]
+      },
+      {
+        "id": "es-sent-0294",
+        "sentence": "Me siento bien después de dormir bien.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0011",
+          "es-wd-0106",
+          "es-wd-0023",
+          "es-wd-0103",
+          "es-wd-0011"
+        ]
+      }
     ]
   }
 }

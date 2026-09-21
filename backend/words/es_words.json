@@ -520,5 +520,131 @@
     "root_word_id": "wd-0299",
     "word": "aquello",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0088",
+    "root_word_id": "wd-0300",
+    "word": "despertarse",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0089",
+    "root_word_id": "wd-0301",
+    "word": "levantarse",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0090",
+    "root_word_id": "wd-0302",
+    "word": "ducharse",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0091",
+    "root_word_id": "wd-0303",
+    "word": "cepillarse los dientes",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0092",
+    "root_word_id": "wd-0304",
+    "word": "vestirse",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0093",
+    "root_word_id": "wd-0305",
+    "word": "tomar café",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0094",
+    "root_word_id": "wd-0306",
+    "word": "salir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0095",
+    "root_word_id": "wd-0056",
+    "word": "ir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0096",
+    "root_word_id": "wd-0307",
+    "word": "llegar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0097",
+    "root_word_id": "wd-0308",
+    "word": "trabajar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0098",
+    "root_word_id": "wd-0309",
+    "word": "volver",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0099",
+    "root_word_id": "wd-0310",
+    "word": "almorzar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0100",
+    "root_word_id": "wd-0311",
+    "word": "cenar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0101",
+    "root_word_id": "wd-0312",
+    "word": "descansar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0102",
+    "root_word_id": "wd-0313",
+    "word": "leer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0103",
+    "root_word_id": "wd-0314",
+    "word": "dormir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0104",
+    "root_word_id": "wd-0315",
+    "word": "despierto",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0105",
+    "root_word_id": "wd-0316",
+    "word": "levanto",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0106",
+    "root_word_id": "wd-0233",
+    "word": "después",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0107",
+    "root_word_id": "wd-0053",
+    "word": "tener",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0108",
+    "root_word_id": "wd-0318",
+    "word": "hacer",
+    "gender_id": "not_apply"
   }
 ]

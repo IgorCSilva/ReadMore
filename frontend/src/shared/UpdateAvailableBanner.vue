@@ -51,14 +51,22 @@ defineExpose({ watch })
 
 <style scoped>
 .update-banner {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
   padding: 10px 16px;
+  border-radius: 10px;
   background: var(--accent-soft);
   color: var(--accent-strong);
   font-size: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  width: min(90vw, 420px);
 }
 .update-banner-btn {
   padding: 6px 16px;
