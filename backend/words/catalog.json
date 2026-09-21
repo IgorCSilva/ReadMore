@@ -1195,6 +1195,82 @@
     {
       "word_id": "wd-0299",
       "filename": "that_over_there_neuter"
+    },
+    {
+      "word_id": "wd-0300",
+      "filename": "wake_up"
+    },
+    {
+      "word_id": "wd-0301",
+      "filename": "get_up"
+    },
+    {
+      "word_id": "wd-0302",
+      "filename": "shower"
+    },
+    {
+      "word_id": "wd-0303",
+      "filename": "brush_teeth"
+    },
+    {
+      "word_id": "wd-0304",
+      "filename": "get_dressed"
+    },
+    {
+      "word_id": "wd-0305",
+      "filename": "have_coffee"
+    },
+    {
+      "word_id": "wd-0306",
+      "filename": "leave"
+    },
+    {
+      "word_id": "wd-0307",
+      "filename": "arrive"
+    },
+    {
+      "word_id": "wd-0308",
+      "filename": "work"
+    },
+    {
+      "word_id": "wd-0309",
+      "filename": "return"
+    },
+    {
+      "word_id": "wd-0310",
+      "filename": "have_lunch"
+    },
+    {
+      "word_id": "wd-0311",
+      "filename": "have_dinner"
+    },
+    {
+      "word_id": "wd-0312",
+      "filename": "rest"
+    },
+    {
+      "word_id": "wd-0313",
+      "filename": "read"
+    },
+    {
+      "word_id": "wd-0314",
+      "filename": "sleep"
+    },
+    {
+      "word_id": "wd-0315",
+      "filename": "i_wake_up"
+    },
+    {
+      "word_id": "wd-0316",
+      "filename": "i_get_up"
+    },
+    {
+      "word_id": "wd-0317",
+      "filename": "after"
+    },
+    {
+      "word_id": "wd-0318",
+      "filename": "make"
     }
   ]
 }

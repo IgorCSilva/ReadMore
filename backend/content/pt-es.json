@@ -1321,6 +1321,440 @@
             }
           ],
           "exercises": []
+        },
+        {
+          "topic_id": "top-A0-EL-4",
+          "number": 4,
+          "title": "Rotina Diária (Da Manhã à Noite)",
+          "description": "Verbos de rotina diária (despertar, levantar-se, tomar banho, vestir-se, trabalhar, voltar) no presente simples, incluindo a construção reflexiva do espanhol (\"me despierto\", \"me levanto\") — diferente do português, que não exige pronome reflexivo nesses verbos. Atividade de desenvolvimento: leitura de um breve relato em primeira pessoa sobre um dia típico.",
+          "word_ids": [
+            "es-wd-0088",
+            "es-wd-0089",
+            "es-wd-0090",
+            "es-wd-0091",
+            "es-wd-0092",
+            "es-wd-0093",
+            "es-wd-0094",
+            "es-wd-0095",
+            "es-wd-0096",
+            "es-wd-0097",
+            "es-wd-0098",
+            "es-wd-0099",
+            "es-wd-0100",
+            "es-wd-0101",
+            "es-wd-0102",
+            "es-wd-0103",
+            "es-wd-0104",
+            "es-wd-0105",
+            "es-wd-0106",
+            "es-wd-0107",
+            "es-wd-0108",
+            "es-wd-0019"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "**Después** **de** **cenar**, **yo** leio **un** pouco **en la** **sala**."
+            },
+            {
+              "sentence_number": 2,
+              "content": "Minha **madre** **me** pede para **hacer** **la** lição."
+            },
+            {
+              "sentence_number": 3,
+              "content": "Minha **abuela** dorme cedo **y** acorda cedo também."
+            },
+            {
+              "sentence_number": 4,
+              "content": "**Mi** **primo** chega **tarde** porque trabalha longe."
+            },
+            {
+              "sentence_number": 5,
+              "content": "**Yo** janto **con** **mi** **esposo** **todas** as noites."
+            },
+            {
+              "sentence_number": 6,
+              "content": "Ela quer **tener** **una** rotina diferente da minha."
+            },
+            {
+              "sentence_number": 7,
+              "content": "**Yo** tenho que **despertarse** cedo amanhã."
+            },
+            {
+              "sentence_number": 8,
+              "content": "**Después** **de** **descansar**, **yo** durmo tranquilo."
+            },
+            {
+              "sentence_number": 9,
+              "content": "**Después** **yo** vou **trabajar** **con** **mi** **padre**."
+            },
+            {
+              "sentence_number": 10,
+              "content": "**Después** **de** **ducharse**, **yo** **me** visto **y** saio."
+            },
+            {
+              "sentence_number": 11,
+              "content": "**Su** rotina **es** parecida **con** minha rotina **de** trabalho?"
+            },
+            {
+              "sentence_number": 12,
+              "content": "**Después** **de** **trabajar**, **yo** vou para **casa**."
+            },
+            {
+              "sentence_number": 13,
+              "content": "Minha **madre** prefere **cenar** cedo **todos** os dias."
+            },
+            {
+              "sentence_number": 14,
+              "content": "**Yo** chego cedo **y** preciso **ir** **trabajar** até **tarde**."
+            },
+            {
+              "sentence_number": 15,
+              "content": "**Después** **de** **levantarse**, **yo** vou **ducharse**."
+            },
+            {
+              "sentence_number": 16,
+              "content": "**Yo** prefiro **levantarse** **con** calma pela manhã."
+            },
+            {
+              "sentence_number": 17,
+              "content": "Antes **de** **salir**, **yo** preciso **vestirse**."
+            },
+            {
+              "sentence_number": 18,
+              "content": "**Yo** **despierto** cedo **todos** os dias."
+            },
+            {
+              "sentence_number": 19,
+              "content": "Nos fins **de** semana, **yo** **despierto** mais **tarde** do que **de** costume."
+            },
+            {
+              "sentence_number": 20,
+              "content": "**Es** importante **cepillarse los dientes** **después** **de** comer."
+            },
+            {
+              "sentence_number": 21,
+              "content": "**Yo** **me** sinto **bien** **después** **de** **dormir** bastante."
+            },
+            {
+              "sentence_number": 22,
+              "content": "**Todos** os dias, **yo** preciso **cepillarse los dientes** **después** **de** **tomar café**."
+            },
+            {
+              "sentence_number": 23,
+              "content": "**Después** **de** **leer**, **yo** descanso antes **de** **dormir**."
+            },
+            {
+              "sentence_number": 24,
+              "content": "**Yo** vou para **el** trabalho **y** preciso **llegar** cedo."
+            },
+            {
+              "sentence_number": 25,
+              "content": "**Levantarse** cedo **es** **bueno** para **el** corpo."
+            },
+            {
+              "sentence_number": 26,
+              "content": "**Yo** **me** **levanto** rápido, **sin** perder tempo."
+            },
+            {
+              "sentence_number": 27,
+              "content": "Ele gosta **de** **despertarse** cedo **todos** os dias."
+            },
+            {
+              "sentence_number": 28,
+              "content": "**Yo** preciso **salir** **de** **casa** às sete da manhã."
+            },
+            {
+              "sentence_number": 29,
+              "content": "**Nosotros** vamos **y** precisamos **volver** juntos **todos** os dias."
+            },
+            {
+              "sentence_number": 30,
+              "content": "**Después** **de** **leer** **un** pouco, **yo** vou **dormir**."
+            },
+            {
+              "sentence_number": 31,
+              "content": "Minha **tía** **me** liga toda manhã cedo."
+            },
+            {
+              "sentence_number": 32,
+              "content": "**Nosotros** temos **el** mesmo horário para **dormir**."
+            },
+            {
+              "sentence_number": 33,
+              "content": "**Mi** **hermano** **me** chama para **tomar café**."
+            },
+            {
+              "sentence_number": 34,
+              "content": "**Yo** gosto **de** **almorzar** **con** meus colegas às doze."
+            },
+            {
+              "sentence_number": 35,
+              "content": "**Después** **de** **llegar**, **yo** tomo banho **de** novo."
+            },
+            {
+              "sentence_number": 36,
+              "content": "**Cómo** **es** **su** rotina **de** manhã?"
+            },
+            {
+              "sentence_number": 37,
+              "content": "**Yo** chego **en** **casa** **y** vou **cepillarse los dientes** logo **después**."
+            },
+            {
+              "sentence_number": 38,
+              "content": "**Es** **bueno** **tener** **una** rotina organizada **en el** trabalho."
+            },
+            {
+              "sentence_number": 39,
+              "content": "**Yo** **despierto** primeiro, **y** minha **madre** acorda alguns minutos **después**."
+            },
+            {
+              "sentence_number": 40,
+              "content": "**Nosotros** gostamos **de** **tener** **una** rotina parecida **en el** trabalho."
+            },
+            {
+              "sentence_number": 41,
+              "content": "**Mi** **hermano** chega **y** vai **ducharse** antes **de** **cenar**."
+            },
+            {
+              "sentence_number": 42,
+              "content": "**Nosotros** jantamos juntos **y** **después** lemos **un** pouco."
+            },
+            {
+              "sentence_number": 43,
+              "content": "**Después** **de** **vestirse**, **yo** saio correndo **de** **casa**."
+            },
+            {
+              "sentence_number": 44,
+              "content": "Minha **madre** também gosta **de** **tomar café** **de** manhã."
+            },
+            {
+              "sentence_number": 45,
+              "content": "**Yo** gosto **de** **leer** **un** pouco **todas** as noites."
+            },
+            {
+              "sentence_number": 46,
+              "content": "**Yo** prefiro **cenar** cedo, antes das oito."
+            },
+            {
+              "sentence_number": 47,
+              "content": "**Yo** tenho que **ir**, já **es** **tarde**."
+            },
+            {
+              "sentence_number": 48,
+              "content": "**Yo** vou ao mercado **después** **de** **almorzar**."
+            },
+            {
+              "sentence_number": 49,
+              "content": "**Yo** **despierto** **bien** cedo, antes **de** **todos** **en** **casa**."
+            },
+            {
+              "sentence_number": 50,
+              "content": "**Después** do almoço, **yo** preciso **volver** para **el** trabalho."
+            },
+            {
+              "sentence_number": 51,
+              "content": "**Todos** os dias **yo** preciso **almorzar** **en la** mesma **mesa**."
+            },
+            {
+              "sentence_number": 52,
+              "content": "**Yo** **despierto**, **me** **levanto** **y** vou **ducharse**."
+            },
+            {
+              "sentence_number": 53,
+              "content": "**Mi** **padre** prefere **leer** **el** jornal **de** manhã."
+            },
+            {
+              "sentence_number": 54,
+              "content": "Minha **esposa** janta comigo **después** do trabalho."
+            },
+            {
+              "sentence_number": 55,
+              "content": "**Vestirse** rápido **es** necessário quando **estoy** atrasado."
+            },
+            {
+              "sentence_number": 56,
+              "content": "**Después** **de** **despertarse**, **yo** **me** **levanto** da **cama**."
+            },
+            {
+              "sentence_number": 57,
+              "content": "**Después** do trabalho, **yo** preciso **volver** para **casa**."
+            },
+            {
+              "sentence_number": 58,
+              "content": "**Yo** tenho que **hacer** **la** lição antes **de** **dormir**."
+            },
+            {
+              "sentence_number": 59,
+              "content": "**Mi** **hermano** costuma **llegar** **tarde** **en el** trabalho."
+            },
+            {
+              "sentence_number": 60,
+              "content": "**Yo** **levanto**, tomo banho **y** visto **la** roupa rápido."
+            },
+            {
+              "sentence_number": 61,
+              "content": "Minha **familia** gosta **de** **cenar** junta **todas** as noites."
+            },
+            {
+              "sentence_number": 62,
+              "content": "**Yo** preciso **almorzar** rápido **y** **volver** para **el** trabalho."
+            },
+            {
+              "sentence_number": 63,
+              "content": "Minha **hermana** prefere **levantarse** cedo, segundo ela."
+            },
+            {
+              "sentence_number": 64,
+              "content": "Ele faz **la** rotina dele **sin** pressa."
+            },
+            {
+              "sentence_number": 65,
+              "content": "Minha **hermana** precisa **salir** **y** **llegar** antes **de** mim."
+            },
+            {
+              "sentence_number": 66,
+              "content": "**Yo** vou **volver** **tarde** hoje, por causa da chuva."
+            },
+            {
+              "sentence_number": 67,
+              "content": "**Yo** preciso **hacer** muitas coisas hoje."
+            },
+            {
+              "sentence_number": 68,
+              "content": "**Yo** **me** **levanto** **y** já vou direto **tomar café**."
+            },
+            {
+              "sentence_number": 69,
+              "content": "**Es** importante **tener** **una** rotina simples **todos** os dias."
+            },
+            {
+              "sentence_number": 70,
+              "content": "Ela gosta **de** **leer** antes **de** **dormir**."
+            },
+            {
+              "sentence_number": 71,
+              "content": "**Cómo** **tú** acorda tão cedo?"
+            },
+            {
+              "sentence_number": 72,
+              "content": "**Después** **de** **cenar**, **yo** descanso **un** pouco."
+            },
+            {
+              "sentence_number": 73,
+              "content": "**Yo** tenho que **ir** para **la** escola cedo."
+            },
+            {
+              "sentence_number": 74,
+              "content": "**Después** **de** **almorzar**, **yo** descanso por dez minutos."
+            },
+            {
+              "sentence_number": 75,
+              "content": "**Yo** vou **llegar** **en el** trabalho às oito."
+            },
+            {
+              "sentence_number": 76,
+              "content": "Minha **familia** prefere **volver** para **casa** às seis."
+            },
+            {
+              "sentence_number": 77,
+              "content": "**Yo** preciso **descansar** **después** **de** **un** **día** longo."
+            },
+            {
+              "sentence_number": 78,
+              "content": "**Después** **yo** preciso **cepillarse los dientes** antes **de** **salir**."
+            },
+            {
+              "sentence_number": 79,
+              "content": "**Todos** os dias **yo** preciso **descansar** **un** pouco **después** do almoço."
+            },
+            {
+              "sentence_number": 80,
+              "content": "**Yo** gosto **de** **tomar café** antes **de** **salir** **de** **casa**."
+            },
+            {
+              "sentence_number": 81,
+              "content": "**Después** **de** **despertarse**, **yo** **me** sinto descansado."
+            },
+            {
+              "sentence_number": 82,
+              "content": "**Yo** vou **dormir** cedo hoje."
+            },
+            {
+              "sentence_number": 83,
+              "content": "Minha **familia** toda dorme **después** das dez."
+            },
+            {
+              "sentence_number": 84,
+              "content": "**Nosotros** gostamos **de** **levantarse** cedo juntos."
+            },
+            {
+              "sentence_number": 85,
+              "content": "**Yo** preciso **hacer** **el** almoço para minha **familia**."
+            },
+            {
+              "sentence_number": 86,
+              "content": "**Yo** prefiro **ducharse** **de** manhã."
+            },
+            {
+              "sentence_number": 87,
+              "content": "Ele **tiene** que **trabajar** até **tarde** hoje."
+            },
+            {
+              "sentence_number": 88,
+              "content": "**Yo** vou para **casa** **después** **de** **trabajar**."
+            },
+            {
+              "sentence_number": 89,
+              "content": "Ela **tiene** **una** **cama** confortável para **dormir** **bien**."
+            },
+            {
+              "sentence_number": 90,
+              "content": "**Después** **de** **tomar café**, **yo** saio para **el** trabalho."
+            },
+            {
+              "sentence_number": 91,
+              "content": "Minha **familia** gosta **de** **descansar** junta **todos** os dias."
+            },
+            {
+              "sentence_number": 92,
+              "content": "**Yo** **despierto** **y** preciso **tener** oito horas **de** sono **todas** as noites."
+            },
+            {
+              "sentence_number": 93,
+              "content": "**Yo** gosto **de** **descansar** **en la** **cama** **después** do trabalho."
+            },
+            {
+              "sentence_number": 94,
+              "content": "**Después** **de** **despertarse**, **yo** vou **cepillarse los dientes** **y** **tomar café**."
+            },
+            {
+              "sentence_number": 95,
+              "content": "Ele precisa **salir** cedo para **el** trabalho **todos** os dias."
+            },
+            {
+              "sentence_number": 96,
+              "content": "**Yo** tenho pouco tempo para **vestirse** **de** manhã."
+            },
+            {
+              "sentence_number": 97,
+              "content": "**Mi** **padre** sai **de** **casa** **y** precisa **ir** **trabajar**."
+            },
+            {
+              "sentence_number": 98,
+              "content": "**Yo** preciso **ir** **trabajar** **de** ônibus hoje."
+            },
+            {
+              "sentence_number": 99,
+              "content": "**Nosotros** chegamos **tarde** hoje por causa do trânsito, **y** **yo** preciso **vestirse** rápido."
+            },
+            {
+              "sentence_number": 100,
+              "content": "**Después** **de** **hacer** **el** almoço, **yo** descanso **un** pouco **en la** **sala**."
+            }
+          ],
+          "status": "ready"
         }
       ]
     }

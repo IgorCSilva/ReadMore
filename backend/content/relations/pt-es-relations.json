@@ -92,6 +92,31 @@
         "isso": "eso",
         "aquilo": "aquello"
       }
+    },
+    "topic_4": {
+      "pt": {
+        "acordar": "despertarse",
+        "levantar": "levantarse",
+        "tomar banho": "ducharse",
+        "escovar os dentes": "cepillarse los dientes",
+        "vestir": "vestirse",
+        "tomar café": "tomar café",
+        "sair": "salir",
+        "ir": "ir",
+        "chegar": "llegar",
+        "trabalhar": "trabajar",
+        "voltar": "volver",
+        "almoçar": "almorzar",
+        "jantar": "cenar",
+        "descansar": "descansar",
+        "ler": "leer",
+        "dormir": "dormir",
+        "acordo": "despierto",
+        "levanto": "levanto",
+        "depois": "después",
+        "ter": "tener",
+        "fazer": "hacer"
+      }
     }
   },
   "chapter_4": {
