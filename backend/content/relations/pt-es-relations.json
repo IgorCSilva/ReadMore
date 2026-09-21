@@ -50,7 +50,10 @@
         "esposa": "esposa",
         "seu": "su",
         "sua": "su",
-        "nós": ["nosotros", "nosotras"],
+        "nós": [
+          "nosotros",
+          "nosotras"
+        ],
         "nosso": "nuestro",
         "nossa": "nuestra",
         "o": "el",
@@ -59,6 +62,35 @@
         "todas": "todas",
         "com": "con",
         "sem": "sin"
+      }
+    },
+    "topic_3": {
+      "pt": {
+        "casa": "casa",
+        "quarto": "cuarto",
+        "sala": "sala",
+        "cozinha": "cocina",
+        "banheiro": "baño",
+        "porta": "puerta",
+        "janela": "ventana",
+        "mesa": "mesa",
+        "cadeira": "silla",
+        "cama": "cama",
+        "geladeira": "refrigerador",
+        "fogão": "estufa",
+        "televisão": "televisión",
+        "um": "un",
+        "uma": "una",
+        "aqui": "aquí",
+        "ali": "allí",
+        "tem": "tiene",
+        "há": "hay",
+        "na": "en la",
+        "no": "en el",
+        "em": "en",
+        "isto": "esto",
+        "isso": "eso",
+        "aquilo": "aquello"
       }
     }
   },
