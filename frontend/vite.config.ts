@@ -21,6 +21,7 @@ export default defineConfig({
       '/words': BACKEND,
       '/data': BACKEND,
       '/chapters': BACKEND,
+      '/reinforcement-words': BACKEND,
       '/tts': BACKEND,
       '/increment': BACKEND,
       '/mark-known': BACKEND,

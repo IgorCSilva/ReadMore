@@ -16,9 +16,6 @@
           "word_ids": [
             "es-wd-0001",
             "es-wd-0002",
-            "es-wd-0003",
-            "es-wd-0004",
-            "es-wd-0005",
             "es-wd-0006",
             "es-wd-0007",
             "es-wd-0008",
@@ -34,11 +31,7 @@
             "es-wd-0018",
             "es-wd-0019",
             "es-wd-0020",
-            "es-wd-0021",
-            "es-wd-0022",
             "es-wd-0023",
-            "es-wd-0024",
-            "es-wd-0025",
             "es-wd-0030",
             "es-wd-0031",
             "es-wd-0032",
@@ -448,6 +441,445 @@
             {
               "sentence_number": 100,
               "content": "Ela respondeu **de nada** e depois um **sí** tímido."
+            }
+          ],
+          "exercises": []
+        },
+        {
+          "topic_id": "top-A0-EL-2",
+          "number": 2,
+          "title": "Família e pessoas ao meu redor",
+          "description": "Vocabulário relacionado à família, possessivos simples (\"minha mãe\", \"seu irmão\"). Atividade de desenvolvimento: leitura de uma breve descrição da família.",
+          "status": "ready",
+          "word_ids": [
+            "es-wd-0037",
+            "es-wd-0038",
+            "es-wd-0039",
+            "es-wd-0040",
+            "es-wd-0041",
+            "es-wd-0042",
+            "es-wd-0043",
+            "es-wd-0044",
+            "es-wd-0045",
+            "es-wd-0046",
+            "es-wd-0047",
+            "es-wd-0048",
+            "es-wd-0049",
+            "es-wd-0050",
+            "es-wd-0051",
+            "es-wd-0052",
+            "es-wd-0053",
+            "es-wd-0054",
+            "es-wd-0055",
+            "es-wd-0056",
+            "es-wd-0057",
+            "es-wd-0058",
+            "es-wd-0059",
+            "es-wd-0060",
+            "es-wd-0061",
+            "es-wd-0062"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "Él **no** consegue viver **sin** **su** **esposa** por muito tempo."
+            },
+            {
+              "sentence_number": 2,
+              "content": "**Nosotros** somos uma **familia** muito unida, **y** **estoy** muito feliz por isso."
+            },
+            {
+              "sentence_number": 3,
+              "content": "**Nuestra** **prima** vai se mudar para perto **de** aqui."
+            },
+            {
+              "sentence_number": 4,
+              "content": "**Nuestra** **tía** trabalha em um banco no centro."
+            },
+            {
+              "sentence_number": 5,
+              "content": "**Nuestro** **hijo** aprendeu a nadar este verão."
+            },
+            {
+              "sentence_number": 6,
+              "content": "**Nosotras**, **mi** **hermana** **y** **yo**, sempre cozinhamos juntas aos domingos."
+            },
+            {
+              "sentence_number": 7,
+              "content": "**Su** **tía** mora **con** **su** **abuela** desde que ficou viúva."
+            },
+            {
+              "sentence_number": 8,
+              "content": "**El** **hermano** **y** **la** **hermana** discutem por qualquer coisa, mas se amam muito."
+            },
+            {
+              "sentence_number": 9,
+              "content": "Moro **con** **mi** **familia** desde que nasci."
+            },
+            {
+              "sentence_number": 10,
+              "content": "**El** **esposo** **y** **la** **esposa** comemoram vinte anos **de** casados este mês."
+            },
+            {
+              "sentence_number": 11,
+              "content": "**Gracias** por cuidar **de** **mi** **abuela** enquanto **estoy** viajando."
+            },
+            {
+              "sentence_number": 12,
+              "content": "**La** **hermana** mais nova ainda mora **con** **su** **madre** **y** **su** **padre**."
+            },
+            {
+              "sentence_number": 13,
+              "content": "**Nuestro** **primo** gosta muito **de** jogar videogame."
+            },
+            {
+              "sentence_number": 14,
+              "content": "**La** receita **de** bolo **es** **de** **su** **madre**, ela nunca erra."
+            },
+            {
+              "sentence_number": 15,
+              "content": "**Nuestra** **hija** ganhou um prêmio na escola."
+            },
+            {
+              "sentence_number": 16,
+              "content": "**El** **abuelo** conta as mesmas piadas há vinte anos."
+            },
+            {
+              "sentence_number": 17,
+              "content": "**Hola**! Esta **es** **mi** **hija**, **y** este **es** **mi** **hijo**."
+            },
+            {
+              "sentence_number": 18,
+              "content": "**Nosotras**, **yo** **y** **mi** **abuela**, cozinhamos juntas todo domingo."
+            },
+            {
+              "sentence_number": 19,
+              "content": "**Todas** as tias trouxeram um prato diferente para **la** festa."
+            },
+            {
+              "sentence_number": 20,
+              "content": "**Su** **familia** mora longe, então eles se veem pouco."
+            },
+            {
+              "sentence_number": 21,
+              "content": "**Su** **hija** estuda medicina em outra cidade."
+            },
+            {
+              "sentence_number": 22,
+              "content": "**El** **hermano** mais velho sempre protege os mais novos."
+            },
+            {
+              "sentence_number": 23,
+              "content": "**El** **hermano** mais novo copia **todo** que **el** mais velho faz."
+            },
+            {
+              "sentence_number": 24,
+              "content": "**Sí**, **mi** **familia** vem toda no Natal, **no** falta ninguém."
+            },
+            {
+              "sentence_number": 25,
+              "content": "**Con** **su** **hijo** **y** **su** **hija**, ela nunca fica entediada."
+            },
+            {
+              "sentence_number": 26,
+              "content": "**Mi** **madre** liga **todos** os dias para saber **cómo** **estoy**."
+            },
+            {
+              "sentence_number": 27,
+              "content": "**La** **prima** mais nova sempre imita **su** **hermana** mais velha."
+            },
+            {
+              "sentence_number": 28,
+              "content": "**Mi** **primo** **y** **mi** **prima** vêm nos visitar neste fim **de** semana."
+            },
+            {
+              "sentence_number": 29,
+              "content": "**Nosotros** ajudamos **nuestro** **padre** a pintar **la** casa no último fim **de** semana."
+            },
+            {
+              "sentence_number": 30,
+              "content": "**El** **primo** **y** **la** **prima** **son** inseparáveis desde criança."
+            },
+            {
+              "sentence_number": 31,
+              "content": "**Nosotros** **estamos** muito orgulhosos **de** **nuestro** **hijo**, que se formou este ano."
+            },
+            {
+              "sentence_number": 32,
+              "content": "**Su** **abuela** vive sozinha, mas toda **la** **familia** visita **con** frequência."
+            },
+            {
+              "sentence_number": 33,
+              "content": "**Su** **esposo** cozinha melhor que **su** **esposa**, segundo ela mesma."
+            },
+            {
+              "sentence_number": 34,
+              "content": "**Yo** **me** **llamo** Ana **y** **mi** **madre** também se chama Ana."
+            },
+            {
+              "sentence_number": 35,
+              "content": "**Todo** mundo **de** **la** **familia** adora as histórias **de** **el** **abuelo**."
+            },
+            {
+              "sentence_number": 36,
+              "content": "**Nuestro** **tío** **y** **nuestra** **tía** moram na mesma rua **de** **nuestros** avós."
+            },
+            {
+              "sentence_number": 37,
+              "content": "Ela chegou **sin** **su** **hermano**, que ficou doente em casa."
+            },
+            {
+              "sentence_number": 38,
+              "content": "**Todas** as manhãs, **la** **abuela** reza **con** toda **la** **familia**."
+            },
+            {
+              "sentence_number": 39,
+              "content": "**La** **madre** disse que estava **todo** **bien** **con** **la** **familia**."
+            },
+            {
+              "sentence_number": 40,
+              "content": "**La** **tía** trouxe um presente para cada criança."
+            },
+            {
+              "sentence_number": 41,
+              "content": "**Sin** **su** **abuelo**, **el** Natal **no** seria **el** mesmo."
+            },
+            {
+              "sentence_number": 42,
+              "content": "**Mi** **nombre** **es** igual ao **de** **mi** **abuela**."
+            },
+            {
+              "sentence_number": 43,
+              "content": "**Nuestra** **abuela** mora em uma fazenda pequena."
+            },
+            {
+              "sentence_number": 44,
+              "content": "**La** **madre** prepara **el** jantar enquanto conversa **con** **su** **hija**."
+            },
+            {
+              "sentence_number": 45,
+              "content": "**La** **esposa** dele **es** professora **de** matemática."
+            },
+            {
+              "sentence_number": 46,
+              "content": "**Bueno**, **el** **padre** **es** muito paciente **con** **su** **hijo**."
+            },
+            {
+              "sentence_number": 47,
+              "content": "**Nosotras** decidimos organizar **la** festa **de** aniversário **de** **la** **abuela** este ano."
+            },
+            {
+              "sentence_number": 48,
+              "content": "Ela **es** **la** **esposa** **de** **mi** **tío**, mas **yo** **la** considero uma segunda **madre**."
+            },
+            {
+              "sentence_number": 49,
+              "content": "**La** **abuela** faz **el** melhor bolo **de** chocolate **de** toda **la** familia."
+            },
+            {
+              "sentence_number": 50,
+              "content": "**Todas** as primas vieram **con** os pais no aniversário."
+            },
+            {
+              "sentence_number": 51,
+              "content": "**El** **tío** **y** **su** **esposa** vieram **sin** os filhos desta vez."
+            },
+            {
+              "sentence_number": 52,
+              "content": "**Con** **su** **familia** ao lado, ele se sentiu mais forte."
+            },
+            {
+              "sentence_number": 53,
+              "content": "**Nosotras** — **mi** **madre**, **mi** **hermana** **y** **yo** — viajamos sozinhas este verão."
+            },
+            {
+              "sentence_number": 54,
+              "content": "**El** **primo** **es** mais novo que **la** **prima**."
+            },
+            {
+              "sentence_number": 55,
+              "content": "**Nosotros** viajamos juntos **todos** os verões desde que **su** **hija** era pequena."
+            },
+            {
+              "sentence_number": 56,
+              "content": "**El** **abuelo** **y** **el** **padre** dela têm **el** mesmo jeito **de** rir."
+            },
+            {
+              "sentence_number": 57,
+              "content": "**Mi** amigo apresentou **su** **esposa** para toda **la** **familia**."
+            },
+            {
+              "sentence_number": 58,
+              "content": "Somos **nosotras** quem organiza **la** festa **de** aniversário todo ano."
+            },
+            {
+              "sentence_number": 59,
+              "content": "**Nuestro** **abuelo** guarda fotos antigas **de** toda **la** **familia**."
+            },
+            {
+              "sentence_number": 60,
+              "content": "**Su** **esposo** viaja muito **con** **el** trabalho, então ela cuida **de** **todos** sozinha."
+            },
+            {
+              "sentence_number": 61,
+              "content": "Perguntei para **el** **hijo** se ele já almoçou."
+            },
+            {
+              "sentence_number": 62,
+              "content": "**Mi** **hermana** mora perto **de** **mi** casa."
+            },
+            {
+              "sentence_number": 63,
+              "content": "**Nuestra** **madre** ensinou **nuestras** hijas a cozinhar desde pequenas."
+            },
+            {
+              "sentence_number": 64,
+              "content": "**Su** **primo** trabalha na mesma empresa que **yo**."
+            },
+            {
+              "sentence_number": 65,
+              "content": "**Sin** **la** ajuda **de** **su** **hermano**, ele **no** teria terminado **la** mudança."
+            },
+            {
+              "sentence_number": 66,
+              "content": "**Todos** concordaram que **la** comida **de** **la** **abuela** **es** **la** melhor."
+            },
+            {
+              "sentence_number": 67,
+              "content": "**El** **hijo** mais velho ajuda **el** **padre** na loja aos sábados."
+            },
+            {
+              "sentence_number": 68,
+              "content": "**Es** difícil imaginar uma festa **sin** **todos** os primos reunidos."
+            },
+            {
+              "sentence_number": 69,
+              "content": "**Mi** **tío** mora em outra cidade **y** vem nos visitar no verão."
+            },
+            {
+              "sentence_number": 70,
+              "content": "**De** **nada**, cuidar **de** **la** **familia** **es** um prazer."
+            },
+            {
+              "sentence_number": 71,
+              "content": "**Nuestra** **familia** **es** pequena, mas muito unida."
+            },
+            {
+              "sentence_number": 72,
+              "content": "**Todos** os primos chegaram **con** presentes para **la** **abuela**."
+            },
+            {
+              "sentence_number": 73,
+              "content": "**Nuestra** **prima** casou **con** um médico muito gentil."
+            },
+            {
+              "sentence_number": 74,
+              "content": "**El** **padre** trabalha em um hospital **y** chega cansado à **noche**."
+            },
+            {
+              "sentence_number": 75,
+              "content": "**Mi** **abuelo** serviu no exército quando era jovem."
+            },
+            {
+              "sentence_number": 76,
+              "content": "**La** **hija** ajuda **su** **madre** na cozinha todo domingo."
+            },
+            {
+              "sentence_number": 77,
+              "content": "**Todas** as primas, **sin** exceção, adoram **el** bolo **de** **la** **abuela**."
+            },
+            {
+              "sentence_number": 78,
+              "content": "**Su** **abuela** ensina receitas antigas para os netos."
+            },
+            {
+              "sentence_number": 79,
+              "content": "**El** **primo** chegou **de** surpresa para **el** almoço."
+            },
+            {
+              "sentence_number": 80,
+              "content": "**Chao**, avise **su** **madre** que chegamos **bien**."
+            },
+            {
+              "sentence_number": 81,
+              "content": "**Cómo** vai **su** **hermana**? Faz tempo que **no** **la** vejo."
+            },
+            {
+              "sentence_number": 82,
+              "content": "Ela contou que **su** **padre** **es** muito engraçado."
+            },
+            {
+              "sentence_number": 83,
+              "content": "**Su** **hijo** parece muito **con** **el** **padre**, mas tem os olhos **de** **la** **madre**."
+            },
+            {
+              "sentence_number": 84,
+              "content": "**Nuestra** **hermana** vai se casar no próximo ano."
+            },
+            {
+              "sentence_number": 85,
+              "content": "**El** **tío** sempre chega atrasado à festa."
+            },
+            {
+              "sentence_number": 86,
+              "content": "**Mi** **hermano** **y** **mi** **hermana** brigam sempre, mas **son** muito unidos."
+            },
+            {
+              "sentence_number": 87,
+              "content": "**El** **esposo** dela trabalha em um banco muito conhecido."
+            },
+            {
+              "sentence_number": 88,
+              "content": "**Nosotros** decidimos passar **el** Natal **con** toda **la** **familia** este ano."
+            },
+            {
+              "sentence_number": 89,
+              "content": "**Todas** as noites, **mi** **familia** janta reunida na mesma mesa."
+            },
+            {
+              "sentence_number": 90,
+              "content": "**El** **padre** **y** **la** **madre** viajam juntos neste fim **de** semana."
+            },
+            {
+              "sentence_number": 91,
+              "content": "**La** **prima** mora em Madrid **y** estuda arquitetura."
+            },
+            {
+              "sentence_number": 92,
+              "content": "**La** **familia** toda se reúne no Natal, **sin** exceção."
+            },
+            {
+              "sentence_number": 93,
+              "content": "**El** **tío** **y** **la** **tía** discutem sobre política toda vez que se encontram."
+            },
+            {
+              "sentence_number": 94,
+              "content": "**El** **abuelo** **y** **la** **abuela** dançam juntos em toda festa."
+            },
+            {
+              "sentence_number": 95,
+              "content": "**La** **madre** cuida **de** **su** **hijo** **con** muita paciência."
+            },
+            {
+              "sentence_number": 96,
+              "content": "**Todos** os domingos, **nuestra** **familia** almoça junta na casa **de** **la** **abuela**."
+            },
+            {
+              "sentence_number": 97,
+              "content": "**El** **esposo** dela chegou mais cedo hoje, ainda **con** **el** uniforme do trabalho."
+            },
+            {
+              "sentence_number": 98,
+              "content": "Perguntei **su** **nombre** completo, mas ele só disse **su** primeiro **nombre**."
+            },
+            {
+              "sentence_number": 99,
+              "content": "**Toda** **la** **familia** foi ao aniversário **de** **la** **abuela**."
+            },
+            {
+              "sentence_number": 100,
+              "content": "**El** **hijo** **y** **la** **hija** brincam juntos no quintal."
             }
           ],
           "exercises": []

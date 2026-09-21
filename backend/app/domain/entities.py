@@ -33,6 +33,19 @@ class Sentence:
 
 
 @dataclass
+class Phrase:
+    """A standalone, natural target-language sentence (unlike Sentence,
+    which is an origin-language sentence with **bolded** target words) —
+    sourced from content/<target>_sentences.json, used by the reinforcement
+    "listen and pick the known words" tab. word_ids lists every topic word
+    present in the sentence, in the order it appears."""
+
+    id: str
+    sentence: str
+    word_ids: list[str]
+
+
+@dataclass
 class Topic:
     topic_id: str
     number: int
@@ -41,6 +54,7 @@ class Topic:
     word_ids: list[str]
     texts: list[Text] = field(default_factory=list)
     sentences: list[Sentence] = field(default_factory=list)
+    phrases: list[Phrase] = field(default_factory=list)
     status: str = "ready"
     exercises: list[dict] = field(default_factory=list)
 

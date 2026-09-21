@@ -3,6 +3,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import * as api from '../../shared/api'
 import { cacheKey, writeCache } from '../../shared/cache'
 import { getNotifications } from '../../shared/notifications'
+import { resetUserWordsStoreForTests } from '../../shared/userWords'
 import { getQueuedWrites } from '../../shared/writeQueue'
 import Flashcards from './Flashcards.vue'
 
@@ -49,6 +50,7 @@ function currentWord(wrapper: ReturnType<typeof mount>) {
 describe('Flashcards', () => {
   beforeEach(() => {
     localStorage.clear()
+    resetUserWordsStoreForTests()
     clearNotifications()
     vi.mocked(api.getUserWords).mockReset()
     vi.mocked(api.markWordKnown).mockReset()
@@ -93,7 +95,11 @@ describe('Flashcards', () => {
 
     expect(currentWord(wrapper).text()).toBe('hello')
     expect(api.getUserWords).toHaveBeenCalledWith('test@example.com', 'english', 'target', 'origin')
-    expect(getNotifications()[0]).toMatchObject({ type: 'info' })
+    // Unlike the old refreshInBackground, the background freshness check
+    // (shared/userWords.ts) doesn't announce itself up front — only a
+    // genuine difference from what's on screen gets a toast, and this one
+    // never resolves in this test.
+    expect(getNotifications()).toHaveLength(0)
 
     wrapper.unmount()
   })

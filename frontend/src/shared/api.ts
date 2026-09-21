@@ -3,6 +3,7 @@ import type {
   CorrectionRequest,
   LanguagesResponse,
   ProgressActionRequest,
+  ReinforcementWords,
   UserWordsResponse,
   WordsResponse,
 } from './types'
@@ -64,6 +65,17 @@ export function getChapters(user: string, lang: string): Promise<ChaptersRespons
 export function getWords(lang: string, sentenceLang?: string, cueLang?: string): Promise<WordsResponse> {
   const url = `/words?lang=${encodeURIComponent(lang)}` + langChoiceParams(sentenceLang, cueLang)
   return fetchJsonWithRetry<WordsResponse>(url)
+}
+
+export function getReinforcementWords(
+  lang: string,
+  chapterNumber: number,
+  topicNumber: number,
+): Promise<ReinforcementWords> {
+  const url =
+    `/reinforcement-words?lang=${encodeURIComponent(lang)}` +
+    `&chapter=${chapterNumber}&topic=${topicNumber}`
+  return fetchJsonWithRetry<ReinforcementWords>(url)
 }
 
 export function ttsUrl(text: string, lang: string): string {

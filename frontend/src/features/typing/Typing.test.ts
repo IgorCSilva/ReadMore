@@ -2,6 +2,7 @@ import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import * as api from '../../shared/api'
 import { cacheKey, writeCache } from '../../shared/cache'
+import { resetUserWordsStoreForTests } from '../../shared/userWords'
 import Typing from './Typing.vue'
 
 vi.mock('../../shared/api', async (importOriginal) => {
@@ -50,6 +51,7 @@ function fireComposition(el: HTMLInputElement, type: string, data?: string) {
 describe('Typing', () => {
   beforeEach(() => {
     localStorage.clear()
+    resetUserWordsStoreForTests()
     vi.mocked(api.getUserWords).mockReset()
     // jsdom's getBoundingClientRect is always zero-size by default, which
     // would make the "danger zone" (a fraction of stage width) and spawn

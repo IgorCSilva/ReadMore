@@ -2,6 +2,7 @@ import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import * as api from '../../shared/api'
 import { cacheKey, writeCache } from '../../shared/cache'
+import { resetUserWordsStoreForTests } from '../../shared/userWords'
 import Reading from './Reading.vue'
 
 vi.mock('../../shared/api', async (importOriginal) => {
@@ -51,6 +52,7 @@ const NO_SHUFFLE_RANDOM = 0.999999
 describe('Reading', () => {
   beforeEach(() => {
     localStorage.clear()
+    resetUserWordsStoreForTests()
     vi.mocked(api.getUserWords).mockReset()
     vi.spyOn(Math, 'random').mockReturnValue(NO_SHUFFLE_RANDOM)
   })
@@ -71,6 +73,29 @@ describe('Reading', () => {
 
       expect(currentWord(wrapper).text()).toBe('hello')
       expect(wrapper.find('#reading-counter').text()).toBe('1 / 2')
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('a reinforcement word bypasses both the confident and hidden (show=false) filters', async () => {
+    // Reinforcement words are pulled from earlier topics a user has
+    // typically already finished — and thus already marked confident/known
+    // (hidden) in Flashcards — so a real reinforcement candidate is usually
+    // exactly this shape. Regression test for a bug where the show!==false
+    // check (meant for the topic's own words) was also applied to
+    // reinforcement entries, silently excluding almost all of them.
+    const REINFORCED_KNOWN = { ...HELLO, word_id: 'wd-0005', original: 'reinforced', confident: true, show: false }
+    vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'pt-es', words: [HELLO, REINFORCED_KNOWN] })
+
+    const wrapper = mount(Reading, { attachTo: document.body })
+    try {
+      await wrapper.vm.show('test@example.com', 'pt-es', TOPIC, undefined, undefined, ['wd-0005'])
+
+      expect(wrapper.find('#reading-counter').text()).toBe('1 / 2')
+      await wrapper.find('#reading-word-area').trigger('click')
+      expect(currentWord(wrapper).text()).toBe('reinforced')
+      expect(wrapper.find<HTMLElement>('#reading-reinforcement-badge').element.style.display).toBe('flex')
     } finally {
       wrapper.unmount()
     }

@@ -2,6 +2,7 @@ import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import * as api from '../../shared/api'
 import { cacheKey, writeCache } from '../../shared/cache'
+import { resetUserWordsStoreForTests } from '../../shared/userWords'
 import Quiz from './Quiz.vue'
 
 vi.mock('../../shared/api', async (importOriginal) => {
@@ -56,6 +57,7 @@ function findOptionByText(wrapper: ReturnType<typeof mount>, text: string) {
 describe('Quiz', () => {
   beforeEach(() => {
     localStorage.clear()
+    resetUserWordsStoreForTests()
     vi.mocked(api.getUserWords).mockReset()
     vi.spyOn(Math, 'random').mockReturnValue(NO_SHUFFLE_RANDOM)
   })
@@ -74,6 +76,29 @@ describe('Quiz', () => {
 
       expect(wrapper.find<HTMLElement>('#quiz-empty-state').element.style.display).toBe('block')
       expect(wrapper.find<HTMLElement>('#quiz-stage').element.style.display).toBe('none')
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('reinforcement words bypass both the confident and hidden (show=false) filters', async () => {
+    // Reinforcement words are pulled from earlier topics a user has
+    // typically already finished — and thus already marked confident/known
+    // (hidden) in Flashcards — so a real reinforcement candidate is usually
+    // exactly this shape. Regression test for a bug where the show!==false
+    // check (meant for the topic's own words) was also applied to
+    // reinforcement entries, silently excluding almost all of them.
+    const REINFORCED_A = { ...POTATO, word_id: 'wd-0007', original: 'reinforced-a', confident: true, show: false }
+    const REINFORCED_B = { ...POTATO, word_id: 'wd-0008', original: 'reinforced-b', confident: true, show: false }
+    vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'pt-es', words: [REINFORCED_A, REINFORCED_B] })
+
+    const wrapper = mount(Quiz, { attachTo: document.body })
+    try {
+      await wrapper.vm.show('test@example.com', 'pt-es', { word_ids: [] }, undefined, undefined, ['wd-0007', 'wd-0008'])
+
+      expect(wrapper.find<HTMLElement>('#quiz-empty-state').element.style.display).toBe('none')
+      expect(wrapper.find('#quiz-counter').text()).toBe('1 / 2')
+      expect(wrapper.find('.reinforcement-badge').exists()).toBe(true)
     } finally {
       wrapper.unmount()
     }

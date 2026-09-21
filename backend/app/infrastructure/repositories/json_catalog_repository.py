@@ -22,7 +22,7 @@ import json
 from pathlib import Path
 
 from backend.app.application.ports.catalog_repository import CatalogRepository
-from backend.app.domain.entities import Chapter, Sentence, Text, Topic, Word
+from backend.app.domain.entities import Chapter, Phrase, Sentence, Text, Topic, Word
 from backend.app.domain.exceptions import LanguageNotFoundError
 from backend.app.domain.value_objects import LanguagePair
 
@@ -69,6 +69,17 @@ class JsonCatalogRepository(CatalogRepository):
         path = self._catalog_path.parent / f"{target_code}_words.json"
         if not path.exists():
             return []
+        return self._load_json(path)
+
+    def _load_phrases(self, target_code: str) -> dict:
+        """chapter_N -> topic_N -> [{id, sentence, word_ids}], from
+        content/<target>_sentences.json (e.g. es_sentences.json) — standalone
+        natural target-language sentences for the reinforcement "listen and
+        pick the known words" tab. Missing file (no phrases authored for this
+        target yet) is not an error, same as _load_lang_words above."""
+        path = self._content_dir / f"{target_code}_sentences.json"
+        if not path.exists():
+            return {}
         return self._load_json(path)
 
     def _load_word_map(self, target_code: str) -> dict[str, str]:
@@ -126,21 +137,26 @@ class JsonCatalogRepository(CatalogRepository):
     def get_chapters(self, lang: LanguagePair) -> list[Chapter]:
         content = self._load_content(lang)
         word_map = self._load_word_map(lang.target)
-        return [self._to_chapter(c, word_map) for c in content.get("chapters", [])]
+        phrases_by_chapter = self._load_phrases(lang.target)
+        return [self._to_chapter(c, word_map, phrases_by_chapter) for c in content.get("chapters", [])]
 
     @staticmethod
-    def _to_chapter(data: dict, word_map: dict[str, str]) -> Chapter:
+    def _to_chapter(data: dict, word_map: dict[str, str], phrases_by_chapter: dict) -> Chapter:
+        chapter_phrases = phrases_by_chapter.get(f"chapter_{data['number']}", {})
         return Chapter(
             chapter_id=data["chapter_id"],
             number=data["number"],
             title=data["title"],
             description=data["description"],
-            topics=[JsonCatalogRepository._to_topic(t, word_map) for t in data.get("topics", [])],
+            topics=[
+                JsonCatalogRepository._to_topic(t, word_map, chapter_phrases)
+                for t in data.get("topics", [])
+            ],
             status=data.get("status", "ready"),
         )
 
     @staticmethod
-    def _to_topic(data: dict, word_map: dict[str, str]) -> Topic:
+    def _to_topic(data: dict, word_map: dict[str, str], chapter_phrases: dict) -> Topic:
         return Topic(
             topic_id=data["topic_id"],
             number=data["number"],
@@ -149,6 +165,10 @@ class JsonCatalogRepository(CatalogRepository):
             word_ids=[word_map.get(w, w) for w in data.get("word_ids", [])],
             texts=[JsonCatalogRepository._to_text(t) for t in data.get("texts", [])],
             sentences=[JsonCatalogRepository._to_sentence(s) for s in data.get("sentences", [])],
+            phrases=[
+                JsonCatalogRepository._to_phrase(p, word_map)
+                for p in chapter_phrases.get(f"topic_{data['number']}", [])
+            ],
             status=data.get("status", "ready"),
             exercises=data.get("exercises", []),
         )
@@ -167,4 +187,12 @@ class JsonCatalogRepository(CatalogRepository):
         return Sentence(
             sentence_number=data["sentence_number"],
             content=data["content"],
+        )
+
+    @staticmethod
+    def _to_phrase(data: dict, word_map: dict[str, str]) -> Phrase:
+        return Phrase(
+            id=data["id"],
+            sentence=data["sentence"],
+            word_ids=[word_map.get(w, w) for w in data.get("word_ids", [])],
         )

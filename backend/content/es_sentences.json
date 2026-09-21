@@ -1,0 +1,1295 @@
+{
+  "chapter_1": {
+    "topic_1": [
+      {
+        "id": "es-sent-0001",
+        "sentence": "¡Hola! ¿Cómo estás?",
+        "word_ids": [
+          "es-wd-0001",
+          "es-wd-0012",
+          "es-wd-0035"
+        ]
+      },
+      {
+        "id": "es-sent-0002",
+        "sentence": "Hola, yo me llamo Ana.",
+        "word_ids": [
+          "es-wd-0001",
+          "es-wd-0018",
+          "es-wd-0019",
+          "es-wd-0020"
+        ]
+      },
+      {
+        "id": "es-sent-0003",
+        "sentence": "Hola, mucho gusto.",
+        "word_ids": [
+          "es-wd-0001"
+        ]
+      },
+      {
+        "id": "es-sent-0004",
+        "sentence": "Chao, hasta luego.",
+        "word_ids": [
+          "es-wd-0002"
+        ]
+      },
+      {
+        "id": "es-sent-0005",
+        "sentence": "Chao, nos vemos.",
+        "word_ids": [
+          "es-wd-0002"
+        ]
+      },
+      {
+        "id": "es-sent-0006",
+        "sentence": "Chao, gracias por todo.",
+        "word_ids": [
+          "es-wd-0002",
+          "es-wd-0031",
+          "es-wd-0010"
+        ]
+      },
+      {
+        "id": "es-sent-0007",
+        "sentence": "Yo estoy bien y tú, ¿cómo estás?",
+        "word_ids": [
+          "es-wd-0018",
+          "es-wd-0014",
+          "es-wd-0011",
+          "es-wd-0033",
+          "es-wd-0013",
+          "es-wd-0012",
+          "es-wd-0035"
+        ]
+      },
+      {
+        "id": "es-sent-0008",
+        "sentence": "Es de día y también de noche.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0023",
+          "es-wd-0007",
+          "es-wd-0033",
+          "es-wd-0023",
+          "es-wd-0009"
+        ]
+      },
+      {
+        "id": "es-sent-0009",
+        "sentence": "Mi nombre es Ana y tú, ¿cómo te llamas?",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0015",
+          "es-wd-0017",
+          "es-wd-0033",
+          "es-wd-0013",
+          "es-wd-0012"
+        ]
+      },
+      {
+        "id": "es-sent-0010",
+        "sentence": "¡Qué bueno verte!",
+        "word_ids": [
+          "es-wd-0006"
+        ]
+      },
+      {
+        "id": "es-sent-0011",
+        "sentence": "Bien, es bueno saberlo.",
+        "word_ids": [
+          "es-wd-0011",
+          "es-wd-0017",
+          "es-wd-0006"
+        ]
+      },
+      {
+        "id": "es-sent-0012",
+        "sentence": "Todo es bueno hoy.",
+        "word_ids": [
+          "es-wd-0010",
+          "es-wd-0017",
+          "es-wd-0006"
+        ]
+      },
+      {
+        "id": "es-sent-0013",
+        "sentence": "Tengo una buena noche.",
+        "word_ids": [
+          "es-wd-0034",
+          "es-wd-0009"
+        ]
+      },
+      {
+        "id": "es-sent-0014",
+        "sentence": "Ella es buena persona.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0034"
+        ]
+      },
+      {
+        "id": "es-sent-0015",
+        "sentence": "¡Que tengas una buena tarde!",
+        "word_ids": [
+          "es-wd-0034",
+          "es-wd-0008"
+        ]
+      },
+      {
+        "id": "es-sent-0016",
+        "sentence": "Hoy es un día especial.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0017",
+        "sentence": "Todo el día estoy bien.",
+        "word_ids": [
+          "es-wd-0010",
+          "es-wd-0007",
+          "es-wd-0014",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0018",
+        "sentence": "El día es largo pero bueno.",
+        "word_ids": [
+          "es-wd-0007",
+          "es-wd-0017",
+          "es-wd-0006"
+        ]
+      },
+      {
+        "id": "es-sent-0019",
+        "sentence": "Ya es tarde, chao.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0008",
+          "es-wd-0002"
+        ]
+      },
+      {
+        "id": "es-sent-0020",
+        "sentence": "Por la tarde estoy en casa.",
+        "word_ids": [
+          "es-wd-0008",
+          "es-wd-0014"
+        ]
+      },
+      {
+        "id": "es-sent-0021",
+        "sentence": "La tarde es tranquila y bonita.",
+        "word_ids": [
+          "es-wd-0008",
+          "es-wd-0017",
+          "es-wd-0033"
+        ]
+      },
+      {
+        "id": "es-sent-0022",
+        "sentence": "Esta noche estoy en casa.",
+        "word_ids": [
+          "es-wd-0009",
+          "es-wd-0014"
+        ]
+      },
+      {
+        "id": "es-sent-0023",
+        "sentence": "La noche es tranquila.",
+        "word_ids": [
+          "es-wd-0009",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0024",
+        "sentence": "Chao, nos vemos por la noche.",
+        "word_ids": [
+          "es-wd-0002",
+          "es-wd-0009"
+        ]
+      },
+      {
+        "id": "es-sent-0025",
+        "sentence": "Yo estoy bien, gracias.",
+        "word_ids": [
+          "es-wd-0018",
+          "es-wd-0014",
+          "es-wd-0011",
+          "es-wd-0031"
+        ]
+      },
+      {
+        "id": "es-sent-0026",
+        "sentence": "Todo va bien hoy.",
+        "word_ids": [
+          "es-wd-0010",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0027",
+        "sentence": "¿Tú estás bien?",
+        "word_ids": [
+          "es-wd-0013",
+          "es-wd-0035",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0028",
+        "sentence": "Gracias por todo.",
+        "word_ids": [
+          "es-wd-0031",
+          "es-wd-0010"
+        ]
+      },
+      {
+        "id": "es-sent-0029",
+        "sentence": "Todo es nuevo aquí.",
+        "word_ids": [
+          "es-wd-0010",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0030",
+        "sentence": "Yo estoy bien, todo bien.",
+        "word_ids": [
+          "es-wd-0018",
+          "es-wd-0014",
+          "es-wd-0011",
+          "es-wd-0010",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0031",
+        "sentence": "¿Cómo estás tú?",
+        "word_ids": [
+          "es-wd-0012",
+          "es-wd-0035",
+          "es-wd-0013"
+        ]
+      },
+      {
+        "id": "es-sent-0032",
+        "sentence": "¿Cómo te llamas?",
+        "word_ids": [
+          "es-wd-0012"
+        ]
+      },
+      {
+        "id": "es-sent-0033",
+        "sentence": "No sé cómo se llama.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0012"
+        ]
+      },
+      {
+        "id": "es-sent-0034",
+        "sentence": "Tú eres mi amigo.",
+        "word_ids": [
+          "es-wd-0013",
+          "es-wd-0016"
+        ]
+      },
+      {
+        "id": "es-sent-0035",
+        "sentence": "¿Y tú, cómo estás?",
+        "word_ids": [
+          "es-wd-0033",
+          "es-wd-0013",
+          "es-wd-0012",
+          "es-wd-0035"
+        ]
+      },
+      {
+        "id": "es-sent-0036",
+        "sentence": "Tú estás bien, gracias.",
+        "word_ids": [
+          "es-wd-0013",
+          "es-wd-0035",
+          "es-wd-0011",
+          "es-wd-0031"
+        ]
+      },
+      {
+        "id": "es-sent-0037",
+        "sentence": "Estoy muy bien, gracias.",
+        "word_ids": [
+          "es-wd-0014",
+          "es-wd-0011",
+          "es-wd-0031"
+        ]
+      },
+      {
+        "id": "es-sent-0038",
+        "sentence": "Yo estoy en casa todo el día.",
+        "word_ids": [
+          "es-wd-0018",
+          "es-wd-0014",
+          "es-wd-0010",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0039",
+        "sentence": "Hoy estoy feliz.",
+        "word_ids": [
+          "es-wd-0014"
+        ]
+      },
+      {
+        "id": "es-sent-0040",
+        "sentence": "¿Cómo estás hoy?",
+        "word_ids": [
+          "es-wd-0012",
+          "es-wd-0035"
+        ]
+      },
+      {
+        "id": "es-sent-0041",
+        "sentence": "Tú estás muy bien.",
+        "word_ids": [
+          "es-wd-0013",
+          "es-wd-0035",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0042",
+        "sentence": "¿Dónde estás?",
+        "word_ids": [
+          "es-wd-0035"
+        ]
+      },
+      {
+        "id": "es-sent-0043",
+        "sentence": "Mi nombre es Carlos.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0015",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0044",
+        "sentence": "¿Cuál es tu nombre?",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0015"
+        ]
+      },
+      {
+        "id": "es-sent-0045",
+        "sentence": "Yo me llamo María, ese es mi nombre.",
+        "word_ids": [
+          "es-wd-0018",
+          "es-wd-0019",
+          "es-wd-0020",
+          "es-wd-0017",
+          "es-wd-0016",
+          "es-wd-0015"
+        ]
+      },
+      {
+        "id": "es-sent-0046",
+        "sentence": "Mi nombre es Laura.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0015",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0047",
+        "sentence": "Mi día fue bueno.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0007",
+          "es-wd-0006"
+        ]
+      },
+      {
+        "id": "es-sent-0048",
+        "sentence": "Ella es mi amiga.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0016"
+        ]
+      },
+      {
+        "id": "es-sent-0049",
+        "sentence": "Hoy es un buen momento.",
+        "word_ids": [
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0050",
+        "sentence": "Pedro es mi amigo.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0016"
+        ]
+      },
+      {
+        "id": "es-sent-0051",
+        "sentence": "Esto es todo.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0010"
+        ]
+      },
+      {
+        "id": "es-sent-0052",
+        "sentence": "Yo estoy bien.",
+        "word_ids": [
+          "es-wd-0018",
+          "es-wd-0014",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0053",
+        "sentence": "Yo me llamo Pedro.",
+        "word_ids": [
+          "es-wd-0018",
+          "es-wd-0019",
+          "es-wd-0020"
+        ]
+      },
+      {
+        "id": "es-sent-0054",
+        "sentence": "¿Y yo?",
+        "word_ids": [
+          "es-wd-0033",
+          "es-wd-0018"
+        ]
+      },
+      {
+        "id": "es-sent-0055",
+        "sentence": "Me llamo Sofía.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0020"
+        ]
+      },
+      {
+        "id": "es-sent-0056",
+        "sentence": "Hola, me llamo Carlos, mucho gusto.",
+        "word_ids": [
+          "es-wd-0001",
+          "es-wd-0019",
+          "es-wd-0020"
+        ]
+      },
+      {
+        "id": "es-sent-0057",
+        "sentence": "Me llamo Luis, ¿y tú?",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0020",
+          "es-wd-0033",
+          "es-wd-0013"
+        ]
+      },
+      {
+        "id": "es-sent-0058",
+        "sentence": "Yo me llamo Diana, mucho gusto.",
+        "word_ids": [
+          "es-wd-0018",
+          "es-wd-0019",
+          "es-wd-0020"
+        ]
+      },
+      {
+        "id": "es-sent-0059",
+        "sentence": "Me llamo Roberto, mucho gusto.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0020"
+        ]
+      },
+      {
+        "id": "es-sent-0060",
+        "sentence": "¡Hola! Yo me llamo Elena, mucho gusto.",
+        "word_ids": [
+          "es-wd-0001",
+          "es-wd-0018",
+          "es-wd-0019",
+          "es-wd-0020"
+        ]
+      },
+      {
+        "id": "es-sent-0061",
+        "sentence": "Yo soy de Brasil.",
+        "word_ids": [
+          "es-wd-0018",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0062",
+        "sentence": "Gracias de todo corazón.",
+        "word_ids": [
+          "es-wd-0031",
+          "es-wd-0023",
+          "es-wd-0010"
+        ]
+      },
+      {
+        "id": "es-sent-0063",
+        "sentence": "Es de día.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0023",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0064",
+        "sentence": "Sí, estoy bien.",
+        "word_ids": [
+          "es-wd-0030",
+          "es-wd-0014",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0065",
+        "sentence": "¿Tú eres de España? Sí.",
+        "word_ids": [
+          "es-wd-0013",
+          "es-wd-0023",
+          "es-wd-0030"
+        ]
+      },
+      {
+        "id": "es-sent-0066",
+        "sentence": "Sí, gracias.",
+        "word_ids": [
+          "es-wd-0030",
+          "es-wd-0031"
+        ]
+      },
+      {
+        "id": "es-sent-0067",
+        "sentence": "No, gracias.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0031"
+        ]
+      },
+      {
+        "id": "es-sent-0068",
+        "sentence": "No estoy bien hoy.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0014",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0069",
+        "sentence": "¿Tú eres de aquí? No.",
+        "word_ids": [
+          "es-wd-0013",
+          "es-wd-0023",
+          "es-wd-0036"
+        ]
+      },
+      {
+        "id": "es-sent-0070",
+        "sentence": "Muchas gracias por todo.",
+        "word_ids": [
+          "es-wd-0031",
+          "es-wd-0010"
+        ]
+      },
+      {
+        "id": "es-sent-0071",
+        "sentence": "Gracias, estoy muy bien.",
+        "word_ids": [
+          "es-wd-0031",
+          "es-wd-0014",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0072",
+        "sentence": "Gracias, chao.",
+        "word_ids": [
+          "es-wd-0031",
+          "es-wd-0002"
+        ]
+      },
+      {
+        "id": "es-sent-0073",
+        "sentence": "Gracias. De nada.",
+        "word_ids": [
+          "es-wd-0031",
+          "es-wd-0032"
+        ]
+      },
+      {
+        "id": "es-sent-0074",
+        "sentence": "No hay de qué, de nada.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0023",
+          "es-wd-0032"
+        ]
+      },
+      {
+        "id": "es-sent-0075",
+        "sentence": "—Gracias por ayudarme. —De nada, estoy feliz de ayudarte.",
+        "word_ids": [
+          "es-wd-0031",
+          "es-wd-0032",
+          "es-wd-0014",
+          "es-wd-0023"
+        ]
+      }
+    ],
+    "topic_2": [
+      {
+        "id": "es-sent-0076",
+        "sentence": "Mi familia es muy grande.",
+        "word_ids": [
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0077",
+        "sentence": "Toda la familia se reúne los domingos.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0078",
+        "sentence": "Mi familia y yo vivimos en Madrid.",
+        "word_ids": [
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0079",
+        "sentence": "Mi padre trabaja en un hospital.",
+        "word_ids": [
+          "es-wd-0038"
+        ]
+      },
+      {
+        "id": "es-sent-0080",
+        "sentence": "El padre de Ana es médico.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0038"
+        ]
+      },
+      {
+        "id": "es-sent-0081",
+        "sentence": "Mi padre y mi madre se conocieron en la universidad.",
+        "word_ids": [
+          "es-wd-0038",
+          "es-wd-0039",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0082",
+        "sentence": "Mi madre cocina muy bien.",
+        "word_ids": [
+          "es-wd-0039"
+        ]
+      },
+      {
+        "id": "es-sent-0083",
+        "sentence": "La madre de mi amigo es profesora.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0039"
+        ]
+      },
+      {
+        "id": "es-sent-0084",
+        "sentence": "Mi madre y mi padre viajan juntos.",
+        "word_ids": [
+          "es-wd-0039",
+          "es-wd-0038"
+        ]
+      },
+      {
+        "id": "es-sent-0085",
+        "sentence": "Su hijo juega al fútbol.",
+        "word_ids": [
+          "es-wd-0052",
+          "es-wd-0040"
+        ]
+      },
+      {
+        "id": "es-sent-0086",
+        "sentence": "El hijo de la vecina estudia medicina.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0040",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0087",
+        "sentence": "Nuestro hijo aprendió a nadar este verano.",
+        "word_ids": [
+          "es-wd-0055",
+          "es-wd-0040"
+        ]
+      },
+      {
+        "id": "es-sent-0088",
+        "sentence": "Su hija estudia en Madrid.",
+        "word_ids": [
+          "es-wd-0052",
+          "es-wd-0041"
+        ]
+      },
+      {
+        "id": "es-sent-0089",
+        "sentence": "La hija de mi hermana es muy simpática.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0041",
+          "es-wd-0043"
+        ]
+      },
+      {
+        "id": "es-sent-0090",
+        "sentence": "Nuestra hija ganó un premio en la escuela.",
+        "word_ids": [
+          "es-wd-0056",
+          "es-wd-0041",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0091",
+        "sentence": "Mi hermano vive en Barcelona.",
+        "word_ids": [
+          "es-wd-0042"
+        ]
+      },
+      {
+        "id": "es-sent-0092",
+        "sentence": "El hermano de Carlos es músico.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0042"
+        ]
+      },
+      {
+        "id": "es-sent-0093",
+        "sentence": "Mi hermano y mi hermana se llevan muy bien.",
+        "word_ids": [
+          "es-wd-0042",
+          "es-wd-0043"
+        ]
+      },
+      {
+        "id": "es-sent-0094",
+        "sentence": "Mi hermana estudia derecho.",
+        "word_ids": [
+          "es-wd-0043"
+        ]
+      },
+      {
+        "id": "es-sent-0095",
+        "sentence": "La hermana de mi esposo llega mañana.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0043",
+          "es-wd-0050"
+        ]
+      },
+      {
+        "id": "es-sent-0096",
+        "sentence": "Mi hermana y yo somos muy unidas.",
+        "word_ids": [
+          "es-wd-0043"
+        ]
+      },
+      {
+        "id": "es-sent-0097",
+        "sentence": "Mi abuelo cuenta historias increíbles.",
+        "word_ids": [
+          "es-wd-0044"
+        ]
+      },
+      {
+        "id": "es-sent-0098",
+        "sentence": "El abuelo de Sofía fue piloto.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0044"
+        ]
+      },
+      {
+        "id": "es-sent-0099",
+        "sentence": "Mi abuelo y mi abuela bailan todos los sábados.",
+        "word_ids": [
+          "es-wd-0044",
+          "es-wd-0045",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0100",
+        "sentence": "Mi abuela hace el mejor pastel de chocolate.",
+        "word_ids": [
+          "es-wd-0045",
+          "es-wd-0057"
+        ]
+      },
+      {
+        "id": "es-sent-0101",
+        "sentence": "La abuela de Marta vive en una granja.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0045"
+        ]
+      },
+      {
+        "id": "es-sent-0102",
+        "sentence": "Mi abuela y mi tía cocinan juntas los domingos.",
+        "word_ids": [
+          "es-wd-0045",
+          "es-wd-0047"
+        ]
+      },
+      {
+        "id": "es-sent-0103",
+        "sentence": "Mi tío llegó tarde a la fiesta.",
+        "word_ids": [
+          "es-wd-0046",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0104",
+        "sentence": "El tío de Pedro tiene una tienda.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0046"
+        ]
+      },
+      {
+        "id": "es-sent-0105",
+        "sentence": "Mi tío y mi tía viven en la misma calle.",
+        "word_ids": [
+          "es-wd-0046",
+          "es-wd-0047",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0106",
+        "sentence": "Mi tía trabaja en un banco.",
+        "word_ids": [
+          "es-wd-0047"
+        ]
+      },
+      {
+        "id": "es-sent-0107",
+        "sentence": "La tía de Laura es muy simpática.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0047"
+        ]
+      },
+      {
+        "id": "es-sent-0108",
+        "sentence": "Mi tía y su esposo viven cerca de mi casa.",
+        "word_ids": [
+          "es-wd-0047",
+          "es-wd-0052",
+          "es-wd-0050"
+        ]
+      },
+      {
+        "id": "es-sent-0109",
+        "sentence": "Mi primo juega videojuegos todo el día.",
+        "word_ids": [
+          "es-wd-0048",
+          "es-wd-0057"
+        ]
+      },
+      {
+        "id": "es-sent-0110",
+        "sentence": "El primo de Diego vive en Madrid.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0048"
+        ]
+      },
+      {
+        "id": "es-sent-0111",
+        "sentence": "Mi primo y mi prima vienen a visitarnos.",
+        "word_ids": [
+          "es-wd-0048",
+          "es-wd-0049"
+        ]
+      },
+      {
+        "id": "es-sent-0112",
+        "sentence": "Mi prima estudia arquitectura.",
+        "word_ids": [
+          "es-wd-0049"
+        ]
+      },
+      {
+        "id": "es-sent-0113",
+        "sentence": "La prima de Sofía vive en Argentina.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0049"
+        ]
+      },
+      {
+        "id": "es-sent-0114",
+        "sentence": "Mi prima y yo somos muy parecidas.",
+        "word_ids": [
+          "es-wd-0049"
+        ]
+      },
+      {
+        "id": "es-sent-0115",
+        "sentence": "Su esposo trabaja en un banco.",
+        "word_ids": [
+          "es-wd-0052",
+          "es-wd-0050"
+        ]
+      },
+      {
+        "id": "es-sent-0116",
+        "sentence": "El esposo de mi hermana es ingeniero.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0050",
+          "es-wd-0043"
+        ]
+      },
+      {
+        "id": "es-sent-0117",
+        "sentence": "Nuestro esposo llegó temprano hoy.",
+        "word_ids": [
+          "es-wd-0055",
+          "es-wd-0050"
+        ]
+      },
+      {
+        "id": "es-sent-0118",
+        "sentence": "Su esposa es profesora de matemáticas.",
+        "word_ids": [
+          "es-wd-0052",
+          "es-wd-0051"
+        ]
+      },
+      {
+        "id": "es-sent-0119",
+        "sentence": "La esposa de mi tío es doctora.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0051",
+          "es-wd-0046"
+        ]
+      },
+      {
+        "id": "es-sent-0120",
+        "sentence": "Nuestra esposa organizó toda la fiesta.",
+        "word_ids": [
+          "es-wd-0056",
+          "es-wd-0051",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0121",
+        "sentence": "Su nombre es Carlos.",
+        "word_ids": [
+          "es-wd-0052"
+        ]
+      },
+      {
+        "id": "es-sent-0122",
+        "sentence": "Ella vive con su familia en Sevilla.",
+        "word_ids": [
+          "es-wd-0061",
+          "es-wd-0052",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0123",
+        "sentence": "Él siempre ayuda a su hermano.",
+        "word_ids": [
+          "es-wd-0052",
+          "es-wd-0042"
+        ]
+      },
+      {
+        "id": "es-sent-0124",
+        "sentence": "Nosotros somos una familia muy unida.",
+        "word_ids": [
+          "es-wd-0053",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0125",
+        "sentence": "Nosotros vivimos con nuestros abuelos.",
+        "word_ids": [
+          "es-wd-0053",
+          "es-wd-0061"
+        ]
+      },
+      {
+        "id": "es-sent-0126",
+        "sentence": "Nosotros viajamos juntos todos los veranos.",
+        "word_ids": [
+          "es-wd-0053",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0127",
+        "sentence": "Nosotras somos hermanas.",
+        "word_ids": [
+          "es-wd-0054"
+        ]
+      },
+      {
+        "id": "es-sent-0128",
+        "sentence": "Nosotras cocinamos juntas los domingos.",
+        "word_ids": [
+          "es-wd-0054"
+        ]
+      },
+      {
+        "id": "es-sent-0129",
+        "sentence": "Nosotras, mi madre y yo, viajamos solas.",
+        "word_ids": [
+          "es-wd-0054",
+          "es-wd-0039"
+        ]
+      },
+      {
+        "id": "es-sent-0130",
+        "sentence": "Nuestro padre es muy paciente.",
+        "word_ids": [
+          "es-wd-0055",
+          "es-wd-0038"
+        ]
+      },
+      {
+        "id": "es-sent-0131",
+        "sentence": "Este es nuestro hijo mayor.",
+        "word_ids": [
+          "es-wd-0055",
+          "es-wd-0040"
+        ]
+      },
+      {
+        "id": "es-sent-0132",
+        "sentence": "Nuestro abuelo vivió cien años.",
+        "word_ids": [
+          "es-wd-0055",
+          "es-wd-0044"
+        ]
+      },
+      {
+        "id": "es-sent-0133",
+        "sentence": "Nuestra madre siempre nos apoya.",
+        "word_ids": [
+          "es-wd-0056",
+          "es-wd-0039"
+        ]
+      },
+      {
+        "id": "es-sent-0134",
+        "sentence": "Esta es nuestra casa nueva.",
+        "word_ids": [
+          "es-wd-0056"
+        ]
+      },
+      {
+        "id": "es-sent-0135",
+        "sentence": "Nuestra familia se reúne cada Navidad.",
+        "word_ids": [
+          "es-wd-0056",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0136",
+        "sentence": "El padre llega tarde hoy.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0038"
+        ]
+      },
+      {
+        "id": "es-sent-0137",
+        "sentence": "El hermano mayor cuida a los pequeños.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0042"
+        ]
+      },
+      {
+        "id": "es-sent-0138",
+        "sentence": "El abuelo cuenta la misma historia siempre.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0044",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0139",
+        "sentence": "La madre llega temprano hoy.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0039"
+        ]
+      },
+      {
+        "id": "es-sent-0140",
+        "sentence": "La familia entera fue a la boda.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0037",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0141",
+        "sentence": "La abuela prepara la cena los domingos.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0045",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0142",
+        "sentence": "Todos mis primos vienen a la fiesta.",
+        "word_ids": [
+          "es-wd-0059",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0143",
+        "sentence": "Todos estuvieron de acuerdo con el plan.",
+        "word_ids": [
+          "es-wd-0059",
+          "es-wd-0061",
+          "es-wd-0057"
+        ]
+      },
+      {
+        "id": "es-sent-0144",
+        "sentence": "Es difícil imaginar una fiesta sin todos reunidos.",
+        "word_ids": [
+          "es-wd-0062",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0145",
+        "sentence": "Todas mis primas vienen a la fiesta.",
+        "word_ids": [
+          "es-wd-0060",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0146",
+        "sentence": "Todas las tías trajeron un plato diferente.",
+        "word_ids": [
+          "es-wd-0060"
+        ]
+      },
+      {
+        "id": "es-sent-0147",
+        "sentence": "Todas estuvieron de acuerdo con la decisión.",
+        "word_ids": [
+          "es-wd-0060",
+          "es-wd-0061",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0148",
+        "sentence": "Vivo con mi familia.",
+        "word_ids": [
+          "es-wd-0061",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0149",
+        "sentence": "Ella viajó con su esposo a España.",
+        "word_ids": [
+          "es-wd-0061",
+          "es-wd-0052",
+          "es-wd-0050"
+        ]
+      },
+      {
+        "id": "es-sent-0150",
+        "sentence": "Fuimos al parque con nuestro hijo.",
+        "word_ids": [
+          "es-wd-0061",
+          "es-wd-0055",
+          "es-wd-0040"
+        ]
+      },
+      {
+        "id": "es-sent-0151",
+        "sentence": "No puede vivir sin su familia.",
+        "word_ids": [
+          "es-wd-0062",
+          "es-wd-0052",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0152",
+        "sentence": "Llegó sin su hermano esta vez.",
+        "word_ids": [
+          "es-wd-0062",
+          "es-wd-0052",
+          "es-wd-0042"
+        ]
+      },
+      {
+        "id": "es-sent-0153",
+        "sentence": "Es imposible imaginar la Navidad sin la abuela.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0062",
+          "es-wd-0058",
+          "es-wd-0045"
+        ]
+      }
+    ]
+  }
+}

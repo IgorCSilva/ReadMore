@@ -20,6 +20,7 @@ from backend.app.application.use_cases.add_correction import AddCorrection
 from backend.app.application.use_cases.get_chapters import GetChapters
 from backend.app.application.use_cases.get_user_words import GetUserWords
 from backend.app.application.use_cases.get_words import GetWords
+from backend.app.application.use_cases.get_reinforcement_words import GetReinforcementWords
 from backend.app.application.use_cases.increment_shown_count import IncrementShownCount
 from backend.app.application.use_cases.list_languages import ListLanguages
 from backend.app.application.use_cases.mark_word_known import MarkWordKnown
@@ -268,6 +269,18 @@ def get_chapters_route(
     return ChaptersResponse(
         lang=str(language_pair), chapters=[ChapterDTO.from_entity(c) for c in chapters]
     )
+
+
+@app.get("/reinforcement-words", response_model=dict[str, list[str]])
+def get_reinforcement_words_route(
+    lang: str = "pt-en",
+    chapter: int = 1,
+    topic: int = 1,
+    catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
+):
+    language_pair = _parse_lang(lang.strip() or "pt-en")
+    use_case = GetReinforcementWords(catalog_repository)
+    return use_case.execute(language_pair, chapter, topic)
 
 
 @app.post("/corrections")

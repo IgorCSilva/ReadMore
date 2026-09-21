@@ -214,5 +214,161 @@
     "root_word_id": "wd-0024",
     "word": "no",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0037",
+    "root_word_id": "wd-0084",
+    "word": "familia",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0038",
+    "root_word_id": "wd-0086",
+    "word": "padre",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0039",
+    "root_word_id": "wd-0085",
+    "word": "madre",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0040",
+    "root_word_id": "wd-0093",
+    "word": "hijo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0041",
+    "root_word_id": "wd-0094",
+    "word": "hija",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0042",
+    "root_word_id": "wd-0089",
+    "word": "hermano",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0043",
+    "root_word_id": "wd-0088",
+    "word": "hermana",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0044",
+    "root_word_id": "wd-0091",
+    "word": "abuelo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0045",
+    "root_word_id": "wd-0090",
+    "word": "abuela",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0046",
+    "root_word_id": "wd-0100",
+    "word": "tío",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0047",
+    "root_word_id": "wd-0099",
+    "word": "tía",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0048",
+    "root_word_id": "wd-0101",
+    "word": "primo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0049",
+    "root_word_id": "wd-0271",
+    "word": "prima",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0050",
+    "root_word_id": "wd-0096",
+    "word": "esposo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0051",
+    "root_word_id": "wd-0097",
+    "word": "esposa",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0052",
+    "root_word_id": "wd-0272",
+    "word": "su",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0053",
+    "root_word_id": "wd-0019",
+    "word": "nosotros",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0054",
+    "root_word_id": "wd-0273",
+    "word": "nosotras",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0055",
+    "root_word_id": "wd-0274",
+    "word": "nuestro",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0056",
+    "root_word_id": "wd-0275",
+    "word": "nuestra",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0057",
+    "root_word_id": "wd-0027",
+    "word": "el",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0058",
+    "root_word_id": "wd-0276",
+    "word": "la",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0059",
+    "root_word_id": "wd-0277",
+    "word": "todos",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0060",
+    "root_word_id": "wd-0278",
+    "word": "todas",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0061",
+    "root_word_id": "wd-0227",
+    "word": "con",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0062",
+    "root_word_id": "wd-0279",
+    "word": "sin",
+    "gender_id": "not_apply"
   }
 ]

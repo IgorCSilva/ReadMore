@@ -21,6 +21,7 @@ def _repository(
     sentences: dict[str, str] | None = None,
     cues: dict[str, str] | None = None,
     word_maps: dict[str, list[dict]] | None = None,
+    phrases: dict[str, dict] | None = None,
 ) -> JsonCatalogRepository:
     words_dir = tmp_path / "words"
     words_dir.mkdir()
@@ -33,6 +34,8 @@ def _repository(
     cues_path = _write_json(words_dir / "cues.json", cues or {})
     for target_code, rows in (word_maps or {}).items():
         _write_json(words_dir / f"{target_code}_words.json", rows)
+    for target_code, data in (phrases or {}).items():
+        _write_json(content_dir / f"{target_code}_sentences.json", data)
     return JsonCatalogRepository(catalog_path, content_dir, sentences_path, cues_path)
 
 
@@ -301,3 +304,82 @@ def test_get_chapters_raises_for_unknown_language(tmp_path):
 
     with pytest.raises(LanguageNotFoundError):
         repository.get_chapters(LanguagePair(origin="xx", target="yy"))
+
+
+def _content_with_one_topic(chapter_number=1, topic_number=1, word_ids=None):
+    return {
+        "pt-en": {
+            "chapters": [
+                {
+                    "chapter_id": "ch-01",
+                    "number": chapter_number,
+                    "title": "T",
+                    "description": "D",
+                    "topics": [
+                        {
+                            "topic_id": "top-01",
+                            "number": topic_number,
+                            "title": "T",
+                            "description": "D",
+                            "word_ids": word_ids or [],
+                        }
+                    ],
+                }
+            ]
+        }
+    }
+
+
+def test_get_chapters_maps_phrases_and_resolves_their_word_ids(tmp_path):
+    repository = _repository(
+        tmp_path,
+        content=_content_with_one_topic(),
+        word_maps={"en": [{"word_id": "en-wd-0001", "root_word_id": "wd-0001", "word": "hello"}]},
+        phrases={
+            "en": {
+                "chapter_1": {
+                    "topic_1": [
+                        {"id": "en-sent-0001", "sentence": "Hello there.", "word_ids": ["en-wd-0001"]},
+                    ]
+                }
+            }
+        },
+    )
+
+    topic = repository.get_chapters(PT_EN)[0].topics[0]
+
+    assert len(topic.phrases) == 1
+    phrase = topic.phrases[0]
+    assert phrase.id == "en-sent-0001"
+    assert phrase.sentence == "Hello there."
+    assert phrase.word_ids == ["wd-0001"]
+
+
+def test_get_chapters_defaults_to_no_phrases_when_file_is_missing(tmp_path):
+    repository = _repository(tmp_path, content=_content_with_one_topic())
+
+    topic = repository.get_chapters(PT_EN)[0].topics[0]
+
+    assert topic.phrases == []
+
+
+def test_get_chapters_only_attaches_phrases_for_the_matching_chapter_and_topic(tmp_path):
+    repository = _repository(
+        tmp_path,
+        content=_content_with_one_topic(chapter_number=1, topic_number=2),
+        phrases={
+            "en": {
+                "chapter_1": {
+                    "topic_1": [{"id": "en-sent-0001", "sentence": "Wrong topic.", "word_ids": []}],
+                    "topic_2": [{"id": "en-sent-0002", "sentence": "Right topic.", "word_ids": []}],
+                },
+                "chapter_2": {
+                    "topic_1": [{"id": "en-sent-0003", "sentence": "Wrong chapter.", "word_ids": []}],
+                },
+            }
+        },
+    )
+
+    topic = repository.get_chapters(PT_EN)[0].topics[0]
+
+    assert [p.sentence for p in topic.phrases] == ["Right topic."]
