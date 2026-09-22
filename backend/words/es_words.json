@@ -646,5 +646,137 @@
     "root_word_id": "wd-0318",
     "word": "hacer",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0109",
+    "root_word_id": "wd-0319",
+    "word": "comida",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0110",
+    "root_word_id": "wd-0320",
+    "word": "bebida",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0111",
+    "root_word_id": "wd-0171",
+    "word": "agua",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0112",
+    "root_word_id": "wd-0172",
+    "word": "café",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0113",
+    "root_word_id": "wd-0180",
+    "word": "leche",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0114",
+    "root_word_id": "wd-0174",
+    "word": "pan",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0115",
+    "root_word_id": "wd-0175",
+    "word": "arroz",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0116",
+    "root_word_id": "wd-0321",
+    "word": "frijol",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0117",
+    "root_word_id": "wd-0176",
+    "word": "carne",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0118",
+    "root_word_id": "wd-0178",
+    "word": "huevo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0119",
+    "root_word_id": "wd-0181",
+    "word": "fruta",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0120",
+    "root_word_id": "wd-0242",
+    "word": "manzana",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0121",
+    "root_word_id": "wd-0182",
+    "word": "verdura",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0122",
+    "root_word_id": "wd-0054",
+    "word": "gustar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0123",
+    "root_word_id": "wd-0223",
+    "word": "comer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0124",
+    "root_word_id": "wd-0322",
+    "word": "beber",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0125",
+    "root_word_id": "wd-0055",
+    "word": "quiero",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0126",
+    "root_word_id": "wd-0323",
+    "word": "nada",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0127",
+    "root_word_id": "wd-0254",
+    "word": "mucho",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0128",
+    "root_word_id": "wd-0256",
+    "word": "poco",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0129",
+    "root_word_id": "wd-0324",
+    "word": "más",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0130",
+    "root_word_id": "wd-0325",
+    "word": "menos",
+    "gender_id": "not_apply"
   }
 ]

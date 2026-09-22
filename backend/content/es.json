@@ -105,6 +105,30 @@
       "tener",
       "hacer",
       "me"
+    ],
+    "topic_5": [
+      "comida",
+      "bebida",
+      "agua",
+      "café",
+      "leche",
+      "pan",
+      "arroz",
+      "frijol",
+      "carne",
+      "huevo",
+      "fruta",
+      "manzana",
+      "verdura",
+      "gustar",
+      "comer",
+      "beber",
+      "quiero",
+      "nada",
+      "mucho",
+      "poco",
+      "más",
+      "menos"
     ]
   }
 }
