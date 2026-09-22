@@ -2140,7 +2140,7 @@
       },
       {
         "id": "es-sent-0244",
-        "sentence": "Me gusta tomar café por la mañana.",
+        "sentence": "Me gusta desayunar por la mañana.",
         "word_ids": [
           "es-wd-0019",
           "es-wd-0093",
@@ -2149,7 +2149,7 @@
       },
       {
         "id": "es-sent-0245",
-        "sentence": "Voy a tomar café antes de salir.",
+        "sentence": "Voy a desayunar antes de salir.",
         "word_ids": [
           "es-wd-0093",
           "es-wd-0023",
@@ -2158,7 +2158,7 @@
       },
       {
         "id": "es-sent-0246",
-        "sentence": "Tomar café es parte de mi rutina.",
+        "sentence": "Desayunar es parte de mi rutina.",
         "word_ids": [
           "es-wd-0093",
           "es-wd-0017",
