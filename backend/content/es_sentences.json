@@ -2140,7 +2140,7 @@
       },
       {
         "id": "es-sent-0244",
-        "sentence": "Me gusta tomar café por la mañana.",
+        "sentence": "Me gusta desayunar por la mañana.",
         "word_ids": [
           "es-wd-0019",
           "es-wd-0093",
@@ -2149,7 +2149,7 @@
       },
       {
         "id": "es-sent-0245",
-        "sentence": "Voy a tomar café antes de salir.",
+        "sentence": "Voy a desayunar antes de salir.",
         "word_ids": [
           "es-wd-0093",
           "es-wd-0023",
@@ -2158,7 +2158,7 @@
       },
       {
         "id": "es-sent-0246",
-        "sentence": "Tomar café es parte de mi rutina.",
+        "sentence": "Desayunar es parte de mi rutina.",
         "word_ids": [
           "es-wd-0093",
           "es-wd-0017",
@@ -2579,6 +2579,573 @@
           "es-wd-0023",
           "es-wd-0103",
           "es-wd-0011"
+        ]
+      }
+    ],
+    "topic_5": [
+      {
+        "id": "es-sent-0295",
+        "sentence": "Me gusta la comida de mi casa.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0058",
+          "es-wd-0109",
+          "es-wd-0023",
+          "es-wd-0016",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0296",
+        "sentence": "La comida está lista.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0109"
+        ]
+      },
+      {
+        "id": "es-sent-0297",
+        "sentence": "Necesito comprar comida para la semana.",
+        "word_ids": [
+          "es-wd-0109",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0298",
+        "sentence": "Quiero una bebida fría.",
+        "word_ids": [
+          "es-wd-0125",
+          "es-wd-0077",
+          "es-wd-0110"
+        ]
+      },
+      {
+        "id": "es-sent-0299",
+        "sentence": "Esta bebida es muy dulce.",
+        "word_ids": [
+          "es-wd-0110",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0300",
+        "sentence": "Prefiero una bebida sin azúcar.",
+        "word_ids": [
+          "es-wd-0077",
+          "es-wd-0110",
+          "es-wd-0062"
+        ]
+      },
+      {
+        "id": "es-sent-0301",
+        "sentence": "Bebo agua todos los días.",
+        "word_ids": [
+          "es-wd-0111",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0302",
+        "sentence": "El agua está fría.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0111"
+        ]
+      },
+      {
+        "id": "es-sent-0303",
+        "sentence": "Necesito un vaso de agua.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0023",
+          "es-wd-0111"
+        ]
+      },
+      {
+        "id": "es-sent-0304",
+        "sentence": "Me gusta el café por la mañana.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0057",
+          "es-wd-0112",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0305",
+        "sentence": "Tomo café con leche.",
+        "word_ids": [
+          "es-wd-0112",
+          "es-wd-0061",
+          "es-wd-0113"
+        ]
+      },
+      {
+        "id": "es-sent-0306",
+        "sentence": "Este café está muy caliente.",
+        "word_ids": [
+          "es-wd-0112"
+        ]
+      },
+      {
+        "id": "es-sent-0307",
+        "sentence": "Me gusta la leche fría.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0058",
+          "es-wd-0113"
+        ]
+      },
+      {
+        "id": "es-sent-0308",
+        "sentence": "Bebo leche en el desayuno.",
+        "word_ids": [
+          "es-wd-0113",
+          "es-wd-0083"
+        ]
+      },
+      {
+        "id": "es-sent-0309",
+        "sentence": "Esta leche está muy buena.",
+        "word_ids": [
+          "es-wd-0113",
+          "es-wd-0034"
+        ]
+      },
+      {
+        "id": "es-sent-0310",
+        "sentence": "Como pan por la mañana.",
+        "word_ids": [
+          "es-wd-0114",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0311",
+        "sentence": "El pan está fresco.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0114"
+        ]
+      },
+      {
+        "id": "es-sent-0312",
+        "sentence": "Me gusta el pan con mantequilla.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0057",
+          "es-wd-0114",
+          "es-wd-0061"
+        ]
+      },
+      {
+        "id": "es-sent-0313",
+        "sentence": "Como arroz todos los días.",
+        "word_ids": [
+          "es-wd-0115",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0314",
+        "sentence": "El arroz está delicioso.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0115"
+        ]
+      },
+      {
+        "id": "es-sent-0315",
+        "sentence": "Me gusta el arroz con pollo.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0057",
+          "es-wd-0115",
+          "es-wd-0061"
+        ]
+      },
+      {
+        "id": "es-sent-0316",
+        "sentence": "Como frijol con arroz.",
+        "word_ids": [
+          "es-wd-0116",
+          "es-wd-0061",
+          "es-wd-0115"
+        ]
+      },
+      {
+        "id": "es-sent-0317",
+        "sentence": "El frijol es muy nutritivo.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0116",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0318",
+        "sentence": "Me gusta el frijol negro.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0057",
+          "es-wd-0116"
+        ]
+      },
+      {
+        "id": "es-sent-0319",
+        "sentence": "Me gusta la carne asada.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0058",
+          "es-wd-0117"
+        ]
+      },
+      {
+        "id": "es-sent-0320",
+        "sentence": "Como carne los domingos.",
+        "word_ids": [
+          "es-wd-0117"
+        ]
+      },
+      {
+        "id": "es-sent-0321",
+        "sentence": "Esta carne está muy rica.",
+        "word_ids": [
+          "es-wd-0117"
+        ]
+      },
+      {
+        "id": "es-sent-0322",
+        "sentence": "Como un huevo en el desayuno.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0118",
+          "es-wd-0083"
+        ]
+      },
+      {
+        "id": "es-sent-0323",
+        "sentence": "El huevo está cocido.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0118"
+        ]
+      },
+      {
+        "id": "es-sent-0324",
+        "sentence": "Me gusta el huevo frito.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0057",
+          "es-wd-0118"
+        ]
+      },
+      {
+        "id": "es-sent-0325",
+        "sentence": "Me gusta comer fruta fresca.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0123",
+          "es-wd-0119"
+        ]
+      },
+      {
+        "id": "es-sent-0326",
+        "sentence": "Esta fruta está muy dulce.",
+        "word_ids": [
+          "es-wd-0119"
+        ]
+      },
+      {
+        "id": "es-sent-0327",
+        "sentence": "Como fruta todos los días.",
+        "word_ids": [
+          "es-wd-0119",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0328",
+        "sentence": "Me gusta la manzana roja.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0058",
+          "es-wd-0120"
+        ]
+      },
+      {
+        "id": "es-sent-0329",
+        "sentence": "Como una manzana en la mañana.",
+        "word_ids": [
+          "es-wd-0077",
+          "es-wd-0120",
+          "es-wd-0082"
+        ]
+      },
+      {
+        "id": "es-sent-0330",
+        "sentence": "Esta manzana está muy dulce.",
+        "word_ids": [
+          "es-wd-0120"
+        ]
+      },
+      {
+        "id": "es-sent-0331",
+        "sentence": "Necesito comer más verdura.",
+        "word_ids": [
+          "es-wd-0123",
+          "es-wd-0129",
+          "es-wd-0121"
+        ]
+      },
+      {
+        "id": "es-sent-0332",
+        "sentence": "La verdura es buena para la salud.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0121",
+          "es-wd-0017",
+          "es-wd-0034",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0333",
+        "sentence": "Me gusta la verdura fresca.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0058",
+          "es-wd-0121"
+        ]
+      },
+      {
+        "id": "es-sent-0334",
+        "sentence": "Es normal gustar de comida nueva.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0122",
+          "es-wd-0023",
+          "es-wd-0109"
+        ]
+      },
+      {
+        "id": "es-sent-0335",
+        "sentence": "Gustar de la música es común.",
+        "word_ids": [
+          "es-wd-0122",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0336",
+        "sentence": "Voy a gustar de este plato.",
+        "word_ids": [
+          "es-wd-0122",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0337",
+        "sentence": "Me gusta comer temprano.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0123"
+        ]
+      },
+      {
+        "id": "es-sent-0338",
+        "sentence": "Voy a comer ahora.",
+        "word_ids": [
+          "es-wd-0123"
+        ]
+      },
+      {
+        "id": "es-sent-0339",
+        "sentence": "Es importante comer bien.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0123",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0340",
+        "sentence": "Me gusta beber agua fría.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0124",
+          "es-wd-0111"
+        ]
+      },
+      {
+        "id": "es-sent-0341",
+        "sentence": "Voy a beber algo caliente.",
+        "word_ids": [
+          "es-wd-0124"
+        ]
+      },
+      {
+        "id": "es-sent-0342",
+        "sentence": "Es importante beber suficiente agua.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0124",
+          "es-wd-0111"
+        ]
+      },
+      {
+        "id": "es-sent-0343",
+        "sentence": "Quiero comer ahora.",
+        "word_ids": [
+          "es-wd-0125",
+          "es-wd-0123"
+        ]
+      },
+      {
+        "id": "es-sent-0344",
+        "sentence": "Quiero un vaso de agua.",
+        "word_ids": [
+          "es-wd-0125",
+          "es-wd-0076",
+          "es-wd-0023",
+          "es-wd-0111"
+        ]
+      },
+      {
+        "id": "es-sent-0345",
+        "sentence": "No quiero más comida.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0125",
+          "es-wd-0129",
+          "es-wd-0109"
+        ]
+      },
+      {
+        "id": "es-sent-0346",
+        "sentence": "No quiero nada más.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0125",
+          "es-wd-0126",
+          "es-wd-0129"
+        ]
+      },
+      {
+        "id": "es-sent-0347",
+        "sentence": "No hay nada en la mesa.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0081",
+          "es-wd-0126",
+          "es-wd-0082",
+          "es-wd-0070"
+        ]
+      },
+      {
+        "id": "es-sent-0348",
+        "sentence": "Nada está listo todavía.",
+        "word_ids": [
+          "es-wd-0126"
+        ]
+      },
+      {
+        "id": "es-sent-0349",
+        "sentence": "Como mucho arroz.",
+        "word_ids": [
+          "es-wd-0127",
+          "es-wd-0115"
+        ]
+      },
+      {
+        "id": "es-sent-0350",
+        "sentence": "Bebo mucho café.",
+        "word_ids": [
+          "es-wd-0127",
+          "es-wd-0112"
+        ]
+      },
+      {
+        "id": "es-sent-0351",
+        "sentence": "Trabajo mucho todos los días.",
+        "word_ids": [
+          "es-wd-0127",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0352",
+        "sentence": "Como poco pan.",
+        "word_ids": [
+          "es-wd-0128",
+          "es-wd-0114"
+        ]
+      },
+      {
+        "id": "es-sent-0353",
+        "sentence": "Bebo poco café.",
+        "word_ids": [
+          "es-wd-0128",
+          "es-wd-0112"
+        ]
+      },
+      {
+        "id": "es-sent-0354",
+        "sentence": "Duermo poco los fines de semana.",
+        "word_ids": [
+          "es-wd-0128",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0355",
+        "sentence": "Quiero más agua.",
+        "word_ids": [
+          "es-wd-0125",
+          "es-wd-0129",
+          "es-wd-0111"
+        ]
+      },
+      {
+        "id": "es-sent-0356",
+        "sentence": "Necesito más tiempo.",
+        "word_ids": [
+          "es-wd-0129"
+        ]
+      },
+      {
+        "id": "es-sent-0357",
+        "sentence": "Ella come más que yo.",
+        "word_ids": [
+          "es-wd-0129",
+          "es-wd-0018"
+        ]
+      },
+      {
+        "id": "es-sent-0358",
+        "sentence": "Quiero menos arroz.",
+        "word_ids": [
+          "es-wd-0125",
+          "es-wd-0130",
+          "es-wd-0115"
+        ]
+      },
+      {
+        "id": "es-sent-0359",
+        "sentence": "Como menos carne ahora.",
+        "word_ids": [
+          "es-wd-0130",
+          "es-wd-0117"
+        ]
+      },
+      {
+        "id": "es-sent-0360",
+        "sentence": "Tengo menos tiempo hoy.",
+        "word_ids": [
+          "es-wd-0130"
         ]
       }
     ]

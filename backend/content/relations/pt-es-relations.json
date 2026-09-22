@@ -100,7 +100,8 @@
         "tomar banho": "ducharse",
         "escovar os dentes": "cepillarse los dientes",
         "vestir": "vestirse",
-        "tomar café": "tomar café",
+        "tomar café": "desayunar",
+        "tomar café da manhã": "desayunar",
         "sair": "salir",
         "ir": "ir",
         "chegar": "llegar",
@@ -116,6 +117,32 @@
         "depois": "después",
         "ter": "tener",
         "fazer": "hacer"
+      }
+    },
+    "topic_5": {
+      "pt": {
+        "comida": "comida",
+        "bebida": "bebida",
+        "água": "agua",
+        "café": "café",
+        "leite": "leche",
+        "pão": "pan",
+        "arroz": "arroz",
+        "feijão": "frijol",
+        "carne": "carne",
+        "ovo": "huevo",
+        "fruta": "fruta",
+        "maçã": "manzana",
+        "verdura": "verdura",
+        "gostar": "gustar",
+        "comer": "comer",
+        "beber": "beber",
+        "quero": "quiero",
+        "nada": "nada",
+        "muito": "mucho",
+        "pouco": "poco",
+        "mais": "más",
+        "menos": "menos"
       }
     }
   },

@@ -36,4 +36,4 @@ Then run the backend/scripts/shuffle_sentences.py script to shuffle sentences:
 
 
 4. Now, generate simple natural sentences, following the pattern in backend/content/es_sentences.json.
-For each word in the chapter 1 topic 3 create 3 natural sentences.
+For each word in the chapter 1 topic 4, create 3 natural sentences.
