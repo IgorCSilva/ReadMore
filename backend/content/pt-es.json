@@ -1755,6 +1755,441 @@
             }
           ],
           "status": "ready"
+        },
+        {
+          "topic_id": "top-A0-EL-5",
+          "number": 5,
+          "title": "Comida e Refeições",
+          "description": "Vocabulário básico de comida e bebida, incluindo simples expressões de gostar/não gostar com o verbo \"gustar\" — que usa uma construção reflexiva inversa em espanhol (\"me gusta\"), diferente do português (\"eu gosto de\"). Atividade de desenvolvimento: leitura de uma breve nota sobre o que alguém come.",
+          "status": "in_development",
+          "word_ids": [
+            "es-wd-0109",
+            "es-wd-0110",
+            "es-wd-0111",
+            "es-wd-0112",
+            "es-wd-0113",
+            "es-wd-0114",
+            "es-wd-0115",
+            "es-wd-0116",
+            "es-wd-0117",
+            "es-wd-0118",
+            "es-wd-0119",
+            "es-wd-0120",
+            "es-wd-0121",
+            "es-wd-0122",
+            "es-wd-0123",
+            "es-wd-0124",
+            "es-wd-0125",
+            "es-wd-0126",
+            "es-wd-0127",
+            "es-wd-0128",
+            "es-wd-0129",
+            "es-wd-0130"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "**El** **pan** **de** **la** panificadora **es** fresco."
+            },
+            {
+              "sentence_number": 2,
+              "content": "**Mi** **abuela** espera que **todos** vão **gustar** **de** **la** **comida**."
+            },
+            {
+              "sentence_number": 3,
+              "content": "**Yo** **quiero** **menos** **arroz**, por favor."
+            },
+            {
+              "sentence_number": 4,
+              "content": "**Mi** **hermana** prefere **beber** **agua** **con** limão."
+            },
+            {
+              "sentence_number": 5,
+              "content": "Ele quer **un** **café** **después** **de** **almorzar**."
+            },
+            {
+              "sentence_number": 6,
+              "content": "**Mi** **hermano** também vai **gustar** **de** **comer** **pan** **con** **manzana**."
+            },
+            {
+              "sentence_number": 7,
+              "content": "**El** **café** **de** **mi** **padre** **es** forte."
+            },
+            {
+              "sentence_number": 8,
+              "content": "**Yo** **quiero** **más** **agua**, por favor."
+            },
+            {
+              "sentence_number": 9,
+              "content": "**No** **hay** **nada** **de** **agua** **en el** **refrigerador**."
+            },
+            {
+              "sentence_number": 10,
+              "content": "Ela quer **gustar** **de** **comer** **verdura**, mas ainda **no** consegue."
+            },
+            {
+              "sentence_number": 11,
+              "content": "Ela serviu **una** **bebida** fria para **todos** **en la** festa."
+            },
+            {
+              "sentence_number": 12,
+              "content": "Ele prefere **beber** **leche** fria."
+            },
+            {
+              "sentence_number": 13,
+              "content": "Comemos **menos** **manzana** este mês."
+            },
+            {
+              "sentence_number": 14,
+              "content": "**Mi** **padre** bebe **menos** **café** **después** **de** **almorzar**."
+            },
+            {
+              "sentence_number": 15,
+              "content": "**Yo** **quiero** **comer** **frijol** **con** **arroz**."
+            },
+            {
+              "sentence_number": 16,
+              "content": "**Nada** **de** **huevo** ficou **después** **de** **desayunar**."
+            },
+            {
+              "sentence_number": 17,
+              "content": "**Mi** **abuela** põe **menos** **frijol** **en la** **comida** agora."
+            },
+            {
+              "sentence_number": 18,
+              "content": "**La** **comida** **de** **mi** **abuela** **es** **buena**."
+            },
+            {
+              "sentence_number": 19,
+              "content": "**Mi** **padre** come **mucho** **huevo** **en la** semana."
+            },
+            {
+              "sentence_number": 20,
+              "content": "Eles dividiram **la** **comida** **con** **todos** os primos."
+            },
+            {
+              "sentence_number": 21,
+              "content": "**La** **leche** **de** **mi** **casa** **es** fresca."
+            },
+            {
+              "sentence_number": 22,
+              "content": "**Mi** **madre** compra **más** **leche** **todas** as semanas."
+            },
+            {
+              "sentence_number": 23,
+              "content": "**Mi** **hermana** **no** gosta **de** **comer** **carne**."
+            },
+            {
+              "sentence_number": 24,
+              "content": "**Mi** **madre** compra **carne** fresca **todas** as semanas."
+            },
+            {
+              "sentence_number": 25,
+              "content": "**Mi** **hermana** come **menos** **carne** agora."
+            },
+            {
+              "sentence_number": 26,
+              "content": "Sobrou **mucho** **arroz** **después** **de** **la** festa."
+            },
+            {
+              "sentence_number": 27,
+              "content": "Sobrou **poco** **de** **la** **comida** **después** **de** **la** festa."
+            },
+            {
+              "sentence_number": 28,
+              "content": "**Yo** **quiero** **comer** **una** **fruta** **después** **de** **almorzar**."
+            },
+            {
+              "sentence_number": 29,
+              "content": "Sobrou **poco** **arroz** **en la** panela."
+            },
+            {
+              "sentence_number": 30,
+              "content": "**Yo** **quiero** **beber** **leche** **con** **fruta**."
+            },
+            {
+              "sentence_number": 31,
+              "content": "**Mi** **madre** prepara **la** **comida** **en la** **cocina** **todos** os dias."
+            },
+            {
+              "sentence_number": 32,
+              "content": "**El** **huevo** **de** hoje **es** fresco."
+            },
+            {
+              "sentence_number": 33,
+              "content": "Sobrou **menos** **pan** hoje **en la** **mesa**."
+            },
+            {
+              "sentence_number": 34,
+              "content": "**Después** **de** **la** escola, **yo** **quiero** **comer** **una** **manzana**."
+            },
+            {
+              "sentence_number": 35,
+              "content": "**Mi** **madre** prepara **un** **huevo** **todas** as manhãs."
+            },
+            {
+              "sentence_number": 36,
+              "content": "Sobrou **poco** **pan** **en la** **mesa**."
+            },
+            {
+              "sentence_number": 37,
+              "content": "Ele bebeu **el** **agua** antes **de** **desayunar**."
+            },
+            {
+              "sentence_number": 38,
+              "content": "**Mi** **hijo** vai **gustar** **de** **la** **comida** nova."
+            },
+            {
+              "sentence_number": 39,
+              "content": "**Mi** **padre** compra **mucho** **pan** **todos** os dias."
+            },
+            {
+              "sentence_number": 40,
+              "content": "**Yo** **quiero** **comer** **pan** **con** queijo."
+            },
+            {
+              "sentence_number": 41,
+              "content": "**Nada** **de** **comida** sobrou **en el** prato **de** **mi** **hermano**."
+            },
+            {
+              "sentence_number": 42,
+              "content": "**La** **carne** **de** hoje **es** **buena**."
+            },
+            {
+              "sentence_number": 43,
+              "content": "Ele guardou **la** **comida** **en el** **refrigerador**."
+            },
+            {
+              "sentence_number": 44,
+              "content": "**Yo** **quiero** **comer** **más** **verdura** **con** **la** **comida**."
+            },
+            {
+              "sentence_number": 45,
+              "content": "Acho que **yo** vou **gustar** **de** **beber** **agua** **con** **fruta**."
+            },
+            {
+              "sentence_number": 46,
+              "content": "**Mi** **hermano** come **una** **manzana** **todos** os dias."
+            },
+            {
+              "sentence_number": 47,
+              "content": "**La** **manzana** **de** **mi** **abuela** **es** doce."
+            },
+            {
+              "sentence_number": 48,
+              "content": "**Mi** **hermano** prefere **el** **café** **sin** açúcar."
+            },
+            {
+              "sentence_number": 49,
+              "content": "**Mi** **abuela** faz **el** **pan** **en** **casa**."
+            },
+            {
+              "sentence_number": 50,
+              "content": "**Yo** **quiero** **beber** **una** **bebida** gelada hoje."
+            },
+            {
+              "sentence_number": 51,
+              "content": "Ele preparou **una** **bebida** **con** **fruta** para **la** **familia**."
+            },
+            {
+              "sentence_number": 52,
+              "content": "**Yo** **quiero** **más** **café**, por favor."
+            },
+            {
+              "sentence_number": 53,
+              "content": "**Mi** **madre** sempre serve **más** **carne** **en la** **comida**."
+            },
+            {
+              "sentence_number": 54,
+              "content": "**Mi** **abuelo** come **mucho** **en la** **comida** **de** domingo."
+            },
+            {
+              "sentence_number": 55,
+              "content": "**El** **agua** **de** **la** garrafa **es** fresca."
+            },
+            {
+              "sentence_number": 56,
+              "content": "**Yo** **quiero** **beber** **el** **agua** que fica **en la** **mesa**."
+            },
+            {
+              "sentence_number": 57,
+              "content": "**Mi** **padre** **no** gosta **de** **comer** **verdura**."
+            },
+            {
+              "sentence_number": 58,
+              "content": "**Yo** acho que vou **gustar** **de** **beber** **café** **con** **leche**."
+            },
+            {
+              "sentence_number": 59,
+              "content": "**Nada** **de** **fruta** sobrou **después** **de** **la** festa."
+            },
+            {
+              "sentence_number": 60,
+              "content": "**Mi** **hermana** bebe **poco** **de** **leche** **en la** manhã."
+            },
+            {
+              "sentence_number": 61,
+              "content": "Sobrou **poco** **café** **en la** garrafa térmica."
+            },
+            {
+              "sentence_number": 62,
+              "content": "Sobrou **poco** **de** **manzana** **en la** **mesa**."
+            },
+            {
+              "sentence_number": 63,
+              "content": "**Nada** **de** **carne** sobrou **en el** prato **de** **mi** **primo**."
+            },
+            {
+              "sentence_number": 64,
+              "content": "**Mi** **madre** prepara **arroz** **con** **frijol** **todos** os dias."
+            },
+            {
+              "sentence_number": 65,
+              "content": "Sobrou **poco** **huevo** para **la** **comida** **de** hoje."
+            },
+            {
+              "sentence_number": 66,
+              "content": "**Mi** **padre** prepara **frijol** **en la** **cocina** **todos** os domingos."
+            },
+            {
+              "sentence_number": 67,
+              "content": "**Mi** **hermano** comeu **mucho** **arroz** **en el** almoço."
+            },
+            {
+              "sentence_number": 68,
+              "content": "**Mi** **tío** adora **comer** **carne** **con** **arroz**."
+            },
+            {
+              "sentence_number": 69,
+              "content": "**Mi** **hermana** compra **fruta** fresca **todas** as semanas."
+            },
+            {
+              "sentence_number": 70,
+              "content": "Sobrou **poco** **frijol** **después** **de** **cenar**."
+            },
+            {
+              "sentence_number": 71,
+              "content": "**Nada** **de** **arroz** sobrou **después** **de** **la** festa."
+            },
+            {
+              "sentence_number": 72,
+              "content": "**Yo** **quiero** **un** **café** **con** **leche**."
+            },
+            {
+              "sentence_number": 73,
+              "content": "**Yo** prefiro **beber** **un** **poco** **de** **agua** **con** gás."
+            },
+            {
+              "sentence_number": 74,
+              "content": "**Nuestra** **familia** compra **la** **comida** junta **todas** as semanas."
+            },
+            {
+              "sentence_number": 75,
+              "content": "**No** **hay** **nada** **de** **leche** **en el** **refrigerador**."
+            },
+            {
+              "sentence_number": 76,
+              "content": "**Mi** **madre** compra **verdura** **todas** as semanas."
+            },
+            {
+              "sentence_number": 77,
+              "content": "**Nada** **de** **verdura** sobrou **después** **de** **cenar**."
+            },
+            {
+              "sentence_number": 78,
+              "content": "**La** **bebida** favorita **de** **mi** **padre** **es** **el** **café**."
+            },
+            {
+              "sentence_number": 79,
+              "content": "**Yo** **quiero** **comer** **arroz** **con** **carne**."
+            },
+            {
+              "sentence_number": 80,
+              "content": "**Todos** gostam **de** **comer** juntos **en la** **mesa** **de** **la** **cocina**."
+            },
+            {
+              "sentence_number": 81,
+              "content": "**Yo** **quiero** **comer** **la** **comida** **de** **mi** **madre**."
+            },
+            {
+              "sentence_number": 82,
+              "content": "**Mi** **prima** **tiene** **mucho** **arroz** **en** **casa**."
+            },
+            {
+              "sentence_number": 83,
+              "content": "Compramos **una** **bebida** nova para experimentar **en** **casa**."
+            },
+            {
+              "sentence_number": 84,
+              "content": "**Nada** **de** **pan** ficou **después** **de** **desayunar**."
+            },
+            {
+              "sentence_number": 85,
+              "content": "Ela cozinhou **una** **comida** especial **en el** aniversário **de** **su** **hijo**."
+            },
+            {
+              "sentence_number": 86,
+              "content": "**La** **fruta** **de** **mi** **casa** **es** doce."
+            },
+            {
+              "sentence_number": 87,
+              "content": "**Mi** **abuelo** bebe **mucho** **café** **en la** manhã."
+            },
+            {
+              "sentence_number": 88,
+              "content": "**Yo** **quiero** **comer** **un** **huevo** **con** **pan**."
+            },
+            {
+              "sentence_number": 89,
+              "content": "**No** sobrou **nada** **de** **bebida** **en la** **mesa**."
+            },
+            {
+              "sentence_number": 90,
+              "content": "**Mi** **madre** compra **más** **manzana** **todas** as semanas."
+            },
+            {
+              "sentence_number": 91,
+              "content": "**Yo** **quiero** **menos** **verdura** **en** **mi** prato."
+            },
+            {
+              "sentence_number": 92,
+              "content": "**Nada** **de** **manzana** ficou **en el** prato."
+            },
+            {
+              "sentence_number": 93,
+              "content": "**Yo** **quiero** **comer** **una** **manzana** **con** **fruta**."
+            },
+            {
+              "sentence_number": 94,
+              "content": "**El** **arroz** **de** **la** **comida** **es** delicioso."
+            },
+            {
+              "sentence_number": 95,
+              "content": "**Yo** **quiero** **comer** **carne** **con** **verdura**."
+            },
+            {
+              "sentence_number": 96,
+              "content": "**La** **verdura** **de** **la** **comida** **es** fresca."
+            },
+            {
+              "sentence_number": 97,
+              "content": "**El** **frijol** **de** **mi** **abuela** **es** **el** melhor."
+            },
+            {
+              "sentence_number": 98,
+              "content": "**Nuestra** **familia** **es** feliz quando **hay** **mucho** **pan** **en la** **mesa**."
+            },
+            {
+              "sentence_number": 99,
+              "content": "**Yo** **quiero** **más** **pan**, por favor."
+            },
+            {
+              "sentence_number": 100,
+              "content": "**Mi** **familia** come **mucho** **frijol** **en** **casa**."
+            }
+          ],
+          "exercises": []
         }
       ]
     }

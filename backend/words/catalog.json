@@ -1271,6 +1271,34 @@
     {
       "word_id": "wd-0318",
       "filename": "make"
+    },
+    {
+      "word_id": "wd-0319",
+      "filename": "food"
+    },
+    {
+      "word_id": "wd-0320",
+      "filename": "beverage"
+    },
+    {
+      "word_id": "wd-0321",
+      "filename": "beans"
+    },
+    {
+      "word_id": "wd-0322",
+      "filename": "drink"
+    },
+    {
+      "word_id": "wd-0323",
+      "filename": "nothing"
+    },
+    {
+      "word_id": "wd-0324",
+      "filename": "more"
+    },
+    {
+      "word_id": "wd-0325",
+      "filename": "less"
     }
   ]
 }
