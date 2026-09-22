@@ -157,6 +157,7 @@ let index = 0;
 let load;
 
 onMounted(() => {
+  const panelEl = document.getElementById("topic-flashcards-panel");
   const trackEl = document.getElementById("card-track");
   const cardViewportEl = document.querySelector(".card-viewport");
   const counterEl = document.getElementById("counter");
@@ -672,6 +673,14 @@ onMounted(() => {
 
   window.addEventListener("keydown", (e) => {
     if (e.target.tagName === "INPUT") return;
+    // This listener lives on window and this component stays mounted for
+    // the app's lifetime (only its panel's display is toggled on tab
+    // switch — see App.vue's switchTopicTab), so without this guard it
+    // would preventDefault() and act on arrow keys/space/enter no matter
+    // which tab is actually open — notably swallowing Game.vue's arrow-key
+    // movement, since Phaser's own keydown handler skips any event that
+    // already arrived with defaultPrevented set.
+    if (panelEl.style.display === "none") return;
     if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); slideAndAdvance("left"); }
     else if (e.key === "ArrowLeft" || e.key === "ArrowUp") { e.preventDefault(); slideAndAdvance("right"); }
     else if (e.key === " ") { e.preventDefault(); markShownAndAdvance(); }

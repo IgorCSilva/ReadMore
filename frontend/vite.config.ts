@@ -22,6 +22,7 @@ export default defineConfig({
       '/data': BACKEND,
       '/chapters': BACKEND,
       '/reinforcement-words': BACKEND,
+      '/game-area': BACKEND,
       '/tts': BACKEND,
       '/increment': BACKEND,
       '/mark-known': BACKEND,

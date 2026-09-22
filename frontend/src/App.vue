@@ -47,6 +47,7 @@
         <button type="button" class="tab-btn" id="topic-tab-quiz" data-tab="quiz">Quiz</button>
         <button type="button" class="tab-btn" id="topic-tab-phrases" data-tab="phrases">Phrases</button>
         <button type="button" class="tab-btn" id="topic-tab-exercises" data-tab="exercises">Exercises</button>
+        <button type="button" class="tab-btn" id="topic-tab-game" data-tab="game">Game</button>
         <button type="button" class="tab-btn" id="topic-tab-reinforcement" data-tab="reinforcement">Reinforcement</button>
       </div>
 
@@ -74,6 +75,8 @@
       <Phrases ref="phrasesRef" />
 
       <Exercises ref="exercisesRef" />
+
+      <Game ref="gameRef" />
     </div>
   </div>
 
@@ -100,6 +103,7 @@ import Dictation from './features/dictation/Dictation.vue'
 import Quiz from './features/quiz/Quiz.vue'
 import Phrases from './features/phrases/Phrases.vue'
 import Exercises from './features/exercises/Exercises.vue'
+import Game from './features/game/Game.vue'
 
 // Template refs to the tab children — declared at top level (not inside
 // onMounted) since Vue only binds template refs (ref="..." in the template
@@ -113,6 +117,7 @@ const dictationRef = ref(null)
 const quizRef = ref(null)
 const phrasesRef = ref(null)
 const exercisesRef = ref(null)
+const gameRef = ref(null)
 const updateBannerRef = ref(null)
 
 // Lifted from viewer.html's end-of-body <script> unchanged (Step 2.1 of
@@ -274,6 +279,7 @@ onMounted(() => {
   const topicTabQuizBtn = document.getElementById("topic-tab-quiz");
   const topicTabPhrasesBtn = document.getElementById("topic-tab-phrases");
   const topicTabExercisesBtn = document.getElementById("topic-tab-exercises");
+  const topicTabGameBtn = document.getElementById("topic-tab-game");
   const topicTabReinforcementBtn = document.getElementById("topic-tab-reinforcement");
   const reinforcementTabsEl = document.getElementById("reinforcement-tabs");
   const reinforcementTabReadingBtn = document.getElementById("reinforcement-tab-reading");
@@ -289,6 +295,7 @@ onMounted(() => {
   const topicQuizPanelEl = document.getElementById("topic-quiz-panel");
   const topicPhrasesPanelEl = document.getElementById("topic-phrases-panel");
   const topicExercisesPanelEl = document.getElementById("topic-exercises-panel");
+  const topicGamePanelEl = document.getElementById("topic-game-panel");
 
   // Tells UpdateAvailableBanner which (user, lang, sentenceLang, cueLang)
   // key to watch for a pending shared-word-list update — called from every
@@ -375,6 +382,11 @@ onMounted(() => {
     if (prevActivePanel === "phrases" && nextActivePanel !== "phrases") {
       phrasesRef.value?.pause();
     }
+    // Game's Phaser scene keeps its own internal loop running while active —
+    // pause() before leaving it so an off-screen tab doesn't keep simulating.
+    if (currentTopicTab === "game" && tab !== "game") {
+      gameRef.value?.pause();
+    }
     currentTopicTab = tab;
     topicTabFlashcardsBtn.classList.toggle("active", tab === "flashcards");
     topicTabTextsBtn.classList.toggle("active", tab === "texts");
@@ -385,6 +397,7 @@ onMounted(() => {
     topicTabQuizBtn.classList.toggle("active", tab === "quiz");
     topicTabPhrasesBtn.classList.toggle("active", tab === "phrases");
     topicTabExercisesBtn.classList.toggle("active", tab === "exercises");
+    topicTabGameBtn.classList.toggle("active", tab === "game");
     topicTabReinforcementBtn.classList.toggle("active", tab === "reinforcement");
     reinforcementTabsEl.style.display = tab === "reinforcement" ? "flex" : "none";
     if (tab === "reinforcement") {
@@ -398,6 +411,7 @@ onMounted(() => {
     topicSentencesPanelEl.style.display = tab === "sentences" ? "flex" : "none";
     topicTypingPanelEl.style.display = tab === "typing" ? "flex" : "none";
     topicExercisesPanelEl.style.display = tab === "exercises" ? "flex" : "none";
+    topicGamePanelEl.style.display = tab === "game" ? "flex" : "none";
     // Reading/Dictation/Quiz/Phrases panels follow nextActivePanel rather
     // than `tab` directly, so under "reinforcement" the one matching
     // currentReinforcementSubTab stays visible instead of all four hiding.
@@ -421,10 +435,12 @@ onMounted(() => {
       quizRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG, REINFORCEMENT.quiz);
     } else if (tab === "phrases") {
       phrasesRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG, CHAPTERS, REINFORCEMENT.phrases);
+    } else if (tab === "exercises") {
+      exercisesRef.value?.show(LANG, currentTopic, CUE_LANG);
+    } else if (tab === "game") {
+      gameRef.value?.show(LANG, currentTopic);
     } else if (tab === "reinforcement") {
       showReinforcementSubTab(currentReinforcementSubTab);
-    } else {
-      exercisesRef.value?.show(LANG, currentTopic, CUE_LANG);
     }
   }
 
@@ -437,6 +453,7 @@ onMounted(() => {
   topicTabQuizBtn.addEventListener("click", () => { switchTopicTab("quiz"); syncHash(true); });
   topicTabPhrasesBtn.addEventListener("click", () => { switchTopicTab("phrases"); syncHash(true); });
   topicTabExercisesBtn.addEventListener("click", () => { switchTopicTab("exercises"); syncHash(true); });
+  topicTabGameBtn.addEventListener("click", () => { switchTopicTab("game"); syncHash(true); });
   topicTabReinforcementBtn.addEventListener("click", () => { switchTopicTab("reinforcement"); syncHash(true); });
   reinforcementTabReadingBtn.addEventListener("click", () => { switchReinforcementSubTab("reading"); syncHash(true); });
   reinforcementTabDictationBtn.addEventListener("click", () => { switchReinforcementSubTab("dictation"); syncHash(true); });
@@ -596,7 +613,7 @@ onMounted(() => {
   // hash rather than a real path since the backend only serves index.html
   // for "/" (see main.py) and has no catch-all route for arbitrary paths;
   // the hash never leaves the browser, so it needs no server-side support.
-  const VALID_TABS = ["flashcards", "texts", "sentences", "reading", "typing", "dictation", "quiz", "phrases", "exercises", "reinforcement"];
+  const VALID_TABS = ["flashcards", "texts", "sentences", "reading", "typing", "dictation", "quiz", "phrases", "exercises", "game", "reinforcement"];
 
   function buildHash() {
     const parts = [LANG];

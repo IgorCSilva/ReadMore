@@ -1,6 +1,7 @@
 import type {
   ChaptersResponse,
   CorrectionRequest,
+  GameAreaResponse,
   LanguagesResponse,
   ProgressActionRequest,
   ReinforcementWords,
@@ -76,6 +77,19 @@ export function getReinforcementWords(
     `/reinforcement-words?lang=${encodeURIComponent(lang)}` +
     `&chapter=${chapterNumber}&topic=${topicNumber}`
   return fetchJsonWithRetry<ReinforcementWords>(url)
+}
+
+// Unlike the other GETs here, this deliberately skips fetchJsonWithRetry's
+// retry loop: a 404 means "no game-content mapping authored for this topic
+// yet" (see GameContentRepository's docstring) — an everyday state for most
+// topics, not a transient failure worth 1.5s of retrying. Callers get `null`
+// for that case and treat anything else as a real error.
+export async function getGameArea(lang: string, topicId: string): Promise<GameAreaResponse | null> {
+  const url = `/game-area?lang=${encodeURIComponent(lang)}&topic=${encodeURIComponent(topicId)}`
+  const res = await fetch(url, { cache: 'no-store' })
+  if (res.status === 404) return null
+  if (!res.ok) throw new Error(`${url} responded with ${res.status}`)
+  return (await res.json()) as GameAreaResponse
 }
 
 export function ttsUrl(text: string, lang: string): string {

@@ -18,6 +18,7 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from backend.app.application.use_cases.add_correction import AddCorrection
 from backend.app.application.use_cases.get_chapters import GetChapters
+from backend.app.application.use_cases.get_game_area import GetGameArea
 from backend.app.application.use_cases.get_user_words import GetUserWords
 from backend.app.application.use_cases.get_words import GetWords
 from backend.app.application.use_cases.get_reinforcement_words import GetReinforcementWords
@@ -27,6 +28,7 @@ from backend.app.application.use_cases.mark_word_known import MarkWordKnown
 from backend.app.application.use_cases.show_word_again import ShowWordAgain
 from backend.app.application.use_cases.synthesize_speech import SynthesizeSpeech
 from backend.app.domain.exceptions import (
+    GameAreaNotFoundError,
     InvalidCorrectionError,
     LanguageNotFoundError,
     TtsUpstreamError,
@@ -35,6 +37,7 @@ from backend.app.domain.exceptions import (
 from backend.app.domain.value_objects import Email, LanguagePair
 from backend.app.infrastructure.dtos.chapters import ChapterDTO, ChaptersResponse
 from backend.app.infrastructure.dtos.corrections import CorrectionCreateRequest
+from backend.app.infrastructure.dtos.game_area import GameAreaResponse
 from backend.app.infrastructure.dtos.progress_actions import ProgressActionRequest
 from backend.app.infrastructure.dtos.user_words import UserWordDTO, UserWordsResponse
 from backend.app.infrastructure.dtos.words import WordDTO, WordsResponse
@@ -52,6 +55,9 @@ from backend.app.infrastructure.repositories.google_translate_tts_client import 
     GoogleTranslateTtsClient,
 )
 from backend.app.infrastructure.repositories.json_catalog_repository import JsonCatalogRepository
+from backend.app.infrastructure.repositories.json_game_content_repository import (
+    JsonGameContentRepository,
+)
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 ROOT_DIR = BACKEND_DIR.parent
@@ -61,6 +67,7 @@ CATALOG_PATH = WORDS_DIR / "catalog.json"
 CONTENT_DIR = BACKEND_DIR / "content"
 SENTENCES_PATH = WORDS_DIR / "sentences.json"
 CUES_PATH = WORDS_DIR / "cues.json"
+GAME_CONTENT_DIR = ROOT_DIR / "game_approach" / "content"
 
 LANG_CHOICES = {"origin", "target"}
 
@@ -87,6 +94,11 @@ async def language_not_found_handler(request: Request, exc: LanguageNotFoundErro
 
 @app.exception_handler(WordNotAssignedError)
 async def word_not_assigned_handler(request: Request, exc: WordNotAssignedError):
+    return JSONResponse(status_code=404, content={"error": str(exc)})
+
+
+@app.exception_handler(GameAreaNotFoundError)
+async def game_area_not_found_handler(request: Request, exc: GameAreaNotFoundError):
     return JSONResponse(status_code=404, content={"error": str(exc)})
 
 
@@ -143,6 +155,10 @@ def get_corrections_repository() -> GoogleSheetsCorrectionsRepository:
 
 def get_tts_port() -> GoogleTranslateTtsClient:
     return GoogleTranslateTtsClient()
+
+
+def get_game_content_repository() -> JsonGameContentRepository:
+    return JsonGameContentRepository(GAME_CONTENT_DIR)
 
 
 def _parse_lang(raw: str) -> LanguagePair:
@@ -281,6 +297,22 @@ def get_reinforcement_words_route(
     language_pair = _parse_lang(lang.strip() or "pt-en")
     use_case = GetReinforcementWords(catalog_repository)
     return use_case.execute(language_pair, chapter, topic)
+
+
+@app.get("/game-area", response_model=GameAreaResponse)
+def get_game_area_route(
+    lang: str = "pt-en",
+    topic: str = "",
+    game_content_repository: JsonGameContentRepository = Depends(get_game_content_repository),
+):
+    language_pair = _parse_lang(lang.strip() or "pt-en")
+    topic_id = topic.strip()
+    if not topic_id:
+        return JSONResponse(status_code=400, content={"error": "missing 'topic' query param"})
+
+    use_case = GetGameArea(game_content_repository)
+    area = use_case.execute(language_pair, topic_id)
+    return GameAreaResponse.from_entity(str(language_pair), area)
 
 
 @app.post("/corrections")

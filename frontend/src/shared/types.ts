@@ -121,3 +121,17 @@ export interface CorrectionRequest {
   current: string[]
   correction: string[]
 }
+
+// word_id here is the catalog *root* id (matches Topic.word_ids and
+// Word.word_id above) — see game_approach/documents/LANGUAGE_INTEGRATION.md.
+export interface GameObject {
+  word_id: string
+  role: string
+  data: Record<string, unknown>
+}
+
+export interface GameAreaResponse {
+  lang: string
+  topic_id: string
+  objects: GameObject[]
+}

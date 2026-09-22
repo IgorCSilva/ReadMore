@@ -1,5 +1,15 @@
 import { vi } from 'vitest'
 
+// jsdom has no WebGL/canvas-2d context — Phaser runs real feature-detection
+// at module-import time, which throws under jsdom regardless of whether a
+// Game is ever constructed. See src/test-utils/phaserStub.ts for the stub;
+// Game.test.ts imports its gameInstances export directly to inspect what a
+// mounted Game.vue created.
+vi.mock('phaser', async () => {
+  const { FakeGame, FakeScene } = await import('./src/test-utils/phaserStub')
+  return { default: { Game: FakeGame, Scene: FakeScene, AUTO: 'AUTO' } }
+})
+
 // App.vue's onMounted flow (ported unchanged from viewer.html) calls
 // window.prompt() synchronously in a loop until it gets a valid-looking
 // email, to identify the user. jsdom doesn't implement window.prompt, and

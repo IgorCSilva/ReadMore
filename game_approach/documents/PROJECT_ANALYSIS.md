@@ -63,20 +63,25 @@ LanguagePair.parse, backend/app/domain/value_objects.py)
   to `(lang, chapter_number, topic_number)` — already pair-scoped.
 
 **Implication for the game**: any game content mapping (word → object/action/NPC
-role) must key off the **target-language word_id** (e.g. `en-wd-0001`), the same
-id `Topic.word_ids` already uses — not the catalog root id, and not anything
-origin-specific. That's what makes one game-content mapping table automatically
-usable across every pair that happens to define matching topics, and what lets a
-brand-new pair (say `pt-fr`) plug into the game with zero game-code changes as
-soon as its own `content/pt-fr.json` exists.
+role) must key off a `word_id`, the same way every existing repository already
+cross-references words, and not anything origin-specific. (Initial analysis
+guessed this should be the per-target friendly id, e.g. `en-wd-0001` — Milestone
+4 corrected this to the catalog **root** `word_id` instead, since that's what
+`GetChapters`/`GetWords` already resolve `Topic.word_ids`/`Word.word_id` to; see
+`LANGUAGE_INTEGRATION.md`.) That's what makes one game-content mapping table
+automatically usable across every pair that happens to define matching topics,
+and what lets a brand-new pair (say `pt-fr`) plug into the game with zero
+game-code changes as soon as its own `content/pt-fr.json` exists.
 
 Content readiness snapshot at analysis time (examples only, not a target):
 pt-en has a `ready` "Greetings & self-introduction" topic (15 words) and a `ready`
 Food chapter with "Ordering food" and "Fruits & Vegetables" (18 words each).
-pt-es content is being built out topic-by-topic in parallel. Whatever topic is
-picked as the first vertical slice, the same slice logic must be re-runnable
-against any other pair's equivalent topic without code changes — only content
-differs.
+pt-es has its own `ready` "Greetings & self-introduction" topic under the same
+`top-A0-EL-1` id (25 words — pt-es's tree is authored independently of pt-en's,
+so the word count and vocabulary differ even though the topic id matches).
+Whatever topic is picked as the first vertical slice, the same slice logic must
+be re-runnable against any other pair's equivalent topic without code changes —
+only content differs.
 
 ## C. Existing frontend
 
@@ -110,12 +115,13 @@ reference words by id + lang rather than embedding them).
 
 Concretely:
 
-- A new **game-content mapping**, one JSON per pair (or per-topic, mirroring
-  `content/{pair}.json`'s own convention) mapping `word_id → game_role /
-  object_type` — e.g. `{"en-wd-0042": {"role": "interactable", "type": "door"}}`.
-  Because it keys off target-language `word_id`, the exact same mapping shape
-  works for `es-wd-0042` in `pt-es`, or any future pair's target words, with no
-  game-engine code change — only the mapping data differs per pair/topic.
+- A new **game-content mapping**, one JSON per pair holding every topic that
+  pair has authored game content for, mapping `word_id → game_role / object_type`
+  — e.g. `{"wd-0042": {"role": "interactable", "data": {"type": "door"}}}`, keyed
+  by catalog **root** `word_id` (see `LANGUAGE_INTEGRATION.md`). Because a root
+  id is pair-independent, the exact same mapping shape works for any pair whose
+  topic happens to reference that concept, with no game-engine code change —
+  only the mapping data differs per pair/topic.
 - New ports: `GameContentRepository` (reads the mapping + area layout for a given
   `lang` + `topic_id`), `GameStateRepository` (reads/writes a player's
   authoritative game state, scoped by `email` + `lang`, same scoping progress
@@ -158,9 +164,9 @@ kitchen or a pt-es kitchen from the same code, different data.
 
 ## H. First vertical slice — DECIDED: Greetings & self-introduction
 
-**Chosen anchor topic**: pt-en's `top-A0-EL-1` — "Saudações e Apresentação
-Pessoal" / Greetings & self-introduction (15 words, status `ready`, chapter
-`ch-A0-EL` "Vida cotidiana e rotinas").
+**Chosen anchor topic**: pt-es's `top-A0-EL-1` — "Saudações e Apresentação
+Pessoal" / Greetings & self-introduction (25 words, status `ready`, chapter
+`ch-A0-EL`).
 
 This makes the first prototype a **conversation-shaped** slice rather than an
 object/spatial one: a dialogue-driven intro scene (an entryway, one or two
@@ -173,13 +179,14 @@ puzzle. Concretely this decides:
   actually gate — e.g. the NPC won't proceed/respond until the player produces
   the right greeting/self-introduction phrase, rather than a fetch/give-item
   puzzle.
-- **Game-content mapping** (step 4): every `word_id` in this topic
-  (`en-wd-0001`…`en-wd-0015`, per `content/pt-en.json`) needs an authored game
-  role — mostly dialogue lines and a couple of nouns/pronouns — before any
-  scene can render.
+- **Game-content mapping** (step 4): every one of this topic's 25 words needs
+  an authored game role — mostly dialogue lines and a couple of nouns/pronouns
+  — before any scene can render. Mapping keys are catalog **root** `word_id`s
+  (e.g. `wd-0001`), not the raw content file's per-target friendly ids (e.g.
+  `es-wd-0001`) — see `LANGUAGE_INTEGRATION.md`'s Milestone 4 section for why.
 
 The acceptance bar from step 11 still applies unchanged: once this slice works,
-pick a *second*, different-pair topic (e.g. the pt-es equivalent once one is
+pick a *second*, different-pair topic (e.g. pt-en's equivalent, already
 `ready`) and confirm the same engine renders it correctly from its own mapping
 data alone, with zero code changes.
 
@@ -212,3 +219,7 @@ data alone, with zero code changes.
 - **2026-09-22** — First vertical slice anchor topic: **Greetings &
   self-introduction** (see §H). Chosen over Food / Fruits & Vegetables to make
   the first prototype dialogue-driven rather than object/spatial.
+- **2026-09-22** — Anchor **pair** switched from pt-en to **pt-es**: same
+  `top-A0-EL-1` topic id, but pt-es's own independently-authored 25-word
+  vocabulary rather than pt-en's 15-word one. pt-en's equivalent topic becomes
+  the step-11 cross-pair validation target instead.

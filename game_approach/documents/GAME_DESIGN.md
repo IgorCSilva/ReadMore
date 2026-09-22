@@ -62,19 +62,22 @@ Not all categories need to ship in the first slice — see per-topic scope below
 
 ## Current slice: Greetings & self-introduction
 
-Anchor topic: pt-en `top-A0-EL-1` (15 words) — decided in `PROJECT_ANALYSIS.md`
-§H. This topic is dialogue-shaped, not object-shaped, so the design leans into
+Anchor pair/topic: pt-es `top-A0-EL-1` (25 words) — decided in
+`PROJECT_ANALYSIS.md` §H (pt-en has the same topic id but its own independent
+15-word vocabulary; it's the step-11 cross-pair validation target instead).
+This topic is dialogue-shaped, not object-shaped, so the design leans into
 conversation mechanics rather than spatial ones:
 
 - **World**: a small space built around meeting someone (e.g. an entryway/room
   where an NPC is encountered) — not an object-dense environment.
 - **Core interaction**: the NPC won't respond/proceed until the player produces
   the right greeting/self-introduction phrase from the topic's vocabulary.
-- **Vocabulary role split** (to be finalized when authoring the game-content
-  mapping in Milestone 4): most of these 15 words are dialogue lines or
-  pronouns/nouns (hello, my name is, nice to meet you, I, you, from) rather than
-  objects or spatial prepositions — so the puzzle for this slice is
-  conversational recall/production, not fetch-and-give.
+- **Vocabulary role split** (finalized in Milestone 4's game-content mapping,
+  `game_approach/content/game-pt-es.json`): most of these 25 words are dialogue
+  lines (hola, chao, cómo, sí, gracias, de nada, no) or pronouns/grammar words
+  (yo, mi, es, estoy, nombre, de, ...) rather than objects or spatial
+  prepositions — so the puzzle for this slice is conversational
+  recall/production, not fetch-and-give.
 
 Future slices on object-heavy topics (e.g. Food / Fruits & Vegetables) are
 expected to lean on the object/spatial mechanics instead — the engine must

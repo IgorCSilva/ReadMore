@@ -34,31 +34,37 @@ chapter/topic numbering.
 Concretely:
 
 - A game-content mapping is **per topic, per pair** — because a topic's
-  vocabulary and its `word_id`s are pair-specific (pt-en's `top-A0-EL-1` has
-  different `word_id`s than pt-es's equivalent topic, even if the underlying
-  concepts overlap via `root_word_id`).
+  vocabulary is pair-specific (pt-en's `top-A0-EL-1` and pt-es's `top-A0-EL-1`
+  reference entirely different, independently-sized word sets).
 - Mapping file location mirrors `content/{origin}-{target}.json`'s own
-  convention: `game_approach/content/game-{origin}-{target}.json` (exact path
-  finalized in Milestone 4), so adding a pair's game content is "add a file",
-  not "change code".
+  convention: `game_approach/content/game-{origin}-{target}.json`, so adding a
+  pair's game content is "add a file", not "change code".
 - The Phaser scene, the command parser, and every backend use case take `lang`
   as a parameter and resolve everything else from it — exactly how
   `GetChapters`/`GetWords`/`_parse_lang` already work in `backend/app/main.py`.
 
-## Game-content mapping shape (draft, refined in Milestone 4)
+## Game-content mapping shape (finalized in Milestone 4)
 
 ```json
 {
-  "en-wd-0001": { "role": "dialogue", "line": "greeting" },
-  "en-wd-0009": { "role": "noun", "concept": "name" },
-  "en-wd-0011": { "role": "dialogue", "line": "possessive-my" }
+  "wd-0001": { "role": "dialogue", "data": { "line": "greeting-formal" } },
+  "wd-0009": { "role": "noun", "data": { "concept": "name" } },
+  "wd-0011": { "role": "noun", "data": { "concept": "possessive-my" } }
 }
 ```
 
-Keys are target-language `word_id`s from the topic's own `word_ids` list — the
-same ids `GetWords`/`GetUserWords` already resolve to sentences/cues/images.
-The game-content repository never needs to know the origin language at all;
-only the target-language word id matters for gameplay role.
+**Keys are catalog *root* `word_id`s (`catalog.json`'s id, e.g. `wd-0001`) —
+not the per-target friendly id (`es-wd-0001`) that raw
+`content/{pair}.json` topic definitions use.** This was the one point the
+original draft got wrong: friendly target ids are pair-and-target-specific and
+never appear anywhere else in an API response, so a frontend consumer would
+have no way to resolve a friendly id back to display text without a new
+endpoint. Root ids, by contrast, are exactly what `GetChapters` already
+resolves `Topic.word_ids` to (see `JsonCatalogRepository._to_topic`'s
+`word_map.get(w, w)`) and what `GetWords`'s `Word.word_id` already is — so a
+`GameObject.word_id` matches a topic's `word_ids` and a fetched `Word.word_id`
+with zero extra translation, the same way every other feature already cross-
+references topics and words today.
 
 ## Cross-pair validation gate
 
@@ -83,5 +89,6 @@ intention.
 
 ## Status
 
-Documented, not yet implemented. First concrete artifact is the Milestone 4
-mapping file for pt-en's Greetings topic (`top-A0-EL-1`).
+Milestone 4 in progress. First concrete artifact is the game-content mapping
+file for pt-es's Greetings topic (`top-A0-EL-1`):
+`game_approach/content/game-pt-es.json`.

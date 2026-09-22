@@ -1,0 +1,29 @@
+{
+  "top-A0-EL-1": {
+    "wd-0001": { "role": "dialogue", "data": { "line": "greeting-formal" } },
+    "wd-0003": { "role": "dialogue", "data": { "line": "farewell" } },
+    "wd-0059": { "role": "noun", "data": { "concept": "good" } },
+    "wd-0080": { "role": "noun", "data": { "concept": "day" } },
+    "wd-0077": { "role": "noun", "data": { "concept": "afternoon" } },
+    "wd-0079": { "role": "noun", "data": { "concept": "night" } },
+    "wd-0263": { "role": "noun", "data": { "concept": "all" } },
+    "wd-0071": { "role": "noun", "data": { "concept": "well" } },
+    "wd-0051": { "role": "dialogue", "data": { "line": "question" } },
+    "wd-0013": { "role": "noun", "data": { "concept": "addressee" } },
+    "wd-0008": { "role": "noun", "data": { "concept": "verb-to-be" } },
+    "wd-0009": { "role": "noun", "data": { "concept": "name" } },
+    "wd-0011": { "role": "noun", "data": { "concept": "possessive-my" } },
+    "wd-0010": { "role": "noun", "data": { "concept": "verb-to-be" } },
+    "wd-0007": { "role": "noun", "data": { "concept": "self" } },
+    "wd-0264": { "role": "noun", "data": { "concept": "reflexive-me" } },
+    "wd-0265": { "role": "noun", "data": { "concept": "verb-call" } },
+    "wd-0015": { "role": "noun", "data": { "concept": "origin-preposition" } },
+    "wd-0023": { "role": "dialogue", "data": { "line": "affirmation" } },
+    "wd-0005": { "role": "dialogue", "data": { "line": "courtesy-thanks" } },
+    "wd-0072": { "role": "dialogue", "data": { "line": "courtesy-response" } },
+    "wd-0063": { "role": "noun", "data": { "concept": "conjunction" } },
+    "wd-0270": { "role": "noun", "data": { "concept": "good-feminine" } },
+    "wd-0021": { "role": "noun", "data": { "concept": "verb-to-be" } },
+    "wd-0024": { "role": "dialogue", "data": { "line": "negation" } }
+  }
+}

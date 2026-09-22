@@ -128,5 +128,46 @@ not bypass or duplicate the learning system.
 
 ## Status
 
-Skeleton only — no code written yet. First code lands in Milestone 2 (domain
-entities + ports, no UI) per `DEVELOPMENT_ROADMAP.md`.
+- Milestone 2 done: domain entities (`GameObject`, `GameArea`, `GameAction`,
+  `PlayerGameState`) and ports (`GameContentRepository`, `GameStateRepository`)
+  exist; no concrete infrastructure or UI yet.
+- Milestone 3 done: `features/game/Game.vue` mounts an empty Phaser scene
+  behind a new "Game" tab, wired into `App.vue` exactly like every other tab.
+  No scene content, no command system, no backend wiring yet — see
+  `DEVELOPMENT_ROADMAP.md` for the per-milestone detail, including a testing
+  gotcha worth knowing before touching `Game.vue` again: jsdom has no
+  WebGL/canvas context, so `'phaser'` is globally mocked in
+  `frontend/vitest.setup.ts` (backed by `frontend/src/test-utils/
+  phaserStub.ts`) rather than per-test-file.
+- Milestone 4 done: `GameContentRepository`/`GetGameArea` are now concrete
+  (`JsonGameContentRepository` reads `game_approach/content/game-{pair}.json`)
+  and wired to a new `GET /game-area?lang=&topic=` route. `Game.vue`'s
+  `show(lang, topic)` fetches that area plus `/words`, resolves each
+  `GameObject.word_id` to its display text (`features/game/sceneItems.ts`'s
+  `buildSceneItems`), and renders one color-coded `Phaser.GameObjects.Text`
+  per word. Anchor pair switched from pt-en to **pt-es** for this slice (see
+  `DEVELOPMENT_ROADMAP.md`'s Milestone 4 detail and decisions log) — pt-en's
+  equivalent topic remains the step-11 cross-pair validation target. The
+  game-content mapping key convention was also finalized here: catalog
+  **root** `word_id` (not the per-target friendly id the original draft in
+  `LANGUAGE_INTEGRATION.md` assumed) — see that document's Milestone 4
+  section for the full reasoning.
+- Milestone 5 done: `Game.vue`'s `MainScene` now has arcade-physics player
+  movement (arrow keys, bounded to the canvas) and one interactable object —
+  the NPC anchor for this slice — with a proximity-based prompt and an
+  interact-key toggle. Proximity math lives in `features/game/interaction.ts`
+  (pure, Phaser-free, unit-tested the same way `sceneItems.ts`'s
+  `buildSceneItems` is). No dialogue or language-gating yet — that's
+  Milestones 6–7.
+- Milestone 6 done: the command system's first slice —
+  `features/game/command.ts`'s `parseCommand` implements
+  `Tokenizer → Vocabulary matcher → Intent → Entities → GameAction` for a
+  single grammar, `SAY <word>`, matched against the active topic's real
+  vocabulary (see `DEVELOPMENT_ROADMAP.md`'s Milestone 6 detail for why SAY
+  rather than the `OPEN DOOR`-style examples above — this slice's vocabulary
+  has no verbs). `Game.vue` exposes a text input wired to it, showing
+  recognized/rejected feedback; not yet connected to NPC dialogue
+  consequences (Milestone 7). Also fixed a latent Milestone 5 bug where
+  Phaser's default keyboard-capture behavior called `preventDefault()` on
+  arrow/E keydowns app-wide regardless of focus — same class of issue as the
+  Flashcards.vue fix, opposite direction.
