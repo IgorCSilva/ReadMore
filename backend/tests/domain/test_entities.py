@@ -1,4 +1,14 @@
-from backend.app.domain.entities import Chapter, ProgressRecord, Text, Topic, Word
+from backend.app.domain.entities import (
+    Chapter,
+    GameAction,
+    GameArea,
+    GameObject,
+    PlayerGameState,
+    ProgressRecord,
+    Text,
+    Topic,
+    Word,
+)
 
 
 def test_word_holds_catalog_fields():
@@ -103,3 +113,60 @@ def test_progress_record_holds_catalog_fields():
     assert record.confident is False
     assert record.shown_count == 3
     assert record.show is True
+
+
+def test_game_object_defaults_data_to_empty_dict():
+    obj = GameObject(word_id="en-0001", role="dialogue")
+    assert obj.word_id == "en-0001"
+    assert obj.role == "dialogue"
+    assert obj.data == {}
+
+
+def test_game_object_holds_role_specific_data():
+    obj = GameObject(word_id="en-0001", role="dialogue", data={"line": "greeting"})
+    assert obj.data == {"line": "greeting"}
+
+
+def test_game_area_defaults_objects_to_empty_list():
+    area = GameArea(topic_id="top-01")
+    assert area.topic_id == "top-01"
+    assert area.objects == []
+
+
+def test_game_area_can_hold_objects():
+    obj = GameObject(word_id="en-0001", role="dialogue")
+    area = GameArea(topic_id="top-01", objects=[obj])
+    assert area.objects == [obj]
+
+
+def test_game_action_defaults_target_and_payload():
+    action = GameAction(action_type="MOVE")
+    assert action.action_type == "MOVE"
+    assert action.target_word_id is None
+    assert action.payload == {}
+
+
+def test_game_action_holds_target_and_payload():
+    action = GameAction(action_type="OPEN", target_word_id="en-0002", payload={"dir": "north"})
+    assert action.target_word_id == "en-0002"
+    assert action.payload == {"dir": "north"}
+
+
+def test_player_game_state_defaults_to_empty_progress():
+    state = PlayerGameState(topic_id="top-01")
+    assert state.topic_id == "top-01"
+    assert state.discovered_word_ids == set()
+    assert state.completed_interactions == set()
+    assert state.flags == {}
+
+
+def test_player_game_state_can_hold_progress():
+    state = PlayerGameState(
+        topic_id="top-01",
+        discovered_word_ids={"en-0001"},
+        completed_interactions={"intro-dialogue"},
+        flags={"quest_started": True},
+    )
+    assert state.discovered_word_ids == {"en-0001"}
+    assert state.completed_interactions == {"intro-dialogue"}
+    assert state.flags == {"quest_started": True}

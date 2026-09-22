@@ -90,3 +90,53 @@ class Correction:
     topic_number: int
     current: list[str]
     correction: list[str]
+
+
+@dataclass
+class GameObject:
+    """One topic word's game-content mapping entry: what role that word_id
+    plays in a game area. role is one of "dialogue", "noun", "interactable",
+    "action", "spatial" — data holds role-specific extras (e.g. a dialogue
+    role's {"line": "greeting"}) and stays untyped for now, same reasoning as
+    Topic.exercises."""
+
+    word_id: str
+    role: str
+    data: dict = field(default_factory=dict)
+
+
+@dataclass
+class GameArea:
+    """A topic's playable area for one language pair: the topic's words as
+    GameObjects, assembled by GetGameArea. Does not hold lang or email —
+    those are the repository call's own parameters, same reasoning
+    ProgressRecord doesn't hold email/lang either."""
+
+    topic_id: str
+    objects: list[GameObject] = field(default_factory=list)
+
+
+@dataclass
+class GameAction:
+    """One player-submitted action for the command system (see
+    GAME_ARCHITECTURE.md) — e.g. action_type="OPEN", target_word_id=<door's
+    word_id>. target_word_id is None for actions with no target (e.g. MOVE)."""
+
+    action_type: str
+    target_word_id: str | None = None
+    payload: dict = field(default_factory=dict)
+
+
+@dataclass
+class PlayerGameState:
+    """One player's authoritative game state for one topic — mirrors a single
+    (email, lang, topic_id) record in the future Sheets-backed game-state
+    store, same reasoning ProgressRecord doesn't hold email/lang itself.
+    discovered_word_ids/completed_interactions are plain sets of word_id /
+    interaction-id strings; flags holds free-form puzzle/quest progress until
+    a concrete puzzle shape exists to type it against."""
+
+    topic_id: str
+    discovered_word_ids: set[str] = field(default_factory=set)
+    completed_interactions: set[str] = field(default_factory=set)
+    flags: dict = field(default_factory=dict)

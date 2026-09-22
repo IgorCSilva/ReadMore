@@ -27,3 +27,9 @@ class InvalidCorrectionError(Exception):
     def __init__(self, detail: str) -> None:
         self.detail = detail
         super().__init__(f"invalid correction: {detail}")
+
+
+class GameAreaNotFoundError(Exception):
+    def __init__(self, topic_id: str) -> None:
+        self.topic_id = topic_id
+        super().__init__(f"no game-content mapping for topic: {topic_id}")
