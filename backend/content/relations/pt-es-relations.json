@@ -144,6 +144,61 @@
         "mais": "más",
         "menos": "menos"
       }
+    },
+    "topic_6": {
+      "pt": {
+        "zero": "cero",
+        "um": "uno",
+        "uma": "una",
+        "dois": "dos",
+        "duas": "dos",
+        "três": "tres",
+        "quatro": "cuatro",
+        "cinco": "cinco",
+        "seis": "seis",
+        "sete": "siete",
+        "oito": "ocho",
+        "nove": "nueve",
+        "dez": "diez",
+        "hora": "hora",
+        "minuto": "minuto",
+        "agora": "ahora",
+        "hoje": "hoy",
+        "amanhã": "mañana",
+        "quanto custa": "cuánto cuesta",
+        "preço": "precio",
+        "real": "peso",
+        "segunda-feira": "lunes",
+        "terça-feira": "martes",
+        "quarta-feira": "miércoles",
+        "quinta-feira": "jueves",
+        "sexta-feira": "viernes",
+        "sábado": "sábado",
+        "domingo": "domingo",
+        "semana": "semana"
+      }
+    }
+  },
+  "chapter_2": {
+    "topic_1": {
+      "pt": {
+        "ele": "él",
+        "ela": "ella",
+        "eles": "ellos",
+        "elas": "ellas",
+        "vocês": "ustedes",
+        "vai": "va",
+        "sai": "sale",
+        "chega": "llega",
+        "trabalha": "trabaja",
+        "volta": "vuelve",
+        "lê": "lee",
+        "assiste à televisão": "ve la televisión",
+        "de manhã": "por la mañana",
+        "à tarde": "por la tarde",
+        "à noite": "por la noche",
+        "antes": "antes"
+      }
     }
   },
   "chapter_4": {

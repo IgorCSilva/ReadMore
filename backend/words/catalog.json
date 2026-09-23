@@ -1299,6 +1299,122 @@
     {
       "word_id": "wd-0325",
       "filename": "less"
+    },
+    {
+      "word_id": "wd-0326",
+      "filename": "one_feminine"
+    },
+    {
+      "word_id": "wd-0327",
+      "filename": "hour"
+    },
+    {
+      "word_id": "wd-0328",
+      "filename": "minute"
+    },
+    {
+      "word_id": "wd-0329",
+      "filename": "now"
+    },
+    {
+      "word_id": "wd-0330",
+      "filename": "today"
+    },
+    {
+      "word_id": "wd-0331",
+      "filename": "tomorrow"
+    },
+    {
+      "word_id": "wd-0332",
+      "filename": "how_much_does_it_cost"
+    },
+    {
+      "word_id": "wd-0333",
+      "filename": "peso"
+    },
+    {
+      "word_id": "wd-0334",
+      "filename": "monday"
+    },
+    {
+      "word_id": "wd-0335",
+      "filename": "tuesday"
+    },
+    {
+      "word_id": "wd-0336",
+      "filename": "wednesday"
+    },
+    {
+      "word_id": "wd-0337",
+      "filename": "thursday"
+    },
+    {
+      "word_id": "wd-0338",
+      "filename": "friday"
+    },
+    {
+      "word_id": "wd-0339",
+      "filename": "saturday"
+    },
+    {
+      "word_id": "wd-0340",
+      "filename": "sunday"
+    },
+    {
+      "word_id": "wd-0341",
+      "filename": "week"
+    },
+    {
+      "word_id": "wd-0342",
+      "filename": "they_feminine"
+    },
+    {
+      "word_id": "wd-0343",
+      "filename": "you_plural"
+    },
+    {
+      "word_id": "wd-0344",
+      "filename": "he_goes"
+    },
+    {
+      "word_id": "wd-0345",
+      "filename": "he_leaves"
+    },
+    {
+      "word_id": "wd-0346",
+      "filename": "he_arrives"
+    },
+    {
+      "word_id": "wd-0347",
+      "filename": "he_works"
+    },
+    {
+      "word_id": "wd-0348",
+      "filename": "he_returns"
+    },
+    {
+      "word_id": "wd-0349",
+      "filename": "he_reads"
+    },
+    {
+      "word_id": "wd-0350",
+      "filename": "watch_tv"
+    },
+    {
+      "word_id": "wd-0351",
+      "filename": "in_the_morning"
+    },
+    {
+      "word_id": "wd-0352",
+      "filename": "in_the_afternoon"
+    },
+    {
+      "word_id": "wd-0353",
+      "filename": "at_night"
+    },
+    {
+      "word_id": "wd-0354",
+      "filename": "before"
     }
   ]
 }

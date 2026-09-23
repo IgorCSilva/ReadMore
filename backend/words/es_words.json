@@ -778,5 +778,269 @@
     "root_word_id": "wd-0325",
     "word": "menos",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0131",
+    "root_word_id": "wd-0028",
+    "word": "cero",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0132",
+    "root_word_id": "wd-0029",
+    "word": "uno",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0133",
+    "root_word_id": "wd-0326",
+    "word": "una",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0134",
+    "root_word_id": "wd-0030",
+    "word": "dos",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0135",
+    "root_word_id": "wd-0031",
+    "word": "tres",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0136",
+    "root_word_id": "wd-0032",
+    "word": "cuatro",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0137",
+    "root_word_id": "wd-0033",
+    "word": "cinco",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0138",
+    "root_word_id": "wd-0034",
+    "word": "seis",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0139",
+    "root_word_id": "wd-0035",
+    "word": "siete",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0140",
+    "root_word_id": "wd-0036",
+    "word": "ocho",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0141",
+    "root_word_id": "wd-0037",
+    "word": "nueve",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0142",
+    "root_word_id": "wd-0038",
+    "word": "diez",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0143",
+    "root_word_id": "wd-0327",
+    "word": "hora",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0144",
+    "root_word_id": "wd-0328",
+    "word": "minuto",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0145",
+    "root_word_id": "wd-0329",
+    "word": "ahora",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0146",
+    "root_word_id": "wd-0330",
+    "word": "hoy",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0147",
+    "root_word_id": "wd-0331",
+    "word": "mañana",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0148",
+    "root_word_id": "wd-0332",
+    "word": "cuánto cuesta",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0149",
+    "root_word_id": "wd-0202",
+    "word": "precio",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0150",
+    "root_word_id": "wd-0333",
+    "word": "peso",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0151",
+    "root_word_id": "wd-0334",
+    "word": "lunes",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0152",
+    "root_word_id": "wd-0335",
+    "word": "martes",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0153",
+    "root_word_id": "wd-0336",
+    "word": "miércoles",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0154",
+    "root_word_id": "wd-0337",
+    "word": "jueves",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0155",
+    "root_word_id": "wd-0338",
+    "word": "viernes",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0156",
+    "root_word_id": "wd-0339",
+    "word": "sábado",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0157",
+    "root_word_id": "wd-0340",
+    "word": "domingo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0158",
+    "root_word_id": "wd-0341",
+    "word": "semana",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0159",
+    "root_word_id": "wd-0016",
+    "word": "él",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0160",
+    "root_word_id": "wd-0017",
+    "word": "ella",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0161",
+    "root_word_id": "wd-0020",
+    "word": "ellos",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0162",
+    "root_word_id": "wd-0342",
+    "word": "ellas",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0163",
+    "root_word_id": "wd-0343",
+    "word": "ustedes",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0164",
+    "root_word_id": "wd-0344",
+    "word": "va",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0165",
+    "root_word_id": "wd-0345",
+    "word": "sale",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0166",
+    "root_word_id": "wd-0346",
+    "word": "llega",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0167",
+    "root_word_id": "wd-0347",
+    "word": "trabaja",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0168",
+    "root_word_id": "wd-0348",
+    "word": "vuelve",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0169",
+    "root_word_id": "wd-0349",
+    "word": "lee",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0170",
+    "root_word_id": "wd-0350",
+    "word": "ve la televisión",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0171",
+    "root_word_id": "wd-0351",
+    "word": "por la mañana",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0172",
+    "root_word_id": "wd-0352",
+    "word": "por la tarde",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0173",
+    "root_word_id": "wd-0353",
+    "word": "por la noche",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0174",
+    "root_word_id": "wd-0354",
+    "word": "antes",
+    "gender_id": "not_apply"
   }
 ]

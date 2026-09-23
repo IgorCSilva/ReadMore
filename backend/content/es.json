@@ -129,6 +129,56 @@
       "poco",
       "más",
       "menos"
+    ],
+    "topic_6": [
+      "cero",
+      "uno",
+      "una",
+      "dos",
+      "tres",
+      "cuatro",
+      "cinco",
+      "seis",
+      "siete",
+      "ocho",
+      "nueve",
+      "diez",
+      "hora",
+      "minuto",
+      "ahora",
+      "hoy",
+      "mañana",
+      "cuánto cuesta",
+      "precio",
+      "peso",
+      "lunes",
+      "martes",
+      "miércoles",
+      "jueves",
+      "viernes",
+      "sábado",
+      "domingo",
+      "semana"
+    ]
+  },
+  "chapter_2": {
+    "topic_1": [
+      "él",
+      "ella",
+      "ellos",
+      "ellas",
+      "ustedes",
+      "va",
+      "sale",
+      "llega",
+      "trabaja",
+      "vuelve",
+      "lee",
+      "ve la televisión",
+      "por la mañana",
+      "por la tarde",
+      "por la noche",
+      "antes"
     ]
   }
 }

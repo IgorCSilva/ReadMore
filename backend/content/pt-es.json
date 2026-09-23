@@ -2190,6 +2190,885 @@
             }
           ],
           "exercises": []
+        },
+        {
+          "topic_id": "top-A0-EL-6",
+          "number": 6,
+          "title": "Números, Horas e Preços Simples",
+          "description": "Números cardinais, expressões de hora e preços simples, incluindo o par \"uno\"/\"una\" conforme o gênero do substantivo (diferente do português, que também distingue \"dois\"/\"duas\", mas o espanhol usa \"dos\" para ambos os gêneros) e os dias da semana. Atividade de desenvolvimento: leitura de frases cotidianas com informações numéricas incidentais (idades, horários, preços).",
+          "status": "in_development",
+          "word_ids": [
+            "es-wd-0131",
+            "es-wd-0132",
+            "es-wd-0133",
+            "es-wd-0134",
+            "es-wd-0135",
+            "es-wd-0136",
+            "es-wd-0137",
+            "es-wd-0138",
+            "es-wd-0139",
+            "es-wd-0140",
+            "es-wd-0141",
+            "es-wd-0142",
+            "es-wd-0143",
+            "es-wd-0144",
+            "es-wd-0145",
+            "es-wd-0146",
+            "es-wd-0147",
+            "es-wd-0148",
+            "es-wd-0149",
+            "es-wd-0150",
+            "es-wd-0151",
+            "es-wd-0152",
+            "es-wd-0153",
+            "es-wd-0154",
+            "es-wd-0155",
+            "es-wd-0156",
+            "es-wd-0157",
+            "es-wd-0158"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "**El** termômetro marcou **cero** grau esta manhã."
+            },
+            {
+              "sentence_number": 2,
+              "content": "**Hoy** **es** **el** **día** número **seis** do mês."
+            },
+            {
+              "sentence_number": 3,
+              "content": "**Él** **llega** sempre **una** **hora** **antes** **de** todo mundo."
+            },
+            {
+              "sentence_number": 4,
+              "content": "**Martes** **y** **jueves** **ella** **tiene** aula **de** espanhol."
+            },
+            {
+              "sentence_number": 5,
+              "content": "**En la** escola, as aulas **de** espanhol são **martes** **y** **jueves**."
+            },
+            {
+              "sentence_number": 6,
+              "content": "**Ella** contou nos dedos as **siete** partes da **semana**."
+            },
+            {
+              "sentence_number": 7,
+              "content": "**Él** **tiene** **dos** relógios, mas nenhum marca **la** **hora** certa."
+            },
+            {
+              "sentence_number": 8,
+              "content": "**Él** guardou **nueve** figurinhas dentro da caixa."
+            },
+            {
+              "sentence_number": 9,
+              "content": "Toda **semana** **ella** visita **la** **abuela** **en el** **sábado**."
+            },
+            {
+              "sentence_number": 10,
+              "content": "Contamos **cinco** cadeiras **y** só **cuatro** pessoas **en la** **mesa**."
+            },
+            {
+              "sentence_number": 11,
+              "content": "**El** menino **tiene** **seis** anos **y** já sabe contar até **diez**."
+            },
+            {
+              "sentence_number": 12,
+              "content": "**La** **semana** começa **en el** **lunes** **y** termina **en el** **domingo**."
+            },
+            {
+              "sentence_number": 13,
+              "content": "**Mañana** **de** **sábado**, **la** **familia** inteira **va** à feira."
+            },
+            {
+              "sentence_number": 14,
+              "content": "**La** escola **tiene** **cinco** salas **y** **dos** banheiros."
+            },
+            {
+              "sentence_number": 15,
+              "content": "**La** **abuela** fez **dos** tortas para **la** festa **de** **sábado**."
+            },
+            {
+              "sentence_number": 16,
+              "content": "**Viernes** **es** **el** último **día** **antes** do fim **de** **semana**."
+            },
+            {
+              "sentence_number": 17,
+              "content": "**¿Cuánto cuesta** aquele relógio que marca **la** **hora** certa?"
+            },
+            {
+              "sentence_number": 18,
+              "content": "**Mi** **abuelo** **trabaja** **tres** dias por **semana**."
+            },
+            {
+              "sentence_number": 19,
+              "content": "**Ahora** **él** sabe que **jueves** **tiene** prova **de** matemática."
+            },
+            {
+              "sentence_number": 20,
+              "content": "**Él** contou até **diez** **y** **después** recomeçou do **cero**."
+            },
+            {
+              "sentence_number": 21,
+              "content": "**La** conta do restaurante deu **nueve** **peso** para **dos** pessoas."
+            },
+            {
+              "sentence_number": 22,
+              "content": "Entre **miércoles** **y** **viernes** fica **el** **jueves**."
+            },
+            {
+              "sentence_number": 23,
+              "content": "**Ella** precisa **de** **una** **hora** inteira para se arrumar."
+            },
+            {
+              "sentence_number": 24,
+              "content": "**El** **precio** do **leche** subiu esta **semana**."
+            },
+            {
+              "sentence_number": 25,
+              "content": "**Él** planeja **la** **semana** toda **en el** **domingo** **por la noche**."
+            },
+            {
+              "sentence_number": 26,
+              "content": "Perguntei **el** **precio**, mas **él** nem sabia responder."
+            },
+            {
+              "sentence_number": 27,
+              "content": "**Ahora** **es** **la** **hora** **de** **dormir**."
+            },
+            {
+              "sentence_number": 28,
+              "content": "**Ella** guardou **seis** **peso** para as despesas da **semana**."
+            },
+            {
+              "sentence_number": 29,
+              "content": "**El** **precio** subiu **de** **cinco** para **siete** **peso**."
+            },
+            {
+              "sentence_number": 30,
+              "content": "**Él** conta os dias da **semana** **con** os dedos: **lunes**, **martes**, **miércoles**."
+            },
+            {
+              "sentence_number": 31,
+              "content": "Espera só **un** **minuto**, já **estoy** terminando."
+            },
+            {
+              "sentence_number": 32,
+              "content": "Contando os convidados, **el** total foi **nueve**, quase **diez**."
+            },
+            {
+              "sentence_number": 33,
+              "content": "**El** **precio** da **fruta** varia conforme **la** estação."
+            },
+            {
+              "sentence_number": 34,
+              "content": "**Ella** tinha **dos** maçãs, comeu **una** **y** sobrou só **una**."
+            },
+            {
+              "sentence_number": 35,
+              "content": "**Mi** **primo** **tiene** **siete** anos **y** já sabe contar até **diez**."
+            },
+            {
+              "sentence_number": 36,
+              "content": "**Mi** **hermano** tinha **dos** lápis, deu **uno** para **el** amigo **y** ficou **con** **uno**."
+            },
+            {
+              "sentence_number": 37,
+              "content": "**Después** do **café**, **ella** liga para **la** **madre** todo **lunes**."
+            },
+            {
+              "sentence_number": 38,
+              "content": "**Él** guarda **tres** moedas **de** **un** **peso** dentro da gaveta."
+            },
+            {
+              "sentence_number": 39,
+              "content": "**La** professora conta **con** os dedos: **cero**, **uno**, **dos**, **tres**, **cuatro**."
+            },
+            {
+              "sentence_number": 40,
+              "content": "Primeiro vem **el** **uno**, **después** **el** **dos**, **y** por último **el** **tres**."
+            },
+            {
+              "sentence_number": 41,
+              "content": "**Ella** guardou **el** presente para dar **mañana**."
+            },
+            {
+              "sentence_number": 42,
+              "content": "**Él** **tiene** aula **de** música toda **jueves**."
+            },
+            {
+              "sentence_number": 43,
+              "content": "**Ahora** são **cuatro** horas **y** **el** sol já se põe."
+            },
+            {
+              "sentence_number": 44,
+              "content": "Faltam **tres** dias para **viernes**, **el** **día** favorito dela."
+            },
+            {
+              "sentence_number": 45,
+              "content": "**Ella** comprou **seis** ovos **y** pagou apenas **dos** **peso**."
+            },
+            {
+              "sentence_number": 46,
+              "content": "**¿Cuánto cuesta** esse relógio **en la** vitrine?"
+            },
+            {
+              "sentence_number": 47,
+              "content": "Entre **el** **seis** **y** **el** **ocho** fica **el** **siete**."
+            },
+            {
+              "sentence_number": 48,
+              "content": "**Él** acorda **una** **hora** **antes** **de** todo mundo **en** **casa**."
+            },
+            {
+              "sentence_number": 49,
+              "content": "Passou **más** **de** **una** **semana** **y** **el** **precio** da **fruta** **no** baixou."
+            },
+            {
+              "sentence_number": 50,
+              "content": "**Lunes** **es** **el** primeiro **día** útil da **semana**."
+            },
+            {
+              "sentence_number": 51,
+              "content": "**Una** **semana** **buena** começa **bien** descansado."
+            },
+            {
+              "sentence_number": 52,
+              "content": "**¿Cuánto cuesta** esse **pan** fresquinho?"
+            },
+            {
+              "sentence_number": 53,
+              "content": "Perguntei quantas figurinhas **ella** queria, **y** **ella** respondeu: **una**."
+            },
+            {
+              "sentence_number": 54,
+              "content": "**En la** próxima **semana**, **la** reunião será **miércoles**."
+            },
+            {
+              "sentence_number": 55,
+              "content": "**Hoy** **es** **sábado**, **y** **mañana** **es** **domingo**."
+            },
+            {
+              "sentence_number": 56,
+              "content": "**La** reunião foi marcada para **martes** **por la mañana**."
+            },
+            {
+              "sentence_number": 57,
+              "content": "**Él** só tinha **tres** **peso** **en el** bolso."
+            },
+            {
+              "sentence_number": 58,
+              "content": "**Domingo** **es** **el** único **día** que **ella** dorme até **tarde**."
+            },
+            {
+              "sentence_number": 59,
+              "content": "**Ella** **trabaja** **lunes**, **martes** **y** **miércoles**, mas descansa **en el** fim **de** **semana**."
+            },
+            {
+              "sentence_number": 60,
+              "content": "**Ella** pagou **cinco** **peso** pela **fruta** **en el** mercado."
+            },
+            {
+              "sentence_number": 61,
+              "content": "**Una** **semana** **tiene** **siete** dias, do **lunes** ao **domingo**."
+            },
+            {
+              "sentence_number": 62,
+              "content": "**Él** visita **la** **abuela** todo **sábado** **de** **tarde**."
+            },
+            {
+              "sentence_number": 63,
+              "content": "**¿Cuánto cuesta** **el** corte **de** cabelo **en la** barbearia?"
+            },
+            {
+              "sentence_number": 64,
+              "content": "**Mañana** **yo** preciso **despertarse** **bien** cedo."
+            },
+            {
+              "sentence_number": 65,
+              "content": "**La** **hermana** **tiene** **diez** anos, **y** **mi** **hermano** **tiene** **ocho**."
+            },
+            {
+              "sentence_number": 66,
+              "content": "**El** vendedor cobrou **diez** **peso** pela cesta **de** frutas."
+            },
+            {
+              "sentence_number": 67,
+              "content": "Bastou **un** **minuto** para **ella** resolver **todo**."
+            },
+            {
+              "sentence_number": 68,
+              "content": "**El** relógio da escola marcava **ocho** quando **él** chegou."
+            },
+            {
+              "sentence_number": 69,
+              "content": "**El** bebê já sabe dizer **uno**, **dos** **y** **tres** sozinho."
+            },
+            {
+              "sentence_number": 70,
+              "content": "**Hoy** **ella** completa **diez** anos morando nessa **casa**."
+            },
+            {
+              "sentence_number": 71,
+              "content": "Cada **huevo** custa **un** **peso** naquele mercado."
+            },
+            {
+              "sentence_number": 72,
+              "content": "Passou **una** **semana** inteira **y** **él** nem percebeu."
+            },
+            {
+              "sentence_number": 73,
+              "content": "**Un** **minuto** **de** atraso **y** **él** perdeu **el** ônibus."
+            },
+            {
+              "sentence_number": 74,
+              "content": "Passou **más** **de** **una** **hora** esperando **el** ônibus."
+            },
+            {
+              "sentence_number": 75,
+              "content": "**La** **semana** **de** trabalho **va** **de** **lunes** até **viernes**."
+            },
+            {
+              "sentence_number": 76,
+              "content": "**El** **precio** da entrada **en el** cinema **es** **ocho** **peso**."
+            },
+            {
+              "sentence_number": 77,
+              "content": "**Ahora** mesmo **él** termina **la** lição."
+            },
+            {
+              "sentence_number": 78,
+              "content": "**Mañana** **es** **día** **de** feira, **y** **el** **precio** costuma ser melhor."
+            },
+            {
+              "sentence_number": 79,
+              "content": "**La** criança aprendeu os números do **cero** até **el** **diez** esta **semana**."
+            },
+            {
+              "sentence_number": 80,
+              "content": "**Ella** terminou **el** trabalho **en** **menos** **de** **un** **minuto**."
+            },
+            {
+              "sentence_number": 81,
+              "content": "**El** mercado abre **en el** **lunes** **y** fecha **en el** **domingo**."
+            },
+            {
+              "sentence_number": 82,
+              "content": "**¿Cuánto cuesta** **el** aluguel daquele **cuarto** pequeno?"
+            },
+            {
+              "sentence_number": 83,
+              "content": "**Hoy** **es** **domingo**, **y** toda **la** **familia** almoça junta."
+            },
+            {
+              "sentence_number": 84,
+              "content": "**La** loja fecha **en el** **domingo** **y** abre **de** novo **en el** **lunes**."
+            },
+            {
+              "sentence_number": 85,
+              "content": "**¿Cuánto cuesta** **una** passagem **de** ônibus **hoy**?"
+            },
+            {
+              "sentence_number": 86,
+              "content": "**En el** caderno, **él** escreveu os números do **cero** ao **cinco**."
+            },
+            {
+              "sentence_number": 87,
+              "content": "**Él** chegou **una** **hora** atrasado para **la** reunião."
+            },
+            {
+              "sentence_number": 88,
+              "content": "Compramos **seis** ovos **y** usamos só **cuatro**."
+            },
+            {
+              "sentence_number": 89,
+              "content": "Faltam apenas **cinco** minutos para **la** **hora** do almoço."
+            },
+            {
+              "sentence_number": 90,
+              "content": "**Después** do **cuatro** vem **el** **cinco**, **y** **después** do **cinco** vem **el** **seis**."
+            },
+            {
+              "sentence_number": 91,
+              "content": "**Hoy** **ella** completa **diez** anos morando **en la** mesma **casa**."
+            },
+            {
+              "sentence_number": 92,
+              "content": "**Ella** pulou do **siete** direto para **el** **nueve**, esquecendo **el** **ocho**."
+            },
+            {
+              "sentence_number": 93,
+              "content": "**La** aula **de** música **es** **miércoles** **de** **tarde**."
+            },
+            {
+              "sentence_number": 94,
+              "content": "**El** ônibus tinha **nueve** passageiros quando parou **en la** esquina."
+            },
+            {
+              "sentence_number": 95,
+              "content": "Cada **semana** traz **una** novidade diferente."
+            },
+            {
+              "sentence_number": 96,
+              "content": "**Hoy** **es** **viernes**, finalmente!"
+            },
+            {
+              "sentence_number": 97,
+              "content": "**Miércoles** fica **bien** **en el** meio da **semana**."
+            },
+            {
+              "sentence_number": 98,
+              "content": "**En la** fazenda, contamos **siete** vacas **y** **tres** cavalos."
+            },
+            {
+              "sentence_number": 99,
+              "content": "Só falta **un** **minuto** para **la** prova começar."
+            },
+            {
+              "sentence_number": 100,
+              "content": "**Ahora** **él** sabe as horas certas **de** cada aula."
+            }
+          ],
+          "exercises": []
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch-A0-SS",
+      "number": 2,
+      "title": "Histórias Curtas e Narrativas Simples",
+      "description": "Aplicar o vocabulário do cotidiano a cenas narradas muito curtas, com começo, meio e fim.",
+      "status": "in_development",
+      "topics": [
+        {
+          "topic_id": "top-A0-SS-1",
+          "number": 1,
+          "title": "Um Breve Dia na Vida",
+          "description": "Uma pequena narrativa em terceira pessoa reaproveitando o vocabulário de \"Rotina Diária\" (verbos como \"va\", \"sale\", \"llega\", conjugados na terceira pessoa). Atenção ao falso cognato: \"assistir\" (português) não é \"asistir\" (espanhol, que significa \"comparecer\") — o verbo correto para \"assistir à televisão\" é \"ver\" (\"ve la televisión\"). Atividade de desenvolvimento: leitura de um pequeno relato em terceira pessoa sobre o dia de alguém.",
+          "status": "in_development",
+          "word_ids": [
+            "es-wd-0159",
+            "es-wd-0160",
+            "es-wd-0161",
+            "es-wd-0162",
+            "es-wd-0163",
+            "es-wd-0164",
+            "es-wd-0165",
+            "es-wd-0166",
+            "es-wd-0167",
+            "es-wd-0168",
+            "es-wd-0169",
+            "es-wd-0170",
+            "es-wd-0171",
+            "es-wd-0172",
+            "es-wd-0173",
+            "es-wd-0174"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "**Ella** **va** ao médico **y** **vuelve** ainda **por la mañana**."
+            },
+            {
+              "sentence_number": 2,
+              "content": "**Él** **ve la televisión** **antes** **de** **dormir**, todo **día**."
+            },
+            {
+              "sentence_number": 3,
+              "content": "**Ustedes** voltam **tarde** todo **viernes**?"
+            },
+            {
+              "sentence_number": 4,
+              "content": "**Él** liga para **ella** todo **día** **por la noche**."
+            },
+            {
+              "sentence_number": 5,
+              "content": "**Él** **llega** ao escritório sempre **en el** horário."
+            },
+            {
+              "sentence_number": 6,
+              "content": "**Él** **trabaja** **tres** dias por **semana**, **por la tarde**."
+            },
+            {
+              "sentence_number": 7,
+              "content": "**Ustedes** trabalham **en el** mesmo lugar que **ellos**?"
+            },
+            {
+              "sentence_number": 8,
+              "content": "**Por la tarde**, **ella** descansa **un** **poco** **antes** **de** **volver** para **casa**."
+            },
+            {
+              "sentence_number": 9,
+              "content": "**Ella** **sale** correndo **y** quase esquece **la** bolsa."
+            },
+            {
+              "sentence_number": 10,
+              "content": "**Él** **sale** **y** **ella** **lee** sozinha **en** **casa**."
+            },
+            {
+              "sentence_number": 11,
+              "content": "**Ella** **vuelve** cansada, mas ainda assim **lee** **un** **poco** **antes** **de** **dormir**."
+            },
+            {
+              "sentence_number": 12,
+              "content": "**Antes** **de** **llegar** **en** **casa**, **ella** passa **en la** padaria."
+            },
+            {
+              "sentence_number": 13,
+              "content": "**Él** **ve la televisión** até **tarde**, quase **por la mañana**."
+            },
+            {
+              "sentence_number": 14,
+              "content": "**Él** mora sozinho, **sin** **la** **familia** por perto."
+            },
+            {
+              "sentence_number": 15,
+              "content": "**Antes** **de** **trabajar**, **ella** toma **un** **café** rápido."
+            },
+            {
+              "sentence_number": 16,
+              "content": "**Ellas** assistem à **televisión** juntas todo **sábado** **por la noche**."
+            },
+            {
+              "sentence_number": 17,
+              "content": "**Ella** prefere **salir** **por la mañana**, **no** **por la tarde**."
+            },
+            {
+              "sentence_number": 18,
+              "content": "**Ella** **lee** **por la mañana** **y** **ve la televisión** **por la noche**."
+            },
+            {
+              "sentence_number": 19,
+              "content": "**Ella** **vuelve** do trabalho **y** cuida da **casa** **por la noche**."
+            },
+            {
+              "sentence_number": 20,
+              "content": "**Por la mañana**, **ellas** caminham juntas até **la** escola."
+            },
+            {
+              "sentence_number": 21,
+              "content": "**Antes** **de** **volver** para **casa**, **ella** liga para **la** **madre**."
+            },
+            {
+              "sentence_number": 22,
+              "content": "**Antes** **de** **salir** **por la mañana**, **él** toma **café** **con** **la** **familia**."
+            },
+            {
+              "sentence_number": 23,
+              "content": "**Ella** **vuelve** para **casa** **y** logo **ve la televisión**."
+            },
+            {
+              "sentence_number": 24,
+              "content": "**Él** **va** para **el** trabalho **por la mañana**."
+            },
+            {
+              "sentence_number": 25,
+              "content": "**Ella** mora **con** **la** **familia** dela numa **casa** pequena."
+            },
+            {
+              "sentence_number": 26,
+              "content": "**Ella** **sale** **de** **casa** **antes** das **siete**."
+            },
+            {
+              "sentence_number": 27,
+              "content": "**Ella** prefere **leer** **un** livro **en** vez **de** assistir à **televisión**."
+            },
+            {
+              "sentence_number": 28,
+              "content": "**Ellos** **y** **ellas** chegam juntos à escola **por la mañana**."
+            },
+            {
+              "sentence_number": 29,
+              "content": "**Él** **y** **ella** se conheceram **en la** escola."
+            },
+            {
+              "sentence_number": 30,
+              "content": "**Ella** **va** para **el** trabalho **y** **vuelve** **antes** das **seis**."
+            },
+            {
+              "sentence_number": 31,
+              "content": "**Él** **va**, **trabaja** **el** **día** todo **y** **vuelve** já **por la noche**."
+            },
+            {
+              "sentence_number": 32,
+              "content": "**Antes** **de** **dormir**, **ella** **lee** **un** **poco**."
+            },
+            {
+              "sentence_number": 33,
+              "content": "**Él** **va** **de** bicicleta **y** **llega** **bien** **más** rápido."
+            },
+            {
+              "sentence_number": 34,
+              "content": "**Ella** **ve la televisión** **con** **la** **familia** **por la noche**."
+            },
+            {
+              "sentence_number": 35,
+              "content": "**Antes** do **café** da manhã, **él** já fica pronto para **salir**."
+            },
+            {
+              "sentence_number": 36,
+              "content": "**Ellos** almoçam **con** **la** **familia** **antes** **de** **volver** ao trabalho."
+            },
+            {
+              "sentence_number": 37,
+              "content": "**Él** bebe **agua** **antes** **de** **dormir**, todo **día**."
+            },
+            {
+              "sentence_number": 38,
+              "content": "**Ellas** **y** **ellos** estudam **en la** mesma escola."
+            },
+            {
+              "sentence_number": 39,
+              "content": "**Por la noche**, **ustedes** costumam **cenar** cedo ou **tarde**?"
+            },
+            {
+              "sentence_number": 40,
+              "content": "**Ella** **trabaja** numa loja perto **de** **casa**."
+            },
+            {
+              "sentence_number": 41,
+              "content": "**Ellas** saem juntas **y** chegam juntas, sempre."
+            },
+            {
+              "sentence_number": 42,
+              "content": "**Ellos** assistem à **televisión** **y** riem juntos **por la noche**."
+            },
+            {
+              "sentence_number": 43,
+              "content": "**Por la noche**, **ellos** jantam juntos **y** conversam sobre **el** **día**."
+            },
+            {
+              "sentence_number": 44,
+              "content": "**Él** **llega**, janta **y** logo **ve la televisión**."
+            },
+            {
+              "sentence_number": 45,
+              "content": "**Él** **trabaja** **por la mañana** **y** descansa **por la tarde**."
+            },
+            {
+              "sentence_number": 46,
+              "content": "**Ellas** cuidam da **abuela** **por la tarde**, todo **día**."
+            },
+            {
+              "sentence_number": 47,
+              "content": "**Antes** **de** **salir**, **él** verifica se **la** **puerta** fica fechada."
+            },
+            {
+              "sentence_number": 48,
+              "content": "**Él** **trabaja** **en la** loja da **familia** desde pequeno."
+            },
+            {
+              "sentence_number": 49,
+              "content": "**Ella** **lee** todo **domingo** **por la tarde**, **sin** falta."
+            },
+            {
+              "sentence_number": 50,
+              "content": "**Él** **trabaja** demais **y** **vuelve** sempre exausto."
+            },
+            {
+              "sentence_number": 51,
+              "content": "**Ellas** trabalham **por la mañana** **y** estudam **por la tarde**."
+            },
+            {
+              "sentence_number": 52,
+              "content": "**Antes** **de** assistir à **televisión**, **ellos** terminam **el** **cenar**."
+            },
+            {
+              "sentence_number": 53,
+              "content": "**Ustedes** precisam decidir **antes** do fim **de** **semana**."
+            },
+            {
+              "sentence_number": 54,
+              "content": "**Ella** **sale** **por la mañana** **y** só **vuelve** **por la noche**."
+            },
+            {
+              "sentence_number": 55,
+              "content": "**Ellos** vão ao mercado **por la mañana**, sempre juntos."
+            },
+            {
+              "sentence_number": 56,
+              "content": "**Él** **vuelve** para **casa** cansado **por la tarde**."
+            },
+            {
+              "sentence_number": 57,
+              "content": "**Ellos** vão à igreja todo **domingo** **por la mañana**."
+            },
+            {
+              "sentence_number": 58,
+              "content": "**Él** **va** correndo, mas ainda assim **llega** atrasado."
+            },
+            {
+              "sentence_number": 59,
+              "content": "**Ellos** **y** **ellas** vieram juntos para **la** festa."
+            },
+            {
+              "sentence_number": 60,
+              "content": "**Ella** **trabaja** **y** **él** cuida da **casa** **por la mañana**."
+            },
+            {
+              "sentence_number": 61,
+              "content": "**Ella** **lee** **la** mesma história **antes** **de** **dormir** todo **día**."
+            },
+            {
+              "sentence_number": 62,
+              "content": "**Él** **llega** **en** **casa** **y** **ve la televisión** **con** **el** **hermano**."
+            },
+            {
+              "sentence_number": 63,
+              "content": "**Él** **ve la televisión** enquanto **ella** prepara **el** **cenar**."
+            },
+            {
+              "sentence_number": 64,
+              "content": "**Ustedes** chegam sempre **antes** das **ocho**?"
+            },
+            {
+              "sentence_number": 65,
+              "content": "**Ella** **y** **el** **esposo** jantam **y** assistem à **televisión** juntos."
+            },
+            {
+              "sentence_number": 66,
+              "content": "**Él** **es** organizado: **va**, **trabaja**, **vuelve**, **lee** **y** dorme."
+            },
+            {
+              "sentence_number": 67,
+              "content": "**Antes** das **siete**, **él** já **va** para **el** trabalho."
+            },
+            {
+              "sentence_number": 68,
+              "content": "**Él** dorme cedo, logo **después** **de** assistir à **televisión**."
+            },
+            {
+              "sentence_number": 69,
+              "content": "**Después** do trabalho, **él** só quer assistir à **televisión** **y** **descansar**."
+            },
+            {
+              "sentence_number": 70,
+              "content": "**Ella** **lee** **un** **poco** **antes** **de** **dormir**."
+            },
+            {
+              "sentence_number": 71,
+              "content": "**Él** **lee** **el** jornal **por la mañana** **y** descansa **por la tarde**."
+            },
+            {
+              "sentence_number": 72,
+              "content": "**Él** **sale** cedo **y** **llega** ao trabalho **antes** **de** **todos**."
+            },
+            {
+              "sentence_number": 73,
+              "content": "**Ella** **sale** cedo **y** **llega** **tarde**, **todos** os dias."
+            },
+            {
+              "sentence_number": 74,
+              "content": "**Antes** da **noche**, **ustedes** já terminaram **todo**?"
+            },
+            {
+              "sentence_number": 75,
+              "content": "**Antes** **de** **volver**, **él** passa **en el** mercado."
+            },
+            {
+              "sentence_number": 76,
+              "content": "**Él** **y** **la** **esposa** jantam juntos **por la noche**."
+            },
+            {
+              "sentence_number": 77,
+              "content": "**Ella** **va** ao mercado, **vuelve** rápido **y** **lee** **el** jornal."
+            },
+            {
+              "sentence_number": 78,
+              "content": "**Ellos** chegam **antes** das **seis**, sempre **por la tarde**."
+            },
+            {
+              "sentence_number": 79,
+              "content": "**Él** **es** **mi** **hermano** **y** **ella** **es** minha **hermana**."
+            },
+            {
+              "sentence_number": 80,
+              "content": "**Ustedes** assistem à **televisión** juntos ou cada **uno** sozinho?"
+            },
+            {
+              "sentence_number": 81,
+              "content": "**Él** visita **la** **abuela** todo **domingo** **por la tarde**."
+            },
+            {
+              "sentence_number": 82,
+              "content": "**Él** **vuelve** cedo às sextas-feiras, **antes** das **cinco**."
+            },
+            {
+              "sentence_number": 83,
+              "content": "**Ella** confia nele desde criança."
+            },
+            {
+              "sentence_number": 84,
+              "content": "**Ella** bebe **agua** fria **antes** **de** **salir** **por la mañana**."
+            },
+            {
+              "sentence_number": 85,
+              "content": "**Él** **sale** **de** **casa**, **trabaja** **el** **día** inteiro **y** **vuelve** já **de** **noche**."
+            },
+            {
+              "sentence_number": 86,
+              "content": "**Antes** **de** assistir à **televisión**, **ellos** terminam os deveres."
+            },
+            {
+              "sentence_number": 87,
+              "content": "**Por la mañana**, **él** toma **café** **y** **va** direto para **el** trabalho."
+            },
+            {
+              "sentence_number": 88,
+              "content": "**Antes** da **noche**, **él** já terminou **todas** as tarefas."
+            },
+            {
+              "sentence_number": 89,
+              "content": "**Ustedes** sempre chegam atrasados para **la** reunião."
+            },
+            {
+              "sentence_number": 90,
+              "content": "**Ella** só descansa **por la tarde**, nunca **por la mañana**."
+            },
+            {
+              "sentence_number": 91,
+              "content": "**Ellos** assistem à **televisión** juntos **después** do **cenar**."
+            },
+            {
+              "sentence_number": 92,
+              "content": "**Él** **y** **ella** moram **en la** mesma **casa** desde pequenos."
+            },
+            {
+              "sentence_number": 93,
+              "content": "**Él** mora sozinho, mas **ella** mora **con** **la** **familia**."
+            },
+            {
+              "sentence_number": 94,
+              "content": "**Antes** **de** **salir**, **ella** organiza **la** bolsa **por la mañana**."
+            },
+            {
+              "sentence_number": 95,
+              "content": "**Ella** estuda **por la tarde** **y** **trabaja** **por la noche**."
+            },
+            {
+              "sentence_number": 96,
+              "content": "**Por la mañana** **la** **casa** fica silenciosa, pois **todos** já saíram."
+            },
+            {
+              "sentence_number": 97,
+              "content": "**Ellas** chegam sempre **antes** dele."
+            },
+            {
+              "sentence_number": 98,
+              "content": "**Ella** liga para **la** **madre** **por la mañana**, sempre."
+            },
+            {
+              "sentence_number": 99,
+              "content": "**Ellas** trabalham juntas **en la** mesma loja."
+            },
+            {
+              "sentence_number": 100,
+              "content": "**Ellos** trabalham juntos todo **día**, cada **uno** **en** **su** área."
+            }
+          ],
+          "exercises": []
         }
       ]
     }
