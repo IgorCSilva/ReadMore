@@ -3148,6 +3148,1221 @@
           "es-wd-0130"
         ]
       }
+    ],
+    "topic_6": [
+      {
+        "id": "es-sent-0361",
+        "sentence": "El equipo tiene cero puntos hoy.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0080",
+          "es-wd-0131",
+          "es-wd-0146"
+        ]
+      },
+      {
+        "id": "es-sent-0362",
+        "sentence": "Empiezo a contar desde cero.",
+        "word_ids": [
+          "es-wd-0131"
+        ]
+      },
+      {
+        "id": "es-sent-0363",
+        "sentence": "Hace cero grados esta mañana.",
+        "word_ids": [
+          "es-wd-0131",
+          "es-wd-0147"
+        ]
+      },
+      {
+        "id": "es-sent-0364",
+        "sentence": "Tengo uno, no dos.",
+        "word_ids": [
+          "es-wd-0132",
+          "es-wd-0036",
+          "es-wd-0134"
+        ]
+      },
+      {
+        "id": "es-sent-0365",
+        "sentence": "El número uno es mi favorito.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0132",
+          "es-wd-0017",
+          "es-wd-0016"
+        ]
+      },
+      {
+        "id": "es-sent-0366",
+        "sentence": "Solo necesito uno más.",
+        "word_ids": [
+          "es-wd-0132",
+          "es-wd-0129"
+        ]
+      },
+      {
+        "id": "es-sent-0367",
+        "sentence": "Necesito una hora más para terminar.",
+        "word_ids": [
+          "es-wd-0133",
+          "es-wd-0143",
+          "es-wd-0129"
+        ]
+      },
+      {
+        "id": "es-sent-0368",
+        "sentence": "Falta una semana para el examen.",
+        "word_ids": [
+          "es-wd-0133",
+          "es-wd-0158",
+          "es-wd-0057"
+        ]
+      },
+      {
+        "id": "es-sent-0369",
+        "sentence": "Ella solo quiere una, no dos.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0133",
+          "es-wd-0036",
+          "es-wd-0134"
+        ]
+      },
+      {
+        "id": "es-sent-0370",
+        "sentence": "Tengo dos hermanos menores.",
+        "word_ids": [
+          "es-wd-0134"
+        ]
+      },
+      {
+        "id": "es-sent-0371",
+        "sentence": "Son las dos de la tarde.",
+        "word_ids": [
+          "es-wd-0134",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0008"
+        ]
+      },
+      {
+        "id": "es-sent-0372",
+        "sentence": "Compro dos manzanas cada día.",
+        "word_ids": [
+          "es-wd-0134",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0373",
+        "sentence": "Tengo tres primos en Madrid.",
+        "word_ids": [
+          "es-wd-0135",
+          "es-wd-0084"
+        ]
+      },
+      {
+        "id": "es-sent-0374",
+        "sentence": "Faltan tres días para el examen.",
+        "word_ids": [
+          "es-wd-0135",
+          "es-wd-0057"
+        ]
+      },
+      {
+        "id": "es-sent-0375",
+        "sentence": "Vivo a tres cuadras de aquí.",
+        "word_ids": [
+          "es-wd-0135",
+          "es-wd-0023",
+          "es-wd-0078"
+        ]
+      },
+      {
+        "id": "es-sent-0376",
+        "sentence": "Son las cuatro de la tarde.",
+        "word_ids": [
+          "es-wd-0136",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0008"
+        ]
+      },
+      {
+        "id": "es-sent-0377",
+        "sentence": "Tengo cuatro años más que mi hermano.",
+        "word_ids": [
+          "es-wd-0136",
+          "es-wd-0129",
+          "es-wd-0016",
+          "es-wd-0042"
+        ]
+      },
+      {
+        "id": "es-sent-0378",
+        "sentence": "Compro cuatro huevos en el mercado.",
+        "word_ids": [
+          "es-wd-0136",
+          "es-wd-0083"
+        ]
+      },
+      {
+        "id": "es-sent-0379",
+        "sentence": "Tengo cinco minutos libres antes de salir.",
+        "word_ids": [
+          "es-wd-0137",
+          "es-wd-0174",
+          "es-wd-0023",
+          "es-wd-0094"
+        ]
+      },
+      {
+        "id": "es-sent-0380",
+        "sentence": "Son las cinco de la mañana.",
+        "word_ids": [
+          "es-wd-0137",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0147"
+        ]
+      },
+      {
+        "id": "es-sent-0381",
+        "sentence": "Mi casa tiene cinco cuartos.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0063",
+          "es-wd-0080",
+          "es-wd-0137"
+        ]
+      },
+      {
+        "id": "es-sent-0382",
+        "sentence": "Me despierto a las seis todos los días.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0104",
+          "es-wd-0138",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0383",
+        "sentence": "Tengo seis primos por parte de madre.",
+        "word_ids": [
+          "es-wd-0138",
+          "es-wd-0023",
+          "es-wd-0039"
+        ]
+      },
+      {
+        "id": "es-sent-0384",
+        "sentence": "El tren llega a las seis.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0166",
+          "es-wd-0138"
+        ]
+      },
+      {
+        "id": "es-sent-0385",
+        "sentence": "Duermo siete horas cada noche.",
+        "word_ids": [
+          "es-wd-0139",
+          "es-wd-0009"
+        ]
+      },
+      {
+        "id": "es-sent-0386",
+        "sentence": "Son las siete de la mañana.",
+        "word_ids": [
+          "es-wd-0139",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0147"
+        ]
+      },
+      {
+        "id": "es-sent-0387",
+        "sentence": "Hay siete días en una semana.",
+        "word_ids": [
+          "es-wd-0081",
+          "es-wd-0139",
+          "es-wd-0084",
+          "es-wd-0133",
+          "es-wd-0158"
+        ]
+      },
+      {
+        "id": "es-sent-0388",
+        "sentence": "Trabajo ocho horas al día.",
+        "word_ids": [
+          "es-wd-0140",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0389",
+        "sentence": "Son las ocho de la noche.",
+        "word_ids": [
+          "es-wd-0140",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0009"
+        ]
+      },
+      {
+        "id": "es-sent-0390",
+        "sentence": "Tengo ocho años más que mi prima.",
+        "word_ids": [
+          "es-wd-0140",
+          "es-wd-0129",
+          "es-wd-0016",
+          "es-wd-0049"
+        ]
+      },
+      {
+        "id": "es-sent-0391",
+        "sentence": "La tienda abre a las nueve.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0141"
+        ]
+      },
+      {
+        "id": "es-sent-0392",
+        "sentence": "Tengo nueve primos en total.",
+        "word_ids": [
+          "es-wd-0141",
+          "es-wd-0084"
+        ]
+      },
+      {
+        "id": "es-sent-0393",
+        "sentence": "Son las nueve y ya es tarde.",
+        "word_ids": [
+          "es-wd-0141",
+          "es-wd-0033",
+          "es-wd-0017",
+          "es-wd-0008"
+        ]
+      },
+      {
+        "id": "es-sent-0394",
+        "sentence": "Cuento del uno al diez.",
+        "word_ids": [
+          "es-wd-0132",
+          "es-wd-0142"
+        ]
+      },
+      {
+        "id": "es-sent-0395",
+        "sentence": "Tengo diez años de casado.",
+        "word_ids": [
+          "es-wd-0142",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0396",
+        "sentence": "Son las diez de la noche.",
+        "word_ids": [
+          "es-wd-0142",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0009"
+        ]
+      },
+      {
+        "id": "es-sent-0397",
+        "sentence": "Necesito una hora para arreglarme.",
+        "word_ids": [
+          "es-wd-0133",
+          "es-wd-0143"
+        ]
+      },
+      {
+        "id": "es-sent-0398",
+        "sentence": "¿Qué hora es?",
+        "word_ids": [
+          "es-wd-0143",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0399",
+        "sentence": "Cada hora pasa muy rápido.",
+        "word_ids": [
+          "es-wd-0143"
+        ]
+      },
+      {
+        "id": "es-sent-0400",
+        "sentence": "Espera un minuto, por favor.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0144"
+        ]
+      },
+      {
+        "id": "es-sent-0401",
+        "sentence": "Llegué con un minuto de retraso.",
+        "word_ids": [
+          "es-wd-0061",
+          "es-wd-0076",
+          "es-wd-0144",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0402",
+        "sentence": "Solo necesito un minuto más.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0144",
+          "es-wd-0129"
+        ]
+      },
+      {
+        "id": "es-sent-0403",
+        "sentence": "Ahora no es un buen momento.",
+        "word_ids": [
+          "es-wd-0145",
+          "es-wd-0036",
+          "es-wd-0017",
+          "es-wd-0076"
+        ]
+      },
+      {
+        "id": "es-sent-0404",
+        "sentence": "Voy a comer ahora mismo.",
+        "word_ids": [
+          "es-wd-0123",
+          "es-wd-0145"
+        ]
+      },
+      {
+        "id": "es-sent-0405",
+        "sentence": "Ahora entiendo todo.",
+        "word_ids": [
+          "es-wd-0145",
+          "es-wd-0010"
+        ]
+      },
+      {
+        "id": "es-sent-0406",
+        "sentence": "Hoy es un día especial.",
+        "word_ids": [
+          "es-wd-0146",
+          "es-wd-0017",
+          "es-wd-0076",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0407",
+        "sentence": "¿Qué vamos a comer hoy?",
+        "word_ids": [
+          "es-wd-0123",
+          "es-wd-0146"
+        ]
+      },
+      {
+        "id": "es-sent-0408",
+        "sentence": "Hoy estoy muy feliz.",
+        "word_ids": [
+          "es-wd-0146",
+          "es-wd-0014"
+        ]
+      },
+      {
+        "id": "es-sent-0409",
+        "sentence": "Mañana tengo una reunión importante.",
+        "word_ids": [
+          "es-wd-0147",
+          "es-wd-0133"
+        ]
+      },
+      {
+        "id": "es-sent-0410",
+        "sentence": "Nos vemos mañana.",
+        "word_ids": [
+          "es-wd-0147"
+        ]
+      },
+      {
+        "id": "es-sent-0411",
+        "sentence": "Mañana es el cumpleaños de mi abuela.",
+        "word_ids": [
+          "es-wd-0147",
+          "es-wd-0017",
+          "es-wd-0057",
+          "es-wd-0023",
+          "es-wd-0016",
+          "es-wd-0045"
+        ]
+      },
+      {
+        "id": "es-sent-0412",
+        "sentence": "¿Cuánto cuesta este pan?",
+        "word_ids": [
+          "es-wd-0148",
+          "es-wd-0114"
+        ]
+      },
+      {
+        "id": "es-sent-0413",
+        "sentence": "¿Cuánto cuesta la entrada al cine?",
+        "word_ids": [
+          "es-wd-0148",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0414",
+        "sentence": "No sé cuánto cuesta esa silla.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0148",
+          "es-wd-0071"
+        ]
+      },
+      {
+        "id": "es-sent-0415",
+        "sentence": "El precio de la fruta subió.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0149",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0119"
+        ]
+      },
+      {
+        "id": "es-sent-0416",
+        "sentence": "¿Cuál es el precio de esto?",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0057",
+          "es-wd-0149",
+          "es-wd-0023",
+          "es-wd-0085"
+        ]
+      },
+      {
+        "id": "es-sent-0417",
+        "sentence": "El precio es muy alto.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0149",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0418",
+        "sentence": "Esta manzana cuesta un peso.",
+        "word_ids": [
+          "es-wd-0120",
+          "es-wd-0076",
+          "es-wd-0150"
+        ]
+      },
+      {
+        "id": "es-sent-0419",
+        "sentence": "Un peso no alcanza para nada hoy.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0150",
+          "es-wd-0036",
+          "es-wd-0126",
+          "es-wd-0146"
+        ]
+      },
+      {
+        "id": "es-sent-0420",
+        "sentence": "Todavía tengo un peso en el bolsillo.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0150",
+          "es-wd-0083"
+        ]
+      },
+      {
+        "id": "es-sent-0421",
+        "sentence": "El lunes empiezo a trabajar temprano.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0151",
+          "es-wd-0097"
+        ]
+      },
+      {
+        "id": "es-sent-0422",
+        "sentence": "Tengo clase de español el lunes.",
+        "word_ids": [
+          "es-wd-0023",
+          "es-wd-0057",
+          "es-wd-0151"
+        ]
+      },
+      {
+        "id": "es-sent-0423",
+        "sentence": "El lunes es el primer día de la semana.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0151",
+          "es-wd-0017",
+          "es-wd-0057",
+          "es-wd-0007",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0158"
+        ]
+      },
+      {
+        "id": "es-sent-0424",
+        "sentence": "El martes tengo una cita importante.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0152",
+          "es-wd-0133"
+        ]
+      },
+      {
+        "id": "es-sent-0425",
+        "sentence": "Nos vemos el martes por la tarde.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0152",
+          "es-wd-0172"
+        ]
+      },
+      {
+        "id": "es-sent-0426",
+        "sentence": "El martes es un buen día para estudiar.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0152",
+          "es-wd-0017",
+          "es-wd-0076",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0427",
+        "sentence": "El miércoles está justo en medio de la semana.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0153",
+          "es-wd-0084",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0158"
+        ]
+      },
+      {
+        "id": "es-sent-0428",
+        "sentence": "Tengo prueba el miércoles.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0153"
+        ]
+      },
+      {
+        "id": "es-sent-0429",
+        "sentence": "El miércoles siempre estoy muy ocupado.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0153",
+          "es-wd-0014"
+        ]
+      },
+      {
+        "id": "es-sent-0430",
+        "sentence": "El jueves visito a mi abuela.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0154",
+          "es-wd-0016",
+          "es-wd-0045"
+        ]
+      },
+      {
+        "id": "es-sent-0431",
+        "sentence": "Tengo clase de música el jueves.",
+        "word_ids": [
+          "es-wd-0023",
+          "es-wd-0057",
+          "es-wd-0154"
+        ]
+      },
+      {
+        "id": "es-sent-0432",
+        "sentence": "El jueves casi termina la semana.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0154",
+          "es-wd-0058",
+          "es-wd-0158"
+        ]
+      },
+      {
+        "id": "es-sent-0433",
+        "sentence": "El viernes es mi día favorito.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0155",
+          "es-wd-0017",
+          "es-wd-0016",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0434",
+        "sentence": "El fin de semana empieza el viernes.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0023",
+          "es-wd-0158",
+          "es-wd-0057",
+          "es-wd-0155"
+        ]
+      },
+      {
+        "id": "es-sent-0435",
+        "sentence": "Nos vemos el viernes por la noche.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0155",
+          "es-wd-0173"
+        ]
+      },
+      {
+        "id": "es-sent-0436",
+        "sentence": "El sábado descanso todo el día.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0156",
+          "es-wd-0010",
+          "es-wd-0057",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0437",
+        "sentence": "Cada sábado voy al mercado.",
+        "word_ids": [
+          "es-wd-0156"
+        ]
+      },
+      {
+        "id": "es-sent-0438",
+        "sentence": "Nos vemos el sábado por la tarde.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0156",
+          "es-wd-0172"
+        ]
+      },
+      {
+        "id": "es-sent-0439",
+        "sentence": "El domingo almuerzo con mi familia.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0157",
+          "es-wd-0061",
+          "es-wd-0016",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0440",
+        "sentence": "Cada domingo es para descansar.",
+        "word_ids": [
+          "es-wd-0157",
+          "es-wd-0017",
+          "es-wd-0101"
+        ]
+      },
+      {
+        "id": "es-sent-0441",
+        "sentence": "El domingo es el último día de la semana.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0157",
+          "es-wd-0017",
+          "es-wd-0057",
+          "es-wd-0007",
+          "es-wd-0023",
+          "es-wd-0058",
+          "es-wd-0158"
+        ]
+      },
+      {
+        "id": "es-sent-0442",
+        "sentence": "Trabajo cinco días a la semana.",
+        "word_ids": [
+          "es-wd-0137",
+          "es-wd-0058",
+          "es-wd-0158"
+        ]
+      },
+      {
+        "id": "es-sent-0443",
+        "sentence": "Esta semana ha sido muy larga.",
+        "word_ids": [
+          "es-wd-0158"
+        ]
+      },
+      {
+        "id": "es-sent-0444",
+        "sentence": "La próxima semana tengo vacaciones.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0158"
+        ]
+      }
+    ]
+  },
+  "chapter_2": {
+    "topic_1": [
+      {
+        "id": "es-sent-0445",
+        "sentence": "Él es mi hermano mayor.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0017",
+          "es-wd-0016",
+          "es-wd-0042"
+        ]
+      },
+      {
+        "id": "es-sent-0446",
+        "sentence": "Él vive en Barcelona.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0084"
+        ]
+      },
+      {
+        "id": "es-sent-0447",
+        "sentence": "Ella y él son muy amigos.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0033",
+          "es-wd-0159"
+        ]
+      },
+      {
+        "id": "es-sent-0448",
+        "sentence": "Ella es profesora de matemáticas.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0017",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0449",
+        "sentence": "Ella vive cerca de mi casa.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0023",
+          "es-wd-0016",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0450",
+        "sentence": "Ella y yo estudiamos juntas.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0033",
+          "es-wd-0018"
+        ]
+      },
+      {
+        "id": "es-sent-0451",
+        "sentence": "Ellos viven en la misma calle.",
+        "word_ids": [
+          "es-wd-0161",
+          "es-wd-0082"
+        ]
+      },
+      {
+        "id": "es-sent-0452",
+        "sentence": "Ellos trabajan en el mismo lugar.",
+        "word_ids": [
+          "es-wd-0161",
+          "es-wd-0083"
+        ]
+      },
+      {
+        "id": "es-sent-0453",
+        "sentence": "Ellos llegan siempre a tiempo.",
+        "word_ids": [
+          "es-wd-0161"
+        ]
+      },
+      {
+        "id": "es-sent-0454",
+        "sentence": "Ellas son hermanas.",
+        "word_ids": [
+          "es-wd-0162"
+        ]
+      },
+      {
+        "id": "es-sent-0455",
+        "sentence": "Ellas estudian en la misma escuela.",
+        "word_ids": [
+          "es-wd-0162",
+          "es-wd-0082"
+        ]
+      },
+      {
+        "id": "es-sent-0456",
+        "sentence": "Ellas siempre llegan juntas.",
+        "word_ids": [
+          "es-wd-0162"
+        ]
+      },
+      {
+        "id": "es-sent-0457",
+        "sentence": "¿Ustedes viven cerca de aquí?",
+        "word_ids": [
+          "es-wd-0163",
+          "es-wd-0023",
+          "es-wd-0078"
+        ]
+      },
+      {
+        "id": "es-sent-0458",
+        "sentence": "Ustedes trabajan mucho.",
+        "word_ids": [
+          "es-wd-0163",
+          "es-wd-0127"
+        ]
+      },
+      {
+        "id": "es-sent-0459",
+        "sentence": "¿A qué hora llegan ustedes?",
+        "word_ids": [
+          "es-wd-0143",
+          "es-wd-0163"
+        ]
+      },
+      {
+        "id": "es-sent-0460",
+        "sentence": "Él va al trabajo muy temprano.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0164"
+        ]
+      },
+      {
+        "id": "es-sent-0461",
+        "sentence": "Ella va al mercado todos los días.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0164",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0462",
+        "sentence": "¿A dónde va usted?",
+        "word_ids": [
+          "es-wd-0024",
+          "es-wd-0164"
+        ]
+      },
+      {
+        "id": "es-sent-0463",
+        "sentence": "Ella sale de casa a las siete.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0165",
+          "es-wd-0023",
+          "es-wd-0063",
+          "es-wd-0139"
+        ]
+      },
+      {
+        "id": "es-sent-0464",
+        "sentence": "Él sale temprano los lunes.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0165",
+          "es-wd-0151"
+        ]
+      },
+      {
+        "id": "es-sent-0465",
+        "sentence": "Mi hermano sale con sus amigos.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0042",
+          "es-wd-0165",
+          "es-wd-0061"
+        ]
+      },
+      {
+        "id": "es-sent-0466",
+        "sentence": "Él llega tarde casi todos los días.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0166",
+          "es-wd-0008",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0467",
+        "sentence": "Ella llega a tiempo a la reunión.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0166",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0468",
+        "sentence": "El tren llega a las nueve.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0166",
+          "es-wd-0141"
+        ]
+      },
+      {
+        "id": "es-sent-0469",
+        "sentence": "Mi padre trabaja en un banco.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0038",
+          "es-wd-0167",
+          "es-wd-0084",
+          "es-wd-0076"
+        ]
+      },
+      {
+        "id": "es-sent-0470",
+        "sentence": "Ella trabaja mucho todos los días.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0167",
+          "es-wd-0127",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0471",
+        "sentence": "Él trabaja de lunes a viernes.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0167",
+          "es-wd-0023",
+          "es-wd-0151",
+          "es-wd-0155"
+        ]
+      },
+      {
+        "id": "es-sent-0472",
+        "sentence": "Él vuelve a casa muy cansado.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0168",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0473",
+        "sentence": "Ella vuelve del trabajo a las seis.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0168",
+          "es-wd-0138"
+        ]
+      },
+      {
+        "id": "es-sent-0474",
+        "sentence": "Mi hermano vuelve mañana de su viaje.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0042",
+          "es-wd-0168",
+          "es-wd-0147",
+          "es-wd-0023",
+          "es-wd-0052"
+        ]
+      },
+      {
+        "id": "es-sent-0475",
+        "sentence": "Ella lee un libro antes de dormir.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0169",
+          "es-wd-0076",
+          "es-wd-0174",
+          "es-wd-0023",
+          "es-wd-0103"
+        ]
+      },
+      {
+        "id": "es-sent-0476",
+        "sentence": "Él lee el periódico por la mañana.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0169",
+          "es-wd-0057",
+          "es-wd-0171"
+        ]
+      },
+      {
+        "id": "es-sent-0477",
+        "sentence": "Mi abuelo lee todos los días.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0044",
+          "es-wd-0169",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0478",
+        "sentence": "Él ve la televisión después de cenar.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0170",
+          "es-wd-0106",
+          "es-wd-0023",
+          "es-wd-0100"
+        ]
+      },
+      {
+        "id": "es-sent-0479",
+        "sentence": "Ella ve la televisión con su familia.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0170",
+          "es-wd-0061",
+          "es-wd-0052",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0480",
+        "sentence": "Mi hermano ve la televisión todos los sábados.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0042",
+          "es-wd-0170",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0481",
+        "sentence": "Tomo café por la mañana.",
+        "word_ids": [
+          "es-wd-0112",
+          "es-wd-0171"
+        ]
+      },
+      {
+        "id": "es-sent-0482",
+        "sentence": "Ella hace ejercicio por la mañana.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0171"
+        ]
+      },
+      {
+        "id": "es-sent-0483",
+        "sentence": "Por la mañana, la casa está tranquila.",
+        "word_ids": [
+          "es-wd-0171",
+          "es-wd-0058",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0484",
+        "sentence": "Estudio por la tarde.",
+        "word_ids": [
+          "es-wd-0172"
+        ]
+      },
+      {
+        "id": "es-sent-0485",
+        "sentence": "Él descansa por la tarde.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0172"
+        ]
+      },
+      {
+        "id": "es-sent-0486",
+        "sentence": "Por la tarde, el sol es muy fuerte.",
+        "word_ids": [
+          "es-wd-0172",
+          "es-wd-0057",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0487",
+        "sentence": "Cenamos juntos por la noche.",
+        "word_ids": [
+          "es-wd-0173"
+        ]
+      },
+      {
+        "id": "es-sent-0488",
+        "sentence": "Ella lee por la noche.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0169",
+          "es-wd-0173"
+        ]
+      },
+      {
+        "id": "es-sent-0489",
+        "sentence": "Por la noche, la ciudad se ve hermosa.",
+        "word_ids": [
+          "es-wd-0173",
+          "es-wd-0058",
+          "es-wd-0021"
+        ]
+      },
+      {
+        "id": "es-sent-0490",
+        "sentence": "Antes de dormir, leo un poco.",
+        "word_ids": [
+          "es-wd-0174",
+          "es-wd-0023",
+          "es-wd-0103",
+          "es-wd-0076",
+          "es-wd-0128"
+        ]
+      },
+      {
+        "id": "es-sent-0491",
+        "sentence": "Llegué antes que todos.",
+        "word_ids": [
+          "es-wd-0174",
+          "es-wd-0059"
+        ]
+      },
+      {
+        "id": "es-sent-0492",
+        "sentence": "Antes vivía en otra ciudad.",
+        "word_ids": [
+          "es-wd-0174",
+          "es-wd-0084"
+        ]
+      }
     ]
   }
 }
