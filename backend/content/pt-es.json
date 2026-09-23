@@ -1761,7 +1761,7 @@
           "number": 5,
           "title": "Comida e Refeições",
           "description": "Vocabulário básico de comida e bebida, incluindo simples expressões de gostar/não gostar com o verbo \"gustar\" — que usa uma construção reflexiva inversa em espanhol (\"me gusta\"), diferente do português (\"eu gosto de\"). Atividade de desenvolvimento: leitura de uma breve nota sobre o que alguém come.",
-          "status": "in_development",
+          "status": "ready",
           "word_ids": [
             "es-wd-0109",
             "es-wd-0110",
@@ -2196,7 +2196,7 @@
           "number": 6,
           "title": "Números, Horas e Preços Simples",
           "description": "Números cardinais, expressões de hora e preços simples, incluindo o par \"uno\"/\"una\" conforme o gênero do substantivo (diferente do português, que também distingue \"dois\"/\"duas\", mas o espanhol usa \"dos\" para ambos os gêneros) e os dias da semana. Atividade de desenvolvimento: leitura de frases cotidianas com informações numéricas incidentais (idades, horários, preços).",
-          "status": "in_development",
+          "status": "ready",
           "word_ids": [
             "es-wd-0131",
             "es-wd-0132",
@@ -2639,14 +2639,14 @@
       "number": 2,
       "title": "Histórias Curtas e Narrativas Simples",
       "description": "Aplicar o vocabulário do cotidiano a cenas narradas muito curtas, com começo, meio e fim.",
-      "status": "in_development",
+      "status": "ready",
       "topics": [
         {
           "topic_id": "top-A0-SS-1",
           "number": 1,
           "title": "Um Breve Dia na Vida",
           "description": "Uma pequena narrativa em terceira pessoa reaproveitando o vocabulário de \"Rotina Diária\" (verbos como \"va\", \"sale\", \"llega\", conjugados na terceira pessoa). Atenção ao falso cognato: \"assistir\" (português) não é \"asistir\" (espanhol, que significa \"comparecer\") — o verbo correto para \"assistir à televisão\" é \"ver\" (\"ve la televisión\"). Atividade de desenvolvimento: leitura de um pequeno relato em terceira pessoa sobre o dia de alguém.",
-          "status": "in_development",
+          "status": "ready",
           "word_ids": [
             "es-wd-0159",
             "es-wd-0160",
