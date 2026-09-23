@@ -171,3 +171,28 @@ not bypass or duplicate the learning system.
   Phaser's default keyboard-capture behavior called `preventDefault()` on
   arrow/E keydowns app-wide regardless of focus — same class of issue as the
   Flashcards.vue fix, opposite direction.
+- Milestone 7 done: the NPC now runs a real, deterministic three-beat
+  conversation (`features/game/quest.ts`) instead of Milestone 5's placeholder
+  toggle — greet, answer yes, say thanks — each beat requiring the matching
+  `SAY` command. The script is matched by the game-content mapping's semantic
+  `data.line` tag, not a hardcoded `word_id`, so it works unmodified for any
+  origin→target pair whose mapping tags those three dialogue beats the same
+  way (see `DEVELOPMENT_ROADMAP.md`'s Milestone 7 detail). Quest progress is
+  still local/client-only Phaser scene state — no backend wiring yet.
+- Milestone 8 done: a second, independent interactable — a locked gate
+  (`features/game/gate.ts`) — that opens only by `SAY`ing the target-language
+  word tagged with a specific `data.concept` while standing near it. Same
+  semantic-tag matching convention as Milestone 7's quest, so it works
+  unmodified for any pair whose mapping tags a word with that concept. Not
+  coupled to the NPC's quest — independently solvable, still local/client
+  state only.
+- Milestone 9 done: a first, minimal slice of the "Event system" section
+  above — a `WORD_USED`-shaped event now fires through the *existing*
+  `IncrementShownCount`/`POST /increment` use case (via
+  `shared/writeQueue.ts`'s `performWrite`, the same call every other feature
+  already uses), rather than a parallel tracking system, whenever a `SAY`
+  command is consequential (matches the NPC's expected step, or opens the
+  gate) — not merely recognized. The richer candidate event set
+  (`WORD_DISCOVERED`, `QUEST_COMPLETED`, etc.) still has no dedicated backend
+  support; only what `IncrementShownCount` already exposes is wired up so
+  far.

@@ -18,9 +18,12 @@
 import { onMounted, onUnmounted, ref } from 'vue'
 import Phaser from 'phaser'
 import { getGameArea, getWords } from '../../shared/api'
+import { performWrite } from '../../shared/writeQueue'
 import { buildSceneItems, type SceneItem } from './sceneItems'
 import { isWithinInteractRange } from './interaction'
-import { parseCommand, type CommandVocabularyEntry } from './command'
+import { parseCommand, type CommandVocabularyEntry, type GameAction } from './command'
+import { advanceQuest, buildQuestSteps, questPrompt, type QuestProgress, type QuestStep } from './quest'
+import { buildGateState, tryOpenGate, type GateState } from './gate'
 
 // Milestone 4 of game_approach/documents/DEVELOPMENT_ROADMAP.md: renders a
 // topic's game-content mapping (see LANGUAGE_INTEGRATION.md) as static
@@ -45,13 +48,38 @@ import { parseCommand, type CommandVocabularyEntry } from './command'
 // (GAME_ARCHITECTURE.md's "Command system" section): a text input below the
 // canvas, parsed by ./command.ts's parseCommand against the active topic's
 // vocabulary (word_id/text pairs built the same way renderItems' word labels
-// are). Recognized/rejected results are shown as plain feedback text — this
-// milestone proves the parser works against real per-topic vocabulary; wiring
-// a recognized action to actual NPC/dialogue consequences is Milestone 7.
+// are). Recognized/rejected results are shown as plain feedback text.
 //
-// buildSceneItems/isWithinInteractRange/parseCommand live in their own
-// modules, not here — <script setup> cannot contain named ES module exports
-// (Vue compiler restriction), and pure logic is easier to unit-test
+// Milestone 7 gives the NPC a deterministic, scripted conversation (see
+// ./quest.ts) instead of the plain toggle Milestone 5 had: pressing E in
+// range starts it, then each recognized SAY command from the bar below is
+// forwarded to MainScene.applyAction, which advances the conversation one
+// step if it matches what the NPC is currently waiting for. The script is
+// matched by the game-content mapping's semantic `data.line` tag
+// (greeting-formal → affirmation → courtesy-thanks), never a hardcoded
+// word_id, so the same three-beat conversation works for any origin→target
+// pair whose mapping tags those lines the same way.
+//
+// Milestone 8 adds one locked gate (see ./gate.ts) — a second, independent
+// puzzle alongside the NPC's quest, open-able only by SAYing the correct
+// target-language word while standing near it. Same semantic-tag matching
+// convention as the quest: the required word is found by `data.concept` on
+// the topic's own mapping, not a hardcoded word_id.
+//
+// Milestone 9 wires a WORD_USED learning event (GAME_ARCHITECTURE.md's event
+// catalog) into the *existing* progress system instead of a parallel one:
+// whenever a SAY command actually accomplishes something in the world (an
+// expected quest step, or opening the gate) — not merely a recognized
+// command — MainScene.applyAction reports that back to submitCommand, which
+// calls the same shared/writeQueue.ts performWrite("increment", ...) every
+// other feature already uses to bump a word's shown_count, offline-queueing
+// included for free. A recognized-but-inconsequential SAY (right word,
+// nothing currently needs it) does not fire an event — the signal is "this
+// word did something," not "this word was typed."
+//
+// buildSceneItems/isWithinInteractRange/parseCommand/quest/gate live in their
+// own modules, not here — <script setup> cannot contain named ES module
+// exports (Vue compiler restriction), and pure logic is easier to unit-test
 // standalone.
 
 const SCENE_KEY = 'MainScene'
@@ -69,19 +97,31 @@ const CELL_HEIGHT = 60
 // overlap.
 const PLAYER_START = { x: 120, y: 380 }
 const NPC_POSITION = { x: 480, y: 380 }
+// Off in its own corner, clear of both the word-label grid (y up to ~280)
+// and the player/NPC row (y 380) — a separate puzzle, not part of the
+// conversation.
+const GATE_POSITION = { x: 580, y: 440 }
+const GATE_SIZE = { width: 36, height: 56 }
 const PLAYER_SPEED = 200
 const INTERACT_RADIUS = 60
+const GATE_INTERACT_RADIUS = 60
 const PLAYER_COLOR = 0xffffff
 const NPC_COLOR = 0x9b5de5
-const NPC_INTERACTED_COLOR = 0x2ec4b6
+const NPC_TALKING_COLOR = 0x2ec4b6
+const NPC_QUEST_COMPLETE_COLOR = 0xffd166
+const GATE_LOCKED_COLOR = 0x6b4226
+const GATE_OPEN_COLOR = 0x90ee90
 
 // Module-level, not component state: MainScene is instantiated by Phaser
 // itself (it's handed the class, not an instance) the moment the game boots,
 // so this is how show() below reaches the running scene. Buffered in
-// pendingItems for the (normal) case where show()'s data arrives before
-// Phaser has finished booting and called create().
+// pendingItems/pendingQuestSteps/pendingGateState for the (normal) case
+// where show()'s data arrives before Phaser has finished booting and called
+// create().
 let sceneInstance: MainScene | null = null
 let pendingItems: SceneItem[] | null = null
+let pendingQuestSteps: QuestStep[] | null = null
+let pendingGateState: GateState | null = null
 
 class MainScene extends Phaser.Scene {
   wordLabels: Phaser.GameObjects.Text[] = []
@@ -90,7 +130,12 @@ class MainScene extends Phaser.Scene {
   promptText!: Phaser.GameObjects.Text
   cursors: Phaser.Types.Input.Keyboard.CursorKeys | null = null
   keyE: Phaser.Input.Keyboard.Key | null = null
-  interacted = false
+  questSteps: QuestStep[] = []
+  questProgress: QuestProgress = { stageIndex: 0, completed: false }
+  questStarted = false
+  gate!: Phaser.GameObjects.Rectangle
+  gateHintText!: Phaser.GameObjects.Text
+  gateState: GateState = { wordId: null, open: false }
 
   constructor() {
     super(SCENE_KEY)
@@ -105,11 +150,15 @@ class MainScene extends Phaser.Scene {
     this.physics.add.existing(this.player)
     ;(this.player.body as Phaser.Physics.Arcade.Body).setCollideWorldBounds(true)
 
-    this.promptText = this.add.text(0, 0, 'Press E to interact', {
+    this.promptText = this.add.text(0, 0, 'Press E to talk', {
       color: '#ffffff',
       fontSize: '14px',
     })
     this.promptText.setVisible(false)
+
+    this.gate = this.add.rectangle(GATE_POSITION.x, GATE_POSITION.y, GATE_SIZE.width, GATE_SIZE.height, GATE_LOCKED_COLOR)
+    this.gateHintText = this.add.text(0, 0, '', { color: '#ffffff', fontSize: '14px' })
+    this.gateHintText.setVisible(false)
 
     if (this.input.keyboard) {
       this.cursors = this.input.keyboard.createCursorKeys()
@@ -132,6 +181,14 @@ class MainScene extends Phaser.Scene {
       this.renderItems(pendingItems)
       pendingItems = null
     }
+    if (pendingQuestSteps) {
+      this.setQuestSteps(pendingQuestSteps)
+      pendingQuestSteps = null
+    }
+    if (pendingGateState) {
+      this.setGateState(pendingGateState)
+      pendingGateState = null
+    }
   }
 
   update() {
@@ -151,10 +208,24 @@ class MainScene extends Phaser.Scene {
     )
     this.promptText.setPosition(this.npc.x - 55, this.npc.y - 40)
     this.promptText.setVisible(inRange)
+    if (inRange) {
+      this.promptText.setText(this.questStarted ? questPrompt(this.questSteps, this.questProgress) : 'Press E to talk')
+    }
 
-    if (inRange && this.keyE && Phaser.Input.Keyboard.JustDown(this.keyE)) {
-      this.interacted = !this.interacted
-      this.npc.setFillStyle(this.interacted ? NPC_INTERACTED_COLOR : NPC_COLOR)
+    if (inRange && !this.questStarted && this.keyE && Phaser.Input.Keyboard.JustDown(this.keyE)) {
+      this.questStarted = true
+      this.npc.setFillStyle(NPC_TALKING_COLOR)
+    }
+
+    const inGateRange = isWithinInteractRange(
+      { x: this.player.x, y: this.player.y },
+      { x: this.gate.x, y: this.gate.y },
+      GATE_INTERACT_RADIUS,
+    )
+    this.gateHintText.setPosition(this.gate.x - 55, this.gate.y - 45)
+    this.gateHintText.setVisible(inGateRange)
+    if (inGateRange) {
+      this.gateHintText.setText(this.gateState.open ? 'Open.' : 'Locked. Try a word.')
     }
   }
 
@@ -172,6 +243,62 @@ class MainScene extends Phaser.Scene {
       })
     })
   }
+
+  // Resets conversation state on every show() (topic switch mid-quest
+  // shouldn't leave a stale "talking" NPC color or a completed quest showing
+  // for the new topic's own, independently-scripted conversation).
+  setQuestSteps(steps: QuestStep[]) {
+    this.questSteps = steps
+    this.questProgress = { stageIndex: 0, completed: false }
+    this.questStarted = false
+    this.npc.setFillStyle(NPC_COLOR)
+  }
+
+  // Resets on every show() — same reasoning as setQuestSteps: a topic swap
+  // shouldn't leave a previous topic's open gate looking open for a topic
+  // whose gate word hasn't been said yet.
+  setGateState(state: GateState) {
+    this.gateState = state
+    this.gate.setFillStyle(state.open ? GATE_OPEN_COLOR : GATE_LOCKED_COLOR)
+  }
+
+  // Called for every recognized GameAction from the command bar below,
+  // regardless of whether the NPC conversation is active or the player is
+  // near the gate — advanceQuest/tryOpenGate are no-ops (return the same
+  // reference) unless their own preconditions (quest started; in gate range
+  // with the right word) are met, so both can safely be tried on every
+  // action without an if/else between them. Returns whether the action
+  // actually accomplished something (quest step matched, or the gate
+  // opened) — submitCommand uses that to decide whether this was a real
+  // WORD_USED event, not just a recognized-but-idle command.
+  applyAction(action: GameAction): boolean {
+    let consequential = false
+
+    if (this.questStarted) {
+      const next = advanceQuest(this.questSteps, this.questProgress, action)
+      if (next !== this.questProgress) {
+        this.questProgress = next
+        consequential = true
+        if (next.completed) {
+          this.npc.setFillStyle(NPC_QUEST_COMPLETE_COLOR)
+        }
+      }
+    }
+
+    const inGateRange = isWithinInteractRange(
+      { x: this.player.x, y: this.player.y },
+      { x: this.gate.x, y: this.gate.y },
+      GATE_INTERACT_RADIUS,
+    )
+    const nextGate = tryOpenGate(this.gateState, action, inGateRange)
+    if (nextGate !== this.gateState) {
+      this.gateState = nextGate
+      consequential = true
+      this.gate.setFillStyle(GATE_OPEN_COLOR)
+    }
+
+    return consequential
+  }
 }
 
 function renderInScene(items: SceneItem[]) {
@@ -179,6 +306,22 @@ function renderInScene(items: SceneItem[]) {
     sceneInstance.renderItems(items)
   } else {
     pendingItems = items
+  }
+}
+
+function applyQuestSteps(steps: QuestStep[]) {
+  if (sceneInstance) {
+    sceneInstance.setQuestSteps(steps)
+  } else {
+    pendingQuestSteps = steps
+  }
+}
+
+function applyGateState(state: GateState) {
+  if (sceneInstance) {
+    sceneInstance.setGateState(state)
+  } else {
+    pendingGateState = state
   }
 }
 
@@ -193,6 +336,11 @@ const vocabulary = ref<CommandVocabularyEntry[]>([])
 const commandInput = ref('')
 const commandFeedback = ref('')
 let game: Phaser.Game | null = null
+// Set by show(), same as every other feature receives via load()/show() —
+// no shared session module exists (see App.vue), so this is just the plain
+// argument-passing convention every sibling feature component already uses.
+let currentUserEmail = ''
+let currentLang = ''
 
 onMounted(() => {
   game = new Phaser.Game({
@@ -217,9 +365,13 @@ onUnmounted(() => {
   game = null
   sceneInstance = null
   pendingItems = null
+  pendingQuestSteps = null
+  pendingGateState = null
 })
 
-async function show(lang: string, topic: { topic_id: string }) {
+async function show(userEmail: string, lang: string, topic: { topic_id: string }) {
+  currentUserEmail = userEmail
+  currentLang = lang
   game?.resume()
   const area = await getGameArea(lang, topic.topic_id)
   if (!area) {
@@ -228,6 +380,8 @@ async function show(lang: string, topic: { topic_id: string }) {
     // content from a previously-shown topic rather than leaving it up.
     renderInScene([])
     vocabulary.value = []
+    applyQuestSteps([])
+    applyGateState({ wordId: null, open: false })
     return
   }
   const words = await getWords(lang)
@@ -237,6 +391,12 @@ async function show(lang: string, topic: { topic_id: string }) {
   // pairs already resolved for the on-screen labels, so "known vocabulary"
   // always matches what the player can actually see in this topic.
   vocabulary.value = items.map((item): CommandVocabularyEntry => ({ word_id: item.word_id, text: item.text }))
+  // Rebuilds the NPC's scripted conversation from this topic's own mapping
+  // (see quest.ts) — a topic swap always restarts the quest fresh.
+  applyQuestSteps(buildQuestSteps(area.objects))
+  // Same for the locked gate (see ./gate.ts) — an independent puzzle, reset
+  // fresh on every topic swap.
+  applyGateState(buildGateState(area.objects))
 }
 
 function pause() {
@@ -248,6 +408,12 @@ function submitCommand() {
   commandFeedback.value = result.ok
     ? `Recognized: ${result.action.action_type} → ${result.action.target_word_id}`
     : FEEDBACK_MESSAGES[result.reason]
+  if (result.ok) {
+    const consequential = sceneInstance?.applyAction(result.action) ?? false
+    if (consequential && result.action.target_word_id) {
+      performWrite('increment', currentUserEmail, currentLang, result.action.target_word_id)
+    }
+  }
   commandInput.value = ''
 }
 

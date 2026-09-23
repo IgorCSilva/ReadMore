@@ -20,9 +20,9 @@ self-introduction" (25 words) — see `PROJECT_ANALYSIS.md` §H and
 | 4 | Static single-room scene rendering from Greetings topic + game-content mapping | ✅ Done |
 | 5 | Player movement + one interactable object | ✅ Done |
 | 6 | Command system (`OPEN DOOR`-style, controlled grammar) | ✅ Done |
-| 7 | One NPC with deterministic dialogue + one quest requiring 2–3 words | Not started |
-| 8 | One puzzle solvable only via target-language words | Not started |
-| 9 | Learning-event emission wired to existing progress use cases | Not started |
+| 7 | One NPC with deterministic dialogue + one quest requiring 2–3 words | ✅ Done |
+| 8 | One puzzle solvable only via target-language words | ✅ Done |
+| 9 | Learning-event emission wired to existing progress use cases | ✅ Done |
 | 10 | Persistent game-state repository (Sheets-backed) | Not started |
 | 11 | Cross-pair validation (swap `lang` to a second pair's topic, zero code changes) | Not started |
 | 12 | Polish pass (art direction, accessibility, minimal UI) | Not started |
@@ -266,7 +266,172 @@ self-introduction" (25 words) — see `PROJECT_ANALYSIS.md` §H and
   9/10 wire `ApplyGameAction` (`GAME_ARCHITECTURE.md`'s "Command system"
   section already scopes the shape to match that use case's input).
 
-### 7–13
+### 7. One NPC with deterministic dialogue + one quest — ✅ Done
+- **Objective**: replace Milestone 5's placeholder E-interact toggle with a
+  real, scripted conversation: the NPC greets the player, asks a yes/no
+  question, and the player must thank the NPC to close it out — three beats,
+  each requiring the correct target-language word via the Milestone 6 `SAY`
+  command. No branching/AI dialogue — fully deterministic, per
+  `GAME_DESIGN.md` principle 5.
+- **Decision**: the quest script is matched by the game-content mapping's
+  semantic `data.line` tag (`greeting-formal` → `affirmation` →
+  `courtesy-thanks`), never a hardcoded `word_id` — see the anchor mapping,
+  `game_approach/content/game-pt-es.json`, where these three tags already
+  exist as the natural semantic shape of the dialogue-role words. This keeps
+  the quest itself language-agnostic: any origin→target pair whose mapping
+  tags the same three dialogue beats gets the same quest for free, with zero
+  code changes — directly serving the "must work for any pair" guiding
+  constraint ahead of Milestone 11's cross-pair validation. A topic missing
+  one of the three lines simply gets a shorter quest (`buildQuestSteps`
+  filters to whatever lines exist) rather than breaking.
+- **Interaction design**: proximity + E (Milestone 5) now *starts* the
+  conversation (NPC color changes, first hint appears) instead of toggling a
+  meaningless visible state; each recognized `SAY` command afterward is
+  forwarded to the scene and advances the conversation one step if it matches
+  what the NPC is currently waiting for — wrong words or commands issued
+  before the conversation has started are silently ignored (no punishing
+  feedback, matching `GAME_DESIGN.md`'s "calm, curious" emotional target).
+  Hint text above the NPC ("Say hello." / "Answer yes." / "Say thank you." /
+  "Quest complete!") is plain English narration, not target-language content —
+  same convention as the existing "Press E to talk" prompt; the *word the
+  player must produce* is the only target-language content, per the design
+  principle that language is a tool, not the lesson.
+- **Files**: `frontend/src/features/game/quest.ts` (new — pure
+  `buildQuestSteps`/`advanceQuest`/`questPrompt`), `quest.test.ts` (new, 10
+  tests), `frontend/src/features/game/Game.vue` (`MainScene` gains
+  `questSteps`/`questProgress`/`questStarted` state, `setQuestSteps`/
+  `applyAction` methods, module-level `pendingQuestSteps`/`applyQuestSteps`
+  mirroring the existing `pendingItems`/`renderInScene` pair; `show()` now
+  rebuilds quest steps from `area.objects` on every topic switch;
+  `submitCommand()` forwards a recognized action to `sceneInstance.applyAction`
+  in addition to showing the existing parse-feedback text). `Game.test.ts`
+  unchanged — `MainScene.applyAction`/`setQuestSteps` are exercised only
+  through Phaser's real `create()`, which the jsdom `phaserStub` never runs
+  (same testing gap already documented for Milestone 5's movement/interact),
+  so this milestone's scene-side behavior is covered by `quest.ts`'s pure unit
+  tests instead, consistent with `GAME_ARCHITECTURE.md`'s testing strategy.
+- **Testing**: `npm run test -- --run` → 22 test files, 142 tests passed (10
+  new in `quest.test.ts`, 0 changed in `Game.test.ts`). `vue-tsc -b` clean.
+  `npm run build` succeeds (48 modules, same bundle size class).
+- **Not verified**: the full conversation flow in a real browser — approach
+  the NPC, press E, and `SAY` the three words in order to confirm the hint
+  text advances and the NPC's color changes at each stage and on completion.
+  Also worth re-confirming Milestone 5/6's still-open browser checks (arrow
+  keys, E-interact, typing "e" in the command box) alongside this, since
+  they're all exercised by the same manual walkthrough.
+- **Multiplayer impact**: quest progress (`questStarted`/`questProgress`)
+  still lives only in the Phaser scene instance — local/client state per
+  `MULTIPLAYER_ARCHITECTURE.md`'s categories, not yet persisted or sent
+  anywhere. Becomes authoritative state once Milestone 9/10 wire
+  `ApplyGameAction`/`GameStateRepository`; nothing here blocks that, and the
+  `GameAction` shape forwarded to `applyAction` is already the same one
+  `ApplyGameAction` will consume.
+
+### 8. One puzzle solvable only via target-language words — ✅ Done
+- **Objective**: add a second, independent interactable — a locked gate —
+  that opens only by producing the correct target-language word while
+  standing near it, directly exercising `GAME_DESIGN.md` principle 4
+  ("language controls access, not artificial levels"): there is no other way
+  to open the gate.
+- **Decision**: same semantic-tag matching convention Milestone 7 established
+  for the quest — the required word is found by a `data.concept` tag
+  (`"night"`) on a `noun`-role `GameObject` in the active topic's mapping,
+  never a hardcoded `word_id`. Any origin→target pair whose mapping tags a
+  word with that concept gets a working gate automatically; a topic missing
+  it just has no working gate (`wordId: null`) rather than erroring. Chose
+  `night` since it's already present in the anchor mapping
+  (`game_approach/content/game-pt-es.json`, `wd-0079`) with no new content
+  authoring needed.
+- **Design choice**: the gate is deliberately a second, independent puzzle
+  rather than a gate on the NPC's own quest — it can be opened before,
+  during, or after the conversation, and neither affects the other. This
+  keeps `MainScene.applyAction` simple (try both, each is a no-op unless its
+  own preconditions hold) and avoids coupling two otherwise-unrelated
+  mechanics for no design reason. No E-key/proximity-based "start" step like
+  the NPC has — the gate just responds directly to a correctly-timed `SAY`
+  while in range, since (unlike a conversation) there's no multi-step script
+  to begin.
+- **Files**: `frontend/src/features/game/gate.ts` (new — pure
+  `buildGateState`/`tryOpenGate`), `gate.test.ts` (new, 8 tests),
+  `frontend/src/features/game/Game.vue` (`MainScene` gains a `gate`
+  rectangle + `gateHintText`, `gateState`, `setGateState`/`applyAction`
+  extended; module-level `pendingGateState`/`applyGateState` mirroring the
+  existing pending-buffer pair; `show()` rebuilds gate state from
+  `area.objects` alongside quest steps on every topic switch). `Game.test.ts`
+  unchanged, same testing-gap reasoning as Milestone 7 (`MainScene`'s
+  `create()`/`update()` aren't exercised by the jsdom `phaserStub`) — covered
+  instead by `gate.ts`'s pure unit tests.
+- **Testing**: `npm run test -- --run` → 23 test files, 150 tests passed (8
+  new in `gate.test.ts`). `vue-tsc -b` clean. `npm run build` succeeds (49
+  modules, same bundle size class).
+- **Not verified**: the gate in a real browser — walk to the bottom-right
+  corner of the canvas, confirm the "Locked. Try a word." hint appears in
+  range, `SAY` the target-language word for "night" while still in range, and
+  confirm the gate turns green and the hint changes to "Open." Also confirms
+  the gate and the NPC's quest don't interfere with each other when both are
+  active.
+- **Multiplayer impact**: `gateState` is local/client-only Phaser scene state,
+  same category as the quest's `questProgress` — becomes authoritative once
+  Milestone 9/10 wire persistence; the `GameAction` shape reaching
+  `tryOpenGate` is already what `ApplyGameAction` will consume.
+
+### 9. Learning-event emission wired to existing progress use cases — ✅ Done
+- **Objective**: per `GAME_ARCHITECTURE.md`'s "Event system" section, route a
+  `WORD_USED` learning event through the *existing* progress use cases
+  (`IncrementShownCount` et al.) instead of a parallel game-only tracking
+  system, the same way `Flashcards.vue` already does.
+- **Decision**: researched the existing progress stack first
+  (`backend/app/application/use_cases/{increment_shown_count,mark_word_known,
+  show_word_again}.py`, their `POST /increment|/mark-known|/show-word`
+  routes in `backend/app/main.py`, and the frontend calling convention) and
+  found it's `shown_count` (via `IncrementShownCount`/`POST /increment`) that
+  maps onto "this word was engaged with" — there's no richer
+  recalled/used-in-context field to hook into, and inventing one is exactly
+  what this milestone is meant to avoid. The existing calling convention
+  everywhere else (`Flashcards.vue`) is `performWrite("increment", user,
+  lang, wordId)` from `frontend/src/shared/writeQueue.ts`, not a raw
+  `api.ts` call — reused as-is, which means the game's word-used events get
+  offline queueing/retry and toast-on-failure for free.
+- **Decision**: the event fires only when a `SAY` command is *consequential*
+  — it matched the NPC's current expected quest step, or opened the gate —
+  not merely recognized. `MainScene.applyAction` (Milestones 7/8) now
+  returns a boolean for this; `submitCommand` fires `performWrite("increment",
+  ...)` only when both `result.ok` and that boolean are true. A recognized
+  but currently-pointless `SAY` (right word, nothing needs it right now)
+  does not record progress — the signal is "this word did something in the
+  world," matching `GAME_DESIGN.md`'s "words become abilities" principle,
+  not "this word was typed."
+- **Decision**: `Game.vue`'s `show()` gained a `userEmail` first parameter
+  (`show(userEmail, lang, topic)`), matching every sibling feature's
+  `show()`/`load()` convention (`Flashcards.vue`, `Reading.vue`, etc. all
+  take `USER_EMAIL` first) — there's no shared session module in this
+  codebase; every feature receives it as a plain argument from `App.vue`'s
+  own local `USER_EMAIL`/`LANG` state, so the game feature now matches that
+  existing pattern instead of inventing its own.
+- **Files**: `frontend/src/features/game/Game.vue` (`applyAction` returns
+  `boolean`; new `currentUserEmail`/`currentLang` module state set by
+  `show()`; `submitCommand` calls `performWrite`), `frontend/src/App.vue`
+  (line ~441: `gameRef.value?.show(USER_EMAIL, LANG, currentTopic)`),
+  `Game.test.ts` (all `show()` calls updated to the 3-arg signature; mock
+  extended with `incrementShownCount`/`markWordKnown`/`showWordAgain` since
+  `writeQueue.ts` imports all three eagerly; one assertion added confirming
+  an unrecognized command never calls `incrementShownCount`).
+- **Testing**: `npm run test -- --run` → 23 test files, 150 tests passed (no
+  net-new test files — extended existing `Game.test.ts` coverage).
+  `vue-tsc -b` clean. `npm run build` succeeds (49 modules, same bundle size
+  class).
+- **Not verified**: the actual progress increment in a real browser/backend
+  — same Phaser-internal testing gap as Milestones 7–8 (`applyAction`'s
+  return value is only exercised through Phaser's real `update()`/`create()`
+  lifecycle, which the jsdom stub never runs). Worth confirming manually:
+  say the NPC's next expected word (or the gate's word while in range) and
+  check the word's `shown_count` increments via the existing progress
+  endpoints/UI (e.g. reopen Flashcards for that word).
+- **Multiplayer impact**: none new — this reuses the existing
+  single-player-scoped progress system (`email`+`lang` keyed), unrelated to
+  `PlayerGameState`/`GameStateRepository`.
+
+### 10–13
 Detailed objective/files/testing breakdown for each is written immediately
 before that milestone starts, once the prior milestone's actual shape is known
 — per `game_approach.md` §39, milestones aren't pre-specified in full detail

@@ -16,6 +16,15 @@ import { buildSceneItems } from './sceneItems'
 vi.mock('../../shared/api', () => ({
   getGameArea: vi.fn(),
   getWords: vi.fn(),
+  // shared/writeQueue.ts imports all three progress functions eagerly (its
+  // module-level ACTION_FNS table), so all three must exist on this mock
+  // even though Game.vue's Milestone 9 wiring only ever calls increment —
+  // unreachable under the phaserStub today (see the module docblock below)
+  // since sceneInstance never exists, but mocked here so that stays true by
+  // design rather than by accident.
+  incrementShownCount: vi.fn().mockResolvedValue(new Response()),
+  markWordKnown: vi.fn().mockResolvedValue(new Response()),
+  showWordAgain: vi.fn().mockResolvedValue(new Response()),
 }))
 
 describe('buildSceneItems', () => {
@@ -79,7 +88,7 @@ describe('Game', () => {
       wrapper.vm.pause()
       expect(instance.paused).toBe(true)
 
-      await wrapper.vm.show('pt-es', { topic_id: 'top-A0-EL-1' })
+      await wrapper.vm.show('learner@example.com', 'pt-es', { topic_id: 'top-A0-EL-1' })
       expect(instance.paused).toBe(false)
     } finally {
       wrapper.unmount()
@@ -98,7 +107,7 @@ describe('Game', () => {
     })
     const wrapper = mount(Game, { attachTo: document.body })
     try {
-      await wrapper.vm.show('pt-es', { topic_id: 'top-A0-EL-1' })
+      await wrapper.vm.show('learner@example.com', 'pt-es', { topic_id: 'top-A0-EL-1' })
 
       expect(api.getGameArea).toHaveBeenCalledWith('pt-es', 'top-A0-EL-1')
       expect(api.getWords).toHaveBeenCalledWith('pt-es')
@@ -111,7 +120,7 @@ describe('Game', () => {
     vi.mocked(api.getGameArea).mockResolvedValue(null)
     const wrapper = mount(Game, { attachTo: document.body })
     try {
-      await wrapper.vm.show('pt-es', { topic_id: 'top-A0-EL-9' })
+      await wrapper.vm.show('learner@example.com', 'pt-es', { topic_id: 'top-A0-EL-9' })
 
       expect(api.getWords).not.toHaveBeenCalled()
     } finally {
@@ -131,7 +140,7 @@ describe('Game', () => {
     })
     const wrapper = mount(Game, { attachTo: document.body })
     try {
-      await wrapper.vm.show('pt-es', { topic_id: 'top-A0-EL-1' })
+      await wrapper.vm.show('learner@example.com', 'pt-es', { topic_id: 'top-A0-EL-1' })
 
       await wrapper.find('input[aria-label="Game command input"]').setValue('say hola')
       await wrapper.find('form.command-bar').trigger('submit')
@@ -146,12 +155,16 @@ describe('Game', () => {
     vi.mocked(api.getGameArea).mockResolvedValue(null)
     const wrapper = mount(Game, { attachTo: document.body })
     try {
-      await wrapper.vm.show('pt-es', { topic_id: 'top-A0-EL-9' })
+      await wrapper.vm.show('learner@example.com', 'pt-es', { topic_id: 'top-A0-EL-9' })
 
       await wrapper.find('input[aria-label="Game command input"]').setValue('say hola')
       await wrapper.find('form.command-bar').trigger('submit')
 
       expect(wrapper.find('.command-feedback').text()).toBe("That word isn't recognized yet.")
+      // Milestone 9: an unrecognized command never reaches the point where a
+      // learning event could fire — guards against that check moving outside
+      // the `result.ok` branch in submitCommand.
+      expect(api.incrementShownCount).not.toHaveBeenCalled()
     } finally {
       wrapper.unmount()
     }

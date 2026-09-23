@@ -438,7 +438,7 @@ onMounted(() => {
     } else if (tab === "exercises") {
       exercisesRef.value?.show(LANG, currentTopic, CUE_LANG);
     } else if (tab === "game") {
-      gameRef.value?.show(LANG, currentTopic);
+      gameRef.value?.show(USER_EMAIL, LANG, currentTopic);
     } else if (tab === "reinforcement") {
       showReinforcementSubTab(currentReinforcementSubTab);
     }
