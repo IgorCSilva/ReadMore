@@ -46,4 +46,4 @@ class GetChapters:
             # can raise whatever it wants here, so this stays broad rather
             # than depending on an infrastructure-specific exception type.
             corrections = []
-        return apply_corrections(result, corrections)
+        return apply_corrections(result, corrections, lang.target)

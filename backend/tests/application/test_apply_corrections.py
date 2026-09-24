@@ -24,7 +24,7 @@ def test_one_to_one_replacement_is_bolded():
     chapters = [_chapter(1, [_topic(1, body="avó says hi")])]
     correction = Correction(chapter_number=1, topic_number=1, current=["avó"], correction=["abuela"])
 
-    result = apply_corrections(chapters, [correction])
+    result = apply_corrections(chapters, [correction], "es")
 
     assert result[0].topics[0].texts[0].body == "**abuela** says hi"
 
@@ -35,7 +35,7 @@ def test_n_to_one_replaces_every_variant():
         chapter_number=1, topic_number=1, current=["meu", "minha"], correction=["mi"]
     )
 
-    result = apply_corrections(chapters, [correction])
+    result = apply_corrections(chapters, [correction], "es")
 
     assert result[0].topics[0].texts[0].body == "**mi** carro e **mi** casa"
 
@@ -46,7 +46,7 @@ def test_one_to_n_joins_options_with_slash():
         chapter_number=1, topic_number=1, current=["mi"], correction=["meu", "minha"]
     )
 
-    result = apply_corrections(chapters, [correction])
+    result = apply_corrections(chapters, [correction], "es")
 
     assert result[0].topics[0].texts[0].body == "**meu/minha** carro"
 
@@ -55,7 +55,7 @@ def test_earlier_chapter_is_untouched():
     chapters = [_chapter(1, [_topic(1, body="avó")]), _chapter(2, [_topic(1, body="avó")])]
     correction = Correction(chapter_number=2, topic_number=1, current=["avó"], correction=["abuela"])
 
-    result = apply_corrections(chapters, [correction])
+    result = apply_corrections(chapters, [correction], "es")
 
     assert result[0].topics[0].texts[0].body == "avó"
     assert result[1].topics[0].texts[0].body == "**abuela**"
@@ -65,7 +65,7 @@ def test_earlier_topic_in_same_chapter_is_untouched_later_topic_is_corrected():
     chapters = [_chapter(2, [_topic(3, body="avó"), _topic(4, body="avó")])]
     correction = Correction(chapter_number=2, topic_number=4, current=["avó"], correction=["abuela"])
 
-    result = apply_corrections(chapters, [correction])
+    result = apply_corrections(chapters, [correction], "es")
 
     topics_by_number = {t.number: t for t in result[0].topics}
     assert topics_by_number[3].texts[0].body == "avó"
@@ -76,7 +76,7 @@ def test_later_chapter_always_included_regardless_of_topic_number():
     chapters = [_chapter(3, [_topic(1, body="avó")])]
     correction = Correction(chapter_number=2, topic_number=5, current=["avó"], correction=["abuela"])
 
-    result = apply_corrections(chapters, [correction])
+    result = apply_corrections(chapters, [correction], "es")
 
     assert result[0].topics[0].texts[0].body == "**abuela**"
 
@@ -92,7 +92,7 @@ def test_exercises_are_replaced_recursively():
     chapters = [_chapter(1, [_topic(1, exercises=exercises)])]
     correction = Correction(chapter_number=1, topic_number=1, current=["avó"], correction=["abuela"])
 
-    result = apply_corrections(chapters, [correction])
+    result = apply_corrections(chapters, [correction], "es")
 
     result_exercise = result[0].topics[0].exercises[0]
     assert result_exercise["sentence"] == "**abuela** says hi"
@@ -110,7 +110,7 @@ def test_longer_variant_matched_before_shorter_substring():
         ),
     ]
 
-    result = apply_corrections(chapters, corrections)
+    result = apply_corrections(chapters, corrections, "es")
 
     assert result[0].topics[0].texts[0].body == "**mi problema** e **mi** carro"
 
@@ -125,7 +125,7 @@ def test_a_correction_does_not_re_match_inside_another_corrections_replacement()
         Correction(chapter_number=1, topic_number=1, current=["ela"], correction=["ella"]),
     ]
 
-    result = apply_corrections(chapters, corrections)
+    result = apply_corrections(chapters, corrections, "es")
 
     assert result[0].topics[0].texts[0].body == "**abuela** disse que **ella** ficou feliz"
 
@@ -146,8 +146,30 @@ def test_variant_only_matches_whole_words_not_substrings_of_other_words():
     ]
     correction = Correction(chapter_number=1, topic_number=1, current=["ela"], correction=["ella"])
 
-    result = apply_corrections(chapters, [correction])
+    result = apply_corrections(chapters, [correction], "es")
 
     assert result[0].topics[0].texts[0].body == (
         "**ella** e a abuela foram aquela casa amarela e falei dela na janela"
     )
+
+
+def test_korean_variant_matches_with_attached_particle():
+    # Korean particles glue directly onto the stem with no space, so a
+    # \b-anchored match (correct for pt/es/en) would miss "학교" here.
+    chapters = [_chapter(1, [_topic(1, body="학교에 간다")])]
+    correction = Correction(chapter_number=1, topic_number=1, current=["학교"], correction=["학원"])
+
+    result = apply_corrections(chapters, [correction], "ko")
+
+    assert result[0].topics[0].texts[0].body == "**학원**에 간다"
+
+
+def test_korean_variant_does_not_match_inside_a_longer_compound():
+    # "중학교" (middle school) contains "학교" as a suffix, not the standalone
+    # word — must not be corrupted into "중**학원**".
+    chapters = [_chapter(1, [_topic(1, body="학교에 가고 중학교도 간다")])]
+    correction = Correction(chapter_number=1, topic_number=1, current=["학교"], correction=["학원"])
+
+    result = apply_corrections(chapters, [correction], "ko")
+
+    assert result[0].topics[0].texts[0].body == "**학원**에 가고 중학교도 간다"

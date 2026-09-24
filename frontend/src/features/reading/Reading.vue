@@ -24,6 +24,7 @@
 import { onMounted } from 'vue'
 import { loadUserWords } from '../../shared/userWords'
 import { formatWordByGender, getGender } from '../../shared/genders'
+import { formatWordByParticle, getParticle } from '../../shared/koreanParticles'
 
 // New tab, to the right of Sentences: a bare, one-word-at-a-time reading
 // drill. Unlike Flashcards (which cycles every visible word, confident or
@@ -97,8 +98,11 @@ onMounted(() => {
 
     const entry = WORDS[index];
     counterEl.textContent = `${index + 1} / ${WORDS.length}`;
-    wordEl.textContent = formatWordByGender(entry.word, entry.genderId);
-    wordEl.style.color = getGender(entry.genderId).color || "";
+    const gender = getGender(entry.genderId);
+    wordEl.textContent = gender.color
+      ? formatWordByGender(entry.word, entry.genderId)
+      : formatWordByParticle(entry.word, entry.particleTypeId);
+    wordEl.style.color = gender.color || getParticle(entry.particleTypeId).color || "";
     reinforcementBadgeEl.style.display = entry.isReinforcement ? "flex" : "none";
   }
 
@@ -116,6 +120,7 @@ onMounted(() => {
       wordId: w.word_id,
       word: w.original,
       genderId: w.gender_id || "not_apply",
+      particleTypeId: w.particle_type || "not_apply",
       isReinforcement,
     });
     const topicEntries = (currentTopic?.word_ids || [])

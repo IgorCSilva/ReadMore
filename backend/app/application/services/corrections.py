@@ -12,25 +12,32 @@ import re
 from dataclasses import replace
 
 from backend.app.domain.entities import Chapter, Correction, Topic
+from backend.app.domain.text_boundaries import boundary_pattern
 
 _ReplacementPairs = list[tuple[str, str]]
 _Matcher = tuple[re.Pattern, dict[str, str]]
 
 
-def apply_corrections(chapters: list[Chapter], corrections: list[Correction]) -> list[Chapter]:
-    return [_apply_to_chapter(chapter, corrections) for chapter in chapters]
+def apply_corrections(
+    chapters: list[Chapter], corrections: list[Correction], target_lang: str
+) -> list[Chapter]:
+    return [_apply_to_chapter(chapter, corrections, target_lang) for chapter in chapters]
 
 
-def _apply_to_chapter(chapter: Chapter, corrections: list[Correction]) -> Chapter:
-    topics = [_apply_to_topic(chapter.number, topic, corrections) for topic in chapter.topics]
+def _apply_to_chapter(chapter: Chapter, corrections: list[Correction], target_lang: str) -> Chapter:
+    topics = [
+        _apply_to_topic(chapter.number, topic, corrections, target_lang) for topic in chapter.topics
+    ]
     return replace(chapter, topics=topics)
 
 
-def _apply_to_topic(chapter_number: int, topic: Topic, corrections: list[Correction]) -> Topic:
+def _apply_to_topic(
+    chapter_number: int, topic: Topic, corrections: list[Correction], target_lang: str
+) -> Topic:
     pairs = _applicable_pairs(chapter_number, topic.number, corrections)
     if not pairs:
         return topic
-    matcher = _build_matcher(pairs)
+    matcher = _build_matcher(pairs, target_lang)
     texts = [replace(t, body=_replace_text(t.body, matcher)) for t in topic.texts]
     exercises = [_replace_value(item, matcher) for item in topic.exercises]
     return replace(topic, texts=texts, exercises=exercises)
@@ -56,10 +63,11 @@ def _applicable_pairs(
     return pairs
 
 
-def _build_matcher(pairs: _ReplacementPairs) -> _Matcher:
+def _build_matcher(pairs: _ReplacementPairs, target_lang: str) -> _Matcher:
     """A single regex alternation over every variant, longest first so
     overlapping candidates at the same position prefer the longer match, and
-    each variant anchored to whole-word boundaries.
+    each variant anchored to a word boundary appropriate for target_lang
+    (see domain/text_boundaries.py — word-boundary rules vary by script).
 
     Two things could otherwise corrupt unrelated words: (1) one sequential
     str.replace per correction would let a later correction's `current`
@@ -68,15 +76,17 @@ def _build_matcher(pairs: _ReplacementPairs) -> _Matcher:
     inserted) — a single regex pass avoids this since re.sub only ever
     matches against the original input, never text it has just substituted
     in; (2) even in one pass, an unanchored "ela" is a substring of plenty of
-    unrelated words ("abuela", "aquela", "janela", "dela") — the \\b anchors
-    restrict a match to the variant appearing as its own word/phrase.
+    unrelated words ("abuela", "aquela", "janela", "dela") — the boundary
+    anchors restrict a match to the variant appearing as its own word/phrase.
     """
     mapping: dict[str, str] = {}
     for variant, replacement in pairs:
         mapping.setdefault(variant, replacement)
     ordered_variants = sorted(mapping, key=len, reverse=True)
     pattern = re.compile(
-        "|".join(rf"\b{re.escape(variant)}\b" for variant in ordered_variants)
+        "|".join(
+            boundary_pattern(re.escape(variant), target_lang) for variant in ordered_variants
+        )
     )
     return pattern, mapping
 
