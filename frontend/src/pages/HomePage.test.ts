@@ -21,6 +21,8 @@ function testRouter() {
     routes: [
       { path: '/', name: 'home', component: HomePage },
       { path: '/part/:topicId/:partNumber', name: 'part-flow', component: { template: '<div>flow</div>' } },
+      { path: '/read/:topicId', name: 'read-understand', component: { template: '<div>read</div>' } },
+      { path: '/listen/:topicId', name: 'listen-identify', component: { template: '<div>listen</div>' } },
     ],
   })
 }
@@ -197,7 +199,7 @@ describe('HomePage', () => {
     }
   })
 
-  it('clicking Start on "Read and Understand"/"Listen and identify" does not navigate yet', async () => {
+  it('clicking Start on "Read and Understand" navigates to its dedicated page', async () => {
     const { wrapper, router } = await mountReady()
     try {
       await wrapper.findAll('.topic-card')[0].get('.topic-card-header').trigger('click')
@@ -205,7 +207,23 @@ describe('HomePage', () => {
       await wrapper.get('.part-start-btn').trigger('click')
       await flushPromises()
 
-      expect(router.currentRoute.value.name).toBe('home')
+      expect(router.currentRoute.value.name).toBe('read-understand')
+      expect(router.currentRoute.value.params).toEqual({ topicId: 't1' })
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('clicking Start on "Listen and identify" navigates to its dedicated page', async () => {
+    const { wrapper, router } = await mountReady()
+    try {
+      await wrapper.findAll('.topic-card')[0].get('.topic-card-header').trigger('click')
+      await wrapper.findAll('.part-header')[3].trigger('click') // Listen and identify
+      await wrapper.get('.part-start-btn').trigger('click')
+      await flushPromises()
+
+      expect(router.currentRoute.value.name).toBe('listen-identify')
+      expect(router.currentRoute.value.params).toEqual({ topicId: 't1' })
     } finally {
       wrapper.unmount()
     }

@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../pages/HomePage.vue'
 import LibraryPage from '../pages/LibraryPage.vue'
+import ListenIdentifyPage from '../pages/ListenIdentifyPage.vue'
 import PartFlowPage from '../pages/PartFlowPage.vue'
+import ReadUnderstandPage from '../pages/ReadUnderstandPage.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -11,6 +13,8 @@ const router = createRouter({
     // A focused, full-screen lesson flow — App.vue reads hideGlobalBottomBar
     // to swap the global nav bar out for this page's own Next-button bar.
     { path: '/part/:topicId/:partNumber', name: 'part-flow', component: PartFlowPage, meta: { hideGlobalBottomBar: true } },
+    { path: '/read/:topicId', name: 'read-understand', component: ReadUnderstandPage, meta: { hideGlobalBottomBar: true } },
+    { path: '/listen/:topicId', name: 'listen-identify', component: ListenIdentifyPage, meta: { hideGlobalBottomBar: true } },
   ],
 })
 

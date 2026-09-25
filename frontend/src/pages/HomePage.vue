@@ -83,8 +83,8 @@ function partsForTopic(topic) {
   for (let partNumber = 1; partNumber <= count; partNumber++) {
     parts.push({ kind: 'words', label: `Part ${partNumber}`, partNumber, wordIds: wordIdsForPart(topic, partNumber) })
   }
-  parts.push({ kind: 'action', label: 'Read and Understand' })
-  parts.push({ kind: 'action', label: 'Listen and identify' })
+  parts.push({ kind: 'action', action: 'read-understand', label: 'Read and Understand' })
+  parts.push({ kind: 'action', action: 'listen-identify', label: 'Listen and identify' })
   return parts
 }
 
@@ -92,12 +92,14 @@ function wordsText(wordIds) {
   return wordIds.map((id) => wordsById.value[id]?.original).filter(Boolean).join(', ')
 }
 
-// Only numbered "Part N" entries go to the teaching flow for now — the two
-// whole-topic action parts (Read and Understand / Listen and identify)
-// aren't implemented yet, so their Start button stays inert.
 function handleStart(topic, part) {
-  if (part.kind !== 'words') return
-  router.push({ name: 'part-flow', params: { topicId: topic.topic_id, partNumber: String(part.partNumber) } })
+  if (part.kind === 'words') {
+    router.push({ name: 'part-flow', params: { topicId: topic.topic_id, partNumber: String(part.partNumber) } })
+  } else if (part.action === 'read-understand') {
+    router.push({ name: 'read-understand', params: { topicId: topic.topic_id } })
+  } else if (part.action === 'listen-identify') {
+    router.push({ name: 'listen-identify', params: { topicId: topic.topic_id } })
+  }
 }
 
 async function loadChapters(email) {

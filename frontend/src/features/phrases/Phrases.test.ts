@@ -233,6 +233,47 @@ describe('Phrases', () => {
     }
   })
 
+  it('reports progress via onProgress as rounds advance, and (0, 0) for the empty state', async () => {
+    vi.useFakeTimers()
+    vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'pt-es', words: ALL_WORDS })
+
+    const progress: Array<[number, number]> = []
+    const wrapper = mount(Phrases, { attachTo: document.body })
+    try {
+      await wrapper.vm.show(
+        'test@example.com', 'pt-es', TOPIC, undefined, undefined, ALL_CHAPTERS, ['wd-0009'],
+        (current: number, total: number) => progress.push([current, total]),
+      )
+      expect(progress).toEqual([[1, 2]])
+
+      await findOptionByText(wrapper, 'padre').trigger('click')
+      await findOptionByText(wrapper, 'madre').trigger('click')
+      await vi.advanceTimersByTimeAsync(1000)
+      expect(progress).toEqual([[1, 2], [2, 2]])
+
+      await wrapper.vm.show('test@example.com', 'pt-es', { word_ids: [], phrases: [] }, undefined, undefined, undefined, undefined,
+        (current: number, total: number) => progress.push([current, total]))
+      expect(progress).toEqual([[1, 2], [2, 2], [0, 0]])
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('resumes at a given startIndex instead of always restarting at round 1', async () => {
+    vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'pt-es', words: ALL_WORDS })
+
+    const wrapper = mount(Phrases, { attachTo: document.body })
+    try {
+      await wrapper.vm.show(
+        'test@example.com', 'pt-es', TOPIC, undefined, undefined, ALL_CHAPTERS, ['wd-0009'],
+        undefined, 1,
+      )
+      expect(wrapper.find('#phrases-counter').text()).toBe('2 / 2')
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
   it('marks a reinforcement word option with the 💪 badge', async () => {
     vi.useFakeTimers()
     vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'pt-es', words: ALL_WORDS })

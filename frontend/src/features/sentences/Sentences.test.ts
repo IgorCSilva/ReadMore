@@ -41,6 +41,19 @@ describe('Sentences', () => {
     }
   })
 
+  it('shows an empty-state message instead of the list when the topic has no sentences', () => {
+    const wrapper = mount(Sentences, { attachTo: document.body })
+    try {
+      wrapper.vm.show({ sentences: [] })
+
+      expect(wrapper.find('.sentence-item').exists()).toBe(false)
+      expect(wrapper.get<HTMLElement>('#sentences-empty-state').element.style.display).toBe('block')
+      expect(wrapper.get<HTMLElement>('#sentences-list').element.style.display).toBe('none')
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
   it('resets to the new topic\'s sentences when show() is called again', () => {
     const wrapper = mount(Sentences, { attachTo: document.body })
     try {
