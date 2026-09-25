@@ -28,27 +28,29 @@
     <div class="word-page-2" v-else-if="currentStep?.kind === 'word' && currentStep.pageNumber === 2">
       <div class="word-page-2-word">{{ currentStep.word.original }}</div>
 
-      <button
-        type="button"
-        class="word-page-2-mic-btn"
-        :disabled="speechState === 'listening' || !speechSupported"
-        @click="startListening"
-        aria-label="Record your voice"
-      >
-        🎤
-      </button>
+      <div class="word-page-2-controls">
+        <button
+          type="button"
+          class="word-page-2-mic-btn"
+          :disabled="speechState === 'listening' || !speechSupported"
+          @click="startListening"
+          aria-label="Record your voice"
+        >
+          🎤
+        </button>
 
-      <div class="word-page-2-wave" v-if="speechState === 'listening'">
-        <span></span><span></span><span></span><span></span><span></span>
-      </div>
-      <div class="word-page-2-result success" v-else-if="speechState === 'success'">
-        ✓ Correct!
-      </div>
-      <div class="word-page-2-result failure" v-else-if="speechState === 'failure'">
-        Not quite — try saying it again.
-      </div>
-      <div class="word-page-2-hint" v-else-if="speechState === 'unsupported'">
-        Voice recognition isn't supported in this browser.
+        <div class="word-page-2-wave" v-if="speechState === 'listening'">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="word-page-2-result success" v-else-if="speechState === 'success'">
+          ✓ Correct!
+        </div>
+        <div class="word-page-2-result failure" v-else-if="speechState === 'failure'">
+          Not quite — try saying it again.
+        </div>
+        <div class="word-page-2-hint" v-else-if="speechState === 'unsupported'">
+          Voice recognition isn't supported in this browser.
+        </div>
       </div>
     </div>
 
@@ -95,37 +97,83 @@
       </button>
     </div>
 
-    <!-- Reading and Listen-and-write aren't designed yet — placeholders
-         keep the sequence/progress/Next mechanics working end to end already. -->
+    <!-- Listen-and-write isn't designed yet — a placeholder keeps the
+         sequence/progress/Next mechanics working end to end already. -->
     <div class="placeholder-page" v-else-if="currentStep?.kind === 'word'">
       Page {{ currentStep.pageNumber }} — coming soon
     </div>
-    <div class="placeholder-page" v-else-if="currentStep?.kind === 'reading'">
-      Reading page — coming soon
+
+    <div class="reading-page" v-else-if="currentStep?.kind === 'reading'">
+      <div class="reading-page-counter" v-if="readingWords.length">
+        {{ readingIndex + 1 }} / {{ readingWords.length }}
+      </div>
+
+      <button type="button" class="reading-page-card" @click="readingNext">
+        <span class="reading-page-word" :style="{ color: readingWordColor }">{{ readingWordText }}</span>
+      </button>
+
+      <div class="reading-page-hint">Tap the word for the next one</div>
+
+      <div class="reading-page-controls">
+        <button
+          type="button"
+          class="reading-page-autopass-btn"
+          :class="{ pressed: readingAutoPass }"
+          @click="toggleReadingAutoPass"
+        >
+          Auto-pass
+        </button>
+
+        <div class="reading-page-velocity">
+          <label for="reading-page-velocity-range">Speed</label>
+          <input
+            id="reading-page-velocity-range"
+            type="range"
+            min="1"
+            :max="READING_VELOCITY_MAX"
+            v-model.number="readingVelocity"
+          />
+        </div>
+      </div>
     </div>
-    <div class="placeholder-page" v-else-if="currentStep?.kind === 'listen-write'">
-      Listen and write page — coming soon
+    <div class="listen-write-page" v-else-if="currentStep?.kind === 'listen-write'">
+      <Dictation ref="dictationRef" />
     </div>
   </div>
 
   <div class="flow-bottombar">
-    <button type="button" class="flow-next-btn" @click="next">Next</button>
+    <button type="button" class="flow-next-btn" :disabled="isBottomBarDisabled" @click="handleBottomBarClick">
+      {{ isLastStep ? 'Finish' : 'Next' }}
+    </button>
   </div>
 </template>
 
 <script setup>
-import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { computed, nextTick, onBeforeUnmount, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import Dictation from '../features/dictation/Dictation.vue'
 import { getChapters, getWords, ttsUrl } from '../shared/api'
 import { ensureUserEmail } from '../shared/currentUser'
+import { formatWordByGender, getGender } from '../shared/genders'
+import { requestHomeExpansion } from '../shared/homeExpansion'
+import { formatWordByParticle, getParticle } from '../shared/koreanParticles'
 import { speechLocaleFor } from '../shared/languages'
 import { buildPartFlowSequence } from '../shared/partFlow'
-import { wordIdsForPart } from '../shared/topicParts'
+import { numberedPartsCount, wordIdsForPart } from '../shared/topicParts'
 
 // Hardcoded until a language picker exists on the new pages — matches the
 // app's existing default language elsewhere (see HomePage.vue).
 const LANG = 'pt-en'
 const EXT_FALLBACKS = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'jfif']
+
+function shuffle(items) {
+  const result = items.slice()
+  for (let i = result.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[result[i], result[j]] = [result[j], result[i]]
+  }
+  return result
+}
 
 const route = useRoute()
 const router = useRouter()
@@ -135,6 +183,7 @@ const words = ref([])
 const sequence = ref([])
 const stepIndex = ref(0)
 const isLoading = ref(true)
+const dictationRef = ref(null)
 
 const currentStep = computed(() => sequence.value[stepIndex.value] ?? null)
 const progressPercent = computed(() =>
@@ -147,6 +196,44 @@ function exit() {
 
 function next() {
   if (stepIndex.value < sequence.value.length - 1) stepIndex.value++
+}
+
+const isLastStep = computed(() => sequence.value.length > 0 && stepIndex.value === sequence.value.length - 1)
+
+// Page 3 (type the word) is the only step that gates the bottom bar: the
+// Check button is the intended way to confirm an answer, but the bar's own
+// Next must stay locked until that's actually done, not offer a silent
+// skip-without-typing shortcut.
+const isBottomBarDisabled = computed(() => {
+  const step = currentStep.value
+  if (step?.kind === 'word' && step.pageNumber === 3) return writeState.value !== 'success'
+  return false
+})
+
+// The last step's bottom-bar button doesn't advance within the flow (there's
+// nothing after it) — it ends the part and returns to Home, with the next
+// part in the same topic pre-expanded so continuing the topic is a single
+// tap away instead of re-finding it in the accordion.
+function handleBottomBarClick() {
+  if (isLastStep.value) {
+    finishPart()
+  } else {
+    next()
+  }
+}
+
+function finishPart() {
+  const topicId = route.params.topicId
+  const currentPartNumber = Number(route.params.partNumber)
+  const count = numberedPartsCount(topic.value)
+  // partsForTopic's index = partNumber - 1 for numbered parts (0-based), so
+  // the next numbered part's index equals the current (1-based) partNumber.
+  // If this was the last numbered part, fall through to "Read and
+  // Understand" — the next entry in that same accordion list — at index
+  // `count` (right after the `count` numbered parts occupying indices 0..count-1).
+  const nextPartIndex = currentPartNumber < count ? currentPartNumber : count
+  requestHomeExpansion({ topicId, partIndex: nextPartIndex })
+  router.push('/')
 }
 
 // ---- Page 1's image (or big-cue fallback), mirrors Flashcards.vue's own
@@ -199,6 +286,17 @@ watch(currentStep, (step) => {
     writtenText.value = ''
     writeState.value = 'idle'
     writeDiff.value = []
+  }
+  if (step?.kind === 'reading') {
+    startReading()
+  } else {
+    window.clearTimeout(readingAutoTimer)
+    readingAutoTimer = null
+  }
+  if (step?.kind === 'listen-write') {
+    startListenWrite()
+  } else {
+    dictationRef.value?.pause()
   }
 })
 
@@ -369,6 +467,102 @@ function checkWritten() {
   }
 }
 
+// ---- Reading step: a bare "tap the card for the next word" drill over just
+// this part's words, mirroring Reading.vue's card/shuffle/gender-color
+// behavior. Unlike Reading.vue, this pool is fixed to the part's own words
+// (no confidence filtering, no reinforcement words — those are user-progress
+// concepts this flow doesn't touch), and it adds an optional auto-pass timer
+// Reading.vue doesn't have. ----
+
+const READING_VELOCITY_MAX = 10
+const READING_VELOCITY_DEFAULT = 3
+// Higher speed = shorter on-screen time: ms-per-character runs from
+// READING_VELOCITY_UNIT_MS * MAX at speed 1 (slowest) down to
+// READING_VELOCITY_UNIT_MS at speed MAX (fastest) — e.g. a 5-letter word at
+// the fastest speed stays up only 5 * 100 = 500ms, at the slowest 5 * 1000 = 5000ms.
+const READING_VELOCITY_UNIT_MS = 100
+
+const readingWords = ref([])
+const readingIndex = ref(0)
+const readingAutoPass = ref(false)
+const readingVelocity = ref(READING_VELOCITY_DEFAULT)
+let readingAutoTimer = null
+
+const currentReadingWord = computed(() => readingWords.value[readingIndex.value] ?? null)
+
+const readingWordText = computed(() => {
+  const word = currentReadingWord.value
+  if (!word) return ''
+  const gender = getGender(word.gender_id)
+  return gender.color
+    ? formatWordByGender(word.original, word.gender_id)
+    : formatWordByParticle(word.original, word.particle_type)
+})
+
+const readingWordColor = computed(() => {
+  const word = currentReadingWord.value
+  if (!word) return ''
+  return getGender(word.gender_id).color || getParticle(word.particle_type).color || ''
+})
+
+function scheduleReadingAutoPass() {
+  window.clearTimeout(readingAutoTimer)
+  readingAutoTimer = null
+  if (!readingAutoPass.value) return
+  const word = currentReadingWord.value
+  if (!word) return
+  const msPerChar = (READING_VELOCITY_MAX + 1 - readingVelocity.value) * READING_VELOCITY_UNIT_MS
+  const duration = word.original.length * msPerChar
+  readingAutoTimer = window.setTimeout(readingNext, duration)
+}
+
+// A random pick among "the others" (never repeats the word on screen): an
+// offset of 1..length-1 from the current index, wrapped, guarantees a
+// different word every time without a reject-and-retry loop (which would
+// spin forever under a mocked Math.random in tests).
+function readingNext() {
+  const n = readingWords.value.length
+  if (!n) return
+  if (n > 1) {
+    const offset = 1 + Math.floor(Math.random() * (n - 1))
+    readingIndex.value = (readingIndex.value + offset) % n
+  }
+  scheduleReadingAutoPass()
+}
+
+function toggleReadingAutoPass() {
+  readingAutoPass.value = !readingAutoPass.value
+  scheduleReadingAutoPass()
+}
+
+watch(readingVelocity, () => {
+  if (readingAutoPass.value) scheduleReadingAutoPass()
+})
+
+function startReading() {
+  readingWords.value = shuffle(words.value)
+  readingIndex.value = 0
+  scheduleReadingAutoPass()
+}
+
+// ---- Listen-and-write step: the Dictation tab's own listen-then-type drill
+// (TTS audio, hidden word, type it, per-letter diff on check, 1s auto-advance
+// on a correct guess), reused as-is rather than re-implemented — porting a
+// second copy of its diff/composition/audio-fallback logic risked drifting
+// from "equal the Dictation tab". The only difference from the tab's own
+// usage is the word pool: passed in directly as this part's words
+// (Dictation's wordsOverride param) instead of letting it fetch+filter the
+// whole topic by confidence/show, matching how Page 3 and the Reading step
+// also bypass user-progress filtering. ----
+
+function startListenWrite() {
+  nextTick(() => {
+    const panel = document.getElementById('topic-dictation-panel')
+    if (panel) panel.style.display = 'flex'
+    dictationRef.value?.show(ensureUserEmail(), LANG, topic.value, 'target', 'origin', [], words.value)
+  })
+}
+
 // ---- Load the topic + the up-to-5 words for this part, then shuffle. ----
 
 async function load() {
@@ -411,6 +605,16 @@ onMounted(() => {
   document.body.classList.add('part-flow-active')
   load()
 })
+// Dictation keeps a pending 1s auto-advance timer (and possibly playing TTS
+// audio) until pause() is called — leaving the flow via Exit mid-Listen-and-
+// write must stop it explicitly, the same way switching tabs away from
+// Dictation in LibraryPage.vue does. Must run in onBeforeUnmount, not
+// onUnmounted: by the time onUnmounted fires, the <Dictation> child has
+// already been torn down and dictationRef.value is back to null.
+onBeforeUnmount(() => {
+  dictationRef.value?.pause()
+})
+
 onUnmounted(() => {
   document.body.classList.remove('part-flow-active')
 })
@@ -577,19 +781,36 @@ body.part-flow-active {
 }
 
 .word-page-2 {
+  position: relative;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  padding: 24px;
+  flex: 1;
+  align-self: stretch;
 }
 
 .word-page-2-word {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 24px;
   font-size: clamp(28px, 7vw, 44px);
   font-weight: 700;
   text-align: center;
   color: var(--text);
+}
+
+.word-page-2-controls {
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .word-page-2-mic-btn {
@@ -598,7 +819,6 @@ body.part-flow-active {
   justify-content: center;
   width: 88px;
   height: 88px;
-  margin-top: 24px;
   border-radius: 50%;
   border: none;
   background: var(--accent);
@@ -606,6 +826,7 @@ body.part-flow-active {
   font-size: 40px;
   line-height: 1;
   cursor: pointer;
+  margin-bottom: 46px;
 }
 
 .word-page-2-mic-btn:hover:not(:disabled) {
@@ -767,6 +988,94 @@ body.part-flow-active {
   text-align: center;
 }
 
+.reading-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+}
+
+.reading-page-counter {
+  font-size: 14px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.reading-page-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 360px;
+  min-height: 180px;
+  padding: 32px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.reading-page-card:hover {
+  border-color: var(--accent);
+}
+
+.reading-page-word {
+  font-size: clamp(28px, 7vw, 48px);
+  font-weight: 800;
+  text-align: center;
+  word-break: break-word;
+  color: var(--text);
+}
+
+.reading-page-hint {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.reading-page-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.reading-page-autopass-btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reading-page-autopass-btn:hover {
+  border-color: var(--accent);
+}
+
+.reading-page-autopass-btn.pressed {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.reading-page-velocity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.listen-write-page {
+  width: 100%;
+}
+
 .flow-bottombar {
   position: fixed;
   bottom: 0;
@@ -795,7 +1104,12 @@ body.part-flow-active {
   cursor: pointer;
 }
 
-.flow-next-btn:hover {
+.flow-next-btn:hover:not(:disabled) {
   background: var(--accent-strong);
+}
+
+.flow-next-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 </style>

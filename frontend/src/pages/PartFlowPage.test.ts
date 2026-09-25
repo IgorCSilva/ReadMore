@@ -2,6 +2,7 @@ import { flushPromises, mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { createRouter, createWebHistory } from 'vue-router'
 import * as api from '../shared/api'
+import { consumeHomeExpansion } from '../shared/homeExpansion'
 import PartFlowPage from './PartFlowPage.vue'
 
 vi.mock('../shared/api', async (importOriginal) => {
@@ -10,6 +11,10 @@ vi.mock('../shared/api', async (importOriginal) => {
     ...actual,
     getChapters: vi.fn(),
     getWords: vi.fn(),
+    // Stubbed (not just left real) so the Listen-and-write tests can assert
+    // it's never called — proving Dictation's wordsOverride bypasses
+    // loadUserWords entirely instead of silently falling through to it.
+    getUserWords: vi.fn(),
   }
 })
 
@@ -34,6 +39,57 @@ const WORDS = [
   { word_id: 'w5', original: 'bom dia', filename: '', sentence: '', cue: 'good morning (cue)', gender_id: '' },
 ]
 
+// A topic with two numbered parts (10 words, PART_SIZE 5) — only needed for
+// the "finishing a part" tests below, which must exercise both "there's a
+// next numbered Part" and "this was the last one" branches.
+const WORDS_TWO_PARTS = Array.from({ length: 10 }, (_, i) => ({
+  word_id: `tw${i + 1}`,
+  original: `word${i + 1}`,
+  filename: '',
+  sentence: '',
+  cue: `cue${i + 1}`,
+  gender_id: '',
+}))
+const CHAPTERS_TWO_PARTS = [
+  {
+    chapter_id: 'c1', number: 1, title: 'Basics', description: '', status: 'active',
+    topics: [
+      {
+        topic_id: 't1', number: 1, title: 'Greetings', description: '',
+        word_ids: WORDS_TWO_PARTS.map((w) => w.word_id),
+        texts: [], sentences: [], phrases: [], status: 'active', exercises: [],
+      },
+    ],
+  },
+]
+
+// The bottom bar's Next is disabled on a word's Page 3 until it's typed
+// correctly — every test that walks multiple steps forward now needs to
+// solve whichever Page 3 it lands on along the way instead of blindly
+// clicking. Looks up the right answer via the cue text (shown on both Page 1
+// and Page 3), so it works for whichever word is currently active.
+const WORD_BY_CUE = new Map(WORDS.map((w) => [w.cue, w.original]))
+const WORD_BY_CUE_TWO_PARTS = new Map(WORDS_TWO_PARTS.map((w) => [w.cue, w.original]))
+
+async function clickNext(wrapper: ReturnType<typeof mount>, wordByCue = WORD_BY_CUE) {
+  const input = wrapper.find<HTMLInputElement>('.word-page-3-input')
+  if (input.exists()) {
+    const cueText = wrapper.get('.word-page-1-cue, .word-page-1-cue-big').text()
+    await input.setValue(wordByCue.get(cueText))
+    await wrapper.get('.word-page-3-check-btn').trigger('click')
+  }
+  await wrapper.get('.flow-next-btn').trigger('click')
+}
+
+// Sequence is words*3 (15) + reading + listen-write (17 total); listen-write
+// is the last step, index 16 — 16 steps from start, passing through (and
+// solving) every word's Page 3 along the way.
+async function goToListenWrite(wrapper: ReturnType<typeof mount>, wordByCue = WORD_BY_CUE) {
+  for (let i = 0; i < 16; i++) {
+    await clickNext(wrapper, wordByCue)
+  }
+}
+
 async function mountFlow({ settle = true } = {}) {
   vi.mocked(api.getChapters).mockResolvedValue({ lang: 'pt-en', chapters: CHAPTERS })
   vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: WORDS })
@@ -50,6 +106,25 @@ async function mountFlow({ settle = true } = {}) {
 
   const wrapper = mount(PartFlowPage, { attachTo: document.body, global: { plugins: [router] } })
   if (settle) await flushPromises()
+  return { wrapper, router }
+}
+
+async function mountFlowWithTwoParts(partNumber: string) {
+  vi.mocked(api.getChapters).mockResolvedValue({ lang: 'pt-en', chapters: CHAPTERS_TWO_PARTS })
+  vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: WORDS_TWO_PARTS })
+
+  const router = createRouter({
+    history: createWebHistory(),
+    routes: [
+      { path: '/', name: 'home', component: { template: '<div>home</div>' } },
+      { path: '/part/:topicId/:partNumber', name: 'part-flow', component: PartFlowPage },
+    ],
+  })
+  router.push({ name: 'part-flow', params: { topicId: 't1', partNumber } })
+  await router.isReady()
+
+  const wrapper = mount(PartFlowPage, { attachTo: document.body, global: { plugins: [router] } })
+  await flushPromises()
   return { wrapper, router }
 }
 
@@ -119,9 +194,9 @@ describe('PartFlowPage', () => {
     const { wrapper } = await mountFlow()
     try {
       // Skip w1's Page 2 and Page 3 to reach w2 (no filename) Page 1.
-      await wrapper.get('.flow-next-btn').trigger('click')
-      await wrapper.get('.flow-next-btn').trigger('click')
-      await wrapper.get('.flow-next-btn').trigger('click')
+      await clickNext(wrapper)
+      await clickNext(wrapper)
+      await clickNext(wrapper)
 
       expect(wrapper.find('img').exists()).toBe(false)
       expect(wrapper.get('.word-page-1-cue-big').text()).toBe('bye (cue)')
@@ -140,19 +215,16 @@ describe('PartFlowPage', () => {
       await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 3
       expect(wrapper.find('.word-page-3').exists()).toBe(true)
 
-      // 13 more clicks (2 already spent on w1's Page 2/3) reaches step index
-      // 15 of 17 — every word's 3 pages done — which is Reading.
+      // 13 more steps (2 already spent on w1's Page 2/3) reaches step index
+      // 15 of 17 — every word's 3 pages done — which is Reading. Page 3 is
+      // gated, so clickNext solves whichever word's Page 3 it lands on.
       for (let i = 0; i < 13; i++) {
-        await wrapper.get('.flow-next-btn').trigger('click')
+        await clickNext(wrapper)
       }
-      expect(wrapper.get('.placeholder-page').text()).toBe('Reading page — coming soon')
+      expect(wrapper.find('.reading-page').exists()).toBe(true)
 
-      await wrapper.get('.flow-next-btn').trigger('click')
-      expect(wrapper.get('.placeholder-page').text()).toBe('Listen and write page — coming soon')
-
-      // Next past the last page is a no-op, not a crash.
-      await wrapper.get('.flow-next-btn').trigger('click')
-      expect(wrapper.get('.placeholder-page').text()).toBe('Listen and write page — coming soon')
+      await clickNext(wrapper)
+      expect(wrapper.find('#topic-dictation-panel').exists()).toBe(true)
     } finally {
       wrapper.unmount()
     }
@@ -382,6 +454,296 @@ describe('PartFlowPage', () => {
         await wrapper.get('.word-page-3-input').trigger('keydown', { key: 'Enter' })
 
         expect(wrapper.get('.word-page-3-input').classes()).toContain('success')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('disables the bottom bar Next button until the correct word is typed and checked', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await goToPage3(wrapper)
+        expect(wrapper.get<HTMLButtonElement>('.flow-next-btn').element.disabled).toBe(true)
+
+        await wrapper.get('.word-page-3-input').setValue('ai')
+        await wrapper.get('.word-page-3-check-btn').trigger('click')
+        expect(wrapper.get<HTMLButtonElement>('.flow-next-btn').element.disabled).toBe(true)
+
+        await wrapper.get('.word-page-3-input').setValue('oi')
+        await wrapper.get('.word-page-3-check-btn').trigger('click')
+        expect(wrapper.get<HTMLButtonElement>('.flow-next-btn').element.disabled).toBe(false)
+      } finally {
+        wrapper.unmount()
+      }
+    })
+  })
+
+  describe('Reading page', () => {
+    async function goToReading(wrapper: ReturnType<typeof mount>) {
+      // Sequence is words*3 (15) + reading + listen-write (17 total); Reading
+      // is step index 15, i.e. 15 steps from the initial step 0 — passing
+      // through (and solving) every word's Page 3 along the way.
+      for (let i = 0; i < 15; i++) {
+        await clickNext(wrapper)
+      }
+    }
+
+    // Math.random always 0 (see the outer beforeEach) makes this file's own
+    // Fisher-Yates shuffle deterministic too: starting from [w1..w5], it
+    // always ends as [w2, w3, w4, w5, w1] — i.e. 'tchau', 'obrigado',
+    // 'por favor', 'bom dia', 'oi'.
+
+    it('shows only this part\'s words as tappable cards, one at a time, wrapping at the end', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await goToReading(wrapper)
+
+        expect(wrapper.get('.reading-page-counter').text()).toBe('1 / 5')
+        expect(wrapper.get('.reading-page-word').text()).toBe('tchau')
+
+        await wrapper.get('.reading-page-card').trigger('click')
+        expect(wrapper.get('.reading-page-counter').text()).toBe('2 / 5')
+        expect(wrapper.get('.reading-page-word').text()).toBe('obrigado')
+
+        for (let i = 0; i < 3; i++) {
+          await wrapper.get('.reading-page-card').trigger('click')
+        }
+        expect(wrapper.get('.reading-page-word').text()).toBe('oi')
+
+        await wrapper.get('.reading-page-card').trigger('click') // wraps
+        expect(wrapper.get('.reading-page-counter').text()).toBe('1 / 5')
+        expect(wrapper.get('.reading-page-word').text()).toBe('tchau')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('picks a genuinely random next word among the others, not just the next one in sequence', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await goToReading(wrapper) // shuffled order still built under the always-0 mock: [w2,w3,w4,w5,w1]
+        expect(wrapper.get('.reading-page-word').text()).toBe('tchau') // index 0
+
+        // 5 words -> offset = 1 + floor(random * 4); random=0.9 -> offset=4,
+        // landing on index (0 + 4) % 5 = 4 ('oi') — a jump a naive "+1" would
+        // never produce (that would land on 'obrigado', index 1).
+        vi.spyOn(Math, 'random').mockReturnValue(0.9)
+        await wrapper.get('.reading-page-card').trigger('click')
+        expect(wrapper.get('.reading-page-word').text()).toBe('oi')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('the auto-pass button starts unpressed and toggles a pressed style on click', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await goToReading(wrapper)
+
+        const btn = wrapper.get('.reading-page-autopass-btn')
+        expect(btn.classes()).not.toContain('pressed')
+
+        await btn.trigger('click')
+        expect(wrapper.get('.reading-page-autopass-btn').classes()).toContain('pressed')
+
+        await wrapper.get('.reading-page-autopass-btn').trigger('click')
+        expect(wrapper.get('.reading-page-autopass-btn').classes()).not.toContain('pressed')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('when auto-pass is on, advances by itself after (word length × ms-per-char), then reschedules for the next word', async () => {
+      vi.useFakeTimers()
+      const { wrapper } = await mountFlow()
+      try {
+        await goToReading(wrapper)
+        await wrapper.get('.reading-page-autopass-btn').trigger('click')
+
+        // 'tchau' (5 chars) at the default speed (3, i.e. (10+1-3)*100 = 800ms/char): 5 * 800 = 4000ms.
+        await vi.advanceTimersByTimeAsync(3999)
+        expect(wrapper.get('.reading-page-word').text()).toBe('tchau')
+
+        await vi.advanceTimersByTimeAsync(1)
+        expect(wrapper.get('.reading-page-word').text()).toBe('obrigado')
+
+        // 'obrigado' (8 chars) at the same 800ms/char: 8 * 800 = 6400ms.
+        await vi.advanceTimersByTimeAsync(6399)
+        expect(wrapper.get('.reading-page-word').text()).toBe('obrigado')
+
+        await vi.advanceTimersByTimeAsync(1)
+        expect(wrapper.get('.reading-page-word').text()).toBe('por favor')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('a higher speed value passes words faster (shorter on-screen time), not slower', async () => {
+      vi.useFakeTimers()
+      const { wrapper } = await mountFlow()
+      try {
+        await goToReading(wrapper)
+        await wrapper.get('.reading-page-autopass-btn').trigger('click')
+
+        // Raise from the default speed (3) to the max (10) before the first
+        // advance fires: reschedules 'tchau' (5 chars) at the fastest
+        // ms-per-char, (10+1-10)*100 = 100ms/char -> 5 * 100 = 500ms, much
+        // shorter than the 4000ms the default speed would have taken.
+        await wrapper.get('.reading-page-velocity input').setValue(10)
+
+        await vi.advanceTimersByTimeAsync(499)
+        expect(wrapper.get('.reading-page-word').text()).toBe('tchau')
+
+        await vi.advanceTimersByTimeAsync(1)
+        expect(wrapper.get('.reading-page-word').text()).toBe('obrigado')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('clicking the card manually cancels the pending auto-pass timer for the word it left', async () => {
+      vi.useFakeTimers()
+      const { wrapper } = await mountFlow()
+      try {
+        await goToReading(wrapper)
+        await wrapper.get('.reading-page-autopass-btn').trigger('click')
+
+        await wrapper.get('.reading-page-card').trigger('click') // manual: tchau -> obrigado
+
+        // If the 'tchau' timer (4000ms) had survived, it would have fired an
+        // extra advance somewhere in here and skipped past 'obrigado' (whose
+        // own timer needs 6400ms).
+        await vi.advanceTimersByTimeAsync(4000)
+        expect(wrapper.get('.reading-page-word').text()).toBe('obrigado')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+  })
+
+  describe('Listen and write page (reuses the Dictation tab)', () => {
+    it('shows the Dictation drill running (not loading/error/empty), restricted to this part\'s 5 words, without ever calling loadUserWords/getUserWords', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await goToListenWrite(wrapper)
+
+        expect(wrapper.get<HTMLElement>('#topic-dictation-panel').element.style.display).toBe('flex')
+        expect(wrapper.get<HTMLElement>('#dictation-stage').element.style.display).toBe('flex')
+        expect(wrapper.get<HTMLElement>('#dictation-empty-state').element.style.display).toBe('none')
+        expect(wrapper.get<HTMLElement>('#dictation-error-banner').element.style.display).toBe('none')
+        expect(wrapper.get('#dictation-counter').text()).toBe('1 / 5')
+        expect(api.getUserWords).not.toHaveBeenCalled()
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('typing the correct word and checking marks it right, then auto-advances to the next word 1s later', async () => {
+      vi.useFakeTimers()
+      const { wrapper } = await mountFlow()
+      try {
+        await goToListenWrite(wrapper)
+        // Math.random pinned to 0 (outer beforeEach) shuffles this part's
+        // words to ['tchau','obrigado','por favor','bom dia','oi'] — same
+        // permutation already relied on by the Reading page tests above.
+        expect(wrapper.get('#dictation-counter').text()).toBe('1 / 5')
+
+        await wrapper.get<HTMLInputElement>('#dictation-input').setValue('tchau')
+        await wrapper.get('#dictation-check-btn').trigger('click')
+
+        const letterClasses = wrapper.findAll('#dictation-result-word span').map((s) => s.classes()[0])
+        expect(letterClasses).toEqual(letterClasses.map(() => 'dictation-letter-correct'))
+        expect(wrapper.get<HTMLButtonElement>('#dictation-check-btn').element.disabled).toBe(true)
+
+        await vi.advanceTimersByTimeAsync(999)
+        expect(wrapper.get('#dictation-counter').text()).toBe('1 / 5')
+
+        await vi.advanceTimersByTimeAsync(1)
+        expect(wrapper.get('#dictation-counter').text()).toBe('2 / 5')
+        expect(wrapper.get<HTMLInputElement>('#dictation-input').element.value).toBe('')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('typing the wrong word shows the per-letter diff and does not advance', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await goToListenWrite(wrapper)
+
+        await wrapper.get<HTMLInputElement>('#dictation-input').setValue('xyz')
+        await wrapper.get('#dictation-check-btn').trigger('click')
+
+        const letterClasses = wrapper.findAll('#dictation-result-word span').map((s) => s.classes()[0])
+        expect(letterClasses).toContain('dictation-letter-wrong')
+        expect(wrapper.get<HTMLButtonElement>('#dictation-check-btn').element.disabled).toBe(false)
+        expect(wrapper.get('#dictation-counter').text()).toBe('1 / 5')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('pauses the Dictation round on unmount, canceling any pending auto-advance', async () => {
+      vi.useFakeTimers()
+      const { wrapper } = await mountFlow()
+      try {
+        await goToListenWrite(wrapper)
+        await wrapper.get<HTMLInputElement>('#dictation-input').setValue('tchau')
+        await wrapper.get('#dictation-check-btn').trigger('click')
+        expect(wrapper.get<HTMLButtonElement>('#dictation-check-btn').element.disabled).toBe(true) // pending 1s auto-advance
+
+        const counterEl = wrapper.get('#dictation-counter').element
+
+        wrapper.unmount()
+        await vi.advanceTimersByTimeAsync(5000)
+
+        expect(counterEl.textContent).toBe('1 / 5') // never advanced to '2 / 5'
+      } finally {
+        wrapper.unmount()
+      }
+    })
+  })
+
+  describe('Finishing a part (bottom bar button on the last step)', () => {
+    it('labels the button "Finish" only on the last step (Listen-and-write), "Next" everywhere else', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        expect(wrapper.get('.flow-next-btn').text()).toBe('Next')
+
+        await goToListenWrite(wrapper)
+        expect(wrapper.get('.flow-next-btn').text()).toBe('Finish')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('clicking Finish navigates home and requests the next numbered Part expanded, when one exists', async () => {
+      const { wrapper, router } = await mountFlowWithTwoParts('1')
+      try {
+        await goToListenWrite(wrapper, WORD_BY_CUE_TWO_PARTS)
+        await wrapper.get('.flow-next-btn').trigger('click')
+        await flushPromises()
+
+        expect(router.currentRoute.value.path).toBe('/')
+        // 10 words = 2 numbered parts; finishing Part 1 (partIndex 0) should
+        // request Part 2 (partIndex 1) expanded next.
+        expect(consumeHomeExpansion()).toEqual({ topicId: 't1', partIndex: 1 })
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('clicking Finish requests "Read and Understand" expanded when this was the topic\'s last numbered Part', async () => {
+      const { wrapper, router } = await mountFlowWithTwoParts('2')
+      try {
+        await goToListenWrite(wrapper, WORD_BY_CUE_TWO_PARTS)
+        await wrapper.get('.flow-next-btn').trigger('click')
+        await flushPromises()
+
+        expect(router.currentRoute.value.path).toBe('/')
+        // Part 2 is the last numbered part (indices 0-1); "Read and
+        // Understand" is the next accordion entry, at index 2.
+        expect(consumeHomeExpansion()).toEqual({ topicId: 't1', partIndex: 2 })
       } finally {
         wrapper.unmount()
       }

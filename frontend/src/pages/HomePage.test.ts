@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from 'vitest'
 import { nextTick } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import * as api from '../shared/api'
+import { requestHomeExpansion } from '../shared/homeExpansion'
 import HomePage from './HomePage.vue'
 
 vi.mock('../shared/api', async (importOriginal) => {
@@ -205,6 +206,31 @@ describe('HomePage', () => {
       await flushPromises()
 
       expect(router.currentRoute.value.name).toBe('home')
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('expands the requested topic/part on mount, from a pending PartFlowPage handoff', async () => {
+    requestHomeExpansion({ topicId: 't1', partIndex: 1 })
+    const { wrapper } = await mountReady()
+    try {
+      const labels = wrapper.findAll('.part-label').map((l) => l.text())
+      expect(labels).toEqual(['Part 1', 'Part 2', 'Read and Understand', 'Listen and identify'])
+      expect(wrapper.get('.part-body').get('.part-words').text()).toBe('word6, word7') // Part 2's words
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('only consumes the pending expansion once, not on a later plain visit', async () => {
+    requestHomeExpansion({ topicId: 't1', partIndex: 1 })
+    const first = await mountReady()
+    first.wrapper.unmount()
+
+    const { wrapper } = await mountReady()
+    try {
+      expect(wrapper.find('.topic-parts').exists()).toBe(false)
     } finally {
       wrapper.unmount()
     }

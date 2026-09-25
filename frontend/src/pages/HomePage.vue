@@ -42,6 +42,7 @@ import { getChapters, getWords } from '../shared/api'
 import { cacheKey, writeCache } from '../shared/cache'
 import { ensureUserEmail, getCurrentUser } from '../shared/currentUser'
 import { readStale, refreshInBackground } from '../shared/dataSync'
+import { consumeHomeExpansion } from '../shared/homeExpansion'
 import { numberedPartsCount, wordIdsForPart } from '../shared/topicParts'
 
 // Hardcoded until a language picker exists on the new pages — matches the
@@ -134,6 +135,15 @@ async function loadWords() {
 }
 
 onMounted(async () => {
+  // Set once, up front: PartFlowPage requests this when finishing a part,
+  // independent of the chapters/words fetch below — the accordion reads
+  // these refs reactively, so it expands correctly whichever finishes first.
+  const pending = consumeHomeExpansion()
+  if (pending) {
+    expandedTopicId.value = pending.topicId
+    expandedPartIndex.value = pending.partIndex
+  }
+
   const email = ensureUserEmail()
   await Promise.all([loadChapters(email), loadWords()])
 })
