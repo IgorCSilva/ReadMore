@@ -25,7 +25,34 @@
       </div>
     </div>
 
-    <!-- Page 2/3, Reading, and Listen-and-write aren't designed yet — placeholders
+    <div class="word-page-2" v-else-if="currentStep?.kind === 'word' && currentStep.pageNumber === 2">
+      <div class="word-page-2-word">{{ currentStep.word.original }}</div>
+
+      <button
+        type="button"
+        class="word-page-2-mic-btn"
+        :disabled="speechState === 'listening' || !speechSupported"
+        @click="startListening"
+        aria-label="Record your voice"
+      >
+        🎤
+      </button>
+
+      <div class="word-page-2-wave" v-if="speechState === 'listening'">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="word-page-2-result success" v-else-if="speechState === 'success'">
+        ✓ Correct!
+      </div>
+      <div class="word-page-2-result failure" v-else-if="speechState === 'failure'">
+        Not quite — try saying it again.
+      </div>
+      <div class="word-page-2-hint" v-else-if="speechState === 'unsupported'">
+        Voice recognition isn't supported in this browser.
+      </div>
+    </div>
+
+    <!-- Page 3, Reading, and Listen-and-write aren't designed yet — placeholders
          keep the sequence/progress/Next mechanics working end to end already. -->
     <div class="placeholder-page" v-else-if="currentStep?.kind === 'word'">
       Page {{ currentStep.pageNumber }} — coming soon
@@ -118,6 +145,11 @@ watch(currentStep, (step) => {
   if (step?.kind === 'word' && step.pageNumber === 1) {
     startImageLoad(step.word.filename)
   }
+  if (step?.kind === 'word' && step.pageNumber === 2) {
+    resetSpeechState()
+  } else {
+    stopRecognition()
+  }
 })
 
 // ---- Audio, mirrors Flashcards.vue's speakWord/speakWordLocal fallback. ----
@@ -141,6 +173,69 @@ function playAudio(text) {
   const audio = new Audio(ttsUrl(text, langCode))
   audio.addEventListener('error', () => speakLocal(text, langCode))
   audio.play().catch(() => speakLocal(text, langCode))
+}
+
+// ---- Page 2's voice recognition, via the browser's Web Speech API — no
+// backend STT exists in this app (only TTS), and this API needs no server
+// round-trip. Reliable mainly in Chrome/Edge; other browsers fall back to
+// the "unsupported" state below instead of a broken mic button. ----
+
+const SpeechRecognitionCtor = window.SpeechRecognition || window.webkitSpeechRecognition
+const speechSupported = !!SpeechRecognitionCtor
+
+const speechState = ref(speechSupported ? 'idle' : 'unsupported')
+let recognition = null
+
+function resetSpeechState() {
+  stopRecognition()
+  speechState.value = speechSupported ? 'idle' : 'unsupported'
+}
+
+function stopRecognition() {
+  if (!recognition) return
+  recognition.onresult = null
+  recognition.onerror = null
+  recognition.onend = null
+  recognition.abort()
+  recognition = null
+}
+
+// Loose match: case/accent/punctuation-insensitive, since speech transcripts
+// rarely come back with the exact casing or punctuation of the target word.
+function normalizeSpeech(text) {
+  return (text || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^\p{L}\p{N}\s]/gu, '')
+    .trim()
+}
+
+function startListening() {
+  if (!speechSupported || speechState.value === 'listening') return
+  const word = currentStep.value?.word
+  if (!word) return
+
+  stopRecognition()
+  recognition = new SpeechRecognitionCtor()
+  recognition.lang = speechLocaleFor(targetLangCode())
+  recognition.interimResults = false
+  recognition.maxAlternatives = 3
+
+  recognition.onresult = (event) => {
+    const target = normalizeSpeech(word.original)
+    const said = Array.from(event.results[0]).map((alt) => normalizeSpeech(alt.transcript))
+    speechState.value = said.includes(target) ? 'success' : 'failure'
+  }
+  recognition.onerror = () => {
+    speechState.value = 'failure'
+  }
+  recognition.onend = () => {
+    if (speechState.value === 'listening') speechState.value = 'failure'
+  }
+
+  speechState.value = 'listening'
+  recognition.start()
 }
 
 // ---- Load the topic + the up-to-5 words for this part, then shuffle. ----
@@ -348,6 +443,93 @@ body.part-flow-active {
 .word-page-1-audio-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.word-page-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+}
+
+.word-page-2-word {
+  font-size: clamp(28px, 7vw, 44px);
+  font-weight: 700;
+  text-align: center;
+  color: var(--text);
+}
+
+.word-page-2-mic-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  margin-top: 24px;
+  border-radius: 50%;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 40px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.word-page-2-mic-btn:hover:not(:disabled) {
+  background: var(--accent-strong);
+}
+
+.word-page-2-mic-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.word-page-2-wave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  height: 32px;
+}
+
+.word-page-2-wave span {
+  width: 5px;
+  height: 100%;
+  border-radius: 3px;
+  background: var(--accent);
+  animation: word-page-2-wave-bounce 0.9s ease-in-out infinite;
+}
+
+.word-page-2-wave span:nth-child(2) { animation-delay: 0.1s; }
+.word-page-2-wave span:nth-child(3) { animation-delay: 0.2s; }
+.word-page-2-wave span:nth-child(4) { animation-delay: 0.3s; }
+.word-page-2-wave span:nth-child(5) { animation-delay: 0.4s; }
+
+@keyframes word-page-2-wave-bounce {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+.word-page-2-result {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.word-page-2-result.success {
+  color: var(--accent);
+}
+
+.word-page-2-result.failure {
+  color: #d33;
+}
+
+.word-page-2-hint {
+  font-size: 14px;
+  color: var(--muted);
+  text-align: center;
 }
 
 .placeholder-page {

@@ -130,11 +130,11 @@ describe('PartFlowPage', () => {
     }
   })
 
-  it('advances through placeholder pages for Page 2/3, then Reading and Listen-and-write, via Next', async () => {
+  it('advances through Page 2, the placeholder Page 3, then Reading and Listen-and-write, via Next', async () => {
     const { wrapper } = await mountFlow()
     try {
       await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
-      expect(wrapper.get('.placeholder-page').text()).toBe('Page 2 — coming soon')
+      expect(wrapper.find('.word-page-2').exists()).toBe(true)
 
       await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 3
       expect(wrapper.get('.placeholder-page').text()).toBe('Page 3 — coming soon')
@@ -178,5 +178,105 @@ describe('PartFlowPage', () => {
     } finally {
       wrapper.unmount()
     }
+  })
+
+  describe('word Page 2 (voice recognition)', () => {
+    it('shows the word big, a mic button, and a "not supported" hint when the browser lacks SpeechRecognition', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
+        expect(wrapper.get('.word-page-2-word').text()).toBe('oi')
+        expect(wrapper.get('.word-page-2-mic-btn').attributes('disabled')).toBeDefined()
+        expect(wrapper.get('.word-page-2-hint').text()).toBe("Voice recognition isn't supported in this browser.")
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    describe('when the browser supports SpeechRecognition', () => {
+      let instances
+
+      beforeEach(() => {
+        instances = []
+        class MockSpeechRecognition {
+          constructor() {
+            this.start = vi.fn()
+            this.abort = vi.fn()
+            instances.push(this)
+          }
+        }
+        window.SpeechRecognition = MockSpeechRecognition
+      })
+
+      afterEach(() => {
+        delete window.SpeechRecognition
+      })
+
+      it('tapping the mic starts listening: disables the mic and shows a wave', async () => {
+        const { wrapper } = await mountFlow()
+        try {
+          await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
+          await wrapper.get('.word-page-2-mic-btn').trigger('click')
+
+          expect(wrapper.get('.word-page-2-mic-btn').attributes('disabled')).toBeDefined()
+          expect(wrapper.find('.word-page-2-wave').exists()).toBe(true)
+          expect(instances[0].start).toHaveBeenCalledOnce()
+        } finally {
+          wrapper.unmount()
+        }
+      })
+
+      it('shows a success message when the recognized speech matches the word, then re-enables the mic', async () => {
+        const { wrapper } = await mountFlow()
+        try {
+          await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
+          await wrapper.get('.word-page-2-mic-btn').trigger('click')
+
+          instances[0].onresult({ results: [[{ transcript: 'Oi!' }]] })
+          await flushPromises()
+
+          expect(wrapper.get('.word-page-2-result').classes()).toContain('success')
+          expect(wrapper.find('.word-page-2-wave').exists()).toBe(false)
+          expect(wrapper.get('.word-page-2-mic-btn').attributes('disabled')).toBeUndefined()
+        } finally {
+          wrapper.unmount()
+        }
+      })
+
+      it('shows a failure message when the recognized speech does not match, and allows retrying', async () => {
+        const { wrapper } = await mountFlow()
+        try {
+          await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
+          await wrapper.get('.word-page-2-mic-btn').trigger('click')
+
+          instances[0].onresult({ results: [[{ transcript: 'tchau' }]] })
+          await flushPromises()
+
+          expect(wrapper.get('.word-page-2-result').classes()).toContain('failure')
+          expect(wrapper.get('.word-page-2-mic-btn').attributes('disabled')).toBeUndefined()
+
+          await wrapper.get('.word-page-2-mic-btn').trigger('click')
+          expect(wrapper.find('.word-page-2-wave').exists()).toBe(true)
+          expect(instances).toHaveLength(2)
+        } finally {
+          wrapper.unmount()
+        }
+      })
+
+      it('treats a recognition error as a failure', async () => {
+        const { wrapper } = await mountFlow()
+        try {
+          await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
+          await wrapper.get('.word-page-2-mic-btn').trigger('click')
+
+          instances[0].onerror()
+          await flushPromises()
+
+          expect(wrapper.get('.word-page-2-result').classes()).toContain('failure')
+        } finally {
+          wrapper.unmount()
+        }
+      })
+    })
   })
 })
