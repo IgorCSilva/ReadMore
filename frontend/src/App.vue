@@ -4,6 +4,8 @@
 
   <CorrectSentenceFab />
 
+  <BottomBar />
+
   <UpdateAvailableBanner ref="updateBannerRef" />
 
   <div class="global-topbar" id="global-topbar">
@@ -89,6 +91,7 @@ import { formatLanguagePairLabel, formatLanguageName } from './shared/languages'
 import { escapeHtml } from './shared/text'
 import { flushQueuedWrites } from './shared/writeQueue'
 import CorrectSentenceFab from './features/corrections/CorrectSentenceFab.vue'
+import BottomBar from './layout/BottomBar.vue'
 import Flashcards from './features/catalog/Flashcards.vue'
 import Notifications from './shared/Notifications.vue'
 import UpdateAvailableBanner from './shared/UpdateAvailableBanner.vue'
@@ -856,7 +859,7 @@ onMounted(() => {
   body {
     display: flex; flex-direction: column; align-items: center;
     gap: 24px;
-    min-height: 100vh; padding: 24px;
+    min-height: 100vh; padding: 24px; padding-bottom: 80px;
   }
   .layout {
     display: flex; flex-direction: column;
