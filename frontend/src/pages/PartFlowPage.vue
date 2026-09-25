@@ -192,7 +192,7 @@ const progressPercent = computed(() =>
 )
 
 function exit() {
-  router.push('/')
+  router.push('/home')
 }
 
 function next() {
@@ -234,7 +234,7 @@ function finishPart() {
   // `count` (right after the `count` numbered parts occupying indices 0..count-1).
   const nextPartIndex = currentPartNumber < count ? currentPartNumber : count
   requestHomeExpansion({ topicId, partIndex: nextPartIndex })
-  router.push('/')
+  router.push('/home')
 }
 
 // ---- Page 1's image (or big-cue fallback), mirrors Flashcards.vue's own

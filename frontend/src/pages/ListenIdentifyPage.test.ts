@@ -64,7 +64,7 @@ async function mountPage(topicId = 't1', { settle = true } = {}) {
   const router = createRouter({
     history: createWebHistory(),
     routes: [
-      { path: '/', name: 'home', component: { template: '<div>home</div>' } },
+      { path: '/home', name: 'home', component: { template: '<div>home</div>' } },
       { path: '/listen/:topicId', name: 'listen-identify', component: ListenIdentifyPage },
     ],
   })
@@ -107,7 +107,7 @@ describe('ListenIdentifyPage', () => {
     const router = createRouter({
       history: createWebHistory(),
       routes: [
-        { path: '/', name: 'home', component: { template: '<div>home</div>' } },
+        { path: '/home', name: 'home', component: { template: '<div>home</div>' } },
         { path: '/listen/:topicId', name: 'listen-identify', component: ListenIdentifyPage },
       ],
     })
@@ -166,7 +166,7 @@ describe('ListenIdentifyPage', () => {
     try {
       await wrapper.get('.flow-exit-btn').trigger('click')
       await flushPromises()
-      expect(router.currentRoute.value.path).toBe('/')
+      expect(router.currentRoute.value.path).toBe('/home')
     } finally {
       wrapper.unmount()
     }
@@ -179,7 +179,7 @@ describe('ListenIdentifyPage', () => {
         await wrapper.get('.flow-next-btn').trigger('click')
         await flushPromises()
 
-        expect(router.currentRoute.value.path).toBe('/')
+        expect(router.currentRoute.value.path).toBe('/home')
         expect(consumeHomeExpansion()).toEqual({ topicId: 't2', partIndex: 0 })
       } finally {
         wrapper.unmount()
@@ -192,7 +192,7 @@ describe('ListenIdentifyPage', () => {
         await wrapper.get('.flow-next-btn').trigger('click')
         await flushPromises()
 
-        expect(router.currentRoute.value.path).toBe('/')
+        expect(router.currentRoute.value.path).toBe('/home')
         expect(consumeHomeExpansion()).toEqual({ topicId: 't3', partIndex: 0 })
       } finally {
         wrapper.unmount()
@@ -205,7 +205,7 @@ describe('ListenIdentifyPage', () => {
         await wrapper.get('.flow-next-btn').trigger('click')
         await flushPromises()
 
-        expect(router.currentRoute.value.path).toBe('/')
+        expect(router.currentRoute.value.path).toBe('/home')
         expect(consumeHomeExpansion()).toBeNull()
       } finally {
         wrapper.unmount()

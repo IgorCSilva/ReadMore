@@ -40,7 +40,7 @@ async function mountPage({ settle = true } = {}) {
   const router = createRouter({
     history: createWebHistory(),
     routes: [
-      { path: '/', name: 'home', component: { template: '<div>home</div>' } },
+      { path: '/home', name: 'home', component: { template: '<div>home</div>' } },
       { path: '/read/:topicId', name: 'read-understand', component: ReadUnderstandPage },
     ],
   })
@@ -68,7 +68,7 @@ describe('ReadUnderstandPage', () => {
     const router = createRouter({
       history: createWebHistory(),
       routes: [
-        { path: '/', name: 'home', component: { template: '<div>home</div>' } },
+        { path: '/home', name: 'home', component: { template: '<div>home</div>' } },
         { path: '/read/:topicId', name: 'read-understand', component: ReadUnderstandPage },
       ],
     })
@@ -116,7 +116,7 @@ describe('ReadUnderstandPage', () => {
     try {
       await wrapper.get('.flow-exit-btn').trigger('click')
       await flushPromises()
-      expect(router.currentRoute.value.path).toBe('/')
+      expect(router.currentRoute.value.path).toBe('/home')
     } finally {
       wrapper.unmount()
     }
@@ -128,7 +128,7 @@ describe('ReadUnderstandPage', () => {
       await wrapper.get('.flow-next-btn').trigger('click')
       await flushPromises()
 
-      expect(router.currentRoute.value.path).toBe('/')
+      expect(router.currentRoute.value.path).toBe('/home')
       // 10 words = 2 numbered parts (indices 0-1); "Read and Understand" is
       // index 2, so "Listen and identify" right after it is index 3.
       expect(consumeHomeExpansion()).toEqual({ topicId: 't1', partIndex: 3 })

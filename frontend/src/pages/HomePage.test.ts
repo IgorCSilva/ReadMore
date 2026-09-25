@@ -3,6 +3,7 @@ import { describe, expect, it, vi } from 'vitest'
 import { nextTick } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import * as api from '../shared/api'
+import { getCurrentUser } from '../shared/currentUser'
 import { requestHomeExpansion } from '../shared/homeExpansion'
 import type { ChaptersResponse } from '../shared/types'
 import HomePage from './HomePage.vue'
@@ -20,7 +21,8 @@ function testRouter() {
   return createRouter({
     history: createWebHistory(),
     routes: [
-      { path: '/', name: 'home', component: HomePage },
+      { path: '/', name: 'presentation', component: { template: '<div>presentation</div>' } },
+      { path: '/home', name: 'home', component: HomePage },
       { path: '/part/:topicId/:partNumber', name: 'part-flow', component: { template: '<div>flow</div>' } },
       { path: '/read/:topicId', name: 'read-understand', component: { template: '<div>read</div>' } },
       { path: '/listen/:topicId', name: 'listen-identify', component: { template: '<div>listen</div>' } },
@@ -63,7 +65,7 @@ async function mountReady() {
   vi.mocked(api.getChapters).mockResolvedValue({ lang: 'pt-en', chapters: CHAPTERS })
   vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: WORDS })
   const router = testRouter()
-  router.push('/')
+  router.push('/home')
   await router.isReady()
   const wrapper = mount(HomePage, { attachTo: document.body, global: { plugins: [router] } })
   await flushPromises()
@@ -73,7 +75,7 @@ async function mountReady() {
 describe('HomePage', () => {
   it('shows a bold "Olá, {email}" in a fixed top bar', async () => {
     const router = testRouter()
-    router.push('/')
+    router.push('/home')
     await router.isReady()
     const wrapper = mount(HomePage, { attachTo: document.body, global: { plugins: [router] } })
     try {
@@ -81,6 +83,22 @@ describe('HomePage', () => {
       const topbar = wrapper.get('.home-topbar')
       const bold = topbar.get('strong')
       expect(bold.text()).toBe('Olá, test@example.com')
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('the Logout button, aligned right in the top bar, clears the signed-in user and returns to the Presentation page', async () => {
+    const { wrapper, router } = await mountReady()
+    try {
+      expect(getCurrentUser().email).toBe('test@example.com')
+
+      await wrapper.get('.home-logout-btn').trigger('click')
+      await flushPromises()
+
+      expect(getCurrentUser().email).toBeNull()
+      expect(localStorage.getItem('readmore_user_email')).toBeNull()
+      expect(router.currentRoute.value.path).toBe('/')
     } finally {
       wrapper.unmount()
     }
@@ -96,7 +114,7 @@ describe('HomePage', () => {
     vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: WORDS })
 
     const router = testRouter()
-    router.push('/')
+    router.push('/home')
     await router.isReady()
     const wrapper = mount(HomePage, { attachTo: document.body, global: { plugins: [router] } })
 

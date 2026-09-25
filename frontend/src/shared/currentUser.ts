@@ -27,9 +27,22 @@ export function promptForEmail(message: string): string {
   return email
 }
 
+export function isValidEmail(email: string): boolean {
+  return EMAIL_RE.test(email)
+}
+
 export function setUserEmail(email: string): void {
   state.email = email
   localStorage.setItem(EMAIL_STORAGE_KEY, email)
+}
+
+// Used by SignInPage.vue's explicit Logout button, and implicitly whenever
+// signing in with a different email than the one currently stored (setting
+// the new one already overwrites state/localStorage — no separate clear
+// step needed for that case).
+export function logoutUser(): void {
+  state.email = null
+  localStorage.removeItem(EMAIL_STORAGE_KEY)
 }
 
 // Resolves the signed-in email for this browser session — from localStorage

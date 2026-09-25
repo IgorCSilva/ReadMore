@@ -1,6 +1,6 @@
 <template>
   <nav class="bottom-bar">
-    <RouterLink to="/" class="bottom-bar-item" active-class="active" exact-active-class="active">
+    <RouterLink to="/home" class="bottom-bar-item" active-class="active" exact-active-class="active">
       <span class="bottom-bar-icon">⌂</span>
     </RouterLink>
     <RouterLink to="/settings" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Settings">

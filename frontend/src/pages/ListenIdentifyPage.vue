@@ -58,7 +58,7 @@ let nextTopicId = null
 const progressPercent = computed(() => (roundTotal.value ? (roundCurrent.value / roundTotal.value) * 100 : 0))
 
 function exit() {
-  router.push('/')
+  router.push('/home')
 }
 
 function finish() {
@@ -68,7 +68,7 @@ function finish() {
     // HomePage's partsForTopic) — so this needs no numberedPartsCount check.
     requestHomeExpansion({ topicId: nextTopicId, partIndex: 0 })
   }
-  router.push('/')
+  router.push('/home')
 }
 
 // Phrases reshuffles its round order on every show(), so resuming at the

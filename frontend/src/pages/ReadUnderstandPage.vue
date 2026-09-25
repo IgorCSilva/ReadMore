@@ -45,7 +45,7 @@ const isLoading = ref(true)
 const scrollKey = `read-understand:${route.params.topicId}`
 
 function exit() {
-  router.push('/')
+  router.push('/home')
 }
 
 // "Read and Understand" has no numbered-part slot of its own — the next
@@ -56,7 +56,7 @@ function finish() {
   const topicId = route.params.topicId
   const nextPartIndex = numberedPartsCount(topic.value) + 1
   requestHomeExpansion({ topicId, partIndex: nextPartIndex })
-  router.push('/')
+  router.push('/home')
 }
 
 async function load() {

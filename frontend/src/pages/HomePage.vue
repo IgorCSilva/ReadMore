@@ -1,6 +1,7 @@
 <template>
   <div class="home-topbar">
     <strong>Olá, {{ currentUser.email }}</strong>
+    <button type="button" class="home-logout-btn" @click="logout">Logout</button>
   </div>
 
   <div class="home-page">
@@ -44,7 +45,7 @@ import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { getChapters, getWords } from '../shared/api'
 import { cacheKey, writeCache } from '../shared/cache'
-import { ensureUserEmail, getCurrentUser } from '../shared/currentUser'
+import { ensureUserEmail, getCurrentUser, logoutUser } from '../shared/currentUser'
 import { readStale, refreshInBackground } from '../shared/dataSync'
 import { consumeHomeExpansion } from '../shared/homeExpansion'
 import { getLangPair } from '../shared/languagePreference'
@@ -76,6 +77,11 @@ function toggleTopic(topicId) {
 
 function togglePart(index) {
   expandedPartIndex.value = expandedPartIndex.value === index ? null : index
+}
+
+function logout() {
+  logoutUser()
+  router.push('/')
 }
 
 // Splits a topic's word_ids into 5-word "Part N" chunks (via shared/topicParts,
@@ -170,12 +176,29 @@ onMounted(async () => {
   height: 56px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 0 20px;
   background: var(--card);
   border-bottom: 1px solid var(--border);
   color: var(--text);
   z-index: 100;
+}
+
+.home-logout-btn {
+  flex-shrink: 0;
+  padding: 7px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home-logout-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .home-page {
