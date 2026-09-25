@@ -1,0 +1,452 @@
+{
+  "chapters": [
+    {
+      "chapter_id": "ch-A0-EL",
+      "number": 1,
+      "title": "Vida cotidiana e rotinas",
+      "description": "Desenvolver vocabulário e padrões do presente simples para frases curtas em primeira pessoa sobre si mesmo e o próprio dia.",
+      "status": "ready",
+      "topics": [
+        {
+          "topic_id": "top-A0-EL-1",
+          "number": 1,
+          "title": "Saudações e Apresentação Pessoal",
+          "description": "Nomes, saudações básicas, expressões de bem-estar e a partícula de tópico usada para se apresentar em coreano. Atividades de construção: leitura de crachá ou de uma breve apresentação pessoal.",
+          "status": "ready",
+          "word_ids": [
+            "ko-wd-0001",
+            "ko-wd-0002",
+            "ko-wd-0003",
+            "ko-wd-0004",
+            "ko-wd-0005",
+            "ko-wd-0006",
+            "ko-wd-0007",
+            "ko-wd-0008",
+            "ko-wd-0009",
+            "ko-wd-0010",
+            "ko-wd-0011",
+            "ko-wd-0012",
+            "ko-wd-0013",
+            "ko-wd-0014",
+            "ko-wd-0015",
+            "ko-wd-0016",
+            "ko-wd-0017",
+            "ko-wd-0018",
+            "ko-wd-0019",
+            "ko-wd-0020",
+            "ko-wd-0021",
+            "ko-wd-0022",
+            "ko-wd-0023",
+            "ko-wd-0024",
+            "ko-wd-0025",
+            "ko-wd-0026"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "Perguntei se ele já tinha almoçado e ouvi um **아니요**."
+            },
+            {
+              "sentence_number": 2,
+              "content": "**제** amigo disse que **저****는** **잘** **지내요**, segundo ele."
+            },
+            {
+              "sentence_number": 3,
+              "content": "Ele acenou da janela do trem e gritou **안녕히 계세요**."
+            },
+            {
+              "sentence_number": 4,
+              "content": "Ele pegou a mala, virou-se e disse **안녕히 계세요**."
+            },
+            {
+              "sentence_number": 5,
+              "content": "O voo para Lisboa parte logo cedo, ainda de **아침**."
+            },
+            {
+              "sentence_number": 6,
+              "content": "Mandei uma mensagem só para dizer **고마워요** pelo conselho."
+            },
+            {
+              "sentence_number": 7,
+              "content": "**저****는** hoje perguntei se **당신****은** **어떻게** **지내요**."
+            },
+            {
+              "sentence_number": 8,
+              "content": "**당신****이랑** **저****는** combinamos de nos encontrar de **저녁**."
+            },
+            {
+              "sentence_number": 9,
+              "content": "Na despedida da viagem, todos disseram **안녕히 가세요** para o guia."
+            },
+            {
+              "sentence_number": 10,
+              "content": "Este colchão macio **좋아요** para dormir."
+            },
+            {
+              "sentence_number": 11,
+              "content": "O garçom perguntou se precisávamos de mais alguma coisa e dissemos **아니요**."
+            },
+            {
+              "sentence_number": 12,
+              "content": "Quando agradeci pelo jantar, a anfitriã respondeu **천만에요**."
+            },
+            {
+              "sentence_number": 13,
+              "content": "**제** **이름****은** 정민**이에요**, muito prazer em conhecê-la."
+            },
+            {
+              "sentence_number": 14,
+              "content": "O hóspede fez a mala e falou **안녕히 계세요** para o dono da pousada."
+            },
+            {
+              "sentence_number": 15,
+              "content": "No cartão de aniversário, ela escreveu apenas: **어떻게** **지내요**?"
+            },
+            {
+              "sentence_number": 16,
+              "content": "Ele apenas acenou e disse **천만에요**, sem dar muita importância."
+            },
+            {
+              "sentence_number": 17,
+              "content": "As estrelas ficam muito visíveis à **밤**, longe da cidade."
+            },
+            {
+              "sentence_number": 18,
+              "content": "O relatório final ficou **좋아요**, segundo o gerente."
+            },
+            {
+              "sentence_number": 19,
+              "content": "Todos os dias, o porteiro me cumprimenta com um **안녕하세요**."
+            },
+            {
+              "sentence_number": 20,
+              "content": "No formulário, escrevi que **제** **이름****은** 정민**이에요**."
+            },
+            {
+              "sentence_number": 21,
+              "content": "Encontrei a vizinha no corredor e perguntei **어떻게** **지내요**."
+            },
+            {
+              "sentence_number": 22,
+              "content": "Assinou o e-mail apenas com 마리나**예요**."
+            },
+            {
+              "sentence_number": 23,
+              "content": "Ao se despedir do grupo de turistas, o guia disse **안녕히 계세요**."
+            },
+            {
+              "sentence_number": 24,
+              "content": "**제** **이름****은** 마리나**예요**, sou nova aqui na equipe."
+            },
+            {
+              "sentence_number": 25,
+              "content": "O filme que assistimos ontem **좋아요**."
+            },
+            {
+              "sentence_number": 26,
+              "content": "No crachá da recepção estava escrito apenas 정민**이에요**."
+            },
+            {
+              "sentence_number": 27,
+              "content": "Ela abraçou o amigo na estação e sussurrou **안녕히 가세요**."
+            },
+            {
+              "sentence_number": 28,
+              "content": "**고마워요** por toda a ajuda durante essa semana difícil."
+            },
+            {
+              "sentence_number": 29,
+              "content": "**저****랑** **당신** são os melhores parceiros de equipe que já tive."
+            },
+            {
+              "sentence_number": 30,
+              "content": "**저녁****이랑** **밤** são os momentos em que a cidade fica mais silenciosa."
+            },
+            {
+              "sentence_number": 31,
+              "content": "O clima ameno desta cidade no outono **좋아요**."
+            },
+            {
+              "sentence_number": 32,
+              "content": "Ela balançou a cabeça e murmurou **아니요**, sem explicar o motivo."
+            },
+            {
+              "sentence_number": 33,
+              "content": "As crianças comeram **다** o jantar sem reclamar."
+            },
+            {
+              "sentence_number": 34,
+              "content": "Ele confirmou com um **네** rápido e continuou trabalhando."
+            },
+            {
+              "sentence_number": 35,
+              "content": "Quando perguntei se estava tranquilo, ele respondeu **네**."
+            },
+            {
+              "sentence_number": 36,
+              "content": "Bastou um **네** para animar todo o grupo."
+            },
+            {
+              "sentence_number": 37,
+              "content": "**아침****이랑** **오후**, o museu recebe visitas guiadas gratuitas."
+            },
+            {
+              "sentence_number": 38,
+              "content": "A vista do décimo andar **좋아요**."
+            },
+            {
+              "sentence_number": 39,
+              "content": "Comprei maçã**이랑** pão fresco na padaria da esquina."
+            },
+            {
+              "sentence_number": 40,
+              "content": "Ouvimos os grilos cantando alto durante toda a **밤**."
+            },
+            {
+              "sentence_number": 41,
+              "content": "Depois de uma longa viagem, ele voltou para casa e disse **안녕하세요** aos vizinhos."
+            },
+            {
+              "sentence_number": 42,
+              "content": "Na lista de chamada, o próximo **이름** era 정민**이에요**."
+            },
+            {
+              "sentence_number": 43,
+              "content": "Ele revisou **다** o relatório antes de enviar para o chefe."
+            },
+            {
+              "sentence_number": 44,
+              "content": "**네**, confirmei, e agradeci dizendo **고마워요** mais uma vez."
+            },
+            {
+              "sentence_number": 45,
+              "content": "Encontrei um colega antigo e perguntei: **당신****은** **어떻게** **지내요**?"
+            },
+            {
+              "sentence_number": 46,
+              "content": "Respondi que **저****는** **잘** **지내요**, mesmo com a correria da semana."
+            },
+            {
+              "sentence_number": 47,
+              "content": "Ela sorriu e respondeu **천만에요** quando agradeci pela carona."
+            },
+            {
+              "sentence_number": 48,
+              "content": "Na reserva do restaurante, o **이름** anotado era 마리나**예요**."
+            },
+            {
+              "sentence_number": 49,
+              "content": "Ele prefere estudar durante a **저녁**, antes do jantar."
+            },
+            {
+              "sentence_number": 50,
+              "content": "Minha avó sempre diz **안녕히 가세요** quando alguém vai embora de casa."
+            },
+            {
+              "sentence_number": 51,
+              "content": "Ela respondeu **다** as perguntas da entrevista com calma."
+            },
+            {
+              "sentence_number": 52,
+              "content": "No crachá do evento estava escrito 마리나**예요**."
+            },
+            {
+              "sentence_number": 53,
+              "content": "Ela balançou a mão e falou **천만에요**, sempre com um sorriso."
+            },
+            {
+              "sentence_number": 54,
+              "content": "Depois de descansar bastante, **저****는** **잘** **지내요** outra vez."
+            },
+            {
+              "sentence_number": 55,
+              "content": "A ideia que vocês trouxeram para a reunião **좋아요**."
+            },
+            {
+              "sentence_number": 56,
+              "content": "**저****는** **잘** **지내요** desde que comecei a caminhar regularmente."
+            },
+            {
+              "sentence_number": 57,
+              "content": "A criança balançou a cabeça e disse **네** timidamente."
+            },
+            {
+              "sentence_number": 58,
+              "content": "Ele se apresentou ao grupo dizendo simplesmente 정민**이에요**."
+            },
+            {
+              "sentence_number": 59,
+              "content": "Costumamos caminhar na praia no fim da **오후**."
+            },
+            {
+              "sentence_number": 60,
+              "content": "O café da manhã tinha pão, queijo maçã**랑** suco de laranja."
+            },
+            {
+              "sentence_number": 61,
+              "content": "Ligamos para os avós todo domingo só para perguntar **어떻게** **지내요**."
+            },
+            {
+              "sentence_number": 62,
+              "content": "Ela anotou maçã**랑** morango na lista de compras."
+            },
+            {
+              "sentence_number": 63,
+              "content": "Ao receber o presente, a menina gritou **고마워요** animada."
+            },
+            {
+              "sentence_number": 64,
+              "content": "O professor chegou sorrindo e falou **안녕하세요** para a turma."
+            },
+            {
+              "sentence_number": 65,
+              "content": "Ao deixar a festa mais cedo, o convidado disse **안녕히 계세요** aos anfitriões."
+            },
+            {
+              "sentence_number": 66,
+              "content": "**오후****랑** **밤** costumam ser os horários mais movimentados do restaurante."
+            },
+            {
+              "sentence_number": 67,
+              "content": "A professora chamou o aluno confirmando: 정민**이에요**?"
+            },
+            {
+              "sentence_number": 68,
+              "content": "**오후****는**, geralmente, o horário mais tranquilo para estudar."
+            },
+            {
+              "sentence_number": 69,
+              "content": "As crianças acenaram e gritaram **안녕하세요** para a visita."
+            },
+            {
+              "sentence_number": 70,
+              "content": "**저****는** **잘** **지내요**, fico feliz que **당신** perguntou."
+            },
+            {
+              "sentence_number": 71,
+              "content": "Terminamos **다** as tarefas de casa antes do jantar."
+            },
+            {
+              "sentence_number": 72,
+              "content": "A padaria do bairro fica sempre cheia durante a **저녁**."
+            },
+            {
+              "sentence_number": 73,
+              "content": "**밤****이랑** **아침** têm temperaturas bastante diferentes nesta estação."
+            },
+            {
+              "sentence_number": 74,
+              "content": "Ela sai para correr todos os dias de **아침**."
+            },
+            {
+              "sentence_number": 75,
+              "content": "Assim que terminou a apresentação, ele disse **고마워요** ao público."
+            },
+            {
+              "sentence_number": 76,
+              "content": "Ela hesitou antes de responder **아니요** para o convite."
+            },
+            {
+              "sentence_number": 77,
+              "content": "Antes de começar a reunião, disse que **제** **이름****은** 마리나**예요**."
+            },
+            {
+              "sentence_number": 78,
+              "content": "A reunião com o cliente ficou marcada para o começo da **오후**."
+            },
+            {
+              "sentence_number": 79,
+              "content": "Assim que abriu a porta, ele gritou **안녕하세요**!"
+            },
+            {
+              "sentence_number": 80,
+              "content": "Ele mandou uma mensagem rápida perguntando **어떻게** **지내요**."
+            },
+            {
+              "sentence_number": 81,
+              "content": "Perguntei se ela viria à festa e ouvi um simples **네**."
+            },
+            {
+              "sentence_number": 82,
+              "content": "Antes de fechar a loja, o dono sempre diz **안녕히 가세요** aos últimos clientes."
+            },
+            {
+              "sentence_number": 83,
+              "content": "Quando perguntaram se estava cansado, ele respondeu **아니요**."
+            },
+            {
+              "sentence_number": 84,
+              "content": "Ele agradeceu o motorista com um breve **고마워요**."
+            },
+            {
+              "sentence_number": 85,
+              "content": "Guardamos **다** as caixas no depósito antes da mudança."
+            },
+            {
+              "sentence_number": 86,
+              "content": "Ela levantou a mão no meio da aula para dizer **안녕하세요** ao visitante."
+            },
+            {
+              "sentence_number": 87,
+              "content": "Mesmo cansada, ela terminou a prova muito **잘**."
+            },
+            {
+              "sentence_number": 88,
+              "content": "Quando o atendente perguntou o **이름**, ela respondeu 마리나**예요**."
+            },
+            {
+              "sentence_number": 89,
+              "content": "Antes de sair correndo para o trabalho, ela gritou **안녕히 계세요**."
+            },
+            {
+              "sentence_number": 90,
+              "content": "**아니요**, respondi, mas mesmo assim ouvi um educado **천만에요**."
+            },
+            {
+              "sentence_number": 91,
+              "content": "**천만에요**! Fico feliz em poder ajudar sempre que precisar."
+            },
+            {
+              "sentence_number": 92,
+              "content": "**당신****은**, entre todos, sabe consertar essa máquina."
+            },
+            {
+              "sentence_number": 93,
+              "content": "A vendedora acompanhou o cliente até a porta e disse **안녕히 가세요**."
+            },
+            {
+              "sentence_number": 94,
+              "content": "Ele apontou para a foto e disse: essa 마리나**예요**."
+            },
+            {
+              "sentence_number": 95,
+              "content": "**아침****이랑** **저녁**에 ela sempre bebe um chá quentinho."
+            },
+            {
+              "sentence_number": 96,
+              "content": "No mercado, comprei maçã**랑** banana para a semana toda."
+            },
+            {
+              "sentence_number": 97,
+              "content": "**오후****는** reservada para as visitas médicas da semana."
+            },
+            {
+              "sentence_number": 98,
+              "content": "O recepcionista sorriu e falou **안녕히 가세요** quando o hóspede saiu."
+            },
+            {
+              "sentence_number": 99,
+              "content": "Quando perguntaram quem era o novo estagiário, respondi: 정민**이에요**."
+            },
+            {
+              "sentence_number": 100,
+              "content": "Ela recebeu as flores e disse **고마워요** com um sorriso enorme."
+            }
+          ],
+          "exercises": []
+        }
+      ]
+    }
+  ]
+}

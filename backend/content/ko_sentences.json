@@ -1,0 +1,736 @@
+{
+  "chapter_1": {
+    "topic_1": [
+      {
+        "id": "ko-sent-0001",
+        "sentence": "안녕하세요!",
+        "word_ids": [
+          "ko-wd-0001"
+        ]
+      },
+      {
+        "id": "ko-sent-0002",
+        "sentence": "당신, 안녕하세요.",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0001"
+        ]
+      },
+      {
+        "id": "ko-sent-0003",
+        "sentence": "네, 안녕하세요.",
+        "word_ids": [
+          "ko-wd-0021",
+          "ko-wd-0001"
+        ]
+      },
+      {
+        "id": "ko-sent-0004",
+        "sentence": "안녕히 가세요!",
+        "word_ids": [
+          "ko-wd-0002"
+        ]
+      },
+      {
+        "id": "ko-sent-0005",
+        "sentence": "당신, 안녕히 가세요.",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0002"
+        ]
+      },
+      {
+        "id": "ko-sent-0006",
+        "sentence": "고마워요, 안녕히 가세요.",
+        "word_ids": [
+          "ko-wd-0023",
+          "ko-wd-0002"
+        ]
+      },
+      {
+        "id": "ko-sent-0007",
+        "sentence": "안녕히 계세요!",
+        "word_ids": [
+          "ko-wd-0003"
+        ]
+      },
+      {
+        "id": "ko-sent-0008",
+        "sentence": "당신, 안녕히 계세요.",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0003"
+        ]
+      },
+      {
+        "id": "ko-sent-0009",
+        "sentence": "고마워요, 안녕히 계세요.",
+        "word_ids": [
+          "ko-wd-0023",
+          "ko-wd-0003"
+        ]
+      },
+      {
+        "id": "ko-sent-0010",
+        "sentence": "저랑 당신, 다 좋아요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0004",
+          "ko-wd-0014",
+          "ko-wd-0012",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0011",
+        "sentence": "오후랑 밤에 저는 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0008",
+          "ko-wd-0004",
+          "ko-wd-0010",
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0012",
+        "sentence": "저랑 당신은 좋아요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0004",
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0013",
+        "sentence": "아침이랑 저녁에 저는 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0007",
+          "ko-wd-0005",
+          "ko-wd-0009",
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0014",
+        "sentence": "당신이랑 저는 좋아요.",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0005",
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0015",
+        "sentence": "밤이랑 아침, 다 좋아요.",
+        "word_ids": [
+          "ko-wd-0010",
+          "ko-wd-0005",
+          "ko-wd-0007",
+          "ko-wd-0012",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0016",
+        "sentence": "이름이 좋아요.",
+        "word_ids": [
+          "ko-wd-0016",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0017",
+        "sentence": "아침이 좋아요.",
+        "word_ids": [
+          "ko-wd-0007",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0018",
+        "sentence": "저는 좋아요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0019",
+        "sentence": "아침이랑 오후, 다 좋아요.",
+        "word_ids": [
+          "ko-wd-0007",
+          "ko-wd-0005",
+          "ko-wd-0008",
+          "ko-wd-0012",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0020",
+        "sentence": "아침에 저는 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0007",
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0021",
+        "sentence": "당신은 아침에 어떻게 지내요?",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0007",
+          "ko-wd-0013",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0022",
+        "sentence": "오후에 저는 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0008",
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0023",
+        "sentence": "당신은 오후에 어떻게 지내요?",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0008",
+          "ko-wd-0013",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0024",
+        "sentence": "오후랑 밤, 다 좋아요.",
+        "word_ids": [
+          "ko-wd-0008",
+          "ko-wd-0004",
+          "ko-wd-0010",
+          "ko-wd-0012",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0025",
+        "sentence": "저녁에 저는 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0009",
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0026",
+        "sentence": "당신은 저녁에 어떻게 지내요?",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0009",
+          "ko-wd-0013",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0027",
+        "sentence": "저녁이랑 아침, 다 좋아요.",
+        "word_ids": [
+          "ko-wd-0009",
+          "ko-wd-0005",
+          "ko-wd-0007",
+          "ko-wd-0012",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0028",
+        "sentence": "밤에 저는 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0010",
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0029",
+        "sentence": "당신은 밤에 어떻게 지내요?",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0010",
+          "ko-wd-0013",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0030",
+        "sentence": "밤이랑 저녁, 다 좋아요.",
+        "word_ids": [
+          "ko-wd-0010",
+          "ko-wd-0005",
+          "ko-wd-0009",
+          "ko-wd-0012",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0031",
+        "sentence": "저는 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0032",
+        "sentence": "당신은 잘 지내요?",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0033",
+        "sentence": "고마워요, 저는 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0023",
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0034",
+        "sentence": "다 좋아요.",
+        "word_ids": [
+          "ko-wd-0012",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0035",
+        "sentence": "저는 다 좋아요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0012",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0036",
+        "sentence": "당신은 다 좋아요?",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0012",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0037",
+        "sentence": "어떻게 지내요?",
+        "word_ids": [
+          "ko-wd-0013",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0038",
+        "sentence": "당신은 어떻게 지내요?",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0013",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0039",
+        "sentence": "아침에 어떻게 지내요?",
+        "word_ids": [
+          "ko-wd-0007",
+          "ko-wd-0013",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0040",
+        "sentence": "당신은 좋아요.",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0041",
+        "sentence": "당신은 저녁에 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0009",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0042",
+        "sentence": "당신, 고마워요.",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0023"
+        ]
+      },
+      {
+        "id": "ko-sent-0043",
+        "sentence": "저는 저녁에 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0009",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0044",
+        "sentence": "당신은 아침에 잘 지내요?",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0007",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0045",
+        "sentence": "다 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0012",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0046",
+        "sentence": "제 이름은 마리나예요.",
+        "word_ids": [
+          "ko-wd-0017",
+          "ko-wd-0016",
+          "ko-wd-0025",
+          "ko-wd-0019"
+        ]
+      },
+      {
+        "id": "ko-sent-0047",
+        "sentence": "제 이름은 정민이에요.",
+        "word_ids": [
+          "ko-wd-0017",
+          "ko-wd-0016",
+          "ko-wd-0025",
+          "ko-wd-0018"
+        ]
+      },
+      {
+        "id": "ko-sent-0048",
+        "sentence": "당신 이름은 좋아요.",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0016",
+          "ko-wd-0025",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0049",
+        "sentence": "제 이름은 좋아요.",
+        "word_ids": [
+          "ko-wd-0017",
+          "ko-wd-0016",
+          "ko-wd-0025",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0050",
+        "sentence": "제 이름이에요.",
+        "word_ids": [
+          "ko-wd-0017",
+          "ko-wd-0016",
+          "ko-wd-0018"
+        ]
+      },
+      {
+        "id": "ko-sent-0051",
+        "sentence": "정민, 제 이름은 마리나예요.",
+        "word_ids": [
+          "ko-wd-0017",
+          "ko-wd-0016",
+          "ko-wd-0025",
+          "ko-wd-0019"
+        ]
+      },
+      {
+        "id": "ko-sent-0052",
+        "sentence": "정민이에요.",
+        "word_ids": [
+          "ko-wd-0018"
+        ]
+      },
+      {
+        "id": "ko-sent-0053",
+        "sentence": "당신 이름은 정민이에요?",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0016",
+          "ko-wd-0025",
+          "ko-wd-0018"
+        ]
+      },
+      {
+        "id": "ko-sent-0054",
+        "sentence": "저는 정민이에요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0018"
+        ]
+      },
+      {
+        "id": "ko-sent-0055",
+        "sentence": "마리나예요.",
+        "word_ids": [
+          "ko-wd-0019"
+        ]
+      },
+      {
+        "id": "ko-sent-0056",
+        "sentence": "당신 이름은 마리나예요?",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0016",
+          "ko-wd-0025",
+          "ko-wd-0019"
+        ]
+      },
+      {
+        "id": "ko-sent-0057",
+        "sentence": "저는 마리나예요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0019"
+        ]
+      },
+      {
+        "id": "ko-sent-0058",
+        "sentence": "저는 아침에 잘 지내요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0007",
+          "ko-wd-0011",
+          "ko-wd-0015"
+        ]
+      },
+      {
+        "id": "ko-sent-0059",
+        "sentence": "저는 고마워요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0023"
+        ]
+      },
+      {
+        "id": "ko-sent-0060",
+        "sentence": "저는 아니요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0022"
+        ]
+      },
+      {
+        "id": "ko-sent-0061",
+        "sentence": "네, 좋아요.",
+        "word_ids": [
+          "ko-wd-0021",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0062",
+        "sentence": "네, 고마워요.",
+        "word_ids": [
+          "ko-wd-0021",
+          "ko-wd-0023"
+        ]
+      },
+      {
+        "id": "ko-sent-0063",
+        "sentence": "네, 안녕히 가세요.",
+        "word_ids": [
+          "ko-wd-0021",
+          "ko-wd-0002"
+        ]
+      },
+      {
+        "id": "ko-sent-0064",
+        "sentence": "아니요.",
+        "word_ids": [
+          "ko-wd-0022"
+        ]
+      },
+      {
+        "id": "ko-sent-0065",
+        "sentence": "아니요, 고마워요.",
+        "word_ids": [
+          "ko-wd-0022",
+          "ko-wd-0023"
+        ]
+      },
+      {
+        "id": "ko-sent-0066",
+        "sentence": "저는 아니요, 당신은 네.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0022",
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0021"
+        ]
+      },
+      {
+        "id": "ko-sent-0067",
+        "sentence": "고마워요!",
+        "word_ids": [
+          "ko-wd-0023"
+        ]
+      },
+      {
+        "id": "ko-sent-0068",
+        "sentence": "정민, 고마워요.",
+        "word_ids": [
+          "ko-wd-0023"
+        ]
+      },
+      {
+        "id": "ko-sent-0069",
+        "sentence": "마리나, 고마워요.",
+        "word_ids": [
+          "ko-wd-0023"
+        ]
+      },
+      {
+        "id": "ko-sent-0070",
+        "sentence": "천만에요!",
+        "word_ids": [
+          "ko-wd-0024"
+        ]
+      },
+      {
+        "id": "ko-sent-0071",
+        "sentence": "네, 천만에요.",
+        "word_ids": [
+          "ko-wd-0021",
+          "ko-wd-0024"
+        ]
+      },
+      {
+        "id": "ko-sent-0072",
+        "sentence": "천만에요, 안녕히 가세요.",
+        "word_ids": [
+          "ko-wd-0024",
+          "ko-wd-0002"
+        ]
+      },
+      {
+        "id": "ko-sent-0073",
+        "sentence": "이름은 좋아요.",
+        "word_ids": [
+          "ko-wd-0016",
+          "ko-wd-0025",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0074",
+        "sentence": "당신은 고마워요.",
+        "word_ids": [
+          "ko-wd-0014",
+          "ko-wd-0025",
+          "ko-wd-0023"
+        ]
+      },
+      {
+        "id": "ko-sent-0075",
+        "sentence": "아침은 좋아요.",
+        "word_ids": [
+          "ko-wd-0007",
+          "ko-wd-0025",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0076",
+        "sentence": "오후는 좋아요.",
+        "word_ids": [
+          "ko-wd-0008",
+          "ko-wd-0026",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0077",
+        "sentence": "마리나는 좋아요.",
+        "word_ids": [
+          "ko-wd-0026",
+          "ko-wd-0006"
+        ]
+      },
+      {
+        "id": "ko-sent-0078",
+        "sentence": "저는 밤에 좋아요.",
+        "word_ids": [
+          "ko-wd-0020",
+          "ko-wd-0026",
+          "ko-wd-0010",
+          "ko-wd-0006"
+        ]
+      }
+    ]
+  }
+}

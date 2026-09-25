@@ -411,7 +411,7 @@ onMounted(() => {
     } else if (tab === "texts") {
       textsRef.value?.show(currentTopic, LANG, GENDER_STYLE_TEXTS);
     } else if (tab === "sentences") {
-      sentencesRef.value?.show(currentTopic);
+      sentencesRef.value?.show(currentTopic, LANG);
     } else if (tab === "reading") {
       readingRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG, REINFORCEMENT.reading);
     } else if (tab === "typing") {

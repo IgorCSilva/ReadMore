@@ -6,17 +6,25 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { getWords } from '../../shared/api'
+import { formatWordByParticle, getParticle } from '../../shared/koreanParticles'
 import { escapeHtml } from '../../shared/text'
 
 // Same extraction pattern as features/texts/Texts.vue: the shell toggles
 // #topic-sentences-panel's visibility via document.getElementById, and this
-// component only exposes show(topic), called from switchTopicTab().
+// component only exposes show(topic, lang), called from switchTopicTab().
 //
 // Unlike texts, each sentence is a single short line, so there's no
 // accordion — every sentence in the topic renders as its own numbered row.
 // Bolded (**word**) spans render as <strong>, same convention as Texts.vue,
 // but without its gender-styling lookup (that's specific to the "Gender
 // style in texts" config).
+//
+// Korean particles get colored per particle_type, same as Texts.vue,
+// unconditionally (not gated by the gender checkbox) so each kind of
+// particle (topic, subject, object, addition, ...) stays visually distinct
+// instead of all bolded words sharing the flat .sentence-item-content
+// strong { color: var(--accent) } fallback.
 
 let currentTopic = null;
 let show;
@@ -24,8 +32,33 @@ let show;
 onMounted(() => {
   const sentencesListEl = document.getElementById("sentences-list");
 
+  let wordStyleMap = new Map();
+  let wordStyleMapLang = null;
+
+  async function ensureWordStyleMap(lang) {
+    if (wordStyleMapLang === lang) return;
+    try {
+      const data = await getWords(lang);
+      wordStyleMap = new Map(
+        data.words.map((w) => [w.original.toLowerCase(), { particleTypeId: w.particle_type }])
+      );
+      wordStyleMapLang = lang;
+    } catch {
+      // Decorative only — a failed fetch just means bold spans render
+      // without particle styling this time, not a broken sentence view.
+      wordStyleMap = new Map();
+    }
+  }
+
+  function renderBoldSpan(word) {
+    const particleTypeId = wordStyleMap.get(word.toLowerCase())?.particleTypeId;
+    const particle = particleTypeId ? getParticle(particleTypeId) : null;
+    if (!particle?.color) return `<strong>${word}</strong>`;
+    return `<strong style="color:${particle.color}">${formatWordByParticle(word, particleTypeId)}</strong>`;
+  }
+
   function renderSentenceContent(content) {
-    return escapeHtml(content).replace(/\*\*(.+?)\*\*/g, (_, word) => `<strong>${word}</strong>`);
+    return escapeHtml(content).replace(/\*\*(.+?)\*\*/g, (_, word) => renderBoldSpan(word));
   }
 
   function buildItem(sentence) {
@@ -51,9 +84,15 @@ onMounted(() => {
     }
   }
 
-  show = (topic) => {
+  show = (topic, lang) => {
     currentTopic = topic;
-    renderList();
+
+    const target = typeof lang === "string" ? lang.split("-")[1] : undefined;
+    if (target === "ko") {
+      ensureWordStyleMap(lang).then(renderList);
+    } else {
+      renderList();
+    }
   };
 });
 

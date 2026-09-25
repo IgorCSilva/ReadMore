@@ -1,0 +1,158 @@
+[
+  {
+    "word_id": "ko-wd-0001",
+    "root_word_id": "wd-0001",
+    "word": "안녕하세요",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0002",
+    "root_word_id": "wd-0003",
+    "word": "안녕히 가세요",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0003",
+    "root_word_id": "wd-0355",
+    "word": "안녕히 계세요",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0004",
+    "root_word_id": "wd-0063",
+    "word": "랑",
+    "particle_type": "addition"
+  },
+  {
+    "word_id": "ko-wd-0005",
+    "root_word_id": "wd-0356",
+    "word": "이랑",
+    "particle_type": "addition"
+  },
+  {
+    "word_id": "ko-wd-0006",
+    "root_word_id": "wd-0059",
+    "word": "좋아요",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0007",
+    "root_word_id": "wd-0076",
+    "word": "아침",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0008",
+    "root_word_id": "wd-0077",
+    "word": "오후",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0009",
+    "root_word_id": "wd-0078",
+    "word": "저녁",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0010",
+    "root_word_id": "wd-0079",
+    "word": "밤",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0011",
+    "root_word_id": "wd-0071",
+    "word": "잘",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0012",
+    "root_word_id": "wd-0263",
+    "word": "다",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0013",
+    "root_word_id": "wd-0051",
+    "word": "어떻게",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0014",
+    "root_word_id": "wd-0013",
+    "word": "당신",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0015",
+    "root_word_id": "wd-0357",
+    "word": "지내요",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0016",
+    "root_word_id": "wd-0009",
+    "word": "이름",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0017",
+    "root_word_id": "wd-0011",
+    "word": "제",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0018",
+    "root_word_id": "wd-0358",
+    "word": "이에요",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0019",
+    "root_word_id": "wd-0359",
+    "word": "예요",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0020",
+    "root_word_id": "wd-0007",
+    "word": "저",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0021",
+    "root_word_id": "wd-0023",
+    "word": "네",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0022",
+    "root_word_id": "wd-0024",
+    "word": "아니요",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0023",
+    "root_word_id": "wd-0005",
+    "word": "고마워요",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0024",
+    "root_word_id": "wd-0072",
+    "word": "천만에요",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "ko-wd-0025",
+    "root_word_id": "wd-0360",
+    "word": "은",
+    "particle_type": "topic"
+  },
+  {
+    "word_id": "ko-wd-0026",
+    "root_word_id": "wd-0361",
+    "word": "는",
+    "particle_type": "topic"
+  }
+]
