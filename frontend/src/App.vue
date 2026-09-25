@@ -4,17 +4,19 @@
 
   <CorrectSentenceFab />
 
-  <BottomBar />
+  <BottomBar v-if="!route.meta.hideGlobalBottomBar" />
 
   <RouterView />
 
 </template>
 
 <script setup>
-import { RouterView } from 'vue-router'
+import { RouterView, useRoute } from 'vue-router'
 import CorrectSentenceFab from './features/corrections/CorrectSentenceFab.vue'
 import BottomBar from './layout/BottomBar.vue'
 import Notifications from './shared/Notifications.vue'
+
+const route = useRoute()
 </script>
 
 <style>
