@@ -1415,6 +1415,34 @@
     {
       "word_id": "wd-0354",
       "filename": "before"
+    },
+    {
+      "word_id": "wd-0355",
+      "filename": "stay_well"
+    },
+    {
+      "word_id": "wd-0356",
+      "filename": "and_consonant"
+    },
+    {
+      "word_id": "wd-0357",
+      "filename": "to_be_doing"
+    },
+    {
+      "word_id": "wd-0358",
+      "filename": "copula_consonant"
+    },
+    {
+      "word_id": "wd-0359",
+      "filename": "copula"
+    },
+    {
+      "word_id": "wd-0360",
+      "filename": "topic_particle_consonant"
+    },
+    {
+      "word_id": "wd-0361",
+      "filename": "topic_particle"
     }
   ]
 }

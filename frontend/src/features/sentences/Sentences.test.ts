@@ -1,6 +1,19 @@
-import { mount } from '@vue/test-utils'
-import { describe, expect, it } from 'vitest'
+import { flushPromises, mount } from '@vue/test-utils'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
+import * as api from '../../shared/api'
 import Sentences from './Sentences.vue'
+
+vi.mock('../../shared/api', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('../../shared/api')>()
+  return {
+    ...actual,
+    getWords: vi.fn(),
+  }
+})
+
+beforeEach(() => {
+  vi.mocked(api.getWords).mockClear()
+})
 
 const TOPIC = {
   sentences: [
@@ -42,5 +55,46 @@ describe('Sentences', () => {
     } finally {
       wrapper.unmount()
     }
+  })
+
+  describe('Korean particle coloring', () => {
+    it('colors different particle types differently, and leaves unmatched bold words plain', async () => {
+      vi.mocked(api.getWords).mockResolvedValue({
+        lang: 'ko',
+        words: [
+          { word_id: 'w1', original: '는', filename: 'topic.png', sentence: '', cue: '', gender_id: 'not_apply', particle_type: 'topic' },
+          { word_id: 'w2', original: '랑', filename: 'and.png', sentence: '', cue: '', gender_id: 'not_apply', particle_type: 'addition' },
+        ],
+      })
+      const topic = {
+        sentences: [{ sentence_number: 1, content: '고양이**는** 개**랑** 논다.' }],
+      }
+      const wrapper = mount(Sentences, { attachTo: document.body })
+      try {
+        wrapper.vm.show(topic, 'pt-ko')
+        await flushPromises()
+
+        const strongs = wrapper.findAll('.sentence-item-content strong')
+        expect(strongs.map((s) => s.text())).toEqual(['는', '랑'])
+        const topicColor = strongs[0].attributes('style')
+        const additionColor = strongs[1].attributes('style')
+        expect(topicColor).toContain('color')
+        expect(additionColor).toContain('color')
+        expect(topicColor).not.toBe(additionColor)
+        expect(api.getWords).toHaveBeenCalledWith('pt-ko')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('does not fetch words for a non-Korean pair', () => {
+      const wrapper = mount(Sentences, { attachTo: document.body })
+      try {
+        wrapper.vm.show(TOPIC, 'pt-en')
+        expect(api.getWords).not.toHaveBeenCalled()
+      } finally {
+        wrapper.unmount()
+      }
+    })
   })
 })

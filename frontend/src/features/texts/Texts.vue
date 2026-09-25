@@ -8,6 +8,7 @@
 import { onMounted } from 'vue'
 import { getWords } from '../../shared/api'
 import { formatWordByGender, getGender } from '../../shared/genders'
+import { formatWordByParticle, getParticle } from '../../shared/koreanParticles'
 import { escapeHtml } from '../../shared/text'
 
 // Extracted from App.vue's monolithic script (Step 2.5 of RESTRUCTURE_PLAN.md
@@ -30,37 +31,48 @@ import { escapeHtml } from '../../shared/text'
 // texts don't carry word_ids inline — multi-word bold phrases like "Thank
 // you" simply won't match anything and render as plain <strong>, same as
 // before this feature existed.
+//
+// Korean particles get the same color treatment, but unconditionally (not
+// gated by the gender checkbox, which is an unrelated concept Korean
+// doesn't have) — a mixed pt-ko sentence should never drop a taught
+// particle's color just because "Gender style in texts" happens to be off.
 
 let currentTopic = null;
 let expandedTextId = null;
 let genderStyleEnabled = false;
-let wordGenderMap = new Map();
-let wordGenderMapLang = null;
+let wordStyleMap = new Map();
+let wordStyleMapLang = null;
 
 let show;
 
 onMounted(() => {
   const textsListEl = document.getElementById("texts-list");
 
-  async function ensureWordGenderMap(lang) {
-    if (wordGenderMapLang === lang) return;
+  async function ensureWordStyleMap(lang) {
+    if (wordStyleMapLang === lang) return;
     try {
       const data = await getWords(lang);
-      wordGenderMap = new Map(data.words.map((w) => [w.original.toLowerCase(), w.gender_id]));
-      wordGenderMapLang = lang;
+      wordStyleMap = new Map(
+        data.words.map((w) => [w.original.toLowerCase(), { genderId: w.gender_id, particleTypeId: w.particle_type }])
+      );
+      wordStyleMapLang = lang;
     } catch {
       // Decorative only — a failed fetch just means bold spans render
-      // without gender styling this time, not a broken text view.
-      wordGenderMap = new Map();
+      // without gender/particle styling this time, not a broken text view.
+      wordStyleMap = new Map();
     }
   }
 
   function renderBoldSpan(word) {
-    const genderId = genderStyleEnabled ? wordGenderMap.get(word.toLowerCase()) : null;
-    if (!genderId) return `<strong>${word}</strong>`;
-    const gender = getGender(genderId);
-    const colorAttr = gender.color ? ` style="color:${gender.color}"` : "";
-    return `<strong${colorAttr}>${formatWordByGender(word, genderId)}</strong>`;
+    const entry = wordStyleMap.get(word.toLowerCase());
+    const genderId = genderStyleEnabled ? entry?.genderId : null;
+    const particleTypeId = entry?.particleTypeId;
+    const gender = genderId ? getGender(genderId) : null;
+    const particle = particleTypeId ? getParticle(particleTypeId) : null;
+    const color = gender?.color || particle?.color;
+    if (!color) return `<strong>${word}</strong>`;
+    const styled = gender?.color ? formatWordByGender(word, genderId) : formatWordByParticle(word, particleTypeId);
+    return `<strong style="color:${color}">${styled}</strong>`;
   }
 
   function renderTextBody(body) {
@@ -126,8 +138,9 @@ onMounted(() => {
     expandedTextId = null;
     genderStyleEnabled = genderStyleTextsEnabled;
 
-    if (genderStyleEnabled) {
-      ensureWordGenderMap(lang).then(renderList);
+    const target = typeof lang === "string" ? lang.split("-")[1] : undefined;
+    if (genderStyleEnabled || target === "ko") {
+      ensureWordStyleMap(lang).then(renderList);
     } else {
       renderList();
     }

@@ -55,8 +55,11 @@ import { loadUserWords } from '../../shared/userWords'
 // out reshuffles the next round's options and immediately plays its audio.
 
 const OPTION_COUNT = 8;
-const WORD_TOKEN_RE = /[a-zà-ÿÀ-Ÿ]+/i;
-const WORD_TOKEN_RE_G = /([a-zà-ÿÀ-Ÿ]+)/i;
+// \p{L}\p{M} (Unicode letters + combining marks) covers every script's
+// words, including Hangul — a bare Latin range would treat Korean tokens
+// as non-word separators and stall the pointer walk below.
+const WORD_TOKEN_RE = /[\p{L}\p{M}]+/u;
+const WORD_TOKEN_RE_G = /([\p{L}\p{M}]+)/u;
 
 function shuffle(items) {
   const result = items.slice();

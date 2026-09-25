@@ -97,6 +97,7 @@
 import { onMounted } from 'vue'
 import { ttsUrl } from '../../shared/api'
 import { formatWordByGender, getGender } from '../../shared/genders'
+import { formatWordByParticle, getParticle } from '../../shared/koreanParticles'
 import { speechLocaleFor } from '../../shared/languages'
 import { loadUserWords, patchUserWord } from '../../shared/userWords'
 import { hasQueuedAction, performWrite } from '../../shared/writeQueue'
@@ -282,6 +283,7 @@ onMounted(() => {
         wordId: e.word_id,
         word: e.original,
         genderId: e.gender_id || "not_apply",
+        particleTypeId: e.particle_type || "not_apply",
         base,
         ext,
         confident: e.confident,
@@ -392,8 +394,11 @@ onMounted(() => {
     slot.sentenceEl.textContent = entry.sentence;
     slot.cueEl.textContent = entry.cue;
 
-    slot.wordEl.textContent = formatWordByGender(entry.word, entry.genderId);
-    slot.wordEl.style.color = getGender(entry.genderId).color || "";
+    const gender = getGender(entry.genderId);
+    slot.wordEl.textContent = gender.color
+      ? formatWordByGender(entry.word, entry.genderId)
+      : formatWordByParticle(entry.word, entry.particleTypeId);
+    slot.wordEl.style.color = gender.color || getParticle(entry.particleTypeId).color || "";
     slot.wordEl.classList.add("hidden-word");
   }
 

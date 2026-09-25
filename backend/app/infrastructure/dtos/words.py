@@ -15,6 +15,7 @@ class WordDTO(BaseModel):
     sentence: str
     cue: str
     gender_id: str
+    particle_type: str
 
     @classmethod
     def from_entity(cls, word: Word) -> "WordDTO":
@@ -25,6 +26,7 @@ class WordDTO(BaseModel):
             sentence=word.sentence,
             cue=word.cue,
             gender_id=word.gender_id,
+            particle_type=word.particle_type,
         )
 
 

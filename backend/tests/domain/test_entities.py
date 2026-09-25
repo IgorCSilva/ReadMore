@@ -29,6 +29,29 @@ def test_word_defaults_gender_id_to_not_apply():
     assert word.gender_id == "not_apply"
 
 
+def test_word_defaults_particle_type_to_not_apply():
+    word = Word(
+        word_id="ko-0001",
+        original="사과",
+        filename="apple.webp",
+        sentence="사과가 맛있어요.",
+        cue="Uma fruta redonda e doce.",
+    )
+    assert word.particle_type == "not_apply"
+
+
+def test_word_holds_particle_type():
+    word = Word(
+        word_id="ko-0002",
+        original="랑",
+        filename="and.webp",
+        sentence="사과랑 바나나를 먹어요.",
+        cue="Partícula de adição usada entre dois substantivos.",
+        particle_type="addition",
+    )
+    assert word.particle_type == "addition"
+
+
 def test_text_holds_catalog_fields():
     text = Text(text_id="txt-01", number=1, title="A Perfect Morning", body="**I** **am**")
     assert text.text_id == "txt-01"

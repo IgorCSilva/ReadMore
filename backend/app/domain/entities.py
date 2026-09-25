@@ -16,6 +16,12 @@ class Word:
     sentence: str
     cue: str
     gender_id: str = "not_apply"
+    # Which Korean particle category ("topic", "subject", "object",
+    # "addition", ...) this word is, for the frontend's dedicated
+    # particle-color palette (shared/koreanParticles.ts) — unset/"not_apply"
+    # for every non-particle word in every language, same convention as
+    # gender_id above.
+    particle_type: str = "not_apply"
 
 
 @dataclass

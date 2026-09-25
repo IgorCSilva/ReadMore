@@ -160,4 +160,29 @@ describe('Texts', () => {
       }
     })
   })
+
+  describe('Korean particle coloring', () => {
+    it('colors a bold particle word even when the gender-style config is off', async () => {
+      vi.mocked(api.getWords).mockResolvedValue({
+        lang: 'ko',
+        words: [{ word_id: 'w1', original: '랑', filename: 'and.png', sentence: '', cue: '', gender_id: 'not_apply', particle_type: 'addition' }],
+      })
+      const topic = {
+        texts: [{ text_id: 't1', number: 1, title: 'Fruit', body: '사과**랑** 바나나를 먹어요.' }],
+      }
+      const wrapper = mount(Texts, { attachTo: document.body })
+      try {
+        wrapper.vm.show(topic, 'pt-ko', false)
+        await flushPromises()
+        await wrapper.findAll('.text-accordion-header')[0].trigger('click')
+
+        const strong = wrapper.findAll('.text-accordion-body strong')[0]
+        expect(strong.text()).toBe('랑')
+        expect(strong.attributes('style')).toContain('color')
+        expect(api.getWords).toHaveBeenCalledWith('pt-ko')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+  })
 })

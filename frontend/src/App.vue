@@ -201,7 +201,8 @@ onMounted(() => {
   // have its own accent for yet, rather than leaving data-lang unset.
   function setDataLang() {
     const [, target] = LANG.split("-");
-    document.documentElement.setAttribute("data-lang", target === "es" ? "es" : "en");
+    const knownAccent = target === "es" || target === "ko" ? target : "en";
+    document.documentElement.setAttribute("data-lang", knownAccent);
   }
 
   // Sentence/cue language pickers only ever offer the current pair's own
@@ -410,7 +411,7 @@ onMounted(() => {
     } else if (tab === "texts") {
       textsRef.value?.show(currentTopic, LANG, GENDER_STYLE_TEXTS);
     } else if (tab === "sentences") {
-      sentencesRef.value?.show(currentTopic);
+      sentencesRef.value?.show(currentTopic, LANG);
     } else if (tab === "reading") {
       readingRef.value?.show(USER_EMAIL, LANG, currentTopic, SENTENCE_LANG, CUE_LANG, REINFORCEMENT.reading);
     } else if (tab === "typing") {
@@ -808,6 +809,7 @@ onMounted(() => {
        the same property. */
     --accent-en: #4f8cff;    --accent-en-soft: #1b2a47;  --accent-en-strong: #3f74e0;
     --accent-es: #ff8b5e;    --accent-es-soft: #3a2418;  --accent-es-strong: #ff7038;
+    --accent-ko: #a374ff;    --accent-ko-soft: #2c2140;  --accent-ko-strong: #8a54f0;
   }
   @media (prefers-color-scheme: light) {
     :root {
@@ -821,6 +823,7 @@ onMounted(() => {
 
       --accent-en: #2f6fe4;    --accent-en-soft: #e7efff;  --accent-en-strong: #1f56c4;
       --accent-es: #dd5a28;    --accent-es-soft: #fce8dd;  --accent-es-strong: #b8461c;
+      --accent-ko: #7c3fe0;    --accent-ko-soft: #f1e7ff;  --accent-ko-strong: #5f2bb8;
     }
   }
 
@@ -838,6 +841,11 @@ onMounted(() => {
     --accent: var(--accent-es);
     --accent-soft: var(--accent-es-soft);
     --accent-strong: var(--accent-es-strong);
+  }
+  :root[data-lang="ko"] {
+    --accent: var(--accent-ko);
+    --accent-soft: var(--accent-ko-soft);
+    --accent-strong: var(--accent-ko-strong);
   }
   * { box-sizing: border-box; }
   html, body {

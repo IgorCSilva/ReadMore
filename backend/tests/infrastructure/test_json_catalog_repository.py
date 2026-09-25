@@ -107,6 +107,28 @@ def test_get_words_maps_gender_id_and_defaults_to_not_apply_when_missing(tmp_pat
     assert words[1].gender_id == "not_apply"
 
 
+def test_get_words_maps_particle_type_and_defaults_to_not_apply_when_missing(tmp_path):
+    repository = _repository(
+        tmp_path,
+        words=[
+            {"word_id": "wd-0001", "filename": "and.webp"},
+            {"word_id": "wd-0002", "filename": "apple.webp"},
+        ],
+        content={"pt-ko": {"chapters": []}},
+        word_maps={
+            "ko": [
+                {"word_id": "ko-wd-0001", "root_word_id": "wd-0001", "word": "랑", "particle_type": "addition"},
+                {"word_id": "ko-wd-0002", "root_word_id": "wd-0002", "word": "사과"},
+            ]
+        },
+    )
+
+    words = repository.get_words(LanguagePair(origin="pt", target="ko"))
+
+    assert words[0].particle_type == "addition"
+    assert words[1].particle_type == "not_apply"
+
+
 def test_get_words_only_returns_concepts_the_requested_target_language_has_a_spelling_for(tmp_path):
     repository = _repository(
         tmp_path,
