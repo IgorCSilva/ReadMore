@@ -4,6 +4,10 @@
   </div>
 
   <div class="home-page">
+    <div class="home-loading" v-if="isLoading">
+      <div class="home-spinner"></div>
+    </div>
+
     <div class="chapter-group" v-for="chapter in chapters" :key="chapter.chapter_id">
       <div class="chapter-heading">{{ chapter.number }}. {{ chapter.title }}</div>
 
@@ -43,11 +47,12 @@ import { cacheKey, writeCache } from '../shared/cache'
 import { ensureUserEmail, getCurrentUser } from '../shared/currentUser'
 import { readStale, refreshInBackground } from '../shared/dataSync'
 import { consumeHomeExpansion } from '../shared/homeExpansion'
+import { getLangPair } from '../shared/languagePreference'
 import { numberedPartsCount, wordIdsForPart } from '../shared/topicParts'
 
-// Hardcoded until a language picker exists on the new pages — matches the
-// app's existing default language elsewhere.
-const LANG = 'pt-en'
+// Saved via SettingsPage.vue (default 'pt-en'), read once per mount — same
+// as ensureUserEmail's "resolve once, reuse for the session" idiom.
+const LANG = getLangPair()
 
 const STATUS = { FINISHED: 'finished', LEARNING: 'learning', NOT_STARTED: 'not_started' }
 const STATUS_ICON = { [STATUS.FINISHED]: '✓', [STATUS.LEARNING]: '◐', [STATUS.NOT_STARTED]: '○' }
@@ -56,6 +61,7 @@ const router = useRouter()
 const currentUser = getCurrentUser()
 const chapters = ref([])
 const wordsById = ref({})
+const isLoading = ref(true)
 
 // Accordion state: only one topic card, and within it only one part, is
 // expanded at a time — collapsing the other(s) is the chosen UX (vs.
@@ -147,7 +153,11 @@ onMounted(async () => {
   }
 
   const email = ensureUserEmail()
-  await Promise.all([loadChapters(email), loadWords()])
+  try {
+    await Promise.all([loadChapters(email), loadWords()])
+  } finally {
+    isLoading.value = false
+  }
 })
 </script>
 
@@ -175,6 +185,26 @@ onMounted(async () => {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+
+.home-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.home-spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: home-spin 0.8s linear infinite;
+}
+
+@keyframes home-spin {
+  to { transform: rotate(360deg); }
 }
 
 .chapter-group {

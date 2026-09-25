@@ -3,6 +3,9 @@
     <RouterLink to="/" class="bottom-bar-item" active-class="active" exact-active-class="active">
       <span class="bottom-bar-icon">⌂</span>
     </RouterLink>
+    <RouterLink to="/settings" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Settings">
+      <span class="bottom-bar-icon">⚙</span>
+    </RouterLink>
   </nav>
 </template>
 

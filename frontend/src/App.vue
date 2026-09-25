@@ -15,8 +15,14 @@ import { RouterView, useRoute } from 'vue-router'
 import CorrectSentenceFab from './features/corrections/CorrectSentenceFab.vue'
 import BottomBar from './layout/BottomBar.vue'
 import Notifications from './shared/Notifications.vue'
+import { applyStoredAccent } from './shared/languagePreference'
 
 const route = useRoute()
+
+// Reflects a previously saved language-pair preference (SettingsPage.vue)
+// right from the first render — not just after a live in-session change —
+// so a full page load/refresh never flashes the default accent first.
+applyStoredAccent()
 </script>
 
 <style>

@@ -4,6 +4,7 @@ import { nextTick } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import * as api from '../shared/api'
 import { requestHomeExpansion } from '../shared/homeExpansion'
+import type { ChaptersResponse } from '../shared/types'
 import HomePage from './HomePage.vue'
 
 vi.mock('../shared/api', async (importOriginal) => {
@@ -80,6 +81,34 @@ describe('HomePage', () => {
       const topbar = wrapper.get('.home-topbar')
       const bold = topbar.get('strong')
       expect(bold.text()).toBe('Olá, test@example.com')
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('shows a loading spinner until the chapters/words fetch resolves, then the topic cards', async () => {
+    // A manually-resolved promise, not mockResolvedValue — an
+    // already-settled mock can resolve within the same microtask flush as
+    // mount() itself, racing past the "still loading" state before this
+    // test ever gets to observe it.
+    let resolveChapters: (value: ChaptersResponse) => void = () => {}
+    vi.mocked(api.getChapters).mockReturnValue(new Promise<ChaptersResponse>((resolve) => { resolveChapters = resolve }))
+    vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: WORDS })
+
+    const router = testRouter()
+    router.push('/')
+    await router.isReady()
+    const wrapper = mount(HomePage, { attachTo: document.body, global: { plugins: [router] } })
+
+    try {
+      expect(wrapper.find('.home-spinner').exists()).toBe(true)
+      expect(wrapper.find('.topic-card').exists()).toBe(false)
+
+      resolveChapters({ lang: 'pt-en', chapters: CHAPTERS })
+      await flushPromises()
+
+      expect(wrapper.find('.home-spinner').exists()).toBe(false)
+      expect(wrapper.find('.topic-card').exists()).toBe(true)
     } finally {
       wrapper.unmount()
     }

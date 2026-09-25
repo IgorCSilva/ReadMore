@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import * as api from '../shared/api'
 import { consumeHomeExpansion } from '../shared/homeExpansion'
 import { getPosition, savePosition } from '../shared/positionMemory'
+import type { ChaptersResponse } from '../shared/types'
 import { resetUserWordsStoreForTests } from '../shared/userWords'
 import ListenIdentifyPage from './ListenIdentifyPage.vue'
 
@@ -92,6 +93,44 @@ describe('ListenIdentifyPage', () => {
   afterEach(() => {
     vi.restoreAllMocks()
     vi.useRealTimers()
+  })
+
+  it('shows a loading spinner until the topic fetch resolves, then the Phrases drill', async () => {
+    // A manually-resolved promise, not mockResolvedValue — an
+    // already-settled mock can resolve within the same microtask flush as
+    // mount() itself, racing past the "still loading" state before this
+    // test ever gets to observe it.
+    let resolveChapters: (value: ChaptersResponse) => void = () => {}
+    vi.mocked(api.getChapters).mockReturnValue(new Promise<ChaptersResponse>((resolve) => { resolveChapters = resolve }))
+    vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'pt-en', words: WORDS })
+
+    const router = createRouter({
+      history: createWebHistory(),
+      routes: [
+        { path: '/', name: 'home', component: { template: '<div>home</div>' } },
+        { path: '/listen/:topicId', name: 'listen-identify', component: ListenIdentifyPage },
+      ],
+    })
+    router.push({ name: 'listen-identify', params: { topicId: 't1' } })
+    await router.isReady()
+    const wrapper = mount(ListenIdentifyPage, { attachTo: document.body, global: { plugins: [router] } })
+
+    try {
+      expect(wrapper.find('.flow-spinner').exists()).toBe(true)
+      // Phrases' own panel is still display:none at this point (only our
+      // page's load() flips it to flex, after the chapters fetch resolves)
+      // — its markup is always in the DOM, so check visibility, not presence.
+      expect(wrapper.get<HTMLElement>('#topic-phrases-panel').element.style.display).toBe('none')
+
+      resolveChapters({ lang: 'pt-en', chapters: CHAPTERS })
+      await flushPromises()
+
+      expect(wrapper.find('.flow-spinner').exists()).toBe(false)
+      expect(wrapper.get<HTMLElement>('#topic-phrases-panel').element.style.display).toBe('flex')
+      expect(wrapper.get('#phrases-counter').text()).toBe('1 / 2')
+    } finally {
+      wrapper.unmount()
+    }
   })
 
   it('shows the Phrases drill running, like the Phrases tab', async () => {

@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import * as api from '../shared/api'
 import { consumeHomeExpansion } from '../shared/homeExpansion'
 import { getPosition, savePosition } from '../shared/positionMemory'
+import type { ChaptersResponse } from '../shared/types'
 import ReadUnderstandPage from './ReadUnderstandPage.vue'
 
 vi.mock('../shared/api', async (importOriginal) => {
@@ -54,6 +55,39 @@ async function mountPage({ settle = true } = {}) {
 describe('ReadUnderstandPage', () => {
   afterEach(() => {
     vi.restoreAllMocks()
+  })
+
+  it('shows a loading spinner until the topic fetch resolves, then the sentences', async () => {
+    // A manually-resolved promise, not mockResolvedValue — an
+    // already-settled mock can resolve within the same microtask flush as
+    // mount() itself, racing past the "still loading" state before this
+    // test ever gets to observe it.
+    let resolveChapters: (value: ChaptersResponse) => void = () => {}
+    vi.mocked(api.getChapters).mockReturnValue(new Promise<ChaptersResponse>((resolve) => { resolveChapters = resolve }))
+
+    const router = createRouter({
+      history: createWebHistory(),
+      routes: [
+        { path: '/', name: 'home', component: { template: '<div>home</div>' } },
+        { path: '/read/:topicId', name: 'read-understand', component: ReadUnderstandPage },
+      ],
+    })
+    router.push({ name: 'read-understand', params: { topicId: 't1' } })
+    await router.isReady()
+    const wrapper = mount(ReadUnderstandPage, { attachTo: document.body, global: { plugins: [router] } })
+
+    try {
+      expect(wrapper.find('.flow-spinner').exists()).toBe(true)
+      expect(wrapper.find('.sentence-item').exists()).toBe(false)
+
+      resolveChapters({ lang: 'pt-en', chapters: CHAPTERS })
+      await flushPromises()
+
+      expect(wrapper.find('.flow-spinner').exists()).toBe(false)
+      expect(wrapper.find('.sentence-item').exists()).toBe(true)
+    } finally {
+      wrapper.unmount()
+    }
   })
 
   it('shows the topic\'s sentences, like the Sentences tab', async () => {

@@ -158,12 +158,13 @@ import { formatWordByGender, getGender } from '../shared/genders'
 import { requestHomeExpansion } from '../shared/homeExpansion'
 import { formatWordByParticle, getParticle } from '../shared/koreanParticles'
 import { speechLocaleFor } from '../shared/languages'
+import { getLangPair } from '../shared/languagePreference'
 import { buildPartFlowSequence } from '../shared/partFlow'
 import { numberedPartsCount, wordIdsForPart } from '../shared/topicParts'
 
-// Hardcoded until a language picker exists on the new pages — matches the
-// app's existing default language elsewhere (see HomePage.vue).
-const LANG = 'pt-en'
+// Saved via SettingsPage.vue (default 'pt-en'), read once per mount — same
+// as ensureUserEmail's "resolve once, reuse for the session" idiom.
+const LANG = getLangPair()
 const EXT_FALLBACKS = ['png', 'jpg', 'jpeg', 'webp', 'gif', 'jfif']
 
 function shuffle(items) {

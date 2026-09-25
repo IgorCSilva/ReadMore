@@ -7,7 +7,13 @@
   </div>
 
   <div class="flow-page">
-    <Phrases ref="phrasesRef" />
+    <div class="flow-page-content">
+      <div class="flow-loading" v-if="isLoading">
+        <div class="flow-spinner"></div>
+      </div>
+
+      <Phrases ref="phrasesRef" />
+    </div>
   </div>
 
   <div class="flow-bottombar">
@@ -22,11 +28,12 @@ import Phrases from '../features/phrases/Phrases.vue'
 import { getChapters } from '../shared/api'
 import { ensureUserEmail } from '../shared/currentUser'
 import { requestHomeExpansion } from '../shared/homeExpansion'
+import { getLangPair } from '../shared/languagePreference'
 import { getPosition, savePosition } from '../shared/positionMemory'
 
-// Hardcoded until a language picker exists on the new pages — matches the
-// app's existing default language elsewhere (see HomePage.vue/PartFlowPage.vue).
-const LANG = 'pt-en'
+// Saved via SettingsPage.vue (default 'pt-en'), read once per mount — same
+// as ensureUserEmail's "resolve once, reuse for the session" idiom.
+const LANG = getLangPair()
 
 const route = useRoute()
 const router = useRouter()
@@ -35,6 +42,7 @@ const topic = ref(null)
 const phrasesRef = ref(null)
 const roundCurrent = ref(0)
 const roundTotal = ref(0)
+const isLoading = ref(true)
 
 // Static for this mount — the page fully remounts on every navigation here,
 // so there's no need to track topicId changing underneath it.
@@ -74,30 +82,38 @@ function handleProgress(current, total) {
 }
 
 async function load() {
-  const email = ensureUserEmail()
-  const topicId = route.params.topicId
+  isLoading.value = true
+  try {
+    const email = ensureUserEmail()
+    const topicId = route.params.topicId
 
-  const data = await getChapters(email, LANG)
-  const chapters = data.chapters || []
+    const data = await getChapters(email, LANG)
+    const chapters = data.chapters || []
 
-  const flatTopicIds = chapters.flatMap((chapter) => chapter.topics.map((t) => t.topic_id))
-  const currentIndex = flatTopicIds.indexOf(topicId)
-  nextTopicId = currentIndex >= 0 ? flatTopicIds[currentIndex + 1] ?? null : null
+    const flatTopicIds = chapters.flatMap((chapter) => chapter.topics.map((t) => t.topic_id))
+    const currentIndex = flatTopicIds.indexOf(topicId)
+    nextTopicId = currentIndex >= 0 ? flatTopicIds[currentIndex + 1] ?? null : null
 
-  let foundTopic = null
-  for (const chapter of chapters) {
-    foundTopic = chapter.topics.find((t) => t.topic_id === topicId)
-    if (foundTopic) break
+    let foundTopic = null
+    for (const chapter of chapters) {
+      foundTopic = chapter.topics.find((t) => t.topic_id === topicId)
+      if (foundTopic) break
+    }
+    topic.value = foundTopic || null
+    if (!foundTopic) return
+
+    const panel = document.getElementById('topic-phrases-panel')
+    if (panel) panel.style.display = 'flex'
+    // No reinforcement mixing and no cross-topic chapters — same "restricted
+    // to this topic's own content" choice already made for the other flow
+    // pages (see PartFlowPage.vue's Reading/Listen-and-write steps).
+    phrasesRef.value?.show(email, LANG, topic.value, 'target', 'origin', [], [], handleProgress, getPosition(positionKey))
+  } finally {
+    // Handed off to Phrases' own internal loading state (#phrases-loading)
+    // from here on — its show() call above isn't awaited on purpose, so
+    // this only covers the gap before the panel/Phrases exist at all.
+    isLoading.value = false
   }
-  topic.value = foundTopic || null
-  if (!foundTopic) return
-
-  const panel = document.getElementById('topic-phrases-panel')
-  if (panel) panel.style.display = 'flex'
-  // No reinforcement mixing and no cross-topic chapters — same "restricted
-  // to this topic's own content" choice already made for the other flow
-  // pages (see PartFlowPage.vue's Reading/Listen-and-write steps).
-  phrasesRef.value?.show(email, LANG, topic.value, 'target', 'origin', [], [], handleProgress, getPosition(positionKey))
 }
 
 // body's global padding (App.vue) exists for the normal centered-card pages
@@ -180,8 +196,37 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
+}
+
+/* Centers the content vertically only while it's shorter than the
+   available space — auto margins collapse to 0 once it overflows, instead
+   of justify-content:center's overflow-both-ways behavior, which can trap
+   the top of tall content above the reachable scroll range (see
+   ReadUnderstandPage.vue, where this bit a long sentence list). */
+.flow-page-content {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.flow-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flow-spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: flow-spin 0.8s linear infinite;
+}
+
+@keyframes flow-spin {
+  to { transform: rotate(360deg); }
 }
 
 .flow-bottombar {

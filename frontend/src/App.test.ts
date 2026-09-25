@@ -12,6 +12,7 @@ function testRouter() {
     routes: [
       { path: '/', name: 'home', component: HomePage },
       { path: '/library', name: 'library', component: LibraryPage },
+      { path: '/settings', name: 'settings', component: { template: '<div>settings</div>' } },
       { path: '/part/:topicId/:partNumber', name: 'part-flow', component: PartFlowPage, meta: { hideGlobalBottomBar: true } },
     ],
   })
@@ -31,6 +32,10 @@ describe('App', () => {
     expect(wrapper.find('.toast-container').exists()).toBe(true)
     expect(wrapper.find('.bottom-bar').exists()).toBe(true)
     expect(wrapper.find('.home-topbar').exists()).toBe(true)
+
+    const bottomBarLinks = wrapper.findAll('.bottom-bar-item')
+    expect(bottomBarLinks).toHaveLength(2)
+    expect(bottomBarLinks[1].attributes('href')).toBe('/settings')
 
     wrapper.unmount()
   })

@@ -4,7 +4,13 @@
   </div>
 
   <div class="flow-page read-page">
-    <Sentences ref="sentencesRef" />
+    <div class="read-page-content">
+      <div class="flow-loading" v-if="isLoading">
+        <div class="flow-spinner"></div>
+      </div>
+
+      <Sentences ref="sentencesRef" />
+    </div>
   </div>
 
   <div class="flow-bottombar">
@@ -19,18 +25,20 @@ import Sentences from '../features/sentences/Sentences.vue'
 import { getChapters } from '../shared/api'
 import { ensureUserEmail } from '../shared/currentUser'
 import { requestHomeExpansion } from '../shared/homeExpansion'
+import { getLangPair } from '../shared/languagePreference'
 import { getPosition, savePosition } from '../shared/positionMemory'
 import { numberedPartsCount } from '../shared/topicParts'
 
-// Hardcoded until a language picker exists on the new pages — matches the
-// app's existing default language elsewhere (see HomePage.vue/PartFlowPage.vue).
-const LANG = 'pt-en'
+// Saved via SettingsPage.vue (default 'pt-en'), read once per mount — same
+// as ensureUserEmail's "resolve once, reuse for the session" idiom.
+const LANG = getLangPair()
 
 const route = useRoute()
 const router = useRouter()
 
 const topic = ref(null)
 const sentencesRef = ref(null)
+const isLoading = ref(true)
 
 // Static for this mount — the page fully remounts on every navigation here,
 // so there's no need to track topicId changing underneath it.
@@ -52,26 +60,31 @@ function finish() {
 }
 
 async function load() {
-  const email = ensureUserEmail()
-  const topicId = route.params.topicId
+  isLoading.value = true
+  try {
+    const email = ensureUserEmail()
+    const topicId = route.params.topicId
 
-  const data = await getChapters(email, LANG)
-  let foundTopic = null
-  for (const chapter of data.chapters || []) {
-    foundTopic = chapter.topics.find((t) => t.topic_id === topicId)
-    if (foundTopic) break
+    const data = await getChapters(email, LANG)
+    let foundTopic = null
+    for (const chapter of data.chapters || []) {
+      foundTopic = chapter.topics.find((t) => t.topic_id === topicId)
+      if (foundTopic) break
+    }
+    topic.value = foundTopic || null
+    if (!foundTopic) return
+
+    const panel = document.getElementById('topic-sentences-panel')
+    if (panel) panel.style.display = 'flex'
+    sentencesRef.value?.show(topic.value, LANG)
+
+    // Restore only after the sentence list has actually rendered — otherwise
+    // there's nothing tall enough yet for the saved offset to land on.
+    await nextTick()
+    window.scrollTo(0, getPosition(scrollKey))
+  } finally {
+    isLoading.value = false
   }
-  topic.value = foundTopic || null
-  if (!foundTopic) return
-
-  const panel = document.getElementById('topic-sentences-panel')
-  if (panel) panel.style.display = 'flex'
-  sentencesRef.value?.show(topic.value, LANG)
-
-  // Restore only after the sentence list has actually rendered — otherwise
-  // there's nothing tall enough yet for the saved offset to land on.
-  await nextTick()
-  window.scrollTo(0, getPosition(scrollKey))
 }
 
 // body's global padding (App.vue) exists for the normal centered-card pages
@@ -139,12 +152,46 @@ onUnmounted(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   min-height: 100vh;
 }
 
+/* Horizontal breathing room only — a plain "padding: 24px" here would
+   override .flow-page's own padding-top/padding-bottom (56px, clearance for
+   the fixed top/bottom bars) via the cascade, since both are single-class
+   selectors of equal specificity and this rule comes later in the file.
+   That silent override was why the first/last sentence sat partially under
+   the bars even after the scroll-overflow fix. */
 .read-page {
-  padding: 24px;
+  padding: 0 24px;
+}
+
+/* Centers the content vertically only while it's shorter than the
+   available space — auto margins collapse to 0 once it overflows, instead
+   of justify-content:center's overflow-both-ways behavior, which trapped
+   the top of a long sentence list above the reachable scroll range. */
+.read-page-content {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.flow-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flow-spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: flow-spin 0.8s linear infinite;
+}
+
+@keyframes flow-spin {
+  to { transform: rotate(360deg); }
 }
 
 .flow-bottombar {
