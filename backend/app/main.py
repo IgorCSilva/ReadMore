@@ -254,7 +254,6 @@ def get_chapters_route(
     lang: str = "pt-en",
     catalog_repository: JsonCatalogRepository = Depends(get_catalog_repository),
     topics_repository: GoogleSheetsTopicsRepository = Depends(get_topics_repository),
-    corrections_repository: GoogleSheetsCorrectionsRepository = Depends(get_corrections_repository),
 ):
     language_pair = _parse_lang(lang.strip() or "pt-en")
     try:
@@ -264,7 +263,7 @@ def get_chapters_route(
             status_code=400, content={"error": "missing or invalid 'user' query param"}
         )
 
-    use_case = GetChapters(catalog_repository, topics_repository, corrections_repository)
+    use_case = GetChapters(catalog_repository, topics_repository)
     chapters = use_case.execute(email, language_pair)
     return ChaptersResponse(
         lang=str(language_pair), chapters=[ChapterDTO.from_entity(c) for c in chapters]

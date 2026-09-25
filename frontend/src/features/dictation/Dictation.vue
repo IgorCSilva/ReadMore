@@ -300,18 +300,32 @@ onMounted(() => {
     if (index >= WORDS.length) index = 0;
   }
 
-  async function loadAndStart() {
+  // wordsOverride skips loadUserWords/transformAndFilter entirely — used by
+  // PartFlowPage's Listen-and-write step, whose pool is a fixed part-sized
+  // word list (no confidence/show filtering, no reinforcement words: those
+  // are this tab's own review-progress concepts, not the flow's). Still
+  // shuffled, same as the tab's own transformAndFilter does.
+  function applyWordsOverride(rawWords) {
+    WORDS = shuffle((rawWords || []).map((w) => ({ wordId: w.word_id, word: w.original, isReinforcement: false })));
+    if (index >= WORDS.length) index = 0;
+  }
+
+  async function loadAndStart(wordsOverride) {
     setLoading(true);
     try {
-      const rawWords = await loadUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
-      applyWords(rawWords);
+      if (wordsOverride) {
+        applyWordsOverride(wordsOverride);
+      } else {
+        const rawWords = await loadUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
+        applyWords(rawWords);
+      }
       renderStage();
     } finally {
       setLoading(false);
     }
   }
 
-  show = (userEmail, lang, topic, sentenceLang, cueLang, reinforcementWordIds) => {
+  show = (userEmail, lang, topic, sentenceLang, cueLang, reinforcementWordIds, wordsOverride) => {
     USER_EMAIL = userEmail;
     LANG = lang;
     SENTENCE_LANG = sentenceLang || "target";
@@ -319,7 +333,7 @@ onMounted(() => {
     currentTopic = topic;
     REINFORCEMENT_WORD_IDS = reinforcementWordIds || [];
     index = 0;
-    return loadAndStart().catch(showError);
+    return loadAndStart(wordsOverride).catch(showError);
   };
 
   // Called by the shell when the user switches to a different tab, so a

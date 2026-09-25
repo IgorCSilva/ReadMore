@@ -55,8 +55,11 @@ import { loadUserWords } from '../../shared/userWords'
 // out reshuffles the next round's options and immediately plays its audio.
 
 const OPTION_COUNT = 8;
-const WORD_TOKEN_RE = /[a-zà-ÿÀ-Ÿ]+/i;
-const WORD_TOKEN_RE_G = /([a-zà-ÿÀ-Ÿ]+)/i;
+// \p{L}\p{M} (Unicode letters + combining marks) covers every script's
+// words, including Hangul — a bare Latin range would treat Korean tokens
+// as non-word separators and stall the pointer walk below.
+const WORD_TOKEN_RE = /[\p{L}\p{M}]+/u;
+const WORD_TOKEN_RE_G = /([\p{L}\p{M}]+)/u;
 
 function shuffle(items) {
   const result = items.slice();
@@ -97,6 +100,12 @@ onMounted(() => {
   let advanceTimer = null;
   let viewState = "audio"; // "audio" | "blanks" | "filled"
   let roundState = null; // { correctWords, nextExpectedIndex, failed, completed, options }
+  // Optional hook so a caller (e.g. ListenIdentifyPage's own progress bar,
+  // which has no other way to see the round index) can observe playback
+  // advancing — called with (currentRound1Based, totalRounds), and (0, 0)
+  // for the empty-state case. Unused by the plain Phrases tab in
+  // LibraryPage.vue, which reads #phrases-counter's text instead.
+  let onProgress = null;
 
   function showError(err) {
     console.error(err);
@@ -321,6 +330,7 @@ onMounted(() => {
     window.clearTimeout(advanceTimer);
     const round = ROUNDS[index];
     counterEl.textContent = `${index + 1} / ${ROUNDS.length}`;
+    onProgress?.(index + 1, ROUNDS.length);
     viewState = "audio";
     roundState = { correctWords: round.correctWords, nextExpectedIndex: 0, failed: false, completed: false, options: [] };
     renderAudioArea();
@@ -344,6 +354,7 @@ onMounted(() => {
     if (ROUNDS.length === 0) {
       stageEl.style.display = "none";
       emptyStateEl.style.display = "block";
+      onProgress?.(0, 0);
       return;
     }
     emptyStateEl.style.display = "none";
@@ -368,7 +379,7 @@ onMounted(() => {
     }
   }
 
-  show = (userEmail, lang, topic, sentenceLang, cueLang, allChapters, reinforcementWordIds) => {
+  show = (userEmail, lang, topic, sentenceLang, cueLang, allChapters, reinforcementWordIds, onProgressCallback, startIndex) => {
     USER_EMAIL = userEmail;
     LANG = lang;
     SENTENCE_LANG = sentenceLang || "target";
@@ -376,7 +387,8 @@ onMounted(() => {
     currentTopic = topic;
     ALL_CHAPTERS = allChapters || [];
     REINFORCEMENT_WORD_IDS = reinforcementWordIds || [];
-    index = 0;
+    onProgress = onProgressCallback || null;
+    index = startIndex || 0;
     return loadAndStart().catch(showError);
   };
 

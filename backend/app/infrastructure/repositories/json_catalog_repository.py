@@ -130,6 +130,7 @@ class JsonCatalogRepository(CatalogRepository):
                 sentence=sentences.get(f"{sentence_code}_{row['root_word_id']}", ""),
                 cue=cues.get(f"{cue_code}_{row['root_word_id']}", ""),
                 gender_id=row.get("gender_id", "not_apply"),
+                particle_type=row.get("particle_type", "not_apply"),
             )
             for row in lang_words
         ]

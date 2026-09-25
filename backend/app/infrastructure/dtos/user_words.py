@@ -12,6 +12,7 @@ class UserWordDTO(BaseModel):
     sentence: str
     cue: str
     gender_id: str
+    particle_type: str
     confident: bool
     shown_count: int
     show: bool
@@ -25,6 +26,7 @@ class UserWordDTO(BaseModel):
             sentence=word.sentence,
             cue=word.cue,
             gender_id=word.gender_id,
+            particle_type=word.particle_type,
             confident=record.confident,
             shown_count=record.shown_count,
             show=record.show,
