@@ -64,6 +64,7 @@ describe('PartFlowPage', () => {
 
   afterEach(() => {
     vi.restoreAllMocks()
+    vi.useRealTimers()
   })
 
   it('shows a loading spinner until the topic/words fetch resolves, then the page', async () => {
@@ -130,14 +131,14 @@ describe('PartFlowPage', () => {
     }
   })
 
-  it('advances through Page 2, the placeholder Page 3, then Reading and Listen-and-write, via Next', async () => {
+  it('advances through Page 2, Page 3, then Reading and Listen-and-write, via Next', async () => {
     const { wrapper } = await mountFlow()
     try {
       await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
       expect(wrapper.find('.word-page-2').exists()).toBe(true)
 
       await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 3
-      expect(wrapper.get('.placeholder-page').text()).toBe('Page 3 — coming soon')
+      expect(wrapper.find('.word-page-3').exists()).toBe(true)
 
       // 13 more clicks (2 already spent on w1's Page 2/3) reaches step index
       // 15 of 17 — every word's 3 pages done — which is Reading.
@@ -194,22 +195,30 @@ describe('PartFlowPage', () => {
     })
 
     describe('when the browser supports SpeechRecognition', () => {
-      let instances
+      class MockSpeechRecognition {
+        start = vi.fn()
+        abort = vi.fn()
+        onresult: ((event: { results: Array<Array<{ transcript: string }>> }) => void) | null = null
+        onerror: (() => void) | null = null
+        onend: (() => void) | null = null
+        lang = ''
+        interimResults = false
+        maxAlternatives = 1
+
+        constructor() {
+          instances.push(this)
+        }
+      }
+
+      let instances: MockSpeechRecognition[]
 
       beforeEach(() => {
         instances = []
-        class MockSpeechRecognition {
-          constructor() {
-            this.start = vi.fn()
-            this.abort = vi.fn()
-            instances.push(this)
-          }
-        }
-        window.SpeechRecognition = MockSpeechRecognition
+        ;(window as any).SpeechRecognition = MockSpeechRecognition
       })
 
       afterEach(() => {
-        delete window.SpeechRecognition
+        delete (window as any).SpeechRecognition
       })
 
       it('tapping the mic starts listening: disables the mic and shows a wave', async () => {
@@ -232,12 +241,33 @@ describe('PartFlowPage', () => {
           await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
           await wrapper.get('.word-page-2-mic-btn').trigger('click')
 
-          instances[0].onresult({ results: [[{ transcript: 'Oi!' }]] })
+          instances[0].onresult!({ results: [[{ transcript: 'Oi!' }]] })
           await flushPromises()
 
           expect(wrapper.get('.word-page-2-result').classes()).toContain('success')
           expect(wrapper.find('.word-page-2-wave').exists()).toBe(false)
           expect(wrapper.get('.word-page-2-mic-btn').attributes('disabled')).toBeUndefined()
+        } finally {
+          wrapper.unmount()
+        }
+      })
+
+      it('auto-advances to the next page 1s after a correct spoken word', async () => {
+        vi.useFakeTimers()
+        const { wrapper } = await mountFlow()
+        try {
+          await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
+          await wrapper.get('.word-page-2-mic-btn').trigger('click')
+
+          instances[0].onresult!({ results: [[{ transcript: 'Oi!' }]] })
+          await flushPromises()
+          expect(wrapper.get('.word-page-2-result').classes()).toContain('success')
+
+          await vi.advanceTimersByTimeAsync(999)
+          expect(wrapper.find('.word-page-2').exists()).toBe(true)
+
+          await vi.advanceTimersByTimeAsync(1)
+          expect(wrapper.find('.word-page-3').exists()).toBe(true)
         } finally {
           wrapper.unmount()
         }
@@ -249,7 +279,7 @@ describe('PartFlowPage', () => {
           await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
           await wrapper.get('.word-page-2-mic-btn').trigger('click')
 
-          instances[0].onresult({ results: [[{ transcript: 'tchau' }]] })
+          instances[0].onresult!({ results: [[{ transcript: 'tchau' }]] })
           await flushPromises()
 
           expect(wrapper.get('.word-page-2-result').classes()).toContain('failure')
@@ -269,7 +299,7 @@ describe('PartFlowPage', () => {
           await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
           await wrapper.get('.word-page-2-mic-btn').trigger('click')
 
-          instances[0].onerror()
+          instances[0].onerror!()
           await flushPromises()
 
           expect(wrapper.get('.word-page-2-result').classes()).toContain('failure')
@@ -277,6 +307,84 @@ describe('PartFlowPage', () => {
           wrapper.unmount()
         }
       })
+    })
+  })
+
+  describe('word Page 3 (type the word)', () => {
+    async function goToPage3(wrapper: ReturnType<typeof mount>) {
+      await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
+      await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 3
+    }
+
+    it('shows the image/cue like Page 1, plus a text input, audio button, and Check button — no word shown', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await goToPage3(wrapper)
+
+        const page = wrapper.get('.word-page-3')
+        expect(page.get('.word-page-1-image-wrap img').attributes('src')).toBe('/images/w1.png')
+        expect(page.get('.word-page-1-cue').text()).toBe('hi (cue)')
+        expect(page.find('.word-page-1-word').exists()).toBe(false)
+        expect(page.get('.word-page-3-input').element.tagName).toBe('INPUT')
+        expect(page.find('.word-page-1-audio-btn').exists()).toBe(true)
+        expect(page.get('.word-page-3-check-btn').text()).toBe('✓')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('typing the wrong word and checking shows a per-letter diff, keeps the input editable, and does not advance', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await goToPage3(wrapper)
+
+        await wrapper.get('.word-page-3-input').setValue('ai')
+        await wrapper.get('.word-page-3-check-btn').trigger('click')
+
+        const letters = wrapper.findAll('.word-page-3-result span').map((s) => s.classes()[0])
+        expect(letters).toContain('word-page-3-letter-wrong')
+        expect(wrapper.get<HTMLInputElement>('.word-page-3-input').element.disabled).toBe(false)
+        expect(wrapper.find('.word-page-3').exists()).toBe(true)
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('typing the correct word and checking applies a success style, then auto-advances 1s later', async () => {
+      vi.useFakeTimers()
+      const { wrapper } = await mountFlow()
+      try {
+        await goToPage3(wrapper)
+
+        await wrapper.get('.word-page-3-input').setValue('oi')
+        await wrapper.get('.word-page-3-check-btn').trigger('click')
+
+        expect(wrapper.get('.word-page-3-input').classes()).toContain('success')
+        expect(wrapper.get<HTMLInputElement>('.word-page-3-input').element.disabled).toBe(true)
+
+        await vi.advanceTimersByTimeAsync(999)
+        expect(wrapper.find('.word-page-3').exists()).toBe(true)
+
+        await vi.advanceTimersByTimeAsync(1)
+        expect(wrapper.find('.word-page-3').exists()).toBe(false)
+        expect(wrapper.get('.word-page-1 .word-page-1-cue-big').text()).toBe('bye (cue)')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('pressing Enter in the input checks the answer, same as clicking Check', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await goToPage3(wrapper)
+
+        await wrapper.get('.word-page-3-input').setValue('oi')
+        await wrapper.get('.word-page-3-input').trigger('keydown', { key: 'Enter' })
+
+        expect(wrapper.get('.word-page-3-input').classes()).toContain('success')
+      } finally {
+        wrapper.unmount()
+      }
     })
   })
 })

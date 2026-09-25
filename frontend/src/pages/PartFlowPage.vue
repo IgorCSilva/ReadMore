@@ -52,7 +52,50 @@
       </div>
     </div>
 
-    <!-- Page 3, Reading, and Listen-and-write aren't designed yet — placeholders
+    <div class="word-page-3" v-else-if="currentStep?.kind === 'word' && currentStep.pageNumber === 3">
+      <div class="word-page-1-image-wrap" v-if="imageOk">
+        <img :src="imageUrl" @error="onImageError" alt="" />
+      </div>
+      <div class="word-page-1-cue-big" v-else>{{ currentStep.word.cue }}</div>
+
+      <div class="word-page-1-cue" v-if="imageOk">{{ currentStep.word.cue }}</div>
+
+      <div class="word-page-3-input-row">
+        <input
+          type="text"
+          class="word-page-3-input"
+          :class="{ success: writeState === 'success' }"
+          v-model="writtenText"
+          :disabled="writeState === 'success'"
+          autocomplete="off"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+          @keydown.enter.prevent="checkWritten"
+        />
+        <button type="button" class="word-page-1-audio-btn" @click="playAudio(currentStep.word.original)" aria-label="Play audio">🔊</button>
+      </div>
+
+      <div class="word-page-3-result" v-if="writeState !== 'idle'">
+        <span
+          v-for="(op, opIndex) in writeDiff"
+          :key="opIndex"
+          :class="`word-page-3-letter-${op.type}`"
+        >{{ op.type !== 'correct' && op.char === ' ' ? '␣' : op.char }}</span>
+      </div>
+
+      <button
+        type="button"
+        class="word-page-3-check-btn"
+        :disabled="writeState === 'success'"
+        @click="checkWritten"
+        aria-label="Check answer"
+      >
+        ✓
+      </button>
+    </div>
+
+    <!-- Reading and Listen-and-write aren't designed yet — placeholders
          keep the sequence/progress/Next mechanics working end to end already. -->
     <div class="placeholder-page" v-else-if="currentStep?.kind === 'word'">
       Page {{ currentStep.pageNumber }} — coming soon
@@ -142,13 +185,20 @@ function onImageError() {
 }
 
 watch(currentStep, (step) => {
-  if (step?.kind === 'word' && step.pageNumber === 1) {
+  if (step?.kind === 'word' && (step.pageNumber === 1 || step.pageNumber === 3)) {
     startImageLoad(step.word.filename)
   }
   if (step?.kind === 'word' && step.pageNumber === 2) {
     resetSpeechState()
   } else {
     stopRecognition()
+  }
+  window.clearTimeout(writeAdvanceTimer)
+  writeAdvanceTimer = null
+  if (step?.kind === 'word' && step.pageNumber === 3) {
+    writtenText.value = ''
+    writeState.value = 'idle'
+    writeDiff.value = []
   }
 })
 
@@ -185,6 +235,7 @@ const speechSupported = !!SpeechRecognitionCtor
 
 const speechState = ref(speechSupported ? 'idle' : 'unsupported')
 let recognition = null
+let speechAdvanceTimer = null
 
 function resetSpeechState() {
   stopRecognition()
@@ -192,6 +243,8 @@ function resetSpeechState() {
 }
 
 function stopRecognition() {
+  window.clearTimeout(speechAdvanceTimer)
+  speechAdvanceTimer = null
   if (!recognition) return
   recognition.onresult = null
   recognition.onerror = null
@@ -225,7 +278,12 @@ function startListening() {
   recognition.onresult = (event) => {
     const target = normalizeSpeech(word.original)
     const said = Array.from(event.results[0]).map((alt) => normalizeSpeech(alt.transcript))
-    speechState.value = said.includes(target) ? 'success' : 'failure'
+    if (said.includes(target)) {
+      speechState.value = 'success'
+      speechAdvanceTimer = window.setTimeout(next, 1000)
+    } else {
+      speechState.value = 'failure'
+    }
   }
   recognition.onerror = () => {
     speechState.value = 'failure'
@@ -236,6 +294,79 @@ function startListening() {
 
   speechState.value = 'listening'
   recognition.start()
+}
+
+// ---- Page 3's type-the-word check, mirrors Dictation.vue's per-letter diff
+// (buildAlignment/isWordCorrect/normalizeChar) so this page and the Dictation
+// tab give identical right/wrong feedback for the same kind of exercise. ----
+
+const writtenText = ref('')
+const writeState = ref('idle') // 'idle' | 'wrong' | 'success'
+const writeDiff = ref([])
+let writeAdvanceTimer = null
+
+const APOSTROPHE_VARIANTS = /[‘’`]/g
+
+function normalizeChar(ch) {
+  return ch.normalize('NFC').toLowerCase().replace(APOSTROPHE_VARIANTS, "'")
+}
+
+function isWordCorrect(typed, target) {
+  if (typed.length !== target.length) return false
+  for (let i = 0; i < target.length; i++) {
+    if (normalizeChar(typed[i]) !== normalizeChar(target[i])) return false
+  }
+  return true
+}
+
+function buildAlignment(typed, target) {
+  const typedChars = Array.from(typed.normalize('NFC'))
+  const targetChars = Array.from(target.normalize('NFC'))
+  const normTyped = typedChars.map(normalizeChar)
+  const normTarget = targetChars.map(normalizeChar)
+  const n = typedChars.length
+  const m = targetChars.length
+
+  const dp = Array.from({ length: n + 1 }, () => new Array(m + 1).fill(0))
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= m; j++) {
+      dp[i][j] = normTyped[i - 1] === normTarget[j - 1]
+        ? dp[i - 1][j - 1] + 1
+        : Math.max(dp[i - 1][j], dp[i][j - 1])
+    }
+  }
+
+  const ops = []
+  let i = n
+  let j = m
+  while (i > 0 || j > 0) {
+    if (i > 0 && j > 0 && normTyped[i - 1] === normTarget[j - 1]) {
+      ops.push({ type: 'correct', char: targetChars[j - 1] })
+      i--; j--
+    } else if (j > 0 && (i === 0 || dp[i][j - 1] >= dp[i - 1][j])) {
+      ops.push({ type: 'missing', char: targetChars[j - 1] })
+      j--
+    } else {
+      ops.push({ type: 'wrong', char: typedChars[i - 1] })
+      i--
+    }
+  }
+  ops.reverse()
+  return ops
+}
+
+function checkWritten() {
+  if (writeState.value === 'success') return
+  const word = currentStep.value?.word
+  if (!word) return
+
+  writeDiff.value = buildAlignment(writtenText.value, word.original)
+  if (isWordCorrect(writtenText.value, word.original)) {
+    writeState.value = 'success'
+    writeAdvanceTimer = window.setTimeout(next, 1000)
+  } else {
+    writeState.value = 'wrong'
+  }
 }
 
 // ---- Load the topic + the up-to-5 words for this part, then shuffle. ----
@@ -530,6 +661,104 @@ body.part-flow-active {
   font-size: 14px;
   color: var(--muted);
   text-align: center;
+}
+
+.word-page-3 {
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+}
+
+.word-page-3-input-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.word-page-3-input {
+  flex: 1;
+  min-width: 0;
+  background: transparent;
+  color: var(--text);
+  border: none;
+  border-bottom: 2px solid var(--border);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: inherit;
+  padding: 6px 4px;
+}
+
+.word-page-3-input:focus {
+  outline: none;
+  border-bottom-color: var(--accent);
+}
+
+.word-page-3-input.success {
+  border-bottom-color: var(--accent);
+  color: var(--accent);
+}
+
+.word-page-3-result {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.word-page-3-letter-correct,
+.word-page-3-letter-missing,
+.word-page-3-letter-wrong {
+  display: inline-block;
+  white-space: pre;
+}
+
+.word-page-3-letter-correct {
+  color: var(--accent);
+}
+
+.word-page-3-letter-missing {
+  color: var(--muted);
+  opacity: 0.5;
+}
+
+.word-page-3-letter-wrong {
+  color: #e0453a;
+  font-size: 0.7em;
+}
+
+.word-page-3-check-btn {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.word-page-3-check-btn:hover:not(:disabled) {
+  background: var(--accent-strong);
+}
+
+.word-page-3-check-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .placeholder-page {
