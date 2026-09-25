@@ -29,3 +29,26 @@ vi.stubGlobal(
     dispatchEvent: vi.fn(),
   })),
 )
+
+// jsdom doesn't implement IntersectionObserver — PresentationPage.vue uses
+// it to reveal sections on scroll. A minimal stub that just records
+// observe/unobserve calls is enough; nothing here needs real viewport
+// intersection math, and tests that need to simulate a reveal can grab the
+// most recent instance off `(window as any).__intersectionObservers`.
+class MockIntersectionObserver {
+  callback: IntersectionObserverCallback
+  observe = vi.fn()
+  unobserve = vi.fn()
+  disconnect = vi.fn()
+  takeRecords = vi.fn(() => [])
+  root = null
+  rootMargin = ''
+  thresholds: ReadonlyArray<number> = []
+
+  constructor(callback: IntersectionObserverCallback) {
+    this.callback = callback
+    ;((window as unknown) as { __intersectionObservers: MockIntersectionObserver[] }).__intersectionObservers ??= []
+    ;((window as unknown) as { __intersectionObservers: MockIntersectionObserver[] }).__intersectionObservers.push(this)
+  }
+}
+vi.stubGlobal('IntersectionObserver', MockIntersectionObserver)

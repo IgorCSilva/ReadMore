@@ -1,5 +1,6 @@
 <template>
   <div id="topic-sentences-panel" style="display:none">
+    <div class="empty-state" id="sentences-empty-state">No sentences for this topic yet.</div>
     <div class="sentences-list" id="sentences-list"></div>
   </div>
 </template>
@@ -31,6 +32,7 @@ let show;
 
 onMounted(() => {
   const sentencesListEl = document.getElementById("sentences-list");
+  const emptyStateEl = document.getElementById("sentences-empty-state");
 
   let wordStyleMap = new Map();
   let wordStyleMapLang = null;
@@ -82,6 +84,9 @@ onMounted(() => {
     for (const sentence of currentTopic.sentences) {
       sentencesListEl.appendChild(buildItem(sentence));
     }
+    const isEmpty = currentTopic.sentences.length === 0;
+    emptyStateEl.style.display = isEmpty ? "block" : "none";
+    sentencesListEl.style.display = isEmpty ? "none" : "flex";
   }
 
   show = (topic, lang) => {
