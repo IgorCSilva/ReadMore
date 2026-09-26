@@ -1443,6 +1443,82 @@
     {
       "word_id": "wd-0361",
       "filename": "topic_particle"
+    },
+    {
+      "word_id": "wd-0362",
+      "filename": "good_morning"
+    },
+    {
+      "word_id": "wd-0363",
+      "filename": "good_afternoon"
+    },
+    {
+      "word_id": "wd-0364",
+      "filename": "good_night"
+    },
+    {
+      "word_id": "wd-0365",
+      "filename": "so_then"
+    },
+    {
+      "word_id": "wd-0366",
+      "filename": "suddenly"
+    },
+    {
+      "word_id": "wd-0367",
+      "filename": "but"
+    },
+    {
+      "word_id": "wd-0368",
+      "filename": "because"
+    },
+    {
+      "word_id": "wd-0369",
+      "filename": "one_day"
+    },
+    {
+      "word_id": "wd-0370",
+      "filename": "find"
+    },
+    {
+      "word_id": "wd-0371",
+      "filename": "hear"
+    },
+    {
+      "word_id": "wd-0372",
+      "filename": "open"
+    },
+    {
+      "word_id": "wd-0373",
+      "filename": "close"
+    },
+    {
+      "word_id": "wd-0374",
+      "filename": "enter"
+    },
+    {
+      "word_id": "wd-0375",
+      "filename": "happen"
+    },
+    {
+      "word_id": "wd-0376",
+      "filename": "appear"
+    },
+    {
+      "word_id": "wd-0377",
+      "filename": "disappear"
+    },
+    {
+      "word_id": "wd-0378",
+      "filename": "surprise"
+    },
+    {
+      "word_id": "wd-0379",
+      "filename": "gift"
+    },
+    {
+      "word_id": "wd-0380",
+      "filename": "nobody"
     }
   ]
 }

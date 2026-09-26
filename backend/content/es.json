@@ -9,6 +9,9 @@
       "día",
       "tarde",
       "noche",
+      "buenos días",
+      "buenas tardes",
+      "buenas noches",
       "bien",
       "todo",
       "cómo",
@@ -179,6 +182,26 @@
       "por la tarde",
       "por la noche",
       "antes"
+    ],
+    "topic_2": [
+      "entonces",
+      "de repente",
+      "pero",
+      "porque",
+      "cuando",
+      "un día",
+      "encontrar",
+      "ver",
+      "oír",
+      "abrir",
+      "cerrar",
+      "entrar",
+      "suceder",
+      "aparecer",
+      "desaparecer",
+      "sorpresa",
+      "regalo",
+      "nadie"
     ]
   }
 }
