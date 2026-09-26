@@ -1,7 +1,6 @@
 """Reinforcement words: word_ids pulled from earlier topics for spaced
 review, recomputed fresh from each topic's word_ids every time (no stored
-state), then split evenly across the learning tabs so every reinforcement
-word is used exactly once.
+state).
 
 Selection follows a fixed 10-slot cycle over the previous topics' word_ids,
 concatenated in chapter/topic order: get 3, skip 3, get 1, skip 3. The
@@ -13,8 +12,6 @@ from backend.app.domain.entities import Chapter
 
 _CYCLE_LENGTH = 10
 _GET_POSITIONS = {0, 1, 2, 6}
-
-REINFORCEMENT_TABS = ["reading", "dictation", "quiz", "phrases"]
 
 
 def reinforcement_word_ids(chapters: list[Chapter], chapter_number: int, topic_number: int) -> list[str]:
@@ -44,35 +41,3 @@ def reinforcement_word_ids(chapters: list[Chapter], chapter_number: int, topic_n
         for index, word_id in enumerate(previous_word_ids)
         if (start + index) % _CYCLE_LENGTH in _GET_POSITIONS
     ]
-
-
-def split_evenly(items: list[str], group_count: int) -> list[list[str]]:
-    """Split items into group_count contiguous, near-equal groups, using
-    every item exactly once. Extra items (when the count doesn't divide
-    evenly) go one-per-group to the earliest groups first."""
-    if group_count <= 0:
-        raise ValueError("group_count must be positive")
-
-    base, remainder = divmod(len(items), group_count)
-    groups = []
-    start = 0
-    for i in range(group_count):
-        size = base + (1 if i < remainder else 0)
-        groups.append(items[start : start + size])
-        start += size
-    return groups
-
-
-def reinforcement_words_by_tab(
-    chapters: list[Chapter],
-    chapter_number: int,
-    topic_number: int,
-    tabs: list[str] | None = None,
-) -> dict[str, list[str]]:
-    """Reinforcement word_ids for a topic, split evenly across `tabs`
-    (defaults to REINFORCEMENT_TABS) — every reinforcement word is assigned
-    to exactly one tab."""
-    tabs = tabs if tabs is not None else REINFORCEMENT_TABS
-    word_ids = reinforcement_word_ids(chapters, chapter_number, topic_number)
-    groups = split_evenly(word_ids, len(tabs))
-    return dict(zip(tabs, groups))

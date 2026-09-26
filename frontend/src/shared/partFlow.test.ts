@@ -9,6 +9,7 @@ function makeWords(count: number) {
     sentence: '',
     cue: '',
     gender_id: '',
+    particle_type: '',
   }))
 }
 

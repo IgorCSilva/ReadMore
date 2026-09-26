@@ -9,11 +9,15 @@
       <div class="home-spinner"></div>
     </div>
 
+    <p class="home-empty" v-else-if="chapters.length === 0">
+      Nothing enabled for your account yet — check back soon.
+    </p>
+
     <div class="chapter-group" v-for="chapter in chapters" :key="chapter.chapter_id">
       <div class="chapter-heading">{{ chapter.number }}. {{ chapter.title }}</div>
 
       <div class="topic-card" v-for="topic in chapter.topics" :key="topic.topic_id">
-        <button type="button" class="topic-card-header" @click="toggleTopic(topic.topic_id)">
+        <button type="button" class="topic-card-header" @click="toggleTopic(chapter, topic)">
           <div class="topic-card-number">{{ chapter.number }}.{{ topic.number }}</div>
           <div class="topic-card-title">{{ topic.title }}</div>
           <div class="topic-card-status" :class="`topic-card-status-${STATUS.NOT_STARTED}`">
@@ -30,7 +34,11 @@
             </button>
 
             <div class="part-body" v-if="expandedPartIndex === index">
-              <div class="part-words" v-if="part.kind === 'words'">{{ wordsText(part.wordIds) }}</div>
+              <div class="part-words" v-if="part.kind === 'words' || part.kind === 'review'">
+                <span class="part-word-new" v-if="part.wordIds?.length">{{ wordsText(part.wordIds) }}</span>
+                <span v-if="part.wordIds?.length && part.reinforcementWordIds?.length">, </span>
+                <span class="part-word-reinforce" v-if="part.reinforcementWordIds?.length">{{ wordsText(part.reinforcementWordIds) }}</span>
+              </div>
               <button type="button" class="part-start-btn" @click="handleStart(topic, part)">Start</button>
             </div>
           </div>
@@ -43,17 +51,26 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { getChapters, getWords } from '../shared/api'
+import { getChapters, getReinforcementWords, getUser, getWords } from '../shared/api'
 import { cacheKey, writeCache } from '../shared/cache'
 import { ensureUserEmail, getCurrentUser, logoutUser } from '../shared/currentUser'
 import { readStale, refreshInBackground } from '../shared/dataSync'
 import { consumeHomeExpansion } from '../shared/homeExpansion'
-import { getLangPair } from '../shared/languagePreference'
-import { numberedPartsCount, wordIdsForPart } from '../shared/topicParts'
+import { getLangPair, setLangPair } from '../shared/languagePreference'
+import {
+  numberedPartsCount,
+  reinforcementWordIdsForPart,
+  reviewWordIds,
+  wordIdsForPart,
+} from '../shared/topicParts'
 
-// Saved via SettingsPage.vue (default 'pt-en'), read once per mount — same
-// as ensureUserEmail's "resolve once, reuse for the session" idiom.
-const LANG = getLangPair()
+// Saved via SettingsPage.vue (default 'pt-en') or, failing that, whatever
+// this browser last had stored — a guess that's wrong whenever it isn't one
+// of *this* user's own enabled pairs (a brand-new sign-in on a fresh
+// browser, or switching to a different account that shares this browser).
+// onMounted below corrects it against GET /user before fetching anything,
+// same fallback idea as SettingsPage.vue's own onMounted.
+const LANG = ref(getLangPair())
 
 const STATUS = { FINISHED: 'finished', LEARNING: 'learning', NOT_STARTED: 'not_started' }
 const STATUS_ICON = { [STATUS.FINISHED]: '✓', [STATUS.LEARNING]: '◐', [STATUS.NOT_STARTED]: '○' }
@@ -70,9 +87,32 @@ const isLoading = ref(true)
 const expandedTopicId = ref(null)
 const expandedPartIndex = ref(null)
 
-function toggleTopic(topicId) {
+// Reinforcement word_ids fetched lazily per topic, only once its accordion
+// is first expanded — reinforcement is per (chapter, topic), so fetching it
+// for every topic up front would be N wasted requests for topics the user
+// never opens. Keyed by topic_id and cached forever (reinforcement
+// selection is a pure function of curriculum position, never changes for a
+// given topic within a session), so re-collapsing/re-expanding never refetches.
+const reinforcementByTopicId = ref({})
+
+async function loadReinforcementForTopic(chapter, topic) {
+  const topicId = topic.topic_id
+  if (topicId in reinforcementByTopicId.value) return
+
+  try {
+    const wordIds = await getReinforcementWords(LANG.value, chapter.number, topic.number)
+    reinforcementByTopicId.value = { ...reinforcementByTopicId.value, [topicId]: wordIds }
+  } catch (err) {
+    console.error("Couldn't load reinforcement words", err)
+    reinforcementByTopicId.value = { ...reinforcementByTopicId.value, [topicId]: [] }
+  }
+}
+
+async function toggleTopic(chapter, topic) {
+  const topicId = topic.topic_id
   expandedTopicId.value = expandedTopicId.value === topicId ? null : topicId
   expandedPartIndex.value = null
+  if (expandedTopicId.value === topicId) await loadReinforcementForTopic(chapter, topic)
 }
 
 function togglePart(index) {
@@ -84,19 +124,33 @@ function logout() {
   router.push('/')
 }
 
-// Splits a topic's word_ids into 5-word "Part N" chunks (via shared/topicParts,
-// so this always agrees with PartFlowPage's own slice for the same part
-// number), then appends the two fixed whole-topic parts (no word chunk of
-// their own — they expand to just a Start button, see the template's
-// part-body, and aren't wired to navigate anywhere yet).
+// Splits a topic's word_ids into 5-word "Part N" chunks and its
+// reinforcement word_ids into 2-word chunks (via shared/topicParts, so this
+// always agrees with PartFlowPage's own slices for the same part number),
+// then — only when reinforcement words are left over once every numbered
+// Part has claimed its two — inserts a "Review" Part to hold them, right
+// before the two fixed whole-topic parts (no word chunk of their own — they
+// expand to just a Start button, see the template's part-body, and aren't
+// wired to navigate anywhere yet).
 function partsForTopic(topic) {
   const parts = []
   const count = numberedPartsCount(topic)
+  const reinforcementIds = reinforcementByTopicId.value[topic.topic_id] || []
   for (let partNumber = 1; partNumber <= count; partNumber++) {
-    parts.push({ kind: 'words', label: `Part ${partNumber}`, partNumber, wordIds: wordIdsForPart(topic, partNumber) })
+    parts.push({
+      kind: 'words',
+      label: `Part ${partNumber}`,
+      partNumber,
+      wordIds: wordIdsForPart(topic, partNumber),
+      reinforcementWordIds: reinforcementWordIdsForPart(reinforcementIds, partNumber),
+    })
+  }
+  const leftover = reviewWordIds(topic, reinforcementIds)
+  if (leftover.length) {
+    parts.push({ kind: 'review', label: 'Review', reinforcementWordIds: leftover })
   }
   parts.push({ kind: 'action', action: 'read-understand', label: 'Read and Understand' })
-  parts.push({ kind: 'action', action: 'listen-identify', label: 'Listen and identify' })
+  parts.push({ kind: 'action', action: 'listen-identify', label: 'Listen and Identify' })
   return parts
 }
 
@@ -107,6 +161,8 @@ function wordsText(wordIds) {
 function handleStart(topic, part) {
   if (part.kind === 'words') {
     router.push({ name: 'part-flow', params: { topicId: topic.topic_id, partNumber: String(part.partNumber) } })
+  } else if (part.kind === 'review') {
+    router.push({ name: 'part-flow', params: { topicId: topic.topic_id, partNumber: 'review' } })
   } else if (part.action === 'read-understand') {
     router.push({ name: 'read-understand', params: { topicId: topic.topic_id } })
   } else if (part.action === 'listen-identify') {
@@ -115,21 +171,21 @@ function handleStart(topic, part) {
 }
 
 async function loadChapters(email) {
-  const key = cacheKey('chapters', email, LANG)
+  const key = cacheKey('chapters', email, LANG.value)
   const cached = readStale(key)
   if (cached) {
     chapters.value = cached.data
     refreshInBackground({
       key,
       label: 'chapters',
-      fetchFn: () => getChapters(email, LANG).then((data) => data.chapters || []),
+      fetchFn: () => getChapters(email, LANG.value).then((data) => data.chapters || []),
       onFresh: (data) => { chapters.value = data },
     })
     return
   }
 
   try {
-    const data = await getChapters(email, LANG)
+    const data = await getChapters(email, LANG.value)
     chapters.value = data.chapters || []
     writeCache(key, chapters.value)
   } catch (err) {
@@ -137,15 +193,63 @@ async function loadChapters(email) {
   }
 }
 
+function applyWords(data) {
+  const map = {}
+  for (const word of data.words || []) map[word.word_id] = word
+  wordsById.value = map
+}
+
 async function loadWords() {
+  const key = cacheKey('words', LANG.value)
+  const cached = readStale(key)
+  if (cached) {
+    applyWords(cached.data)
+    refreshInBackground({
+      key,
+      label: 'words',
+      fetchFn: () => getWords(LANG.value),
+      onFresh: (data) => applyWords(data),
+    })
+    return
+  }
+
   try {
-    const data = await getWords(LANG)
-    const map = {}
-    for (const word of data.words || []) map[word.word_id] = word
-    wordsById.value = map
+    const data = await getWords(LANG.value)
+    applyWords(data)
+    writeCache(key, data)
   } catch (err) {
     console.error("Couldn't load words", err)
   }
+}
+
+// Same cache "kind" SettingsPage.vue's own loadUserPairs() writes to — both
+// pages read this user's GET /user record, so whichever page fetches it
+// first saves the other page a redundant round trip switching back and
+// forth between them.
+function applyEnabledPairs(enabledPairs) {
+  if (enabledPairs.length > 0 && !enabledPairs.includes(LANG.value)) {
+    LANG.value = enabledPairs[0]
+    setLangPair(LANG.value)
+  }
+}
+
+async function resolveLang(email) {
+  const key = cacheKey('user', email)
+  const cached = readStale(key)
+  if (cached) {
+    applyEnabledPairs(cached.data.language_pairs || [])
+    refreshInBackground({
+      key,
+      label: 'account data',
+      fetchFn: () => getUser(email),
+      onFresh: (data) => applyEnabledPairs(data.language_pairs || []),
+    })
+    return
+  }
+
+  const data = await getUser(email)
+  applyEnabledPairs(data.language_pairs || [])
+  writeCache(key, data)
 }
 
 onMounted(async () => {
@@ -160,9 +264,24 @@ onMounted(async () => {
 
   const email = ensureUserEmail()
   try {
+    await resolveLang(email)
     await Promise.all([loadChapters(email), loadWords()])
   } finally {
     isLoading.value = false
+  }
+
+  // This bypasses toggleTopic (which only runs on an actual click), so a
+  // topic pre-expanded via requestHomeExpansion — the "return here after
+  // finishing a Part" flow — otherwise never triggers its reinforcement
+  // fetch until the user manually collapses/re-expands the card.
+  if (pending) {
+    for (const chapter of chapters.value) {
+      const topic = chapter.topics.find((t) => t.topic_id === pending.topicId)
+      if (topic) {
+        await loadReinforcementForTopic(chapter, topic)
+        break
+      }
+    }
   }
 })
 </script>
@@ -228,6 +347,14 @@ onMounted(async () => {
 
 @keyframes home-spin {
   to { transform: rotate(360deg); }
+}
+
+.home-empty {
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .chapter-group {
@@ -373,6 +500,15 @@ onMounted(async () => {
   font-size: 14px;
   color: var(--muted);
   line-height: 1.5;
+}
+
+.part-word-new {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.part-word-reinforce {
+  font-style: italic;
 }
 
 .part-start-btn {

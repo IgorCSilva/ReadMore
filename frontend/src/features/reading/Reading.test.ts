@@ -20,6 +20,7 @@ const HELLO = {
   sentence: '',
   cue: '',
   gender_id: 'not_apply',
+  particle_type: 'not_apply',
   confident: false,
   shown_count: 0,
   show: true,

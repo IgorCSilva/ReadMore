@@ -18,6 +18,7 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from backend.app.application.use_cases.add_correction import AddCorrection
 from backend.app.application.use_cases.get_chapters import GetChapters
+from backend.app.application.use_cases.get_user import GetUser
 from backend.app.application.use_cases.get_user_words import GetUserWords
 from backend.app.application.use_cases.get_words import GetWords
 from backend.app.application.use_cases.get_reinforcement_words import GetReinforcementWords
@@ -47,6 +48,9 @@ from backend.app.infrastructure.repositories.google_sheets_progress_repository i
 )
 from backend.app.infrastructure.repositories.google_sheets_topics_repository import (
     GoogleSheetsTopicsRepository,
+)
+from backend.app.infrastructure.repositories.google_sheets_users_repository import (
+    GoogleSheetsUsersRepository,
 )
 from backend.app.infrastructure.repositories.google_translate_tts_client import (
     GoogleTranslateTtsClient,
@@ -135,6 +139,10 @@ def get_progress_repository() -> GoogleSheetsProgressRepository:
 
 def get_topics_repository() -> GoogleSheetsTopicsRepository:
     return GoogleSheetsTopicsRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
+
+
+def get_users_repository() -> GoogleSheetsUsersRepository:
+    return GoogleSheetsUsersRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
 
 
 def get_corrections_repository() -> GoogleSheetsCorrectionsRepository:
@@ -270,7 +278,24 @@ def get_chapters_route(
     )
 
 
-@app.get("/reinforcement-words", response_model=dict[str, list[str]])
+@app.get("/user")
+def get_user_route(
+    email: str = "",
+    users_repository: GoogleSheetsUsersRepository = Depends(get_users_repository),
+):
+    try:
+        parsed_email = Email(email.strip())
+    except ValueError:
+        return JSONResponse(
+            status_code=400, content={"error": "missing or invalid 'email' query param"}
+        )
+
+    use_case = GetUser(users_repository)
+    user = use_case.execute(parsed_email)
+    return {"exists": user.exists, "language_pairs": sorted(user.language_pairs)}
+
+
+@app.get("/reinforcement-words", response_model=list[str])
 def get_reinforcement_words_route(
     lang: str = "pt-en",
     chapter: int = 1,

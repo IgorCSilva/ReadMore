@@ -28,7 +28,10 @@
 
         <p class="signin-error" v-if="error">{{ error }}</p>
 
-        <button type="submit" class="signin-submit-btn">Sign In</button>
+        <button type="submit" class="signin-submit-btn" :disabled="isChecking">
+          <span class="signin-spinner" v-if="isChecking"></span>
+          <span>{{ isChecking ? 'Checking…' : 'Sign In' }}</span>
+        </button>
       </form>
 
       <p class="signin-hint">
@@ -42,6 +45,7 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
+import { getUser } from '../shared/api'
 import { getCurrentUser, isValidEmail, setUserEmail } from '../shared/currentUser'
 import { notify } from '../shared/notifications'
 
@@ -50,6 +54,7 @@ const currentUser = getCurrentUser()
 
 const email = ref('')
 const error = ref('')
+const isChecking = ref(false)
 
 function continueAsCurrentUser() {
   router.push('/home')
@@ -59,16 +64,28 @@ function continueAsCurrentUser() {
 // overwrites it (setUserEmail) — the previous session's email is gone from
 // state/localStorage the moment this returns, which is what "logs out" the
 // previous user in practice. No separate clear step needed.
-function submit() {
+async function submit() {
   const trimmed = email.value.trim()
   if (!isValidEmail(trimmed)) {
     error.value = 'Enter a valid email address.'
     return
   }
   error.value = ''
-  setUserEmail(trimmed)
-  notify('success', 'Signed in.')
-  router.push('/home')
+  isChecking.value = true
+  try {
+    const { exists } = await getUser(trimmed)
+    if (!exists) {
+      error.value = 'Account not found.'
+      return
+    }
+    setUserEmail(trimmed)
+    notify('success', 'Signed in.')
+    router.push('/home')
+  } catch {
+    error.value = "Couldn't verify your account. Please try again."
+  } finally {
+    isChecking.value = false
+  }
 }
 </script>
 
@@ -195,6 +212,10 @@ function submit() {
 }
 
 .signin-submit-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   padding: 12px 20px;
   border-radius: 999px;
   border: none;
@@ -205,8 +226,26 @@ function submit() {
   cursor: pointer;
 }
 
-.signin-submit-btn:hover {
+.signin-submit-btn:hover:not(:disabled) {
   background: var(--accent-strong);
+}
+
+.signin-submit-btn:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.signin-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: signin-spin 0.8s linear infinite;
+}
+
+@keyframes signin-spin {
+  to { transform: rotate(360deg); }
 }
 
 .signin-hint {

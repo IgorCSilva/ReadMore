@@ -118,6 +118,7 @@ function handle(params) {
   if (params.action === "get_progress") return actionGetProgress(params);
   if (params.action === "upsert_progress") return actionUpsertProgress(params);
   if (params.action === "get_topics") return actionGetTopics(params);
+  if (params.action === "get_user") return actionGetUser(params);
   if (params.action === "remap_word_ids") return actionRemapWordIds(params);
   if (params.action === "get_corrections") return actionGetCorrections(params);
   if (params.action === "add_correction") return actionAddCorrection(params);
@@ -216,6 +217,34 @@ function actionGetTopics(params) {
       }
     }
     return jsonResponse(200, { topic_ids: [] });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+// This email's own "users" sheet data: every row scanned once, rather than
+// one action per field a caller happens to need. `exists` is true iff at
+// least one row matches — a row's topic_ids being empty still counts (see
+// the schema comment above), unlike actionGetTopics which is scoped to one
+// (email, language_pair) pair and can't tell "not registered" apart from
+// "registered but nothing enabled for this pair".
+function actionGetUser(params) {
+  const email = params.email;
+  if (!email) return jsonResponse(400, { error: "missing email" });
+
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const rows = getSheet(USERS_SHEET_NAME).getDataRange().getValues();
+    const emailLower = email.toLowerCase();
+    const languagePairs = [];
+    for (let i = 1; i < rows.length; i++) {
+      if (rows[i][0] === emailLower) languagePairs.push(rows[i][1]);
+    }
+    return jsonResponse(200, {
+      exists: languagePairs.length > 0,
+      language_pairs: languagePairs,
+    });
   } finally {
     lock.releaseLock();
   }

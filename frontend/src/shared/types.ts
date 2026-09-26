@@ -10,6 +10,7 @@ export interface Word {
   sentence: string
   cue: string
   gender_id: string
+  particle_type: string
 }
 
 export interface WordsResponse {
@@ -84,10 +85,18 @@ export interface LanguagesResponse {
   languages: string[]
 }
 
-// "reading"|"dictation"|"quiz"|"phrases" -> word_ids reinforced in that tab
-// for the current chapter/topic — see REINFORCEMENT_TABS in
+// A user's own "users" sheet data (see backend/apps-script/Code.gs's schema
+// comment) — one shape covering every field a caller might need about them,
+// rather than one endpoint per field.
+export interface UserResponse {
+  exists: boolean
+  language_pairs: string[]
+}
+
+// word_ids carried over from earlier topics for spaced review, in
+// curriculum order — see reinforcement_word_ids in
 // backend/app/application/services/reinforcement_words.py.
-export type ReinforcementWords = Record<string, string[]>
+export type ReinforcementWords = string[]
 
 export interface ProgressActionRequest {
   user: string

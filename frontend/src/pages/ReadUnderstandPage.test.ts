@@ -122,7 +122,7 @@ describe('ReadUnderstandPage', () => {
     }
   })
 
-  it('clicking Finish navigates home and requests "Listen and identify" expanded', async () => {
+  it('clicking Finish navigates home and requests "Listen and Identify" expanded', async () => {
     const { wrapper, router } = await mountPage()
     try {
       await wrapper.get('.flow-next-btn').trigger('click')
@@ -130,7 +130,7 @@ describe('ReadUnderstandPage', () => {
 
       expect(router.currentRoute.value.path).toBe('/home')
       // 10 words = 2 numbered parts (indices 0-1); "Read and Understand" is
-      // index 2, so "Listen and identify" right after it is index 3.
+      // index 2, so "Listen and Identify" right after it is index 3.
       expect(consumeHomeExpansion()).toEqual({ topicId: 't1', partIndex: 3 })
     } finally {
       wrapper.unmount()
