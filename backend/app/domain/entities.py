@@ -15,6 +15,11 @@ class Word:
     filename: str
     sentence: str
     cue: str
+    # Romanization shown under the word on the teaching flow's first page —
+    # only Chinese words have one so far; every other language's rows simply
+    # have no "pinyin" key in their <target>_words.json, which resolves to
+    # "" here rather than a language-specific default.
+    pinyin: str = ""
     gender_id: str = "not_apply"
     # Which Korean particle category ("topic", "subject", "object",
     # "addition", ...) this word is, for the frontend's dedicated

@@ -11,6 +11,7 @@ class UserWordDTO(BaseModel):
     filename: str
     sentence: str
     cue: str
+    pinyin: str
     gender_id: str
     particle_type: str
     confident: bool
@@ -25,6 +26,7 @@ class UserWordDTO(BaseModel):
             filename=word.filename,
             sentence=word.sentence,
             cue=word.cue,
+            pinyin=word.pinyin,
             gender_id=word.gender_id,
             particle_type=word.particle_type,
             confident=record.confident,

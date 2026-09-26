@@ -15,6 +15,7 @@ const FLAGS: Record<string, FlagInfo> = {
   en: { code: 'en', file: 'england.webp', country: 'England' },
   es: { code: 'es', file: 'spain.jpg', country: 'España' },
   ko: { code: 'ko', file: 'korea.png', country: '한국' },
+  zh: { code: 'zh', file: 'china.jpg', country: '中国' },
   fr: { code: 'fr', file: 'france.png', country: 'France' },
   de: { code: 'de', file: 'germany.jpg', country: 'Deutschland' },
   ru: { code: 'ru', file: 'russia.webp', country: 'Россия' },

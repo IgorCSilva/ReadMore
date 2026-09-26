@@ -1,0 +1,34 @@
+{
+  "chapter_1": {
+    "topic_1": {
+      "pt": {
+        "oi": "你好",
+        "tchau": "再见",
+        "dia": "早上",
+        "bom dia": "早上好",
+        "tarde": "下午",
+        "boa tarde": "下午好",
+        "noite": "晚上",
+        "boa noite": "晚上好",
+        "bom": "好",
+        "boa": "好",
+        "bem": "不错",
+        "como": "怎么样",
+        "você": "你",
+        "eu": "我",
+        "meu": "我的",
+        "nome": "名字",
+        "chamo": "叫",
+        "é": "是",
+        "onde": "哪里",
+        "pessoa": "人",
+        "e": "和",
+        "sim": "对",
+        "não": "不",
+        "obrigado": "谢谢",
+        "obrigada": "谢谢",
+        "de nada": "不客气"
+      }
+    }
+  }
+}

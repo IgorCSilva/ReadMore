@@ -1,0 +1,184 @@
+[
+  {
+    "word_id": "zh-wd-0001",
+    "root_word_id": "wd-0001",
+    "word": "你好",
+    "pinyin": "nǐ hǎo",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0002",
+    "root_word_id": "wd-0003",
+    "word": "再见",
+    "pinyin": "zàijiàn",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0003",
+    "root_word_id": "wd-0076",
+    "word": "早上",
+    "pinyin": "zǎoshang",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0004",
+    "root_word_id": "wd-0362",
+    "word": "早上好",
+    "pinyin": "zǎoshang hǎo",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0005",
+    "root_word_id": "wd-0077",
+    "word": "下午",
+    "pinyin": "xiàwǔ",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0006",
+    "root_word_id": "wd-0363",
+    "word": "下午好",
+    "pinyin": "xiàwǔ hǎo",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0007",
+    "root_word_id": "wd-0079",
+    "word": "晚上",
+    "pinyin": "wǎnshang",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0008",
+    "root_word_id": "wd-0364",
+    "word": "晚上好",
+    "pinyin": "wǎnshang hǎo",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0009",
+    "root_word_id": "wd-0059",
+    "word": "好",
+    "pinyin": "hǎo",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0010",
+    "root_word_id": "wd-0071",
+    "word": "不错",
+    "pinyin": "búcuò",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0011",
+    "root_word_id": "wd-0381",
+    "word": "吗",
+    "pinyin": "ma",
+    "particle_type": "question"
+  },
+  {
+    "word_id": "zh-wd-0012",
+    "root_word_id": "wd-0382",
+    "word": "呢",
+    "pinyin": "ne",
+    "particle_type": "question"
+  },
+  {
+    "word_id": "zh-wd-0013",
+    "root_word_id": "wd-0051",
+    "word": "怎么样",
+    "pinyin": "zěnmeyàng",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0014",
+    "root_word_id": "wd-0013",
+    "word": "你",
+    "pinyin": "nǐ",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0015",
+    "root_word_id": "wd-0007",
+    "word": "我",
+    "pinyin": "wǒ",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0016",
+    "root_word_id": "wd-0011",
+    "word": "我的",
+    "pinyin": "wǒ de",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0017",
+    "root_word_id": "wd-0009",
+    "word": "名字",
+    "pinyin": "míngzi",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0018",
+    "root_word_id": "wd-0265",
+    "word": "叫",
+    "pinyin": "jiào",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0019",
+    "root_word_id": "wd-0010",
+    "word": "是",
+    "pinyin": "shì",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0020",
+    "root_word_id": "wd-0049",
+    "word": "哪里",
+    "pinyin": "nǎlǐ",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0021",
+    "root_word_id": "wd-0383",
+    "word": "人",
+    "pinyin": "rén",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0022",
+    "root_word_id": "wd-0063",
+    "word": "和",
+    "pinyin": "hé",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0023",
+    "root_word_id": "wd-0023",
+    "word": "对",
+    "pinyin": "duì",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0024",
+    "root_word_id": "wd-0024",
+    "word": "不",
+    "pinyin": "bù",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0025",
+    "root_word_id": "wd-0005",
+    "word": "谢谢",
+    "pinyin": "xièxie",
+    "particle_type": "not_apply"
+  },
+  {
+    "word_id": "zh-wd-0026",
+    "root_word_id": "wd-0072",
+    "word": "不客气",
+    "pinyin": "bú kèqi",
+    "particle_type": "not_apply"
+  }
+]

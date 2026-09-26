@@ -15,7 +15,7 @@ let cached: string | null = null
 // data-lang unset.
 function applyAccent(pair: string): void {
   const [, target] = pair.split('-')
-  const knownAccent = target === 'es' || target === 'ko' ? target : 'en'
+  const knownAccent = target === 'es' || target === 'ko' || target === 'zh' ? target : 'en'
   document.documentElement.setAttribute('data-lang', knownAccent)
 }
 

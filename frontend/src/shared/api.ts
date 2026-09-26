@@ -84,8 +84,19 @@ export function getReinforcementWords(
   return fetchJsonWithRetry<ReinforcementWords>(url)
 }
 
+// Google Translate's TTS endpoint (proxied by backend /tts, see
+// google_translate_tts_client.py) forwards `lang` straight through as its
+// `tl` param. Every other supported target's bare code already works there
+// as-is, but Chinese has no bare "zh" — Google only recognizes the
+// region-qualified "zh-CN"/"zh-TW" — so it needs a lookup instead of a
+// straight passthrough.
+const TTS_LANG_OVERRIDES: Record<string, string> = {
+  zh: 'zh-CN',
+}
+
 export function ttsUrl(text: string, lang: string): string {
-  return `/tts?text=${encodeURIComponent(text)}&lang=${encodeURIComponent(lang)}`
+  const ttsLang = TTS_LANG_OVERRIDES[lang] ?? lang
+  return `/tts?text=${encodeURIComponent(text)}&lang=${encodeURIComponent(ttsLang)}`
 }
 
 // Thrown when fetch() itself rejects — offline, DNS failure, server
