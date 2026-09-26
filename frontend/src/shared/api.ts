@@ -4,6 +4,7 @@ import type {
   LanguagesResponse,
   ProgressActionRequest,
   ReinforcementWords,
+  UserResponse,
   UserWordsResponse,
   WordsResponse,
 } from './types'
@@ -60,6 +61,11 @@ export function getUserWords(
 export function getChapters(user: string, lang: string): Promise<ChaptersResponse> {
   const url = `/chapters?user=${encodeURIComponent(user)}&lang=${encodeURIComponent(lang)}`
   return fetchJsonWithRetry<ChaptersResponse>(url)
+}
+
+export function getUser(email: string): Promise<UserResponse> {
+  const url = `/user?email=${encodeURIComponent(email)}`
+  return fetchJsonWithRetry<UserResponse>(url)
 }
 
 export function getWords(lang: string, sentenceLang?: string, cueLang?: string): Promise<WordsResponse> {

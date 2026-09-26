@@ -89,11 +89,21 @@ applyStoredAccent()
     --accent-strong: var(--accent-ko-strong);
   }
   * { box-sizing: border-box; }
+  html {
+    height: 100%;
+  }
   html, body {
-    margin: 0; padding: 0; height: 100%;
+    margin: 0; padding: 0;
     background: var(--bg); color: var(--text);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   }
+  /* min-height, not height: a fixed height on a box taller than its content
+     leaves that content overflowing past the box's own edge — including its
+     padding-bottom, which is what reserves clearance above the fixed bottom
+     bar. That silently clipped the last topic cards on Home once the list
+     (or an expanded accordion) grew past one viewport tall. min-height still
+     guarantees at least a full viewport, but grows with taller content
+     instead of leaking it. */
   body {
     display: flex; flex-direction: column; align-items: center;
     gap: 24px;

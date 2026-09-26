@@ -14,6 +14,7 @@ const WORD = {
   sentence: 'Hi!',
   cue: 'a greeting',
   gender_id: 'not_apply',
+  particle_type: 'not_apply',
 }
 
 describe('Exercises', () => {

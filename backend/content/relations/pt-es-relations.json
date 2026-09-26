@@ -13,6 +13,9 @@
         "dia": "día",
         "tarde": "tarde",
         "noite": "noche",
+        "bom dia": "buenos días",
+        "boa tarde": "buenas tardes",
+        "boa noite": "buenas noches",
         "tudo": "todo",
         "bem": "bien",
         "como": "cómo",
@@ -198,6 +201,28 @@
         "à tarde": "por la tarde",
         "à noite": "por la noche",
         "antes": "antes"
+      }
+    },
+    "topic_2": {
+      "pt": {
+        "então": "entonces",
+        "de repente": "de repente",
+        "mas": "pero",
+        "porque": "porque",
+        "quando": "cuando",
+        "um dia": "un día",
+        "encontrar": "encontrar",
+        "ver": "ver",
+        "ouvir": "oír",
+        "abrir": "abrir",
+        "fechar": "cerrar",
+        "entrar": "entrar",
+        "acontecer": "suceder",
+        "aparecer": "aparecer",
+        "desaparecer": "desaparecer",
+        "surpresa": "sorpresa",
+        "presente": "regalo",
+        "ninguém": "nadie"
       }
     }
   },

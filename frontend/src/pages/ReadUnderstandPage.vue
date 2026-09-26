@@ -49,7 +49,7 @@ function exit() {
 }
 
 // "Read and Understand" has no numbered-part slot of its own — the next
-// entry in Home's accordion is always "Listen and identify", the fixed
+// entry in Home's accordion is always "Listen and Identify", the fixed
 // action part right after the `count` numbered ones (see topicParts/
 // HomePage's partsForTopic).
 function finish() {
@@ -75,7 +75,10 @@ async function load() {
     if (!foundTopic) return
 
     const panel = document.getElementById('topic-sentences-panel')
-    if (panel) panel.style.display = 'flex'
+    if (panel) {
+      panel.style.display = 'flex'
+      panel.style.padding = '73px 0'
+    }
     sentencesRef.value?.show(topic.value, LANG)
 
     // Restore only after the sentence list has actually rendered — otherwise

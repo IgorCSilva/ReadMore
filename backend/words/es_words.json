@@ -1042,5 +1042,131 @@
     "root_word_id": "wd-0354",
     "word": "antes",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0175",
+    "root_word_id": "wd-0362",
+    "word": "buenos días",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0176",
+    "root_word_id": "wd-0363",
+    "word": "buenas tardes",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0177",
+    "root_word_id": "wd-0364",
+    "word": "buenas noches",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0178",
+    "root_word_id": "wd-0365",
+    "word": "entonces",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0179",
+    "root_word_id": "wd-0366",
+    "word": "de repente",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0180",
+    "root_word_id": "wd-0367",
+    "word": "pero",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0181",
+    "root_word_id": "wd-0368",
+    "word": "porque",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0182",
+    "root_word_id": "wd-0217",
+    "word": "cuando",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0183",
+    "root_word_id": "wd-0369",
+    "word": "un día",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0184",
+    "root_word_id": "wd-0370",
+    "word": "encontrar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0185",
+    "root_word_id": "wd-0074",
+    "word": "ver",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0186",
+    "root_word_id": "wd-0371",
+    "word": "oír",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0187",
+    "root_word_id": "wd-0372",
+    "word": "abrir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0188",
+    "root_word_id": "wd-0373",
+    "word": "cerrar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0189",
+    "root_word_id": "wd-0374",
+    "word": "entrar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0190",
+    "root_word_id": "wd-0375",
+    "word": "suceder",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0191",
+    "root_word_id": "wd-0376",
+    "word": "aparecer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0192",
+    "root_word_id": "wd-0377",
+    "word": "desaparecer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0193",
+    "root_word_id": "wd-0378",
+    "word": "sorpresa",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0194",
+    "root_word_id": "wd-0379",
+    "word": "regalo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0195",
+    "root_word_id": "wd-0380",
+    "word": "nadie",
+    "gender_id": "not_apply"
   }
 ]

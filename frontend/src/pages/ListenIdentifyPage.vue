@@ -48,7 +48,7 @@ const isLoading = ref(true)
 // so there's no need to track topicId changing underneath it.
 const positionKey = `listen-identify:${route.params.topicId}`
 
-// "Listen and identify" is the last entry in a topic's own accordion — unlike
+// "Listen and Identify" is the last entry in a topic's own accordion — unlike
 // finishing a numbered Part or "Read and Understand", there's no next
 // section within THIS topic to hand off to. Resolved once in load(), from
 // the same enabled-topics list Home itself renders, so it never points at a

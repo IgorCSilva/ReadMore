@@ -87,6 +87,18 @@ class ProgressRecord:
 
 
 @dataclass
+class UserRecord:
+    """One user's own data from the "users" sheet: whether they're
+    registered at all, and which language pairs are active for them (per
+    row in that sheet, active even when its topic_ids is empty — see
+    Code.gs's schema comment). Grows more fields here, not more sheet
+    actions/routes, as later features need more of a user's own data."""
+
+    exists: bool
+    language_pairs: frozenset[str]
+
+
+@dataclass
 class Correction:
     """A user-submitted current->correction report, scoped to the chapter
     and topic it was made in. current/correction each hold one or more
