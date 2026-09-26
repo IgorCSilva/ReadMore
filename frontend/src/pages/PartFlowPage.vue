@@ -215,15 +215,11 @@ function next() {
 
 const isLastStep = computed(() => sequence.value.length > 0 && stepIndex.value === sequence.value.length - 1)
 
-// Page 3 (type the word) is the only step that gates the bottom bar: the
-// Check button is the intended way to confirm an answer, but the bar's own
-// Next must stay locked until that's actually done, not offer a silent
-// skip-without-typing shortcut.
-const isBottomBarDisabled = computed(() => {
-  const step = currentStep.value
-  if (step?.kind === 'word' && step.pageNumber === 3) return writeState.value !== 'success'
-  return false
-})
+// The bottom bar's Next is never gated — page 3 (type the word) used to lock
+// it until the Check button confirmed a correct answer, but that blocked
+// moving on from a word the learner was stuck on. Check still records
+// right/wrong, it just no longer holds the flow hostage.
+const isBottomBarDisabled = computed(() => false)
 
 // The last step's bottom-bar button doesn't advance within the flow (there's
 // nothing after it) — it ends the part and returns to Home, with the next
@@ -633,8 +629,9 @@ async function load() {
 
 // body's global padding (App.vue) exists for the normal centered-card pages
 // — this is a full-bleed, fixed-top/bottom-bar page instead, so that padding
-// only pushes .flow-page's own min-height:100vh past the viewport and forces
-// a scrollbar with blank space at the bottom. Suppressed only while mounted.
+// would add extra height on top of .flow-page's own viewport-height layout
+// and force a scrollbar with blank space at the bottom. Suppressed only
+// while mounted.
 onMounted(() => {
   document.body.classList.add('part-flow-active')
   load()
@@ -713,13 +710,23 @@ body.part-flow-active {
 .flow-page {
   width: 100%;
   max-width: 640px;
-  padding-top: 56px;
-  padding-bottom: 56px;
+  margin-top: 56px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  /* A bounded height (not min-height:100vh) so this box's size never depends
+     on sub-pixel rounding of vh vs. this page's own fixed-position top/bottom
+     bars — that mismatch was exactly what made the body gain an unwanted
+     scrollbar in Chrome (Firefox rounds it away) even though the visible
+     content always fits between the two bars. Content taller than this box
+     (a rare tall image on a very short/landscape viewport) now scrolls
+     *inside* .flow-page itself, staying clear of the fixed bars, instead of
+     scrolling the whole body — which previously let content drift half-
+     hidden underneath the fixed top/bottom bars, since position:fixed
+     elements don't move with a body-level scroll. */
+  height: calc(100vh - 112px);
+  overflow-y: auto;
   gap: 20px;
 }
 

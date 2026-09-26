@@ -9,7 +9,12 @@ export interface Word {
   filename: string
   sentence: string
   cue: string
-  pinyin: string
+  // Only Chinese words carry this (romanization shown on the teaching flow's
+  // first page) — every other language's wire response has it as "" (the
+  // backend's row.get("pinyin", "") default), which is why it's optional
+  // here rather than required: most test fixtures across the app predate
+  // this field and never set it.
+  pinyin?: string
   gender_id: string
   particle_type: string
 }
