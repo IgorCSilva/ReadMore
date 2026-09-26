@@ -656,6 +656,87 @@
           "es-wd-0014",
           "es-wd-0023"
         ]
+      },
+      {
+        "id": "es-sent-0493",
+        "sentence": "¡Buenos días! ¿Cómo estás?",
+        "word_ids": [
+          "es-wd-0175",
+          "es-wd-0012",
+          "es-wd-0035"
+        ]
+      },
+      {
+        "id": "es-sent-0494",
+        "sentence": "Buenos días, yo estoy muy bien.",
+        "word_ids": [
+          "es-wd-0175",
+          "es-wd-0018",
+          "es-wd-0014",
+          "es-wd-0011"
+        ]
+      },
+      {
+        "id": "es-sent-0495",
+        "sentence": "Todo el día empieza con un buenos días.",
+        "word_ids": [
+          "es-wd-0010",
+          "es-wd-0007",
+          "es-wd-0175"
+        ]
+      },
+      {
+        "id": "es-sent-0496",
+        "sentence": "¡Buenas tardes! ¿Cómo estás?",
+        "word_ids": [
+          "es-wd-0176",
+          "es-wd-0012",
+          "es-wd-0035"
+        ]
+      },
+      {
+        "id": "es-sent-0497",
+        "sentence": "Buenas tardes, gracias por todo.",
+        "word_ids": [
+          "es-wd-0176",
+          "es-wd-0031",
+          "es-wd-0010"
+        ]
+      },
+      {
+        "id": "es-sent-0498",
+        "sentence": "Ya es tarde, buenas tardes.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0008",
+          "es-wd-0176"
+        ]
+      },
+      {
+        "id": "es-sent-0499",
+        "sentence": "¡Buenas noches! Hasta mañana.",
+        "word_ids": [
+          "es-wd-0177"
+        ]
+      },
+      {
+        "id": "es-sent-0500",
+        "sentence": "Buenas noches, yo estoy cansado.",
+        "word_ids": [
+          "es-wd-0177",
+          "es-wd-0018",
+          "es-wd-0014"
+        ]
+      },
+      {
+        "id": "es-sent-0501",
+        "sentence": "Es de noche, buenas noches.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0023",
+          "es-wd-0009",
+          "es-wd-0177"
+        ]
       }
     ],
     "topic_2": [
@@ -4361,6 +4442,509 @@
         "word_ids": [
           "es-wd-0174",
           "es-wd-0084"
+        ]
+      }
+    ],
+    "topic_2": [
+      {
+        "id": "es-sent-0502",
+        "sentence": "No tenía hambre, entonces no comí nada.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0178",
+          "es-wd-0036",
+          "es-wd-0126"
+        ]
+      },
+      {
+        "id": "es-sent-0503",
+        "sentence": "Ella llegó tarde, entonces se disculpó.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0008",
+          "es-wd-0178",
+          "es-wd-0021"
+        ]
+      },
+      {
+        "id": "es-sent-0504",
+        "sentence": "El cielo estaba oscuro, entonces empezó a llover.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0178"
+        ]
+      },
+      {
+        "id": "es-sent-0505",
+        "sentence": "De repente, alguien tocó la puerta.",
+        "word_ids": [
+          "es-wd-0179",
+          "es-wd-0058",
+          "es-wd-0068"
+        ]
+      },
+      {
+        "id": "es-sent-0506",
+        "sentence": "Estábamos tranquilos cuando, de repente, sonó el teléfono.",
+        "word_ids": [
+          "es-wd-0182",
+          "es-wd-0179",
+          "es-wd-0057"
+        ]
+      },
+      {
+        "id": "es-sent-0507",
+        "sentence": "De repente, el perro empezó a ladrar.",
+        "word_ids": [
+          "es-wd-0179",
+          "es-wd-0057"
+        ]
+      },
+      {
+        "id": "es-sent-0508",
+        "sentence": "Quiero salir, pero está lloviendo.",
+        "word_ids": [
+          "es-wd-0125",
+          "es-wd-0094",
+          "es-wd-0180"
+        ]
+      },
+      {
+        "id": "es-sent-0509",
+        "sentence": "Ella es simpática, pero muy tímida.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0017",
+          "es-wd-0180"
+        ]
+      },
+      {
+        "id": "es-sent-0510",
+        "sentence": "Tengo hambre, pero no hay comida en casa.",
+        "word_ids": [
+          "es-wd-0180",
+          "es-wd-0036",
+          "es-wd-0081",
+          "es-wd-0109",
+          "es-wd-0084",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0511",
+        "sentence": "No fui a la fiesta porque estaba enfermo.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0058",
+          "es-wd-0181"
+        ]
+      },
+      {
+        "id": "es-sent-0512",
+        "sentence": "Ella estudia mucho porque quiere aprender español.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0127",
+          "es-wd-0181"
+        ]
+      },
+      {
+        "id": "es-sent-0513",
+        "sentence": "Cerré la ventana porque hacía frío.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0069",
+          "es-wd-0181"
+        ]
+      },
+      {
+        "id": "es-sent-0514",
+        "sentence": "Cuando llueve, me quedo en casa.",
+        "word_ids": [
+          "es-wd-0182",
+          "es-wd-0019",
+          "es-wd-0084",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0515",
+        "sentence": "Ella sonríe cuando ve a sus amigos.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0182"
+        ]
+      },
+      {
+        "id": "es-sent-0516",
+        "sentence": "Cuando era niño, vivía en el campo.",
+        "word_ids": [
+          "es-wd-0182",
+          "es-wd-0083"
+        ]
+      },
+      {
+        "id": "es-sent-0517",
+        "sentence": "Un día, encontré una carta antigua en el jardín.",
+        "word_ids": [
+          "es-wd-0183",
+          "es-wd-0077",
+          "es-wd-0083"
+        ]
+      },
+      {
+        "id": "es-sent-0518",
+        "sentence": "Un día, quiero viajar por todo el mundo.",
+        "word_ids": [
+          "es-wd-0183",
+          "es-wd-0125",
+          "es-wd-0010",
+          "es-wd-0057"
+        ]
+      },
+      {
+        "id": "es-sent-0519",
+        "sentence": "Un día normal, ella se despierta temprano y trabaja.",
+        "word_ids": [
+          "es-wd-0183",
+          "es-wd-0160",
+          "es-wd-0021",
+          "es-wd-0033",
+          "es-wd-0167"
+        ]
+      },
+      {
+        "id": "es-sent-0520",
+        "sentence": "No puedo encontrar mis llaves.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0184"
+        ]
+      },
+      {
+        "id": "es-sent-0521",
+        "sentence": "Ella espera encontrar trabajo pronto.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0184"
+        ]
+      },
+      {
+        "id": "es-sent-0522",
+        "sentence": "Fue difícil encontrar la calle correcta.",
+        "word_ids": [
+          "es-wd-0184",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0523",
+        "sentence": "Me gusta ver películas los fines de semana.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0185",
+          "es-wd-0023",
+          "es-wd-0158"
+        ]
+      },
+      {
+        "id": "es-sent-0524",
+        "sentence": "Desde mi ventana puedo ver el mar.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0069",
+          "es-wd-0185",
+          "es-wd-0057"
+        ]
+      },
+      {
+        "id": "es-sent-0525",
+        "sentence": "Quiero ver a mis abuelos este fin de semana.",
+        "word_ids": [
+          "es-wd-0125",
+          "es-wd-0185",
+          "es-wd-0023",
+          "es-wd-0158"
+        ]
+      },
+      {
+        "id": "es-sent-0526",
+        "sentence": "No puedo oír bien desde aquí.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0186",
+          "es-wd-0011",
+          "es-wd-0078"
+        ]
+      },
+      {
+        "id": "es-sent-0527",
+        "sentence": "Es agradable oír música por la mañana.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0186",
+          "es-wd-0171"
+        ]
+      },
+      {
+        "id": "es-sent-0528",
+        "sentence": "Desde la cocina se puede oír la televisión.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0066",
+          "es-wd-0021",
+          "es-wd-0186",
+          "es-wd-0058",
+          "es-wd-0075"
+        ]
+      },
+      {
+        "id": "es-sent-0529",
+        "sentence": "¿Puedes abrir la ventana, por favor?",
+        "word_ids": [
+          "es-wd-0187",
+          "es-wd-0058",
+          "es-wd-0069"
+        ]
+      },
+      {
+        "id": "es-sent-0530",
+        "sentence": "Ella olvidó abrir la tienda hoy.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0187",
+          "es-wd-0058",
+          "es-wd-0146"
+        ]
+      },
+      {
+        "id": "es-sent-0531",
+        "sentence": "Es difícil abrir este frasco.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0187"
+        ]
+      },
+      {
+        "id": "es-sent-0532",
+        "sentence": "Voy a cerrar la puerta con llave.",
+        "word_ids": [
+          "es-wd-0188",
+          "es-wd-0058",
+          "es-wd-0068",
+          "es-wd-0061"
+        ]
+      },
+      {
+        "id": "es-sent-0533",
+        "sentence": "La tienda va a cerrar a las nueve.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0164",
+          "es-wd-0188",
+          "es-wd-0141"
+        ]
+      },
+      {
+        "id": "es-sent-0534",
+        "sentence": "Necesito cerrar la maleta antes de viajar.",
+        "word_ids": [
+          "es-wd-0188",
+          "es-wd-0058",
+          "es-wd-0174",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0535",
+        "sentence": "No puedes entrar sin permiso.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0189",
+          "es-wd-0062"
+        ]
+      },
+      {
+        "id": "es-sent-0536",
+        "sentence": "El perro quiere entrar a la casa.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0189",
+          "es-wd-0058",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0537",
+        "sentence": "Ella dudó antes de entrar a la sala.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0174",
+          "es-wd-0023",
+          "es-wd-0189",
+          "es-wd-0058",
+          "es-wd-0065"
+        ]
+      },
+      {
+        "id": "es-sent-0538",
+        "sentence": "Nadie sabe qué va a suceder mañana.",
+        "word_ids": [
+          "es-wd-0195",
+          "es-wd-0164",
+          "es-wd-0190",
+          "es-wd-0147"
+        ]
+      },
+      {
+        "id": "es-sent-0539",
+        "sentence": "Algo extraño puede suceder esta noche.",
+        "word_ids": [
+          "es-wd-0190",
+          "es-wd-0009"
+        ]
+      },
+      {
+        "id": "es-sent-0540",
+        "sentence": "Eso puede suceder en cualquier familia.",
+        "word_ids": [
+          "es-wd-0086",
+          "es-wd-0190",
+          "es-wd-0084",
+          "es-wd-0037"
+        ]
+      },
+      {
+        "id": "es-sent-0541",
+        "sentence": "De repente, empezó a aparecer humo en la cocina.",
+        "word_ids": [
+          "es-wd-0179",
+          "es-wd-0191",
+          "es-wd-0082",
+          "es-wd-0066"
+        ]
+      },
+      {
+        "id": "es-sent-0542",
+        "sentence": "Su nombre va a aparecer en la lista.",
+        "word_ids": [
+          "es-wd-0052",
+          "es-wd-0015",
+          "es-wd-0164",
+          "es-wd-0191",
+          "es-wd-0082"
+        ]
+      },
+      {
+        "id": "es-sent-0543",
+        "sentence": "Un gato suele aparecer por las noches en el jardín.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0191",
+          "es-wd-0083"
+        ]
+      },
+      {
+        "id": "es-sent-0544",
+        "sentence": "Mis llaves suelen desaparecer en casa.",
+        "word_ids": [
+          "es-wd-0192",
+          "es-wd-0084",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0545",
+        "sentence": "El sol empieza a desaparecer detrás de las montañas.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0192",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0546",
+        "sentence": "El dolor va a desaparecer pronto.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0164",
+          "es-wd-0192"
+        ]
+      },
+      {
+        "id": "es-sent-0547",
+        "sentence": "¡Qué sorpresa verte aquí!",
+        "word_ids": [
+          "es-wd-0193",
+          "es-wd-0078"
+        ]
+      },
+      {
+        "id": "es-sent-0548",
+        "sentence": "Le prepararon una sorpresa para su cumpleaños.",
+        "word_ids": [
+          "es-wd-0077",
+          "es-wd-0193",
+          "es-wd-0052"
+        ]
+      },
+      {
+        "id": "es-sent-0549",
+        "sentence": "La sorpresa fue muy agradable.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0193"
+        ]
+      },
+      {
+        "id": "es-sent-0550",
+        "sentence": "Le compré un regalo especial.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0194"
+        ]
+      },
+      {
+        "id": "es-sent-0551",
+        "sentence": "El regalo estaba envuelto en papel azul.",
+        "word_ids": [
+          "es-wd-0057",
+          "es-wd-0194",
+          "es-wd-0084"
+        ]
+      },
+      {
+        "id": "es-sent-0552",
+        "sentence": "¿Qué regalo prefieres para tu cumpleaños?",
+        "word_ids": [
+          "es-wd-0194"
+        ]
+      },
+      {
+        "id": "es-sent-0553",
+        "sentence": "Nadie respondió a la pregunta.",
+        "word_ids": [
+          "es-wd-0195",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0554",
+        "sentence": "No hay nadie en la casa.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0081",
+          "es-wd-0195",
+          "es-wd-0082",
+          "es-wd-0063"
+        ]
+      },
+      {
+        "id": "es-sent-0555",
+        "sentence": "Nadie sabe la respuesta correcta.",
+        "word_ids": [
+          "es-wd-0195",
+          "es-wd-0058"
         ]
       }
     ]

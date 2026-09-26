@@ -38,7 +38,10 @@
             "es-wd-0033",
             "es-wd-0034",
             "es-wd-0035",
-            "es-wd-0036"
+            "es-wd-0036",
+            "es-wd-0175",
+            "es-wd-0176",
+            "es-wd-0177"
           ],
           "texts": [],
           "sentences": [
@@ -116,15 +119,15 @@
             },
             {
               "sentence_number": 19,
-              "content": "Ficamos acordados quase toda a **noche**."
+              "content": "Ficamos acordados quase toda a **noche**, até o último **buenas noches**."
             },
             {
               "sentence_number": 20,
-              "content": "Só disse **hola** e sorriu."
+              "content": "Ela disse **hola** e um animado **buenos días** ao entrar."
             },
             {
               "sentence_number": 21,
-              "content": "Combinamos de nos ver **tarde**."
+              "content": "Combinamos de nos ver à **tarde**, com um **buenas tardes** na chegada."
             },
             {
               "sentence_number": 22,
@@ -156,7 +159,7 @@
             },
             {
               "sentence_number": 29,
-              "content": "Ele trabalha durante a **noche**."
+              "content": "Ele trabalha durante a **noche** e sempre se despede com **buenas noches**."
             },
             {
               "sentence_number": 30,
@@ -172,7 +175,7 @@
             },
             {
               "sentence_number": 33,
-              "content": "Ela sorriu e sussurrou **gracias**."
+              "content": "Ela sorriu e sussurrou **gracias** logo após o **buenos días**."
             },
             {
               "sentence_number": 34,
@@ -220,7 +223,7 @@
             },
             {
               "sentence_number": 45,
-              "content": "Ela disse que **tú** parecia cansado."
+              "content": "Ela disse que **tú** já tinhas dado um **buenos días** a todos."
             },
             {
               "sentence_number": 46,
@@ -252,7 +255,7 @@
             },
             {
               "sentence_number": 53,
-              "content": "Ela cuidou de **todo** durante a viagem."
+              "content": "Ela cuidou de **todo** e ainda deu um **buenas tardes** simpático."
             },
             {
               "sentence_number": 54,
@@ -272,11 +275,11 @@
             },
             {
               "sentence_number": 58,
-              "content": "Agradeci com um **gracias** sincero."
+              "content": "Agradeci com um **gracias** logo depois do **buenas tardes**."
             },
             {
               "sentence_number": 59,
-              "content": "Um **no** encerrou a discussão."
+              "content": "Um **no** educado precedeu o **buenas noches** de despedida."
             },
             {
               "sentence_number": 60,
@@ -292,11 +295,11 @@
             },
             {
               "sentence_number": 63,
-              "content": "Contei que **tú** também viria à festa."
+              "content": "Contei que **tú** também disseste **buenas tardes** na festa."
             },
             {
               "sentence_number": 64,
-              "content": "Foi um **día** cheio de novidades."
+              "content": "O **día** começou com um alegre **buenos días** na porta."
             },
             {
               "sentence_number": 65,
@@ -316,7 +319,7 @@
             },
             {
               "sentence_number": 69,
-              "content": "Achei que ficou tudo **bien** no fim."
+              "content": "Achei que ficou tudo **bien**, e terminamos com um **buenas noches**."
             },
             {
               "sentence_number": 70,
@@ -356,7 +359,7 @@
             },
             {
               "sentence_number": 79,
-              "content": "Fizemos **todo** com calma."
+              "content": "Fizemos **todo** com calma, depois de um simples **buenos días**."
             },
             {
               "sentence_number": 80,
@@ -384,7 +387,7 @@
             },
             {
               "sentence_number": 86,
-              "content": "Ela confirmou que **es** assim mesmo."
+              "content": "Ela confirmou que **es** hora do **buenas tardes** no escritório."
             },
             {
               "sentence_number": 87,
@@ -392,7 +395,7 @@
             },
             {
               "sentence_number": 88,
-              "content": "Um simples **gracias** já bastava."
+              "content": "Um simples **gracias** e um **buenas noches** já bastavam."
             },
             {
               "sentence_number": 89,
@@ -3066,6 +3069,437 @@
             {
               "sentence_number": 100,
               "content": "**Ellos** trabalham juntos todo **día**, cada **uno** **en** **su** área."
+            }
+          ],
+          "exercises": []
+        },
+        {
+          "topic_id": "top-A0-SS-2",
+          "number": 2,
+          "title": "Uma Surpresa Simples",
+          "description": "Uma pequena narrativa de \"reviravolta\" (2–3 frases), reaproveitando conectores de sequência (entonces, de repente, pero, porque, cuando) para contar uma pequena surpresa. Atenção ao falso cognato: o verbo espanhol \"fechar\" não significa \"fechar\" (uma porta) — ele significa \"datar\" (colocar uma data em algo); o verbo correto para \"fechar\" em espanhol é \"cerrar\". Atividade de desenvolvimento: leitura de uma pequena história com uma reviravolta simples.",
+          "status": "in_development",
+          "word_ids": [
+            "es-wd-0178",
+            "es-wd-0179",
+            "es-wd-0180",
+            "es-wd-0181",
+            "es-wd-0182",
+            "es-wd-0183",
+            "es-wd-0184",
+            "es-wd-0185",
+            "es-wd-0186",
+            "es-wd-0187",
+            "es-wd-0188",
+            "es-wd-0189",
+            "es-wd-0190",
+            "es-wd-0191",
+            "es-wd-0192",
+            "es-wd-0193",
+            "es-wd-0194",
+            "es-wd-0195"
+          ],
+          "texts": [],
+          "sentences": [
+            {
+              "sentence_number": 1,
+              "content": "Pedro vê **la** mancha **desaparecer** aos poucos."
+            },
+            {
+              "sentence_number": 2,
+              "content": "**El** vento consegue **entrar** pela **ventana** aberta."
+            },
+            {
+              "sentence_number": 3,
+              "content": "**La** **sorpresa** perfeita pode **suceder** **cuando** **menos** se espera."
+            },
+            {
+              "sentence_number": 4,
+              "content": "**Nosotros** conseguimos **oír** vozes **en la** **sala** ao lado."
+            },
+            {
+              "sentence_number": 5,
+              "content": "**De repente**, **el** telefone toca **y** **todos** se assustam."
+            },
+            {
+              "sentence_number": 6,
+              "content": "**De repente**, **la** luz se apaga **y** Marina grita."
+            },
+            {
+              "sentence_number": 7,
+              "content": "Pedro sorri **porque** encontrou **una** **buena** notícia."
+            },
+            {
+              "sentence_number": 8,
+              "content": "**Él** hesita **antes** **de** **abrir** **el** embrulho."
+            },
+            {
+              "sentence_number": 9,
+              "content": "Sofia **llega** **en la** **sala** **y**, **entonces**, sente **un** cheiro doce."
+            },
+            {
+              "sentence_number": 10,
+              "content": "**Cuando** **todos** dormem, **la** **casa** fica **en** silêncio."
+            },
+            {
+              "sentence_number": 11,
+              "content": "Ana prepara **una** **sorpresa** para **el** aniversário **de** Pedro."
+            },
+            {
+              "sentence_number": 12,
+              "content": "**Un día**, Ana encontrou **una** carta misteriosa **en la** **puerta**."
+            },
+            {
+              "sentence_number": 13,
+              "content": "Pedro procura este embrulho, **pero** **no** consegue achá-lo."
+            },
+            {
+              "sentence_number": 14,
+              "content": "**Todo** pode **suceder** numa **noche** **de** tempestade."
+            },
+            {
+              "sentence_number": 15,
+              "content": "**Nosotros** paramos para **ver** **el** pôr do sol."
+            },
+            {
+              "sentence_number": 16,
+              "content": "**Nosotros** vamos **encontrar** **una** solução juntos."
+            },
+            {
+              "sentence_number": 17,
+              "content": "Que **sorpresa** **encontrar** **tú** **aquí**!"
+            },
+            {
+              "sentence_number": 18,
+              "content": "**Tú** consegue **oír** **eso** também?"
+            },
+            {
+              "sentence_number": 19,
+              "content": "**La** **familia** **no** esperava que **la** **sorpresa** fosse **aparecer** tão cedo."
+            },
+            {
+              "sentence_number": 20,
+              "content": "**Tú** precisa **ver** **esto** **con** seus próprios olhos."
+            },
+            {
+              "sentence_number": 21,
+              "content": "**Nadie** conseguia **abrir** aquela **puerta** velha."
+            },
+            {
+              "sentence_number": 22,
+              "content": "Marina espera **en la** **sala**, **pero** **la** **hora** **no** passa."
+            },
+            {
+              "sentence_number": 23,
+              "content": "**Cuando** **la** **puerta** se abre, **un** som estranho começa."
+            },
+            {
+              "sentence_number": 24,
+              "content": "**El** **regalo** estava escondido embaixo da **cama**."
+            },
+            {
+              "sentence_number": 25,
+              "content": "**Ella** chora **porque** perdeu **el** embrulho favorito."
+            },
+            {
+              "sentence_number": 26,
+              "content": "Sofia corre até **la** **ventana** para **ver** **la** rua."
+            },
+            {
+              "sentence_number": 27,
+              "content": "**Cuando** **la** **familia** se reúne, **todo** fica **más** alegre."
+            },
+            {
+              "sentence_number": 28,
+              "content": "**La** **sorpresa** deixou **todos** maravilhados."
+            },
+            {
+              "sentence_number": 29,
+              "content": "**De repente**, **un** rosto conhecido pode **aparecer** **en la** festa."
+            },
+            {
+              "sentence_number": 30,
+              "content": "**Ella** prepara este embrulho **y**, **entonces**, guarda **todo** **en** segredo."
+            },
+            {
+              "sentence_number": 31,
+              "content": "**Nadie** sabia sobre **la** festa **sorpresa**."
+            },
+            {
+              "sentence_number": 32,
+              "content": "Vamos **abrir** **la** **ventana** para refrescar **el** **cuarto**."
+            },
+            {
+              "sentence_number": 33,
+              "content": "Ana olha pela **ventana** **y**, **entonces**, nota algo estranho."
+            },
+            {
+              "sentence_number": 34,
+              "content": "Que **regalo** incrível **ustedes** **me** deram!"
+            },
+            {
+              "sentence_number": 35,
+              "content": "Ana escolhe **el** **regalo** perfeito para Pedro."
+            },
+            {
+              "sentence_number": 36,
+              "content": "**La** **familia** **no** entende **cómo** **el** barulho pôde **desaparecer** tão rápido."
+            },
+            {
+              "sentence_number": 37,
+              "content": "Sofia guarda **todo** **porque** **tiene** medo **de** perder."
+            },
+            {
+              "sentence_number": 38,
+              "content": "Sofia consegue **encontrar** **la** resposta sozinha."
+            },
+            {
+              "sentence_number": 39,
+              "content": "**Un día**, **todo** **en la** **casa** mudou **sin** explicação."
+            },
+            {
+              "sentence_number": 40,
+              "content": "**Él** guarda **la** chave **porque** **no** quer perder este embrulho especial."
+            },
+            {
+              "sentence_number": 41,
+              "content": "**Un día**, Pedro abriu **la** **puerta** **y** viu algo incrível."
+            },
+            {
+              "sentence_number": 42,
+              "content": "Pedro **no** consegue **abrir** esta gaveta."
+            },
+            {
+              "sentence_number": 43,
+              "content": "Ana para para **oír** melhor **el** barulho."
+            },
+            {
+              "sentence_number": 44,
+              "content": "Lucas escuta este barulho **y**, **entonces**, corre até **la** **puerta**."
+            },
+            {
+              "sentence_number": 45,
+              "content": "Sofia gosta **de** **oír** música **por la noche**."
+            },
+            {
+              "sentence_number": 46,
+              "content": "Pedro pede licença para **entrar** **en** **casa**."
+            },
+            {
+              "sentence_number": 47,
+              "content": "Ana come **pan** **con** manteiga **por la mañana**."
+            },
+            {
+              "sentence_number": 48,
+              "content": "Vamos **cerrar** os olhos **y** **hacer** **un** pedido."
+            },
+            {
+              "sentence_number": 49,
+              "content": "**Todos** ficam **en** silêncio **cuando** **la** **sorpresa** **es** revelada."
+            },
+            {
+              "sentence_number": 50,
+              "content": "Pedro sente que algo **bueno** pode **suceder** **hoy**."
+            },
+            {
+              "sentence_number": 51,
+              "content": "**De repente**, este som para **y** **la** **casa** fica **en** silêncio."
+            },
+            {
+              "sentence_number": 52,
+              "content": "**De repente**, **el** sorriso dela **va** **desaparecer**."
+            },
+            {
+              "sentence_number": 53,
+              "content": "**Ellos** entram **en la** **casa** **y** veem **una** **sorpresa**."
+            },
+            {
+              "sentence_number": 54,
+              "content": "Sofia quer **abrir** os pacotes rapidamente."
+            },
+            {
+              "sentence_number": 55,
+              "content": "Sofia espera que **la** solução vá **aparecer** logo."
+            },
+            {
+              "sentence_number": 56,
+              "content": "**Su** **abuela** conta **una** história **antes** **de** **dormir**."
+            },
+            {
+              "sentence_number": 57,
+              "content": "Ana esquece **de** **cerrar** **la** **puerta**."
+            },
+            {
+              "sentence_number": 58,
+              "content": "Ana quer **ver** algo dentro da caixa."
+            },
+            {
+              "sentence_number": 59,
+              "content": "**Ella** procura **en** todo lugar, **pero** **no** acha **nada**."
+            },
+            {
+              "sentence_number": 60,
+              "content": "**La** **familia** **no** sabe **cuando** algo pode **suceder**."
+            },
+            {
+              "sentence_number": 61,
+              "content": "**Nadie** imaginava que **el** final seria tão feliz."
+            },
+            {
+              "sentence_number": 62,
+              "content": "**Nadie** ficou **sin** palavras diante daquele **regalo**."
+            },
+            {
+              "sentence_number": 63,
+              "content": "Ana decide **abrir** **la** caixa misteriosa."
+            },
+            {
+              "sentence_number": 64,
+              "content": "**Cuando** Ana **llega** **en** **casa**, **todo** parece diferente."
+            },
+            {
+              "sentence_number": 65,
+              "content": "Pedro corre para **cerrar** **la** **ventana** **antes** da chuva."
+            },
+            {
+              "sentence_number": 66,
+              "content": "Pedro bebe **el** **agua** fresca **antes** **de** **dormir**."
+            },
+            {
+              "sentence_number": 67,
+              "content": "**Nuestra** **familia** sempre janta juntos **por la noche**."
+            },
+            {
+              "sentence_number": 68,
+              "content": "As chaves sempre parecem **desaparecer** **en la** **hora** errada."
+            },
+            {
+              "sentence_number": 69,
+              "content": "**De repente**, **el** céu fica escuro **y** **la** chuva começa."
+            },
+            {
+              "sentence_number": 70,
+              "content": "Pedro fecha os olhos para **oír** **con** atenção."
+            },
+            {
+              "sentence_number": 71,
+              "content": "Pedro tenta **encontrar** **el** gato debaixo da **cama**."
+            },
+            {
+              "sentence_number": 72,
+              "content": "**La** **casa** fica quieta **porque** **todos** estão surpresos."
+            },
+            {
+              "sentence_number": 73,
+              "content": "**La** **familia** **no** esperava tamanha **sorpresa** **hoy**."
+            },
+            {
+              "sentence_number": 74,
+              "content": "**Un día**, **el** gato desapareceu **sin** deixar rastro."
+            },
+            {
+              "sentence_number": 75,
+              "content": "**Tú** bate **antes** **de** **entrar** **en el** **cuarto**?"
+            },
+            {
+              "sentence_number": 76,
+              "content": "**Él** prefere **cerrar** **la** loja **más** cedo **hoy**."
+            },
+            {
+              "sentence_number": 77,
+              "content": "**Él** **llega** **en** **casa** **por la noche**, cansado do trabalho."
+            },
+            {
+              "sentence_number": 78,
+              "content": "**El** gato costuma **desaparecer** durante **la** **noche**."
+            },
+            {
+              "sentence_number": 79,
+              "content": "**Una** luz estranha costuma **aparecer** **en el** céu."
+            },
+            {
+              "sentence_number": 80,
+              "content": "Ana escuta **un** barulho, **pero** **no** vê **nada**."
+            },
+            {
+              "sentence_number": 81,
+              "content": "**De repente**, alguém bate **en la** **puerta**."
+            },
+            {
+              "sentence_number": 82,
+              "content": "Ana quer **encontrar** **la** chave perdida."
+            },
+            {
+              "sentence_number": 83,
+              "content": "Marina imagina coisas que podem **suceder** **después**."
+            },
+            {
+              "sentence_number": 84,
+              "content": "Sofia acha que algo triste pode **suceder** **mañana**."
+            },
+            {
+              "sentence_number": 85,
+              "content": "Pedro guarda esta chave **y**, **entonces**, esconde este embrulho."
+            },
+            {
+              "sentence_number": 86,
+              "content": "**Cuando** **él** **vuelve**, encontra **la** **casa** vazia."
+            },
+            {
+              "sentence_number": 87,
+              "content": "**Ella** mora **con** **su** **familia** numa **casa** pequena."
+            },
+            {
+              "sentence_number": 88,
+              "content": "Pedro embrulha **el** **regalo** **con** **mucho** cuidado."
+            },
+            {
+              "sentence_number": 89,
+              "content": "Lucas guarda **el** segredo, **pero** **el** coração bate forte."
+            },
+            {
+              "sentence_number": 90,
+              "content": "**Un** homem estranho costuma **aparecer** **todas** as noites."
+            },
+            {
+              "sentence_number": 91,
+              "content": "**Nosotros** temos **una** **familia** grande **y** unida."
+            },
+            {
+              "sentence_number": 92,
+              "content": "**Un día**, **la** **familia** recebeu **una** visita especial."
+            },
+            {
+              "sentence_number": 93,
+              "content": "Sofia **no** esperava ganhar **un** **regalo** tão especial."
+            },
+            {
+              "sentence_number": 94,
+              "content": "**Nadie** respondeu **cuando** Pedro bateu **en la** **puerta**."
+            },
+            {
+              "sentence_number": 95,
+              "content": "**La** **familia** **es** **todo** para **nosotros**."
+            },
+            {
+              "sentence_number": 96,
+              "content": "Pedro para **ver** **el** gato subir **en la** árvore."
+            },
+            {
+              "sentence_number": 97,
+              "content": "Ana hesita **antes** **de** **entrar** **en la** **sala** escura."
+            },
+            {
+              "sentence_number": 98,
+              "content": "**La** **familia** **no** percebe se **el** gato consegue **entrar**."
+            },
+            {
+              "sentence_number": 99,
+              "content": "Sofia pede para **yo** **cerrar** **la** cortina."
+            },
+            {
+              "sentence_number": 100,
+              "content": "**Él** precisa **encontrar** **la** saída rápido."
             }
           ],
           "exercises": []
