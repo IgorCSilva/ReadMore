@@ -9,6 +9,10 @@
       <div class="home-spinner"></div>
     </div>
 
+    <p class="home-empty" v-else-if="chapters.length === 0">
+      Nothing enabled for your account yet — check back soon.
+    </p>
+
     <div class="chapter-group" v-for="chapter in chapters" :key="chapter.chapter_id">
       <div class="chapter-heading">{{ chapter.number }}. {{ chapter.title }}</div>
 
@@ -47,12 +51,12 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { getChapters, getReinforcementWords, getWords } from '../shared/api'
+import { getChapters, getReinforcementWords, getUser, getWords } from '../shared/api'
 import { cacheKey, writeCache } from '../shared/cache'
 import { ensureUserEmail, getCurrentUser, logoutUser } from '../shared/currentUser'
 import { readStale, refreshInBackground } from '../shared/dataSync'
 import { consumeHomeExpansion } from '../shared/homeExpansion'
-import { getLangPair } from '../shared/languagePreference'
+import { getLangPair, setLangPair } from '../shared/languagePreference'
 import {
   numberedPartsCount,
   reinforcementWordIdsForPart,
@@ -60,9 +64,13 @@ import {
   wordIdsForPart,
 } from '../shared/topicParts'
 
-// Saved via SettingsPage.vue (default 'pt-en'), read once per mount — same
-// as ensureUserEmail's "resolve once, reuse for the session" idiom.
-const LANG = getLangPair()
+// Saved via SettingsPage.vue (default 'pt-en') or, failing that, whatever
+// this browser last had stored — a guess that's wrong whenever it isn't one
+// of *this* user's own enabled pairs (a brand-new sign-in on a fresh
+// browser, or switching to a different account that shares this browser).
+// onMounted below corrects it against GET /user before fetching anything,
+// same fallback idea as SettingsPage.vue's own onMounted.
+const LANG = ref(getLangPair())
 
 const STATUS = { FINISHED: 'finished', LEARNING: 'learning', NOT_STARTED: 'not_started' }
 const STATUS_ICON = { [STATUS.FINISHED]: '✓', [STATUS.LEARNING]: '◐', [STATUS.NOT_STARTED]: '○' }
@@ -92,7 +100,7 @@ async function loadReinforcementForTopic(chapter, topic) {
   if (topicId in reinforcementByTopicId.value) return
 
   try {
-    const wordIds = await getReinforcementWords(LANG, chapter.number, topic.number)
+    const wordIds = await getReinforcementWords(LANG.value, chapter.number, topic.number)
     reinforcementByTopicId.value = { ...reinforcementByTopicId.value, [topicId]: wordIds }
   } catch (err) {
     console.error("Couldn't load reinforcement words", err)
@@ -163,21 +171,21 @@ function handleStart(topic, part) {
 }
 
 async function loadChapters(email) {
-  const key = cacheKey('chapters', email, LANG)
+  const key = cacheKey('chapters', email, LANG.value)
   const cached = readStale(key)
   if (cached) {
     chapters.value = cached.data
     refreshInBackground({
       key,
       label: 'chapters',
-      fetchFn: () => getChapters(email, LANG).then((data) => data.chapters || []),
+      fetchFn: () => getChapters(email, LANG.value).then((data) => data.chapters || []),
       onFresh: (data) => { chapters.value = data },
     })
     return
   }
 
   try {
-    const data = await getChapters(email, LANG)
+    const data = await getChapters(email, LANG.value)
     chapters.value = data.chapters || []
     writeCache(key, chapters.value)
   } catch (err) {
@@ -185,15 +193,63 @@ async function loadChapters(email) {
   }
 }
 
+function applyWords(data) {
+  const map = {}
+  for (const word of data.words || []) map[word.word_id] = word
+  wordsById.value = map
+}
+
 async function loadWords() {
+  const key = cacheKey('words', LANG.value)
+  const cached = readStale(key)
+  if (cached) {
+    applyWords(cached.data)
+    refreshInBackground({
+      key,
+      label: 'words',
+      fetchFn: () => getWords(LANG.value),
+      onFresh: (data) => applyWords(data),
+    })
+    return
+  }
+
   try {
-    const data = await getWords(LANG)
-    const map = {}
-    for (const word of data.words || []) map[word.word_id] = word
-    wordsById.value = map
+    const data = await getWords(LANG.value)
+    applyWords(data)
+    writeCache(key, data)
   } catch (err) {
     console.error("Couldn't load words", err)
   }
+}
+
+// Same cache "kind" SettingsPage.vue's own loadUserPairs() writes to — both
+// pages read this user's GET /user record, so whichever page fetches it
+// first saves the other page a redundant round trip switching back and
+// forth between them.
+function applyEnabledPairs(enabledPairs) {
+  if (enabledPairs.length > 0 && !enabledPairs.includes(LANG.value)) {
+    LANG.value = enabledPairs[0]
+    setLangPair(LANG.value)
+  }
+}
+
+async function resolveLang(email) {
+  const key = cacheKey('user', email)
+  const cached = readStale(key)
+  if (cached) {
+    applyEnabledPairs(cached.data.language_pairs || [])
+    refreshInBackground({
+      key,
+      label: 'account data',
+      fetchFn: () => getUser(email),
+      onFresh: (data) => applyEnabledPairs(data.language_pairs || []),
+    })
+    return
+  }
+
+  const data = await getUser(email)
+  applyEnabledPairs(data.language_pairs || [])
+  writeCache(key, data)
 }
 
 onMounted(async () => {
@@ -208,6 +264,7 @@ onMounted(async () => {
 
   const email = ensureUserEmail()
   try {
+    await resolveLang(email)
     await Promise.all([loadChapters(email), loadWords()])
   } finally {
     isLoading.value = false
@@ -290,6 +347,14 @@ onMounted(async () => {
 
 @keyframes home-spin {
   to { transform: rotate(360deg); }
+}
+
+.home-empty {
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
 }
 
 .chapter-group {

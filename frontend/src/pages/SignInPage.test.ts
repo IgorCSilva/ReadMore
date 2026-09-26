@@ -1,8 +1,16 @@
 import { flushPromises, mount } from '@vue/test-utils'
-import { beforeEach, describe, expect, it } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { createRouter, createWebHistory } from 'vue-router'
+import * as api from '../shared/api'
 import { getCurrentUser, logoutUser, setUserEmail } from '../shared/currentUser'
 import SignInPage from './SignInPage.vue'
+
+vi.mock('../shared/api', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('../shared/api')>()
+  return { ...actual, getUser: vi.fn() }
+})
+
+const getUser = vi.mocked(api.getUser)
 
 async function mountPage() {
   const router = createRouter({
@@ -24,6 +32,8 @@ describe('SignInPage', () => {
   beforeEach(() => {
     localStorage.clear()
     logoutUser()
+    getUser.mockReset()
+    getUser.mockResolvedValue({ exists: true })
   })
 
   describe('with nobody currently signed in', () => {
@@ -57,8 +67,64 @@ describe('SignInPage', () => {
         await wrapper.get('.signin-form').trigger('submit')
         await flushPromises()
 
+        expect(getUser).toHaveBeenCalledWith('new@example.com')
         expect(getCurrentUser().email).toBe('new@example.com')
         expect(router.currentRoute.value.path).toBe('/home')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('shows a loading state while the account check is in flight, then clears it', async () => {
+      let resolveCheck: (value: { exists: boolean }) => void = () => {}
+      getUser.mockReturnValue(new Promise((resolve) => { resolveCheck = resolve }))
+
+      const { wrapper } = await mountPage()
+      try {
+        await wrapper.get('.signin-input').setValue('new@example.com')
+        await wrapper.get('.signin-form').trigger('submit')
+        await flushPromises()
+
+        expect(wrapper.find('.signin-spinner').exists()).toBe(true)
+        expect(wrapper.get('.signin-submit-btn').attributes('disabled')).toBeDefined()
+
+        resolveCheck({ exists: true })
+        await flushPromises()
+
+        expect(wrapper.find('.signin-spinner').exists()).toBe(false)
+        expect(wrapper.get('.signin-submit-btn').attributes('disabled')).toBeUndefined()
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('shows "Account not found." and does not navigate when the email is not registered', async () => {
+      getUser.mockResolvedValue({ exists: false })
+      const { wrapper, router } = await mountPage()
+      try {
+        await wrapper.get('.signin-input').setValue('nobody@example.com')
+        await wrapper.get('.signin-form').trigger('submit')
+        await flushPromises()
+
+        expect(wrapper.get('.signin-error').text()).toBe('Account not found.')
+        expect(getCurrentUser().email).toBeNull()
+        expect(router.currentRoute.value.path).toBe('/signin')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('shows a generic error and does not navigate when the account check fails', async () => {
+      getUser.mockRejectedValue(new Error('network request failed'))
+      const { wrapper, router } = await mountPage()
+      try {
+        await wrapper.get('.signin-input').setValue('new@example.com')
+        await wrapper.get('.signin-form').trigger('submit')
+        await flushPromises()
+
+        expect(wrapper.get('.signin-error').text()).toBeTruthy()
+        expect(getCurrentUser().email).toBeNull()
+        expect(router.currentRoute.value.path).toBe('/signin')
       } finally {
         wrapper.unmount()
       }

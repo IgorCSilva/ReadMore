@@ -1,10 +1,11 @@
 import { flushPromises, mount } from '@vue/test-utils'
-import { describe, expect, it, vi } from 'vitest'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { nextTick } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import * as api from '../shared/api'
 import { getCurrentUser } from '../shared/currentUser'
 import { requestHomeExpansion } from '../shared/homeExpansion'
+import { resetLangPreferenceForTests } from '../shared/languagePreference'
 import type { ChaptersResponse } from '../shared/types'
 import HomePage from './HomePage.vue'
 
@@ -15,6 +16,7 @@ vi.mock('../shared/api', async (importOriginal) => {
     getChapters: vi.fn(),
     getWords: vi.fn(),
     getReinforcementWords: vi.fn(),
+    getUser: vi.fn(),
   }
 })
 
@@ -91,6 +93,19 @@ async function mountReady() {
 }
 
 describe('HomePage', () => {
+  beforeEach(() => {
+    // languagePreference's `cached`, and everything HomePage.vue's own
+    // stale-while-revalidate loaders (loadChapters/loadWords/resolveLang)
+    // write into localStorage's readCache, are all singletons that outlive
+    // a single test within this file — reset both, or an earlier test's
+    // setLangPair() call, or its cached chapters/words/user response, would
+    // leak into a later test and get served instead of that test's own
+    // freshly configured mock.
+    localStorage.clear()
+    resetLangPreferenceForTests()
+    vi.mocked(api.getUser).mockResolvedValue({ exists: true, language_pairs: ['pt-en'] })
+  })
+
   it('shows a bold "Olá, {email}" in a fixed top bar', async () => {
     const router = testRouter()
     router.push('/home')
@@ -145,6 +160,71 @@ describe('HomePage', () => {
 
       expect(wrapper.find('.home-spinner').exists()).toBe(false)
       expect(wrapper.find('.topic-card').exists()).toBe(true)
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('skips the loading spinner on a later mount, rendering cached chapters/words instantly instead of waiting on a fresh request', async () => {
+    const { wrapper: first } = await mountReady()
+    first.unmount()
+
+    // Never-resolving promises for the second mount's own requests — if the
+    // component were still blocking on them (i.e. caching wasn't working),
+    // the assertions below would hang/fail instead of passing immediately.
+    vi.mocked(api.getChapters).mockReturnValue(new Promise(() => {}))
+    vi.mocked(api.getWords).mockReturnValue(new Promise(() => {}))
+    vi.mocked(api.getUser).mockReturnValue(new Promise(() => {}))
+
+    const router = testRouter()
+    router.push('/home')
+    await router.isReady()
+    const wrapper = mount(HomePage, { attachTo: document.body, global: { plugins: [router] } })
+    try {
+      await flushPromises()
+
+      expect(wrapper.find('.home-spinner').exists()).toBe(false)
+      expect(wrapper.findAll('.topic-card')).toHaveLength(2)
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it("falls back to one of the user's enabled language pairs when the stored/default one isn't enabled for them", async () => {
+    vi.mocked(api.getUser).mockResolvedValue({ exists: true, language_pairs: ['pt-es'] })
+    vi.mocked(api.getChapters).mockResolvedValue({ lang: 'pt-es', chapters: CHAPTERS })
+    vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-es', words: [...WORDS, ...REINFORCEMENT_WORDS] })
+    vi.mocked(api.getReinforcementWords).mockResolvedValue([])
+
+    const router = testRouter()
+    router.push('/home')
+    await router.isReady()
+    const wrapper = mount(HomePage, { attachTo: document.body, global: { plugins: [router] } })
+    try {
+      await flushPromises()
+
+      expect(api.getChapters).toHaveBeenCalledWith('test@example.com', 'pt-es')
+      expect(localStorage.getItem('readmore_lang_pair')).toBe('pt-es')
+      expect(wrapper.findAll('.topic-card')).toHaveLength(2)
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('shows an empty-state message instead of a blank page when the user has no chapters enabled', async () => {
+    vi.mocked(api.getChapters).mockResolvedValue({ lang: 'pt-en', chapters: [] })
+    vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: [] })
+
+    const router = testRouter()
+    router.push('/home')
+    await router.isReady()
+    const wrapper = mount(HomePage, { attachTo: document.body, global: { plugins: [router] } })
+    try {
+      await flushPromises()
+
+      expect(wrapper.get('.home-empty').text()).toContain('Nothing enabled')
+      expect(wrapper.find('.topic-card').exists()).toBe(false)
+      expect(wrapper.find('.home-spinner').exists()).toBe(false)
     } finally {
       wrapper.unmount()
     }

@@ -84,6 +84,14 @@ export interface LanguagesResponse {
   languages: string[]
 }
 
+// A user's own "users" sheet data (see backend/apps-script/Code.gs's schema
+// comment) — one shape covering every field a caller might need about them,
+// rather than one endpoint per field.
+export interface UserResponse {
+  exists: boolean
+  language_pairs: string[]
+}
+
 // word_ids carried over from earlier topics for spaced review, in
 // curriculum order — see reinforcement_word_ids in
 // backend/app/application/services/reinforcement_words.py.
