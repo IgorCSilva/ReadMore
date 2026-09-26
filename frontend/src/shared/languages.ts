@@ -7,6 +7,7 @@ const LANGUAGE_NAMES: Record<string, string> = {
   en: 'English',
   es: 'Spanish',
   ko: 'Korean',
+  zh: 'Chinese',
 }
 
 export function formatLanguagePairLabel(pair: string): string {
@@ -30,6 +31,7 @@ const SPEECH_LOCALES: Record<string, string> = {
   en: 'en-US',
   es: 'es-ES',
   ko: 'ko-KR',
+  zh: 'zh-CN',
 }
 
 export function speechLocaleFor(code: string): string {

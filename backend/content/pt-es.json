@@ -3078,7 +3078,7 @@
           "number": 2,
           "title": "Uma Surpresa Simples",
           "description": "Uma pequena narrativa de \"reviravolta\" (2–3 frases), reaproveitando conectores de sequência (entonces, de repente, pero, porque, cuando) para contar uma pequena surpresa. Atenção ao falso cognato: o verbo espanhol \"fechar\" não significa \"fechar\" (uma porta) — ele significa \"datar\" (colocar uma data em algo); o verbo correto para \"fechar\" em espanhol é \"cerrar\". Atividade de desenvolvimento: leitura de uma pequena história com uma reviravolta simples.",
-          "status": "in_development",
+          "status": "ready",
           "word_ids": [
             "es-wd-0178",
             "es-wd-0179",

@@ -51,16 +51,20 @@ WORDS_DIR = Path("backend/words")
 BOLD_SPLIT = re.compile(r"(\*\*.*?\*\*)")
 
 # No-space languages where a taught word/particle can glue directly onto
-# the surrounding text with no boundary character on either side.
-_NO_SPACE_LANGUAGES = {"ko"}
+# the surrounding text with no boundary character on either side. Chinese
+# qualifies even more strongly than Korean: it has no spaces between words
+# at all (Korean at least separates words, just not particles from their
+# host), so \b-anchored matching would miss real occurrences entirely.
+_NO_SPACE_LANGUAGES = {"ko", "zh"}
 
 # Target languages whose script never coincides with the (Portuguese)
 # prose around it, so a bare occurrence of a taught word is unambiguously
 # an unmarked target word rather than a same-spelled origin-language word.
 # Add a target here only once its script is confirmed distinct — a
 # Latin-script target sharing homographs with the origin language (es,
-# en, ...) would just produce false positives.
-_RELIABLE_LANGUAGES = {"ko"}
+# en, ...) would just produce false positives. Hanzi never coincides with
+# Latin script, same reasoning as Hangul.
+_RELIABLE_LANGUAGES = {"ko", "zh"}
 
 
 def word_pattern(word, target_lang):

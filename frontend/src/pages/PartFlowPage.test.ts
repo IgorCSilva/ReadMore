@@ -33,11 +33,11 @@ const CHAPTERS = [
 ]
 
 const WORDS = [
-  { word_id: 'w1', original: 'oi', filename: 'w1.png', sentence: '', cue: 'hi (cue)', gender_id: '', particle_type: '' },
-  { word_id: 'w2', original: 'tchau', filename: '', sentence: '', cue: 'bye (cue)', gender_id: '', particle_type: '' },
-  { word_id: 'w3', original: 'obrigado', filename: '', sentence: '', cue: 'thanks (cue)', gender_id: '', particle_type: '' },
-  { word_id: 'w4', original: 'por favor', filename: '', sentence: '', cue: 'please (cue)', gender_id: '', particle_type: '' },
-  { word_id: 'w5', original: 'bom dia', filename: '', sentence: '', cue: 'good morning (cue)', gender_id: '', particle_type: '' },
+  { word_id: 'w1', original: 'oi', filename: 'w1.png', sentence: '', cue: 'hi (cue)', pinyin: '', gender_id: '', particle_type: '' },
+  { word_id: 'w2', original: 'tchau', filename: '', sentence: '', cue: 'bye (cue)', pinyin: '', gender_id: '', particle_type: '' },
+  { word_id: 'w3', original: 'obrigado', filename: '', sentence: '', cue: 'thanks (cue)', pinyin: '', gender_id: '', particle_type: '' },
+  { word_id: 'w4', original: 'por favor', filename: '', sentence: '', cue: 'please (cue)', pinyin: '', gender_id: '', particle_type: '' },
+  { word_id: 'w5', original: 'bom dia', filename: '', sentence: '', cue: 'good morning (cue)', pinyin: '', gender_id: '', particle_type: '' },
 ]
 
 // A topic with two numbered parts (10 words, PART_SIZE 5) — only needed for
@@ -49,6 +49,7 @@ const WORDS_TWO_PARTS = Array.from({ length: 10 }, (_, i) => ({
   filename: '',
   sentence: '',
   cue: `cue${i + 1}`,
+  pinyin: '',
   gender_id: '',
   particle_type: '',
 }))
@@ -61,6 +62,7 @@ const REINFORCEMENT_WORDS = Array.from({ length: 7 }, (_, i) => ({
   filename: '',
   sentence: '',
   cue: `rcue${i + 1}`,
+  pinyin: '',
   gender_id: '',
   particle_type: '',
 }))
@@ -477,15 +479,15 @@ describe('PartFlowPage', () => {
       }
     })
 
-    it('disables the bottom bar Next button until the correct word is typed and checked', async () => {
+    it('keeps the bottom bar Next button enabled on page 3 whether or not the word has been typed/checked', async () => {
       const { wrapper } = await mountFlow()
       try {
         await goToPage3(wrapper)
-        expect(wrapper.get<HTMLButtonElement>('.flow-next-btn').element.disabled).toBe(true)
+        expect(wrapper.get<HTMLButtonElement>('.flow-next-btn').element.disabled).toBe(false)
 
         await wrapper.get('.word-page-3-input').setValue('ai')
         await wrapper.get('.word-page-3-check-btn').trigger('click')
-        expect(wrapper.get<HTMLButtonElement>('.flow-next-btn').element.disabled).toBe(true)
+        expect(wrapper.get<HTMLButtonElement>('.flow-next-btn').element.disabled).toBe(false)
 
         await wrapper.get('.word-page-3-input').setValue('oi')
         await wrapper.get('.word-page-3-check-btn').trigger('click')
