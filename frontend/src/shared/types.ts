@@ -9,6 +9,7 @@ export interface Word {
   filename: string
   sentence: string
   cue: string
+  pinyin: string
   gender_id: string
   particle_type: string
 }

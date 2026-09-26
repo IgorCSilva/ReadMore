@@ -19,9 +19,12 @@
 
       <div class="word-page-1-cue" v-if="imageOk">{{ currentStep.word.cue }}</div>
 
-      <div class="word-page-1-word-row">
-        <span class="word-page-1-word">{{ currentStep.word.original }}</span>
-        <button type="button" class="word-page-1-audio-btn" @click="playAudio(currentStep.word.original)" aria-label="Play audio">🔊</button>
+      <div class="word-page-1-word-block">
+        <div class="word-page-1-word-row">
+          <span class="word-page-1-word">{{ currentStep.word.original }}</span>
+          <button type="button" class="word-page-1-audio-btn" @click="playAudio(currentStep.word.original)" aria-label="Play audio">🔊</button>
+        </div>
+        <div class="word-page-1-pinyin" v-if="currentStep.word.pinyin">{{ currentStep.word.pinyin }}</div>
       </div>
     </div>
 
@@ -779,17 +782,31 @@ body.part-flow-active {
   text-align: center;
 }
 
+.word-page-1-word-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 24px;
+}
+
 .word-page-1-word-row {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 24px;
 }
 
 .word-page-1-word {
   font-size: 28px;
   font-weight: 700;
   color: var(--text);
+}
+
+.word-page-1-pinyin {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 14px;
+  color: var(--muted);
 }
 
 .word-page-1-audio-btn {
