@@ -21,6 +21,7 @@ function word(id: string, original: string, gender = 'not_apply') {
     sentence: '',
     cue: '',
     gender_id: gender,
+    particle_type: 'not_apply',
     confident: false,
     shown_count: 0,
     show: true,

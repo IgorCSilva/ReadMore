@@ -10,6 +10,7 @@ export interface Word {
   sentence: string
   cue: string
   gender_id: string
+  particle_type: string
 }
 
 export interface WordsResponse {

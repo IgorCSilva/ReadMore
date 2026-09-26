@@ -33,11 +33,11 @@ const CHAPTERS = [
 ]
 
 const WORDS = [
-  { word_id: 'w1', original: 'oi', filename: 'w1.png', sentence: '', cue: 'hi (cue)', gender_id: '' },
-  { word_id: 'w2', original: 'tchau', filename: '', sentence: '', cue: 'bye (cue)', gender_id: '' },
-  { word_id: 'w3', original: 'obrigado', filename: '', sentence: '', cue: 'thanks (cue)', gender_id: '' },
-  { word_id: 'w4', original: 'por favor', filename: '', sentence: '', cue: 'please (cue)', gender_id: '' },
-  { word_id: 'w5', original: 'bom dia', filename: '', sentence: '', cue: 'good morning (cue)', gender_id: '' },
+  { word_id: 'w1', original: 'oi', filename: 'w1.png', sentence: '', cue: 'hi (cue)', gender_id: '', particle_type: '' },
+  { word_id: 'w2', original: 'tchau', filename: '', sentence: '', cue: 'bye (cue)', gender_id: '', particle_type: '' },
+  { word_id: 'w3', original: 'obrigado', filename: '', sentence: '', cue: 'thanks (cue)', gender_id: '', particle_type: '' },
+  { word_id: 'w4', original: 'por favor', filename: '', sentence: '', cue: 'please (cue)', gender_id: '', particle_type: '' },
+  { word_id: 'w5', original: 'bom dia', filename: '', sentence: '', cue: 'good morning (cue)', gender_id: '', particle_type: '' },
 ]
 
 // A topic with two numbered parts (10 words, PART_SIZE 5) — only needed for
@@ -50,6 +50,7 @@ const WORDS_TWO_PARTS = Array.from({ length: 10 }, (_, i) => ({
   sentence: '',
   cue: `cue${i + 1}`,
   gender_id: '',
+  particle_type: '',
 }))
 // Reinforcement word_ids come from earlier topics, not this one — these
 // exist in the words catalog (so PartFlowPage's byId lookup resolves them)
@@ -61,6 +62,7 @@ const REINFORCEMENT_WORDS = Array.from({ length: 7 }, (_, i) => ({
   sentence: '',
   cue: `rcue${i + 1}`,
   gender_id: '',
+  particle_type: '',
 }))
 const REINFORCEMENT_WORD_IDS = REINFORCEMENT_WORDS.map((w) => w.word_id)
 

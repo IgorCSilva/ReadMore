@@ -20,7 +20,7 @@ vi.mock('../shared/api', async (importOriginal) => {
 function word(id: string, original: string) {
   return {
     word_id: id, original, filename: '', sentence: '', cue: '', gender_id: 'not_apply',
-    confident: false, shown_count: 0, show: true,
+    particle_type: 'not_apply', confident: false, shown_count: 0, show: true,
   }
 }
 

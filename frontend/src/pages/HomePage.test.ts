@@ -62,6 +62,7 @@ const WORDS = Array.from({ length: 7 }, (_, i) => ({
   sentence: '',
   cue: '',
   gender_id: '',
+  particle_type: '',
 }))
 
 // Reinforcement word_ids come from earlier topics, not this one — these
@@ -77,6 +78,7 @@ const REINFORCEMENT_WORDS = Array.from({ length: 7 }, (_, i) => ({
   sentence: '',
   cue: '',
   gender_id: '',
+  particle_type: '',
 }))
 const REINFORCEMENT_WORD_IDS = REINFORCEMENT_WORDS.map((w) => w.word_id)
 

@@ -3,6 +3,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import { createRouter, createWebHistory } from 'vue-router'
 import * as api from '../shared/api'
 import { getCurrentUser, logoutUser, setUserEmail } from '../shared/currentUser'
+import type { UserResponse } from '../shared/types'
 import SignInPage from './SignInPage.vue'
 
 vi.mock('../shared/api', async (importOriginal) => {
@@ -33,7 +34,7 @@ describe('SignInPage', () => {
     localStorage.clear()
     logoutUser()
     getUser.mockReset()
-    getUser.mockResolvedValue({ exists: true })
+    getUser.mockResolvedValue({ exists: true, language_pairs: [] })
   })
 
   describe('with nobody currently signed in', () => {
@@ -76,7 +77,7 @@ describe('SignInPage', () => {
     })
 
     it('shows a loading state while the account check is in flight, then clears it', async () => {
-      let resolveCheck: (value: { exists: boolean }) => void = () => {}
+      let resolveCheck: (value: UserResponse) => void = () => {}
       getUser.mockReturnValue(new Promise((resolve) => { resolveCheck = resolve }))
 
       const { wrapper } = await mountPage()
@@ -88,7 +89,7 @@ describe('SignInPage', () => {
         expect(wrapper.find('.signin-spinner').exists()).toBe(true)
         expect(wrapper.get('.signin-submit-btn').attributes('disabled')).toBeDefined()
 
-        resolveCheck({ exists: true })
+        resolveCheck({ exists: true, language_pairs: [] })
         await flushPromises()
 
         expect(wrapper.find('.signin-spinner').exists()).toBe(false)
@@ -99,7 +100,7 @@ describe('SignInPage', () => {
     })
 
     it('shows "Account not found." and does not navigate when the email is not registered', async () => {
-      getUser.mockResolvedValue({ exists: false })
+      getUser.mockResolvedValue({ exists: false, language_pairs: [] })
       const { wrapper, router } = await mountPage()
       try {
         await wrapper.get('.signin-input').setValue('nobody@example.com')

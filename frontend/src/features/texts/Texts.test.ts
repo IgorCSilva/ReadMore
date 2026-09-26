@@ -122,7 +122,7 @@ describe('Texts', () => {
     it('leaves bold words as plain <strong> when the config is off, even if a gender match exists', async () => {
       vi.mocked(api.getWords).mockResolvedValue({
         lang: 'en',
-        words: [{ word_id: 'w1', original: 'friend', filename: 'f.png', sentence: '', cue: '', gender_id: 'masculine' }],
+        words: [{ word_id: 'w1', original: 'friend', filename: 'f.png', sentence: '', cue: '', gender_id: 'masculine', particle_type: 'not_apply' }],
       })
       const wrapper = mount(Texts, { attachTo: document.body })
       try {
@@ -141,7 +141,7 @@ describe('Texts', () => {
     it('colors and decorates a bold word matching the catalog when the config is on', async () => {
       vi.mocked(api.getWords).mockResolvedValue({
         lang: 'en',
-        words: [{ word_id: 'w1', original: 'friend', filename: 'f.png', sentence: '', cue: '', gender_id: 'masculine' }],
+        words: [{ word_id: 'w1', original: 'friend', filename: 'f.png', sentence: '', cue: '', gender_id: 'masculine', particle_type: 'not_apply' }],
       })
       const wrapper = mount(Texts, { attachTo: document.body })
       try {
