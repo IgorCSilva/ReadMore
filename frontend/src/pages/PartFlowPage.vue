@@ -152,7 +152,7 @@
 import { computed, nextTick, onBeforeUnmount, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import Dictation from '../features/dictation/Dictation.vue'
-import { getChapters, getWords, ttsUrl } from '../shared/api'
+import { getChapters, getReinforcementWords, getWords, ttsUrl } from '../shared/api'
 import { ensureUserEmail } from '../shared/currentUser'
 import { formatWordByGender, getGender } from '../shared/genders'
 import { requestHomeExpansion } from '../shared/homeExpansion'
@@ -160,7 +160,12 @@ import { formatWordByParticle, getParticle } from '../shared/koreanParticles'
 import { speechLocaleFor } from '../shared/languages'
 import { getLangPair } from '../shared/languagePreference'
 import { buildPartFlowSequence } from '../shared/partFlow'
-import { numberedPartsCount, wordIdsForPart } from '../shared/topicParts'
+import {
+  numberedPartsCount,
+  reinforcementWordIdsForPart,
+  reviewWordIds,
+  wordIdsForPart,
+} from '../shared/topicParts'
 
 // Saved via SettingsPage.vue (default 'pt-en'), read once per mount — same
 // as ensureUserEmail's "resolve once, reuse for the session" idiom.
@@ -180,6 +185,12 @@ const route = useRoute()
 const router = useRouter()
 
 const topic = ref(null)
+// This part's own new words — the only ones that go through the word-intro
+// pages 1/2/3 (buildPartFlowSequence). `words` below is the wider pool the
+// Reading/Listen-and-write review steps draw from (this part's new words
+// plus its reinforcement words) — reviewing already-known words doesn't
+// belong in the intro pages, only in these two review-style steps.
+const newWords = ref([])
 const words = ref([])
 const sequence = ref([])
 const stepIndex = ref(0)
@@ -225,14 +236,19 @@ function handleBottomBarClick() {
 
 function finishPart() {
   const topicId = route.params.topicId
-  const currentPartNumber = Number(route.params.partNumber)
+  const partParam = route.params.partNumber
   const count = numberedPartsCount(topic.value)
   // partsForTopic's index = partNumber - 1 for numbered parts (0-based), so
   // the next numbered part's index equals the current (1-based) partNumber.
-  // If this was the last numbered part, fall through to "Read and
-  // Understand" — the next entry in that same accordion list — at index
-  // `count` (right after the `count` numbered parts occupying indices 0..count-1).
-  const nextPartIndex = currentPartNumber < count ? currentPartNumber : count
+  // If this was the last numbered part, fall through to whatever comes next
+  // in that same accordion list at index `count` — the Review part when
+  // HomePage inserted one (leftover reinforcement words), otherwise "Read
+  // and Understand" directly, since HomePage only adds Review conditionally.
+  // Finishing Review itself (partParam === 'review') always advances one
+  // further, to "Read and Understand" at index `count + 1`.
+  const nextPartIndex = partParam === 'review'
+    ? count + 1
+    : Number(partParam) < count ? Number(partParam) : count
   requestHomeExpansion({ topicId, partIndex: nextPartIndex })
   router.push('/home')
 }
@@ -564,14 +580,20 @@ function startListenWrite() {
   })
 }
 
-// ---- Load the topic + the up-to-5 words for this part, then shuffle. ----
+// ---- Load the topic + this part's new words, plus its share of the
+// topic's reinforcement words (2 per numbered part, or every leftover word
+// for the dedicated "review" part — see shared/topicParts.ts), then
+// shuffle. Reinforcement words never go through the word-intro pages 1/2/3
+// (they're already known) — they only widen the Reading/Listen-and-write
+// review pool alongside this part's own new words. ----
 
 async function load() {
   isLoading.value = true
   try {
     const email = ensureUserEmail()
     const topicId = route.params.topicId
-    const partNumber = Number(route.params.partNumber)
+    const partParam = route.params.partNumber
+    const isReview = partParam === 'review'
 
     const [chaptersData, wordsData] = await Promise.all([
       getChapters(email, LANG),
@@ -579,19 +601,27 @@ async function load() {
     ])
 
     let foundTopic = null
+    let foundChapterNumber = null
     for (const chapter of chaptersData.chapters || []) {
       foundTopic = chapter.topics.find((t) => t.topic_id === topicId)
-      if (foundTopic) break
+      if (foundTopic) { foundChapterNumber = chapter.number; break }
     }
     topic.value = foundTopic || null
     if (!foundTopic) return
 
-    const wordIds = wordIdsForPart(foundTopic, partNumber)
+    const reinforcementIds = await getReinforcementWords(LANG, foundChapterNumber, foundTopic.number)
+    const newWordIds = isReview ? [] : wordIdsForPart(foundTopic, Number(partParam))
+    const reinforceWordIds = isReview
+      ? reviewWordIds(foundTopic, reinforcementIds)
+      : reinforcementWordIdsForPart(reinforcementIds, Number(partParam))
+
     const byId = {}
     for (const word of wordsData.words || []) byId[word.word_id] = word
-    words.value = wordIds.map((id) => byId[id]).filter(Boolean)
+    newWords.value = newWordIds.map((id) => byId[id]).filter(Boolean)
+    const reinforceWords = reinforceWordIds.map((id) => byId[id]).filter(Boolean)
+    words.value = [...newWords.value, ...reinforceWords]
 
-    sequence.value = buildPartFlowSequence(words.value)
+    sequence.value = buildPartFlowSequence(newWords.value)
     stepIndex.value = 0
   } finally {
     isLoading.value = false

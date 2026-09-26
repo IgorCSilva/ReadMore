@@ -270,7 +270,7 @@ def get_chapters_route(
     )
 
 
-@app.get("/reinforcement-words", response_model=dict[str, list[str]])
+@app.get("/reinforcement-words", response_model=list[str])
 def get_reinforcement_words_route(
     lang: str = "pt-en",
     chapter: int = 1,

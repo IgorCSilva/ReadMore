@@ -84,10 +84,10 @@ export interface LanguagesResponse {
   languages: string[]
 }
 
-// "reading"|"dictation"|"quiz"|"phrases" -> word_ids reinforced in that tab
-// for the current chapter/topic — see REINFORCEMENT_TABS in
+// word_ids carried over from earlier topics for spaced review, in
+// curriculum order — see reinforcement_word_ids in
 // backend/app/application/services/reinforcement_words.py.
-export type ReinforcementWords = Record<string, string[]>
+export type ReinforcementWords = string[]
 
 export interface ProgressActionRequest {
   user: string

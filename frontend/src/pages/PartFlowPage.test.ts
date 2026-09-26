@@ -11,6 +11,7 @@ vi.mock('../shared/api', async (importOriginal) => {
     ...actual,
     getChapters: vi.fn(),
     getWords: vi.fn(),
+    getReinforcementWords: vi.fn(),
     // Stubbed (not just left real) so the Listen-and-write tests can assert
     // it's never called — proving Dictation's wordsOverride bypasses
     // loadUserWords entirely instead of silently falling through to it.
@@ -50,6 +51,19 @@ const WORDS_TWO_PARTS = Array.from({ length: 10 }, (_, i) => ({
   cue: `cue${i + 1}`,
   gender_id: '',
 }))
+// Reinforcement word_ids come from earlier topics, not this one — these
+// exist in the words catalog (so PartFlowPage's byId lookup resolves them)
+// but are never part of any topic's own word_ids.
+const REINFORCEMENT_WORDS = Array.from({ length: 7 }, (_, i) => ({
+  word_id: `rw${i + 1}`,
+  original: `reinforce${i + 1}`,
+  filename: '',
+  sentence: '',
+  cue: `rcue${i + 1}`,
+  gender_id: '',
+}))
+const REINFORCEMENT_WORD_IDS = REINFORCEMENT_WORDS.map((w) => w.word_id)
+
 const CHAPTERS_TWO_PARTS = [
   {
     chapter_id: 'c1', number: 1, title: 'Basics', description: '', status: 'active',
@@ -93,6 +107,7 @@ async function goToListenWrite(wrapper: ReturnType<typeof mount>, wordByCue = WO
 async function mountFlow({ settle = true } = {}) {
   vi.mocked(api.getChapters).mockResolvedValue({ lang: 'pt-en', chapters: CHAPTERS })
   vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: WORDS })
+  vi.mocked(api.getReinforcementWords).mockResolvedValue([])
 
   const router = createRouter({
     history: createWebHistory(),
@@ -109,9 +124,10 @@ async function mountFlow({ settle = true } = {}) {
   return { wrapper, router }
 }
 
-async function mountFlowWithTwoParts(partNumber: string) {
+async function mountFlowWithTwoParts(partNumber: string, reinforcementWordIds: string[] = []) {
   vi.mocked(api.getChapters).mockResolvedValue({ lang: 'pt-en', chapters: CHAPTERS_TWO_PARTS })
-  vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: WORDS_TWO_PARTS })
+  vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: [...WORDS_TWO_PARTS, ...REINFORCEMENT_WORDS] })
+  vi.mocked(api.getReinforcementWords).mockResolvedValue(reinforcementWordIds)
 
   const router = createRouter({
     history: createWebHistory(),
@@ -744,6 +760,61 @@ describe('PartFlowPage', () => {
         // Part 2 is the last numbered part (indices 0-1); "Read and
         // Understand" is the next accordion entry, at index 2.
         expect(consumeHomeExpansion()).toEqual({ topicId: 't1', partIndex: 2 })
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('finishing the dedicated Review part requests "Read and Understand" expanded, one past the numbered parts', async () => {
+      const { wrapper, router } = await mountFlowWithTwoParts('review', REINFORCEMENT_WORD_IDS)
+      try {
+        await wrapper.get('.flow-next-btn').trigger('click') // Reading -> Listen-and-write
+        await wrapper.get('.flow-next-btn').trigger('click') // Finish
+        await flushPromises()
+
+        expect(router.currentRoute.value.path).toBe('/home')
+        // Two numbered parts (indices 0-1); HomePage would only insert
+        // Review at index 2 when leftover reinforcement words exist, so
+        // "Read and Understand" sits one further, at index 3.
+        expect(consumeHomeExpansion()).toEqual({ topicId: 't1', partIndex: 3 })
+      } finally {
+        wrapper.unmount()
+      }
+    })
+  })
+
+  describe('Reinforcement words', () => {
+    it("folds this Part's 2 reinforcement words into the Reading/Listen-and-write pool, without adding intro pages for them", async () => {
+      const { wrapper } = await mountFlowWithTwoParts('1', REINFORCEMENT_WORD_IDS)
+      try {
+        // Sequence length is still new-words-only (5*3 + reading + listen-write
+        // = 17) — reinforcement words never get word-intro pages.
+        for (let i = 0; i < 15; i++) {
+          await clickNext(wrapper, WORD_BY_CUE_TWO_PARTS)
+        }
+        expect(wrapper.find('.reading-page').exists()).toBe(true)
+        // 5 new words + this part's 2 reinforcement words (rw1, rw2).
+        expect(wrapper.get('.reading-page-counter').text()).toBe('1 / 7')
+
+        await clickNext(wrapper, WORD_BY_CUE_TWO_PARTS)
+        expect(wrapper.get('#dictation-counter').text()).toBe('1 / 7')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('the dedicated Review part has no word-intro pages — just Reading/Listen-and-write over the leftover reinforcement words', async () => {
+      const { wrapper } = await mountFlowWithTwoParts('review', REINFORCEMENT_WORD_IDS)
+      try {
+        // Leftover once both numbered parts claimed their 2: rw5, rw6, rw7.
+        expect(wrapper.find('.word-page-1').exists()).toBe(false)
+        expect(wrapper.find('.reading-page').exists()).toBe(true)
+        expect(wrapper.get('.reading-page-counter').text()).toBe('1 / 3')
+        expect(wrapper.get('.flow-progress-fill').attributes('style')).toContain(`width: ${(1 / 2) * 100}%`)
+
+        await wrapper.get('.flow-next-btn').trigger('click')
+        expect(wrapper.get('#dictation-counter').text()).toBe('1 / 3')
+        expect(wrapper.get('.flow-next-btn').text()).toBe('Finish')
       } finally {
         wrapper.unmount()
       }

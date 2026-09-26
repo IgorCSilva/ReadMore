@@ -33,23 +33,21 @@ CHAPTERS = [
 ]
 
 
-def test_first_topic_has_no_reinforcement_words_in_any_tab():
+def test_first_topic_has_no_reinforcement_words():
     use_case = GetReinforcementWords(FakeCatalogRepository({PT_ES: CHAPTERS}))
 
     result = use_case.execute(PT_ES, chapter_number=1, topic_number=1)
 
-    assert result == {"reading": [], "dictation": [], "quiz": [], "phrases": []}
+    assert result == []
 
 
-def test_later_topic_splits_earlier_topics_words_across_the_four_tabs():
+def test_later_topic_gets_reinforcement_words_from_the_earlier_topic():
     use_case = GetReinforcementWords(FakeCatalogRepository({PT_ES: CHAPTERS}))
 
     result = use_case.execute(PT_ES, chapter_number=1, topic_number=2)
 
-    assert set(result.keys()) == {"reading", "dictation", "quiz", "phrases"}
-    all_words = [w for words in result.values() for w in words]
-    assert all_words
-    assert all(w.startswith("wd") and w.endswith("-top1") for w in all_words)
+    assert result
+    assert all(w.startswith("wd") and w.endswith("-top1") for w in result)
 
 
 def test_does_not_filter_by_any_per_user_topic_enablement():
@@ -60,4 +58,4 @@ def test_does_not_filter_by_any_per_user_topic_enablement():
 
     result = use_case.execute(PT_ES, chapter_number=1, topic_number=2)
 
-    assert any(words for words in result.values())
+    assert result

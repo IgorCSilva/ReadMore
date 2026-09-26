@@ -13,7 +13,7 @@
       <div class="chapter-heading">{{ chapter.number }}. {{ chapter.title }}</div>
 
       <div class="topic-card" v-for="topic in chapter.topics" :key="topic.topic_id">
-        <button type="button" class="topic-card-header" @click="toggleTopic(topic.topic_id)">
+        <button type="button" class="topic-card-header" @click="toggleTopic(chapter, topic)">
           <div class="topic-card-number">{{ chapter.number }}.{{ topic.number }}</div>
           <div class="topic-card-title">{{ topic.title }}</div>
           <div class="topic-card-status" :class="`topic-card-status-${STATUS.NOT_STARTED}`">
@@ -30,7 +30,11 @@
             </button>
 
             <div class="part-body" v-if="expandedPartIndex === index">
-              <div class="part-words" v-if="part.kind === 'words'">{{ wordsText(part.wordIds) }}</div>
+              <div class="part-words" v-if="part.kind === 'words' || part.kind === 'review'">
+                <span class="part-word-new" v-if="part.wordIds?.length">{{ wordsText(part.wordIds) }}</span>
+                <span v-if="part.wordIds?.length && part.reinforcementWordIds?.length">, </span>
+                <span class="part-word-reinforce" v-if="part.reinforcementWordIds?.length">{{ wordsText(part.reinforcementWordIds) }}</span>
+              </div>
               <button type="button" class="part-start-btn" @click="handleStart(topic, part)">Start</button>
             </div>
           </div>
@@ -43,13 +47,18 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { getChapters, getWords } from '../shared/api'
+import { getChapters, getReinforcementWords, getWords } from '../shared/api'
 import { cacheKey, writeCache } from '../shared/cache'
 import { ensureUserEmail, getCurrentUser, logoutUser } from '../shared/currentUser'
 import { readStale, refreshInBackground } from '../shared/dataSync'
 import { consumeHomeExpansion } from '../shared/homeExpansion'
 import { getLangPair } from '../shared/languagePreference'
-import { numberedPartsCount, wordIdsForPart } from '../shared/topicParts'
+import {
+  numberedPartsCount,
+  reinforcementWordIdsForPart,
+  reviewWordIds,
+  wordIdsForPart,
+} from '../shared/topicParts'
 
 // Saved via SettingsPage.vue (default 'pt-en'), read once per mount — same
 // as ensureUserEmail's "resolve once, reuse for the session" idiom.
@@ -70,9 +79,32 @@ const isLoading = ref(true)
 const expandedTopicId = ref(null)
 const expandedPartIndex = ref(null)
 
-function toggleTopic(topicId) {
+// Reinforcement word_ids fetched lazily per topic, only once its accordion
+// is first expanded — reinforcement is per (chapter, topic), so fetching it
+// for every topic up front would be N wasted requests for topics the user
+// never opens. Keyed by topic_id and cached forever (reinforcement
+// selection is a pure function of curriculum position, never changes for a
+// given topic within a session), so re-collapsing/re-expanding never refetches.
+const reinforcementByTopicId = ref({})
+
+async function loadReinforcementForTopic(chapter, topic) {
+  const topicId = topic.topic_id
+  if (topicId in reinforcementByTopicId.value) return
+
+  try {
+    const wordIds = await getReinforcementWords(LANG, chapter.number, topic.number)
+    reinforcementByTopicId.value = { ...reinforcementByTopicId.value, [topicId]: wordIds }
+  } catch (err) {
+    console.error("Couldn't load reinforcement words", err)
+    reinforcementByTopicId.value = { ...reinforcementByTopicId.value, [topicId]: [] }
+  }
+}
+
+async function toggleTopic(chapter, topic) {
+  const topicId = topic.topic_id
   expandedTopicId.value = expandedTopicId.value === topicId ? null : topicId
   expandedPartIndex.value = null
+  if (expandedTopicId.value === topicId) await loadReinforcementForTopic(chapter, topic)
 }
 
 function togglePart(index) {
@@ -84,19 +116,33 @@ function logout() {
   router.push('/')
 }
 
-// Splits a topic's word_ids into 5-word "Part N" chunks (via shared/topicParts,
-// so this always agrees with PartFlowPage's own slice for the same part
-// number), then appends the two fixed whole-topic parts (no word chunk of
-// their own — they expand to just a Start button, see the template's
-// part-body, and aren't wired to navigate anywhere yet).
+// Splits a topic's word_ids into 5-word "Part N" chunks and its
+// reinforcement word_ids into 2-word chunks (via shared/topicParts, so this
+// always agrees with PartFlowPage's own slices for the same part number),
+// then — only when reinforcement words are left over once every numbered
+// Part has claimed its two — inserts a "Review" Part to hold them, right
+// before the two fixed whole-topic parts (no word chunk of their own — they
+// expand to just a Start button, see the template's part-body, and aren't
+// wired to navigate anywhere yet).
 function partsForTopic(topic) {
   const parts = []
   const count = numberedPartsCount(topic)
+  const reinforcementIds = reinforcementByTopicId.value[topic.topic_id] || []
   for (let partNumber = 1; partNumber <= count; partNumber++) {
-    parts.push({ kind: 'words', label: `Part ${partNumber}`, partNumber, wordIds: wordIdsForPart(topic, partNumber) })
+    parts.push({
+      kind: 'words',
+      label: `Part ${partNumber}`,
+      partNumber,
+      wordIds: wordIdsForPart(topic, partNumber),
+      reinforcementWordIds: reinforcementWordIdsForPart(reinforcementIds, partNumber),
+    })
+  }
+  const leftover = reviewWordIds(topic, reinforcementIds)
+  if (leftover.length) {
+    parts.push({ kind: 'review', label: 'Review', reinforcementWordIds: leftover })
   }
   parts.push({ kind: 'action', action: 'read-understand', label: 'Read and Understand' })
-  parts.push({ kind: 'action', action: 'listen-identify', label: 'Listen and identify' })
+  parts.push({ kind: 'action', action: 'listen-identify', label: 'Listen and Identify' })
   return parts
 }
 
@@ -107,6 +153,8 @@ function wordsText(wordIds) {
 function handleStart(topic, part) {
   if (part.kind === 'words') {
     router.push({ name: 'part-flow', params: { topicId: topic.topic_id, partNumber: String(part.partNumber) } })
+  } else if (part.kind === 'review') {
+    router.push({ name: 'part-flow', params: { topicId: topic.topic_id, partNumber: 'review' } })
   } else if (part.action === 'read-understand') {
     router.push({ name: 'read-understand', params: { topicId: topic.topic_id } })
   } else if (part.action === 'listen-identify') {
@@ -163,6 +211,20 @@ onMounted(async () => {
     await Promise.all([loadChapters(email), loadWords()])
   } finally {
     isLoading.value = false
+  }
+
+  // This bypasses toggleTopic (which only runs on an actual click), so a
+  // topic pre-expanded via requestHomeExpansion — the "return here after
+  // finishing a Part" flow — otherwise never triggers its reinforcement
+  // fetch until the user manually collapses/re-expands the card.
+  if (pending) {
+    for (const chapter of chapters.value) {
+      const topic = chapter.topics.find((t) => t.topic_id === pending.topicId)
+      if (topic) {
+        await loadReinforcementForTopic(chapter, topic)
+        break
+      }
+    }
   }
 })
 </script>
@@ -373,6 +435,15 @@ onMounted(async () => {
   font-size: 14px;
   color: var(--muted);
   line-height: 1.5;
+}
+
+.part-word-new {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.part-word-reinforce {
+  font-style: italic;
 }
 
 .part-start-btn {

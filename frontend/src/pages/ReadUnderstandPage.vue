@@ -49,7 +49,7 @@ function exit() {
 }
 
 // "Read and Understand" has no numbered-part slot of its own — the next
-// entry in Home's accordion is always "Listen and identify", the fixed
+// entry in Home's accordion is always "Listen and Identify", the fixed
 // action part right after the `count` numbered ones (see topicParts/
 // HomePage's partsForTopic).
 function finish() {

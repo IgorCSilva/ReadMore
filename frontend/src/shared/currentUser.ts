@@ -7,11 +7,19 @@ export interface CurrentUser {
 const EMAIL_STORAGE_KEY = 'readmore_user_email'
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
+function readStoredEmail(): string | null {
+  const stored = localStorage.getItem(EMAIL_STORAGE_KEY)
+  return stored && EMAIL_RE.test(stored) ? stored : null
+}
+
 // A plain module-level reactive object — same "no store, single shared
 // module instance" pattern as currentSelection.ts. Lets any page (Home's
 // topbar, the library workspace) read/react to the signed-in email without
-// routing it through props.
-const state = reactive<CurrentUser>({ email: null })
+// routing it through props. Seeded from localStorage at module load so a
+// fresh page load (e.g. landing straight on /signin) already reflects a
+// previously signed-in email, and the router guard can check it before any
+// page has had a chance to call ensureUserEmail() itself.
+const state = reactive<CurrentUser>({ email: readStoredEmail() })
 
 export function getCurrentUser(): CurrentUser {
   return state

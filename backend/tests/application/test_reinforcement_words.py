@@ -1,10 +1,4 @@
-import pytest
-
-from backend.app.application.services.reinforcement_words import (
-    reinforcement_word_ids,
-    reinforcement_words_by_tab,
-    split_evenly,
-)
+from backend.app.application.services.reinforcement_words import reinforcement_word_ids
 from backend.app.domain.entities import Chapter, Topic
 
 
@@ -79,38 +73,3 @@ def test_ignores_chapter_and_topic_declaration_order_in_the_input_list():
     result = reinforcement_word_ids(shuffled, chapter_number=1, topic_number=2)
 
     assert result == ["wd1-ch1-top1", "wd2-ch1-top1", "wd3-ch1-top1", "wd7-ch1-top1"]
-
-
-def test_split_evenly_uses_every_item_exactly_once():
-    items = [f"w{i}" for i in range(1, 11)]
-
-    groups = split_evenly(items, 4)
-
-    assert [item for group in groups for item in group] == items
-    assert [len(g) for g in groups] == [3, 3, 2, 2]
-
-
-def test_split_evenly_rejects_non_positive_group_count():
-    with pytest.raises(ValueError):
-        split_evenly(["w1"], 0)
-
-
-def test_reinforcement_words_by_tab_assigns_every_word_to_one_tab():
-    result = reinforcement_words_by_tab(CHAPTERS, chapter_number=3, topic_number=1, tabs=["reading", "dictation", "quiz", "phrases"])
-
-    all_assigned = [word_id for words in result.values() for word_id in words]
-    expected = reinforcement_word_ids(CHAPTERS, chapter_number=3, topic_number=1)
-    assert sorted(all_assigned) == sorted(expected)
-    assert set(result.keys()) == {"reading", "dictation", "quiz", "phrases"}
-
-
-def test_reinforcement_words_by_tab_defaults_to_the_four_learning_tabs():
-    result = reinforcement_words_by_tab(CHAPTERS, chapter_number=2, topic_number=1)
-
-    assert set(result.keys()) == {"reading", "dictation", "quiz", "phrases"}
-
-
-def test_reinforcement_words_by_tab_is_empty_for_every_tab_when_no_previous_topics():
-    result = reinforcement_words_by_tab(CHAPTERS, chapter_number=1, topic_number=1)
-
-    assert result == {"reading": [], "dictation": [], "quiz": [], "phrases": []}
