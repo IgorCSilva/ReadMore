@@ -111,6 +111,64 @@ describe('PresentationPage', () => {
     }
   })
 
+  describe('language toggle', () => {
+    it('defaults to English, with EN marked active', async () => {
+      const { wrapper } = await mountPage()
+      try {
+        expect(wrapper.get('.pres-hero-title').text()).toBe(
+          'Learn a language the way your brain actually remembers it.',
+        )
+        const [en, pt] = wrapper.findAll('.pres-lang-toggle button')
+        expect(en.classes()).toContain('active')
+        expect(pt.classes()).not.toContain('active')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('switches all page content to Portuguese, and back to English', async () => {
+      const { wrapper } = await mountPage()
+      try {
+        const [en, pt] = wrapper.findAll('.pres-lang-toggle button')
+
+        await pt.trigger('click')
+        expect(pt.classes()).toContain('active')
+        expect(en.classes()).not.toContain('active')
+        expect(wrapper.get('.pres-hero-title').text()).toBe(
+          'Aprenda um idioma do jeito que seu cérebro realmente memoriza.',
+        )
+        expect(wrapper.get('.pres-btn-solid').text()).toBe('Entrar')
+        expect(wrapper.findAll('.pres-step-title').map((s) => s.text())).toEqual([
+          'Veja', 'Fale', 'Escreva', 'Leia', 'Ouça',
+        ])
+
+        await en.trigger('click')
+        expect(wrapper.get('.pres-hero-title').text()).toBe(
+          'Learn a language the way your brain actually remembers it.',
+        )
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('keeps the same reveal-on-scroll DOM nodes across a language switch (no remount, no lost reveal state)', async () => {
+      const { wrapper } = await mountPage()
+      try {
+        const stepBefore = wrapper.findAll('.pres-step')[0].element
+        stepBefore.classList.add('reveal-visible') // simulate an already-revealed section
+
+        const [, pt] = wrapper.findAll('.pres-lang-toggle button')
+        await pt.trigger('click')
+
+        const stepAfter = wrapper.findAll('.pres-step')[0].element
+        expect(stepAfter).toBe(stepBefore)
+        expect(stepAfter.classList.contains('reveal-visible')).toBe(true)
+      } finally {
+        wrapper.unmount()
+      }
+    })
+  })
+
   it('observes every reveal-on-scroll section and marks it visible once it intersects', async () => {
     const { wrapper } = await mountPage()
     try {

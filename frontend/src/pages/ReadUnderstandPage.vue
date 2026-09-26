@@ -75,7 +75,10 @@ async function load() {
     if (!foundTopic) return
 
     const panel = document.getElementById('topic-sentences-panel')
-    if (panel) panel.style.display = 'flex'
+    if (panel) {
+      panel.style.display = 'flex'
+      panel.style.padding = '73px 0'
+    }
     sentencesRef.value?.show(topic.value, LANG)
 
     // Restore only after the sentence list has actually rendered — otherwise
