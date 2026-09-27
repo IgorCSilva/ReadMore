@@ -106,8 +106,12 @@ async function load() {
     if (panel) panel.style.display = 'flex'
     // No reinforcement mixing and no cross-topic chapters — same "restricted
     // to this topic's own content" choice already made for the other flow
-    // pages (see PartFlowPage.vue's Reading/Listen-and-write steps).
-    phrasesRef.value?.show(email, LANG, topic.value, 'target', 'origin', [], [], handleProgress, getPosition(positionKey))
+    // pages (see PartFlowPage.vue's Reading/Listen-and-write steps). Trailing
+    // `true` is freshMount: this page fully remounts on every navigation, so
+    // it's safe to auto-apply any pending word-list update instead of
+    // silently rendering a stale/undersized round count (see
+    // loadFreshUserWords in shared/userWords.ts).
+    phrasesRef.value?.show(email, LANG, topic.value, 'target', 'origin', [], [], handleProgress, getPosition(positionKey), true)
   } finally {
     // Handed off to Phrases' own internal loading state (#phrases-loading)
     // from here on — its show() call above isn't awaited on purpose, so

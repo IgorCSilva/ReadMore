@@ -391,3 +391,18 @@ def post_show_word(
     use_case = ShowWordAgain(catalog_repository, topics_repository, progress_repository)
     use_case.execute(email, lang, word_id)
     return {"word_id": word_id, "show": True}
+
+
+# vue-router runs in history mode, so a client-side route like /part/1/2
+# is a real URL the browser can request directly (reload, deep link, PWA
+# launch) — not just something reached by clicking inside the SPA. Every
+# route above this one is matched first, so this only catches paths that
+# aren't a known API endpoint or a static asset. Without it, those requests
+# fell through to the StarletteHTTPException handler above and got the
+# API's JSON {"error": "not found"} instead of the app shell, which is
+# harmless when navigating client-side but breaks on a hard reload/deep
+# link — exactly what happens more often on a real mobile browser than in
+# desktop testing.
+@app.get("/{full_path:path}")
+def spa_fallback(full_path: str):
+    return FileResponse(DIST_DIR / "index.html")
