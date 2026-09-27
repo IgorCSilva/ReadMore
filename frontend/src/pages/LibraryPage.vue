@@ -1275,6 +1275,36 @@ onMounted(() => {
   .sentence-item-content strong {
     color: var(--accent);
   }
+  .sentence-target-word {
+    display: inline;
+    border: none; background: none; padding: 0; margin: 0;
+    font: inherit; color: inherit; cursor: pointer;
+  }
+  .sentence-target-word:hover strong {
+    text-decoration: underline;
+  }
+
+  .target-word-balloon {
+    position: fixed;
+    display: none;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 10px;
+    background: var(--card); color: var(--text);
+    border: 1px solid var(--border); border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    z-index: 200;
+  }
+  .target-word-balloon-audio-btn {
+    display: flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px;
+    border: none; border-radius: 50%;
+    background: var(--accent-soft); color: var(--accent-strong);
+    font-size: 15px; cursor: pointer;
+  }
+  .target-word-balloon-audio-btn:hover {
+    background: var(--accent); color: #fff;
+  }
 
   .reading-stage {
     width: 100%;
