@@ -30,7 +30,7 @@ import { onMounted } from 'vue'
 import { ttsUrl } from '../../shared/api'
 import { speechLocaleFor } from '../../shared/languages'
 import { escapeHtml } from '../../shared/text'
-import { loadUserWords } from '../../shared/userWords'
+import { loadFreshUserWords, loadUserWords } from '../../shared/userWords'
 
 // New tab, last of the reinforcement quartet (reading/dictation/quiz/
 // phrases — see backend/app/application/services/reinforcement_words.py):
@@ -368,10 +368,12 @@ onMounted(() => {
     if (index >= ROUNDS.length) index = 0;
   }
 
-  async function loadAndStart() {
+  async function loadAndStart(freshMount) {
     setLoading(true);
     try {
-      const rawWords = await loadUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
+      const rawWords = freshMount
+        ? await loadFreshUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG)
+        : await loadUserWords(USER_EMAIL, LANG, SENTENCE_LANG, CUE_LANG);
       applyWords(rawWords);
       renderStage();
     } finally {
@@ -379,7 +381,12 @@ onMounted(() => {
     }
   }
 
-  show = (userEmail, lang, topic, sentenceLang, cueLang, allChapters, reinforcementWordIds, onProgressCallback, startIndex) => {
+  // freshMount: true from ListenIdentifyPage.vue, which fully remounts this
+  // component on every navigation — see loadFreshUserWords' own comment for
+  // why that's the right place to auto-apply a pending word-list update.
+  // Omitted (falsy) from LibraryPage.vue's tab-switch usage, which keeps the
+  // existing instant-cache + opt-in-banner behavior.
+  show = (userEmail, lang, topic, sentenceLang, cueLang, allChapters, reinforcementWordIds, onProgressCallback, startIndex, freshMount) => {
     USER_EMAIL = userEmail;
     LANG = lang;
     SENTENCE_LANG = sentenceLang || "target";
@@ -389,7 +396,7 @@ onMounted(() => {
     REINFORCEMENT_WORD_IDS = reinforcementWordIds || [];
     onProgress = onProgressCallback || null;
     index = startIndex || 0;
-    return loadAndStart().catch(showError);
+    return loadAndStart(freshMount).catch(showError);
   };
 
   // Called by the shell when the user switches to a different tab, same

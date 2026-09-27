@@ -3,10 +3,13 @@
 // (user, lang, sentenceLang, cueLang) key per session, not one per tab
 // switch, and a background-refreshed update is never applied silently
 // mid-session: it's parked as "pending" until the user opts in (see
-// UpdateAvailableBanner.vue). A module-level `reactive()` singleton, same
-// idiom as shared/notifications.ts — this app has no store (Pinia/Vuex) and
-// a keyed word-list cache doesn't need one either, every caller imports the
-// same module instance.
+// UpdateAvailableBanner.vue) — or until loadFreshUserWords() below is used
+// from a page that fully remounts on every navigation (PartFlowPage/
+// ReadUnderstandPage/ListenIdentifyPage's Phrases tab), where a fresh mount
+// is itself a safe "not mid-session" point to apply it automatically. A
+// module-level `reactive()` singleton, same idiom as shared/notifications.ts
+// — this app has no store (Pinia/Vuex) and a keyed word-list cache doesn't
+// need one either, every caller imports the same module instance.
 import { reactive } from 'vue'
 import { getUserWords } from './api'
 import { cacheKey, readCache, writeCache } from './cache'
@@ -18,6 +21,7 @@ interface UserWordsEntry {
   pendingData: UserWord[] | null
   hasFetchedOnce: boolean
   loadingPromise: Promise<UserWord[]> | null
+  pendingCheckPromise: Promise<void> | null
 }
 
 const store = reactive<Record<string, UserWordsEntry>>({})
@@ -29,7 +33,7 @@ function keyFor(user: string, lang: string, sentenceLang: string, cueLang: strin
 function getEntry(key: string): UserWordsEntry {
   let entry = store[key]
   if (!entry) {
-    entry = { data: null, pendingData: null, hasFetchedOnce: false, loadingPromise: null }
+    entry = { data: null, pendingData: null, hasFetchedOnce: false, loadingPromise: null, pendingCheckPromise: null }
     store[key] = entry
   }
   return entry
@@ -50,9 +54,9 @@ function checkForUpdate(
   lang: string,
   sentenceLang: string,
   cueLang: string,
-): void {
+): Promise<void> {
   const entry = getEntry(key)
-  getUserWords(user, lang, sentenceLang, cueLang)
+  return getUserWords(user, lang, sentenceLang, cueLang)
     .then((res) => {
       if (entry.data && sameData(entry.data, res.words)) {
         writeCache(key, res.words)
@@ -87,7 +91,9 @@ export async function loadUserWords(
   if (cached) {
     entry.data = cached.data
     entry.hasFetchedOnce = true
-    checkForUpdate(key, user, lang, sentenceLang, cueLang)
+    entry.pendingCheckPromise = checkForUpdate(key, user, lang, sentenceLang, cueLang).finally(() => {
+      entry.pendingCheckPromise = null
+    })
     return entry.data
   }
 
@@ -103,6 +109,36 @@ export async function loadUserWords(
     })
 
   return entry.loadingPromise
+}
+
+// For pages that fully remount on every navigation (PartFlowPage/
+// ReadUnderstandPage/ListenIdentifyPage) rather than reusing a mounted tab —
+// they already show their own loading spinner, so there's no instant-render
+// benefit to protect the way there is for a Library tab switch, and a fresh
+// mount is exactly the "not mid-session" point safe to apply an update at
+// without the risk loadUserWords' opt-in design guards against (disrupting
+// an in-progress round). Guarantees the returned data reflects any update
+// the server has, even one a previous mount this session already noticed
+// and parked but never had anywhere to apply (Library's own
+// UpdateAvailableBanner isn't mounted on these pages).
+export async function loadFreshUserWords(
+  user: string,
+  lang: string,
+  sentenceLang: string,
+  cueLang: string,
+): Promise<UserWord[]> {
+  const key = keyFor(user, lang, sentenceLang, cueLang)
+
+  if (getEntry(key).pendingData) {
+    return applyPendingUpdate(user, lang, sentenceLang, cueLang) ?? getEntry(key).data ?? []
+  }
+
+  const data = await loadUserWords(user, lang, sentenceLang, cueLang)
+
+  const pendingCheck = getEntry(key).pendingCheckPromise
+  if (pendingCheck) await pendingCheck
+
+  return applyPendingUpdate(user, lang, sentenceLang, cueLang) ?? data
 }
 
 export function hasPendingUpdate(

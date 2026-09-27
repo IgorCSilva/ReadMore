@@ -669,6 +669,15 @@ onUnmounted(() => {
 <style>
 body.part-flow-active {
   padding: 0;
+  /* App.vue's global `body { min-height: 100vh }` still applies here since
+     this class only zeroes padding — and plain 100vh is the *largest*
+     mobile viewport (toolbar collapsed), so on a real device with the
+     toolbar showing, the body itself stays taller than what's visible,
+     making the whole page scrollable even once .flow-page's own content
+     fits (see its 100dvh comment above). Override min-height too, with a
+     100dvh line last so it wins over the inherited 100vh where supported. */
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 </style>
 
