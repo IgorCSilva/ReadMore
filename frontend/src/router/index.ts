@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../pages/HomePage.vue'
 import LibraryPage from '../pages/LibraryPage.vue'
 import ListenIdentifyPage from '../pages/ListenIdentifyPage.vue'
+import NotificationsPage from '../pages/NotificationsPage.vue'
 import PartFlowPage from '../pages/PartFlowPage.vue'
 import PresentationPage from '../pages/PresentationPage.vue'
 import ReadUnderstandPage from '../pages/ReadUnderstandPage.vue'
@@ -20,6 +21,7 @@ const router = createRouter({
     { path: '/signin', name: 'sign-in', component: SignInPage, meta: { hideGlobalBottomBar: true } },
     { path: '/home', name: 'home', component: HomePage, meta: { requiresAuth: true } },
     { path: '/library', name: 'library', component: LibraryPage, meta: { requiresAuth: true } },
+    { path: '/notifications', name: 'notifications', component: NotificationsPage, meta: { requiresAuth: true } },
     { path: '/settings', name: 'settings', component: SettingsPage, meta: { requiresAuth: true } },
     // A focused, full-screen lesson flow — App.vue reads hideGlobalBottomBar
     // to swap the global nav bar out for this page's own Next-button bar.
