@@ -14,6 +14,7 @@ class WordDTO(BaseModel):
     filename: str
     sentence: str
     cue: str
+    auxiliar_sentence: str
     pinyin: str
     gender_id: str
     particle_type: str
@@ -26,6 +27,7 @@ class WordDTO(BaseModel):
             filename=word.filename,
             sentence=word.sentence,
             cue=word.cue,
+            auxiliar_sentence=word.auxiliar_sentence,
             pinyin=word.pinyin,
             gender_id=word.gender_id,
             particle_type=word.particle_type,

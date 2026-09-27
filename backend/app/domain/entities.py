@@ -15,6 +15,11 @@ class Word:
     filename: str
     sentence: str
     cue: str
+    # Contextual example sentence (origin language, target word **bolded**)
+    # shown under the word on the teaching flow's first page — authored per
+    # chapter/topic under content/auxiliar_sentences/ as each topic's content
+    # is written, so most words don't have one yet and default to "".
+    auxiliar_sentence: str = ""
     # Romanization shown under the word on the teaching flow's first page —
     # only Chinese words have one so far; every other language's rows simply
     # have no "pinyin" key in their <target>_words.json, which resolves to

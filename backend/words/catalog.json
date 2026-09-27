@@ -1531,6 +1531,18 @@
     {
       "word_id": "wd-0383",
       "filename": "person"
+    },
+    {
+      "word_id": "wd-0384",
+      "filename": "thanks"
+    },
+    {
+      "word_id": "wd-0385",
+      "filename": "how_are_you"
+    },
+    {
+      "word_id": "wd-0386",
+      "filename": "you_are_welcome"
     }
   ]
 }
