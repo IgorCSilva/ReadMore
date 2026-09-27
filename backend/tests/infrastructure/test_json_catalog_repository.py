@@ -22,6 +22,7 @@ def _repository(
     cues: dict[str, str] | None = None,
     word_maps: dict[str, list[dict]] | None = None,
     phrases: dict[str, dict] | None = None,
+    auxiliar_sentences: dict[str, dict] | None = None,
 ) -> JsonCatalogRepository:
     words_dir = tmp_path / "words"
     words_dir.mkdir()
@@ -36,6 +37,12 @@ def _repository(
         _write_json(words_dir / f"{target_code}_words.json", rows)
     for target_code, data in (phrases or {}).items():
         _write_json(content_dir / f"{target_code}_sentences.json", data)
+    for pair_key, chapters in (auxiliar_sentences or {}).items():
+        for chapter_key, topics in chapters.items():
+            for topic_key, rows in topics.items():
+                topic_dir = content_dir / "auxiliar_sentences" / pair_key / chapter_key / topic_key
+                topic_dir.mkdir(parents=True)
+                _write_json(topic_dir / "sentences.json", rows)
     return JsonCatalogRepository(catalog_path, content_dir, sentences_path, cues_path)
 
 
@@ -178,6 +185,62 @@ def test_get_words_falls_back_to_empty_string_when_a_variant_is_not_yet_authored
 
     assert word.sentence == ""
     assert word.cue == ""
+
+
+def test_get_words_maps_auxiliar_sentence_from_its_chapter_topic_file(tmp_path):
+    repository = _repository(
+        tmp_path,
+        words=[{"word_id": "wd-0001", "filename": "hello.webp"}],
+        content={"pt-en": {"chapters": []}},
+        word_maps={"en": [{"word_id": "en-wd-0001", "root_word_id": "wd-0001", "word": "hello"}]},
+        auxiliar_sentences={
+            "pt-en": {"chapter_1": {"topic_1": {"en-wd-0001": "He waved and shouted **hello**."}}}
+        },
+    )
+
+    word = repository.get_words(PT_EN)[0]
+
+    assert word.auxiliar_sentence == "He waved and shouted **hello**."
+
+
+def test_get_words_merges_auxiliar_sentences_across_chapter_topic_dirs(tmp_path):
+    repository = _repository(
+        tmp_path,
+        words=[
+            {"word_id": "wd-0001", "filename": "hello.webp"},
+            {"word_id": "wd-0002", "filename": "bye.webp"},
+        ],
+        content={"pt-en": {"chapters": []}},
+        word_maps={
+            "en": [
+                {"word_id": "en-wd-0001", "root_word_id": "wd-0001", "word": "hello"},
+                {"word_id": "en-wd-0002", "root_word_id": "wd-0002", "word": "bye"},
+            ]
+        },
+        auxiliar_sentences={
+            "pt-en": {
+                "chapter_1": {"topic_1": {"en-wd-0001": "Said **hello**."}},
+                "chapter_2": {"topic_1": {"en-wd-0002": "Said **bye**."}},
+            }
+        },
+    )
+
+    words = {w.word_id: w.auxiliar_sentence for w in repository.get_words(PT_EN)}
+
+    assert words == {"wd-0001": "Said **hello**.", "wd-0002": "Said **bye**."}
+
+
+def test_get_words_defaults_auxiliar_sentence_to_empty_string_when_not_authored(tmp_path):
+    repository = _repository(
+        tmp_path,
+        words=[{"word_id": "wd-0001", "filename": "hello.webp"}],
+        content={"pt-en": {"chapters": []}},
+        word_maps={"en": [{"word_id": "en-wd-0001", "root_word_id": "wd-0001", "word": "hello"}]},
+    )
+
+    word = repository.get_words(PT_EN)[0]
+
+    assert word.auxiliar_sentence == ""
 
 
 def test_get_words_raises_for_unknown_language(tmp_path):

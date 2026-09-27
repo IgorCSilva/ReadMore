@@ -33,7 +33,7 @@ const CHAPTERS = [
 ]
 
 const WORDS = [
-  { word_id: 'w1', original: 'oi', filename: 'w1.png', sentence: '', cue: 'hi (cue)', pinyin: '', gender_id: '', particle_type: '' },
+  { word_id: 'w1', original: 'oi', filename: 'w1.png', sentence: '', cue: 'hi (cue)', auxiliar_sentence: 'He waved and shouted an excited **oi**.', pinyin: 'oh-ee', gender_id: '', particle_type: '' },
   { word_id: 'w2', original: 'tchau', filename: '', sentence: '', cue: 'bye (cue)', pinyin: '', gender_id: '', particle_type: '' },
   { word_id: 'w3', original: 'obrigado', filename: '', sentence: '', cue: 'thanks (cue)', pinyin: '', gender_id: '', particle_type: '' },
   { word_id: 'w4', original: 'por favor', filename: '', sentence: '', cue: 'please (cue)', pinyin: '', gender_id: '', particle_type: '' },
@@ -194,6 +194,30 @@ describe('PartFlowPage', () => {
     }
   })
 
+  it("shows the word's auxiliar sentence under it, with the word bolded", async () => {
+    const { wrapper } = await mountFlow()
+    try {
+      const sentence = wrapper.get('.word-page-1-auxiliar-sentence')
+      expect(sentence.get('strong').text()).toBe('oi')
+      expect(sentence.text()).toBe('He waved and shouted an excited oi.')
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('shows no auxiliar sentence block for a word that has none authored yet', async () => {
+    const { wrapper } = await mountFlow()
+    try {
+      await clickNext(wrapper)
+      await clickNext(wrapper)
+      await clickNext(wrapper) // w2 Page 1 — no auxiliar_sentence in the fixture
+
+      expect(wrapper.find('.word-page-1-auxiliar-sentence').exists()).toBe(false)
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
   it('falls back to a big cue, no image, once every image extension errors', async () => {
     const { wrapper } = await mountFlow()
     try {
@@ -281,6 +305,31 @@ describe('PartFlowPage', () => {
         expect(wrapper.get('.word-page-2-word').text()).toBe('oi')
         expect(wrapper.get('.word-page-2-mic-btn').attributes('disabled')).toBeDefined()
         expect(wrapper.get('.word-page-2-hint').text()).toBe("Voice recognition isn't supported in this browser.")
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('shows the pinyin under the word when the word has one', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await wrapper.get('.flow-next-btn').trigger('click') // w1 Page 2
+        expect(wrapper.get('.word-page-2-pinyin').text()).toBe('oh-ee')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+
+    it('shows no pinyin element for a word that has none', async () => {
+      const { wrapper } = await mountFlow()
+      try {
+        await clickNext(wrapper) // w1 Page 1 -> Page 2
+        await clickNext(wrapper) // w1 Page 2 -> Page 3
+        await clickNext(wrapper) // w1 Page 3 -> w2 Page 1
+        await wrapper.get('.flow-next-btn').trigger('click') // w2 Page 1 -> Page 2
+
+        expect(wrapper.get('.word-page-2-word').text()).toBe('tchau')
+        expect(wrapper.find('.word-page-2-pinyin').exists()).toBe(false)
       } finally {
         wrapper.unmount()
       }

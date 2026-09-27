@@ -26,10 +26,19 @@
         </div>
         <div class="word-page-1-pinyin" v-if="currentStep.word.pinyin">{{ currentStep.word.pinyin }}</div>
       </div>
+
+      <div
+        class="word-page-1-auxiliar-sentence"
+        v-if="currentStep.word.auxiliar_sentence"
+        v-html="renderAuxiliarSentence(currentStep.word.auxiliar_sentence)"
+      ></div>
     </div>
 
     <div class="word-page-2" v-else-if="currentStep?.kind === 'word' && currentStep.pageNumber === 2">
-      <div class="word-page-2-word">{{ currentStep.word.original }}</div>
+      <div class="word-page-2-word-wrap">
+        <div class="word-page-2-word">{{ currentStep.word.original }}</div>
+        <div class="word-page-2-pinyin" v-if="currentStep.word.pinyin">{{ currentStep.word.pinyin }}</div>
+      </div>
 
       <div class="word-page-2-controls">
         <button
@@ -163,6 +172,7 @@ import { formatWordByParticle, getParticle } from '../shared/koreanParticles'
 import { speechLocaleFor } from '../shared/languages'
 import { getLangPair } from '../shared/languagePreference'
 import { buildPartFlowSequence } from '../shared/partFlow'
+import { escapeHtml } from '../shared/text'
 import {
   numberedPartsCount,
   reinforcementWordIdsForPart,
@@ -277,6 +287,11 @@ function startImageLoad(filename) {
   imageCandidates.value = [...new Set([ext, ...EXT_FALLBACKS])]
   imageCandidateIndex.value = 0
   imageOk.value = !!filename
+}
+
+// Same **word** -> <strong> convention as features/sentences/Sentences.vue.
+function renderAuxiliarSentence(sentence) {
+  return escapeHtml(sentence).replace(/\*\*(.+?)\*\*/g, (_, word) => `<strong>${word}</strong>`)
 }
 
 function onImageError() {
@@ -724,8 +739,19 @@ body.part-flow-active {
      *inside* .flow-page itself, staying clear of the fixed bars, instead of
      scrolling the whole body — which previously let content drift half-
      hidden underneath the fixed top/bottom bars, since position:fixed
-     elements don't move with a body-level scroll. */
+     elements don't move with a body-level scroll.
+
+     100vh alone is wrong on real mobile browsers: it's defined as the
+     *largest* viewport (toolbar collapsed), so while the address bar is
+     showing, 100vh overshoots the actually-visible height by the toolbar's
+     size — this box (and its overflow-y) ends up taller than what's on
+     screen, so a scrollbar/scroll gap appears even though content fits.
+     Desktop browsers and devtools device-emulation don't simulate that
+     dynamic toolbar resize, so the bug only shows up on a real device.
+     100dvh tracks the *current* visible viewport instead; keep the 100vh
+     line first as a fallback for browsers without dvh support. */
   height: calc(100vh - 112px);
+  height: calc(100dvh - 112px);
   overflow-y: auto;
   gap: 20px;
 }
@@ -816,6 +842,18 @@ body.part-flow-active {
   color: var(--muted);
 }
 
+.word-page-1-auxiliar-sentence {
+  max-width: 320px;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--muted);
+}
+
+.word-page-1-auxiliar-sentence strong {
+  color: var(--accent);
+}
+
 .word-page-1-audio-btn {
   display: flex;
   align-items: center;
@@ -842,17 +880,30 @@ body.part-flow-active {
   align-self: stretch;
 }
 
-.word-page-2-word {
+.word-page-2-word-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
   padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.word-page-2-word {
   font-size: clamp(28px, 7vw, 44px);
   font-weight: 700;
   text-align: center;
   color: var(--text);
+}
+
+.word-page-2-pinyin {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--muted);
 }
 
 .word-page-2-controls {

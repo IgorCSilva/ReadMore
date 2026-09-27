@@ -9,6 +9,12 @@ export interface Word {
   filename: string
   sentence: string
   cue: string
+  // Contextual example sentence (origin language, target word **bolded**),
+  // shown under the word on the teaching flow's first page — authored per
+  // topic under backend/content/auxiliar_sentences/, so most words don't
+  // have one yet and this comes back "". Optional for the same reason as
+  // pinyin below: most test fixtures predate this field.
+  auxiliar_sentence?: string
   // Only Chinese words carry this (romanization shown on the teaching flow's
   // first page) — every other language's wire response has it as "" (the
   // backend's row.get("pinyin", "") default), which is why it's optional
