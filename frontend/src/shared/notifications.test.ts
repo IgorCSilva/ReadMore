@@ -1,5 +1,5 @@
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import { dismiss, getNotifications, notify } from './notifications'
+import { beforeEach, describe, expect, it } from 'vitest'
+import { dismiss, getNotifications, hasUnread, markAllRead, notify } from './notifications'
 
 function clearNotifications() {
   const list = getNotifications()
@@ -11,14 +11,12 @@ describe('notifications', () => {
     clearNotifications()
   })
 
-  afterEach(() => {
-    vi.useRealTimers()
-  })
-
-  it('adds a notification with the given type and message', () => {
+  it('adds a notification with the given type and message, unread by default', () => {
     notify('info', 'hello')
 
-    expect(getNotifications()).toEqual([{ id: expect.any(Number), type: 'info', message: 'hello' }])
+    expect(getNotifications()).toEqual([
+      { id: expect.any(Number), type: 'info', message: 'hello', timestamp: expect.any(Number), read: false },
+    ])
   })
 
   it('assigns increasing ids so notifications can be dismissed individually', () => {
@@ -28,27 +26,39 @@ describe('notifications', () => {
     expect(second).toBeGreaterThan(first)
   })
 
+  it('keeps the most recently added notification first', () => {
+    notify('info', 'first')
+    notify('info', 'second')
+
+    expect(getNotifications().map((n) => n.message)).toEqual(['second', 'first'])
+  })
+
   it('dismiss removes a notification by id, leaving others untouched', () => {
     const first = notify('success', 'keep')
     const second = notify('success', 'remove')
 
     dismiss(second)
 
-    expect(getNotifications()).toEqual([{ id: first, type: 'success', message: 'keep' }])
+    expect(getNotifications()).toEqual([
+      { id: first, type: 'success', message: 'keep', timestamp: expect.any(Number), read: false },
+    ])
   })
 
-  it('auto-dismisses info/success/warning after their timeout, but never error', () => {
-    vi.useFakeTimers()
+  it('reports unread whenever any notification hasn\'t been read yet', () => {
+    expect(hasUnread.value).toBe(false)
 
+    notify('info', 'hello')
+
+    expect(hasUnread.value).toBe(true)
+  })
+
+  it('markAllRead clears the unread flag for every notification', () => {
     notify('info', 'a')
-    notify('success', 'b')
-    notify('warning', 'c')
-    notify('error', 'd')
+    notify('info', 'b')
 
-    vi.advanceTimersByTime(4000)
-    expect(getNotifications().map((n) => n.type)).toEqual(['warning', 'error'])
+    markAllRead()
 
-    vi.advanceTimersByTime(4000)
-    expect(getNotifications().map((n) => n.type)).toEqual(['error'])
+    expect(hasUnread.value).toBe(false)
+    expect(getNotifications().every((n) => n.read)).toBe(true)
   })
 })
