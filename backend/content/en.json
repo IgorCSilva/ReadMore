@@ -1,32 +1,29 @@
 {
   "chapter_1": {
     "topic_1": [
-      "Hi!",
-      "Hello!",
-      "Bye!",
-      "See you soon!",
-      "See you later!",
-      "Pleasure!",
+      "hello",
+      "bye",
+      "and",
       "good",
-      "day",
+      "morning",
       "afternoon",
+      "evening",
       "night",
-      "everything",
-      "well",
       "how",
+      "are",
       "you",
+      "i",
       "am",
-      "name",
       "my",
+      "name",
       "is",
-      "I",
-      "me",
-      "called",
-      "from",
-      "where",
-      "Brazilian",
-      "speak",
-      "Portuguese"
+      "what",
+      "yes",
+      "no",
+      "thanks",
+      "welcome",
+      "how are you",
+      "you are welcome"
     ]
   }
 }
