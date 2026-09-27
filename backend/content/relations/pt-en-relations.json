@@ -1,0 +1,34 @@
+{
+  "chapter_1": {
+    "topic_1": {
+      "pt": {
+        "oi": "hello",
+        "tchau": "bye",
+        "e": "and",
+        "bom": "good",
+        "boa": "good",
+        "dia": "morning",
+        "tarde": "afternoon",
+        "noite": ["evening", "night"],
+        "bom dia": "good morning",
+        "boa tarde": "good afternoon",
+        "boa noite": ["good evening", "good night"],
+        "bem": "good",
+        "como": "how",
+        "você": "you",
+        "estou": "am",
+        "está": ["are", "is"],
+        "nome": "name",
+        "meu": "my",
+        "é": "is",
+        "eu": "i",
+        "chamo": "is",
+        "sim": "yes",
+        "não": "no",
+        "obrigado": "thanks",
+        "obrigada": "thanks",
+        "de nada": "you are welcome"
+      }
+    }
+  }
+}

@@ -1552,5 +1552,23 @@
     "root_word_id": "wd-0259",
     "word": "kilo",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "en-wd-0260",
+    "root_word_id": "wd-0384",
+    "word": "thanks",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "en-wd-0261",
+    "root_word_id": "wd-0385",
+    "word": "how are you",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "en-wd-0262",
+    "root_word_id": "wd-0386",
+    "word": "you are welcome",
+    "gender_id": "not_apply"
   }
 ]

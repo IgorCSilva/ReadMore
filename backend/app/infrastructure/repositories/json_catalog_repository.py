@@ -17,6 +17,9 @@ exercises — topics' word_ids use the same per-target-language ids, resolved
 back to root_word_id by get_chapters below), sentences.json and cues.json
 (flat, keyed by "<lang-code>_<root_word_id>" — lang-code is either the pair's
 origin or target code, letting the same root_word_id resolve either variant).
+content/auxiliar_sentences/<pair>/chapter_N/topic_N/sentences.json holds a
+contextual example sentence per per-target-language word_id, authored
+topic-by-topic (see _load_auxiliar_sentences below).
 """
 import json
 from pathlib import Path
@@ -82,6 +85,21 @@ class JsonCatalogRepository(CatalogRepository):
             return {}
         return self._load_json(path)
 
+    def _load_auxiliar_sentences(self, pair_key: str) -> dict[str, str]:
+        """Per-target-language friendly word_id (e.g. "en-wd-0005") -> a
+        contextual example sentence with that word **bolded**, from
+        content/auxiliar_sentences/<pair>/chapter_N/topic_N/sentences.json —
+        authored per topic as content is written, so merged across whichever
+        chapter/topic directories exist for this pair (a word_id is only ever
+        introduced in one topic, so no key collisions across files)."""
+        base = self._content_dir / "auxiliar_sentences" / pair_key
+        if not base.exists():
+            return {}
+        merged: dict[str, str] = {}
+        for path in sorted(base.glob("chapter_*/topic_*/sentences.json")):
+            merged.update(self._load_json(path))
+        return merged
+
     def _load_word_map(self, target_code: str) -> dict[str, str]:
         """Per-target-language friendly id -> catalog root_word_id (e.g.
         "es-wd-0001" -> "wd-0001"). Lets content/<pair>.json's topics.word_ids
@@ -119,6 +137,7 @@ class JsonCatalogRepository(CatalogRepository):
         catalog_by_id = {w["word_id"]: w for w in self._load_words()}
         sentences = self._load_json(self._sentences_path)
         cues = self._load_json(self._cues_path)
+        auxiliar_sentences = self._load_auxiliar_sentences(pair_key)
         sentence_code = _resolve_lang_code(lang, sentence_lang)
         cue_code = _resolve_lang_code(lang, cue_lang)
 
@@ -129,6 +148,7 @@ class JsonCatalogRepository(CatalogRepository):
                 filename=catalog_by_id[row["root_word_id"]]["filename"],
                 sentence=sentences.get(f"{sentence_code}_{row['root_word_id']}", ""),
                 cue=cues.get(f"{cue_code}_{row['root_word_id']}", ""),
+                auxiliar_sentence=auxiliar_sentences.get(row["word_id"], ""),
                 pinyin=row.get("pinyin", ""),
                 gender_id=row.get("gender_id", "not_apply"),
                 particle_type=row.get("particle_type", "not_apply"),
