@@ -1543,6 +1543,78 @@
     {
       "word_id": "wd-0386",
       "filename": "you_are_welcome"
+    },
+    {
+      "word_id": "wd-0387",
+      "filename": "introduce_oneself"
+    },
+    {
+      "word_id": "wd-0388",
+      "filename": "ask"
+    },
+    {
+      "word_id": "wd-0389",
+      "filename": "answer"
+    },
+    {
+      "word_id": "wd-0390",
+      "filename": "new"
+    },
+    {
+      "word_id": "wd-0391",
+      "filename": "new_feminine"
+    },
+    {
+      "word_id": "wd-0392",
+      "filename": "friend_feminine"
+    },
+    {
+      "word_id": "wd-0393",
+      "filename": "delighted"
+    },
+    {
+      "word_id": "wd-0394",
+      "filename": "delighted_feminine"
+    },
+    {
+      "word_id": "wd-0395",
+      "filename": "likewise"
+    },
+    {
+      "word_id": "wd-0396",
+      "filename": "say"
+    },
+    {
+      "word_id": "wd-0397",
+      "filename": "smile"
+    },
+    {
+      "word_id": "wd-0398",
+      "filename": "neighbor"
+    },
+    {
+      "word_id": "wd-0399",
+      "filename": "neighbor_feminine"
+    },
+    {
+      "word_id": "wd-0400",
+      "filename": "stranger"
+    },
+    {
+      "word_id": "wd-0401",
+      "filename": "stranger_feminine"
+    },
+    {
+      "word_id": "wd-0402",
+      "filename": "talk"
+    },
+    {
+      "word_id": "wd-0403",
+      "filename": "greet"
+    },
+    {
+      "word_id": "wd-0404",
+      "filename": "first_time"
     }
   ]
 }
