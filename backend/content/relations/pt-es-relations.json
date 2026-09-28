@@ -224,6 +224,34 @@
         "presente": "regalo",
         "ninguém": "nadie"
       }
+    },
+    "topic_3": {
+      "pt": {
+        "conhecer": "conocer",
+        "novo": "nuevo",
+        "nova": "nueva",
+        "apresentar": "presentarse",
+        "perguntar": "preguntar",
+        "responder": "responder",
+        "dizer": "decir",
+        "amigo": "amigo",
+        "amiga": "amiga",
+        "que": "qué",
+        "prazer": [
+          "mucho gusto",
+          "encantado",
+          "encantada"
+        ],
+        "primeira vez": "primera vez",
+        "conversar": "conversar",
+        "cumprimentar": "saludar",
+        "vizinho": "vecino",
+        "vizinha": "vecina",
+        "estranho": "desconocido",
+        "estranha": "desconocida",
+        "se": "se",
+        "chama": "llama"
+      }
     }
   },
   "chapter_4": {
