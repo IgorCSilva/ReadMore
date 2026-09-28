@@ -1168,5 +1168,149 @@
     "root_word_id": "wd-0380",
     "word": "nadie",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0196",
+    "root_word_id": "wd-0006",
+    "word": "qué",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0197",
+    "root_word_id": "wd-0050",
+    "word": "quién",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0198",
+    "root_word_id": "wd-0387",
+    "word": "presentarse",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0199",
+    "root_word_id": "wd-0231",
+    "word": "conocer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0200",
+    "root_word_id": "wd-0388",
+    "word": "preguntar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0201",
+    "root_word_id": "wd-0389",
+    "word": "responder",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0202",
+    "root_word_id": "wd-0390",
+    "word": "nuevo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0203",
+    "root_word_id": "wd-0391",
+    "word": "nueva",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0204",
+    "root_word_id": "wd-0081",
+    "word": "amigo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0205",
+    "root_word_id": "wd-0392",
+    "word": "amiga",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0206",
+    "root_word_id": "wd-0014",
+    "word": "mucho gusto",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0207",
+    "root_word_id": "wd-0393",
+    "word": "encantado",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0208",
+    "root_word_id": "wd-0394",
+    "word": "encantada",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0209",
+    "root_word_id": "wd-0395",
+    "word": "igualmente",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0210",
+    "root_word_id": "wd-0070",
+    "word": "también",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0211",
+    "root_word_id": "wd-0396",
+    "word": "decir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0212",
+    "root_word_id": "wd-0397",
+    "word": "sonreír",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0213",
+    "root_word_id": "wd-0398",
+    "word": "vecino",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0214",
+    "root_word_id": "wd-0399",
+    "word": "vecina",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0215",
+    "root_word_id": "wd-0400",
+    "word": "desconocido",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0216",
+    "root_word_id": "wd-0401",
+    "word": "desconocida",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0217",
+    "root_word_id": "wd-0402",
+    "word": "conversar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0218",
+    "root_word_id": "wd-0403",
+    "word": "saludar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0219",
+    "root_word_id": "wd-0404",
+    "word": "primera vez",
+    "gender_id": "not_apply"
   }
 ]
