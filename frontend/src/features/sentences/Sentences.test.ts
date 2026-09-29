@@ -100,11 +100,13 @@ describe('Sentences', () => {
       }
     })
 
-    it('does not fetch words for a non-Korean pair', () => {
+    it('fetches word data for a non-Korean pair too, for the balloon\'s cue/auxiliar sentence', () => {
       const wrapper = mount(Sentences, { attachTo: document.body })
       try {
         wrapper.vm.show(TOPIC, 'pt-en')
-        expect(api.getWords).not.toHaveBeenCalled()
+        expect(api.getWords).toHaveBeenCalledWith('pt-en')
+        // Non-Korean words still render with no particle coloring.
+        expect(wrapper.find('.sentence-item-content strong').attributes('style')).toBeUndefined()
       } finally {
         wrapper.unmount()
       }
