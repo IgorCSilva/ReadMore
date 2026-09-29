@@ -265,9 +265,9 @@ Then run the backend/scripts/shuffle_sentences.py script to shuffle sentences:
 
 ## Add target idiom natural sentences
 
-target: en
-chapter: 1
-topic: 1
+target: es
+chapter: 2
+topic: 3
 
 Now, generate simple natural sentences, following the pattern in
 backend/content/es_sentences.json.
