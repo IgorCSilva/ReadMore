@@ -252,6 +252,26 @@
         "se": "se",
         "chama": "llama"
       }
+    },
+    "topic_4": {
+      "pt": {
+        "animal": "animal",
+        "cachorro": "perro",
+        "gato": "gato",
+        "pássaro": "pájaro",
+        "pequeno": "pequeño",
+        "pequena": "pequeña",
+        "grande": "grande",
+        "correr": "correr",
+        "andar": "andar",
+        "brincar": "jugar",
+        "latir": "ladrar",
+        "miar": "maullar",
+        "voar": "volar",
+        "parar": "parar",
+        "perto": "cerca",
+        "longe": "lejos"
+      }
     }
   },
   "chapter_4": {

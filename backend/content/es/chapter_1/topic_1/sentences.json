@@ -1,0 +1,739 @@
+[
+  {
+    "id": "es-sent-0001",
+    "sentence": "¡Hola! ¿Cómo estás?",
+    "word_ids": [
+      "es-wd-0001",
+      "es-wd-0012",
+      "es-wd-0035"
+    ]
+  },
+  {
+    "id": "es-sent-0002",
+    "sentence": "Hola, yo me llamo Ana.",
+    "word_ids": [
+      "es-wd-0001",
+      "es-wd-0018",
+      "es-wd-0019",
+      "es-wd-0020"
+    ]
+  },
+  {
+    "id": "es-sent-0003",
+    "sentence": "Hola, mucho gusto.",
+    "word_ids": [
+      "es-wd-0001"
+    ]
+  },
+  {
+    "id": "es-sent-0004",
+    "sentence": "Chao, hasta luego.",
+    "word_ids": [
+      "es-wd-0002"
+    ]
+  },
+  {
+    "id": "es-sent-0005",
+    "sentence": "Chao, nos vemos.",
+    "word_ids": [
+      "es-wd-0002"
+    ]
+  },
+  {
+    "id": "es-sent-0006",
+    "sentence": "Chao, gracias por todo.",
+    "word_ids": [
+      "es-wd-0002",
+      "es-wd-0031",
+      "es-wd-0010"
+    ]
+  },
+  {
+    "id": "es-sent-0007",
+    "sentence": "Yo estoy bien y tú, ¿cómo estás?",
+    "word_ids": [
+      "es-wd-0018",
+      "es-wd-0014",
+      "es-wd-0011",
+      "es-wd-0033",
+      "es-wd-0013",
+      "es-wd-0012",
+      "es-wd-0035"
+    ]
+  },
+  {
+    "id": "es-sent-0008",
+    "sentence": "Es de día y también de noche.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0023",
+      "es-wd-0007",
+      "es-wd-0033",
+      "es-wd-0023",
+      "es-wd-0009"
+    ]
+  },
+  {
+    "id": "es-sent-0009",
+    "sentence": "Mi nombre es Ana y tú, ¿cómo te llamas?",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0015",
+      "es-wd-0017",
+      "es-wd-0033",
+      "es-wd-0013",
+      "es-wd-0012"
+    ]
+  },
+  {
+    "id": "es-sent-0010",
+    "sentence": "¡Qué bueno verte!",
+    "word_ids": [
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-0011",
+    "sentence": "Bien, es bueno saberlo.",
+    "word_ids": [
+      "es-wd-0011",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-0012",
+    "sentence": "Todo es bueno hoy.",
+    "word_ids": [
+      "es-wd-0010",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-0013",
+    "sentence": "Tengo una buena noche.",
+    "word_ids": [
+      "es-wd-0034",
+      "es-wd-0009"
+    ]
+  },
+  {
+    "id": "es-sent-0014",
+    "sentence": "Ella es buena persona.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-0015",
+    "sentence": "¡Que tengas una buena tarde!",
+    "word_ids": [
+      "es-wd-0034",
+      "es-wd-0008"
+    ]
+  },
+  {
+    "id": "es-sent-0016",
+    "sentence": "Hoy es un día especial.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0007"
+    ]
+  },
+  {
+    "id": "es-sent-0017",
+    "sentence": "Todo el día estoy bien.",
+    "word_ids": [
+      "es-wd-0010",
+      "es-wd-0007",
+      "es-wd-0014",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0018",
+    "sentence": "El día es largo pero bueno.",
+    "word_ids": [
+      "es-wd-0007",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-0019",
+    "sentence": "Ya es tarde, chao.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0008",
+      "es-wd-0002"
+    ]
+  },
+  {
+    "id": "es-sent-0020",
+    "sentence": "Por la tarde estoy en casa.",
+    "word_ids": [
+      "es-wd-0008",
+      "es-wd-0014"
+    ]
+  },
+  {
+    "id": "es-sent-0021",
+    "sentence": "La tarde es tranquila y bonita.",
+    "word_ids": [
+      "es-wd-0008",
+      "es-wd-0017",
+      "es-wd-0033"
+    ]
+  },
+  {
+    "id": "es-sent-0022",
+    "sentence": "Esta noche estoy en casa.",
+    "word_ids": [
+      "es-wd-0009",
+      "es-wd-0014"
+    ]
+  },
+  {
+    "id": "es-sent-0023",
+    "sentence": "La noche es tranquila.",
+    "word_ids": [
+      "es-wd-0009",
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0024",
+    "sentence": "Chao, nos vemos por la noche.",
+    "word_ids": [
+      "es-wd-0002",
+      "es-wd-0009"
+    ]
+  },
+  {
+    "id": "es-sent-0025",
+    "sentence": "Yo estoy bien, gracias.",
+    "word_ids": [
+      "es-wd-0018",
+      "es-wd-0014",
+      "es-wd-0011",
+      "es-wd-0031"
+    ]
+  },
+  {
+    "id": "es-sent-0026",
+    "sentence": "Todo va bien hoy.",
+    "word_ids": [
+      "es-wd-0010",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0027",
+    "sentence": "¿Tú estás bien?",
+    "word_ids": [
+      "es-wd-0013",
+      "es-wd-0035",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0028",
+    "sentence": "Gracias por todo.",
+    "word_ids": [
+      "es-wd-0031",
+      "es-wd-0010"
+    ]
+  },
+  {
+    "id": "es-sent-0029",
+    "sentence": "Todo es nuevo aquí.",
+    "word_ids": [
+      "es-wd-0010",
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0030",
+    "sentence": "Yo estoy bien, todo bien.",
+    "word_ids": [
+      "es-wd-0018",
+      "es-wd-0014",
+      "es-wd-0011",
+      "es-wd-0010",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0031",
+    "sentence": "¿Cómo estás tú?",
+    "word_ids": [
+      "es-wd-0012",
+      "es-wd-0035",
+      "es-wd-0013"
+    ]
+  },
+  {
+    "id": "es-sent-0032",
+    "sentence": "¿Cómo te llamas?",
+    "word_ids": [
+      "es-wd-0012"
+    ]
+  },
+  {
+    "id": "es-sent-0033",
+    "sentence": "No sé cómo se llama.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0012"
+    ]
+  },
+  {
+    "id": "es-sent-0034",
+    "sentence": "Tú eres mi amigo.",
+    "word_ids": [
+      "es-wd-0013",
+      "es-wd-0016"
+    ]
+  },
+  {
+    "id": "es-sent-0035",
+    "sentence": "¿Y tú, cómo estás?",
+    "word_ids": [
+      "es-wd-0033",
+      "es-wd-0013",
+      "es-wd-0012",
+      "es-wd-0035"
+    ]
+  },
+  {
+    "id": "es-sent-0036",
+    "sentence": "Tú estás bien, gracias.",
+    "word_ids": [
+      "es-wd-0013",
+      "es-wd-0035",
+      "es-wd-0011",
+      "es-wd-0031"
+    ]
+  },
+  {
+    "id": "es-sent-0037",
+    "sentence": "Estoy muy bien, gracias.",
+    "word_ids": [
+      "es-wd-0014",
+      "es-wd-0011",
+      "es-wd-0031"
+    ]
+  },
+  {
+    "id": "es-sent-0038",
+    "sentence": "Yo estoy en casa todo el día.",
+    "word_ids": [
+      "es-wd-0018",
+      "es-wd-0014",
+      "es-wd-0010",
+      "es-wd-0007"
+    ]
+  },
+  {
+    "id": "es-sent-0039",
+    "sentence": "Hoy estoy feliz.",
+    "word_ids": [
+      "es-wd-0014"
+    ]
+  },
+  {
+    "id": "es-sent-0040",
+    "sentence": "¿Cómo estás hoy?",
+    "word_ids": [
+      "es-wd-0012",
+      "es-wd-0035"
+    ]
+  },
+  {
+    "id": "es-sent-0041",
+    "sentence": "Tú estás muy bien.",
+    "word_ids": [
+      "es-wd-0013",
+      "es-wd-0035",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0042",
+    "sentence": "¿Dónde estás?",
+    "word_ids": [
+      "es-wd-0035"
+    ]
+  },
+  {
+    "id": "es-sent-0043",
+    "sentence": "Mi nombre es Carlos.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0015",
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0044",
+    "sentence": "¿Cuál es tu nombre?",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0015"
+    ]
+  },
+  {
+    "id": "es-sent-0045",
+    "sentence": "Yo me llamo María, ese es mi nombre.",
+    "word_ids": [
+      "es-wd-0018",
+      "es-wd-0019",
+      "es-wd-0020",
+      "es-wd-0017",
+      "es-wd-0016",
+      "es-wd-0015"
+    ]
+  },
+  {
+    "id": "es-sent-0046",
+    "sentence": "Mi nombre es Laura.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0015",
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0047",
+    "sentence": "Mi día fue bueno.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0007",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-0048",
+    "sentence": "Ella es mi amiga.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0016"
+    ]
+  },
+  {
+    "id": "es-sent-0049",
+    "sentence": "Hoy es un buen momento.",
+    "word_ids": [
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0050",
+    "sentence": "Pedro es mi amigo.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0016"
+    ]
+  },
+  {
+    "id": "es-sent-0051",
+    "sentence": "Esto es todo.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0010"
+    ]
+  },
+  {
+    "id": "es-sent-0052",
+    "sentence": "Yo estoy bien.",
+    "word_ids": [
+      "es-wd-0018",
+      "es-wd-0014",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0053",
+    "sentence": "Yo me llamo Pedro.",
+    "word_ids": [
+      "es-wd-0018",
+      "es-wd-0019",
+      "es-wd-0020"
+    ]
+  },
+  {
+    "id": "es-sent-0054",
+    "sentence": "¿Y yo?",
+    "word_ids": [
+      "es-wd-0033",
+      "es-wd-0018"
+    ]
+  },
+  {
+    "id": "es-sent-0055",
+    "sentence": "Me llamo Sofía.",
+    "word_ids": [
+      "es-wd-0019",
+      "es-wd-0020"
+    ]
+  },
+  {
+    "id": "es-sent-0056",
+    "sentence": "Hola, me llamo Carlos, mucho gusto.",
+    "word_ids": [
+      "es-wd-0001",
+      "es-wd-0019",
+      "es-wd-0020"
+    ]
+  },
+  {
+    "id": "es-sent-0057",
+    "sentence": "Me llamo Luis, ¿y tú?",
+    "word_ids": [
+      "es-wd-0019",
+      "es-wd-0020",
+      "es-wd-0033",
+      "es-wd-0013"
+    ]
+  },
+  {
+    "id": "es-sent-0058",
+    "sentence": "Yo me llamo Diana, mucho gusto.",
+    "word_ids": [
+      "es-wd-0018",
+      "es-wd-0019",
+      "es-wd-0020"
+    ]
+  },
+  {
+    "id": "es-sent-0059",
+    "sentence": "Me llamo Roberto, mucho gusto.",
+    "word_ids": [
+      "es-wd-0019",
+      "es-wd-0020"
+    ]
+  },
+  {
+    "id": "es-sent-0060",
+    "sentence": "¡Hola! Yo me llamo Elena, mucho gusto.",
+    "word_ids": [
+      "es-wd-0001",
+      "es-wd-0018",
+      "es-wd-0019",
+      "es-wd-0020"
+    ]
+  },
+  {
+    "id": "es-sent-0061",
+    "sentence": "Yo soy de Brasil.",
+    "word_ids": [
+      "es-wd-0018",
+      "es-wd-0023"
+    ]
+  },
+  {
+    "id": "es-sent-0062",
+    "sentence": "Gracias de todo corazón.",
+    "word_ids": [
+      "es-wd-0031",
+      "es-wd-0023",
+      "es-wd-0010"
+    ]
+  },
+  {
+    "id": "es-sent-0063",
+    "sentence": "Es de día.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0023",
+      "es-wd-0007"
+    ]
+  },
+  {
+    "id": "es-sent-0064",
+    "sentence": "Sí, estoy bien.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0014",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0065",
+    "sentence": "¿Tú eres de España? Sí.",
+    "word_ids": [
+      "es-wd-0013",
+      "es-wd-0023",
+      "es-wd-0030"
+    ]
+  },
+  {
+    "id": "es-sent-0066",
+    "sentence": "Sí, gracias.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0031"
+    ]
+  },
+  {
+    "id": "es-sent-0067",
+    "sentence": "No, gracias.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0031"
+    ]
+  },
+  {
+    "id": "es-sent-0068",
+    "sentence": "No estoy bien hoy.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0014",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0069",
+    "sentence": "¿Tú eres de aquí? No.",
+    "word_ids": [
+      "es-wd-0013",
+      "es-wd-0023",
+      "es-wd-0036"
+    ]
+  },
+  {
+    "id": "es-sent-0070",
+    "sentence": "Muchas gracias por todo.",
+    "word_ids": [
+      "es-wd-0031",
+      "es-wd-0010"
+    ]
+  },
+  {
+    "id": "es-sent-0071",
+    "sentence": "Gracias, estoy muy bien.",
+    "word_ids": [
+      "es-wd-0031",
+      "es-wd-0014",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0072",
+    "sentence": "Gracias, chao.",
+    "word_ids": [
+      "es-wd-0031",
+      "es-wd-0002"
+    ]
+  },
+  {
+    "id": "es-sent-0073",
+    "sentence": "Gracias. De nada.",
+    "word_ids": [
+      "es-wd-0031",
+      "es-wd-0032"
+    ]
+  },
+  {
+    "id": "es-sent-0074",
+    "sentence": "No hay de qué, de nada.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0023",
+      "es-wd-0032"
+    ]
+  },
+  {
+    "id": "es-sent-0075",
+    "sentence": "—Gracias por ayudarme. —De nada, estoy feliz de ayudarte.",
+    "word_ids": [
+      "es-wd-0031",
+      "es-wd-0032",
+      "es-wd-0014",
+      "es-wd-0023"
+    ]
+  },
+  {
+    "id": "es-sent-0493",
+    "sentence": "¡Buenos días! ¿Cómo estás?",
+    "word_ids": [
+      "es-wd-0175",
+      "es-wd-0012",
+      "es-wd-0035"
+    ]
+  },
+  {
+    "id": "es-sent-0494",
+    "sentence": "Buenos días, yo estoy muy bien.",
+    "word_ids": [
+      "es-wd-0175",
+      "es-wd-0018",
+      "es-wd-0014",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0495",
+    "sentence": "Todo el día empieza con un buenos días.",
+    "word_ids": [
+      "es-wd-0010",
+      "es-wd-0007",
+      "es-wd-0175"
+    ]
+  },
+  {
+    "id": "es-sent-0496",
+    "sentence": "¡Buenas tardes! ¿Cómo estás?",
+    "word_ids": [
+      "es-wd-0176",
+      "es-wd-0012",
+      "es-wd-0035"
+    ]
+  },
+  {
+    "id": "es-sent-0497",
+    "sentence": "Buenas tardes, gracias por todo.",
+    "word_ids": [
+      "es-wd-0176",
+      "es-wd-0031",
+      "es-wd-0010"
+    ]
+  },
+  {
+    "id": "es-sent-0498",
+    "sentence": "Ya es tarde, buenas tardes.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0008",
+      "es-wd-0176"
+    ]
+  },
+  {
+    "id": "es-sent-0499",
+    "sentence": "¡Buenas noches! Hasta mañana.",
+    "word_ids": [
+      "es-wd-0177"
+    ]
+  },
+  {
+    "id": "es-sent-0500",
+    "sentence": "Buenas noches, yo estoy cansado.",
+    "word_ids": [
+      "es-wd-0177",
+      "es-wd-0018",
+      "es-wd-0014"
+    ]
+  },
+  {
+    "id": "es-sent-0501",
+    "sentence": "Es de noche, buenas noches.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0023",
+      "es-wd-0009",
+      "es-wd-0177"
+    ]
+  }
+]

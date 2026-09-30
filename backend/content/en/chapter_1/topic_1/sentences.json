@@ -1,0 +1,534 @@
+[
+  {
+    "id": "en-sent-0001",
+    "sentence": "Hello! I am Ana.",
+    "word_ids": [
+      "en-wd-0001",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0002",
+    "sentence": "Hello, how are you?",
+    "word_ids": [
+      "en-wd-0001",
+      "en-wd-0261"
+    ]
+  },
+  {
+    "id": "en-sent-0003",
+    "sentence": "Hello, my name is Ana.",
+    "word_ids": [
+      "en-wd-0001",
+      "en-wd-0011",
+      "en-wd-0009",
+      "en-wd-0010"
+    ]
+  },
+  {
+    "id": "en-sent-0004",
+    "sentence": "I am fine, thanks.",
+    "word_ids": [
+      "en-wd-0007",
+      "en-wd-0008",
+      "en-wd-0260"
+    ]
+  },
+  {
+    "id": "en-sent-0005",
+    "sentence": "Good morning! How are you today?",
+    "word_ids": [
+      "en-wd-0059",
+      "en-wd-0076",
+      "en-wd-0261"
+    ]
+  },
+  {
+    "id": "en-sent-0006",
+    "sentence": "Good afternoon, everyone.",
+    "word_ids": [
+      "en-wd-0059",
+      "en-wd-0077"
+    ]
+  },
+  {
+    "id": "en-sent-0007",
+    "sentence": "Good evening! I am happy to see you.",
+    "word_ids": [
+      "en-wd-0059",
+      "en-wd-0078",
+      "en-wd-0007",
+      "en-wd-0008",
+      "en-wd-0013"
+    ]
+  },
+  {
+    "id": "en-sent-0008",
+    "sentence": "Good night! Sleep well.",
+    "word_ids": [
+      "en-wd-0059",
+      "en-wd-0079"
+    ]
+  },
+  {
+    "id": "en-sent-0009",
+    "sentence": "What is my name? My name is Ana.",
+    "word_ids": [
+      "en-wd-0006",
+      "en-wd-0010",
+      "en-wd-0011",
+      "en-wd-0009",
+      "en-wd-0011",
+      "en-wd-0009",
+      "en-wd-0010"
+    ]
+  },
+  {
+    "id": "en-sent-0010",
+    "sentence": "What? I am sorry.",
+    "word_ids": [
+      "en-wd-0006",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0011",
+    "sentence": "What time is it? I do not know.",
+    "word_ids": [
+      "en-wd-0006",
+      "en-wd-0010",
+      "en-wd-0007"
+    ]
+  },
+  {
+    "id": "en-sent-0012",
+    "sentence": "Hello, what is my name again?",
+    "word_ids": [
+      "en-wd-0001",
+      "en-wd-0006",
+      "en-wd-0010",
+      "en-wd-0011",
+      "en-wd-0009"
+    ]
+  },
+  {
+    "id": "en-sent-0013",
+    "sentence": "My name is Tom. And you?",
+    "word_ids": [
+      "en-wd-0011",
+      "en-wd-0009",
+      "en-wd-0010",
+      "en-wd-0063",
+      "en-wd-0013"
+    ]
+  },
+  {
+    "id": "en-sent-0014",
+    "sentence": "Hi there! Oh wait, hello!",
+    "word_ids": [
+      "en-wd-0001"
+    ]
+  },
+  {
+    "id": "en-sent-0015",
+    "sentence": "You are very kind, thanks.",
+    "word_ids": [
+      "en-wd-0013",
+      "en-wd-0021",
+      "en-wd-0260"
+    ]
+  },
+  {
+    "id": "en-sent-0016",
+    "sentence": "Are you happy today? Yes, I am.",
+    "word_ids": [
+      "en-wd-0021",
+      "en-wd-0013",
+      "en-wd-0023",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0017",
+    "sentence": "Are you tired? No, I am not.",
+    "word_ids": [
+      "en-wd-0021",
+      "en-wd-0013",
+      "en-wd-0024",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0018",
+    "sentence": "I am Ana and you are Tom.",
+    "word_ids": [
+      "en-wd-0007",
+      "en-wd-0008",
+      "en-wd-0063",
+      "en-wd-0013",
+      "en-wd-0021"
+    ]
+  },
+  {
+    "id": "en-sent-0019",
+    "sentence": "Yes, I am from Brazil.",
+    "word_ids": [
+      "en-wd-0023",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0020",
+    "sentence": "No, I am not from Brazil.",
+    "word_ids": [
+      "en-wd-0024",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0021",
+    "sentence": "I am happy, and my friend is happy too.",
+    "word_ids": [
+      "en-wd-0007",
+      "en-wd-0008",
+      "en-wd-0063",
+      "en-wd-0011",
+      "en-wd-0010"
+    ]
+  },
+  {
+    "id": "en-sent-0022",
+    "sentence": "My friend is here, and I am there.",
+    "word_ids": [
+      "en-wd-0011",
+      "en-wd-0010",
+      "en-wd-0063",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0023",
+    "sentence": "Hello, and welcome to the class.",
+    "word_ids": [
+      "en-wd-0001",
+      "en-wd-0063",
+      "en-wd-0072"
+    ]
+  },
+  {
+    "id": "en-sent-0024",
+    "sentence": "Thanks a lot, and welcome back.",
+    "word_ids": [
+      "en-wd-0260",
+      "en-wd-0063",
+      "en-wd-0072"
+    ]
+  },
+  {
+    "id": "en-sent-0025",
+    "sentence": "You are welcome, my friend.",
+    "word_ids": [
+      "en-wd-0262",
+      "en-wd-0011"
+    ]
+  },
+  {
+    "id": "en-sent-0026",
+    "sentence": "Thanks for the help. You are welcome.",
+    "word_ids": [
+      "en-wd-0260",
+      "en-wd-0262"
+    ]
+  },
+  {
+    "id": "en-sent-0027",
+    "sentence": "I said thanks, and she said you are welcome.",
+    "word_ids": [
+      "en-wd-0007",
+      "en-wd-0260",
+      "en-wd-0063",
+      "en-wd-0262"
+    ]
+  },
+  {
+    "id": "en-sent-0028",
+    "sentence": "Good morning, my friend. How are you?",
+    "word_ids": [
+      "en-wd-0059",
+      "en-wd-0076",
+      "en-wd-0011",
+      "en-wd-0261"
+    ]
+  },
+  {
+    "id": "en-sent-0029",
+    "sentence": "In the morning, I am happy.",
+    "word_ids": [
+      "en-wd-0076",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0030",
+    "sentence": "In the afternoon, are you free?",
+    "word_ids": [
+      "en-wd-0077",
+      "en-wd-0021",
+      "en-wd-0013"
+    ]
+  },
+  {
+    "id": "en-sent-0031",
+    "sentence": "In the evening, I am tired.",
+    "word_ids": [
+      "en-wd-0078",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0032",
+    "sentence": "At night, I am quiet.",
+    "word_ids": [
+      "en-wd-0079",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0033",
+    "sentence": "Good morning and good night, my friend.",
+    "word_ids": [
+      "en-wd-0059",
+      "en-wd-0076",
+      "en-wd-0063",
+      "en-wd-0059",
+      "en-wd-0079",
+      "en-wd-0011"
+    ]
+  },
+  {
+    "id": "en-sent-0034",
+    "sentence": "Hello, hello! How are you, and how is my friend?",
+    "word_ids": [
+      "en-wd-0001",
+      "en-wd-0001",
+      "en-wd-0261",
+      "en-wd-0063",
+      "en-wd-0051",
+      "en-wd-0010",
+      "en-wd-0011"
+    ]
+  },
+  {
+    "id": "en-sent-0035",
+    "sentence": "Yes, my name is Ana. And you, what is your name?",
+    "word_ids": [
+      "en-wd-0023",
+      "en-wd-0011",
+      "en-wd-0009",
+      "en-wd-0010",
+      "en-wd-0063",
+      "en-wd-0013",
+      "en-wd-0006",
+      "en-wd-0010",
+      "en-wd-0009"
+    ]
+  },
+  {
+    "id": "en-sent-0036",
+    "sentence": "No, thanks. I am fine.",
+    "word_ids": [
+      "en-wd-0024",
+      "en-wd-0260",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0037",
+    "sentence": "Bye! Thanks for everything.",
+    "word_ids": [
+      "en-wd-0022",
+      "en-wd-0260"
+    ]
+  },
+  {
+    "id": "en-sent-0038",
+    "sentence": "Bye, and good night.",
+    "word_ids": [
+      "en-wd-0022",
+      "en-wd-0063",
+      "en-wd-0059",
+      "en-wd-0079"
+    ]
+  },
+  {
+    "id": "en-sent-0039",
+    "sentence": "Bye, my friend! See you in the morning.",
+    "word_ids": [
+      "en-wd-0022",
+      "en-wd-0011",
+      "en-wd-0013",
+      "en-wd-0076"
+    ]
+  },
+  {
+    "id": "en-sent-0040",
+    "sentence": "I am Tom, and my name is Tom too.",
+    "word_ids": [
+      "en-wd-0007",
+      "en-wd-0008",
+      "en-wd-0063",
+      "en-wd-0011",
+      "en-wd-0009",
+      "en-wd-0010"
+    ]
+  },
+  {
+    "id": "en-sent-0041",
+    "sentence": "Are you Tom? Yes, I am.",
+    "word_ids": [
+      "en-wd-0021",
+      "en-wd-0013",
+      "en-wd-0023",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0042",
+    "sentence": "Is she happy? Yes, she is.",
+    "word_ids": [
+      "en-wd-0010",
+      "en-wd-0023",
+      "en-wd-0010"
+    ]
+  },
+  {
+    "id": "en-sent-0043",
+    "sentence": "What is this? I do not know, and I am confused.",
+    "word_ids": [
+      "en-wd-0006",
+      "en-wd-0010",
+      "en-wd-0007",
+      "en-wd-0063",
+      "en-wd-0007",
+      "en-wd-0008"
+    ]
+  },
+  {
+    "id": "en-sent-0044",
+    "sentence": "Hello, I am fine. Thanks, and how are you?",
+    "word_ids": [
+      "en-wd-0001",
+      "en-wd-0007",
+      "en-wd-0008",
+      "en-wd-0260",
+      "en-wd-0063",
+      "en-wd-0261"
+    ]
+  },
+  {
+    "id": "en-sent-0045",
+    "sentence": "Good afternoon and good evening, everyone.",
+    "word_ids": [
+      "en-wd-0059",
+      "en-wd-0077",
+      "en-wd-0063",
+      "en-wd-0059",
+      "en-wd-0078"
+    ]
+  },
+  {
+    "id": "en-sent-0046",
+    "sentence": "My afternoon is good, and my evening is good too.",
+    "word_ids": [
+      "en-wd-0011",
+      "en-wd-0077",
+      "en-wd-0010",
+      "en-wd-0059",
+      "en-wd-0063",
+      "en-wd-0011",
+      "en-wd-0078",
+      "en-wd-0010",
+      "en-wd-0059"
+    ]
+  },
+  {
+    "id": "en-sent-0047",
+    "sentence": "Is it morning or afternoon? It is morning.",
+    "word_ids": [
+      "en-wd-0010",
+      "en-wd-0076",
+      "en-wd-0077",
+      "en-wd-0010",
+      "en-wd-0076"
+    ]
+  },
+  {
+    "id": "en-sent-0048",
+    "sentence": "Is it evening or night? It is night.",
+    "word_ids": [
+      "en-wd-0010",
+      "en-wd-0078",
+      "en-wd-0079",
+      "en-wd-0010",
+      "en-wd-0079"
+    ]
+  },
+  {
+    "id": "en-sent-0049",
+    "sentence": "How do you say this in English?",
+    "word_ids": [
+      "en-wd-0051",
+      "en-wd-0013"
+    ]
+  },
+  {
+    "id": "en-sent-0050",
+    "sentence": "How nice! I am happy for you.",
+    "word_ids": [
+      "en-wd-0051",
+      "en-wd-0007",
+      "en-wd-0008",
+      "en-wd-0013"
+    ]
+  },
+  {
+    "id": "en-sent-0051",
+    "sentence": "I do not know how, but thanks for asking.",
+    "word_ids": [
+      "en-wd-0007",
+      "en-wd-0051",
+      "en-wd-0260"
+    ]
+  },
+  {
+    "id": "en-sent-0052",
+    "sentence": "Thanks! Welcome, my friend.",
+    "word_ids": [
+      "en-wd-0260",
+      "en-wd-0072",
+      "en-wd-0011"
+    ]
+  },
+  {
+    "id": "en-sent-0053",
+    "sentence": "I said thanks, and she said welcome.",
+    "word_ids": [
+      "en-wd-0007",
+      "en-wd-0260",
+      "en-wd-0063",
+      "en-wd-0072"
+    ]
+  }
+]

@@ -34,9 +34,9 @@ import { loadFreshUserWords, loadUserWords } from '../../shared/userWords'
 
 // New tab, last of the reinforcement quartet (reading/dictation/quiz/
 // phrases — see backend/app/application/services/reinforcement_words.py):
-// listen to a natural target-language sentence (backend/content/
-// <target>_sentences.json, exposed as topic.phrases) and tap the known
-// words, in the order they appear, from an 8-option word bank.
+// listen to a natural target-language sentence (backend/content/<target>/
+// chapter_N/topic_N/sentences.json, exposed as topic.phrases) and tap the
+// known words, in the order they appear, from an 8-option word bank.
 //
 // A "round" is one phrase. Its correct answer is phrase.word_ids in order,
 // unfiltered by confident/not — unlike Reading/Dictation/Quiz, "known word"
@@ -56,10 +56,34 @@ import { loadFreshUserWords, loadUserWords } from '../../shared/userWords'
 
 const OPTION_COUNT = 8;
 // \p{L}\p{M} (Unicode letters + combining marks) covers every script's
-// words, including Hangul — a bare Latin range would treat Korean tokens
-// as non-word separators and stall the pointer walk below.
-const WORD_TOKEN_RE = /[\p{L}\p{M}]+/u;
-const WORD_TOKEN_RE_G = /([\p{L}\p{M}]+)/u;
+// letters, including Hangul — a bare Latin \w range would treat accented
+// letters (e.g. "día") as boundaries and multi-word vocabulary entries
+// (e.g. "un día", see backend/words/es_words.json) as separator-split.
+const LETTER_RE = /[\p{L}\p{M}]/u;
+
+function escapeRegExp(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+// Finds the next case-insensitive occurrence of `needle` in `haystack`
+// that isn't glued to surrounding letters on either side — a Unicode-aware
+// stand-in for \b, which only recognizes ASCII word characters and would
+// misplace a boundary inside an accented word like "día". `needle` can
+// itself contain spaces (multi-word vocabulary entries like "un día"),
+// which a per-token match couldn't represent at all.
+function findWordMatch(haystack, needle) {
+  const pattern = new RegExp(escapeRegExp(needle), "giu");
+  let match;
+  while ((match = pattern.exec(haystack))) {
+    const before = haystack[match.index - 1];
+    const after = haystack[match.index + match[0].length];
+    if (!(before && LETTER_RE.test(before)) && !(after && LETTER_RE.test(after))) {
+      return match;
+    }
+    pattern.lastIndex = match.index + 1;
+  }
+  return null;
+}
 
 function shuffle(items) {
   const result = items.slice();
@@ -216,31 +240,28 @@ onMounted(() => {
     return shuffle([...round.correctWords, ...distractors]);
   }
 
-  // Tokenizes the sentence into alternating separator/word chunks, walking
-  // round.correctWords in order to find each one's occurrence — same
-  // approach used to author/verify content/es_sentences.json's own word_ids.
+  // Walks round.correctWords in order, finding each one's occurrence in
+  // the sentence starting after the previous match — same approach used to
+  // author/verify content/es/chapter_N/topic_N/sentences.json's own
+  // word_ids. Matches on the raw sentence rather than pre-split tokens so a
+  // multi-word vocabulary entry (e.g. "un día") is found as one unit
+  // instead of needing to equal a single token.
   function renderSentenceHtml(round, mode) {
-    const tokens = round.sentence.split(WORD_TOKEN_RE_G);
-    const correctWords = round.correctWords;
-    let pointer = 0;
+    const sentence = round.sentence;
+    let cursor = 0;
     let html = "";
-    for (const token of tokens) {
-      const expected = correctWords[pointer];
-      if (
-        expected &&
-        WORD_TOKEN_RE.test(token) &&
-        token.toLowerCase() === expected.word.toLowerCase()
-      ) {
-        pointer++;
-        if (mode === "blanks") {
-          html += `<span class="phrase-blank">____</span>`;
-        } else {
-          html += `<strong class="phrase-revealed-word" style="color:var(--accent-strong)">${escapeHtml(token)}</strong>`;
-        }
-      } else {
-        html += escapeHtml(token);
-      }
+    for (const expected of round.correctWords) {
+      const match = findWordMatch(sentence.slice(cursor), expected.word);
+      if (!match) continue;
+      const start = cursor + match.index;
+      const end = start + match[0].length;
+      html += escapeHtml(sentence.slice(cursor, start));
+      html += mode === "blanks"
+        ? `<span class="phrase-blank">____</span>`
+        : `<strong class="phrase-revealed-word" style="color:var(--accent-strong)">${escapeHtml(sentence.slice(start, end))}</strong>`;
+      cursor = end;
     }
+    html += escapeHtml(sentence.slice(cursor));
     return html;
   }
 

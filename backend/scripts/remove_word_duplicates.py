@@ -1,6 +1,7 @@
 """Remove, from a topic's word list, any word that also appears in another
-chapter/topic of the same backend/content/<language>.json file — i.e. the
-same duplicates reported by check_word_duplicates.py.
+chapter/topic of the same language, i.e. another backend/content/<language>/
+chapter_N/topic_N/words.json file — the same duplicates reported by
+check_word_duplicates.py.
 
 The word is only removed from the topic given as argument; the other
 topic(s) where it also appears are left untouched.
@@ -28,12 +29,6 @@ from check_word_duplicates import (  # noqa: E402
 )
 
 
-def get_topic_container(data, chapter_key, topic_key):
-    chapter = data[chapter_key]
-    topics = chapter["topics"] if "topics" in chapter else chapter
-    return topics[topic_key]
-
-
 def remove_duplicates(data, chapter_key, topic_key):
     duplicates = find_duplicates(data, chapter_key, topic_key)
 
@@ -41,16 +36,12 @@ def remove_duplicates(data, chapter_key, topic_key):
         return []
 
     duplicate_keys = {normalize(word) for word in duplicates}
-    topic = get_topic_container(data, chapter_key, topic_key)
-    words = topic["words"] if isinstance(topic, dict) else topic
+    words = data[chapter_key][topic_key]
 
     removed = [word for word in words if normalize(word) in duplicate_keys]
     kept = [word for word in words if normalize(word) not in duplicate_keys]
 
-    if isinstance(topic, dict):
-        topic["words"] = kept
-    else:
-        data[chapter_key][topic_key] = kept
+    data[chapter_key][topic_key] = kept
 
     return removed
 
@@ -85,9 +76,9 @@ def main():
         print("(dry run — file not modified)")
         return 0
 
-    path = CONTENT_DIR / f"{args.language}.json"
+    path = CONTENT_DIR / args.language / chapter_key / topic_key / "words.json"
     with open(path, "w", encoding="utf-8") as file:
-        json.dump(data, file, ensure_ascii=False, indent=2)
+        json.dump(data[chapter_key][topic_key], file, ensure_ascii=False, indent=2)
         file.write("\n")
 
     return 0
