@@ -34,9 +34,9 @@ import { loadFreshUserWords, loadUserWords } from '../../shared/userWords'
 
 // New tab, last of the reinforcement quartet (reading/dictation/quiz/
 // phrases — see backend/app/application/services/reinforcement_words.py):
-// listen to a natural target-language sentence (backend/content/
-// <target>_sentences.json, exposed as topic.phrases) and tap the known
-// words, in the order they appear, from an 8-option word bank.
+// listen to a natural target-language sentence (backend/content/<target>/
+// chapter_N/topic_N/sentences.json, exposed as topic.phrases) and tap the
+// known words, in the order they appear, from an 8-option word bank.
 //
 // A "round" is one phrase. Its correct answer is phrase.word_ids in order,
 // unfiltered by confident/not — unlike Reading/Dictation/Quiz, "known word"
@@ -218,7 +218,7 @@ onMounted(() => {
 
   // Tokenizes the sentence into alternating separator/word chunks, walking
   // round.correctWords in order to find each one's occurrence — same
-  // approach used to author/verify content/es_sentences.json's own word_ids.
+  // approach used to author/verify content/es/chapter_N/topic_N/sentences.json's own word_ids.
   function renderSentenceHtml(round, mode) {
     const tokens = round.sentence.split(WORD_TOKEN_RE_G);
     const correctWords = round.correctWords;

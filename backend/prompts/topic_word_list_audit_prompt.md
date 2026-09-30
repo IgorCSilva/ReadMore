@@ -172,4 +172,4 @@ Gaps**.
 
 idiom=pt, chapter=1, topic=3 → resolves to `A0-EL-3 — At Home`, checked against
 roadmap.md Section 4's "At Home" entry and didactic_roadmap.md's `A0-EL-3` per-topic
-breakdown entry, against `backend/content/pt.json`'s `chapter_1.topics.topic_3.words`.
+breakdown entry, against `backend/content/pt/chapter_1/topic_3/words.json`.

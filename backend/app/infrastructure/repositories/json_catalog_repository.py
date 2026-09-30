@@ -12,9 +12,10 @@ per (target language, concept) pair: `{word_id: "<target>-wd-NNNN" (sequential
 per language), root_word_id: "<catalog word_id>", word: "<spelling>"}`.
 `root_word_id` is the join key back to catalog.json and is never renumbered or
 reused, same stability guarantee as catalog.json's own word_id. Everything
-pair-specific lives elsewhere: content/<pair>.json (chapters/topics/texts/
-exercises — topics' word_ids use the same per-target-language ids, resolved
-back to root_word_id by get_chapters below), sentences.json and cues.json
+pair-specific lives elsewhere: content/<pair>/chapter_N/info.json + topic_N/
+{info,word_ids,mixed_sentences,texts,exercises}.json (topics' word_ids use
+the same per-target-language ids, resolved back to root_word_id by
+get_chapters below — see _load_content), sentences.json and cues.json
 (flat, keyed by "<lang-code>_<root_word_id>" — lang-code is either the pair's
 origin or target code, letting the same root_word_id resolve either variant).
 content/auxiliar_sentences/<pair>/chapter_N/topic_N/sentences.json holds a
@@ -58,11 +59,38 @@ class JsonCatalogRepository(CatalogRepository):
     def _load_words(self) -> list[dict]:
         return self._load_json(self._catalog_path)["words"]
 
+    def _load_optional_json(self, path: Path) -> list:
+        return self._load_json(path) if path.exists() else []
+
     def _load_content(self, lang: LanguagePair) -> dict:
-        path = self._content_dir / f"{lang}.json"
-        if not path.exists():
+        """{"chapters": [...]}, assembled from content/<pair>/chapter_N/
+        info.json (chapter_id, number, title, description, status) and, per
+        topic, content/<pair>/chapter_N/topic_N/info.json (topic_id, number,
+        title, description, status) plus word_ids.json, mixed_sentences.json
+        (the origin-language sentences with **bolded** target words — not to
+        be confused with content/<target>/.../sentences.json's standalone
+        target-language phrases, loaded separately by _load_phrases),
+        texts.json, and exercises.json — all four are optional per topic
+        (default to []), same as _load_lang_words/_load_phrases treat a
+        missing file elsewhere in this class."""
+        dir_path = self._content_dir / str(lang)
+        if not dir_path.is_dir():
             raise LanguageNotFoundError(str(lang))
-        return self._load_json(path)
+
+        chapters = []
+        for chapter_dir in sorted(dir_path.glob("chapter_*"), key=lambda p: int(p.name.split("_")[1])):
+            chapter = self._load_json(chapter_dir / "info.json")
+            topics = []
+            for topic_dir in sorted(chapter_dir.glob("topic_*"), key=lambda p: int(p.name.split("_")[1])):
+                topic = self._load_json(topic_dir / "info.json")
+                topic["word_ids"] = self._load_optional_json(topic_dir / "word_ids.json")
+                topic["sentences"] = self._load_optional_json(topic_dir / "mixed_sentences.json")
+                topic["texts"] = self._load_optional_json(topic_dir / "texts.json")
+                topic["exercises"] = self._load_optional_json(topic_dir / "exercises.json")
+                topics.append(topic)
+            chapter["topics"] = topics
+            chapters.append(chapter)
+        return {"chapters": chapters}
 
     def _load_lang_words(self, target_code: str) -> list[dict]:
         """Rows from backend/words/<target>_words.json: {word_id, root_word_id,
@@ -76,14 +104,19 @@ class JsonCatalogRepository(CatalogRepository):
 
     def _load_phrases(self, target_code: str) -> dict:
         """chapter_N -> topic_N -> [{id, sentence, word_ids}], from
-        content/<target>_sentences.json (e.g. es_sentences.json) — standalone
-        natural target-language sentences for the reinforcement "listen and
-        pick the known words" tab. Missing file (no phrases authored for this
-        target yet) is not an error, same as _load_lang_words above."""
-        path = self._content_dir / f"{target_code}_sentences.json"
-        if not path.exists():
+        content/<target>/chapter_N/topic_N/sentences.json (mirrors
+        auxiliar_sentences below) — standalone natural target-language
+        sentences for the reinforcement "listen and pick the known words"
+        tab. Missing dir (no phrases authored for this target yet) is not an
+        error, same as _load_lang_words above."""
+        dir_path = self._content_dir / target_code
+        if not dir_path.is_dir():
             return {}
-        return self._load_json(path)
+        merged: dict[str, dict] = {}
+        for path in sorted(dir_path.glob("chapter_*/topic_*/sentences.json")):
+            chapter_key, topic_key = path.parent.parent.name, path.parent.name
+            merged.setdefault(chapter_key, {})[topic_key] = self._load_json(path)
+        return merged
 
     def _load_auxiliar_sentences(self, pair_key: str) -> dict[str, str]:
         """Per-target-language friendly word_id (e.g. "en-wd-0005") -> a
@@ -102,22 +135,26 @@ class JsonCatalogRepository(CatalogRepository):
 
     def _load_word_map(self, target_code: str) -> dict[str, str]:
         """Per-target-language friendly id -> catalog root_word_id (e.g.
-        "es-wd-0001" -> "wd-0001"). Lets content/<pair>.json's topics.word_ids
-        read as a clean sequence per language while every other consumer
+        "es-wd-0001" -> "wd-0001"). Lets content/<pair>/chapter_N/topic_N/
+        word_ids.json read as a clean sequence per language while every other consumer
         (frontend, exercises, Sheets-backed progress) keeps resolving on
         catalog.json's stable global word_id, unchanged."""
         return {row["word_id"]: row["root_word_id"] for row in self._load_lang_words(target_code)}
 
     def list_languages(self) -> list[LanguagePair]:
-        # content_dir also holds per-language word lists (e.g. es.json, used by
-        # the words-adaptation phase to author a target's vocabulary before
-        # it's adapted into a pair) alongside actual "<origin>-<target>.json"
-        # pair files — skip anything whose stem doesn't parse as a pair rather
-        # than assuming every *.json here is one.
+        # content_dir also holds per-language word list directories (e.g.
+        # es/chapter_N/topic_N/words.json, used by the words-adaptation phase
+        # to author a target's vocabulary before it's adapted into a pair)
+        # and non-content directories (relations/, auxiliar_sentences/)
+        # alongside actual "<origin>-<target>/" pair directories — skip
+        # anything whose name doesn't parse as a pair (no hyphen) rather than
+        # assuming every directory here is one.
         pairs = []
-        for path in sorted(self._content_dir.glob("*.json")):
+        for path in sorted(self._content_dir.iterdir()):
+            if not path.is_dir():
+                continue
             try:
-                pairs.append(LanguagePair.parse(path.stem))
+                pairs.append(LanguagePair.parse(path.name))
             except ValueError:
                 continue
         return pairs
@@ -131,7 +168,7 @@ class JsonCatalogRepository(CatalogRepository):
         # dropped since, for this app so far, one target language never
         # appears under two different origins.
         lang_words = self._load_lang_words(lang.target)
-        if not lang_words and not (self._content_dir / f"{pair_key}.json").exists():
+        if not lang_words and not (self._content_dir / pair_key).is_dir():
             raise LanguageNotFoundError(pair_key)
 
         catalog_by_id = {w["word_id"]: w for w in self._load_words()}

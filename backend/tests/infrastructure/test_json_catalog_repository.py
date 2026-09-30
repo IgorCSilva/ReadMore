@@ -14,6 +14,33 @@ def _write_json(path, data: dict):
     return path
 
 
+def _write_content(content_dir, pair, data: dict):
+    """Writes a {"chapters": [...]} dict out as content/<pair>/chapter_N/
+    info.json + chapter_N/topic_N/{info,word_ids,mixed_sentences,texts,
+    exercises}.json, mirroring JsonCatalogRepository._load_content's
+    on-disk layout."""
+    pair_dir = content_dir / pair
+    pair_dir.mkdir(parents=True, exist_ok=True)
+    for chapter in data.get("chapters", []):
+        chapter_dir = pair_dir / f"chapter_{chapter['number']}"
+        chapter_dir.mkdir(parents=True, exist_ok=True)
+        chapter_info = {k: v for k, v in chapter.items() if k != "topics"}
+        _write_json(chapter_dir / "info.json", chapter_info)
+        for topic in chapter.get("topics", []):
+            topic_dir = chapter_dir / f"topic_{topic['number']}"
+            topic_dir.mkdir(parents=True, exist_ok=True)
+            topic_info = {k: v for k, v in topic.items() if k not in ("word_ids", "texts", "sentences", "exercises")}
+            _write_json(topic_dir / "info.json", topic_info)
+            if "word_ids" in topic:
+                _write_json(topic_dir / "word_ids.json", topic["word_ids"])
+            if "sentences" in topic:
+                _write_json(topic_dir / "mixed_sentences.json", topic["sentences"])
+            if "texts" in topic:
+                _write_json(topic_dir / "texts.json", topic["texts"])
+            if "exercises" in topic:
+                _write_json(topic_dir / "exercises.json", topic["exercises"])
+
+
 def _repository(
     tmp_path,
     words: list[dict] | None = None,
@@ -30,13 +57,17 @@ def _repository(
     content_dir = tmp_path / "content"
     content_dir.mkdir()
     for pair, data in (content or {}).items():
-        _write_json(content_dir / f"{pair}.json", data)
+        _write_content(content_dir, pair, data)
     sentences_path = _write_json(words_dir / "sentences.json", sentences or {})
     cues_path = _write_json(words_dir / "cues.json", cues or {})
     for target_code, rows in (word_maps or {}).items():
         _write_json(words_dir / f"{target_code}_words.json", rows)
-    for target_code, data in (phrases or {}).items():
-        _write_json(content_dir / f"{target_code}_sentences.json", data)
+    for target_code, chapters in (phrases or {}).items():
+        for chapter_key, topics in chapters.items():
+            for topic_key, rows in topics.items():
+                topic_dir = content_dir / target_code / chapter_key / topic_key
+                topic_dir.mkdir(parents=True)
+                _write_json(topic_dir / "sentences.json", rows)
     for pair_key, chapters in (auxiliar_sentences or {}).items():
         for chapter_key, topics in chapters.items():
             for topic_key, rows in topics.items():
@@ -56,9 +87,9 @@ def test_list_languages_parses_content_dir_filenames_as_pairs(tmp_path):
 
 
 def test_list_languages_skips_non_pair_files_in_content_dir(tmp_path):
-    # content_dir also holds per-language word lists (es.json, pt.json, ...)
-    # used by the words-adaptation phase — these have no hyphen in the stem
-    # and must not be mistaken for a "<origin>-<target>.json" pair file.
+    # content_dir also holds per-language word list directories (es/, pt/,
+    # ...) used by the words-adaptation phase — these have no hyphen in the
+    # name and must not be mistaken for an "<origin>-<target>/" pair dir.
     repository = _repository(
         tmp_path,
         content={"pt-en": {"chapters": []}, "es": {"chapter_1": {"topic_1": []}}},

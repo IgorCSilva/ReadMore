@@ -1,5 +1,6 @@
-"""Count words in backend/content/<language>.json across a chapter/topic
-range, inclusive, following chapter/topic order (not file order).
+"""Count words in backend/content/<language>/chapter_N/topic_N/words.json
+across a chapter/topic range, inclusive, following chapter/topic order (not
+file order).
 
 Usage:
     python backend/scripts/count_words.py <language> <start_chapter> <start_topic> <end_chapter> <end_topic>

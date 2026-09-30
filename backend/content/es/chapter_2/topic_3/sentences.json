@@ -1,0 +1,710 @@
+[
+      {
+        "id": "es-sent-0556",
+        "sentence": "¿Qué te gusta hacer los fines de semana?",
+        "word_ids": [
+          "es-wd-0196",
+          "es-wd-0108",
+          "es-wd-0023",
+          "es-wd-0158"
+        ]
+      },
+      {
+        "id": "es-sent-0557",
+        "sentence": "¿Qué opinas de mi vecino nuevo?",
+        "word_ids": [
+          "es-wd-0196",
+          "es-wd-0023",
+          "es-wd-0016",
+          "es-wd-0213",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0558",
+        "sentence": "No entiendo qué quieres decir.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0196",
+          "es-wd-0211"
+        ]
+      },
+      {
+        "id": "es-sent-0559",
+        "sentence": "¿Quién es esa persona?",
+        "word_ids": [
+          "es-wd-0197",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0560",
+        "sentence": "¿Quién vive en la casa de la esquina?",
+        "word_ids": [
+          "es-wd-0197",
+          "es-wd-0082",
+          "es-wd-0063",
+          "es-wd-0023",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0561",
+        "sentence": "No sé quién es el vecino nuevo.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0197",
+          "es-wd-0017",
+          "es-wd-0057",
+          "es-wd-0213",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0562",
+        "sentence": "Ella quiere presentarse a un vecino nuevo.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0198",
+          "es-wd-0076",
+          "es-wd-0213",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0563",
+        "sentence": "Es de buena educación presentarse antes de hablar.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0023",
+          "es-wd-0034",
+          "es-wd-0198",
+          "es-wd-0174",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0564",
+        "sentence": "Él decidió presentarse con una sonrisa.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0198",
+          "es-wd-0061",
+          "es-wd-0077"
+        ]
+      },
+      {
+        "id": "es-sent-0565",
+        "sentence": "Me gusta conocer gente nueva.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0199",
+          "es-wd-0203"
+        ]
+      },
+      {
+        "id": "es-sent-0566",
+        "sentence": "Quiero conocer a mi vecina nueva.",
+        "word_ids": [
+          "es-wd-0125",
+          "es-wd-0199",
+          "es-wd-0016",
+          "es-wd-0214",
+          "es-wd-0203"
+        ]
+      },
+      {
+        "id": "es-sent-0567",
+        "sentence": "Fuimos a la fiesta para conocer a un amigo.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0199",
+          "es-wd-0076",
+          "es-wd-0204"
+        ]
+      },
+      {
+        "id": "es-sent-0568",
+        "sentence": "Quiero preguntar tu nombre.",
+        "word_ids": [
+          "es-wd-0125",
+          "es-wd-0200",
+          "es-wd-0015"
+        ]
+      },
+      {
+        "id": "es-sent-0569",
+        "sentence": "Es normal preguntar dónde vives.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0200",
+          "es-wd-0024"
+        ]
+      },
+      {
+        "id": "es-sent-0570",
+        "sentence": "Ella fue a preguntar por el vecino nuevo.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0200",
+          "es-wd-0057",
+          "es-wd-0213",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0571",
+        "sentence": "Es difícil responder esa pregunta.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0201"
+        ]
+      },
+      {
+        "id": "es-sent-0572",
+        "sentence": "Prefiero responder con calma.",
+        "word_ids": [
+          "es-wd-0201",
+          "es-wd-0061"
+        ]
+      },
+      {
+        "id": "es-sent-0573",
+        "sentence": "Nadie quiso responder primero.",
+        "word_ids": [
+          "es-wd-0195",
+          "es-wd-0201"
+        ]
+      },
+      {
+        "id": "es-sent-0574",
+        "sentence": "Tengo un amigo nuevo en la escuela.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0204",
+          "es-wd-0202",
+          "es-wd-0082"
+        ]
+      },
+      {
+        "id": "es-sent-0575",
+        "sentence": "Él es un vecino nuevo en el barrio.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0017",
+          "es-wd-0076",
+          "es-wd-0213",
+          "es-wd-0202",
+          "es-wd-0083"
+        ]
+      },
+      {
+        "id": "es-sent-0576",
+        "sentence": "Mi amiga es muy simpática.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0205",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0577",
+        "sentence": "Hoy conocí a una amiga nueva.",
+        "word_ids": [
+          "es-wd-0146",
+          "es-wd-0077",
+          "es-wd-0205",
+          "es-wd-0203"
+        ]
+      },
+      {
+        "id": "es-sent-0578",
+        "sentence": "Sofía es mi amiga de la infancia.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0016",
+          "es-wd-0205",
+          "es-wd-0023",
+          "es-wd-0058"
+        ]
+      },
+      {
+        "id": "es-sent-0579",
+        "sentence": "Ella tiene un amigo muy simpático.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0080",
+          "es-wd-0076",
+          "es-wd-0204"
+        ]
+      },
+      {
+        "id": "es-sent-0580",
+        "sentence": "Mi primo es mi mejor amigo.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0048",
+          "es-wd-0017",
+          "es-wd-0016",
+          "es-wd-0204"
+        ]
+      },
+      {
+        "id": "es-sent-0581",
+        "sentence": "Mucho gusto, dijo él con una sonrisa.",
+        "word_ids": [
+          "es-wd-0206",
+          "es-wd-0159",
+          "es-wd-0061",
+          "es-wd-0077"
+        ]
+      },
+      {
+        "id": "es-sent-0582",
+        "sentence": "Ella dijo mucho gusto al conocer a mi amigo.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0206",
+          "es-wd-0199",
+          "es-wd-0016",
+          "es-wd-0204"
+        ]
+      },
+      {
+        "id": "es-sent-0583",
+        "sentence": "Siempre digo mucho gusto cuando conozco a alguien.",
+        "word_ids": [
+          "es-wd-0206",
+          "es-wd-0182"
+        ]
+      },
+      {
+        "id": "es-sent-0584",
+        "sentence": "Él está encantado de conocer a su vecino nuevo.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0207",
+          "es-wd-0023",
+          "es-wd-0199",
+          "es-wd-0052",
+          "es-wd-0213",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0585",
+        "sentence": "Estoy encantado con mi casa nueva.",
+        "word_ids": [
+          "es-wd-0014",
+          "es-wd-0207",
+          "es-wd-0061",
+          "es-wd-0016",
+          "es-wd-0063",
+          "es-wd-0203"
+        ]
+      },
+      {
+        "id": "es-sent-0586",
+        "sentence": "Él se siente encantado en su barrio nuevo.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0021",
+          "es-wd-0207",
+          "es-wd-0084",
+          "es-wd-0052",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0587",
+        "sentence": "Ella está encantada de conocer a su vecina.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0208",
+          "es-wd-0023",
+          "es-wd-0199",
+          "es-wd-0052",
+          "es-wd-0214"
+        ]
+      },
+      {
+        "id": "es-sent-0588",
+        "sentence": "Estoy encantada con la fiesta de bienvenida.",
+        "word_ids": [
+          "es-wd-0014",
+          "es-wd-0208",
+          "es-wd-0061",
+          "es-wd-0058",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0589",
+        "sentence": "Mi amiga está encantada con su trabajo nuevo.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0205",
+          "es-wd-0208",
+          "es-wd-0061",
+          "es-wd-0052",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0590",
+        "sentence": "Igualmente, respondió ella con una sonrisa.",
+        "word_ids": [
+          "es-wd-0209",
+          "es-wd-0160",
+          "es-wd-0061",
+          "es-wd-0077"
+        ]
+      },
+      {
+        "id": "es-sent-0591",
+        "sentence": "Él dijo mucho gusto y ella respondió igualmente.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0206",
+          "es-wd-0033",
+          "es-wd-0160",
+          "es-wd-0209"
+        ]
+      },
+      {
+        "id": "es-sent-0592",
+        "sentence": "Siempre digo igualmente cuando alguien es amable conmigo.",
+        "word_ids": [
+          "es-wd-0209",
+          "es-wd-0182",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0593",
+        "sentence": "Mi vecino también es mi amigo.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0213",
+          "es-wd-0210",
+          "es-wd-0017",
+          "es-wd-0016",
+          "es-wd-0204"
+        ]
+      },
+      {
+        "id": "es-sent-0594",
+        "sentence": "Ella también quiere conocer al vecino nuevo.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0210",
+          "es-wd-0199",
+          "es-wd-0213",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0595",
+        "sentence": "Yo también soy nuevo en este barrio.",
+        "word_ids": [
+          "es-wd-0018",
+          "es-wd-0210",
+          "es-wd-0025",
+          "es-wd-0202",
+          "es-wd-0084"
+        ]
+      },
+      {
+        "id": "es-sent-0596",
+        "sentence": "¿Dónde vive tu vecino nuevo?",
+        "word_ids": [
+          "es-wd-0024",
+          "es-wd-0213",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0597",
+        "sentence": "No sé dónde conocí a esa persona.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0024"
+        ]
+      },
+      {
+        "id": "es-sent-0598",
+        "sentence": "¿Dónde te gusta conversar con tu amigo?",
+        "word_ids": [
+          "es-wd-0024",
+          "es-wd-0217",
+          "es-wd-0061",
+          "es-wd-0204"
+        ]
+      },
+      {
+        "id": "es-sent-0599",
+        "sentence": "Quiero decir hola a mi vecino nuevo.",
+        "word_ids": [
+          "es-wd-0125",
+          "es-wd-0211",
+          "es-wd-0001",
+          "es-wd-0016",
+          "es-wd-0213",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0600",
+        "sentence": "Es difícil decir su nombre correctamente.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0211",
+          "es-wd-0052",
+          "es-wd-0015"
+        ]
+      },
+      {
+        "id": "es-sent-0601",
+        "sentence": "Ella no supo qué decir cuando lo conoció.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0036",
+          "es-wd-0196",
+          "es-wd-0211",
+          "es-wd-0182"
+        ]
+      },
+      {
+        "id": "es-sent-0602",
+        "sentence": "Me gusta sonreír cuando conozco a alguien nuevo.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0212",
+          "es-wd-0182",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0603",
+        "sentence": "Es bueno sonreír al saludar a un vecino.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0006",
+          "es-wd-0212",
+          "es-wd-0218",
+          "es-wd-0076",
+          "es-wd-0213"
+        ]
+      },
+      {
+        "id": "es-sent-0604",
+        "sentence": "Es importante sonreír al presentarse a alguien nuevo.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0212",
+          "es-wd-0198",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0605",
+        "sentence": "Mi vecino se llama Carlos.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0213",
+          "es-wd-0021",
+          "es-wd-0022"
+        ]
+      },
+      {
+        "id": "es-sent-0606",
+        "sentence": "¿Cómo se llama tu vecina nueva?",
+        "word_ids": [
+          "es-wd-0012",
+          "es-wd-0021",
+          "es-wd-0022",
+          "es-wd-0214",
+          "es-wd-0203"
+        ]
+      },
+      {
+        "id": "es-sent-0607",
+        "sentence": "No recuerdo cómo se llama el amigo de Ana.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0012",
+          "es-wd-0021",
+          "es-wd-0022",
+          "es-wd-0057",
+          "es-wd-0204",
+          "es-wd-0023"
+        ]
+      },
+      {
+        "id": "es-sent-0608",
+        "sentence": "Tengo un vecino muy amable.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0213"
+        ]
+      },
+      {
+        "id": "es-sent-0609",
+        "sentence": "La vecina de mi madre es muy simpática.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0214",
+          "es-wd-0023",
+          "es-wd-0016",
+          "es-wd-0039",
+          "es-wd-0017"
+        ]
+      },
+      {
+        "id": "es-sent-0610",
+        "sentence": "Conocí a mi vecina en la fiesta del barrio.",
+        "word_ids": [
+          "es-wd-0016",
+          "es-wd-0214",
+          "es-wd-0082"
+        ]
+      },
+      {
+        "id": "es-sent-0611",
+        "sentence": "Él es un desconocido para mí.",
+        "word_ids": [
+          "es-wd-0159",
+          "es-wd-0017",
+          "es-wd-0076",
+          "es-wd-0215"
+        ]
+      },
+      {
+        "id": "es-sent-0612",
+        "sentence": "No hables con un desconocido.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0061",
+          "es-wd-0076",
+          "es-wd-0215"
+        ]
+      },
+      {
+        "id": "es-sent-0613",
+        "sentence": "Ese hombre era un desconocido hasta hoy.",
+        "word_ids": [
+          "es-wd-0076",
+          "es-wd-0215",
+          "es-wd-0146"
+        ]
+      },
+      {
+        "id": "es-sent-0614",
+        "sentence": "Ella era una desconocida para todos en la fiesta.",
+        "word_ids": [
+          "es-wd-0160",
+          "es-wd-0077",
+          "es-wd-0216",
+          "es-wd-0059",
+          "es-wd-0082"
+        ]
+      },
+      {
+        "id": "es-sent-0615",
+        "sentence": "No quiero hablar con una desconocida.",
+        "word_ids": [
+          "es-wd-0036",
+          "es-wd-0125",
+          "es-wd-0061",
+          "es-wd-0077",
+          "es-wd-0216"
+        ]
+      },
+      {
+        "id": "es-sent-0616",
+        "sentence": "Ayer era una desconocida, hoy es mi amiga.",
+        "word_ids": [
+          "es-wd-0077",
+          "es-wd-0216",
+          "es-wd-0146",
+          "es-wd-0017",
+          "es-wd-0016",
+          "es-wd-0205"
+        ]
+      },
+      {
+        "id": "es-sent-0617",
+        "sentence": "Nos gusta conversar con nuestro vecino nuevo.",
+        "word_ids": [
+          "es-wd-0217",
+          "es-wd-0061",
+          "es-wd-0055",
+          "es-wd-0213",
+          "es-wd-0202"
+        ]
+      },
+      {
+        "id": "es-sent-0618",
+        "sentence": "Es agradable conversar con gente nueva.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0217",
+          "es-wd-0061",
+          "es-wd-0203"
+        ]
+      },
+      {
+        "id": "es-sent-0619",
+        "sentence": "Me gusta saludar a mi vecino cada día.",
+        "word_ids": [
+          "es-wd-0019",
+          "es-wd-0218",
+          "es-wd-0016",
+          "es-wd-0213",
+          "es-wd-0007"
+        ]
+      },
+      {
+        "id": "es-sent-0620",
+        "sentence": "Es de buena educación saludar a un desconocido con una sonrisa.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0023",
+          "es-wd-0034",
+          "es-wd-0218",
+          "es-wd-0076",
+          "es-wd-0215",
+          "es-wd-0061",
+          "es-wd-0077"
+        ]
+      },
+      {
+        "id": "es-sent-0621",
+        "sentence": "Fue la primera vez que hablé con él.",
+        "word_ids": [
+          "es-wd-0058",
+          "es-wd-0219",
+          "es-wd-0061",
+          "es-wd-0159"
+        ]
+      },
+      {
+        "id": "es-sent-0622",
+        "sentence": "Esta es la primera vez que conozco a mi vecina.",
+        "word_ids": [
+          "es-wd-0017",
+          "es-wd-0058",
+          "es-wd-0219",
+          "es-wd-0016",
+          "es-wd-0214"
+        ]
+      },
+      {
+        "id": "es-sent-0623",
+        "sentence": "Fue nuestra primera vez conversando juntos.",
+        "word_ids": [
+          "es-wd-0056",
+          "es-wd-0219"
+        ]
+      }
+    ]

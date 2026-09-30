@@ -1,0 +1,680 @@
+[
+      {
+        "id": "zh-sent-0001",
+        "sentence": "你好！",
+        "word_ids": [
+          "zh-wd-0001"
+        ]
+      },
+      {
+        "id": "zh-sent-0002",
+        "sentence": "你好，你叫Marina吗？",
+        "word_ids": [
+          "zh-wd-0001",
+          "zh-wd-0014",
+          "zh-wd-0018",
+          "zh-wd-0011"
+        ]
+      },
+      {
+        "id": "zh-sent-0003",
+        "sentence": "你好吗？",
+        "word_ids": [
+          "zh-wd-0001",
+          "zh-wd-0011"
+        ]
+      },
+      {
+        "id": "zh-sent-0004",
+        "sentence": "你好，我好。",
+        "word_ids": [
+          "zh-wd-0001",
+          "zh-wd-0015",
+          "zh-wd-0009"
+        ]
+      },
+      {
+        "id": "zh-sent-0005",
+        "sentence": "你好，我不错。",
+        "word_ids": [
+          "zh-wd-0001",
+          "zh-wd-0015",
+          "zh-wd-0010"
+        ]
+      },
+      {
+        "id": "zh-sent-0006",
+        "sentence": "再见！",
+        "word_ids": [
+          "zh-wd-0002"
+        ]
+      },
+      {
+        "id": "zh-sent-0007",
+        "sentence": "谢谢，再见。",
+        "word_ids": [
+          "zh-wd-0025",
+          "zh-wd-0002"
+        ]
+      },
+      {
+        "id": "zh-sent-0008",
+        "sentence": "再见，谢谢你。",
+        "word_ids": [
+          "zh-wd-0002",
+          "zh-wd-0025",
+          "zh-wd-0014"
+        ]
+      },
+      {
+        "id": "zh-sent-0009",
+        "sentence": "早上好！",
+        "word_ids": [
+          "zh-wd-0004"
+        ]
+      },
+      {
+        "id": "zh-sent-0010",
+        "sentence": "早上好，你好吗？",
+        "word_ids": [
+          "zh-wd-0004",
+          "zh-wd-0001",
+          "zh-wd-0011"
+        ]
+      },
+      {
+        "id": "zh-sent-0011",
+        "sentence": "早上好，我不错。",
+        "word_ids": [
+          "zh-wd-0004",
+          "zh-wd-0015",
+          "zh-wd-0010"
+        ]
+      },
+      {
+        "id": "zh-sent-0012",
+        "sentence": "下午好！",
+        "word_ids": [
+          "zh-wd-0006"
+        ]
+      },
+      {
+        "id": "zh-sent-0013",
+        "sentence": "下午好，你好吗？",
+        "word_ids": [
+          "zh-wd-0006",
+          "zh-wd-0001",
+          "zh-wd-0011"
+        ]
+      },
+      {
+        "id": "zh-sent-0014",
+        "sentence": "下午好，我好。",
+        "word_ids": [
+          "zh-wd-0006",
+          "zh-wd-0015",
+          "zh-wd-0009"
+        ]
+      },
+      {
+        "id": "zh-sent-0015",
+        "sentence": "晚上好！",
+        "word_ids": [
+          "zh-wd-0008"
+        ]
+      },
+      {
+        "id": "zh-sent-0016",
+        "sentence": "晚上好，你好吗？",
+        "word_ids": [
+          "zh-wd-0008",
+          "zh-wd-0001",
+          "zh-wd-0011"
+        ]
+      },
+      {
+        "id": "zh-sent-0017",
+        "sentence": "晚上好，我不错。",
+        "word_ids": [
+          "zh-wd-0008",
+          "zh-wd-0015",
+          "zh-wd-0010"
+        ]
+      },
+      {
+        "id": "zh-sent-0018",
+        "sentence": "早上，你好吗？",
+        "word_ids": [
+          "zh-wd-0003",
+          "zh-wd-0001",
+          "zh-wd-0011"
+        ]
+      },
+      {
+        "id": "zh-sent-0019",
+        "sentence": "下午，你好吗？",
+        "word_ids": [
+          "zh-wd-0005",
+          "zh-wd-0001",
+          "zh-wd-0011"
+        ]
+      },
+      {
+        "id": "zh-sent-0020",
+        "sentence": "晚上，你好吗？",
+        "word_ids": [
+          "zh-wd-0007",
+          "zh-wd-0001",
+          "zh-wd-0011"
+        ]
+      },
+      {
+        "id": "zh-sent-0021",
+        "sentence": "早上和下午，好。",
+        "word_ids": [
+          "zh-wd-0003",
+          "zh-wd-0022",
+          "zh-wd-0005",
+          "zh-wd-0009"
+        ]
+      },
+      {
+        "id": "zh-sent-0022",
+        "sentence": "下午和晚上，好。",
+        "word_ids": [
+          "zh-wd-0005",
+          "zh-wd-0022",
+          "zh-wd-0007",
+          "zh-wd-0009"
+        ]
+      },
+      {
+        "id": "zh-sent-0023",
+        "sentence": "早上和晚上，我不错。",
+        "word_ids": [
+          "zh-wd-0003",
+          "zh-wd-0022",
+          "zh-wd-0007",
+          "zh-wd-0015",
+          "zh-wd-0010"
+        ]
+      },
+      {
+        "id": "zh-sent-0024",
+        "sentence": "你好，我好，谢谢。",
+        "word_ids": [
+          "zh-wd-0001",
+          "zh-wd-0015",
+          "zh-wd-0009",
+          "zh-wd-0025"
+        ]
+      },
+      {
+        "id": "zh-sent-0025",
+        "sentence": "我好，谢谢。",
+        "word_ids": [
+          "zh-wd-0015",
+          "zh-wd-0009",
+          "zh-wd-0025"
+        ]
+      },
+      {
+        "id": "zh-sent-0026",
+        "sentence": "我不错，谢谢。",
+        "word_ids": [
+          "zh-wd-0015",
+          "zh-wd-0010",
+          "zh-wd-0025"
+        ]
+      },
+      {
+        "id": "zh-sent-0027",
+        "sentence": "你呢？",
+        "word_ids": [
+          "zh-wd-0014",
+          "zh-wd-0012"
+        ]
+      },
+      {
+        "id": "zh-sent-0028",
+        "sentence": "我好，你呢？",
+        "word_ids": [
+          "zh-wd-0015",
+          "zh-wd-0009",
+          "zh-wd-0014",
+          "zh-wd-0012"
+        ]
+      },
+      {
+        "id": "zh-sent-0029",
+        "sentence": "我不错，你呢？",
+        "word_ids": [
+          "zh-wd-0015",
+          "zh-wd-0010",
+          "zh-wd-0014",
+          "zh-wd-0012"
+        ]
+      },
+      {
+        "id": "zh-sent-0030",
+        "sentence": "你怎么样？",
+        "word_ids": [
+          "zh-wd-0014",
+          "zh-wd-0013"
+        ]
+      },
+      {
+        "id": "zh-sent-0031",
+        "sentence": "怎么样？",
+        "word_ids": [
+          "zh-wd-0013"
+        ]
+      },
+      {
+        "id": "zh-sent-0032",
+        "sentence": "你好吗？我好。",
+        "word_ids": [
+          "zh-wd-0001",
+          "zh-wd-0011",
+          "zh-wd-0015",
+          "zh-wd-0009"
+        ]
+      },
+      {
+        "id": "zh-sent-0033",
+        "sentence": "我叫Marina。",
+        "word_ids": [
+          "zh-wd-0015",
+          "zh-wd-0018"
+        ]
+      },
+      {
+        "id": "zh-sent-0034",
+        "sentence": "你叫Ana吗？",
+        "word_ids": [
+          "zh-wd-0014",
+          "zh-wd-0018",
+          "zh-wd-0011"
+        ]
+      },
+      {
+        "id": "zh-sent-0035",
+        "sentence": "叫Marina。",
+        "word_ids": [
+          "zh-wd-0018"
+        ]
+      },
+      {
+        "id": "zh-sent-0036",
+        "sentence": "我的名字是Marina。",
+        "word_ids": [
+          "zh-wd-0016",
+          "zh-wd-0017",
+          "zh-wd-0019"
+        ]
+      },
+      {
+        "id": "zh-sent-0037",
+        "sentence": "我的名字。",
+        "word_ids": [
+          "zh-wd-0016",
+          "zh-wd-0017"
+        ]
+      },
+      {
+        "id": "zh-sent-0038",
+        "sentence": "名字是Marina。",
+        "word_ids": [
+          "zh-wd-0017",
+          "zh-wd-0019"
+        ]
+      },
+      {
+        "id": "zh-sent-0039",
+        "sentence": "是Marina。",
+        "word_ids": [
+          "zh-wd-0019"
+        ]
+      },
+      {
+        "id": "zh-sent-0040",
+        "sentence": "我是Marina。",
+        "word_ids": [
+          "zh-wd-0015",
+          "zh-wd-0019"
+        ]
+      },
+      {
+        "id": "zh-sent-0041",
+        "sentence": "你是Ana吗？",
+        "word_ids": [
+          "zh-wd-0014",
+          "zh-wd-0019",
+          "zh-wd-0011"
+        ]
+      },
+      {
+        "id": "zh-sent-0042",
+        "sentence": "你是哪里人？",
+        "word_ids": [
+          "zh-wd-0014",
+          "zh-wd-0019",
+          "zh-wd-0020",
+          "zh-wd-0021"
+        ]
+      },
+      {
+        "id": "zh-sent-0043",
+        "sentence": "哪里人？",
+        "word_ids": [
+          "zh-wd-0020",
+          "zh-wd-0021"
+        ]
+      },
+      {
+        "id": "zh-sent-0044",
+        "sentence": "你是哪里人呢？",
+        "word_ids": [
+          "zh-wd-0014",
+          "zh-wd-0019",
+          "zh-wd-0020",
+          "zh-wd-0021",
+          "zh-wd-0012"
+        ]
+      },
+      {
+        "id": "zh-sent-0045",
+        "sentence": "我是哪里人呢？",
+        "word_ids": [
+          "zh-wd-0015",
+          "zh-wd-0019",
+          "zh-wd-0020",
+          "zh-wd-0021",
+          "zh-wd-0012"
+        ]
+      },
+      {
+        "id": "zh-sent-0046",
+        "sentence": "你和我。",
+        "word_ids": [
+          "zh-wd-0014",
+          "zh-wd-0022",
+          "zh-wd-0015"
+        ]
+      },
+      {
+        "id": "zh-sent-0047",
+        "sentence": "你和我，好。",
+        "word_ids": [
+          "zh-wd-0014",
+          "zh-wd-0022",
+          "zh-wd-0015",
+          "zh-wd-0009"
+        ]
+      },
+      {
+        "id": "zh-sent-0048",
+        "sentence": "早上和下午。",
+        "word_ids": [
+          "zh-wd-0003",
+          "zh-wd-0022",
+          "zh-wd-0005"
+        ]
+      },
+      {
+        "id": "zh-sent-0049",
+        "sentence": "下午和晚上。",
+        "word_ids": [
+          "zh-wd-0005",
+          "zh-wd-0022",
+          "zh-wd-0007"
+        ]
+      },
+      {
+        "id": "zh-sent-0050",
+        "sentence": "早上和晚上。",
+        "word_ids": [
+          "zh-wd-0003",
+          "zh-wd-0022",
+          "zh-wd-0007"
+        ]
+      },
+      {
+        "id": "zh-sent-0051",
+        "sentence": "谢谢和再见。",
+        "word_ids": [
+          "zh-wd-0025",
+          "zh-wd-0022",
+          "zh-wd-0002"
+        ]
+      },
+      {
+        "id": "zh-sent-0052",
+        "sentence": "对。",
+        "word_ids": [
+          "zh-wd-0023"
+        ]
+      },
+      {
+        "id": "zh-sent-0053",
+        "sentence": "对，我叫Marina。",
+        "word_ids": [
+          "zh-wd-0023",
+          "zh-wd-0015",
+          "zh-wd-0018"
+        ]
+      },
+      {
+        "id": "zh-sent-0054",
+        "sentence": "对，是Marina。",
+        "word_ids": [
+          "zh-wd-0023",
+          "zh-wd-0019"
+        ]
+      },
+      {
+        "id": "zh-sent-0055",
+        "sentence": "对，你好吗？",
+        "word_ids": [
+          "zh-wd-0023",
+          "zh-wd-0001",
+          "zh-wd-0011"
+        ]
+      },
+      {
+        "id": "zh-sent-0056",
+        "sentence": "不。",
+        "word_ids": [
+          "zh-wd-0024"
+        ]
+      },
+      {
+        "id": "zh-sent-0057",
+        "sentence": "不，我叫Ana。",
+        "word_ids": [
+          "zh-wd-0024",
+          "zh-wd-0015",
+          "zh-wd-0018"
+        ]
+      },
+      {
+        "id": "zh-sent-0058",
+        "sentence": "不是Marina。",
+        "word_ids": [
+          "zh-wd-0024",
+          "zh-wd-0019"
+        ]
+      },
+      {
+        "id": "zh-sent-0059",
+        "sentence": "不，我不错。",
+        "word_ids": [
+          "zh-wd-0024",
+          "zh-wd-0015",
+          "zh-wd-0010"
+        ]
+      },
+      {
+        "id": "zh-sent-0060",
+        "sentence": "谢谢。",
+        "word_ids": [
+          "zh-wd-0025"
+        ]
+      },
+      {
+        "id": "zh-sent-0061",
+        "sentence": "谢谢你。",
+        "word_ids": [
+          "zh-wd-0025",
+          "zh-wd-0014"
+        ]
+      },
+      {
+        "id": "zh-sent-0062",
+        "sentence": "不客气。",
+        "word_ids": [
+          "zh-wd-0026"
+        ]
+      },
+      {
+        "id": "zh-sent-0063",
+        "sentence": "谢谢，不客气。",
+        "word_ids": [
+          "zh-wd-0025",
+          "zh-wd-0026"
+        ]
+      },
+      {
+        "id": "zh-sent-0064",
+        "sentence": "谢谢你，不客气。",
+        "word_ids": [
+          "zh-wd-0025",
+          "zh-wd-0014",
+          "zh-wd-0026"
+        ]
+      },
+      {
+        "id": "zh-sent-0065",
+        "sentence": "你好，你是哪里人？",
+        "word_ids": [
+          "zh-wd-0001",
+          "zh-wd-0014",
+          "zh-wd-0019",
+          "zh-wd-0020",
+          "zh-wd-0021"
+        ]
+      },
+      {
+        "id": "zh-sent-0066",
+        "sentence": "我叫Marina，你呢？",
+        "word_ids": [
+          "zh-wd-0015",
+          "zh-wd-0018",
+          "zh-wd-0014",
+          "zh-wd-0012"
+        ]
+      },
+      {
+        "id": "zh-sent-0067",
+        "sentence": "我是Marina，你呢？",
+        "word_ids": [
+          "zh-wd-0015",
+          "zh-wd-0019",
+          "zh-wd-0014",
+          "zh-wd-0012"
+        ]
+      },
+      {
+        "id": "zh-sent-0068",
+        "sentence": "我不错，谢谢，你呢？",
+        "word_ids": [
+          "zh-wd-0015",
+          "zh-wd-0010",
+          "zh-wd-0025",
+          "zh-wd-0014",
+          "zh-wd-0012"
+        ]
+      },
+      {
+        "id": "zh-sent-0069",
+        "sentence": "早上好，我叫Marina。",
+        "word_ids": [
+          "zh-wd-0004",
+          "zh-wd-0015",
+          "zh-wd-0018"
+        ]
+      },
+      {
+        "id": "zh-sent-0070",
+        "sentence": "下午好，我是Marina。",
+        "word_ids": [
+          "zh-wd-0006",
+          "zh-wd-0015",
+          "zh-wd-0019"
+        ]
+      },
+      {
+        "id": "zh-sent-0071",
+        "sentence": "晚上好，我的名字是Marina。",
+        "word_ids": [
+          "zh-wd-0008",
+          "zh-wd-0016",
+          "zh-wd-0017",
+          "zh-wd-0019"
+        ]
+      },
+      {
+        "id": "zh-sent-0072",
+        "sentence": "你好吗？我不错，谢谢。",
+        "word_ids": [
+          "zh-wd-0001",
+          "zh-wd-0011",
+          "zh-wd-0015",
+          "zh-wd-0010",
+          "zh-wd-0025"
+        ]
+      },
+      {
+        "id": "zh-sent-0073",
+        "sentence": "你叫Ana吗？对，我叫Ana。",
+        "word_ids": [
+          "zh-wd-0014",
+          "zh-wd-0018",
+          "zh-wd-0011",
+          "zh-wd-0023",
+          "zh-wd-0015",
+          "zh-wd-0018"
+        ]
+      },
+      {
+        "id": "zh-sent-0074",
+        "sentence": "你是Marina吗？不，我叫Ana。",
+        "word_ids": [
+          "zh-wd-0014",
+          "zh-wd-0019",
+          "zh-wd-0011",
+          "zh-wd-0024",
+          "zh-wd-0015",
+          "zh-wd-0018"
+        ]
+      },
+      {
+        "id": "zh-sent-0075",
+        "sentence": "我的名字呢？",
+        "word_ids": [
+          "zh-wd-0016",
+          "zh-wd-0017",
+          "zh-wd-0012"
+        ]
+      },
+      {
+        "id": "zh-sent-0076",
+        "sentence": "你怎么样？我不错。",
+        "word_ids": [
+          "zh-wd-0014",
+          "zh-wd-0013",
+          "zh-wd-0015",
+          "zh-wd-0010"
+        ]
+      }
+    ]
