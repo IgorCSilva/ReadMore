@@ -1,10 +1,11 @@
 """Finds taught target-language words/particles that leaked outside a
 **bold** marker in a chapter/topic's sentences, e.g. "**저**는" where the
-particle "는" should have been its own "**는**" segment (see pt-ko.json
-sentence_number 8: "**당신****이랑** **저**는 ..." left "는" unmarked), or a
-whole word inserted without markers at all (e.g. "para 안녕히 가세요
-dormir" instead of "para **안녕히 가세요** dormir", or "마리나예요" instead
-of "마리나**예요**").
+particle "는" should have been its own "**는**" segment (see
+pt-ko/chapter_1/topic_1/mixed_sentences.json sentence_number 8:
+"**당신****이랑** **저**는 ..." left "는" unmarked), or a whole word
+inserted without markers at all (e.g. "para 안녕히 가세요 dormir" instead
+of "para **안녕히 가세요** dormir", or "마리나예요" instead of
+"마리나**예요**").
 
 "Taught" means: any word_id listed on a topic at or before the given
 chapter/topic (same cumulative-learning rule as
@@ -85,38 +86,33 @@ def target_language(pair):
     return pair.split("-")[1]
 
 
-def get_learned_word_ids(data, current_chapter, current_topic):
+def _chapter_topic_numbers(word_ids_path):
+    topic_dir = word_ids_path.parent
+    chapter_dir = topic_dir.parent
+    return int(chapter_dir.name.removeprefix("chapter_")), int(topic_dir.name.removeprefix("topic_"))
+
+
+def get_learned_word_ids(pair_dir, current_chapter, current_topic):
     learned = set()
 
-    for chapter in data["chapters"]:
-        c_number = chapter["number"]
+    for word_ids_path in pair_dir.glob("chapter_*/topic_*/word_ids.json"):
+        c_number, t_number = _chapter_topic_numbers(word_ids_path)
 
-        if c_number > current_chapter:
+        if (c_number, t_number) > (current_chapter, current_topic):
             continue
 
-        for topic in chapter["topics"]:
-            t_number = topic["number"]
-
-            if c_number == current_chapter and t_number > current_topic:
-                continue
-
-            learned.update(topic.get("word_ids", []))
+        learned.update(load_json(word_ids_path))
 
     return learned
 
 
-def get_topic_sentences(data, current_chapter, current_topic):
-    for chapter in data["chapters"]:
-        if chapter["number"] != current_chapter:
-            continue
+def get_topic_sentences(pair_dir, current_chapter, current_topic):
+    path = pair_dir / f"chapter_{current_chapter}" / f"topic_{current_topic}" / "mixed_sentences.json"
 
-        for topic in chapter["topics"]:
-            if topic["number"] != current_topic:
-                continue
+    if not path.exists():
+        raise ValueError(f"chapter {current_chapter} topic {current_topic} not found")
 
-            return topic.get("sentences", [])
-
-    raise ValueError(f"chapter {current_chapter} topic {current_topic} not found")
+    return load_json(path)
 
 
 def get_learned_words(words_data, learned_word_ids):
@@ -171,12 +167,12 @@ def check(pair, chapter, topic):
             f"{sorted(_RELIABLE_LANGUAGES)} are supported for now."
         )
 
-    content_data = load_json(CONTENT_DIR / f"{pair}.json")
+    pair_dir = CONTENT_DIR / pair
     words_data = load_json(WORDS_DIR / f"{target_lang}_words.json")
 
-    learned_word_ids = get_learned_word_ids(content_data, chapter, topic)
+    learned_word_ids = get_learned_word_ids(pair_dir, chapter, topic)
     learned_words = get_learned_words(words_data, learned_word_ids)
-    sentences = get_topic_sentences(content_data, chapter, topic)
+    sentences = get_topic_sentences(pair_dir, chapter, topic)
 
     problems = []
 
