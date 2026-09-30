@@ -1,4 +1,5 @@
-"""Shuffle a topic's sentence contents in backend/content/<pair>.json.
+"""Shuffle a topic's sentence contents in
+backend/content/<pair>/chapter_N/topic_N/mixed_sentences.json.
 
 Only the `content` strings are shuffled among each other; each entry keeps
 its original `sentence_number` (and therefore its position in the list) —
@@ -21,33 +22,24 @@ from pathlib import Path
 CONTENT_DIR = Path(__file__).resolve().parent.parent / "content"
 
 
-def load_pair_file(pair):
-    path = CONTENT_DIR / f"{pair}.json"
+def topic_sentences_path(pair, chapter_number, topic_number):
+    path = CONTENT_DIR / pair / f"chapter_{chapter_number}" / f"topic_{topic_number}" / "mixed_sentences.json"
 
     if not path.exists():
-        raise SystemExit(f"No content file found for pair '{pair}': {path}")
+        raise SystemExit(f"No mixed_sentences.json found for {pair} chapter {chapter_number} topic {topic_number}: {path}")
 
+    return path
+
+
+def load_sentences(path):
     with open(path, encoding="utf-8") as file:
         return json.load(file)
 
 
-def find_topic(data, chapter_number, topic_number):
-    chapter = next((c for c in data.get("chapters", []) if c.get("number") == chapter_number), None)
-    if chapter is None:
-        raise SystemExit(f"Chapter {chapter_number} not found.")
-
-    topic = next((t for t in chapter.get("topics", []) if t.get("number") == topic_number), None)
-    if topic is None:
-        raise SystemExit(f"Topic {topic_number} not found in chapter {chapter_number}.")
-
-    return topic
-
-
-def shuffle_sentences(topic, seed=None):
-    """Shuffles topic["sentences"][*]["content"] in place, keeping each
-    entry's sentence_number (and list position) unchanged. Returns the
-    sentences list for convenience."""
-    sentences = topic.get("sentences", [])
+def shuffle_sentences(sentences, seed=None):
+    """Shuffles sentences[*]["content"] in place, keeping each entry's
+    sentence_number (and list position) unchanged. Returns the sentences
+    list for convenience."""
     if len(sentences) < 2:
         return sentences
 
@@ -72,9 +64,9 @@ def main():
     )
     args = parser.parse_args()
 
-    data = load_pair_file(args.pair)
-    topic = find_topic(data, args.chapter, args.topic)
-    sentences = shuffle_sentences(topic, seed=args.seed)
+    path = topic_sentences_path(args.pair, args.chapter, args.topic)
+    sentences = load_sentences(path)
+    sentences = shuffle_sentences(sentences, seed=args.seed)
 
     if not sentences:
         print(f"No sentences to shuffle for {args.pair} chapter {args.chapter} topic {args.topic}.")
@@ -88,9 +80,8 @@ def main():
         print("(dry run — file not modified)")
         return 0
 
-    path = CONTENT_DIR / f"{args.pair}.json"
     with open(path, "w", encoding="utf-8") as file:
-        json.dump(data, file, ensure_ascii=False, indent=2)
+        json.dump(sentences, file, ensure_ascii=False, indent=2)
         file.write("\n")
 
     return 0

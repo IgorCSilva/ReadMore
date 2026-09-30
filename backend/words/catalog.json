@@ -1615,6 +1615,58 @@
     {
       "word_id": "wd-0404",
       "filename": "first_time"
+    },
+    {
+      "word_id": "wd-0405",
+      "filename": "animal"
+    },
+    {
+      "word_id": "wd-0406",
+      "filename": "dog"
+    },
+    {
+      "word_id": "wd-0407",
+      "filename": "cat"
+    },
+    {
+      "word_id": "wd-0408",
+      "filename": "bird"
+    },
+    {
+      "word_id": "wd-0409",
+      "filename": "small_feminine"
+    },
+    {
+      "word_id": "wd-0410",
+      "filename": "run"
+    },
+    {
+      "word_id": "wd-0411",
+      "filename": "walk"
+    },
+    {
+      "word_id": "wd-0412",
+      "filename": "play"
+    },
+    {
+      "word_id": "wd-0413",
+      "filename": "bark"
+    },
+    {
+      "word_id": "wd-0414",
+      "filename": "meow"
+    },
+    {
+      "word_id": "wd-0415",
+      "filename": "fly"
+    },
+    {
+      "word_id": "wd-0416",
+      "filename": "stop_moving"
+    },
+    {
+      "word_id": "wd-0417",
+      "filename": "near"
     }
   ]
 }

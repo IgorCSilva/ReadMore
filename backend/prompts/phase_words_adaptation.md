@@ -2,7 +2,7 @@
 ReadMore Adaptation — Words
 
 Runs: Per topic — whenever a topic's target-language word list has been authored (see
-backend/content/<target>.json, e.g. es.json's chapter_N/topic_N word arrays, produced by
+backend/content/<target>/chapter_N/topic_N/words.json, e.g. es/chapter_1/topic_1/words.json's word array, produced by
 the tmp_prompt.md-style generation pass and cleaned up via backend/scripts/
 check_word_duplicates.py / remove_word_duplicates.py) and needs to be brought into the
 ReadMore application. Not a numbered phase in the 00–09 curriculum sequence; a
@@ -16,7 +16,8 @@ corrupting it.
 
 Purpose: Take one chapter/topic's already-authored target-language word list and turn it
 into everything the ReadMore app (this repository) needs to actually teach those words: the
-origin-target relations data, the pair's word_ids linkage in content/<pair>.json, a shared
+origin-target relations data, the pair's word_ids linkage in content/<pair>/chapter_N/
+topic_N/word_ids.json, a shared
 catalog.json word entry, its sentence/cue content, and a checklist of any word images still
 missing on disk. Nothing here writes texts or exercises — adapting a topic's texts is
 phase_texts_adaptation.md, and adapting a topic's exercises is
@@ -37,20 +38,21 @@ ReadMore application so it can actually be studied there. The input is three thi
    same numbering convention already used by `backend/scripts/check_word_duplicates.py`,
    `remove_word_duplicates.py`, and `count_words.py`. Ask if not stated.
 3. **The target word list itself** — not given to me directly; read it from
-   `backend/content/<target>.json` at `chapter_<N>` → (`topics` →) `topic_<M>` →
-   `words` (that file may use either the nested `{"title", "topics": {...}}` shape or the
-   flat `{"topic_N": [...]}` shape — handle both, same as the scripts above do).
+   `backend/content/<target>/chapter_<N>/topic_<M>/words.json`, a bare JSON array of
+   strings.
 
 Read every file this phase touches, in full, before making any change. They live under
 `backend/` (confirm this still matches — if the app's schema has changed since this phase
 was written, stop and tell me rather than guessing a new one):
 
 ```
-backend/content/<target>.json — this run's source word list (see input #3 above). Read-
-                                 only for this phase; never edit it here.
+backend/content/<target>/chapter_N/topic_N/words.json — this run's source word list (see
+                                 input #3 above). Read-only for this phase; never edit it
+                                 here.
 
-backend/content/<origin>.json — the origin language's own per-chapter/topic word lists
-                                 (e.g. pt.json). Read-only. Used in Section 3.1 to find
+backend/content/<origin>/chapter_N/topic_N/words.json — the origin language's own
+                                 per-chapter/topic word lists (e.g. pt/chapter_1/topic_1/
+                                 words.json). Read-only. Used in Section 3.1 to find
                                  each target word's natural origin-language equivalent —
                                  these lists were authored to be conceptually aligned per
                                  topic with the target list, though not always 1:1 by
@@ -66,16 +68,19 @@ backend/content/relations/<origin>-<target>-relations.json — the origin-target
   Multiple different origin keys mapping to the same target value is normal, not a
   duplicate (e.g. "obrigado" and "obrigada" both → "gracias").
 
-backend/content/<pair>.json   — this pair's curriculum, unrelated pairs untouched, e.g.
-                                 pt-es.json — the file Section 3.2 writes to:
-  {"chapters": [{chapter_id, number, title, description, status, topics: [
-    {topic_id, number, title, description, status, word_ids: [...], texts: [...], exercises: [...]}
-  ]}]}
-  A topic's `word_ids` here holds the TARGET language's own per-language ids
+backend/content/<pair>/       — this pair's curriculum, unrelated pairs untouched, e.g.
+                                 pt-es/ — the directory Section 3.2 writes to:
+  chapter_N/info.json                     {chapter_id, number, title, description, status}
+  chapter_N/topic_M/info.json             {topic_id, number, title, description, status}
+  chapter_N/topic_M/word_ids.json         [...]
+  chapter_N/topic_M/mixed_sentences.json  [{sentence_number, content}, ...]
+  chapter_N/topic_M/texts.json            [...] (optional, defaults to [] if absent)
+  chapter_N/topic_M/exercises.json        [...] (optional, defaults to [] if absent)
+  A topic's `word_ids.json` holds the TARGET language's own per-language ids
   from <target>_words.json (e.g. "es-wd-0001"), not catalog.json's word_id
-  directly — see Section 6. `exercises[].items[].word_ids` and
-  `exercises[].word_bank` are a separate, untouched concern (this phase never
-  writes exercises) and keep using catalog.json's word_id directly.
+  directly — see Section 6. `exercises.json[].items[].word_ids` and
+  `exercises.json[].word_bank` are a separate, untouched concern (this phase
+  never writes exercises) and keep using catalog.json's word_id directly.
 
 backend/words/catalog.json    — the shared words catalog, ONE row per concept, language-
                                  agnostic:
@@ -127,7 +132,7 @@ every pair — new words always get a brand-new id past the catalog's current ov
 maximum (not per-pair), and never touch an id that already exists for any pair.
 
 Do not invent an origin-language equivalent for Section 3.1 without checking
-`<origin>.json`'s same chapter/topic first. If nothing there fits, or more than one
+`<origin>/chapter_N/topic_N/words.json`'s same chapter/topic first. If nothing there fits, or more than one
 candidate plausibly fits, ask me — 2–4 concrete options with a one-line tradeoff each,
 same as every other phase in this workflow — rather than guessing a translation.
 
@@ -139,10 +144,10 @@ Do not fabricate an image. If no image file exists for a word, say so in the rep
 something for me to source — never invent a placeholder or silently leave a word without
 noting the gap.
 
-Do not write or edit any `texts` or `exercises` array. This phase only ever touches
+Do not write or edit any `texts.json` or `exercises.json`. This phase only ever touches
 `relations/<pair>-relations.json`, catalog.json's `words` array, sentences.json,
-cues.json, and the pair's chapter/topic shell + `word_ids` list inside
-`content/<pair>.json`.
+cues.json, and the pair's chapter/topic shell (info.json files) + `word_ids.json` inside
+`content/<pair>/`.
 
 Do not invent a chapter/topic description, title translation, or word cue you can't
 actually derive from the global roadmap (`contents/language_reading_journey_phases/
@@ -173,45 +178,49 @@ chapter and topic?"), never an assumption.
 The pair, chapter, and topic are all you need to derive every file path this phase reads
 or writes — never ask me for a file path directly. Given `pair: pt-es`, `chapter: 1`,
 `topic: 1`, for example: origin `pt`, target `es` →
-`backend/content/es.json`'s `chapter_1`/`topic_1` is this run's word list,
+`backend/content/es/chapter_1/topic_1/words.json` is this run's word list,
 `backend/content/relations/pt-es-relations.json` is where Section 3.1 writes, and
-`backend/content/pt-es.json` is where Section 3.2 writes. Every other file path in this
-phase (catalog.json, `<target>_words.json`, sentences.json, cues.json, `<origin>.json`)
-follows the same `<origin>`/`<target>` substitution.
+`backend/content/pt-es/chapter_1/topic_1/` is where Section 3.2 writes. Every other file
+path in this phase (catalog.json, `<target>_words.json`, sentences.json, cues.json,
+`<origin>/chapter_N/topic_N/words.json`) follows the same `<origin>`/`<target>`
+substitution.
 
 Once the pair and chapter/topic are known, read the target word list from
-`backend/content/<target>.json` (input #3 above) and the origin word list for the same
-chapter/topic from `backend/content/<origin>.json`, if present. If the target list is
+`backend/content/<target>/chapter_N/topic_N/words.json` (input #3 above) and the origin
+word list for the same chapter/topic from
+`backend/content/<origin>/chapter_N/topic_N/words.json`, if present. If the target list is
 missing, empty, or looks obviously wrong (garbled entries, wildly outside the expected
 20–30 range these lists are normally authored to), say so and stop rather than adapting
 something broken.
 
-### 2. Locate the Target Chapter/Topic in content/<pair>.json
+### 2. Locate the Target Chapter/Topic in content/<pair>/
 
 Consult the global roadmap (`contents/language_reading_journey_phases/roadmap.md`,
 Section 3/4) to translate this run's plain `chapter_N`/`topic_M` numbers into the
 roadmap's own chapter/topic codes and titles — e.g. `chapter_1`/`topic_2` → `A0-EL` /
-`A0-EL-2 — Family & People Around Me`. `backend/content/<origin>.json`'s own
-chapter/topic order (the order its chapters were authored in) is the concrete mapping of
+`A0-EL-2 — Family & People Around Me`. `backend/content/<origin>/chapter_N/topic_N/
+words.json`'s own chapter/topic order (the order its chapters were authored in) is the
+concrete mapping of
 number → roadmap chapter; confirm it if in doubt rather than assuming chapter_1 is always
 A0-EL for every pair.
 
-Map that to `content/<pair>.json`'s id convention, matching however that pair's existing
+Map that to `content/<pair>/`'s id convention, matching however that pair's existing
 chapters/topics are already named (check first — don't assume a format not already in
 use): typically `chapter_id: "ch-<chapter-code>"` and `topic_id: "top-<topic-code>"`, e.g.
 chapter `A0-EL` → `ch-A0-EL`, topic `A0-EL-2` → `top-A0-EL-2`.
 
-- **If the chapter doesn't exist yet:** create it, with `number` continuing that pair's
-  existing chapter sequence, `title`/`description` drawn from the roadmap (translate to
-  the app's display language if the roadmap's own text isn't already in that language —
-  check how existing chapters/topics are titled and match that), and
-  `status: "in_development"` (it has no ready texts/exercises yet).
-- **If the chapter exists but the topic doesn't:** append the new topic to that
-  chapter's `topics` array the same way, `number` continuing that chapter's own
-  sequence, `status: "in_development"`.
-- **If the topic already exists:** leave its `title`/`description`/`status` untouched
-  — you're only adding to its `word_ids`, not redefining it. Don't flip an existing
-  `"ready"` topic back to `"in_development"` just because you're adding words to it.
+- **If the chapter doesn't exist yet:** create `content/<pair>/chapter_N/info.json`, with
+  `number` continuing that pair's existing chapter sequence, `title`/`description` drawn
+  from the roadmap (translate to the app's display language if the roadmap's own text
+  isn't already in that language — check how existing chapters/topics are titled and
+  match that), and `status: "in_development"` (it has no ready texts/exercises yet).
+- **If the chapter exists but the topic doesn't:** create
+  `content/<pair>/chapter_N/topic_M/info.json`, `number` continuing that chapter's own
+  topic sequence, `status: "in_development"`.
+- **If the topic already exists:** leave its `info.json` (`title`/`description`/`status`)
+  untouched — you're only adding to its `word_ids.json`, not redefining it. Don't flip an
+  existing `"ready"` topic back to `"in_development"` just because you're adding words to
+  it.
 
 ### 3. Build the Relations Data and the Pair Content File
 
@@ -219,7 +228,7 @@ chapter `A0-EL` → `ch-A0-EL`, topic `A0-EL-2` → `top-A0-EL-2`.
 
 For every word in this run's target word list, in the list's own order:
 
-- Find its origin-language equivalent by checking `<origin>.json`'s SAME chapter/topic
+- Find its origin-language equivalent by checking `<origin>/chapter_N/topic_N/words.json`'s SAME chapter/topic
   word list for a natural match — same concept, plain translation. Match by meaning, not
   position (the two lists aren't guaranteed to line up 1:1; a concept can collapse or
   split differently across languages — see the note on this in the files list above).
@@ -233,7 +242,7 @@ For every word in this run's target word list, in the list's own order:
   to map to the same target word (e.g. "obrigado"/"obrigada" both → "gracias") — that's
   not a duplicate to resolve.
 
-#### 3.2 Create the Pair Content File
+#### 3.2 Create the Pair Content Files
 
 Using the same word list and the relations just built:
 
@@ -241,11 +250,13 @@ Using the same word list and the relations just built:
   exact spelling already exists for this target (Section 4's dedupe check), otherwise
   create new catalog.json / `<target>_words.json` / sentences.json / cues.json rows for it
   (Sections 4–6 below).
-- Append every resolved id, in the word list's order, to this topic's `word_ids` array in
-  `content/<pair>.json` (the chapter/topic located or created in Section 2) — appending
-  after whatever's already there. Never remove or reorder an id already present.
-- This step never writes `texts` or `exercises` — only the chapter/topic shell (if newly
-  created in Section 2) and `word_ids`, per the "Do not" rule above.
+- Append every resolved id, in the word list's order, to
+  `content/<pair>/chapter_N/topic_M/word_ids.json` (the chapter/topic located or created
+  in Section 2) — appending after whatever's already there (an empty `[]` if the topic was
+  just created). Never remove or reorder an id already present.
+- This step never writes `texts.json` or `exercises.json` — only the chapter/topic shell
+  (`info.json` files, if newly created in Section 2) and `word_ids.json`, per the "Do not"
+  rule above.
 
 ### 4. Dedupe Against catalog.json
 
@@ -356,7 +367,8 @@ Produce a short report (in this same readmore_adaptation/ folder, e.g.
 - every word reused from an existing catalog.json entry instead of duplicated (and, if
   applicable, every row reused across pairs per the "Do not" section's rule);
 - every image found vs. missing (a clean checklist for me to act on);
-- the topic's `word_ids` count in `content/<pair>.json` before and after this run;
+- the topic's `word_ids.json` count in `content/<pair>/chapter_N/topic_M/` before and
+  after this run;
 - explicitly, whether this run only authored the target-sentence/origin-cue pair (the
   normal case) or also added the reverse variants.
 
@@ -367,11 +379,13 @@ Never touch an existing `word_id`'s value — in either catalog.json or any
 file's own current maximum (catalog.json's is global across all languages;
 `<target>_words.json`'s is per that one language).
 
-Never write to `texts` or `exercises` — relations, words, sentences, and cues only.
+Never write to `texts.json` or `exercises.json` — relations, words, sentences, and cues
+only.
 
 Never fabricate an image file, a chapter/topic description you can't derive from the
 roadmap or my direct answer, an origin-language equivalent you can't derive from
-`<origin>.json` or my direct answer, or a cue that's just the translation restated.
+`<origin>/chapter_N/topic_N/words.json` or my direct answer, or a cue that's just the
+translation restated.
 
 Never merge or split a catalog.json row across pairs without asking first, per "Do not"
 above.
@@ -421,10 +435,11 @@ Do not resolve any item by assumption.
 ## Done when
 the origin-target pair, chapter, and topic were either stated by me or confirmed by
 asking — never assumed;
-the target word list was read from `backend/content/<target>.json` and, where it existed,
-the origin word list from `backend/content/<origin>.json`;
-the target chapter/topic is confirmed in `content/<pair>.json` (created or already
-present, with correct status);
+the target word list was read from `backend/content/<target>/chapter_N/topic_N/words.json`
+and, where it existed, the origin word list from
+`backend/content/<origin>/chapter_N/topic_N/words.json`;
+the target chapter/topic is confirmed in `content/<pair>/chapter_N/topic_M/info.json`
+(created or already present, with correct status);
 every word in the target list has an origin-language equivalent recorded in
 `relations/<pair>-relations.json` (Section 3.1), asked about rather than guessed wherever
 ambiguous;
@@ -433,8 +448,8 @@ every word is either a new catalog.json entry with a fresh, never-before-used
 confirmed with me, a different pair's row);
 every new word has a target-language sentence and an origin-language cue written to
 sentences.json/cues.json;
-every resolved word_id is added to the topic's word_ids in content/<pair>.json (Section
-3.2), in order, nothing removed;
+every resolved word_id is added to the topic's word_ids.json in content/<pair>/chapter_N/
+topic_M/ (Section 3.2), in order, nothing removed;
 the images/ check ran for every word and the report lists found vs. missing plainly;
 the adaptation report exists and covers all of the above;
 I've been reminded that these words still need progress rows added to the Google Sheet

@@ -52,9 +52,9 @@ class Sentence:
 class Phrase:
     """A standalone, natural target-language sentence (unlike Sentence,
     which is an origin-language sentence with **bolded** target words) —
-    sourced from content/<target>_sentences.json, used by the reinforcement
-    "listen and pick the known words" tab. word_ids lists every topic word
-    present in the sentence, in the order it appears."""
+    sourced from content/<target>/chapter_N/topic_N/sentences.json, used by
+    the reinforcement "listen and pick the known words" tab. word_ids lists
+    every topic word present in the sentence, in the order it appears."""
 
     id: str
     sentence: str

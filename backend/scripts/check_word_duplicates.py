@@ -1,5 +1,6 @@
 """Check whether a topic's word list has an item duplicated in another
-chapter/topic of the same backend/content/<language>.json file.
+chapter/topic of the same language, i.e. another backend/content/<language>/
+chapter_N/topic_N/words.json file.
 
 Usage:
     python backend/scripts/check_word_duplicates.py <language> <chapter> <topic>
@@ -28,35 +29,27 @@ def normalize(word):
 
 
 def load_language_file(language):
-    path = CONTENT_DIR / f"{language}.json"
+    """Merge every backend/content/<language>/chapter_N/topic_N/words.json
+    into {chapter_key: {topic_key: [words]}}, so cross-topic duplicate
+    checking still sees the whole language at once."""
+    lang_dir = CONTENT_DIR / language
 
-    if not path.exists():
-        raise SystemExit(f"No content file found for language '{language}': {path}")
+    if not lang_dir.is_dir():
+        raise SystemExit(f"No content directory found for language '{language}': {lang_dir}")
 
-    with open(path, encoding="utf-8") as file:
-        return json.load(file)
+    data = {}
+    for path in sorted(lang_dir.glob("chapter_*/topic_*/words.json")):
+        chapter_key, topic_key = path.parent.parent.name, path.parent.name
+        with open(path, encoding="utf-8") as file:
+            data.setdefault(chapter_key, {})[topic_key] = json.load(file)
+
+    return data
 
 
 def iter_topics(data):
-    """Yield (chapter_key, topic_key, words) for every topic in the file.
-
-    Supports both the nested schema (chapter -> topics -> topic -> words)
-    and the flat schema (chapter -> topic -> [words]).
-    """
-    for chapter_key, chapter in data.items():
-        if not isinstance(chapter, dict):
-            continue
-
-        topics = chapter["topics"] if "topics" in chapter else chapter
-
-        for topic_key, topic in topics.items():
-            if isinstance(topic, dict):
-                words = topic.get("words", [])
-            elif isinstance(topic, list):
-                words = topic
-            else:
-                continue
-
+    """Yield (chapter_key, topic_key, words) for every topic in the file."""
+    for chapter_key, topics in data.items():
+        for topic_key, words in topics.items():
             yield chapter_key, topic_key, words
 
 
