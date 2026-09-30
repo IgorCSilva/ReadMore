@@ -1312,5 +1312,101 @@
     "root_word_id": "wd-0404",
     "word": "primera vez",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0220",
+    "root_word_id": "wd-0405",
+    "word": "animal",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0221",
+    "root_word_id": "wd-0406",
+    "word": "perro",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0222",
+    "root_word_id": "wd-0407",
+    "word": "gato",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0223",
+    "root_word_id": "wd-0408",
+    "word": "pájaro",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0224",
+    "root_word_id": "wd-0062",
+    "word": "pequeño",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0225",
+    "root_word_id": "wd-0409",
+    "word": "pequeña",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0226",
+    "root_word_id": "wd-0061",
+    "word": "grande",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0227",
+    "root_word_id": "wd-0410",
+    "word": "correr",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0228",
+    "root_word_id": "wd-0411",
+    "word": "andar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0229",
+    "root_word_id": "wd-0412",
+    "word": "jugar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0230",
+    "root_word_id": "wd-0413",
+    "word": "ladrar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0231",
+    "root_word_id": "wd-0414",
+    "word": "maullar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0232",
+    "root_word_id": "wd-0415",
+    "word": "volar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0233",
+    "root_word_id": "wd-0416",
+    "word": "parar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0234",
+    "root_word_id": "wd-0417",
+    "word": "cerca",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0235",
+    "root_word_id": "wd-0143",
+    "word": "lejos",
+    "gender_id": "not_apply"
   }
 ]

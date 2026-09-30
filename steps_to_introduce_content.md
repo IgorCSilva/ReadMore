@@ -16,7 +16,7 @@ PROMPT:
 
 idiom: es
 chapter: 2
-topic: 3
+topic: 4
 
 1. Resolve chapter/topic into a roadmap ID using the Section 7 table in
    contents/language_reading_journey_phases/roadmap.md (chapter 1 = its first
@@ -72,9 +72,9 @@ roadmap.md), [structural] (from didactic_roadmap.md), or [sense-shift] (from ste
 
 native: pt
 idiom: es
-file: backend/content/es/chapter_2/topic_3/words.json
+file: backend/content/es/chapter_2/topic_4/words.json
 chapter: 2
-topic: 3
+topic: 4
 
 Build the reverse-lookup relations for this chapter/topic in
 backend/content/relations/<native>-<idiom>-relations.json, matching the existing nested shape:
@@ -124,15 +124,34 @@ decomposition — compose it into one string instead.
    word inside a value must come from <file>'s own list for this
    chapter/topic.
 
-4. If a native word/expression has no equivalent that can be composed from
-   <file>'s list at all (not even a functional, slightly-loose one), leave
-   it out of the JSON and flag it in your report instead — don't force a
-   mapping just to avoid an empty result. Merge into the file — preserve
-   every other chapter/topic already present untouched.
+4. Grammatical form must match between key and value for verbs: if the native
+   key is an infinitive, the idiom value must be the infinitive too, never a
+   conjugated form (and vice versa — if the native key is conjugated for a
+   specific person/tense, the value must be conjugated the same way). Don't
+   settle for a same-lexeme-different-form value (e.g. native infinitive
+   "correr" → idiom conjugated "corre") just because that's the only form
+   currently in <file>'s list — that's a gap to close via rule 5, not an
+   acceptable "functional, slightly-loose" match.
 
-Output: the new/updated chapter_<N>/topic_<M> block, and a one-line flag for
-any native word with no idiom equivalent in this chapter/topic's list (so
-it's a recorded, deliberate gap, not silently dropped).
+5. The number of relations produced must equal the number of native
+   words/expressions in <native>'s list for this chapter/topic — full
+   coverage, not partial. If a native word/expression has no equivalent that
+   can be composed from <file>'s current list, that is a vocabulary gap in
+   <idiom>'s own words.json, not a reason to skip the relation: add the
+   missing word (in the correct grammatical form per rule 4) to
+   <idiom>/chapter_N/topic_N/words.json first, then map it. Only leave a
+   native word unmapped, and flag it explicitly in your report, if you
+   cannot find or construct any reasonable idiom word for the concept at
+   all — this should be rare, not the default outcome. Merge into the
+   relations file — preserve every other chapter/topic already present
+   untouched. If closing gaps grows <idiom>'s word count past this topic's
+   didactic_roadmap.md target, say so explicitly in your report rather than
+   silently exceeding it.
+
+Output: the new/updated chapter_<N>/topic_<M> relations block, the
+new/updated chapter_<N>/topic_<M> words.json if any words were added to close
+a gap, and a one-line flag for any native word left with no idiom equivalent
+at all (so it's a recorded, deliberate gap, not silently dropped).
 
 ### Affected files:
 
@@ -147,7 +166,7 @@ it's a recorded, deliberate gap, not silently dropped).
 native: pt
 target: es
 chapter: 2
-topic: 3
+topic: 4
 
 Run the prompt in backend/prompts/phase_words_adaptation.md with origin=<native>,
 target=<target>, chapter=<chapter>, topic=<topic>. It's already pair-agnostic — no
@@ -193,7 +212,7 @@ and the topic shell + word_ids.json only, per phase_words_adaptation.md's own sc
 native: pt
 target: es
 chapter: 2
-topic: 3
+topic: 4
 
 Build one "mixin" example sentence per word/expression in this chapter/topic, in
 backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json.
@@ -249,7 +268,7 @@ awkward.
 native: pt
 target: es
 chapter: 2
-topic: 3
+topic: 4
 
 Create 100 natural sentences, following the exact pattern of chapter 1 topic 1's mixed_sentences.json in backend/content/pt-es/chapter_1/topic_1/mixed_sentences.json ({sentence_number, content} objects, target words marked with **bold**).
 
@@ -271,7 +290,7 @@ Then run the backend/scripts/shuffle_sentences.py script to shuffle sentences:
 
 target: es
 chapter: 2
-topic: 3
+topic: 4
 
 Now, generate simple natural sentences, following the pattern in
 backend/content/es/chapter_<chapter>/topic_<topic>/sentences.json.

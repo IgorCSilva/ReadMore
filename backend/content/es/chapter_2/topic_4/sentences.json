@@ -1,0 +1,540 @@
+[
+  {
+    "id": "es-sent-0624",
+    "sentence": "Mi vecino tiene un animal muy tranquilo.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0213",
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0220"
+    ]
+  },
+  {
+    "id": "es-sent-0625",
+    "sentence": "El animal duerme cerca de la ventana.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0220",
+      "es-wd-0234",
+      "es-wd-0035",
+      "es-wd-0058",
+      "es-wd-0069"
+    ]
+  },
+  {
+    "id": "es-sent-0626",
+    "sentence": "A ese animal pequeño le gusta jugar todo el día.",
+    "word_ids": [
+      "es-wd-0220",
+      "es-wd-0224",
+      "es-wd-0229",
+      "es-wd-0016",
+      "es-wd-0057",
+      "es-wd-0009"
+    ]
+  },
+  {
+    "id": "es-sent-0627",
+    "sentence": "Mi perro se llama Rocky.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0221",
+      "es-wd-0021",
+      "es-wd-0022"
+    ]
+  },
+  {
+    "id": "es-sent-0628",
+    "sentence": "Tengo un perro grande y muy amigable.",
+    "word_ids": [
+      "es-wd-0076",
+      "es-wd-0221",
+      "es-wd-0226",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-0629",
+    "sentence": "Al perro le gusta correr por el jardín.",
+    "word_ids": [
+      "es-wd-0221",
+      "es-wd-0227",
+      "es-wd-0057"
+    ]
+  },
+  {
+    "id": "es-sent-0630",
+    "sentence": "El gato duerme casi todo el día.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0222",
+      "es-wd-0016",
+      "es-wd-0057",
+      "es-wd-0009"
+    ]
+  },
+  {
+    "id": "es-sent-0631",
+    "sentence": "Mi gato prefiere dormir cerca de la cama.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0222",
+      "es-wd-0103",
+      "es-wd-0234",
+      "es-wd-0035",
+      "es-wd-0058",
+      "es-wd-0072"
+    ]
+  },
+  {
+    "id": "es-sent-0632",
+    "sentence": "Ese gato pequeño le gusta jugar con la puerta.",
+    "word_ids": [
+      "es-wd-0222",
+      "es-wd-0224",
+      "es-wd-0229",
+      "es-wd-0061",
+      "es-wd-0058",
+      "es-wd-0068"
+    ]
+  },
+  {
+    "id": "es-sent-0633",
+    "sentence": "Ese pájaro canta muy temprano por la mañana.",
+    "word_ids": [
+      "es-wd-0223",
+      "es-wd-0171"
+    ]
+  },
+  {
+    "id": "es-sent-0634",
+    "sentence": "Un pájaro pequeño llegó a la ventana.",
+    "word_ids": [
+      "es-wd-0076",
+      "es-wd-0223",
+      "es-wd-0224",
+      "es-wd-0058",
+      "es-wd-0069"
+    ]
+  },
+  {
+    "id": "es-sent-0635",
+    "sentence": "Mi pájaro vive en una jaula grande.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0223",
+      "es-wd-0084",
+      "es-wd-0077",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-0636",
+    "sentence": "Tengo un perro pequeño y muy tranquilo.",
+    "word_ids": [
+      "es-wd-0076",
+      "es-wd-0221",
+      "es-wd-0224",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-0637",
+    "sentence": "El animal es pequeño, pero corre muy rápido.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0220",
+      "es-wd-0031",
+      "es-wd-0224",
+      "es-wd-0180"
+    ]
+  },
+  {
+    "id": "es-sent-0638",
+    "sentence": "Compré un regalo pequeño para mi hermano.",
+    "word_ids": [
+      "es-wd-0076",
+      "es-wd-0194",
+      "es-wd-0224",
+      "es-wd-0030",
+      "es-wd-0042"
+    ]
+  },
+  {
+    "id": "es-sent-0639",
+    "sentence": "Mi gata es pequeña y le gusta jugar.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0031",
+      "es-wd-0225",
+      "es-wd-0006",
+      "es-wd-0229"
+    ]
+  },
+  {
+    "id": "es-sent-0640",
+    "sentence": "Vivo en una casa pequeña, cerca de la escuela.",
+    "word_ids": [
+      "es-wd-0084",
+      "es-wd-0077",
+      "es-wd-0063",
+      "es-wd-0225",
+      "es-wd-0234",
+      "es-wd-0035",
+      "es-wd-0058"
+    ]
+  },
+  {
+    "id": "es-sent-0641",
+    "sentence": "Mi hermana me dio una sorpresa pequeña.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0043",
+      "es-wd-0033",
+      "es-wd-0077",
+      "es-wd-0193",
+      "es-wd-0225"
+    ]
+  },
+  {
+    "id": "es-sent-0642",
+    "sentence": "El perro de mi vecino es muy grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0221",
+      "es-wd-0035",
+      "es-wd-0030",
+      "es-wd-0213",
+      "es-wd-0031",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-0643",
+    "sentence": "Tenemos un jardín grande detrás de la casa.",
+    "word_ids": [
+      "es-wd-0076",
+      "es-wd-0226",
+      "es-wd-0035",
+      "es-wd-0058",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0644",
+    "sentence": "Ese animal parece grande, pero es muy tranquilo.",
+    "word_ids": [
+      "es-wd-0220",
+      "es-wd-0226",
+      "es-wd-0180",
+      "es-wd-0031"
+    ]
+  },
+  {
+    "id": "es-sent-0645",
+    "sentence": "Al perro le gusta correr por el parque.",
+    "word_ids": [
+      "es-wd-0221",
+      "es-wd-0227",
+      "es-wd-0057"
+    ]
+  },
+  {
+    "id": "es-sent-0646",
+    "sentence": "Mi hermano empieza a correr cada mañana.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0042",
+      "es-wd-0227",
+      "es-wd-0147"
+    ]
+  },
+  {
+    "id": "es-sent-0647",
+    "sentence": "El animal no puede dejar de correr cerca de un río.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0220",
+      "es-wd-0175",
+      "es-wd-0035",
+      "es-wd-0227",
+      "es-wd-0234",
+      "es-wd-0035",
+      "es-wd-0076"
+    ]
+  },
+  {
+    "id": "es-sent-0648",
+    "sentence": "Prefiero andar despacio cuando tengo tiempo.",
+    "word_ids": [
+      "es-wd-0228",
+      "es-wd-0182"
+    ]
+  },
+  {
+    "id": "es-sent-0649",
+    "sentence": "A mi abuelo le gusta andar cerca de casa.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0044",
+      "es-wd-0228",
+      "es-wd-0234",
+      "es-wd-0035",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0650",
+    "sentence": "El gato empieza a andar por la mesa.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0222",
+      "es-wd-0228",
+      "es-wd-0058",
+      "es-wd-0070"
+    ]
+  },
+  {
+    "id": "es-sent-0651",
+    "sentence": "A los niños les gusta jugar en el jardín.",
+    "word_ids": [
+      "es-wd-0229",
+      "es-wd-0083"
+    ]
+  },
+  {
+    "id": "es-sent-0652",
+    "sentence": "Mi perro no para de jugar con la pelota.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0221",
+      "es-wd-0175",
+      "es-wd-0035",
+      "es-wd-0229",
+      "es-wd-0061",
+      "es-wd-0058"
+    ]
+  },
+  {
+    "id": "es-sent-0653",
+    "sentence": "Prefiero jugar cerca de la ventana cuando llueve.",
+    "word_ids": [
+      "es-wd-0229",
+      "es-wd-0234",
+      "es-wd-0035",
+      "es-wd-0058",
+      "es-wd-0069",
+      "es-wd-0182"
+    ]
+  },
+  {
+    "id": "es-sent-0654",
+    "sentence": "El perro empieza a ladrar cuando alguien llega.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0221",
+      "es-wd-0230",
+      "es-wd-0182",
+      "es-wd-0166"
+    ]
+  },
+  {
+    "id": "es-sent-0655",
+    "sentence": "Mi vecino no puede hacer que su perro deje de ladrar.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0213",
+      "es-wd-0175",
+      "es-wd-0108",
+      "es-wd-0052",
+      "es-wd-0221",
+      "es-wd-0035",
+      "es-wd-0230"
+    ]
+  },
+  {
+    "id": "es-sent-0656",
+    "sentence": "El animal empezó a ladrar de repente por la noche.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0220",
+      "es-wd-0230",
+      "es-wd-0179",
+      "es-wd-0173"
+    ]
+  },
+  {
+    "id": "es-sent-0657",
+    "sentence": "El gato no para de maullar cerca de la puerta.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0222",
+      "es-wd-0175",
+      "es-wd-0035",
+      "es-wd-0231",
+      "es-wd-0234",
+      "es-wd-0035",
+      "es-wd-0058",
+      "es-wd-0068"
+    ]
+  },
+  {
+    "id": "es-sent-0658",
+    "sentence": "Mi gata empieza a maullar por la mañana.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0231",
+      "es-wd-0171"
+    ]
+  },
+  {
+    "id": "es-sent-0659",
+    "sentence": "Ese gato pequeño aprendió a maullar muy fuerte.",
+    "word_ids": [
+      "es-wd-0222",
+      "es-wd-0224",
+      "es-wd-0231"
+    ]
+  },
+  {
+    "id": "es-sent-0660",
+    "sentence": "El pájaro aprende a volar poco a poco.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0223",
+      "es-wd-0232",
+      "es-wd-0128",
+      "es-wd-0128"
+    ]
+  },
+  {
+    "id": "es-sent-0661",
+    "sentence": "A ese animal le gusta volar muy alto.",
+    "word_ids": [
+      "es-wd-0220",
+      "es-wd-0232"
+    ]
+  },
+  {
+    "id": "es-sent-0662",
+    "sentence": "Mi pájaro no puede volar lejos todavía.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0223",
+      "es-wd-0175",
+      "es-wd-0232",
+      "es-wd-0235"
+    ]
+  },
+  {
+    "id": "es-sent-0663",
+    "sentence": "El perro no puede parar de correr.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0221",
+      "es-wd-0175",
+      "es-wd-0233",
+      "es-wd-0035",
+      "es-wd-0227"
+    ]
+  },
+  {
+    "id": "es-sent-0664",
+    "sentence": "El autobús va a parar cerca de mi casa.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0164",
+      "es-wd-0233",
+      "es-wd-0234",
+      "es-wd-0035",
+      "es-wd-0030",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0665",
+    "sentence": "Mi gato prefiere parar de jugar cuando tiene sueño.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0222",
+      "es-wd-0233",
+      "es-wd-0035",
+      "es-wd-0229",
+      "es-wd-0182",
+      "es-wd-0080"
+    ]
+  },
+  {
+    "id": "es-sent-0666",
+    "sentence": "Vivo cerca de un parque con mi familia.",
+    "word_ids": [
+      "es-wd-0234",
+      "es-wd-0035",
+      "es-wd-0076",
+      "es-wd-0061",
+      "es-wd-0030",
+      "es-wd-0037"
+    ]
+  },
+  {
+    "id": "es-sent-0667",
+    "sentence": "Mi gato duerme cerca de la cama todas las noches.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0222",
+      "es-wd-0234",
+      "es-wd-0035",
+      "es-wd-0058",
+      "es-wd-0072",
+      "es-wd-0060"
+    ]
+  },
+  {
+    "id": "es-sent-0668",
+    "sentence": "Mi vecino trabaja cerca de mi casa.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0213",
+      "es-wd-0167",
+      "es-wd-0234",
+      "es-wd-0035",
+      "es-wd-0030",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0669",
+    "sentence": "Ese pájaro voló muy lejos de la casa.",
+    "word_ids": [
+      "es-wd-0223",
+      "es-wd-0235",
+      "es-wd-0035",
+      "es-wd-0058",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0670",
+    "sentence": "Mi hermano vive lejos de aquí.",
+    "word_ids": [
+      "es-wd-0030",
+      "es-wd-0042",
+      "es-wd-0235",
+      "es-wd-0035",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0671",
+    "sentence": "Al perro no le gusta andar lejos de casa.",
+    "word_ids": [
+      "es-wd-0221",
+      "es-wd-0175",
+      "es-wd-0228",
+      "es-wd-0235",
+      "es-wd-0035",
+      "es-wd-0063"
+    ]
+  }
+]
