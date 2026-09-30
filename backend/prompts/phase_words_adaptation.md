@@ -9,10 +9,9 @@ ReadMore application. Not a numbered phase in the 00–09 curriculum sequence; a
 content-adaptation pass, like ../migration_update_existing_files.md, but recurring per
 topic rather than a one-time reconciliation.
 
-Best AI: Claude — needs to read/write JSON precisely across six separate files, check the
-images/ directory on disk, translate/match words between two languages with judgment
-(not just transcription), and reason about a live per-user Google Sheet without
-corrupting it.
+Best AI: Claude — needs to read/write JSON precisely across several separate files, check
+the images/ directory on disk, write natural sentence/cue content in the origin language,
+and reason about a live per-user Google Sheet without corrupting it.
 
 Purpose: Take one chapter/topic's already-authored target-language word list and turn it
 into everything the ReadMore app (this repository) needs to actually teach those words: the
@@ -222,9 +221,7 @@ chapter `A0-EL` → `ch-A0-EL`, topic `A0-EL-2` → `top-A0-EL-2`.
   existing `"ready"` topic back to `"in_development"` just because you're adding words to
   it.
 
-### 3. Build the Relations Data and the Pair Content File
-
-#### 3.1 Build the Origin-Target Relations Data
+### 3. Create the Pair Content File
 
 For every word in this run's target word list, in the list's own order:
 
@@ -266,7 +263,7 @@ punctuation-insensitive — same normalization `backend/scripts/check_word_dupli
 uses).
 
 - **Already present for this target:** don't create a duplicate. Use its existing
-  `<target>_words.json` `word_id` for Section 3.2, and note the reuse in the report.
+  `<target>_words.json` `word_id` for Section 3, and note the reuse in the report.
 - **Not present for this target, but plausibly the same concept as an existing
   catalog.json row already spelled for a different target** (see "Do not" above): ask me
   before deciding whether to reuse that catalog.json row (via a new `<target>_words.json`
@@ -316,7 +313,7 @@ For every genuinely-new (root_word_id, target) pairing, add to sentences.json an
 cues.json (both files, using the catalog.json `root_word_id`, never the
 `<target>_words.json` id). Unlike the old words.md-based version of this phase, this
 run's input has no pre-written example sentence or part-of-speech column — both are
-authored fresh here, from the word itself and its Section 3.1 origin equivalent:
+authored fresh here, directly from the word itself and its meaning:
 
 - **`"<target-code>_<root_word_id>"` in sentences.json** — a natural target-language
   sentence using the word, with the word's exact surface form in that sentence (singular,
@@ -326,8 +323,8 @@ authored fresh here, from the word itself and its Section 3.1 origin equivalent:
   in the app today, so this doesn't need to normalize to the dictionary form).
 - **`"<origin-code>_<root_word_id>"` in cues.json** — one sentence in the origin
   language, in the app's existing descriptive-definition style: it describes what the
-  word means or how it's used, and never just repeats the Section 3.1 translation as a
-  bare word. Infer the word's part of speech yourself (no column supplies it — state your
+  word means or how it's used, and never just repeats a bare translation of the word.
+  Infer the word's part of speech yourself (no column supplies it — state your
   inference in the report if it's not obvious) and match this house style exactly — three
   worked examples pulled straight from the existing catalog:
   - "hello" (interjection, olá) → `"Uma saudação comum dita ao encontrar alguém."`
@@ -359,8 +356,6 @@ Produce a short report (in this same readmore_adaptation/ folder, e.g.
 
 - which pair, chapter, and topic this run targeted, and whether the chapter/topic was
   created or already existed (Section 2);
-- every origin-target relation added in Section 3.1, and any word that needed my input
-  to resolve;
 - every new catalog.json word_id assigned, with its filename (Section 5);
 - every new `<target>_words.json` id assigned, with its root_word_id, spelling,
   sentence, and cue (Section 6), including the part-of-speech you inferred for each;
@@ -389,8 +384,6 @@ translation restated.
 
 Never merge or split a catalog.json row across pairs without asking first, per "Do not"
 above.
-
-Never silently overwrite an existing relations-file mapping — turn it into a list instead.
 
 State plainly when something doesn't fit an existing convention (id format, filename
 slug collision with a different existing word, house style for a cue) rather than

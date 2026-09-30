@@ -275,6 +275,43 @@ describe('Phrases', () => {
     }
   })
 
+  it('blanks out a multi-word vocabulary entry (e.g. "un día") instead of leaving the sentence fully revealed', async () => {
+    // Regression test: backend/words/es_words.json has entries whose
+    // "word" is itself multiple space-separated tokens (e.g. "un día").
+    // The old tokenizer split the sentence into single-word chunks and
+    // compared each chunk to the whole expected phrase, which could never
+    // match — so the pointer never advanced and the "blanks" view rendered
+    // the complete, unblanked sentence for every word in it, not just the
+    // multi-word one.
+    const UN_DIA = word('wd-0010', 'un día')
+    const VIAJAR = word('wd-0011', 'viajar')
+    const words = [UN_DIA, VIAJAR]
+    const topic = {
+      word_ids: ['wd-0010', 'wd-0011'],
+      phrases: [
+        { id: 'sent-2', sentence: 'Un día, quiero viajar por todo el mundo.', word_ids: ['wd-0010', 'wd-0011'] },
+      ],
+    }
+    vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'pt-es', words })
+
+    const wrapper = mount(Phrases, { attachTo: document.body })
+    try {
+      await wrapper.vm.show('test@example.com', 'pt-es', topic)
+
+      await wrapper.find('#phrase-toggle-btn').trigger('click') // audio -> blanks
+      const display = wrapper.find('#phrase-sentence-display')
+      const html = display.html()
+
+      expect(display.text()).not.toContain('Un día')
+      expect(display.text()).not.toContain('viajar')
+      expect(html.match(/phrase-blank/g)).toHaveLength(2)
+      expect(display.text()).toContain(', quiero')
+      expect(display.text()).toContain('por todo el mundo.')
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
   it('marks a reinforcement word option with the 💪 badge', async () => {
     vi.useFakeTimers()
     vi.mocked(api.getUserWords).mockResolvedValue({ lang: 'pt-es', words: ALL_WORDS })
