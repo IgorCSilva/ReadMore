@@ -247,6 +247,63 @@ describe('HomePage', () => {
     }
   })
 
+  it('disables a topic card (no chevron, no expand on click) when its own status is in_development, even if its chapter is active', async () => {
+    const chapters = [
+      {
+        ...CHAPTERS[0],
+        topics: [
+          { ...CHAPTERS[0].topics[0], status: 'in_development' },
+          CHAPTERS[0].topics[1],
+        ],
+      },
+    ]
+    vi.mocked(api.getChapters).mockResolvedValue({ lang: 'pt-en', chapters })
+    vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: [...WORDS, ...REINFORCEMENT_WORDS] })
+    vi.mocked(api.getReinforcementWords).mockResolvedValue([])
+
+    const router = testRouter()
+    router.push('/home')
+    await router.isReady()
+    const wrapper = mount(HomePage, { attachTo: document.body, global: { plugins: [router] } })
+    try {
+      await flushPromises()
+
+      const [disabledCard, activeCard] = wrapper.findAll('.topic-card')
+      expect(disabledCard.get('.topic-card-header').attributes('disabled')).toBeDefined()
+      expect(disabledCard.find('.topic-card-chevron').exists()).toBe(false)
+      expect(activeCard.get('.topic-card-header').attributes('disabled')).toBeUndefined()
+      expect(activeCard.find('.topic-card-chevron').exists()).toBe(true)
+
+      await disabledCard.get('.topic-card-header').trigger('click')
+      expect(disabledCard.find('.topic-parts').exists()).toBe(false)
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
+  it('disables every topic card when the chapter itself is in_development', async () => {
+    const chapters = [{ ...CHAPTERS[0], status: 'in_development' }]
+    vi.mocked(api.getChapters).mockResolvedValue({ lang: 'pt-en', chapters })
+    vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: [...WORDS, ...REINFORCEMENT_WORDS] })
+    vi.mocked(api.getReinforcementWords).mockResolvedValue([])
+
+    const router = testRouter()
+    router.push('/home')
+    await router.isReady()
+    const wrapper = mount(HomePage, { attachTo: document.body, global: { plugins: [router] } })
+    try {
+      await flushPromises()
+
+      const cards = wrapper.findAll('.topic-card')
+      expect(cards).toHaveLength(2)
+      for (const card of cards) {
+        expect(card.get('.topic-card-header').attributes('disabled')).toBeDefined()
+      }
+    } finally {
+      wrapper.unmount()
+    }
+  })
+
   it('expands a topic card on click into Part 1, Part 2, Read and Understand, Listen and Identify', async () => {
     const { wrapper } = await mountReady()
     try {

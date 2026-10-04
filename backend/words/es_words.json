@@ -1408,5 +1408,149 @@
     "root_word_id": "wd-0143",
     "word": "lejos",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0236",
+    "root_word_id": "wd-0418",
+    "word": "calle",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0237",
+    "root_word_id": "wd-0419",
+    "word": "avenida",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0238",
+    "root_word_id": "wd-0420",
+    "word": "esquina",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0239",
+    "root_word_id": "wd-0421",
+    "word": "cuadra",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0240",
+    "root_word_id": "wd-0422",
+    "word": "plaza",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0241",
+    "root_word_id": "wd-0423",
+    "word": "parque",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0242",
+    "root_word_id": "wd-0424",
+    "word": "banco",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0243",
+    "root_word_id": "wd-0425",
+    "word": "semáforo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0244",
+    "root_word_id": "wd-0210",
+    "word": "camino",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0245",
+    "root_word_id": "wd-0426",
+    "word": "dirección",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0246",
+    "root_word_id": "wd-0140",
+    "word": "mapa",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0247",
+    "root_word_id": "wd-0427",
+    "word": "lugar",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0248",
+    "root_word_id": "wd-0428",
+    "word": "izquierda",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0249",
+    "root_word_id": "wd-0429",
+    "word": "derecha",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0250",
+    "root_word_id": "wd-0430",
+    "word": "derecho",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0251",
+    "root_word_id": "wd-0431",
+    "word": "frente a",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0252",
+    "root_word_id": "wd-0432",
+    "word": "entre",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0253",
+    "root_word_id": "wd-0433",
+    "word": "a",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0254",
+    "root_word_id": "wd-0434",
+    "word": "por",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0255",
+    "root_word_id": "wd-0435",
+    "word": "está",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0256",
+    "root_word_id": "wd-0436",
+    "word": "seguir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0257",
+    "root_word_id": "wd-0437",
+    "word": "cruzar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0258",
+    "root_word_id": "wd-0438",
+    "word": "doblar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0259",
+    "root_word_id": "wd-0439",
+    "word": "pasar",
+    "gender_id": "not_apply"
   }
 ]
