@@ -1667,6 +1667,94 @@
     {
       "word_id": "wd-0417",
       "filename": "near"
+    },
+    {
+      "word_id": "wd-0418",
+      "filename": "street"
+    },
+    {
+      "word_id": "wd-0419",
+      "filename": "avenue"
+    },
+    {
+      "word_id": "wd-0420",
+      "filename": "corner"
+    },
+    {
+      "word_id": "wd-0421",
+      "filename": "block"
+    },
+    {
+      "word_id": "wd-0422",
+      "filename": "square"
+    },
+    {
+      "word_id": "wd-0423",
+      "filename": "park"
+    },
+    {
+      "word_id": "wd-0424",
+      "filename": "bench"
+    },
+    {
+      "word_id": "wd-0425",
+      "filename": "traffic_light"
+    },
+    {
+      "word_id": "wd-0426",
+      "filename": "direction"
+    },
+    {
+      "word_id": "wd-0427",
+      "filename": "place"
+    },
+    {
+      "word_id": "wd-0428",
+      "filename": "left"
+    },
+    {
+      "word_id": "wd-0429",
+      "filename": "right_direction"
+    },
+    {
+      "word_id": "wd-0430",
+      "filename": "straight_ahead"
+    },
+    {
+      "word_id": "wd-0431",
+      "filename": "in_front_of"
+    },
+    {
+      "word_id": "wd-0432",
+      "filename": "between"
+    },
+    {
+      "word_id": "wd-0433",
+      "filename": "toward"
+    },
+    {
+      "word_id": "wd-0434",
+      "filename": "through"
+    },
+    {
+      "word_id": "wd-0435",
+      "filename": "is_located"
+    },
+    {
+      "word_id": "wd-0436",
+      "filename": "to_continue"
+    },
+    {
+      "word_id": "wd-0437",
+      "filename": "to_cross"
+    },
+    {
+      "word_id": "wd-0438",
+      "filename": "to_turn"
+    },
+    {
+      "word_id": "wd-0439",
+      "filename": "to_pass"
     }
   ]
 }

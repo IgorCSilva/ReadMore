@@ -17,13 +17,22 @@
       <div class="chapter-heading">{{ chapter.number }}. {{ chapter.title }}</div>
 
       <div class="topic-card" v-for="topic in chapter.topics" :key="topic.topic_id">
-        <button type="button" class="topic-card-header" @click="toggleTopic(chapter, topic)">
+        <button
+          type="button"
+          class="topic-card-header"
+          :disabled="isTopicDisabled(chapter, topic)"
+          @click="toggleTopic(chapter, topic)"
+        >
           <div class="topic-card-number">{{ chapter.number }}.{{ topic.number }}</div>
           <div class="topic-card-title">{{ topic.title }}</div>
           <div class="topic-card-status" :class="`topic-card-status-${STATUS.NOT_STARTED}`">
             {{ STATUS_ICON[STATUS.NOT_STARTED] }}
           </div>
-          <div class="topic-card-chevron" :class="{ expanded: expandedTopicId === topic.topic_id }">›</div>
+          <div
+            class="topic-card-chevron"
+            v-if="!isTopicDisabled(chapter, topic)"
+            :class="{ expanded: expandedTopicId === topic.topic_id }"
+          >›</div>
         </button>
 
         <div class="topic-parts" v-if="expandedTopicId === topic.topic_id">
@@ -108,7 +117,16 @@ async function loadReinforcementForTopic(chapter, topic) {
   }
 }
 
+// Mirrors the old LibraryPage.vue's itemCard() disabling: content authored
+// but not yet ready shouldn't be reachable from Home just because it's in
+// a user's enabled-topics list (GetChapters only gates by that list, never
+// by status -- see backend/app/application/use_cases/get_chapters.py).
+function isTopicDisabled(chapter, topic) {
+  return chapter.status === 'in_development' || topic.status === 'in_development'
+}
+
 async function toggleTopic(chapter, topic) {
+  if (isTopicDisabled(chapter, topic)) return
   const topicId = topic.topic_id
   expandedTopicId.value = expandedTopicId.value === topicId ? null : topicId
   expandedPartIndex.value = null
@@ -392,6 +410,11 @@ onMounted(async () => {
   color: inherit;
   text-align: left;
   cursor: pointer;
+}
+
+.topic-card-header:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 
 .topic-card-number {

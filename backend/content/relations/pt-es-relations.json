@@ -274,6 +274,39 @@
       }
     }
   },
+  "chapter_3": {
+    "topic_1": {
+      "pt": {
+        "esquerda": "izquierda",
+        "direita": "derecha",
+        "frente": "frente a",
+        "reto": "derecho",
+        "rua": "calle",
+        "esquina": "esquina",
+        "caminho": "camino",
+        "direção": "dirección",
+        "mapa": "mapa",
+        "lugar": "lugar",
+        "endereço": "dirección",
+        "onde fica": "dónde está",
+        "como chegar": "cómo llegar",
+        "por aqui": "por aquí",
+        "por ali": "por allí",
+        "virar": "doblar",
+        "atravessar": "cruzar",
+        "passar": "pasar",
+        "avenida": "avenida",
+        "quadra": "cuadra",
+        "praça": "plaza",
+        "parque": "parque",
+        "banco": "banco",
+        "semáforo": "semáforo",
+        "entre": "entre",
+        "a": "a",
+        "seguir": "seguir"
+      }
+    }
+  },
   "chapter_4": {
     "topic_5": {
       "pt": {
