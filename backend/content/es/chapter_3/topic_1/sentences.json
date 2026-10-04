@@ -1,0 +1,883 @@
+[
+  {
+    "id": "es-sent-0672",
+    "sentence": "Esta calle es muy larga.",
+    "word_ids": [
+      "es-wd-0236",
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0673",
+    "sentence": "Mi casa está en la calle principal.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0063",
+      "es-wd-0255",
+      "es-wd-0082",
+      "es-wd-0236"
+    ]
+  },
+  {
+    "id": "es-sent-0674",
+    "sentence": "Hay muchas tiendas en esta calle.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0084",
+      "es-wd-0236"
+    ]
+  },
+  {
+    "id": "es-sent-0675",
+    "sentence": "La avenida tiene muchos árboles.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0237",
+      "es-wd-0080"
+    ]
+  },
+  {
+    "id": "es-sent-0676",
+    "sentence": "Vivo cerca de una avenida grande.",
+    "word_ids": [
+      "es-wd-0234",
+      "es-wd-0023",
+      "es-wd-0077",
+      "es-wd-0237",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-0677",
+    "sentence": "Esa avenida está siempre llena de gente.",
+    "word_ids": [
+      "es-wd-0237",
+      "es-wd-0255",
+      "es-wd-0023"
+    ]
+  },
+  {
+    "id": "es-sent-0678",
+    "sentence": "El coche paró en la esquina.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0082",
+      "es-wd-0238"
+    ]
+  },
+  {
+    "id": "es-sent-0679",
+    "sentence": "Hay una farmacia en la esquina.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0082",
+      "es-wd-0238"
+    ]
+  },
+  {
+    "id": "es-sent-0680",
+    "sentence": "Nos vemos en la esquina de mi casa.",
+    "word_ids": [
+      "es-wd-0082",
+      "es-wd-0238",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0681",
+    "sentence": "Esa cuadra tiene varias tiendas.",
+    "word_ids": [
+      "es-wd-0239",
+      "es-wd-0080"
+    ]
+  },
+  {
+    "id": "es-sent-0682",
+    "sentence": "La panadería está a una cuadra de aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0255",
+      "es-wd-0253",
+      "es-wd-0077",
+      "es-wd-0239",
+      "es-wd-0023",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0683",
+    "sentence": "Falta una cuadra para llegar a mi casa.",
+    "word_ids": [
+      "es-wd-0077",
+      "es-wd-0239",
+      "es-wd-0096",
+      "es-wd-0253",
+      "es-wd-0016",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0684",
+    "sentence": "Los niños juegan en la plaza.",
+    "word_ids": [
+      "es-wd-0082",
+      "es-wd-0240"
+    ]
+  },
+  {
+    "id": "es-sent-0685",
+    "sentence": "La plaza está cerca de mi casa.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0240",
+      "es-wd-0255",
+      "es-wd-0234",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0686",
+    "sentence": "Nos encontramos en la plaza todos los domingos.",
+    "word_ids": [
+      "es-wd-0082",
+      "es-wd-0240",
+      "es-wd-0059"
+    ]
+  },
+  {
+    "id": "es-sent-0687",
+    "sentence": "El parque tiene un banco muy bonito.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0241",
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0242"
+    ]
+  },
+  {
+    "id": "es-sent-0688",
+    "sentence": "Mi perro corre en el parque.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0221",
+      "es-wd-0083",
+      "es-wd-0241"
+    ]
+  },
+  {
+    "id": "es-sent-0689",
+    "sentence": "Vivimos cerca de un parque grande.",
+    "word_ids": [
+      "es-wd-0234",
+      "es-wd-0023",
+      "es-wd-0076",
+      "es-wd-0241",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-0690",
+    "sentence": "Me senté en un banco del parque.",
+    "word_ids": [
+      "es-wd-0019",
+      "es-wd-0084",
+      "es-wd-0076",
+      "es-wd-0242",
+      "es-wd-0241"
+    ]
+  },
+  {
+    "id": "es-sent-0691",
+    "sentence": "El banco de madera es muy viejo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0242",
+      "es-wd-0023",
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0692",
+    "sentence": "Hay un banco frente a la escuela.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0242",
+      "es-wd-0251",
+      "es-wd-0058"
+    ]
+  },
+  {
+    "id": "es-sent-0693",
+    "sentence": "El semáforo está en rojo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0243",
+      "es-wd-0255",
+      "es-wd-0084"
+    ]
+  },
+  {
+    "id": "es-sent-0694",
+    "sentence": "Paramos cuando el semáforo cambia.",
+    "word_ids": [
+      "es-wd-0182",
+      "es-wd-0057",
+      "es-wd-0243"
+    ]
+  },
+  {
+    "id": "es-sent-0695",
+    "sentence": "Hay un semáforo nuevo en esta calle.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0243",
+      "es-wd-0202",
+      "es-wd-0084",
+      "es-wd-0236"
+    ]
+  },
+  {
+    "id": "es-sent-0696",
+    "sentence": "El camino hasta mi casa es largo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0244",
+      "es-wd-0016",
+      "es-wd-0063",
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0697",
+    "sentence": "Perdimos el camino en el bosque.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0244",
+      "es-wd-0083"
+    ]
+  },
+  {
+    "id": "es-sent-0698",
+    "sentence": "Este camino lleva directo a la plaza.",
+    "word_ids": [
+      "es-wd-0244",
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0240"
+    ]
+  },
+  {
+    "id": "es-sent-0699",
+    "sentence": "No conozco la dirección de su casa.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0058",
+      "es-wd-0245",
+      "es-wd-0023",
+      "es-wd-0052",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0700",
+    "sentence": "Caminamos en la dirección equivocada.",
+    "word_ids": [
+      "es-wd-0082",
+      "es-wd-0245"
+    ]
+  },
+  {
+    "id": "es-sent-0701",
+    "sentence": "Me dio la dirección correcta.",
+    "word_ids": [
+      "es-wd-0019",
+      "es-wd-0058",
+      "es-wd-0245"
+    ]
+  },
+  {
+    "id": "es-sent-0702",
+    "sentence": "Necesito un mapa de la ciudad.",
+    "word_ids": [
+      "es-wd-0076",
+      "es-wd-0246",
+      "es-wd-0023",
+      "es-wd-0058"
+    ]
+  },
+  {
+    "id": "es-sent-0703",
+    "sentence": "El mapa está en mi mochila.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0246",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0016"
+    ]
+  },
+  {
+    "id": "es-sent-0704",
+    "sentence": "Miramos el mapa antes de salir.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0246",
+      "es-wd-0174",
+      "es-wd-0023",
+      "es-wd-0094"
+    ]
+  },
+  {
+    "id": "es-sent-0705",
+    "sentence": "Este lugar es muy tranquilo.",
+    "word_ids": [
+      "es-wd-0247",
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0706",
+    "sentence": "Conozco un buen lugar para comer.",
+    "word_ids": [
+      "es-wd-0076",
+      "es-wd-0247",
+      "es-wd-0123"
+    ]
+  },
+  {
+    "id": "es-sent-0707",
+    "sentence": "Ese lugar queda cerca del parque.",
+    "word_ids": [
+      "es-wd-0247",
+      "es-wd-0234",
+      "es-wd-0241"
+    ]
+  },
+  {
+    "id": "es-sent-0708",
+    "sentence": "Gira a la izquierda en la esquina.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0248",
+      "es-wd-0082",
+      "es-wd-0238"
+    ]
+  },
+  {
+    "id": "es-sent-0709",
+    "sentence": "Mi casa está a la izquierda del parque.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0063",
+      "es-wd-0255",
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0248",
+      "es-wd-0241"
+    ]
+  },
+  {
+    "id": "es-sent-0710",
+    "sentence": "La tienda queda a mano izquierda.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0253",
+      "es-wd-0248"
+    ]
+  },
+  {
+    "id": "es-sent-0711",
+    "sentence": "Gira a la derecha después del semáforo.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0249",
+      "es-wd-0106",
+      "es-wd-0243"
+    ]
+  },
+  {
+    "id": "es-sent-0712",
+    "sentence": "El banco está a la derecha de la plaza.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0242",
+      "es-wd-0255",
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0249",
+      "es-wd-0023",
+      "es-wd-0058",
+      "es-wd-0240"
+    ]
+  },
+  {
+    "id": "es-sent-0713",
+    "sentence": "Sigue por la derecha hasta el final.",
+    "word_ids": [
+      "es-wd-0254",
+      "es-wd-0058",
+      "es-wd-0249",
+      "es-wd-0057"
+    ]
+  },
+  {
+    "id": "es-sent-0714",
+    "sentence": "Sigue derecho hasta la plaza.",
+    "word_ids": [
+      "es-wd-0250",
+      "es-wd-0058",
+      "es-wd-0240"
+    ]
+  },
+  {
+    "id": "es-sent-0715",
+    "sentence": "Camina derecho y no te pierdas.",
+    "word_ids": [
+      "es-wd-0250",
+      "es-wd-0033",
+      "es-wd-0036"
+    ]
+  },
+  {
+    "id": "es-sent-0716",
+    "sentence": "El camino sigue derecho por dos cuadras.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0244",
+      "es-wd-0250",
+      "es-wd-0254",
+      "es-wd-0134"
+    ]
+  },
+  {
+    "id": "es-sent-0717",
+    "sentence": "La panadería queda frente a mi casa.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0251",
+      "es-wd-0016",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0718",
+    "sentence": "Hay un parque frente a la escuela.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0241",
+      "es-wd-0251",
+      "es-wd-0058"
+    ]
+  },
+  {
+    "id": "es-sent-0719",
+    "sentence": "Nos vemos frente a la plaza.",
+    "word_ids": [
+      "es-wd-0251",
+      "es-wd-0058",
+      "es-wd-0240"
+    ]
+  },
+  {
+    "id": "es-sent-0720",
+    "sentence": "La farmacia está entre dos tiendas.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0255",
+      "es-wd-0252",
+      "es-wd-0134"
+    ]
+  },
+  {
+    "id": "es-sent-0721",
+    "sentence": "El banco queda entre la plaza y la avenida.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0242",
+      "es-wd-0252",
+      "es-wd-0058",
+      "es-wd-0240",
+      "es-wd-0033",
+      "es-wd-0058",
+      "es-wd-0237"
+    ]
+  },
+  {
+    "id": "es-sent-0722",
+    "sentence": "Escondí la carta entre los libros.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0252"
+    ]
+  },
+  {
+    "id": "es-sent-0723",
+    "sentence": "¿Dónde está la estación?",
+    "word_ids": [
+      "es-wd-0024",
+      "es-wd-0255",
+      "es-wd-0058"
+    ]
+  },
+  {
+    "id": "es-sent-0724",
+    "sentence": "No sé dónde queda esa calle.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0024",
+      "es-wd-0236"
+    ]
+  },
+  {
+    "id": "es-sent-0725",
+    "sentence": "Preguntamos dónde estaba el parque.",
+    "word_ids": [
+      "es-wd-0024",
+      "es-wd-0057",
+      "es-wd-0241"
+    ]
+  },
+  {
+    "id": "es-sent-0726",
+    "sentence": "¿Cómo llego a la plaza?",
+    "word_ids": [
+      "es-wd-0012",
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0240"
+    ]
+  },
+  {
+    "id": "es-sent-0727",
+    "sentence": "No sabía cómo volver a casa.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0012",
+      "es-wd-0098",
+      "es-wd-0253",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0728",
+    "sentence": "Explícame cómo cruzar la calle.",
+    "word_ids": [
+      "es-wd-0012",
+      "es-wd-0257",
+      "es-wd-0058",
+      "es-wd-0236"
+    ]
+  },
+  {
+    "id": "es-sent-0729",
+    "sentence": "Vamos a la plaza esta tarde.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0240",
+      "es-wd-0008"
+    ]
+  },
+  {
+    "id": "es-sent-0730",
+    "sentence": "Llegamos a tiempo a la reunión.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0253",
+      "es-wd-0058"
+    ]
+  },
+  {
+    "id": "es-sent-0731",
+    "sentence": "Caminamos a la escuela todos los días.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0059"
+    ]
+  },
+  {
+    "id": "es-sent-0732",
+    "sentence": "Caminamos por esa calle larga.",
+    "word_ids": [
+      "es-wd-0254",
+      "es-wd-0236"
+    ]
+  },
+  {
+    "id": "es-sent-0733",
+    "sentence": "Pasamos por el parque todos los días.",
+    "word_ids": [
+      "es-wd-0254",
+      "es-wd-0057",
+      "es-wd-0241",
+      "es-wd-0059"
+    ]
+  },
+  {
+    "id": "es-sent-0734",
+    "sentence": "Fuimos por el camino más corto.",
+    "word_ids": [
+      "es-wd-0254",
+      "es-wd-0057",
+      "es-wd-0244",
+      "es-wd-0129"
+    ]
+  },
+  {
+    "id": "es-sent-0735",
+    "sentence": "La parada está aquí mismo.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0736",
+    "sentence": "Vivo aquí desde hace un año.",
+    "word_ids": [
+      "es-wd-0078",
+      "es-wd-0076"
+    ]
+  },
+  {
+    "id": "es-sent-0737",
+    "sentence": "Aquí no hay ningún banco.",
+    "word_ids": [
+      "es-wd-0078",
+      "es-wd-0036",
+      "es-wd-0081",
+      "es-wd-0242"
+    ]
+  },
+  {
+    "id": "es-sent-0738",
+    "sentence": "El parque está allí, cerca del río.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0241",
+      "es-wd-0255",
+      "es-wd-0079",
+      "es-wd-0234"
+    ]
+  },
+  {
+    "id": "es-sent-0739",
+    "sentence": "Allí venden mapas de la ciudad.",
+    "word_ids": [
+      "es-wd-0079",
+      "es-wd-0023",
+      "es-wd-0058"
+    ]
+  },
+  {
+    "id": "es-sent-0740",
+    "sentence": "Mi casa queda justo allí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0063",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-0741",
+    "sentence": "La plaza está muy cerca de aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0240",
+      "es-wd-0255",
+      "es-wd-0234",
+      "es-wd-0023",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0742",
+    "sentence": "El banco está cerrado hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0242",
+      "es-wd-0255",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0743",
+    "sentence": "Mi casa está en esa avenida.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0063",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0237"
+    ]
+  },
+  {
+    "id": "es-sent-0744",
+    "sentence": "Debemos seguir derecho hasta el final.",
+    "word_ids": [
+      "es-wd-0256",
+      "es-wd-0250",
+      "es-wd-0057"
+    ]
+  },
+  {
+    "id": "es-sent-0745",
+    "sentence": "Vamos a seguir por esta calle.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0256",
+      "es-wd-0254",
+      "es-wd-0236"
+    ]
+  },
+  {
+    "id": "es-sent-0746",
+    "sentence": "Prefiero seguir el camino más largo.",
+    "word_ids": [
+      "es-wd-0256",
+      "es-wd-0057",
+      "es-wd-0244",
+      "es-wd-0129"
+    ]
+  },
+  {
+    "id": "es-sent-0747",
+    "sentence": "Hay que cruzar la calle con cuidado.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0257",
+      "es-wd-0058",
+      "es-wd-0236",
+      "es-wd-0061"
+    ]
+  },
+  {
+    "id": "es-sent-0748",
+    "sentence": "Vamos a cruzar la plaza para llegar antes.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0257",
+      "es-wd-0058",
+      "es-wd-0240",
+      "es-wd-0096",
+      "es-wd-0174"
+    ]
+  },
+  {
+    "id": "es-sent-0749",
+    "sentence": "No es fácil cruzar esa avenida.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0017",
+      "es-wd-0257",
+      "es-wd-0237"
+    ]
+  },
+  {
+    "id": "es-sent-0750",
+    "sentence": "Tienes que doblar a la derecha.",
+    "word_ids": [
+      "es-wd-0258",
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0249"
+    ]
+  },
+  {
+    "id": "es-sent-0751",
+    "sentence": "Vamos a doblar en la próxima esquina.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0258",
+      "es-wd-0082",
+      "es-wd-0238"
+    ]
+  },
+  {
+    "id": "es-sent-0752",
+    "sentence": "Olvidamos doblar a tiempo y nos perdimos.",
+    "word_ids": [
+      "es-wd-0258",
+      "es-wd-0253",
+      "es-wd-0033"
+    ]
+  },
+  {
+    "id": "es-sent-0753",
+    "sentence": "Quiero llegar temprano a la plaza.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0096",
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0240"
+    ]
+  },
+  {
+    "id": "es-sent-0754",
+    "sentence": "Es difícil llegar hasta ese lugar.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0096",
+      "es-wd-0247"
+    ]
+  },
+  {
+    "id": "es-sent-0755",
+    "sentence": "Vamos a llegar tarde otra vez.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0096",
+      "es-wd-0008"
+    ]
+  },
+  {
+    "id": "es-sent-0756",
+    "sentence": "El autobús va a pasar por aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0164",
+      "es-wd-0253",
+      "es-wd-0259",
+      "es-wd-0254",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0757",
+    "sentence": "Vamos a pasar por el parque.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0259",
+      "es-wd-0254",
+      "es-wd-0057",
+      "es-wd-0241"
+    ]
+  },
+  {
+    "id": "es-sent-0758",
+    "sentence": "No quiero pasar por esa calle de noche.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0125",
+      "es-wd-0259",
+      "es-wd-0254",
+      "es-wd-0236",
+      "es-wd-0023",
+      "es-wd-0009"
+    ]
+  }
+]
