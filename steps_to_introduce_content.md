@@ -15,8 +15,8 @@ Prompt in: backend/prompts/topic_word_list_audit_prompt.md
 PROMPT: 
 
 idiom: es
-chapter: 2
-topic: 4
+chapter: 3
+topic: 1
 
 1. Resolve chapter/topic into a roadmap ID using the Section 7 table in
    contents/language_reading_journey_phases/roadmap.md (chapter 1 = its first
@@ -72,9 +72,9 @@ roadmap.md), [structural] (from didactic_roadmap.md), or [sense-shift] (from ste
 
 native: pt
 idiom: es
-file: backend/content/es/chapter_2/topic_4/words.json
-chapter: 2
-topic: 4
+file: backend/content/es/chapter_3/topic_1/words.json
+chapter: 3
+topic: 1
 
 Build the reverse-lookup relations for this chapter/topic in
 backend/content/relations/<native>-<idiom>-relations.json, matching the existing nested shape:
@@ -165,8 +165,8 @@ at all (so it's a recorded, deliberate gap, not silently dropped).
 
 native: pt
 target: es
-chapter: 2
-topic: 4
+chapter: 3
+topic: 1
 
 Run the prompt in backend/prompts/phase_words_adaptation.md with origin=<native>,
 target=<target>, chapter=<chapter>, topic=<topic>. It's already pair-agnostic — no
@@ -211,8 +211,8 @@ and the topic shell + word_ids.json only, per phase_words_adaptation.md's own sc
 
 native: pt
 target: es
-chapter: 2
-topic: 4
+chapter: 3
+topic: 1
 
 Build one "mixin" example sentence per word/expression in this chapter/topic, in
 backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json.
@@ -267,8 +267,8 @@ awkward.
 
 native: pt
 target: es
-chapter: 2
-topic: 4
+chapter: 3
+topic: 1
 
 Create 100 natural sentences, following the exact pattern of chapter 1 topic 1's mixed_sentences.json in backend/content/pt-es/chapter_1/topic_1/mixed_sentences.json ({sentence_number, content} objects, target words marked with **bold**).
 
@@ -289,8 +289,8 @@ Then run the backend/scripts/shuffle_sentences.py script to shuffle sentences:
 ## Add target idiom natural sentences
 
 target: es
-chapter: 2
-topic: 4
+chapter: 3
+topic: 1
 
 Now, generate simple natural sentences, following the pattern in
 backend/content/es/chapter_<chapter>/topic_<topic>/sentences.json.
@@ -303,6 +303,19 @@ decision.
 - For Chinese
 Sentences with pure Chinese, using casual 你 per the register decision and
 only aspect particles/measure words already taught.
+
+------------------------------------
+
+Then run backend/scripts/check_sentence_word_ids.py to verify every word_id in
+these new sentences actually matches a word present in its own sentence text —
+nothing else in the pipeline catches a wrong-but-structurally-valid id (e.g. one
+word's id used where a different word was meant, often by consulting the wrong
+topic's word list while authoring). A mismatch here means the "Listen and
+Identify" word-picker game will silently render fewer blanks than it should,
+since it skips any word_id it can't find a text match for instead of erroring:
+`python3 backend/scripts/check_sentence_word_ids.py <target> {chapter number} {topic number}`
+
+Fix any reported mismatch before moving on.
 
 ===========================================================
 
@@ -379,6 +392,17 @@ backend/content/es/chapter_1/topic_1/sentences.json's shape, writing them to
 backend/content/es/chapter_2/topic_2/sentences.json.
 For each word in the chapter 2 topic 2, create 3 natural sentences —
 pure Spanish, no Portuguese mixing.
+
+------------------------------------
+
+Then run backend/scripts/check_sentence_word_ids.py to verify every word_id in
+these new sentences actually matches a word present in its own sentence text —
+nothing else in the pipeline catches a wrong-but-structurally-valid id. A
+mismatch here means the "Listen and Identify" word-picker game will silently
+render fewer blanks than it should:
+`python3 backend/scripts/check_sentence_word_ids.py es 2 2`
+
+Fix any reported mismatch before moving on.
 
 
 
@@ -565,6 +589,17 @@ topic run).
 For each word in the chapter 1 topic 1, create 3 natural sentences —
 pure Korean, no Portuguese mixing, every conjugated verb in 해요체 per the register
 decision above.
+
+------------------------------------
+
+Then run backend/scripts/check_sentence_word_ids.py to verify every word_id in
+these new sentences actually matches a word present in its own sentence text —
+nothing else in the pipeline catches a wrong-but-structurally-valid id. A
+mismatch here means the "Listen and Identify" word-picker game will silently
+render fewer blanks than it should:
+`python3 backend/scripts/check_sentence_word_ids.py ko {chapter number} {topic number}`
+
+Fix any reported mismatch before moving on.
 
 
 
@@ -762,4 +797,15 @@ topic run).
 For each word in the chapter 1 topic 1, create 3 natural sentences —
 pure Chinese, no Portuguese mixing, using casual 你 per the register decision above and
 only aspect particles/measure words already taught.
+
+------------------------------------
+
+Then run backend/scripts/check_sentence_word_ids.py to verify every word_id in
+these new sentences actually matches a word present in its own sentence text —
+nothing else in the pipeline catches a wrong-but-structurally-valid id. A
+mismatch here means the "Listen and Identify" word-picker game will silently
+render fewer blanks than it should:
+`python3 backend/scripts/check_sentence_word_ids.py zh {chapter number} {topic number}`
+
+Fix any reported mismatch before moving on.
 
