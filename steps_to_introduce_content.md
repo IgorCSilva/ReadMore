@@ -1,13 +1,6 @@
 
 # Introduce a new pair of idioms
 
-
-
-0. Run the prompt to analyze the words in current pt words lists (backend/content/pt/chapter_N/topic_N/words.json) by chapter and topic, and report if some words must be added.
-Prompt in: backend/prompts/topic_word_list_audit_prompt.md
-
-
-
 # Introduce content
 
 ## Add vocabulary
@@ -285,6 +278,30 @@ The sentences must be located in: backend/content/<native>-<target>/chapter_N/to
 Then run the backend/scripts/shuffle_sentences.py script to shuffle sentences:
 `python3 backend/scripts/shuffle_sentences.py {pair of idioms} {chapter number} {topic number}`
 
+Then run backend/scripts/check_mixed_sentences_relations.py to catch two mistakes
+that are easy to make by hand and easy to miss by eye: a native word left
+unbolded even though it has a mapped <target> equivalent somewhere in
+relations.json, and — more subtly — a **bolded** span that's actually still the
+native word (a relations.json key) instead of its translated value (e.g.
+"**ninguém**" left bolded as Portuguese instead of becoming "**nadie**", or
+"**muito**" instead of "**mucho**"):
+`python3 backend/scripts/check_mixed_sentences_relations.py <native>-<target> {chapter number} {topic number}`
+
+If <target> is es, also run backend/scripts/check_es_grammar_adaptation.py to
+verify the y/e and la/el grammar rules from the "Rules" above were actually
+applied correctly, not just defaulted to one form everywhere (e.g. bolding
+"**e**" throughout instead of "**y**", which relations.json's lookup alone
+can't catch since "e" is a recorded value there too — this is a grammar check,
+not a vocabulary check):
+`python3 backend/scripts/check_es_grammar_adaptation.py <native>-es {chapter number} {topic number}`
+
+Fix any reported mismatch before moving on. Note both scripts can only catch a
+native word/rule they can already see evidence for — a concept whose native
+word was never recorded as its own relations.json key (e.g. "onde" taught in a
+later chapter but only ever mapped as the compound "onde fica" → "dónde está",
+never bare "onde" → "dónde") won't be found this way; that's a relations.json
+coverage gap, not a lookup failure, and still needs a human read-through.
+
 
 ## Add target idiom natural sentences
 
@@ -318,6 +335,8 @@ since it skips any word_id it can't find a text match for instead of erroring:
 Fix any reported mismatch before moving on.
 
 ===========================================================
+
+# Per pair
 
 ## VERSION: pt-es
 
