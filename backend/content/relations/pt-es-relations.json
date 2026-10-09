@@ -305,6 +305,28 @@
         "a": "a",
         "seguir": "seguir"
       }
+    },
+    "topic_2": {
+      "pt": {
+        "ônibus": "autobús",
+        "carro": "carro",
+        "táxi": "taxi",
+        "trem": "tren",
+        "metrô": "metro",
+        "avião": "avión",
+        "bicicleta": "bicicleta",
+        "estação": "estación",
+        "parada": "parada",
+        "passageiro": "pasajero",
+        "motorista": "conductor",
+        "passagem": "boleto",
+        "embarcar": "embarcar",
+        "desembarcar": "desembarcar",
+        "viajar": "viajar",
+        "partir": "partir",
+        "dirigir": "manejar",
+        "transporte": "transporte"
+      }
     }
   },
   "chapter_4": {

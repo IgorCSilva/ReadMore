@@ -1552,5 +1552,113 @@
     "root_word_id": "wd-0439",
     "word": "pasar",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0260",
+    "root_word_id": "wd-0209",
+    "word": "autobús",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0261",
+    "root_word_id": "wd-0440",
+    "word": "carro",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0262",
+    "root_word_id": "wd-0041",
+    "word": "taxi",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0263",
+    "root_word_id": "wd-0441",
+    "word": "tren",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0264",
+    "root_word_id": "wd-0442",
+    "word": "metro",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0265",
+    "root_word_id": "wd-0443",
+    "word": "avión",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0266",
+    "root_word_id": "wd-0444",
+    "word": "bicicleta",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0267",
+    "root_word_id": "wd-0445",
+    "word": "estación",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0268",
+    "root_word_id": "wd-0446",
+    "word": "parada",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0269",
+    "root_word_id": "wd-0447",
+    "word": "pasajero",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0270",
+    "root_word_id": "wd-0448",
+    "word": "conductor",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0271",
+    "root_word_id": "wd-0449",
+    "word": "boleto",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0272",
+    "root_word_id": "wd-0450",
+    "word": "embarcar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0273",
+    "root_word_id": "wd-0451",
+    "word": "desembarcar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0274",
+    "root_word_id": "wd-0452",
+    "word": "viajar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0275",
+    "root_word_id": "wd-0453",
+    "word": "partir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0276",
+    "root_word_id": "wd-0454",
+    "word": "manejar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0277",
+    "root_word_id": "wd-0455",
+    "word": "transporte",
+    "gender_id": "masculine"
   }
 ]
