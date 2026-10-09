@@ -5,7 +5,7 @@
   },
   {
     "sentence_number": 2,
-    "content": "Esperamos **llegar** **e** **pasar** **por aquí** **sin** problema."
+    "content": "Esperamos **llegar** **y** **pasar** **por aquí** **sin** problema."
   },
   {
     "sentence_number": 3,
@@ -13,7 +13,7 @@
   },
   {
     "sentence_number": 4,
-    "content": "**La** **puerta** **izquierda** estava trancada **e** **la** outra aberta."
+    "content": "**La** **puerta** **izquierda** estava trancada **y** **la** outra aberta."
   },
   {
     "sentence_number": 5,
@@ -25,7 +25,7 @@
   },
   {
     "sentence_number": 7,
-    "content": "Esse **lugar** fica **entre** **la** padaria **e** **el** mercado."
+    "content": "Esse **lugar** fica **entre** **la** padaria **y** **el** mercado."
   },
   {
     "sentence_number": 8,
@@ -57,7 +57,7 @@
   },
   {
     "sentence_number": 15,
-    "content": "**Ella** mora **aquí** desde **pequeña**, **e** adora **el** bairro."
+    "content": "**Ella** mora **aquí** desde **pequeña**, **y** adora **el** bairro."
   },
   {
     "sentence_number": 16,
@@ -69,11 +69,11 @@
   },
   {
     "sentence_number": 18,
-    "content": "**En el** final, conseguimos **llegar** **e** **pasar** pela **plaza** **sin** perder **el** **camino**."
+    "content": "**En el** final, conseguimos **llegar** **y** **pasar** pela **plaza** **sin** perder **el** **camino**."
   },
   {
     "sentence_number": 19,
-    "content": "Avisaram para **cruzar** **con** cuidado **e** só **después** **doblar**."
+    "content": "Avisaram para **cruzar** **con** cuidado **y** só **después** **doblar**."
   },
   {
     "sentence_number": 20,
@@ -97,11 +97,11 @@
   },
   {
     "sentence_number": 25,
-    "content": "Perguntei **dónde** **parar** **e** **cómo** **volver** **después**."
+    "content": "Perguntei **dónde** **parar** **y** **cómo** **volver** **después**."
   },
   {
     "sentence_number": 26,
-    "content": "**El** turista virou numa **dirección** errada **e** **se** perdeu."
+    "content": "**El** turista virou numa **dirección** errada **y** **se** perdeu."
   },
   {
     "sentence_number": 27,
@@ -117,7 +117,7 @@
   },
   {
     "sentence_number": 30,
-    "content": "**Él** apontou para **la** **izquierda** **e** disse que **la** loja ficava **frente a** **un** mercado."
+    "content": "**Él** apontou para **la** **izquierda** **y** disse que **la** loja ficava **frente a** **un** mercado."
   },
   {
     "sentence_number": 31,
@@ -133,11 +133,11 @@
   },
   {
     "sentence_number": 34,
-    "content": "Andamos **una** **cuadra** **en la** **dirección** errada **e** voltamos."
+    "content": "Andamos **una** **cuadra** **en la** **dirección** errada **y** voltamos."
   },
   {
     "sentence_number": 35,
-    "content": "Perguntei **dónde** era **la** estação **e** **nadie** respondeu."
+    "content": "Perguntei **dónde** era **la** estação **y** **nadie** respondeu."
   },
   {
     "sentence_number": 36,
@@ -153,7 +153,7 @@
   },
   {
     "sentence_number": 39,
-    "content": "Sentamos **en la** **plaza** **e** conversamos **por** horas."
+    "content": "Sentamos **en la** **plaza** **y** conversamos **por** horas."
   },
   {
     "sentence_number": 40,
@@ -173,7 +173,7 @@
   },
   {
     "sentence_number": 44,
-    "content": "Perguntei **dónde** ficava **e** **cómo** **llegar** até lá."
+    "content": "Perguntei **dónde** ficava **y** **cómo** **llegar** até lá."
   },
   {
     "sentence_number": 45,
@@ -201,7 +201,7 @@
   },
   {
     "sentence_number": 51,
-    "content": "Olha **el** **mapa** **e** marca **el** **lugar** exato."
+    "content": "Olha **el** **mapa** **y** marca **el** **lugar** exato."
   },
   {
     "sentence_number": 52,
@@ -229,15 +229,15 @@
   },
   {
     "sentence_number": 58,
-    "content": "Marquei **el** **lugar** exato **e** **el** **mapa** ficou **bien** claro."
+    "content": "Marquei **el** **lugar** exato **y** **el** **mapa** ficou **bien** claro."
   },
   {
     "sentence_number": 59,
-    "content": "Vire **en la** **esquina** **e** ande **más** **una** **cuadra**."
+    "content": "Vire **en la** **esquina** **y** ande **más** **una** **cuadra**."
   },
   {
     "sentence_number": 60,
-    "content": "Essa **avenida** **es** **muito** movimentada durante **el** **día**."
+    "content": "Essa **avenida** **es** **mucho** movimentada durante **el** **día**."
   },
   {
     "sentence_number": 61,
@@ -269,7 +269,7 @@
   },
   {
     "sentence_number": 68,
-    "content": "**Ella** apontou **e** disse: **aquí** **no**, **allí** **sí**."
+    "content": "**Ella** apontou **y** disse: **aquí** **no**, **allí** **sí**."
   },
   {
     "sentence_number": 69,
@@ -309,7 +309,7 @@
   },
   {
     "sentence_number": 78,
-    "content": "Perguntei **por** aquela **calle** **y** **ninguém** sabia **responder**."
+    "content": "Perguntei **por** aquela **calle** **y** **nadie** sabia **responder**."
   },
   {
     "sentence_number": 79,
@@ -397,6 +397,6 @@
   },
   {
     "sentence_number": 100,
-    "content": "**Él** seguiu **derecho** mesmo **sin** saber onde estava."
+    "content": "**Él** seguiu **derecho** mesmo **sin** saber **dónde** estava."
   }
 ]

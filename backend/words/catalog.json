@@ -1755,6 +1755,70 @@
     {
       "word_id": "wd-0439",
       "filename": "to_pass"
+    },
+    {
+      "word_id": "wd-0440",
+      "filename": "car"
+    },
+    {
+      "word_id": "wd-0441",
+      "filename": "train"
+    },
+    {
+      "word_id": "wd-0442",
+      "filename": "subway"
+    },
+    {
+      "word_id": "wd-0443",
+      "filename": "airplane"
+    },
+    {
+      "word_id": "wd-0444",
+      "filename": "bicycle"
+    },
+    {
+      "word_id": "wd-0445",
+      "filename": "station"
+    },
+    {
+      "word_id": "wd-0446",
+      "filename": "bus_stop"
+    },
+    {
+      "word_id": "wd-0447",
+      "filename": "passenger"
+    },
+    {
+      "word_id": "wd-0448",
+      "filename": "driver"
+    },
+    {
+      "word_id": "wd-0449",
+      "filename": "ticket"
+    },
+    {
+      "word_id": "wd-0450",
+      "filename": "to_board"
+    },
+    {
+      "word_id": "wd-0451",
+      "filename": "to_get_off"
+    },
+    {
+      "word_id": "wd-0452",
+      "filename": "to_travel"
+    },
+    {
+      "word_id": "wd-0453",
+      "filename": "to_depart"
+    },
+    {
+      "word_id": "wd-0454",
+      "filename": "to_drive"
+    },
+    {
+      "word_id": "wd-0455",
+      "filename": "transportation"
     }
   ]
 }
