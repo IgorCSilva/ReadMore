@@ -1,0 +1,550 @@
+[
+  {
+    "id": "es-sent-0759",
+    "sentence": "El autobús llega a las ocho.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0260",
+      "es-wd-0166",
+      "es-wd-0253",
+      "es-wd-0140"
+    ]
+  },
+  {
+    "id": "es-sent-0760",
+    "sentence": "Tomo el autobús para ir al trabajo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0260",
+      "es-wd-0095"
+    ]
+  },
+  {
+    "id": "es-sent-0761",
+    "sentence": "El autobús está lleno de pasajeros.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0260",
+      "es-wd-0255",
+      "es-wd-0023"
+    ]
+  },
+  {
+    "id": "es-sent-0762",
+    "sentence": "Mi carro es rojo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0261",
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0763",
+    "sentence": "El carro está en la calle.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0261",
+      "es-wd-0255",
+      "es-wd-0082",
+      "es-wd-0236"
+    ]
+  },
+  {
+    "id": "es-sent-0764",
+    "sentence": "Vamos en carro al parque.",
+    "word_ids": [
+      "es-wd-0084",
+      "es-wd-0261",
+      "es-wd-0241"
+    ]
+  },
+  {
+    "id": "es-sent-0765",
+    "sentence": "Tomamos un taxi al aeropuerto.",
+    "word_ids": [
+      "es-wd-0076",
+      "es-wd-0262"
+    ]
+  },
+  {
+    "id": "es-sent-0766",
+    "sentence": "El taxi llega en cinco minutos.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0262",
+      "es-wd-0166",
+      "es-wd-0084",
+      "es-wd-0137"
+    ]
+  },
+  {
+    "id": "es-sent-0767",
+    "sentence": "El taxi es rápido y cómodo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0262",
+      "es-wd-0017",
+      "es-wd-0033"
+    ]
+  },
+  {
+    "id": "es-sent-0768",
+    "sentence": "El tren llega a la estación.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0263",
+      "es-wd-0166",
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0267"
+    ]
+  },
+  {
+    "id": "es-sent-0769",
+    "sentence": "Viajamos en tren a Madrid.",
+    "word_ids": [
+      "es-wd-0084",
+      "es-wd-0263",
+      "es-wd-0253"
+    ]
+  },
+  {
+    "id": "es-sent-0770",
+    "sentence": "El tren sale a las nueve.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0263",
+      "es-wd-0165",
+      "es-wd-0253",
+      "es-wd-0141"
+    ]
+  },
+  {
+    "id": "es-sent-0771",
+    "sentence": "Tomamos el metro todos los días.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0264",
+      "es-wd-0059"
+    ]
+  },
+  {
+    "id": "es-sent-0772",
+    "sentence": "El metro es rápido y barato.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0264",
+      "es-wd-0017",
+      "es-wd-0033"
+    ]
+  },
+  {
+    "id": "es-sent-0773",
+    "sentence": "La estación de metro está cerca.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0267",
+      "es-wd-0023",
+      "es-wd-0264",
+      "es-wd-0255",
+      "es-wd-0234"
+    ]
+  },
+  {
+    "id": "es-sent-0774",
+    "sentence": "El avión sale por la mañana.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0265",
+      "es-wd-0165",
+      "es-wd-0171"
+    ]
+  },
+  {
+    "id": "es-sent-0775",
+    "sentence": "Viajamos en avión a España.",
+    "word_ids": [
+      "es-wd-0084",
+      "es-wd-0265",
+      "es-wd-0253"
+    ]
+  },
+  {
+    "id": "es-sent-0776",
+    "sentence": "El avión llega tarde hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0265",
+      "es-wd-0166",
+      "es-wd-0008",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0777",
+    "sentence": "Mi hermano tiene una bicicleta nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0042",
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0266",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-0778",
+    "sentence": "Voy al parque en bicicleta.",
+    "word_ids": [
+      "es-wd-0241",
+      "es-wd-0084",
+      "es-wd-0266"
+    ]
+  },
+  {
+    "id": "es-sent-0779",
+    "sentence": "La bicicleta es pequeña y rápida.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0266",
+      "es-wd-0017",
+      "es-wd-0225",
+      "es-wd-0033"
+    ]
+  },
+  {
+    "id": "es-sent-0780",
+    "sentence": "La estación está cerca de mi casa.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0267",
+      "es-wd-0255",
+      "es-wd-0234",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0781",
+    "sentence": "Esperamos el tren en la estación.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0263",
+      "es-wd-0082",
+      "es-wd-0267"
+    ]
+  },
+  {
+    "id": "es-sent-0782",
+    "sentence": "La estación de autobús está llena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0267",
+      "es-wd-0023",
+      "es-wd-0260",
+      "es-wd-0255"
+    ]
+  },
+  {
+    "id": "es-sent-0783",
+    "sentence": "Espero el autobús en la parada.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0260",
+      "es-wd-0082",
+      "es-wd-0268"
+    ]
+  },
+  {
+    "id": "es-sent-0784",
+    "sentence": "La parada está cerca del banco.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0268",
+      "es-wd-0255",
+      "es-wd-0234",
+      "es-wd-0242"
+    ]
+  },
+  {
+    "id": "es-sent-0785",
+    "sentence": "Hay mucha gente en la parada.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0082",
+      "es-wd-0268"
+    ]
+  },
+  {
+    "id": "es-sent-0786",
+    "sentence": "El pasajero sube al autobús.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0269",
+      "es-wd-0260"
+    ]
+  },
+  {
+    "id": "es-sent-0787",
+    "sentence": "Un pasajero perdió su boleto.",
+    "word_ids": [
+      "es-wd-0076",
+      "es-wd-0269",
+      "es-wd-0052",
+      "es-wd-0271"
+    ]
+  },
+  {
+    "id": "es-sent-0788",
+    "sentence": "El pasajero espera en la estación.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0269",
+      "es-wd-0082",
+      "es-wd-0267"
+    ]
+  },
+  {
+    "id": "es-sent-0789",
+    "sentence": "El conductor maneja con cuidado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0270",
+      "es-wd-0061"
+    ]
+  },
+  {
+    "id": "es-sent-0790",
+    "sentence": "El conductor del autobús es amable.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0270",
+      "es-wd-0260",
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0791",
+    "sentence": "El conductor para en la esquina.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0270",
+      "es-wd-0082",
+      "es-wd-0238"
+    ]
+  },
+  {
+    "id": "es-sent-0792",
+    "sentence": "Compro un boleto de tren.",
+    "word_ids": [
+      "es-wd-0076",
+      "es-wd-0271",
+      "es-wd-0023",
+      "es-wd-0263"
+    ]
+  },
+  {
+    "id": "es-sent-0793",
+    "sentence": "El boleto cuesta diez pesos.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0271",
+      "es-wd-0142"
+    ]
+  },
+  {
+    "id": "es-sent-0794",
+    "sentence": "Perdí mi boleto de avión.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0271",
+      "es-wd-0023",
+      "es-wd-0265"
+    ]
+  },
+  {
+    "id": "es-sent-0795",
+    "sentence": "Los pasajeros van a embarcar ahora.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0272",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-0796",
+    "sentence": "Es hora de embarcar en el avión.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0143",
+      "es-wd-0023",
+      "es-wd-0272",
+      "es-wd-0083",
+      "es-wd-0265"
+    ]
+  },
+  {
+    "id": "es-sent-0797",
+    "sentence": "Vamos a embarcar en el tren.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0272",
+      "es-wd-0083",
+      "es-wd-0263"
+    ]
+  },
+  {
+    "id": "es-sent-0798",
+    "sentence": "Los pasajeros van a desembarcar aquí.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0273",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0799",
+    "sentence": "Es hora de desembarcar del avión.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0143",
+      "es-wd-0023",
+      "es-wd-0273",
+      "es-wd-0265"
+    ]
+  },
+  {
+    "id": "es-sent-0800",
+    "sentence": "Vamos a desembarcar en la próxima estación.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0273",
+      "es-wd-0082",
+      "es-wd-0267"
+    ]
+  },
+  {
+    "id": "es-sent-0801",
+    "sentence": "Me gusta viajar en tren.",
+    "word_ids": [
+      "es-wd-0019",
+      "es-wd-0274",
+      "es-wd-0084",
+      "es-wd-0263"
+    ]
+  },
+  {
+    "id": "es-sent-0802",
+    "sentence": "Vamos a viajar a España.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0274",
+      "es-wd-0253"
+    ]
+  },
+  {
+    "id": "es-sent-0803",
+    "sentence": "Ella quiere viajar en avión.",
+    "word_ids": [
+      "es-wd-0160",
+      "es-wd-0274",
+      "es-wd-0084",
+      "es-wd-0265"
+    ]
+  },
+  {
+    "id": "es-sent-0804",
+    "sentence": "El tren va a partir pronto.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0263",
+      "es-wd-0164",
+      "es-wd-0253",
+      "es-wd-0275"
+    ]
+  },
+  {
+    "id": "es-sent-0805",
+    "sentence": "El avión va a partir a las diez.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0265",
+      "es-wd-0164",
+      "es-wd-0253",
+      "es-wd-0275",
+      "es-wd-0253",
+      "es-wd-0142"
+    ]
+  },
+  {
+    "id": "es-sent-0806",
+    "sentence": "Vamos a partir temprano.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0275"
+    ]
+  },
+  {
+    "id": "es-sent-0807",
+    "sentence": "Mi padre sabe manejar bien.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0038",
+      "es-wd-0276",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0808",
+    "sentence": "Ella aprende a manejar un carro.",
+    "word_ids": [
+      "es-wd-0160",
+      "es-wd-0253",
+      "es-wd-0276",
+      "es-wd-0076",
+      "es-wd-0261"
+    ]
+  },
+  {
+    "id": "es-sent-0809",
+    "sentence": "No me gusta manejar de noche.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0019",
+      "es-wd-0276",
+      "es-wd-0023",
+      "es-wd-0009"
+    ]
+  },
+  {
+    "id": "es-sent-0810",
+    "sentence": "El transporte público es barato.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0277",
+      "es-wd-0017"
+    ]
+  },
+  {
+    "id": "es-sent-0811",
+    "sentence": "Uso el transporte todos los días.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0277",
+      "es-wd-0059"
+    ]
+  },
+  {
+    "id": "es-sent-0812",
+    "sentence": "El transporte de la ciudad es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0277",
+      "es-wd-0023",
+      "es-wd-0058",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  }
+]
