@@ -1,0 +1,637 @@
+[
+  {
+    "id": "es-sent-0813",
+    "sentence": "El aeropuerto está lejos de mi casa.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0278",
+      "es-wd-0255",
+      "es-wd-0235",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0814",
+    "sentence": "Vamos al aeropuerto en taxi.",
+    "word_ids": [
+      "es-wd-0278",
+      "es-wd-0084",
+      "es-wd-0262"
+    ]
+  },
+  {
+    "id": "es-sent-0815",
+    "sentence": "El aeropuerto internacional es muy grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0278",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-0816",
+    "sentence": "La llegada del vuelo es a las diez.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0279",
+      "es-wd-0281",
+      "es-wd-0017",
+      "es-wd-0253",
+      "es-wd-0142"
+    ]
+  },
+  {
+    "id": "es-sent-0817",
+    "sentence": "Esperamos la llegada de mi hermano.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0279",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0042"
+    ]
+  },
+  {
+    "id": "es-sent-0818",
+    "sentence": "La llegada es a las nueve de la noche.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0279",
+      "es-wd-0017",
+      "es-wd-0253",
+      "es-wd-0141",
+      "es-wd-0023",
+      "es-wd-0058",
+      "es-wd-0009"
+    ]
+  },
+  {
+    "id": "es-sent-0819",
+    "sentence": "La salida del tren es a las ocho.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0280",
+      "es-wd-0263",
+      "es-wd-0017",
+      "es-wd-0253",
+      "es-wd-0140"
+    ]
+  },
+  {
+    "id": "es-sent-0820",
+    "sentence": "Buscamos la salida del aeropuerto.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0280",
+      "es-wd-0278"
+    ]
+  },
+  {
+    "id": "es-sent-0821",
+    "sentence": "La salida está cerca de la puerta cinco.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0280",
+      "es-wd-0255",
+      "es-wd-0234",
+      "es-wd-0023",
+      "es-wd-0058",
+      "es-wd-0068",
+      "es-wd-0137"
+    ]
+  },
+  {
+    "id": "es-sent-0822",
+    "sentence": "Mi vuelo sale por la mañana.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0281",
+      "es-wd-0165",
+      "es-wd-0171"
+    ]
+  },
+  {
+    "id": "es-sent-0823",
+    "sentence": "El vuelo a España tiene seis horas.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0281",
+      "es-wd-0253",
+      "es-wd-0080",
+      "es-wd-0138"
+    ]
+  },
+  {
+    "id": "es-sent-0824",
+    "sentence": "El vuelo está lleno de pasajeros.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0281",
+      "es-wd-0255",
+      "es-wd-0023"
+    ]
+  },
+  {
+    "id": "es-sent-0825",
+    "sentence": "La terminal dos es muy grande.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0282",
+      "es-wd-0134",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-0826",
+    "sentence": "Mi familia espera en la terminal uno.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0037",
+      "es-wd-0082",
+      "es-wd-0282",
+      "es-wd-0132"
+    ]
+  },
+  {
+    "id": "es-sent-0827",
+    "sentence": "La terminal tiene muchas tiendas.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0282",
+      "es-wd-0080"
+    ]
+  },
+  {
+    "id": "es-sent-0828",
+    "sentence": "El tren está en el andén tres.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0263",
+      "es-wd-0255",
+      "es-wd-0083",
+      "es-wd-0283",
+      "es-wd-0135"
+    ]
+  },
+  {
+    "id": "es-sent-0829",
+    "sentence": "Esperamos en el andén de la estación.",
+    "word_ids": [
+      "es-wd-0083",
+      "es-wd-0283",
+      "es-wd-0023",
+      "es-wd-0058",
+      "es-wd-0267"
+    ]
+  },
+  {
+    "id": "es-sent-0830",
+    "sentence": "El andén cinco está lejos de aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0283",
+      "es-wd-0137",
+      "es-wd-0255",
+      "es-wd-0235",
+      "es-wd-0023",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0831",
+    "sentence": "La puerta de embarque es la siete.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0068",
+      "es-wd-0023",
+      "es-wd-0017",
+      "es-wd-0058",
+      "es-wd-0139"
+    ]
+  },
+  {
+    "id": "es-sent-0832",
+    "sentence": "Vamos a la puerta antes del vuelo.",
+    "word_ids": [
+      "es-wd-0253",
+      "es-wd-0058",
+      "es-wd-0068",
+      "es-wd-0174",
+      "es-wd-0281"
+    ]
+  },
+  {
+    "id": "es-sent-0833",
+    "sentence": "La puerta del avión ya está cerrada.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0068",
+      "es-wd-0265",
+      "es-wd-0255",
+      "es-wd-0289"
+    ]
+  },
+  {
+    "id": "es-sent-0834",
+    "sentence": "El tren está atrasado hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0263",
+      "es-wd-0255",
+      "es-wd-0284",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0835",
+    "sentence": "Mi vuelo llega atrasado por la tormenta.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0281",
+      "es-wd-0166",
+      "es-wd-0284",
+      "es-wd-0254",
+      "es-wd-0058"
+    ]
+  },
+  {
+    "id": "es-sent-0836",
+    "sentence": "El autobús está atrasado una hora.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0260",
+      "es-wd-0255",
+      "es-wd-0284",
+      "es-wd-0077",
+      "es-wd-0143"
+    ]
+  },
+  {
+    "id": "es-sent-0837",
+    "sentence": "La llegada está atrasada esta noche.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0279",
+      "es-wd-0255",
+      "es-wd-0285",
+      "es-wd-0009"
+    ]
+  },
+  {
+    "id": "es-sent-0838",
+    "sentence": "Mi hermana está atrasada para el vuelo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0043",
+      "es-wd-0255",
+      "es-wd-0285",
+      "es-wd-0057",
+      "es-wd-0281"
+    ]
+  },
+  {
+    "id": "es-sent-0839",
+    "sentence": "La salida está atrasada por el clima.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0280",
+      "es-wd-0255",
+      "es-wd-0285",
+      "es-wd-0254",
+      "es-wd-0057"
+    ]
+  },
+  {
+    "id": "es-sent-0840",
+    "sentence": "El aeropuerto está abierto toda la noche.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0278",
+      "es-wd-0255",
+      "es-wd-0286",
+      "es-wd-0058",
+      "es-wd-0009"
+    ]
+  },
+  {
+    "id": "es-sent-0841",
+    "sentence": "El banco está abierto a las nueve.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0242",
+      "es-wd-0255",
+      "es-wd-0286",
+      "es-wd-0253",
+      "es-wd-0141"
+    ]
+  },
+  {
+    "id": "es-sent-0842",
+    "sentence": "El mostrador está abierto ahora.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0255",
+      "es-wd-0286",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-0843",
+    "sentence": "La puerta está abierta ahora.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0068",
+      "es-wd-0255",
+      "es-wd-0287",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-0844",
+    "sentence": "La ventana está abierta en el cuarto.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0069",
+      "es-wd-0255",
+      "es-wd-0287",
+      "es-wd-0083",
+      "es-wd-0064"
+    ]
+  },
+  {
+    "id": "es-sent-0845",
+    "sentence": "La terminal está abierta todos los días.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0282",
+      "es-wd-0255",
+      "es-wd-0287",
+      "es-wd-0059"
+    ]
+  },
+  {
+    "id": "es-sent-0846",
+    "sentence": "El aeropuerto está cerrado por la tormenta.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0278",
+      "es-wd-0255",
+      "es-wd-0288",
+      "es-wd-0254",
+      "es-wd-0058"
+    ]
+  },
+  {
+    "id": "es-sent-0847",
+    "sentence": "El banco está cerrado hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0242",
+      "es-wd-0255",
+      "es-wd-0288",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0848",
+    "sentence": "El restaurante está cerrado por la noche.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0255",
+      "es-wd-0288",
+      "es-wd-0173"
+    ]
+  },
+  {
+    "id": "es-sent-0849",
+    "sentence": "La puerta está cerrada ahora.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0068",
+      "es-wd-0255",
+      "es-wd-0289",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-0850",
+    "sentence": "La ventana está cerrada en el avión.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0069",
+      "es-wd-0255",
+      "es-wd-0289",
+      "es-wd-0083",
+      "es-wd-0265"
+    ]
+  },
+  {
+    "id": "es-sent-0851",
+    "sentence": "La tienda está cerrada los domingos.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0255",
+      "es-wd-0289"
+    ]
+  },
+  {
+    "id": "es-sent-0852",
+    "sentence": "La entrada del aeropuerto está cerca.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0290",
+      "es-wd-0278",
+      "es-wd-0255",
+      "es-wd-0234"
+    ]
+  },
+  {
+    "id": "es-sent-0853",
+    "sentence": "Esperamos en la entrada de la terminal.",
+    "word_ids": [
+      "es-wd-0082",
+      "es-wd-0290",
+      "es-wd-0023",
+      "es-wd-0058",
+      "es-wd-0282"
+    ]
+  },
+  {
+    "id": "es-sent-0854",
+    "sentence": "La entrada principal es muy grande.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0290",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-0855",
+    "sentence": "Mi equipaje está en el avión.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0291",
+      "es-wd-0255",
+      "es-wd-0083",
+      "es-wd-0265"
+    ]
+  },
+  {
+    "id": "es-sent-0856",
+    "sentence": "Perdí mi equipaje en el aeropuerto.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0291",
+      "es-wd-0083",
+      "es-wd-0278"
+    ]
+  },
+  {
+    "id": "es-sent-0857",
+    "sentence": "El equipaje de mi padre es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0291",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0038",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-0858",
+    "sentence": "Mi documento está en mi mochila.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0292",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0016"
+    ]
+  },
+  {
+    "id": "es-sent-0859",
+    "sentence": "El documento de mi madre está en casa.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0292",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0039",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0860",
+    "sentence": "Necesito mi documento para el vuelo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0292",
+      "es-wd-0057",
+      "es-wd-0281"
+    ]
+  },
+  {
+    "id": "es-sent-0861",
+    "sentence": "Pasamos por la seguridad sin problema.",
+    "word_ids": [
+      "es-wd-0254",
+      "es-wd-0058",
+      "es-wd-0293",
+      "es-wd-0062"
+    ]
+  },
+  {
+    "id": "es-sent-0862",
+    "sentence": "La seguridad del aeropuerto es muy buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0293",
+      "es-wd-0278",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-0863",
+    "sentence": "Mi padre pasa por la seguridad ahora.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0038",
+      "es-wd-0254",
+      "es-wd-0058",
+      "es-wd-0293",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-0864",
+    "sentence": "Pedimos información en el aeropuerto.",
+    "word_ids": [
+      "es-wd-0294",
+      "es-wd-0083",
+      "es-wd-0278"
+    ]
+  },
+  {
+    "id": "es-sent-0865",
+    "sentence": "La información del vuelo está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0294",
+      "es-wd-0281",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0866",
+    "sentence": "Mi hermano busca información sobre el tren.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0042",
+      "es-wd-0294",
+      "es-wd-0057",
+      "es-wd-0263"
+    ]
+  },
+  {
+    "id": "es-sent-0867",
+    "sentence": "Pasamos por la aduana del aeropuerto.",
+    "word_ids": [
+      "es-wd-0254",
+      "es-wd-0058",
+      "es-wd-0295",
+      "es-wd-0278"
+    ]
+  },
+  {
+    "id": "es-sent-0868",
+    "sentence": "La aduana revisa el equipaje.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0295",
+      "es-wd-0057",
+      "es-wd-0291"
+    ]
+  },
+  {
+    "id": "es-sent-0869",
+    "sentence": "Mi documento está listo para la aduana.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0292",
+      "es-wd-0255",
+      "es-wd-0058",
+      "es-wd-0295"
+    ]
+  }
+]

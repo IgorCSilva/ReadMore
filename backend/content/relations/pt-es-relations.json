@@ -327,6 +327,30 @@
         "dirigir": "manejar",
         "transporte": "transporte"
       }
+    },
+    "topic_3": {
+      "pt": {
+        "aeroporto": "aeropuerto",
+        "chegada": "llegada",
+        "partida": "salida",
+        "portão": "puerta",
+        "terminal": "terminal",
+        "plataforma": "andén",
+        "voo": "vuelo",
+        "atrasado": "atrasado",
+        "atrasada": "atrasada",
+        "aberto": "abierto",
+        "aberta": "abierta",
+        "fechado": "cerrado",
+        "fechada": "cerrada",
+        "entrada": "entrada",
+        "saída": "salida",
+        "bagagem": "equipaje",
+        "documento": "documento",
+        "segurança": "seguridad",
+        "informação": "información",
+        "alfândega": "aduana"
+      }
     }
   },
   "chapter_4": {

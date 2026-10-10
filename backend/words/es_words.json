@@ -1660,5 +1660,113 @@
     "root_word_id": "wd-0455",
     "word": "transporte",
     "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0278",
+    "root_word_id": "wd-0456",
+    "word": "aeropuerto",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0279",
+    "root_word_id": "wd-0457",
+    "word": "llegada",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0280",
+    "root_word_id": "wd-0458",
+    "word": "salida",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0281",
+    "root_word_id": "wd-0459",
+    "word": "vuelo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0282",
+    "root_word_id": "wd-0460",
+    "word": "terminal",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0283",
+    "root_word_id": "wd-0461",
+    "word": "andén",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0284",
+    "root_word_id": "wd-0462",
+    "word": "atrasado",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0285",
+    "root_word_id": "wd-0463",
+    "word": "atrasada",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0286",
+    "root_word_id": "wd-0464",
+    "word": "abierto",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0287",
+    "root_word_id": "wd-0465",
+    "word": "abierta",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0288",
+    "root_word_id": "wd-0466",
+    "word": "cerrado",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0289",
+    "root_word_id": "wd-0467",
+    "word": "cerrada",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0290",
+    "root_word_id": "wd-0468",
+    "word": "entrada",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0291",
+    "root_word_id": "wd-0469",
+    "word": "equipaje",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0292",
+    "root_word_id": "wd-0470",
+    "word": "documento",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0293",
+    "root_word_id": "wd-0471",
+    "word": "seguridad",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0294",
+    "root_word_id": "wd-0472",
+    "word": "información",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0295",
+    "root_word_id": "wd-0473",
+    "word": "aduana",
+    "gender_id": "feminine"
   }
 ]
