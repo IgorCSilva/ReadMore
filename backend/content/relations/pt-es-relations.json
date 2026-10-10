@@ -351,6 +351,26 @@
         "informação": "información",
         "alfândega": "aduana"
       }
+    },
+    "topic_4": {
+      "pt": {
+        "reserva": "reserva",
+        "reservar": "reservar",
+        "data": "fecha",
+        "confirmar": "confirmar",
+        "confirmado": "confirmado",
+        "confirmada": "confirmada",
+        "confirmação": "confirmación",
+        "disponível": "disponible",
+        "indisponível": "indisponible",
+        "viagem": "viaje",
+        "destino": "destino",
+        "número": "número",
+        "código": "código",
+        "mensagem": "mensaje",
+        "pagamento": "pago",
+        "pagar": "pagar"
+      }
     }
   },
   "chapter_4": {

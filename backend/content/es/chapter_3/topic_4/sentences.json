@@ -1,0 +1,531 @@
+[
+  {
+    "id": "es-sent-0870",
+    "sentence": "Mi reserva está confirmada.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0296",
+      "es-wd-0255",
+      "es-wd-0301"
+    ]
+  },
+  {
+    "id": "es-sent-0871",
+    "sentence": "La reserva es de mi hermana.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0296",
+      "es-wd-0017",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0043"
+    ]
+  },
+  {
+    "id": "es-sent-0872",
+    "sentence": "Quiero una reserva nueva.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0077",
+      "es-wd-0296",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-0873",
+    "sentence": "Quiero reservar un cuarto.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0297",
+      "es-wd-0076",
+      "es-wd-0064"
+    ]
+  },
+  {
+    "id": "es-sent-0874",
+    "sentence": "Quiero reservar un boleto de tren.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0297",
+      "es-wd-0076",
+      "es-wd-0271",
+      "es-wd-0023",
+      "es-wd-0263"
+    ]
+  },
+  {
+    "id": "es-sent-0875",
+    "sentence": "Quiero reservar antes de mañana.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0297",
+      "es-wd-0174",
+      "es-wd-0023",
+      "es-wd-0147"
+    ]
+  },
+  {
+    "id": "es-sent-0876",
+    "sentence": "¿Qué fecha es hoy?",
+    "word_ids": [
+      "es-wd-0196",
+      "es-wd-0298",
+      "es-wd-0017",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0877",
+    "sentence": "La fecha es antes de mañana.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0298",
+      "es-wd-0017",
+      "es-wd-0174",
+      "es-wd-0023",
+      "es-wd-0147"
+    ]
+  },
+  {
+    "id": "es-sent-0878",
+    "sentence": "Mi fecha de reserva es hoy.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0298",
+      "es-wd-0023",
+      "es-wd-0296",
+      "es-wd-0017",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0879",
+    "sentence": "Quiero confirmar mi viaje.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0299",
+      "es-wd-0016",
+      "es-wd-0305"
+    ]
+  },
+  {
+    "id": "es-sent-0880",
+    "sentence": "Quiero confirmar la reserva ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0299",
+      "es-wd-0058",
+      "es-wd-0296",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-0881",
+    "sentence": "Quiero confirmar antes de mi vuelo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0299",
+      "es-wd-0174",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0281"
+    ]
+  },
+  {
+    "id": "es-sent-0882",
+    "sentence": "Mi vuelo está confirmado.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0281",
+      "es-wd-0255",
+      "es-wd-0300"
+    ]
+  },
+  {
+    "id": "es-sent-0883",
+    "sentence": "El viaje está confirmado ahora.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0305",
+      "es-wd-0255",
+      "es-wd-0300",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-0884",
+    "sentence": "Su cuarto está confirmado.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0064",
+      "es-wd-0255",
+      "es-wd-0300"
+    ]
+  },
+  {
+    "id": "es-sent-0885",
+    "sentence": "La fecha está confirmada.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0298",
+      "es-wd-0255",
+      "es-wd-0301"
+    ]
+  },
+  {
+    "id": "es-sent-0886",
+    "sentence": "Su reserva está confirmada.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0296",
+      "es-wd-0255",
+      "es-wd-0301"
+    ]
+  },
+  {
+    "id": "es-sent-0887",
+    "sentence": "La reserva nueva está confirmada.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0296",
+      "es-wd-0203",
+      "es-wd-0255",
+      "es-wd-0301"
+    ]
+  },
+  {
+    "id": "es-sent-0888",
+    "sentence": "Mi confirmación está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0302",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0889",
+    "sentence": "La confirmación de mi viaje es nueva.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0302",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0305",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-0890",
+    "sentence": "Quiero mi confirmación hoy.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0016",
+      "es-wd-0302",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0891",
+    "sentence": "El cuarto está disponible.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0064",
+      "es-wd-0255",
+      "es-wd-0303"
+    ]
+  },
+  {
+    "id": "es-sent-0892",
+    "sentence": "Mi mesa está disponible ahora.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0070",
+      "es-wd-0255",
+      "es-wd-0303",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-0893",
+    "sentence": "El vuelo está disponible hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0281",
+      "es-wd-0255",
+      "es-wd-0303",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0894",
+    "sentence": "El cuarto está indisponible.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0064",
+      "es-wd-0255",
+      "es-wd-0304"
+    ]
+  },
+  {
+    "id": "es-sent-0895",
+    "sentence": "Mi vuelo está indisponible hoy.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0281",
+      "es-wd-0255",
+      "es-wd-0304",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0896",
+    "sentence": "La mesa está indisponible ahora.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0070",
+      "es-wd-0255",
+      "es-wd-0304",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-0897",
+    "sentence": "Mi viaje es mañana.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0305",
+      "es-wd-0017",
+      "es-wd-0147"
+    ]
+  },
+  {
+    "id": "es-sent-0898",
+    "sentence": "El viaje de mi familia es nuevo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0305",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0037",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-0899",
+    "sentence": "Quiero un viaje con mi hermano.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0305",
+      "es-wd-0061",
+      "es-wd-0016",
+      "es-wd-0042"
+    ]
+  },
+  {
+    "id": "es-sent-0900",
+    "sentence": "Mi destino es nuevo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0306",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-0901",
+    "sentence": "El destino de mi viaje es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0306",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0305",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-0902",
+    "sentence": "Su destino está confirmado.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0306",
+      "es-wd-0255",
+      "es-wd-0300"
+    ]
+  },
+  {
+    "id": "es-sent-0903",
+    "sentence": "Mi número es nuevo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0307",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-0904",
+    "sentence": "El número de la reserva está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0307",
+      "es-wd-0023",
+      "es-wd-0058",
+      "es-wd-0296",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0905",
+    "sentence": "Su número de vuelo es cinco.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0307",
+      "es-wd-0023",
+      "es-wd-0281",
+      "es-wd-0017",
+      "es-wd-0137"
+    ]
+  },
+  {
+    "id": "es-sent-0906",
+    "sentence": "Mi código está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0308",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0907",
+    "sentence": "El código de la reserva es nuevo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0308",
+      "es-wd-0023",
+      "es-wd-0058",
+      "es-wd-0296",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-0908",
+    "sentence": "Su código de confirmación es bueno.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0308",
+      "es-wd-0023",
+      "es-wd-0302",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-0909",
+    "sentence": "Mi mensaje está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0309",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0910",
+    "sentence": "El mensaje de confirmación es nuevo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0309",
+      "es-wd-0023",
+      "es-wd-0302",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-0911",
+    "sentence": "Quiero un mensaje de mi hermana.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0309",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0043"
+    ]
+  },
+  {
+    "id": "es-sent-0912",
+    "sentence": "Mi pago está confirmado.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0310",
+      "es-wd-0255",
+      "es-wd-0300"
+    ]
+  },
+  {
+    "id": "es-sent-0913",
+    "sentence": "El pago de mi viaje es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0310",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0305",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-0914",
+    "sentence": "Su pago está disponible hoy.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0310",
+      "es-wd-0255",
+      "es-wd-0303",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0915",
+    "sentence": "Quiero pagar mi viaje.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0311",
+      "es-wd-0016",
+      "es-wd-0305"
+    ]
+  },
+  {
+    "id": "es-sent-0916",
+    "sentence": "Quiero pagar antes de mañana.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0311",
+      "es-wd-0174",
+      "es-wd-0023",
+      "es-wd-0147"
+    ]
+  },
+  {
+    "id": "es-sent-0917",
+    "sentence": "Quiero pagar con mi hermano.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0311",
+      "es-wd-0061",
+      "es-wd-0016",
+      "es-wd-0042"
+    ]
+  }
+]

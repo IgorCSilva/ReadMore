@@ -1891,6 +1891,62 @@
     {
       "word_id": "wd-0473",
       "filename": "customs"
+    },
+    {
+      "word_id": "wd-0474",
+      "filename": "reservation"
+    },
+    {
+      "word_id": "wd-0475",
+      "filename": "to_reserve"
+    },
+    {
+      "word_id": "wd-0476",
+      "filename": "date"
+    },
+    {
+      "word_id": "wd-0477",
+      "filename": "to_confirm"
+    },
+    {
+      "word_id": "wd-0478",
+      "filename": "confirmed"
+    },
+    {
+      "word_id": "wd-0479",
+      "filename": "confirmed_feminine"
+    },
+    {
+      "word_id": "wd-0480",
+      "filename": "confirmation"
+    },
+    {
+      "word_id": "wd-0481",
+      "filename": "available"
+    },
+    {
+      "word_id": "wd-0482",
+      "filename": "unavailable"
+    },
+    {
+      "word_id": "wd-0483",
+      "filename": "trip"
+    },
+    {
+      "word_id": "wd-0484",
+      "filename": "destination"
+    },
+    {
+      "word_id": "wd-0485",
+      "filename": "code"
+    },
+    {
+      "word_id": "wd-0486",
+      "filename": "message"
+    },
+    {
+      "word_id": "wd-0487",
+      "filename": "payment"
     }
   ]
 }
