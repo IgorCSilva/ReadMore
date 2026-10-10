@@ -1819,6 +1819,134 @@
     {
       "word_id": "wd-0455",
       "filename": "transportation"
+    },
+    {
+      "word_id": "wd-0456",
+      "filename": "airport"
+    },
+    {
+      "word_id": "wd-0457",
+      "filename": "arrival"
+    },
+    {
+      "word_id": "wd-0458",
+      "filename": "departure_exit"
+    },
+    {
+      "word_id": "wd-0459",
+      "filename": "flight"
+    },
+    {
+      "word_id": "wd-0460",
+      "filename": "terminal"
+    },
+    {
+      "word_id": "wd-0461",
+      "filename": "platform"
+    },
+    {
+      "word_id": "wd-0462",
+      "filename": "delayed"
+    },
+    {
+      "word_id": "wd-0463",
+      "filename": "delayed_feminine"
+    },
+    {
+      "word_id": "wd-0464",
+      "filename": "open_state"
+    },
+    {
+      "word_id": "wd-0465",
+      "filename": "open_state_feminine"
+    },
+    {
+      "word_id": "wd-0466",
+      "filename": "closed"
+    },
+    {
+      "word_id": "wd-0467",
+      "filename": "closed_feminine"
+    },
+    {
+      "word_id": "wd-0468",
+      "filename": "entrance"
+    },
+    {
+      "word_id": "wd-0469",
+      "filename": "luggage"
+    },
+    {
+      "word_id": "wd-0470",
+      "filename": "document"
+    },
+    {
+      "word_id": "wd-0471",
+      "filename": "security"
+    },
+    {
+      "word_id": "wd-0472",
+      "filename": "information"
+    },
+    {
+      "word_id": "wd-0473",
+      "filename": "customs"
+    },
+    {
+      "word_id": "wd-0474",
+      "filename": "reservation"
+    },
+    {
+      "word_id": "wd-0475",
+      "filename": "to_reserve"
+    },
+    {
+      "word_id": "wd-0476",
+      "filename": "date"
+    },
+    {
+      "word_id": "wd-0477",
+      "filename": "to_confirm"
+    },
+    {
+      "word_id": "wd-0478",
+      "filename": "confirmed"
+    },
+    {
+      "word_id": "wd-0479",
+      "filename": "confirmed_feminine"
+    },
+    {
+      "word_id": "wd-0480",
+      "filename": "confirmation"
+    },
+    {
+      "word_id": "wd-0481",
+      "filename": "available"
+    },
+    {
+      "word_id": "wd-0482",
+      "filename": "unavailable"
+    },
+    {
+      "word_id": "wd-0483",
+      "filename": "trip"
+    },
+    {
+      "word_id": "wd-0484",
+      "filename": "destination"
+    },
+    {
+      "word_id": "wd-0485",
+      "filename": "code"
+    },
+    {
+      "word_id": "wd-0486",
+      "filename": "message"
+    },
+    {
+      "word_id": "wd-0487",
+      "filename": "payment"
     }
   ]
 }

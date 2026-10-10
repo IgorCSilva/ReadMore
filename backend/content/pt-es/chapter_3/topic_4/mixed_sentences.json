@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**Nuestra** **familia** escolheu **un** **destino** **nuevo** para **el** **viaje**."
+  },
+  {
+    "sentence_number": 2,
+    "content": "**El** **código** **de** **confirmación** chegou rápido."
+  },
+  {
+    "sentence_number": 3,
+    "content": "**El** **pago** **de** **mi** **viaje** ficou **confirmado** **hoy**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "Ficamos felices **con** **nuestro** **viaje** para **la** praia."
+  },
+  {
+    "sentence_number": 5,
+    "content": "**El** **pago** ficou **confirmado** logo **después**."
+  },
+  {
+    "sentence_number": 6,
+    "content": "**El** **vuelo** **de** **mi** **hermano** parte **el** **lunes**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "**Mi** **tío** precisa **reservar** **un** **cuarto** para **el** **viaje**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "**Mi** **tía** mostrou **el** **número** **de** **confirmación** para **todos**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "Preciso **pagar** **la** conta do restaurante **hoy**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "**El** **mensaje** **de** **confirmación** **no** chegou ainda."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**El** **código** errado impediu **la** **reserva**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "Ainda **no** escolhemos **el** **destino** **de** **nuestro** próximo **viaje**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "**Mi** **hijo** quis saber **cómo** **confirmar** **el** **viaje** sozinho."
+  },
+  {
+    "sentence_number": 14,
+    "content": "**El** **mensaje** **de** **confirmación** chegou **tarde** **hoy**."
+  },
+  {
+    "sentence_number": 15,
+    "content": "**Nuestro** **viaje** **no** **tiene** **la** **fecha** definida ainda."
+  },
+  {
+    "sentence_number": 16,
+    "content": "**El** **pago** **de** **la** **confirmación** ainda **no** apareceu."
+  },
+  {
+    "sentence_number": 17,
+    "content": "Avisaram que **el** **destino** ainda **no** ficou **confirmado**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "Precisamos **pagar** **la** **reserva** **antes** **de** **la** **fecha** final."
+  },
+  {
+    "sentence_number": 19,
+    "content": "Precisamos **reservar** **el** **cuarto** **antes** que fique **indisponible**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**Mi** **madre** quer saber se **el** **cuarto** continua **disponible**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "**El** **vuelo** **de** **mi** **tía** ficou **confirmado** para **el** **martes**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "**Mi** **abuelo** disse que **el** **vuelo** ficou **indisponible** para **hoy**."
+  },
+  {
+    "sentence_number": 23,
+    "content": "**Mi** **hija** anotou **el** **número** **de** **la** **reserva**."
+  },
+  {
+    "sentence_number": 24,
+    "content": "**El** **mensaje** avisou que **el** **cuarto** ficou **disponible** outra vez."
+  },
+  {
+    "sentence_number": 25,
+    "content": "**Mi** **primo** anotou **el** **número** **de** **la** **reserva**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**Mi** **esposo** recebeu **un** **mensaje** **de** **confirmación** **hoy**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "**Mi** **esposa** confirmou que **el** **cuarto** ficou **disponible**."
+  },
+  {
+    "sentence_number": 28,
+    "content": "**Mi** **hermano** **no** sabia **la** **fecha** certa da reunião."
+  },
+  {
+    "sentence_number": 29,
+    "content": "**La** **reserva** ficou **indisponible** **después** da mudança."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**La** **confirmación** chegou **un** **día** **antes** do **vuelo**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "Infelizmente **el** horário ficou **indisponible** para **hoy**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "**El** **número** **de** **mi** **reserva** apareceu errado."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**El** **cuarto** ficou **disponible** **después** do cancelamento."
+  },
+  {
+    "sentence_number": 34,
+    "content": "**La** **confirmación** **de** **mi** **viaje** chegou **hoy**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "**Mi** **madre** perguntou se **el** **pago** já ficou **confirmado**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "Perguntei **la** **fecha** exata **de** **la** **reserva** outra vez."
+  },
+  {
+    "sentence_number": 37,
+    "content": "**El** **número** **de** **la** **reserva** ficou **confirmado** rapidinho."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**La** **reserva** ficou **confirmada**, **y** **el** **pago** también."
+  },
+  {
+    "sentence_number": 39,
+    "content": "Recebi outro **mensaje** **de** **confirmación** **hoy**."
+  },
+  {
+    "sentence_number": 40,
+    "content": "Preciso digitar **el** **código** correto para acessar **el** sistema."
+  },
+  {
+    "sentence_number": 41,
+    "content": "Precisamos **reservar** **el** **cuarto** **antes** do fim **de** **semana**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "**Nuestra** **prima** recebeu **un** **mensaje** **de** **confirmación** pelo celular."
+  },
+  {
+    "sentence_number": 43,
+    "content": "Mandei **un** **mensaje** para **confirmar** **la** **reserva**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**Mi** **tía** **no** conseguiu **pagar** **el** **viaje** ainda."
+  },
+  {
+    "sentence_number": 45,
+    "content": "**La** **fecha** **de** **la** **reserva** mudou **de repente**."
+  },
+  {
+    "sentence_number": 46,
+    "content": "**Mi** **hermana** ainda precisa **reservar** **el** **cuarto** para **el** **viaje**."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**Nuestra** **reserva** **no** apareceu **en el** sistema do hotel."
+  },
+  {
+    "sentence_number": 48,
+    "content": "**Mi** **tío** reclamou que **el** **cuarto** continuava **indisponible**."
+  },
+  {
+    "sentence_number": 49,
+    "content": "**El** **cuarto** ainda continua **disponible** para **el** próximo feriado."
+  },
+  {
+    "sentence_number": 50,
+    "content": "Ainda **no** temos **la** **fecha** final **de** **nuestro** **viaje**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "**El** **pago** **de** **la** **confirmación** chegou junto **con** **el** **mensaje**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "**Mi** **abuela** **no** sabe **cómo** **reservar** **un** **cuarto** sozinha."
+  },
+  {
+    "sentence_number": 53,
+    "content": "Ainda **no** sabemos **la** **fecha** exata **de** **nuestro** **viaje**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "**Nuestro** **viaje** começa **el** **miércoles** próximo."
+  },
+  {
+    "sentence_number": 55,
+    "content": "**Mi** **esposa** já fez **la** **reserva** para **nuestro** **viaje**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "**El** **vuelo** ficou **indisponible** **después** do anúncio."
+  },
+  {
+    "sentence_number": 57,
+    "content": "Precisamos **pagar** **el** **viaje** **antes** **de** **la** **fecha** final."
+  },
+  {
+    "sentence_number": 58,
+    "content": "Avisaram que **la** **fecha** **de** **la** **reserva** tinha mudado."
+  },
+  {
+    "sentence_number": 59,
+    "content": "Precisamos **confirmar** **el** **número** **antes** **de** **viajar**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "**El** **número** **de** **confirmación** ficou guardado **en el** celular."
+  },
+  {
+    "sentence_number": 61,
+    "content": "**El** **pago** **de** **la** **reserva** já **es** automático."
+  },
+  {
+    "sentence_number": 62,
+    "content": "**Nuestro** **boleto** ainda **no** ficou **confirmado**."
+  },
+  {
+    "sentence_number": 63,
+    "content": "Recebi **una** **confirmación** **de** **mi** **reserva** por email."
+  },
+  {
+    "sentence_number": 64,
+    "content": "**El** **destino** **de** **nuestro** **viaje** mudou **de repente**."
+  },
+  {
+    "sentence_number": 65,
+    "content": "**La** **fecha** mudou, **y** **el** **código** também."
+  },
+  {
+    "sentence_number": 66,
+    "content": "Avisaram que **el** **código** **de** **la** **reserva** tinha mudado."
+  },
+  {
+    "sentence_number": 67,
+    "content": "Perguntei **cómo** **pagar** **la** **reserva** pelo celular."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**La** **reserva** **de** **mi** **primo** ficou **confirmada** ontem."
+  },
+  {
+    "sentence_number": 69,
+    "content": "**Mi** **abuela** perguntou **la** **fecha** **de** **la** **confirmación**."
+  },
+  {
+    "sentence_number": 70,
+    "content": "**Mi** **primo** perguntou se **el** **cuarto** continuava **disponible**."
+  },
+  {
+    "sentence_number": 71,
+    "content": "Fiz **una** **reserva** **en el** hotel para **el** fim **de** **semana**."
+  },
+  {
+    "sentence_number": 72,
+    "content": "**La** **reserva** **de** **nuestro** **viaje** ainda **no** ficou **confirmada**."
+  },
+  {
+    "sentence_number": 73,
+    "content": "**La** **fecha** final ainda **no** ficou **confirmada**."
+  },
+  {
+    "sentence_number": 74,
+    "content": "**El** **destino** escolhido ficou **confirmado** por **mensaje**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "**El** **destino** escolhido **es** **mi** cidade favorita."
+  },
+  {
+    "sentence_number": 76,
+    "content": "**Nuestro** **viaje** **no** **tiene** **el** **destino** definido ainda."
+  },
+  {
+    "sentence_number": 77,
+    "content": "**Ella** quis saber **cómo** **pagar** **el** **viaje** **más** rápido."
+  },
+  {
+    "sentence_number": 78,
+    "content": "**El** **cuarto** ficou **disponible** só **después** **de** **la** **confirmación**."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**El** **destino** final **no** ficou **confirmado** **antes** do **viaje**."
+  },
+  {
+    "sentence_number": 80,
+    "content": "**La** **reserva** **de** **mi** **abuelo** ficou **confirmada** rápido."
+  },
+  {
+    "sentence_number": 81,
+    "content": "**Mi** **prima** **no** sabia **el** **código** **de** **la** **reserva**."
+  },
+  {
+    "sentence_number": 82,
+    "content": "Perguntei se **la** **reserva** já ficou **confirmada**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "Avisei que **el** **código** ainda **no** tinha chegado por **mensaje**."
+  },
+  {
+    "sentence_number": 84,
+    "content": "**El** **código** **de** **la** **reserva** chegou certinho."
+  },
+  {
+    "sentence_number": 85,
+    "content": "**Mi** **prima** quis **reservar** **el** **viaje** **antes** da **fecha** final."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**El** **vuelo** **de** **mi** **primo** já ficou **confirmado** para **el** **lunes**."
+  },
+  {
+    "sentence_number": 87,
+    "content": "Perguntei se **el** **código** **de** **la** **reserva** ainda era válido."
+  },
+  {
+    "sentence_number": 88,
+    "content": "**El** **destino** surpreendeu toda **la** **familia**."
+  },
+  {
+    "sentence_number": 89,
+    "content": "**Mi** **abuela** anotou **el** **número** **de** **la** **reserva** **en el** celular."
+  },
+  {
+    "sentence_number": 90,
+    "content": "**El** **mensaje** avisava que **el** **pago** já tinha sido feito."
+  },
+  {
+    "sentence_number": 91,
+    "content": "**Mi** **hermano** **no** conseguiu **confirmar** **el** **pago** ainda."
+  },
+  {
+    "sentence_number": 92,
+    "content": "Recebi **un** **mensaje** **desconocido** **en** **mi** celular ontem."
+  },
+  {
+    "sentence_number": 93,
+    "content": "**El** **destino** **de** **nuestro** **viaje** ainda **no** foi decidido."
+  },
+  {
+    "sentence_number": 94,
+    "content": "**El** **destino** final **de** **nuestro** **viaje** **es** **la** praia."
+  },
+  {
+    "sentence_number": 95,
+    "content": "**Nuestro** **viaje** **de** negócios começa **la** **semana** que vem."
+  },
+  {
+    "sentence_number": 96,
+    "content": "**El** **pago** ficou pendente até **la** **confirmación** **llegar**."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**Mi** **tío** **no** sabia **el** **código** **de** **confirmación**."
+  },
+  {
+    "sentence_number": 98,
+    "content": "**Mi** **hermana** ainda precisa **confirmar** **el** horário do **vuelo**."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**El** **pago** **de** **mi** **viaje** ainda **no** foi feito."
+  },
+  {
+    "sentence_number": 100,
+    "content": "**El** **viaje** **de** **nuestra** **familia** **es** **el** **más** esperado do ano."
+  }
+]

@@ -327,6 +327,50 @@
         "dirigir": "manejar",
         "transporte": "transporte"
       }
+    },
+    "topic_3": {
+      "pt": {
+        "aeroporto": "aeropuerto",
+        "chegada": "llegada",
+        "partida": "salida",
+        "portão": "puerta",
+        "terminal": "terminal",
+        "plataforma": "andén",
+        "voo": "vuelo",
+        "atrasado": "atrasado",
+        "atrasada": "atrasada",
+        "aberto": "abierto",
+        "aberta": "abierta",
+        "fechado": "cerrado",
+        "fechada": "cerrada",
+        "entrada": "entrada",
+        "saída": "salida",
+        "bagagem": "equipaje",
+        "documento": "documento",
+        "segurança": "seguridad",
+        "informação": "información",
+        "alfândega": "aduana"
+      }
+    },
+    "topic_4": {
+      "pt": {
+        "reserva": "reserva",
+        "reservar": "reservar",
+        "data": "fecha",
+        "confirmar": "confirmar",
+        "confirmado": "confirmado",
+        "confirmada": "confirmada",
+        "confirmação": "confirmación",
+        "disponível": "disponible",
+        "indisponível": "indisponible",
+        "viagem": "viaje",
+        "destino": "destino",
+        "número": "número",
+        "código": "código",
+        "mensagem": "mensaje",
+        "pagamento": "pago",
+        "pagar": "pagar"
+      }
     }
   },
   "chapter_4": {
