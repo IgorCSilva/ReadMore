@@ -1,0 +1,502 @@
+[
+  {
+    "id": "es-sent-0918",
+    "sentence": "Hay ayuda aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0312",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0919",
+    "sentence": "La ayuda es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0312",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-0920",
+    "sentence": "Quiero ayuda, por favor.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0312",
+      "es-wd-0320"
+    ]
+  },
+  {
+    "id": "es-sent-0921",
+    "sentence": "¡Socorro! Hay un problema.",
+    "word_ids": [
+      "es-wd-0313",
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0316"
+    ]
+  },
+  {
+    "id": "es-sent-0922",
+    "sentence": "¡Socorro! Estoy perdido.",
+    "word_ids": [
+      "es-wd-0313",
+      "es-wd-0014",
+      "es-wd-0314"
+    ]
+  },
+  {
+    "id": "es-sent-0923",
+    "sentence": "¡Socorro! Quiero un taxi.",
+    "word_ids": [
+      "es-wd-0313",
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0262"
+    ]
+  },
+  {
+    "id": "es-sent-0924",
+    "sentence": "Estoy perdido.",
+    "word_ids": [
+      "es-wd-0014",
+      "es-wd-0314"
+    ]
+  },
+  {
+    "id": "es-sent-0925",
+    "sentence": "Mi hermano está perdido.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0042",
+      "es-wd-0255",
+      "es-wd-0314"
+    ]
+  },
+  {
+    "id": "es-sent-0926",
+    "sentence": "El perro está perdido.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0221",
+      "es-wd-0255",
+      "es-wd-0314"
+    ]
+  },
+  {
+    "id": "es-sent-0927",
+    "sentence": "Estoy perdida.",
+    "word_ids": [
+      "es-wd-0014",
+      "es-wd-0315"
+    ]
+  },
+  {
+    "id": "es-sent-0928",
+    "sentence": "Mi hermana está perdida.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0043",
+      "es-wd-0255",
+      "es-wd-0315"
+    ]
+  },
+  {
+    "id": "es-sent-0929",
+    "sentence": "Mi abuela está perdida.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0045",
+      "es-wd-0255",
+      "es-wd-0315"
+    ]
+  },
+  {
+    "id": "es-sent-0930",
+    "sentence": "Hay un problema.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0316"
+    ]
+  },
+  {
+    "id": "es-sent-0931",
+    "sentence": "El problema es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0316",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-0932",
+    "sentence": "Mi problema es pequeño.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0316",
+      "es-wd-0017",
+      "es-wd-0224"
+    ]
+  },
+  {
+    "id": "es-sent-0933",
+    "sentence": "Mi hermano va a necesitar ayuda.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0042",
+      "es-wd-0164",
+      "es-wd-0253",
+      "es-wd-0317",
+      "es-wd-0312"
+    ]
+  },
+  {
+    "id": "es-sent-0934",
+    "sentence": "Ella va a necesitar un taxi.",
+    "word_ids": [
+      "es-wd-0160",
+      "es-wd-0164",
+      "es-wd-0253",
+      "es-wd-0317",
+      "es-wd-0076",
+      "es-wd-0262"
+    ]
+  },
+  {
+    "id": "es-sent-0935",
+    "sentence": "Mi abuelo va a necesitar el hospital.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0044",
+      "es-wd-0164",
+      "es-wd-0253",
+      "es-wd-0317",
+      "es-wd-0057",
+      "es-wd-0328"
+    ]
+  },
+  {
+    "id": "es-sent-0936",
+    "sentence": "Quiero poder viajar.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0318",
+      "es-wd-0274"
+    ]
+  },
+  {
+    "id": "es-sent-0937",
+    "sentence": "Quiero poder descansar.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0318",
+      "es-wd-0101"
+    ]
+  },
+  {
+    "id": "es-sent-0938",
+    "sentence": "Quiero poder leer.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0318",
+      "es-wd-0102"
+    ]
+  },
+  {
+    "id": "es-sent-0939",
+    "sentence": "Disculpe, ¿dónde está el baño?",
+    "word_ids": [
+      "es-wd-0319",
+      "es-wd-0024",
+      "es-wd-0255",
+      "es-wd-0057",
+      "es-wd-0067"
+    ]
+  },
+  {
+    "id": "es-sent-0940",
+    "sentence": "Disculpe, ¿dónde está la estación?",
+    "word_ids": [
+      "es-wd-0319",
+      "es-wd-0024",
+      "es-wd-0255",
+      "es-wd-0058",
+      "es-wd-0267"
+    ]
+  },
+  {
+    "id": "es-sent-0941",
+    "sentence": "Disculpe, quiero ayuda.",
+    "word_ids": [
+      "es-wd-0319",
+      "es-wd-0125",
+      "es-wd-0312"
+    ]
+  },
+  {
+    "id": "es-sent-0942",
+    "sentence": "Ayuda, por favor.",
+    "word_ids": [
+      "es-wd-0312",
+      "es-wd-0320"
+    ]
+  },
+  {
+    "id": "es-sent-0943",
+    "sentence": "Un café, por favor.",
+    "word_ids": [
+      "es-wd-0076",
+      "es-wd-0112",
+      "es-wd-0320"
+    ]
+  },
+  {
+    "id": "es-sent-0944",
+    "sentence": "¿Puede repetir, por favor?",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0324",
+      "es-wd-0320"
+    ]
+  },
+  {
+    "id": "es-sent-0945",
+    "sentence": "No entiendo.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0321"
+    ]
+  },
+  {
+    "id": "es-sent-0946",
+    "sentence": "No entiendo el mapa.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0321",
+      "es-wd-0057",
+      "es-wd-0246"
+    ]
+  },
+  {
+    "id": "es-sent-0947",
+    "sentence": "No entiendo la dirección.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0321",
+      "es-wd-0058",
+      "es-wd-0245"
+    ]
+  },
+  {
+    "id": "es-sent-0948",
+    "sentence": "No sé.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0322"
+    ]
+  },
+  {
+    "id": "es-sent-0949",
+    "sentence": "No sé la dirección.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0322",
+      "es-wd-0058",
+      "es-wd-0245"
+    ]
+  },
+  {
+    "id": "es-sent-0950",
+    "sentence": "No sé el número.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0322",
+      "es-wd-0057",
+      "es-wd-0307"
+    ]
+  },
+  {
+    "id": "es-sent-0951",
+    "sentence": "¿Puede repetir?",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0324"
+    ]
+  },
+  {
+    "id": "es-sent-0952",
+    "sentence": "Puede necesitar ayuda.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0317",
+      "es-wd-0312"
+    ]
+  },
+  {
+    "id": "es-sent-0953",
+    "sentence": "Puede llegar tarde.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0096",
+      "es-wd-0008"
+    ]
+  },
+  {
+    "id": "es-sent-0954",
+    "sentence": "¿Puede repetir el nombre?",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0324",
+      "es-wd-0057",
+      "es-wd-0015"
+    ]
+  },
+  {
+    "id": "es-sent-0955",
+    "sentence": "¿Puede repetir el número?",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0324",
+      "es-wd-0057",
+      "es-wd-0307"
+    ]
+  },
+  {
+    "id": "es-sent-0956",
+    "sentence": "Ella va a repetir el nombre.",
+    "word_ids": [
+      "es-wd-0160",
+      "es-wd-0164",
+      "es-wd-0253",
+      "es-wd-0324",
+      "es-wd-0057",
+      "es-wd-0015"
+    ]
+  },
+  {
+    "id": "es-sent-0957",
+    "sentence": "Mi pasaporte está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0325",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0958",
+    "sentence": "El pasaporte es nuevo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0325",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-0959",
+    "sentence": "Mi pasaporte está perdido.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0325",
+      "es-wd-0255",
+      "es-wd-0314"
+    ]
+  },
+  {
+    "id": "es-sent-0960",
+    "sentence": "¿Dónde está mi celular?",
+    "word_ids": [
+      "es-wd-0024",
+      "es-wd-0255",
+      "es-wd-0016",
+      "es-wd-0326"
+    ]
+  },
+  {
+    "id": "es-sent-0961",
+    "sentence": "El celular es pequeño.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0326",
+      "es-wd-0017",
+      "es-wd-0224"
+    ]
+  },
+  {
+    "id": "es-sent-0962",
+    "sentence": "Mi celular está perdido.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0326",
+      "es-wd-0255",
+      "es-wd-0314"
+    ]
+  },
+  {
+    "id": "es-sent-0963",
+    "sentence": "La policía está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0327",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0964",
+    "sentence": "La policía tiene un mapa.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0327",
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0246"
+    ]
+  },
+  {
+    "id": "es-sent-0965",
+    "sentence": "Quiero la policía, por favor.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0058",
+      "es-wd-0327",
+      "es-wd-0320"
+    ]
+  },
+  {
+    "id": "es-sent-0966",
+    "sentence": "El hospital está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0328",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0967",
+    "sentence": "El hospital está cerca.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0328",
+      "es-wd-0255",
+      "es-wd-0234"
+    ]
+  },
+  {
+    "id": "es-sent-0968",
+    "sentence": "Ella va a necesitar el hospital.",
+    "word_ids": [
+      "es-wd-0160",
+      "es-wd-0164",
+      "es-wd-0253",
+      "es-wd-0317",
+      "es-wd-0057",
+      "es-wd-0328"
+    ]
+  }
+]

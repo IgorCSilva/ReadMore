@@ -371,6 +371,27 @@
         "pagamento": "pago",
         "pagar": "pagar"
       }
+    },
+    "topic_5": {
+      "pt": {
+        "ajuda": "ayuda",
+        "socorro": "socorro",
+        "perdido": "perdido",
+        "perdida": "perdida",
+        "problema": "problema",
+        "precisar": "necesitar",
+        "poder": "poder",
+        "desculpe": "disculpe",
+        "por favor": "por favor",
+        "não entendo": "no entiendo",
+        "não sei": "no sé",
+        "sei": "sé",
+        "pode repetir": "puede repetir",
+        "passaporte": "pasaporte",
+        "celular": "celular",
+        "polícia": "policía",
+        "hospital": "hospital"
+      }
     }
   },
   "chapter_4": {
