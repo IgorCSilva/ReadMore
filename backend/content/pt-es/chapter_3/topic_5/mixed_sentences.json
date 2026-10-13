@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**Ella** disse que **va** a **necesitar** **un** **taxi** rápido."
+  },
+  {
+    "sentence_number": 2,
+    "content": "Surgiu **un** **problema** **en la** **aduana**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "**Mi** **esposa** **va** **poder** falar **con** **la** **policía** logo."
+  },
+  {
+    "sentence_number": 4,
+    "content": "**Mi** **primo** achou **el** **celular** **en el** **taxi**."
+  },
+  {
+    "sentence_number": 5,
+    "content": "**Mi** **esposo** guardou **el** **pasaporte** **con** **el** **documento**."
+  },
+  {
+    "sentence_number": 6,
+    "content": "Olvidé **mi** **celular** **en el** **avión**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "**Mi** **abuela** ficou **perdida** procurando **la** **puerta**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "**Mi** **tío** foi levado para **el** **hospital**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "**Mi** **hermana** perdeu **el** **celular** **en la** **calle**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "Vou **necesitar** **ayuda** para levar **el** **equipaje**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**El** **vuelo** teve **un** **problema** técnico **hoy**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "Precisamos **de** **ayuda** para achar **el** **aeropuerto**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "**No sé** onde deixei **mi** **pasaporte**."
+  },
+  {
+    "sentence_number": 14,
+    "content": "Precisamos **repetir** a pergunta **más** devagar."
+  },
+  {
+    "sentence_number": 15,
+    "content": "Tivemos **un** **problema** **con** **el** **equipaje**."
+  },
+  {
+    "sentence_number": 16,
+    "content": "**Por favor**, ¿**dónde está** **el** **hospital**?"
+  },
+  {
+    "sentence_number": 17,
+    "content": "**Mi** **esposo** resolveu **el** **problema** rapidinho."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**Mi** **abuela** disse **disculpe** **antes** **de** **preguntar**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "**Mi** **hija** esqueceu **el** **pasaporte** **en** **casa**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "Procurei **mi** **pasaporte** **en el** **equipaje**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "Chame **la** **policía**, **por favor**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "**Mi** **hermano** pediu **ayuda** **en la** **estación**."
+  },
+  {
+    "sentence_number": 23,
+    "content": "**Por favor**, **mi** **hijo** **va** a **necesitar** **ayuda**."
+  },
+  {
+    "sentence_number": 24,
+    "content": "Avisaram que **nadie** **puede** **entrar** **sin** **el** **documento**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "**Mi** **hermana** ficou **perdida** **en la** **plaza**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**Me** ajude **con** **el** **equipaje**, **por favor**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "Gritamos «¡**Socorro**!» **cuando** **el** **avión** sacudiu forte."
+  },
+  {
+    "sentence_number": 28,
+    "content": "**Mi** **hermana** **va** a **necesitar** **más** tempo para **llegar**."
+  },
+  {
+    "sentence_number": 29,
+    "content": "**Mi** **prima** ficou **perdida** **en la** **esquina**."
+  },
+  {
+    "sentence_number": 30,
+    "content": "Chamamos **el** **hospital** para pedir **ayuda**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "¿**Puede** chamar **la** **policía**, **por favor**?"
+  },
+  {
+    "sentence_number": 32,
+    "content": "**Nadie** **puede** **entrar** **sin** **el** **pasaporte**."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**Disculpe**, **mi** **celular** **no** funciona **aquí**."
+  },
+  {
+    "sentence_number": 34,
+    "content": "**No sé** **la** **dirección** correcta **de** **la** **calle**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "**La** **policía** ajudou **mi** **primo** **perdido**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "**Mi** **hija** ficou **perdida** **en el** **aeropuerto**."
+  },
+  {
+    "sentence_number": 37,
+    "content": "Perguntei se **el** **conductor** **puede** ajudar **con** **el** **mapa**."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**La** **policía** mostrou **el** **camino** certo."
+  },
+  {
+    "sentence_number": 39,
+    "content": "**No entiendo** **el** **mapa** da cidade **nueva**."
+  },
+  {
+    "sentence_number": 40,
+    "content": "**Él** avisou que **va** a **necesitar** **un** **documento** **nuevo**."
+  },
+  {
+    "sentence_number": 41,
+    "content": "**Mi** **abuelo** ficou **perdido** procurando **el** **taxi**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "Chamamos **la** **policía** **después** do assalto."
+  },
+  {
+    "sentence_number": 43,
+    "content": "**Él** perguntou se **puede** nos ajudar **con** **el** **mapa**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**Mi** **hermano** perguntou, **pero** **no sé** a resposta."
+  },
+  {
+    "sentence_number": 45,
+    "content": "Avisei que **mi** **tío** **va** a **necesitar** **el** **hospital**."
+  },
+  {
+    "sentence_number": 46,
+    "content": "**Mi** **hermano** ficou **perdido** **en la** **calle** principal."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**Yo** **no sé** falar espanhol **bien** ainda."
+  },
+  {
+    "sentence_number": 48,
+    "content": "**Ella** gritou pedindo **ayuda** **en la** **calle**."
+  },
+  {
+    "sentence_number": 49,
+    "content": "**Ella** repetiu, **pero** **yo** ainda **no entiendo**."
+  },
+  {
+    "sentence_number": 50,
+    "content": "**Mi** **abuela** deixou **el** **celular** **en la** **plaza**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "**Disculpe**, ¿**cómo** chego **a** **la** **plaza**?"
+  },
+  {
+    "sentence_number": 52,
+    "content": "**No sé** se **el** **vuelo** já partiu."
+  },
+  {
+    "sentence_number": 53,
+    "content": "**No sé** **cómo llegar** até **la** **plaza**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "**Mi** **hijo** avisou que havia **un** **problema** **con** **el** **documento**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "Avisamos **la** **policía** sobre **el** **problema**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "**Disculpe**, **por favor**, ¿**dónde está** **la** **estación**?"
+  },
+  {
+    "sentence_number": 57,
+    "content": "**Quiero** **poder** entender melhor **el** **mapa**."
+  },
+  {
+    "sentence_number": 58,
+    "content": "**Mi** **tía** quis saber se **puede** falar **con** **ella**."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**Mi** **madre** pediu para **repetir** **el** **número**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "**Mi** **tío** achou **el** **pasaporte** **en la** **estación**."
+  },
+  {
+    "sentence_number": 61,
+    "content": "**Disculpe**, perdi **mi** **pasaporte** **en el** **taxi**."
+  },
+  {
+    "sentence_number": 62,
+    "content": "**No entiendo** **el** **documento** que **me** deram."
+  },
+  {
+    "sentence_number": 63,
+    "content": "Perguntei se **el** **conductor** **puede** **repetir** **la** **dirección**."
+  },
+  {
+    "sentence_number": 64,
+    "content": "Espero **poder** **llegar** **antes** do **vuelo**."
+  },
+  {
+    "sentence_number": 65,
+    "content": "Perdí **mi** **pasaporte** **en el** **taxi**."
+  },
+  {
+    "sentence_number": 66,
+    "content": "**Él** ficou **perdido** **en el** **aeropuerto** **con** **mi** **padre**."
+  },
+  {
+    "sentence_number": 67,
+    "content": "Avisamos **el** **hospital** sobre **mi** **tío**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**Mi** **hijo** quer **poder** falar espanhol logo."
+  },
+  {
+    "sentence_number": 69,
+    "content": "**Mi** **tío** ficou **perdido** **en el** **aeropuerto**."
+  },
+  {
+    "sentence_number": 70,
+    "content": "Chamei **ayuda** **cuando** **el** **taxi** **no** chegou."
+  },
+  {
+    "sentence_number": 71,
+    "content": "**Mi** **padre** falou **con** **la** **policía**."
+  },
+  {
+    "sentence_number": 72,
+    "content": "**Mi** **abuelo** precisa **ir** para **el** **hospital**."
+  },
+  {
+    "sentence_number": 73,
+    "content": "**El** **carro** levou **mi** **padre** para **el** **hospital** rápido."
+  },
+  {
+    "sentence_number": 74,
+    "content": "Mostrei **mi** **pasaporte** **en la** **aduana**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "Voy a **necesitar** **ayuda** **con** **el** **equipaje**."
+  },
+  {
+    "sentence_number": 76,
+    "content": "**Mi** **primo** ficou **perdido** **en la** **avenida**."
+  },
+  {
+    "sentence_number": 77,
+    "content": "**Ella** **no** entendeu **y** pediu para **repetir**."
+  },
+  {
+    "sentence_number": 78,
+    "content": "Procurei **la** **policía** **en la** **estación**."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**Mi** **primo** disse que **no entiendo** espanhol ainda."
+  },
+  {
+    "sentence_number": 80,
+    "content": "Pedi para **el** **conductor** **repetir** **la** **dirección**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "Liguei do **celular** para **mi** **madre**."
+  },
+  {
+    "sentence_number": 82,
+    "content": "**Mi** **esposa** **va** a **necesitar** **ayuda** **con** **la** **reserva**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "**Ella** gritou «¡**Socorro**!» **en la** **plaza** cheia **de** gente."
+  },
+  {
+    "sentence_number": 84,
+    "content": "**No entiendo** **la** **dirección** **de** **la** **calle**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "**No entiendo** por que **el** **vuelo** atrasou."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**Mi** **tía** gritou «¡**Socorro**!» **sin** pensar **dos** vezes."
+  },
+  {
+    "sentence_number": 87,
+    "content": "**El** **conductor** ofereceu **ayuda** **a** **mi** **abuela**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "Avisaram que **el** **problema** já ficou resolvido."
+  },
+  {
+    "sentence_number": 89,
+    "content": "¿**Puede** **repetir** a pergunta, **por favor**?"
+  },
+  {
+    "sentence_number": 90,
+    "content": "Gritei «¡**Socorro**!» **cuando** **el** **carro** quase bateu."
+  },
+  {
+    "sentence_number": 91,
+    "content": "**Él** pediu **poder** **repetir** **el** **mensaje**."
+  },
+  {
+    "sentence_number": 92,
+    "content": "¿**Puede** **repetir**, **por favor**?"
+  },
+  {
+    "sentence_number": 93,
+    "content": "**El** menino gritou «¡**Socorro**!» **cerca** **de** **la** **esquina**."
+  },
+  {
+    "sentence_number": 94,
+    "content": "¿**Puede** mostrar **el** **documento**, **por favor**?"
+  },
+  {
+    "sentence_number": 95,
+    "content": "**Él** gritou «¡**Socorro**!» **en la** **cocina**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "**Mi** **prima** pediu **ayuda** para **encontrar** **el** **documento**."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**Mi** **celular** **no** funciona **aquí**."
+  },
+  {
+    "sentence_number": 98,
+    "content": "Ligue para **mi** **madre**, **por favor**."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**Ella** ficou **perdida** **en la** **estación** **con** **mi** **madre**."
+  },
+  {
+    "sentence_number": 100,
+    "content": "**Disculpe**, **ella** perguntou se **puede** ajudar."
+  }
+]

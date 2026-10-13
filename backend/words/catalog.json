@@ -1947,6 +1947,62 @@
     {
       "word_id": "wd-0487",
       "filename": "payment"
+    },
+    {
+      "word_id": "wd-0488",
+      "filename": "help"
+    },
+    {
+      "word_id": "wd-0489",
+      "filename": "help_emergency"
+    },
+    {
+      "word_id": "wd-0490",
+      "filename": "lost"
+    },
+    {
+      "word_id": "wd-0491",
+      "filename": "lost_feminine"
+    },
+    {
+      "word_id": "wd-0492",
+      "filename": "problem"
+    },
+    {
+      "word_id": "wd-0493",
+      "filename": "need"
+    },
+    {
+      "word_id": "wd-0494",
+      "filename": "can"
+    },
+    {
+      "word_id": "wd-0495",
+      "filename": "i_understand"
+    },
+    {
+      "word_id": "wd-0496",
+      "filename": "i_know"
+    },
+    {
+      "word_id": "wd-0497",
+      "filename": "you_can"
+    },
+    {
+      "word_id": "wd-0498",
+      "filename": "repeat"
+    },
+    {
+      "word_id": "wd-0499",
+      "filename": "passport"
+    },
+    {
+      "word_id": "wd-0500",
+      "filename": "cell_phone"
+    },
+    {
+      "word_id": "wd-0501",
+      "filename": "hospital"
     }
   ]
 }
