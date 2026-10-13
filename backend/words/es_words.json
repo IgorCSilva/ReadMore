@@ -1864,5 +1864,107 @@
     "root_word_id": "wd-0205",
     "word": "pagar",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0312",
+    "root_word_id": "wd-0488",
+    "word": "ayuda",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0313",
+    "root_word_id": "wd-0489",
+    "word": "socorro",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0314",
+    "root_word_id": "wd-0490",
+    "word": "perdido",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0315",
+    "root_word_id": "wd-0491",
+    "word": "perdida",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0316",
+    "root_word_id": "wd-0492",
+    "word": "problema",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0317",
+    "root_word_id": "wd-0493",
+    "word": "necesitar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0318",
+    "root_word_id": "wd-0494",
+    "word": "poder",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0319",
+    "root_word_id": "wd-0150",
+    "word": "disculpe",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0320",
+    "root_word_id": "wd-0004",
+    "word": "por favor",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0321",
+    "root_word_id": "wd-0495",
+    "word": "entiendo",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0322",
+    "root_word_id": "wd-0496",
+    "word": "sé",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0323",
+    "root_word_id": "wd-0497",
+    "word": "puede",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0324",
+    "root_word_id": "wd-0498",
+    "word": "repetir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0325",
+    "root_word_id": "wd-0499",
+    "word": "pasaporte",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0326",
+    "root_word_id": "wd-0500",
+    "word": "celular",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0327",
+    "root_word_id": "wd-0239",
+    "word": "policía",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0328",
+    "root_word_id": "wd-0501",
+    "word": "hospital",
+    "gender_id": "masculine"
   }
 ]
