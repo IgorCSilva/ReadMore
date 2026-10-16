@@ -395,6 +395,28 @@
     }
   },
   "chapter_4": {
+    "topic_1": {
+      "pt": {
+        "natal": "navidad",
+        "ano novo": "año nuevo",
+        "páscoa": "pascua",
+        "aniversário": "cumpleaños",
+        "festa": "fiesta",
+        "tradição": "tradición",
+        "celebrar": "celebrar",
+        "decorar": "decorar",
+        "dançar": "bailar",
+        "cantar": "cantar",
+        "convidar": "invitar",
+        "presentear": "regalar",
+        "reunir-se": "reunirse",
+        "bolo": "pastel",
+        "vela": "vela",
+        "balão": "globo",
+        "convidado": "invitado",
+        "convidada": "invitada"
+      }
+    },
     "topic_5": {
       "pt": {
         "brasileiro": "brasileño",

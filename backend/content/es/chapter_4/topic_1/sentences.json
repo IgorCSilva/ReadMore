@@ -1,0 +1,541 @@
+[
+  {
+    "id": "es-sent-0969",
+    "sentence": "La navidad es hoy.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0329",
+      "es-wd-0017",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0970",
+    "sentence": "Mi navidad está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0329",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0971",
+    "sentence": "Quiero una navidad buena.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0077",
+      "es-wd-0329",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-0972",
+    "sentence": "El año nuevo es hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0330",
+      "es-wd-0017",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0973",
+    "sentence": "Mi año nuevo está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0330",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0974",
+    "sentence": "Quiero celebrar el año nuevo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0335",
+      "es-wd-0057",
+      "es-wd-0330"
+    ]
+  },
+  {
+    "id": "es-sent-0975",
+    "sentence": "La pascua es hoy.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0331",
+      "es-wd-0017",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0976",
+    "sentence": "Mi pascua está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0331",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0977",
+    "sentence": "Quiero una pascua buena.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0077",
+      "es-wd-0331",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-0978",
+    "sentence": "Mi cumpleaños es hoy.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0332",
+      "es-wd-0017",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0979",
+    "sentence": "El cumpleaños es mañana.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0332",
+      "es-wd-0017",
+      "es-wd-0147"
+    ]
+  },
+  {
+    "id": "es-sent-0980",
+    "sentence": "Quiero un cumpleaños bueno.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0332",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-0981",
+    "sentence": "La fiesta es hoy.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0333",
+      "es-wd-0017",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-0982",
+    "sentence": "Mi fiesta está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0333",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0983",
+    "sentence": "Quiero una fiesta grande.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0077",
+      "es-wd-0333",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-0984",
+    "sentence": "La tradición es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0334",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-0985",
+    "sentence": "Mi tradición está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0334",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-0986",
+    "sentence": "Quiero una tradición nueva.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0077",
+      "es-wd-0334",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-0987",
+    "sentence": "Quiero celebrar.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0335"
+    ]
+  },
+  {
+    "id": "es-sent-0988",
+    "sentence": "Quiero celebrar con mi familia.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0335",
+      "es-wd-0061",
+      "es-wd-0016",
+      "es-wd-0037"
+    ]
+  },
+  {
+    "id": "es-sent-0989",
+    "sentence": "Quiero celebrar mi cumpleaños.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0335",
+      "es-wd-0016",
+      "es-wd-0332"
+    ]
+  },
+  {
+    "id": "es-sent-0990",
+    "sentence": "Quiero decorar.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0336"
+    ]
+  },
+  {
+    "id": "es-sent-0991",
+    "sentence": "Quiero decorar la casa.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0336",
+      "es-wd-0058",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-0992",
+    "sentence": "Quiero decorar la casa con un globo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0336",
+      "es-wd-0058",
+      "es-wd-0063",
+      "es-wd-0061",
+      "es-wd-0076",
+      "es-wd-0344"
+    ]
+  },
+  {
+    "id": "es-sent-0993",
+    "sentence": "Quiero bailar.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0337"
+    ]
+  },
+  {
+    "id": "es-sent-0994",
+    "sentence": "Quiero bailar en la fiesta.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0337",
+      "es-wd-0082",
+      "es-wd-0333"
+    ]
+  },
+  {
+    "id": "es-sent-0995",
+    "sentence": "Puede bailar bien.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0337",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0996",
+    "sentence": "Quiero cantar.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0338"
+    ]
+  },
+  {
+    "id": "es-sent-0997",
+    "sentence": "Quiero cantar en la fiesta.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0338",
+      "es-wd-0082",
+      "es-wd-0333"
+    ]
+  },
+  {
+    "id": "es-sent-0998",
+    "sentence": "Puede cantar bien.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0338",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-0999",
+    "sentence": "Quiero invitar a mi familia.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0339",
+      "es-wd-0253",
+      "es-wd-0016",
+      "es-wd-0037"
+    ]
+  },
+  {
+    "id": "es-sent-1000",
+    "sentence": "Quiero invitar a un amigo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0339",
+      "es-wd-0253",
+      "es-wd-0076",
+      "es-wd-0204"
+    ]
+  },
+  {
+    "id": "es-sent-1001",
+    "sentence": "Puede invitar a su hermana.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0339",
+      "es-wd-0253",
+      "es-wd-0052",
+      "es-wd-0043"
+    ]
+  },
+  {
+    "id": "es-sent-1002",
+    "sentence": "Quiero regalar un pastel.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0340",
+      "es-wd-0076",
+      "es-wd-0342"
+    ]
+  },
+  {
+    "id": "es-sent-1003",
+    "sentence": "Quiero regalar una vela.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0340",
+      "es-wd-0077",
+      "es-wd-0343"
+    ]
+  },
+  {
+    "id": "es-sent-1004",
+    "sentence": "Puede regalar un globo.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0340",
+      "es-wd-0076",
+      "es-wd-0344"
+    ]
+  },
+  {
+    "id": "es-sent-1005",
+    "sentence": "Puede reunirse hoy.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0341",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1006",
+    "sentence": "Mi familia puede reunirse.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0037",
+      "es-wd-0323",
+      "es-wd-0341"
+    ]
+  },
+  {
+    "id": "es-sent-1007",
+    "sentence": "Ella va a reunirse con su familia.",
+    "word_ids": [
+      "es-wd-0160",
+      "es-wd-0164",
+      "es-wd-0253",
+      "es-wd-0341",
+      "es-wd-0061",
+      "es-wd-0052",
+      "es-wd-0037"
+    ]
+  },
+  {
+    "id": "es-sent-1008",
+    "sentence": "El pastel es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0342",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1009",
+    "sentence": "Mi pastel está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0342",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1010",
+    "sentence": "Quiero un pastel bueno.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0342",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1011",
+    "sentence": "La vela está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0343",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1012",
+    "sentence": "Mi vela es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0343",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1013",
+    "sentence": "Quiero una vela grande.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0077",
+      "es-wd-0343",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1014",
+    "sentence": "El globo es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0344",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1015",
+    "sentence": "Mi globo está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0344",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1016",
+    "sentence": "Quiero un globo nuevo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0344",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1017",
+    "sentence": "El invitado está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0345",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1018",
+    "sentence": "Mi invitado es bueno.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0345",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1019",
+    "sentence": "Quiero un invitado nuevo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0345",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1020",
+    "sentence": "La invitada está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0346",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1021",
+    "sentence": "Mi invitada es buena.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0346",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1022",
+    "sentence": "Quiero una invitada nueva.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0077",
+      "es-wd-0346",
+      "es-wd-0203"
+    ]
+  }
+]
