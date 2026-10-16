@@ -1966,5 +1966,113 @@
     "root_word_id": "wd-0501",
     "word": "hospital",
     "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0329",
+    "root_word_id": "wd-0502",
+    "word": "navidad",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0330",
+    "root_word_id": "wd-0503",
+    "word": "año nuevo",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0331",
+    "root_word_id": "wd-0504",
+    "word": "pascua",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0332",
+    "root_word_id": "wd-0107",
+    "word": "cumpleaños",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0333",
+    "root_word_id": "wd-0505",
+    "word": "fiesta",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0334",
+    "root_word_id": "wd-0506",
+    "word": "tradición",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0335",
+    "root_word_id": "wd-0507",
+    "word": "celebrar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0336",
+    "root_word_id": "wd-0508",
+    "word": "decorar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0337",
+    "root_word_id": "wd-0509",
+    "word": "bailar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0338",
+    "root_word_id": "wd-0510",
+    "word": "cantar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0339",
+    "root_word_id": "wd-0511",
+    "word": "invitar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0340",
+    "root_word_id": "wd-0512",
+    "word": "regalar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0341",
+    "root_word_id": "wd-0513",
+    "word": "reunirse",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0342",
+    "root_word_id": "wd-0514",
+    "word": "pastel",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0343",
+    "root_word_id": "wd-0515",
+    "word": "vela",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0344",
+    "root_word_id": "wd-0516",
+    "word": "globo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0345",
+    "root_word_id": "wd-0517",
+    "word": "invitado",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0346",
+    "root_word_id": "wd-0518",
+    "word": "invitada",
+    "gender_id": "feminine"
   }
 ]

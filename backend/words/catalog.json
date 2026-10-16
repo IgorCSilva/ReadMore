@@ -2003,6 +2003,74 @@
     {
       "word_id": "wd-0501",
       "filename": "hospital"
+    },
+    {
+      "word_id": "wd-0502",
+      "filename": "christmas"
+    },
+    {
+      "word_id": "wd-0503",
+      "filename": "new_year"
+    },
+    {
+      "word_id": "wd-0504",
+      "filename": "easter"
+    },
+    {
+      "word_id": "wd-0505",
+      "filename": "party"
+    },
+    {
+      "word_id": "wd-0506",
+      "filename": "tradition"
+    },
+    {
+      "word_id": "wd-0507",
+      "filename": "to_celebrate"
+    },
+    {
+      "word_id": "wd-0508",
+      "filename": "to_decorate"
+    },
+    {
+      "word_id": "wd-0509",
+      "filename": "to_dance"
+    },
+    {
+      "word_id": "wd-0510",
+      "filename": "to_sing"
+    },
+    {
+      "word_id": "wd-0511",
+      "filename": "to_invite"
+    },
+    {
+      "word_id": "wd-0512",
+      "filename": "to_give_a_gift"
+    },
+    {
+      "word_id": "wd-0513",
+      "filename": "to_gather"
+    },
+    {
+      "word_id": "wd-0514",
+      "filename": "cake"
+    },
+    {
+      "word_id": "wd-0515",
+      "filename": "candle"
+    },
+    {
+      "word_id": "wd-0516",
+      "filename": "balloon"
+    },
+    {
+      "word_id": "wd-0517",
+      "filename": "guest"
+    },
+    {
+      "word_id": "wd-0518",
+      "filename": "guest_feminine"
     }
   ]
 }
