@@ -8,7 +8,7 @@
 PROMPT: 
 
 idiom: es
-chapter: 3
+chapter: 4
 topic: 1
 
 1. Resolve chapter/topic into a roadmap ID using the Section 7 table in
@@ -51,6 +51,8 @@ topic: 1
    idiomatic greeting, but "good" and "morning" both keep their literal senses),
    it does not need its own entry.
 
+  
+
 Output: the updated words list for <idiom>/chapter_N/topic_N/words.json, and for each
 added word/expression, a one-line reason tagged either [thematic] (from
 roadmap.md), [structural] (from didactic_roadmap.md), or [sense-shift] (from step 6).
@@ -65,9 +67,9 @@ roadmap.md), [structural] (from didactic_roadmap.md), or [sense-shift] (from ste
 
 native: pt
 idiom: es
-file: backend/content/es/chapter_3/topic_1/words.json
+file: backend/content/es/chapter_3/topic_5/words.json
 chapter: 3
-topic: 1
+topic: 5
 
 Build the reverse-lookup relations for this chapter/topic in
 backend/content/relations/<native>-<idiom>-relations.json, matching the existing nested shape:
@@ -159,7 +161,7 @@ at all (so it's a recorded, deliberate gap, not silently dropped).
 native: pt
 target: es
 chapter: 3
-topic: 1
+topic: 5
 
 Run the prompt in backend/prompts/phase_words_adaptation.md with origin=<native>,
 target=<target>, chapter=<chapter>, topic=<topic>. It's already pair-agnostic — no
@@ -200,68 +202,13 @@ and the topic shell + word_ids.json only, per phase_words_adaptation.md's own sc
 - backend/content/<native>-<target>/chapter_N/topic_N/word_ids.json
 
 
-## Add auxiliar sentences
-
-native: pt
-target: es
-chapter: 3
-topic: 1
-
-Build one "mixin" example sentence per word/expression in this chapter/topic, in
-backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json.
-Each sentence is written almost entirely in <native>, with exactly one <target>-language
-word or expression — the one it's illustrating — inserted verbatim, in its exact
-<target>/chapter_<N>/topic_<M>/words.json spelling (no translation, no blank, no
-conjugation). Every other word in the
-sentence must be <native>; no other <target>-language word or expression may appear, even
-by coincidence (a native word that happens to also spell a target word counts).
-
-1. Read <target>/chapter_<N>/topic_<M>/words.json (the actual current content) —
-   this is the exact and only source of which words/expressions need a sentence, and the
-   order to produce them in.
-
-2. Before writing, check whether
-   backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json
-   already exists (create the directory path if it doesn't). If it exists, read it first —
-   merge new entries in, never silently overwrite or drop an existing one. If a word
-   already has an entry, leave it as-is and note the skip in your report rather than
-   replacing it.
-
-3. Match the file's schema:
-
-{
-  "<target_word_or_expression>": "<native-dominant sentence containing that exact target word/expression, verbatim, exactly once, and no other target-language word>"
-}
-
-   one key per word/expression from step 1's list, in that same order.
-
-4. Keep each sentence short and natural — similar length/register to a normal spoken
-   aside (roughly 5-12 words), reading like a bilingual speaker code-switching for a
-   single word, not a translation exercise. A multi-word target expression (e.g. "thank
-   you", "nice to meet you") goes in as one unbroken unit, never split across the
-   sentence. Vary the sentence frame across entries — don't reuse the same native
-   sentence shell for every word with just the target word swapped.
-
-5. After drafting each sentence, re-check it against step 1's own list plus common sense:
-   confirm no other <target> word list word (this chapter/topic or otherwise) leaked in
-   alongside the intended one.
-
-Output: the new/updated sentences.json content for this chapter/topic, and a one-line
-note for any word left unresolved (a natural mixin sentence you couldn't construct
-without accidentally introducing a second target word) instead of forcing something
-awkward.
-
-### Affected files:
-
-- backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json
-
 
 ## Add mixed sentences
 
 native: pt
 target: es
 chapter: 3
-topic: 1
+topic: 5
 
 Create 100 natural sentences, following the exact pattern of chapter 1 topic 1's mixed_sentences.json in backend/content/pt-es/chapter_1/topic_1/mixed_sentences.json ({sentence_number, content} objects, target words marked with **bold**).
 
@@ -302,12 +249,106 @@ later chapter but only ever mapped as the compound "onde fica" → "dónde está
 never bare "onde" → "dónde") won't be found this way; that's a relations.json
 coverage gap, not a lookup failure, and still needs a human read-through.
 
+## Add auxiliar sentences
+
+native: pt
+target: es
+chapter: 3
+topic: 5
+
+Build one "mixin" example sentence per word/expression in this chapter/topic, in
+backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json.
+Each sentence is written almost entirely in <native>, with exactly one word/expression
+from THIS chapter/topic's own list highlighted — the one it's illustrating — in its exact
+<target>/chapter_<N>/topic_<M>/words.json spelling (no translation, no blank, no
+conjugation). This step runs after "Add mixed sentences" (which must already have produced
+this chapter/topic's mixed_sentences.json) and reuses that file as its first source of
+sentences instead of writing every one from scratch — the 100 sentences there already
+satisfy the relations/grammar checks, so any one of them that happens to isolate a single
+word is a ready-made, pre-verified mixin example.
+
+1. Read <target>/chapter_<N>/topic_<M>/words.json (the actual current content) —
+   this is the exact and only source of which words/expressions need a sentence, and the
+   order to produce them in.
+
+2. Read backend/content/<native>-<target>/chapter_<N>/topic_<M>/mixed_sentences.json —
+   the pool built by "Add mixed sentences" for this exact chapter/topic. If it doesn't
+   exist yet, stop and run that step first; don't fall back to writing every sentence
+   from scratch just because this one is missing.
+
+3. For each word/expression in step 1's list (every one has at least 5 bolded occurrences
+   across the 100 mixed sentences, per that step's own quota), scan those occurrences for
+   one that qualifies as a mixin sentence for it:
+   - No other word from THIS SAME chapter/topic's own list is also bolded anywhere else
+     in the sentence — only one word new to this topic may be highlighted per sentence,
+     since that's still the one being drilled.
+   - A word already taught in an EARLIER chapter/topic, bolded elsewhere in the same
+     sentence as background review, does not disqualify it — it's already-known
+     vocabulary, not a second new concept competing for attention. (This is the one
+     deliberate relaxation from the old "no other target-language word at all" rule —
+     mixed_sentences.json is written dense by design, so requiring total isolation would
+     almost never find a match.)
+   - If this word is only ever bolded as part of a short fixed collocation in
+     mixed_sentences.json (e.g. "no entiendo", "no sé", "puede repetir") because that's
+     how its grammar is taught, that combined bolded span still counts as this word's
+     occurrence — don't require it to appear as a lone single-word bold tag.
+   - If more than one sentence qualifies, prefer the shortest one (closest to the
+     5-12 word "spoken aside" register below); break any remaining tie by the lowest
+     `sentence_number`.
+
+4. When a sentence qualifies, reuse its `content` verbatim (same text, same bolding) as
+   this word's entry — don't edit, shorten, re-bold, or re-translate it; it was already
+   relations/grammar-checked when "Add mixed sentences" ran. Record which
+   `sentence_number` was reused for each word in your report.
+
+5. Only when NO sentence in mixed_sentences.json qualifies for a word (expect this for a
+   handful of words, not none — density cuts both ways) fall back to writing one fresh
+   sentence for that word alone, under the original stricter rule: almost entirely
+   <native> prose, with exactly one <target>-language word or expression — the one being
+   illustrated — inserted verbatim, and no other <target>-language word anywhere else in
+   that fresh sentence, even by coincidence (a <native> word that happens to also spell a
+   target word counts). Keep it short and natural (roughly 5-12 words), reading like a
+   bilingual speaker code-switching for a single word, not a translation exercise. A
+   multi-word target expression goes in as one unbroken unit. Vary the sentence frame
+   across these fallback entries — don't reuse the same native sentence shell for more
+   than one of them.
+
+6. Before writing, check whether
+   backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json
+   already exists (create the directory path if it doesn't). If it exists, read it first —
+   merge new entries in, never silently overwrite or drop an existing one. If a word
+   already has an entry, leave it as-is and note the skip in your report rather than
+   replacing it.
+
+7. Match the file's schema:
+
+{
+  "<target_word_or_expression>": "<reused mixed_sentences.json content, or a fresh fallback sentence>"
+}
+
+   one key per word/expression from step 1's list, in that same order.
+
+8. After resolving each word (reused or freshly written), re-check it against step 1's
+   own list plus common sense: confirm no other NEW (this-chapter/topic) target word list
+   word leaked in alongside the intended one.
+
+Output: the new/updated sentences.json content for this chapter/topic; for each word, a
+one-line note of whether it was reused from mixed_sentences.json (with its
+`sentence_number`) or freshly written as a fallback; and a one-line note for any word left
+unresolved (couldn't find a qualifying reuse candidate AND couldn't construct a fresh
+sentence without accidentally introducing a second target word) instead of forcing
+something awkward.
+
+### Affected files:
+
+- backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json
+
 
 ## Add target idiom natural sentences
 
 target: es
 chapter: 3
-topic: 1
+topic: 5
 
 Now, generate simple natural sentences, following the pattern in
 backend/content/es/chapter_<chapter>/topic_<topic>/sentences.json.
