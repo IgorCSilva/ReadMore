@@ -2071,6 +2071,54 @@
     {
       "word_id": "wd-0518",
       "filename": "guest_feminine"
+    },
+    {
+      "word_id": "wd-0519",
+      "filename": "polite"
+    },
+    {
+      "word_id": "wd-0520",
+      "filename": "polite_feminine"
+    },
+    {
+      "word_id": "wd-0521",
+      "filename": "rude"
+    },
+    {
+      "word_id": "wd-0522",
+      "filename": "rude_feminine"
+    },
+    {
+      "word_id": "wd-0523",
+      "filename": "custom"
+    },
+    {
+      "word_id": "wd-0524",
+      "filename": "rule"
+    },
+    {
+      "word_id": "wd-0525",
+      "filename": "manners"
+    },
+    {
+      "word_id": "wd-0526",
+      "filename": "spoon"
+    },
+    {
+      "word_id": "wd-0527",
+      "filename": "fork"
+    },
+    {
+      "word_id": "wd-0528",
+      "filename": "knife"
+    },
+    {
+      "word_id": "wd-0529",
+      "filename": "allowed"
+    },
+    {
+      "word_id": "wd-0530",
+      "filename": "forbidden"
     }
   ]
 }

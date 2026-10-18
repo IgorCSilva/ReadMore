@@ -1,0 +1,418 @@
+[
+  {
+    "id": "es-sent-1023",
+    "sentence": "Mi hermano es educado.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0042",
+      "es-wd-0017",
+      "es-wd-0347"
+    ]
+  },
+  {
+    "id": "es-sent-1024",
+    "sentence": "Su abuelo es educado.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0044",
+      "es-wd-0017",
+      "es-wd-0347"
+    ]
+  },
+  {
+    "id": "es-sent-1025",
+    "sentence": "El invitado es educado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0345",
+      "es-wd-0017",
+      "es-wd-0347"
+    ]
+  },
+  {
+    "id": "es-sent-1026",
+    "sentence": "Mi hermana es educada.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0043",
+      "es-wd-0017",
+      "es-wd-0348"
+    ]
+  },
+  {
+    "id": "es-sent-1027",
+    "sentence": "Su abuela es educada.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0045",
+      "es-wd-0017",
+      "es-wd-0348"
+    ]
+  },
+  {
+    "id": "es-sent-1028",
+    "sentence": "La invitada es educada.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0346",
+      "es-wd-0017",
+      "es-wd-0348"
+    ]
+  },
+  {
+    "id": "es-sent-1029",
+    "sentence": "Mi amigo es maleducado.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0204",
+      "es-wd-0017",
+      "es-wd-0349"
+    ]
+  },
+  {
+    "id": "es-sent-1030",
+    "sentence": "Su primo es maleducado.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0048",
+      "es-wd-0017",
+      "es-wd-0349"
+    ]
+  },
+  {
+    "id": "es-sent-1031",
+    "sentence": "El invitado es maleducado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0345",
+      "es-wd-0017",
+      "es-wd-0349"
+    ]
+  },
+  {
+    "id": "es-sent-1032",
+    "sentence": "Mi amiga es maleducada.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0205",
+      "es-wd-0017",
+      "es-wd-0350"
+    ]
+  },
+  {
+    "id": "es-sent-1033",
+    "sentence": "Su prima es maleducada.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0049",
+      "es-wd-0017",
+      "es-wd-0350"
+    ]
+  },
+  {
+    "id": "es-sent-1034",
+    "sentence": "La invitada es maleducada.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0346",
+      "es-wd-0017",
+      "es-wd-0350"
+    ]
+  },
+  {
+    "id": "es-sent-1035",
+    "sentence": "La costumbre es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0351",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1036",
+    "sentence": "Mi costumbre está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0351",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1037",
+    "sentence": "Quiero una costumbre nueva.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0077",
+      "es-wd-0351",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1038",
+    "sentence": "La regla es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0352",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1039",
+    "sentence": "Mi regla está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0352",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1040",
+    "sentence": "Quiero una regla nueva.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0077",
+      "es-wd-0352",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1041",
+    "sentence": "Mi familia tiene modales.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0037",
+      "es-wd-0080",
+      "es-wd-0353"
+    ]
+  },
+  {
+    "id": "es-sent-1042",
+    "sentence": "Su abuelo tiene modales.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0044",
+      "es-wd-0080",
+      "es-wd-0353"
+    ]
+  },
+  {
+    "id": "es-sent-1043",
+    "sentence": "Quiero buenos modales.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0353"
+    ]
+  },
+  {
+    "id": "es-sent-1044",
+    "sentence": "El plato es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0354",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1045",
+    "sentence": "Mi plato está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0354",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1046",
+    "sentence": "Quiero un plato nuevo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0354",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1047",
+    "sentence": "La servilleta es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0355",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1048",
+    "sentence": "Mi servilleta está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0355",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1049",
+    "sentence": "Quiero una servilleta nueva.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0077",
+      "es-wd-0355",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1050",
+    "sentence": "La cuchara es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0356",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1051",
+    "sentence": "Mi cuchara está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0356",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1052",
+    "sentence": "Quiero una cuchara nueva.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0077",
+      "es-wd-0356",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1053",
+    "sentence": "El tenedor es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0357",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1054",
+    "sentence": "Mi tenedor está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0357",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1055",
+    "sentence": "Quiero un tenedor nuevo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0357",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1056",
+    "sentence": "El cuchillo es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0358",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1057",
+    "sentence": "Mi cuchillo está aquí.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0358",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1058",
+    "sentence": "Quiero un cuchillo nuevo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0358",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1059",
+    "sentence": "Esto está permitido.",
+    "word_ids": [
+      "es-wd-0085",
+      "es-wd-0255",
+      "es-wd-0359"
+    ]
+  },
+  {
+    "id": "es-sent-1060",
+    "sentence": "Eso está permitido hoy.",
+    "word_ids": [
+      "es-wd-0086",
+      "es-wd-0255",
+      "es-wd-0359",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1061",
+    "sentence": "Su plato está permitido.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0354",
+      "es-wd-0255",
+      "es-wd-0359"
+    ]
+  },
+  {
+    "id": "es-sent-1062",
+    "sentence": "Esto está prohibido.",
+    "word_ids": [
+      "es-wd-0085",
+      "es-wd-0255",
+      "es-wd-0360"
+    ]
+  },
+  {
+    "id": "es-sent-1063",
+    "sentence": "Eso está prohibido hoy.",
+    "word_ids": [
+      "es-wd-0086",
+      "es-wd-0255",
+      "es-wd-0360",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1064",
+    "sentence": "Su cuchillo está prohibido.",
+    "word_ids": [
+      "es-wd-0052",
+      "es-wd-0358",
+      "es-wd-0255",
+      "es-wd-0360"
+    ]
+  }
+]
