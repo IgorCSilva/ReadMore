@@ -2074,5 +2074,89 @@
     "root_word_id": "wd-0518",
     "word": "invitada",
     "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0347",
+    "root_word_id": "wd-0519",
+    "word": "educado",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0348",
+    "root_word_id": "wd-0520",
+    "word": "educada",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0349",
+    "root_word_id": "wd-0521",
+    "word": "maleducado",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0350",
+    "root_word_id": "wd-0522",
+    "word": "maleducada",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0351",
+    "root_word_id": "wd-0523",
+    "word": "costumbre",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0352",
+    "root_word_id": "wd-0524",
+    "word": "regla",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0353",
+    "root_word_id": "wd-0525",
+    "word": "modales",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0354",
+    "root_word_id": "wd-0192",
+    "word": "plato",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0355",
+    "root_word_id": "wd-0199",
+    "word": "servilleta",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0356",
+    "root_word_id": "wd-0526",
+    "word": "cuchara",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0357",
+    "root_word_id": "wd-0527",
+    "word": "tenedor",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0358",
+    "root_word_id": "wd-0528",
+    "word": "cuchillo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0359",
+    "root_word_id": "wd-0529",
+    "word": "permitido",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0360",
+    "root_word_id": "wd-0530",
+    "word": "prohibido",
+    "gender_id": "masculine"
   }
 ]

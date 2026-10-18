@@ -417,6 +417,24 @@
         "convidada": "invitada"
       }
     },
+    "topic_2": {
+      "pt": {
+        "educado": "educado",
+        "educada": "educada",
+        "mal-educado": "maleducado",
+        "mal-educada": "maleducada",
+        "costume": "costumbre",
+        "regra": "regla",
+        "modos": "modales",
+        "prato": "plato",
+        "guardanapo": "servilleta",
+        "colher": "cuchara",
+        "garfo": "tenedor",
+        "faca": "cuchillo",
+        "permitido": "permitido",
+        "proibido": "prohibido"
+      }
+    },
     "topic_5": {
       "pt": {
         "brasileiro": "brasileño",
