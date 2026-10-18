@@ -435,6 +435,30 @@
         "proibido": "prohibido"
       }
     },
+    "topic_3": {
+      "pt": {
+        "camisa": "camisa",
+        "calça": "pantalón",
+        "vestido": "vestido",
+        "sapato": "zapato",
+        "jaqueta": "chaqueta",
+        "saia": "falda",
+        "chapéu": "sombrero",
+        "meia": "calcetín",
+        "vermelho": "rojo",
+        "vermelha": "roja",
+        "azul": "azul",
+        "verde": "verde",
+        "amarelo": "amarillo",
+        "amarela": "amarilla",
+        "preto": "negro",
+        "preta": "negra",
+        "bonito": "bonito",
+        "bonita": "bonita",
+        "velho": "viejo",
+        "velha": "vieja"
+      }
+    },
     "topic_5": {
       "pt": {
         "brasileiro": "brasileño",

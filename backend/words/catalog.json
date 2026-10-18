@@ -2119,6 +2119,82 @@
     {
       "word_id": "wd-0530",
       "filename": "forbidden"
+    },
+    {
+      "word_id": "wd-0531",
+      "filename": "shirt"
+    },
+    {
+      "word_id": "wd-0532",
+      "filename": "pants"
+    },
+    {
+      "word_id": "wd-0533",
+      "filename": "dress"
+    },
+    {
+      "word_id": "wd-0534",
+      "filename": "shoe"
+    },
+    {
+      "word_id": "wd-0535",
+      "filename": "jacket"
+    },
+    {
+      "word_id": "wd-0536",
+      "filename": "skirt"
+    },
+    {
+      "word_id": "wd-0537",
+      "filename": "hat"
+    },
+    {
+      "word_id": "wd-0538",
+      "filename": "sock"
+    },
+    {
+      "word_id": "wd-0539",
+      "filename": "red"
+    },
+    {
+      "word_id": "wd-0540",
+      "filename": "red_feminine"
+    },
+    {
+      "word_id": "wd-0541",
+      "filename": "blue"
+    },
+    {
+      "word_id": "wd-0542",
+      "filename": "green"
+    },
+    {
+      "word_id": "wd-0543",
+      "filename": "yellow"
+    },
+    {
+      "word_id": "wd-0544",
+      "filename": "yellow_feminine"
+    },
+    {
+      "word_id": "wd-0545",
+      "filename": "black"
+    },
+    {
+      "word_id": "wd-0546",
+      "filename": "black_feminine"
+    },
+    {
+      "word_id": "wd-0547",
+      "filename": "pretty"
+    },
+    {
+      "word_id": "wd-0548",
+      "filename": "pretty_feminine"
+    },
+    {
+      "word_id": "wd-0549",
+      "filename": "old_feminine"
     }
   ]
 }

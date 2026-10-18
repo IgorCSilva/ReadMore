@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**Mi** **abuela** costurou **una** **chaqueta** **vieja** para **mi** **primo**."
+  },
+  {
+    "sentence_number": 2,
+    "content": "**El** **zapato** **viejo** **de** **mi** **tío** rasgou ontem."
+  },
+  {
+    "sentence_number": 3,
+    "content": "**Mi** **prima** **no** gosta **de** **su** **calcetín** **negro**, prefere **el** **calcetín** **rojo**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "**El** **pantalón** **viejo** **de** **mi** **padre** ainda serve **bien**."
+  },
+  {
+    "sentence_number": 5,
+    "content": "**El** **zapato** **de** **mi** **padre** **es** **negro** **y** **bonito**."
+  },
+  {
+    "sentence_number": 6,
+    "content": "**Mi** **hermana** corre **con** **su** **chaqueta** **roja** **todas** as manhãs."
+  },
+  {
+    "sentence_number": 7,
+    "content": "**Mi** **hermano** usa **un** **pantalón** **negro** **hoy**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "**Mi** **amiga** comprou **una** **camisa** **roja** **y** **un** **pantalón** **negro**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "**Mi** **amigo** usa **un** **calcetín** **verde** **y** **un** **calcetín** **azul**, por engano."
+  },
+  {
+    "sentence_number": 10,
+    "content": "**Mi** **primo** usa **un** **pantalón** **amarillo** **en la** **fiesta** **de** **cumpleaños**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**Mi** **hermano** vestiu **una** **chaqueta** **azul** **antes** **de** **salir** da **casa**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "**Mi** **amiga** usa **un** **vestido** **rojo** **y** **un** **zapato** **negro**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "**El** **pantalón** **viejo** **de** **mi** **abuelo** ainda **es** **bueno**."
+  },
+  {
+    "sentence_number": 14,
+    "content": "**Mi** **madre** comprou **un** **vestido** **amarillo** para **el** verão."
+  },
+  {
+    "sentence_number": 15,
+    "content": "**El** **zapato** **amarillo** **de** **mi** **prima** chamou atenção **en la** escola."
+  },
+  {
+    "sentence_number": 16,
+    "content": "**Mi** **hermano** comprou **un** **calcetín** **azul** **nuevo**."
+  },
+  {
+    "sentence_number": 17,
+    "content": "**El** **vestido** **de** **mi** **abuela** **es** **mucho** **viejo**, **pero** **bonito** ainda."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**El** **pantalón** **de** **mi** **hijo** **es** **azul**, **mucho** **bonito**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "**Mi** **hermana** **no** encontrou **su** **calcetín** **verde** **hoy**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**Mi** **abuelo** **tiene** **un** **sombrero** **viejo** **y** **un** **sombrero** **nuevo**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "**Mi** **prima** perdeu **un** **calcetín** **amarillo** **en la** lavandaria."
+  },
+  {
+    "sentence_number": 22,
+    "content": "**Mi** **tía** comprou **una** **falda** **negra** **nueva** para **la** **fiesta**."
+  },
+  {
+    "sentence_number": 23,
+    "content": "**Mi** **padre** usa **un** **pantalón** **negro** **hoy**, **no** **un** **pantalón** **azul**."
+  },
+  {
+    "sentence_number": 24,
+    "content": "**Mi** **amigo** usa **una** **chaqueta** **roja** **cuando** faz frio."
+  },
+  {
+    "sentence_number": 25,
+    "content": "**Mi** **padre** **no** gosta **de** **su** **zapato** **verde**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**Mi** **padre** comprou **un** **zapato** **negro**, **no** **un** **zapato** **rojo**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "**Mi** **abuela** usa **un** **sombrero** **amarillo** **en el** jardim."
+  },
+  {
+    "sentence_number": 28,
+    "content": "**Mi** **padre** **no** gosta **de** **zapato** **amarillo**."
+  },
+  {
+    "sentence_number": 29,
+    "content": "**Mi** **madre** lavou **la** **chaqueta** **roja** **antes** da **fiesta** **de** **cumpleaños**."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**El** **vestido** **viejo** **de** **mi** **madre** ainda fica guardado **en la** **casa**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "**La** **camisa** **azul** **de** **mi** **hermano** **es** **mucho** **bonita**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "**Mi** **tío** **no** gosta **de** **pantalón** **negro**, prefere **pantalón** **azul**."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**La** **falda** **roja** **de** **mi** **prima** **es** **nueva** **y** **bonita**."
+  },
+  {
+    "sentence_number": 34,
+    "content": "**Mi** **primo** comprou **un** **pantalón** **negro** para **la** **fiesta**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "**La** **falda** **negra** **de** **mi** **tía** combina **con** **su** **camisa** **roja**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "**El** **sombrero** **de** **mi** **padre** **es** **viejo**, **pero** **mucho** **bonito**."
+  },
+  {
+    "sentence_number": 37,
+    "content": "**Mi** **primo** **no** encontrou **su** **sombrero** **negro** **hoy**."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**Mi** **primo** **no** encontrou **su** **sombrero** **amarillo** **hoy**."
+  },
+  {
+    "sentence_number": 39,
+    "content": "**El** **vestido** **de** **su** **hermana** **es** **verde**, **y** **su** **falda** também **es** **verde**."
+  },
+  {
+    "sentence_number": 40,
+    "content": "**Mi** **tío** comprou **una** **chaqueta** **negra** para **el** frio."
+  },
+  {
+    "sentence_number": 41,
+    "content": "**La** **falda** **amarilla** **de** **mi** **prima** **es** **mucho** **bonita**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "**La** **camisa** **verde** **de** **mi** **amigo** combina **con** **su** **pantalón**."
+  },
+  {
+    "sentence_number": 43,
+    "content": "**Mi** **madre** lavou **la** **camisa** **roja** **antes** da **fiesta**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**El** **pantalón** **de** **mi** **primo** **es** **verde**, **no** **amarillo**."
+  },
+  {
+    "sentence_number": 45,
+    "content": "**Mi** **prima** usa **un** **vestido** **verde** **y** **bonito** **en la** **fiesta**."
+  },
+  {
+    "sentence_number": 46,
+    "content": "**Mi** **tío** **no** gosta **de** **chaqueta** **amarilla**, prefere **chaqueta** **verde**."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**Mi** **amigo** perdeu **un** **calcetín** **rojo** **en el** **parque**."
+  },
+  {
+    "sentence_number": 48,
+    "content": "**Mi** **abuelo** usa **un** **sombrero** **negro** **todos** os domingos."
+  },
+  {
+    "sentence_number": 49,
+    "content": "**Mi** **abuela** perdeu **un** **calcetín** **rojo** **en el** armário."
+  },
+  {
+    "sentence_number": 50,
+    "content": "**Mi** **hermano** comprou **un** **zapato** **negro** **y** **bonito**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "**El** **calcetín** **amarillo** **de** **mi** **hermano** combina **con** **su** **pantalón**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "**La** **camisa** **amarilla** **de** **mi** **amigo** chamou atenção **en la** **fiesta**."
+  },
+  {
+    "sentence_number": 53,
+    "content": "**Mi** **madre** achou **el** **vestido** **azul** **mucho** **bonito**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "**La** **falda** **de** **mi** **tía** **es** **negra** **y** **mucho** **bonita**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "**Mi** **hermana** **no** gosta **de** **la** **camisa** **negra**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "**Mi** **amigo** **no** achou **el** **calcetín** **verde** **en el** armário."
+  },
+  {
+    "sentence_number": 57,
+    "content": "**Mi** **tía** vestiu **una** **chaqueta** **negra** **antes** **de** **salir**."
+  },
+  {
+    "sentence_number": 58,
+    "content": "**Mi** **prima** usa **un** **sombrero** **rojo** **cuando** **va** à praia."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**El** **sombrero** **amarillo** **de** **mi** **hermano** **es** **grande**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "**La** **camisa** **de** **mi** **primo** **es** **amarilla**, **no** **verde**."
+  },
+  {
+    "sentence_number": 61,
+    "content": "**Mi** **primo** comprou **un** **pantalón** **nuevo** **y** **bonito** para **el** **viaje**."
+  },
+  {
+    "sentence_number": 62,
+    "content": "**Mi** **prima** usa **una** **falda** **verde** **hoy**."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**Mi** **abuelo** sempre usa **un** **sombrero** **viejo**."
+  },
+  {
+    "sentence_number": 64,
+    "content": "**La** **falda** **verde** **de** **mi** **abuela** **es** **vieja**, **pero** **mucho** **bonita**."
+  },
+  {
+    "sentence_number": 65,
+    "content": "**La** **falda** **de** **mi** **prima** **es** **bonita**, **pero** **mucho** **vieja**."
+  },
+  {
+    "sentence_number": 66,
+    "content": "**Mi** **padre** disse que **el** **zapato** **viejo** **es** **bueno** ainda."
+  },
+  {
+    "sentence_number": 67,
+    "content": "**El** **vestido** **de** **mi** **amiga** **es** **azul** **y** **mucho** **bonito**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**Mi** **prima** usa **la** **falda** **verde** **con** **una** **camisa** **roja**."
+  },
+  {
+    "sentence_number": 69,
+    "content": "**El** **sombrero** **viejo** **de** **mi** **tío** rasgou **la** **semana** passada."
+  },
+  {
+    "sentence_number": 70,
+    "content": "**Mi** **madre** pediu que **yo** vestisse **la** **chaqueta** **roja** **porque** fazia frio."
+  },
+  {
+    "sentence_number": 71,
+    "content": "**Mi** **hermana** comprou **una** **camisa** **roja** **nueva**."
+  },
+  {
+    "sentence_number": 72,
+    "content": "**Mi** **hermana** comprou **un** **zapato** **verde** **en la** loja **nueva**."
+  },
+  {
+    "sentence_number": 73,
+    "content": "**Mi** **hermano** **no** achou **el** **zapato** **verde** debaixo **de** **la** **cama**."
+  },
+  {
+    "sentence_number": 74,
+    "content": "**Mi** **abuelo** guarda **un** **vestido** **viejo** **de** **su** **esposa**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "**El** **calcetín** **de** **mi** **hijo** **es** **verde** **y** **bonito**."
+  },
+  {
+    "sentence_number": 76,
+    "content": "**Mi** **tía** usa **una** **falda** **amarilla** **todos** os verões."
+  },
+  {
+    "sentence_number": 77,
+    "content": "**Mi** **hermano** achou **el** **vestido** **de** **su** **amiga** **mucho** **bonito**."
+  },
+  {
+    "sentence_number": 78,
+    "content": "**Mi** **padre** usa **el** **pantalón** **viejo** para pintar **la** **casa**."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**Mi** **amigo** **no** achou **el** **calcetín** **azul** **en el** armário **de** **su** **cuarto**."
+  },
+  {
+    "sentence_number": 80,
+    "content": "**La** **camisa** **nueva** **de** **mi** **hermano** **es** **roja**, **mucho** **bonita**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "**Mi** **hermana** achou **el** **vestido** **viejo** **de** **su** **madre** **en la** **casa**."
+  },
+  {
+    "sentence_number": 82,
+    "content": "**El** **sombrero** **negro** **de** **mi** **abuelo** combina **con** **su** **pantalón**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "Fazia frio, **entonces** **mi** **tío** vestiu **su** **chaqueta** **vieja**."
+  },
+  {
+    "sentence_number": 84,
+    "content": "**La** **camisa** **negra** **de** **mi** **primo** **es** **nueva** **y** **bonita**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "**La** **falda** **de** **mi** **abuela** **es** **vieja**, **pero** **mucho** **bonita**."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**Es** **mucho** frio, **mi** **primo** vestiu **la** **chaqueta** **amarilla**."
+  },
+  {
+    "sentence_number": 87,
+    "content": "**Mi** **amiga** usa **una** **camisa** **azul** **y** **una** **falda** **negra**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "**Mi** **abuelo** guarda **un** **sombrero** **viejo** **de** **su** **padre**."
+  },
+  {
+    "sentence_number": 89,
+    "content": "**El** **zapato** **nuevo** **de** **mi** **primo** **es** **grande**."
+  },
+  {
+    "sentence_number": 90,
+    "content": "**El** **calcetín** **negro** **de** **mi** **hermano** **es** **viejo**."
+  },
+  {
+    "sentence_number": 91,
+    "content": "**Mi** **hermano** comprou **un** **zapato** **rojo** **y** **un** **zapato** **negro**, por engano."
+  },
+  {
+    "sentence_number": 92,
+    "content": "**Mi** **tía** achou **la** **falda** **amarilla** **mucho** **bonita**."
+  },
+  {
+    "sentence_number": 93,
+    "content": "**Es** **permitido** usar **pantalón** **azul** **en la** escola **de** **mi** **primo**."
+  },
+  {
+    "sentence_number": 94,
+    "content": "**Mi** **amiga** usa **una** **falda** **roja** **con** **una** **camisa** **roja**."
+  },
+  {
+    "sentence_number": 95,
+    "content": "**La** **camisa** **de** **mi** **hermana** **es** **azul** **y** **mucho** **bonita**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "**Mi** **tía** usa **una** **chaqueta** **azul** **cuando** viaja."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**La** **camisa** **de** **mi** **padre** **es** **amarilla**, **no** **verde**."
+  },
+  {
+    "sentence_number": 98,
+    "content": "**Mi** **padre** comprou **un** **zapato** **negro** **nuevo**."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**El** **sombrero** **viejo** **de** **mi** **abuelo** ficou **en la** **casa**."
+  },
+  {
+    "sentence_number": 100,
+    "content": "**Mi** **tío** comprou **una** **chaqueta** **vieja** **en el** mercado."
+  }
+]

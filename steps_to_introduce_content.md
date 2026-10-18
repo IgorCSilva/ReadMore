@@ -9,7 +9,7 @@ PROMPT:
 
 idiom: es
 chapter: 4
-topic: 1
+topic: 3
 
 1. Resolve chapter/topic into a roadmap ID using the Section 7 table in
    contents/language_reading_journey_phases/roadmap.md (chapter 1 = its first
@@ -61,15 +61,21 @@ roadmap.md), [structural] (from didactic_roadmap.md), or [sense-shift] (from ste
 
 - <idiom>/chapter_N/topic_N/words.json
 
+### Verify
+
+Confirm backend/content/<idiom>/chapter_N/topic_N/words.json actually exists on disk and
+is valid JSON (a bare array of strings) before considering this step done — don't just
+reason about what the list should contain.
+
 
 
 ## Add relations
 
 native: pt
 idiom: es
-file: backend/content/es/chapter_3/topic_5/words.json
-chapter: 3
-topic: 5
+chapter: 4
+topic: 3
+file: backend/content/<idiom>/chapter_<N>/topic_<M>/words.json
 
 Build the reverse-lookup relations for this chapter/topic in
 backend/content/relations/<native>-<idiom>-relations.json, matching the existing nested shape:
@@ -155,13 +161,21 @@ at all (so it's a recorded, deliberate gap, not silently dropped).
   (e.g. a native word with two distinct senses that the idiom list only
   covers one of) — fix the gap there first, then continue.
 
+### Verify
+
+Confirm backend/content/relations/<native>-<idiom>-relations.json actually exists on disk
+and its chapter_<N>.topic_<M> block has exactly as many entries as <native>'s
+chapter_<N>/topic_<M>/words.json has words/expressions (per rule 5's full-coverage
+requirement) — and, if a gap was closed, that <idiom>/chapter_<N>/topic_<M>/words.json was
+actually written to disk with the added word, not just described in your report.
+
 
 ## Add content in other files
 
 native: pt
 target: es
-chapter: 3
-topic: 5
+chapter: 4
+topic: 3
 
 Run the prompt in backend/prompts/phase_words_adaptation.md with origin=<native>,
 target=<target>, chapter=<chapter>, topic=<topic>. It's already pair-agnostic — no
@@ -201,14 +215,26 @@ and the topic shell + word_ids.json only, per phase_words_adaptation.md's own sc
 - backend/content/<native>-<target>/chapter_N/topic_N/info.json
 - backend/content/<native>-<target>/chapter_N/topic_N/word_ids.json
 
+### Verify
+
+Confirm every file listed above actually exists on disk and was actually updated — in
+particular backend/content/<native>-<target>/chapter_N/topic_N/info.json and
+word_ids.json. A topic directory that ends up with some files but not these two (e.g. only
+a mixed_sentences.json written by a later step) will crash GET /chapters in production for
+every user requesting this pair: JsonCatalogRepository._load_content loads each topic's
+info.json unconditionally, with no missing-file fallback, unlike word_ids.json/
+mixed_sentences.json/texts.json/exercises.json which all degrade to [] if absent. Do not
+move on to "Add mixed sentences" until info.json and word_ids.json both exist for this
+chapter/topic.
+
 
 
 ## Add mixed sentences
 
 native: pt
 target: es
-chapter: 3
-topic: 5
+chapter: 4
+topic: 3
 
 Create 100 natural sentences, following the exact pattern of chapter 1 topic 1's mixed_sentences.json in backend/content/pt-es/chapter_1/topic_1/mixed_sentences.json ({sentence_number, content} objects, target words marked with **bold**).
 
@@ -249,12 +275,27 @@ later chapter but only ever mapped as the compound "onde fica" → "dónde está
 never bare "onde" → "dónde") won't be found this way; that's a relations.json
 coverage gap, not a lookup failure, and still needs a human read-through.
 
+### Affected files:
+
+- backend/content/<native>-<target>/chapter_N/topic_N/mixed_sentences.json
+
+### Verify
+
+Before running this step, confirm backend/content/<native>-<target>/chapter_N/topic_N/
+info.json and word_ids.json already exist (they're created by "Add content in other
+files" above, which must run first). This step only ever writes mixed_sentences.json
+itself — it must never be the step that creates a topic directory from scratch, since a
+topic directory holding mixed_sentences.json but no info.json crashes GET /chapters in
+production (see the "Add content in other files" Verify note above). If info.json/
+word_ids.json don't exist yet, stop and run "Add content in other files" first instead of
+proceeding.
+
 ## Add auxiliar sentences
 
 native: pt
 target: es
-chapter: 3
-topic: 5
+chapter: 4
+topic: 3
 
 Build one "mixin" example sentence per word/expression in this chapter/topic, in
 backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json.
@@ -343,12 +384,18 @@ something awkward.
 
 - backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json
 
+### Verify
+
+Confirm the file above actually exists on disk and has exactly one entry per
+word/expression in <target>/chapter_<N>/topic_<M>/words.json, in that same order — not a
+subset, and not missing the ones that fell back to a freshly-written sentence.
+
 
 ## Add target idiom natural sentences
 
 target: es
-chapter: 3
-topic: 5
+chapter: 4
+topic: 3
 
 Now, generate simple natural sentences, following the pattern in
 backend/content/es/chapter_<chapter>/topic_<topic>/sentences.json.
@@ -374,6 +421,20 @@ since it skips any word_id it can't find a text match for instead of erroring:
 `python3 backend/scripts/check_sentence_word_ids.py <target> {chapter number} {topic number}`
 
 Fix any reported mismatch before moving on.
+
+### Affected files:
+
+- backend/content/<target>/chapter_N/topic_N/sentences.json
+- backend/words/catalog.json and backend/words/<target>_words.json, if any word in this
+  topic didn't already have a word_id (needed before sentences.json can reference one) —
+  check first rather than assuming "Add content in other files" already covered every word.
+
+### Verify
+
+Confirm backend/content/<target>/chapter_N/topic_N/sentences.json actually exists on disk
+with exactly 3 sentences per word/expression in <target>/chapter_N/topic_N/words.json, and
+that `check_sentence_word_ids.py` above reports no mismatches — don't consider this step
+done until that check passes clean.
 
 ===========================================================
 
