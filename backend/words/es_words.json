@@ -2278,5 +2278,101 @@
     "root_word_id": "wd-0549",
     "word": "vieja",
     "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0381",
+    "root_word_id": "wd-0550",
+    "word": "música",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0382",
+    "root_word_id": "wd-0551",
+    "word": "canción",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0383",
+    "root_word_id": "wd-0552",
+    "word": "instrumento",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0384",
+    "root_word_id": "wd-0553",
+    "word": "guitarra",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0385",
+    "root_word_id": "wd-0554",
+    "word": "piano",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0386",
+    "root_word_id": "wd-0555",
+    "word": "tocar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0387",
+    "root_word_id": "wd-0556",
+    "word": "escuchar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0388",
+    "root_word_id": "wd-0557",
+    "word": "pintar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0389",
+    "root_word_id": "wd-0558",
+    "word": "dibujar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0390",
+    "root_word_id": "wd-0559",
+    "word": "nadar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0391",
+    "root_word_id": "wd-0560",
+    "word": "deporte",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0392",
+    "root_word_id": "wd-0561",
+    "word": "fútbol",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0393",
+    "root_word_id": "wd-0562",
+    "word": "pasatiempo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0394",
+    "root_word_id": "wd-0563",
+    "word": "favorito",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0395",
+    "root_word_id": "wd-0564",
+    "word": "favorita",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0396",
+    "root_word_id": "wd-0565",
+    "word": "tiempo libre",
+    "gender_id": "not_apply"
   }
 ]
