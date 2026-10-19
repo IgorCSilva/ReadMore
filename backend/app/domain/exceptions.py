@@ -27,3 +27,17 @@ class InvalidCorrectionError(Exception):
     def __init__(self, detail: str) -> None:
         self.detail = detail
         super().__init__(f"invalid correction: {detail}")
+
+
+class StoryNotFoundError(Exception):
+    def __init__(self, level: str, story_id: str) -> None:
+        self.level = level
+        self.story_id = story_id
+        super().__init__(f"story not found: {level}/{story_id}")
+
+
+class LearningTopicNotFoundError(Exception):
+    def __init__(self, theme: str, topic_id: str) -> None:
+        self.theme = theme
+        self.topic_id = topic_id
+        super().__init__(f"learning topic not found: {theme}/{topic_id}")

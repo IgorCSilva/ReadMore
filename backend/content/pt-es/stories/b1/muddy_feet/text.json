@@ -1,0 +1,857 @@
+{
+  "id": "muddy_feet",
+  "title": "Pies Embarrados",
+  "level": "B1",
+  "sentences": [
+    "Cuando empieza a llover, no hay nada más dulce,",
+    "Que un día chapoteando con los pies mojados y llenos de barro.",
+    "",
+    "Cuando desperté, tenía los pies limpios,",
+    "Impecables, con un brillo reluciente.",
+    "",
+    "Lo primero es lo primero: me puse los calcetines.",
+    "Luego los zapatos, para caminar sobre piedras.",
+    "",
+    "Los zapatos son geniales para saltos difíciles,",
+    "Sobre charcos, troncos o tocones.",
+    "",
+    "En cuanto los dejé en el suelo,",
+    "Salí corriendo por la puerta.",
+    "",
+    "Justo antes de llegar al césped,",
+    "Cayeron gotas de lluvia, rápido y fuerte.",
+    "",
+    "No estaban frías, no me importó.",
+    "La lluvia tibia es mi tipo favorito.",
+    "",
+    "Al caer en la tierra, chofó y mofó.",
+    "Muy pronto, chapió y chopió.",
+    "",
+    "El suelo estaba mojado y cada vez más mojado.",
+    "La tierra es agradable, pero el barro es mejor.",
+    "",
+    "Porque nada podrá competir jamás,",
+    "Con saltar por ahí con los pies llenos de barro.",
+    "",
+    "Me gusta el césped entre los dedos de los pies,",
+    "Aunque me manche la ropa.",
+    "",
+    "Me gusta la arena de la playa.",
+    "Se mete en lugares difíciles de alcanzar.",
+    "",
+    "Con las hojas, me gustan en montones.",
+    "Nunca deja de hacerme sonreír.",
+    "",
+    "Pero nada es ni la mitad de dulce,",
+    "Que saltar por ahí con los pies llenos de barro.",
+    "",
+    "Por eso me quité los zapatos.",
+    "Y por eso me dio tos.",
+    "",
+    "Todo congestionado y sintiéndome mal,",
+    "Me pregunto si mi madre,",
+    "",
+    "Limpiará la tierra de mi sábana,",
+    "De estar aquí acostado con los pies llenos de barro."
+  ],
+  "glossary": {
+    "cuando": {
+      "meaning": "Palavra usada para indicar o momento em que algo acontece ('quando').",
+      "examples": ["Cuando llueve, me quedo en casa.", "Llámame cuando llegues."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "empieza": {
+      "meaning": "Começa; forma do verbo 'empezar' na terceira pessoa do singular.",
+      "examples": ["La película empieza a las ocho.", "Ella empieza a trabajar temprano."],
+      "synonyms": ["comienza", "inicia"],
+      "antonyms": ["termina", "acaba"]
+    },
+    "a": {
+      "meaning": "Preposição que indica direção, destino ou complemento ('a').",
+      "examples": ["Voy a la escuela.", "Empieza a llover."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "llover": {
+      "meaning": "Cair chuva; chover.",
+      "examples": ["Va a llover esta tarde.", "Aquí llueve mucho en invierno."],
+      "synonyms": ["lloviznar", "diluviar"],
+      "antonyms": []
+    },
+    "no": {
+      "meaning": "Advérbio de negação ('não').",
+      "examples": ["No me gusta el frío.", "No es verdad."],
+      "synonyms": [],
+      "antonyms": ["sí"]
+    },
+    "hay": {
+      "meaning": "Forma impessoal do verbo 'haber', equivalente a 'há/existe'.",
+      "examples": ["Hay mucha gente aquí.", "No hay nada mejor que esto."],
+      "synonyms": ["existe"],
+      "antonyms": []
+    },
+    "nada": {
+      "meaning": "Nenhuma coisa; ausência total de algo.",
+      "examples": ["No hay nada en la caja.", "Nada es mejor que esto."],
+      "synonyms": ["ninguna cosa"],
+      "antonyms": ["todo", "algo"]
+    },
+    "dulce": {
+      "meaning": "Doce; agradável ao paladar, ou algo muito bom.",
+      "examples": ["El pastel es muy dulce.", "Fue un gesto muy dulce."],
+      "synonyms": ["azucarado", "agradable"],
+      "antonyms": ["amargo", "salado"]
+    },
+    "que": {
+      "meaning": "Que; usado para introduzir uma comparação ou oração.",
+      "examples": ["Es mejor que esto.", "Sé que vendrás."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "un": {
+      "meaning": "Artigo indefinido masculino, equivalente a 'um'.",
+      "examples": ["Vi un pájaro.", "Tengo un plan."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "día": {
+      "meaning": "Período de 24 horas; dia.",
+      "examples": ["Fue un día soleado.", "Te veo en dos días."],
+      "synonyms": ["jornada"],
+      "antonyms": ["noche"]
+    },
+    "chapoteando": {
+      "meaning": "Chapinhando; particípio presente do verbo 'chapotear' (brincar na água/lama fazendo barulho).",
+      "examples": ["Los niños estaban chapoteando en los charcos.", "Pasamos la tarde chapoteando en la lluvia."],
+      "synonyms": ["salpicando"],
+      "antonyms": []
+    },
+    "con": {
+      "meaning": "Preposição que indica companhia ou instrumento ('com').",
+      "examples": ["Fui con mi amigo.", "Lo corté con unas tijeras."],
+      "synonyms": [],
+      "antonyms": ["sin"]
+    },
+    "los": {
+      "meaning": "Artigo definido masculino plural, equivalente a 'os'.",
+      "examples": ["Los zapatos son nuevos.", "Me gustan los perros."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "pies": {
+      "meaning": "Plural de 'pie' (pé); parte do corpo usada para caminhar.",
+      "examples": ["Mis pies están fríos.", "Tiene los pies pequeños."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "mojados": {
+      "meaning": "Molhados; plural de 'mojado'.",
+      "examples": ["Mis zapatos están mojados.", "El suelo está mojado."],
+      "synonyms": ["húmedos", "empapados"],
+      "antonyms": ["secos"]
+    },
+    "y": {
+      "meaning": "Conjunção que une ideias ou elementos ('e').",
+      "examples": ["Sal y pimienta.", "Chofó y mofó."],
+      "synonyms": [],
+      "antonyms": ["o"]
+    },
+    "llenos": {
+      "meaning": "Cheios; plural de 'lleno'.",
+      "examples": ["Los pies llenos de barro.", "Los vasos están llenos."],
+      "synonyms": ["repletos"],
+      "antonyms": ["vacíos"]
+    },
+    "de": {
+      "meaning": "Preposição que indica posse, origem ou parte de algo ('de').",
+      "examples": ["Una taza de té.", "El color del cielo."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "barro": {
+      "meaning": "Lama; mistura de terra e água.",
+      "examples": ["El cerdo se revolcó en el barro.", "Mis botas están cubiertas de barro."],
+      "synonyms": ["lodo", "fango"],
+      "antonyms": []
+    },
+    "desperté": {
+      "meaning": "Despertei; passado do verbo 'despertar' na primeira pessoa.",
+      "examples": ["Desperté muy temprano.", "Desperté con el ruido de la lluvia."],
+      "synonyms": ["me levanté"],
+      "antonyms": ["dormí"]
+    },
+    "tenía": {
+      "meaning": "Tinha; passado (imperfeito) do verbo 'tener'.",
+      "examples": ["Tenía los pies limpios.", "Tenía mucho sueño."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "limpios": {
+      "meaning": "Limpos; plural de 'limpio'.",
+      "examples": ["Mis pies estaban limpios.", "Los platos ya están limpios."],
+      "synonyms": ["aseados"],
+      "antonyms": ["sucios"]
+    },
+    "impecables": {
+      "meaning": "Impecáveis; sem nenhuma mancha ou defeito.",
+      "examples": ["Sus zapatos estaban impecables.", "La casa quedó impecable."],
+      "synonyms": ["intachables", "perfectos"],
+      "antonyms": ["sucios", "defectuosos"]
+    },
+    "brillo": {
+      "meaning": "Brilho; luz refletida por uma superfície.",
+      "examples": ["El brillo del sol me molestaba.", "Esta tela tiene mucho brillo."],
+      "synonyms": ["resplandor", "lustre"],
+      "antonyms": ["opacidad"]
+    },
+    "reluciente": {
+      "meaning": "Reluzente; que brilha intensamente.",
+      "examples": ["El suelo quedó reluciente.", "Tiene el pelo reluciente."],
+      "synonyms": ["brillante", "radiante"],
+      "antonyms": ["opaco"]
+    },
+    "lo": {
+      "meaning": "Pronome/artigo neutro, usado antes de adjetivos ou como objeto direto masculino ('o').",
+      "examples": ["Lo primero es lo primero.", "No lo entiendo."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "primero": {
+      "meaning": "Primeiro; que vem antes dos demais.",
+      "examples": ["Llegó primero a la meta.", "Primero, lávate las manos."],
+      "synonyms": ["inicial"],
+      "antonyms": ["último"]
+    },
+    "es": {
+      "meaning": "Forma do verbo 'ser' na terceira pessoa do singular.",
+      "examples": ["Ella es feliz.", "Esto es mejor."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "me": {
+      "meaning": "Pronome pessoal de primeira pessoa, usado como objeto ('me').",
+      "examples": ["Me gusta la lluvia.", "Me puse los zapatos."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "puse": {
+      "meaning": "Pus/coloquei; passado do verbo 'poner'.",
+      "examples": ["Me puse los calcetines.", "Puse el libro en la mesa."],
+      "synonyms": ["coloqué"],
+      "antonyms": ["quité"]
+    },
+    "calcetines": {
+      "meaning": "Meias; peça de roupa usada nos pés, dentro do sapato.",
+      "examples": ["Llevo calcetines de lana en invierno.", "Mis calcetines están mojados."],
+      "synonyms": ["medias"],
+      "antonyms": []
+    },
+    "luego": {
+      "meaning": "Depois, em seguida.",
+      "examples": ["Primero como, luego duermo.", "Nos vemos luego."],
+      "synonyms": ["después", "más tarde"],
+      "antonyms": ["antes"]
+    },
+    "zapatos": {
+      "meaning": "Sapatos; calçado usado nos pés.",
+      "examples": ["Necesito zapatos nuevos.", "Se quitó los zapatos."],
+      "synonyms": ["calzado"],
+      "antonyms": []
+    },
+    "para": {
+      "meaning": "Preposição que indica finalidade ou destinatário ('para').",
+      "examples": ["Este regalo es para ti.", "Bueno para caminar."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "caminar": {
+      "meaning": "Andar a pé.",
+      "examples": ["Me gusta caminar por el parque.", "Caminamos hasta la playa."],
+      "synonyms": ["andar", "pasear"],
+      "antonyms": ["correr"]
+    },
+    "sobre": {
+      "meaning": "Sobre, em cima de, ou acerca de.",
+      "examples": ["El libro está sobre la mesa.", "Saltar sobre los charcos."],
+      "synonyms": ["encima de"],
+      "antonyms": ["bajo"]
+    },
+    "piedras": {
+      "meaning": "Pedras; plural de 'piedra'.",
+      "examples": ["El camino estaba lleno de piedras.", "Se sentó sobre las piedras."],
+      "synonyms": ["rocas"],
+      "antonyms": []
+    },
+    "son": {
+      "meaning": "Forma do verbo 'ser' para a terceira pessoa do plural.",
+      "examples": ["Los zapatos son geniales.", "Ellos son mis amigos."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "geniales": {
+      "meaning": "Ótimos, excelentes; plural de 'genial'.",
+      "examples": ["Estos zapatos son geniales.", "Tuvimos una idea genial."],
+      "synonyms": ["excelentes", "estupendos"],
+      "antonyms": ["pésimos", "terribles"]
+    },
+    "saltos": {
+      "meaning": "Pulos; plural de 'salto'.",
+      "examples": ["Hizo varios saltos seguidos.", "Los saltos del sapo eran impresionantes."],
+      "synonyms": ["brincos"],
+      "antonyms": []
+    },
+    "difíciles": {
+      "meaning": "Difíceis; plural de 'difícil'.",
+      "examples": ["Fueron saltos difíciles.", "El examen tenía preguntas difíciles."],
+      "synonyms": ["complicados"],
+      "antonyms": ["fáciles"]
+    },
+    "charcos": {
+      "meaning": "Poças de água, geralmente formadas pela chuva.",
+      "examples": ["Había charcos por toda la calle.", "Saltó en los charcos."],
+      "synonyms": ["lagunas pequeñas"],
+      "antonyms": []
+    },
+    "troncos": {
+      "meaning": "Troncos de árvore cortados; plural de 'tronco'.",
+      "examples": ["Nos sentamos sobre los troncos.", "Cortó los troncos para el fuego."],
+      "synonyms": ["leños"],
+      "antonyms": []
+    },
+    "o": {
+      "meaning": "Conjunção que indica alternativa ('ou').",
+      "examples": ["¿Té o café?", "Troncos o tocones."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "tocones": {
+      "meaning": "Tocos de árvore; o que resta de uma árvore cortada; plural de 'tocón'.",
+      "examples": ["Tropezó con un tocón.", "El campo estaba lleno de tocones."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "en": {
+      "meaning": "Preposição que indica localização ('em', 'dentro de').",
+      "examples": ["Está en la casa.", "Pienso en ti."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "cuanto": {
+      "meaning": "Usado em 'en cuanto', equivalente a 'assim que'.",
+      "examples": ["En cuanto llegue, te llamo.", "En cuanto los dejé, salí corriendo."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "dejé": {
+      "meaning": "Deixei; passado do verbo 'dejar'.",
+      "examples": ["Dejé los zapatos en el suelo.", "Dejé la puerta abierta."],
+      "synonyms": ["puse", "coloqué"],
+      "antonyms": ["tomé"]
+    },
+    "el": {
+      "meaning": "Artigo definido masculino singular, equivalente a 'o'.",
+      "examples": ["El suelo está mojado.", "El barro es mejor."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "suelo": {
+      "meaning": "Chão; solo.",
+      "examples": ["El juguete está en el suelo.", "El suelo estaba mojado."],
+      "synonyms": ["piso"],
+      "antonyms": ["techo"]
+    },
+    "salí": {
+      "meaning": "Saí; passado do verbo 'salir'.",
+      "examples": ["Salí corriendo por la puerta.", "Salí temprano de casa."],
+      "synonyms": ["me fui"],
+      "antonyms": ["entré"]
+    },
+    "corriendo": {
+      "meaning": "Correndo; particípio presente do verbo 'correr'.",
+      "examples": ["Salió corriendo a la calle.", "Vino corriendo hacia mí."],
+      "synonyms": ["a toda prisa"],
+      "antonyms": ["caminando"]
+    },
+    "por": {
+      "meaning": "Preposição que indica através de, por causa de, ou meio ('por').",
+      "examples": ["Salió por la puerta.", "Gracias por venir."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "la": {
+      "meaning": "Artigo definido feminino singular, equivalente a 'a'.",
+      "examples": ["La lluvia es cálida.", "La puerta está abierta."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "puerta": {
+      "meaning": "Porta; entrada de uma casa ou cômodo.",
+      "examples": ["Cierra la puerta, por favor.", "Tocó a la puerta."],
+      "synonyms": ["entrada"],
+      "antonyms": []
+    },
+    "justo": {
+      "meaning": "Exatamente, bem no momento certo.",
+      "examples": ["Llegó justo a tiempo.", "Justo antes de llegar al césped."],
+      "synonyms": ["exactamente", "precisamente"],
+      "antonyms": []
+    },
+    "antes": {
+      "meaning": "Antes de; anteriormente.",
+      "examples": ["Lávate las manos antes de comer.", "La vi antes de que empezara a llover."],
+      "synonyms": ["previamente"],
+      "antonyms": ["después"]
+    },
+    "llegar": {
+      "meaning": "Chegar a um lugar.",
+      "examples": ["Quiero llegar temprano.", "Antes de llegar al césped."],
+      "synonyms": ["arribar"],
+      "antonyms": ["salir", "partir"]
+    },
+    "al": {
+      "meaning": "Contração de 'a' + 'el' ('ao').",
+      "examples": ["Voy al parque.", "Llegamos al césped."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "césped": {
+      "meaning": "Grama; planta verde que cobre o chão.",
+      "examples": ["El césped está muy verde.", "Nos sentamos en el césped."],
+      "synonyms": ["pasto", "hierba"],
+      "antonyms": []
+    },
+    "cayeron": {
+      "meaning": "Caíram; passado do verbo 'caer' na terceira pessoa do plural.",
+      "examples": ["Cayeron las primeras gotas de lluvia.", "Las hojas cayeron del árbol."],
+      "synonyms": ["bajaron"],
+      "antonyms": ["subieron"]
+    },
+    "gotas": {
+      "meaning": "Gotas; plural de 'gota'.",
+      "examples": ["Cayeron gotas de lluvia.", "Una gota de agua."],
+      "synonyms": ["gotitas"],
+      "antonyms": []
+    },
+    "lluvia": {
+      "meaning": "Chuva; água que cai das nuvens.",
+      "examples": ["Me encanta la lluvia.", "La lluvia empezó de repente."],
+      "synonyms": ["precipitación"],
+      "antonyms": ["sequía"]
+    },
+    "rápido": {
+      "meaning": "Rápido; com velocidade.",
+      "examples": ["Corre muy rápido.", "Cayó rápido y fuerte."],
+      "synonyms": ["veloz", "ligero"],
+      "antonyms": ["lento"]
+    },
+    "fuerte": {
+      "meaning": "Forte; com intensidade.",
+      "examples": ["El viento soplaba fuerte.", "Un golpe fuerte."],
+      "synonyms": ["intenso", "potente"],
+      "antonyms": ["débil", "suave"]
+    },
+    "estaban": {
+      "meaning": "Estavam; passado (imperfeito) do verbo 'estar' para a terceira pessoa do plural.",
+      "examples": ["Las gotas no estaban frías.", "Ellos estaban felices."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "frías": {
+      "meaning": "Frias; plural feminino de 'frío'.",
+      "examples": ["Las gotas no estaban frías.", "Mis manos están frías."],
+      "synonyms": ["heladas"],
+      "antonyms": ["cálidas", "calientes"]
+    },
+    "importó": {
+      "meaning": "Importou; passado do verbo 'importar' (importar-se).",
+      "examples": ["No me importó mojarme.", "Eso no le importó a nadie."],
+      "synonyms": ["interesó"],
+      "antonyms": []
+    },
+    "tibia": {
+      "meaning": "Morna; levemente quente, de forma agradável.",
+      "examples": ["El agua estaba tibia.", "Me gusta la lluvia tibia."],
+      "synonyms": ["templada"],
+      "antonyms": ["fría", "helada"]
+    },
+    "mi": {
+      "meaning": "Pronome possessivo de primeira pessoa ('meu/minha').",
+      "examples": ["Este es mi libro.", "Mi tipo favorito."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "tipo": {
+      "meaning": "Tipo, espécie.",
+      "examples": ["¿Qué tipo de música te gusta?", "Es mi tipo favorito de lluvia."],
+      "synonyms": ["clase", "especie"],
+      "antonyms": []
+    },
+    "favorito": {
+      "meaning": "Preferido; o que se gosta mais.",
+      "examples": ["La pizza es mi comida favorita.", "Esta es su canción favorita."],
+      "synonyms": ["preferido"],
+      "antonyms": []
+    },
+    "caer": {
+      "meaning": "Cair.",
+      "examples": ["La lluvia empezó a caer.", "Tuvo miedo de caer."],
+      "synonyms": ["precipitarse"],
+      "antonyms": ["subir", "levantarse"]
+    },
+    "tierra": {
+      "meaning": "Terra; solo, ou sujeira de terra.",
+      "examples": ["Sus manos estaban llenas de tierra.", "La tierra es agradable, pero el barro es mejor."],
+      "synonyms": ["suelo", "barro"],
+      "antonyms": []
+    },
+    "chofó": {
+      "meaning": "Palavra inventada que imita o som da lama sendo pisada; onomatopeia informal.",
+      "examples": ["El barro chofó bajo sus botas.", "Chofó con cada paso."],
+      "synonyms": ["chapoteó"],
+      "antonyms": []
+    },
+    "mofó": {
+      "meaning": "Palavra inventada que imita o som da lama sendo pisada com força; onomatopeia informal.",
+      "examples": ["El barro espeso mofó bajo sus pies.", "Mofó al saltar en el charco."],
+      "synonyms": ["chapoteó"],
+      "antonyms": []
+    },
+    "muy": {
+      "meaning": "Muito; usado para intensificar um adjetivo ou advérbio.",
+      "examples": ["Está muy mojado.", "Muy pronto empezó a llover."],
+      "synonyms": ["bastante"],
+      "antonyms": []
+    },
+    "pronto": {
+      "meaning": "Logo, em breve.",
+      "examples": ["Llegará pronto.", "Muy pronto, chapió y chopió."],
+      "synonyms": ["enseguida"],
+      "antonyms": ["tarde"]
+    },
+    "chapió": {
+      "meaning": "Palavra inventada que imita o som de respingar na lama ou água; variação de 'chapoteó'.",
+      "examples": ["El agua chapió alrededor de sus botas.", "Chapió y chopió en el barro."],
+      "synonyms": ["chapoteó", "salpicó"],
+      "antonyms": []
+    },
+    "chopió": {
+      "meaning": "Palavra inventada que imita o som de algo se mexendo na lama/água.",
+      "examples": ["El barro chopió por todas partes.", "Chopió al cruzar el charco."],
+      "synonyms": ["salpicó", "chapoteó"],
+      "antonyms": []
+    },
+    "estaba": {
+      "meaning": "Estava; passado (imperfeito) do verbo 'estar'.",
+      "examples": ["El suelo estaba mojado.", "Ella estaba feliz."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "mojado": {
+      "meaning": "Molhado; coberto ou encharcado de água.",
+      "examples": ["El suelo estaba mojado.", "Mi pelo está mojado."],
+      "synonyms": ["húmedo", "empapado"],
+      "antonyms": ["seco"]
+    },
+    "cada": {
+      "meaning": "Cada; usado para se referir individualmente a elementos de um grupo.",
+      "examples": ["Cada vez más mojado.", "Cada niño tiene un juguete."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "vez": {
+      "meaning": "Vez; ocasião.",
+      "examples": ["Cada vez más mojado.", "Esta vez fue diferente."],
+      "synonyms": ["ocasión"],
+      "antonyms": []
+    },
+    "más": {
+      "meaning": "Mais; em maior quantidade ou grau.",
+      "examples": ["Quiero más jugo.", "Cada vez más mojado."],
+      "synonyms": ["adicional"],
+      "antonyms": ["menos"]
+    },
+    "agradable": {
+      "meaning": "Agradável, bom.",
+      "examples": ["La tierra es agradable, pero el barro es mejor.", "Fue un día agradable."],
+      "synonyms": ["placentero", "ameno"],
+      "antonyms": ["desagradable"]
+    },
+    "pero": {
+      "meaning": "Conjunção que indica contraste ('mas').",
+      "examples": ["Es pequeña pero fuerte.", "La tierra es agradable, pero el barro es mejor."],
+      "synonyms": ["sin embargo"],
+      "antonyms": []
+    },
+    "mejor": {
+      "meaning": "Comparativo de 'bueno' (melhor).",
+      "examples": ["Este libro es mejor que aquel.", "El barro es mejor que la tierra, dice él."],
+      "synonyms": ["superior"],
+      "antonyms": ["peor"]
+    },
+    "porque": {
+      "meaning": "Porque; usado para explicar uma razão.",
+      "examples": ["No salí porque llovía.", "Porque nada podrá competir jamás."],
+      "synonyms": ["ya que", "pues"],
+      "antonyms": []
+    },
+    "podrá": {
+      "meaning": "Poderá; futuro do verbo 'poder' na terceira pessoa.",
+      "examples": ["Nada podrá competir con esto.", "Ella podrá venir mañana."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "competir": {
+      "meaning": "Competir; disputar algo com outra pessoa ou coisa.",
+      "examples": ["Los dos equipos van a competir mañana.", "Nada puede competir con el barro."],
+      "synonyms": ["rivalizar", "contender"],
+      "antonyms": ["cooperar"]
+    },
+    "jamás": {
+      "meaning": "Nunca; em nenhum momento (ênfase forte).",
+      "examples": ["Nunca jamás había visto algo así.", "Nada podrá competir jamás."],
+      "synonyms": ["nunca"],
+      "antonyms": ["siempre"]
+    },
+    "saltar": {
+      "meaning": "Pular.",
+      "examples": ["Me gusta saltar en los charcos.", "Los niños saltaban de alegría."],
+      "synonyms": ["brincar"],
+      "antonyms": []
+    },
+    "ahí": {
+      "meaning": "Aí; nesse lugar.",
+      "examples": ["El libro está ahí.", "Saltando por ahí."],
+      "synonyms": ["allí"],
+      "antonyms": ["aquí"]
+    },
+    "gusta": {
+      "meaning": "Agrada; forma do verbo 'gustar' (gostar).",
+      "examples": ["Me gusta la lluvia.", "Le gusta el chocolate."],
+      "synonyms": ["agrada"],
+      "antonyms": ["disgusta"]
+    },
+    "entre": {
+      "meaning": "Entre; no meio de duas coisas.",
+      "examples": ["El césped entre mis dedos.", "Está entre las dos casas."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "dedos": {
+      "meaning": "Dedos; plural de 'dedo'.",
+      "examples": ["Los dedos de los pies.", "Tiene los dedos largos."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "aunque": {
+      "meaning": "Embora, apesar de.",
+      "examples": ["Aunque me manche la ropa, me gusta.", "Salió aunque llovía."],
+      "synonyms": ["a pesar de que"],
+      "antonyms": []
+    },
+    "manche": {
+      "meaning": "Manche; subjuntivo do verbo 'manchar' (sujar com mancha).",
+      "examples": ["No quiero que se manche la ropa.", "Aunque me manche la ropa, no me importa."],
+      "synonyms": ["ensucie"],
+      "antonyms": ["limpie"]
+    },
+    "ropa": {
+      "meaning": "Roupa.",
+      "examples": ["Mi ropa está sucia.", "Necesito comprar ropa nueva."],
+      "synonyms": ["vestimenta"],
+      "antonyms": []
+    },
+    "arena": {
+      "meaning": "Areia; encontrada em praias e desertos.",
+      "examples": ["La arena estaba caliente en la playa.", "A los niños les encanta jugar en la arena."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "playa": {
+      "meaning": "Praia; faixa de areia à beira-mar.",
+      "examples": ["Pasamos el día en la playa.", "La playa estaba llena en verano."],
+      "synonyms": ["costa", "orilla"],
+      "antonyms": []
+    },
+    "se": {
+      "meaning": "Pronome reflexivo/impessoal ('se').",
+      "examples": ["Se mete en lugares difíciles.", "Se fue temprano."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "mete": {
+      "meaning": "Mete; forma do verbo 'meter' (colocar, introduzir).",
+      "examples": ["La arena se mete en los zapatos.", "Mete la llave en la puerta."],
+      "synonyms": ["introduce", "entra"],
+      "antonyms": ["saca"]
+    },
+    "lugares": {
+      "meaning": "Lugares; plural de 'lugar'.",
+      "examples": ["Se mete en lugares difíciles de alcanzar.", "Visitamos muchos lugares."],
+      "synonyms": ["sitios"],
+      "antonyms": []
+    },
+    "alcanzar": {
+      "meaning": "Alcançar; chegar a um lugar ou objeto.",
+      "examples": ["No puedo alcanzar el estante.", "Lugares difíciles de alcanzar."],
+      "synonyms": ["llegar a"],
+      "antonyms": []
+    },
+    "las": {
+      "meaning": "Artigo definido feminino plural, equivalente a 'as'.",
+      "examples": ["Las hojas cayeron.", "Me gustan las flores."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "hojas": {
+      "meaning": "Folhas; plural de 'hoja'.",
+      "examples": ["Las hojas cayeron del árbol.", "Me gusta saltar en las hojas."],
+      "synonyms": ["follaje"],
+      "antonyms": []
+    },
+    "gustan": {
+      "meaning": "Agradam; forma do verbo 'gustar' na terceira pessoa do plural.",
+      "examples": ["Me gustan las hojas en montones.", "Le gustan los perros."],
+      "synonyms": ["agradan"],
+      "antonyms": ["disgustan"]
+    },
+    "montones": {
+      "meaning": "Montes; pilhas de coisas empilhadas; plural de 'montón'.",
+      "examples": ["Las hojas en montones.", "Hay montones de libros aquí."],
+      "synonyms": ["pilas"],
+      "antonyms": []
+    },
+    "nunca": {
+      "meaning": "Nunca; em nenhum momento.",
+      "examples": ["Nunca deja de hacerme sonreír.", "Nunca había visto algo así."],
+      "synonyms": ["jamás"],
+      "antonyms": ["siempre"]
+    },
+    "deja": {
+      "meaning": "Deixa; forma do verbo 'dejar'.",
+      "examples": ["Nunca deja de hacerme sonreír.", "Deja la puerta abierta."],
+      "synonyms": ["permite"],
+      "antonyms": []
+    },
+    "hacerme": {
+      "meaning": "Fazer-me; infinitivo 'hacer' + pronome 'me'.",
+      "examples": ["Nunca deja de hacerme sonreír.", "Quiere hacerme un regalo."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "sonreír": {
+      "meaning": "Sorrir.",
+      "examples": ["Nunca deja de hacerme sonreír.", "Me gusta sonreír."],
+      "synonyms": ["reír"],
+      "antonyms": ["llorar"]
+    },
+    "ni": {
+      "meaning": "Nem; usado para negar duas ou mais coisas.",
+      "examples": ["Ni la mitad de dulce.", "No quiero ni café ni té."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "mitad": {
+      "meaning": "Metade; uma das duas partes iguais de algo.",
+      "examples": ["Ni la mitad de dulce.", "Comió la mitad del pastel."],
+      "synonyms": [],
+      "antonyms": ["todo"]
+    },
+    "eso": {
+      "meaning": "Isso; pronome demonstrativo neutro.",
+      "examples": ["Por eso me quité los zapatos.", "Eso no es verdad."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "quité": {
+      "meaning": "Tirei; passado do verbo 'quitar'.",
+      "examples": ["Me quité los zapatos.", "Quité el polvo de la mesa."],
+      "synonyms": ["retiré"],
+      "antonyms": ["puse"]
+    },
+    "dio": {
+      "meaning": "Deu; passado do verbo 'dar'.",
+      "examples": ["Me dio tos.", "Me dio un regalo."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "tos": {
+      "meaning": "Tosse.",
+      "examples": ["Tengo mucha tos.", "Me dio tos por jugar bajo la lluvia."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "todo": {
+      "meaning": "Tudo; a totalidade de algo.",
+      "examples": ["Todo congestionado y sintiéndome mal.", "Comí todo el pastel."],
+      "synonyms": ["entero"],
+      "antonyms": ["nada"]
+    },
+    "congestionado": {
+      "meaning": "Entupido, congestionado (geralmente referindo-se ao nariz quando resfriado).",
+      "examples": ["Estoy todo congestionado.", "Tiene la nariz congestionada."],
+      "synonyms": ["tapado"],
+      "antonyms": ["despejado"]
+    },
+    "sintiéndome": {
+      "meaning": "Sentindo-me; particípio presente de 'sentirse' + pronome 'me'.",
+      "examples": ["Sintiéndome mal, me quedé en cama.", "Sintiéndome feliz, salí a caminar."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "mal": {
+      "meaning": "Mal; de forma ruim, ou doente.",
+      "examples": ["Me siento mal.", "Lo hizo mal."],
+      "synonyms": ["enfermo"],
+      "antonyms": ["bien"]
+    },
+    "pregunto": {
+      "meaning": "Pergunto; forma do verbo 'preguntar(se)' (perguntar-se, imaginar).",
+      "examples": ["Me pregunto si mi madre limpiará todo.", "Me pregunto qué pasará."],
+      "synonyms": ["me cuestiono"],
+      "antonyms": []
+    },
+    "si": {
+      "meaning": "Se; usado para introduzir uma condição.",
+      "examples": ["Me pregunto si mi madre limpiará.", "Si llueve, no salgo."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "madre": {
+      "meaning": "Mãe.",
+      "examples": ["Mi madre es muy amable.", "Me pregunto si mi madre entenderá."],
+      "synonyms": ["mamá"],
+      "antonyms": ["padre"]
+    },
+    "limpiará": {
+      "meaning": "Limpará; futuro do verbo 'limpiar'.",
+      "examples": ["Mi madre limpiará la tierra de la sábana.", "Ella limpiará la casa mañana."],
+      "synonyms": [],
+      "antonyms": ["ensuciará"]
+    },
+    "sábana": {
+      "meaning": "Lençol; peça de tecido usada na cama.",
+      "examples": ["Había barro en mi sábana.", "Cambió las sábanas de la cama."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "estar": {
+      "meaning": "Estar; encontrar-se em um lugar ou estado.",
+      "examples": ["Me gusta estar aquí.", "Quiero estar contigo."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "aquí": {
+      "meaning": "Aqui; neste lugar.",
+      "examples": ["Estoy aquí con los pies llenos de barro.", "Ven aquí, por favor."],
+      "synonyms": [],
+      "antonyms": ["allí", "ahí"]
+    },
+    "acostado": {
+      "meaning": "Deitado.",
+      "examples": ["Estoy acostado en la cama.", "Pasó el día acostado en el sofá."],
+      "synonyms": ["tumbado", "recostado"],
+      "antonyms": ["de pie", "parado"]
+    }
+  }
+}

@@ -22,6 +22,8 @@ export default defineConfig({
       '/data': BACKEND,
       '/chapters': BACKEND,
       '/reinforcement-words': BACKEND,
+      '/api/stories': BACKEND,
+      '/api/learning-topics': BACKEND,
       '/user': BACKEND,
       '/tts': BACKEND,
       '/increment': BACKEND,

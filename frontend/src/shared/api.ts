@@ -2,8 +2,12 @@ import type {
   ChaptersResponse,
   CorrectionRequest,
   LanguagesResponse,
+  LearningTopicResponse,
+  LearningTopicsResponse,
   ProgressActionRequest,
   ReinforcementWords,
+  StoriesResponse,
+  StoryResponse,
   UserResponse,
   UserWordsResponse,
   WordsResponse,
@@ -71,6 +75,40 @@ export function getUser(email: string): Promise<UserResponse> {
 export function getWords(lang: string, sentenceLang?: string, cueLang?: string): Promise<WordsResponse> {
   const url = `/words?lang=${encodeURIComponent(lang)}` + langChoiceParams(sentenceLang, cueLang)
   return fetchJsonWithRetry<WordsResponse>(url)
+}
+
+// Namespaced under /api/ on the backend specifically because the frontend's
+// own page for this feature lives at the bare /stories path — see
+// backend/app/main.py's get_stories_route comment for why that collision
+// has to be avoided.
+export function getStories(lang: string): Promise<StoriesResponse> {
+  const url = `/api/stories?lang=${encodeURIComponent(lang)}`
+  return fetchJsonWithRetry<StoriesResponse>(url)
+}
+
+export function getStory(lang: string, level: string, storyId: string): Promise<StoryResponse> {
+  const url =
+    `/api/stories/${encodeURIComponent(level)}/${encodeURIComponent(storyId)}` +
+    `?lang=${encodeURIComponent(lang)}`
+  return fetchJsonWithRetry<StoryResponse>(url)
+}
+
+// Namespaced under /api/, same reasoning as getStories above — the
+// frontend's own page for this feature lives at the bare /learning path.
+export function getLearningTopics(lang: string): Promise<LearningTopicsResponse> {
+  const url = `/api/learning-topics?lang=${encodeURIComponent(lang)}`
+  return fetchJsonWithRetry<LearningTopicsResponse>(url)
+}
+
+export function getLearningTopic(
+  lang: string,
+  theme: string,
+  topicId: string,
+): Promise<LearningTopicResponse> {
+  const url =
+    `/api/learning-topics/${encodeURIComponent(theme)}/${encodeURIComponent(topicId)}` +
+    `?lang=${encodeURIComponent(lang)}`
+  return fetchJsonWithRetry<LearningTopicResponse>(url)
 }
 
 export function getReinforcementWords(

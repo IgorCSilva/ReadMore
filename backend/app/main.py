@@ -21,22 +21,35 @@ from backend.app.application.use_cases.get_chapters import GetChapters
 from backend.app.application.use_cases.get_user import GetUser
 from backend.app.application.use_cases.get_user_words import GetUserWords
 from backend.app.application.use_cases.get_words import GetWords
+from backend.app.application.use_cases.get_learning_topic import GetLearningTopic
 from backend.app.application.use_cases.get_reinforcement_words import GetReinforcementWords
+from backend.app.application.use_cases.get_story import GetStory
 from backend.app.application.use_cases.increment_shown_count import IncrementShownCount
 from backend.app.application.use_cases.list_languages import ListLanguages
+from backend.app.application.use_cases.list_learning_topics import ListLearningTopics
+from backend.app.application.use_cases.list_stories import ListStories
 from backend.app.application.use_cases.mark_word_known import MarkWordKnown
 from backend.app.application.use_cases.show_word_again import ShowWordAgain
 from backend.app.application.use_cases.synthesize_speech import SynthesizeSpeech
 from backend.app.domain.exceptions import (
     InvalidCorrectionError,
     LanguageNotFoundError,
+    LearningTopicNotFoundError,
+    StoryNotFoundError,
     TtsUpstreamError,
     WordNotAssignedError,
 )
 from backend.app.domain.value_objects import Email, LanguagePair
 from backend.app.infrastructure.dtos.chapters import ChapterDTO, ChaptersResponse
 from backend.app.infrastructure.dtos.corrections import CorrectionCreateRequest
+from backend.app.infrastructure.dtos.learning_topics import (
+    LearningTopicDTO,
+    LearningTopicResponse,
+    LearningTopicsResponse,
+    LearningTopicSummaryDTO,
+)
 from backend.app.infrastructure.dtos.progress_actions import ProgressActionRequest
+from backend.app.infrastructure.dtos.stories import StoriesResponse, StoryDTO, StoryResponse, StorySummaryDTO
 from backend.app.infrastructure.dtos.user_words import UserWordDTO, UserWordsResponse
 from backend.app.infrastructure.dtos.words import WordDTO, WordsResponse
 from backend.app.infrastructure.repositories.google_sheets_client import SheetsError
@@ -54,6 +67,10 @@ from backend.app.infrastructure.repositories.google_sheets_users_repository impo
 )
 from backend.app.infrastructure.repositories.edge_tts_client import EdgeTtsClient
 from backend.app.infrastructure.repositories.json_catalog_repository import JsonCatalogRepository
+from backend.app.infrastructure.repositories.json_learning_content_repository import (
+    JsonLearningContentRepository,
+)
+from backend.app.infrastructure.repositories.json_stories_repository import JsonStoriesRepository
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
 ROOT_DIR = BACKEND_DIR.parent
@@ -107,6 +124,16 @@ async def tts_upstream_error_handler(request: Request, exc: TtsUpstreamError):
     return JSONResponse(status_code=502, content={"error": str(exc)})
 
 
+@app.exception_handler(StoryNotFoundError)
+async def story_not_found_handler(request: Request, exc: StoryNotFoundError):
+    return JSONResponse(status_code=404, content={"error": str(exc)})
+
+
+@app.exception_handler(LearningTopicNotFoundError)
+async def learning_topic_not_found_handler(request: Request, exc: LearningTopicNotFoundError):
+    return JSONResponse(status_code=404, content={"error": str(exc)})
+
+
 @app.exception_handler(StarletteHTTPException)
 async def http_exception_handler(request: Request, exc: StarletteHTTPException):
     # Matches backend/server.py's _send_json(404, {"error": "not found"}) for
@@ -149,6 +176,14 @@ def get_corrections_repository() -> GoogleSheetsCorrectionsRepository:
 
 def get_tts_port() -> EdgeTtsClient:
     return EdgeTtsClient()
+
+
+def get_stories_repository() -> JsonStoriesRepository:
+    return JsonStoriesRepository(CONTENT_DIR)
+
+
+def get_learning_content_repository() -> JsonLearningContentRepository:
+    return JsonLearningContentRepository(CONTENT_DIR)
 
 
 def _parse_lang(raw: str) -> LanguagePair:
@@ -303,6 +338,70 @@ def get_reinforcement_words_route(
     language_pair = _parse_lang(lang.strip() or "pt-en")
     use_case = GetReinforcementWords(catalog_repository)
     return use_case.execute(language_pair, chapter, topic)
+
+
+@app.get("/api/stories", response_model=StoriesResponse)
+def get_stories_route(
+    lang: str = "pt-en",
+    stories_repository: JsonStoriesRepository = Depends(get_stories_repository),
+):
+    # Namespaced under /api/, unlike every other route in this file: the
+    # frontend's own page for this feature is at /stories (and /stories/
+    # <level>/<storyId> for the reader) — matching bare path would make the
+    # SPA fallback below unreachable for it, since this route (registered
+    # first) would always win the match, same problem the fallback's own
+    # comment exists to solve for every other client-side route.
+    language_pair = _parse_lang(lang.strip() or "pt-en")
+    use_case = ListStories(stories_repository)
+    stories = use_case.execute(language_pair)
+    return StoriesResponse(
+        lang=str(language_pair), stories=[StorySummaryDTO.from_entity(s) for s in stories]
+    )
+
+
+@app.get("/api/stories/{level}/{story_id}", response_model=StoryResponse)
+def get_story_route(
+    level: str,
+    story_id: str,
+    lang: str = "pt-en",
+    stories_repository: JsonStoriesRepository = Depends(get_stories_repository),
+):
+    language_pair = _parse_lang(lang.strip() or "pt-en")
+    use_case = GetStory(stories_repository)
+    story = use_case.execute(language_pair, level, story_id)
+    return StoryResponse(lang=str(language_pair), story=StoryDTO.from_entity(story))
+
+
+@app.get("/api/learning-topics", response_model=LearningTopicsResponse)
+def get_learning_topics_route(
+    lang: str = "en",
+    learning_content_repository: JsonLearningContentRepository = Depends(
+        get_learning_content_repository
+    ),
+):
+    # Namespaced under /api/, same reasoning as /api/stories above — the
+    # frontend's own page for this feature lives at the bare /learning path.
+    code = lang.strip() or "en"
+    use_case = ListLearningTopics(learning_content_repository)
+    topics = use_case.execute(code)
+    return LearningTopicsResponse(
+        lang=code, topics=[LearningTopicSummaryDTO.from_entity(t) for t in topics]
+    )
+
+
+@app.get("/api/learning-topics/{theme}/{topic_id}", response_model=LearningTopicResponse)
+def get_learning_topic_route(
+    theme: str,
+    topic_id: str,
+    lang: str = "en",
+    learning_content_repository: JsonLearningContentRepository = Depends(
+        get_learning_content_repository
+    ),
+):
+    code = lang.strip() or "en"
+    use_case = GetLearningTopic(learning_content_repository)
+    topic = use_case.execute(code, theme, topic_id)
+    return LearningTopicResponse(lang=code, topic=LearningTopicDTO.from_entity(topic))
 
 
 @app.post("/corrections")
