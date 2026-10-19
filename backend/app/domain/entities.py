@@ -143,6 +143,28 @@ class Story(StorySummary):
 
 
 @dataclass
+class LearningTopicSummary:
+    """Listing-weight info for one theme/learning content — just enough for
+    /api/learning-topics to group every topic by theme without shipping its
+    full sentences."""
+
+    topic_id: str
+    theme: str
+    title: str
+    level: str
+
+
+@dataclass
+class LearningTopic(LearningTopicSummary):
+    """A full learning-theme topic: plain-language content (e.g. Nutrition's
+    "Macronutrients Basics") written directly in the target language, no
+    origin-language mixing — unlike Story, this has no glossary, since it's
+    informational reading rather than a vocabulary-study text."""
+
+    sentences: list[str] = field(default_factory=list)
+
+
+@dataclass
 class Correction:
     """A user-submitted current->correction report, scoped to the chapter
     and topic it was made in. current/correction each hold one or more

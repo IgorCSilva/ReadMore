@@ -2,6 +2,8 @@ import type {
   ChaptersResponse,
   CorrectionRequest,
   LanguagesResponse,
+  LearningTopicResponse,
+  LearningTopicsResponse,
   ProgressActionRequest,
   ReinforcementWords,
   StoriesResponse,
@@ -89,6 +91,24 @@ export function getStory(lang: string, level: string, storyId: string): Promise<
     `/api/stories/${encodeURIComponent(level)}/${encodeURIComponent(storyId)}` +
     `?lang=${encodeURIComponent(lang)}`
   return fetchJsonWithRetry<StoryResponse>(url)
+}
+
+// Namespaced under /api/, same reasoning as getStories above — the
+// frontend's own page for this feature lives at the bare /learning path.
+export function getLearningTopics(lang: string): Promise<LearningTopicsResponse> {
+  const url = `/api/learning-topics?lang=${encodeURIComponent(lang)}`
+  return fetchJsonWithRetry<LearningTopicsResponse>(url)
+}
+
+export function getLearningTopic(
+  lang: string,
+  theme: string,
+  topicId: string,
+): Promise<LearningTopicResponse> {
+  const url =
+    `/api/learning-topics/${encodeURIComponent(theme)}/${encodeURIComponent(topicId)}` +
+    `?lang=${encodeURIComponent(lang)}`
+  return fetchJsonWithRetry<LearningTopicResponse>(url)
 }
 
 export function getReinforcementWords(

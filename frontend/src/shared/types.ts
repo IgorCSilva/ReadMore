@@ -183,3 +183,34 @@ export interface StoryResponse {
   lang: string
   story: Story
 }
+
+// Listing weight only (no sentences) — what /api/learning-topics returns
+// for every topic across every theme, grouped client-side by `theme`.
+export interface LearningTopicSummary {
+  topic_id: string
+  theme: string
+  title: string
+  level: string
+}
+
+export interface LearningTopicsResponse {
+  lang: string
+  topics: LearningTopicSummary[]
+}
+
+// sentences is one array entry per original line of the source Markdown
+// file, same "" blank-line convention as Story.sentences above — no
+// glossary, since this is plain informational reading, not a
+// vocabulary-study text.
+export interface LearningTopic {
+  topic_id: string
+  theme: string
+  title: string
+  level: string
+  sentences: string[]
+}
+
+export interface LearningTopicResponse {
+  lang: string
+  topic: LearningTopic
+}
