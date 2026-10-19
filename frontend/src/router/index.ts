@@ -7,6 +7,7 @@ import PartFlowPage from '../pages/PartFlowPage.vue'
 import PresentationPage from '../pages/PresentationPage.vue'
 import ReadUnderstandPage from '../pages/ReadUnderstandPage.vue'
 import SettingsPage from '../pages/SettingsPage.vue'
+import ShadowingPage from '../pages/ShadowingPage.vue'
 import SignInPage from '../pages/SignInPage.vue'
 import { getCurrentUser } from '../shared/currentUser'
 
@@ -23,6 +24,7 @@ const router = createRouter({
     { path: '/library', name: 'library', component: LibraryPage, meta: { requiresAuth: true } },
     { path: '/notifications', name: 'notifications', component: NotificationsPage, meta: { requiresAuth: true } },
     { path: '/settings', name: 'settings', component: SettingsPage, meta: { requiresAuth: true } },
+    { path: '/shadowing', name: 'shadowing', component: ShadowingPage, meta: { requiresAuth: true } },
     // A focused, full-screen lesson flow — App.vue reads hideGlobalBottomBar
     // to swap the global nav bar out for this page's own Next-button bar.
     { path: '/part/:topicId/:partNumber', name: 'part-flow', component: PartFlowPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },
