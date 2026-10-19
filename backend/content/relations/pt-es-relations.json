@@ -435,12 +435,48 @@
         "proibido": "prohibido"
       }
     },
-    "topic_5": {
+    "topic_3": {
       "pt": {
-        "brasileiro": "brasileño",
-        "brasileira": "brasileña",
-        "fala": "hablas",
-        "português": "portugués"
+        "camisa": "camisa",
+        "calça": "pantalón",
+        "vestido": "vestido",
+        "sapato": "zapato",
+        "jaqueta": "chaqueta",
+        "saia": "falda",
+        "chapéu": "sombrero",
+        "meia": "calcetín",
+        "vermelho": "rojo",
+        "vermelha": "roja",
+        "azul": "azul",
+        "verde": "verde",
+        "amarelo": "amarillo",
+        "amarela": "amarilla",
+        "preto": "negro",
+        "preta": "negra",
+        "bonito": "bonito",
+        "bonita": "bonita",
+        "velho": "viejo",
+        "velha": "vieja"
+      }
+    },
+    "topic_4": {
+      "pt": {
+        "música": "música",
+        "canção": "canción",
+        "instrumento": "instrumento",
+        "violão": "guitarra",
+        "piano": "piano",
+        "tocar": "tocar",
+        "escutar": "escuchar",
+        "pintar": "pintar",
+        "desenhar": "dibujar",
+        "nadar": "nadar",
+        "esporte": "deporte",
+        "futebol": "fútbol",
+        "passatempo": "pasatiempo",
+        "favorito": "favorito",
+        "favorita": "favorita",
+        "tempo livre": "tiempo libre"
       }
     }
   }

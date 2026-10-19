@@ -1,0 +1,302 @@
+[
+  {
+    "id": "es-sent-1065",
+    "sentence": "La camisa es roja.",
+    "word_ids": ["es-wd-0058", "es-wd-0361", "es-wd-0017", "es-wd-0370"]
+  },
+  {
+    "id": "es-sent-1066",
+    "sentence": "Mi camisa es nueva.",
+    "word_ids": ["es-wd-0016", "es-wd-0361", "es-wd-0017", "es-wd-0203"]
+  },
+  {
+    "id": "es-sent-1067",
+    "sentence": "La camisa de mi hermano es bonita.",
+    "word_ids": ["es-wd-0058", "es-wd-0361", "es-wd-0023", "es-wd-0016", "es-wd-0042", "es-wd-0017", "es-wd-0378"]
+  },
+  {
+    "id": "es-sent-1068",
+    "sentence": "El pantalón es negro.",
+    "word_ids": ["es-wd-0057", "es-wd-0362", "es-wd-0017", "es-wd-0375"]
+  },
+  {
+    "id": "es-sent-1069",
+    "sentence": "Mi pantalón es nuevo.",
+    "word_ids": ["es-wd-0016", "es-wd-0362", "es-wd-0017", "es-wd-0202"]
+  },
+  {
+    "id": "es-sent-1070",
+    "sentence": "El pantalón de mi padre es viejo.",
+    "word_ids": ["es-wd-0057", "es-wd-0362", "es-wd-0023", "es-wd-0016", "es-wd-0038", "es-wd-0017", "es-wd-0379"]
+  },
+  {
+    "id": "es-sent-1071",
+    "sentence": "El vestido es azul.",
+    "word_ids": ["es-wd-0057", "es-wd-0363", "es-wd-0017", "es-wd-0371"]
+  },
+  {
+    "id": "es-sent-1072",
+    "sentence": "Mi vestido es nuevo.",
+    "word_ids": ["es-wd-0016", "es-wd-0363", "es-wd-0017", "es-wd-0202"]
+  },
+  {
+    "id": "es-sent-1073",
+    "sentence": "El vestido de mi hermana es bonito.",
+    "word_ids": ["es-wd-0057", "es-wd-0363", "es-wd-0023", "es-wd-0016", "es-wd-0043", "es-wd-0017", "es-wd-0377"]
+  },
+  {
+    "id": "es-sent-1074",
+    "sentence": "El zapato es negro.",
+    "word_ids": ["es-wd-0057", "es-wd-0364", "es-wd-0017", "es-wd-0375"]
+  },
+  {
+    "id": "es-sent-1075",
+    "sentence": "Mi zapato es nuevo.",
+    "word_ids": ["es-wd-0016", "es-wd-0364", "es-wd-0017", "es-wd-0202"]
+  },
+  {
+    "id": "es-sent-1076",
+    "sentence": "El zapato de mi abuelo es viejo.",
+    "word_ids": ["es-wd-0057", "es-wd-0364", "es-wd-0023", "es-wd-0016", "es-wd-0044", "es-wd-0017", "es-wd-0379"]
+  },
+  {
+    "id": "es-sent-1077",
+    "sentence": "La chaqueta es azul.",
+    "word_ids": ["es-wd-0058", "es-wd-0365", "es-wd-0017", "es-wd-0371"]
+  },
+  {
+    "id": "es-sent-1078",
+    "sentence": "Mi chaqueta es nueva.",
+    "word_ids": ["es-wd-0016", "es-wd-0365", "es-wd-0017", "es-wd-0203"]
+  },
+  {
+    "id": "es-sent-1079",
+    "sentence": "La chaqueta de mi tío es vieja.",
+    "word_ids": ["es-wd-0058", "es-wd-0365", "es-wd-0023", "es-wd-0016", "es-wd-0046", "es-wd-0017", "es-wd-0380"]
+  },
+  {
+    "id": "es-sent-1080",
+    "sentence": "La falda es verde.",
+    "word_ids": ["es-wd-0058", "es-wd-0366", "es-wd-0017", "es-wd-0372"]
+  },
+  {
+    "id": "es-sent-1081",
+    "sentence": "Mi falda es nueva.",
+    "word_ids": ["es-wd-0016", "es-wd-0366", "es-wd-0017", "es-wd-0203"]
+  },
+  {
+    "id": "es-sent-1082",
+    "sentence": "La falda de mi prima es bonita.",
+    "word_ids": ["es-wd-0058", "es-wd-0366", "es-wd-0023", "es-wd-0016", "es-wd-0049", "es-wd-0017", "es-wd-0378"]
+  },
+  {
+    "id": "es-sent-1083",
+    "sentence": "El sombrero es amarillo.",
+    "word_ids": ["es-wd-0057", "es-wd-0367", "es-wd-0017", "es-wd-0373"]
+  },
+  {
+    "id": "es-sent-1084",
+    "sentence": "Mi sombrero es nuevo.",
+    "word_ids": ["es-wd-0016", "es-wd-0367", "es-wd-0017", "es-wd-0202"]
+  },
+  {
+    "id": "es-sent-1085",
+    "sentence": "El sombrero de mi abuela es viejo.",
+    "word_ids": ["es-wd-0057", "es-wd-0367", "es-wd-0023", "es-wd-0016", "es-wd-0045", "es-wd-0017", "es-wd-0379"]
+  },
+  {
+    "id": "es-sent-1086",
+    "sentence": "El calcetín es rojo.",
+    "word_ids": ["es-wd-0057", "es-wd-0368", "es-wd-0017", "es-wd-0369"]
+  },
+  {
+    "id": "es-sent-1087",
+    "sentence": "Mi calcetín es nuevo.",
+    "word_ids": ["es-wd-0016", "es-wd-0368", "es-wd-0017", "es-wd-0202"]
+  },
+  {
+    "id": "es-sent-1088",
+    "sentence": "El calcetín de mi hijo es viejo.",
+    "word_ids": ["es-wd-0057", "es-wd-0368", "es-wd-0023", "es-wd-0016", "es-wd-0040", "es-wd-0017", "es-wd-0379"]
+  },
+  {
+    "id": "es-sent-1089",
+    "sentence": "El carro es rojo.",
+    "word_ids": ["es-wd-0057", "es-wd-0261", "es-wd-0017", "es-wd-0369"]
+  },
+  {
+    "id": "es-sent-1090",
+    "sentence": "El sombrero de mi primo es rojo.",
+    "word_ids": ["es-wd-0057", "es-wd-0367", "es-wd-0023", "es-wd-0016", "es-wd-0048", "es-wd-0017", "es-wd-0369"]
+  },
+  {
+    "id": "es-sent-1091",
+    "sentence": "Mi calcetín es rojo.",
+    "word_ids": ["es-wd-0016", "es-wd-0368", "es-wd-0017", "es-wd-0369"]
+  },
+  {
+    "id": "es-sent-1092",
+    "sentence": "La bicicleta es roja.",
+    "word_ids": ["es-wd-0058", "es-wd-0266", "es-wd-0017", "es-wd-0370"]
+  },
+  {
+    "id": "es-sent-1093",
+    "sentence": "Mi camisa es roja.",
+    "word_ids": ["es-wd-0016", "es-wd-0361", "es-wd-0017", "es-wd-0370"]
+  },
+  {
+    "id": "es-sent-1094",
+    "sentence": "La falda de mi tía es roja.",
+    "word_ids": ["es-wd-0058", "es-wd-0366", "es-wd-0023", "es-wd-0016", "es-wd-0047", "es-wd-0017", "es-wd-0370"]
+  },
+  {
+    "id": "es-sent-1095",
+    "sentence": "El carro de mi tío es azul.",
+    "word_ids": ["es-wd-0057", "es-wd-0261", "es-wd-0023", "es-wd-0016", "es-wd-0046", "es-wd-0017", "es-wd-0371"]
+  },
+  {
+    "id": "es-sent-1096",
+    "sentence": "Mi camisa es azul.",
+    "word_ids": ["es-wd-0016", "es-wd-0361", "es-wd-0017", "es-wd-0371"]
+  },
+  {
+    "id": "es-sent-1097",
+    "sentence": "La chaqueta de mi abuelo es azul.",
+    "word_ids": ["es-wd-0058", "es-wd-0365", "es-wd-0023", "es-wd-0016", "es-wd-0044", "es-wd-0017", "es-wd-0371"]
+  },
+  {
+    "id": "es-sent-1098",
+    "sentence": "Mi sombrero es verde.",
+    "word_ids": ["es-wd-0016", "es-wd-0367", "es-wd-0017", "es-wd-0372"]
+  },
+  {
+    "id": "es-sent-1099",
+    "sentence": "La falda de mi abuela es verde.",
+    "word_ids": ["es-wd-0058", "es-wd-0366", "es-wd-0023", "es-wd-0016", "es-wd-0045", "es-wd-0017", "es-wd-0372"]
+  },
+  {
+    "id": "es-sent-1100",
+    "sentence": "El pantalón es verde.",
+    "word_ids": ["es-wd-0057", "es-wd-0362", "es-wd-0017", "es-wd-0372"]
+  },
+  {
+    "id": "es-sent-1101",
+    "sentence": "El zapato de mi hijo es amarillo.",
+    "word_ids": ["es-wd-0057", "es-wd-0364", "es-wd-0023", "es-wd-0016", "es-wd-0040", "es-wd-0017", "es-wd-0373"]
+  },
+  {
+    "id": "es-sent-1102",
+    "sentence": "Mi sombrero es amarillo.",
+    "word_ids": ["es-wd-0016", "es-wd-0367", "es-wd-0017", "es-wd-0373"]
+  },
+  {
+    "id": "es-sent-1103",
+    "sentence": "El pantalón es amarillo.",
+    "word_ids": ["es-wd-0057", "es-wd-0362", "es-wd-0017", "es-wd-0373"]
+  },
+  {
+    "id": "es-sent-1104",
+    "sentence": "La falda es amarilla.",
+    "word_ids": ["es-wd-0058", "es-wd-0366", "es-wd-0017", "es-wd-0374"]
+  },
+  {
+    "id": "es-sent-1105",
+    "sentence": "Mi camisa es amarilla.",
+    "word_ids": ["es-wd-0016", "es-wd-0361", "es-wd-0017", "es-wd-0374"]
+  },
+  {
+    "id": "es-sent-1106",
+    "sentence": "La chaqueta de mi tía es amarilla.",
+    "word_ids": ["es-wd-0058", "es-wd-0365", "es-wd-0023", "es-wd-0016", "es-wd-0047", "es-wd-0017", "es-wd-0374"]
+  },
+  {
+    "id": "es-sent-1107",
+    "sentence": "El sombrero es negro.",
+    "word_ids": ["es-wd-0057", "es-wd-0367", "es-wd-0017", "es-wd-0375"]
+  },
+  {
+    "id": "es-sent-1108",
+    "sentence": "Mi pantalón es negro.",
+    "word_ids": ["es-wd-0016", "es-wd-0362", "es-wd-0017", "es-wd-0375"]
+  },
+  {
+    "id": "es-sent-1109",
+    "sentence": "El zapato de mi abuelo es negro.",
+    "word_ids": ["es-wd-0057", "es-wd-0364", "es-wd-0023", "es-wd-0016", "es-wd-0044", "es-wd-0017", "es-wd-0375"]
+  },
+  {
+    "id": "es-sent-1110",
+    "sentence": "La camisa es negra.",
+    "word_ids": ["es-wd-0058", "es-wd-0361", "es-wd-0017", "es-wd-0376"]
+  },
+  {
+    "id": "es-sent-1111",
+    "sentence": "Mi falda es negra.",
+    "word_ids": ["es-wd-0016", "es-wd-0366", "es-wd-0017", "es-wd-0376"]
+  },
+  {
+    "id": "es-sent-1112",
+    "sentence": "La chaqueta de mi prima es negra.",
+    "word_ids": ["es-wd-0058", "es-wd-0365", "es-wd-0023", "es-wd-0016", "es-wd-0049", "es-wd-0017", "es-wd-0376"]
+  },
+  {
+    "id": "es-sent-1113",
+    "sentence": "El sombrero es bonito.",
+    "word_ids": ["es-wd-0057", "es-wd-0367", "es-wd-0017", "es-wd-0377"]
+  },
+  {
+    "id": "es-sent-1114",
+    "sentence": "Mi zapato es bonito.",
+    "word_ids": ["es-wd-0016", "es-wd-0364", "es-wd-0017", "es-wd-0377"]
+  },
+  {
+    "id": "es-sent-1115",
+    "sentence": "El pantalón de mi primo es bonito.",
+    "word_ids": ["es-wd-0057", "es-wd-0362", "es-wd-0023", "es-wd-0016", "es-wd-0048", "es-wd-0017", "es-wd-0377"]
+  },
+  {
+    "id": "es-sent-1116",
+    "sentence": "La falda es bonita.",
+    "word_ids": ["es-wd-0058", "es-wd-0366", "es-wd-0017", "es-wd-0378"]
+  },
+  {
+    "id": "es-sent-1117",
+    "sentence": "Mi camisa es bonita.",
+    "word_ids": ["es-wd-0016", "es-wd-0361", "es-wd-0017", "es-wd-0378"]
+  },
+  {
+    "id": "es-sent-1118",
+    "sentence": "La chaqueta de mi hija es bonita.",
+    "word_ids": ["es-wd-0058", "es-wd-0365", "es-wd-0023", "es-wd-0016", "es-wd-0041", "es-wd-0017", "es-wd-0378"]
+  },
+  {
+    "id": "es-sent-1119",
+    "sentence": "El sombrero es viejo.",
+    "word_ids": ["es-wd-0057", "es-wd-0367", "es-wd-0017", "es-wd-0379"]
+  },
+  {
+    "id": "es-sent-1120",
+    "sentence": "Mi zapato es viejo.",
+    "word_ids": ["es-wd-0016", "es-wd-0364", "es-wd-0017", "es-wd-0379"]
+  },
+  {
+    "id": "es-sent-1121",
+    "sentence": "El pantalón de mi tío es viejo.",
+    "word_ids": ["es-wd-0057", "es-wd-0362", "es-wd-0023", "es-wd-0016", "es-wd-0046", "es-wd-0017", "es-wd-0379"]
+  },
+  {
+    "id": "es-sent-1122",
+    "sentence": "La camisa es vieja.",
+    "word_ids": ["es-wd-0058", "es-wd-0361", "es-wd-0017", "es-wd-0380"]
+  },
+  {
+    "id": "es-sent-1123",
+    "sentence": "Mi falda es vieja.",
+    "word_ids": ["es-wd-0016", "es-wd-0366", "es-wd-0017", "es-wd-0380"]
+  },
+  {
+    "id": "es-sent-1124",
+    "sentence": "La chaqueta de mi abuela es vieja.",
+    "word_ids": ["es-wd-0058", "es-wd-0365", "es-wd-0023", "es-wd-0016", "es-wd-0045", "es-wd-0017", "es-wd-0380"]
+  }
+]

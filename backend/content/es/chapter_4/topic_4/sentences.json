@@ -1,0 +1,479 @@
+[
+  {
+    "id": "es-sent-1125",
+    "sentence": "La música es bonita.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0381",
+      "es-wd-0017",
+      "es-wd-0378"
+    ]
+  },
+  {
+    "id": "es-sent-1126",
+    "sentence": "Mi música es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0381",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1127",
+    "sentence": "Quiero escuchar música.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0387",
+      "es-wd-0381"
+    ]
+  },
+  {
+    "id": "es-sent-1128",
+    "sentence": "La canción es bonita.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0382",
+      "es-wd-0017",
+      "es-wd-0378"
+    ]
+  },
+  {
+    "id": "es-sent-1129",
+    "sentence": "Mi canción es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0382",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1130",
+    "sentence": "Puede cantar la canción.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0338",
+      "es-wd-0058",
+      "es-wd-0382"
+    ]
+  },
+  {
+    "id": "es-sent-1131",
+    "sentence": "El instrumento es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0383",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1132",
+    "sentence": "Mi instrumento es nuevo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0383",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1133",
+    "sentence": "Quiero tocar un instrumento.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0386",
+      "es-wd-0076",
+      "es-wd-0383"
+    ]
+  },
+  {
+    "id": "es-sent-1134",
+    "sentence": "La guitarra es bonita.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0384",
+      "es-wd-0017",
+      "es-wd-0378"
+    ]
+  },
+  {
+    "id": "es-sent-1135",
+    "sentence": "Mi guitarra es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0384",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1136",
+    "sentence": "Sé tocar la guitarra.",
+    "word_ids": [
+      "es-wd-0322",
+      "es-wd-0386",
+      "es-wd-0058",
+      "es-wd-0384"
+    ]
+  },
+  {
+    "id": "es-sent-1137",
+    "sentence": "El piano es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0385",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1138",
+    "sentence": "Mi piano es viejo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0385",
+      "es-wd-0017",
+      "es-wd-0379"
+    ]
+  },
+  {
+    "id": "es-sent-1139",
+    "sentence": "Puede tocar el piano.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0386",
+      "es-wd-0057",
+      "es-wd-0385"
+    ]
+  },
+  {
+    "id": "es-sent-1140",
+    "sentence": "Quiero tocar el piano.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0386",
+      "es-wd-0057",
+      "es-wd-0385"
+    ]
+  },
+  {
+    "id": "es-sent-1141",
+    "sentence": "Puede tocar bien.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0386",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-1142",
+    "sentence": "Quiero tocar también.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0386",
+      "es-wd-0210"
+    ]
+  },
+  {
+    "id": "es-sent-1143",
+    "sentence": "Quiero escuchar la canción.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0387",
+      "es-wd-0058",
+      "es-wd-0382"
+    ]
+  },
+  {
+    "id": "es-sent-1144",
+    "sentence": "Puede escuchar música.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0387",
+      "es-wd-0381"
+    ]
+  },
+  {
+    "id": "es-sent-1145",
+    "sentence": "Puede escuchar bien.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0387",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-1146",
+    "sentence": "Quiero pintar.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0388"
+    ]
+  },
+  {
+    "id": "es-sent-1147",
+    "sentence": "Puede pintar bien.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0388",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-1148",
+    "sentence": "Puede pintar también.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0388",
+      "es-wd-0210"
+    ]
+  },
+  {
+    "id": "es-sent-1149",
+    "sentence": "Quiero dibujar.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0389"
+    ]
+  },
+  {
+    "id": "es-sent-1150",
+    "sentence": "Sé dibujar bien.",
+    "word_ids": [
+      "es-wd-0322",
+      "es-wd-0389",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-1151",
+    "sentence": "Puede dibujar también.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0389",
+      "es-wd-0210"
+    ]
+  },
+  {
+    "id": "es-sent-1152",
+    "sentence": "Quiero nadar.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0390"
+    ]
+  },
+  {
+    "id": "es-sent-1153",
+    "sentence": "Sé nadar bien.",
+    "word_ids": [
+      "es-wd-0322",
+      "es-wd-0390",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-1154",
+    "sentence": "Quiero nadar en el agua.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0390",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0111"
+    ]
+  },
+  {
+    "id": "es-sent-1155",
+    "sentence": "El deporte es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0391",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1156",
+    "sentence": "Mi deporte favorito es el fútbol.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0391",
+      "es-wd-0394",
+      "es-wd-0017",
+      "es-wd-0057",
+      "es-wd-0392"
+    ]
+  },
+  {
+    "id": "es-sent-1157",
+    "sentence": "Quiero jugar un deporte.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0229",
+      "es-wd-0076",
+      "es-wd-0391"
+    ]
+  },
+  {
+    "id": "es-sent-1158",
+    "sentence": "El fútbol es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0392",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1159",
+    "sentence": "Quiero jugar fútbol.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0229",
+      "es-wd-0392"
+    ]
+  },
+  {
+    "id": "es-sent-1160",
+    "sentence": "Puede jugar fútbol también.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0229",
+      "es-wd-0392",
+      "es-wd-0210"
+    ]
+  },
+  {
+    "id": "es-sent-1161",
+    "sentence": "El pasatiempo es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0393",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1162",
+    "sentence": "Mi pasatiempo favorito es la música.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0393",
+      "es-wd-0394",
+      "es-wd-0017",
+      "es-wd-0058",
+      "es-wd-0381"
+    ]
+  },
+  {
+    "id": "es-sent-1163",
+    "sentence": "Quiero un pasatiempo nuevo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0393",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1164",
+    "sentence": "Mi instrumento favorito es la guitarra.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0383",
+      "es-wd-0394",
+      "es-wd-0017",
+      "es-wd-0058",
+      "es-wd-0384"
+    ]
+  },
+  {
+    "id": "es-sent-1165",
+    "sentence": "Mi pasatiempo favorito es dibujar.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0393",
+      "es-wd-0394",
+      "es-wd-0017",
+      "es-wd-0389"
+    ]
+  },
+  {
+    "id": "es-sent-1166",
+    "sentence": "Quiero tocar mi piano favorito.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0386",
+      "es-wd-0016",
+      "es-wd-0385",
+      "es-wd-0394"
+    ]
+  },
+  {
+    "id": "es-sent-1167",
+    "sentence": "Mi canción favorita es bonita.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0382",
+      "es-wd-0395",
+      "es-wd-0017",
+      "es-wd-0378"
+    ]
+  },
+  {
+    "id": "es-sent-1168",
+    "sentence": "Mi música favorita es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0381",
+      "es-wd-0395",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1169",
+    "sentence": "Quiero escuchar mi canción favorita.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0387",
+      "es-wd-0016",
+      "es-wd-0382",
+      "es-wd-0395"
+    ]
+  },
+  {
+    "id": "es-sent-1170",
+    "sentence": "Mi tiempo libre es bueno.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0396",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1171",
+    "sentence": "Quiero pintar en mi tiempo libre.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0388",
+      "es-wd-0084",
+      "es-wd-0016",
+      "es-wd-0396"
+    ]
+  },
+  {
+    "id": "es-sent-1172",
+    "sentence": "Puede nadar en su tiempo libre.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0390",
+      "es-wd-0084",
+      "es-wd-0052",
+      "es-wd-0396"
+    ]
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**Mi** **primo** disse que **fútbol** **es** **su** **favorito**."
+  },
+  {
+    "sentence_number": 2,
+    "content": "**La** **música** **de** **mi** **hermano** **es** **vieja**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "Daniela decidiu **escuchar** **la** **música**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "Rafael adora **tocar**."
+  },
+  {
+    "sentence_number": 5,
+    "content": "**Mi** **abuelo** quer **escuchar**."
+  },
+  {
+    "sentence_number": 6,
+    "content": "**El** **fútbol** **favorito** **de** **mi** **primo** **es** **el** **deporte**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "Sofia usa **su** **tiempo libre** para **pintar**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "**La** **música** **es** **nueva**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "**La** **canción** **de** **su** **padre** **es** **bonita**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "Pablo decidiu **tocar** **el** **piano**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**El** **deporte** **de** **su** **amiga** **es** **grande**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "**En** **su** **tiempo libre**, **su** **tía** adora **dibujar**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "**El** **piano** **de** **mi** **prima** **es** **bonito**."
+  },
+  {
+    "sentence_number": 14,
+    "content": "**Su** **padre** aprendeu a **pintar**."
+  },
+  {
+    "sentence_number": 15,
+    "content": "**En** **mi** **tiempo libre**, **mi** **primo** adora **nadar**."
+  },
+  {
+    "sentence_number": 16,
+    "content": "**Su** **tía** disse que **piano** **es** **su** **favorito**."
+  },
+  {
+    "sentence_number": 17,
+    "content": "**Mi** **abuela** disse que **guitarra** **es** **su** **favorita**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**En** **su** **tiempo libre**, **su** **amiga** adora **tocar** **el** **piano**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "**Mi** **hermana** disse que **música** **es** **su** **favorita**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**Su** **madre** tentou **dibujar**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "Pablo começou a **pintar**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "**El** **deporte** **favorito** **de** **mi** **hermano** **es** **el** **instrumento**."
+  },
+  {
+    "sentence_number": 23,
+    "content": "Rafael sabe **escuchar**."
+  },
+  {
+    "sentence_number": 24,
+    "content": "**La** **guitarra** **es** **nueva**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "**Su** **tía** decidiu **escuchar**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**Su** **amigo** adora **escuchar** **la** **música**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "**El** **pasatiempo** **de** **su** **madre** **es** **viejo**."
+  },
+  {
+    "sentence_number": 28,
+    "content": "**El** **piano** **es** **viejo**."
+  },
+  {
+    "sentence_number": 29,
+    "content": "**Mi** **abuelo** disse que **pasatiempo** **es** **su** **favorito**."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**El** **fútbol** **de** **mi** **hermano** **es** **grande**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "**La** **canción** **de** **su** **madre** **es** **nueva**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "**El** **instrumento** **favorito** **de** **su** **madre** **es** **el** **pasatiempo**."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**Su** **tío** continua a **escuchar** **la** **música**."
+  },
+  {
+    "sentence_number": 34,
+    "content": "**Mi** **hermano** decidiu **tocar**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "Carlos adora **escuchar**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "**Mi** **hermano** disse que **deporte** **es** **su** **favorito**."
+  },
+  {
+    "sentence_number": 37,
+    "content": "**Mi** **abuelo** quer **tocar** **la** **guitarra**."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**Mi** **hermano** sabe **tocar** **la** **guitarra**."
+  },
+  {
+    "sentence_number": 39,
+    "content": "**Mi** **hermana** sabe **nadar**."
+  },
+  {
+    "sentence_number": 40,
+    "content": "**El** **pasatiempo** **de** **su** **padre** **es** **nuevo**."
+  },
+  {
+    "sentence_number": 41,
+    "content": "**Su** **madre** prefere **tocar** **la** **guitarra**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "**Mi** **prima** aprendeu a **escuchar** **la** **música**."
+  },
+  {
+    "sentence_number": 43,
+    "content": "**Su** **padre** aprendeu a **tocar** **el** **piano**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**Mi** **hermana** continua a **tocar** **el** **piano**."
+  },
+  {
+    "sentence_number": 45,
+    "content": "**El** **deporte** **es** **viejo**."
+  },
+  {
+    "sentence_number": 46,
+    "content": "**La** **guitarra** **de** **su** **tía** **es** **bonita**."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**Su** **madre** disse que **instrumento** **es** **su** **favorito**."
+  },
+  {
+    "sentence_number": 48,
+    "content": "Daniela quer **tocar** **el** **piano**."
+  },
+  {
+    "sentence_number": 49,
+    "content": "Daniela usa **su** **tiempo libre** para **nadar**."
+  },
+  {
+    "sentence_number": 50,
+    "content": "**Mi** **abuela** adora **pintar**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "Daniela tentou **pintar**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "**La** **guitarra** **de** **su** **tío** **es** **vieja**."
+  },
+  {
+    "sentence_number": 53,
+    "content": "Pablo continua a **nadar**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "**Su** **amiga** quer **tocar**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "**El** **pasatiempo** **es** **grande**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "Daniela começou a **nadar**."
+  },
+  {
+    "sentence_number": 57,
+    "content": "Rafael aprendeu a **tocar** **la** **guitarra**."
+  },
+  {
+    "sentence_number": 58,
+    "content": "**Mi** **hermano** decidiu **dibujar**."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**El** **piano** **es** **nuevo**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "**El** **pasatiempo** **es** **nuevo**."
+  },
+  {
+    "sentence_number": 61,
+    "content": "Rafael prefere **dibujar**."
+  },
+  {
+    "sentence_number": 62,
+    "content": "**La** **canción** **es** **vieja**."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**Su** **amigo** começou a **tocar** **el** **piano**."
+  },
+  {
+    "sentence_number": 64,
+    "content": "**Mi** **primo** tentou **escuchar**."
+  },
+  {
+    "sentence_number": 65,
+    "content": "**En** **mi** **tiempo libre**, **mi** **hermano** adora **tocar** **la** **guitarra**."
+  },
+  {
+    "sentence_number": 66,
+    "content": "**Su** **tío** sabe **pintar**."
+  },
+  {
+    "sentence_number": 67,
+    "content": "**En** **mi** **tiempo libre**, **mi** **abuelo** adora **pintar**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**En** **su** **tiempo libre**, **su** **madre** adora **escuchar** **música**."
+  },
+  {
+    "sentence_number": 69,
+    "content": "**La** **guitarra** **es** **vieja**."
+  },
+  {
+    "sentence_number": 70,
+    "content": "**La** **música** **de** **mi** **hermana** **es** **bonita**."
+  },
+  {
+    "sentence_number": 71,
+    "content": "**La** **música** **favorita** **de** **mi** **hermana** **es** **canción**."
+  },
+  {
+    "sentence_number": 72,
+    "content": "**La** **música** **es** **vieja**."
+  },
+  {
+    "sentence_number": 73,
+    "content": "Pedro usa **su** **tiempo libre** para **tocar** **la** **guitarra**."
+  },
+  {
+    "sentence_number": 74,
+    "content": "Pablo tentou **escuchar** **la** **música**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "**El** **piano** **favorito** **de** **su** **tía** **es** **el** **fútbol**."
+  },
+  {
+    "sentence_number": 76,
+    "content": "Carlos usa **su** **tiempo libre** para **dibujar**."
+  },
+  {
+    "sentence_number": 77,
+    "content": "**El** **instrumento** **de** **mi** **abuela** **es** **nuevo**."
+  },
+  {
+    "sentence_number": 78,
+    "content": "**Su** **padre** prefere **nadar**."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**El** **instrumento** **es** **grande**."
+  },
+  {
+    "sentence_number": 80,
+    "content": "**Mi** **primo** prefere **tocar**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "**Mi** **abuelo** começou a **dibujar**."
+  },
+  {
+    "sentence_number": 82,
+    "content": "**Mi** **amigo** disse que **nadar** **es** **su** **pasatiempo** **favorito**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "Marina usa **su** **tiempo libre** para **escuchar** **música**."
+  },
+  {
+    "sentence_number": 84,
+    "content": "**La** **canción** **favorita** **de** **su** **padre** **es** **guitarra**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "**El** **instrumento** **es** **bonito**."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**La** **canción** **es** **bonita**."
+  },
+  {
+    "sentence_number": 87,
+    "content": "**Su** **amigo** adora **nadar**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "**El** **fútbol** **de** **mi** **hermana** **es** **nuevo**."
+  },
+  {
+    "sentence_number": 89,
+    "content": "**El** **fútbol** **es** **grande**."
+  },
+  {
+    "sentence_number": 90,
+    "content": "**El** **deporte** **de** **su** **amigo** **es** **bonito**."
+  },
+  {
+    "sentence_number": 91,
+    "content": "Carlos continua a **tocar** **la** **guitarra**."
+  },
+  {
+    "sentence_number": 92,
+    "content": "**El** **deporte** **es** **bonito**."
+  },
+  {
+    "sentence_number": 93,
+    "content": "**El** **pasatiempo** **favorito** **de** **mi** **abuelo** **es** **el** **piano**."
+  },
+  {
+    "sentence_number": 94,
+    "content": "**Su** **padre** disse que **canción** **es** **su** **favorita**."
+  },
+  {
+    "sentence_number": 95,
+    "content": "Carlos sabe **dibujar**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "**La** **guitarra** **favorita** **de** **mi** **abuela** **es** **música**."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**El** **fútbol** **es** **bonito**."
+  },
+  {
+    "sentence_number": 98,
+    "content": "**El** **instrumento** **de** **mi** **abuelo** **es** **grande**."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**El** **piano** **de** **mi** **primo** **es** **viejo**."
+  },
+  {
+    "sentence_number": 100,
+    "content": "Carlos aprendeu a **tocar**."
+  }
+]
