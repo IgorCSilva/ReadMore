@@ -15,6 +15,7 @@ function testRouter() {
       { path: '/signin', name: 'sign-in', component: { template: '<div>sign-in</div>' } },
       { path: '/home', name: 'home', component: HomePage },
       { path: '/library', name: 'library', component: LibraryPage },
+      { path: '/shadowing', name: 'shadowing', component: { template: '<div>shadowing</div>' } },
       { path: '/notifications', name: 'notifications', component: { template: '<div>notifications</div>' } },
       { path: '/settings', name: 'settings', component: { template: '<div>settings</div>' } },
       { path: '/part/:topicId/:partNumber', name: 'part-flow', component: PartFlowPage, meta: { hideGlobalBottomBar: true } },
@@ -37,10 +38,11 @@ describe('App', () => {
     expect(wrapper.find('.home-topbar').exists()).toBe(true)
 
     const bottomBarLinks = wrapper.findAll('.bottom-bar-item')
-    expect(bottomBarLinks).toHaveLength(3)
+    expect(bottomBarLinks).toHaveLength(4)
     expect(bottomBarLinks[0].attributes('href')).toBe('/home')
-    expect(bottomBarLinks[1].attributes('href')).toBe('/notifications')
-    expect(bottomBarLinks[2].attributes('href')).toBe('/settings')
+    expect(bottomBarLinks[1].attributes('href')).toBe('/shadowing')
+    expect(bottomBarLinks[2].attributes('href')).toBe('/notifications')
+    expect(bottomBarLinks[3].attributes('href')).toBe('/settings')
 
     wrapper.unmount()
   })

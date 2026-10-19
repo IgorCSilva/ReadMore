@@ -16,9 +16,12 @@ def _write_json(path, data: dict):
 
 def _write_content(content_dir, pair, data: dict):
     """Writes a {"chapters": [...]} dict out as content/<pair>/chapter_N/
-    info.json + chapter_N/topic_N/{info,word_ids,mixed_sentences,texts,
+    info.json + chapter_N/topic_N/{info,word_ids,mixed_sentences,
     exercises}.json, mirroring JsonCatalogRepository._load_content's
-    on-disk layout."""
+    on-disk layout. texts.json is NOT written here — like sentences.json,
+    it lives under the target-only tree (content/<target>/chapter_N/
+    topic_N/texts.json) and is written by _repository's own `texts` param
+    instead, since a pure-target-language text has no <native> relation."""
     pair_dir = content_dir / pair
     pair_dir.mkdir(parents=True, exist_ok=True)
     for chapter in data.get("chapters", []):
@@ -29,14 +32,12 @@ def _write_content(content_dir, pair, data: dict):
         for topic in chapter.get("topics", []):
             topic_dir = chapter_dir / f"topic_{topic['number']}"
             topic_dir.mkdir(parents=True, exist_ok=True)
-            topic_info = {k: v for k, v in topic.items() if k not in ("word_ids", "texts", "sentences", "exercises")}
+            topic_info = {k: v for k, v in topic.items() if k not in ("word_ids", "sentences", "exercises")}
             _write_json(topic_dir / "info.json", topic_info)
             if "word_ids" in topic:
                 _write_json(topic_dir / "word_ids.json", topic["word_ids"])
             if "sentences" in topic:
                 _write_json(topic_dir / "mixed_sentences.json", topic["sentences"])
-            if "texts" in topic:
-                _write_json(topic_dir / "texts.json", topic["texts"])
             if "exercises" in topic:
                 _write_json(topic_dir / "exercises.json", topic["exercises"])
 
@@ -49,6 +50,7 @@ def _repository(
     cues: dict[str, str] | None = None,
     word_maps: dict[str, list[dict]] | None = None,
     phrases: dict[str, dict] | None = None,
+    texts: dict[str, dict] | None = None,
     auxiliar_sentences: dict[str, dict] | None = None,
 ) -> JsonCatalogRepository:
     words_dir = tmp_path / "words"
@@ -66,8 +68,14 @@ def _repository(
         for chapter_key, topics in chapters.items():
             for topic_key, rows in topics.items():
                 topic_dir = content_dir / target_code / chapter_key / topic_key
-                topic_dir.mkdir(parents=True)
+                topic_dir.mkdir(parents=True, exist_ok=True)
                 _write_json(topic_dir / "sentences.json", rows)
+    for target_code, chapters in (texts or {}).items():
+        for chapter_key, topics in chapters.items():
+            for topic_key, rows in topics.items():
+                topic_dir = content_dir / target_code / chapter_key / topic_key
+                topic_dir.mkdir(parents=True, exist_ok=True)
+                _write_json(topic_dir / "texts.json", rows)
     for pair_key, chapters in (auxiliar_sentences or {}).items():
         for chapter_key, topics in chapters.items():
             for topic_key, rows in topics.items():
@@ -307,14 +315,6 @@ def test_get_chapters_maps_nested_content_entries_to_entities(tmp_path):
                                 "description": "Basic greetings",
                                 "word_ids": ["wd-0001"],
                                 "status": "ready",
-                                "texts": [
-                                    {
-                                        "text_id": "txt-01",
-                                        "number": 1,
-                                        "title": "Hello!",
-                                        "body": "**Hi**!",
-                                    }
-                                ],
                                 "sentences": [
                                     {"sentence_number": 1, "content": "Said **hi** and left."}
                                 ],
@@ -323,6 +323,20 @@ def test_get_chapters_maps_nested_content_entries_to_entities(tmp_path):
                         ],
                     }
                 ]
+            }
+        },
+        texts={
+            "en": {
+                "chapter_1": {
+                    "topic_1": [
+                        {
+                            "text_id": "txt-01",
+                            "number": 1,
+                            "title": "Hello!",
+                            "body": "**Hi**!",
+                        }
+                    ]
+                }
             }
         },
     )

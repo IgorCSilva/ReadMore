@@ -13,7 +13,7 @@ per language), root_word_id: "<catalog word_id>", word: "<spelling>"}`.
 `root_word_id` is the join key back to catalog.json and is never renumbered or
 reused, same stability guarantee as catalog.json's own word_id. Everything
 pair-specific lives elsewhere: content/<pair>/chapter_N/info.json + topic_N/
-{info,word_ids,mixed_sentences,texts,exercises}.json (topics' word_ids use
+{info,word_ids,mixed_sentences,exercises}.json (topics' word_ids use
 the same per-target-language ids, resolved back to root_word_id by
 get_chapters below — see _load_content), sentences.json and cues.json
 (flat, keyed by "<lang-code>_<root_word_id>" — lang-code is either the pair's
@@ -21,6 +21,11 @@ origin or target code, letting the same root_word_id resolve either variant).
 content/auxiliar_sentences/<pair>/chapter_N/topic_N/sentences.json holds a
 contextual example sentence per per-target-language word_id, authored
 topic-by-topic (see _load_auxiliar_sentences below).
+content/<target>/chapter_N/topic_N/texts.json holds standalone,
+pure-target-language reading/shadowing passages (no <native> mixing, unlike
+mixed_sentences.json) — merged in by chapter/topic number the same way
+content/<target>/chapter_N/topic_N/sentences.json already is for Phrases
+(see _load_phrases/_load_texts), not read from the pair tree.
 """
 import json
 from pathlib import Path
@@ -69,10 +74,11 @@ class JsonCatalogRepository(CatalogRepository):
         title, description, status) plus word_ids.json, mixed_sentences.json
         (the origin-language sentences with **bolded** target words — not to
         be confused with content/<target>/.../sentences.json's standalone
-        target-language phrases, loaded separately by _load_phrases),
-        texts.json, and exercises.json — all four are optional per topic
-        (default to []), same as _load_lang_words/_load_phrases treat a
-        missing file elsewhere in this class."""
+        target-language phrases, loaded separately by _load_phrases), and
+        exercises.json — all three are optional per topic (default to []),
+        same as _load_lang_words/_load_phrases treat a missing file
+        elsewhere in this class. texts.json is loaded separately, from the
+        target-only tree — see _load_texts."""
         dir_path = self._content_dir / str(lang)
         if not dir_path.is_dir():
             raise LanguageNotFoundError(str(lang))
@@ -85,7 +91,6 @@ class JsonCatalogRepository(CatalogRepository):
                 topic = self._load_json(topic_dir / "info.json")
                 topic["word_ids"] = self._load_optional_json(topic_dir / "word_ids.json")
                 topic["sentences"] = self._load_optional_json(topic_dir / "mixed_sentences.json")
-                topic["texts"] = self._load_optional_json(topic_dir / "texts.json")
                 topic["exercises"] = self._load_optional_json(topic_dir / "exercises.json")
                 topics.append(topic)
             chapter["topics"] = topics
@@ -114,6 +119,22 @@ class JsonCatalogRepository(CatalogRepository):
             return {}
         merged: dict[str, dict] = {}
         for path in sorted(dir_path.glob("chapter_*/topic_*/sentences.json")):
+            chapter_key, topic_key = path.parent.parent.name, path.parent.name
+            merged.setdefault(chapter_key, {})[topic_key] = self._load_json(path)
+        return merged
+
+    def _load_texts(self, target_code: str) -> dict:
+        """chapter_N -> topic_N -> [{text_id, number, title, body}], from
+        content/<target>/chapter_N/topic_N/texts.json — standalone,
+        pure-target-language reading/shadowing passages (no <native> mixing,
+        unlike mixed_sentences.json). Same tree and merge shape as
+        _load_phrases, just a different filename; missing dir (no texts
+        authored for this target yet) is not an error, same reasoning."""
+        dir_path = self._content_dir / target_code
+        if not dir_path.is_dir():
+            return {}
+        merged: dict[str, dict] = {}
+        for path in sorted(dir_path.glob("chapter_*/topic_*/texts.json")):
             chapter_key, topic_key = path.parent.parent.name, path.parent.name
             merged.setdefault(chapter_key, {})[topic_key] = self._load_json(path)
         return merged
@@ -197,32 +218,42 @@ class JsonCatalogRepository(CatalogRepository):
         content = self._load_content(lang)
         word_map = self._load_word_map(lang.target)
         phrases_by_chapter = self._load_phrases(lang.target)
-        return [self._to_chapter(c, word_map, phrases_by_chapter) for c in content.get("chapters", [])]
+        texts_by_chapter = self._load_texts(lang.target)
+        return [
+            self._to_chapter(c, word_map, phrases_by_chapter, texts_by_chapter)
+            for c in content.get("chapters", [])
+        ]
 
     @staticmethod
-    def _to_chapter(data: dict, word_map: dict[str, str], phrases_by_chapter: dict) -> Chapter:
+    def _to_chapter(
+        data: dict, word_map: dict[str, str], phrases_by_chapter: dict, texts_by_chapter: dict
+    ) -> Chapter:
         chapter_phrases = phrases_by_chapter.get(f"chapter_{data['number']}", {})
+        chapter_texts = texts_by_chapter.get(f"chapter_{data['number']}", {})
         return Chapter(
             chapter_id=data["chapter_id"],
             number=data["number"],
             title=data["title"],
             description=data["description"],
             topics=[
-                JsonCatalogRepository._to_topic(t, word_map, chapter_phrases)
+                JsonCatalogRepository._to_topic(t, word_map, chapter_phrases, chapter_texts)
                 for t in data.get("topics", [])
             ],
             status=data.get("status", "ready"),
         )
 
     @staticmethod
-    def _to_topic(data: dict, word_map: dict[str, str], chapter_phrases: dict) -> Topic:
+    def _to_topic(data: dict, word_map: dict[str, str], chapter_phrases: dict, chapter_texts: dict) -> Topic:
         return Topic(
             topic_id=data["topic_id"],
             number=data["number"],
             title=data["title"],
             description=data["description"],
             word_ids=[word_map.get(w, w) for w in data.get("word_ids", [])],
-            texts=[JsonCatalogRepository._to_text(t) for t in data.get("texts", [])],
+            texts=[
+                JsonCatalogRepository._to_text(t)
+                for t in chapter_texts.get(f"topic_{data['number']}", [])
+            ],
             sentences=[JsonCatalogRepository._to_sentence(s) for s in data.get("sentences", [])],
             phrases=[
                 JsonCatalogRepository._to_phrase(p, word_map)

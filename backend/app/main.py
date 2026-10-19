@@ -52,9 +52,7 @@ from backend.app.infrastructure.repositories.google_sheets_topics_repository imp
 from backend.app.infrastructure.repositories.google_sheets_users_repository import (
     GoogleSheetsUsersRepository,
 )
-from backend.app.infrastructure.repositories.google_translate_tts_client import (
-    GoogleTranslateTtsClient,
-)
+from backend.app.infrastructure.repositories.edge_tts_client import EdgeTtsClient
 from backend.app.infrastructure.repositories.json_catalog_repository import JsonCatalogRepository
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
@@ -149,8 +147,8 @@ def get_corrections_repository() -> GoogleSheetsCorrectionsRepository:
     return GoogleSheetsCorrectionsRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
 
 
-def get_tts_port() -> GoogleTranslateTtsClient:
-    return GoogleTranslateTtsClient()
+def get_tts_port() -> EdgeTtsClient:
+    return EdgeTtsClient()
 
 
 def _parse_lang(raw: str) -> LanguagePair:
@@ -327,7 +325,7 @@ def post_correction(
 def get_tts(
     text: str = "",
     lang: str = "en",
-    tts_port: GoogleTranslateTtsClient = Depends(get_tts_port),
+    tts_port: EdgeTtsClient = Depends(get_tts_port),
 ):
     text = text.strip()
     if not text:
