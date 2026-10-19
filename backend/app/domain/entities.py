@@ -109,6 +109,40 @@ class UserRecord:
 
 
 @dataclass
+class GlossaryEntry:
+    """One word's study info for the Stories feature's "Study" modal —
+    meaning is in the pair's origin language (what's being explained to the
+    learner); examples/synonyms/antonyms are in the target language (what's
+    being learned, and what gets played back through TTS)."""
+
+    meaning: str
+    examples: list[str] = field(default_factory=list)
+    synonyms: list[str] = field(default_factory=list)
+    antonyms: list[str] = field(default_factory=list)
+
+
+@dataclass
+class StorySummary:
+    """Listing-weight story info — just enough for /api/stories to group every
+    story by level without shipping each one's full glossary."""
+
+    story_id: str
+    title: str
+    level: str
+
+
+@dataclass
+class Story(StorySummary):
+    """A full extensive-reading story: sentences (re-segmented from the
+    source poem/text into real grammatical units, not lines) plus a
+    glossary keyed by normalized word (lowercased, outer punctuation
+    stripped) covering every word that appears in `sentences`."""
+
+    sentences: list[str] = field(default_factory=list)
+    glossary: dict[str, GlossaryEntry] = field(default_factory=dict)
+
+
+@dataclass
 class Correction:
     """A user-submitted current->correction report, scoped to the chapter
     and topic it was made in. current/correction each hold one or more

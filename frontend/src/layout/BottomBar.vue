@@ -3,6 +3,9 @@
     <RouterLink to="/home" class="bottom-bar-item" active-class="active" exact-active-class="active">
       <span class="bottom-bar-icon icon-home"></span>
     </RouterLink>
+    <RouterLink to="/stories" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Stories">
+      <span class="bottom-bar-icon icon-stories"></span>
+    </RouterLink>
     <RouterLink to="/shadowing" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Shadowing">
       <span class="bottom-bar-icon icon-shadowing"></span>
     </RouterLink>
@@ -75,6 +78,10 @@ import { hasUnread } from '../shared/notifications'
 .icon-shadowing {
   -webkit-mask-image: url('/images/icons/shadowing.svg');
   mask-image: url('/images/icons/shadowing.svg');
+}
+.icon-stories {
+  -webkit-mask-image: url('/images/icons/stories.svg');
+  mask-image: url('/images/icons/stories.svg');
 }
 .icon-settings {
   -webkit-mask-image: url('/images/icons/settings.svg');

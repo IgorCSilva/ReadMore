@@ -142,3 +142,44 @@ export interface CorrectionRequest {
   current: string[]
   correction: string[]
 }
+
+// Listing weight only (no sentences/glossary) — what /stories returns for
+// every story across every level, grouped client-side by `level`.
+export interface StorySummary {
+  story_id: string
+  title: string
+  level: string
+}
+
+export interface StoriesResponse {
+  lang: string
+  stories: StorySummary[]
+}
+
+// meaning is in the pair's origin language (what's being explained);
+// examples/synonyms/antonyms are in the target language (what's being
+// learned, and what the Study modal's listen buttons play back).
+export interface GlossaryEntry {
+  meaning: string
+  examples: string[]
+  synonyms: string[]
+  antonyms: string[]
+}
+
+// sentences is one array entry per original line of the source text, not
+// per grammatical sentence — "" marks a blank line between stanzas/
+// paragraphs. glossary is keyed by normalized word (lowercased, outer
+// punctuation stripped, curly quotes folded to straight) — see
+// tokenizeStoryWords in shared/text.ts for the matching lookup key.
+export interface Story {
+  story_id: string
+  title: string
+  level: string
+  sentences: string[]
+  glossary: Record<string, GlossaryEntry>
+}
+
+export interface StoryResponse {
+  lang: string
+  story: Story
+}

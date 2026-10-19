@@ -4,6 +4,8 @@ import type {
   LanguagesResponse,
   ProgressActionRequest,
   ReinforcementWords,
+  StoriesResponse,
+  StoryResponse,
   UserResponse,
   UserWordsResponse,
   WordsResponse,
@@ -71,6 +73,22 @@ export function getUser(email: string): Promise<UserResponse> {
 export function getWords(lang: string, sentenceLang?: string, cueLang?: string): Promise<WordsResponse> {
   const url = `/words?lang=${encodeURIComponent(lang)}` + langChoiceParams(sentenceLang, cueLang)
   return fetchJsonWithRetry<WordsResponse>(url)
+}
+
+// Namespaced under /api/ on the backend specifically because the frontend's
+// own page for this feature lives at the bare /stories path — see
+// backend/app/main.py's get_stories_route comment for why that collision
+// has to be avoided.
+export function getStories(lang: string): Promise<StoriesResponse> {
+  const url = `/api/stories?lang=${encodeURIComponent(lang)}`
+  return fetchJsonWithRetry<StoriesResponse>(url)
+}
+
+export function getStory(lang: string, level: string, storyId: string): Promise<StoryResponse> {
+  const url =
+    `/api/stories/${encodeURIComponent(level)}/${encodeURIComponent(storyId)}` +
+    `?lang=${encodeURIComponent(lang)}`
+  return fetchJsonWithRetry<StoryResponse>(url)
 }
 
 export function getReinforcementWords(
