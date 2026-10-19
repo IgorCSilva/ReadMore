@@ -511,6 +511,46 @@ enough. Spot-check at least one text: body is pure <target> with no stray native
 words, and the title is in <target> too — both are easy mistakes to carry over from
 mixed_sentences.json's style out of habit.
 
+## Create theme content
+
+level: A1
+roadmap file: backend/content/learning/theme/health/roadmap.md
+chapter: NUT
+topic: 1
+output path: backend/content/learning/theme/health/<chapter>_<topic>/content_<level>.md
+
+Based on the <roadmap file>, generate the content for the topic <topic> in chapter <chapter>. The content idiom level must be <level>. Structure the content to have a .md pattern.
+
+## Add story
+
+native: pt
+target: es
+
+Adapt the text below to have a identical structure to backend/content/pt-es/stories/b1/muddy_feet/text.json. You need to define the level from A1 to C2 and a folder name.
+
+
+La nube de algodón
+
+Acompaña a una nubecita suave en un viaje mágico por montañas, lagos y bosques. Un cuento tierno y relajante, ideal para ayudar a los más pequeños a encontrar la calma y dormir felices.
+
+----------------
+
+Había una vez una pequeña nube que flotaba despacito en el cielo azul. Estaba hecha de algodón, tan suavecita que parecía una almohada esponjosa. ☁️
+
+Un día, la nube quiso salir a pasear. Deslizó su cuerpo ligero entre las montañas y bajó hacia un campo lleno de flores. Allí, las mariposas volaban suavemente y las abejas zumbaban muy trabajadoras. El aire olía a flores y a miel. Todo estaba muy tranquilo y la nube se sentía feliz de seguir su camino. 🌸🐝
+
+Siguió flotando hasta llegar a un lago enorme. El agua era tan clarita que se podía ver el sol reflejado, como si fuera un espejo brillante. La nube bajó un poquito más, hasta que tocó el agua con su pancita. El lago estaba fresquito y la nube sintió cosquillas mientras se llenaba de gotitas de agua brillantes. 💧
+
+Se quedó jugando un ratito, hasta que vio algo lindo: unos patitos nadaban y chapoteaban siguiendo a su mamá, que les enseñaba a buscar comida. «¡Qué paz!», pensó la nube. Se quedó mirando cómo los patitos se mecían en el agua, igual que ella en el cielo. 🦆
+
+Después de un rato, la nube decidió seguir su viaje. Flotó hasta un bosque de árboles altísimos. Los árboles susurraban con la brisa y los pajaritos cantaban melodías suaves. Decidió descansar allí, entre las ramas, dejando que las hojas le hicieran cariñitos en su cuerpo de algodón y mojándolas con las gotitas que traía del lago. 🌳🐦
+
+Cuando el sol empezó a esconderse detrás de las montañas, la nube supo que era hora de volver a casa. Subió despacito por el cielo, viendo cómo el día se despedía con colores rosas, anaranjados y morados en el horizonte. Todo estaba en calma. 🌅
+
+La nube, feliz y relajada, se acurrucó entre las estrellas y cerró los ojitos. «Ha sido un día maravilloso», pensó, dejándose llevar por el suave movimiento del cielo en la noche. ⭐️🌙
+
+Y así, la nube de algodón se quedó dormida, flotando suavemente, mientras el mundo descansaba tranquilo y en paz. 😴
+
 ===========================================================
 
 # Per pair

@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../pages/HomePage.vue'
+import LearningPage from '../pages/LearningPage.vue'
+import LearningTopicPage from '../pages/LearningTopicPage.vue'
 import LibraryPage from '../pages/LibraryPage.vue'
 import ListenIdentifyPage from '../pages/ListenIdentifyPage.vue'
 import NotificationsPage from '../pages/NotificationsPage.vue'
@@ -32,6 +34,10 @@ const router = createRouter({
     // ReadUnderstandPage/PartFlowPage below — it owns its own exit topbar
     // and playback-control bottombar instead.
     { path: '/stories/:level/:storyId', name: 'story-reader', component: StoryReaderPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },
+    { path: '/learning', name: 'learning', component: LearningPage, meta: { requiresAuth: true } },
+    // Same full-screen reader treatment as /stories/:level/:storyId above —
+    // own exit topbar and playback-control bottombar, no Study button.
+    { path: '/learning/:theme/:topicId', name: 'learning-topic', component: LearningTopicPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },
     // A focused, full-screen lesson flow — App.vue reads hideGlobalBottomBar
     // to swap the global nav bar out for this page's own Next-button bar.
     { path: '/part/:topicId/:partNumber', name: 'part-flow', component: PartFlowPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },

@@ -34,3 +34,10 @@ class StoryNotFoundError(Exception):
         self.level = level
         self.story_id = story_id
         super().__init__(f"story not found: {level}/{story_id}")
+
+
+class LearningTopicNotFoundError(Exception):
+    def __init__(self, theme: str, topic_id: str) -> None:
+        self.theme = theme
+        self.topic_id = topic_id
+        super().__init__(f"learning topic not found: {theme}/{topic_id}")
