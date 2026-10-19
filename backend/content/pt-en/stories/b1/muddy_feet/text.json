@@ -1,0 +1,893 @@
+{
+  "id": "muddy_feet",
+  "title": "Muddy Feet",
+  "level": "B1",
+  "sentences": [
+    "When rain starts to pour, there is nothing more sweet,",
+    "Than a day of splish-sploshing with wet muddy feet.",
+    "",
+    "When I woke, my feet were clean,",
+    "Spotless with a sparkling sheen.",
+    "",
+    "First thing’s first, I put on socks.",
+    "Then my shoes, to walk on rocks.",
+    "",
+    "Shoes are great for tricky jumps,",
+    "Over puddles, logs, or stumps.",
+    "",
+    "Once I laid them on the floor,",
+    "Off I went- out the door.",
+    "",
+    "Just before I reached the grass,",
+    "Down came raindrops, falling fast.",
+    "",
+    "They weren’t cold- I didn’t mind.",
+    "Warm rain is my favorite kind.",
+    "",
+    "Hitting dirt, it mished and moshed.",
+    "Pretty soon it splished and sploshed.",
+    "",
+    "The ground was wet and getting wetter.",
+    "Dirt is nice but mud is better.",
+    "",
+    "Cause nothing ever will compete,",
+    "With hopping round on muddy feet.",
+    "",
+    "I like grass between my toes,",
+    "Even though it stains my clothes.",
+    "",
+    "I like sand, from on the beach.",
+    "It gets in places hard to reach.",
+    "",
+    "With leaves I like them by the pile.",
+    "Never fails to make me smile.",
+    "",
+    "But nothing’s even half as sweet,",
+    "As hopping round with muddy feet.",
+    "",
+    "So that is why my shoes came off.",
+    "And that is why I caught a cough.",
+    "",
+    "All stuffed up and feeling ill.",
+    "I wonder if my mother will,",
+    "",
+    "Clean the dirt that’s on my sheet,",
+    "From laying here with muddy feet."
+  ],
+  "glossary": {
+    "when": {
+      "meaning": "Palavra usada para indicar o momento em que algo acontece ('quando').",
+      "examples": ["When it rains, I stay inside.", "Call me when you arrive."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "rain": {
+      "meaning": "Água que cai das nuvens; chuva.",
+      "examples": ["It started to rain.", "We stayed inside because of the rain."],
+      "synonyms": ["shower", "drizzle", "downpour"],
+      "antonyms": ["drought", "sunshine"]
+    },
+    "starts": {
+      "meaning": "Começa; forma do verbo 'to start' (começar) na terceira pessoa do singular.",
+      "examples": ["The movie starts at eight.", "She starts work early."],
+      "synonyms": ["begins", "commences"],
+      "antonyms": ["ends", "stops"]
+    },
+    "to": {
+      "meaning": "Preposição que indica direção, destino ou o infinitivo de um verbo ('para', 'a').",
+      "examples": ["I like to read.", "We walked to the park."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "pour": {
+      "meaning": "Cair com força (falando de chuva) ou despejar um líquido.",
+      "examples": ["The rain began to pour.", "She poured the milk into the glass."],
+      "synonyms": ["stream", "gush"],
+      "antonyms": ["drip", "trickle"]
+    },
+    "there": {
+      "meaning": "Advérbio de lugar; também usado em 'there is/are' para indicar existência.",
+      "examples": ["There is nothing more fun than this.", "Put the book over there."],
+      "synonyms": [],
+      "antonyms": ["here"]
+    },
+    "is": {
+      "meaning": "Forma do verbo 'to be' (ser/estar) na terceira pessoa do singular.",
+      "examples": ["She is happy.", "There is a dog in the yard."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "nothing": {
+      "meaning": "Nenhuma coisa; indica ausência total de algo.",
+      "examples": ["There is nothing in the box.", "Nothing is better than this."],
+      "synonyms": ["nil", "zero"],
+      "antonyms": ["everything", "something"]
+    },
+    "more": {
+      "meaning": "Em maior quantidade ou grau; mais.",
+      "examples": ["I want more juice.", "This is more fun than that."],
+      "synonyms": ["additional", "extra"],
+      "antonyms": ["less", "fewer"]
+    },
+    "sweet": {
+      "meaning": "Agradável ou doce; algo muito bom ou gostoso.",
+      "examples": ["The cake is very sweet.", "That was a sweet gesture."],
+      "synonyms": ["lovely", "delightful", "sugary"],
+      "antonyms": ["bitter", "sour", "unpleasant"]
+    },
+    "than": {
+      "meaning": "Palavra usada em comparações, equivalente a 'do que'.",
+      "examples": ["She is taller than me.", "Nothing is better than mud."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "a": {
+      "meaning": "Artigo indefinido, equivalente a 'um/uma'.",
+      "examples": ["I saw a bird.", "She has a plan."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "day": {
+      "meaning": "Período de 24 horas; dia.",
+      "examples": ["It was a sunny day.", "I'll see you in two days."],
+      "synonyms": ["daytime"],
+      "antonyms": ["night"]
+    },
+    "of": {
+      "meaning": "Preposição que indica posse, origem ou parte de algo ('de').",
+      "examples": ["A cup of tea.", "The color of the sky."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "splish-sploshing": {
+      "meaning": "Palavra inventada e divertida que imita o som de pisar ou brincar na lama/água; uma onomatopeia.",
+      "examples": ["The kids went splish-sploshing through the puddles.", "We spent the afternoon splish-sploshing in the rain."],
+      "synonyms": ["splashing", "sloshing"],
+      "antonyms": []
+    },
+    "with": {
+      "meaning": "Preposição que indica companhia ou instrumento ('com').",
+      "examples": ["I went with my friend.", "She cut it with scissors."],
+      "synonyms": [],
+      "antonyms": ["without"]
+    },
+    "wet": {
+      "meaning": "Molhado; coberto ou encharcado de água.",
+      "examples": ["My shoes are wet.", "The grass is wet after the rain."],
+      "synonyms": ["damp", "soaked", "moist"],
+      "antonyms": ["dry"]
+    },
+    "muddy": {
+      "meaning": "Coberto de lama; sujo de barro.",
+      "examples": ["His boots were muddy.", "We walked on a muddy path."],
+      "synonyms": ["dirty", "mucky"],
+      "antonyms": ["clean"]
+    },
+    "feet": {
+      "meaning": "Plural de 'foot' (pé); parte do corpo usada para andar.",
+      "examples": ["My feet are cold.", "She has small feet."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "i": {
+      "meaning": "Pronome pessoal de primeira pessoa do singular ('eu').",
+      "examples": ["I am happy.", "I like muddy feet."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "woke": {
+      "meaning": "Passado do verbo 'to wake' (acordar).",
+      "examples": ["I woke up early today.", "She woke when the alarm rang."],
+      "synonyms": ["awoke"],
+      "antonyms": ["slept"]
+    },
+    "my": {
+      "meaning": "Pronome possessivo de primeira pessoa ('meu/minha').",
+      "examples": ["This is my book.", "My feet hurt."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "were": {
+      "meaning": "Passado do verbo 'to be' (ser/estar) para 'you/we/they'.",
+      "examples": ["They were happy.", "My feet were clean."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "clean": {
+      "meaning": "Limpo, sem sujeira; também pode significar 'limpar' como verbo.",
+      "examples": ["Her room is very clean.", "I need to clean my shoes."],
+      "synonyms": ["spotless", "tidy"],
+      "antonyms": ["dirty", "muddy"]
+    },
+    "spotless": {
+      "meaning": "Completamente limpo, sem nenhuma mancha.",
+      "examples": ["The kitchen was spotless.", "Her white shirt was spotless."],
+      "synonyms": ["immaculate", "clean"],
+      "antonyms": ["filthy", "stained"]
+    },
+    "sparkling": {
+      "meaning": "Brilhante, reluzente.",
+      "examples": ["The sparkling water looked delicious.", "Her eyes were sparkling with joy."],
+      "synonyms": ["shiny", "glittering"],
+      "antonyms": ["dull"]
+    },
+    "sheen": {
+      "meaning": "Brilho suave na superfície de algo.",
+      "examples": ["The floor had a nice sheen.", "Her hair had a healthy sheen."],
+      "synonyms": ["shine", "gloss"],
+      "antonyms": ["dullness"]
+    },
+    "first": {
+      "meaning": "Que vem antes de todos os outros; primeiro.",
+      "examples": ["This is my first time here.", "First, wash your hands."],
+      "synonyms": ["initial"],
+      "antonyms": ["last"]
+    },
+    "thing's": {
+      "meaning": "Contração informal de 'thing is' (a coisa é), usada aqui na expressão 'first thing's first' (primeiro, o mais importante primeiro).",
+      "examples": ["First thing's first: let's eat.", "The thing's done, don't worry."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "put": {
+      "meaning": "Colocar algo em um lugar.",
+      "examples": ["I put the book on the table.", "She put on her shoes."],
+      "synonyms": ["place", "set"],
+      "antonyms": ["remove"]
+    },
+    "on": {
+      "meaning": "Preposição que indica posição em cima de algo, ou o ato de vestir algo ('em cima de', 'vestir').",
+      "examples": ["The cup is on the table.", "I put my shoes on."],
+      "synonyms": [],
+      "antonyms": ["off"]
+    },
+    "socks": {
+      "meaning": "Peça de roupa usada nos pés, dentro do sapato; meias.",
+      "examples": ["I wear warm socks in winter.", "My socks got wet."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "then": {
+      "meaning": "Depois disso; em seguida.",
+      "examples": ["First we eat, then we play.", "I got dressed, then left the house."],
+      "synonyms": ["next", "afterward"],
+      "antonyms": []
+    },
+    "shoes": {
+      "meaning": "Calçado usado nos pés; sapatos.",
+      "examples": ["I need new shoes.", "He took off his shoes."],
+      "synonyms": ["footwear"],
+      "antonyms": []
+    },
+    "walk": {
+      "meaning": "Andar a pé.",
+      "examples": ["We walk to school every day.", "Let's walk in the park."],
+      "synonyms": ["stroll", "stride"],
+      "antonyms": ["run", "drive"]
+    },
+    "rocks": {
+      "meaning": "Pedras; plural de 'rock'.",
+      "examples": ["The path was covered with rocks.", "He climbed over the rocks."],
+      "synonyms": ["stones"],
+      "antonyms": []
+    },
+    "are": {
+      "meaning": "Forma do verbo 'to be' para 'you/we/they' no presente.",
+      "examples": ["They are happy.", "We are friends."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "great": {
+      "meaning": "Ótimo, excelente.",
+      "examples": ["That was a great movie.", "She did a great job."],
+      "synonyms": ["excellent", "wonderful"],
+      "antonyms": ["terrible", "awful"]
+    },
+    "for": {
+      "meaning": "Preposição que indica finalidade, destinatário ou motivo ('para').",
+      "examples": ["This gift is for you.", "Shoes are great for walking."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "tricky": {
+      "meaning": "Difícil de fazer; que exige cuidado ou habilidade.",
+      "examples": ["That was a tricky question.", "Jumping over the puddle was tricky."],
+      "synonyms": ["difficult", "challenging"],
+      "antonyms": ["easy", "simple"]
+    },
+    "jumps": {
+      "meaning": "Pulos; plural de 'jump'.",
+      "examples": ["He did three jumps in a row.", "The frog's jumps were impressive."],
+      "synonyms": ["leaps", "hops"],
+      "antonyms": []
+    },
+    "over": {
+      "meaning": "Por cima de; acima de.",
+      "examples": ["The cat jumped over the fence.", "A bridge over the river."],
+      "synonyms": ["above"],
+      "antonyms": ["under"]
+    },
+    "puddles": {
+      "meaning": "Poças de água, geralmente formadas pela chuva.",
+      "examples": ["There were puddles all over the street.", "He jumped in the puddles."],
+      "synonyms": ["pools"],
+      "antonyms": []
+    },
+    "logs": {
+      "meaning": "Troncos de árvore cortados; plural de 'log'.",
+      "examples": ["We sat on the logs.", "He chopped the logs for the fire."],
+      "synonyms": ["timber"],
+      "antonyms": []
+    },
+    "or": {
+      "meaning": "Conjunção que indica alternativa ('ou').",
+      "examples": ["Tea or coffee?", "You can walk or run."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "stumps": {
+      "meaning": "Tocos de árvore; o que resta de uma árvore cortada; plural de 'stump'.",
+      "examples": ["He tripped over a stump.", "The field was full of old stumps."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "once": {
+      "meaning": "Uma vez; em uma ocasião.",
+      "examples": ["I've only been there once.", "Once I finish, I'll call you."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "laid": {
+      "meaning": "Passado do verbo 'to lay' (colocar algo deitado/apoiado).",
+      "examples": ["She laid the baby in the crib.", "He laid his coat on the chair."],
+      "synonyms": ["placed", "set down"],
+      "antonyms": []
+    },
+    "them": {
+      "meaning": "Pronome pessoal de terceira pessoa do plural, usado como objeto ('eles/elas', 'os/as').",
+      "examples": ["I saw them yesterday.", "Give them to me."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "the": {
+      "meaning": "Artigo definido, equivalente a 'o/a/os/as'.",
+      "examples": ["The sun is bright.", "I like the rain."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "floor": {
+      "meaning": "Chão; parte inferior de um ambiente.",
+      "examples": ["The toy is on the floor.", "She mopped the floor."],
+      "synonyms": ["ground"],
+      "antonyms": ["ceiling"]
+    },
+    "off": {
+      "meaning": "Longe de, para fora de, ou desligado.",
+      "examples": ["He took his shoes off.", "Turn the light off."],
+      "synonyms": [],
+      "antonyms": ["on"]
+    },
+    "went": {
+      "meaning": "Passado do verbo 'to go' (ir).",
+      "examples": ["I went to the store.", "She went outside to play."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "out": {
+      "meaning": "Para fora; do lado de fora.",
+      "examples": ["She went out to play.", "Take the trash out."],
+      "synonyms": ["outside"],
+      "antonyms": ["in"]
+    },
+    "door": {
+      "meaning": "Porta; entrada de uma casa ou cômodo.",
+      "examples": ["Close the door, please.", "He knocked on the door."],
+      "synonyms": ["entrance"],
+      "antonyms": []
+    },
+    "just": {
+      "meaning": "Apenas, exatamente, ou há pouco tempo.",
+      "examples": ["I just arrived.", "It's just a small puddle."],
+      "synonyms": ["only", "exactly"],
+      "antonyms": []
+    },
+    "before": {
+      "meaning": "Antes de; anteriormente.",
+      "examples": ["Wash your hands before eating.", "I saw her before the rain started."],
+      "synonyms": ["prior to"],
+      "antonyms": ["after"]
+    },
+    "reached": {
+      "meaning": "Passado do verbo 'to reach' (alcançar, chegar a).",
+      "examples": ["She reached the door.", "He reached for the cup."],
+      "synonyms": ["arrived at", "got to"],
+      "antonyms": []
+    },
+    "grass": {
+      "meaning": "Grama; planta verde que cobre o chão.",
+      "examples": ["The grass is green.", "We sat on the grass."],
+      "synonyms": ["lawn"],
+      "antonyms": []
+    },
+    "down": {
+      "meaning": "Para baixo.",
+      "examples": ["The rain came down fast.", "He sat down on the chair."],
+      "synonyms": [],
+      "antonyms": ["up"]
+    },
+    "came": {
+      "meaning": "Passado do verbo 'to come' (vir).",
+      "examples": ["She came to my house.", "The rain came suddenly."],
+      "synonyms": [],
+      "antonyms": ["went"]
+    },
+    "raindrops": {
+      "meaning": "Gotas de chuva.",
+      "examples": ["Raindrops fell on the window.", "I could hear the raindrops on the roof."],
+      "synonyms": ["drops"],
+      "antonyms": []
+    },
+    "falling": {
+      "meaning": "Caindo; particípio presente do verbo 'to fall'.",
+      "examples": ["The leaves are falling.", "I saw a star falling."],
+      "synonyms": ["dropping"],
+      "antonyms": ["rising"]
+    },
+    "fast": {
+      "meaning": "Rápido; com velocidade.",
+      "examples": ["He runs very fast.", "The rain fell fast."],
+      "synonyms": ["quick", "rapid"],
+      "antonyms": ["slow"]
+    },
+    "they": {
+      "meaning": "Pronome pessoal de terceira pessoa do plural ('eles/elas').",
+      "examples": ["They are my friends.", "They went outside."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "weren't": {
+      "meaning": "Contração de 'were not' (não estavam/eram).",
+      "examples": ["They weren't happy about it.", "The shoes weren't comfortable."],
+      "synonyms": [],
+      "antonyms": ["were"]
+    },
+    "cold": {
+      "meaning": "Frio; com temperatura baixa.",
+      "examples": ["The water was cold.", "It's cold outside today."],
+      "synonyms": ["chilly", "freezing"],
+      "antonyms": ["warm", "hot"]
+    },
+    "didn't": {
+      "meaning": "Contração de 'did not' (não fez / não [verbo no passado]).",
+      "examples": ["I didn't see her.", "She didn't mind the rain."],
+      "synonyms": [],
+      "antonyms": ["did"]
+    },
+    "mind": {
+      "meaning": "Importar-se, incomodar-se com algo.",
+      "examples": ["I don't mind the rain.", "Do you mind if I sit here?"],
+      "synonyms": ["care", "object"],
+      "antonyms": []
+    },
+    "warm": {
+      "meaning": "Morno, quente de forma agradável.",
+      "examples": ["The soup is warm.", "I like warm rain."],
+      "synonyms": ["mild", "cozy"],
+      "antonyms": ["cold", "cool"]
+    },
+    "favorite": {
+      "meaning": "Preferido; o que se gosta mais.",
+      "examples": ["Pizza is my favorite food.", "This is her favorite song."],
+      "synonyms": ["preferred"],
+      "antonyms": ["least favorite"]
+    },
+    "kind": {
+      "meaning": "Tipo, espécie; também pode significar 'gentil'.",
+      "examples": ["What kind of music do you like?", "She is a kind person."],
+      "synonyms": ["type", "sort"],
+      "antonyms": []
+    },
+    "hitting": {
+      "meaning": "Batendo; particípio presente do verbo 'to hit'.",
+      "examples": ["The rain was hitting the window.", "He is hitting the ball."],
+      "synonyms": ["striking"],
+      "antonyms": []
+    },
+    "dirt": {
+      "meaning": "Terra, sujeira.",
+      "examples": ["His hands were covered in dirt.", "Clean the dirt off your shoes."],
+      "synonyms": ["mud", "soil"],
+      "antonyms": []
+    },
+    "it": {
+      "meaning": "Pronome usado para objetos, animais ou ideias ('ele/ela', referindo-se a algo neutro).",
+      "examples": ["It is raining.", "I like it."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "mished": {
+      "meaning": "Palavra inventada que imita o som da lama sendo pisada; onomatopeia informal (parecida com 'squelched').",
+      "examples": ["The mud mished under his boots.", "It mished with every step."],
+      "synonyms": ["squelched", "squished"],
+      "antonyms": []
+    },
+    "and": {
+      "meaning": "Conjunção que une ideias ou elementos ('e').",
+      "examples": ["Salt and pepper.", "It mished and moshed."],
+      "synonyms": [],
+      "antonyms": ["or"]
+    },
+    "moshed": {
+      "meaning": "Palavra inventada que imita o som da lama sendo pisada com força; onomatopeia informal.",
+      "examples": ["The thick mud moshed under his feet.", "It moshed as he jumped in."],
+      "synonyms": ["squelched", "squashed"],
+      "antonyms": []
+    },
+    "pretty": {
+      "meaning": "Bastante, razoavelmente; também pode significar 'bonito(a)'.",
+      "examples": ["Pretty soon it started to rain.", "She wore a pretty dress."],
+      "synonyms": ["fairly", "quite"],
+      "antonyms": []
+    },
+    "soon": {
+      "meaning": "Em breve, logo.",
+      "examples": ["She will arrive soon.", "Pretty soon it started to rain."],
+      "synonyms": ["shortly"],
+      "antonyms": ["later"]
+    },
+    "splished": {
+      "meaning": "Palavra inventada que imita o som de respingar na lama ou água; variação de 'splashed'.",
+      "examples": ["The water splished around his boots.", "It splished and sploshed in the mud."],
+      "synonyms": ["splashed"],
+      "antonyms": []
+    },
+    "sploshed": {
+      "meaning": "Palavra inventada que imita o som de algo caindo ou se mexendo na lama/água.",
+      "examples": ["The mud sploshed everywhere.", "He sploshed through the puddle."],
+      "synonyms": ["splashed", "sloshed"],
+      "antonyms": []
+    },
+    "ground": {
+      "meaning": "Chão, solo.",
+      "examples": ["The ground was wet.", "He sat on the ground."],
+      "synonyms": ["earth", "soil"],
+      "antonyms": ["sky"]
+    },
+    "was": {
+      "meaning": "Passado do verbo 'to be' para 'I/he/she/it'.",
+      "examples": ["She was happy.", "The ground was wet."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "getting": {
+      "meaning": "Ficando, tornando-se; particípio presente do verbo 'to get'.",
+      "examples": ["It's getting late.", "The ground was getting wetter."],
+      "synonyms": ["becoming"],
+      "antonyms": []
+    },
+    "wetter": {
+      "meaning": "Comparativo de 'wet' (mais molhado).",
+      "examples": ["The ground got wetter and wetter.", "My socks are wetter than my shoes."],
+      "synonyms": [],
+      "antonyms": ["drier"]
+    },
+    "nice": {
+      "meaning": "Agradável, bom.",
+      "examples": ["That's a nice shirt.", "Dirt is nice, but mud is better."],
+      "synonyms": ["pleasant", "good"],
+      "antonyms": ["unpleasant", "bad"]
+    },
+    "but": {
+      "meaning": "Conjunção que indica contraste ('mas').",
+      "examples": ["She is small but strong.", "Dirt is nice but mud is better."],
+      "synonyms": ["however"],
+      "antonyms": []
+    },
+    "mud": {
+      "meaning": "Lama; mistura de terra e água.",
+      "examples": ["The pig rolled in the mud.", "My boots are covered in mud."],
+      "synonyms": ["muck"],
+      "antonyms": []
+    },
+    "better": {
+      "meaning": "Comparativo de 'good' (melhor).",
+      "examples": ["This book is better than that one.", "He says mud is better than dirt."],
+      "synonyms": ["superior"],
+      "antonyms": ["worse"]
+    },
+    "cause": {
+      "meaning": "Forma curta e informal de 'because' (porque).",
+      "examples": ["I stayed home 'cause it was raining.", "Cause nothing is better than this."],
+      "synonyms": ["because"],
+      "antonyms": []
+    },
+    "ever": {
+      "meaning": "Alguma vez; sempre (em certas construções).",
+      "examples": ["Have you ever been to Brazil?", "Nothing will ever compete with this."],
+      "synonyms": ["always"],
+      "antonyms": ["never"]
+    },
+    "will": {
+      "meaning": "Verbo auxiliar usado para o futuro ('vai/irá').",
+      "examples": ["I will see you tomorrow.", "She will clean the dirt."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "compete": {
+      "meaning": "Competir; disputar algo com outra pessoa ou coisa.",
+      "examples": ["The two teams will compete tomorrow.", "Nothing can compete with mud."],
+      "synonyms": ["rival", "contend"],
+      "antonyms": ["cooperate"]
+    },
+    "hopping": {
+      "meaning": "Pulando (em um pé só ou aos saltinhos); particípio presente do verbo 'to hop'.",
+      "examples": ["The rabbit was hopping in the yard.", "He was hopping around in the mud."],
+      "synonyms": ["jumping", "bouncing"],
+      "antonyms": []
+    },
+    "round": {
+      "meaning": "Ao redor, em círculo; usado aqui como sinônimo informal de 'around'.",
+      "examples": ["He walked round the garden.", "She turned round to look."],
+      "synonyms": ["around"],
+      "antonyms": []
+    },
+    "like": {
+      "meaning": "Gostar de algo, ou usado para comparação ('como').",
+      "examples": ["I like muddy feet.", "She sings like a bird."],
+      "synonyms": ["enjoy"],
+      "antonyms": ["dislike"]
+    },
+    "between": {
+      "meaning": "No meio de duas coisas; entre.",
+      "examples": ["The ball is between the chairs.", "Grass grew between my toes."],
+      "synonyms": ["among"],
+      "antonyms": []
+    },
+    "toes": {
+      "meaning": "Dedos do pé; plural de 'toe'.",
+      "examples": ["She wiggled her toes.", "He stubbed his toe."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "even": {
+      "meaning": "Até mesmo; usado para enfatizar algo surpreendente.",
+      "examples": ["Even though it rained, we went out.", "She even helped clean up."],
+      "synonyms": ["also"],
+      "antonyms": []
+    },
+    "though": {
+      "meaning": "Embora, apesar de.",
+      "examples": ["Even though it stains my clothes, I like it.", "It was cold, though she didn't mind."],
+      "synonyms": ["although"],
+      "antonyms": []
+    },
+    "stains": {
+      "meaning": "Mancha ou suja algo; forma do verbo 'to stain' (manchar) na terceira pessoa.",
+      "examples": ["The mud stains my clothes.", "Coffee stains are hard to remove."],
+      "synonyms": ["marks", "spots"],
+      "antonyms": []
+    },
+    "clothes": {
+      "meaning": "Roupas.",
+      "examples": ["Her clothes were dirty.", "I need to buy new clothes."],
+      "synonyms": ["garments", "attire"],
+      "antonyms": []
+    },
+    "sand": {
+      "meaning": "Areia; encontrada em praias e desertos.",
+      "examples": ["The sand was warm on the beach.", "Kids love playing in the sand."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "from": {
+      "meaning": "Preposição que indica origem ou procedência ('de', 'a partir de').",
+      "examples": ["I like sand from the beach.", "She is from Brazil."],
+      "synonyms": [],
+      "antonyms": ["to"]
+    },
+    "beach": {
+      "meaning": "Praia; faixa de areia à beira-mar.",
+      "examples": ["We spent the day at the beach.", "The beach was crowded in summer."],
+      "synonyms": ["seashore", "coast"],
+      "antonyms": []
+    },
+    "gets": {
+      "meaning": "Obtém, consegue, ou torna-se; forma do verbo 'to get' na terceira pessoa.",
+      "examples": ["She gets good grades.", "Sand gets in places hard to reach."],
+      "synonyms": ["obtains", "becomes"],
+      "antonyms": []
+    },
+    "in": {
+      "meaning": "Preposição que indica localização interna ('dentro de', 'em').",
+      "examples": ["The sand gets in my shoes.", "She is in the house."],
+      "synonyms": [],
+      "antonyms": ["out"]
+    },
+    "places": {
+      "meaning": "Lugares; plural de 'place'.",
+      "examples": ["Sand gets into strange places.", "We visited many places."],
+      "synonyms": ["locations", "spots"],
+      "antonyms": []
+    },
+    "hard": {
+      "meaning": "Difícil; também pode significar 'duro'.",
+      "examples": ["Sand gets in places hard to reach.", "The rock is very hard."],
+      "synonyms": ["difficult", "tough"],
+      "antonyms": ["easy", "soft"]
+    },
+    "reach": {
+      "meaning": "Alcançar; chegar a um lugar ou objeto.",
+      "examples": ["I can't reach the top shelf.", "Sand gets in places hard to reach."],
+      "synonyms": ["access", "get to"],
+      "antonyms": []
+    },
+    "leaves": {
+      "meaning": "Folhas; plural de 'leaf'.",
+      "examples": ["The leaves fell from the tree.", "I like jumping in piles of leaves."],
+      "synonyms": ["foliage"],
+      "antonyms": []
+    },
+    "by": {
+      "meaning": "Perto de, ou por meio de; preposição.",
+      "examples": ["She stood by the door.", "I like leaves by the pile."],
+      "synonyms": ["near"],
+      "antonyms": []
+    },
+    "pile": {
+      "meaning": "Monte; pilha de coisas empilhadas.",
+      "examples": ["There was a pile of leaves.", "He made a pile of clothes."],
+      "synonyms": ["heap", "stack"],
+      "antonyms": []
+    },
+    "never": {
+      "meaning": "Nunca; em nenhum momento.",
+      "examples": ["I never saw that movie.", "It never fails to make me smile."],
+      "synonyms": ["not ever"],
+      "antonyms": ["always"]
+    },
+    "fails": {
+      "meaning": "Falha; não consegue fazer algo; forma do verbo 'to fail'.",
+      "examples": ["He never fails to make me laugh.", "The plan fails if it rains."],
+      "synonyms": ["does not succeed"],
+      "antonyms": ["succeeds"]
+    },
+    "make": {
+      "meaning": "Fazer, criar, ou causar que algo aconteça.",
+      "examples": ["It never fails to make me smile.", "She likes to make cookies."],
+      "synonyms": ["create", "cause"],
+      "antonyms": []
+    },
+    "me": {
+      "meaning": "Pronome pessoal de primeira pessoa, usado como objeto ('mim', 'me').",
+      "examples": ["Give it to me.", "It makes me smile."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "smile": {
+      "meaning": "Sorriso; ou o ato de sorrir.",
+      "examples": ["She gave me a big smile.", "It always makes me smile."],
+      "synonyms": ["grin"],
+      "antonyms": ["frown"]
+    },
+    "nothing's": {
+      "meaning": "Contração de 'nothing is' (nada é).",
+      "examples": ["Nothing's better than this.", "Nothing's wrong with that."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "half": {
+      "meaning": "Metade; uma das duas partes iguais de algo.",
+      "examples": ["This isn't even half as sweet.", "She ate half of the cake."],
+      "synonyms": [],
+      "antonyms": ["whole"]
+    },
+    "as": {
+      "meaning": "Tão... quanto; usado em comparações ('as...as').",
+      "examples": ["Nothing is as sweet as this.", "He is as tall as his brother."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "so": {
+      "meaning": "Então, portanto; ou 'tão' (intensificador).",
+      "examples": ["So that is why my shoes came off.", "It was so much fun."],
+      "synonyms": ["therefore", "thus"],
+      "antonyms": []
+    },
+    "that": {
+      "meaning": "Pronome/conjunção usado para indicar algo específico ('aquele/aquilo', 'que').",
+      "examples": ["That is why I'm happy.", "I know that you like mud."],
+      "synonyms": [],
+      "antonyms": ["this"]
+    },
+    "why": {
+      "meaning": "Por quê; usado para perguntar ou explicar uma razão.",
+      "examples": ["That is why my shoes came off.", "Why did you do that?"],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "caught": {
+      "meaning": "Passado do verbo 'to catch' (pegar, contrair uma doença).",
+      "examples": ["I caught a cold.", "She caught the ball."],
+      "synonyms": ["contracted", "got"],
+      "antonyms": []
+    },
+    "cough": {
+      "meaning": "Tosse.",
+      "examples": ["He has a bad cough.", "I caught a cough from playing in the rain."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "all": {
+      "meaning": "Todo(s); a totalidade de algo.",
+      "examples": ["All stuffed up and feeling ill.", "I ate all the food."],
+      "synonyms": ["every", "whole"],
+      "antonyms": ["none"]
+    },
+    "stuffed": {
+      "meaning": "Entupido, congestionado (geralmente referindo-se ao nariz quando resfriado).",
+      "examples": ["I'm all stuffed up with a cold.", "My nose is stuffed."],
+      "synonyms": ["blocked", "congested"],
+      "antonyms": ["clear"]
+    },
+    "up": {
+      "meaning": "Para cima; também usado em expressões como 'stuffed up'.",
+      "examples": ["He woke up early.", "All stuffed up and feeling ill."],
+      "synonyms": [],
+      "antonyms": ["down"]
+    },
+    "feeling": {
+      "meaning": "Sentindo-se; particípio presente do verbo 'to feel'.",
+      "examples": ["I'm feeling ill today.", "She is feeling happy."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "ill": {
+      "meaning": "Doente.",
+      "examples": ["He felt ill after the rain.", "She was too ill to go to school."],
+      "synonyms": ["sick"],
+      "antonyms": ["healthy", "well"]
+    },
+    "wonder": {
+      "meaning": "Imaginar, perguntar-se sobre algo.",
+      "examples": ["I wonder if it will rain.", "She wondered what he was thinking."],
+      "synonyms": ["ponder", "question"],
+      "antonyms": []
+    },
+    "if": {
+      "meaning": "Se; usado para introduzir uma condição.",
+      "examples": ["I wonder if my mother will clean it.", "I'll go if it stops raining."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "mother": {
+      "meaning": "Mãe.",
+      "examples": ["My mother is very kind.", "I wonder if my mother will understand."],
+      "synonyms": ["mom"],
+      "antonyms": ["father"]
+    },
+    "that's": {
+      "meaning": "Contração de 'that is' (isso é).",
+      "examples": ["That's why I love the rain.", "That's a good idea."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "sheet": {
+      "meaning": "Lençol; peça de tecido usada na cama.",
+      "examples": ["There was mud on my sheet.", "She changed the bed sheets."],
+      "synonyms": [],
+      "antonyms": []
+    },
+    "laying": {
+      "meaning": "Deitando, ficando deitado; particípio presente de 'to lay' (usado aqui no sentido informal de 'lying', deitar-se).",
+      "examples": ["I was laying here all day.", "She is laying the baby down."],
+      "synonyms": ["lying", "resting"],
+      "antonyms": []
+    },
+    "here": {
+      "meaning": "Aqui; neste lugar.",
+      "examples": ["I was laying here with muddy feet.", "Come here, please."],
+      "synonyms": [],
+      "antonyms": ["there"]
+    }
+  }
+}

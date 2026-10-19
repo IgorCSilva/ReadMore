@@ -9,6 +9,8 @@ import ReadUnderstandPage from '../pages/ReadUnderstandPage.vue'
 import SettingsPage from '../pages/SettingsPage.vue'
 import ShadowingPage from '../pages/ShadowingPage.vue'
 import SignInPage from '../pages/SignInPage.vue'
+import StoriesPage from '../pages/StoriesPage.vue'
+import StoryReaderPage from '../pages/StoryReaderPage.vue'
 import { getCurrentUser } from '../shared/currentUser'
 
 const router = createRouter({
@@ -25,6 +27,11 @@ const router = createRouter({
     { path: '/notifications', name: 'notifications', component: NotificationsPage, meta: { requiresAuth: true } },
     { path: '/settings', name: 'settings', component: SettingsPage, meta: { requiresAuth: true } },
     { path: '/shadowing', name: 'shadowing', component: ShadowingPage, meta: { requiresAuth: true } },
+    { path: '/stories', name: 'stories', component: StoriesPage, meta: { requiresAuth: true } },
+    // Full-screen reader, same hideGlobalBottomBar treatment as
+    // ReadUnderstandPage/PartFlowPage below — it owns its own exit topbar
+    // and playback-control bottombar instead.
+    { path: '/stories/:level/:storyId', name: 'story-reader', component: StoryReaderPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },
     // A focused, full-screen lesson flow — App.vue reads hideGlobalBottomBar
     // to swap the global nav bar out for this page's own Next-button bar.
     { path: '/part/:topicId/:partNumber', name: 'part-flow', component: PartFlowPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },
