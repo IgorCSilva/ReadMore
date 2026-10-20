@@ -1,0 +1,453 @@
+[
+  {
+    "id": "es-sent-1173",
+    "sentence": "El mundo es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0397",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1174",
+    "sentence": "Quiero viajar por el mundo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0274",
+      "es-wd-0254",
+      "es-wd-0057",
+      "es-wd-0397"
+    ]
+  },
+  {
+    "id": "es-sent-1175",
+    "sentence": "Hay gente en el mundo.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0402",
+      "es-wd-0083",
+      "es-wd-0397"
+    ]
+  },
+  {
+    "id": "es-sent-1176",
+    "sentence": "Mi país favorito es España.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0398",
+      "es-wd-0394",
+      "es-wd-0017",
+      "es-wd-0399"
+    ]
+  },
+  {
+    "id": "es-sent-1177",
+    "sentence": "Quiero conocer un país nuevo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0199",
+      "es-wd-0076",
+      "es-wd-0398",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1178",
+    "sentence": "El país es diferente.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0398",
+      "es-wd-0017",
+      "es-wd-0403"
+    ]
+  },
+  {
+    "id": "es-sent-1179",
+    "sentence": "España es un país bonito.",
+    "word_ids": [
+      "es-wd-0399",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0398",
+      "es-wd-0377"
+    ]
+  },
+  {
+    "id": "es-sent-1180",
+    "sentence": "Quiero viajar a España.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0274",
+      "es-wd-0253",
+      "es-wd-0399"
+    ]
+  },
+  {
+    "id": "es-sent-1181",
+    "sentence": "Mi amigo es de España.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0204",
+      "es-wd-0017",
+      "es-wd-0023",
+      "es-wd-0399"
+    ]
+  },
+  {
+    "id": "es-sent-1182",
+    "sentence": "México es un país grande.",
+    "word_ids": [
+      "es-wd-0400",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0398",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1183",
+    "sentence": "Quiero viajar a México.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0274",
+      "es-wd-0253",
+      "es-wd-0400"
+    ]
+  },
+  {
+    "id": "es-sent-1184",
+    "sentence": "Mi amiga es de México.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0205",
+      "es-wd-0017",
+      "es-wd-0023",
+      "es-wd-0400"
+    ]
+  },
+  {
+    "id": "es-sent-1185",
+    "sentence": "Japón es un país diferente.",
+    "word_ids": [
+      "es-wd-0401",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0398",
+      "es-wd-0403"
+    ]
+  },
+  {
+    "id": "es-sent-1186",
+    "sentence": "Quiero viajar a Japón.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0274",
+      "es-wd-0253",
+      "es-wd-0401"
+    ]
+  },
+  {
+    "id": "es-sent-1187",
+    "sentence": "Mi primo está en Japón.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0048",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0401"
+    ]
+  },
+  {
+    "id": "es-sent-1188",
+    "sentence": "La gente aquí es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0402",
+      "es-wd-0078",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1189",
+    "sentence": "Hay mucha gente aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0402",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1190",
+    "sentence": "Hay gente en el país.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0402",
+      "es-wd-0083",
+      "es-wd-0398"
+    ]
+  },
+  {
+    "id": "es-sent-1191",
+    "sentence": "España es diferente de México.",
+    "word_ids": [
+      "es-wd-0399",
+      "es-wd-0017",
+      "es-wd-0403",
+      "es-wd-0023",
+      "es-wd-0400"
+    ]
+  },
+  {
+    "id": "es-sent-1192",
+    "sentence": "El saludo es diferente en Japón.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0404",
+      "es-wd-0017",
+      "es-wd-0403",
+      "es-wd-0084",
+      "es-wd-0401"
+    ]
+  },
+  {
+    "id": "es-sent-1193",
+    "sentence": "El mundo tiene gente diferente.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0397",
+      "es-wd-0080",
+      "es-wd-0402",
+      "es-wd-0403"
+    ]
+  },
+  {
+    "id": "es-sent-1194",
+    "sentence": "El saludo es diferente en mi país.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0404",
+      "es-wd-0017",
+      "es-wd-0403",
+      "es-wd-0084",
+      "es-wd-0016",
+      "es-wd-0398"
+    ]
+  },
+  {
+    "id": "es-sent-1195",
+    "sentence": "Mi saludo favorito es el abrazo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0404",
+      "es-wd-0394",
+      "es-wd-0017",
+      "es-wd-0057",
+      "es-wd-0405"
+    ]
+  },
+  {
+    "id": "es-sent-1196",
+    "sentence": "Quiero un saludo nuevo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0404",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1197",
+    "sentence": "Mi abrazo favorito es de mi abuelo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0405",
+      "es-wd-0394",
+      "es-wd-0017",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0044"
+    ]
+  },
+  {
+    "id": "es-sent-1198",
+    "sentence": "Quiero un abrazo de mi amigo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0405",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0204"
+    ]
+  },
+  {
+    "id": "es-sent-1199",
+    "sentence": "El abrazo es un saludo bonito.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0405",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0404",
+      "es-wd-0377"
+    ]
+  },
+  {
+    "id": "es-sent-1200",
+    "sentence": "El beso de mi tía es bonito.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0406",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0047",
+      "es-wd-0017",
+      "es-wd-0377"
+    ]
+  },
+  {
+    "id": "es-sent-1201",
+    "sentence": "El beso es un saludo bonito.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0406",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0404",
+      "es-wd-0377"
+    ]
+  },
+  {
+    "id": "es-sent-1202",
+    "sentence": "Quiero un beso de mi abuela.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0076",
+      "es-wd-0406",
+      "es-wd-0023",
+      "es-wd-0016",
+      "es-wd-0045"
+    ]
+  },
+  {
+    "id": "es-sent-1203",
+    "sentence": "Quiero dar la mano a mi amigo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0407",
+      "es-wd-0253",
+      "es-wd-0016",
+      "es-wd-0204"
+    ]
+  },
+  {
+    "id": "es-sent-1204",
+    "sentence": "Puede dar la mano también.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0407",
+      "es-wd-0210"
+    ]
+  },
+  {
+    "id": "es-sent-1205",
+    "sentence": "Dar la mano es un saludo diferente.",
+    "word_ids": [
+      "es-wd-0407",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0404",
+      "es-wd-0403"
+    ]
+  },
+  {
+    "id": "es-sent-1206",
+    "sentence": "Quiero hacer una reverencia.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0108",
+      "es-wd-0077",
+      "es-wd-0408"
+    ]
+  },
+  {
+    "id": "es-sent-1207",
+    "sentence": "La reverencia es un saludo diferente.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0408",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0404",
+      "es-wd-0403"
+    ]
+  },
+  {
+    "id": "es-sent-1208",
+    "sentence": "En Japón, puede hacer una reverencia.",
+    "word_ids": [
+      "es-wd-0084",
+      "es-wd-0401",
+      "es-wd-0323",
+      "es-wd-0108",
+      "es-wd-0077",
+      "es-wd-0408"
+    ]
+  },
+  {
+    "id": "es-sent-1209",
+    "sentence": "¡Qué tal! ¿Cómo estás?",
+    "word_ids": [
+      "es-wd-0409",
+      "es-wd-0012",
+      "es-wd-0035"
+    ]
+  },
+  {
+    "id": "es-sent-1210",
+    "sentence": "¡Qué tal, mi amigo!",
+    "word_ids": [
+      "es-wd-0409",
+      "es-wd-0016",
+      "es-wd-0204"
+    ]
+  },
+  {
+    "id": "es-sent-1211",
+    "sentence": "Qué tal, mucho gusto.",
+    "word_ids": [
+      "es-wd-0409",
+      "es-wd-0206"
+    ]
+  },
+  {
+    "id": "es-sent-1212",
+    "sentence": "¡Qué onda! ¿Cómo estás?",
+    "word_ids": [
+      "es-wd-0410",
+      "es-wd-0012",
+      "es-wd-0035"
+    ]
+  },
+  {
+    "id": "es-sent-1213",
+    "sentence": "¡Qué onda, mi amigo de México!",
+    "word_ids": [
+      "es-wd-0410",
+      "es-wd-0016",
+      "es-wd-0204",
+      "es-wd-0023",
+      "es-wd-0400"
+    ]
+  },
+  {
+    "id": "es-sent-1214",
+    "sentence": "Qué onda, mucho gusto.",
+    "word_ids": [
+      "es-wd-0410",
+      "es-wd-0206"
+    ]
+  }
+]

@@ -35,22 +35,34 @@
       {{ playing ? '⏸' : '▶' }}
     </button>
     <button type="button" class="reader-control-btn" @click="stop" aria-label="Stop">⏹</button>
+    <button type="button" class="reader-study-btn" @click="openStudy">Study</button>
   </div>
+
+  <StudyWordModal
+    v-if="studyOpen && topic"
+    :sentence="currentSentenceText"
+    :glossary="topic.glossary"
+    :target-lang-code="targetCode"
+    @close="closeStudy"
+  />
 </template>
 
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
+import StudyWordModal from '../features/stories/StudyWordModal.vue'
 import { getLearningTopic, ttsUrl } from '../shared/api'
 import { getLangPair } from '../shared/languagePreference'
 import { speechLocaleFor } from '../shared/languages'
 import { parseMarkdownLine } from '../shared/markdownLine'
 import type { LearningTopic } from '../shared/types'
 
-// Resolved once per mount, same idiom as StoryReaderPage.vue — this content
-// is plain target-language reading, keyed by the bare target code rather
-// than the full origin->target pair.
-const targetCode = getLangPair().split('-')[1] || 'en'
+// Saved via SettingsPage.vue (default 'pt-en'), resolved once per mount —
+// same idiom as StoryReaderPage. The topic's own text is plain
+// target-language reading (keyed by targetCode below), but its glossary
+// overlay is pair-specific, so the full pair is what the API call needs.
+const LANG = getLangPair()
+const targetCode = LANG.split('-')[1] || LANG
 
 const route = useRoute()
 const router = useRouter()
@@ -59,11 +71,18 @@ const topic = ref<LearningTopic | null>(null)
 const isLoading = ref(true)
 const currentIndex = ref(0)
 const playing = ref(false)
+const studyOpen = ref(false)
 
 // One parsed entry per topic.sentences entry, same index alignment —
 // formatted HTML to display (headings sized, bullets, **bold**, no literal
 // Markdown markers) plus plain text to read aloud via TTS.
 const parsedLines = computed(() => (topic.value?.sentences ?? []).map(parseMarkdownLine))
+
+// plainText already has Markdown markers stripped (see parseMarkdownLine),
+// which is exactly what the Study modal's tokenizer needs — same idea as
+// StoryReaderPage's currentSentenceText, just sourced from the parsed line
+// instead of the raw sentence.
+const currentSentenceText = computed(() => parsedLines.value[currentIndex.value]?.plainText ?? '')
 
 // 1x is the middle default, same idea as a physical dial's center detent —
 // cycling wraps around rather than clamping at either end.
@@ -184,6 +203,19 @@ function selectSentence(index: number): void {
   }
 }
 
+function openStudy(): void {
+  if (playing.value) {
+    liveAudio?.pause()
+    window.speechSynthesis?.cancel()
+    playing.value = false
+  }
+  studyOpen.value = true
+}
+
+function closeStudy(): void {
+  studyOpen.value = false
+}
+
 function exit(): void {
   router.push('/learning')
 }
@@ -193,7 +225,7 @@ async function load(): Promise<void> {
   try {
     const theme = String(route.params.theme)
     const topicId = String(route.params.topicId)
-    const data = await getLearningTopic(targetCode, theme, topicId)
+    const data = await getLearningTopic(LANG, theme, topicId)
     topic.value = data.topic
     currentIndex.value = firstPlayableIndex()
   } finally {
@@ -392,5 +424,21 @@ onUnmounted(() => {
 .reader-speed-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+.reader-study-btn {
+  padding: 0 22px;
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  background: var(--accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.reader-study-btn:hover {
+  background: var(--accent-strong);
 }
 </style>

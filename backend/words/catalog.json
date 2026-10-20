@@ -2259,6 +2259,54 @@
     {
       "word_id": "wd-0565",
       "filename": "free_time"
+    },
+    {
+      "word_id": "wd-0566",
+      "filename": "spain"
+    },
+    {
+      "word_id": "wd-0567",
+      "filename": "mexico"
+    },
+    {
+      "word_id": "wd-0568",
+      "filename": "japan"
+    },
+    {
+      "word_id": "wd-0569",
+      "filename": "people"
+    },
+    {
+      "word_id": "wd-0570",
+      "filename": "different"
+    },
+    {
+      "word_id": "wd-0571",
+      "filename": "greeting"
+    },
+    {
+      "word_id": "wd-0572",
+      "filename": "hug"
+    },
+    {
+      "word_id": "wd-0573",
+      "filename": "kiss"
+    },
+    {
+      "word_id": "wd-0574",
+      "filename": "to_shake_hands"
+    },
+    {
+      "word_id": "wd-0575",
+      "filename": "bow"
+    },
+    {
+      "word_id": "wd-0576",
+      "filename": "how_s_it_going"
+    },
+    {
+      "word_id": "wd-0577",
+      "filename": "what_s_up"
     }
   ]
 }

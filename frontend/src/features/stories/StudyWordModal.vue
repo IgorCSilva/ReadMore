@@ -77,7 +77,7 @@ const props = defineProps<{
 
 const emit = defineEmits<{ close: [] }>()
 
-const tokens = computed(() => tokenizeStoryWords(props.sentence))
+const tokens = computed(() => tokenizeStoryWords(props.sentence, props.glossary))
 const selectedIndex = ref(0)
 
 const selectedDisplay = computed(() => tokens.value[selectedIndex.value]?.display ?? '')
