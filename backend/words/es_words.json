@@ -2374,5 +2374,89 @@
     "root_word_id": "wd-0565",
     "word": "tiempo libre",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0397",
+    "root_word_id": "wd-0123",
+    "word": "mundo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0398",
+    "root_word_id": "wd-0121",
+    "word": "país",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0399",
+    "root_word_id": "wd-0566",
+    "word": "España",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0400",
+    "root_word_id": "wd-0567",
+    "word": "México",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0401",
+    "root_word_id": "wd-0568",
+    "word": "Japón",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0402",
+    "root_word_id": "wd-0569",
+    "word": "gente",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0403",
+    "root_word_id": "wd-0570",
+    "word": "diferente",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0404",
+    "root_word_id": "wd-0571",
+    "word": "saludo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0405",
+    "root_word_id": "wd-0572",
+    "word": "abrazo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0406",
+    "root_word_id": "wd-0573",
+    "word": "beso",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0407",
+    "root_word_id": "wd-0574",
+    "word": "dar la mano",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0408",
+    "root_word_id": "wd-0575",
+    "word": "reverencia",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0409",
+    "root_word_id": "wd-0576",
+    "word": "qué tal",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0410",
+    "root_word_id": "wd-0577",
+    "word": "qué onda",
+    "gender_id": "not_apply"
   }
 ]

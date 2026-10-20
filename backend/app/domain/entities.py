@@ -110,10 +110,11 @@ class UserRecord:
 
 @dataclass
 class GlossaryEntry:
-    """One word's study info for the Stories feature's "Study" modal —
-    meaning is in the pair's origin language (what's being explained to the
-    learner); examples/synonyms/antonyms are in the target language (what's
-    being learned, and what gets played back through TTS)."""
+    """One word's (or phrase's — e.g. "método del plato") study info for the
+    "Study" modal shared by Stories and LearningTopic — meaning is in the
+    pair's origin language (what's being explained to the learner);
+    examples/synonyms/antonyms are in the target language (what's being
+    learned, and what gets played back through TTS)."""
 
     meaning: str
     examples: list[str] = field(default_factory=list)
@@ -158,10 +159,13 @@ class LearningTopicSummary:
 class LearningTopic(LearningTopicSummary):
     """A full learning-theme topic: plain-language content (e.g. Nutrition's
     "Macronutrients Basics") written directly in the target language, no
-    origin-language mixing — unlike Story, this has no glossary, since it's
-    informational reading rather than a vocabulary-study text."""
+    origin-language mixing in `sentences` itself. `glossary` is the
+    pair-specific Study overlay (same shape/semantics as Story.glossary,
+    including phrase keys like "método del plato") so this content's reader
+    page can offer the same "Study" button Stories has."""
 
     sentences: list[str] = field(default_factory=list)
+    glossary: dict[str, GlossaryEntry] = field(default_factory=dict)
 
 
 @dataclass

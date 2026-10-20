@@ -2,6 +2,7 @@
 from pydantic import BaseModel
 
 from backend.app.domain.entities import LearningTopic, LearningTopicSummary
+from backend.app.infrastructure.dtos.stories import GlossaryEntryDTO
 
 
 class LearningTopicSummaryDTO(BaseModel):
@@ -26,6 +27,7 @@ class LearningTopicDTO(BaseModel):
     title: str
     level: str
     sentences: list[str]
+    glossary: dict[str, GlossaryEntryDTO]
 
     @classmethod
     def from_entity(cls, topic: LearningTopic) -> "LearningTopicDTO":
@@ -35,6 +37,7 @@ class LearningTopicDTO(BaseModel):
             title=topic.title,
             level=topic.level,
             sentences=topic.sentences,
+            glossary={k: GlossaryEntryDTO.from_entity(v) for k, v in topic.glossary.items()},
         )
 
 

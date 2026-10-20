@@ -199,15 +199,17 @@ export interface LearningTopicsResponse {
 }
 
 // sentences is one array entry per original line of the source Markdown
-// file, same "" blank-line convention as Story.sentences above — no
-// glossary, since this is plain informational reading, not a
-// vocabulary-study text.
+// file, same "" blank-line convention as Story.sentences above. glossary
+// is the same pair-specific Study overlay as Story.glossary (including
+// phrase keys like "método del plato") — see tokenizeStoryWords in
+// shared/text.ts for the matching lookup key/merge logic.
 export interface LearningTopic {
   topic_id: string
   theme: string
   title: string
   level: string
   sentences: string[]
+  glossary: Record<string, GlossaryEntry>
 }
 
 export interface LearningTopicResponse {

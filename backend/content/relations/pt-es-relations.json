@@ -478,6 +478,24 @@
         "favorita": "favorita",
         "tempo livre": "tiempo libre"
       }
+    },
+    "topic_5": {
+      "pt": {
+        "mundo": "mundo",
+        "país": "país",
+        "Espanha": "España",
+        "México": "México",
+        "Japão": "Japón",
+        "pessoas": "gente",
+        "diferente": "diferente",
+        "saudação": "saludo",
+        "abraço": "abrazo",
+        "beijo": "beso",
+        "apertar a mão": "dar la mano",
+        "reverência": "reverencia",
+        "tudo bem": "qué tal",
+        "e aí": "qué onda"
+      }
     }
   }
 }

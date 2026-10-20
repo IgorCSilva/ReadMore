@@ -19,10 +19,11 @@ const TOPIC: LearningTopic = {
   title: 'Macronutrientes',
   level: 'A1',
   sentences: ['Line one.', 'Line two.', '', 'Line three.'],
+  glossary: {},
 }
 
 async function mountPage() {
-  vi.mocked(api.getLearningTopic).mockResolvedValue({ lang: 'es', topic: TOPIC })
+  vi.mocked(api.getLearningTopic).mockResolvedValue({ lang: 'pt-es', topic: TOPIC })
 
   const router = createRouter({
     history: createWebHistory(),
@@ -34,7 +35,15 @@ async function mountPage() {
   router.push({ name: 'learning-topic', params: { theme: 'health', topicId: 'NUT_1' } })
   await router.isReady()
 
-  const wrapper = mount(LearningTopicPage, { attachTo: document.body, global: { plugins: [router] } })
+  const wrapper = mount(LearningTopicPage, {
+    attachTo: document.body,
+    global: {
+      plugins: [router],
+      stubs: {
+        StudyWordModal: { template: '<div class="study-stub">{{ sentence }}</div>', props: ['sentence'] },
+      },
+    },
+  })
   await flushPromises()
   return { wrapper, router }
 }
@@ -103,10 +112,16 @@ describe('LearningTopicPage', () => {
     }
   })
 
-  it('does not render a Study button', async () => {
+  it('Study opens the modal for the currently highlighted line and pauses playback', async () => {
     const { wrapper } = await mountPage()
     try {
-      expect(wrapper.find('.reader-study-btn').exists()).toBe(false)
+      await wrapper.findAll('.reader-line')[1].trigger('click')
+      await wrapper.get('.reader-control-btn').trigger('click')
+
+      await wrapper.get('.reader-study-btn').trigger('click')
+
+      expect(wrapper.get('.study-stub').text()).toBe('Line two.')
+      expect(wrapper.get('.reader-control-btn').text()).toBe('▶')
     } finally {
       wrapper.unmount()
     }
