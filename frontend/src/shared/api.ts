@@ -100,6 +100,9 @@ export function getLearningTopics(lang: string): Promise<LearningTopicsResponse>
   return fetchJsonWithRetry<LearningTopicsResponse>(url)
 }
 
+// Unlike getLearningTopics above, `lang` here is the full origin-target
+// pair (e.g. "pt-es"), not just the bare target code — the topic's
+// glossary overlay is pair-specific, same as getStory's `lang`.
 export function getLearningTopic(
   lang: string,
   theme: string,

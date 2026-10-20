@@ -2,14 +2,18 @@
 
 Lives in application/, not infrastructure/ — see catalog_repository.py's
 docstring for why. Kept separate from StoriesRepository/CatalogRepository
-since this is its own content tree (content/learning/theme/<theme>/
-<chapter>_<topic>/<lang>.json), keyed by a bare target-language code rather
-than an origin->target LanguagePair — there's no origin-language mixing in
-this content, just plain target-language reading material.
+since this is its own content tree (content/<target>/learning/theme/<theme>/
+<chapter>_<topic>/<lang>.json) — plain target-language reading material, no
+origin-language mixing in the content itself, so list_topics (listing
+weight, no glossary needed) still only takes a bare target-language code.
+get_topic takes a full LanguagePair instead, the same as StoriesRepository,
+because its glossary overlay (see Story.glossary) is pair-specific — its
+"meaning" text is written in the origin language.
 """
 from abc import ABC, abstractmethod
 
 from backend.app.domain.entities import LearningTopic, LearningTopicSummary
+from backend.app.domain.value_objects import LanguagePair
 
 
 class LearningContentRepository(ABC):
@@ -21,7 +25,7 @@ class LearningContentRepository(ABC):
         missing content dir as empty)."""
 
     @abstractmethod
-    def get_topic(self, lang: str, theme: str, topic_id: str) -> LearningTopic:
-        """One full topic (sentences included). Raises
+    def get_topic(self, lang: LanguagePair, theme: str, topic_id: str) -> LearningTopic:
+        """One full topic (sentences + glossary). Raises
         LearningTopicNotFoundError if no such theme/topic_id has content for
-        this language code."""
+        this pair's target language."""

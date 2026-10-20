@@ -3,14 +3,14 @@
     <RouterLink to="/home" class="bottom-bar-item" active-class="active" exact-active-class="active">
       <span class="bottom-bar-icon icon-home"></span>
     </RouterLink>
+    <RouterLink to="/shadowing" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Shadowing">
+      <span class="bottom-bar-icon icon-shadowing"></span>
+    </RouterLink>
     <RouterLink to="/stories" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Stories">
       <span class="bottom-bar-icon icon-stories"></span>
     </RouterLink>
     <RouterLink to="/learning" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Learning">
       <span class="bottom-bar-icon icon-learning"></span>
-    </RouterLink>
-    <RouterLink to="/shadowing" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Shadowing">
-      <span class="bottom-bar-icon icon-shadowing"></span>
     </RouterLink>
     <RouterLink to="/notifications" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Notifications">
       <span class="bottom-bar-icon-wrap">

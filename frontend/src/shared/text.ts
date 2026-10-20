@@ -31,8 +31,19 @@ const CURLY_APOSTROPHE_RE = /[‘’]/g
 // Splits a story line/sentence into its words, in reading order (including
 // repeats), for the Study modal's horizontally-scrollable word row — each
 // token's `key` looks up straight into Story.glossary.
-export function tokenizeStoryWords(sentence: string): StoryWordToken[] {
-  return sentence
+//
+// `glossary`, when given, lets a run of consecutive words merge into one
+// token when their space-joined key matches a multi-word glossary entry
+// (e.g. "método del plato") — a handful of terms mean something genuinely
+// different combined than word-by-word (closer to a phrasal verb than a
+// plain noun phrase), so they get a single word-button and a single
+// lookup, same one-click model as every other word. Greedy longest-match:
+// at each position, the longest phrase found wins over a shorter one.
+export function tokenizeStoryWords(
+  sentence: string,
+  glossary?: Record<string, unknown>,
+): StoryWordToken[] {
+  const singleTokens = sentence
     .split(/\s+/)
     .map((raw) => raw.replace(EDGE_PUNCTUATION_RE, ''))
     .filter((display) => display.length > 0)
@@ -40,4 +51,34 @@ export function tokenizeStoryWords(sentence: string): StoryWordToken[] {
       display,
       key: display.toLowerCase().replace(CURLY_APOSTROPHE_RE, "'"),
     }))
+
+  const phraseKeyWordCounts = glossary
+    ? Object.keys(glossary)
+        .filter((key) => key.includes(' '))
+        .map((key) => key.split(' ').length)
+    : []
+  if (phraseKeyWordCounts.length === 0) return singleTokens
+
+  const maxWords = Math.max(...phraseKeyWordCounts)
+  const merged: StoryWordToken[] = []
+  let i = 0
+  while (i < singleTokens.length) {
+    let matchedWords = 0
+    for (let n = Math.min(maxWords, singleTokens.length - i); n >= 2; n--) {
+      const candidate = singleTokens.slice(i, i + n)
+      const candidateKey = candidate.map((t) => t.key).join(' ')
+      if (glossary && candidateKey in glossary) {
+        merged.push({ display: candidate.map((t) => t.display).join(' '), key: candidateKey })
+        matchedWords = n
+        break
+      }
+    }
+    if (matchedWords > 0) {
+      i += matchedWords
+    } else {
+      merged.push(singleTokens[i])
+      i += 1
+    }
+  }
+  return merged
 }

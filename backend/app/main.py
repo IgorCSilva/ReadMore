@@ -393,15 +393,18 @@ def get_learning_topics_route(
 def get_learning_topic_route(
     theme: str,
     topic_id: str,
-    lang: str = "en",
+    lang: str = "pt-en",
     learning_content_repository: JsonLearningContentRepository = Depends(
         get_learning_content_repository
     ),
 ):
-    code = lang.strip() or "en"
+    # Unlike the listing route above, this one needs the full pair (not just
+    # the bare target code) because the topic's glossary overlay is
+    # pair-specific — see JsonLearningContentRepository's module docstring.
+    language_pair = _parse_lang(lang.strip() or "pt-en")
     use_case = GetLearningTopic(learning_content_repository)
-    topic = use_case.execute(code, theme, topic_id)
-    return LearningTopicResponse(lang=code, topic=LearningTopicDTO.from_entity(topic))
+    topic = use_case.execute(language_pair, theme, topic_id)
+    return LearningTopicResponse(lang=str(language_pair), topic=LearningTopicDTO.from_entity(topic))
 
 
 @app.post("/corrections")
