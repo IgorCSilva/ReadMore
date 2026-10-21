@@ -8,6 +8,19 @@
     "synonyms": [],
     "antonyms": []
   },
+  "abajo": {
+    "meaning": "Embaixo, abaixo.",
+    "examples": [
+      "Todos los números de abajo son para una porción, no para todo el paquete.",
+      "El libro está abajo de la mesa."
+    ],
+    "synonyms": [
+      "debajo"
+    ],
+    "antonyms": [
+      "arriba"
+    ]
+  },
   "abejas": {
     "meaning": "Abelhas; insetos que fazem mel e zumbem.",
     "examples": [
@@ -63,6 +76,19 @@
       "cerró"
     ]
   },
+  "abrían": {
+    "meaning": "Abriam-se; pretérito imperfeito (eles/elas) de 'abrirse'.",
+    "examples": [
+      "Más allá del río, las flores se abrían.",
+      "Las puertas se abrían lentamente."
+    ],
+    "synonyms": [
+      "se desplegaban"
+    ],
+    "antonyms": [
+      "se cerraban"
+    ]
+  },
   "abuela": {
     "meaning": "Avó.",
     "examples": [
@@ -86,6 +112,28 @@
     "antonyms": [
       "divertida"
     ]
+  },
+  "acabado": {
+    "meaning": "Acabado, terminado; particípio de 'acabar'.",
+    "examples": [
+      "Y colorín colorado, este cuento se ha acabado.",
+      "El trabajo ya está acabado."
+    ],
+    "synonyms": [
+      "terminado"
+    ],
+    "antonyms": []
+  },
+  "acariciaba": {
+    "meaning": "Acariciava; pretérito imperfeito (ele/ela) de 'acariciar'.",
+    "examples": [
+      "la luz acariciaba las copas con un toque sincero.",
+      "El viento acariciaba su rostro."
+    ],
+    "synonyms": [
+      "rozaba"
+    ],
+    "antonyms": []
   },
   "acariciarle": {
     "meaning": "Fazer um carinho nela/nele; infinitivo 'acariciar' + 'le'.",
@@ -151,6 +199,15 @@
       "se alejó"
     ]
   },
+  "achís": {
+    "meaning": "Atchim! (onomatopeia de um espirro).",
+    "examples": [
+      "El animal no pudo evitar un gran estornudo y... ¡achís!",
+      "¡Achís! Creo que tengo un resfriado."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "acompañarlo": {
     "meaning": "Acompanhá-lo; infinitivo 'acompañar' + pronome 'lo'.",
     "examples": [
@@ -199,6 +256,32 @@
     ],
     "antonyms": []
   },
+  "adentro": {
+    "meaning": "Dentro, para dentro.",
+    "examples": [
+      "Sin darse cuenta de que Garbancito estaba adentro.",
+      "Vamos adentro, está empezando a llover."
+    ],
+    "synonyms": [
+      "dentro"
+    ],
+    "antonyms": [
+      "afuera"
+    ]
+  },
+  "aferra": {
+    "meaning": "Agarra-se, apega-se; presente (ele/ela) de 'aferrarse'.",
+    "examples": [
+      "El aroma, el murmullo, la brisa que se aferra.",
+      "Ella se aferra a sus recuerdos."
+    ],
+    "synonyms": [
+      "se apega"
+    ],
+    "antonyms": [
+      "se suelta"
+    ]
+  },
   "afuera": {
     "meaning": "Lá fora; fora de casa.",
     "examples": [
@@ -233,6 +316,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "agregada": {
+    "meaning": "Adicionada; particípio/forma de 'agregar'.",
+    "examples": [
+      "Azúcar añadida — azúcar agregada a la comida durante su procesamiento.",
+      "La sal fue agregada a la receta al final."
+    ],
+    "synonyms": [
+      "añadida"
+    ],
+    "antonyms": []
+  },
   "agua": {
     "meaning": "Água.",
     "examples": [
@@ -263,6 +357,45 @@
     "antonyms": [
       "antes",
       "después"
+    ]
+  },
+  "ahorra": {
+    "meaning": "Economiza; presente (ele/ela) de 'ahorrar'.",
+    "examples": [
+      "**Paso 5:** Prepara algo de comida con anticipación, como arroz o pollo. Esto ahorra tiempo durante la semana.",
+      "Ella ahorra dinero cada mes."
+    ],
+    "synonyms": [
+      "economiza"
+    ],
+    "antonyms": [
+      "gasta"
+    ]
+  },
+  "ahorras": {
+    "meaning": "Economizas; presente (tú) de 'ahorrar'.",
+    "examples": [
+      "- Ahorras tiempo durante la semana",
+      "Tú ahorras mucho dinero."
+    ],
+    "synonyms": [
+      "economizas"
+    ],
+    "antonyms": [
+      "gastas"
+    ]
+  },
+  "ahuecada": {
+    "meaning": "Côncava, em forma de taça; forma feminina de 'ahuecado'.",
+    "examples": [
+      "| Mano ahuecada | Carbohidratos (arroz, pasta, papa) | Una mano ahuecada |",
+      "La taza tiene una forma ahuecada."
+    ],
+    "synonyms": [
+      "cóncava"
+    ],
+    "antonyms": [
+      "plana"
     ]
   },
   "ahí": {
@@ -320,6 +453,19 @@
     ],
     "antonyms": []
   },
+  "alegría": {
+    "meaning": "Alegria.",
+    "examples": [
+      "Sus rayos tibios llenan el bosque de alegría.",
+      "La noticia le llenó de alegría."
+    ],
+    "synonyms": [
+      "felicidad"
+    ],
+    "antonyms": [
+      "tristeza"
+    ]
+  },
   "algo": {
     "meaning": "Algo; pronome indefinido que indica uma coisa não especificada.",
     "examples": [
@@ -355,6 +501,17 @@
       "nadie"
     ]
   },
+  "alguna": {
+    "meaning": "Alguma; forma feminina de 'alguno'.",
+    "examples": [
+      "¿Imaginaste alguna vez un lugar tan sereno,",
+      "¿Tienes alguna pregunta?"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "ninguna"
+    ]
+  },
   "algunos": {
     "meaning": "Alguns; plural de 'alguno'.",
     "examples": [
@@ -366,6 +523,19 @@
     ],
     "antonyms": [
       "ninguno"
+    ]
+  },
+  "alienta": {
+    "meaning": "Anima, encoraja; presente (ele/ela) de 'alentar'.",
+    "examples": [
+      "El viento en la piel es un abrazo que alienta.",
+      "Su sonrisa siempre alienta a todos."
+    ],
+    "synonyms": [
+      "anima"
+    ],
+    "antonyms": [
+      "desalienta"
     ]
   },
   "alimento": {
@@ -452,6 +622,30 @@
     "synonyms": [],
     "antonyms": []
   },
+  "alterar": {
+    "meaning": "Alterar, perturbar.",
+    "examples": [
+      "Todo vibra en calma, nada que alterar.",
+      "No quiero alterar tus planes."
+    ],
+    "synonyms": [
+      "perturbar"
+    ],
+    "antonyms": [
+      "calmar"
+    ]
+  },
+  "alto": {
+    "meaning": "Alto.",
+    "examples": [
+      "El número real de calorías que comes puede ser más alto de lo que piensas.",
+      "Ese edificio es muy alto."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "bajo"
+    ]
+  },
   "altísimos": {
     "meaning": "Altíssimos; muito altos (superlativo de 'alto').",
     "examples": [
@@ -465,6 +659,19 @@
       "bajísimos"
     ]
   },
+  "amanecer": {
+    "meaning": "Amanhecer, nascer do dia.",
+    "examples": [
+      "Quise ver el amanecer antes de que despertara el bosque entero,",
+      "Nos levantamos temprano para ver el amanecer."
+    ],
+    "synonyms": [
+      "alba"
+    ],
+    "antonyms": [
+      "atardecer"
+    ]
+  },
   "amarillo": {
     "meaning": "Amarelo.",
     "examples": [
@@ -472,6 +679,17 @@
       "El sol se ve amarillo en el cielo."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "ambiente": {
+    "meaning": "Ambiente.",
+    "examples": [
+      "La tranquilidad del bosque, el ambiente tan pleno.",
+      "El ambiente en la fiesta era alegre."
+    ],
+    "synonyms": [
+      "entorno"
+    ],
     "antonyms": []
   },
   "amiga": {
@@ -514,6 +732,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "animal": {
+    "meaning": "Animal.",
+    "examples": [
+      "El animal no pudo evitar un gran estornudo.",
+      "Mi animal favorito es el perro."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "antes": {
     "meaning": "Antes de; anteriormente.",
     "examples": [
@@ -526,6 +753,48 @@
     "antonyms": [
       "después"
     ]
+  },
+  "anticipación": {
+    "meaning": "Antecipação; usado em 'con anticipación' (com antecedência).",
+    "examples": [
+      "**Paso 5:** Prepara algo de comida con anticipación, como arroz o pollo. Esto ahorra tiempo durante la semana.",
+      "Compra los boletos con anticipación."
+    ],
+    "synonyms": [
+      "antelación"
+    ],
+    "antonyms": []
+  },
+  "aparecen": {
+    "meaning": "Aparecem; presente de 'aparecer'.",
+    "examples": [
+      "Los ingredientes aparecen en orden, del más al menos.",
+      "Los ingredientes aparecen escritos en la bolsa."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "apartado": {
+    "meaning": "Afastado, isolado.",
+    "examples": [
+      "Allí, en ese rincón apartado.",
+      "Vive en un pueblo apartado."
+    ],
+    "synonyms": [
+      "aislado"
+    ],
+    "antonyms": [
+      "cercano"
+    ]
+  },
+  "aporta": {
+    "meaning": "Contribui, fornece; presente de 'aportar'.",
+    "examples": [
+      "Cuánto aporta un nutriente a lo que necesitas en un día completo.",
+      "Esta fruta aporta muchas vitaminas."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "aprender": {
     "meaning": "Aprender.",
@@ -599,6 +868,43 @@
       "Arma una comida con verduras, proteína y carbohidratos."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "armonía": {
+    "meaning": "Harmonia.",
+    "examples": [
+      "Siempre había armonía y belleza.",
+      "Viven en armonía con la naturaleza."
+    ],
+    "synonyms": [
+      "equilibrio"
+    ],
+    "antonyms": [
+      "desorden"
+    ]
+  },
+  "aroma": {
+    "meaning": "Aroma, cheiro.",
+    "examples": [
+      "Una flor, un aroma, una brisa que pasea.",
+      "El aroma del café llenó la cocina."
+    ],
+    "synonyms": [
+      "fragancia"
+    ],
+    "antonyms": [
+      "hedor"
+    ]
+  },
+  "aromas": {
+    "meaning": "Aromas; plural de 'aroma'.",
+    "examples": [
+      "Con la frescura del agua, sus aromas se unían.",
+      "Los aromas de la cocina se mezclaban."
+    ],
+    "synonyms": [
+      "fragancias"
+    ],
     "antonyms": []
   },
   "arriba": {
@@ -689,6 +995,26 @@
     ],
     "antonyms": []
   },
+  "atención": {
+    "meaning": "Atenção.",
+    "examples": [
+      "Si prestamos atención, todo es necesario.",
+      "Presta atención a la clase."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "distracción"
+    ]
+  },
+  "aun": {
+    "meaning": "Mesmo, até ('aun así' = mesmo assim).",
+    "examples": [
+      "Un alimento puede decir \"saludable\" y aun así tener azúcar escondida.",
+      "Aun con lluvia, salimos a caminar."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "aunque": {
     "meaning": "Embora, apesar de.",
     "examples": [
@@ -708,6 +1034,17 @@
     ],
     "synonyms": [
       "pájaro"
+    ],
+    "antonyms": []
+  },
+  "aves": {
+    "meaning": "Aves, pássaros; plural de 'ave'.",
+    "examples": [
+      "Aún no cantaban las aves, el día dormía.",
+      "Las aves cantan por la mañana."
+    ],
+    "synonyms": [
+      "pájaros"
     ],
     "antonyms": []
   },
@@ -764,6 +1101,17 @@
       "No le pongas azúcar al café."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "añadida": {
+    "meaning": "Adicionada; particípio de 'añadir'.",
+    "examples": [
+      "Todas estas son formas de azúcar añadida.",
+      "No hay agua añadida en este jugo."
+    ],
+    "synonyms": [
+      "agregada"
+    ],
     "antonyms": []
   },
   "años": {
@@ -824,6 +1172,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "balanza": {
+    "meaning": "Balança; instrumento para medir peso.",
+    "examples": [
+      "No siempre necesitas una balanza para medir tu comida. Puedes usar tu mano como una guía simple.",
+      "Pesó la fruta en la balanza."
+    ],
+    "synonyms": [
+      "báscula"
+    ],
+    "antonyms": []
+  },
   "balbucear": {
     "meaning": "Balbuciar.",
     "examples": [
@@ -844,6 +1203,17 @@
     "synonyms": [
       "lodo",
       "fango"
+    ],
+    "antonyms": []
+  },
+  "bañaba": {
+    "meaning": "Banhava; pretérito imperfeito (ele/ela) de 'bañar'.",
+    "examples": [
+      "El rocío bañaba cada hoja plateada.",
+      "El sol bañaba la playa con luz dorada."
+    ],
+    "synonyms": [
+      "cubría"
     ],
     "antonyms": []
   },
@@ -885,6 +1255,30 @@
     ],
     "antonyms": []
   },
+  "belleza": {
+    "meaning": "Beleza.",
+    "examples": [
+      "Siempre había armonía y belleza.",
+      "La belleza del paisaje sorprendió a todos."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "fealdad"
+    ]
+  },
+  "beneficios": {
+    "meaning": "Benefícios; plural de 'beneficio'.",
+    "examples": [
+      "Planificar tus comidas tiene muchos beneficios:",
+      "El ejercicio tiene muchos beneficios para la salud."
+    ],
+    "synonyms": [
+      "ventajas"
+    ],
+    "antonyms": [
+      "desventajas"
+    ]
+  },
   "bien": {
     "meaning": "Bem.",
     "examples": [
@@ -893,6 +1287,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "bienestar": {
+    "meaning": "Bem-estar.",
+    "examples": [
+      "Te sientes lleno de un gran bienestar.",
+      "El ejercicio mejora tu bienestar."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "malestar"
+    ]
   },
   "blanco": {
     "meaning": "Branco.",
@@ -910,6 +1315,26 @@
     "examples": [
       "Tu boca se siente seca cuando necesitas agua.",
       "Abre la boca, por favor."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "bocadillos": {
+    "meaning": "Lanches, petiscos; plural de 'bocadillo'.",
+    "examples": [
+      "Cuando no planificas, a menudo eliges comida rápida o bocadillos. Estas opciones no siempre son saludables.",
+      "Compré unos bocadillos para el viaje."
+    ],
+    "synonyms": [
+      "aperitivos"
+    ],
+    "antonyms": []
+  },
+  "bocado": {
+    "meaning": "Bocado, mordida.",
+    "examples": [
+      "Un buey hambriento se comió el repollo entero de un bocado.",
+      "Comió el pan de un solo bocado."
     ],
     "synonyms": [],
     "antonyms": []
@@ -943,6 +1368,15 @@
     "synonyms": [
       "brazitos"
     ],
+    "antonyms": []
+  },
+  "brazos": {
+    "meaning": "Braços.",
+    "examples": [
+      "Cayó sano y salvo en los brazos de sus papás.",
+      "El bebé duerme en los brazos de su madre."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "brillante": {
@@ -1044,6 +1478,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "buey": {
+    "meaning": "Boi.",
+    "examples": [
+      "Un buey hambriento que pasaba por allí se comió el repollo entero.",
+      "El buey camina despacio por el campo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "busca": {
+    "meaning": "Procura; presente de 'buscar'.",
+    "examples": [
+      "El azúcar tiene muchos nombres en una etiqueta. Busca estas palabras.",
+      "Ella busca su teléfono en la cocina."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "buscando": {
     "meaning": "Buscando; gerúndio do verbo 'buscar'.",
     "examples": [
@@ -1067,6 +1519,15 @@
     "antonyms": [
       "encontrar"
     ]
+  },
+  "buscarlo": {
+    "meaning": "Procurá-lo; infinitivo 'buscar' + pronome 'lo'.",
+    "examples": [
+      "Sus papás, muy preocupados, salieron a buscarlo.",
+      "Perdí mi perro y salí a buscarlo."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "caballero": {
     "meaning": "Cavalheiro; forma respeitosa de se referir a um homem.",
@@ -1131,6 +1592,19 @@
     "synonyms": [],
     "antonyms": []
   },
+  "callada": {
+    "meaning": "Calada, silenciosa; forma feminina de 'callado'.",
+    "examples": [
+      "Así pasaba la mañana callada.",
+      "La casa estaba muy callada."
+    ],
+    "synonyms": [
+      "silenciosa"
+    ],
+    "antonyms": [
+      "ruidosa"
+    ]
+  },
   "calma": {
     "meaning": "Calma; tranquilidade.",
     "examples": [
@@ -1156,6 +1630,15 @@
       "frío"
     ]
   },
+  "calorías": {
+    "meaning": "Calorias.",
+    "examples": [
+      "Si comes dos porciones, comes dos veces las calorías y los nutrientes.",
+      "Esta comida tiene pocas calorías."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "cama": {
     "meaning": "Cama.",
     "examples": [
@@ -1165,6 +1648,15 @@
     "synonyms": [
       "lecho"
     ],
+    "antonyms": []
+  },
+  "caminaba": {
+    "meaning": "Caminhava; pretérito imperfeito de 'caminar'.",
+    "examples": [
+      "Caminaba por el campo diciendo una canción.",
+      "Ella caminaba despacio por el parque."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "caminaban": {
@@ -1270,6 +1762,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "cantando": {
+    "meaning": "Cantando; gerúndio de 'cantar'.",
+    "examples": [
+      "Cantando fuerte para que nadie lo pisara.",
+      "Los niños van cantando por la calle."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "cantarle": {
     "meaning": "Cantar para ela/ele; infinitivo 'cantar' + 'le'.",
     "examples": [
@@ -1284,6 +1785,15 @@
     "examples": [
       "Necesitas solo una pequeña cantidad.",
       "La cantidad de hierro que necesitas es pequeña."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "canto": {
+    "meaning": "Canto.",
+    "examples": [
+      "El canto de las aves llenaba de pureza.",
+      "El canto del gallo despertó al pueblo."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1358,6 +1868,17 @@
     ],
     "antonyms": []
   },
+  "casi": {
+    "meaning": "Quase.",
+    "examples": [
+      "Esto se llama el **método de la mano**. Funciona para casi todos porque tu mano crece con tu cuerpo.",
+      "Son casi las ocho."
+    ],
+    "synonyms": [
+      "prácticamente"
+    ],
+    "antonyms": []
+  },
   "casilla": {
     "meaning": "Quadradinho/caixinha para marcar, como em uma lista de verificação.",
     "examples": [
@@ -1379,6 +1900,35 @@
     "antonyms": [
       "subieron"
     ]
+  },
+  "cayó": {
+    "meaning": "Caiu; pretérito de 'caer'.",
+    "examples": [
+      "Garbancito salió volando por el aire y cayó sano y salvo.",
+      "El libro cayó de la mesa."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "caía": {
+    "meaning": "Caía; pretérito imperfeito (ele/ela) de 'caer'.",
+    "examples": [
+      "De vez en cuando, una hoja caía.",
+      "La lluvia caía suavemente."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "subía"
+    ]
+  },
+  "caña": {
+    "meaning": "Cana (de açúcar).",
+    "examples": [
+      "Jarabe de caña.",
+      "El jarabe de caña es un tipo de azúcar líquida."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "cena": {
     "meaning": "Jantar.",
@@ -1520,6 +2070,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "científico": {
+    "meaning": "Científico.",
+    "examples": [
+      "El sodio es el nombre científico de la sal.",
+      "Mi hermano es un científico."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "clarita": {
     "meaning": "Bem clarinha; bastante clara (diminutivo de 'clara').",
     "examples": [
@@ -1561,6 +2120,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "cocinar": {
+    "meaning": "Cozinhar.",
+    "examples": [
+      "**Paso 4:** Usa el método de la mano para decidir cuánto cocinar para cada comida.",
+      "Me gusta cocinar los domingos."
+    ],
+    "synonyms": [
+      "guisar"
+    ],
+    "antonyms": []
+  },
   "color": {
     "meaning": "Cor.",
     "examples": [
@@ -1575,6 +2145,15 @@
     "examples": [
       "El día se despedía con colores rosas, anaranjados y morados.",
       "El cielo tenía muchos colores al atardecer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "colorín colorado": {
+    "meaning": "Fórmula tradicional para terminar um conto infantil em espanhol, equivalente a 'e viveram felizes para sempre' / 'fim da história'.",
+    "examples": [
+      "Y colorín colorado, este cuento se ha acabado.",
+      "Colorín colorado, este cuento se ha terminado."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1634,6 +2213,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "comerlas": {
+    "meaning": "Comê-las; infinitivo 'comer' + pronome 'las'.",
+    "examples": [
+      "La planificación de comidas significa que decides tus comidas antes de comerlas. Eliges el desayuno, el almuerzo y la cena para toda la semana, no solo para un día.",
+      "Compró frutas para comerlas en la tarde."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "comes": {
     "meaning": "Comes (de 'comer').",
     "examples": [
@@ -1652,6 +2240,35 @@
     "synonyms": [
       "alimento"
     ],
+    "antonyms": []
+  },
+  "comidas": {
+    "meaning": "Refeições; plural de 'comida'.",
+    "examples": [
+      "Planificar tus comidas tiene muchos beneficios:",
+      "Preparo mis comidas los domingos."
+    ],
+    "synonyms": [
+      "alimentos"
+    ],
+    "antonyms": []
+  },
+  "comido": {
+    "meaning": "Comido; particípio de 'comer'.",
+    "examples": [
+      "- **Saciedad** — la sensación de haber comido suficiente",
+      "Hoy ya he comido bastante."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "comió": {
+    "meaning": "Comeu; pretérito de 'comer'.",
+    "examples": [
+      "Un buey hambriento se comió el repollo entero de un bocado.",
+      "Mi hermano comió toda la fruta."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "como": {
@@ -1687,6 +2304,15 @@
     "antonyms": [
       "cooperar"
     ]
+  },
+  "completo": {
+    "meaning": "Completo.",
+    "examples": [
+      "Cuánto aporta un nutriente a lo que necesitas en un día completo.",
+      "Comí un almuerzo completo hoy."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "comprar": {
     "meaning": "Comprar.",
@@ -1724,6 +2350,19 @@
     "synonyms": [],
     "antonyms": [
       "sin"
+    ]
+  },
+  "conecta": {
+    "meaning": "Conecta; presente (ele/ela) de 'conectar'.",
+    "examples": [
+      "Y cada sensación conecta con la tierra.",
+      "Esta canción conecta con mis recuerdos."
+    ],
+    "synonyms": [
+      "une"
+    ],
+    "antonyms": [
+      "desconecta"
     ]
   },
   "conejo": {
@@ -1793,6 +2432,28 @@
     "synonyms": [],
     "antonyms": []
   },
+  "contestaba": {
+    "meaning": "Respondia; pretérito imperfeito de 'contestar'.",
+    "examples": [
+      "Y Garbancito contestaba desde adentro del animal.",
+      "Ella siempre contestaba con una sonrisa."
+    ],
+    "synonyms": [
+      "respondía"
+    ],
+    "antonyms": []
+  },
+  "control": {
+    "meaning": "Controle.",
+    "examples": [
+      "- **Control de porciones** — comer la cantidad correcta de comida",
+      "Tiene mucho control sobre sus emociones."
+    ],
+    "synonyms": [
+      "dominio"
+    ],
+    "antonyms": []
+  },
   "controlar": {
     "meaning": "Controlar.",
     "examples": [
@@ -1815,6 +2476,15 @@
       "dudoso"
     ]
   },
+  "copas": {
+    "meaning": "Copas (de árvores); plural de 'copa'.",
+    "examples": [
+      "la luz acariciaba las copas con un toque sincero.",
+      "El viento movía las copas de los árboles."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "corazón": {
     "meaning": "Coração.",
     "examples": [
@@ -1823,6 +2493,19 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "correcta": {
+    "meaning": "Correta; forma feminina de 'correcto'.",
+    "examples": [
+      "Tu cuerpo envía señales cuando tienes hambre o estás lleno. Aprender a leer estas señales te ayuda a comer la cantidad correcta.",
+      "Esa es la respuesta correcta."
+    ],
+    "synonyms": [
+      "adecuada"
+    ],
+    "antonyms": [
+      "incorrecta"
+    ]
   },
   "correr": {
     "meaning": "Correr.",
@@ -1873,6 +2556,32 @@
     "synonyms": [],
     "antonyms": []
   },
+  "crean": {
+    "meaning": "Criam; presente (eles/elas) de 'crear'.",
+    "examples": [
+      "Colores y sonidos crean un mundo fantástico.",
+      "Los niños crean historias increíbles."
+    ],
+    "synonyms": [
+      "generan"
+    ],
+    "antonyms": [
+      "destruyen"
+    ]
+  },
+  "creas": {
+    "meaning": "Crias; presente (tú) de 'crear'.",
+    "examples": [
+      "Creas recuerdos con lo que te rodea.",
+      "Tú creas tus propias oportunidades."
+    ],
+    "synonyms": [
+      "generas"
+    ],
+    "antonyms": [
+      "destruyes"
+    ]
+  },
   "crece": {
     "meaning": "Cresce; forma de 'crecer'.",
     "examples": [
@@ -1908,6 +2617,17 @@
     ],
     "synonyms": [
       "pienso"
+    ],
+    "antonyms": []
+  },
+  "criaturas": {
+    "meaning": "Criaturas; plural de 'criatura'.",
+    "examples": [
+      "Aún dormían las criaturas pequeñas.",
+      "Las criaturas del bosque salían de noche."
+    ],
+    "synonyms": [
+      "seres"
     ],
     "antonyms": []
   },
@@ -2083,11 +2803,29 @@
       "indiferencia"
     ]
   },
+  "curioso": {
+    "meaning": "Curioso.",
+    "examples": [
+      "Pero Garbancito era curioso y le fascinaba salir a pasear.",
+      "El gato es un animal muy curioso."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "cuánta": {
     "meaning": "Quanta.",
     "examples": [
       "¿Cuánta agua necesitas?",
       "No sé cuánta azúcar le puso."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "cuántas": {
+    "meaning": "Quantas.",
+    "examples": [
+      "¿Cuántas porciones hay en el paquete?",
+      "¿Cuántas manzanas tienes en casa?"
     ],
     "synonyms": [],
     "antonyms": []
@@ -2143,6 +2881,19 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "cómodo": {
+    "meaning": "Confortável, cômodo.",
+    "examples": [
+      "- Nivel 5 o 6: Cómodo, sin hambre y sin estar lleno",
+      "Este sofá es muy cómodo."
+    ],
+    "synonyms": [
+      "confortable"
+    ],
+    "antonyms": [
+      "incómodo"
+    ]
   },
   "cómpralos": {
     "meaning": "Compra-os (de 'comprar').",
@@ -2220,6 +2971,19 @@
     "synonyms": [],
     "antonyms": []
   },
+  "debajo": {
+    "meaning": "Debaixo, embaixo.",
+    "examples": [
+      "Garbancito se escondió debajo de un repollo gigante.",
+      "El gato duerme debajo de la cama."
+    ],
+    "synonyms": [
+      "abajo"
+    ],
+    "antonyms": [
+      "encima"
+    ]
+  },
   "debemos": {
     "meaning": "Devemos; forma de 'deber'.",
     "examples": [
@@ -2240,6 +3004,37 @@
     "synonyms": [],
     "antonyms": []
   },
+  "decide": {
+    "meaning": "Decide; presente de 'decidir'.",
+    "examples": [
+      "Decide: ¿es esta comida una buena opción diaria, o solo una opción ocasional?",
+      "Ella decide qué comer hoy."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "decides": {
+    "meaning": "Decides; presente (tú) de 'decidir'.",
+    "examples": [
+      "La planificación de comidas significa que decides tus comidas antes de comerlas. Eliges el desayuno, el almuerzo y la cena para toda la semana, no solo para un día.",
+      "Tú decides qué hacer hoy."
+    ],
+    "synonyms": [
+      "eliges"
+    ],
+    "antonyms": []
+  },
+  "decidir": {
+    "meaning": "Decidir.",
+    "examples": [
+      "- **Planificación de comidas** — decidir tus comidas antes de comerlas",
+      "Es difícil decidir qué comer."
+    ],
+    "synonyms": [
+      "elegir"
+    ],
+    "antonyms": []
+  },
   "decidió": {
     "meaning": "Decidiu.",
     "examples": [
@@ -2248,6 +3043,26 @@
     ],
     "synonyms": [
       "resolvió"
+    ],
+    "antonyms": []
+  },
+  "decir": {
+    "meaning": "Dizer.",
+    "examples": [
+      "Un alimento puede decir \"saludable\" y aun así tener azúcar escondida.",
+      "Quiero decir la verdad."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "decisiones": {
+    "meaning": "Decisões; plural de 'decisión'.",
+    "examples": [
+      "- Tomas menos decisiones de último momento, como comida rápida",
+      "Toma buenas decisiones cada día."
+    ],
+    "synonyms": [
+      "elecciones"
     ],
     "antonyms": []
   },
@@ -2352,6 +3167,17 @@
       "brusquedad"
     ]
   },
+  "demasiado": {
+    "meaning": "Demais, demasiado.",
+    "examples": [
+      "Demasiado sodio no es bueno para tu corazón.",
+      "Comiste demasiado azúcar hoy."
+    ],
+    "synonyms": [
+      "mucho"
+    ],
+    "antonyms": []
+  },
   "demostrarle": {
     "meaning": "Demonstrar a ela/ele; infinitivo 'demostrar' + 'le'.",
     "examples": [
@@ -2363,6 +3189,17 @@
     ],
     "antonyms": []
   },
+  "dentro": {
+    "meaning": "Dentro.",
+    "examples": [
+      "Las etiquetas de los alimentos te dicen qué hay dentro de tu comida.",
+      "El agua está dentro de la botella."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "fuera"
+    ]
+  },
   "des": {
     "meaning": "Forma reduzida usada em 'te des (cuenta)'; subjuntivo de 'dar(se)'.",
     "examples": [
@@ -2371,6 +3208,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "desayuno": {
+    "meaning": "Café da manhã.",
+    "examples": [
+      "La planificación de comidas significa que decides tus comidas antes de comerlas. Eliges el desayuno, el almuerzo y la cena para toda la semana, no solo para un día.",
+      "Como fruta en el desayuno."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "cena"
+    ]
   },
   "descansaba": {
     "meaning": "Descansava.",
@@ -2464,6 +3312,19 @@
     ],
     "antonyms": []
   },
+  "despacio": {
+    "meaning": "Devagar.",
+    "examples": [
+      "Trata de comer cuando estés en el nivel 3 o 4. Deja de comer cuando llegues al nivel 7 u 8. Come despacio. Tu cerebro necesita tiempo para sentir la **saciedad**.",
+      "Camina despacio, por favor."
+    ],
+    "synonyms": [
+      "lentamente"
+    ],
+    "antonyms": [
+      "rápido"
+    ]
+  },
   "despacito": {
     "meaning": "Bem devagarinho; lentamente (diminutivo afetivo de 'despacio').",
     "examples": [
@@ -2482,6 +3343,15 @@
     "examples": [
       "El día se despedía con colores rosas, anaranjados y morados.",
       "Se despedía de sus amigos antes de dormir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "despertara": {
+    "meaning": "Despertasse; pretérito imperfeito do subjuntivo (ele/ela) de 'despertar'.",
+    "examples": [
+      "Quise ver el amanecer antes de que despertara el bosque entero,",
+      "Esperó a que despertara su hijo."
     ],
     "synonyms": [],
     "antonyms": []
@@ -2521,6 +3391,19 @@
     "synonyms": [],
     "antonyms": []
   },
+  "despiertos": {
+    "meaning": "Despertos; plural de 'despierto'.",
+    "examples": [
+      "Los sentidos despiertos, el corazón encendido.",
+      "Los niños estaban despiertos toda la noche."
+    ],
+    "synonyms": [
+      "alerta"
+    ],
+    "antonyms": [
+      "dormidos"
+    ]
+  },
   "después": {
     "meaning": "Depois.",
     "examples": [
@@ -2532,6 +3415,28 @@
     ],
     "antonyms": [
       "antes"
+    ]
+  },
+  "detalle": {
+    "meaning": "Detalhe.",
+    "examples": [
+      "Aunque no lo notemos, cada detalle cuenta.",
+      "Cuidó cada detalle de la fiesta."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "detenía": {
+    "meaning": "Detinha-se, parava; pretérito imperfeito (ele/ela) de 'detenerse'.",
+    "examples": [
+      "El tiempo se detenía, todo estaba pausado.",
+      "El reloj se detenía cada noche."
+    ],
+    "synonyms": [
+      "paraba"
+    ],
+    "antonyms": [
+      "avanzaba"
     ]
   },
   "detrás": {
@@ -2546,6 +3451,24 @@
     "antonyms": [
       "delante"
     ]
+  },
+  "dextrosa": {
+    "meaning": "Dextrose.",
+    "examples": [
+      "Dextrosa.",
+      "La dextrosa es un tipo de azúcar simple."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "diaria": {
+    "meaning": "Diária.",
+    "examples": [
+      "¿Es esta comida una buena opción diaria?",
+      "Hago una caminata diaria."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "diario": {
     "meaning": "Diário.",
@@ -2565,6 +3488,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "dibujaban": {
+    "meaning": "Desenhavam; pretérito imperfeito (eles/elas) de 'dibujar'.",
+    "examples": [
+      "Formas de algodón en el cielo dibujaban.",
+      "Los niños dibujaban en la arena."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "dice": {
     "meaning": "Diz; presente de 'decir'.",
     "examples": [
@@ -2574,11 +3506,38 @@
     "synonyms": [],
     "antonyms": []
   },
+  "dicen": {
+    "meaning": "Dizem; presente de 'decir'.",
+    "examples": [
+      "Las etiquetas de los alimentos te dicen qué hay dentro de tu comida.",
+      "Los médicos dicen que debes dormir bien."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "diciendo": {
+    "meaning": "Dizendo; gerúndio de 'decir'.",
+    "examples": [
+      "Caminaba por el campo diciendo una canción.",
+      "Se fue diciendo adiós a todos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "dientes": {
     "meaning": "Dentes.",
     "examples": [
       "El calcio construye huesos y dientes fuertes.",
       "Cepíllate los dientes después de comer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "dieron": {
+    "meaning": "Deram; pretérito de 'dar'.",
+    "examples": [
+      "Que le dieron un abrazo enorme.",
+      "Los vecinos le dieron la bienvenida."
     ],
     "synonyms": [],
     "antonyms": []
@@ -2638,6 +3597,30 @@
     ],
     "synonyms": [
       "expresó"
+    ],
+    "antonyms": []
+  },
+  "diminuto": {
+    "meaning": "Diminuto, muito pequeno.",
+    "examples": [
+      "Aunque su tamaño era diminuto, Garbancito era muy valiente.",
+      "Encontramos un insecto diminuto en el jardín."
+    ],
+    "synonyms": [
+      "pequeñito"
+    ],
+    "antonyms": [
+      "enorme"
+    ]
+  },
+  "dinero": {
+    "meaning": "Dinheiro.",
+    "examples": [
+      "La **planificación de comidas** te ayuda a comer mejor y gastar menos dinero.",
+      "No tengo mucho dinero hoy."
+    ],
+    "synonyms": [
+      "plata"
     ],
     "antonyms": []
   },
@@ -2712,6 +3695,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "domingo": {
+    "meaning": "Domingo.",
+    "examples": [
+      "**Paso 1:** Elige un día para planificar, como el domingo.",
+      "El domingo descanso en casa."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "donde": {
+    "meaning": "Onde.",
+    "examples": [
+      "donde cada respiro se siente tan pleno?",
+      "Ese es el lugar donde nací."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "dormida": {
     "meaning": "Adormecida.",
     "examples": [
@@ -2742,6 +3743,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "dormían": {
+    "meaning": "Dormiam; pretérito imperfeito (eles/elas) de 'dormir'.",
+    "examples": [
+      "Aún dormían las criaturas pequeñas.",
+      "Los gatos dormían bajo el sol."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "despertaban"
+    ]
   },
   "dos": {
     "meaning": "Dois.",
@@ -2807,6 +3819,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "dónde": {
+    "meaning": "Onde (forma interrogativa).",
+    "examples": [
+      "—¡Garbancito! ¿Dónde estás?",
+      "¿Dónde pusiste las llaves?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "ejemplo": {
     "meaning": "Exemplo.",
     "examples": [
@@ -2834,6 +3855,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "elegir": {
+    "meaning": "Escolher.",
+    "examples": [
+      "Aprender a leerla te ayuda a elegir mejor.",
+      "Es difícil elegir un solo postre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "elige": {
     "meaning": "Escolhe (de 'elegir').",
     "examples": [
@@ -2841,6 +3871,17 @@
       "Elige alimentos saludables para tu comida."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "eliges": {
+    "meaning": "Eliges; presente (tú) de 'elegir'.",
+    "examples": [
+      "La planificación de comidas significa que decides tus comidas antes de comerlas. Eliges el desayuno, el almuerzo y la cena para toda la semana, no solo para un día.",
+      "Tú eliges la película de hoy."
+    ],
+    "synonyms": [
+      "escoges"
+    ],
     "antonyms": []
   },
   "ella": {
@@ -2883,6 +3924,15 @@
     "synonyms": [
       "sentimientos"
     ],
+    "antonyms": []
+  },
+  "empacado": {
+    "meaning": "Embalado.",
+    "examples": [
+      "Todo alimento empacado tiene una etiqueta nutricional.",
+      "Compré arroz empacado en el supermercado."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "empezó": {
@@ -2933,6 +3983,19 @@
     ],
     "antonyms": []
   },
+  "encendido": {
+    "meaning": "Aceso; particípio de 'encender'.",
+    "examples": [
+      "Los sentidos despiertos, el corazón encendido.",
+      "Dejó el fuego encendido toda la noche."
+    ],
+    "synonyms": [
+      "prendido"
+    ],
+    "antonyms": [
+      "apagado"
+    ]
+  },
   "encima": {
     "meaning": "Em cima; por cima.",
     "examples": [
@@ -2954,6 +4017,15 @@
     "antonyms": [
       "perdido"
     ]
+  },
+  "encontraran": {
+    "meaning": "Encontrassem; subjuntivo (pretérito imperfeito) de 'encontrar'.",
+    "examples": [
+      "Empezó a gritar con todas sus fuerzas para que lo encontraran.",
+      "Gritó fuerte para que lo encontraran rápido."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "encontraron": {
     "meaning": "Encontraram; passado do verbo 'encontrar' na terceira pessoa do plural.",
@@ -3028,6 +4100,41 @@
     "synonyms": [],
     "antonyms": []
   },
+  "entendiendo": {
+    "meaning": "Entendendo; gerúndio de 'entender'.",
+    "examples": [
+      "Entendiendo el % de Valor Diario.",
+      "Estoy entendiendo mejor las etiquetas de los alimentos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "entera": {
+    "meaning": "Inteira; forma feminina de 'entero'.",
+    "examples": [
+      "La naturaleza entera en silencio hablaba.",
+      "Pasó la noche entera despierto."
+    ],
+    "synonyms": [
+      "completa"
+    ],
+    "antonyms": [
+      "parcial"
+    ]
+  },
+  "entero": {
+    "meaning": "Inteiro.",
+    "examples": [
+      "Quise ver el amanecer antes de que despertara el bosque entero,",
+      "Se comió el pastel entero."
+    ],
+    "synonyms": [
+      "completo"
+    ],
+    "antonyms": [
+      "parcial"
+    ]
+  },
   "entiendo": {
     "meaning": "Entendo; presente do verbo 'entender'.",
     "examples": [
@@ -3072,6 +4179,17 @@
       "desgano"
     ]
   },
+  "envía": {
+    "meaning": "Envia; presente (ele/ela) de 'enviar'.",
+    "examples": [
+      "Tu cuerpo envía señales cuando tienes hambre o estás lleno. Aprender a leer estas señales te ayuda a comer la cantidad correcta.",
+      "Ella envía un mensaje cada mañana."
+    ],
+    "synonyms": [
+      "manda"
+    ],
+    "antonyms": []
+  },
   "equivocado": {
     "meaning": "Equivocado; que está errado.",
     "examples": [
@@ -3095,6 +4213,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "eres": {
+    "meaning": "És; presente (tú) de 'ser'.",
+    "examples": [
+      "Eres parte de este paisaje sin par.",
+      "Tú eres mi mejor amigo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "es": {
     "meaning": "Forma do verbo 'ser' na terceira pessoa do singular.",
     "examples": [
@@ -3113,6 +4240,28 @@
     "synonyms": [],
     "antonyms": []
   },
+  "escala": {
+    "meaning": "Escala.",
+    "examples": [
+      "Usa esta simple **escala de hambre** del 1 al 10:",
+      "La escala del mapa es pequeña."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "esconden": {
+    "meaning": "Escondem-se; presente (eles/elas) de 'esconderse'.",
+    "examples": [
+      "Porque en el silencio se esconden tesoros.",
+      "Los niños se esconden detrás del árbol."
+    ],
+    "synonyms": [
+      "ocultan"
+    ],
+    "antonyms": [
+      "revelan"
+    ]
+  },
   "esconderse": {
     "meaning": "Esconder-se.",
     "examples": [
@@ -3125,6 +4274,42 @@
     "antonyms": [
       "aparecer"
     ]
+  },
+  "escondida": {
+    "meaning": "Escondida.",
+    "examples": [
+      "Un alimento puede decir \"saludable\" y aun así tener azúcar escondida.",
+      "Hay azúcar escondida en esta salsa."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "escondido": {
+    "meaning": "Escondido.",
+    "examples": [
+      "Sodio Escondido.",
+      "El sodio escondido está en muchas sopas."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "escondidos": {
+    "meaning": "Escondidos.",
+    "examples": [
+      "Busca nombres escondidos de azúcar, como jarabe de maíz o fructosa.",
+      "Busca los nombres escondidos del azúcar en la etiqueta."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "escondió": {
+    "meaning": "Escondeu; pretérito de 'esconder'.",
+    "examples": [
+      "Garbancito se escondió debajo de un repollo gigante.",
+      "El niño se escondió detrás del árbol."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "escribe": {
     "meaning": "Escreve (de 'escribir').",
@@ -3344,6 +4529,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "estornudo": {
+    "meaning": "Espirro.",
+    "examples": [
+      "El animal no pudo evitar un gran estornudo.",
+      "Tapé mi estornudo con el brazo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "estos": {
     "meaning": "Estes (demonstrativo masculino plural).",
     "examples": [
@@ -3371,6 +4565,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "estuve": {
+    "meaning": "Estive; pretérito perfeito simples (eu) de 'estar'.",
+    "examples": [
+      "Estuve en un lugar donde la paz reinaba.",
+      "Estuve en la playa todo el verano."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "está": {
     "meaning": "Está; presente de 'estar'.",
     "examples": [
@@ -3389,11 +4592,58 @@
     "synonyms": [],
     "antonyms": []
   },
+  "estás": {
+    "meaning": "Estás; presente (tú) de 'estar'.",
+    "examples": [
+      "Tu cuerpo envía señales cuando tienes hambre o estás lleno. Aprender a leer estas señales te ayuda a comer la cantidad correcta.",
+      "¿Estás listo para comer?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "estés": {
+    "meaning": "Estejas; presente de subjuntivo (tú) de 'estar'.",
+    "examples": [
+      "Trata de comer cuando estés en el nivel 3 o 4. Deja de comer cuando llegues al nivel 7 u 8. Come despacio. Tu cerebro necesita tiempo para sentir la **saciedad**.",
+      "Avísame cuando estés en casa."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "estómago": {
     "meaning": "Estômago.",
     "examples": [
       "La fibra es buena para tu estómago.",
       "Comer mucha grasa frita no es bueno para el estómago."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "etiqueta": {
+    "meaning": "Etiqueta, rótulo.",
+    "examples": [
+      "Todo alimento empacado tiene una etiqueta nutricional.",
+      "Lee la etiqueta antes de comprar."
+    ],
+    "synonyms": [
+      "rótulo"
+    ],
+    "antonyms": []
+  },
+  "etiquetas": {
+    "meaning": "Etiquetas, rótulos.",
+    "examples": [
+      "Las etiquetas de los alimentos te dicen qué hay dentro de tu comida.",
+      "Las etiquetas tienen mucha información."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "evitar": {
+    "meaning": "Evitar.",
+    "examples": [
+      "El animal no pudo evitar un gran estornudo.",
+      "Es mejor evitar la comida muy salada."
     ],
     "synonyms": [],
     "antonyms": []
@@ -3442,11 +4692,59 @@
     ],
     "antonyms": []
   },
+  "extraordinario": {
+    "meaning": "Extraordinário.",
+    "examples": [
+      "Lo simple se vuelve algo extraordinario.",
+      "Fue un viaje extraordinario."
+    ],
+    "synonyms": [
+      "excepcional"
+    ],
+    "antonyms": [
+      "ordinario"
+    ]
+  },
+  "falta": {
+    "meaning": "Falta; usado em 'hacer falta' (fazer falta, ser necessário).",
+    "examples": [
+      "No hacen falta palabras ni sonido.",
+      "Me hace falta más tiempo."
+    ],
+    "synonyms": [
+      "carencia"
+    ],
+    "antonyms": [
+      "sobra"
+    ]
+  },
   "familia": {
     "meaning": "Família.",
     "examples": [
       "Pronto habrá alguien más en nuestra familia.",
       "Miró a su familia y sonrió."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "fantástico": {
+    "meaning": "Fantástico.",
+    "examples": [
+      "Colores y sonidos crean un mundo fantástico.",
+      "Tuvimos un día fantástico en la playa."
+    ],
+    "synonyms": [
+      "maravilloso"
+    ],
+    "antonyms": [
+      "horrible"
+    ]
+  },
+  "fascinaba": {
+    "meaning": "Fascinava; pretérito imperfeito de 'fascinar'.",
+    "examples": [
+      "Le fascinaba salir a pasear.",
+      "A ella le fascinaba leer cuentos."
     ],
     "synonyms": [],
     "antonyms": []
@@ -3534,6 +4832,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "flor": {
+    "meaning": "Flor.",
+    "examples": [
+      "Una flor, un aroma, una brisa que pasea.",
+      "Le regaló una flor roja."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "flores": {
     "meaning": "Flores.",
     "examples": [
@@ -3570,6 +4877,28 @@
     "synonyms": [],
     "antonyms": []
   },
+  "fluía": {
+    "meaning": "Fluía; pretérito imperfeito (ele/ela) de 'fluir'.",
+    "examples": [
+      "Las hojas susurraban, el momento fluía.",
+      "El agua fluía tranquila por el río."
+    ],
+    "synonyms": [
+      "corría"
+    ],
+    "antonyms": []
+  },
+  "formas": {
+    "meaning": "Formas; plural de 'forma'.",
+    "examples": [
+      "Formas de algodón en el cielo dibujaban.",
+      "Las nubes tienen formas curiosas."
+    ],
+    "synonyms": [
+      "figuras"
+    ],
+    "antonyms": []
+  },
   "fortaleciendo": {
     "meaning": "Fortalecendo; particípio presente de 'fortalecer'.",
     "examples": [
@@ -3582,6 +4911,15 @@
     "antonyms": [
       "debilitando"
     ]
+  },
+  "frescura": {
+    "meaning": "Frescor.",
+    "examples": [
+      "Con la frescura del agua, sus aromas se unían.",
+      "La frescura de la mañana es agradable."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "fresquito": {
     "meaning": "Bem fresquinho (diminutivo de 'fresco').",
@@ -3610,6 +4948,15 @@
     "examples": [
       "Come menos grasa de comida frita.",
       "La comida frita no es saludable."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "fructosa": {
+    "meaning": "Frutose.",
+    "examples": [
+      "Fructosa.",
+      "La fruta tiene fructosa natural."
     ],
     "synonyms": [],
     "antonyms": []
@@ -3706,6 +5053,26 @@
       "debilidad"
     ]
   },
+  "fuerzas": {
+    "meaning": "Forças.",
+    "examples": [
+      "Empezó a gritar con todas sus fuerzas para que lo encontraran.",
+      "Necesito todas mis fuerzas para terminar esto."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "funciona": {
+    "meaning": "Funciona; presente (ele/ela) de 'funcionar'.",
+    "examples": [
+      "Esto se llama el **método de la mano**. Funciona para casi todos porque tu mano crece con tu cuerpo.",
+      "Este programa funciona muy bien."
+    ],
+    "synonyms": [
+      "opera"
+    ],
+    "antonyms": []
+  },
   "funcionando": {
     "meaning": "Funcionando.",
     "examples": [
@@ -3781,6 +5148,46 @@
     "synonyms": [],
     "antonyms": []
   },
+  "garbancito": {
+    "meaning": "Diminutivo de 'garbanzo'; também o nome do personagem da história (ver 'garbanzo').",
+    "examples": [
+      "Garbancito es un niño muy pequeñito pero lleno de valentía.",
+      "Le pusieron de apodo Garbancito por ser tan pequeño."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "garbanzo": {
+    "meaning": "Grão-de-bico.",
+    "examples": [
+      "Lo llamaban Garbancito, porque era tan chiquitito como un garbanzo.",
+      "Hoy comimos sopa de garbanzo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "gastar": {
+    "meaning": "Gastar.",
+    "examples": [
+      "La **planificación de comidas** te ayuda a comer mejor y gastar menos dinero.",
+      "No quiero gastar mucho dinero hoy."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "ahorrar"
+    ]
+  },
+  "gastas": {
+    "meaning": "Gastas; presente (tú) de 'gastar'.",
+    "examples": [
+      "- Gastas menos dinero en la tienda",
+      "Tú gastas poco dinero cada mes."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "ahorras"
+    ]
+  },
   "geniales": {
     "meaning": "Ótimos, excelentes; plural de 'genial'.",
     "examples": [
@@ -3805,6 +5212,37 @@
     "synonyms": [
       "ademanes"
     ],
+    "antonyms": []
+  },
+  "gigante": {
+    "meaning": "Gigante.",
+    "examples": [
+      "Garbancito se escondió debajo de un repollo gigante.",
+      "Vimos un árbol gigante en el bosque."
+    ],
+    "synonyms": [
+      "enorme"
+    ],
+    "antonyms": [
+      "diminuto"
+    ]
+  },
+  "glutamato": {
+    "meaning": "Glutamato.",
+    "examples": [
+      "Glutamato monosódico (GMS).",
+      "El glutamato se usa para dar sabor a la comida."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "gms": {
+    "meaning": "Sigla de 'glutamato monosódico' (GMS/MSG, um realçador de sabor).",
+    "examples": [
+      "Glutamato monosódico (GMS).",
+      "Esta sopa instantánea tiene GMS."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "gota": {
@@ -3921,6 +5359,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "gritar": {
+    "meaning": "Gritar.",
+    "examples": [
+      "Empezó a gritar con todas sus fuerzas para que lo encontraran.",
+      "No es necesario gritar, te puedo oír bien."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "grupo": {
     "meaning": "Grupo.",
     "examples": [
@@ -3965,6 +5412,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "guía": {
+    "meaning": "Guia.",
+    "examples": [
+      "No siempre necesitas una balanza para medir tu comida. Puedes usar tu mano como una guía simple.",
+      "Este libro es una buena guía para principiantes."
+    ],
+    "synonyms": [
+      "manual"
+    ],
+    "antonyms": []
+  },
   "ha": {
     "meaning": "Verbo auxiliar 'haber' (3ª pessoa singular do presente), usado para formar o pretérito perfeito.",
     "examples": [
@@ -3982,6 +5440,19 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "hablaba": {
+    "meaning": "Falava; pretérito imperfeito (ele/ela) de 'hablar'.",
+    "examples": [
+      "La naturaleza entera en silencio hablaba.",
+      "Mi abuela hablaba muy despacio."
+    ],
+    "synonyms": [
+      "decía"
+    ],
+    "antonyms": [
+      "callaba"
+    ]
   },
   "habrá": {
     "meaning": "Haverá; futuro de 'haber'.",
@@ -4006,6 +5477,15 @@
     "examples": [
       "Hace calor afuera.",
       "Hace frío en invierno."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "hacen": {
+    "meaning": "Fazem; presente (eles/elas) de 'hacer'.",
+    "examples": [
+      "No hacen falta palabras ni sonido.",
+      "Ellos hacen la tarea juntos."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4069,6 +5549,26 @@
     "examples": [
       "Cada día Valentina hacía algo nuevo.",
       "Hacía mucho frío esa noche."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "hambre": {
+    "meaning": "Fome.",
+    "examples": [
+      "Usa esta simple **escala de hambre** del 1 al 10:",
+      "Tengo mucha hambre ahora."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "saciedad"
+    ]
+  },
+  "hambriento": {
+    "meaning": "Faminto.",
+    "examples": [
+      "Un buey hambriento que pasaba por allí se comió el repollo.",
+      "El perro hambriento buscaba comida en la basura."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4150,6 +5650,19 @@
       "hermana"
     ]
   },
+  "hermoso": {
+    "meaning": "Formoso, bonito.",
+    "examples": [
+      "Lo más hermoso era la calma presente.",
+      "Tienen un jardín hermoso."
+    ],
+    "synonyms": [
+      "bello"
+    ],
+    "antonyms": [
+      "feo"
+    ]
+  },
   "hicieran": {
     "meaning": "Fizessem (imperfeito do subjuntivo de 'hacer').",
     "examples": [
@@ -4206,6 +5719,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "hizo": {
+    "meaning": "Fez; pretérito de 'hacer'.",
+    "examples": [
+      "Le hizo cosquillas al buey en la nariz.",
+      "Ella hizo la tarea muy rápido."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "hoja": {
+    "meaning": "Folha.",
+    "examples": [
+      "De vez en cuando, una hoja caía.",
+      "Recogió una hoja del suelo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "hojas": {
     "meaning": "Folhas.",
     "examples": [
@@ -4240,6 +5771,15 @@
     "examples": [
       "Viendo cómo el día se despedía con colores en el horizonte.",
       "El sol se escondía en el horizonte."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "hubieras": {
+    "meaning": "Tivesses; pretérito imperfeito do subjuntivo (tú) de 'haber', auxiliar do pluscuamperfecto.",
+    "examples": [
+      "Como si siempre hubieras pertenecido aquí.",
+      "Si hubieras llegado antes, lo habrías visto."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4322,6 +5862,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "imaginaste": {
+    "meaning": "Imaginaste; pretérito perfeito simples (tú) de 'imaginar'.",
+    "examples": [
+      "¿Imaginaste alguna vez un lugar tan sereno,",
+      "¿Imaginaste cómo sería vivir allí?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "impaciente": {
     "meaning": "Impaciente.",
     "examples": [
@@ -4375,6 +5924,35 @@
     "synonyms": [
       "interesó"
     ],
+    "antonyms": []
+  },
+  "incómodo": {
+    "meaning": "Desconfortável, incômodo.",
+    "examples": [
+      "- Nivel 9 o 10: Muy lleno, incómodo",
+      "El viaje fue largo e incómodo."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "cómodo"
+    ]
+  },
+  "información": {
+    "meaning": "Informação.",
+    "examples": [
+      "Etiqueta nutricional — el panel de información en un alimento empacado.",
+      "Esta página tiene mucha información."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ingrediente": {
+    "meaning": "Ingrediente.",
+    "examples": [
+      "El primer ingrediente es la parte más grande de la comida.",
+      "El azúcar es el primer ingrediente en esta galleta."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "ingredientes": {
@@ -4450,6 +6028,26 @@
     ],
     "antonyms": []
   },
+  "interior": {
+    "meaning": "Interior.",
+    "examples": [
+      "Desde el interior de la panza del buey, Garbancito empezó a gritar.",
+      "El interior de la casa es muy cómodo."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "exterior"
+    ]
+  },
+  "invita": {
+    "meaning": "Convida; presente (ele/ela) de 'invitar'.",
+    "examples": [
+      "Cada detalle te invita a ser muy feliz.",
+      "Ese libro invita a soñar."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "jamás": {
     "meaning": "Nunca; em nenhum momento (ênfase forte).",
     "examples": [
@@ -4463,11 +6061,29 @@
       "siempre"
     ]
   },
+  "jarabe": {
+    "meaning": "Xarope, calda.",
+    "examples": [
+      "Jarabe de maíz.",
+      "Tomé un jarabe para la tos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "juega": {
     "meaning": "Joga; forma de 'jugar'.",
     "examples": [
       "¿Y si el bebé juega con mis juguetes?",
       "Mi hermano juega todo el día."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "jueves": {
+    "meaning": "Quinta-feira.",
+    "examples": [
+      "| Jueves | | | |",
+      "El jueves voy al gimnasio."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4606,6 +6222,19 @@
     "synonyms": [],
     "antonyms": []
   },
+  "latente": {
+    "meaning": "Latente, presente de forma oculta.",
+    "examples": [
+      "El susurro del viento se sentía latente.",
+      "Había un peligro latente en el camino."
+    ],
+    "synonyms": [
+      "oculto"
+    ],
+    "antonyms": [
+      "evidente"
+    ]
+  },
   "le": {
     "meaning": "Lhe; pronome de objeto indireto.",
     "examples": [
@@ -4632,6 +6261,44 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "lee": {
+    "meaning": "Lê; presente de 'leer'.",
+    "examples": [
+      "Lee la etiqueta y responde cada pregunta.",
+      "Ella lee el periódico cada mañana."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "leer": {
+    "meaning": "Ler.",
+    "examples": [
+      "Tu cuerpo envía señales cuando tienes hambre o estás lleno. Aprender a leer estas señales te ayuda a comer la cantidad correcta.",
+      "Me gusta leer antes de dormir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "leerla": {
+    "meaning": "Lê-la; infinitivo 'leer' + pronome 'la'.",
+    "examples": [
+      "Aprender a leerla te ayuda a elegir mejor.",
+      "Compré la etiqueta y quiero leerla con calma."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "lejos": {
+    "meaning": "Longe.",
+    "examples": [
+      "No te vayas muy lejos.",
+      "La escuela queda lejos de mi casa."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "cerca"
+    ]
   },
   "les": {
     "meaning": "Lhes; pronome de objeto indireto plural.",
@@ -4719,10 +6386,28 @@
     "synonyms": [],
     "antonyms": []
   },
+  "listadas": {
+    "meaning": "Listadas.",
+    "examples": [
+      "Lista de ingredientes — todas las partes de la comida, listadas del más al menos.",
+      "Las frutas están listadas por orden alfabético."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "llama": {
     "meaning": "Chama (de 'llamar').",
     "examples": [
       "Esto se llama anemia."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "llamaban": {
+    "meaning": "Chamavam; pretérito imperfeito de 'llamar'.",
+    "examples": [
+      "Todos lo llamaban Garbancito.",
+      "Los amigos lo llamaban por su apodo."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4754,6 +6439,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "llamándolo": {
+    "meaning": "Chamando-o; gerúndio 'llamando' + pronome 'lo'.",
+    "examples": [
+      "Salieron a buscarlo, llamándolo.",
+      "Corrió por la calle llamándolo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "llegar": {
     "meaning": "Chegar.",
     "examples": [
@@ -4777,6 +6471,15 @@
     "antonyms": [
       "se fueron"
     ]
+  },
+  "llegues": {
+    "meaning": "Chegues; presente de subjuntivo (tú) de 'llegar'.",
+    "examples": [
+      "Trata de comer cuando estés en el nivel 3 o 4. Deja de comer cuando llegues al nivel 7 u 8. Come despacio. Tu cerebro necesita tiempo para sentir la **saciedad**.",
+      "Avísame cuando llegues a casa."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "llegó": {
     "meaning": "Chegou; passado do verbo 'llegar'.",
@@ -4814,6 +6517,17 @@
     "synonyms": [],
     "antonyms": [
       "vaciaba"
+    ]
+  },
+  "llenan": {
+    "meaning": "Enchem; presente (eles/elas) de 'llenar'.",
+    "examples": [
+      "Sus rayos tibios llenan el bosque de alegría.",
+      "Las flores llenan el jardín de color."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "vacían"
     ]
   },
   "lleno": {
@@ -4903,6 +6617,15 @@
     ],
     "antonyms": []
   },
+  "llueve": {
+    "meaning": "Chove; presente de 'llover'.",
+    "examples": [
+      "Donde ni llueve ni nieva.",
+      "Hoy llueve mucho en la ciudad."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "lluvia": {
     "meaning": "Chuva; água que cai das nuvens.",
     "examples": [
@@ -4957,6 +6680,17 @@
       "antes"
     ]
   },
+  "lugar": {
+    "meaning": "Lugar.",
+    "examples": [
+      "¿Imaginaste alguna vez un lugar tan sereno,",
+      "Este es mi lugar favorito."
+    ],
+    "synonyms": [
+      "sitio"
+    ],
+    "antonyms": []
+  },
   "lugares": {
     "meaning": "Lugares; plural de 'lugar'.",
     "examples": [
@@ -4966,6 +6700,15 @@
     "synonyms": [
       "sitios"
     ],
+    "antonyms": []
+  },
+  "lunes": {
+    "meaning": "Segunda-feira.",
+    "examples": [
+      "| Lunes | | | |",
+      "El lunes empiezo una nueva rutina."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "luz": {
@@ -5134,6 +6877,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "mantequilla": {
+    "meaning": "Manteiga.",
+    "examples": [
+      "| Pulgar | Grasa (aceite, mantequilla, nueces) | Un pulgar |",
+      "Puso mantequilla en el pan."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "manzana": {
     "meaning": "Maçã.",
     "examples": [
@@ -5183,6 +6935,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "martes": {
+    "meaning": "Terça-feira.",
+    "examples": [
+      "| Martes | | | |",
+      "Tengo una reunión el martes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "matorrales": {
     "meaning": "Matagais; áreas com arbustos densos.",
     "examples": [
@@ -5205,6 +6966,15 @@
     "antonyms": [
       "menor"
     ]
+  },
+  "maíz": {
+    "meaning": "Milho.",
+    "examples": [
+      "Jarabe de maíz.",
+      "Me gusta el pan de maíz."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "mañana": {
     "meaning": "Manhã; período inicial do dia, logo após o amanhecer.",
@@ -5240,6 +7010,15 @@
     ],
     "antonyms": []
   },
+  "medir": {
+    "meaning": "Medir.",
+    "examples": [
+      "No siempre necesitas una balanza para medir tu comida. Puedes usar tu mano como una guía simple.",
+      "Necesito medir la mesa antes de comprarla."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "mejilla": {
     "meaning": "Bochecha.",
     "examples": [
@@ -5261,6 +7040,17 @@
     "antonyms": [
       "peor"
     ]
+  },
+  "melodía": {
+    "meaning": "Melodia.",
+    "examples": [
+      "Al tocar el pasto, sonaba una melodía.",
+      "Tarareaba una melodía alegre."
+    ],
+    "synonyms": [
+      "canción"
+    ],
+    "antonyms": []
   },
   "melodías": {
     "meaning": "Melodias.",
@@ -5429,6 +7219,17 @@
     ],
     "antonyms": []
   },
+  "miras": {
+    "meaning": "Miras; presente (tú) de 'mirar'.",
+    "examples": [
+      "Miras el sol mientras nace un nuevo día.",
+      "Tú miras las estrellas cada noche."
+    ],
+    "synonyms": [
+      "observas"
+    ],
+    "antonyms": []
+  },
   "miró": {
     "meaning": "Olhou; passado de 'mirar'.",
     "examples": [
@@ -5465,6 +7266,15 @@
     "examples": [
       "Usa verduras mixtas en la receta.",
       "Una taza de verduras mixtas tiene varios colores."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "miércoles": {
+    "meaning": "Quarta-feira.",
+    "examples": [
+      "| Miércoles | | | |",
+      "El miércoles tengo clase de yoga."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5508,6 +7318,15 @@
       "secos"
     ]
   },
+  "mojarse": {
+    "meaning": "Molhar-se.",
+    "examples": [
+      "Para no mojarse, Garbancito se escondió debajo de un repollo.",
+      "Usa un paraguas para no mojarse."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "mojándolas": {
     "meaning": "Molhando-as (gerúndio de 'mojar' + pronome).",
     "examples": [
@@ -5533,6 +7352,15 @@
     "examples": [
       "Bebe agua en estos momentos del día.",
       "Fueron buenos momentos juntos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "monosódico": {
+    "meaning": "Monossódico.",
+    "examples": [
+      "Glutamato monosódico (GMS).",
+      "El glutamato monosódico es un aditivo común."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5577,6 +7405,15 @@
     ],
     "antonyms": []
   },
+  "mostrarte": {
+    "meaning": "Mostrar-te; infinitivo 'mostrar' + pronome 'te'.",
+    "examples": [
+      "Quiero mostrarte este momento sereno.",
+      "Quiero mostrarte mi ciudad."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "movimiento": {
     "meaning": "Movimento.",
     "examples": [
@@ -5585,6 +7422,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "mucha": {
+    "meaning": "Muita; forma feminina de 'mucho'.",
+    "examples": [
+      "- Nivel 1 o 2: Mucha hambre, tal vez mareado o débil",
+      "Hay mucha gente en la calle."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "poca"
+    ]
   },
   "muchas": {
     "meaning": "Muitas; plural feminino de 'mucho'.",
@@ -5661,6 +7509,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "murmullo": {
+    "meaning": "Murmúrio.",
+    "examples": [
+      "El aroma, el murmullo, la brisa que se aferra.",
+      "Se escuchaba el murmullo del río."
+    ],
+    "synonyms": [
+      "susurro"
+    ],
+    "antonyms": []
+  },
   "muuuuucho": {
     "meaning": "Variação enfática e brincalhona de 'mucho' (semelhante a 'muuuuuucho', com o mesmo sentido enfático).",
     "examples": [
@@ -5698,6 +7557,17 @@
     ],
     "antonyms": []
   },
+  "mágico": {
+    "meaning": "Mágico.",
+    "examples": [
+      "Tal es la belleza de este lugar mágico.",
+      "Fue un espectáculo mágico."
+    ],
+    "synonyms": [
+      "encantador"
+    ],
+    "antonyms": []
+  },
   "más": {
     "meaning": "Mais.",
     "examples": [
@@ -5708,6 +7578,17 @@
     "antonyms": [
       "menos"
     ]
+  },
+  "método": {
+    "meaning": "Método.",
+    "examples": [
+      "Esto se llama el **método de la mano**. Funciona para casi todos porque tu mano crece con tu cuerpo.",
+      "Este método es muy fácil de seguir."
+    ],
+    "synonyms": [
+      "técnica"
+    ],
+    "antonyms": []
   },
   "método del plato": {
     "meaning": "Uma técnica simples para equilibrar uma refeição: a metade do prato com verduras e frutas, um quarto com proteína e um quarto com carboidratos.",
@@ -5726,6 +7607,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "nace": {
+    "meaning": "Nasce; presente (ele/ela) de 'nacer'.",
+    "examples": [
+      "Miras el sol mientras nace un nuevo día.",
+      "El sol nace cada mañana."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "muere"
+    ]
   },
   "nació": {
     "meaning": "Nasceu; passado de 'nacer'.",
@@ -5761,6 +7653,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "nadie": {
+    "meaning": "Ninguém.",
+    "examples": [
+      "Cantando fuerte para que nadie lo pisara.",
+      "No hay nadie en la casa."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "alguien"
+    ]
+  },
   "naranja": {
     "meaning": "Laranja (a fruta).",
     "examples": [
@@ -5769,6 +7672,37 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "nariz": {
+    "meaning": "Nariz.",
+    "examples": [
+      "Le hizo cosquillas al buey en la nariz.",
+      "Me duele la nariz por el resfriado."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "naturaleza": {
+    "meaning": "Natureza.",
+    "examples": [
+      "La naturaleza entera en silencio hablaba.",
+      "Me encanta pasear por la naturaleza."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "necesario": {
+    "meaning": "Necessário.",
+    "examples": [
+      "Si prestamos atención, todo es necesario.",
+      "Es necesario descansar bien."
+    ],
+    "synonyms": [
+      "preciso"
+    ],
+    "antonyms": [
+      "innecesario"
+    ]
   },
   "necesita": {
     "meaning": "Precisa; forma de 'necesitar'.",
@@ -5807,6 +7741,35 @@
     "synonyms": [],
     "antonyms": []
   },
+  "nidos": {
+    "meaning": "Ninhos; plural de 'nido'.",
+    "examples": [
+      "En sus nidos tibios, soñaban risueñas.",
+      "Los pájaros construyen sus nidos en primavera."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "nieva": {
+    "meaning": "Neva; presente de 'nevar'.",
+    "examples": [
+      "Donde ni llueve ni nieva.",
+      "En invierno, aquí nieva mucho."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "nivel": {
+    "meaning": "Nível.",
+    "examples": [
+      "Trata de comer cuando estés en el nivel 3 o 4. Deja de comer cuando llegues al nivel 7 u 8. Come despacio. Tu cerebro necesita tiempo para sentir la **saciedad**.",
+      "El nivel del agua subió mucho."
+    ],
+    "synonyms": [
+      "grado"
+    ],
+    "antonyms": []
+  },
   "niño": {
     "meaning": "Menino, criança.",
     "examples": [
@@ -5840,6 +7803,24 @@
       "día"
     ]
   },
+  "nombre": {
+    "meaning": "Nome.",
+    "examples": [
+      "El sodio es el nombre científico de la sal.",
+      "¿Cuál es el nombre de este ingrediente?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "nombres": {
+    "meaning": "Nomes.",
+    "examples": [
+      "El azúcar tiene muchos nombres en una etiqueta.",
+      "El azúcar tiene muchos nombres diferentes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "normal": {
     "meaning": "Normal.",
     "examples": [
@@ -5860,6 +7841,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "notemos": {
+    "meaning": "Notemos; presente de subjuntivo (nós) de 'notar'.",
+    "examples": [
+      "Aunque no lo notemos, cada detalle cuenta.",
+      "Aunque no lo notemos, el tiempo pasa rápido."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "noticia": {
     "meaning": "Notícia.",
     "examples": [
@@ -5874,6 +7864,15 @@
     "examples": [
       "Había una vez una pequeña nube que flotaba despacito en el cielo azul.",
       "La nube de algodón se quedó dormida."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "nubes": {
+    "meaning": "Nuvens; plural de 'nube'.",
+    "examples": [
+      "Y mientras tanto, las nubes pasaban.",
+      "Las nubes cubrieron el cielo."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5929,6 +7928,15 @@
       "siempre"
     ]
   },
+  "nutricional": {
+    "meaning": "Nutricional.",
+    "examples": [
+      "Todo alimento empacado tiene una etiqueta nutricional.",
+      "Este plan nutricional es muy saludable."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "nutrición": {
     "meaning": "Nutrição.",
     "examples": [
@@ -5964,6 +7972,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "números": {
+    "meaning": "Números.",
+    "examples": [
+      "Todos los números de abajo son para una porción.",
+      "Los números en la etiqueta son importantes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "o": {
     "meaning": "Conjunção que indica alternativa ('ou').",
     "examples": [
@@ -5983,6 +8000,35 @@
       "miró",
       "contempló"
     ],
+    "antonyms": []
+  },
+  "ocasional": {
+    "meaning": "Ocasional.",
+    "examples": [
+      "¿Es esta comida una buena opción diaria, o solo una opción ocasional?",
+      "Como postre de manera ocasional."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "frecuente"
+    ]
+  },
+  "ocurrió": {
+    "meaning": "Ocorreu; pretérito de 'ocurrir' ('ocurrírsele algo a alguien' = ter uma ideia).",
+    "examples": [
+      "Al papá de Garbancito se le ocurrió una idea brillante.",
+      "De repente, se me ocurrió una solución."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "oh": {
+    "meaning": "Oh! (interjeição de surpresa).",
+    "examples": [
+      "Garbancito estaba adentro. ¡Oh, no!",
+      "¡Oh, qué sorpresa verte aquí!"
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "ojitos": {
@@ -6021,11 +8067,49 @@
     "synonyms": [],
     "antonyms": []
   },
+  "opciones": {
+    "meaning": "Opções; plural de 'opción'.",
+    "examples": [
+      "Cuando no planificas, a menudo eliges comida rápida o bocadillos. Estas opciones no siempre son saludables.",
+      "Tenemos varias opciones para la cena."
+    ],
+    "synonyms": [
+      "alternativas"
+    ],
+    "antonyms": []
+  },
+  "opción": {
+    "meaning": "Opção.",
+    "examples": [
+      "¿Es esta comida una buena opción diaria, o solo una opción ocasional?",
+      "Esta es una buena opción para el desayuno."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "orden": {
+    "meaning": "Ordem.",
+    "examples": [
+      "Los ingredientes aparecen en orden, del más al menos.",
+      "Pon los libros en orden."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "orina": {
     "meaning": "Urina.",
     "examples": [
       "Revisa tu orina para saber si estás hidratado.",
       "La orina clara es una buena señal."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "oro": {
+    "meaning": "Ouro.",
+    "examples": [
+      "Aromas y formas que valen más que el oro.",
+      "El anillo era de oro puro."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6083,6 +8167,33 @@
     ],
     "antonyms": []
   },
+  "pachán": {
+    "meaning": "Palavra inventada, parte do canto onomatopeico 'pachín, pachán, pachón' de Garbancito.",
+    "examples": [
+      "¡Pachín, pachán, pachón! Mucho cuidado con lo que hacen.",
+      "Cantaba pachín, pachán, pachón mientras caminaba."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pachín": {
+    "meaning": "Palavra inventada, parte do canto onomatopeico 'pachín, pachán, pachón' de Garbancito.",
+    "examples": [
+      "¡Pachín, pachán, pachón! Mucho cuidado con lo que hacen.",
+      "Cantaba pachín, pachán, pachón mientras caminaba."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pachón": {
+    "meaning": "Palavra inventada, parte do canto onomatopeico 'pachín, pachán, pachón' de Garbancito.",
+    "examples": [
+      "A Garbancito no pisen, pachín, pachán, pachón.",
+      "Cantaba pachín, pachán, pachón mientras caminaba."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "padre": {
     "meaning": "Pai.",
     "examples": [
@@ -6095,6 +8206,17 @@
     "antonyms": [
       "madre"
     ]
+  },
+  "paisaje": {
+    "meaning": "Paisagem.",
+    "examples": [
+      "Eres parte de este paisaje sin par.",
+      "El paisaje desde la montaña era increíble."
+    ],
+    "synonyms": [
+      "vista"
+    ],
+    "antonyms": []
   },
   "pajaritos": {
     "meaning": "Passarinhos (diminutivo de 'pájaros').",
@@ -6110,6 +8232,15 @@
     "examples": [
       "Palabras clave.",
       "Aprende estas palabras nuevas."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "palma": {
+    "meaning": "Palma (da mão).",
+    "examples": [
+      "| Palma | Proteína (pollo, pescado, carne) | Una palma |",
+      "Puso la moneda en la palma de su mano."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6139,6 +8270,26 @@
       "El gatito tenía la pancita suave."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "panel": {
+    "meaning": "Painel.",
+    "examples": [
+      "Etiqueta nutricional — el panel de información en un alimento empacado.",
+      "El panel solar está en el techo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "panza": {
+    "meaning": "Barriga (informal).",
+    "examples": [
+      "Desde el interior de la panza del buey, Garbancito empezó a gritar.",
+      "El perro tiene la panza llena."
+    ],
+    "synonyms": [
+      "barriga"
+    ],
     "antonyms": []
   },
   "papa": {
@@ -6173,6 +8324,26 @@
     ],
     "synonyms": [
       "padres"
+    ],
+    "antonyms": []
+  },
+  "paquete": {
+    "meaning": "Pacote.",
+    "examples": [
+      "Todos los números de abajo son para una porción, no para todo el paquete.",
+      "Compré un paquete de galletas."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "par": {
+    "meaning": "Par; usado em 'sin par' (sem igual).",
+    "examples": [
+      "Eres parte de este paisaje sin par.",
+      "Es una amistad sin par."
+    ],
+    "synonyms": [
+      "igual"
     ],
     "antonyms": []
   },
@@ -6253,6 +8424,28 @@
     "synonyms": [],
     "antonyms": []
   },
+  "pasaba": {
+    "meaning": "Passava; pretérito imperfeito (ele/ela) de 'pasar'.",
+    "examples": [
+      "Así pasaba la mañana callada.",
+      "El tiempo pasaba muy lento."
+    ],
+    "synonyms": [
+      "transcurría"
+    ],
+    "antonyms": []
+  },
+  "pasaban": {
+    "meaning": "Passavam; pretérito imperfeito (eles/elas) de 'pasar'.",
+    "examples": [
+      "Y mientras tanto, las nubes pasaban.",
+      "Los días pasaban sin novedad."
+    ],
+    "synonyms": [
+      "transcurrían"
+    ],
+    "antonyms": []
+  },
   "pasaron": {
     "meaning": "Passaram; passado de 'pasar' na terceira pessoa do plural.",
     "examples": [
@@ -6261,6 +8454,17 @@
     ],
     "synonyms": [
       "transcurrieron"
+    ],
+    "antonyms": []
+  },
+  "pasea": {
+    "meaning": "Passeia; presente (ele/ela) de 'pasear'.",
+    "examples": [
+      "Una flor, un aroma, una brisa que pasea.",
+      "Él pasea por el parque cada tarde."
+    ],
+    "synonyms": [
+      "camina"
     ],
     "antonyms": []
   },
@@ -6301,6 +8505,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "pasto": {
+    "meaning": "Pasto, relva.",
+    "examples": [
+      "Al tocar el pasto, sonaba una melodía.",
+      "Las vacas comían pasto fresco."
+    ],
+    "synonyms": [
+      "hierba"
+    ],
+    "antonyms": []
+  },
   "pasó": {
     "meaning": "Passou, aconteceu; passado de 'pasar'.",
     "examples": [
@@ -6329,6 +8544,19 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "pausado": {
+    "meaning": "Pausado, lento.",
+    "examples": [
+      "El tiempo se detenía, todo estaba pausado.",
+      "Caminaba con paso pausado."
+    ],
+    "synonyms": [
+      "lento"
+    ],
+    "antonyms": [
+      "rápido"
+    ]
   },
   "paz": {
     "meaning": "Paz.",
@@ -6454,6 +8682,17 @@
       "grandes"
     ]
   },
+  "perder": {
+    "meaning": "Perder.",
+    "examples": [
+      "Sin perder el ánimo, empezó a gritar con todas sus fuerzas.",
+      "No quiero perder el autobús."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "ganar"
+    ]
+  },
   "perdido": {
     "meaning": "Perdido.",
     "examples": [
@@ -6483,6 +8722,15 @@
     "examples": [
       "Muchas personas no reciben suficiente hierro.",
       "Algunas personas necesitan más calcio."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pertenecido": {
+    "meaning": "Pertencido; particípio de 'pertenecer'.",
+    "examples": [
+      "Como si siempre hubieras pertenecido aquí.",
+      "Siempre había pertenecido a ese lugar."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6534,6 +8782,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "piensas": {
+    "meaning": "Pensas, você pensa; presente de 'pensar'.",
+    "examples": [
+      "El número real de calorías que comes puede ser más alto de lo que piensas.",
+      "¿Qué piensas de esta comida?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "pies": {
     "meaning": "Plural de 'pie' (pé); parte do corpo usada para caminhar.",
     "examples": [
@@ -6570,6 +8827,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "pisara": {
+    "meaning": "Pisasse; subjuntivo (pretérito imperfeito) de 'pisar'.",
+    "examples": [
+      "Cantando fuerte para que nadie lo pisara.",
+      "Caminó con cuidado para que nadie lo pisara."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pisen": {
+    "meaning": "Pisem; subjuntivo (presente) de 'pisar', usado aqui como imperativo negativo.",
+    "examples": [
+      "A Garbancito no pisen.",
+      "Cuidado, no pisen las flores."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "pista": {
     "meaning": "Pista; indício que ajuda a encontrar algo.",
     "examples": [
@@ -6580,6 +8855,70 @@
       "indicio",
       "señal"
     ],
+    "antonyms": []
+  },
+  "planifica": {
+    "meaning": "Planifica; presente (ele/ela) ou imperativo (tú) de 'planificar'.",
+    "examples": [
+      "Ahora es tu turno. Planifica tus comidas para una semana.",
+      "Ella planifica su semana los domingos."
+    ],
+    "synonyms": [
+      "organiza"
+    ],
+    "antonyms": []
+  },
+  "planificación": {
+    "meaning": "Planejamento.",
+    "examples": [
+      "## ¿Qué Es la Planificación de Comidas?",
+      "La planificación del viaje tomó una semana."
+    ],
+    "synonyms": [
+      "organización"
+    ],
+    "antonyms": []
+  },
+  "planificar": {
+    "meaning": "Planejar.",
+    "examples": [
+      "## ¿Por Qué Planificar Tus Comidas?",
+      "Es importante planificar las compras."
+    ],
+    "synonyms": [
+      "organizar"
+    ],
+    "antonyms": []
+  },
+  "planificas": {
+    "meaning": "Planificas; presente (tú) de 'planificar'.",
+    "examples": [
+      "Cuando no planificas, a menudo eliges comida rápida o bocadillos. Estas opciones no siempre son saludables.",
+      "Tú planificas todo con cuidado."
+    ],
+    "synonyms": [
+      "organizas"
+    ],
+    "antonyms": []
+  },
+  "plantilla": {
+    "meaning": "Modelo, planilha (template).",
+    "examples": [
+      "## Práctica: Crea Tu Plantilla Semanal de Planificación de Comidas",
+      "Descargué una plantilla para el currículum."
+    ],
+    "synonyms": [
+      "modelo"
+    ],
+    "antonyms": []
+  },
+  "plateada": {
+    "meaning": "Prateada; forma feminina de 'plateado'.",
+    "examples": [
+      "El rocío bañaba cada hoja plateada.",
+      "La luna dejaba una luz plateada."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "plato": {
@@ -6602,6 +8941,19 @@
       "orilla"
     ],
     "antonyms": []
+  },
+  "pleno": {
+    "meaning": "Pleno, completo.",
+    "examples": [
+      "donde cada respiro se siente tan pleno?",
+      "Vivía en pleno campo."
+    ],
+    "synonyms": [
+      "completo"
+    ],
+    "antonyms": [
+      "vacío"
+    ]
   },
   "plumas": {
     "meaning": "Penas; plural de 'pluma'.",
@@ -6740,6 +9092,26 @@
     "synonyms": [],
     "antonyms": []
   },
+  "porciones": {
+    "meaning": "Porções; plural de 'porción'.",
+    "examples": [
+      "- **Método de la mano** — usar tu mano para medir las porciones de comida",
+      "Sirvió porciones pequeñas para los niños."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "porción": {
+    "meaning": "Porção.",
+    "examples": [
+      "| Parte de Tu Mano | Tipo de Alimento | Porción |",
+      "Comió una porción grande de arroz."
+    ],
+    "synonyms": [
+      "ración"
+    ],
+    "antonyms": []
+  },
   "porque": {
     "meaning": "Porque; usado para explicar uma razão.",
     "examples": [
@@ -6750,6 +9122,15 @@
       "ya que",
       "pues"
     ],
+    "antonyms": []
+  },
+  "pregunta": {
+    "meaning": "Pergunta.",
+    "examples": [
+      "Lee la etiqueta y responde cada pregunta.",
+      "Tengo una pregunta sobre la etiqueta."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "preguntas": {
@@ -6811,6 +9192,46 @@
       "tranquilos"
     ]
   },
+  "prepara": {
+    "meaning": "Prepara; presente (ele/ela) ou imperativo (tú) de 'preparar'.",
+    "examples": [
+      "**Paso 5:** Prepara algo de comida con anticipación, como arroz o pollo. Esto ahorra tiempo durante la semana.",
+      "Ella prepara el almuerzo todos los días."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "presente": {
+    "meaning": "Presente.",
+    "examples": [
+      "Lo más hermoso era la calma presente.",
+      "Disfruta del momento presente."
+    ],
+    "synonyms": [
+      "actual"
+    ],
+    "antonyms": [
+      "ausente"
+    ]
+  },
+  "prestamos": {
+    "meaning": "Prestamos; presente (nós) de 'prestar'.",
+    "examples": [
+      "Si prestamos atención, todo es necesario.",
+      "Nosotros prestamos ayuda a los vecinos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "primer": {
+    "meaning": "Primeiro (forma apocopada antes de substantivo masculino singular).",
+    "examples": [
+      "El primer ingrediente es la parte más grande de la comida.",
+      "Este es mi primer día de dieta."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "primera": {
     "meaning": "Primeira; feminino de 'primero'.",
     "examples": [
@@ -6835,6 +9256,17 @@
       "último"
     ]
   },
+  "primeros": {
+    "meaning": "Primeiros.",
+    "examples": [
+      "Si el azúcar está entre los tres primeros ingredientes, la comida tiene mucha azúcar.",
+      "Los primeros resultados son buenos."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "últimos"
+    ]
+  },
   "principales": {
     "meaning": "Principais (plural de 'principal').",
     "examples": [
@@ -6843,11 +9275,33 @@
     "synonyms": [],
     "antonyms": []
   },
+  "prisa": {
+    "meaning": "Pressa.",
+    "examples": [
+      "No había prisa, todo con calma sucedía.",
+      "No tengas prisa, aún hay tiempo."
+    ],
+    "synonyms": [
+      "apuro"
+    ],
+    "antonyms": [
+      "calma"
+    ]
+  },
   "problema": {
     "meaning": "Problema.",
     "examples": [
       "La anemia es un problema por no tener suficiente hierro.",
       "Comer mal puede causar problemas de salud."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "procesamiento": {
+    "meaning": "Processamento.",
+    "examples": [
+      "Azúcar agregada a la comida durante su procesamiento.",
+      "El procesamiento de la comida agrega químicos."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6910,6 +9364,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "pudo": {
+    "meaning": "Pôde, conseguiu; pretérito de 'poder'.",
+    "examples": [
+      "El animal no pudo evitar un gran estornudo.",
+      "No pudo terminar la tarea a tiempo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "puede": {
     "meaning": "Pode; forma de 'poder'.",
     "examples": [
@@ -6948,6 +9411,24 @@
     ],
     "antonyms": []
   },
+  "pulgar": {
+    "meaning": "Polegar.",
+    "examples": [
+      "| Pulgar | Grasa (aceite, mantequilla, nueces) | Un pulgar |",
+      "Se lastimó el pulgar jugando fútbol."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pureza": {
+    "meaning": "Pureza.",
+    "examples": [
+      "El canto de las aves llenaba de pureza.",
+      "El agua del manantial tenía gran pureza."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "puse": {
     "meaning": "Pus/coloquei; passado do verbo 'poner'.",
     "examples": [
@@ -6960,6 +9441,15 @@
     "antonyms": [
       "quité"
     ]
+  },
+  "puño": {
+    "meaning": "Punho (mão fechada).",
+    "examples": [
+      "| Puño | Verduras | Un puño |",
+      "Cerró la mano en un puño."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "que": {
     "meaning": "Que; pronome relativo ou conjunção.",
@@ -7059,6 +9549,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "quise": {
+    "meaning": "Quis; pretérito perfeito simples (eu) de 'querer'.",
+    "examples": [
+      "Quise ver el amanecer antes de que despertara el bosque entero,",
+      "Quise llamarte, pero era tarde."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "quiso": {
     "meaning": "Quis (pretérito de 'querer').",
     "examples": [
@@ -7140,6 +9639,28 @@
     ],
     "antonyms": []
   },
+  "rayos": {
+    "meaning": "Raios; plural de 'rayo'.",
+    "examples": [
+      "Sus rayos tibios llenan el bosque de alegría.",
+      "Los rayos del sol entraban por la ventana."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "real": {
+    "meaning": "Real, verdadeiro.",
+    "examples": [
+      "El número real de calorías que comes puede ser más alto de lo que piensas.",
+      "El precio real es más alto de lo que esperaba."
+    ],
+    "synonyms": [
+      "verdadero"
+    ],
+    "antonyms": [
+      "falso"
+    ]
+  },
   "receta": {
     "meaning": "Receita (de cozinha).",
     "examples": [
@@ -7165,6 +9686,26 @@
     "synonyms": [],
     "antonyms": []
   },
+  "recuerdos": {
+    "meaning": "Lembranças; plural de 'recuerdo'.",
+    "examples": [
+      "Creas recuerdos con lo que te rodea.",
+      "Guardo buenos recuerdos de ese viaje."
+    ],
+    "synonyms": [
+      "memorias"
+    ],
+    "antonyms": []
+  },
+  "referencia": {
+    "meaning": "Referência.",
+    "examples": [
+      "## Trucos de Referencia para el Tamaño de las Porciones",
+      "Usó el libro como referencia para el examen."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "reflejado": {
     "meaning": "Refletido.",
     "examples": [
@@ -7179,6 +9720,15 @@
     "examples": [
       "Usa una regla simple: el método del plato.",
       "Esta regla te ayuda a comer bien."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "reinaba": {
+    "meaning": "Reinava; pretérito imperfeito (ele/ela) de 'reinar'.",
+    "examples": [
+      "Estuve en un lugar donde la paz reinaba.",
+      "En la casa reinaba el silencio."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7215,6 +9765,44 @@
     "examples": [
       "El cuerpo necesita proteína para repararse.",
       "Comer bien ayuda al cuerpo a repararse."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "repente": {
+    "meaning": "Repente ('de repente' = de repente, subitamente).",
+    "examples": [
+      "De repente, empezó a llover.",
+      "De repente, se fue la luz."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "repollo": {
+    "meaning": "Repolho.",
+    "examples": [
+      "Garbancito se escondió debajo de un repollo gigante.",
+      "Hice una ensalada con repollo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "respiro": {
+    "meaning": "Respiro, suspiro.",
+    "examples": [
+      "donde cada respiro se siente tan pleno?",
+      "Tomó un respiro antes de hablar."
+    ],
+    "synonyms": [
+      "aliento"
+    ],
+    "antonyms": []
+  },
+  "responde": {
+    "meaning": "Responde; presente de 'responder'.",
+    "examples": [
+      "Lee la etiqueta y responde cada pregunta.",
+      "Ella responde todas las preguntas."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7271,6 +9859,50 @@
     "antonyms": [
       "lloraron"
     ]
+  },
+  "rincón": {
+    "meaning": "Cantinho, recanto.",
+    "examples": [
+      "Allí, en ese rincón apartado.",
+      "Tiene un rincón especial en su casa."
+    ],
+    "synonyms": [
+      "recoveco"
+    ],
+    "antonyms": []
+  },
+  "risueñas": {
+    "meaning": "Risonhas; plural feminino de 'risueño'.",
+    "examples": [
+      "En sus nidos tibios, soñaban risueñas.",
+      "Las niñas jugaban risueñas en el parque."
+    ],
+    "synonyms": [
+      "alegres"
+    ],
+    "antonyms": [
+      "tristes"
+    ]
+  },
+  "rocío": {
+    "meaning": "Orvalho.",
+    "examples": [
+      "El rocío bañaba cada hoja plateada.",
+      "El rocío de la mañana mojaba el pasto."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "rodea": {
+    "meaning": "Rodeia; presente (ele/ela) de 'rodear'.",
+    "examples": [
+      "Creas recuerdos con lo que te rodea.",
+      "La naturaleza que nos rodea es hermosa."
+    ],
+    "synonyms": [
+      "envuelve"
+    ],
+    "antonyms": []
   },
   "roja": {
     "meaning": "Vermelha (feminino de 'rojo').",
@@ -7336,6 +9968,15 @@
       "lento"
     ]
   },
+  "río": {
+    "meaning": "Rio.",
+    "examples": [
+      "Más allá del río, las flores se abrían.",
+      "Nadamos en el río todo el día."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "sabes": {
     "meaning": "Sabes; forma de 'saber'.",
     "examples": [
@@ -7345,11 +9986,31 @@
     "synonyms": [],
     "antonyms": []
   },
+  "saciedad": {
+    "meaning": "Saciedade (sensação de estar satisfeito).",
+    "examples": [
+      "Trata de comer cuando estés en el nivel 3 o 4. Deja de comer cuando llegues al nivel 7 u 8. Come despacio. Tu cerebro necesita tiempo para sentir la **saciedad**.",
+      "Comer despacio ayuda a sentir la saciedad antes."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "hambre"
+    ]
+  },
   "sal": {
     "meaning": "Sal.",
     "examples": [
       "Agrega un poco de sal a la comida.",
       "No se debe comer mucha sal."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "salieron": {
+    "meaning": "Saíram; pretérito de 'salir'.",
+    "examples": [
+      "Sus papás, muy preocupados, salieron a buscarlo.",
+      "Los niños salieron a jugar al parque."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7364,6 +10025,15 @@
     "antonyms": [
       "entrar"
     ]
+  },
+  "salió": {
+    "meaning": "Saiu; pretérito de 'salir'.",
+    "examples": [
+      "Garbancito salió volando por el aire.",
+      "Ella salió temprano de su casa."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "salmón": {
     "meaning": "Salmão.",
@@ -7405,6 +10075,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "saludables": {
+    "meaning": "Saudáveis; plural de 'saludable'.",
+    "examples": [
+      "Cuando no planificas, a menudo eliges comida rápida o bocadillos. Estas opciones no siempre son saludables.",
+      "Elige alimentos saludables cada día."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "saludó": {
     "meaning": "Saudou; passado de 'saludar'.",
     "examples": [
@@ -7414,6 +10093,15 @@
     "synonyms": [
       "dijo hola a"
     ],
+    "antonyms": []
+  },
+  "salvo": {
+    "meaning": "Salvo, a salvo ('sano y salvo' = são e salvo).",
+    "examples": [
+      "Cayó sano y salvo en los brazos de sus papás.",
+      "Llegamos a casa sanos y salvos."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "salí": {
@@ -7447,6 +10135,19 @@
     "synonyms": [],
     "antonyms": []
   },
+  "sano": {
+    "meaning": "São, saudável ('sano y salvo' = são e salvo).",
+    "examples": [
+      "Cayó sano y salvo en los brazos de sus papás.",
+      "Es importante comer sano."
+    ],
+    "synonyms": [
+      "saludable"
+    ],
+    "antonyms": [
+      "enfermo"
+    ]
+  },
   "sartén": {
     "meaning": "Frigideira.",
     "examples": [
@@ -7455,6 +10156,19 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "satisfecho": {
+    "meaning": "Satisfeito.",
+    "examples": [
+      "- Nivel 7 u 8: Lleno, satisfecho",
+      "Quedé muy satisfecho con la comida."
+    ],
+    "synonyms": [
+      "lleno"
+    ],
+    "antonyms": [
+      "insatisfecho"
+    ]
   },
   "se": {
     "meaning": "Se; pronome reflexivo.",
@@ -7549,11 +10263,29 @@
     "synonyms": [],
     "antonyms": []
   },
+  "semanal": {
+    "meaning": "Semanal.",
+    "examples": [
+      "## Práctica: Crea Tu Plantilla Semanal de Planificación de Comidas",
+      "Tenemos una reunión semanal los lunes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "sensación": {
     "meaning": "Sensação.",
     "examples": [
       "La sed es la sensación que te dice que bebas agua.",
       "Tuve una sensación extraña."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sentidos": {
+    "meaning": "Sentidos; plural de 'sentido'.",
+    "examples": [
+      "Los sentidos despiertos, el corazón encendido.",
+      "Los cinco sentidos nos ayudan a percibir el mundo."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7584,6 +10316,19 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "sereno": {
+    "meaning": "Sereno, tranquilo.",
+    "examples": [
+      "¿Imaginaste alguna vez un lugar tan sereno,",
+      "El mar estaba sereno esa noche."
+    ],
+    "synonyms": [
+      "tranquilo"
+    ],
+    "antonyms": [
+      "agitado"
+    ]
   },
   "será": {
     "meaning": "Será; futuro do verbo 'ser'.",
@@ -7642,6 +10387,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "siempre": {
+    "meaning": "Sempre.",
+    "examples": [
+      "No siempre necesitas una balanza para medir tu comida. Puedes usar tu mano como una guía simple.",
+      "Siempre desayuno antes de salir."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "nunca"
+    ]
   },
   "siente": {
     "meaning": "Sente; presente de 'sentirse'.",
@@ -7712,6 +10468,19 @@
     ],
     "antonyms": []
   },
+  "silencio": {
+    "meaning": "Silêncio.",
+    "examples": [
+      "Porque en el silencio se esconden tesoros.",
+      "Pidió silencio en la biblioteca."
+    ],
+    "synonyms": [
+      "calma"
+    ],
+    "antonyms": [
+      "ruido"
+    ]
+  },
   "simple": {
     "meaning": "Simples.",
     "examples": [
@@ -7739,6 +10508,19 @@
     "synonyms": [],
     "antonyms": [
       "con"
+    ]
+  },
+  "sincero": {
+    "meaning": "Sincero.",
+    "examples": [
+      "la luz acariciaba las copas con un toque sincero.",
+      "Fue un gesto muy sincero."
+    ],
+    "synonyms": [
+      "honesto"
+    ],
+    "antonyms": [
+      "falso"
     ]
   },
   "sintiéndome": {
@@ -7781,6 +10563,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "sodio": {
+    "meaning": "Sódio.",
+    "examples": [
+      "El sodio es el nombre científico de la sal.",
+      "Esta sopa tiene mucho sodio."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "sol": {
     "meaning": "Sol.",
     "examples": [
@@ -7806,6 +10597,15 @@
     "examples": [
       "Los zapatos son geniales.",
       "Ellos son mis amigos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sonaba": {
+    "meaning": "Soava; pretérito imperfeito (ele/ela) de 'sonar'.",
+    "examples": [
+      "Al tocar el pasto, sonaba una melodía.",
+      "La música sonaba suave en la radio."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7899,6 +10699,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "soñaban": {
+    "meaning": "Sonhavam; pretérito imperfeito (eles/elas) de 'soñar'.",
+    "examples": [
+      "En sus nidos tibios, soñaban risueñas.",
+      "Los niños soñaban con las vacaciones."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "soñar": {
+    "meaning": "Sonhar.",
+    "examples": [
+      "Al cerrar los ojos, lo puedes soñar.",
+      "Me gusta soñar despierto."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "su": {
     "meaning": "Seu; sua.",
     "examples": [
@@ -7979,6 +10797,17 @@
     ],
     "antonyms": []
   },
+  "sucedía": {
+    "meaning": "Sucedia, acontecia; pretérito imperfeito (ele/ela) de 'suceder'.",
+    "examples": [
+      "No había prisa, todo con calma sucedía.",
+      "Todo sucedía muy despacio aquel día."
+    ],
+    "synonyms": [
+      "ocurría"
+    ],
+    "antonyms": []
+  },
   "suelo": {
     "meaning": "Chão; solo.",
     "examples": [
@@ -8011,6 +10840,19 @@
       "propuso"
     ],
     "antonyms": []
+  },
+  "sumergía": {
+    "meaning": "Submergia; pretérito imperfeito (ele/ela) de 'sumergirse'.",
+    "examples": [
+      "El bosque en silencio, en paz se sumergía.",
+      "El sol se sumergía en el horizonte."
+    ],
+    "synonyms": [
+      "hundía"
+    ],
+    "antonyms": [
+      "emergía"
+    ]
   },
   "supo": {
     "meaning": "Soube (pretérito de 'saber').",
@@ -8057,6 +10899,19 @@
     "synonyms": [],
     "antonyms": []
   },
+  "susurro": {
+    "meaning": "Sussurro.",
+    "examples": [
+      "El susurro del viento se sentía latente.",
+      "Escuché un susurro detrás de la puerta."
+    ],
+    "synonyms": [
+      "murmullo"
+    ],
+    "antonyms": [
+      "grito"
+    ]
+  },
   "susurró": {
     "meaning": "Sussurrou; passado de 'susurrar'.",
     "examples": [
@@ -8069,6 +10924,15 @@
     "antonyms": [
       "gritó"
     ]
+  },
+  "sábado": {
+    "meaning": "Sábado.",
+    "examples": [
+      "| Sábado | | | |",
+      "El sábado voy al mercado."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "sábana": {
     "meaning": "Lençol; peça de tecido usada na cama.",
@@ -8094,6 +10958,26 @@
       "Mira la tabla de arriba."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "tal": {
+    "meaning": "Tal; usado em 'tal vez' (talvez).",
+    "examples": [
+      "- Nivel 1 o 2: Mucha hambre, tal vez mareado o débil",
+      "Tal vez llueva mañana."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tamaño": {
+    "meaning": "Tamanho.",
+    "examples": [
+      "## Trucos de Referencia para el Tamaño de las Porciones",
+      "¿Cuál es el tamaño de esta camisa?"
+    ],
+    "synonyms": [
+      "medida"
+    ],
     "antonyms": []
   },
   "también": {
@@ -8175,6 +11059,15 @@
     "examples": [
       "El agua ayuda a controlar tu temperatura.",
       "La temperatura hoy es muy alta."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ten": {
+    "meaning": "Tem, tenha; imperativo de 'tener'.",
+    "examples": [
+      "—Garbancito, ten mucho cuidado y no te vayas muy lejos.",
+      "Ten paciencia, ya casi llegamos."
     ],
     "synonyms": [],
     "antonyms": []
@@ -8264,6 +11157,15 @@
       "dureza"
     ]
   },
+  "tesoros": {
+    "meaning": "Tesouros; plural de 'tesoro'.",
+    "examples": [
+      "Porque en el silencio se esconden tesoros.",
+      "Encontraron tesoros escondidos en la isla."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "ti": {
     "meaning": "Ti.",
     "examples": [
@@ -8287,6 +11189,19 @@
       "helada"
     ]
   },
+  "tibios": {
+    "meaning": "Mornos; plural de 'tibio'.",
+    "examples": [
+      "Sus rayos tibios llenan el bosque de alegría.",
+      "Los panes tibios olían delicioso."
+    ],
+    "synonyms": [
+      "templados"
+    ],
+    "antonyms": [
+      "fríos"
+    ]
+  },
   "tiempo": {
     "meaning": "Tempo.",
     "examples": [
@@ -8294,6 +11209,17 @@
       "Con el tiempo, Mateo descubrió que cada día Valentina hacía algo nuevo."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "tienda": {
+    "meaning": "Loja.",
+    "examples": [
+      "- Gastas menos dinero en la tienda",
+      "Compré pan en la tienda."
+    ],
+    "synonyms": [
+      "negocio"
+    ],
     "antonyms": []
   },
   "tiene": {
@@ -8347,6 +11273,15 @@
     ],
     "antonyms": []
   },
+  "tocar": {
+    "meaning": "Tocar.",
+    "examples": [
+      "Al tocar el pasto, sonaba una melodía.",
+      "Le encanta tocar la guitarra."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "tocones": {
     "meaning": "Tocos de árvore; o que resta de uma árvore cortada; plural de 'tocón'.",
     "examples": [
@@ -8361,6 +11296,24 @@
     "examples": [
       "La nube bajó un poquito más, hasta que tocó el agua con su pancita.",
       "Tocó la flor con cuidado."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "toda": {
+    "meaning": "Toda; forma feminina de 'todo'.",
+    "examples": [
+      "La planificación de comidas significa que decides tus comidas antes de comerlas. Eliges el desayuno, el almuerzo y la cena para toda la semana, no solo para un día.",
+      "Trabajó toda la tarde."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "todas": {
+    "meaning": "Todas.",
+    "examples": [
+      "Todas estas son formas de azúcar añadida.",
+      "Todas las etiquetas tienen esta información."
     ],
     "synonyms": [],
     "antonyms": []
@@ -8396,11 +11349,38 @@
       "nadie"
     ]
   },
+  "toma": {
+    "meaning": "Toma; presente de 'tomar'.",
+    "examples": [
+      "Toma un alimento empacado de tu cocina.",
+      "Toma agua antes de comer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tomas": {
+    "meaning": "Tomas; presente (tú) de 'tomar'.",
+    "examples": [
+      "- Tomas menos decisiones de último momento, como comida rápida",
+      "Tú tomas buenas decisiones."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "tomate": {
     "meaning": "Tomate.",
     "examples": [
       "Agrega tomate a la ensalada.",
       "El tomate es parte de la verdura."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "toque": {
+    "meaning": "Toque.",
+    "examples": [
+      "la luz acariciaba las copas con un toque sincero.",
+      "Dale un toque final a la pintura."
     ],
     "synonyms": [],
     "antonyms": []
@@ -8456,6 +11436,19 @@
       "inquieta"
     ]
   },
+  "tranquilidad": {
+    "meaning": "Tranquilidade.",
+    "examples": [
+      "La tranquilidad del bosque, el ambiente tan pleno.",
+      "Disfrutaba de la tranquilidad del campo."
+    ],
+    "synonyms": [
+      "calma"
+    ],
+    "antonyms": [
+      "agitación"
+    ]
+  },
   "tranquilo": {
     "meaning": "Tranquilo.",
     "examples": [
@@ -8468,6 +11461,17 @@
     "antonyms": [
       "agitado"
     ]
+  },
+  "trata": {
+    "meaning": "Trata; presente (ele/ela) ou imperativo (tú) de 'tratar'.",
+    "examples": [
+      "Trata de comer cuando estés en el nivel 3 o 4. Deja de comer cuando llegues al nivel 7 u 8. Come despacio. Tu cerebro necesita tiempo para sentir la **saciedad**.",
+      "Él trata de comer saludable."
+    ],
+    "synonyms": [
+      "intenta"
+    ],
+    "antonyms": []
   },
   "traía": {
     "meaning": "Trazia (imperfeito de 'traer').",
@@ -8495,6 +11499,17 @@
     ],
     "synonyms": [
       "leños"
+    ],
+    "antonyms": []
+  },
+  "trucos": {
+    "meaning": "Truques; plural de 'truco'.",
+    "examples": [
+      "## Trucos de Referencia para el Tamaño de las Porciones",
+      "Aprendió varios trucos de cocina."
+    ],
+    "synonyms": [
+      "consejos"
     ],
     "antonyms": []
   },
@@ -8530,6 +11545,15 @@
     "examples": [
       "Bebe té sin azúcar para hidratarte.",
       "Me gusta el té caliente."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "u": {
+    "meaning": "Ou; forma de 'o' usada antes de palavra que começa com som 'o'/'ho'.",
+    "examples": [
+      "- Nivel 7 u 8: Lleno, satisfecho",
+      "¿Quieres siete u ocho manzanas?"
     ],
     "synonyms": [],
     "antonyms": []
@@ -8571,6 +11595,19 @@
     ],
     "antonyms": []
   },
+  "unían": {
+    "meaning": "Uniam-se; pretérito imperfeito (eles/elas) de 'unirse'.",
+    "examples": [
+      "Con la frescura del agua, sus aromas se unían.",
+      "Los caminos se unían en la plaza."
+    ],
+    "synonyms": [
+      "juntaban"
+    ],
+    "antonyms": [
+      "separaban"
+    ]
+  },
   "usa": {
     "meaning": "Usa (de 'usar').",
     "examples": [
@@ -8598,11 +11635,53 @@
     "synonyms": [],
     "antonyms": []
   },
+  "vacío": {
+    "meaning": "Vazio.",
+    "examples": [
+      "- Nivel 3 o 4: Hambre, tu estómago se siente vacío",
+      "El vaso está vacío."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "lleno"
+    ]
+  },
   "vacíos": {
     "meaning": "Lacunas; partes que faltam (aqui, nutrientes que faltam na dieta).",
     "examples": [
       "Alimentos que cubren los vacíos.",
       "Crea tu lista de compras para cubrir los vacíos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "valen": {
+    "meaning": "Valem; presente (eles/elas) de 'valer'.",
+    "examples": [
+      "Aromas y formas que valen más que el oro.",
+      "Esos consejos valen mucho."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "valiente": {
+    "meaning": "Valente.",
+    "examples": [
+      "Garbancito era muy valiente y le fascinaba salir a pasear.",
+      "El bombero fue muy valiente."
+    ],
+    "synonyms": [
+      "valeroso"
+    ],
+    "antonyms": [
+      "cobarde"
+    ]
+  },
+  "valor": {
+    "meaning": "Valor.",
+    "examples": [
+      "La etiqueta muestra un % de Valor Diario para muchos nutrientes.",
+      "El valor nutricional está en la etiqueta."
     ],
     "synonyms": [],
     "antonyms": []
@@ -8639,6 +11718,15 @@
     "examples": [
       "Bebe cerca de 8 vasos de agua todos los días.",
       "Compramos vasos nuevos para la cocina."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vayas": {
+    "meaning": "Vás; presente do subjuntivo de 'ir' (usado após 'cuando', 'antes de que', etc.).",
+    "examples": [
+      "Usa esta lista de verificación cada vez que vayas de compras.",
+      "Compra pan cuando vayas a la tienda."
     ],
     "synonyms": [],
     "antonyms": []
@@ -8715,11 +11803,40 @@
     "synonyms": [],
     "antonyms": []
   },
+  "vibra": {
+    "meaning": "Vibra; presente (ele/ela) de 'vibrar'.",
+    "examples": [
+      "Todo vibra en calma, nada que alterar.",
+      "La guitarra vibra al tocarla."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "viendo": {
     "meaning": "Vendo (gerúndio de 'ver').",
     "examples": [
       "Subió despacito por el cielo, viendo cómo el día se despedía.",
       "Se quedó viendo las estrellas."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "viento": {
+    "meaning": "Vento.",
+    "examples": [
+      "El susurro del viento se sentía latente.",
+      "El viento movía las hojas."
+    ],
+    "synonyms": [
+      "brisa"
+    ],
+    "antonyms": []
+  },
+  "viernes": {
+    "meaning": "Sexta-feira.",
+    "examples": [
+      "| Viernes | | | |",
+      "El viernes salgo temprano del trabajo."
     ],
     "synonyms": [],
     "antonyms": []
@@ -8789,6 +11906,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "volando": {
+    "meaning": "Voando; gerúndio de 'volar'.",
+    "examples": [
+      "Garbancito salió volando por el aire.",
+      "El pájaro se fue volando."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "voltéalo": {
     "meaning": "Vira-o (de 'voltear').",
     "examples": [
@@ -8809,6 +11935,17 @@
     "antonyms": [
       "irse"
     ]
+  },
+  "vuelve": {
+    "meaning": "Torna-se; presente (ele/ela) de 'volverse'.",
+    "examples": [
+      "Lo simple se vuelve algo extraordinario.",
+      "El cielo se vuelve naranja al atardecer."
+    ],
+    "synonyms": [
+      "se torna"
+    ],
+    "antonyms": []
   },
   "vínculo": {
     "meaning": "Vínculo.",
@@ -8886,6 +12023,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "ánimo": {
+    "meaning": "Ânimo, disposição ('sin perder el ánimo' = sem perder o ânimo).",
+    "examples": [
+      "Sin perder el ánimo, empezó a gritar con todas sus fuerzas.",
+      "Le dieron ánimo para seguir adelante."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "árboles": {
     "meaning": "Árvores.",
     "examples": [
@@ -8904,6 +12050,17 @@
     "synonyms": [],
     "antonyms": [
       "ella"
+    ]
+  },
+  "último": {
+    "meaning": "Último.",
+    "examples": [
+      "- Tomas menos decisiones de último momento, como comida rápida",
+      "Llegó en el último momento."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "primero"
     ]
   },
   "única": {

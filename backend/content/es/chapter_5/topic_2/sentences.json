@@ -1,0 +1,430 @@
+[
+  {
+    "id": "es-sent-1263",
+    "sentence": "Mi computadora es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0427",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1264",
+    "sentence": "La computadora está en la mesa.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0427",
+      "es-wd-0255",
+      "es-wd-0082",
+      "es-wd-0070"
+    ]
+  },
+  {
+    "id": "es-sent-1265",
+    "sentence": "Tiene una computadora vieja.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0427",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1266",
+    "sentence": "Mi teclado es nuevo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0428",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1267",
+    "sentence": "El teclado está en la mesa.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0428",
+      "es-wd-0255",
+      "es-wd-0082",
+      "es-wd-0070"
+    ]
+  },
+  {
+    "id": "es-sent-1268",
+    "sentence": "Tiene un teclado viejo.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0428",
+      "es-wd-0379"
+    ]
+  },
+  {
+    "id": "es-sent-1269",
+    "sentence": "La tecla es grande.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0429",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1270",
+    "sentence": "Mi tecla está rota.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0429",
+      "es-wd-0255",
+      "es-wd-0420"
+    ]
+  },
+  {
+    "id": "es-sent-1271",
+    "sentence": "Tiene una tecla pequeña.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0429",
+      "es-wd-0225"
+    ]
+  },
+  {
+    "id": "es-sent-1272",
+    "sentence": "El ratón es nuevo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0430",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1273",
+    "sentence": "Mi ratón no funciona.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0430",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1274",
+    "sentence": "Tiene un ratón viejo.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0430",
+      "es-wd-0379"
+    ]
+  },
+  {
+    "id": "es-sent-1275",
+    "sentence": "Quiero usar la computadora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0431",
+      "es-wd-0058",
+      "es-wd-0427"
+    ]
+  },
+  {
+    "id": "es-sent-1276",
+    "sentence": "Puede usar el teclado aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0431",
+      "es-wd-0057",
+      "es-wd-0428",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1277",
+    "sentence": "Quiero usar mi programa.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0431",
+      "es-wd-0016",
+      "es-wd-0435"
+    ]
+  },
+  {
+    "id": "es-sent-1278",
+    "sentence": "Quiero encender la computadora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0432",
+      "es-wd-0058",
+      "es-wd-0427"
+    ]
+  },
+  {
+    "id": "es-sent-1279",
+    "sentence": "Puede encender el programa ahora.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0432",
+      "es-wd-0057",
+      "es-wd-0435",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1280",
+    "sentence": "Quiero encender mi computadora ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0432",
+      "es-wd-0016",
+      "es-wd-0427",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1281",
+    "sentence": "Quiero apagar la computadora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0433",
+      "es-wd-0058",
+      "es-wd-0427"
+    ]
+  },
+  {
+    "id": "es-sent-1282",
+    "sentence": "Puede apagar el programa aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0433",
+      "es-wd-0057",
+      "es-wd-0435",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1283",
+    "sentence": "No puede apagar la computadora ahora.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0323",
+      "es-wd-0433",
+      "es-wd-0058",
+      "es-wd-0427",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1284",
+    "sentence": "Es un clic nuevo.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0434",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1285",
+    "sentence": "El clic no funciona.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0434",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1286",
+    "sentence": "Mi clic funciona bien.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0434",
+      "es-wd-0418",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-1287",
+    "sentence": "Mi programa es nuevo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0435",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1288",
+    "sentence": "El programa no funciona.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0435",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1289",
+    "sentence": "Tiene un programa viejo.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0435",
+      "es-wd-0379"
+    ]
+  },
+  {
+    "id": "es-sent-1290",
+    "sentence": "Quiero escribir ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0436",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1291",
+    "sentence": "Puede escribir aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0436",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1292",
+    "sentence": "Quiero escribir mi nombre.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0436",
+      "es-wd-0016",
+      "es-wd-0015"
+    ]
+  },
+  {
+    "id": "es-sent-1293",
+    "sentence": "Quiero guardar el programa.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0437",
+      "es-wd-0057",
+      "es-wd-0435"
+    ]
+  },
+  {
+    "id": "es-sent-1294",
+    "sentence": "Puede guardar el archivo aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0437",
+      "es-wd-0057",
+      "es-wd-0438",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1295",
+    "sentence": "Quiero guardar mi archivo ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0437",
+      "es-wd-0016",
+      "es-wd-0438",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1296",
+    "sentence": "Mi archivo es nuevo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0438",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1297",
+    "sentence": "El archivo es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0438",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1298",
+    "sentence": "Tiene un archivo viejo.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0438",
+      "es-wd-0379"
+    ]
+  },
+  {
+    "id": "es-sent-1299",
+    "sentence": "El programa es lento.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0435",
+      "es-wd-0017",
+      "es-wd-0439"
+    ]
+  },
+  {
+    "id": "es-sent-1300",
+    "sentence": "Mi ratón es lento.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0430",
+      "es-wd-0017",
+      "es-wd-0439"
+    ]
+  },
+  {
+    "id": "es-sent-1301",
+    "sentence": "El teclado es lento.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0428",
+      "es-wd-0017",
+      "es-wd-0439"
+    ]
+  },
+  {
+    "id": "es-sent-1302",
+    "sentence": "Mi computadora es lenta.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0427",
+      "es-wd-0017",
+      "es-wd-0440"
+    ]
+  },
+  {
+    "id": "es-sent-1303",
+    "sentence": "La computadora está lenta.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0427",
+      "es-wd-0255",
+      "es-wd-0440"
+    ]
+  },
+  {
+    "id": "es-sent-1304",
+    "sentence": "Tiene una computadora lenta.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0427",
+      "es-wd-0440"
+    ]
+  }
+]
