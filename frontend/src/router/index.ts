@@ -8,6 +8,7 @@ import NotificationsPage from '../pages/NotificationsPage.vue'
 import PartFlowPage from '../pages/PartFlowPage.vue'
 import PresentationPage from '../pages/PresentationPage.vue'
 import ReadUnderstandPage from '../pages/ReadUnderstandPage.vue'
+import ReviewWordsPage from '../pages/ReviewWordsPage.vue'
 import SettingsPage from '../pages/SettingsPage.vue'
 import ShadowingPage from '../pages/ShadowingPage.vue'
 import SignInPage from '../pages/SignInPage.vue'
@@ -27,6 +28,7 @@ const router = createRouter({
     { path: '/home', name: 'home', component: HomePage, meta: { requiresAuth: true } },
     { path: '/library', name: 'library', component: LibraryPage, meta: { requiresAuth: true } },
     { path: '/notifications', name: 'notifications', component: NotificationsPage, meta: { requiresAuth: true } },
+    { path: '/review-words', name: 'review-words', component: ReviewWordsPage, meta: { requiresAuth: true } },
     { path: '/settings', name: 'settings', component: SettingsPage, meta: { requiresAuth: true } },
     { path: '/shadowing', name: 'shadowing', component: ShadowingPage, meta: { requiresAuth: true } },
     { path: '/stories', name: 'stories', component: StoriesPage, meta: { requiresAuth: true } },

@@ -497,5 +497,63 @@
         "e aí": "qué onda"
       }
     }
+  },
+  "chapter_5": {
+    "topic_1": {
+      "pt": {
+        "telefone": "teléfono",
+        "tela": "pantalla",
+        "bateria": "batería",
+        "carregador": "cargador",
+        "câmera": "cámara",
+        "botão": "botón",
+        "carregar": "cargar",
+        "funciona": "funciona",
+        "quebrado": "roto",
+        "quebrada": "rota",
+        "carregado": "cargado",
+        "carregada": "cargada",
+        "ligar": "llamar",
+        "atender": "contestar",
+        "contato": "contacto",
+        "volume": "volumen"
+      }
+    },
+    "topic_2": {
+      "pt": {
+        "computador": "computadora",
+        "teclado": "teclado",
+        "tecla": "tecla",
+        "mouse": "ratón",
+        "usar": "usar",
+        "ligar": "encender",
+        "apagar": "apagar",
+        "clique": "clic",
+        "programa": "programa",
+        "escrever": "escribir",
+        "salvar": "guardar",
+        "arquivo": "archivo",
+        "lento": "lento",
+        "lenta": "lenta"
+      }
+    },
+    "topic_3": {
+      "pt": {
+        "internet": "internet",
+        "wifi": "wifi",
+        "conexão": "conexión",
+        "sinal": "señal",
+        "rede": "red",
+        "e-mail": "correo electrónico",
+        "chat": "chat",
+        "enviar": "enviar",
+        "receber": "recibir",
+        "ligação": "llamada",
+        "conectado": "conectado",
+        "conectada": "conectada",
+        "desconectado": "desconectado",
+        "desconectada": "desconectada"
+      }
+    }
   }
 }

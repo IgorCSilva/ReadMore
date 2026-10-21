@@ -2307,6 +2307,170 @@
     {
       "word_id": "wd-0577",
       "filename": "what_s_up"
+    },
+    {
+      "word_id": "wd-0578",
+      "filename": "screen"
+    },
+    {
+      "word_id": "wd-0579",
+      "filename": "battery"
+    },
+    {
+      "word_id": "wd-0580",
+      "filename": "charger"
+    },
+    {
+      "word_id": "wd-0581",
+      "filename": "camera"
+    },
+    {
+      "word_id": "wd-0582",
+      "filename": "button"
+    },
+    {
+      "word_id": "wd-0583",
+      "filename": "to_charge"
+    },
+    {
+      "word_id": "wd-0584",
+      "filename": "it_works"
+    },
+    {
+      "word_id": "wd-0585",
+      "filename": "broken"
+    },
+    {
+      "word_id": "wd-0586",
+      "filename": "broken_feminine"
+    },
+    {
+      "word_id": "wd-0587",
+      "filename": "charged"
+    },
+    {
+      "word_id": "wd-0588",
+      "filename": "charged_feminine"
+    },
+    {
+      "word_id": "wd-0589",
+      "filename": "to_call"
+    },
+    {
+      "word_id": "wd-0590",
+      "filename": "to_answer_phone"
+    },
+    {
+      "word_id": "wd-0591",
+      "filename": "contact"
+    },
+    {
+      "word_id": "wd-0592",
+      "filename": "volume"
+    },
+    {
+      "word_id": "wd-0593",
+      "filename": "keyboard"
+    },
+    {
+      "word_id": "wd-0594",
+      "filename": "key"
+    },
+    {
+      "word_id": "wd-0595",
+      "filename": "computer_mouse"
+    },
+    {
+      "word_id": "wd-0596",
+      "filename": "to_use"
+    },
+    {
+      "word_id": "wd-0597",
+      "filename": "to_turn_on"
+    },
+    {
+      "word_id": "wd-0598",
+      "filename": "to_turn_off"
+    },
+    {
+      "word_id": "wd-0599",
+      "filename": "click"
+    },
+    {
+      "word_id": "wd-0600",
+      "filename": "program"
+    },
+    {
+      "word_id": "wd-0601",
+      "filename": "to_write"
+    },
+    {
+      "word_id": "wd-0602",
+      "filename": "to_save"
+    },
+    {
+      "word_id": "wd-0603",
+      "filename": "file"
+    },
+    {
+      "word_id": "wd-0604",
+      "filename": "slow"
+    },
+    {
+      "word_id": "wd-0605",
+      "filename": "slow_feminine"
+    },
+    {
+      "word_id": "wd-0606",
+      "filename": "wifi"
+    },
+    {
+      "word_id": "wd-0607",
+      "filename": "connection"
+    },
+    {
+      "word_id": "wd-0608",
+      "filename": "signal"
+    },
+    {
+      "word_id": "wd-0609",
+      "filename": "network"
+    },
+    {
+      "word_id": "wd-0610",
+      "filename": "email"
+    },
+    {
+      "word_id": "wd-0611",
+      "filename": "chat"
+    },
+    {
+      "word_id": "wd-0612",
+      "filename": "to_send"
+    },
+    {
+      "word_id": "wd-0613",
+      "filename": "to_receive"
+    },
+    {
+      "word_id": "wd-0614",
+      "filename": "call"
+    },
+    {
+      "word_id": "wd-0615",
+      "filename": "connected"
+    },
+    {
+      "word_id": "wd-0616",
+      "filename": "connected_feminine"
+    },
+    {
+      "word_id": "wd-0617",
+      "filename": "disconnected"
+    },
+    {
+      "word_id": "wd-0618",
+      "filename": "disconnected_feminine"
     }
   ]
 }

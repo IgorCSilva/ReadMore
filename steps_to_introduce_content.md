@@ -5,11 +5,9 @@
 
 ## Add vocabulary
 
-PROMPT: 
-
 idiom: es
-chapter: 4
-topic: 4
+chapter: 5
+topic: 1
 
 1. Resolve chapter/topic into a roadmap ID using the Section 7 table in
    contents/language_reading_journey_phases/roadmap.md (chapter 1 = its first
@@ -73,8 +71,8 @@ reason about what the list should contain.
 
 native: pt
 idiom: es
-chapter: 4
-topic: 4
+chapter: 5
+topic: 1
 file: backend/content/<idiom>/chapter_<N>/topic_<M>/words.json
 
 Build the reverse-lookup relations for this chapter/topic in
@@ -104,18 +102,13 @@ ambiguous between "evening" and "night" in Portuguese, → ["evening",
 whether something is a decomposition or a genuine alternative, it's a
 decomposition — compose it into one string instead.
 
-1. Read <native>/chapter_<N>/topic_<M>/words.json (the actual
-   current content, not a remembered one) — this is the exact and only
-   source of valid keys. Read <file>'s chapter_<N>/topic_<M>/words.json — the
-   words available to compose values from.
-
-2. Before writing, check whether the target relations file already exists.
+1. Before writing, check whether the target relations file already exists.
    If it does, read it first. If its content looks wrong for the stated
    pair (wrong script/characters for <idiom>, e.g. Korean under a "-en-"
    filename), flag it explicitly as a bug to fix, not something to build on
    top of.
 
-3. For each word/expression in <native>'s words.json list for this chapter/topic,
+2. For each word/expression in <native>'s words.json list for this chapter/topic,
    find its complete equivalent(s), composed from words that literally
    appear in <file>'s list for this same chapter/topic — not a free
    translation, and not restricted to a single literal token when the
@@ -125,7 +118,7 @@ decomposition — compose it into one string instead.
    word inside a value must come from <file>'s own list for this
    chapter/topic.
 
-4. Grammatical form must match between key and value for verbs: if the native
+3. Grammatical form must match between key and value for verbs: if the native
    key is an infinitive, the idiom value must be the infinitive too, never a
    conjugated form (and vice versa — if the native key is conjugated for a
    specific person/tense, the value must be conjugated the same way). Don't
@@ -134,9 +127,7 @@ decomposition — compose it into one string instead.
    currently in <file>'s list — that's a gap to close via rule 5, not an
    acceptable "functional, slightly-loose" match.
 
-5. The number of relations produced must equal the number of native
-   words/expressions in <native>'s list for this chapter/topic — full
-   coverage, not partial. If a native word/expression has no equivalent that
+4. If a native word/expression has no equivalent that
    can be composed from <file>'s current list, that is a vocabulary gap in
    <idiom>'s own words.json, not a reason to skip the relation: add the
    missing word (in the correct grammatical form per rule 4) to
@@ -174,8 +165,8 @@ actually written to disk with the added word, not just described in your report.
 
 native: pt
 target: es
-chapter: 4
-topic: 4
+chapter: 5
+topic: 1
 
 Run the prompt in backend/prompts/phase_words_adaptation.md with origin=<native>,
 target=<target>, chapter=<chapter>, topic=<topic>. It's already pair-agnostic — no
@@ -225,7 +216,7 @@ every user requesting this pair: JsonCatalogRepository._load_content loads each 
 info.json unconditionally, with no missing-file fallback, unlike word_ids.json/
 mixed_sentences.json/texts.json/exercises.json which all degrade to [] if absent. Do not
 move on to "Add mixed sentences" until info.json and word_ids.json both exist for this
-chapter/topic.
+chapter/topic. Confirm that the words cues were added in cues.json file.
 
 
 
@@ -233,8 +224,8 @@ chapter/topic.
 
 native: pt
 target: es
-chapter: 4
-topic: 4
+chapter: 5
+topic: 1
 
 Create 100 natural sentences, following the exact pattern of chapter 1 topic 1's mixed_sentences.json in backend/content/pt-es/chapter_1/topic_1/mixed_sentences.json ({sentence_number, content} objects, target words marked with **bold**).
 
@@ -290,12 +281,14 @@ production (see the "Add content in other files" Verify note above). If info.jso
 word_ids.json don't exist yet, stop and run "Add content in other files" first instead of
 proceeding.
 
+
+
 ## Add auxiliar sentences
 
 native: pt
 target: es
-chapter: 4
-topic: 4
+chapter: 5
+topic: 1
 
 Build one "mixin" example sentence per word/expression in this chapter/topic, in
 backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json.
@@ -394,8 +387,8 @@ subset, and not missing the ones that fell back to a freshly-written sentence.
 ## Add target idiom natural sentences
 
 target: es
-chapter: 4
-topic: 4
+chapter: 5
+topic: 1
 
 Now, generate simple natural sentences, following the pattern in
 backend/content/es/chapter_<chapter>/topic_<topic>/sentences.json.
@@ -440,8 +433,8 @@ done until that check passes clean.
 ## Add texts
 
 target: es
-chapter: 4
-topic: 2
+chapter: 5
+topic: 1
 
 Medium, standalone reading/shadowing passages for this chapter/topic — the content
 backend/app/domain/entities.py's Topic.texts (texts.json) feeds to the frontend's Shadowing
@@ -511,15 +504,87 @@ enough. Spot-check at least one text: body is pure <target> with no stray native
 words, and the title is in <target> too — both are easy mistakes to carry over from
 mixed_sentences.json's style out of habit.
 
+
 ## Create theme content
 
+native: pt
 level: A1
-roadmap file: backend/content/learning/theme/health/roadmap.md
+roadmap directory: backend/content/learning/theme/health
 chapter: NUT
-topic: 1
-output path: backend/content/learning/theme/health/<chapter>_<topic>/content_<level>.md
+topic: 3
+output directory: <roadmap directory>/<chapter>_<topic>
+target: es
 
-Based on the <roadmap file>, generate the content for the topic <topic> in chapter <chapter>. The content idiom level must be <level>. Structure the content to have a .md pattern.
+
+Based on the <roadmap directory>/roadmap.md, generate the content for the topic <topic> in chapter <chapter>. The content idiom level must be <level>. Structure the content to have a .md pattern.
+
+Put the outcome in <output directory>/content_<level>.md
+
+### Translate the content
+
+Like backend/content/es/learning/theme/health/NUT_1/es.json is an adapted content to backend/content/learning/theme/health/NUT_1/content_A1.md, adapt the current <roadmap directory>/<chapter>_<topic> content to create a backend/content/<target>/learning/theme/health/<chapter>_<topic>/<target>.json file.
+
+### Add glossary data
+
+Build glossary entries for every new word/expression this topic's <target>.json content
+introduces, in the shared backend/content/<native>-<target>/glossary/glossary.json — the
+same file "Add story" below uses for its own content, since both the Shadowing/learning
+Study modal and the Stories Study modal draw from one pair-wide vocabulary file (see
+backend/app/domain/glossary_words.py and
+backend/app/infrastructure/repositories/json_learning_content_repository.py's docstrings).
+Easy to forget since nothing in the earlier steps errors or even warns when this is
+skipped — the topic loads and renders fine with an empty glossary, the gap only shows up
+as missing Study-modal entries a learner would actually hit.
+
+1. Read backend/content/<target>/learning/theme/<theme>/<chapter>_<topic>/<target>.json's
+   `sentences` array (just written above) and tokenize it the same way
+   domain.glossary_words.filter_glossary does: split on whitespace, strip leading/trailing
+   non-word characters, lowercase, fold curly apostrophes to straight ones. Exclude bare
+   numerals (e.g. "8", "12") — they're intentionally never glossed (see the existing file's
+   own gaps for NUT_1/NUT_2).
+
+2. Check which of those tokens are missing from
+   backend/content/<native>-<target>/glossary/glossary.json (a flat
+   {word_or_phrase: entry} map, keyed by exact normalized surface form — not lemma, so
+   "bebe" and "bebas" each need their own entry even though they share a root "beber").
+
+3. For each missing token, add an entry matching the file's existing schema exactly:
+
+{
+  "<word>": {
+    "meaning": "<native-language meaning, with a short grammatical note for conjugated/
+      non-dictionary forms, e.g. \"Bebe; imperativo/presente de 'beber'.\">",
+    "examples": ["<one sentence pulled from this topic's own content>", "<one freshly
+      written natural sentence>"],
+    "synonyms": ["<target-language synonyms, or [] if none natural>"],
+    "antonyms": ["<target-language antonyms, or [] if none natural>"]
+  }
+}
+
+   Keep the merge additive — never remove or edit an existing key, even if it looks like it
+   could be improved; this file accumulates across every topic/story sharing the pair.
+
+4. Re-sort the file's top-level keys alphabetically after merging (the file is maintained
+   in sorted order) and write it back with the same ensure_ascii=False, indent=2 formatting
+   as the existing file.
+
+Output: the list of newly added glossary keys, and confirmation no existing key was
+altered.
+
+### Affected files:
+
+- backend/content/<native>-<target>/glossary/glossary.json
+
+### Verify
+
+Confirm every token in the new <target>.json's `sentences` (excluding bare numerals) now
+resolves in backend/content/<native>-<target>/glossary/glossary.json. Then load the topic
+through JsonLearningContentRepository.get_topic() for a pair using this target (not just
+json.load) to confirm the new words actually surface in LearningTopic.glossary —
+filter_glossary silently drops anything it can't match, so a plain file-level check isn't
+enough.
+
+
 
 ## Add story
 
@@ -527,29 +592,75 @@ native: pt
 target: es
 
 Adapt the text below to have a identical structure to backend/content/pt-es/stories/b1/muddy_feet/text.json. You need to define the level from A1 to C2 and a folder name.
+If there are some emojis like 😊 you can remove them.
+
+---------------------------------
 
 
-La nube de algodón
+Mónica aprende a cuidar su gran sonrisa
 
-Acompaña a una nubecita suave en un viaje mágico por montañas, lagos y bosques. Un cuento tierno y relajante, ideal para ayudar a los más pequeños a encontrar la calma y dormir felices.
 
-----------------
+Mónica descubre que ir a la dentista puede ser una aventura divertida. Una historia tierna para enseñar a los más pequeños la importancia de cepillarse los dientes y perder el miedo a lo nuevo.
 
-Había una vez una pequeña nube que flotaba despacito en el cielo azul. Estaba hecha de algodón, tan suavecita que parecía una almohada esponjosa. ☁️
+----------------------------
 
-Un día, la nube quiso salir a pasear. Deslizó su cuerpo ligero entre las montañas y bajó hacia un campo lleno de flores. Allí, las mariposas volaban suavemente y las abejas zumbaban muy trabajadoras. El aire olía a flores y a miel. Todo estaba muy tranquilo y la nube se sentía feliz de seguir su camino. 🌸🐝
+Había una vez, en el corazón de la jungla, una tigrita muy juguetona llamada Mónica 🐯. Ella vivía feliz explorando la selva, saltando entre las hojas y jugando con sus amigos. Un día, su mamá tigresa le dijo con voz dulce:
 
-Siguió flotando hasta llegar a un lago enorme. El agua era tan clarita que se podía ver el sol reflejado, como si fuera un espejo brillante. La nube bajó un poquito más, hasta que tocó el agua con su pancita. El lago estaba fresquito y la nube sintió cosquillas mientras se llenaba de gotitas de agua brillantes. 💧
+—¡Mónica, es hora de visitar a la dentista!
 
-Se quedó jugando un ratito, hasta que vio algo lindo: unos patitos nadaban y chapoteaban siguiendo a su mamá, que les enseñaba a buscar comida. «¡Qué paz!», pensó la nube. Se quedó mirando cómo los patitos se mecían en el agua, igual que ella en el cielo. 🦆
+Mónica abrió mucho los ojos. ¿Una dentista? Nunca había visitado a una antes y sintió un poquito de curiosidad, pero también algo de nervios. Al llegar al consultorio, que estaba en un árbol hueco muy acogedor, la esperaba la Dra. Lila 🐵, una monita muy simpática con una gran sonrisa y ojos bondadosos.
 
-Después de un rato, la nube decidió seguir su viaje. Flotó hasta un bosque de árboles altísimos. Los árboles susurraban con la brisa y los pajaritos cantaban melodías suaves. Decidió descansar allí, entre las ramas, dejando que las hojas le hicieran cariñitos en su cuerpo de algodón y mojándolas con las gotitas que traía del lago. 🌳🐦
+—¡Bienvenida, Mónica! —saludó la doctora con alegría—. Hoy vamos a aprender a cuidar tus dientes para que estén fuertes y sanos para rugir.
 
-Cuando el sol empezó a esconderse detrás de las montañas, la nube supo que era hora de volver a casa. Subió despacito por el cielo, viendo cómo el día se despedía con colores rosas, anaranjados y morados en el horizonte. Todo estaba en calma. 🌅
+La Dra. Lila le mostró unas ramas flexibles y suaves.
 
-La nube, feliz y relajada, se acurrucó entre las estrellas y cerró los ojitos. «Ha sido un día maravilloso», pensó, dejándose llevar por el suave movimiento del cielo en la noche. ⭐️🌙
+—Mira, estas ramitas funcionan como un cepillo —le explicó—. Debes moverlas suavemente y en círculos sobre tus dientes. Así quedarán muy limpios y brillantes.
 
-Y así, la nube de algodón se quedó dormida, flotando suavemente, mientras el mundo descansaba tranquilo y en paz. 😴
+Mónica, emocionada, tomó una rama con sus patas y empezó a practicar. Se miró en un espejo de agua y vio cómo sus dientes se volvían cada vez más blancos.
+
+Después, Mónica preguntó curiosa:
+
+—¿Y qué es eso que usa mi mamá para que su boca huela tan rico?
+
+La Dra. Lila le entregó una pasta hecha de menta y otras plantas frescas 🌱.
+
+—Esta pasta ayuda a refrescar tu boca. Lo más importante es cepillar bien los dientes con la ramita, pero si usas esto... ¡podrás hacer espuma divertida mientras te limpias! —dijo la Dra. Lila riendo.
+
+Mónica probó un poquito de la pasta y le encantó la sensación de frescura en su lengua.
+
+—Para los dientes que están muy pegaditos —continuó la doctora—, puedes usar este hilo especial.
+
+Le mostró un hilo fuerte y fino, hecho con la telaraña más resistente de la selva 🕸️. Era perfecto para limpiar entre los dientes, allí donde la ramita no podía llegar. Mónica probó el hilo, pasándolo con cuidado, y sintió cómo su boca quedaba perfectamente limpia.
+
+—Con el hilo tendrás que practicar un poco más en casa con ayuda de mamá, pero verás qué bien se siente tener los dientes limpiecitos —la animó la doctora.
+
+Antes de despedirse, la Dra. Lila le recordó:
+
+—Debes hacer esto al menos dos veces al día, y especialmente antes de dormir. Así, tu sonrisa siempre estará lista para nuevas aventuras.
+
+Desde ese día, Mónica nunca olvidaba su rutina. Cada mañana y cada noche, con sus ramitas, su pasta de plantas y su hilo de araña, cuidaba de su gran sonrisa. ¡Ahora era la tigrita con los dientes más brillantes de toda la jungla!
+
+### Add glossary data
+
+Same glossary step as "Create theme content" above, run against this story's own
+`sentences` instead of a learning topic's: build missing entries in
+backend/content/<native>-<target>/glossary/glossary.json for every new normalized token
+(word or multi-word phrase) in the new backend/content/<target>/stories/<level>/<folder>/
+text.json, following the exact entry schema and merge/sort discipline described there —
+meaning in <native> with a grammatical note for conjugated forms, two examples (one from
+the story's own text, one freshly written), target-language synonyms/antonyms where
+natural, additive merge only, re-sorted keys. Exclude bare numerals, same as above.
+
+### Affected files:
+
+- backend/content/<native>-<target>/glossary/glossary.json
+
+### Verify
+
+Confirm every token in the new story's `sentences` (excluding bare numerals) now resolves
+in backend/content/<native>-<target>/glossary/glossary.json, and that loading the story
+through JsonStoriesRepository.get_story() for a pair using this target actually returns
+those new words in Story.glossary — not just that the raw JSON file contains them.
 
 ===========================================================
 

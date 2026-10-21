@@ -1,5 +1,8 @@
 <template>
   <nav class="bottom-bar">
+    <RouterLink to="/review-words" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Review words">
+      <span class="bottom-bar-icon icon-review"></span>
+    </RouterLink>
     <RouterLink to="/home" class="bottom-bar-item" active-class="active" exact-active-class="active">
       <span class="bottom-bar-icon icon-home"></span>
     </RouterLink>
@@ -89,6 +92,10 @@ import { hasUnread } from '../shared/notifications'
 .icon-learning {
   -webkit-mask-image: url('/images/icons/learning.svg');
   mask-image: url('/images/icons/learning.svg');
+}
+.icon-review {
+  -webkit-mask-image: url('/images/icons/review.svg');
+  mask-image: url('/images/icons/review.svg');
 }
 .icon-settings {
   -webkit-mask-image: url('/images/icons/settings.svg');
