@@ -2554,5 +2554,89 @@
     "root_word_id": "wd-0592",
     "word": "volumen",
     "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0427",
+    "root_word_id": "wd-0048",
+    "word": "computadora",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0428",
+    "root_word_id": "wd-0593",
+    "word": "teclado",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0429",
+    "root_word_id": "wd-0594",
+    "word": "tecla",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0430",
+    "root_word_id": "wd-0595",
+    "word": "ratón",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0431",
+    "root_word_id": "wd-0596",
+    "word": "usar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0432",
+    "root_word_id": "wd-0597",
+    "word": "encender",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0433",
+    "root_word_id": "wd-0598",
+    "word": "apagar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0434",
+    "root_word_id": "wd-0599",
+    "word": "clic",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0435",
+    "root_word_id": "wd-0600",
+    "word": "programa",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0436",
+    "root_word_id": "wd-0601",
+    "word": "escribir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0437",
+    "root_word_id": "wd-0602",
+    "word": "guardar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0438",
+    "root_word_id": "wd-0603",
+    "word": "archivo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0439",
+    "root_word_id": "wd-0604",
+    "word": "lento",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0440",
+    "root_word_id": "wd-0605",
+    "word": "lenta",
+    "gender_id": "feminine"
   }
 ]

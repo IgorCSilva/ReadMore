@@ -2367,6 +2367,58 @@
     {
       "word_id": "wd-0592",
       "filename": "volume"
+    },
+    {
+      "word_id": "wd-0593",
+      "filename": "keyboard"
+    },
+    {
+      "word_id": "wd-0594",
+      "filename": "key"
+    },
+    {
+      "word_id": "wd-0595",
+      "filename": "computer_mouse"
+    },
+    {
+      "word_id": "wd-0596",
+      "filename": "to_use"
+    },
+    {
+      "word_id": "wd-0597",
+      "filename": "to_turn_on"
+    },
+    {
+      "word_id": "wd-0598",
+      "filename": "to_turn_off"
+    },
+    {
+      "word_id": "wd-0599",
+      "filename": "click"
+    },
+    {
+      "word_id": "wd-0600",
+      "filename": "program"
+    },
+    {
+      "word_id": "wd-0601",
+      "filename": "to_write"
+    },
+    {
+      "word_id": "wd-0602",
+      "filename": "to_save"
+    },
+    {
+      "word_id": "wd-0603",
+      "filename": "file"
+    },
+    {
+      "word_id": "wd-0604",
+      "filename": "slow"
+    },
+    {
+      "word_id": "wd-0605",
+      "filename": "slow_feminine"
     }
   ]
 }

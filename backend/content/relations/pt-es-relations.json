@@ -518,6 +518,24 @@
         "contato": "contacto",
         "volume": "volumen"
       }
+    },
+    "topic_2": {
+      "pt": {
+        "computador": "computadora",
+        "teclado": "teclado",
+        "tecla": "tecla",
+        "mouse": "ratón",
+        "usar": "usar",
+        "ligar": "encender",
+        "apagar": "apagar",
+        "clique": "clic",
+        "programa": "programa",
+        "escrever": "escribir",
+        "salvar": "guardar",
+        "arquivo": "archivo",
+        "lento": "lento",
+        "lenta": "lenta"
+      }
     }
   }
 }
