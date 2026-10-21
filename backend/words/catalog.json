@@ -2307,6 +2307,66 @@
     {
       "word_id": "wd-0577",
       "filename": "what_s_up"
+    },
+    {
+      "word_id": "wd-0578",
+      "filename": "screen"
+    },
+    {
+      "word_id": "wd-0579",
+      "filename": "battery"
+    },
+    {
+      "word_id": "wd-0580",
+      "filename": "charger"
+    },
+    {
+      "word_id": "wd-0581",
+      "filename": "camera"
+    },
+    {
+      "word_id": "wd-0582",
+      "filename": "button"
+    },
+    {
+      "word_id": "wd-0583",
+      "filename": "to_charge"
+    },
+    {
+      "word_id": "wd-0584",
+      "filename": "it_works"
+    },
+    {
+      "word_id": "wd-0585",
+      "filename": "broken"
+    },
+    {
+      "word_id": "wd-0586",
+      "filename": "broken_feminine"
+    },
+    {
+      "word_id": "wd-0587",
+      "filename": "charged"
+    },
+    {
+      "word_id": "wd-0588",
+      "filename": "charged_feminine"
+    },
+    {
+      "word_id": "wd-0589",
+      "filename": "to_call"
+    },
+    {
+      "word_id": "wd-0590",
+      "filename": "to_answer_phone"
+    },
+    {
+      "word_id": "wd-0591",
+      "filename": "contact"
+    },
+    {
+      "word_id": "wd-0592",
+      "filename": "volume"
     }
   ]
 }
