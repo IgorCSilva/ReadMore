@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**Ella** fica **desconectada** **cuando** viaja."
+  },
+  {
+    "sentence_number": 2,
+    "content": "Troquei **el** **código** **de** **mi** **wifi** **hoy**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "**El** **wifi** **y** **el** **internet** **de** **mi** **casa** funcionam **mucho** **bien** **hoy**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "**Nosotros** perdimos **la** **señal** **cuando** entramos **en el** túnel."
+  },
+  {
+    "sentence_number": 5,
+    "content": "**Ella** verificou **la** **señal** **de** **wifi** **antes** **de** **salir** **de** **casa**."
+  },
+  {
+    "sentence_number": 6,
+    "content": "**El** **internet** caiu durante **la** **llamada** importante."
+  },
+  {
+    "sentence_number": 7,
+    "content": "**Ella** **va** **a** **recibir** **una** **llamada** importante **hoy**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "**Nosotros** vamos **a** falar **por** **el** **chat** **antes** **de** **la** **llamada**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "**Mi** chefe pediu para **yo** **enviar** **el** informe **por** **correo electrónico**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "**Mi** **celular** **no** **tiene** **señal** **aquí**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**El** **chat** da escola trava **cuando** **no** **hay** **conexión**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "**El** **wifi** **de** **mi** **casa** **es** **lento** **hoy**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "**El** técnico veio arrumar **la** **conexión** **de** **internet** **de** **mi** **casa**."
+  },
+  {
+    "sentence_number": 14,
+    "content": "**Él** ficou **conectado** **en** **su** **celular** durante **la** **llamada**."
+  },
+  {
+    "sentence_number": 15,
+    "content": "**Él** ficou **desconectado** **de** **la** **red** **sin** avisar."
+  },
+  {
+    "sentence_number": 16,
+    "content": "**El** roteador ficou **desconectado** **de repente**."
+  },
+  {
+    "sentence_number": 17,
+    "content": "**Mi** **amiga** mandou **un** **mensaje** **por** **el** **chat**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**El** **chat** ficou **conectado** toda **la** **noche**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "**El** professor mandou **la** tarefa **por** **correo electrónico**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**Nosotros** combinamos **de** nos falar **por** **el** **chat** essa **noche**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "**La** **computadora** **de** **la** oficina fica **conectada** **a** **internet** todo **el** **día**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "Perdi **la** **conexión** **con** **la** **red** **de** **mi** trabalho."
+  },
+  {
+    "sentence_number": 23,
+    "content": "**Nosotros** trocamos mensagens **por** **el** **chat** **con** frequência."
+  },
+  {
+    "sentence_number": 24,
+    "content": "**Mi** **computadora** quedó **desconectada** **de** **la** **red** **después** **de** **la** atualização."
+  },
+  {
+    "sentence_number": 25,
+    "content": "**Ella** **va** **a** **enviar** **un** **correo electrónico** **a** **su** chefe."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**Ella** fica **conectada** **a** **su** **teléfono** **y** **a** **su** **computadora**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "Fiz **una** pesquisa **en el** **internet** sobre **mi** **familia**."
+  },
+  {
+    "sentence_number": 28,
+    "content": "**Yo** fico **conectado** **en** **el** **wifi** **de** **mi** trabalho."
+  },
+  {
+    "sentence_number": 29,
+    "content": "Comprei **un** roteador **nuevo** para melhorar **la** **señal** **de** **wifi** **en** **casa**."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**Ella** mandou **la** **dirección** **por** **correo electrónico**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "**La** **llamada** durou **mucho** **y** **la** **batería** acabou."
+  },
+  {
+    "sentence_number": 32,
+    "content": "**Ella** **tiene** medo **de** ficar **desconectada** durante **la** **llamada**."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**Mi** **hijo** fica **conectado** **a** **su** **celular** todo **el** **día**."
+  },
+  {
+    "sentence_number": 34,
+    "content": "**Ella** mandou **una** foto **por** **el** **chat** **de** **la** **familia**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "**El** professor mandou **un** **correo electrónico** **con** **la** tarefa **de** **mañana**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "**Nosotros** combinamos **de** **recibir** **la** **llamada** juntos."
+  },
+  {
+    "sentence_number": 37,
+    "content": "**Mi** **primo** **tiene** **wifi** gratis **en** **su** trabalho."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**El** roteador **nuevo** **tiene** **una** **señal** **más** forte."
+  },
+  {
+    "sentence_number": 39,
+    "content": "Passamos **la** **tarde** **conectado** **en** **el** jogo online."
+  },
+  {
+    "sentence_number": 40,
+    "content": "**Mi** **hermana** ficou **conectada** toda **la** **noche** **en el** **chat**."
+  },
+  {
+    "sentence_number": 41,
+    "content": "**Ella** tentou **enviar** **el** **archivo**, **pero** **la** **conexión** caiu."
+  },
+  {
+    "sentence_number": 42,
+    "content": "**Mi** **abuela** **no** sabe **usar** **el** **chat**, **pero** aprende rápido."
+  },
+  {
+    "sentence_number": 43,
+    "content": "**El** **wifi** público **es** gratis **y** **lento**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**Nosotros** vamos **a** falar **por** **llamada** **de** vídeo."
+  },
+  {
+    "sentence_number": 45,
+    "content": "**Mi** tablet fica **desconectada** **de** **la** **red** **sin** motivo."
+  },
+  {
+    "sentence_number": 46,
+    "content": "**El** **teléfono** **de** **mi** **amigo** fica **desconectado** todo **el** tempo."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**Él** **tiene** **un** plano **bueno** **de** **internet** **en** **su** **celular**."
+  },
+  {
+    "sentence_number": 48,
+    "content": "Preciso **enviar** **un** **correo electrónico** importante **hoy**."
+  },
+  {
+    "sentence_number": 49,
+    "content": "**El** **código** **de** **mi** **wifi** fica colado **en** **el** **refrigerador**."
+  },
+  {
+    "sentence_number": 50,
+    "content": "**Ella** segue **conectada** **en** **su** **celular** toda **la** **tarde**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "**Ella** **va** **a** **recibir** **un** **regalo** **por** **correo electrónico**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "**Ella** ficou **sin** **wifi** durante toda **la** **tarde**."
+  },
+  {
+    "sentence_number": 53,
+    "content": "**Él** esqueceu **el** **número** **de** **mi** **teléfono**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "**Él** esqueceu **de** **enviar** **el** **correo electrónico** **antes** **de** **dormir**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "**Él** **no** **tiene** **internet** **en** **su** **celular** **hoy**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "**Él** ficou **desconectado** durante **la** **llamada**."
+  },
+  {
+    "sentence_number": 57,
+    "content": "**Él** **va** **a** **enviar** **un** **correo electrónico** **más** **mañana**."
+  },
+  {
+    "sentence_number": 58,
+    "content": "**Ellos** combinaram **de** **enviar** fotos **por** **correo electrónico**."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**Ella** **me** mandou **el** **número** **de** **su** **wifi**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "**Ella** ficou feliz **cuando** recebeu **la** **llamada**."
+  },
+  {
+    "sentence_number": 61,
+    "content": "**Ella** ficou **desconectada** otra vez."
+  },
+  {
+    "sentence_number": 62,
+    "content": "**Él** **no** **tiene** **wifi** **en** **casa** **y** usa dados móveis."
+  },
+  {
+    "sentence_number": 63,
+    "content": "Perdemos **la** **conexión** **cuando** **el** **teléfono** fica **sin** **batería**."
+  },
+  {
+    "sentence_number": 64,
+    "content": "**El** **celular** fica **conectado** **a** **la** **red** móvel."
+  },
+  {
+    "sentence_number": 65,
+    "content": "**Nosotros** **no** conseguimos **recibir** **el** **archivo** **por** **el** **chat**."
+  },
+  {
+    "sentence_number": 66,
+    "content": "**El** **internet** **de** **mi** **casa** caiu **de repente**."
+  },
+  {
+    "sentence_number": 67,
+    "content": "**Mi** **hermano** ficou **conectado** **en** **su** **celular** toda **la** **noche**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**Ella** **va** **a** **recibir** **una** **llamada** **de** **su** **familia** **mañana**."
+  },
+  {
+    "sentence_number": 69,
+    "content": "**No** **hay** **señal** **aquí** dentro."
+  },
+  {
+    "sentence_number": 70,
+    "content": "**El** **chat** **de** **mi** turma **es** engraçado."
+  },
+  {
+    "sentence_number": 71,
+    "content": "**Mi** **primo** fez **una** **llamada** **de** vídeo para **mi** **familia**."
+  },
+  {
+    "sentence_number": 72,
+    "content": "**El** **internet** **de** **la** escola **es** **lento** **y** fraco."
+  },
+  {
+    "sentence_number": 73,
+    "content": "**Ella** **no** conseguiu **enviar** **el** **archivo** **porque** **no** **hay** **señal**."
+  },
+  {
+    "sentence_number": 74,
+    "content": "**Mi** **vecino** empresta **su** **wifi** **cuando** **mi** **wifi** cai."
+  },
+  {
+    "sentence_number": 75,
+    "content": "**Él** conseguiu **recibir** **el** **archivo** **grande** **por** **correo electrónico**."
+  },
+  {
+    "sentence_number": 76,
+    "content": "**Él** **tiene** **un** **problema** **con** **la** **conexión** **de** **internet**."
+  },
+  {
+    "sentence_number": 77,
+    "content": "**Mi** **computadora** **nueva** **tiene** **wifi** **y** bluetooth."
+  },
+  {
+    "sentence_number": 78,
+    "content": "**Ella** ficou **desconectada** **de** **la** **llamada** **por** erro."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**Ella** **no** **va** **a** **recibir** **el** **mensaje** **hoy**."
+  },
+  {
+    "sentence_number": 80,
+    "content": "**Nosotros** usamos **el** **chat** para combinar **el** **viaje**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "**El** hotel **tiene** **wifi** fraco."
+  },
+  {
+    "sentence_number": 82,
+    "content": "**El** roteador fica **conectado** **a** **la** **red** **de** **internet** **de** **la** **casa**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "**Ella** checou **el** **chat** **y** **no** viu **nada**."
+  },
+  {
+    "sentence_number": 84,
+    "content": "**Yo** prefiro **enviar** **un** **mensaje** **por** **correo electrónico** que **por** **el** **chat**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "**Mi** **padre** faz **una** **llamada** para **mi** **madre** cada **día**."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**Mi** **teléfono** fica **conectado** **a** **la** **red** **de** **casa**."
+  },
+  {
+    "sentence_number": 87,
+    "content": "**Ella** **va** **a** **recibir** **una** **llamada** **de** **su** chefe **mañana**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "**La** **llamada** caiu **porque** **no** **hay** **señal** **aquí**."
+  },
+  {
+    "sentence_number": 89,
+    "content": "**Mi** **madre** **no** sabe **usar** **el** **chat** **sin** **ayuda**."
+  },
+  {
+    "sentence_number": 90,
+    "content": "Escrevi **un** **mensaje** **y** esperei **mucho**."
+  },
+  {
+    "sentence_number": 91,
+    "content": "**Ella** trocou **de** **wifi** **porque** **el** antigo **no** funcionava."
+  },
+  {
+    "sentence_number": 92,
+    "content": "**Mi** **hermana** fica **conectada** **a** **su** **familia** **por** **el** **chat**."
+  },
+  {
+    "sentence_number": 93,
+    "content": "**Mi** **computadora** fica **desconectada** **cuando** **el** **wifi** cai."
+  },
+  {
+    "sentence_number": 94,
+    "content": "**El** modem fica **desconectado** **cuando** falta energia."
+  },
+  {
+    "sentence_number": 95,
+    "content": "**Mi** **teléfono** perdeu **la** **señal** **de repente**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "**El** **aeropuerto** **tiene** **wifi** gratuito."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**Ella** combinou **de** **recibir** **el** pacote **y** avisar **por** **el** **chat**."
+  },
+  {
+    "sentence_number": 98,
+    "content": "**El** modem ficou **desconectado** **sin** aviso."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**Ella** ficou **conectada** **a** **la** **red** doméstica."
+  },
+  {
+    "sentence_number": 100,
+    "content": "Busquei **información** **en el** **internet** sobre **el** **problema**."
+  }
+]
