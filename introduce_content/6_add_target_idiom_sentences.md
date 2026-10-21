@@ -2,7 +2,7 @@
 
 target: es
 chapter: 5
-topic: 2
+topic: 3
 
 Now, generate simple natural sentences, following the pattern in
 backend/content/es/chapter_<chapter>/topic_<topic>/sentences.json.

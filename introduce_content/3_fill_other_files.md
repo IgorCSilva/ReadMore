@@ -3,7 +3,7 @@
 native: pt
 target: es
 chapter: 5
-topic: 2
+topic: 3
 
 Run the prompt in backend/prompts/phase_words_adaptation.md with origin=<native>,
 target=<target>, chapter=<chapter>, topic=<topic>. It's already pair-agnostic — no

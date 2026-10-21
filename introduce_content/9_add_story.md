@@ -10,90 +10,36 @@ If there are some emojis like 😊 you can remove them.
 == Initial ==
 =============
 
-Entre hojas y brisas
+
+Garbancito
 
 
+Garbancito es un niño muy pequeñito pero lleno de valentía. Un día vive una gran aventura cuando un buey se lo traga por accidente. ¡Descubre cómo su ingenio lo ayuda a volver a casa!
+--------------------------
 
-Un cuento poético y relajante para la hora de dormir. Invita a los niños a conectar con la naturaleza, descubrir la calma del bosque y valorar la magia de los pequeños detalles.
-
----------------------------------
-
-Miras el sol mientras nace un nuevo día. 🌞
-Sus rayos tibios llenan el bosque de alegría.
+Había una vez un niño tan, pero tan pequeño, que todos lo llamaban Garbancito, porque era tan chiquitito como un garbanzo. Aunque su tamaño era diminuto, Garbancito era muy valiente y le fascinaba salir a pasear.
 
 
+Un día, su mamá le dijo:
+—Garbancito, ten mucho cuidado y no te vayas muy lejos.
 
-Quise ver el amanecer antes de que despertara el bosque entero, 🌳
-la luz acariciaba las copas con un toque sincero.
+Pero Garbancito era curioso y, cantando fuerte para que nadie lo pisara, caminaba por el campo diciendo:
+—“¡Pachín, pachán, pachón! Mucho cuidado con lo que hacen, pachín, pachán, pachón, a Garbancito no pisen” 🎶.
 
-Más allá del río, las flores se abrían. 🌸
-Con la frescura del agua, sus aromas se unían.
+De repente, empezó a llover 🌧️. Para no mojarse, Garbancito se escondió debajo de un repollo gigante 🥬. Pero justo en ese momento, un buey hambriento que pasaba por allí se comió el repollo entero de un bocado, sin darse cuenta de que Garbancito estaba adentro. ¡Oh, no! 😱
 
-De vez en cuando, una hoja caía. 🍂
-Al tocar el pasto, sonaba una melodía.
+Desde el interior de la panza del buey, Garbancito, sin perder el ánimo, empezó a gritar con todas sus fuerzas para que lo encontraran:
+—“¡Mamá, mamá! ¡Estoy en la panza del buey, donde ni llueve ni nieva!” 🌦️.
 
-Lo más hermoso era la calma presente. 🌿
-El susurro del viento se sentía latente.
+Sus papás, muy preocupados, salieron a buscarlo, llamándolo:
+—¡Garbancito! ¿Dónde estás?
 
-Aún no cantaban las aves, el día dormía. 🐦
-El bosque en silencio, en paz se sumergía.
+Y Garbancito contestaba desde adentro del animal:
+—¡En la panza del buey, donde ni llueve ni nieva! 🌧️❄️
 
-No había prisa, todo con calma sucedía. 🍃
-Las hojas susurraban, el momento fluía.
+Entonces, al papá de Garbancito se le ocurrió una idea brillante 💡. Se acercó despacito y le hizo cosquillas al buey 🐂 en la nariz. El animal no pudo evitar un gran estornudo y... ¡achís! 🤧 Garbancito salió volando por el aire y cayó sano y salvo en los brazos de sus papás, que le dieron un abrazo enorme 🤗.
 
-¿Imaginaste alguna vez un lugar tan sereno,
-donde cada respiro se siente tan pleno?
-
-Y mientras tanto, las nubes pasaban. ☁️
-Formas de algodón en el cielo dibujaban.
-
-Aún dormían las criaturas pequeñas. 🐇
-En sus nidos tibios, soñaban risueñas.
-
-Así pasaba la mañana callada. 🌾
-El rocío bañaba cada hoja plateada.
-
-Estuve en un lugar donde la paz reinaba. 🌳
-La naturaleza entera en silencio hablaba.
-
-Allí, en ese rincón apartado. 🍃
-El tiempo se detenía, todo estaba pausado.
-
-Siempre había armonía y belleza. 🌼
-El canto de las aves llenaba de pureza.
-
-Porque en el silencio se esconden tesoros. 🌲
-Aromas y formas que valen más que el oro.
-
-Aunque no lo notemos, cada detalle cuenta. 🍂
-El viento en la piel es un abrazo que alienta.
-
-No hacen falta palabras ni sonido. 🌾
-Los sentidos despiertos, el corazón encendido.
-
-Lo simple se vuelve algo extraordinario. 🌸
-Si prestamos atención, todo es necesario.
-
-Creas recuerdos con lo que te rodea. 🌿
-Una flor, un aroma, una brisa que pasea.
-
-Te sientes lleno de un gran bienestar. 🌞
-Todo vibra en calma, nada que alterar.
-
-Quiero mostrarte este momento sereno. 🌬️
-La tranquilidad del bosque, el ambiente tan pleno.
-
-Tal es la belleza de este lugar mágico. 🌼
-Colores y sonidos crean un mundo fantástico.
-
-Y cada sensación conecta con la tierra. 🍃
-El aroma, el murmullo, la brisa que se aferra.
-
-Como si siempre hubieras pertenecido aquí. 🌳
-Cada detalle te invita a ser muy feliz.
-
-Eres parte de este paisaje sin par. 🌿
-Al cerrar los ojos, lo puedes soñar. 😊
+Y colorín colorado, este cuento se ha acabado 🎉.
 
 =========
 == End ==

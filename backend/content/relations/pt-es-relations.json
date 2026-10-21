@@ -536,6 +536,24 @@
         "lento": "lento",
         "lenta": "lenta"
       }
+    },
+    "topic_3": {
+      "pt": {
+        "internet": "internet",
+        "wifi": "wifi",
+        "conexão": "conexión",
+        "sinal": "señal",
+        "rede": "red",
+        "e-mail": "correo electrónico",
+        "chat": "chat",
+        "enviar": "enviar",
+        "receber": "recibir",
+        "ligação": "llamada",
+        "conectado": "conectado",
+        "conectada": "conectada",
+        "desconectado": "desconectado",
+        "desconectada": "desconectada"
+      }
     }
   }
 }

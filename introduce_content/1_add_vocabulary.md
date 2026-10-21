@@ -2,7 +2,7 @@
 
 idiom: es
 chapter: 5
-topic: 2
+topic: 3
 
 1. Resolve chapter/topic into a roadmap ID using the Section 7 table in
    contents/language_reading_journey_phases/roadmap.md (chapter 1 = its first
