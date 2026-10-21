@@ -497,5 +497,27 @@
         "e aí": "qué onda"
       }
     }
+  },
+  "chapter_5": {
+    "topic_1": {
+      "pt": {
+        "telefone": "teléfono",
+        "tela": "pantalla",
+        "bateria": "batería",
+        "carregador": "cargador",
+        "câmera": "cámara",
+        "botão": "botón",
+        "carregar": "cargar",
+        "funciona": "funciona",
+        "quebrado": "roto",
+        "quebrada": "rota",
+        "carregado": "cargado",
+        "carregada": "cargada",
+        "ligar": "llamar",
+        "atender": "contestar",
+        "contato": "contacto",
+        "volume": "volumen"
+      }
+    }
   }
 }
