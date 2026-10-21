@@ -1,0 +1,50 @@
+[
+  {
+    "text_id": "top-A0-TG-3-txt-01",
+    "number": 1,
+    "title": "Un mensaje de texto",
+    "body": "Marta tiene un problema con su teléfono. Ella no tiene **señal** y no puede **enviar** el mensaje. Después de unos minutos, la **conexión** vuelve. Marta **envía** el mensaje a su amigo Tomás. Tomás **recibe** el mensaje y responde rápido. Los dos hablan por **chat** toda la tarde."
+  },
+  {
+    "text_id": "top-A0-TG-3-txt-02",
+    "number": 2,
+    "title": "El wifi de la casa",
+    "body": "En mi casa, el **wifi** es muy lento. A veces no hay **conexión** y no puedo ver videos. Mi hermano llama a la compañía de **internet**. El técnico viene y revisa la **red**. Ahora el **wifi** funciona bien y la **señal** es fuerte."
+  },
+  {
+    "text_id": "top-A0-TG-3-txt-03",
+    "number": 3,
+    "title": "Un correo electrónico para el trabajo",
+    "body": "Ana necesita **enviar** un **correo electrónico** a su jefe. Ella escribe el mensaje con cuidado y revisa cada palabra. Ana también adjunta un archivo importante para el proyecto. Al final del día, su jefe **recibe** el **correo electrónico** y responde con una buena noticia."
+  },
+  {
+    "text_id": "top-A0-TG-3-txt-04",
+    "number": 4,
+    "title": "El teléfono sin señal",
+    "body": "Pedro camina por la montaña y su teléfono está **desconectado**. No hay **señal** en ese lugar. Pedro no puede **recibir** ninguna **llamada**. Pedro baja de la montaña. Su teléfono vuelve a estar **conectado**. Pedro ve diez mensajes nuevos en su teléfono."
+  },
+  {
+    "text_id": "top-A0-TG-3-txt-05",
+    "number": 5,
+    "title": "Una llamada importante",
+    "body": "Laura espera una **llamada** importante de su médico. Su teléfono está **conectado** a la **red**. El teléfono no suena todavía. Laura revisa la batería y el **wifi** de su casa. Por fin, el teléfono suena y Laura **recibe** la **llamada**."
+  },
+  {
+    "text_id": "top-A0-TG-3-txt-06",
+    "number": 6,
+    "title": "El chat con la familia",
+    "body": "Cada noche, Sofía abre el **chat** con su familia. Ella **envía** fotos y mensajes a sus padres. Su madre siempre **recibe** los mensajes rápido. A veces, la **conexión** es mala y las fotos no llegan. Sofía espera un poco y las fotos llegan bien."
+  },
+  {
+    "text_id": "top-A0-TG-3-txt-07",
+    "number": 7,
+    "title": "Dos amigas y el internet",
+    "body": "Clara y Rosa quieren ver una película por **internet**. La **señal** del **wifi** es débil en la sala. Ellas van a la cocina y la **conexión** mejora. Ahora el **internet** funciona bien y Clara y Rosa ven la película juntas."
+  },
+  {
+    "text_id": "top-A0-TG-3-txt-08",
+    "number": 8,
+    "title": "La computadora en la oficina",
+    "body": "En la oficina, la computadora de Marcos está **desconectada** de la **red**. Marcos revisa el cable y lo conecta de nuevo. Ahora la computadora está **conectada** y Marcos puede trabajar. Él abre su **correo electrónico** y ve varios mensajes nuevos."
+  }
+]

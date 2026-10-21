@@ -518,6 +518,42 @@
         "contato": "contacto",
         "volume": "volumen"
       }
+    },
+    "topic_2": {
+      "pt": {
+        "computador": "computadora",
+        "teclado": "teclado",
+        "tecla": "tecla",
+        "mouse": "ratón",
+        "usar": "usar",
+        "ligar": "encender",
+        "apagar": "apagar",
+        "clique": "clic",
+        "programa": "programa",
+        "escrever": "escribir",
+        "salvar": "guardar",
+        "arquivo": "archivo",
+        "lento": "lento",
+        "lenta": "lenta"
+      }
+    },
+    "topic_3": {
+      "pt": {
+        "internet": "internet",
+        "wifi": "wifi",
+        "conexão": "conexión",
+        "sinal": "señal",
+        "rede": "red",
+        "e-mail": "correo electrónico",
+        "chat": "chat",
+        "enviar": "enviar",
+        "receber": "recibir",
+        "ligação": "llamada",
+        "conectado": "conectado",
+        "conectada": "conectada",
+        "desconectado": "desconectado",
+        "desconectada": "desconectada"
+      }
     }
   }
 }

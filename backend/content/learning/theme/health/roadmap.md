@@ -60,11 +60,11 @@ This is the table of contents for the "Good Health" learning theme. It lists **c
 
 | Chapter | Topic ID | Topic Title | Status |
 |---|---|---|---|
-| Nutrition | NUT-1 | Macronutrients Basics (Carbs, Protein, Fat) | Not Started |
-| Nutrition | NUT-2 | Micronutrients & Vitamins | Not Started |
-| Nutrition | NUT-3 | Hydration | Not Started |
-| Nutrition | NUT-4 | Meal Planning & Portion Control | Not Started |
-| Nutrition | NUT-5 | Reading Food Labels | Not Started |
+| Nutrition | NUT-1 | Macronutrients Basics (Carbs, Protein, Fat) | Done |
+| Nutrition | NUT-2 | Micronutrients & Vitamins | Done |
+| Nutrition | NUT-3 | Hydration | Done |
+| Nutrition | NUT-4 | Meal Planning & Portion Control | Done |
+| Nutrition | NUT-5 | Reading Food Labels | Done |
 | Nutrition | NUT-6 | Reducing Sugar & Processed Foods | Not Started |
 | Nutrition | NUT-7 | Healthy Eating on a Budget | Not Started |
 | Nutrition | NUT-8 | Mindful Eating | Not Started |

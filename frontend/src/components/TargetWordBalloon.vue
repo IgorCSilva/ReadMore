@@ -32,9 +32,36 @@ const cue = ref('')
 const auxiliarSentence = ref('')
 let word = ''
 let langCode = 'en'
+// The word being annotated, not the (possibly resized) popover — kept fixed
+// for the lifetime of one showFor() call so reposition() always re-centers
+// on the same spot, rather than drifting off whatever the popover's edge
+// happened to be after its previous size.
+let anchorRect = null
+
+// Revealing the cue (see WordActions/WordCue) grows the popover after it's
+// already been positioned — without this, `left`/`top` would stay pinned to
+// the original (narrower) box's corner instead of re-centering on the word,
+// which is what made the balloon drift off-center once the cue text wrapped.
+const resizeObserver =
+  typeof ResizeObserver !== 'undefined' ? new ResizeObserver(() => reposition()) : null
+
+function reposition() {
+  if (!anchorRect || !popoverEl.value) return
+  const popoverRect = popoverEl.value.getBoundingClientRect()
+  const fitsAbove = anchorRect.top >= popoverRect.height + 8
+  top.value = fitsAbove ? anchorRect.top - popoverRect.height - 8 : anchorRect.bottom + 8
+  left.value = Math.max(
+    8,
+    Math.min(
+      anchorRect.left + anchorRect.width / 2 - popoverRect.width / 2,
+      window.innerWidth - popoverRect.width - 8
+    )
+  )
+}
 
 function hide() {
   visible.value = false
+  resizeObserver?.disconnect()
 }
 
 async function showFor(anchorEl, { word: text, lang, cue: cueText, auxiliarSentence: auxSentence } = {}) {
@@ -45,14 +72,9 @@ async function showFor(anchorEl, { word: text, lang, cue: cueText, auxiliarSente
   visible.value = true
   await nextTick()
 
-  const rect = anchorEl.getBoundingClientRect()
-  const popoverRect = popoverEl.value.getBoundingClientRect()
-  const fitsAbove = rect.top >= popoverRect.height + 8
-  top.value = fitsAbove ? rect.top - popoverRect.height - 8 : rect.bottom + 8
-  left.value = Math.max(
-    8,
-    Math.min(rect.left + rect.width / 2 - popoverRect.width / 2, window.innerWidth - popoverRect.width - 8)
-  )
+  anchorRect = anchorEl.getBoundingClientRect()
+  reposition()
+  resizeObserver?.observe(popoverEl.value)
 }
 
 function speakLocal(text, lang) {
@@ -82,6 +104,7 @@ window.addEventListener('scroll', hide, true)
 onUnmounted(() => {
   document.removeEventListener('click', handleOutsideClick)
   window.removeEventListener('scroll', hide, true)
+  resizeObserver?.disconnect()
 })
 
 defineExpose({ showFor, hide })

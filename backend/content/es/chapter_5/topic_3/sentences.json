@@ -1,0 +1,428 @@
+[
+  {
+    "id": "es-sent-1305",
+    "sentence": "El internet está lento.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0441",
+      "es-wd-0255",
+      "es-wd-0439"
+    ]
+  },
+  {
+    "id": "es-sent-1306",
+    "sentence": "Mi casa tiene internet.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0063",
+      "es-wd-0080",
+      "es-wd-0441"
+    ]
+  },
+  {
+    "id": "es-sent-1307",
+    "sentence": "Quiero usar internet ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0431",
+      "es-wd-0441",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1308",
+    "sentence": "El wifi es nuevo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0442",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1309",
+    "sentence": "No hay wifi aquí.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0081",
+      "es-wd-0442",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1310",
+    "sentence": "Mi teléfono tiene wifi.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0411",
+      "es-wd-0080",
+      "es-wd-0442"
+    ]
+  },
+  {
+    "id": "es-sent-1311",
+    "sentence": "La conexión es lenta.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0443",
+      "es-wd-0017",
+      "es-wd-0440"
+    ]
+  },
+  {
+    "id": "es-sent-1312",
+    "sentence": "Mi conexión no funciona.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0443",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1313",
+    "sentence": "Tiene una conexión nueva.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0443",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1314",
+    "sentence": "La señal es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0444",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1315",
+    "sentence": "No hay señal aquí.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0081",
+      "es-wd-0444",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1316",
+    "sentence": "Mi señal es lenta.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0444",
+      "es-wd-0017",
+      "es-wd-0440"
+    ]
+  },
+  {
+    "id": "es-sent-1317",
+    "sentence": "La red es nueva.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0445",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1318",
+    "sentence": "Mi red no funciona.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0445",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1319",
+    "sentence": "Tiene una red lenta.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0445",
+      "es-wd-0440"
+    ]
+  },
+  {
+    "id": "es-sent-1320",
+    "sentence": "El correo electrónico es nuevo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0446",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1321",
+    "sentence": "Quiero enviar un correo electrónico.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0448",
+      "es-wd-0076",
+      "es-wd-0446"
+    ]
+  },
+  {
+    "id": "es-sent-1322",
+    "sentence": "Puede recibir el correo electrónico aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0449",
+      "es-wd-0057",
+      "es-wd-0446",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1323",
+    "sentence": "El chat es nuevo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0447",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1324",
+    "sentence": "Quiero usar el chat.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0431",
+      "es-wd-0057",
+      "es-wd-0447"
+    ]
+  },
+  {
+    "id": "es-sent-1325",
+    "sentence": "Mi chat no funciona.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0447",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1326",
+    "sentence": "Quiero enviar un mensaje.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0448",
+      "es-wd-0076",
+      "es-wd-0309"
+    ]
+  },
+  {
+    "id": "es-sent-1327",
+    "sentence": "Puede enviar el archivo aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0448",
+      "es-wd-0057",
+      "es-wd-0438",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1328",
+    "sentence": "Quiero enviar un correo electrónico ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0448",
+      "es-wd-0076",
+      "es-wd-0446",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1329",
+    "sentence": "Quiero recibir el mensaje.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0449",
+      "es-wd-0057",
+      "es-wd-0309"
+    ]
+  },
+  {
+    "id": "es-sent-1330",
+    "sentence": "Puede recibir la llamada aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0449",
+      "es-wd-0058",
+      "es-wd-0450",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1331",
+    "sentence": "Quiero recibir un correo electrónico ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0449",
+      "es-wd-0076",
+      "es-wd-0446",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1332",
+    "sentence": "Tiene una llamada ahora.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0450",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1333",
+    "sentence": "Quiero recibir la llamada.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0449",
+      "es-wd-0058",
+      "es-wd-0450"
+    ]
+  },
+  {
+    "id": "es-sent-1334",
+    "sentence": "Puede hacer la llamada aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0108",
+      "es-wd-0058",
+      "es-wd-0450",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1335",
+    "sentence": "El teléfono está conectado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0411",
+      "es-wd-0255",
+      "es-wd-0451"
+    ]
+  },
+  {
+    "id": "es-sent-1336",
+    "sentence": "Mi celular está conectado.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0326",
+      "es-wd-0255",
+      "es-wd-0451"
+    ]
+  },
+  {
+    "id": "es-sent-1337",
+    "sentence": "El wifi está conectado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0442",
+      "es-wd-0255",
+      "es-wd-0451"
+    ]
+  },
+  {
+    "id": "es-sent-1338",
+    "sentence": "Mi computadora está conectada.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0427",
+      "es-wd-0255",
+      "es-wd-0452"
+    ]
+  },
+  {
+    "id": "es-sent-1339",
+    "sentence": "La red está conectada.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0445",
+      "es-wd-0255",
+      "es-wd-0452"
+    ]
+  },
+  {
+    "id": "es-sent-1340",
+    "sentence": "La televisión está conectada.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0075",
+      "es-wd-0255",
+      "es-wd-0452"
+    ]
+  },
+  {
+    "id": "es-sent-1341",
+    "sentence": "El teléfono está desconectado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0411",
+      "es-wd-0255",
+      "es-wd-0453"
+    ]
+  },
+  {
+    "id": "es-sent-1342",
+    "sentence": "Mi celular está desconectado.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0326",
+      "es-wd-0255",
+      "es-wd-0453"
+    ]
+  },
+  {
+    "id": "es-sent-1343",
+    "sentence": "El wifi está desconectado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0442",
+      "es-wd-0255",
+      "es-wd-0453"
+    ]
+  },
+  {
+    "id": "es-sent-1344",
+    "sentence": "Mi computadora está desconectada.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0427",
+      "es-wd-0255",
+      "es-wd-0454"
+    ]
+  },
+  {
+    "id": "es-sent-1345",
+    "sentence": "La red está desconectada.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0445",
+      "es-wd-0255",
+      "es-wd-0454"
+    ]
+  },
+  {
+    "id": "es-sent-1346",
+    "sentence": "La televisión está desconectada.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0075",
+      "es-wd-0255",
+      "es-wd-0454"
+    ]
+  }
+]
