@@ -1,0 +1,487 @@
+[
+  {
+    "id": "es-sent-1215",
+    "sentence": "Mi teléfono es nuevo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0411",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1216",
+    "sentence": "El teléfono está en la mesa.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0411",
+      "es-wd-0255",
+      "es-wd-0082",
+      "es-wd-0070"
+    ]
+  },
+  {
+    "id": "es-sent-1217",
+    "sentence": "Tiene un teléfono viejo.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0411",
+      "es-wd-0379"
+    ]
+  },
+  {
+    "id": "es-sent-1218",
+    "sentence": "La pantalla es grande.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0412",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1219",
+    "sentence": "Mi pantalla está rota.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0412",
+      "es-wd-0255",
+      "es-wd-0420"
+    ]
+  },
+  {
+    "id": "es-sent-1220",
+    "sentence": "Tiene una pantalla pequeña.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0412",
+      "es-wd-0225"
+    ]
+  },
+  {
+    "id": "es-sent-1221",
+    "sentence": "La batería es nueva.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0413",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1222",
+    "sentence": "Mi batería no funciona.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0413",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1223",
+    "sentence": "Tiene una batería vieja.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0413",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1224",
+    "sentence": "El cargador es nuevo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0414",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1225",
+    "sentence": "Mi cargador no funciona.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0414",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1226",
+    "sentence": "Tiene un cargador viejo.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0414",
+      "es-wd-0379"
+    ]
+  },
+  {
+    "id": "es-sent-1227",
+    "sentence": "La cámara es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0415",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1228",
+    "sentence": "Mi cámara es vieja.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0415",
+      "es-wd-0017",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1229",
+    "sentence": "Tiene una cámara nueva.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0415",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1230",
+    "sentence": "El botón es pequeño.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0416",
+      "es-wd-0017",
+      "es-wd-0224"
+    ]
+  },
+  {
+    "id": "es-sent-1231",
+    "sentence": "Mi botón no funciona.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0416",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1232",
+    "sentence": "Tiene un botón nuevo.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0416",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1233",
+    "sentence": "Quiero cargar el teléfono.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0417",
+      "es-wd-0057",
+      "es-wd-0411"
+    ]
+  },
+  {
+    "id": "es-sent-1234",
+    "sentence": "Puede cargar la batería aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0417",
+      "es-wd-0058",
+      "es-wd-0413",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1235",
+    "sentence": "Quiero cargar mi cámara.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0417",
+      "es-wd-0016",
+      "es-wd-0415"
+    ]
+  },
+  {
+    "id": "es-sent-1236",
+    "sentence": "El teléfono no funciona.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0411",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1237",
+    "sentence": "La cámara funciona bien.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0415",
+      "es-wd-0418",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-1238",
+    "sentence": "El cargador no funciona.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0414",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1239",
+    "sentence": "El teléfono está roto.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0411",
+      "es-wd-0255",
+      "es-wd-0419"
+    ]
+  },
+  {
+    "id": "es-sent-1240",
+    "sentence": "El cargador está roto.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0414",
+      "es-wd-0255",
+      "es-wd-0419"
+    ]
+  },
+  {
+    "id": "es-sent-1241",
+    "sentence": "Mi botón está roto.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0416",
+      "es-wd-0255",
+      "es-wd-0419"
+    ]
+  },
+  {
+    "id": "es-sent-1242",
+    "sentence": "La pantalla está rota.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0412",
+      "es-wd-0255",
+      "es-wd-0420"
+    ]
+  },
+  {
+    "id": "es-sent-1243",
+    "sentence": "La batería está rota.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0413",
+      "es-wd-0255",
+      "es-wd-0420"
+    ]
+  },
+  {
+    "id": "es-sent-1244",
+    "sentence": "Mi cámara está rota.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0415",
+      "es-wd-0255",
+      "es-wd-0420"
+    ]
+  },
+  {
+    "id": "es-sent-1245",
+    "sentence": "El teléfono está cargado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0411",
+      "es-wd-0255",
+      "es-wd-0421"
+    ]
+  },
+  {
+    "id": "es-sent-1246",
+    "sentence": "Mi teléfono nuevo está cargado.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0411",
+      "es-wd-0202",
+      "es-wd-0255",
+      "es-wd-0421"
+    ]
+  },
+  {
+    "id": "es-sent-1247",
+    "sentence": "El celular está cargado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0326",
+      "es-wd-0255",
+      "es-wd-0421"
+    ]
+  },
+  {
+    "id": "es-sent-1248",
+    "sentence": "La batería está cargada.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0413",
+      "es-wd-0255",
+      "es-wd-0422"
+    ]
+  },
+  {
+    "id": "es-sent-1249",
+    "sentence": "Mi batería nueva está cargada.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0413",
+      "es-wd-0203",
+      "es-wd-0255",
+      "es-wd-0422"
+    ]
+  },
+  {
+    "id": "es-sent-1250",
+    "sentence": "La cámara está cargada.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0415",
+      "es-wd-0255",
+      "es-wd-0422"
+    ]
+  },
+  {
+    "id": "es-sent-1251",
+    "sentence": "Quiero llamar a mi amigo.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0423",
+      "es-wd-0253",
+      "es-wd-0016",
+      "es-wd-0204"
+    ]
+  },
+  {
+    "id": "es-sent-1252",
+    "sentence": "Puede llamar ahora.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0423",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1253",
+    "sentence": "Quiero llamar a mi hermano.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0423",
+      "es-wd-0253",
+      "es-wd-0016",
+      "es-wd-0042"
+    ]
+  },
+  {
+    "id": "es-sent-1254",
+    "sentence": "Puede contestar el teléfono.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0424",
+      "es-wd-0057",
+      "es-wd-0411"
+    ]
+  },
+  {
+    "id": "es-sent-1255",
+    "sentence": "Quiero contestar ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0424",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1256",
+    "sentence": "No puede contestar.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0323",
+      "es-wd-0424"
+    ]
+  },
+  {
+    "id": "es-sent-1257",
+    "sentence": "Es un contacto nuevo.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0425",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1258",
+    "sentence": "Mi contacto es de Ana.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0425",
+      "es-wd-0017",
+      "es-wd-0023"
+    ]
+  },
+  {
+    "id": "es-sent-1259",
+    "sentence": "Tiene un contacto nuevo.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0425",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1260",
+    "sentence": "El volumen no funciona.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0426",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1261",
+    "sentence": "Mi volumen es bueno.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0426",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1262",
+    "sentence": "El botón de volumen es pequeño.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0416",
+      "es-wd-0023",
+      "es-wd-0426",
+      "es-wd-0017",
+      "es-wd-0224"
+    ]
+  }
+]

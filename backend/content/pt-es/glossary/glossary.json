@@ -109,6 +109,15 @@
     ],
     "antonyms": []
   },
+  "acción": {
+    "meaning": "Ação; o que se deve fazer.",
+    "examples": [
+      "La tabla muestra el momento y la acción.",
+      "Cada acción ayuda a formar un hábito."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "aceite": {
     "meaning": "Óleo.",
     "examples": [
@@ -189,6 +198,17 @@
       "también"
     ],
     "antonyms": []
+  },
+  "afuera": {
+    "meaning": "Lá fora; fora de casa.",
+    "examples": [
+      "Hace calor afuera.",
+      "Los niños juegan afuera."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "adentro"
+    ]
   },
   "agradable": {
     "meaning": "Agradável, bom.",
@@ -392,6 +412,15 @@
       "angustiados"
     ]
   },
+  "allá": {
+    "meaning": "Além; mais além (usado na expressão 'más allá', além de).",
+    "examples": [
+      "La hidratación va más allá del agua.",
+      "Mi casa queda más allá del puente."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "allí": {
     "meaning": "Ali; naquele lugar.",
     "examples": [
@@ -414,6 +443,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "almuerzo": {
+    "meaning": "Almoço.",
+    "examples": [
+      "Bebe un vaso de agua antes del almuerzo.",
+      "El almuerzo está listo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "altísimos": {
     "meaning": "Altíssimos; muito altos (superlativo de 'alto').",
     "examples": [
@@ -426,6 +464,15 @@
     "antonyms": [
       "bajísimos"
     ]
+  },
+  "amarillo": {
+    "meaning": "Amarelo.",
+    "examples": [
+      "Amarillo claro es una buena señal.",
+      "El sol se ve amarillo en el cielo."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "amiga": {
     "meaning": "Amiga.",
@@ -584,6 +631,15 @@
     ],
     "antonyms": []
   },
+  "articulaciones": {
+    "meaning": "Articulações.",
+    "examples": [
+      "El agua ayuda a mantener tus articulaciones funcionando bien.",
+      "Las articulaciones te permiten moverte."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "aseguró": {
     "meaning": "Assegurou; passado de 'asegurar'.",
     "examples": [
@@ -683,11 +739,29 @@
     ],
     "antonyms": []
   },
+  "azucarado": {
+    "meaning": "Açucarado.",
+    "examples": [
+      "No bebas mucho jugo azucarado.",
+      "Ese refresco es muy azucarado."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "azul": {
     "meaning": "Azul.",
     "examples": [
       "La nube flotaba despacito en el cielo azul.",
       "El mar es azul."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "azúcar": {
+    "meaning": "Açúcar.",
+    "examples": [
+      "Bebe té sin azúcar.",
+      "No le pongas azúcar al café."
     ],
     "synonyms": [],
     "antonyms": []
@@ -773,6 +847,33 @@
     ],
     "antonyms": []
   },
+  "bebas": {
+    "meaning": "Bebas; subjuntivo de 'beber'.",
+    "examples": [
+      "Marca la casilla cuando bebas un vaso de agua.",
+      "Espero que bebas suficiente agua hoy."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "bebe": {
+    "meaning": "Bebe; imperativo/presente de 'beber'.",
+    "examples": [
+      "Bebe cerca de 8 vasos de agua todos los días.",
+      "Bebe agua antes de dormir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "bebidas": {
+    "meaning": "Bebidas.",
+    "examples": [
+      "Muchos alimentos y bebidas también tienen agua.",
+      "Las bebidas frías son agradables en verano."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "bebé": {
     "meaning": "Bebê.",
     "examples": [
@@ -804,6 +905,15 @@
       "integral"
     ]
   },
+  "boca": {
+    "meaning": "Boca.",
+    "examples": [
+      "Tu boca se siente seca cuando necesitas agua.",
+      "Abre la boca, por favor."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "bosque": {
     "meaning": "Bosque; floresta.",
     "examples": [
@@ -813,6 +923,15 @@
     "synonyms": [
       "selva"
     ],
+    "antonyms": []
+  },
+  "botella": {
+    "meaning": "Garrafa.",
+    "examples": [
+      "Consigue una botella de agua y llénala.",
+      "La botella está llena de agua fresca."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "bracitos": {
@@ -1026,6 +1145,17 @@
       "agitación"
     ]
   },
+  "calor": {
+    "meaning": "Calor.",
+    "examples": [
+      "Necesitas más agua cuando hace calor afuera.",
+      "Hace mucho calor hoy."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "frío"
+    ]
+  },
   "cama": {
     "meaning": "Cama.",
     "examples": [
@@ -1228,6 +1358,15 @@
     ],
     "antonyms": []
   },
+  "casilla": {
+    "meaning": "Quadradinho/caixinha para marcar, como em uma lista de verificação.",
+    "examples": [
+      "Marca cada casilla cuando bebas un vaso de agua.",
+      "Hay una casilla para cada tarea del día."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "cayeron": {
     "meaning": "Caíram; passado do verbo 'caer' na terceira pessoa do plural.",
     "examples": [
@@ -1239,6 +1378,26 @@
     ],
     "antonyms": [
       "subieron"
+    ]
+  },
+  "cena": {
+    "meaning": "Jantar.",
+    "examples": [
+      "Bebe un vaso de agua antes de la cena.",
+      "La cena está lista."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "cerca": {
+    "meaning": "Perto; também usado como 'aproximadamente'.",
+    "examples": [
+      "Bebe cerca de 8 vasos de agua todos los días.",
+      "Vivo cerca de la escuela."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "lejos"
     ]
   },
   "cerebro": {
@@ -1374,6 +1533,17 @@
       "oscura"
     ]
   },
+  "claro": {
+    "meaning": "Claro (cor clara).",
+    "examples": [
+      "Amarillo claro es una buena señal.",
+      "El cielo está claro hoy."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "oscuro"
+    ]
+  },
   "clave": {
     "meaning": "Chave (palavra-chave, importante).",
     "examples": [
@@ -1387,6 +1557,15 @@
     "examples": [
       "Cocina el arroz en agua por 20 minutos.",
       "Cocina el pollo en una sartén."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "color": {
+    "meaning": "Cor.",
+    "examples": [
+      "Revisa el color de tu orina al final del día.",
+      "Me gusta el color azul."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1578,6 +1757,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "consigue": {
+    "meaning": "Consegue; imperativo/presente de 'conseguir'.",
+    "examples": [
+      "Consigue una botella de agua.",
+      "Consigue ayuda si la necesitas."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "construye": {
     "meaning": "Constrói (de 'construir').",
     "examples": [
@@ -1601,6 +1789,15 @@
     "examples": [
       "No necesitas contar cada número.",
       "Usa una regla simple en vez de contar todo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "controlar": {
+    "meaning": "Controlar.",
+    "examples": [
+      "El agua ayuda a controlar tu temperatura.",
+      "Es difícil controlar los nervios."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1885,6 +2082,15 @@
     "antonyms": [
       "indiferencia"
     ]
+  },
+  "cuánta": {
+    "meaning": "Quanta.",
+    "examples": [
+      "¿Cuánta agua necesitas?",
+      "No sé cuánta azúcar le puso."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "cuánto": {
     "meaning": "Quanto.",
@@ -2218,6 +2424,35 @@
     "synonyms": [],
     "antonyms": []
   },
+  "desecho": {
+    "meaning": "Resíduo; lixo.",
+    "examples": [
+      "La orina es líquido de desecho de tu cuerpo.",
+      "Ese material es un desecho industrial."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "desechos": {
+    "meaning": "Resíduos; lixo (plural).",
+    "examples": [
+      "El agua ayuda a limpiar los desechos de tu cuerpo.",
+      "Los desechos van a la basura."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "deshidratación": {
+    "meaning": "Desidratação.",
+    "examples": [
+      "Estas son las señales de deshidratación.",
+      "La deshidratación es peligrosa en verano."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "hidratación"
+    ]
+  },
   "deslizó": {
     "meaning": "Deslizou.",
     "examples": [
@@ -2277,6 +2512,15 @@
       "dormida"
     ]
   },
+  "despiertas": {
+    "meaning": "Acordas; presente de 'despertarse'.",
+    "examples": [
+      "Bebe un vaso de agua cuando te despiertas.",
+      "¿A qué hora te despiertas?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "después": {
     "meaning": "Depois.",
     "examples": [
@@ -2303,11 +2547,29 @@
       "delante"
     ]
   },
+  "diario": {
+    "meaning": "Diário.",
+    "examples": [
+      "Crea tu hábito diario de hidratación.",
+      "Hago ejercicio diario."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "dibuja": {
     "meaning": "Desenha (de 'dibujar').",
     "examples": [
       "Dibuja un círculo. Este es tu plato.",
       "Dibuja las partes del plato."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "dice": {
+    "meaning": "Diz; presente de 'decir'.",
+    "examples": [
+      "La sed es la sensación que te dice que bebas agua.",
+      "Ella dice la verdad."
     ],
     "synonyms": [],
     "antonyms": []
@@ -2441,6 +2703,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "dolor": {
+    "meaning": "Dor.",
+    "examples": [
+      "Tienes dolor de cabeza cuando estás deshidratado.",
+      "Tengo dolor de estómago."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "dormida": {
     "meaning": "Adormecida.",
     "examples": [
@@ -2541,6 +2812,15 @@
     "examples": [
       "Escribe una comida de ejemplo.",
       "Este es un ejemplo de comida balanceada."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ejercicio": {
+    "meaning": "Exercício.",
+    "examples": [
+      "Necesitas más agua cuando haces ejercicio.",
+      "El ejercicio es bueno para la salud."
     ],
     "synonyms": [],
     "antonyms": []
@@ -2705,6 +2985,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "enfermo": {
+    "meaning": "Doente.",
+    "examples": [
+      "Necesitas más agua cuando te sientes enfermo.",
+      "Mi hermano está enfermo hoy."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "sano"
+    ]
   },
   "enorme": {
     "meaning": "Enorme.",
@@ -3023,6 +3314,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "estas": {
+    "meaning": "Estas; demonstrativo feminino plural de 'este'.",
+    "examples": [
+      "Si ves estas señales, bebe agua de inmediato.",
+      "Estas frutas tienen mucha agua."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "este": {
     "meaning": "Este; pronome/adjetivo demonstrativo masculino.",
     "examples": [
@@ -3067,6 +3367,15 @@
     "examples": [
       "Se acurrucó entre las estrellas.",
       "Las estrellas brillaban en el cielo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "está": {
+    "meaning": "Está; presente de 'estar'.",
+    "examples": [
+      "El agua está en cada parte de tu cuerpo.",
+      "Ella está en casa."
     ],
     "synonyms": [],
     "antonyms": []
@@ -3215,6 +3524,15 @@
       "principio",
       "comienzo"
     ]
+  },
+  "final": {
+    "meaning": "Final.",
+    "examples": [
+      "Revisa el color de tu orina al final del día.",
+      "Llegamos al final del camino."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "flores": {
     "meaning": "Flores.",
@@ -3388,6 +3706,15 @@
       "debilidad"
     ]
   },
+  "funcionando": {
+    "meaning": "Funcionando.",
+    "examples": [
+      "El agua ayuda a mantener tus articulaciones funcionando bien.",
+      "La máquina está funcionando bien."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "funcionar": {
     "meaning": "Funcionar.",
     "examples": [
@@ -3478,6 +3805,15 @@
     "synonyms": [
       "ademanes"
     ],
+    "antonyms": []
+  },
+  "gota": {
+    "meaning": "Gota.",
+    "examples": [
+      "No necesitas contar cada gota de agua.",
+      "Cayó una gota de lluvia."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "gotas": {
@@ -3665,6 +4001,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "hace": {
+    "meaning": "Faz; presente de 'hacer' (usado para o clima).",
+    "examples": [
+      "Hace calor afuera.",
+      "Hace frío en invierno."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "hacerla": {
     "meaning": "Fazê-la; infinitivo 'hacer' + 'la'.",
     "examples": [
@@ -3697,6 +4042,15 @@
     "examples": [
       "Poco hierro puede hacerte sentir cansado.",
       "Comer bien puede hacerte sentir mejor."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "haces": {
+    "meaning": "Fazes; presente de 'hacer'.",
+    "examples": [
+      "Necesitas más agua cuando haces ejercicio.",
+      "¿Qué haces ahora?"
     ],
     "synonyms": [],
     "antonyms": []
@@ -3737,6 +4091,15 @@
     "synonyms": [
       "existe"
     ],
+    "antonyms": []
+  },
+  "haz": {
+    "meaning": "Faz; imperativo de 'hacer'.",
+    "examples": [
+      "Haz una lista de verificación para un día.",
+      "Haz la tarea, por favor."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "hecha": {
@@ -3792,6 +4155,44 @@
     "examples": [
       "Dejando que las hojas le hicieran cariñitos en su cuerpo.",
       "Quería que le hicieran compañía."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "hiciste": {
+    "meaning": "Fizeste; pretérito de 'hacer'.",
+    "examples": [
+      "Amarillo claro significa que lo hiciste bien.",
+      "¿Qué hiciste ayer?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "hidratación": {
+    "meaning": "Hidratação.",
+    "examples": [
+      "Crea tu hábito diario de hidratación.",
+      "La hidratación es muy importante para el cuerpo."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "deshidratación"
+    ]
+  },
+  "hidratan": {
+    "meaning": "Hidratam; presente de 'hidratar'.",
+    "examples": [
+      "Muchas frutas y verduras hidratan bien.",
+      "Esas bebidas no hidratan bien tu cuerpo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "hidratarte": {
+    "meaning": "Hidratar-te; infinitivo 'hidratar' + pronome 'te'.",
+    "examples": [
+      "El agua no es la única manera de hidratarte.",
+      "Es importante hidratarte durante el ejercicio."
     ],
     "synonyms": [],
     "antonyms": []
@@ -3866,6 +4267,15 @@
     "examples": [
       "Come huevos en el desayuno.",
       "Carne, pescado, huevos, leche."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "hábito": {
+    "meaning": "Hábito.",
+    "examples": [
+      "Crea tu hábito diario de hidratación.",
+      "Formar un buen hábito toma tiempo."
     ],
     "synonyms": [],
     "antonyms": []
@@ -3976,6 +4386,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "inmediato": {
+    "meaning": "Imediato.",
+    "examples": [
+      "Si ves estas señales, bebe agua de inmediato.",
+      "Necesito una respuesta inmediata."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "integral": {
     "meaning": "Integral (grão não refinado).",
     "examples": [
@@ -4082,6 +4501,15 @@
     "synonyms": [
       "divertirse"
     ],
+    "antonyms": []
+  },
+  "jugo": {
+    "meaning": "Suco.",
+    "examples": [
+      "Bebe menos soda y jugo azucarado.",
+      "Me gusta el jugo de naranja."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "juguetes": {
@@ -4196,6 +4624,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "lechuga": {
+    "meaning": "Alface.",
+    "examples": [
+      "Las verduras, como pepino y lechuga, tienen mucha agua.",
+      "La ensalada lleva lechuga y tomate."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "les": {
     "meaning": "Lhes; pronome de objeto indireto plural.",
     "examples": [
@@ -4217,6 +4654,15 @@
     "antonyms": [
       "pesado"
     ]
+  },
+  "limpiar": {
+    "meaning": "Limpar.",
+    "examples": [
+      "El agua ayuda a limpiar los desechos de tu cuerpo.",
+      "Voy a limpiar mi cuarto."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "limpiará": {
     "meaning": "Limpará; futuro do verbo 'limpiar'.",
@@ -4470,6 +4916,15 @@
       "sequía"
     ]
   },
+  "llénala": {
+    "meaning": "Enche-a; imperativo de 'llenar' + pronome 'la'.",
+    "examples": [
+      "Consigue una botella de agua. Llénala con agua.",
+      "Toma la taza y llénala de café."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "lo": {
     "meaning": "Pronome/artigo neutro, usado antes de adjetivos ou como objeto direto masculino ('o').",
     "examples": [
@@ -4527,6 +4982,15 @@
     "examples": [
       "Mateo con los ojos llenos de lágrimas.",
       "Las lágrimas corrían por su cara."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "líquido": {
+    "meaning": "Líquido.",
+    "examples": [
+      "La orina es líquido de desecho de tu cuerpo.",
+      "El agua es un líquido transparente."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4652,6 +5116,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "mantener": {
+    "meaning": "Manter.",
+    "examples": [
+      "El agua ayuda a mantener tus articulaciones funcionando bien.",
+      "Es importante mantener una buena postura."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "mantenerse": {
     "meaning": "Manter-se.",
     "examples": [
@@ -4682,6 +5155,24 @@
     "antonyms": [
       "horrible"
     ]
+  },
+  "marca": {
+    "meaning": "Marca; imperativo de 'marcar'.",
+    "examples": [
+      "Marca cada casilla cuando bebas un vaso de agua.",
+      "Marca la respuesta correcta."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "mareado": {
+    "meaning": "Tonto; com tontura.",
+    "examples": [
+      "Te sientes mareado cuando estás deshidratado.",
+      "Me siento mareado después de girar."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "mariposas": {
     "meaning": "Borboletas.",
@@ -5037,6 +5528,15 @@
     ],
     "antonyms": []
   },
+  "momentos": {
+    "meaning": "Momentos.",
+    "examples": [
+      "Bebe agua en estos momentos del día.",
+      "Fueron buenos momentos juntos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "montañas": {
     "meaning": "Montanhas.",
     "examples": [
@@ -5109,6 +5609,26 @@
     "antonyms": [
       "poco"
     ]
+  },
+  "muchos": {
+    "meaning": "Muitos.",
+    "examples": [
+      "Muchos alimentos y bebidas también tienen agua.",
+      "Hay muchos libros en la mesa."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "pocos"
+    ]
+  },
+  "muestra": {
+    "meaning": "Mostra; presente de 'mostrar'.",
+    "examples": [
+      "El color de tu orina muestra tu hidratación.",
+      "La maestra muestra el mapa a la clase."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "muestran": {
     "meaning": "Mostram; forma de 'mostrar' na terceira pessoa do plural.",
@@ -5501,6 +6021,37 @@
     "synonyms": [],
     "antonyms": []
   },
+  "orina": {
+    "meaning": "Urina.",
+    "examples": [
+      "Revisa tu orina para saber si estás hidratado.",
+      "La orina clara es una buena señal."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "oscura": {
+    "meaning": "Escura.",
+    "examples": [
+      "Tu orina es oscura cuando necesitas más agua.",
+      "La noche está muy oscura."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "clara"
+    ]
+  },
+  "oscuro": {
+    "meaning": "Escuro.",
+    "examples": [
+      "Amarillo oscuro significa que necesitas más agua.",
+      "El cuarto está oscuro."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "claro"
+    ]
+  },
   "otro": {
     "meaning": "Outro.",
     "examples": [
@@ -5839,6 +6390,15 @@
     "examples": [
       "¡Qué paz!, pensó la nube.",
       "Ha sido un día maravilloso, pensó."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pepino": {
+    "meaning": "Pepino.",
+    "examples": [
+      "Las verduras, como pepino y lechuga, hidratan bien.",
+      "Me gusta la ensalada de pepino."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6672,6 +7232,15 @@
       "preguntó"
     ]
   },
+  "revisa": {
+    "meaning": "Revisa; imperativo/presente de 'revisar'.",
+    "examples": [
+      "Revisa tu orina para saber si estás hidratado.",
+      "Revisa tu tarea antes de entregarla."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "revisar": {
     "meaning": "Revisar; checar.",
     "examples": [
@@ -6860,6 +7429,15 @@
       "entré"
     ]
   },
+  "sandía": {
+    "meaning": "Melancia.",
+    "examples": [
+      "La fruta, como sandía y naranja, hidrata mucho.",
+      "En verano me gusta comer sandía."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "sangre": {
     "meaning": "Sangue.",
     "examples": [
@@ -6887,6 +7465,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "seca": {
+    "meaning": "Seca.",
+    "examples": [
+      "Tu boca se siente seca cuando necesitas agua.",
+      "La ropa ya está seca."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "mojada"
+    ]
+  },
   "secreto": {
     "meaning": "Segredo.",
     "examples": [
@@ -6901,6 +7490,15 @@
     "examples": [
       "Jugamos juntos y nos contamos secretos.",
       "Tiene muchos secretos guardados."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sed": {
+    "meaning": "Sede.",
+    "examples": [
+      "Te sientes con sed cuando tu cuerpo necesita agua.",
+      "Tengo mucha sed."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6951,6 +7549,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "sensación": {
+    "meaning": "Sensação.",
+    "examples": [
+      "La sed es la sensación que te dice que bebas agua.",
+      "Tuve una sensación extraña."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "sentir": {
     "meaning": "Sentir.",
     "examples": [
@@ -6996,6 +7603,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "señales": {
+    "meaning": "Sinais.",
+    "examples": [
+      "Estas son las señales de deshidratación.",
+      "El médico explicó las señales de la enfermedad."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "señor": {
     "meaning": "Senhor.",
     "examples": [
@@ -7023,6 +7639,33 @@
     "examples": [
       "Ha sido un día maravilloso.",
       "Había sido un viaje muy largo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "siente": {
+    "meaning": "Sente; presente de 'sentirse'.",
+    "examples": [
+      "Tu boca se siente seca cuando necesitas agua.",
+      "Él se siente feliz hoy."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sientes": {
+    "meaning": "Sentes; presente de 'sentirse'.",
+    "examples": [
+      "Te sientes enfermo cuando estás deshidratado.",
+      "¿Cómo te sientes hoy?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "significa": {
+    "meaning": "Significa.",
+    "examples": [
+      "Amarillo oscuro significa que necesitas más agua.",
+      "Esa palabra significa 'amor'."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7129,6 +7772,15 @@
       "bajo"
     ]
   },
+  "soda": {
+    "meaning": "Refrigerante.",
+    "examples": [
+      "Bebe menos soda y jugo azucarado.",
+      "No me gusta tomar soda."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "sol": {
     "meaning": "Sol.",
     "examples": [
@@ -7218,6 +7870,24 @@
     "synonyms": [
       "rió"
     ],
+    "antonyms": []
+  },
+  "sopa": {
+    "meaning": "Sopa.",
+    "examples": [
+      "La sopa también ayuda a hidratar tu cuerpo.",
+      "Mi mamá preparó sopa de verduras."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sorbos": {
+    "meaning": "Golinhos; pequenos goles.",
+    "examples": [
+      "Durante el ejercicio, bebe pequeños sorbos de agua.",
+      "Tomó el café en pequeños sorbos."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "soy": {
@@ -7464,6 +8134,15 @@
     ],
     "antonyms": []
   },
+  "tarde": {
+    "meaning": "Tarde (período do dia).",
+    "examples": [
+      "Bebe un vaso de agua por la tarde.",
+      "Nos vemos por la tarde."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "taza": {
     "meaning": "Xícara; copo, como medida de cozinha.",
     "examples": [
@@ -7487,6 +8166,15 @@
     "examples": [
       "Este es el tema de nutrición.",
       "El tema de hoy es las vitaminas."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "temperatura": {
+    "meaning": "Temperatura.",
+    "examples": [
+      "El agua ayuda a controlar tu temperatura.",
+      "La temperatura hoy es muy alta."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7622,6 +8310,15 @@
     "examples": [
       "Los granos integrales tienen más fibra.",
       "Las frutas tienen vitaminas."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tienes": {
+    "meaning": "Tens; presente de 'tener'.",
+    "examples": [
+      "Tienes dolor de cabeza cuando estás deshidratado.",
+      "¿Cuántos años tienes?"
     ],
     "synonyms": [],
     "antonyms": []
@@ -7828,6 +8525,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "té": {
+    "meaning": "Chá.",
+    "examples": [
+      "Bebe té sin azúcar para hidratarte.",
+      "Me gusta el té caliente."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "un": {
     "meaning": "Um; artigo indefinido masculino singular.",
     "examples": [
@@ -7919,6 +8625,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "vaso": {
+    "meaning": "Copo.",
+    "examples": [
+      "Bebe 1 vaso de agua cuando te despiertas.",
+      "Ponme un vaso de agua, por favor."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vasos": {
+    "meaning": "Copos.",
+    "examples": [
+      "Bebe cerca de 8 vasos de agua todos los días.",
+      "Compramos vasos nuevos para la cocina."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "veces": {
     "meaning": "Vezes; plural de 'vez'.",
     "examples": [
@@ -7951,6 +8675,15 @@
     "examples": [
       "Come verduras y fruta en cada comida.",
       "La mitad del plato debe tener verduras."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "verificación": {
+    "meaning": "Verificação.",
+    "examples": [
+      "Haz una lista de verificación para un día.",
+      "El código de verificación llegó por mensaje."
     ],
     "synonyms": [],
     "antonyms": []
@@ -8172,5 +8905,14 @@
     "antonyms": [
       "ella"
     ]
+  },
+  "única": {
+    "meaning": "Única.",
+    "examples": [
+      "El agua no es la única manera de hidratarte.",
+      "Ella es la única persona que lo sabe."
+    ],
+    "synonyms": [],
+    "antonyms": []
   }
 }
