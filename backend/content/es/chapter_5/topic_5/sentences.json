@@ -1,0 +1,511 @@
+[
+  {
+    "id": "es-sent-1389",
+    "sentence": "Mi lavadora es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0469",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1390",
+    "sentence": "La lavadora está en la cocina.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0469",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0058",
+      "es-wd-0066"
+    ]
+  },
+  {
+    "id": "es-sent-1391",
+    "sentence": "Tiene una lavadora vieja.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0469",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1392",
+    "sentence": "Mi secadora es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0470",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1393",
+    "sentence": "La secadora está en el baño.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0470",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0067"
+    ]
+  },
+  {
+    "id": "es-sent-1394",
+    "sentence": "Tiene una secadora vieja.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0470",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1395",
+    "sentence": "Mi microondas es nuevo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0471",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1396",
+    "sentence": "El microondas está en la cocina.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0471",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0058",
+      "es-wd-0066"
+    ]
+  },
+  {
+    "id": "es-sent-1397",
+    "sentence": "Tiene un microondas viejo.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0471",
+      "es-wd-0379"
+    ]
+  },
+  {
+    "id": "es-sent-1398",
+    "sentence": "Mi licuadora es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0472",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1399",
+    "sentence": "La licuadora está en la cocina.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0472",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0058",
+      "es-wd-0066"
+    ]
+  },
+  {
+    "id": "es-sent-1400",
+    "sentence": "Tiene una licuadora vieja.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0472",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1401",
+    "sentence": "Mi tostadora es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0473",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1402",
+    "sentence": "La tostadora está en la cocina.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0473",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0058",
+      "es-wd-0066"
+    ]
+  },
+  {
+    "id": "es-sent-1403",
+    "sentence": "Tiene una tostadora vieja.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0473",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1404",
+    "sentence": "Mi plancha es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0474",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1405",
+    "sentence": "La plancha está en el cuarto.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0474",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0064"
+    ]
+  },
+  {
+    "id": "es-sent-1406",
+    "sentence": "Tiene una plancha vieja.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0474",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1407",
+    "sentence": "Mi aspiradora es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0475",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1408",
+    "sentence": "La aspiradora está en el cuarto.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0475",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0064"
+    ]
+  },
+  {
+    "id": "es-sent-1409",
+    "sentence": "Tiene una aspiradora vieja.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0475",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1410",
+    "sentence": "Mi ventilador es nuevo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0476",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1411",
+    "sentence": "El ventilador está en el cuarto.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0476",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0064"
+    ]
+  },
+  {
+    "id": "es-sent-1412",
+    "sentence": "Tiene un ventilador viejo.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0476",
+      "es-wd-0379"
+    ]
+  },
+  {
+    "id": "es-sent-1413",
+    "sentence": "Mi cafetera es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0477",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1414",
+    "sentence": "La cafetera está en la cocina.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0477",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0058",
+      "es-wd-0066"
+    ]
+  },
+  {
+    "id": "es-sent-1415",
+    "sentence": "Tiene una cafetera vieja.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0477",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1416",
+    "sentence": "El microondas es eléctrico.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0471",
+      "es-wd-0017",
+      "es-wd-0478"
+    ]
+  },
+  {
+    "id": "es-sent-1417",
+    "sentence": "El ventilador es eléctrico.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0476",
+      "es-wd-0017",
+      "es-wd-0478"
+    ]
+  },
+  {
+    "id": "es-sent-1418",
+    "sentence": "Mi ventilador nuevo es eléctrico.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0476",
+      "es-wd-0202",
+      "es-wd-0017",
+      "es-wd-0478"
+    ]
+  },
+  {
+    "id": "es-sent-1419",
+    "sentence": "La lavadora es eléctrica.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0469",
+      "es-wd-0017",
+      "es-wd-0479"
+    ]
+  },
+  {
+    "id": "es-sent-1420",
+    "sentence": "La plancha es eléctrica.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0474",
+      "es-wd-0017",
+      "es-wd-0479"
+    ]
+  },
+  {
+    "id": "es-sent-1421",
+    "sentence": "Mi cafetera nueva es eléctrica.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0477",
+      "es-wd-0203",
+      "es-wd-0017",
+      "es-wd-0479"
+    ]
+  },
+  {
+    "id": "es-sent-1422",
+    "sentence": "La lavadora no quiere funcionar.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0469",
+      "es-wd-0036",
+      "es-wd-0480"
+    ]
+  },
+  {
+    "id": "es-sent-1423",
+    "sentence": "El ventilador puede funcionar bien.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0476",
+      "es-wd-0323",
+      "es-wd-0480",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-1424",
+    "sentence": "Mi cafetera va a funcionar hoy.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0477",
+      "es-wd-0164",
+      "es-wd-0253",
+      "es-wd-0480",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1425",
+    "sentence": "Quiero romper la tostadora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0481",
+      "es-wd-0058",
+      "es-wd-0473"
+    ]
+  },
+  {
+    "id": "es-sent-1426",
+    "sentence": "Puede romper el microondas aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0481",
+      "es-wd-0057",
+      "es-wd-0471",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1427",
+    "sentence": "Quiero romper mi plancha ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0481",
+      "es-wd-0016",
+      "es-wd-0474",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1428",
+    "sentence": "Quiero lavar la ropa.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0482",
+      "es-wd-0058"
+    ]
+  },
+  {
+    "id": "es-sent-1429",
+    "sentence": "Puede lavar la ropa aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0482",
+      "es-wd-0058",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1430",
+    "sentence": "Quiero lavar mi lavadora ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0482",
+      "es-wd-0016",
+      "es-wd-0469",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1431",
+    "sentence": "Quiero calentar la comida.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0483",
+      "es-wd-0058",
+      "es-wd-0109"
+    ]
+  },
+  {
+    "id": "es-sent-1432",
+    "sentence": "Puede calentar la comida aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0483",
+      "es-wd-0058",
+      "es-wd-0109",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1433",
+    "sentence": "Quiero calentar mi comida ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0483",
+      "es-wd-0016",
+      "es-wd-0109",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1434",
+    "sentence": "Quiero limpiar la casa.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0484",
+      "es-wd-0058",
+      "es-wd-0063"
+    ]
+  },
+  {
+    "id": "es-sent-1435",
+    "sentence": "Puede limpiar la cocina aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0484",
+      "es-wd-0058",
+      "es-wd-0066",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1436",
+    "sentence": "Quiero limpiar mi casa ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0484",
+      "es-wd-0016",
+      "es-wd-0063",
+      "es-wd-0145"
+    ]
+  }
+]

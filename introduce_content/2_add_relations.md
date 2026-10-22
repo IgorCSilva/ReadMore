@@ -3,7 +3,7 @@
 native: pt
 idiom: es
 chapter: 5
-topic: 3
+topic: 5
 file: backend/content/<idiom>/chapter_<N>/topic_<M>/words.json
 
 Build the reverse-lookup relations for this chapter/topic in
