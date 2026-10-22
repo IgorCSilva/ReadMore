@@ -10,36 +10,33 @@ If there are some emojis like 😊 you can remove them.
 == Initial ==
 =============
 
+La estrella brillante de Rubén
 
-Garbancito
+Una historia tierna para ayudar a los pequeños a dormir tranquilos. Descubre cómo una estrellita mágica hace que Rubén se sienta seguro y acompañado toda la noche, transformando su miedo en dulces sueños.
 
+---------------------------------------
 
-Garbancito es un niño muy pequeñito pero lleno de valentía. Un día vive una gran aventura cuando un buey se lo traga por accidente. ¡Descubre cómo su ingenio lo ayuda a volver a casa!
---------------------------
+Había una vez un niño pequeño llamado Rubén que vivía en una casita junto a un campo muy lindo. A Rubén le encantaba jugar todo el día bajo el sol, pero cuando llegaba la noche y se apagaban las luces, le daba un poquito de miedo. 🌙
 
-Había una vez un niño tan, pero tan pequeño, que todos lo llamaban Garbancito, porque era tan chiquitito como un garbanzo. Aunque su tamaño era diminuto, Garbancito era muy valiente y le fascinaba salir a pasear.
+Una noche, mientras se acomodaba en su camita, su mamá se sentó a la orilla y le enseñó algo que tenía en las manos:
 
+—Rubén, ¿ves esta estrellita brillante? ✨
 
-Un día, su mamá le dijo:
-—Garbancito, ten mucho cuidado y no te vayas muy lejos.
+—Sí, mami. ¿Es una estrella de verdad? —preguntó Rubén con los ojos muy abiertos de la emoción. 😮
 
-Pero Garbancito era curioso y, cantando fuerte para que nadie lo pisara, caminaba por el campo diciendo:
-—“¡Pachín, pachán, pachón! Mucho cuidado con lo que hacen, pachín, pachán, pachón, a Garbancito no pisen” 🎶.
+—Es una estrellita especial que brilla en la oscuridad. Ella te va a cuidar para que nunca te sientas solito cuando apaguemos la luz.
 
-De repente, empezó a llover 🌧️. Para no mojarse, Garbancito se escondió debajo de un repollo gigante 🥬. Pero justo en ese momento, un buey hambriento que pasaba por allí se comió el repollo entero de un bocado, sin darse cuenta de que Garbancito estaba adentro. ¡Oh, no! 😱
+La mamá de Rubén pegó la pequeña estrella luminosa en el techo del cuarto.
 
-Desde el interior de la panza del buey, Garbancito, sin perder el ánimo, empezó a gritar con todas sus fuerzas para que lo encontraran:
-—“¡Mamá, mamá! ¡Estoy en la panza del buey, donde ni llueve ni nieva!” 🌦️.
+—Esta estrellita te va a acompañar todas las noches —dijo con una sonrisa llena de cariño. 😊
 
-Sus papás, muy preocupados, salieron a buscarlo, llamándolo:
-—¡Garbancito! ¿Dónde estás?
+Esa noche, Rubén miró hacia el techo y vio cómo la estrella brillaba suavemente. Sintió que el cuarto ya no estaba tan oscuro y que su nueva amiga lo cuidaba desde arriba. 🌟
 
-Y Garbancito contestaba desde adentro del animal:
-—¡En la panza del buey, donde ni llueve ni nieva! 🌧️❄️
+—Buenas noches, estrellita —susurró Rubén antes de cerrar los ojos. 😴
 
-Entonces, al papá de Garbancito se le ocurrió una idea brillante 💡. Se acercó despacito y le hizo cosquillas al buey 🐂 en la nariz. El animal no pudo evitar un gran estornudo y... ¡achís! 🤧 Garbancito salió volando por el aire y cayó sano y salvo en los brazos de sus papás, que le dieron un abrazo enorme 🤗.
+Desde ese día, cada vez que le daba un poquito de temor, miraba su estrella brillante y recordaba que no estaba solo. La oscuridad dejó de asustarlo y se volvió un lugar mágico para soñar. ✨
 
-Y colorín colorado, este cuento se ha acabado 🎉.
+Fin
 
 =========
 == End ==

@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**Nosotros** vamos **a** **instalar** **la** **aplicación** **en** **el** **celular** **de** **mi** **madre**."
+  },
+  {
+    "sentence_number": 2,
+    "content": "**Mi** **tía** **va** **a** **descargar** **la** **aplicación** **de** **su** **banco**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "**Mi** **prima** **va** **a** **subir** **una** **foto** **antes** **de** **dormir**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "**Mi** **abuela** **no** sabe **buscar** **una** **foto** **en** **la** **galería**."
+  },
+  {
+    "sentence_number": 5,
+    "content": "**Mi** **prima** **va** **a** **borrar** **el** **video** **porque** **es** **grande**."
+  },
+  {
+    "sentence_number": 6,
+    "content": "**Nosotros** vamos **a** **descargar** **una** **aplicación** **nueva** **para** **editar** **fotos**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "**Él** quiere **compartir** **el** **video** **con** **su** **amigo**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "**Mi** **primo** **va** **a** **descargar** **la** **aplicación** **cuando** **llega** **a** **casa**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "**Mi** **prima** **va** **a** **grabar** **un** **video** **de** **su** **cumpleaños**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "**Mi** **vecino** **va** **a** **tomar** **una** **foto** **de** **su** **perro** **en** **el** **parque**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**Mi** **abuelo** **va** **a** **grabar** **un** **video** **de** **su** **familia**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "**Mi** **amigo** **va** **a** **tomar** **una** **foto** **de** **su** **perro**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "**Yo** **quiero** **borrar** **una** **foto** **vieja** **de** **mi** **teléfono**."
+  },
+  {
+    "sentence_number": 14,
+    "content": "**Mi** **hijo** **va** **a** **actualizar** **el** **celular** **y** **la** **aplicación** **hoy**."
+  },
+  {
+    "sentence_number": 15,
+    "content": "**Yo** **quiero** **subir** **una** **foto** **nueva** **a** **la** **galería**."
+  },
+  {
+    "sentence_number": 16,
+    "content": "**Mi** **hermano** **va** **a** **borrar** **una** **foto** fea **de** **su** **celular**."
+  },
+  {
+    "sentence_number": 17,
+    "content": "**Ella** **va** **a** **tomar** **una** **foto** **de** **la** **fiesta** **de** **cumpleaños**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**Él** **no** **tiene** tiempo **para** **editar** **el** **video** **hoy**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "**Nosotros** vamos **a** **actualizar** **el** **teléfono** **y** **la** **aplicación** juntos."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**Ella** **va** **a** **borrar** **el** **video** **viejo** **de** **la** **galería**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "**Mi** **esposo** **va** **a** **tomar** **una** **foto** **de** **la** **playa**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "**Nosotros** vamos **a** **compartir** **el** **video** **con** **nuestra** **familia**."
+  },
+  {
+    "sentence_number": 23,
+    "content": "**Mi** **hija** **va** **a** **descargar** otra **aplicación** **para** **jugar**."
+  },
+  {
+    "sentence_number": 24,
+    "content": "**Mi** **tío** **va** **a** **buscar** **la** **aplicación** **en** **su** **celular**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "**Mi** **hija** **va** **a** **descargar** **la** **aplicación** **e** **instalar** **ahora**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**Mi** **prima** **va** **a** **compartir** **el** **video** **por** **el** **chat**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "**Mi** **amigo** **va** **a** **editar** **la** **foto** **e** **instalar** otra **aplicación**."
+  },
+  {
+    "sentence_number": 28,
+    "content": "**Ella** **va** **a** **editar** **el** **video** **de** **la** **fiesta**."
+  },
+  {
+    "sentence_number": 29,
+    "content": "**Mi** **hermano** **va** **a** **tomar** **una** **foto** **e** **instalar** **la** **aplicación** **nueva** **en** **su** **celular**."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**Nosotros** vamos **a** **instalar** **la** **aplicación** **en** **la** **computadora** **nueva**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "Preciso **actualizar** **la** **aplicación** **hoy**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "**Mi** **vecina** **va** **a** **buscar** **un** **video** **en** **la** **galería**."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**Nosotros** vamos **a** **compartir** **la** **foto** **con** **todos**."
+  },
+  {
+    "sentence_number": 34,
+    "content": "**Él** **va** **a** **grabar** **un** **video** **con** **su** **teléfono** **nuevo**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "**Él** **va** **a** **editar** **la** **foto** **y** **enviar** **a** **su** **amigo**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "**Mi** **padre** **va** **a** **editar** **la** **foto** **de** **la** **fiesta**."
+  },
+  {
+    "sentence_number": 37,
+    "content": "**Ella** **va** **a** **compartir** **la** **foto** **con** **su** **esposo**."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**Él** **va** **a** **subir** **la** **foto** **a** **la** **aplicación** **ahora**."
+  },
+  {
+    "sentence_number": 39,
+    "content": "**Él** **va** **a** **actualizar** **la** **aplicación** **e** **instalar** otra."
+  },
+  {
+    "sentence_number": 40,
+    "content": "**Él** **va** **a** **descargar** otra **aplicación** **mañana**."
+  },
+  {
+    "sentence_number": 41,
+    "content": "**Él** **va** **a** **editar** **la** **foto** **antes** **de** **subir**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "**Él** **no** sabe **instalar** **la** **aplicación** **sin** **ayuda**."
+  },
+  {
+    "sentence_number": 43,
+    "content": "**Yo** **quiero** **buscar** **una** **foto** **de** **mi** **cumpleaños** **en** **la** **galería**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**Él** **va** **a** **tomar** **una** **foto** **de** **su** **hijo**."
+  },
+  {
+    "sentence_number": 45,
+    "content": "**Tú** **no** quieres **actualizar** **la** **aplicación** **hoy**."
+  },
+  {
+    "sentence_number": 46,
+    "content": "**Nosotros** vamos **a** **actualizar** **la** **aplicación** **antes** **de** **viajar**."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**Ella** **no** sabe **instalar** **la** **aplicación** **sola**."
+  },
+  {
+    "sentence_number": 48,
+    "content": "**Mi** **tío** **va** **a** **descargar** otra **aplicación** **para** **tomar** fotos."
+  },
+  {
+    "sentence_number": 49,
+    "content": "**Mi** **primo** **va** **a** **borrar** **una** **foto** fea."
+  },
+  {
+    "sentence_number": 50,
+    "content": "**Ella** **va** **a** **subir** **el** **video** **a** **la** **aplicación**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "**Nosotros** vamos **a** **subir** **el** **video** **a** **la** **galería** **de** **la** **familia**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "**Él** **va** **a** **actualizar** **la** **aplicación** **antes** **de** **salir**."
+  },
+  {
+    "sentence_number": 53,
+    "content": "**Yo** **quiero** **descargar** **una** **aplicación** **nueva** **hoy**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "**Mi** **abuela** **no** **tiene** **wifi** **para** **instalar** **la** **aplicación**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "**Yo** **quiero** **editar** **la** **foto** **antes** **de** **compartir**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "**Mi** **madre** **va** **a** **actualizar** **el** **teléfono** **y** **la** **aplicación**."
+  },
+  {
+    "sentence_number": 57,
+    "content": "**Mi** **esposo** **va** **a** **tomar** **una** **foto** **en** **el** **parque**."
+  },
+  {
+    "sentence_number": 58,
+    "content": "**Mi** **madre** **va** **a** **tomar** **una** **foto** **de** **la** **mesa**."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**Ella** **va** **a** **descargar** **la** **aplicación** **de** **su** **amiga**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "**Mi** **hermana** **va** **a** **subir** **el** **video** **a** **internet** **hoy**."
+  },
+  {
+    "sentence_number": 61,
+    "content": "**Mi** **hermano** **va** **a** **subir** **una** **foto** **a** **la** **galería** **de** **su** **teléfono**."
+  },
+  {
+    "sentence_number": 62,
+    "content": "**Él** **va** **a** **grabar** **un** **video** **de** **la** **fiesta**."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**Ella** **no** sabe **editar** **la** **foto**, **pero** aprende rápido."
+  },
+  {
+    "sentence_number": 64,
+    "content": "**Ella** **va** **a** **buscar** **una** **foto** **de** **su** **familia** **en** **la** **computadora**."
+  },
+  {
+    "sentence_number": 65,
+    "content": "**Ella** **va** **a** **grabar** **un** **video** **e** **instalar** **la** **aplicación** **después**."
+  },
+  {
+    "sentence_number": 66,
+    "content": "**Ella** **va** **a** **buscar** **una** **foto** **en** **la** **galería**."
+  },
+  {
+    "sentence_number": 67,
+    "content": "**Él** **va** **a** **compartir** **el** **video** **con** **todos**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**Ella** **va** **a** **grabar** **un** **video** **de** **su** **gato**."
+  },
+  {
+    "sentence_number": 69,
+    "content": "**Ella** **va** **a** **descargar** **la** **aplicación** **después** **de** **cenar**."
+  },
+  {
+    "sentence_number": 70,
+    "content": "**Mi** **vecino** **va** **a** **tomar** **una** **foto** **de** **su** **gato**."
+  },
+  {
+    "sentence_number": 71,
+    "content": "**Ella** **va** **a** **tomar** **una** **foto** **de** **su** **familia** **hoy**."
+  },
+  {
+    "sentence_number": 72,
+    "content": "**Ella** **va** **a** **actualizar** **la** **aplicación** **de** **fotos** **mañana**."
+  },
+  {
+    "sentence_number": 73,
+    "content": "**Ella** **va** **a** **buscar** **la** **foto** **de** **la** **fiesta**."
+  },
+  {
+    "sentence_number": 74,
+    "content": "**Nosotros** vamos **a** **instalar** **la** **aplicación** **cuando** **hay** **wifi**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "**Ella** **va** **a** **grabar** **un** **video** corto **de** **su** **viaje**."
+  },
+  {
+    "sentence_number": 76,
+    "content": "**Yo** **quiero** **grabar** **un** **video** **de** **mi** **cumpleaños**."
+  },
+  {
+    "sentence_number": 77,
+    "content": "**Yo** **quiero** **grabar** **un** **video** **antes** **de** **salir**."
+  },
+  {
+    "sentence_number": 78,
+    "content": "**Ella** **va** **a** **instalar** **la** **aplicación** **en** **la** **tablet**."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**Nosotros** vamos **a** **borrar** **la** **foto** **e** **instalar** **la** **aplicación** **nueva**."
+  },
+  {
+    "sentence_number": 80,
+    "content": "**Ella** **va** **a** **buscar** **el** **video** **en** **la** **galería** **de** **su** **celular**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "**Yo** **quiero** **editar** **la** **foto** **de** **mi** **perro**."
+  },
+  {
+    "sentence_number": 82,
+    "content": "**Ellos** van **a** **buscar** **una** **foto** **en** **la** **galería** **de** **la** **computadora**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "**Mi** **abuelo** **va** **a** **borrar** **una** **foto** **de** **su** **teléfono** **viejo**."
+  },
+  {
+    "sentence_number": 84,
+    "content": "**Mi** **esposa** **va** **a** **compartir** **el** **video** **con** **su** **madre**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "**Él** **va** **a** **tomar** **una** **foto** **antes** **de** **viajar**."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**Mi** **hermana** **va** **a** **subir** **una** **foto** **a** **la** **galería**."
+  },
+  {
+    "sentence_number": 87,
+    "content": "**Mi** **amiga** **va** **a** **editar** **el** **video** **antes** **de** **enviar**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "**Mi** **tía** **va** **a** **borrar** **una** **foto** **antes** **de** **dormir**."
+  },
+  {
+    "sentence_number": 89,
+    "content": "**Nosotros** vamos **a** **compartir** **la** **foto** **con** **la** **familia**."
+  },
+  {
+    "sentence_number": 90,
+    "content": "**Él** **va** **a** **compartir** **la** **foto** **con** **su** **vecino**."
+  },
+  {
+    "sentence_number": 91,
+    "content": "**Ella** **va** **a** **buscar** **la** **foto** **e** **instalar** **la** **aplicación** otra vez."
+  },
+  {
+    "sentence_number": 92,
+    "content": "**Mi** **hijo** **va** **a** **instalar** **la** **aplicación** **nueva** **mañana**."
+  },
+  {
+    "sentence_number": 93,
+    "content": "**Mi** **tío** **va** **a** **borrar** **el** **video** **viejo**."
+  },
+  {
+    "sentence_number": 94,
+    "content": "**Mi** **tía** **va** **a** **actualizar** **la** **aplicación** **antes** **de** **dormir**."
+  },
+  {
+    "sentence_number": 95,
+    "content": "**Mi** **esposa** **va** **a** **compartir** **la** **foto** **con** **su** **amiga**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "**Mi** **primo** **va** **a** **grabar** **un** **video** **con** **la** **cámara** **nueva**."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**Mi** **abuela** **va** **a** **borrar** **la** **foto** que **no** **es** **buena**."
+  },
+  {
+    "sentence_number": 98,
+    "content": "**Nosotros** vamos **a** **instalar** **la** **aplicación** **en** **el** **teléfono** **de** **mi** **hermano**."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**Ella** **va** **a** **subir** **el** **video** **a** **internet**."
+  },
+  {
+    "sentence_number": 100,
+    "content": "**Mi** **hijo** **va** **a** **instalar** **la** **aplicación** **e** **ir** **a** **dormir**."
+  }
+]

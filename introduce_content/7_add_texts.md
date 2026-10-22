@@ -2,7 +2,7 @@
 
 target: es
 chapter: 5
-topic: 3
+topic: 5
 
 Medium, standalone reading/shadowing passages for this chapter/topic — the content
 backend/app/domain/entities.py's Topic.texts (texts.json) feeds to the frontend's Shadowing

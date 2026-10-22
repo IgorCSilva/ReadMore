@@ -2722,5 +2722,185 @@
     "root_word_id": "wd-0618",
     "word": "desconectada",
     "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0455",
+    "root_word_id": "wd-0619",
+    "word": "foto",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0456",
+    "root_word_id": "wd-0620",
+    "word": "aplicación",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0457",
+    "root_word_id": "wd-0621",
+    "word": "video",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0458",
+    "root_word_id": "wd-0622",
+    "word": "galería",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0459",
+    "root_word_id": "wd-0623",
+    "word": "tomar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0460",
+    "root_word_id": "wd-0624",
+    "word": "compartir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0461",
+    "root_word_id": "wd-0625",
+    "word": "descargar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0462",
+    "root_word_id": "wd-0626",
+    "word": "instalar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0463",
+    "root_word_id": "wd-0627",
+    "word": "subir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0464",
+    "root_word_id": "wd-0628",
+    "word": "grabar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0465",
+    "root_word_id": "wd-0629",
+    "word": "editar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0466",
+    "root_word_id": "wd-0630",
+    "word": "borrar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0467",
+    "root_word_id": "wd-0631",
+    "word": "actualizar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0468",
+    "root_word_id": "wd-0632",
+    "word": "buscar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0469",
+    "root_word_id": "wd-0633",
+    "word": "lavadora",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0470",
+    "root_word_id": "wd-0634",
+    "word": "secadora",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0471",
+    "root_word_id": "wd-0635",
+    "word": "microondas",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0472",
+    "root_word_id": "wd-0636",
+    "word": "licuadora",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0473",
+    "root_word_id": "wd-0637",
+    "word": "tostadora",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0474",
+    "root_word_id": "wd-0638",
+    "word": "plancha",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0475",
+    "root_word_id": "wd-0639",
+    "word": "aspiradora",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0476",
+    "root_word_id": "wd-0640",
+    "word": "ventilador",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0477",
+    "root_word_id": "wd-0641",
+    "word": "cafetera",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0478",
+    "root_word_id": "wd-0642",
+    "word": "eléctrico",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0479",
+    "root_word_id": "wd-0643",
+    "word": "eléctrica",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0480",
+    "root_word_id": "wd-0644",
+    "word": "funcionar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0481",
+    "root_word_id": "wd-0645",
+    "word": "romper",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0482",
+    "root_word_id": "wd-0646",
+    "word": "lavar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0483",
+    "root_word_id": "wd-0647",
+    "word": "calentar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0484",
+    "root_word_id": "wd-0648",
+    "word": "limpiar",
+    "gender_id": "not_apply"
   }
 ]

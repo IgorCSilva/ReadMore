@@ -2,17 +2,17 @@
 
 target: es
 chapter: 5
-topic: 3
+topic: 5
 
 Now, generate simple natural sentences, following the pattern in
 backend/content/es/chapter_<chapter>/topic_<topic>/sentences.json.
 For each word/expression, create 3 natural sentences.
 
-- For Korean
+- For Korean (target: ko)
 Sentences with pure Korean, every conjugated verb in 해요체 per the register
 decision.
 
-- For Chinese
+- For Chinese (target: zh)
 Sentences with pure Chinese, using casual 你 per the register decision and
 only aspect particles/measure words already taught.
 

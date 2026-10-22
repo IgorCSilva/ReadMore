@@ -554,6 +554,44 @@
         "desconectado": "desconectado",
         "desconectada": "desconectada"
       }
+    },
+    "topic_4": {
+      "pt": {
+        "foto": "foto",
+        "aplicativo": "aplicación",
+        "vídeo": "video",
+        "galeria": "galería",
+        "tirar": "tomar",
+        "compartilhar": "compartir",
+        "baixar": "descargar",
+        "instalar": "instalar",
+        "subir": "subir",
+        "gravar": "grabar",
+        "editar": "editar",
+        "apagar": "borrar",
+        "atualizar": "actualizar",
+        "buscar": "buscar"
+      }
+    },
+    "topic_5": {
+      "pt": {
+        "máquina de lavar": "lavadora",
+        "secadora": "secadora",
+        "micro-ondas": "microondas",
+        "liquidificador": "licuadora",
+        "torradeira": "tostadora",
+        "ferro de passar": "plancha",
+        "aspirador de pó": "aspiradora",
+        "ventilador": "ventilador",
+        "cafeteira": "cafetera",
+        "elétrico": "eléctrico",
+        "elétrica": "eléctrica",
+        "funcionar": "funcionar",
+        "quebrar": "romper",
+        "lavar": "lavar",
+        "esquentar": "calentar",
+        "limpar": "limpiar"
+      }
     }
   }
 }
