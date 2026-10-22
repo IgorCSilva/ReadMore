@@ -1,0 +1,448 @@
+[
+  {
+    "id": "es-sent-1347",
+    "sentence": "Mi foto es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0455",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1348",
+    "sentence": "La foto está en la galería.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0455",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0058",
+      "es-wd-0458"
+    ]
+  },
+  {
+    "id": "es-sent-1349",
+    "sentence": "Tiene una foto vieja.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0455",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1350",
+    "sentence": "Mi aplicación es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0456",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1351",
+    "sentence": "La aplicación no funciona.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0456",
+      "es-wd-0036",
+      "es-wd-0418"
+    ]
+  },
+  {
+    "id": "es-sent-1352",
+    "sentence": "Tiene una aplicación vieja.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0456",
+      "es-wd-0380"
+    ]
+  },
+  {
+    "id": "es-sent-1353",
+    "sentence": "Mi video es nuevo.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0457",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1354",
+    "sentence": "El video está en la galería.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0457",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0058",
+      "es-wd-0458"
+    ]
+  },
+  {
+    "id": "es-sent-1355",
+    "sentence": "Tiene un video viejo.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0076",
+      "es-wd-0457",
+      "es-wd-0379"
+    ]
+  },
+  {
+    "id": "es-sent-1356",
+    "sentence": "Mi galería es nueva.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0458",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1357",
+    "sentence": "La galería está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0458",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1358",
+    "sentence": "Tiene una galería grande.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0077",
+      "es-wd-0458",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1359",
+    "sentence": "Quiero tomar una foto.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0459",
+      "es-wd-0077",
+      "es-wd-0455"
+    ]
+  },
+  {
+    "id": "es-sent-1360",
+    "sentence": "Puede tomar la foto aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0459",
+      "es-wd-0058",
+      "es-wd-0455",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1361",
+    "sentence": "Quiero tomar mi foto ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0459",
+      "es-wd-0016",
+      "es-wd-0455",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1362",
+    "sentence": "Quiero compartir el video.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0460",
+      "es-wd-0057",
+      "es-wd-0457"
+    ]
+  },
+  {
+    "id": "es-sent-1363",
+    "sentence": "Puede compartir la foto aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0460",
+      "es-wd-0058",
+      "es-wd-0455",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1364",
+    "sentence": "Quiero compartir mi video ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0460",
+      "es-wd-0016",
+      "es-wd-0457",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1365",
+    "sentence": "Quiero descargar la aplicación.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0461",
+      "es-wd-0058",
+      "es-wd-0456"
+    ]
+  },
+  {
+    "id": "es-sent-1366",
+    "sentence": "Puede descargar el video aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0461",
+      "es-wd-0057",
+      "es-wd-0457",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1367",
+    "sentence": "Quiero descargar mi aplicación ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0461",
+      "es-wd-0016",
+      "es-wd-0456",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1368",
+    "sentence": "Quiero instalar la aplicación.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0462",
+      "es-wd-0058",
+      "es-wd-0456"
+    ]
+  },
+  {
+    "id": "es-sent-1369",
+    "sentence": "Puede instalar la aplicación aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0462",
+      "es-wd-0058",
+      "es-wd-0456",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1370",
+    "sentence": "Quiero instalar mi aplicación hoy.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0462",
+      "es-wd-0016",
+      "es-wd-0456",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1371",
+    "sentence": "Quiero subir una foto.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0463",
+      "es-wd-0077",
+      "es-wd-0455"
+    ]
+  },
+  {
+    "id": "es-sent-1372",
+    "sentence": "Puede subir el video aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0463",
+      "es-wd-0057",
+      "es-wd-0457",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1373",
+    "sentence": "Quiero subir mi foto ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0463",
+      "es-wd-0016",
+      "es-wd-0455",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1374",
+    "sentence": "Quiero grabar un video.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0464",
+      "es-wd-0076",
+      "es-wd-0457"
+    ]
+  },
+  {
+    "id": "es-sent-1375",
+    "sentence": "Puede grabar el video aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0464",
+      "es-wd-0057",
+      "es-wd-0457",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1376",
+    "sentence": "Quiero grabar mi video ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0464",
+      "es-wd-0016",
+      "es-wd-0457",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1377",
+    "sentence": "Quiero editar la foto.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0465",
+      "es-wd-0058",
+      "es-wd-0455"
+    ]
+  },
+  {
+    "id": "es-sent-1378",
+    "sentence": "Puede editar el video aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0465",
+      "es-wd-0057",
+      "es-wd-0457",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1379",
+    "sentence": "Quiero editar mi foto ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0465",
+      "es-wd-0016",
+      "es-wd-0455",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1380",
+    "sentence": "Quiero borrar la foto.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0466",
+      "es-wd-0058",
+      "es-wd-0455"
+    ]
+  },
+  {
+    "id": "es-sent-1381",
+    "sentence": "Puede borrar el video aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0466",
+      "es-wd-0057",
+      "es-wd-0457",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1382",
+    "sentence": "Quiero borrar mi foto ahora.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0466",
+      "es-wd-0016",
+      "es-wd-0455",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1383",
+    "sentence": "Quiero actualizar la aplicación.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0467",
+      "es-wd-0058",
+      "es-wd-0456"
+    ]
+  },
+  {
+    "id": "es-sent-1384",
+    "sentence": "Puede actualizar el teléfono aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0467",
+      "es-wd-0057",
+      "es-wd-0411",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1385",
+    "sentence": "Quiero actualizar mi aplicación hoy.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0467",
+      "es-wd-0016",
+      "es-wd-0456",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1386",
+    "sentence": "Quiero buscar una foto.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0468",
+      "es-wd-0077",
+      "es-wd-0455"
+    ]
+  },
+  {
+    "id": "es-sent-1387",
+    "sentence": "Puede buscar el video aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0468",
+      "es-wd-0057",
+      "es-wd-0457",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1388",
+    "sentence": "Quiero buscar mi foto en la galería.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0468",
+      "es-wd-0016",
+      "es-wd-0455",
+      "es-wd-0084",
+      "es-wd-0058",
+      "es-wd-0458"
+    ]
+  }
+]

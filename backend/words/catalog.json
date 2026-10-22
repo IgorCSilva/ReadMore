@@ -2471,6 +2471,126 @@
     {
       "word_id": "wd-0618",
       "filename": "disconnected_feminine"
+    },
+    {
+      "word_id": "wd-0619",
+      "filename": "photo"
+    },
+    {
+      "word_id": "wd-0620",
+      "filename": "app"
+    },
+    {
+      "word_id": "wd-0621",
+      "filename": "video"
+    },
+    {
+      "word_id": "wd-0622",
+      "filename": "gallery"
+    },
+    {
+      "word_id": "wd-0623",
+      "filename": "to_take_a_photo"
+    },
+    {
+      "word_id": "wd-0624",
+      "filename": "to_share"
+    },
+    {
+      "word_id": "wd-0625",
+      "filename": "to_download"
+    },
+    {
+      "word_id": "wd-0626",
+      "filename": "to_install"
+    },
+    {
+      "word_id": "wd-0627",
+      "filename": "to_upload"
+    },
+    {
+      "word_id": "wd-0628",
+      "filename": "to_record"
+    },
+    {
+      "word_id": "wd-0629",
+      "filename": "to_edit"
+    },
+    {
+      "word_id": "wd-0630",
+      "filename": "to_delete"
+    },
+    {
+      "word_id": "wd-0631",
+      "filename": "to_update"
+    },
+    {
+      "word_id": "wd-0632",
+      "filename": "to_search"
+    },
+    {
+      "word_id": "wd-0633",
+      "filename": "washing_machine"
+    },
+    {
+      "word_id": "wd-0634",
+      "filename": "dryer"
+    },
+    {
+      "word_id": "wd-0635",
+      "filename": "microwave"
+    },
+    {
+      "word_id": "wd-0636",
+      "filename": "blender"
+    },
+    {
+      "word_id": "wd-0637",
+      "filename": "toaster"
+    },
+    {
+      "word_id": "wd-0638",
+      "filename": "iron"
+    },
+    {
+      "word_id": "wd-0639",
+      "filename": "vacuum_cleaner"
+    },
+    {
+      "word_id": "wd-0640",
+      "filename": "fan"
+    },
+    {
+      "word_id": "wd-0641",
+      "filename": "coffee_maker"
+    },
+    {
+      "word_id": "wd-0642",
+      "filename": "electric"
+    },
+    {
+      "word_id": "wd-0643",
+      "filename": "electric_feminine"
+    },
+    {
+      "word_id": "wd-0644",
+      "filename": "to_function"
+    },
+    {
+      "word_id": "wd-0645",
+      "filename": "to_break"
+    },
+    {
+      "word_id": "wd-0646",
+      "filename": "to_wash"
+    },
+    {
+      "word_id": "wd-0647",
+      "filename": "to_heat"
+    },
+    {
+      "word_id": "wd-0648",
+      "filename": "to_clean"
     }
   ]
 }
