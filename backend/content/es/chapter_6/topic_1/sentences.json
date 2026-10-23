@@ -1,0 +1,526 @@
+[
+  {
+    "id": "es-sent-1437",
+    "sentence": "El tiempo es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0485",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1438",
+    "sentence": "El tiempo está bien.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0485",
+      "es-wd-0255",
+      "es-wd-0011"
+    ]
+  },
+  {
+    "id": "es-sent-1439",
+    "sentence": "El tiempo es bueno hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0485",
+      "es-wd-0017",
+      "es-wd-0006",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1440",
+    "sentence": "El sol es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0486",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1441",
+    "sentence": "Hay sol hoy.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0486",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1442",
+    "sentence": "El sol está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0486",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1443",
+    "sentence": "La lluvia es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0487",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1444",
+    "sentence": "Hay lluvia hoy.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0487",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1445",
+    "sentence": "La lluvia está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0487",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1446",
+    "sentence": "Hace mucho viento.",
+    "word_ids": [
+      "es-wd-0500",
+      "es-wd-0127",
+      "es-wd-0488"
+    ]
+  },
+  {
+    "id": "es-sent-1447",
+    "sentence": "El viento está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0488",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1448",
+    "sentence": "Hay viento hoy.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0488",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1449",
+    "sentence": "La nieve es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0489",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1450",
+    "sentence": "Hay nieve hoy.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0489",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1451",
+    "sentence": "La nieve está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0489",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1452",
+    "sentence": "La nube es grande.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0490",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1453",
+    "sentence": "La nube es pequeña.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0490",
+      "es-wd-0017",
+      "es-wd-0225"
+    ]
+  },
+  {
+    "id": "es-sent-1454",
+    "sentence": "Hay una nube allí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0490",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1455",
+    "sentence": "Hace mucho calor.",
+    "word_ids": [
+      "es-wd-0500",
+      "es-wd-0127",
+      "es-wd-0491"
+    ]
+  },
+  {
+    "id": "es-sent-1456",
+    "sentence": "El calor es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0491",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1457",
+    "sentence": "Hoy hay mucho calor.",
+    "word_ids": [
+      "es-wd-0146",
+      "es-wd-0081",
+      "es-wd-0127",
+      "es-wd-0491"
+    ]
+  },
+  {
+    "id": "es-sent-1458",
+    "sentence": "Hace mucho frío.",
+    "word_ids": [
+      "es-wd-0500",
+      "es-wd-0127",
+      "es-wd-0492"
+    ]
+  },
+  {
+    "id": "es-sent-1459",
+    "sentence": "El frío está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0492",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1460",
+    "sentence": "Tiene frío.",
+    "word_ids": [
+      "es-wd-0080",
+      "es-wd-0492"
+    ]
+  },
+  {
+    "id": "es-sent-1461",
+    "sentence": "El pronóstico es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0493",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1462",
+    "sentence": "El pronóstico está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0493",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1463",
+    "sentence": "Hay un pronóstico nuevo.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0493",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1464",
+    "sentence": "Hace diez grados.",
+    "word_ids": [
+      "es-wd-0500",
+      "es-wd-0142",
+      "es-wd-0494"
+    ]
+  },
+  {
+    "id": "es-sent-1465",
+    "sentence": "Hace cinco grados.",
+    "word_ids": [
+      "es-wd-0500",
+      "es-wd-0137",
+      "es-wd-0494"
+    ]
+  },
+  {
+    "id": "es-sent-1466",
+    "sentence": "Hace tres grados hoy.",
+    "word_ids": [
+      "es-wd-0500",
+      "es-wd-0135",
+      "es-wd-0494",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1467",
+    "sentence": "El tiempo es soleado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0485",
+      "es-wd-0017",
+      "es-wd-0495"
+    ]
+  },
+  {
+    "id": "es-sent-1468",
+    "sentence": "El día está soleado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0007",
+      "es-wd-0255",
+      "es-wd-0495"
+    ]
+  },
+  {
+    "id": "es-sent-1469",
+    "sentence": "Hoy es un día soleado.",
+    "word_ids": [
+      "es-wd-0146",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0007",
+      "es-wd-0495"
+    ]
+  },
+  {
+    "id": "es-sent-1470",
+    "sentence": "El tiempo está nublado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0485",
+      "es-wd-0255",
+      "es-wd-0496"
+    ]
+  },
+  {
+    "id": "es-sent-1471",
+    "sentence": "El día es nublado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0007",
+      "es-wd-0017",
+      "es-wd-0496"
+    ]
+  },
+  {
+    "id": "es-sent-1472",
+    "sentence": "Hoy es un día nublado.",
+    "word_ids": [
+      "es-wd-0146",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0007",
+      "es-wd-0496"
+    ]
+  },
+  {
+    "id": "es-sent-1473",
+    "sentence": "El tiempo es lluvioso.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0485",
+      "es-wd-0017",
+      "es-wd-0497"
+    ]
+  },
+  {
+    "id": "es-sent-1474",
+    "sentence": "El día está lluvioso.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0007",
+      "es-wd-0255",
+      "es-wd-0497"
+    ]
+  },
+  {
+    "id": "es-sent-1475",
+    "sentence": "Hoy es un día lluvioso.",
+    "word_ids": [
+      "es-wd-0146",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0007",
+      "es-wd-0497"
+    ]
+  },
+  {
+    "id": "es-sent-1476",
+    "sentence": "El tiempo está ventoso.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0485",
+      "es-wd-0255",
+      "es-wd-0498"
+    ]
+  },
+  {
+    "id": "es-sent-1477",
+    "sentence": "El día es ventoso.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0007",
+      "es-wd-0017",
+      "es-wd-0498"
+    ]
+  },
+  {
+    "id": "es-sent-1478",
+    "sentence": "Hoy es un día ventoso.",
+    "word_ids": [
+      "es-wd-0146",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0007",
+      "es-wd-0498"
+    ]
+  },
+  {
+    "id": "es-sent-1479",
+    "sentence": "El tiempo es despejado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0485",
+      "es-wd-0017",
+      "es-wd-0499"
+    ]
+  },
+  {
+    "id": "es-sent-1480",
+    "sentence": "El día está despejado.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0007",
+      "es-wd-0255",
+      "es-wd-0499"
+    ]
+  },
+  {
+    "id": "es-sent-1481",
+    "sentence": "Hoy es un día despejado.",
+    "word_ids": [
+      "es-wd-0146",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0007",
+      "es-wd-0499"
+    ]
+  },
+  {
+    "id": "es-sent-1482",
+    "sentence": "Hace sol hoy.",
+    "word_ids": [
+      "es-wd-0500",
+      "es-wd-0486",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1483",
+    "sentence": "Hace viento hoy.",
+    "word_ids": [
+      "es-wd-0500",
+      "es-wd-0488",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1484",
+    "sentence": "Hace frío aquí.",
+    "word_ids": [
+      "es-wd-0500",
+      "es-wd-0492",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1485",
+    "sentence": "Llueve mucho hoy.",
+    "word_ids": [
+      "es-wd-0501",
+      "es-wd-0127",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1486",
+    "sentence": "Llueve aquí.",
+    "word_ids": [
+      "es-wd-0501",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1487",
+    "sentence": "No llueve hoy.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0501",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1488",
+    "sentence": "Nieva mucho hoy.",
+    "word_ids": [
+      "es-wd-0502",
+      "es-wd-0127",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1489",
+    "sentence": "Nieva aquí.",
+    "word_ids": [
+      "es-wd-0502",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1490",
+    "sentence": "No nieva hoy.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0502",
+      "es-wd-0146"
+    ]
+  }
+]
