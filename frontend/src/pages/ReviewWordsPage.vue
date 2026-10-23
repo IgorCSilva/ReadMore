@@ -48,7 +48,7 @@ import type { Word } from '../shared/types'
 
 // Values from 20 to 40, 5 by 5 — the select button's whole range.
 const QUANTITY_OPTIONS = [20, 25, 30, 35, 40]
-const DAYS_BEFORE = 7
+const DAYS_BEFORE = 3
 const DAYS_AFTER = 3
 
 const quantity = ref(QUANTITY_OPTIONS[0])
