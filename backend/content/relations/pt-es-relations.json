@@ -593,5 +593,29 @@
         "limpar": "limpiar"
       }
     }
+  },
+  "chapter_6": {
+    "topic_1": {
+      "pt": {
+        "tempo": "tiempo",
+        "sol": "sol",
+        "chuva": "lluvia",
+        "vento": "viento",
+        "neve": "nieve",
+        "nuvem": "nube",
+        "calor": "calor",
+        "frio": "frío",
+        "previsão": "pronóstico",
+        "graus": "grados",
+        "ensolarado": "soleado",
+        "nublado": "nublado",
+        "chuvoso": "lluvioso",
+        "ventoso": "ventoso",
+        "limpo": "despejado",
+        "faz": "hace",
+        "chove": "llueve",
+        "neva": "nieva"
+      }
+    }
   }
 }

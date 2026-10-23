@@ -2591,6 +2591,82 @@
     {
       "word_id": "wd-0648",
       "filename": "to_clean"
+    },
+    {
+      "word_id": "wd-0649",
+      "filename": "telephone"
+    },
+    {
+      "word_id": "wd-0650",
+      "filename": "weather"
+    },
+    {
+      "word_id": "wd-0651",
+      "filename": "sun"
+    },
+    {
+      "word_id": "wd-0652",
+      "filename": "rain"
+    },
+    {
+      "word_id": "wd-0653",
+      "filename": "wind"
+    },
+    {
+      "word_id": "wd-0654",
+      "filename": "snow"
+    },
+    {
+      "word_id": "wd-0655",
+      "filename": "cloud"
+    },
+    {
+      "word_id": "wd-0656",
+      "filename": "heat"
+    },
+    {
+      "word_id": "wd-0657",
+      "filename": "cold"
+    },
+    {
+      "word_id": "wd-0658",
+      "filename": "forecast"
+    },
+    {
+      "word_id": "wd-0659",
+      "filename": "degrees"
+    },
+    {
+      "word_id": "wd-0660",
+      "filename": "sunny"
+    },
+    {
+      "word_id": "wd-0661",
+      "filename": "cloudy"
+    },
+    {
+      "word_id": "wd-0662",
+      "filename": "rainy"
+    },
+    {
+      "word_id": "wd-0663",
+      "filename": "windy"
+    },
+    {
+      "word_id": "wd-0664",
+      "filename": "clear"
+    },
+    {
+      "word_id": "wd-0665",
+      "filename": "weather_is"
+    },
+    {
+      "word_id": "wd-0666",
+      "filename": "it_rains"
+    },
+    {
+      "word_id": "wd-0667",
+      "filename": "it_snows"
     }
   ]
 }

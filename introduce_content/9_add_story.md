@@ -10,33 +10,62 @@ If there are some emojis like 😊 you can remove them.
 == Initial ==
 =============
 
-La estrella brillante de Rubén
+Huellas de luna
 
-Una historia tierna para ayudar a los pequeños a dormir tranquilos. Descubre cómo una estrellita mágica hace que Rubén se sienta seguro y acompañado toda la noche, transformando su miedo en dulces sueños.
 
----------------------------------------
+Un cuento relajante y sensorial que invita a los pequeños a seguir un rastro mágico de luz y calma antes de dormir, perfecto para desconectar y soñar bonito.
+----------------------------
 
-Había una vez un niño pequeño llamado Rubén que vivía en una casita junto a un campo muy lindo. A Rubén le encantaba jugar todo el día bajo el sol, pero cuando llegaba la noche y se apagaban las luces, le daba un poquito de miedo. 🌙
+Cuando el cielo se pinta de azul oscuro y las primeras estrellas empiezan a brillar, allá arriba, muy alto, la luna despierta.
 
-Una noche, mientras se acomodaba en su camita, su mamá se sentó a la orilla y le enseñó algo que tenía en las manos:
+Es redonda y brillante, con esa luz fresca y blanquita que baña todo lo que la rodea. Esta noche, como cada noche mágica, decide bajar al bosque.
 
-—Rubén, ¿ves esta estrellita brillante? ✨
+Baja muy despacito, flotando entre las ramas, sin hacer ruido.
 
-—Sí, mami. ¿Es una estrella de verdad? —preguntó Rubén con los ojos muy abiertos de la emoción. 😮
+Sus pies, si es que los tiene, no pisan fuerte, solo dejan un rastro de luz, unas huellas plateadas que se posan sobre el pasto, sobre las piedras, sobre los troncos dormidos.
 
-—Es una estrellita especial que brilla en la oscuridad. Ella te va a cuidar para que nunca te sientas solito cuando apaguemos la luz.
+Nadie la ve. Nadie la oye. Ella camina tranquila, dejando su rastro de calma y de magia.
 
-La mamá de Rubén pegó la pequeña estrella luminosa en el techo del cuarto.
+Un poco más allá, en una madriguera redondita, un conejo blanco llamado Luno duerme acurrucado, con las orejas dobladas y los ojitos cerrados.
 
-—Esta estrellita te va a acompañar todas las noches —dijo con una sonrisa llena de cariño. 😊
+Pero algo, una luz muy suave, le roza la nariz.
 
-Esa noche, Rubén miró hacia el techo y vio cómo la estrella brillaba suavemente. Sintió que el cuarto ya no estaba tan oscuro y que su nueva amiga lo cuidaba desde arriba. 🌟
+Luno se estira con un suspiro, abre un ojito y ve un destello. Allí, en el claro, justo frente a su casita, hay una huella brillante en el pasto.
 
-—Buenas noches, estrellita —susurró Rubén antes de cerrar los ojos. 😴
+Se despereza como solo los conejitos saben hacerlo y se acerca con curiosidad. Toca la huella con su patita. Está fresca, como el rocío de la mañana, y huele a jazmín recién abierto.
 
-Desde ese día, cada vez que le daba un poquito de temor, miraba su estrella brillante y recordaba que no estaba solo. La oscuridad dejó de asustarlo y se volvió un lugar mágico para soñar. ✨
+—¿Quién ha caminado por aquí? —susurra Luno, sin esperar respuesta.
 
-Fin
+La luna ya se ha ido, pero sus huellas siguen ahí. Así que Luno, despacito, comienza a seguirlas. Una, dos, tres huellas más adelante y el conejito atraviesa un helecho alto que le acaricia las orejas como si le hiciera cariñitos.
+
+Después salta sobre una piedra lisa, que suena apenas bajo sus patitas suaves. Y sigue adelante revisando todas las huellas una por una.
+
+El sendero lo lleva por un camino entre los árboles. Las ramas crujen muy suavecito al moverse con el viento. Un grillo canta, pero su canción no despierta, sino que arrulla.
+
+Y cada huella le regala a Luno una sensación distinta. Una huele a lavanda y le recuerda a su mamá cuando lo abraza. Otra huele a hojas mojadas, y Luno imagina el sonido de la lluvia a lo lejos. Otra le hace cosquillas en los bigotes, como si alguien invisible le hiciera reír muy bajito.
+
+El camino no tiene prisa. Y Luno tampoco. Da saltitos cortos, se detiene, respira los aromas, observa los brillos plateados y se deja llevar.
+
+Al final del sendero, cuando el bosque se abre en un claro secreto, Luno se detiene.
+
+Allí está, la luna, brillando justo encima de un charquito redondo. Reflejada en el agua, como si tuviera una hermana que vive debajo, jugando con el resplandor de su luz sobre la superficie.
+
+Luno se sienta a mirar y sonríe.
+
+—Gracias por las huellas —susurra—. Me han traído hasta ti.
+
+La luna no le contesta, pero una brisa suave le pasa por la cara, como una caricia que no se ve.
+
+El conejito bosteza. Un bostezo largo, de esos que hacen ruido. Se acurruca en el pasto blandito del claro, pone una oreja sobre sus patas, y la otra le cae con suavidad sobre su carita.
+
+Y justo antes de quedarse dormido, nota algo en la barriguita: una huella plateada, dibujada con luz.
+
+La luna lo arropa desde el cielo. Y Luno sueña con huellas brillantes que lo acompañan flotando entre estrellas, llevándolo siempre a lugares tranquilos.
+
+Y tú, si cierras los ojitos muy despacio quizá también veas una huella de luna. Quizá la sigas. Quizá te lleve a un lugar donde todo es suave y relajante.
+
+Buenas noches, amor mío.
+Buenas noches, luna.
 
 =========
 == End ==
