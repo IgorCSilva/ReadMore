@@ -2461,7 +2461,7 @@
   },
   {
     "word_id": "es-wd-0411",
-    "root_word_id": "wd-0500",
+    "root_word_id": "wd-0649",
     "word": "teléfono",
     "gender_id": "masculine"
   },
@@ -2901,6 +2901,114 @@
     "word_id": "es-wd-0484",
     "root_word_id": "wd-0648",
     "word": "limpiar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0485",
+    "root_word_id": "wd-0650",
+    "word": "tiempo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0486",
+    "root_word_id": "wd-0651",
+    "word": "sol",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0487",
+    "root_word_id": "wd-0652",
+    "word": "lluvia",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0488",
+    "root_word_id": "wd-0653",
+    "word": "viento",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0489",
+    "root_word_id": "wd-0654",
+    "word": "nieve",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0490",
+    "root_word_id": "wd-0655",
+    "word": "nube",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0491",
+    "root_word_id": "wd-0656",
+    "word": "calor",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0492",
+    "root_word_id": "wd-0657",
+    "word": "frío",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0493",
+    "root_word_id": "wd-0658",
+    "word": "pronóstico",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0494",
+    "root_word_id": "wd-0659",
+    "word": "grados",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0495",
+    "root_word_id": "wd-0660",
+    "word": "soleado",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0496",
+    "root_word_id": "wd-0661",
+    "word": "nublado",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0497",
+    "root_word_id": "wd-0662",
+    "word": "lluvioso",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0498",
+    "root_word_id": "wd-0663",
+    "word": "ventoso",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0499",
+    "root_word_id": "wd-0664",
+    "word": "despejado",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0500",
+    "root_word_id": "wd-0665",
+    "word": "hace",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0501",
+    "root_word_id": "wd-0666",
+    "word": "llueve",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0502",
+    "root_word_id": "wd-0667",
+    "word": "nieva",
     "gender_id": "not_apply"
   }
 ]

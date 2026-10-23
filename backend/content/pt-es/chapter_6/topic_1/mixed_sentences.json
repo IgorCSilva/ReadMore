@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "Lucas disse que **el** **pronóstico** mudou."
+  },
+  {
+    "sentence_number": 2,
+    "content": "Lucas confirmou **el** **pronóstico** **de** **mañana**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "**El** **pronóstico** **de** **hoy** mostrou **mucho** **viento**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "Rafael disse que **hace** **ocho** **grados**."
+  },
+  {
+    "sentence_number": 5,
+    "content": "Lucas avisou que **hace** **mucho** **frío** **en** **el** inverno."
+  },
+  {
+    "sentence_number": 6,
+    "content": "Pablo avisou que **el** **tiempo** ficou **despejado** rapidamente."
+  },
+  {
+    "sentence_number": 7,
+    "content": "Marina disse que **el** **pronóstico** estava errado."
+  },
+  {
+    "sentence_number": 8,
+    "content": "Marina disse que **el** **día** estava **lluvioso**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "Carlos avisou que **la** **lluvia** molhou **todo**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "**La** **nieve** cobriu **todo**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "Pedro confirmou que **el** **tiempo** **de** **mañana** parecia **ventoso**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "Beatriz disse que **hace** **mucho** **frío**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "Pedro disse que **el** **sol** **y** **el** **calor** voltaram **hoy**."
+  },
+  {
+    "sentence_number": 14,
+    "content": "Lucas confirmou que **el** **tiempo** **de** **mañana** parecia **lluvioso**."
+  },
+  {
+    "sentence_number": 15,
+    "content": "Beatriz avisou que **hace** **frío** **hoy**."
+  },
+  {
+    "sentence_number": 16,
+    "content": "Pablo perguntou se **nieva** **mañana**."
+  },
+  {
+    "sentence_number": 17,
+    "content": "Daniela disse que **hace** **más** **calor** **hoy**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**El** **tiempo** continuava **ventoso**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "Ana sentiu **el** **calor** **de** **la** **tarde**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "Rafael confirmou que **nieva** **mucho** **en** **la** montanha."
+  },
+  {
+    "sentence_number": 21,
+    "content": "Sofia disse que **el** **día** estava **soleado**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "**El** **pronóstico** **de** **mañana** mostrou **mucho** **calor**."
+  },
+  {
+    "sentence_number": 23,
+    "content": "Sofia mostrou **el** **pronóstico** **de** **hoy**."
+  },
+  {
+    "sentence_number": 24,
+    "content": "Pablo avisou que **llueve** **mucho** **hoy**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "Rafael confirmou que **hoy** **hace** **mucho** **sol**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**El** **pronóstico** avisou que **llueve** **mucho** **mañana**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "Marina perguntou se **hace** **calor** **hoy**."
+  },
+  {
+    "sentence_number": 28,
+    "content": "Ana avisou que **la** **nieve** **no** parava **de** cair."
+  },
+  {
+    "sentence_number": 29,
+    "content": "Ana avisou que **la** **lluvia** **y** **el** **viento** **no** paravam."
+  },
+  {
+    "sentence_number": 30,
+    "content": "Daniela comentou que **llueve** **mucho** **en** **el** verão."
+  },
+  {
+    "sentence_number": 31,
+    "content": "Ana avisou que **el** **tiempo** ficou **ventoso** rapidamente."
+  },
+  {
+    "sentence_number": 32,
+    "content": "Beatriz confirmou que **el** **tiempo** **de** **mañana** parecia **despejado**."
+  },
+  {
+    "sentence_number": 33,
+    "content": "Rafael comentou que **la** **nube** parecia escura."
+  },
+  {
+    "sentence_number": 34,
+    "content": "Carlos perguntou se **llueve** **mañana**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "Rafael checou **el** **pronóstico** **antes** **de** **salir**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "Pedro avisou que **hace** **mucho** **calor**."
+  },
+  {
+    "sentence_number": 37,
+    "content": "Sofia perguntou se **hace** **frío** **ahora**."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**El** **pronóstico** disse que **hace** **sol** **mañana**."
+  },
+  {
+    "sentence_number": 39,
+    "content": "Sofia disse que **hace** **frío** outra vez **hoy**."
+  },
+  {
+    "sentence_number": 40,
+    "content": "Carlos disse que **el** **viento** fechou **la** **puerta**."
+  },
+  {
+    "sentence_number": 41,
+    "content": "Sofia disse que **llueve** **sin** **parar**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "**El** **tiempo** ficou **soleado** **hoy**."
+  },
+  {
+    "sentence_number": 43,
+    "content": "Lucas avisou que **hace** **tres** **grados**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "Pedro disse que **el** **sol** apareceu **después** **de** **la** **lluvia**."
+  },
+  {
+    "sentence_number": 45,
+    "content": "Pedro comentou que **la** **nube** cobriu **el** céu rapidamente."
+  },
+  {
+    "sentence_number": 46,
+    "content": "Daniela confirmou que **nieva** **en** **la** montanha."
+  },
+  {
+    "sentence_number": 47,
+    "content": "Carlos perguntou quantos **grados** fazia."
+  },
+  {
+    "sentence_number": 48,
+    "content": "Pablo disse que **nieva** **mucho** **en** **el** inverno."
+  },
+  {
+    "sentence_number": 49,
+    "content": "Pablo disse que estavam **diez** **grados**."
+  },
+  {
+    "sentence_number": 50,
+    "content": "**El** **tiempo** continuava **nublado**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "Carlos disse que **hace** **sol** **hoy**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "Marina avisou que **hace** **poco** **viento** **hoy**."
+  },
+  {
+    "sentence_number": 53,
+    "content": "Pedro avisou que **el** **tiempo** **de** **mañana** parecia **soleado**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "Beatriz confirmou que **la** **nieve** **y** **el** **frío** chegaram juntos."
+  },
+  {
+    "sentence_number": 55,
+    "content": "Lucas perguntou como estava **el** **tiempo**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "Pablo confirmou que **hace** **menos** **frío** **hoy**."
+  },
+  {
+    "sentence_number": 57,
+    "content": "**El** **tiempo** ficou **despejado** **hoy**."
+  },
+  {
+    "sentence_number": 58,
+    "content": "Carlos disse que **el** **día** estava **despejado**."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**El** **tiempo** ficou **lluvioso** **hoy**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "**El** **calor** **de** **hoy** foi intenso."
+  },
+  {
+    "sentence_number": 61,
+    "content": "Rafael perguntou se **hace** **frío** lá fora."
+  },
+  {
+    "sentence_number": 62,
+    "content": "**El** **viento** derrubou **una** árvore."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**El** **pronóstico** confirmou **nieve** para **mañana**."
+  },
+  {
+    "sentence_number": 64,
+    "content": "Pablo confirmou que **el** **tiempo** **de** **mañana** parecia **nublado**."
+  },
+  {
+    "sentence_number": 65,
+    "content": "**La** **lluvia** começou **sin** aviso."
+  },
+  {
+    "sentence_number": 66,
+    "content": "**El** **tiempo** ficou **nublado** **hoy**."
+  },
+  {
+    "sentence_number": 67,
+    "content": "**El** **tiempo** continuava **lluvioso**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "Marina avisou que **hace** **calor** **ahora**."
+  },
+  {
+    "sentence_number": 69,
+    "content": "Sofia avisou que **hace** **viento** lá fora."
+  },
+  {
+    "sentence_number": 70,
+    "content": "Daniela confirmou que **la** **nieve** derreteu rápido."
+  },
+  {
+    "sentence_number": 71,
+    "content": "Marina disse que **hace** **sol** lá fora."
+  },
+  {
+    "sentence_number": 72,
+    "content": "Rafael avisou que **llueve** **todo** **el** **día**."
+  },
+  {
+    "sentence_number": 73,
+    "content": "Daniela disse que **nieva** **mucho** **hoy**."
+  },
+  {
+    "sentence_number": 74,
+    "content": "**El** **tiempo** continuava **soleado**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "Marina disse que **nieva** **mucho** **en** **el** norte."
+  },
+  {
+    "sentence_number": 76,
+    "content": "Marina confirmou que **el** **tiempo** **de** **hoy** **es** **soleado**."
+  },
+  {
+    "sentence_number": 77,
+    "content": "Daniela confirmou que estavam **cinco** **grados**."
+  },
+  {
+    "sentence_number": 78,
+    "content": "**El** **tiempo** ficou **ventoso** **hoy**."
+  },
+  {
+    "sentence_number": 79,
+    "content": "Pablo disse que **la** **lluvia** parou **antes** **de** começar **el** jogo."
+  },
+  {
+    "sentence_number": 80,
+    "content": "Carlos avisou que **la** **nube** **y** **el** **viento** traziam **lluvia**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "**El** **frío** chegou cedo."
+  },
+  {
+    "sentence_number": 82,
+    "content": "**La** **lluvia** parou **después** **de** **una** **hora**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "Daniela confirmou que **el** **pronóstico** **de** **hoy** estava **bien**."
+  },
+  {
+    "sentence_number": 84,
+    "content": "**El** **tiempo** continuava **despejado**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "Daniela avisou que **el** **tiempo** ficou **nublado** rapidamente."
+  },
+  {
+    "sentence_number": 86,
+    "content": "Marina avisou que **la** **nieve** cobriu **todo** outra vez."
+  },
+  {
+    "sentence_number": 87,
+    "content": "Rafael disse que **el** **día** estava **ventoso**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "Carlos disse que **el** **día** estava **nublado**."
+  },
+  {
+    "sentence_number": 89,
+    "content": "Pedro comentou que **el** **viento** **no** parava."
+  },
+  {
+    "sentence_number": 90,
+    "content": "Pedro avisou que **el** **viento** parou **después** **de** **la** tormenta."
+  },
+  {
+    "sentence_number": 91,
+    "content": "Pedro comentou que **hace** **viento** **hoy**."
+  },
+  {
+    "sentence_number": 92,
+    "content": "Sofia disse que **el** **tiempo** mudou **después** **de** **la** **lluvia**."
+  },
+  {
+    "sentence_number": 93,
+    "content": "Lucas disse que **la** **nube** tampou **el** **sol** **de** **la** **tarde**."
+  },
+  {
+    "sentence_number": 94,
+    "content": "Ana disse que **hace** **calor** **hoy**."
+  },
+  {
+    "sentence_number": 95,
+    "content": "Marina disse que **el** **tiempo** **de** **mañana** parecia **diferente**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "Sofia avisou que **el** **tiempo** ficou **lluvioso** rapidamente."
+  },
+  {
+    "sentence_number": 97,
+    "content": "Beatriz disse que **la** **nieve** cobriu **el** jardim."
+  },
+  {
+    "sentence_number": 98,
+    "content": "Lucas disse que **el** **calor** **y** **el** **viento** continuavam fortes."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**La** **nube** cobriu **el** **sol**."
+  },
+  {
+    "sentence_number": 100,
+    "content": "**La** **nube** escondeu **el** **sol** rapidamente."
+  }
+]
