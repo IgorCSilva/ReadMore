@@ -17,6 +17,7 @@ from fastapi.staticfiles import StaticFiles
 from starlette.exceptions import HTTPException as StarletteHTTPException
 
 from backend.app.application.use_cases.add_correction import AddCorrection
+from backend.app.application.use_cases.chat_with_ai import ChatWithAI
 from backend.app.application.use_cases.get_chapters import GetChapters
 from backend.app.application.use_cases.get_user import GetUser
 from backend.app.application.use_cases.get_user_words import GetUserWords
@@ -32,6 +33,7 @@ from backend.app.application.use_cases.mark_word_known import MarkWordKnown
 from backend.app.application.use_cases.show_word_again import ShowWordAgain
 from backend.app.application.use_cases.synthesize_speech import SynthesizeSpeech
 from backend.app.domain.exceptions import (
+    ChatUpstreamError,
     InvalidCorrectionError,
     LanguageNotFoundError,
     LearningTopicNotFoundError,
@@ -41,6 +43,7 @@ from backend.app.domain.exceptions import (
 )
 from backend.app.domain.value_objects import Email, LanguagePair
 from backend.app.infrastructure.dtos.chapters import ChapterDTO, ChaptersResponse
+from backend.app.infrastructure.dtos.chat import ChatRequest, ChatResponse
 from backend.app.infrastructure.dtos.corrections import CorrectionCreateRequest
 from backend.app.infrastructure.dtos.learning_topics import (
     LearningTopicDTO,
@@ -66,6 +69,7 @@ from backend.app.infrastructure.repositories.google_sheets_users_repository impo
     GoogleSheetsUsersRepository,
 )
 from backend.app.infrastructure.repositories.edge_tts_client import EdgeTtsClient
+from backend.app.infrastructure.repositories.gemini_chat_client import GeminiChatClient
 from backend.app.infrastructure.repositories.json_catalog_repository import JsonCatalogRepository
 from backend.app.infrastructure.repositories.json_learning_content_repository import (
     JsonLearningContentRepository,
@@ -82,9 +86,17 @@ SENTENCES_PATH = WORDS_DIR / "sentences.json"
 CUES_PATH = WORDS_DIR / "cues.json"
 
 LANG_CHOICES = {"origin", "target"}
+CEFR_LEVELS = {"A1", "A2", "B1", "B2", "C1", "C2"}
+CHAT_HISTORY_LIMIT = 12  # turns sent upstream per request, regardless of what the client holds locally
 
 SHEETS_WEBAPP_URL = os.environ.get("SHEETS_WEBAPP_URL", "")
 SHEETS_API_TOKEN = os.environ.get("SHEETS_API_TOKEN", "")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+# .strip() or "..." rather than os.environ.get(..., default): docker-compose
+# always sets this var (interpolated from .env), so an unfilled "GEMINI_MODEL="
+# in .env arrives here as "", not absent — which os.environ.get's own default
+# wouldn't catch.
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "").strip() or "gemini-flash-lite-latest"
 
 app = FastAPI()
 
@@ -121,6 +133,11 @@ async def sheets_error_handler(request: Request, exc: SheetsError):
 
 @app.exception_handler(TtsUpstreamError)
 async def tts_upstream_error_handler(request: Request, exc: TtsUpstreamError):
+    return JSONResponse(status_code=502, content={"error": str(exc)})
+
+
+@app.exception_handler(ChatUpstreamError)
+async def chat_upstream_error_handler(request: Request, exc: ChatUpstreamError):
     return JSONResponse(status_code=502, content={"error": str(exc)})
 
 
@@ -176,6 +193,10 @@ def get_corrections_repository() -> GoogleSheetsCorrectionsRepository:
 
 def get_tts_port() -> EdgeTtsClient:
     return EdgeTtsClient()
+
+
+def get_chat_port() -> GeminiChatClient:
+    return GeminiChatClient(GEMINI_API_KEY, GEMINI_MODEL)
 
 
 def get_stories_repository() -> JsonStoriesRepository:
@@ -421,6 +442,25 @@ def post_correction(
         payload.correction,
     )
     return {"ok": True}
+
+
+@app.post("/chat", response_model=ChatResponse)
+def post_chat(
+    payload: ChatRequest,
+    chat_port: GeminiChatClient = Depends(get_chat_port),
+):
+    language_pair = _parse_lang(payload.lang.strip() or "pt-en")
+    level = payload.level.strip().upper()
+    if level not in CEFR_LEVELS:
+        return JSONResponse(status_code=400, content={"error": f"invalid 'level': must be one of {sorted(CEFR_LEVELS)}"})
+    message = payload.message.strip()
+    if not message:
+        return JSONResponse(status_code=400, content={"error": "missing 'message'"})
+
+    history = [(turn.role, turn.content) for turn in payload.history[-CHAT_HISTORY_LIMIT:]]
+    use_case = ChatWithAI(chat_port)
+    reply = use_case.execute(history, message, level, language_pair.origin, language_pair.target)
+    return ChatResponse(reply=reply)
 
 
 @app.get("/tts")

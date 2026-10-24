@@ -3010,5 +3010,125 @@
     "root_word_id": "wd-0667",
     "word": "nieva",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0503",
+    "root_word_id": "wd-0668",
+    "word": "vaca",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0504",
+    "root_word_id": "wd-0669",
+    "word": "caballo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0505",
+    "root_word_id": "wd-0670",
+    "word": "oveja",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0506",
+    "root_word_id": "wd-0671",
+    "word": "cerdo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0507",
+    "root_word_id": "wd-0672",
+    "word": "gallina",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0508",
+    "root_word_id": "wd-0177",
+    "word": "pez",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0509",
+    "root_word_id": "wd-0673",
+    "word": "león",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0510",
+    "root_word_id": "wd-0674",
+    "word": "oso",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0511",
+    "root_word_id": "wd-0675",
+    "word": "elefante",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0512",
+    "root_word_id": "wd-0676",
+    "word": "rana",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0513",
+    "root_word_id": "wd-0677",
+    "word": "granja",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0514",
+    "root_word_id": "wd-0678",
+    "word": "selva",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0515",
+    "root_word_id": "wd-0679",
+    "word": "bosque",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0516",
+    "root_word_id": "wd-0680",
+    "word": "mar",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0517",
+    "root_word_id": "wd-0681",
+    "word": "río",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0518",
+    "root_word_id": "wd-0682",
+    "word": "nido",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0519",
+    "root_word_id": "wd-0683",
+    "word": "vive",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0520",
+    "root_word_id": "wd-0684",
+    "word": "salvaje",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0521",
+    "root_word_id": "wd-0685",
+    "word": "doméstico",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0522",
+    "root_word_id": "wd-0686",
+    "word": "doméstica",
+    "gender_id": "feminine"
   }
 ]

@@ -30,6 +30,7 @@ export default defineConfig({
       '/mark-known': BACKEND,
       '/show-word': BACKEND,
       '/corrections': BACKEND,
+      '/chat': BACKEND,
     },
   },
   test: {

@@ -1,8 +1,8 @@
 ## Add texts
 
 target: es
-chapter: 5
-topic: 5
+chapter: 6
+topic: 2
 
 Medium, standalone reading/shadowing passages for this chapter/topic — the content
 backend/app/domain/entities.py's Topic.texts (texts.json) feeds to the frontend's Shadowing

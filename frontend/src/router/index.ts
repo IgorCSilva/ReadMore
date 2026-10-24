@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import ConversationPage from '../pages/ConversationPage.vue'
 import HomePage from '../pages/HomePage.vue'
 import LearningPage from '../pages/LearningPage.vue'
 import LearningTopicPage from '../pages/LearningTopicPage.vue'
@@ -45,6 +46,10 @@ const router = createRouter({
     { path: '/part/:topicId/:partNumber', name: 'part-flow', component: PartFlowPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },
     { path: '/read/:topicId', name: 'read-understand', component: ReadUnderstandPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },
     { path: '/listen/:topicId', name: 'listen-identify', component: ListenIdentifyPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },
+    // Same full-screen exit-topbar treatment as the reader/flow pages above —
+    // the chat input sits flush against the bottom of the screen instead of
+    // sharing it with the global bottom nav.
+    { path: '/conversation', name: 'conversation', component: ConversationPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },
     // Catches any unmatched path (typos, dead links, old bookmarks). Redirect
     // targets are resolved before navigation guards run, against the target
     // route's own meta — so this just needs to point at Home; Home's

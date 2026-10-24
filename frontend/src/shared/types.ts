@@ -151,6 +151,22 @@ export interface StorySummary {
   level: string
 }
 
+export interface ChatTurn {
+  role: 'user' | 'ai'
+  content: string
+}
+
+export interface ChatRequest {
+  lang: string
+  level: string
+  message: string
+  history: ChatTurn[]
+}
+
+export interface ChatResponse {
+  reply: string
+}
+
 export interface StoriesResponse {
   lang: string
   stories: StorySummary[]

@@ -23,6 +23,12 @@ class TtsUpstreamError(Exception):
         super().__init__(f"TTS upstream failed: {detail}")
 
 
+class ChatUpstreamError(Exception):
+    def __init__(self, detail: str) -> None:
+        self.detail = detail
+        super().__init__(f"chat upstream failed: {detail}")
+
+
 class InvalidCorrectionError(Exception):
     def __init__(self, detail: str) -> None:
         self.detail = detail
