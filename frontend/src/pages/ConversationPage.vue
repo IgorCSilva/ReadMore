@@ -56,9 +56,16 @@ function exit(): void {
   color: var(--text);
 }
 
+/* position: fixed (not height: 100vh) so this ignores the global body
+   padding set in App.vue — that padding is what caused the whole page to
+   scroll in addition to .conversation-messages's own internal scroll
+   (fixed elements are pulled out of the flow body's scrollHeight measures). */
 .conversation-page {
-  padding-top: 56px;
-  height: 100vh;
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   overflow: hidden;
 }
 </style>
