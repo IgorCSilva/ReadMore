@@ -17,6 +17,7 @@ function testRouter() {
       { path: '/library', name: 'library', component: LibraryPage },
       { path: '/stories', name: 'stories', component: { template: '<div>stories</div>' } },
       { path: '/learning', name: 'learning', component: { template: '<div>learning</div>' } },
+      { path: '/conversation', name: 'conversation', component: { template: '<div>conversation</div>' } },
       { path: '/shadowing', name: 'shadowing', component: { template: '<div>shadowing</div>' } },
       { path: '/notifications', name: 'notifications', component: { template: '<div>notifications</div>' } },
       { path: '/review-words', name: 'review-words', component: { template: '<div>review-words</div>' } },
@@ -41,14 +42,15 @@ describe('App', () => {
     expect(wrapper.find('.home-topbar').exists()).toBe(true)
 
     const bottomBarLinks = wrapper.findAll('.bottom-bar-item')
-    expect(bottomBarLinks).toHaveLength(7)
+    expect(bottomBarLinks).toHaveLength(8)
     expect(bottomBarLinks[0].attributes('href')).toBe('/review-words')
     expect(bottomBarLinks[1].attributes('href')).toBe('/home')
     expect(bottomBarLinks[2].attributes('href')).toBe('/shadowing')
     expect(bottomBarLinks[3].attributes('href')).toBe('/stories')
     expect(bottomBarLinks[4].attributes('href')).toBe('/learning')
-    expect(bottomBarLinks[5].attributes('href')).toBe('/notifications')
-    expect(bottomBarLinks[6].attributes('href')).toBe('/settings')
+    expect(bottomBarLinks[5].attributes('href')).toBe('/conversation')
+    expect(bottomBarLinks[6].attributes('href')).toBe('/notifications')
+    expect(bottomBarLinks[7].attributes('href')).toBe('/settings')
 
     wrapper.unmount()
   })
