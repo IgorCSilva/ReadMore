@@ -616,6 +616,30 @@
         "chove": "llueve",
         "neva": "nieva"
       }
+    },
+    "topic_2": {
+      "pt": {
+        "vaca": "vaca",
+        "cavalo": "caballo",
+        "ovelha": "oveja",
+        "porco": "cerdo",
+        "galinha": "gallina",
+        "peixe": "pez",
+        "leão": "león",
+        "urso": "oso",
+        "elefante": "elefante",
+        "rã": "rana",
+        "fazenda": "granja",
+        "selva": "selva",
+        "floresta": "bosque",
+        "mar": "mar",
+        "rio": "río",
+        "ninho": "nido",
+        "vive": "vive",
+        "selvagem": "salvaje",
+        "doméstico": "doméstico",
+        "doméstica": "doméstica"
+      }
     }
   }
 }

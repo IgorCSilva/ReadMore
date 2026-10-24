@@ -3,7 +3,7 @@
 native: pt
 target: es
 chapter: 6
-topic: 1
+topic: 2
 
 Build one "mixin" example sentence per word/expression in this chapter/topic, in
 backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json.

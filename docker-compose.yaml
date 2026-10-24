@@ -18,6 +18,8 @@ services:
       - PORT=8000
       - SHEETS_WEBAPP_URL=${SHEETS_WEBAPP_URL}
       - SHEETS_API_TOKEN=${SHEETS_API_TOKEN}
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GEMINI_MODEL=${GEMINI_MODEL}
     restart: unless-stopped
 
   frontend:

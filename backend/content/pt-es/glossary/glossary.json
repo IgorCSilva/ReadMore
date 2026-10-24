@@ -166,6 +166,19 @@
       "divertida"
     ]
   },
+  "aburrimiento": {
+    "meaning": "Tédio, aborrecimento.",
+    "examples": [
+      "Puede venir del estrés, la tristeza o el aburrimiento.",
+      "El aburrimiento te hace comer sin hambre real."
+    ],
+    "synonyms": [
+      "hastío"
+    ],
+    "antonyms": [
+      "diversión"
+    ]
+  },
   "acabado": {
     "meaning": "Acabado, terminado; particípio de 'acabar'.",
     "examples": [
@@ -667,6 +680,17 @@
       "tristeza"
     ]
   },
+  "aleja": {
+    "meaning": "Aleja; terceira pessoa do singular do presente de 'alejar'.",
+    "examples": [
+      "Una distracción es algo que aleja tu atención de la comida.",
+      "El ruido aleja a los pájaros del jardín."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "acerca"
+    ]
+  },
   "algo": {
     "meaning": "Algo; pronome indefinido que indica uma coisa não especificada.",
     "examples": [
@@ -738,6 +762,17 @@
     "antonyms": [
       "desalienta"
     ]
+  },
+  "alimentación": {
+    "meaning": "Alimentação.",
+    "examples": [
+      "Alimentación Consciente",
+      "Una buena alimentación mejora tu salud."
+    ],
+    "synonyms": [
+      "nutrición"
+    ],
+    "antonyms": []
   },
   "alimento": {
     "meaning": "Alimento.",
@@ -1000,6 +1035,17 @@
       "antelación"
     ],
     "antonyms": []
+  },
+  "apaga": {
+    "meaning": "Apaga; imperativo/presente de 'apagar'.",
+    "examples": [
+      "Guarda tu teléfono. Apaga la tele.",
+      "Apaga la luz antes de dormir."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "enciende"
+    ]
   },
   "apagaban": {
     "meaning": "Apagavam-se; pretérito imperfeito (ellos/ellas) de 'apagarse'.",
@@ -1927,6 +1973,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "bocados": {
+    "meaning": "Bocados, mordidas.",
+    "examples": [
+      "Pon el tenedor en la mesa entre bocados.",
+      "Da pequeños bocados y mastica bien."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "bolsa": {
     "meaning": "Bolsa, saco.",
     "examples": [
@@ -2380,6 +2435,17 @@
     "antonyms": [
       "frío"
     ]
+  },
+  "califica": {
+    "meaning": "Califica; imperativo/presente de 'calificar'.",
+    "examples": [
+      "Califica tu hambre de 1 a 10.",
+      "Califica tu nivel de energía hoy."
+    ],
+    "synonyms": [
+      "evalúa"
+    ],
+    "antonyms": []
   },
   "callada": {
     "meaning": "Calada, silenciosa; forma feminina de 'callado'.",
@@ -3262,6 +3328,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "comas": {
+    "meaning": "Comas; subjuntivo de 'comer'.",
+    "examples": [
+      "Prueba este ejercicio simple la próxima vez que comas.",
+      "Espero que comas algo saludable hoy."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "combatir": {
     "meaning": "Combater.",
     "examples": [
@@ -3276,6 +3351,15 @@
     "examples": [
       "Come un poco de proteína todos los días.",
       "Come menos grasa de comida frita."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "comen": {
+    "meaning": "Comen; terceira pessoa do plural do presente de 'comer'.",
+    "examples": [
+      "Muchas personas comen rápido, frente a una pantalla.",
+      "Mis hijos comen verduras todos los días."
     ],
     "synonyms": [],
     "antonyms": []
@@ -3375,6 +3459,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "comiendo": {
+    "meaning": "Comendo; gerúndio de 'comer'.",
+    "examples": [
+      "Sigues comiendo después de que tu cuerpo ya está lleno.",
+      "Estoy comiendo una ensalada ahora mismo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "comienza": {
     "meaning": "Começa; terceira pessoa do singular do presente de 'comenzar'.",
     "examples": [
@@ -3438,6 +3531,19 @@
     ],
     "antonyms": [
       "cooperar"
+    ]
+  },
+  "completamente": {
+    "meaning": "Completamente.",
+    "examples": [
+      "No completamente lleno.",
+      "El plato quedó completamente vacío."
+    ],
+    "synonyms": [
+      "totalmente"
+    ],
+    "antonyms": [
+      "parcialmente"
     ]
   },
   "completo": {
@@ -3619,6 +3725,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "consciente": {
+    "meaning": "Consciente.",
+    "examples": [
+      "Alimentación Consciente",
+      "Es importante ser consciente de lo que comes."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "inconsciente"
+    ]
   },
   "consigue": {
     "meaning": "Consegue; imperativo/presente de 'conseguir'.",
@@ -3957,6 +4074,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "cualquier": {
+    "meaning": "Qualquer.",
+    "examples": [
+      "Cualquier comida suena bien.",
+      "Puedes elegir cualquier fruta que te guste."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "cuando": {
     "meaning": "Quando.",
     "examples": [
@@ -4185,6 +4311,15 @@
     "examples": [
       "Pero Garbancito era curioso y le fascinaba salir a pasear.",
       "El gato es un animal muy curioso."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "cuándo": {
+    "meaning": "Quando (interrogativo).",
+    "examples": [
+      "Notas cuándo tu cuerpo siente hambre.",
+      "¿Cuándo vas a comer?"
     ],
     "synonyms": [],
     "antonyms": []
@@ -4931,6 +5066,19 @@
     "synonyms": [],
     "antonyms": []
   },
+  "detente": {
+    "meaning": "Detente; imperativo de 'detenerse'.",
+    "examples": [
+      "A la mitad de la comida, detente.",
+      "Detente un momento y respira."
+    ],
+    "synonyms": [
+      "para"
+    ],
+    "antonyms": [
+      "continúa"
+    ]
+  },
   "detenía": {
     "meaning": "Detinha-se, parava; pretérito imperfeito (ele/ela) de 'detenerse'.",
     "examples": [
@@ -5103,6 +5251,17 @@
       "similares"
     ]
   },
+  "difícil": {
+    "meaning": "Difícil.",
+    "examples": [
+      "Hace difícil notar las señales de hambre y de saciedad.",
+      "Este ejercicio es difícil al principio."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "fácil"
+    ]
+  },
   "difíciles": {
     "meaning": "Difíceis; plural de 'difícil'.",
     "examples": [
@@ -5200,6 +5359,28 @@
     ],
     "antonyms": [
       "igual"
+    ]
+  },
+  "distracciones": {
+    "meaning": "Distrações.",
+    "examples": [
+      "Comer Sin Distracciones",
+      "Elimina las distracciones antes de estudiar."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "atención"
+    ]
+  },
+  "distracción": {
+    "meaning": "Distração.",
+    "examples": [
+      "Algo que aleja tu atención de la comida, como un teléfono o una tele.",
+      "El teléfono es una distracción común durante las comidas."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "atención"
     ]
   },
   "divertida": {
@@ -5631,6 +5812,17 @@
       "indiferente"
     ]
   },
+  "emocional": {
+    "meaning": "Emocional.",
+    "examples": [
+      "Hambre Física o Hambre Emocional",
+      "El hambre emocional no viene del estómago."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "físico"
+    ]
+  },
   "emociones": {
     "meaning": "Emoções; plural de 'emoción'.",
     "examples": [
@@ -5691,6 +5883,19 @@
     "synonyms": [],
     "antonyms": [
       "terminando"
+    ]
+  },
+  "empezar": {
+    "meaning": "Começar.",
+    "examples": [
+      "Antes de empezar, respira despacio una vez.",
+      "Vamos a empezar la clase ahora."
+    ],
+    "synonyms": [
+      "comenzar"
+    ],
+    "antonyms": [
+      "terminar"
     ]
   },
   "empezó": {
@@ -6298,11 +6503,33 @@
     ],
     "antonyms": []
   },
+  "específica": {
+    "meaning": "Específica.",
+    "examples": [
+      "Muchas veces quiere una comida específica, como papas fritas o helado.",
+      "Busco una respuesta específica a mi pregunta."
+    ],
+    "synonyms": [
+      "particular"
+    ],
+    "antonyms": [
+      "general"
+    ]
+  },
   "espejo": {
     "meaning": "Espelho.",
     "examples": [
       "Como si fuera un espejo brillante.",
       "El lago parecía un espejo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "espera": {
+    "meaning": "Espera; imperativo/presente de 'esperar'.",
+    "examples": [
+      "Espera unos minutos.",
+      "Espera aquí un momento, por favor."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6561,6 +6788,19 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "estrés": {
+    "meaning": "Estresse.",
+    "examples": [
+      "Puede venir del estrés, la tristeza o el aburrimiento.",
+      "El trabajo le causa mucho estrés."
+    ],
+    "synonyms": [
+      "tensión"
+    ],
+    "antonyms": [
+      "calma"
+    ]
   },
   "estuve": {
     "meaning": "Estive; pretérito perfeito simples (eu) de 'estar'.",
@@ -7263,6 +7503,17 @@
       "difíciles"
     ]
   },
+  "física": {
+    "meaning": "Física.",
+    "examples": [
+      "Hambre Física o Hambre Emocional",
+      "El hambre física viene de tu cuerpo y crece despacio."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "emocional"
+    ]
+  },
   "gagá": {
     "meaning": "Palavra que imita o som do ganso; onomatopeia.",
     "examples": [
@@ -7870,6 +8121,15 @@
     "examples": [
       "Le mostró un hilo fuerte y fino, hecho con la telaraña más resistente de la selva.",
       "Este pastel está hecho con mucho cariño."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "helado": {
+    "meaning": "Sorvete.",
+    "examples": [
+      "Muchas veces quiere una comida específica, como papas fritas o helado.",
+      "A los niños les encanta el helado de chocolate."
     ],
     "synonyms": [],
     "antonyms": []
@@ -9777,6 +10037,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "mastica": {
+    "meaning": "Mastica; imperativo/presente de 'masticar'.",
+    "examples": [
+      "Mastica despacio.",
+      "Mastica bien antes de tragar."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "mateo": {
     "meaning": "Nome próprio masculino (Mateo); nome do protagonista desta história, equivalente a 'Mateus'.",
     "examples": [
@@ -9925,6 +10194,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "mente": {
+    "meaning": "Mente.",
+    "examples": [
+      "Tu mente está en otra parte.",
+      "Tener la mente tranquila ayuda a dormir mejor."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "menudo": {
     "meaning": "Usado em 'a menudo' ('frequentemente').",
     "examples": [
@@ -9937,6 +10215,15 @@
     "antonyms": [
       "raramente"
     ]
+  },
+  "mesa": {
+    "meaning": "Mesa.",
+    "examples": [
+      "Trata de comer en una mesa, sin pantallas, al menos una vez al día.",
+      "Pon los platos en la mesa."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "meses": {
     "meaning": "Meses; plural de 'mes'.",
@@ -10863,6 +11150,15 @@
       "anormal"
     ]
   },
+  "normales": {
+    "meaning": "Normais.",
+    "examples": [
+      "Nota cómo se siente diferente de tus comidas normales.",
+      "Estos son los horarios normales de la clínica."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "normalmente": {
     "meaning": "Normalmente.",
     "examples": [
@@ -10890,6 +11186,26 @@
     "synonyms": [
       "percibe"
     ],
+    "antonyms": []
+  },
+  "notar": {
+    "meaning": "Notar, perceber.",
+    "examples": [
+      "Hace difícil notar las señales de hambre y de saciedad.",
+      "Es fácil notar cuándo algo cambia."
+    ],
+    "synonyms": [
+      "percibir"
+    ],
+    "antonyms": []
+  },
+  "notas": {
+    "meaning": "Notas; segunda pessoa do singular do presente de 'notar'.",
+    "examples": [
+      "Notas el sabor, el olor y la textura de tu comida.",
+      "¿Notas la diferencia entre los dos platos?"
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "notemos": {
@@ -11160,6 +11476,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "olor": {
+    "meaning": "Cheiro, odor.",
+    "examples": [
+      "Notas el sabor, el olor y la textura de tu comida.",
+      "Me gusta el olor del café por la mañana."
+    ],
+    "synonyms": [
+      "aroma"
+    ],
+    "antonyms": []
+  },
   "olvidaba": {
     "meaning": "Esquecia; pretérito imperfeito (él/ella) de 'olvidar'.",
     "examples": [
@@ -11198,6 +11525,17 @@
       "Esta es una buena opción para el desayuno."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "opuesto": {
+    "meaning": "Oposto.",
+    "examples": [
+      "Esto es lo opuesto de la alimentación consciente.",
+      "El frío es lo opuesto del calor."
+    ],
+    "synonyms": [
+      "contrario"
+    ],
     "antonyms": []
   },
   "orden": {
@@ -11490,6 +11828,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "pantalla": {
+    "meaning": "Tela (de dispositivo).",
+    "examples": [
+      "Muchas personas comen rápido, frente a una pantalla.",
+      "La pantalla del teléfono está rota."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pantallas": {
+    "meaning": "Telas (de dispositivos).",
+    "examples": [
+      "Trata de comer en una mesa, sin pantallas, al menos una vez al día.",
+      "Los niños pasan mucho tiempo frente a las pantallas."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "panza": {
     "meaning": "Barriga (informal).",
     "examples": [
@@ -11690,6 +12046,17 @@
     ],
     "synonyms": [
       "transcurrían"
+    ],
+    "antonyms": []
+  },
+  "pasar": {
+    "meaning": "Acontecer, passar.",
+    "examples": [
+      "Puede pasar incluso justo después de una comida.",
+      "¿Qué va a pasar si no como nada?"
+    ],
+    "synonyms": [
+      "ocurrir"
     ],
     "antonyms": []
   },
@@ -12815,6 +13182,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "prestar": {
+    "meaning": "Prestar (atenção).",
+    "examples": [
+      "Prestar toda tu atención mientras comes.",
+      "Es importante prestar atención en clase."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "prestas": {
+    "meaning": "Prestas; segunda pessoa do singular do presente de 'prestar'.",
+    "examples": [
+      "Es fácil comer demasiado cuando no prestas atención.",
+      "¿Prestas atención a lo que comes?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "presupuesto": {
     "meaning": "Orçamento.",
     "examples": [
@@ -13327,6 +13712,15 @@
     "examples": [
       "Entiendo que quieras mostrarle tu amor.",
       "Hazlo cuando quieras."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "quiere": {
+    "meaning": "Quiere; terceira pessoa do singular do presente de 'querer'.",
+    "examples": [
+      "Muchas veces quiere una comida específica, como papas fritas o helado.",
+      "Ella quiere comer algo dulce."
     ],
     "synonyms": [],
     "antonyms": []
@@ -14746,11 +15140,29 @@
     "synonyms": [],
     "antonyms": []
   },
+  "sentimientos": {
+    "meaning": "Sentimentos.",
+    "examples": [
+      "El hambre emocional viene de tus sentimientos, no de tu estómago.",
+      "Hablar de tus sentimientos ayuda a entenderlos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "sentir": {
     "meaning": "Sentir.",
     "examples": [
       "Es normal sentir un poco de miedo, cariño.",
       "Me gusta sentir el sol en la cara."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sentirlo": {
+    "meaning": "Senti-lo; infinitivo de 'sentir' com o pronome 'lo'.",
+    "examples": [
+      "Puedes pasar el punto de saciedad antes de sentirlo.",
+      "No quiero hablar de eso, prefiero no sentirlo."
     ],
     "synonyms": [],
     "antonyms": []
@@ -14831,6 +15243,15 @@
     "examples": [
       "Puedes enseñarle a jugar y serás su héroe.",
       "Serás un gran hermano."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "señal": {
+    "meaning": "Sinal.",
+    "examples": [
+      "Tu estómago envía una señal de \"lleno\" a tu cerebro.",
+      "El semáforo da la señal para cruzar."
     ],
     "synonyms": [],
     "antonyms": []
@@ -14975,6 +15396,15 @@
     "synonyms": [
       "continúan"
     ],
+    "antonyms": []
+  },
+  "sigues": {
+    "meaning": "Sigues; segunda pessoa do singular do presente de 'seguir'.",
+    "examples": [
+      "Sigues comiendo después de que tu cuerpo ya está lleno.",
+      "¿Todavía sigues despierto?"
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "siguiendo": {
@@ -15735,6 +16165,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "tarda": {
+    "meaning": "Tarda; terceira pessoa do singular do presente de 'tardar'.",
+    "examples": [
+      "Esta señal tarda unos 20 minutos en llegar.",
+      "El autobús tarda media hora en llegar."
+    ],
+    "synonyms": [
+      "demora"
+    ],
+    "antonyms": []
+  },
   "tardará": {
     "meaning": "Tardará, demorará; futuro de 'tardar'.",
     "examples": [
@@ -15798,6 +16239,26 @@
     "examples": [
       "Le mostró un hilo fuerte y fino, hecho con la telaraña más resistente de la selva.",
       "Encontró una telaraña enorme en el rincón del techo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tele": {
+    "meaning": "TV, televisão (informal).",
+    "examples": [
+      "Comer frente a un teléfono o una tele hace difícil notar las señales de hambre.",
+      "Apaga la tele antes de dormir."
+    ],
+    "synonyms": [
+      "televisión"
+    ],
+    "antonyms": []
+  },
+  "teléfono": {
+    "meaning": "Telefone.",
+    "examples": [
+      "Comer frente a un teléfono o una tele hace difícil notar las señales de hambre.",
+      "Guarda tu teléfono durante la cena."
     ],
     "synonyms": [],
     "antonyms": []
@@ -15880,6 +16341,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "tenedor": {
+    "meaning": "Garfo.",
+    "examples": [
+      "Pon el tenedor en la mesa entre bocados.",
+      "Necesito un tenedor para comer la ensalada."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "tener": {
     "meaning": "Ter.",
     "examples": [
@@ -15925,6 +16395,19 @@
     "synonyms": [],
     "antonyms": []
   },
+  "termina": {
+    "meaning": "Termina; imperativo/presente de 'terminar'.",
+    "examples": [
+      "Termina de comer solo si todavía tienes hambre de verdad.",
+      "Termina tu tarea antes de salir."
+    ],
+    "synonyms": [
+      "acaba"
+    ],
+    "antonyms": [
+      "empieza"
+    ]
+  },
   "ternura": {
     "meaning": "Ternura.",
     "examples": [
@@ -15943,6 +16426,15 @@
     "examples": [
       "Porque en el silencio se esconden tesoros.",
       "Encontraron tesoros escondidos en la isla."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "textura": {
+    "meaning": "Textura.",
+    "examples": [
+      "Notas el sabor, el olor y la textura de tu comida.",
+      "Me gusta la textura cremosa de este postre."
     ],
     "synonyms": [],
     "antonyms": []
@@ -16365,6 +16857,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "tristeza": {
+    "meaning": "Tristeza.",
+    "examples": [
+      "Puede venir del estrés, la tristeza o el aburrimiento.",
+      "La tristeza pasó después de hablar con mis amigos."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "alegría"
+    ]
+  },
   "troncos": {
     "meaning": "Troncos de árvore cortados; plural de 'tronco'.",
     "examples": [
@@ -16374,6 +16877,15 @@
     "synonyms": [
       "leños"
     ],
+    "antonyms": []
+  },
+  "truco": {
+    "meaning": "Truque.",
+    "examples": [
+      "Un truco simple: deja de comer cuando te sientas satisfecho.",
+      "Te voy a enseñar un truco para dormir mejor."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "trucos": {
@@ -16744,6 +17256,15 @@
     "examples": [
       "¿Vendrá la abuela a visitarnos?",
       "Mañana vendrá mi tía."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "venir": {
+    "meaning": "Vir.",
+    "examples": [
+      "Puede venir del estrés, la tristeza o el aburrimiento.",
+      "Quiero venir contigo a la fiesta."
     ],
     "synonyms": [],
     "antonyms": []

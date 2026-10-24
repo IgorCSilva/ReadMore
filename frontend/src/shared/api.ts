@@ -1,5 +1,7 @@
 import type {
   ChaptersResponse,
+  ChatRequest,
+  ChatResponse,
   CorrectionRequest,
   LanguagesResponse,
   LearningTopicResponse,
@@ -188,4 +190,9 @@ export function showWordAgain(user: string, lang: string, wordId: string): Promi
 
 export function submitCorrection(payload: CorrectionRequest): Promise<Response> {
   return postJson('/corrections', payload)
+}
+
+export async function sendChatMessage(payload: ChatRequest): Promise<ChatResponse> {
+  const res = await postJson('/chat', payload)
+  return (await res.json()) as ChatResponse
 }
