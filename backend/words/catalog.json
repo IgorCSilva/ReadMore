@@ -2667,6 +2667,82 @@
     {
       "word_id": "wd-0667",
       "filename": "it_snows"
+    },
+    {
+      "word_id": "wd-0668",
+      "filename": "cow"
+    },
+    {
+      "word_id": "wd-0669",
+      "filename": "horse"
+    },
+    {
+      "word_id": "wd-0670",
+      "filename": "sheep"
+    },
+    {
+      "word_id": "wd-0671",
+      "filename": "pig"
+    },
+    {
+      "word_id": "wd-0672",
+      "filename": "hen"
+    },
+    {
+      "word_id": "wd-0673",
+      "filename": "lion"
+    },
+    {
+      "word_id": "wd-0674",
+      "filename": "bear"
+    },
+    {
+      "word_id": "wd-0675",
+      "filename": "elephant"
+    },
+    {
+      "word_id": "wd-0676",
+      "filename": "frog"
+    },
+    {
+      "word_id": "wd-0677",
+      "filename": "farm"
+    },
+    {
+      "word_id": "wd-0678",
+      "filename": "jungle"
+    },
+    {
+      "word_id": "wd-0679",
+      "filename": "forest"
+    },
+    {
+      "word_id": "wd-0680",
+      "filename": "sea"
+    },
+    {
+      "word_id": "wd-0681",
+      "filename": "river"
+    },
+    {
+      "word_id": "wd-0682",
+      "filename": "nest"
+    },
+    {
+      "word_id": "wd-0683",
+      "filename": "it_lives"
+    },
+    {
+      "word_id": "wd-0684",
+      "filename": "wild"
+    },
+    {
+      "word_id": "wd-0685",
+      "filename": "domestic"
+    },
+    {
+      "word_id": "wd-0686",
+      "filename": "domestic_feminine"
     }
   ]
 }

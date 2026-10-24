@@ -1,0 +1,602 @@
+[
+  {
+    "id": "es-sent-1491",
+    "sentence": "La vaca es grande.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0503",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1492",
+    "sentence": "Hay una vaca aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0503",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1493",
+    "sentence": "La vaca está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0503",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1494",
+    "sentence": "El caballo es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0504",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1495",
+    "sentence": "Hay un caballo aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0504",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1496",
+    "sentence": "El caballo está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0504",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1497",
+    "sentence": "La oveja es pequeña.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0505",
+      "es-wd-0017",
+      "es-wd-0225"
+    ]
+  },
+  {
+    "id": "es-sent-1498",
+    "sentence": "Hay una oveja aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0505",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1499",
+    "sentence": "La oveja está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0505",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1500",
+    "sentence": "El cerdo es pequeño.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0506",
+      "es-wd-0017",
+      "es-wd-0224"
+    ]
+  },
+  {
+    "id": "es-sent-1501",
+    "sentence": "Hay un cerdo aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0506",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1502",
+    "sentence": "El cerdo está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0506",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1503",
+    "sentence": "La gallina es pequeña.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0507",
+      "es-wd-0017",
+      "es-wd-0225"
+    ]
+  },
+  {
+    "id": "es-sent-1504",
+    "sentence": "Hay una gallina aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0507",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1505",
+    "sentence": "La gallina está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0507",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1506",
+    "sentence": "El pez es pequeño.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0508",
+      "es-wd-0017",
+      "es-wd-0224"
+    ]
+  },
+  {
+    "id": "es-sent-1507",
+    "sentence": "Hay un pez aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0508",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1508",
+    "sentence": "El pez está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0508",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1509",
+    "sentence": "El león es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0509",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1510",
+    "sentence": "Hay un león aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0509",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1511",
+    "sentence": "El león está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0509",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1512",
+    "sentence": "El oso es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0510",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1513",
+    "sentence": "Hay un oso aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0510",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1514",
+    "sentence": "El oso está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0510",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1515",
+    "sentence": "El elefante es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0511",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1516",
+    "sentence": "Hay un elefante aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0511",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1517",
+    "sentence": "El elefante está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0511",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1518",
+    "sentence": "La rana es pequeña.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0512",
+      "es-wd-0017",
+      "es-wd-0225"
+    ]
+  },
+  {
+    "id": "es-sent-1519",
+    "sentence": "Hay una rana aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0512",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1520",
+    "sentence": "La rana está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0512",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1521",
+    "sentence": "La granja es grande.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0513",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1522",
+    "sentence": "Hay una granja aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0513",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1523",
+    "sentence": "La granja está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0513",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1524",
+    "sentence": "La selva es grande.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0514",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1525",
+    "sentence": "Hay una selva aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0514",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1526",
+    "sentence": "La selva está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0514",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1527",
+    "sentence": "El bosque es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0515",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1528",
+    "sentence": "Hay un bosque aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0515",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1529",
+    "sentence": "El bosque está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0515",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1530",
+    "sentence": "El mar es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0516",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1531",
+    "sentence": "Hay un mar aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0516",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1532",
+    "sentence": "El mar está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0516",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1533",
+    "sentence": "El río es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0517",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1534",
+    "sentence": "Hay un río aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0517",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1535",
+    "sentence": "El río está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0517",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1536",
+    "sentence": "El nido es pequeño.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0518",
+      "es-wd-0017",
+      "es-wd-0224"
+    ]
+  },
+  {
+    "id": "es-sent-1537",
+    "sentence": "Hay un nido aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0518",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1538",
+    "sentence": "El nido está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0518",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1539",
+    "sentence": "El animal vive aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0220",
+      "es-wd-0519",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1540",
+    "sentence": "El gato vive allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0222",
+      "es-wd-0519",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1541",
+    "sentence": "El pájaro vive aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0223",
+      "es-wd-0519",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1542",
+    "sentence": "El animal es salvaje.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0220",
+      "es-wd-0017",
+      "es-wd-0520"
+    ]
+  },
+  {
+    "id": "es-sent-1543",
+    "sentence": "El león es salvaje.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0509",
+      "es-wd-0017",
+      "es-wd-0520"
+    ]
+  },
+  {
+    "id": "es-sent-1544",
+    "sentence": "El oso es salvaje.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0510",
+      "es-wd-0017",
+      "es-wd-0520"
+    ]
+  },
+  {
+    "id": "es-sent-1545",
+    "sentence": "El animal es doméstico.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0220",
+      "es-wd-0017",
+      "es-wd-0521"
+    ]
+  },
+  {
+    "id": "es-sent-1546",
+    "sentence": "El perro es doméstico.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0221",
+      "es-wd-0017",
+      "es-wd-0521"
+    ]
+  },
+  {
+    "id": "es-sent-1547",
+    "sentence": "El caballo es doméstico.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0504",
+      "es-wd-0017",
+      "es-wd-0521"
+    ]
+  },
+  {
+    "id": "es-sent-1548",
+    "sentence": "La vaca es doméstica.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0503",
+      "es-wd-0017",
+      "es-wd-0522"
+    ]
+  },
+  {
+    "id": "es-sent-1549",
+    "sentence": "La oveja es doméstica.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0505",
+      "es-wd-0017",
+      "es-wd-0522"
+    ]
+  },
+  {
+    "id": "es-sent-1550",
+    "sentence": "La gallina es doméstica.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0507",
+      "es-wd-0017",
+      "es-wd-0522"
+    ]
+  }
+]
