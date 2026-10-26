@@ -2,8 +2,7 @@
 
 native: pt
 target: es
-chapter: 6
-topic: 2
+Check introduce_content/current_info.md file to know the chapter and topic numbers.
 
 Build one "mixin" example sentence per word/expression in this chapter/topic, in
 backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json.
