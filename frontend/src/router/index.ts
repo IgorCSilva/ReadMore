@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import AiChatPage from '../pages/AiChatPage.vue'
 import ConversationPage from '../pages/ConversationPage.vue'
 import HomePage from '../pages/HomePage.vue'
 import LearningPage from '../pages/LearningPage.vue'
@@ -50,6 +51,7 @@ const router = createRouter({
     // the chat input sits flush against the bottom of the screen instead of
     // sharing it with the global bottom nav.
     { path: '/conversation', name: 'conversation', component: ConversationPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },
+    { path: '/ai-chat', name: 'ai-chat', component: AiChatPage, meta: { requiresAuth: true } },
     // Catches any unmatched path (typos, dead links, old bookmarks). Redirect
     // targets are resolved before navigation guards run, against the target
     // route's own meta — so this just needs to point at Home; Home's

@@ -1,8 +1,7 @@
 ## Add target idiom natural sentences
 
 target: es
-chapter: 6
-topic: 2
+Check introduce_content/current_info.md file to know the chapter and topic numbers.
 
 Now, generate simple natural sentences, following the pattern in
 backend/content/es/chapter_<chapter>/topic_<topic>/sentences.json.

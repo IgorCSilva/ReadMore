@@ -3,8 +3,8 @@
 native: pt
 level: A1
 roadmap directory: backend/content/learning/theme/health
-chapter: NUT
-topic: 8
+chapter: EXE
+topic: 1
 output directory: <roadmap directory>/<chapter>_<topic>
 target: es
 

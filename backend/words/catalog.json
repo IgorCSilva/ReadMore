@@ -2743,6 +2743,62 @@
     {
       "word_id": "wd-0686",
       "filename": "domestic_feminine"
+    },
+    {
+      "word_id": "wd-0687",
+      "filename": "spring"
+    },
+    {
+      "word_id": "wd-0688",
+      "filename": "summer"
+    },
+    {
+      "word_id": "wd-0689",
+      "filename": "autumn"
+    },
+    {
+      "word_id": "wd-0690",
+      "filename": "winter"
+    },
+    {
+      "word_id": "wd-0691",
+      "filename": "flower"
+    },
+    {
+      "word_id": "wd-0692",
+      "filename": "it_blooms"
+    },
+    {
+      "word_id": "wd-0693",
+      "filename": "leaf"
+    },
+    {
+      "word_id": "wd-0694",
+      "filename": "it_falls"
+    },
+    {
+      "word_id": "wd-0695",
+      "filename": "beach"
+    },
+    {
+      "word_id": "wd-0696",
+      "filename": "to_ski"
+    },
+    {
+      "word_id": "wd-0697",
+      "filename": "to_plant"
+    },
+    {
+      "word_id": "wd-0698",
+      "filename": "it_begins"
+    },
+    {
+      "word_id": "wd-0699",
+      "filename": "it_ends"
+    },
+    {
+      "word_id": "wd-0700",
+      "filename": "warm"
     }
   ]
 }

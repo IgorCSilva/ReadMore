@@ -2,8 +2,9 @@
 
 native: pt
 idiom: es
-chapter: 6
-topic: 2
+
+Check introduce_content/current_info.md file to know the chapter and topic numbers.
+
 file: backend/content/<idiom>/chapter_<N>/topic_<M>/words.json
 
 Build the reverse-lookup relations for this chapter/topic in

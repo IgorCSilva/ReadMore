@@ -640,6 +640,24 @@
         "doméstico": "doméstico",
         "doméstica": "doméstica"
       }
+    },
+    "topic_3": {
+      "pt": {
+        "primavera": "primavera",
+        "verão": "verano",
+        "outono": "otoño",
+        "inverno": "invierno",
+        "flor": "flor",
+        "floresce": "florece",
+        "folha": "hoja",
+        "cai": "cae",
+        "praia": "playa",
+        "esquiar": "esquiar",
+        "plantar": "plantar",
+        "começa": "empieza",
+        "termina": "termina",
+        "quente": "cálido"
+      }
     }
   }
 }

@@ -3,6 +3,7 @@ free API tier (generativelanguage.googleapis.com), reached with stdlib
 urllib like google_sheets_client.py/google_translate_tts_client.py rather
 than adding a new HTTP dependency."""
 import json
+import time
 import urllib.error
 import urllib.request
 
@@ -42,10 +43,19 @@ def _system_instruction(level: str, origin_lang: str, target_lang: str) -> str:
 
 
 class GeminiChatClient(ChatPort):
-    def __init__(self, api_key: str, model: str = "gemini-flash-lite-latest", timeout: int = 20) -> None:
+    def __init__(
+        self,
+        api_key: str,
+        model: str = "gemini-flash-lite-latest",
+        timeout: int = 20,
+        timeout_retries: int = 1,
+        retry_backoff: float = 1.0,
+    ) -> None:
         self._api_key = api_key
         self._model = model
         self._timeout = timeout
+        self._timeout_retries = timeout_retries
+        self._retry_backoff = retry_backoff
 
     def send_message(
         self,
@@ -76,23 +86,31 @@ class GeminiChatClient(ChatPort):
             method="POST",
         )
 
-        try:
-            with urllib.request.urlopen(req, timeout=self._timeout) as resp:
-                payload = json.loads(resp.read())
-        except urllib.error.HTTPError as err:
-            # HTTPError's body carries Gemini's actual explanation (e.g. a
-            # retired model name, or an invalid key) — str(err) alone is
-            # just "HTTP Error 404: Not Found", which hides that.
-            detail = err.read().decode("utf-8", errors="replace")
-            raise ChatUpstreamError(f"HTTP {err.code}: {detail}") from err
-        except urllib.error.URLError as err:
-            raise ChatUpstreamError(str(err)) from err
-        except TimeoutError as err:
-            # Python 3.12 raises the builtin TimeoutError for a socket read
-            # timeout, not urllib.error.URLError, so it needs its own clause.
-            raise ChatUpstreamError(f"timed out after {self._timeout}s") from err
-        except json.JSONDecodeError as err:
-            raise ChatUpstreamError(f"malformed JSON response: {err}") from err
+        attempt = 0
+        while True:
+            try:
+                with urllib.request.urlopen(req, timeout=self._timeout) as resp:
+                    payload = json.loads(resp.read())
+                break
+            except urllib.error.HTTPError as err:
+                # HTTPError's body carries Gemini's actual explanation (e.g. a
+                # retired model name, or an invalid key) — str(err) alone is
+                # just "HTTP Error 404: Not Found", which hides that.
+                detail = err.read().decode("utf-8", errors="replace")
+                raise ChatUpstreamError(f"HTTP {err.code}: {detail}") from err
+            except urllib.error.URLError as err:
+                raise ChatUpstreamError(str(err)) from err
+            except TimeoutError as err:
+                # Python 3.12 raises the builtin TimeoutError for a socket read
+                # timeout, not urllib.error.URLError, so it needs its own clause.
+                # Gemini's free tier occasionally takes longer than our socket
+                # timeout under load, so one retry clears most of these.
+                if attempt >= self._timeout_retries:
+                    raise ChatUpstreamError(f"timed out after {self._timeout}s") from err
+                attempt += 1
+                time.sleep(self._retry_backoff)
+            except json.JSONDecodeError as err:
+                raise ChatUpstreamError(f"malformed JSON response: {err}") from err
 
         try:
             reply = payload["candidates"][0]["content"]["parts"][0]["text"]
