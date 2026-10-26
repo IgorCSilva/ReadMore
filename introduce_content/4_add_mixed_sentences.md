@@ -2,8 +2,7 @@
 
 native: pt
 target: es
-chapter: 6
-topic: 2
+Check introduce_content/current_info.md file to know the chapter and topic numbers.
 
 Create 100 natural sentences, following the exact pattern of chapter 1 topic 1's mixed_sentences.json in backend/content/pt-es/chapter_1/topic_1/mixed_sentences.json ({sentence_number, content} objects, target words marked with **bold**).
 

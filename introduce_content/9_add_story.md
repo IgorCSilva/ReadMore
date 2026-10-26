@@ -10,62 +10,56 @@ If there are some emojis like 😊 you can remove them.
 == Initial ==
 =============
 
-Huellas de luna
 
+Bambú y el pañal viajero
 
-Un cuento relajante y sensorial que invita a los pequeños a seguir un rastro mágico de luz y calma antes de dormir, perfecto para desconectar y soñar bonito.
-----------------------------
+Bambú descubre que su pañal tiene un sueño secreto: ¡conocer el mundo! Una historia tierna y respetuosa para acompañar a los niños en el paso de dejar el pañal, sin presiones y a su propio ritmo.
+----------------------------------------
 
-Cuando el cielo se pinta de azul oscuro y las primeras estrellas empiezan a brillar, allá arriba, muy alto, la luna despierta.
+Bambú era un osito panda pequeño, redondito y muy abrazable.
 
-Es redonda y brillante, con esa luz fresca y blanquita que baña todo lo que la rodea. Esta noche, como cada noche mágica, decide bajar al bosque.
+Dentro de poco iba a empezar el jardín, y eso le hacía sentir cosquillas en la panza.
 
-Baja muy despacito, flotando entre las ramas, sin hacer ruido.
+Pero había un pequeño problema…
 
-Sus pies, si es que los tiene, no pisan fuerte, solo dejan un rastro de luz, unas huellas plateadas que se posan sobre el pasto, sobre las piedras, sobre los troncos dormidos.
+Bambú todavía usaba pañal.
 
-Nadie la ve. Nadie la oye. Ella camina tranquila, dejando su rastro de calma y de magia.
+Una mañana, mientras se lo estaba poniendo, el pañal suspiró y dijo:
 
-Un poco más allá, en una madriguera redondita, un conejo blanco llamado Luno duerme acurrucado, con las orejas dobladas y los ojitos cerrados.
+—Bambú, yo quiero viajar por el mundo.
 
-Pero algo, una luz muy suave, le roza la nariz.
+—¿Cómo que viajar? —dijo Bambú, agarrándolo fuerte—. ¡Tú eres mío!
 
-Luno se estira con un suspiro, abre un ojito y ve un destello. Allí, en el claro, justo frente a su casita, hay una huella brillante en el pasto.
+—He soñado con ver el mar, las montañas y hasta el desierto —dijo el pañal—. Ya he hecho mi trabajo contigo.
 
-Se despereza como solo los conejitos saben hacerlo y se acerca con curiosidad. Toca la huella con su patita. Está fresca, como el rocío de la mañana, y huele a jazmín recién abierto.
+—¡No, no y no! —exclamó Bambú, y empezó un pequeño jaloneo con el pañal.
+El pañal tiraba para un lado, Bambú para el otro… ¡Plaf! Los dos acabaron sentados en el suelo.
 
-—¿Quién ha caminado por aquí? —susurra Luno, sin esperar respuesta.
+—Mira —dijo el pañal, un poco despeinado—, podrías probar a usar la bacinica, como los pandas grandes.
 
-La luna ya se ha ido, pero sus huellas siguen ahí. Así que Luno, despacito, comienza a seguirlas. Una, dos, tres huellas más adelante y el conejito atraviesa un helecho alto que le acaricia las orejas como si le hiciera cariñitos.
+—Pero… ¿y si te necesito? —preguntó Bambú.
 
-Después salta sobre una piedra lisa, que suena apenas bajo sus patitas suaves. Y sigue adelante revisando todas las huellas una por una.
+—No pasa nada —sonrió el pañal—. Me quedaré contigo un tiempo más. Poco a poco. Y cuando tú te sientas listo… me iré de viaje.
 
-El sendero lo lleva por un camino entre los árboles. Las ramas crujen muy suavecito al moverse con el viento. Un grillo canta, pero su canción no despierta, sino que arrulla.
+Bambú lo pensó. Eso sí le gustaba.
 
-Y cada huella le regala a Luno una sensación distinta. Una huele a lavanda y le recuerda a su mamá cuando lo abraza. Otra huele a hojas mojadas, y Luno imagina el sonido de la lluvia a lo lejos. Otra le hace cosquillas en los bigotes, como si alguien invisible le hiciera reír muy bajito.
+Así que empezó a usar la bacinica. A veces sí, a veces no. Y el pañal seguía ahí, ayudándolo.
 
-El camino no tiene prisa. Y Luno tampoco. Da saltitos cortos, se detiene, respira los aromas, observa los brillos plateados y se deja llevar.
+Hasta que un día, Bambú dijo muy serio:
 
-Al final del sendero, cuando el bosque se abre en un claro secreto, Luno se detiene.
+—Pañal… ya estoy listo.
 
-Allí está, la luna, brillando justo encima de un charquito redondo. Reflejada en el agua, como si tuviera una hermana que vive debajo, jugando con el resplandor de su luz sobre la superficie.
+El pañal se quedó mirándolo con orgullo, sonrió y sacó una maletita pequeñita.
 
-Luno se sienta a mirar y sonríe.
+—Entonces ha llegado mi momento.
 
-—Gracias por las huellas —susurra—. Me han traído hasta ti.
+Se despidieron con un abrazo enorme.
 
-La luna no le contesta, pero una brisa suave le pasa por la cara, como una caricia que no se ve.
+—¡Buen viaje! —dijo Bambú.
 
-El conejito bosteza. Un bostezo largo, de esos que hacen ruido. Se acurruca en el pasto blandito del claro, pone una oreja sobre sus patas, y la otra le cae con suavidad sobre su carita.
-
-Y justo antes de quedarse dormido, nota algo en la barriguita: una huella plateada, dibujada con luz.
-
-La luna lo arropa desde el cielo. Y Luno sueña con huellas brillantes que lo acompañan flotando entre estrellas, llevándolo siempre a lugares tranquilos.
-
-Y tú, si cierras los ojitos muy despacio quizá también veas una huella de luna. Quizá la sigas. Quizá te lleve a un lugar donde todo es suave y relajante.
-
-Buenas noches, amor mío.
-Buenas noches, luna.
+Y desde ese día, Bambú fue al jardín sin pañal…
+un poco más ligero,
+y muy, muy orgulloso 🐼✨
 
 =========
 == End ==

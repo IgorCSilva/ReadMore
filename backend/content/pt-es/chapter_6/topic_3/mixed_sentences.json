@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "Sofia comentou que **la** **hoja** **cae** **en** **el** **otoño**."
+  },
+  {
+    "sentence_number": 2,
+    "content": "Rafael disse que **la** **playa** **es** **grande**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "Lucas avisou que **el** **otoño** **termina** **y** **empieza** **el** **invierno**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "Sofia contou que **el** **verano** **tiene** **calor** **y** **sol**."
+  },
+  {
+    "sentence_number": 5,
+    "content": "Pablo comentou que **la** **hoja** **cae** **en** **el** **otoño**."
+  },
+  {
+    "sentence_number": 6,
+    "content": "Marina gosta **de** **esquiar** **en** **el** **invierno**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "Ana avisou que **el** **verano** **es** **cálido**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "Pedro gosta **de** **plantar** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "Carlos disse que **la** **flor** **es** **bonita**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "Marina confirmou que **la** **primavera** **termina** **y** **empieza** **el** **verano**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "Rafael gosta **de** **esquiar** **en** **el** **invierno**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "Carlos avisou que **el** **invierno** **es** **frío**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "Ana gosta **de** **esquiar** **en** **el** **invierno**."
+  },
+  {
+    "sentence_number": 14,
+    "content": "Rafael confirmou que **la** **flor** **es** **bonita**."
+  },
+  {
+    "sentence_number": 15,
+    "content": "Pedro confirmou que **la** **flor** **florece** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 16,
+    "content": "Carlos avisou que **el** **invierno** **tiene** **frío** **y** **nieve**."
+  },
+  {
+    "sentence_number": 17,
+    "content": "Rafael disse que **el** **verano** **termina** **y** **empieza** **el** **otoño**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "Marina disse que **el** **invierno** **termina** **y** **empieza** **la** **primavera**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "Daniela avisou que **el** **otoño** **termina** **y** **empieza** **el** **invierno**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "Ana avisou que **el** **invierno** **es** **frío**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "Ana disse que **el** **otoño** **es** **bonito**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "Ana comentou que **el** **otoño** **termina** **y** **empieza** **el** **invierno**."
+  },
+  {
+    "sentence_number": 23,
+    "content": "Lucas contou que **el** **invierno** **es** **frío**."
+  },
+  {
+    "sentence_number": 24,
+    "content": "Marina contou que **la** **playa** **es** **grande**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "Rafael gosta **de** **plantar** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "Daniela disse que **la** **hoja** **cae** **en** **el** **otoño**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "Sofia confirmou que **el** **invierno** **tiene** **frío** **y** **nieve**."
+  },
+  {
+    "sentence_number": 28,
+    "content": "Carlos confirmou que **el** **otoño** **termina** **y** **empieza** **el** **invierno**."
+  },
+  {
+    "sentence_number": 29,
+    "content": "Beatriz avisou que **el** **invierno** **es** **frío**."
+  },
+  {
+    "sentence_number": 30,
+    "content": "Lucas disse que **la** **hoja** **cae** **en** **el** **otoño**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "Daniela avisou que **el** **otoño** **es** **bonito**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "Rafael disse que **el** **otoño** **es** **bonito**."
+  },
+  {
+    "sentence_number": 33,
+    "content": "Carlos confirmou que **el** **verano** **termina** **y** **empieza** **el** **otoño**."
+  },
+  {
+    "sentence_number": 34,
+    "content": "Ana contou que **el** **otoño** **es** **bonito**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "Rafael disse que **la** **flor** **es** **bonita**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "Sofia comentou que **el** **verano** **es** **cálido**."
+  },
+  {
+    "sentence_number": 37,
+    "content": "Carlos comentou que **la** **hoja** **cae** **en** **el** **otoño**."
+  },
+  {
+    "sentence_number": 38,
+    "content": "Carlos avisou que **la** **primavera** **termina** **y** **empieza** **el** **verano**."
+  },
+  {
+    "sentence_number": 39,
+    "content": "Lucas avisou que **el** **invierno** **termina** **y** **empieza** **la** **primavera**."
+  },
+  {
+    "sentence_number": 40,
+    "content": "Carlos contou que **el** **verano** **es** **cálido**."
+  },
+  {
+    "sentence_number": 41,
+    "content": "Marina disse que **hace** **frío** **en** **el** **invierno**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "Marina disse que **la** **flor** **es** **bonita**."
+  },
+  {
+    "sentence_number": 43,
+    "content": "Pedro gosta **de** **esquiar** **en** **el** **invierno**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "Rafael confirmou que **hace** **calor** **en** **el** **verano**."
+  },
+  {
+    "sentence_number": 45,
+    "content": "Carlos confirmou que **la** **flor** **florece** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 46,
+    "content": "Carlos gosta **de** **plantar** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 47,
+    "content": "Ana disse que **la** **playa** **es** **grande**."
+  },
+  {
+    "sentence_number": 48,
+    "content": "Marina avisou que **el** **invierno** **termina** **y** **empieza** **la** **primavera**."
+  },
+  {
+    "sentence_number": 49,
+    "content": "Daniela avisou que **la** **flor** **es** **bonita**."
+  },
+  {
+    "sentence_number": 50,
+    "content": "Daniela gosta **de** **plantar** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "Beatriz gosta **de** **esquiar** **en** **el** **invierno**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "Sofia confirmou que **la** **playa** **es** **bonita**."
+  },
+  {
+    "sentence_number": 53,
+    "content": "Pablo contou que **la** **flor** **es** **bonita**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "Pablo confirmou que **el** **verano** **termina** **y** **empieza** **el** **otoño**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "Rafael contou que **el** **invierno** **termina** **y** **empieza** **la** **primavera**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "Carlos contou que **la** **flor** **florece** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 57,
+    "content": "Marina contou que **el** **verano** **es** **cálido**."
+  },
+  {
+    "sentence_number": 58,
+    "content": "Sofia gosta **de** **plantar** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 59,
+    "content": "Marina gosta **de** **plantar** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "Pedro comentou que **el** **invierno** **termina** **y** **empieza** **la** **primavera**."
+  },
+  {
+    "sentence_number": 61,
+    "content": "Marina contou que **la** **playa** **es** **bonita**."
+  },
+  {
+    "sentence_number": 62,
+    "content": "Daniela contou que **la** **primavera** **es** **bonita**."
+  },
+  {
+    "sentence_number": 63,
+    "content": "Lucas avisou que **la** **flor** **es** **bonita**."
+  },
+  {
+    "sentence_number": 64,
+    "content": "Ana comentou que **el** **verano** **termina** **y** **empieza** **el** **otoño**."
+  },
+  {
+    "sentence_number": 65,
+    "content": "Carlos comentou que **la** **flor** **es** **bonita**."
+  },
+  {
+    "sentence_number": 66,
+    "content": "Rafael comentou que **la** **playa** **es** **bonita**."
+  },
+  {
+    "sentence_number": 67,
+    "content": "Carlos disse que **la** **primavera** **es** **bonita**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "Carlos comentou que **la** **primavera** **tiene** **la** **flor** **y** **la** **hoja**."
+  },
+  {
+    "sentence_number": 69,
+    "content": "Ana contou que **la** **primavera** **tiene** **la** **flor** **y** **la** **hoja**."
+  },
+  {
+    "sentence_number": 70,
+    "content": "Daniela contou que **el** **verano** **es** **cálido**."
+  },
+  {
+    "sentence_number": 71,
+    "content": "Rafael confirmou que **la** **playa** **es** **grande**."
+  },
+  {
+    "sentence_number": 72,
+    "content": "Daniela comentou que **la** **hoja** **cae** **en** **el** **otoño**."
+  },
+  {
+    "sentence_number": 73,
+    "content": "Marina comentou que **el** **otoño** **es** **bonito**."
+  },
+  {
+    "sentence_number": 74,
+    "content": "Lucas confirmou que **el** **otoño** **es** **bonito**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "Marina disse que **la** **flor** **florece** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 76,
+    "content": "Marina disse que **el** **invierno** **es** **frío**."
+  },
+  {
+    "sentence_number": 77,
+    "content": "Daniela confirmou que **el** **otoño** **es** **bonito**."
+  },
+  {
+    "sentence_number": 78,
+    "content": "Pedro contou que **la** **primavera** **es** **bonita**."
+  },
+  {
+    "sentence_number": 79,
+    "content": "Beatriz disse que **la** **primavera** **es** **bonita**."
+  },
+  {
+    "sentence_number": 80,
+    "content": "Marina contou que **la** **primavera** **es** **bonita**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "Daniela disse que **la** **primavera** **termina** **y** **empieza** **el** **verano**."
+  },
+  {
+    "sentence_number": 82,
+    "content": "Sofia comentou que **el** **otoño** **termina** **y** **empieza** **el** **invierno**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "Daniela avisou que **la** **playa** **es** **grande**."
+  },
+  {
+    "sentence_number": 84,
+    "content": "Sofia comentou que **el** **verano** **termina** **y** **empieza** **el** **otoño**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "Carlos gosta **de** **esquiar** **en** **el** **invierno**."
+  },
+  {
+    "sentence_number": 86,
+    "content": "Sofia confirmou que **el** **verano** **es** **cálido**."
+  },
+  {
+    "sentence_number": 87,
+    "content": "Ana comentou que **la** **flor** **florece** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "Pablo confirmou que **el** **invierno** **es** **frío**."
+  },
+  {
+    "sentence_number": 89,
+    "content": "Beatriz avisou que **la** **primavera** **termina** **y** **empieza** **el** **verano**."
+  },
+  {
+    "sentence_number": 90,
+    "content": "Marina contou que **la** **flor** **es** **bonita**."
+  },
+  {
+    "sentence_number": 91,
+    "content": "Daniela contou que **el** **otoño** **es** **bonito**."
+  },
+  {
+    "sentence_number": 92,
+    "content": "Lucas avisou que **la** **primavera** **es** **bonita**."
+  },
+  {
+    "sentence_number": 93,
+    "content": "Carlos comentou que **la** **primavera** **es** **bonita**."
+  },
+  {
+    "sentence_number": 94,
+    "content": "Daniela comentou que **la** **playa** **es** **grande**."
+  },
+  {
+    "sentence_number": 95,
+    "content": "Marina comentou que **el** **verano** **tiene** **calor** **y** **sol**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "Pablo avisou que **la** **primavera** **termina** **y** **empieza** **el** **verano**."
+  },
+  {
+    "sentence_number": 97,
+    "content": "Rafael comentou que **hace** **frío** **en** **el** **invierno**."
+  },
+  {
+    "sentence_number": 98,
+    "content": "Carlos comentou que **la** **flor** **florece** **en** **la** **primavera**."
+  },
+  {
+    "sentence_number": 99,
+    "content": "Ana comentou que **la** **primavera** **es** **bonita**."
+  },
+  {
+    "sentence_number": 100,
+    "content": "Beatriz comentou que **hace** **calor** **en** **el** **verano**."
+  }
+]

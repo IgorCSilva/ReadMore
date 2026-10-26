@@ -1,0 +1,434 @@
+[
+  {
+    "id": "es-sent-1551",
+    "sentence": "La primavera es bonita.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0523",
+      "es-wd-0017",
+      "es-wd-0378"
+    ]
+  },
+  {
+    "id": "es-sent-1552",
+    "sentence": "Hoy es un día de primavera.",
+    "word_ids": [
+      "es-wd-0146",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0007",
+      "es-wd-0023",
+      "es-wd-0523"
+    ]
+  },
+  {
+    "id": "es-sent-1553",
+    "sentence": "La primavera empieza aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0523",
+      "es-wd-0534",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1554",
+    "sentence": "El verano es cálido.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0524",
+      "es-wd-0017",
+      "es-wd-0536"
+    ]
+  },
+  {
+    "id": "es-sent-1555",
+    "sentence": "Hace calor en el verano.",
+    "word_ids": [
+      "es-wd-0500",
+      "es-wd-0491",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0524"
+    ]
+  },
+  {
+    "id": "es-sent-1556",
+    "sentence": "El verano empieza aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0524",
+      "es-wd-0534",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1557",
+    "sentence": "El otoño es bonito.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0525",
+      "es-wd-0017",
+      "es-wd-0377"
+    ]
+  },
+  {
+    "id": "es-sent-1558",
+    "sentence": "La hoja cae en el otoño.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0529",
+      "es-wd-0530",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0525"
+    ]
+  },
+  {
+    "id": "es-sent-1559",
+    "sentence": "El otoño empieza aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0525",
+      "es-wd-0534",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1560",
+    "sentence": "El invierno es frío.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0526",
+      "es-wd-0017",
+      "es-wd-0492"
+    ]
+  },
+  {
+    "id": "es-sent-1561",
+    "sentence": "Hace frío en el invierno.",
+    "word_ids": [
+      "es-wd-0500",
+      "es-wd-0492",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0526"
+    ]
+  },
+  {
+    "id": "es-sent-1562",
+    "sentence": "El invierno termina aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0526",
+      "es-wd-0535",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1563",
+    "sentence": "La flor es bonita.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0527",
+      "es-wd-0017",
+      "es-wd-0378"
+    ]
+  },
+  {
+    "id": "es-sent-1564",
+    "sentence": "Hay una flor aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0527",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1565",
+    "sentence": "La flor florece en primavera.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0527",
+      "es-wd-0528",
+      "es-wd-0084",
+      "es-wd-0523"
+    ]
+  },
+  {
+    "id": "es-sent-1566",
+    "sentence": "La flor florece aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0527",
+      "es-wd-0528",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1567",
+    "sentence": "La flor no florece hoy.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0527",
+      "es-wd-0036",
+      "es-wd-0528",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1568",
+    "sentence": "La flor florece en la primavera.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0527",
+      "es-wd-0528",
+      "es-wd-0084",
+      "es-wd-0058",
+      "es-wd-0523"
+    ]
+  },
+  {
+    "id": "es-sent-1569",
+    "sentence": "La hoja es pequeña.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0529",
+      "es-wd-0017",
+      "es-wd-0225"
+    ]
+  },
+  {
+    "id": "es-sent-1570",
+    "sentence": "Hay una hoja aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0529",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1571",
+    "sentence": "La hoja cae en otoño.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0529",
+      "es-wd-0530",
+      "es-wd-0084",
+      "es-wd-0525"
+    ]
+  },
+  {
+    "id": "es-sent-1572",
+    "sentence": "La hoja cae aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0529",
+      "es-wd-0530",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1573",
+    "sentence": "La hoja no cae hoy.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0529",
+      "es-wd-0036",
+      "es-wd-0530",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1574",
+    "sentence": "La hoja cae hoy.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0529",
+      "es-wd-0530",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1575",
+    "sentence": "La playa es grande.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0531",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1576",
+    "sentence": "Hay una playa aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0531",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1577",
+    "sentence": "La playa es bonita.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0531",
+      "es-wd-0017",
+      "es-wd-0378"
+    ]
+  },
+  {
+    "id": "es-sent-1578",
+    "sentence": "Quiero esquiar.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0532"
+    ]
+  },
+  {
+    "id": "es-sent-1579",
+    "sentence": "Quiero esquiar en invierno.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0532",
+      "es-wd-0084",
+      "es-wd-0526"
+    ]
+  },
+  {
+    "id": "es-sent-1580",
+    "sentence": "No quiero esquiar hoy.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0125",
+      "es-wd-0532",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1581",
+    "sentence": "Quiero plantar aquí.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0533",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1582",
+    "sentence": "Quiero plantar en primavera.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0533",
+      "es-wd-0084",
+      "es-wd-0523"
+    ]
+  },
+  {
+    "id": "es-sent-1583",
+    "sentence": "No quiero plantar hoy.",
+    "word_ids": [
+      "es-wd-0036",
+      "es-wd-0125",
+      "es-wd-0533",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1584",
+    "sentence": "El invierno empieza aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0526",
+      "es-wd-0534",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1585",
+    "sentence": "La primavera empieza hoy.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0523",
+      "es-wd-0534",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1586",
+    "sentence": "El otoño no empieza hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0525",
+      "es-wd-0036",
+      "es-wd-0534",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1587",
+    "sentence": "El verano termina aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0524",
+      "es-wd-0535",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1588",
+    "sentence": "El otoño termina hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0525",
+      "es-wd-0535",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1589",
+    "sentence": "La primavera no termina hoy.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0523",
+      "es-wd-0036",
+      "es-wd-0535",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1590",
+    "sentence": "El tiempo es cálido.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0485",
+      "es-wd-0017",
+      "es-wd-0536"
+    ]
+  },
+  {
+    "id": "es-sent-1591",
+    "sentence": "El día es cálido.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0007",
+      "es-wd-0017",
+      "es-wd-0536"
+    ]
+  },
+  {
+    "id": "es-sent-1592",
+    "sentence": "Hoy es un día cálido.",
+    "word_ids": [
+      "es-wd-0146",
+      "es-wd-0017",
+      "es-wd-0076",
+      "es-wd-0007",
+      "es-wd-0536"
+    ]
+  }
+]

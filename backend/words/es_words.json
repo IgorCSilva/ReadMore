@@ -3130,5 +3130,89 @@
     "root_word_id": "wd-0686",
     "word": "doméstica",
     "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0523",
+    "root_word_id": "wd-0687",
+    "word": "primavera",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0524",
+    "root_word_id": "wd-0688",
+    "word": "verano",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0525",
+    "root_word_id": "wd-0689",
+    "word": "otoño",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0526",
+    "root_word_id": "wd-0690",
+    "word": "invierno",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0527",
+    "root_word_id": "wd-0691",
+    "word": "flor",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0528",
+    "root_word_id": "wd-0692",
+    "word": "florece",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0529",
+    "root_word_id": "wd-0693",
+    "word": "hoja",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0530",
+    "root_word_id": "wd-0694",
+    "word": "cae",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0531",
+    "root_word_id": "wd-0695",
+    "word": "playa",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0532",
+    "root_word_id": "wd-0696",
+    "word": "esquiar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0533",
+    "root_word_id": "wd-0697",
+    "word": "plantar",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0534",
+    "root_word_id": "wd-0698",
+    "word": "empieza",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0535",
+    "root_word_id": "wd-0699",
+    "word": "termina",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0536",
+    "root_word_id": "wd-0700",
+    "word": "cálido",
+    "gender_id": "masculine"
   }
 ]

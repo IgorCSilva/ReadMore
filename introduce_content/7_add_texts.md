@@ -1,8 +1,7 @@
 ## Add texts
 
 target: es
-chapter: 6
-topic: 2
+Check introduce_content/current_info.md file to know the chapter and topic numbers.
 
 Medium, standalone reading/shadowing passages for this chapter/topic — the content
 backend/app/domain/entities.py's Topic.texts (texts.json) feeds to the frontend's Shadowing

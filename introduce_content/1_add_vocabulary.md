@@ -1,8 +1,8 @@
 ## Add vocabulary
 
 idiom: es
-chapter: 6
-topic: 2
+
+Check introduce_content/current_info.md file to know the chapter and topic numbers.
 
 1. Resolve chapter/topic into a roadmap ID using the Section 7 table in
    contents/language_reading_journey_phases/roadmap.md (chapter 1 = its first
