@@ -3214,5 +3214,161 @@
     "root_word_id": "wd-0700",
     "word": "cálido",
     "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0537",
+    "root_word_id": "wd-0701",
+    "word": "planta",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0538",
+    "root_word_id": "wd-0702",
+    "word": "árbol",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0539",
+    "root_word_id": "wd-0703",
+    "word": "semilla",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0540",
+    "root_word_id": "wd-0704",
+    "word": "raíz",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0541",
+    "root_word_id": "wd-0705",
+    "word": "rama",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0542",
+    "root_word_id": "wd-0706",
+    "word": "tallo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0543",
+    "root_word_id": "wd-0707",
+    "word": "fruto",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0544",
+    "root_word_id": "wd-0708",
+    "word": "tierra",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0545",
+    "root_word_id": "wd-0709",
+    "word": "crece",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0546",
+    "root_word_id": "wd-0710",
+    "word": "necesita",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0547",
+    "root_word_id": "wd-0711",
+    "word": "vivo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0548",
+    "root_word_id": "wd-0712",
+    "word": "viva",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0549",
+    "root_word_id": "wd-0713",
+    "word": "naturaleza",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0550",
+    "root_word_id": "wd-0714",
+    "word": "luz",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0551",
+    "root_word_id": "wd-0715",
+    "word": "luna",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0552",
+    "root_word_id": "wd-0716",
+    "word": "estrella",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0553",
+    "root_word_id": "wd-0717",
+    "word": "cielo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0554",
+    "root_word_id": "wd-0718",
+    "word": "oscuro",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0555",
+    "root_word_id": "wd-0719",
+    "word": "claro",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0556",
+    "root_word_id": "wd-0720",
+    "word": "oscuridad",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0557",
+    "root_word_id": "wd-0721",
+    "word": "brilla",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0558",
+    "root_word_id": "wd-0722",
+    "word": "amanece",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0559",
+    "root_word_id": "wd-0723",
+    "word": "anochece",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0560",
+    "root_word_id": "wd-0724",
+    "word": "aparece",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0561",
+    "root_word_id": "wd-0725",
+    "word": "medianoche",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0562",
+    "root_word_id": "wd-0726",
+    "word": "planeta",
+    "gender_id": "masculine"
   }
 ]

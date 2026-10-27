@@ -1,0 +1,212 @@
+[
+  {
+    "id": "es-sent-1593",
+    "sentence": "La planta es bonita.",
+    "word_ids": ["es-wd-0058", "es-wd-0537", "es-wd-0017", "es-wd-0378"]
+  },
+  {
+    "id": "es-sent-1594",
+    "sentence": "Hay una planta aquí.",
+    "word_ids": ["es-wd-0081", "es-wd-0077", "es-wd-0537", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1595",
+    "sentence": "La planta necesita agua.",
+    "word_ids": ["es-wd-0058", "es-wd-0537", "es-wd-0546", "es-wd-0111"]
+  },
+  {
+    "id": "es-sent-1596",
+    "sentence": "El árbol es grande.",
+    "word_ids": ["es-wd-0057", "es-wd-0538", "es-wd-0017", "es-wd-0226"]
+  },
+  {
+    "id": "es-sent-1597",
+    "sentence": "Hay un árbol aquí.",
+    "word_ids": ["es-wd-0081", "es-wd-0076", "es-wd-0538", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1598",
+    "sentence": "El árbol tiene fruto.",
+    "word_ids": ["es-wd-0057", "es-wd-0538", "es-wd-0080", "es-wd-0543"]
+  },
+  {
+    "id": "es-sent-1599",
+    "sentence": "La semilla es pequeña.",
+    "word_ids": ["es-wd-0058", "es-wd-0539", "es-wd-0017", "es-wd-0225"]
+  },
+  {
+    "id": "es-sent-1600",
+    "sentence": "Hay una semilla aquí.",
+    "word_ids": ["es-wd-0081", "es-wd-0077", "es-wd-0539", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1601",
+    "sentence": "La semilla crece con agua.",
+    "word_ids": ["es-wd-0058", "es-wd-0539", "es-wd-0545", "es-wd-0061", "es-wd-0111"]
+  },
+  {
+    "id": "es-sent-1602",
+    "sentence": "La raíz es grande.",
+    "word_ids": ["es-wd-0058", "es-wd-0540", "es-wd-0017", "es-wd-0226"]
+  },
+  {
+    "id": "es-sent-1603",
+    "sentence": "Hay una raíz aquí.",
+    "word_ids": ["es-wd-0081", "es-wd-0077", "es-wd-0540", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1604",
+    "sentence": "La raíz necesita tierra.",
+    "word_ids": ["es-wd-0058", "es-wd-0540", "es-wd-0546", "es-wd-0544"]
+  },
+  {
+    "id": "es-sent-1605",
+    "sentence": "La rama es pequeña.",
+    "word_ids": ["es-wd-0058", "es-wd-0541", "es-wd-0017", "es-wd-0225"]
+  },
+  {
+    "id": "es-sent-1606",
+    "sentence": "Hay una rama aquí.",
+    "word_ids": ["es-wd-0081", "es-wd-0077", "es-wd-0541", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1607",
+    "sentence": "La rama tiene fruto.",
+    "word_ids": ["es-wd-0058", "es-wd-0541", "es-wd-0080", "es-wd-0543"]
+  },
+  {
+    "id": "es-sent-1608",
+    "sentence": "El tallo es pequeño.",
+    "word_ids": ["es-wd-0057", "es-wd-0542", "es-wd-0017", "es-wd-0224"]
+  },
+  {
+    "id": "es-sent-1609",
+    "sentence": "Hay un tallo aquí.",
+    "word_ids": ["es-wd-0081", "es-wd-0076", "es-wd-0542", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1610",
+    "sentence": "El tallo crece con luz.",
+    "word_ids": ["es-wd-0057", "es-wd-0542", "es-wd-0545", "es-wd-0061", "es-wd-0550"]
+  },
+  {
+    "id": "es-sent-1611",
+    "sentence": "El fruto es grande.",
+    "word_ids": ["es-wd-0057", "es-wd-0543", "es-wd-0017", "es-wd-0226"]
+  },
+  {
+    "id": "es-sent-1612",
+    "sentence": "Hay un fruto aquí.",
+    "word_ids": ["es-wd-0081", "es-wd-0076", "es-wd-0543", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1613",
+    "sentence": "El fruto crece en el árbol.",
+    "word_ids": ["es-wd-0057", "es-wd-0543", "es-wd-0545", "es-wd-0084", "es-wd-0057", "es-wd-0538"]
+  },
+  {
+    "id": "es-sent-1614",
+    "sentence": "La tierra es grande.",
+    "word_ids": ["es-wd-0058", "es-wd-0544", "es-wd-0017", "es-wd-0226"]
+  },
+  {
+    "id": "es-sent-1615",
+    "sentence": "Hay tierra aquí.",
+    "word_ids": ["es-wd-0081", "es-wd-0544", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1616",
+    "sentence": "La planta necesita tierra.",
+    "word_ids": ["es-wd-0058", "es-wd-0537", "es-wd-0546", "es-wd-0544"]
+  },
+  {
+    "id": "es-sent-1617",
+    "sentence": "La planta crece aquí.",
+    "word_ids": ["es-wd-0058", "es-wd-0537", "es-wd-0545", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1618",
+    "sentence": "El árbol crece aquí.",
+    "word_ids": ["es-wd-0057", "es-wd-0538", "es-wd-0545", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1619",
+    "sentence": "La semilla crece hoy.",
+    "word_ids": ["es-wd-0058", "es-wd-0539", "es-wd-0545", "es-wd-0146"]
+  },
+  {
+    "id": "es-sent-1620",
+    "sentence": "El árbol necesita agua.",
+    "word_ids": ["es-wd-0057", "es-wd-0538", "es-wd-0546", "es-wd-0111"]
+  },
+  {
+    "id": "es-sent-1621",
+    "sentence": "La semilla necesita tierra.",
+    "word_ids": ["es-wd-0058", "es-wd-0539", "es-wd-0546", "es-wd-0544"]
+  },
+  {
+    "id": "es-sent-1622",
+    "sentence": "La planta necesita luz.",
+    "word_ids": ["es-wd-0058", "es-wd-0537", "es-wd-0546", "es-wd-0550"]
+  },
+  {
+    "id": "es-sent-1623",
+    "sentence": "El árbol es vivo.",
+    "word_ids": ["es-wd-0057", "es-wd-0538", "es-wd-0017", "es-wd-0547"]
+  },
+  {
+    "id": "es-sent-1624",
+    "sentence": "El tallo es vivo.",
+    "word_ids": ["es-wd-0057", "es-wd-0542", "es-wd-0017", "es-wd-0547"]
+  },
+  {
+    "id": "es-sent-1625",
+    "sentence": "El fruto es vivo.",
+    "word_ids": ["es-wd-0057", "es-wd-0543", "es-wd-0017", "es-wd-0547"]
+  },
+  {
+    "id": "es-sent-1626",
+    "sentence": "La planta es viva.",
+    "word_ids": ["es-wd-0058", "es-wd-0537", "es-wd-0017", "es-wd-0548"]
+  },
+  {
+    "id": "es-sent-1627",
+    "sentence": "La rama es viva.",
+    "word_ids": ["es-wd-0058", "es-wd-0541", "es-wd-0017", "es-wd-0548"]
+  },
+  {
+    "id": "es-sent-1628",
+    "sentence": "La semilla es viva.",
+    "word_ids": ["es-wd-0058", "es-wd-0539", "es-wd-0017", "es-wd-0548"]
+  },
+  {
+    "id": "es-sent-1629",
+    "sentence": "La naturaleza es grande.",
+    "word_ids": ["es-wd-0058", "es-wd-0549", "es-wd-0017", "es-wd-0226"]
+  },
+  {
+    "id": "es-sent-1630",
+    "sentence": "Hay naturaleza aquí.",
+    "word_ids": ["es-wd-0081", "es-wd-0549", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1631",
+    "sentence": "La naturaleza tiene agua y luz.",
+    "word_ids": ["es-wd-0058", "es-wd-0549", "es-wd-0080", "es-wd-0111", "es-wd-0033", "es-wd-0550"]
+  },
+  {
+    "id": "es-sent-1632",
+    "sentence": "La luz es grande.",
+    "word_ids": ["es-wd-0058", "es-wd-0550", "es-wd-0017", "es-wd-0226"]
+  },
+  {
+    "id": "es-sent-1633",
+    "sentence": "Hay luz aquí.",
+    "word_ids": ["es-wd-0081", "es-wd-0550", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1634",
+    "sentence": "El árbol necesita luz.",
+    "word_ids": ["es-wd-0057", "es-wd-0538", "es-wd-0546", "es-wd-0550"]
+  }
+]

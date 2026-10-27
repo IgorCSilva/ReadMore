@@ -1,0 +1,379 @@
+[
+  {
+    "id": "es-sent-1635",
+    "sentence": "La luna es bonita.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0551",
+      "es-wd-0017",
+      "es-wd-0378"
+    ]
+  },
+  {
+    "id": "es-sent-1636",
+    "sentence": "Hay una luna aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0551",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1637",
+    "sentence": "La luna brilla en el cielo.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0551",
+      "es-wd-0557",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0553"
+    ]
+  },
+  {
+    "id": "es-sent-1638",
+    "sentence": "La estrella es pequeña.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0552",
+      "es-wd-0017",
+      "es-wd-0225"
+    ]
+  },
+  {
+    "id": "es-sent-1639",
+    "sentence": "Hay una estrella aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0552",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1640",
+    "sentence": "La estrella brilla mucho.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0552",
+      "es-wd-0557",
+      "es-wd-0127"
+    ]
+  },
+  {
+    "id": "es-sent-1641",
+    "sentence": "El cielo es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0553",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1642",
+    "sentence": "El cielo está claro.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0553",
+      "es-wd-0255",
+      "es-wd-0555"
+    ]
+  },
+  {
+    "id": "es-sent-1643",
+    "sentence": "La luna está en el cielo.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0551",
+      "es-wd-0255",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0553"
+    ]
+  },
+  {
+    "id": "es-sent-1644",
+    "sentence": "El cielo está oscuro.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0553",
+      "es-wd-0255",
+      "es-wd-0554"
+    ]
+  },
+  {
+    "id": "es-sent-1645",
+    "sentence": "Todo está oscuro aquí.",
+    "word_ids": [
+      "es-wd-0010",
+      "es-wd-0255",
+      "es-wd-0554",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1646",
+    "sentence": "El cielo está oscuro ahora.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0553",
+      "es-wd-0255",
+      "es-wd-0554",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1647",
+    "sentence": "El cielo está claro hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0553",
+      "es-wd-0255",
+      "es-wd-0555",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1648",
+    "sentence": "Todo está claro ahora.",
+    "word_ids": [
+      "es-wd-0010",
+      "es-wd-0255",
+      "es-wd-0555",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1649",
+    "sentence": "El cielo no está claro.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0553",
+      "es-wd-0036",
+      "es-wd-0255",
+      "es-wd-0555"
+    ]
+  },
+  {
+    "id": "es-sent-1650",
+    "sentence": "La oscuridad es grande.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0556",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1651",
+    "sentence": "Hay oscuridad aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0556",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1652",
+    "sentence": "La oscuridad llega con la noche.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0556",
+      "es-wd-0166",
+      "es-wd-0061",
+      "es-wd-0058",
+      "es-wd-0009"
+    ]
+  },
+  {
+    "id": "es-sent-1653",
+    "sentence": "La luna brilla mucho.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0551",
+      "es-wd-0557",
+      "es-wd-0127"
+    ]
+  },
+  {
+    "id": "es-sent-1654",
+    "sentence": "El sol brilla hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0486",
+      "es-wd-0557",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1655",
+    "sentence": "La estrella brilla ahora.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0552",
+      "es-wd-0557",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1656",
+    "sentence": "Amanece y el cielo está claro.",
+    "word_ids": [
+      "es-wd-0558",
+      "es-wd-0033",
+      "es-wd-0057",
+      "es-wd-0553",
+      "es-wd-0255",
+      "es-wd-0555"
+    ]
+  },
+  {
+    "id": "es-sent-1657",
+    "sentence": "Amanece ahora en el cielo.",
+    "word_ids": [
+      "es-wd-0558",
+      "es-wd-0145",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0553"
+    ]
+  },
+  {
+    "id": "es-sent-1658",
+    "sentence": "Amanece y el sol aparece.",
+    "word_ids": [
+      "es-wd-0558",
+      "es-wd-0033",
+      "es-wd-0057",
+      "es-wd-0486",
+      "es-wd-0560"
+    ]
+  },
+  {
+    "id": "es-sent-1659",
+    "sentence": "Anochece y el cielo está oscuro.",
+    "word_ids": [
+      "es-wd-0559",
+      "es-wd-0033",
+      "es-wd-0057",
+      "es-wd-0553",
+      "es-wd-0255",
+      "es-wd-0554"
+    ]
+  },
+  {
+    "id": "es-sent-1660",
+    "sentence": "Anochece ahora.",
+    "word_ids": [
+      "es-wd-0559",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1661",
+    "sentence": "Anochece y la luna aparece.",
+    "word_ids": [
+      "es-wd-0559",
+      "es-wd-0033",
+      "es-wd-0058",
+      "es-wd-0551",
+      "es-wd-0560"
+    ]
+  },
+  {
+    "id": "es-sent-1662",
+    "sentence": "La luna aparece ahora.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0551",
+      "es-wd-0560",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1663",
+    "sentence": "El sol aparece hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0486",
+      "es-wd-0560",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1664",
+    "sentence": "Una estrella aparece en el cielo.",
+    "word_ids": [
+      "es-wd-0077",
+      "es-wd-0552",
+      "es-wd-0560",
+      "es-wd-0084",
+      "es-wd-0057",
+      "es-wd-0553"
+    ]
+  },
+  {
+    "id": "es-sent-1665",
+    "sentence": "La medianoche llega hoy.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0561",
+      "es-wd-0166",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1666",
+    "sentence": "Es medianoche ahora.",
+    "word_ids": [
+      "es-wd-0017",
+      "es-wd-0561",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1667",
+    "sentence": "La medianoche llega con la noche.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0561",
+      "es-wd-0166",
+      "es-wd-0061",
+      "es-wd-0058",
+      "es-wd-0009"
+    ]
+  },
+  {
+    "id": "es-sent-1668",
+    "sentence": "El planeta es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0562",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1669",
+    "sentence": "Hay un planeta aquí.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0562",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1670",
+    "sentence": "Mi planeta favorito es grande.",
+    "word_ids": [
+      "es-wd-0016",
+      "es-wd-0562",
+      "es-wd-0394",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  }
+]

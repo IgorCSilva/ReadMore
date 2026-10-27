@@ -10,56 +10,64 @@ If there are some emojis like 😊 you can remove them.
 == Initial ==
 =============
 
+Pelusa, la gatita astronauta
 
-Bambú y el pañal viajero
+Una historia tierna sobre la amistad y la valentía, perfecta para leer antes de dormir. Acompaña a la pequeña Pelusa en su viaje a las estrellas, donde descubrirá que se pueden hacer nuevos amigos hasta en los lugares más lejanos.
+-----------------------------------
 
-Bambú descubre que su pañal tiene un sueño secreto: ¡conocer el mundo! Una historia tierna y respetuosa para acompañar a los niños en el paso de dejar el pañal, sin presiones y a su propio ritmo.
-----------------------------------------
+Pelusa era una gatita astronauta 🐱🚀
+Llevaba un casco redondo y brillante,
+y era toda una aventurera.
 
-Bambú era un osito panda pequeño, redondito y muy abrazable.
 
-Dentro de poco iba a empezar el jardín, y eso le hacía sentir cosquillas en la panza.
+Su nave estaba hecha con su cajita transportadora
+y tenía todo lo necesario para cruzar el espacio.
 
-Pero había un pequeño problema…
 
-Bambú todavía usaba pañal.
+Un día, decidió viajar hasta Marte.
+La nave voló entre las estrellas y aterrizó muy despacito,
+con un sonido suave:
 
-Una mañana, mientras se lo estaba poniendo, el pañal suspiró y dijo:
+—pusssssshhhhhh—
 
-—Bambú, yo quiero viajar por el mundo.
 
-—¿Cómo que viajar? —dijo Bambú, agarrándolo fuerte—. ¡Tú eres mío!
+justo sobre el planeta rojo.
 
-—He soñado con ver el mar, las montañas y hasta el desierto —dijo el pañal—. Ya he hecho mi trabajo contigo.
+Cuando Pelusa salió a explorar,
+vio algo moverse a lo lejos.
 
-—¡No, no y no! —exclamó Bambú, y empezó un pequeño jaloneo con el pañal.
-El pañal tiraba para un lado, Bambú para el otro… ¡Plaf! Los dos acabaron sentados en el suelo.
 
-—Mira —dijo el pañal, un poco despeinado—, podrías probar a usar la bacinica, como los pandas grandes.
+¡Era un marciano! 👽
 
-—Pero… ¿y si te necesito? —preguntó Bambú.
+El marciano se asustó muchísimo.
+Pelusa también se llevó un tremendo susto.
 
-—No pasa nada —sonrió el pañal—. Me quedaré contigo un tiempo más. Poco a poco. Y cuando tú te sientas listo… me iré de viaje.
 
-Bambú lo pensó. Eso sí le gustaba.
+Pelusa corrió y se metió rápido en su nave.
+El marciano corrió y se escondió detrás de una roca grande.
 
-Así que empezó a usar la bacinica. A veces sí, a veces no. Y el pañal seguía ahí, ayudándolo.
 
-Hasta que un día, Bambú dijo muy serio:
+Durante un rato,
+nadie se movió.
 
-—Pañal… ya estoy listo.
 
-El pañal se quedó mirándolo con orgullo, sonrió y sacó una maletita pequeñita.
+Poco a poco, el marciano se asomó.
+Caminó despacio y se acercó con un regalo entre las manos.
 
-—Entonces ha llegado mi momento.
 
-Se despidieron con un abrazo enorme.
+Era una roca de Marte,
+roja y brillante 🪨
 
-—¡Buen viaje! —dijo Bambú.
+Entonces, Pelusa salió de su cajita.
+Buscó en su arenero espacial
+y le regaló una piedrita muy bonita.
 
-Y desde ese día, Bambú fue al jardín sin pañal…
-un poco más ligero,
-y muy, muy orgulloso 🐼✨
+Se miraron con curiosidad
+y el miedo desapareció.
+
+Pelusa subió a su nave y regresó feliz a la Tierra 🌍
+con su roca de Marte,
+un recuerdo especial de su nuevo amigo del espacio ✨
 
 =========
 == End ==

@@ -658,6 +658,40 @@
         "termina": "termina",
         "quente": "cálido"
       }
+    },
+    "topic_4": {
+      "pt": {
+        "planta": "planta",
+        "árvore": "árbol",
+        "semente": "semilla",
+        "raiz": "raíz",
+        "galho": "rama",
+        "caule": "tallo",
+        "fruto": "fruto",
+        "terra": "tierra",
+        "cresce": "crece",
+        "precisa": "necesita",
+        "vivo": "vivo",
+        "viva": "viva",
+        "natureza": "naturaleza",
+        "luz": "luz"
+      }
+    },
+    "topic_5": {
+      "pt": {
+        "lua": "luna",
+        "estrela": "estrella",
+        "céu": "cielo",
+        "escuro": "oscuro",
+        "claro": "claro",
+        "escuridão": "oscuridad",
+        "brilha": "brilla",
+        "amanhece": "amanece",
+        "anoitece": "anochece",
+        "aparece": "aparece",
+        "meia-noite": "medianoche",
+        "planeta": "planeta"
+      }
     }
   }
 }

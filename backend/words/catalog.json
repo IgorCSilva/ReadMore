@@ -2799,6 +2799,110 @@
     {
       "word_id": "wd-0700",
       "filename": "warm"
+    },
+    {
+      "word_id": "wd-0701",
+      "filename": "plant"
+    },
+    {
+      "word_id": "wd-0702",
+      "filename": "tree"
+    },
+    {
+      "word_id": "wd-0703",
+      "filename": "seed"
+    },
+    {
+      "word_id": "wd-0704",
+      "filename": "root"
+    },
+    {
+      "word_id": "wd-0705",
+      "filename": "branch"
+    },
+    {
+      "word_id": "wd-0706",
+      "filename": "stem"
+    },
+    {
+      "word_id": "wd-0707",
+      "filename": "plant_fruit"
+    },
+    {
+      "word_id": "wd-0708",
+      "filename": "soil"
+    },
+    {
+      "word_id": "wd-0709",
+      "filename": "it_grows"
+    },
+    {
+      "word_id": "wd-0710",
+      "filename": "it_needs"
+    },
+    {
+      "word_id": "wd-0711",
+      "filename": "alive"
+    },
+    {
+      "word_id": "wd-0712",
+      "filename": "alive_feminine"
+    },
+    {
+      "word_id": "wd-0713",
+      "filename": "nature"
+    },
+    {
+      "word_id": "wd-0714",
+      "filename": "light"
+    },
+    {
+      "word_id": "wd-0715",
+      "filename": "moon"
+    },
+    {
+      "word_id": "wd-0716",
+      "filename": "star"
+    },
+    {
+      "word_id": "wd-0717",
+      "filename": "sky"
+    },
+    {
+      "word_id": "wd-0718",
+      "filename": "dark"
+    },
+    {
+      "word_id": "wd-0719",
+      "filename": "bright"
+    },
+    {
+      "word_id": "wd-0720",
+      "filename": "darkness"
+    },
+    {
+      "word_id": "wd-0721",
+      "filename": "it_shines"
+    },
+    {
+      "word_id": "wd-0722",
+      "filename": "it_dawns"
+    },
+    {
+      "word_id": "wd-0723",
+      "filename": "it_gets_dark"
+    },
+    {
+      "word_id": "wd-0724",
+      "filename": "it_appears"
+    },
+    {
+      "word_id": "wd-0725",
+      "filename": "midnight"
+    },
+    {
+      "word_id": "wd-0726",
+      "filename": "planet"
     }
   ]
 }
