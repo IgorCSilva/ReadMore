@@ -1,402 +1,402 @@
 [
   {
     "sentence_number": 1,
-    "content": "**mi** **hermano** **va** **a** **limpiar** **la** **aspiradora** **después** **de** usarla."
+    "content": "**Mi** **abuelo** **tiene** **un** **ventilador** **eléctrico** **bien** antigo."
   },
   {
     "sentence_number": 2,
-    "content": "**mi** **vecina** pone **la** ropa mojada **en** **la** **secadora** **y** espera."
+    "content": "Minha **amiga** **necesita** **limpiar** **la** **lavadora** **hoy**."
   },
   {
     "sentence_number": 3,
-    "content": "**la** **cafetera** **de** **mi** **abuela** **no** quiere **funcionar** **hoy**."
-  },
-  {
-    "sentence_number": 4,
-    "content": "**la** **cafetera** **funciona** **bien**, **pero** **la** **plancha** **se** rompió."
-  },
-  {
-    "sentence_number": 5,
-    "content": "**la** **cafetera** **funciona** **bien**, **pero** **la** **secadora** **se** rompió."
-  },
-  {
-    "sentence_number": 6,
-    "content": "**Nosotros** vamos **a** **romper** **el** **ventilador** **hoy**."
-  },
-  {
-    "sentence_number": 7,
-    "content": "**mi** **abuela** **va** **a** **lavar** **la** ropa **en** **la** **lavadora**."
-  },
-  {
-    "sentence_number": 8,
-    "content": "**mi** **hermana** **va** **a** comprar **un** **ventilador** **y** **una** **cafetera** **nueva**."
-  },
-  {
-    "sentence_number": 9,
-    "content": "**la** **plancha** **es** **eléctrica**."
-  },
-  {
-    "sentence_number": 10,
-    "content": "**El** **ventilador** **es** **eléctrico** **y** silencioso."
-  },
-  {
-    "sentence_number": 11,
-    "content": "**Nosotros** vamos **a** **lavar** **el** **ventilador** **hoy**."
-  },
-  {
-    "sentence_number": 12,
     "content": "**El** **microondas** **es** **eléctrico** **y** moderno."
   },
   {
+    "sentence_number": 4,
+    "content": "Minha **esposa** **va** romper **la** **cafetera** **mañana**."
+  },
+  {
+    "sentence_number": 5,
+    "content": "Esse **licuadora** **funciona** **bien**, **pero** esse **plancha** fica **rota**."
+  },
+  {
+    "sentence_number": 6,
+    "content": "Minha **hermana** acha que **el** **microondas** **no** **va** **funcionar** **más**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "**El** **ventilador** **funciona** **bien**, **pero** esse **plancha** fica **rota**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "Minha **madre** **va** **romper** **la** **secadora** **sin** querer."
+  },
+  {
+    "sentence_number": 9,
+    "content": "**Nosotros** vamos **romper** **el** **microondas** **hoy**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "Minha **hermana** **tiene** esse **licuadora** **en** **casa**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**Mi** **padre** comprou **un** **microondas** **eléctrico** **nuevo**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "**Nosotros** vamos **limpiar** **la** **cafetera** **hoy**."
+  },
+  {
     "sentence_number": 13,
-    "content": "**mi** **vecina** **va** **a** comprar **una** **licuadora** **y** **un** **ventilador** **nuevo**."
+    "content": "**Nosotros** vamos **lavar** esse **plancha** **hoy**."
   },
   {
     "sentence_number": 14,
-    "content": "**la** **licuadora** **funciona** **bien**, **pero** **el** **ventilador** **se** rompió."
+    "content": "**La** **cafetera** do **mi** **vecino** **no** quer **funcionar** **hoy**."
   },
   {
     "sentence_number": 15,
-    "content": "**la** **aspiradora** **funciona** **bien**, **pero** **el** **ventilador** **se** rompió."
+    "content": "**Mi** **primo** **va** comprar **una** **cafetera** **y** esse **licuadora**."
   },
   {
     "sentence_number": 16,
-    "content": "**mi** **vecino** **va** **a** comprar **una** **licuadora** **y** **una** **tostadora** **nueva**."
+    "content": "**Mi** **vecino** coloca **la** roupa molhada **en la** **secadora** **y** espera."
   },
   {
     "sentence_number": 17,
-    "content": "**mi** **esposa** **va** **a** comprar **una** **aspiradora** **y** **una** **tostadora** **nueva**."
+    "content": "Minha **vecina** usa **la** **cafetera** **eléctrica** para **calentar** **la** **comida**."
   },
   {
     "sentence_number": 18,
-    "content": "**el** **ventilador** **funciona** **bien**, **pero** **la** **aspiradora** **se** rompió."
+    "content": "**Mi** **hermano** **va** comprar esse **licuadora** **y** **un** **microondas** **nuevo**."
   },
   {
     "sentence_number": 19,
-    "content": "**mi** **prima** **va** **a** **lavar** **la** **tostadora** **mañana**."
+    "content": "Minha **esposa** **tiene** **una** **cafetera** **eléctrica** **en** **casa**."
   },
   {
     "sentence_number": 20,
-    "content": "**mi** **vecina** **va** **a** **limpiar** **el** **ventilador** **mañana**."
+    "content": "**Cuando** **hace** **calor**, minha **hija** liga **el** **ventilador**."
   },
   {
     "sentence_number": 21,
-    "content": "**mi** **madre** compró **una** **aspiradora** **nueva** **porque** **la** **vieja** **se** rompió."
+    "content": "**Mi** **padre** **tiene** **una** **secadora**, **un** **microondas** **y** **un** **ventilador** elétricos."
   },
   {
     "sentence_number": 22,
-    "content": "**Mi** **padre** compró **un** **microondas** **eléctrico** **nuevo**."
+    "content": "**Cuando** **hace** **calor**, minha **tía** liga **el** **ventilador**."
   },
   {
     "sentence_number": 23,
-    "content": "**mi** **hermano** **no** sabe **lavar** **el** **ventilador**."
+    "content": "**Cuando** **hace** **calor**, minha **esposa** liga **el** **ventilador**."
   },
   {
     "sentence_number": 24,
-    "content": "**mi** **padre** **no** sabe **limpiar** **la** **licuadora**."
+    "content": "**En** minha **casa**, **todos** usam **la** **cafetera**."
   },
   {
     "sentence_number": 25,
-    "content": "**mi** **primo** **va** **a** comprar **una** **cafetera** **y** **una** **licuadora** **nueva**."
+    "content": "Minha **esposa** coloca **la** roupa molhada **en la** **secadora** **y** espera."
   },
   {
     "sentence_number": 26,
-    "content": "**mi** **esposo** **va** **a** **lavar** **la** **lavadora** **mañana**."
+    "content": "Minha **vecina** **va** comprar esse **licuadora** **y** **un** **ventilador** **nuevo**."
   },
   {
     "sentence_number": 27,
-    "content": "Parece que **la** **cafetera** **no** **va** **a** **funcionar** **hoy**."
+    "content": "Esse **aspiradora** **funciona** **bien**, **pero** **la** **tostadora** fica **rota**."
   },
   {
     "sentence_number": 28,
-    "content": "**mi** **hermano** **va** **a** **lavar** **la** **tostadora** **mañana**."
+    "content": "**El** **ventilador** **va** deixar **de** **funcionar** **en** breve."
   },
   {
     "sentence_number": 29,
-    "content": "**la** **secadora** ya **no** quiere **funcionar** **bien**."
+    "content": "**Cuando** **hace** **calor**, **mi** **primo** liga **el** **ventilador**."
   },
   {
     "sentence_number": 30,
-    "content": "**mi** **abuela** **va** **a** **limpiar** **la** **cafetera** **después** **de** usarla."
+    "content": "**Mi** **hermano** **necesita** romper esse **aspiradora** **hoy**."
   },
   {
     "sentence_number": 31,
-    "content": "**mi** **esposa** **va** **a** **lavar** **la** ropa **en** **la** **lavadora**."
+    "content": "**Mi** **padre** **tiene** **una** **secadora** **eléctrica** **en** **casa**."
   },
   {
     "sentence_number": 32,
-    "content": "**mi** **esposa** pone **la** ropa mojada **en** **la** **secadora** **y** espera."
+    "content": "Minha **madre** **va** romper esse **plancha** **sin** querer."
   },
   {
     "sentence_number": 33,
-    "content": "**mi** **primo** **va** **a** **limpiar** **la** **cafetera** **antes** **de** **salir**."
+    "content": "**Yo** **quiero** **limpiar** esse **licuadora** **ahora**."
   },
   {
     "sentence_number": 34,
-    "content": "**mi** **vecina** **no** sabe **limpiar** **la** **lavadora**."
+    "content": "**Nosotros** vamos **lavar** **el** **ventilador** **hoy**."
   },
   {
     "sentence_number": 35,
-    "content": "**el** **ventilador** **funciona** **bien**, **pero** **el** **microondas** **se** rompió."
+    "content": "Minha **prima** **va** **lavar** **la** roupa **en la** **lavadora** **mañana**."
   },
   {
     "sentence_number": 36,
-    "content": "**mi** **primo** dice que **la** **tostadora** **funciona** **bien**."
+    "content": "**Cuando** **hace** **calor**, **mi** **tío** liga **el** **ventilador**."
   },
   {
     "sentence_number": 37,
-    "content": "**Cuando** hace calor, **mi** **esposa** enciende **el** **ventilador**."
+    "content": "**Mi** **amigo** **tiene** **una** **tostadora** **eléctrica**."
   },
   {
     "sentence_number": 38,
-    "content": "**mi** **amigo** necesita **limpiar** **la** **tostadora** **hoy**."
+    "content": "**El** **microondas** **viejo** ainda **funciona** **bien**."
   },
   {
     "sentence_number": 39,
-    "content": "**la** **lavadora** **funciona** **bien**, **pero** **la** **secadora** **se** rompió."
+    "content": "Esse **licuadora** **funciona** **bien**, **pero** esse **aspiradora** fica **rota**."
   },
   {
     "sentence_number": 40,
-    "content": "**mi** **amiga** necesita **limpiar** **la** **lavadora** **hoy**."
+    "content": "Esse **licuadora** **funciona** **bien**, **pero** **la** **tostadora** fica **rota**."
   },
   {
     "sentence_number": 41,
-    "content": "**la** **plancha** **funciona** **bien**, **pero** **la** **lavadora** **se** rompió."
+    "content": "**Mi** **hijo** usa esse **plancha** para **lavar** **la** roupa."
   },
   {
     "sentence_number": 42,
-    "content": "**mi** **padre** **va** **a** **calentar** **la** **comida** **en** **el** **microondas**."
+    "content": "**Mi** **hijo** **va** romper **la** **tostadora** **antes** **de** **salir**."
   },
   {
     "sentence_number": 43,
-    "content": "**mi** **hija** compró **una** **secadora** **nueva** **porque** **la** **vieja** **se** rompió."
+    "content": "**Mi** **primo** usa esse **aspiradora** para **limpiar** **la** **casa**."
   },
   {
     "sentence_number": 44,
-    "content": "**Cuando** hace calor, **mi** **tío** enciende **el** **ventilador**."
+    "content": "**Mi** **hermano** **va** **lavar** **la** **tostadora** **mañana**."
   },
   {
     "sentence_number": 45,
-    "content": "**la** **aspiradora** **funciona** **bien**, **pero** **la** **licuadora** **se** rompió."
+    "content": "Minha **amiga** coloca **la** roupa molhada **en la** **secadora** **y** espera."
   },
   {
     "sentence_number": 46,
-    "content": "**la** **cafetera** **de** **mi** **vecino** **no** quiere **funcionar** **hoy**."
+    "content": "**El** **ventilador** **funciona** **bien**, **pero** esse **aspiradora** fica **rota**."
   },
   {
     "sentence_number": 47,
-    "content": "**mi** **primo** **tiene** **una** **plancha** **eléctrica**."
+    "content": "**La** **cafetera** da minha **abuela** **no** quer **funcionar** **hoy**."
   },
   {
     "sentence_number": 48,
-    "content": "**Mi** **hijo** **tiene** **un** **ventilador** **eléctrico** **en** **su** **cuarto**."
+    "content": "Esse **plancha** **funciona** **bien**, **pero** **la** **lavadora** fica **rota**."
   },
   {
     "sentence_number": 49,
-    "content": "**mi** **hermana** pone **la** ropa mojada **en** **la** **secadora** **y** espera."
+    "content": "**Mi** **hermano** pode **limpiar** esse **plancha** **sin** **problema**."
   },
   {
     "sentence_number": 50,
-    "content": "**mi** **hermano** **tiene** **una** **licuadora** **eléctrica**."
+    "content": "**Mi** **abuelo** usa **el** **microondas** para **calentar** **la** **comida** **por la noche**."
   },
   {
     "sentence_number": 51,
-    "content": "**mi** **primo** usa **el** **ventilador** para **limpiar** **la** **casa**."
+    "content": "**La** **tostadora** **de** minha **hermana** **no** quer **funcionar** **hoy**."
   },
   {
     "sentence_number": 52,
-    "content": "**mi** **tío** **va** **a** **lavar** **la** ropa **en** **la** **lavadora**."
+    "content": "Esse **licuadora** ainda **funciona** **bien**."
   },
   {
     "sentence_number": 53,
-    "content": "Esta **licuadora** **es** muy **eléctrica** **y** moderna."
+    "content": "Minha **hija** comprou **una** **secadora** **nueva** **porque** **la** **vieja** quebrou."
   },
   {
     "sentence_number": 54,
-    "content": "**mi** **esposa** compró **una** **tostadora** **nueva** **porque** **la** **vieja** **se** rompió."
+    "content": "**Mi** **hermano** **no** sabe **limpiar** esse **licuadora**."
   },
   {
     "sentence_number": 55,
-    "content": "**mi** **hijo** **va** **a** **romper** **la** **tostadora** **antes** **de** **salir**."
+    "content": "**La** **tostadora** já **no** quer **funcionar** **bien**."
   },
   {
     "sentence_number": 56,
-    "content": "**mi** **prima** usa **la** **lavadora** para **limpiar** **la** **casa**."
+    "content": "**Cuando** **tiene** fome, minha **tía** usa **el** **microondas** para **calentar** **la** **comida**."
   },
   {
     "sentence_number": 57,
-    "content": "**la** **lavadora** **funciona** **bien**, **pero** **la** **cafetera** **se** rompió."
+    "content": "Minha **vecina** **va** comprar **una** **tostadora** **y** esse **licuadora**."
   },
   {
     "sentence_number": 58,
-    "content": "**mi** **padre** **tiene** **una** **secadora** **eléctrica**."
+    "content": "**Mi** **hermano** **va** **lavar** **la** roupa **en la** **lavadora**."
   },
   {
     "sentence_number": 59,
-    "content": "**mi** **vecino** pone **la** ropa mojada **en** **la** **secadora** **y** espera."
+    "content": "Essa **lavadora** **es** **nueva**, **pero** já fica **rota**."
   },
   {
     "sentence_number": 60,
-    "content": "**mi** **amiga** pone **la** ropa mojada **en** **la** **secadora** **y** espera."
+    "content": "Minha **esposa** usa **la** **lavadora** para **lavar** **la** roupa."
   },
   {
     "sentence_number": 61,
-    "content": "**la** **licuadora** **funciona** **bien**, **pero** **la** **plancha** **se** rompió."
+    "content": "**Nosotros** vamos **romper** esse **plancha** **hoy**."
   },
   {
     "sentence_number": 62,
-    "content": "**mi** **hermano** **va** **a** comprar **una** **licuadora** **y** **un** **microondas** **nuevo**."
+    "content": "**La** **cafetera** **funciona** **bien**, **pero** esse **plancha** fica **rota**."
   },
   {
     "sentence_number": 63,
-    "content": "**mi** **vecina** usa **la** **cafetera** para **calentar** **la** **comida**."
+    "content": "**Mi** **hermano** **va** **romper** **un** **microondas** **eléctrico** **y** **nuevo** **mañana**."
   },
   {
     "sentence_number": 64,
-    "content": "**el** **ventilador** **funciona** **bien**, **pero** **la** **plancha** **se** rompió."
+    "content": "Minha **vecina** coloca **la** roupa molhada **en la** **secadora** **y** espera."
   },
   {
     "sentence_number": 65,
-    "content": "**mi** **hermano** necesita **romper** **la** **aspiradora** **hoy**."
+    "content": "Esse **licuadora** **funciona** **bien**, **pero** **el** **ventilador** fica **roto**."
   },
   {
     "sentence_number": 66,
-    "content": "**Nosotros** vamos **a** **lavar** **la** **plancha** **hoy**."
+    "content": "Minha **madre** **va** **lavar** **la** roupa **en la** **lavadora** **eléctrica**."
   },
   {
     "sentence_number": 67,
-    "content": "**En** **mi** **casa**, **todos** usan **la** **cafetera**."
+    "content": "Esse **plancha** ainda **funciona** **bien** **después** **de** tantos anos."
   },
   {
     "sentence_number": 68,
-    "content": "**mi** **amigo** **tiene** **una** **lavadora** **eléctrica**."
+    "content": "**Mi** **hijo** **tiene** **un** **ventilador** **eléctrico** **en el** **cuarto**."
   },
   {
     "sentence_number": 69,
-    "content": "**Nosotros** vamos **a** **romper** **la** **plancha** **hoy**."
+    "content": "**Nosotros** vamos **limpiar** esse **plancha** **hoy**."
   },
   {
     "sentence_number": 70,
-    "content": "**Mi** **abuelo** **tiene** **un** **ventilador** **eléctrico** antiguo."
+    "content": "**Mi** **amigo** **necesita** **limpiar** **la** **tostadora** **hoy**."
   },
   {
     "sentence_number": 71,
-    "content": "**mi** **esposo** **va** **a** **limpiar** **la** **secadora**."
+    "content": "**El** **ventilador** **funciona** **bien**, **pero** **el** **microondas** fica **roto**."
   },
   {
     "sentence_number": 72,
-    "content": "**mi** **padre** **va** **a** **lavar** **la** ropa **en** **la** **lavadora**."
+    "content": "**Antes** **de** **lavar** **la** roupa, **mi** **tío** limpa **la** **lavadora**."
   },
   {
     "sentence_number": 73,
-    "content": "**Nosotros** vamos **a** **limpiar** **la** **cafetera** **hoy**."
+    "content": "Minha **vecina** **no** sabe **lavar** **la** **lavadora**."
   },
   {
     "sentence_number": 74,
-    "content": "**Nosotros** vamos **a** **limpiar** **la** **plancha** **hoy**."
+    "content": "Minha **vecina** espera que **la** **secadora** funcione outra vez."
   },
   {
     "sentence_number": 75,
-    "content": "**mi** **esposa** **va** **a** **romper** **la** **cafetera** **mañana**."
+    "content": "Minha **abuela** sempre esquenta **la** **comida** **antes** **de** **comer** **en el** **microondas**."
   },
   {
     "sentence_number": 76,
-    "content": "**Yo** **quiero** **limpiar** **la** **licuadora** **ahora**."
+    "content": "Minha **hermana** coloca **la** roupa molhada **en la** **secadora** **y** espera."
   },
   {
     "sentence_number": 77,
-    "content": "**mi** **prima** **va** **a** **calentar** **la** **comida** **en** **el** **microondas**."
+    "content": "Minha **prima** **va** **lavar** **la** **tostadora** **mañana**."
   },
   {
     "sentence_number": 78,
-    "content": "**Cuando** hace calor, **mi** **primo** enciende **el** **ventilador**."
+    "content": "Minha **tía** usa **el** **microondas** para **calentar** **la** **comida**."
   },
   {
     "sentence_number": 79,
-    "content": "**mi** **madre** **va** **a** **romper** **la** **secadora**."
+    "content": "Minha **hermana** diz que esse **licuadora** **funciona** **bien**."
   },
   {
     "sentence_number": 80,
-    "content": "**Cuando** hace calor, **mi** **hija** enciende **el** **ventilador**."
+    "content": "**La** **cafetera** **funciona** **bien**, **pero** **la** **lavadora** fica **rota**."
   },
   {
     "sentence_number": 81,
-    "content": "**la** **plancha** ya **no** quiere **funcionar** **bien**."
+    "content": "**Yo** **quiero** **limpiar** **la** **tostadora** **ahora**."
   },
   {
     "sentence_number": 82,
-    "content": "**la** **tostadora** **de** **mi** **hermana** **no** quiere **funcionar** **hoy**."
+    "content": "Minha **prima** usa esse **plancha** para **lavar** **la** roupa."
   },
   {
     "sentence_number": 83,
-    "content": "**Mi** **hijo** cree que **el** **microondas** **no** **va** **a** **funcionar** **más**."
+    "content": "**La** **secadora** já **no** quer **funcionar** **bien**."
   },
   {
     "sentence_number": 84,
-    "content": "**mi** **abuelo** **va** **a** **lavar** **la** ropa **en** **la** **lavadora**."
+    "content": "**Mi** **primo** usa **el** **ventilador** para **limpiar** **la** **casa**."
   },
   {
     "sentence_number": 85,
-    "content": "**Nosotros** vamos **a** **romper** **la** **licuadora** **hoy**."
+    "content": "Minha **abuela** **va** **lavar** **la** roupa **en la** **lavadora** **hoy**."
   },
   {
     "sentence_number": 86,
-    "content": "**Mi** **abuela** siempre **va** **a** **calentar** **la** **comida** **antes** **de** **comer**."
+    "content": "Minha **tía** **necesita** **lavar** **la** **tostadora** **antes** **de** **usar**."
   },
   {
     "sentence_number": 87,
-    "content": "Este **microondas** **viejo** todavía **es** muy **eléctrico** **y** moderno."
+    "content": "Minha **prima** usa **la** **lavadora** para **limpiar** **la** **casa**."
   },
   {
     "sentence_number": 88,
-    "content": "**la** **licuadora** **funciona** **bien**, **pero** **la** **aspiradora** **se** rompió."
+    "content": "Minha **prima** conta que **la** **tostadora** **funciona** **bien**."
   },
   {
     "sentence_number": 89,
-    "content": "**mi** **primo** necesita **romper** **la** **secadora** **hoy**."
+    "content": "**Mi** **hermano** **va** **limpiar** esse **aspiradora** **después** **de** **usar**."
   },
   {
     "sentence_number": 90,
-    "content": "**Mi** **madre** espera que **la** **lavadora** vuelva **a** **funcionar**."
+    "content": "Minha **abuela** **va** **limpiar** esse **aspiradora** **después** **de** **usar**."
   },
   {
     "sentence_number": 91,
-    "content": "**mi** **hijo** usa **la** **plancha** para **lavar** **la** ropa."
+    "content": "**La** **secadora** **funciona** **bien**, **pero** **la** **cafetera** fica **rota**."
   },
   {
     "sentence_number": 92,
-    "content": "**mi** **hermana** dice que **la** **licuadora** **funciona** **bien**."
+    "content": "**Mi** **padre** **necesita** **lavar** **la** **lavadora** **antes** **de** **usar**."
   },
   {
     "sentence_number": 93,
-    "content": "**la** **tostadora** ya **no** quiere **funcionar** **bien**."
+    "content": "Minha **esposa** **va** comprar esse **aspiradora** **y** **una** **tostadora** **nueva**."
   },
   {
     "sentence_number": 94,
-    "content": "**mi** **hermano** puede **limpiar** **la** **plancha** **sin** **problema**."
+    "content": "**Nosotros** vamos **romper** esse **licuadora** **hoy**."
   },
   {
     "sentence_number": 95,
-    "content": "**Mi** **vecina** espera que **la** **secadora** pueda **funcionar** otra vez."
+    "content": "Minha **prima** **va** **calentar** **la** **comida** **en el** **microondas**."
   },
   {
     "sentence_number": 96,
-    "content": "**El** **ventilador** **va** **a** dejar **de** **funcionar** pronto."
+    "content": "**La** **lavadora** **funciona** **bien**, **pero** **la** **secadora** fica **rota**."
   },
   {
     "sentence_number": 97,
-    "content": "**mi** **abuela** **va** **a** **romper** **el** **microondas** **antes** **de** **salir**."
+    "content": "**El** **ventilador** **es** **eléctrico** **y** silencioso."
   },
   {
     "sentence_number": 98,
-    "content": "**Cuando** **tiene** hambre, **mi** **tía** usa **el** **microondas** para **calentar** **la** **comida**."
+    "content": "**Mi** **primo** **va** **limpiar** esse **licuadora** **y** **una** **cafetera** **nueva**."
   },
   {
     "sentence_number": 99,
-    "content": "**Nosotros** vamos **a** **romper** **la** **lavadora** **hoy**."
+    "content": "Minha **madre** comprou esse **aspiradora** **porque** **el** antigo quebrou."
   },
   {
     "sentence_number": 100,
-    "content": "**Cuando** hace calor, **mi** **tía** enciende **el** **ventilador**."
+    "content": "**Mi** **hijo** acha que **el** **microondas** **no** **va** **funcionar** **más**."
   }
 ]
