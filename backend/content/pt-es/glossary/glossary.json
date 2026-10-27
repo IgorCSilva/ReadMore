@@ -477,6 +477,17 @@
       "afuera"
     ]
   },
+  "aeróbico": {
+    "meaning": "Aeróbico; relativo ao exercício que aumenta o uso de oxigênio pelo corpo.",
+    "examples": [
+      "El cardio también se llama ejercicio aeróbico.",
+      "Correr es un deporte aeróbico muy popular."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "anaeróbico"
+    ]
+  },
   "aferra": {
     "meaning": "Agarra-se, apega-se; presente (ele/ela) de 'aferrarse'.",
     "examples": [
@@ -986,6 +997,19 @@
     "synonyms": [],
     "antonyms": []
   },
+  "amigo": {
+    "meaning": "Amigo.",
+    "examples": [
+      "Un recuerdo especial de su nuevo amigo del espacio.",
+      "Mi mejor amigo vive en otra ciudad."
+    ],
+    "synonyms": [
+      "compañero"
+    ],
+    "antonyms": [
+      "enemigo"
+    ]
+  },
   "amigos": {
     "meaning": "Amigos.",
     "examples": [
@@ -1015,6 +1039,15 @@
     "examples": [
       "El día se despedía con colores rosas, anaranjados y morados.",
       "El atardecer tenía tonos anaranjados."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "andar": {
+    "meaning": "Andar; aqui, 'andar en bicicleta' significa andar de bicicleta.",
+    "examples": [
+      "Andar en bicicleta",
+      "Me gusta andar en bicicleta los fines de semana."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1223,6 +1256,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "arenero": {
+    "meaning": "Caixa de areia (para gatos); local onde o gato faz suas necessidades.",
+    "examples": [
+      "Buscó en su arenero espacial",
+      "El gato siempre usa su arenero para dormir una siesta."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "arma": {
     "meaning": "Monta (de 'armar').",
     "examples": [
@@ -1352,6 +1394,28 @@
       "negó con la cabeza"
     ]
   },
+  "asomó": {
+    "meaning": "Apareceu, espiou; pretérito de 'asomarse'.",
+    "examples": [
+      "Poco a poco, el marciano se asomó.",
+      "El niño se asomó por la ventana para ver la lluvia."
+    ],
+    "synonyms": [
+      "apareció"
+    ],
+    "antonyms": [
+      "desapareció"
+    ]
+  },
+  "astronauta": {
+    "meaning": "Astronauta.",
+    "examples": [
+      "Pelusa era una gatita astronauta.",
+      "El astronauta flotaba dentro de la nave."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "asustado": {
     "meaning": "Assustado.",
     "examples": [
@@ -1378,6 +1442,19 @@
       "tranquilizarlo"
     ]
   },
+  "asustó": {
+    "meaning": "Assustou-se; pretérito de 'asustarse'.",
+    "examples": [
+      "El marciano se asustó muchísimo.",
+      "Se asustó al escuchar un ruido fuerte en la noche."
+    ],
+    "synonyms": [
+      "se espantó"
+    ],
+    "antonyms": [
+      "se calmó"
+    ]
+  },
   "así": {
     "meaning": "Assim; desta forma.",
     "examples": [
@@ -1398,6 +1475,17 @@
     "synonyms": [],
     "antonyms": [
       "distracción"
+    ]
+  },
+  "aterrizó": {
+    "meaning": "Aterrizou; pretérito de 'aterrizar'.",
+    "examples": [
+      "La nave voló entre las estrellas y aterrizó muy despacito,",
+      "El avión aterrizó sin problemas en el aeropuerto."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "despegó"
     ]
   },
   "atraviesa": {
@@ -1486,6 +1574,19 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "aventurera": {
+    "meaning": "Aventureira.",
+    "examples": [
+      "Y era toda una aventurera.",
+      "Es una chica muy aventurera que siempre quiere viajar."
+    ],
+    "synonyms": [
+      "valiente"
+    ],
+    "antonyms": [
+      "miedosa"
+    ]
   },
   "aves": {
     "meaning": "Aves, pássaros; plural de 'ave'.",
@@ -1623,6 +1724,15 @@
       "bacín",
       "orinal"
     ],
+    "antonyms": []
+  },
+  "bailar": {
+    "meaning": "Dançar.",
+    "examples": [
+      "Bailar",
+      "Ella baila salsa todos los viernes."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "baja": {
@@ -1928,6 +2038,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "bicicleta": {
+    "meaning": "Bicicleta.",
+    "examples": [
+      "Andar en bicicleta",
+      "La bicicleta está en el garaje."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "bien": {
     "meaning": "Bem.",
     "examples": [
@@ -2070,6 +2189,19 @@
     ],
     "antonyms": [
       "crueles"
+    ]
+  },
+  "bonita": {
+    "meaning": "Bonita.",
+    "examples": [
+      "Y le regaló una piedrita muy bonita.",
+      "Esa flor es muy bonita."
+    ],
+    "synonyms": [
+      "linda"
+    ],
+    "antonyms": [
+      "fea"
     ]
   },
   "boquita": {
@@ -2384,6 +2516,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "buscó": {
+    "meaning": "Procurou; pretérito de 'buscar'.",
+    "examples": [
+      "Buscó en su arenero espacial",
+      "Buscó sus llaves por toda la casa."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "básicas": {
     "meaning": "Básicas.",
     "examples": [
@@ -2484,6 +2625,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "cajita": {
+    "meaning": "Caixinha; diminutivo de 'caja'.",
+    "examples": [
+      "Su nave estaba hecha con su cajita transportadora",
+      "Guardó las fotos en una cajita de madera."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "calcetines": {
     "meaning": "Meias; peça de roupa usada nos pés, dentro do sapato.",
     "examples": [
@@ -2503,6 +2653,28 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "calentamiento": {
+    "meaning": "Aquecimento; movimento leve antes do exercício principal.",
+    "examples": [
+      "Calentamiento — movimiento lento antes del ejercicio principal",
+      "El calentamiento dura cinco minutos."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "enfriamiento"
+    ]
+  },
+  "calienta": {
+    "meaning": "Calienta; imperativo/presente de 'calentar' (aquecer).",
+    "examples": [
+      "Calienta por 5 minutos. Ve despacio.",
+      "Calienta bien antes de correr."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "enfría"
+    ]
   },
   "calientito": {
     "meaning": "Bem quentinho; diminutivo de 'caliente'.",
@@ -2739,6 +2911,17 @@
     ],
     "antonyms": []
   },
+  "caminó": {
+    "meaning": "Caminhou; pretérito de 'caminar'.",
+    "examples": [
+      "Caminó despacio y se acercó con un regalo entre las manos.",
+      "Caminó durante horas por el bosque."
+    ],
+    "synonyms": [
+      "anduvo"
+    ],
+    "antonyms": []
+  },
   "camita": {
     "meaning": "Caminha; diminutivo de 'cama'.",
     "examples": [
@@ -2918,6 +3101,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "cardio": {
+    "meaning": "Cardio; exercício que acelera os batimentos do coração.",
+    "examples": [
+      "El cardio es un ejercicio que hace que tu corazón lata más rápido.",
+      "Hago cardio tres veces por semana."
+    ],
+    "synonyms": [
+      "ejercicio aeróbico"
+    ],
+    "antonyms": []
+  },
   "caricia": {
     "meaning": "Carícia.",
     "examples": [
@@ -2977,6 +3171,15 @@
     "synonyms": [
       "hogar"
     ],
+    "antonyms": []
+  },
+  "casco": {
+    "meaning": "Casco (de proteção para a cabeça).",
+    "examples": [
+      "Llevaba un casco redondo y brillante,",
+      "El ciclista siempre usa casco para protegerse."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "casi": {
@@ -4042,6 +4245,19 @@
       "incorrecta"
     ]
   },
+  "correcto": {
+    "meaning": "Correto; certo.",
+    "examples": [
+      "Correcto: Puedes hablar, pero respiras más fuerte.",
+      "Esto es correcto."
+    ],
+    "synonyms": [
+      "bien"
+    ],
+    "antonyms": [
+      "incorrecto"
+    ]
+  },
   "correr": {
     "meaning": "Correr.",
     "examples": [
@@ -4071,6 +4287,17 @@
     ],
     "antonyms": [
       "caminando"
+    ]
+  },
+  "corrió": {
+    "meaning": "Correu; pretérito de 'correr'.",
+    "examples": [
+      "Pelusa corrió y se metió rápido en su nave.",
+      "El perro corrió detrás de la pelota."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "caminó"
     ]
   },
   "corta": {
@@ -4248,6 +4475,17 @@
       "Las hojas secas crujen bajo los pies."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "cruzar": {
+    "meaning": "Cruzar, atravessar.",
+    "examples": [
+      "Y tenía todo lo necesario para cruzar el espacio.",
+      "Hay que mirar a los dos lados antes de cruzar la calle."
+    ],
+    "synonyms": [
+      "atravesar"
+    ],
     "antonyms": []
   },
   "cua": {
@@ -5008,6 +5246,17 @@
       "aparecer"
     ]
   },
+  "desapareció": {
+    "meaning": "Desapareceu; pretérito de 'desaparecer'.",
+    "examples": [
+      "Y el miedo desapareció.",
+      "El sol desapareció detrás de las montañas."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "apareció"
+    ]
+  },
   "desayuno": {
     "meaning": "Café da manhã.",
     "examples": [
@@ -5595,6 +5844,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "disfrutes": {
+    "meaning": "Disfrutes; subjuntivo presente de 'disfrutar' (aproveitar, gostar de).",
+    "examples": [
+      "Elige un tipo que disfrutes.",
+      "Espero que disfrutes la comida."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "distinta": {
     "meaning": "Diferente; feminino de 'distinto'.",
     "examples": [
@@ -5666,6 +5924,15 @@
     "antonyms": [
       "une"
     ]
+  },
+  "dividirlo": {
+    "meaning": "Dividi-lo; infinitivo 'dividir' + pronome 'lo' (ele/isso).",
+    "examples": [
+      "Puedes dividirlo en partes más pequeñas.",
+      "Es mejor dividirlo en dos partes."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "divídelo": {
     "meaning": "Divide-o (de 'dividir').",
@@ -6329,6 +6596,28 @@
       "sano"
     ]
   },
+  "enfriamiento": {
+    "meaning": "Esfriamento; movimento leve depois do exercício principal.",
+    "examples": [
+      "Enfriamiento — movimiento lento después del ejercicio principal",
+      "El enfriamiento ayuda a tu corazón a volver a la normalidad."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "calentamiento"
+    ]
+  },
+  "enfría": {
+    "meaning": "Enfría; imperativo/presente de 'enfriar' (esfriar, relaxar depois do exercício).",
+    "examples": [
+      "Enfría por 5 minutos. Ve despacio otra vez.",
+      "Enfría despacio después de correr."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "calienta"
+    ]
+  },
   "enlatados": {
     "meaning": "Enlatados.",
     "examples": [
@@ -6696,6 +6985,15 @@
       "aquel"
     ]
   },
+  "esfuerzo": {
+    "meaning": "Esforço.",
+    "examples": [
+      "Usa la prueba del habla para revisar tu esfuerzo.",
+      "Hizo un gran esfuerzo para terminar la carrera."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "eso": {
     "meaning": "Isso; pronome demonstrativo neutro.",
     "examples": [
@@ -6710,6 +7008,15 @@
     "examples": [
       "Un bostezo largo, de esos que hacen ruido.",
       "Esos libros son muy interesantes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "espacial": {
+    "meaning": "Espacial.",
+    "examples": [
+      "Buscó en su arenero espacial",
+      "La estación espacial da vueltas alrededor de la Tierra."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7197,6 +7504,15 @@
     "examples": [
       "Ella vivía feliz explorando la selva, saltando entre las hojas y jugando con sus amigos.",
       "Pasó la tarde explorando el bosque cercano."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "explorar": {
+    "meaning": "Explorar.",
+    "examples": [
+      "Cuando Pelusa salió a explorar,",
+      "A los niños les encanta explorar el jardín."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7899,6 +8215,15 @@
       "ahorras"
     ]
   },
+  "gatita": {
+    "meaning": "Gatinha; diminutivo de 'gata'.",
+    "examples": [
+      "Pelusa era una gatita astronauta.",
+      "La gatita jugaba con un ovillo de lana."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "geniales": {
     "meaning": "Ótimos, excelentes; plural de 'genial'.",
     "examples": [
@@ -8235,6 +8560,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "habla": {
+    "meaning": "Fala.",
+    "examples": [
+      "Usa la prueba del habla para revisar tu esfuerzo.",
+      "El habla es importante para comunicarse."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "hablaba": {
     "meaning": "Falava; pretérito imperfeito (ele/ela) de 'hablar'.",
     "examples": [
@@ -8246,6 +8580,19 @@
     ],
     "antonyms": [
       "callaba"
+    ]
+  },
+  "hablar": {
+    "meaning": "Falar.",
+    "examples": [
+      "Puedes hablar, pero respiras más fuerte.",
+      "Me gusta hablar con mis amigos."
+    ],
+    "synonyms": [
+      "conversar"
+    ],
+    "antonyms": [
+      "callar"
     ]
   },
   "habrá": {
@@ -9576,6 +9923,19 @@
     "synonyms": [],
     "antonyms": []
   },
+  "lento": {
+    "meaning": "Lento.",
+    "examples": [
+      "Calentamiento — movimiento lento antes del ejercicio principal",
+      "El carro va muy lento."
+    ],
+    "synonyms": [
+      "despacio"
+    ],
+    "antonyms": [
+      "rápido"
+    ]
+  },
   "les": {
     "meaning": "Lhes; pronome de objeto indireto plural.",
     "examples": [
@@ -9961,6 +10321,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "llevaba": {
+    "meaning": "Levava, usava (imperfeito de 'llevar').",
+    "examples": [
+      "Llevaba un casco redondo y brillante,",
+      "Llevaba un abrigo rojo porque hacía frío."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "llevar": {
     "meaning": "Levar.",
     "examples": [
@@ -9984,6 +10353,15 @@
     "examples": [
       "Y Luno sueña con huellas brillantes que lo acompañan flotando entre estrellas, llevándolo siempre a lugares tranquilos.",
       "El río sigue su curso, llevándolo todo a su paso."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "llevó": {
+    "meaning": "Levou; 'se llevó un susto' é uma expressão que significa 'assustou-se muito' (pretérito de 'llevar').",
+    "examples": [
+      "Pelusa también se llevó un tremendo susto.",
+      "Se llevó una gran sorpresa al abrir la puerta."
     ],
     "synonyms": [],
     "antonyms": []
@@ -10421,6 +10799,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "mantenerte": {
+    "meaning": "Manter-te; infinitivo 'mantener' + pronome 'te' (tu).",
+    "examples": [
+      "Trata de mantenerte en la zona correcta la mayoría del tiempo.",
+      "Debes mantenerte activo todos los días."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "mantequilla": {
     "meaning": "Manteiga.",
     "examples": [
@@ -10481,6 +10868,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "marciano": {
+    "meaning": "Marciano; habitante imaginário do planeta Marte.",
+    "examples": [
+      "¡Era un marciano!",
+      "En la película, el marciano tenía tres ojos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "mareado": {
     "meaning": "Tonto; com tontura.",
     "examples": [
@@ -10495,6 +10891,15 @@
     "examples": [
       "Las mariposas volaban suavemente.",
       "Allí, las mariposas volaban entre las flores."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "marte": {
+    "meaning": "Marte, o planeta vermelho.",
+    "examples": [
+      "Un día, decidió viajar hasta Marte.",
+      "Marte es conocido como el planeta rojo."
     ],
     "synonyms": [],
     "antonyms": []
@@ -10547,6 +10952,17 @@
     "synonyms": [],
     "antonyms": [
       "menor"
+    ]
+  },
+  "mayoría": {
+    "meaning": "Maioria.",
+    "examples": [
+      "Trata de mantenerte en la zona correcta la mayoría del tiempo.",
+      "La mayoría de las personas camina todos los días."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "minoría"
     ]
   },
   "maíz": {
@@ -10741,6 +11157,19 @@
       "saca"
     ]
   },
+  "metió": {
+    "meaning": "Meteu, colocou; 'se metió' = entrou (pretérito de 'meter').",
+    "examples": [
+      "Pelusa corrió y se metió rápido en su nave.",
+      "Se metió en la cama porque tenía sueño."
+    ],
+    "synonyms": [
+      "entró"
+    ],
+    "antonyms": [
+      "salió"
+    ]
+  },
   "mezcla": {
     "meaning": "Mistura.",
     "examples": [
@@ -10880,6 +11309,17 @@
     ],
     "synonyms": [
       "observar"
+    ],
+    "antonyms": []
+  },
+  "miraron": {
+    "meaning": "Olharam; pretérito de 'mirar' (eles/elas).",
+    "examples": [
+      "Se miraron con curiosidad",
+      "Los dos niños se miraron y sonrieron."
+    ],
+    "synonyms": [
+      "observaron"
     ],
     "antonyms": []
   },
@@ -11171,6 +11611,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "movió": {
+    "meaning": "Moveu-se; pretérito de 'mover(se)'.",
+    "examples": [
+      "Durante un rato, nadie se movió.",
+      "El gato no se movió de su lugar favorito."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "mucha": {
     "meaning": "Muita; forma feminina de 'mucho'.",
     "examples": [
@@ -11217,6 +11666,19 @@
       "pocos"
     ]
   },
+  "muchísimo": {
+    "meaning": "Muitíssimo; superlativo de 'mucho'.",
+    "examples": [
+      "El marciano se asustó muchísimo.",
+      "Me gustó muchísimo la película."
+    ],
+    "synonyms": [
+      "tremendamente"
+    ],
+    "antonyms": [
+      "poquísimo"
+    ]
+  },
   "muestra": {
     "meaning": "Mostra; presente de 'mostrar'.",
     "examples": [
@@ -11235,6 +11697,15 @@
     "synonyms": [
       "demuestran"
     ],
+    "antonyms": []
+  },
+  "mueves": {
+    "meaning": "Moves; presente de 'mover' (mover-se).",
+    "examples": [
+      "Puedes cantar mientras te mueves.",
+      "Tú te mueves muy rápido."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "multiplica": {
@@ -11430,6 +11901,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "nadar": {
+    "meaning": "Nadar.",
+    "examples": [
+      "Nadar",
+      "Nadar es muy bueno para el corazón."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "nadie": {
     "meaning": "Ninguém.",
     "examples": [
@@ -11487,6 +11967,17 @@
       "La fruta contiene azúcar naturalmente."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "nave": {
+    "meaning": "Nave (espacial).",
+    "examples": [
+      "Su nave estaba hecha con su cajita transportadora",
+      "La nave despegó rumbo a la Luna."
+    ],
+    "synonyms": [
+      "cohete"
+    ],
     "antonyms": []
   },
   "necesario": {
@@ -12892,6 +13383,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "pelusa": {
+    "meaning": "Fiapo, pelinho fino; aqui também é o nome da gatinha protagonista da história.",
+    "examples": [
+      "Pelusa era una gatita astronauta.",
+      "Había mucha pelusa debajo del sofá."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "pensar": {
     "meaning": "Pensar.",
     "examples": [
@@ -13152,6 +13652,17 @@
     ],
     "antonyms": []
   },
+  "piedrita": {
+    "meaning": "Pedrinha; diminutivo de 'piedra'.",
+    "examples": [
+      "Y le regaló una piedrita muy bonita.",
+      "Encontró una piedrita brillante en la playa."
+    ],
+    "synonyms": [
+      "guijarro"
+    ],
+    "antonyms": []
+  },
   "piel": {
     "meaning": "Pele.",
     "examples": [
@@ -13297,6 +13808,15 @@
     "examples": [
       "Usa este plan simple.",
       "Escribí un plan para esta semana."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "planeta": {
+    "meaning": "Planeta.",
+    "examples": [
+      "Justo sobre el planeta rojo.",
+      "La Tierra es nuestro planeta."
     ],
     "synonyms": [],
     "antonyms": []
@@ -13922,6 +14442,17 @@
       "últimos"
     ]
   },
+  "principal": {
+    "meaning": "Principal.",
+    "examples": [
+      "Parte principal | Camina o trota | 15–20 minutos",
+      "Esta es la parte principal del ejercicio."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "secundario"
+    ]
+  },
   "principales": {
     "meaning": "Principais (plural de 'principal').",
     "examples": [
@@ -14126,6 +14657,15 @@
     ],
     "antonyms": []
   },
+  "prueba del habla": {
+    "meaning": "Teste da fala; expressão usada para checar a intensidade do exercício pela capacidade de falar enquanto se move.",
+    "examples": [
+      "Usa la prueba del habla para revisar tu esfuerzo.",
+      "La prueba del habla es una manera fácil de saber si estás trabajando demasiado fuerte."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "pruébalo": {
     "meaning": "Experimenta-o; imperativo 'prueba' + pronome 'lo'.",
     "examples": [
@@ -14158,6 +14698,15 @@
     "examples": [
       "El animal no pudo evitar un gran estornudo.",
       "No pudo terminar la tarea a tiempo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "puedas": {
+    "meaning": "Puedas; subjuntivo presente de 'poder' (poder).",
+    "examples": [
+      "Empieza con lo que puedas hacer hoy.",
+      "Haz lo que puedas esta semana."
     ],
     "synonyms": [],
     "antonyms": []
@@ -14229,6 +14778,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "pulmones": {
+    "meaning": "Pulmões.",
+    "examples": [
+      "Trabaja tu corazón y tus pulmones.",
+      "Correr fortalece los pulmones."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "punto": {
     "meaning": "Ponto.",
     "examples": [
@@ -14259,6 +14817,15 @@
     "antonyms": [
       "quité"
     ]
+  },
+  "pusssssshhhhhh": {
+    "meaning": "Palavra inventada que imita o som suave de uma nave pousando; onomatopeia informal.",
+    "examples": [
+      "—pusssssshhhhhh—",
+      "La nave hizo pusssssshhhhhh al tocar el suelo."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "puñado": {
     "meaning": "Punhado.",
@@ -14796,6 +15363,17 @@
       "olvida"
     ]
   },
+  "recuerdo": {
+    "meaning": "Lembrança, souvenir.",
+    "examples": [
+      "Un recuerdo especial de su nuevo amigo del espacio.",
+      "Guardo este recuerdo de mis vacaciones."
+    ],
+    "synonyms": [
+      "souvenir"
+    ],
+    "antonyms": []
+  },
   "recuerdos": {
     "meaning": "Lembranças; plural de 'recuerdo'.",
     "examples": [
@@ -14966,6 +15544,26 @@
     ],
     "antonyms": []
   },
+  "regalo": {
+    "meaning": "Presente, regalo.",
+    "examples": [
+      "Caminó despacio y se acercó con un regalo entre las manos.",
+      "Le hice un regalo por su cumpleaños."
+    ],
+    "synonyms": [
+      "presente"
+    ],
+    "antonyms": []
+  },
+  "regaló": {
+    "meaning": "Deu de presente; pretérito de 'regalar'.",
+    "examples": [
+      "Y le regaló una piedrita muy bonita.",
+      "Le regaló un libro para su cumpleaños."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "regla": {
     "meaning": "Regra.",
     "examples": [
@@ -14974,6 +15572,19 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "regresó": {
+    "meaning": "Voltou, regressou; pretérito de 'regresar'.",
+    "examples": [
+      "Pelusa subió a su nave y regresó feliz a la Tierra,",
+      "Regresó a casa después de un largo viaje."
+    ],
+    "synonyms": [
+      "volvió"
+    ],
+    "antonyms": [
+      "partió"
+    ]
   },
   "regularmente": {
     "meaning": "Regularmente.",
@@ -15096,6 +15707,24 @@
     "examples": [
       "Los pequeños se pegaron a su pancita, sintiendo cómo subía y bajaba con su respiración tranquila.",
       "Hizo unos ejercicios de respiración para relajarse."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "respirar": {
+    "meaning": "Respirar.",
+    "examples": [
+      "El cardio te ayuda a respirar mejor y sentirte más fuerte.",
+      "Respirar bien es importante durante el ejercicio."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "respiras": {
+    "meaning": "Respiras; presente de 'respirar' (respirar).",
+    "examples": [
+      "Puedes hablar, pero respiras más fuerte.",
+      "Cuando corres, respiras más rápido."
     ],
     "synonyms": [],
     "antonyms": []
@@ -15290,6 +15919,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "roca": {
+    "meaning": "Rocha, pedra grande.",
+    "examples": [
+      "El marciano corrió y se escondió detrás de una roca grande.",
+      "El escalador subió por la roca con cuidado."
+    ],
+    "synonyms": [
+      "piedra"
+    ],
+    "antonyms": []
+  },
   "rocío": {
     "meaning": "Orvalho.",
     "examples": [
@@ -15326,6 +15966,17 @@
       "Espinaca, frijoles, carne roja."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "rojo": {
+    "meaning": "Vermelho.",
+    "examples": [
+      "Justo sobre el planeta rojo.",
+      "El coche rojo está estacionado afuera."
+    ],
+    "synonyms": [
+      "colorado"
+    ],
     "antonyms": []
   },
   "ropa": {
@@ -15994,6 +16645,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "sentirte": {
+    "meaning": "Sentir-te; infinitivo 'sentir' + pronome 'te' (tu).",
+    "examples": [
+      "El cardio te ayuda a respirar mejor y sentirte más fuerte.",
+      "Vas a sentirte mejor después de caminar."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "sentía": {
     "meaning": "Sentia (imperfeito de 'sentir').",
     "examples": [
@@ -16081,6 +16741,15 @@
     "examples": [
       "Puedes enseñarle a jugar y serás su héroe.",
       "Serás un gran hermano."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sesión": {
+    "meaning": "Sessão.",
+    "examples": [
+      "Práctica: Tu Sesión de Cardio para Principiantes de 20 a 30 Minutos",
+      "La sesión de ejercicio duró media hora."
     ],
     "synonyms": [],
     "antonyms": []
@@ -16889,6 +17558,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "susto": {
+    "meaning": "Susto, assusto.",
+    "examples": [
+      "Pelusa también se llevó un tremendo susto.",
+      "Me dio un susto cuando apagaron las luces."
+    ],
+    "synonyms": [
+      "sobresalto"
+    ],
+    "antonyms": []
+  },
   "susurra": {
     "meaning": "Sussurra; terceira pessoa do singular do presente de 'susurrar'.",
     "examples": [
@@ -17284,6 +17964,19 @@
       "empieza"
     ]
   },
+  "terminar": {
+    "meaning": "Terminar.",
+    "examples": [
+      "Bebe agua después de terminar.",
+      "Voy a terminar mi tarea hoy."
+    ],
+    "synonyms": [
+      "acabar"
+    ],
+    "antonyms": [
+      "empezar"
+    ]
+  },
   "ternura": {
     "meaning": "Ternura.",
     "examples": [
@@ -17449,6 +18142,15 @@
       "clase",
       "especie"
     ],
+    "antonyms": []
+  },
+  "tipos": {
+    "meaning": "Tipos.",
+    "examples": [
+      "Puedes elegir muchos tipos de cardio.",
+      "Hay muchos tipos de fruta."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "tiraba": {
@@ -17621,6 +18323,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "total": {
+    "meaning": "Total.",
+    "examples": [
+      "Tiempo total: 25 a 30 minutos.",
+      "El total de la compra es diez dólares."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "trabaja": {
+    "meaning": "Trabaja; presente de 'trabajar' (trabalhar).",
+    "examples": [
+      "Trabaja tu corazón y tus pulmones.",
+      "Ella trabaja en un hospital."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "trabajadoras": {
     "meaning": "Trabalhadoras (plural).",
     "examples": [
@@ -17631,6 +18351,15 @@
     "antonyms": [
       "perezosas"
     ]
+  },
+  "trabajando": {
+    "meaning": "Trabalhando; gerúndio de 'trabajar' (trabalhar).",
+    "examples": [
+      "Una manera simple de revisar qué tan fuerte estás trabajando.",
+      "Estoy trabajando en mi nuevo proyecto."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "trabajar": {
     "meaning": "Trabalhar.",
@@ -17702,6 +18431,15 @@
       "nerviosos"
     ]
   },
+  "transportadora": {
+    "meaning": "Transportadora; 'cajita transportadora' é a caixinha usada para transportar animais de estimação.",
+    "examples": [
+      "Su nave estaba hecha con su cajita transportadora",
+      "Metió al perro en la caja transportadora para ir al veterinario."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "trata": {
     "meaning": "Trata; presente (ele/ela) ou imperativo (tú) de 'tratar'.",
     "examples": [
@@ -17733,6 +18471,19 @@
       "llevado"
     ]
   },
+  "tremendo": {
+    "meaning": "Tremendo, enorme.",
+    "examples": [
+      "Pelusa también se llevó un tremendo susto.",
+      "Hizo un esfuerzo tremendo para terminar la carrera."
+    ],
+    "synonyms": [
+      "enorme"
+    ],
+    "antonyms": [
+      "pequeño"
+    ]
+  },
   "tres": {
     "meaning": "Três.",
     "examples": [
@@ -17761,6 +18512,17 @@
     ],
     "synonyms": [
       "leños"
+    ],
+    "antonyms": []
+  },
+  "trota": {
+    "meaning": "Trota; presente de 'trotar' (trotar, correr devagar).",
+    "examples": [
+      "Camina o trota",
+      "Él trota todas las mañanas en el parque."
+    ],
+    "synonyms": [
+      "corre"
     ],
     "antonyms": []
   },
@@ -18464,6 +19226,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "voló": {
+    "meaning": "Voou; pretérito de 'volar'.",
+    "examples": [
+      "La nave voló entre las estrellas y aterrizó muy despacito,",
+      "El pájaro voló hacia el cielo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "voz": {
     "meaning": "Voz.",
     "examples": [
@@ -18567,6 +19338,15 @@
     "synonyms": [
       "calzado"
     ],
+    "antonyms": []
+  },
+  "zona": {
+    "meaning": "Zona.",
+    "examples": [
+      "Trata de mantenerte en la zona correcta la mayoría del tiempo.",
+      "Vivo en una zona muy tranquila."
+    ],
+    "synonyms": [],
     "antonyms": []
   },
   "zumbaban": {

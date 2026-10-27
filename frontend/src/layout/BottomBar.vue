@@ -15,6 +15,9 @@
     <RouterLink to="/learning" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Learning">
       <span class="bottom-bar-icon icon-learning"></span>
     </RouterLink>
+    <RouterLink to="/picture-quiz" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Picture quiz">
+      <span class="bottom-bar-icon icon-picture-quiz"></span>
+    </RouterLink>
     <RouterLink to="/conversation" class="bottom-bar-item" active-class="active" exact-active-class="active" aria-label="Conversation">
       <span class="bottom-bar-icon icon-conversation"></span>
     </RouterLink>
@@ -98,6 +101,10 @@ import { hasUnread } from '../shared/notifications'
 .icon-learning {
   -webkit-mask-image: url('/images/icons/learning.svg');
   mask-image: url('/images/icons/learning.svg');
+}
+.icon-picture-quiz {
+  -webkit-mask-image: url('/images/icons/picture-quiz.svg');
+  mask-image: url('/images/icons/picture-quiz.svg');
 }
 .icon-conversation {
   -webkit-mask-image: url('/images/icons/conversation.svg');

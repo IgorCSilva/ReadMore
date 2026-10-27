@@ -8,6 +8,7 @@ import LibraryPage from '../pages/LibraryPage.vue'
 import ListenIdentifyPage from '../pages/ListenIdentifyPage.vue'
 import NotificationsPage from '../pages/NotificationsPage.vue'
 import PartFlowPage from '../pages/PartFlowPage.vue'
+import PictureQuizPage from '../pages/PictureQuizPage.vue'
 import PresentationPage from '../pages/PresentationPage.vue'
 import ReadUnderstandPage from '../pages/ReadUnderstandPage.vue'
 import ReviewWordsPage from '../pages/ReviewWordsPage.vue'
@@ -39,6 +40,10 @@ const router = createRouter({
     // and playback-control bottombar instead.
     { path: '/stories/:level/:storyId', name: 'story-reader', component: StoryReaderPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },
     { path: '/learning', name: 'learning', component: LearningPage, meta: { requiresAuth: true } },
+    // Quizzes over a whole language pair's word catalog (not one topic),
+    // via Quiz.vue's showCatalog() entry point — same persistent-page
+    // treatment as /shadowing, /stories, /review-words above.
+    { path: '/picture-quiz', name: 'picture-quiz', component: PictureQuizPage, meta: { requiresAuth: true } },
     // Same full-screen reader treatment as /stories/:level/:storyId above —
     // own exit topbar and playback-control bottombar, no Study button.
     { path: '/learning/:theme/:topicId', name: 'learning-topic', component: LearningTopicPage, meta: { hideGlobalBottomBar: true, requiresAuth: true } },

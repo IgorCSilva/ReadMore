@@ -70,7 +70,7 @@ This is the table of contents for the "Good Health" learning theme. It lists **c
 | Nutrition | NUT-7 | Healthy Eating on a Budget | Done |
 | Nutrition | NUT-8 | Mindful Eating | Done |
 | Physical Exercise | EXE-1 | Benefits of Exercise & Getting Started | Done |
-| Physical Exercise | EXE-2 | Cardio Fundamentals | Not Started |
+| Physical Exercise | EXE-2 | Cardio Fundamentals | Done |
 | Physical Exercise | EXE-3 | Strength Training Basics | Not Started |
 | Physical Exercise | EXE-4 | Flexibility & Mobility | Not Started |
 | Physical Exercise | EXE-5 | Building a Sustainable Routine | Not Started |
