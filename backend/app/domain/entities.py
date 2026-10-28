@@ -97,6 +97,19 @@ class ProgressRecord:
 
 
 @dataclass
+class ConversationWordUsage:
+    """One user's usage count for one target-language word, from their own
+    "<email>-<target>-progress" sheet (seeded by hand, not auto-created —
+    see Code.gs's schema comment). Tracks how many times the word has
+    appeared in something the user typed in the AI conversation feature, so
+    the conversation page can surface the words they've practiced least."""
+
+    word_id: str
+    word: str
+    quantity: int
+
+
+@dataclass
 class UserRecord:
     """One user's own data from the "users" sheet: whether they're
     registered at all, and which language pairs are active for them (per

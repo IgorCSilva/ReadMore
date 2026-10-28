@@ -2,6 +2,7 @@ import type {
   ChaptersResponse,
   ChatRequest,
   ChatResponse,
+  ConversationWordsResponse,
   CorrectionRequest,
   LanguagesResponse,
   LearningTopicResponse,
@@ -195,4 +196,9 @@ export function submitCorrection(payload: CorrectionRequest): Promise<Response> 
 export async function sendChatMessage(payload: ChatRequest): Promise<ChatResponse> {
   const res = await postJson('/chat', payload)
   return (await res.json()) as ChatResponse
+}
+
+export function getConversationWords(user: string, lang: string): Promise<ConversationWordsResponse> {
+  const url = `/conversation-words?user=${encodeURIComponent(user)}&lang=${encodeURIComponent(lang)}`
+  return fetchJsonWithRetry<ConversationWordsResponse>(url)
 }

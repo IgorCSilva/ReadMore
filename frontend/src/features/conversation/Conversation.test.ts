@@ -43,6 +43,7 @@ describe('Conversation', () => {
         level: 'B1',
         message: 'Hola',
         history: [],
+        user: 'test@example.com',
       })
       expect(wrapper.find('.conversation-bubble-user').text()).toBe('Hola')
       expect(wrapper.find('.conversation-bubble-ai').text()).toBe('¡Hola! ¿Cómo estás?')
@@ -72,6 +73,7 @@ describe('Conversation', () => {
           { role: 'user', content: 'first' },
           { role: 'ai', content: 'reply-1' },
         ],
+        user: 'test@example.com',
       })
     } finally {
       wrapper.unmount()

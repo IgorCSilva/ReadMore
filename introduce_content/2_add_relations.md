@@ -1,14 +1,13 @@
 ## Add relations
 
 native: pt
-idiom: es
 
-Check introduce_content/current_info.md file to know the chapter and topic numbers.
+Check introduce_content/current_info.md file to know the target idiom, chapter and topic numbers.
 
-file: backend/content/<idiom>/chapter_<N>/topic_<M>/words.json
+file: backend/content/<target>/chapter_<N>/topic_<M>/words.json
 
 Build the reverse-lookup relations for this chapter/topic in
-backend/content/relations/<native>-<idiom>-relations.json, matching the existing nested shape:
+backend/content/relations/<native>-<target>-relations.json, matching the existing nested shape:
 
 {
   "chapter_<N>": {
@@ -25,7 +24,7 @@ native key — never a decomposition into separate idiom words. If the native
 key is a multi-word expression (e.g. "bom dia"), the value is the single
 composed idiom phrase that expresses it (e.g. "good morning"), not an array
 of its parts (never ["good", "morning"]) — even when that composed phrase
-isn't itself a stored token in <idiom>'s own chapter_<N>/topic_<M>/words.json, as long as every word inside it
+isn't itself a stored token in <target>'s own chapter_<N>/topic_<M>/words.json, as long as every word inside it
 is. An array is only for genuinely distinct alternative equivalents — cases
 where the native word/expression could correctly go to more than one whole
 idiom form depending on context (e.g. "está" → ["are", "is"]; "noite",
@@ -36,7 +35,7 @@ decomposition — compose it into one string instead.
 
 1. Before writing, check whether the target relations file already exists.
    If it does, read it first. If its content looks wrong for the stated
-   pair (wrong script/characters for <idiom>, e.g. Korean under a "-en-"
+   pair (wrong script/characters for <target>, e.g. Korean under a "-en-"
    filename), flag it explicitly as a bug to fix, not something to build on
    top of.
 
@@ -61,14 +60,14 @@ decomposition — compose it into one string instead.
 
 4. If a native word/expression has no equivalent that
    can be composed from <file>'s current list, that is a vocabulary gap in
-   <idiom>'s own words.json, not a reason to skip the relation: add the
+   <target>'s own words.json, not a reason to skip the relation: add the
    missing word (in the correct grammatical form per rule 4) to
-   <idiom>/chapter_N/topic_N/words.json first, then map it. Only leave a
+   <target>/chapter_N/topic_N/words.json first, then map it. Only leave a
    native word unmapped, and flag it explicitly in your report, if you
    cannot find or construct any reasonable idiom word for the concept at
    all — this should be rare, not the default outcome. Merge into the
    relations file — preserve every other chapter/topic already present
-   untouched. If closing gaps grows <idiom>'s word count past this topic's
+   untouched. If closing gaps grows <target>'s word count past this topic's
    didactic_roadmap.md target, say so explicitly in your report rather than
    silently exceeding it.
 
@@ -79,15 +78,15 @@ at all (so it's a recorded, deliberate gap, not silently dropped).
 
 ### Affected files:
 
-- backend/content/relations/<native>-<idiom>-relations.json
-- <idiom>/chapter_<N>/topic_<M>/words.json, if building the relations exposes a genuine vocabulary gap
+- backend/content/relations/<native>-<target>-relations.json
+- <target>/chapter_<N>/topic_<M>/words.json, if building the relations exposes a genuine vocabulary gap
   (e.g. a native word with two distinct senses that the idiom list only
   covers one of) — fix the gap there first, then continue.
 
 ### Verify
 
-Confirm backend/content/relations/<native>-<idiom>-relations.json actually exists on disk
+Confirm backend/content/relations/<native>-<target>-relations.json actually exists on disk
 and its chapter_<N>.topic_<M> block has exactly as many entries as <native>'s
 chapter_<N>/topic_<M>/words.json has words/expressions (per rule 5's full-coverage
-requirement) — and, if a gap was closed, that <idiom>/chapter_<N>/topic_<M>/words.json was
+requirement) — and, if a gap was closed, that <target>/chapter_<N>/topic_<M>/words.json was
 actually written to disk with the added word, not just described in your report.

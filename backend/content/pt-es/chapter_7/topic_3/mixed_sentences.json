@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**la** **biblioteca** **es** **nueva** **hoy**."
+  },
+  {
+    "sentence_number": 2,
+    "content": "**el** **centro** **no** **tiene** **problema**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "**un** **centro** **nuevo** **cierra** **hoy**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "La **biblioteca** **y** **la** **escuela** compartilham **el** **horario**."
+  },
+  {
+    "sentence_number": 5,
+    "content": "**el** **aviso** **es** **nuevo** **hoy**."
+  },
+  {
+    "sentence_number": 6,
+    "content": "Moradores perguntam sobre **el** **horario**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "El **aviso** **en** **la** **escuela** confirma: **la** **biblioteca** **abre** **mañana**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "**una** **biblioteca** **nueva** **cierra** **hoy**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "La **comunidad** organiza **una** **reunión** **nueva**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "Moradores afixam **el** **aviso** **en** **la** **biblioteca**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**la** **escuela** **continúa** **cerrada**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "**la** **reunión** **tiene** **un** **nombre** **nuevo**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "La **reunión** **próxima** **es** **en** **la** **oficina** **central**."
+  },
+  {
+    "sentence_number": 14,
+    "content": "La **biblioteca** **abre** **después** **de** **la** **escuela**."
+  },
+  {
+    "sentence_number": 15,
+    "content": "**el** **centro** fica **cerca** **de** **aquí**."
+  },
+  {
+    "sentence_number": 16,
+    "content": "**no** hay **nadie** **en** **el** **aviso**."
+  },
+  {
+    "sentence_number": 17,
+    "content": "El **centro** **abre** **antes** **de** **la** **oficina**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**la** **biblioteca** fica **cerca** **de** **aquí**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "**Todos** recebem **el** **aviso** **de** **la** **reunión**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**el** **centro** **tiene** **un** **nombre** **nuevo**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "**la** **comunidad** fica **cerca** **de** **aquí**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "Moradores perguntam sobre **el** **aviso**."
+  },
+  {
+    "sentence_number": 23,
+    "content": "**la** **comunidad** **es** **nueva** **hoy**."
+  },
+  {
+    "sentence_number": 24,
+    "content": "**el** **centro** **es** **nuevo** **hoy**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "**la** **oficina** **es** **nueva** **hoy**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "El **aviso**: **la** **oficina** **continúa** **cerrada**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "**la** **biblioteca** **continúa** **cerrada**."
+  },
+  {
+    "sentence_number": 28,
+    "content": "**Nadie** **tiene** **información** **de** **la** **reunión**."
+  },
+  {
+    "sentence_number": 29,
+    "content": "**la** **oficina** **continúa** **cerrada**."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**un** **centro** **nuevo** **abre** **mañana**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "La **reunión** **es** **antes**; **la** **escuela** **cierra** **después**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "Vizinhos leem **el** **aviso** **en** **el** **centro**."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**la** **comunidad** **tiene** **un** **nombre** **nuevo**."
+  },
+  {
+    "sentence_number": 34,
+    "content": "El **aviso** **de** **la** **escuela**: **la** **biblioteca** **cierra** **hoy**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "Moradores perguntam sobre **la** **biblioteca**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "La **comunidad** confirma **la** **reunión** **en** **el** **centro**."
+  },
+  {
+    "sentence_number": 37,
+    "content": "La **reunión** **de** **la** **comunidad** **es** **en** **el** **centro**."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**una** **oficina** **nueva** **abre** **mañana**."
+  },
+  {
+    "sentence_number": 39,
+    "content": "El **aviso** **nuevo** confirma: **la** **biblioteca** **abre** **con** **un** **horario** **diferente**."
+  },
+  {
+    "sentence_number": 40,
+    "content": "**la** **reunión** **no** **tiene** **problema**."
+  },
+  {
+    "sentence_number": 41,
+    "content": "El **horario** **nuevo** **de** **la** **biblioteca** **tiene** **información** **buena**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "**el** **centro** **continúa** **abierto**."
+  },
+  {
+    "sentence_number": 43,
+    "content": "**no** hay **nadie** **en** **el** **horario**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**la** **comunidad** **no** **tiene** **problema**."
+  },
+  {
+    "sentence_number": 45,
+    "content": "La **escuela** **cierra** **después** **de** **la** **reunión**."
+  },
+  {
+    "sentence_number": 46,
+    "content": "**el** **aviso** **tiene** **un** **nombre** **nuevo**."
+  },
+  {
+    "sentence_number": 47,
+    "content": "El **horario** **de** **la** **oficina** muda **hoy**."
+  },
+  {
+    "sentence_number": 48,
+    "content": "**una** **oficina** **nueva** **cierra** **hoy**."
+  },
+  {
+    "sentence_number": 49,
+    "content": "El **centro** informa: **el** **horario** muda **mañana**."
+  },
+  {
+    "sentence_number": 50,
+    "content": "**el** **horario** **es** **nuevo** **hoy**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "La **oficina** **abre** **cuando** **la** **escuela** **cierra**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "**la** **escuela** **es** **nueva** **hoy**."
+  },
+  {
+    "sentence_number": 53,
+    "content": "El **centro** **cierra** **cuando** **la** **biblioteca** **abre**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "**la** **reunión** **es** **nueva** **hoy**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "**la** **escuela** **no** **tiene** **problema**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "**el** **aviso** fica **cerca** **de** **aquí**."
+  },
+  {
+    "sentence_number": 57,
+    "content": "Moradores perguntam sobre **la** **comunidad**."
+  },
+  {
+    "sentence_number": 58,
+    "content": "**una** **escuela** **nueva** **cierra** **hoy**."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**la** **reunión** fica **cerca** **de** **aquí**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "El **centro** **abre** junto **con** **la** **biblioteca**."
+  },
+  {
+    "sentence_number": 61,
+    "content": "El **horario** **de** **la** **reunión** **es** **bueno** para **la** **comunidad**."
+  },
+  {
+    "sentence_number": 62,
+    "content": "El **aviso** **de** **la** **oficina**: **el** **centro** **abre** **mañana**."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**la** **escuela** **tiene** **un** **nombre** **nuevo**."
+  },
+  {
+    "sentence_number": 64,
+    "content": "La **biblioteca** confirma: **el** **centro** **abre** **antes** **de** **la** **tarde**."
+  },
+  {
+    "sentence_number": 65,
+    "content": "**la** **biblioteca** **no** **tiene** **problema**."
+  },
+  {
+    "sentence_number": 66,
+    "content": "La **comunidad** pede **un** **aviso** **nuevo**."
+  },
+  {
+    "sentence_number": 67,
+    "content": "Moradores perguntam sobre **el** **centro**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "Moradores perguntam sobre **la** **escuela**."
+  },
+  {
+    "sentence_number": 69,
+    "content": "El **horario** **de** **la** **biblioteca** muda, **el** **horario** **de** **la** **oficina** **no** muda."
+  },
+  {
+    "sentence_number": 70,
+    "content": "**no** hay **nadie** **en** **la** **reunión**."
+  },
+  {
+    "sentence_number": 71,
+    "content": "**no** hay **nadie** **en** **la** **oficina**."
+  },
+  {
+    "sentence_number": 72,
+    "content": "La **oficina** **cierra** **antes** **de** **la** **reunión**."
+  },
+  {
+    "sentence_number": 73,
+    "content": "**no** hay **nadie** **en** **la** **biblioteca**."
+  },
+  {
+    "sentence_number": 74,
+    "content": "**una** **biblioteca** **nueva** **abre** **mañana**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "**la** **oficina** **no** **tiene** **problema**."
+  },
+  {
+    "sentence_number": 76,
+    "content": "La **escuela** avisa: **el** **horario** muda."
+  },
+  {
+    "sentence_number": 77,
+    "content": "El **horario** **confirmado** **de** **la** **oficina** **es** **nuevo**."
+  },
+  {
+    "sentence_number": 78,
+    "content": "**la** **oficina** fica **cerca** **de** **aquí**."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**la** **escuela** fica **cerca** **de** **aquí**."
+  },
+  {
+    "sentence_number": 80,
+    "content": "**la** **biblioteca** **continúa** **abierta**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "**la** **oficina** **continúa** **abierta**."
+  },
+  {
+    "sentence_number": 82,
+    "content": "**la** **biblioteca** **tiene** **un** **nombre** **nuevo**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "La **comunidad** **tiene** **un** **centro** **nuevo** **y** **una** **biblioteca** **nueva**."
+  },
+  {
+    "sentence_number": 84,
+    "content": "La **reunión** **continúa** **en** **la** **biblioteca** **antes** **de** **la** **tarde**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "**el** **horario** **no** **tiene** **problema**."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**el** **horario** fica **cerca** **de** **aquí**."
+  },
+  {
+    "sentence_number": 87,
+    "content": "**el** **centro** **continúa** **cerrado**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "**el** **horario** **tiene** **un** **nombre** **nuevo**."
+  },
+  {
+    "sentence_number": 89,
+    "content": "**no** hay **nadie** **en** **la** **comunidad**."
+  },
+  {
+    "sentence_number": 90,
+    "content": "**la** **escuela** **continúa** **abierta**."
+  },
+  {
+    "sentence_number": 91,
+    "content": "El **aviso** confirma **la** **reunión** **de** **la** **comunidad**."
+  },
+  {
+    "sentence_number": 92,
+    "content": "**no** hay **nadie** **en** **la** **escuela**."
+  },
+  {
+    "sentence_number": 93,
+    "content": "El **centro** **de** **la** **comunidad** **tiene** **una** **reunión** **próxima**."
+  },
+  {
+    "sentence_number": 94,
+    "content": "**una** **escuela** **nueva** **abre** **mañana**."
+  },
+  {
+    "sentence_number": 95,
+    "content": "La **oficina** **de** **la** **comunidad** **cierra** **antes** **de** **la** **escuela**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "Moradores perguntam sobre **la** **oficina**."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**el** **aviso** **no** **tiene** **problema**."
+  },
+  {
+    "sentence_number": 98,
+    "content": "**no** hay **nadie** **en** **el** **centro**."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**la** **oficina** **tiene** **un** **nombre** **nuevo**."
+  },
+  {
+    "sentence_number": 100,
+    "content": "Moradores perguntam sobre **la** **reunión**."
+  }
+]

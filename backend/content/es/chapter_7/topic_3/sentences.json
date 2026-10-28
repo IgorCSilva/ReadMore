@@ -1,0 +1,302 @@
+[
+  {
+    "id": "es-sent-1755",
+    "sentence": "El aviso es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0591",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1756",
+    "sentence": "Hay un aviso nuevo.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0591",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1757",
+    "sentence": "El aviso está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0591",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1758",
+    "sentence": "La escuela es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0592",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1759",
+    "sentence": "Hay una escuela nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0592",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1760",
+    "sentence": "La escuela está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0592",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1761",
+    "sentence": "La comunidad es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0593",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1762",
+    "sentence": "Hay una comunidad nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0593",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1763",
+    "sentence": "La comunidad está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0593",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1764",
+    "sentence": "El centro es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0594",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1765",
+    "sentence": "Hay un centro nuevo.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0594",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1766",
+    "sentence": "El centro está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0594",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1767",
+    "sentence": "La biblioteca es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0595",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1768",
+    "sentence": "Hay una biblioteca nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0595",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1769",
+    "sentence": "La biblioteca está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0595",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1770",
+    "sentence": "La oficina es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0596",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1771",
+    "sentence": "Hay una oficina nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0596",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1772",
+    "sentence": "La oficina está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0596",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1773",
+    "sentence": "El horario es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0597",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1774",
+    "sentence": "Hay un horario nuevo.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0597",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1775",
+    "sentence": "El horario está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0597",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1776",
+    "sentence": "La reunión es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0600",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1777",
+    "sentence": "Hay una reunión nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0600",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1778",
+    "sentence": "La reunión está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0600",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1779",
+    "sentence": "La escuela abre aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0592",
+      "es-wd-0598",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1780",
+    "sentence": "El centro abre allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0594",
+      "es-wd-0598",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1781",
+    "sentence": "La biblioteca abre hoy.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0595",
+      "es-wd-0598",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1782",
+    "sentence": "La oficina cierra aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0596",
+      "es-wd-0599",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1783",
+    "sentence": "El centro cierra allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0594",
+      "es-wd-0599",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1784",
+    "sentence": "La biblioteca cierra hoy.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0595",
+      "es-wd-0599",
+      "es-wd-0146"
+    ]
+  }
+]
