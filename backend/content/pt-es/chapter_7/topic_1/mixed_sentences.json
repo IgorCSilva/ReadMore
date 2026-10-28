@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**La** **nube** cobre **el** **cielo** **y** **la** **temperatura** baixa."
+  },
+  {
+    "sentence_number": 2,
+    "content": "**Hace** **sol** **y** **calor** **en la** **región** **hoy**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "**La** **temperatura** **mínima** **de** **la** **costa** **es** **menos** fría que **la** **región**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "**Una** **niebla** **leve** **aparece** **antes** **de** **la** **tormenta**."
+  },
+  {
+    "sentence_number": 5,
+    "content": "**Una** **tormenta** **fuerte** **y** **una** **niebla** **leve** marcam **la** **semana**."
+  },
+  {
+    "sentence_number": 6,
+    "content": "**Hoy** **hace** **frío** **y** **la** **mínima** **es** **de** **cinco** **grados**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "**Hay** **una** **alerta** **de** **tormenta** para **la** **costa**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "**La** **próxima** **alerta** **de** **niebla** **llega** **con** **la** madrugada."
+  },
+  {
+    "sentence_number": 9,
+    "content": "**El** **viento** **fuerte** **continúa** **y** **la** **niebla** **es** **leve**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "**La** **próxima** **alerta** **de** **tormenta** **llega** **con** **viento** **fuerte**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**La** **costa** **tiene** **una** **alerta** **de** **tormenta** **antes** **de** **la** **tarde**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "**La** **temperatura** **máxima** **de** **hoy** foi **de** quinze **grados**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "**La** **temperatura** **de** **la** **costa** **continúa** alta durante **el** **día**."
+  },
+  {
+    "sentence_number": 14,
+    "content": "**Una** **niebla** densa cobre **la** **región** **antes** **de** amanecer."
+  },
+  {
+    "sentence_number": 15,
+    "content": "**El** **anuncio** fala **de** **una** **región** **con** **temperatura** alta."
+  },
+  {
+    "sentence_number": 16,
+    "content": "**Nieva** **en la** **región** **y** **la** **temperatura** **mínima** **cae** **mucho**."
+  },
+  {
+    "sentence_number": 17,
+    "content": "**La** **costa** **tiene** **viento** **fuerte** **y** **lluvia** **leve**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**La** **alerta** **de** **la** **región** **continúa** activa **hoy**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "**La** **niebla** **de** **la** **mañana** **continúa** **leve** **en la** **costa**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**Prevista** **niebla** **leve** para **la** **próxima** **noche**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "**Prevista** para **la** **región** norte: **lluvia** **fuerte** **y** **viento**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "**El** **próximo** **anuncio** fala sobre **niebla** **en la** **región**."
+  },
+  {
+    "sentence_number": 23,
+    "content": "**El** **tiempo** **previsto** **continúa** incerto para **mañana**."
+  },
+  {
+    "sentence_number": 24,
+    "content": "**La** **mínima** **de** **la** **noche** **continúa** baixa **en la** **región** **y** **en la** **costa**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "**El** **anuncio** **de** **la** **costa** fala **de** **una** **niebla** **leve** **por la mañana**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**La** **alerta** **de** **niebla** **continúa** activa **en la** **región**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "**El** **tiempo** **previsto** **tiene** **prevista** **lluvia** **leve** **y** **viento** moderado."
+  },
+  {
+    "sentence_number": 28,
+    "content": "**La** **próxima** **tormenta** **es** **más** **fuerte** que **la** **de** **hoy**."
+  },
+  {
+    "sentence_number": 29,
+    "content": "**El** **anuncio** **de** **hoy** **continúa** **con** **la** misma **alerta** **de** **tormenta**."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**La** **lluvia** **prevista** **no** chegou **hoy**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "**La** **tormenta** **de** **hoy** trouxe muita **lluvia** **y** **viento** **fuerte**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "**Un** **anuncio** **nuevo** fala **de** **temperatura** **máxima** alta para **mañana**."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**La** **costa** norte **tiene** **prevista** **lluvia** **y** **viento**."
+  },
+  {
+    "sentence_number": 34,
+    "content": "**La** **alerta** **de** **tormenta** **llega** **antes** **de** **la** **medianoche**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "**El** **tiempo** **previsto** para **la** **próxima** **semana** **continúa** **soleado**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "**El** **día** **ventoso** **de** **hoy** trouxe **niebla** **leve**."
+  },
+  {
+    "sentence_number": 37,
+    "content": "**La** **temperatura** **máxima** **y** **la** **niebla** **leve** **continúa** **hoy**."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**La** **próxima** **semana** **el** **tiempo** **continúa** **soleado**."
+  },
+  {
+    "sentence_number": 39,
+    "content": "**El** **sol** **aparece** **y** **la** **niebla** desaparece **en la** **región**."
+  },
+  {
+    "sentence_number": 40,
+    "content": "**El** **tiempo** **previsto** para **mañana** **es** **de** **lluvia**."
+  },
+  {
+    "sentence_number": 41,
+    "content": "**Previsto** **sol** para **la** **máxima** **de** **hoy**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "**El** **próximo** **día** **tiene** **sol** **y** **viento** **leve**."
+  },
+  {
+    "sentence_number": 43,
+    "content": "**La** **región** **y** **la** **costa** recebem **alerta** **de** **tormenta** **fuerte**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**El** **pronóstico** **de** **hoy** fala **de** **una** **tormenta** **en la** **costa**."
+  },
+  {
+    "sentence_number": 45,
+    "content": "**La** **máxima** **de** **hoy** supera **la** **máxima** **de** ayer."
+  },
+  {
+    "sentence_number": 46,
+    "content": "**El** **anuncio** **de** **la** **tarde** fala **de** **una** **región** afetada por **la** **tormenta**."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**La** **temperatura** **máxima** **de** **la** **próxima** **semana** **es** alta."
+  },
+  {
+    "sentence_number": 48,
+    "content": "**El** **próximo** **anuncio** **sale** **por la mañana**."
+  },
+  {
+    "sentence_number": 49,
+    "content": "Moradores **de** **la** **costa** leram **el** **anuncio** **con** atenção."
+  },
+  {
+    "sentence_number": 50,
+    "content": "**La** **próxima** **alerta** fala **de** **una** **temperatura** alta."
+  },
+  {
+    "sentence_number": 51,
+    "content": "**La** **próxima** **alerta** **de** **tormenta** **en la** **costa** **continúa** **prevista** para **mañana**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "**El** **tiempo** **nublado** **continúa** durante toda **la** **tarde**."
+  },
+  {
+    "sentence_number": 53,
+    "content": "**La** **alerta** **de** **tormenta** **continúa** **hoy**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "**El** **sol** **aparece** **después** **de** **la** **tormenta**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "**Prevista** para **hoy**: **tormenta** **fuerte** **en la** **costa**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "**El** **anuncio** confirmou **el** **tiempo** **previsto** para **la** **semana**."
+  },
+  {
+    "sentence_number": 57,
+    "content": "**La** **región** sur **tiene** **previsto** **sol** **y** **calor**."
+  },
+  {
+    "sentence_number": 58,
+    "content": "**El** **viento** **ventoso** **continúa** toda **la** **noche** **en la** **costa**."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**La** **próxima** **semana** **va** trazer **temperatura** **más** baixa."
+  },
+  {
+    "sentence_number": 60,
+    "content": "**El** **tiempo** **previsto** para **la** **costa** **continúa** incierto."
+  },
+  {
+    "sentence_number": 61,
+    "content": "Moradores esperam **la** **próxima** **alerta** **de** **la** **región**."
+  },
+  {
+    "sentence_number": 62,
+    "content": "**La** **niebla** **leve** **de** **hoy** **va** **desaparecer** **mañana**."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**La** **alerta** **continúa** **fuerte** durante **la** **noche**."
+  },
+  {
+    "sentence_number": 64,
+    "content": "**La** **mínima** **de** **hoy** **es** **menos** fría que **la** **de** ayer."
+  },
+  {
+    "sentence_number": 65,
+    "content": "**Una** **alerta** **nueva** **llega** **antes** **de** **la** **próxima** **tormenta**."
+  },
+  {
+    "sentence_number": 66,
+    "content": "**La** **mínima** **de** **la** **noche** **continúa** baixando **antes** **de** amanhecer."
+  },
+  {
+    "sentence_number": 67,
+    "content": "**La** **región** sur **tiene** **la** **mínima** **más** baja **de** **la** **semana**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**Llueve** **fuerte** **en la** **costa** **y** **la** **región** **continúa** alagada."
+  },
+  {
+    "sentence_number": 69,
+    "content": "**Una** **tormenta** **tiene** **previsto** **viento** **fuerte** **y** **lluvia** **leve**."
+  },
+  {
+    "sentence_number": 70,
+    "content": "**La** **región** **de** **la** **costa** recebeu **una** **alerta** **de** **tormenta**."
+  },
+  {
+    "sentence_number": 71,
+    "content": "**El** **anuncio** chegou **hoy** pela manhã."
+  },
+  {
+    "sentence_number": 72,
+    "content": "**El** **tiempo** **previsto** **de** **la** **próxima** **semana** **tiene** **sol** **y** **calor**."
+  },
+  {
+    "sentence_number": 73,
+    "content": "**El** **viento** **fuerte** **y** **la** **lluvia** **leve** marcam **el** **día** **de** **hoy**."
+  },
+  {
+    "sentence_number": 74,
+    "content": "**La** **niebla** **y** **la** **tormenta** marcam **el** **próximo** **anuncio**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "**Mañana** **la** **máxima** **llega** **a** quase trinta **grados**."
+  },
+  {
+    "sentence_number": 76,
+    "content": "**El** **tiempo** **leve** **de** **hoy** **continúa** durante **la** **noche**."
+  },
+  {
+    "sentence_number": 77,
+    "content": "**El** **anuncio** **de** **hoy** fala **de** **una** **temperatura** **mínima** rara."
+  },
+  {
+    "sentence_number": 78,
+    "content": "**La** **próxima** **tormenta** **tiene** **previsto** **viento** **fuerte**."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**La** **máxima** **y** **la** **mínima** **de** **la** **próxima** **semana** bajam **un** poco."
+  },
+  {
+    "sentence_number": 80,
+    "content": "**El** **próximo** **día** **tiene** **previsto** **sol** **fuerte**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "**El** **sol** **y** **el** **calor** **continúa** **en la** **región** **hoy**."
+  },
+  {
+    "sentence_number": 82,
+    "content": "**La** **niebla** **de** **la** **costa** **continúa** **leve** durante **la** **mañana**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "**La** **próxima** **alerta** **llega** **antes** **de** **la** **noche**."
+  },
+  {
+    "sentence_number": 84,
+    "content": "**La** **próxima** **región** afetada **es** **la** **costa** sul."
+  },
+  {
+    "sentence_number": 85,
+    "content": "**El** **anuncio** final fala **de** **una** **alerta** **de** **tormenta** **fuerte** para **la** **próxima** **semana**."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**El** **anuncio** falou sobre **una** **tormenta** **fuerte** **en la** **costa**."
+  },
+  {
+    "sentence_number": 87,
+    "content": "**El** **anuncio** **de** **hoy** **tiene** **una** **alerta** **de** **tormenta** **fuerte**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "**Prevista** para **hoy**: **temperatura** **máxima** **de** treinta **grados**."
+  },
+  {
+    "sentence_number": 89,
+    "content": "**La** **temperatura** **mínima** **de** **la** **noche** **es** baixa."
+  },
+  {
+    "sentence_number": 90,
+    "content": "**Una** **niebla** **leve** **aparece** **cuando** **amanece** **en la** **región**."
+  },
+  {
+    "sentence_number": 91,
+    "content": "**La** **costa** **tiene** **prevista** **una** **tormenta** **fuerte** para **mañana**."
+  },
+  {
+    "sentence_number": 92,
+    "content": "**La** **lluvia** **prevista** para **la** **tarde** **continúa** **fuerte**."
+  },
+  {
+    "sentence_number": 93,
+    "content": "**Prevista** **lluvia** **leve** para **la** **región** norte."
+  },
+  {
+    "sentence_number": 94,
+    "content": "**La** **máxima** **y** **la** **mínima** **de** **mañana** aparecem **en el** **próximo** **anuncio**."
+  },
+  {
+    "sentence_number": 95,
+    "content": "**Prevista** **tormenta** **fuerte** **en la** **costa** sul."
+  },
+  {
+    "sentence_number": 96,
+    "content": "**La** **próxima** **temperatura** **mínima** **va** ser menor."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**Prevista** **lluvia** **fuerte** para **la** **costa** **y** **la** **región** **vecina**."
+  },
+  {
+    "sentence_number": 98,
+    "content": "**Una** **niebla** **fuerte** cobre **la** **región** **hoy**."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**La** **temperatura** **máxima** **y** **la** **mínima** aparecem **en el** **anuncio**."
+  },
+  {
+    "sentence_number": 100,
+    "content": "**La** **temperatura** **continúa** alta **en la** **región** **y** **en la** **costa**."
+  }
+]

@@ -19,6 +19,7 @@ from starlette.exceptions import HTTPException as StarletteHTTPException
 from backend.app.application.use_cases.add_correction import AddCorrection
 from backend.app.application.use_cases.chat_with_ai import ChatWithAI
 from backend.app.application.use_cases.get_chapters import GetChapters
+from backend.app.application.use_cases.get_conversation_words import GetConversationWords
 from backend.app.application.use_cases.get_user import GetUser
 from backend.app.application.use_cases.get_user_words import GetUserWords
 from backend.app.application.use_cases.get_words import GetWords
@@ -30,6 +31,7 @@ from backend.app.application.use_cases.list_languages import ListLanguages
 from backend.app.application.use_cases.list_learning_topics import ListLearningTopics
 from backend.app.application.use_cases.list_stories import ListStories
 from backend.app.application.use_cases.mark_word_known import MarkWordKnown
+from backend.app.application.use_cases.record_conversation_words import RecordConversationWords
 from backend.app.application.use_cases.show_word_again import ShowWordAgain
 from backend.app.application.use_cases.synthesize_speech import SynthesizeSpeech
 from backend.app.domain.exceptions import (
@@ -44,6 +46,10 @@ from backend.app.domain.exceptions import (
 from backend.app.domain.value_objects import Email, LanguagePair
 from backend.app.infrastructure.dtos.chapters import ChapterDTO, ChaptersResponse
 from backend.app.infrastructure.dtos.chat import ChatRequest, ChatResponse
+from backend.app.infrastructure.dtos.conversation_words import (
+    ConversationWordDTO,
+    ConversationWordsResponse,
+)
 from backend.app.infrastructure.dtos.corrections import CorrectionCreateRequest
 from backend.app.infrastructure.dtos.learning_topics import (
     LearningTopicDTO,
@@ -56,6 +62,9 @@ from backend.app.infrastructure.dtos.stories import StoriesResponse, StoryDTO, S
 from backend.app.infrastructure.dtos.user_words import UserWordDTO, UserWordsResponse
 from backend.app.infrastructure.dtos.words import WordDTO, WordsResponse
 from backend.app.infrastructure.repositories.google_sheets_client import SheetsError
+from backend.app.infrastructure.repositories.google_sheets_conversation_words_repository import (
+    GoogleSheetsConversationWordsRepository,
+)
 from backend.app.infrastructure.repositories.google_sheets_corrections_repository import (
     GoogleSheetsCorrectionsRepository,
 )
@@ -88,6 +97,7 @@ CUES_PATH = WORDS_DIR / "cues.json"
 LANG_CHOICES = {"origin", "target"}
 CEFR_LEVELS = {"A1", "A2", "B1", "B2", "C1", "C2"}
 CHAT_HISTORY_LIMIT = 12  # turns sent upstream per request, regardless of what the client holds locally
+CONVERSATION_WORDS_LIMIT = 20  # least-used words shown in the conversation page's word strip
 
 SHEETS_WEBAPP_URL = os.environ.get("SHEETS_WEBAPP_URL", "")
 SHEETS_API_TOKEN = os.environ.get("SHEETS_API_TOKEN", "")
@@ -189,6 +199,10 @@ def get_users_repository() -> GoogleSheetsUsersRepository:
 
 def get_corrections_repository() -> GoogleSheetsCorrectionsRepository:
     return GoogleSheetsCorrectionsRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
+
+
+def get_conversation_words_repository() -> GoogleSheetsConversationWordsRepository:
+    return GoogleSheetsConversationWordsRepository(SHEETS_WEBAPP_URL, SHEETS_API_TOKEN)
 
 
 def get_tts_port() -> EdgeTtsClient:
@@ -444,10 +458,36 @@ def post_correction(
     return {"ok": True}
 
 
+@app.get("/conversation-words", response_model=ConversationWordsResponse)
+def get_conversation_words_route(
+    user: str = "",
+    lang: str = "pt-en",
+    conversation_words_repository: GoogleSheetsConversationWordsRepository = Depends(
+        get_conversation_words_repository
+    ),
+):
+    language_pair = _parse_lang(lang.strip() or "pt-en")
+    try:
+        email = Email(user.strip())
+    except ValueError:
+        return JSONResponse(
+            status_code=400, content={"error": "missing or invalid 'user' query param"}
+        )
+
+    use_case = GetConversationWords(conversation_words_repository)
+    words = use_case.execute(email, language_pair)
+    return ConversationWordsResponse(
+        words=[ConversationWordDTO.from_entity(w) for w in words[:CONVERSATION_WORDS_LIMIT]]
+    )
+
+
 @app.post("/chat", response_model=ChatResponse)
 def post_chat(
     payload: ChatRequest,
     chat_port: GeminiChatClient = Depends(get_chat_port),
+    conversation_words_repository: GoogleSheetsConversationWordsRepository = Depends(
+        get_conversation_words_repository
+    ),
 ):
     language_pair = _parse_lang(payload.lang.strip() or "pt-en")
     level = payload.level.strip().upper()
@@ -460,7 +500,25 @@ def post_chat(
     history = [(turn.role, turn.content) for turn in payload.history[-CHAT_HISTORY_LIMIT:]]
     use_case = ChatWithAI(chat_port)
     reply = use_case.execute(history, message, level, language_pair.origin, language_pair.target)
-    return ChatResponse(reply=reply)
+
+    conversation_words: list[ConversationWordDTO] = []
+    user = payload.user.strip()
+    if user:
+        try:
+            email = Email(user)
+            words = RecordConversationWords(conversation_words_repository).execute(
+                email, language_pair, message
+            )
+            conversation_words = [
+                ConversationWordDTO.from_entity(w) for w in words[:CONVERSATION_WORDS_LIMIT]
+            ]
+        except (ValueError, SheetsError):
+            # Word tracking is a nice-to-have on top of the chat reply —
+            # a malformed email or a flaky Sheets round trip shouldn't turn
+            # a successful AI reply into a failed request.
+            pass
+
+    return ChatResponse(reply=reply, conversation_words=conversation_words)
 
 
 @app.get("/tts")

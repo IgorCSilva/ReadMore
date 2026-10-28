@@ -1,0 +1,365 @@
+[
+  {
+    "id": "es-sent-1719",
+    "sentence": "El evento es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0579",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1720",
+    "sentence": "Hay un evento nuevo.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0579",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1721",
+    "sentence": "El evento está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0579",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1722",
+    "sentence": "El concierto es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0580",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1723",
+    "sentence": "Hay un concierto nuevo.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0580",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1724",
+    "sentence": "El concierto está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0580",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1725",
+    "sentence": "La feria es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0581",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1726",
+    "sentence": "Hay una feria nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0581",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1727",
+    "sentence": "La feria está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0581",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1728",
+    "sentence": "El festival es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0582",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1729",
+    "sentence": "Hay un festival nuevo.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0582",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1730",
+    "sentence": "El festival está allí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0582",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1731",
+    "sentence": "La banda es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0583",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1732",
+    "sentence": "Hay una banda nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0583",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1733",
+    "sentence": "La banda está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0583",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1734",
+    "sentence": "El público es grande.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0584",
+      "es-wd-0017",
+      "es-wd-0226"
+    ]
+  },
+  {
+    "id": "es-sent-1735",
+    "sentence": "Hay mucho público hoy.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0127",
+      "es-wd-0584",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1736",
+    "sentence": "El público está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0584",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1737",
+    "sentence": "El evento es gratis.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0579",
+      "es-wd-0017",
+      "es-wd-0585"
+    ]
+  },
+  {
+    "id": "es-sent-1738",
+    "sentence": "La entrada es gratis.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0290",
+      "es-wd-0017",
+      "es-wd-0585"
+    ]
+  },
+  {
+    "id": "es-sent-1739",
+    "sentence": "El concierto es gratis hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0580",
+      "es-wd-0017",
+      "es-wd-0585",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1740",
+    "sentence": "El cupo es pequeño.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0586",
+      "es-wd-0017",
+      "es-wd-0224"
+    ]
+  },
+  {
+    "id": "es-sent-1741",
+    "sentence": "Hay un cupo nuevo.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0586",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1742",
+    "sentence": "El cupo está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0586",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1743",
+    "sentence": "La inscripción es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0587",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1744",
+    "sentence": "Hay una inscripción nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0587",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1745",
+    "sentence": "La inscripción está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0587",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1746",
+    "sentence": "Puede inscribirse aquí.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0588",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1747",
+    "sentence": "Puede inscribirse ahora.",
+    "word_ids": [
+      "es-wd-0323",
+      "es-wd-0588",
+      "es-wd-0145"
+    ]
+  },
+  {
+    "id": "es-sent-1748",
+    "sentence": "Quiero inscribirse hoy.",
+    "word_ids": [
+      "es-wd-0125",
+      "es-wd-0588",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1749",
+    "sentence": "El parque es central.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0241",
+      "es-wd-0017",
+      "es-wd-0589"
+    ]
+  },
+  {
+    "id": "es-sent-1750",
+    "sentence": "La feria central es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0581",
+      "es-wd-0589",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1751",
+    "sentence": "El festival central es nuevo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0582",
+      "es-wd-0589",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1752",
+    "sentence": "El evento se realiza aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0579",
+      "es-wd-0021",
+      "es-wd-0590",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1753",
+    "sentence": "El festival se realiza hoy.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0582",
+      "es-wd-0021",
+      "es-wd-0590",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1754",
+    "sentence": "La feria se realiza allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0581",
+      "es-wd-0021",
+      "es-wd-0590",
+      "es-wd-0079"
+    ]
+  }
+]

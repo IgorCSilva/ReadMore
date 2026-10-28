@@ -45,6 +45,17 @@
 // is metadata only (which language pair the report was made against), not
 // used to filter which content a correction applies to. Reached via the
 // get_corrections / add_correction actions.
+//
+// One conversation-words sheet per (user, target language), named
+// "<email>-<target>-progress" (email lowercased, target e.g. "es" — bare
+// code, not the full origin-target pair):
+//   word-id | word | quantity
+// Unlike the progress sheet above, this one is seeded by hand (every word
+// pre-populated with quantity 0) and is never auto-created here — a missing
+// sheet just means nothing is tracked yet for that pair. `quantity` counts
+// how many times the word has appeared in something the user typed in the
+// AI conversation feature. Reached via the get_conversation_words /
+// increment_conversation_words actions.
 
 const USERS_SHEET_NAME = "users";
 const USERS_HEADERS = ["email", "language_pair", "topic_ids"];
@@ -85,6 +96,14 @@ function getOrCreateUserProgressSheet(ss, email) {
   return sheet;
 }
 
+function conversationWordsSheetName(email, lang) {
+  return email.toLowerCase() + "-" + lang + "-progress";
+}
+
+function getConversationWordsSheetIfExists(ss, email, lang) {
+  return ss.getSheetByName(conversationWordsSheetName(email, lang));
+}
+
 function ensureSheet(ss, name, headers) {
   let sheet = ss.getSheetByName(name);
   if (!sheet) {
@@ -122,6 +141,8 @@ function handle(params) {
   if (params.action === "remap_word_ids") return actionRemapWordIds(params);
   if (params.action === "get_corrections") return actionGetCorrections(params);
   if (params.action === "add_correction") return actionAddCorrection(params);
+  if (params.action === "get_conversation_words") return actionGetConversationWords(params);
+  if (params.action === "increment_conversation_words") return actionIncrementConversationWords(params);
   return jsonResponse(400, { error: "unknown action: " + params.action });
 }
 
@@ -353,6 +374,68 @@ function actionAddCorrection(params) {
       new Date(),
     ]);
     return jsonResponse(200, { ok: true });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function actionGetConversationWords(params) {
+  const email = params.email;
+  const lang = params.lang;
+  if (!email || !lang) return jsonResponse(400, { error: "missing email or lang" });
+
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = getConversationWordsSheetIfExists(ss, email, lang);
+    const words = [];
+    if (sheet) {
+      const rows = sheet.getDataRange().getValues();
+      for (let i = 1; i < rows.length; i++) {
+        const row = rows[i];
+        if (!row[0]) continue;
+        words.push({
+          word_id: row[0],
+          word: row[1],
+          quantity: Number(row[2]) || 0,
+        });
+      }
+    }
+    return jsonResponse(200, { words: words });
+  } finally {
+    lock.releaseLock();
+  }
+}
+
+function actionIncrementConversationWords(params) {
+  const email = params.email;
+  const lang = params.lang;
+  const wordIds = params.word_ids;
+  if (!email || !lang || !Array.isArray(wordIds) || wordIds.length === 0) {
+    return jsonResponse(400, { error: "missing email, lang or word_ids" });
+  }
+
+  const lock = LockService.getScriptLock();
+  lock.waitLock(10000);
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const sheet = getConversationWordsSheetIfExists(ss, email, lang);
+    if (!sheet) return jsonResponse(200, { updated: 0 });
+
+    const idSet = {};
+    for (let i = 0; i < wordIds.length; i++) idSet[wordIds[i]] = true;
+
+    const rows = sheet.getDataRange().getValues();
+    let updated = 0;
+    for (let i = 1; i < rows.length; i++) {
+      const row = rows[i];
+      if (Object.prototype.hasOwnProperty.call(idSet, row[0])) {
+        sheet.getRange(i + 1, 3).setValue((Number(row[2]) || 0) + 1);
+        updated++;
+      }
+    }
+    return jsonResponse(200, { updated: updated });
   } finally {
     lock.releaseLock();
   }

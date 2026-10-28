@@ -693,5 +693,73 @@
         "planeta": "planeta"
       }
     }
+  },
+  "chapter_7": {
+    "topic_1": {
+      "pt": {
+        "anúncio": "anuncio",
+        "alerta": "alerta",
+        "tempestade": "tormenta",
+        "neblina": "niebla",
+        "temperatura": "temperatura",
+        "máxima": "máxima",
+        "mínima": "mínima",
+        "previsto": "previsto",
+        "prevista": "prevista",
+        "forte": "fuerte",
+        "leve": "leve",
+        "continua": "continúa",
+        "região": "región",
+        "costa": "costa",
+        "próximo": "próximo",
+        "próxima": "próxima"
+      }
+    },
+    "topic_2": {
+      "pt": {
+        "evento": "evento",
+        "concerto": "concierto",
+        "feira": "feria",
+        "festival": "festival",
+        "banda": "banda",
+        "público": "público",
+        "grátis": "gratis",
+        "vaga": "cupo",
+        "inscrição": "inscripción",
+        "inscrever-se": "inscribirse",
+        "central": "central",
+        "realiza": "realiza"
+      }
+    },
+    "topic_3": {
+      "pt": {
+        "aviso": "aviso",
+        "escola": "escuela",
+        "comunidade": "comunidad",
+        "centro": "centro",
+        "biblioteca": "biblioteca",
+        "escritório": "oficina",
+        "horário": "horario",
+        "abre": "abre",
+        "fecha": "cierra",
+        "reunião": "reunión"
+      }
+    },
+    "topic_4": {
+      "pt": {
+        "notícia": "noticia",
+        "manchete": "titular",
+        "importante": "importante",
+        "grave": "grave",
+        "última hora": "última hora",
+        "ocorre": "ocurre",
+        "ganha": "gana",
+        "perde": "pierde",
+        "anuncia": "anuncia",
+        "informa": "informa",
+        "confirma": "confirma",
+        "mundial": "mundial"
+      }
+    }
   }
 }

@@ -1,0 +1,38 @@
+[
+  {
+    "text_id": "top-A0-NA-3-txt-01",
+    "number": 1,
+    "title": "El Aviso de la Escuela",
+    "body": "Hay un **aviso** nuevo en la puerta de la **escuela**. La **escuela** **abre** a las ocho de la mañana. **Cierra** a las cuatro de la tarde."
+  },
+  {
+    "text_id": "top-A0-NA-3-txt-02",
+    "number": 2,
+    "title": "La Reunión de la Comunidad",
+    "body": "Esta semana hay una **reunión** de la **comunidad**. La **reunión** es en el **centro** de la **comunidad**. Todos los vecinos van a la **reunión**."
+  },
+  {
+    "text_id": "top-A0-NA-3-txt-03",
+    "number": 3,
+    "title": "El Horario de la Biblioteca",
+    "body": "La **biblioteca** tiene un **horario** nuevo este mes. **Abre** a las nueve y **cierra** a las seis. Los sábados **abre** solo por la mañana."
+  },
+  {
+    "text_id": "top-A0-NA-3-txt-04",
+    "number": 4,
+    "title": "La Oficina Está Cerrada Hoy",
+    "body": "Un **aviso** en la puerta dice: la **oficina** está cerrada hoy. La **oficina** **abre** de nuevo mañana. El **horario** normal continúa la próxima semana."
+  },
+  {
+    "text_id": "top-A0-NA-3-txt-05",
+    "number": 5,
+    "title": "Un Centro Nuevo para la Comunidad",
+    "body": "La **comunidad** tiene un **centro** nuevo este año. El **centro** **abre** todos los días de la semana. Ofrece actividades para niños y adultos."
+  },
+  {
+    "text_id": "top-A0-NA-3-txt-06",
+    "number": 6,
+    "title": "La Reunión en la Biblioteca",
+    "body": "La **biblioteca** organiza una **reunión** especial esta tarde. La **reunión** empieza después del **horario** normal. Los vecinos de la **comunidad** están invitados."
+  }
+]
