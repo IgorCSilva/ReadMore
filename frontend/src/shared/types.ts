@@ -161,10 +161,25 @@ export interface ChatRequest {
   level: string
   message: string
   history: ChatTurn[]
+  user?: string
 }
 
 export interface ChatResponse {
   reply: string
+  conversation_words?: ConversationWord[]
+}
+
+// One tracked word from the user's own "<email>-<target>-progress" sheet
+// (seeded by hand — see backend/apps-script/Code.gs's schema comment),
+// used by the Conversation page's least-used-words strip.
+export interface ConversationWord {
+  word_id: string
+  word: string
+  quantity: number
+}
+
+export interface ConversationWordsResponse {
+  words: ConversationWord[]
 }
 
 export interface StoriesResponse {

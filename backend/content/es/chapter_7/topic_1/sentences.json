@@ -1,0 +1,489 @@
+[
+  {
+    "id": "es-sent-1671",
+    "sentence": "El anuncio es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0563",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1672",
+    "sentence": "Hay un anuncio nuevo.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0563",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1673",
+    "sentence": "El anuncio está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0563",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1674",
+    "sentence": "La alerta es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0564",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1675",
+    "sentence": "Hay una alerta nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0564",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1676",
+    "sentence": "La alerta está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0564",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1677",
+    "sentence": "La tormenta es fuerte.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0565",
+      "es-wd-0017",
+      "es-wd-0572"
+    ]
+  },
+  {
+    "id": "es-sent-1678",
+    "sentence": "Hay una tormenta nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0565",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1679",
+    "sentence": "La tormenta está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0565",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1680",
+    "sentence": "La niebla es fuerte.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0566",
+      "es-wd-0017",
+      "es-wd-0572"
+    ]
+  },
+  {
+    "id": "es-sent-1681",
+    "sentence": "Hay niebla hoy.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0566",
+      "es-wd-0146"
+    ]
+  },
+  {
+    "id": "es-sent-1682",
+    "sentence": "La niebla está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0566",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1683",
+    "sentence": "La temperatura es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0567",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1684",
+    "sentence": "Hay una temperatura nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0567",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1685",
+    "sentence": "La temperatura está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0567",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1686",
+    "sentence": "La máxima es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0568",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1687",
+    "sentence": "Hay una máxima nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0568",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1688",
+    "sentence": "La máxima está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0568",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1689",
+    "sentence": "La mínima es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0569",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1690",
+    "sentence": "Hay una mínima nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0569",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1691",
+    "sentence": "La mínima está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0569",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1692",
+    "sentence": "El pronóstico previsto es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0493",
+      "es-wd-0570",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1693",
+    "sentence": "El pronóstico previsto está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0493",
+      "es-wd-0570",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1694",
+    "sentence": "Hay un pronóstico previsto.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0076",
+      "es-wd-0493",
+      "es-wd-0570"
+    ]
+  },
+  {
+    "id": "es-sent-1695",
+    "sentence": "La lluvia prevista es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0487",
+      "es-wd-0571",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1696",
+    "sentence": "La tormenta prevista es fuerte.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0565",
+      "es-wd-0571",
+      "es-wd-0017",
+      "es-wd-0572"
+    ]
+  },
+  {
+    "id": "es-sent-1697",
+    "sentence": "La niebla prevista está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0566",
+      "es-wd-0571",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1698",
+    "sentence": "El viento es fuerte.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0488",
+      "es-wd-0017",
+      "es-wd-0572"
+    ]
+  },
+  {
+    "id": "es-sent-1699",
+    "sentence": "La lluvia es fuerte.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0487",
+      "es-wd-0017",
+      "es-wd-0572"
+    ]
+  },
+  {
+    "id": "es-sent-1700",
+    "sentence": "El sol es fuerte.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0486",
+      "es-wd-0017",
+      "es-wd-0572"
+    ]
+  },
+  {
+    "id": "es-sent-1701",
+    "sentence": "La lluvia es leve.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0487",
+      "es-wd-0017",
+      "es-wd-0573"
+    ]
+  },
+  {
+    "id": "es-sent-1702",
+    "sentence": "El viento es leve.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0488",
+      "es-wd-0017",
+      "es-wd-0573"
+    ]
+  },
+  {
+    "id": "es-sent-1703",
+    "sentence": "La niebla es leve.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0566",
+      "es-wd-0017",
+      "es-wd-0573"
+    ]
+  },
+  {
+    "id": "es-sent-1704",
+    "sentence": "El tiempo continúa.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0485",
+      "es-wd-0574"
+    ]
+  },
+  {
+    "id": "es-sent-1705",
+    "sentence": "La tormenta continúa.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0565",
+      "es-wd-0574"
+    ]
+  },
+  {
+    "id": "es-sent-1706",
+    "sentence": "La lluvia continúa.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0487",
+      "es-wd-0574"
+    ]
+  },
+  {
+    "id": "es-sent-1707",
+    "sentence": "La región es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0575",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1708",
+    "sentence": "Hay una región nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0575",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1709",
+    "sentence": "La región está allí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0575",
+      "es-wd-0255",
+      "es-wd-0079"
+    ]
+  },
+  {
+    "id": "es-sent-1710",
+    "sentence": "La costa es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0576",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1711",
+    "sentence": "Hay una costa nueva.",
+    "word_ids": [
+      "es-wd-0081",
+      "es-wd-0077",
+      "es-wd-0576",
+      "es-wd-0203"
+    ]
+  },
+  {
+    "id": "es-sent-1712",
+    "sentence": "La costa está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0576",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1713",
+    "sentence": "El próximo día es bueno.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0577",
+      "es-wd-0007",
+      "es-wd-0017",
+      "es-wd-0006"
+    ]
+  },
+  {
+    "id": "es-sent-1714",
+    "sentence": "El próximo anuncio está aquí.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0577",
+      "es-wd-0563",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1715",
+    "sentence": "El próximo pronóstico es nuevo.",
+    "word_ids": [
+      "es-wd-0057",
+      "es-wd-0577",
+      "es-wd-0493",
+      "es-wd-0017",
+      "es-wd-0202"
+    ]
+  },
+  {
+    "id": "es-sent-1716",
+    "sentence": "La próxima semana es buena.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0578",
+      "es-wd-0158",
+      "es-wd-0017",
+      "es-wd-0034"
+    ]
+  },
+  {
+    "id": "es-sent-1717",
+    "sentence": "La próxima tormenta está aquí.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0578",
+      "es-wd-0565",
+      "es-wd-0255",
+      "es-wd-0078"
+    ]
+  },
+  {
+    "id": "es-sent-1718",
+    "sentence": "La próxima alerta es nueva.",
+    "word_ids": [
+      "es-wd-0058",
+      "es-wd-0578",
+      "es-wd-0564",
+      "es-wd-0017",
+      "es-wd-0203"
+    ]
+  }
+]

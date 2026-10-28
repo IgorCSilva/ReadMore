@@ -31,6 +31,7 @@ export default defineConfig({
       '/show-word': BACKEND,
       '/corrections': BACKEND,
       '/chat': BACKEND,
+      '/conversation-words': BACKEND,
     },
   },
   test: {

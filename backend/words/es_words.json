@@ -3370,5 +3370,101 @@
     "root_word_id": "wd-0726",
     "word": "planeta",
     "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0563",
+    "root_word_id": "wd-0727",
+    "word": "anuncio",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0564",
+    "root_word_id": "wd-0728",
+    "word": "alerta",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0565",
+    "root_word_id": "wd-0729",
+    "word": "tormenta",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0566",
+    "root_word_id": "wd-0730",
+    "word": "niebla",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0567",
+    "root_word_id": "wd-0731",
+    "word": "temperatura",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0568",
+    "root_word_id": "wd-0732",
+    "word": "máxima",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0569",
+    "root_word_id": "wd-0733",
+    "word": "mínima",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0570",
+    "root_word_id": "wd-0734",
+    "word": "previsto",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0571",
+    "root_word_id": "wd-0735",
+    "word": "prevista",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0572",
+    "root_word_id": "wd-0736",
+    "word": "fuerte",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0573",
+    "root_word_id": "wd-0737",
+    "word": "leve",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0574",
+    "root_word_id": "wd-0738",
+    "word": "continúa",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0575",
+    "root_word_id": "wd-0739",
+    "word": "región",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0576",
+    "root_word_id": "wd-0740",
+    "word": "costa",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0577",
+    "root_word_id": "wd-0234",
+    "word": "próximo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0578",
+    "root_word_id": "wd-0741",
+    "word": "próxima",
+    "gender_id": "feminine"
   }
 ]

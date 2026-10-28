@@ -693,5 +693,27 @@
         "planeta": "planeta"
       }
     }
+  },
+  "chapter_7": {
+    "topic_1": {
+      "pt": {
+        "anúncio": "anuncio",
+        "alerta": "alerta",
+        "tempestade": "tormenta",
+        "neblina": "niebla",
+        "temperatura": "temperatura",
+        "máxima": "máxima",
+        "mínima": "mínima",
+        "previsto": "previsto",
+        "prevista": "prevista",
+        "forte": "fuerte",
+        "leve": "leve",
+        "continua": "continúa",
+        "região": "región",
+        "costa": "costa",
+        "próximo": "próximo",
+        "próxima": "próxima"
+      }
+    }
   }
 }

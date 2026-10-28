@@ -23,6 +23,15 @@
       <div class="conversation-bubble conversation-bubble-ai conversation-bubble-pending" v-if="isSending">…</div>
     </div>
 
+    <div class="conversation-word-strip" v-if="leastUsedWords.length">
+      <span
+        v-for="w in leastUsedWords"
+        :key="w.word_id"
+        class="conversation-word-chip"
+        :title="`used ${w.quantity} time${w.quantity === 1 ? '' : 's'}`"
+      >{{ w.word }} · {{ w.quantity }}</span>
+    </div>
+
     <form class="conversation-input-row" @submit.prevent="send">
       <input
         v-model="draft"
@@ -37,12 +46,13 @@
 </template>
 
 <script setup lang="ts">
-import { nextTick, ref, watch } from 'vue'
-import { sendChatMessage } from '../../shared/api'
+import { nextTick, onMounted, ref, watch } from 'vue'
+import { getConversationWords, sendChatMessage } from '../../shared/api'
+import { ensureUserEmail } from '../../shared/currentUser'
 import { getLangPair } from '../../shared/languagePreference'
 import { formatLanguageName } from '../../shared/languages'
 import { notify } from '../../shared/notifications'
-import type { ChatTurn } from '../../shared/types'
+import type { ChatTurn, ConversationWord } from '../../shared/types'
 
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 
@@ -51,12 +61,28 @@ const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2']
 // language, with corrections given in the origin language.
 const LANG = getLangPair()
 const targetLangName = formatLanguageName(LANG.split('-')[1] || LANG)
+const USER_EMAIL = ensureUserEmail()
 
 const level = ref('B1')
 const messages = ref<ChatTurn[]>([])
 const draft = ref('')
 const isSending = ref(false)
 const listEl = ref<HTMLDivElement | null>(null)
+// The least-used words from this user's own "<email>-<target>-progress"
+// sheet (seeded by hand — see backend/apps-script/Code.gs). Refreshed from
+// each /chat reply so a word just used in a sent message drops out
+// immediately. Missing/empty when the sheet hasn't been seeded for this
+// pair yet — the strip simply doesn't render then.
+const leastUsedWords = ref<ConversationWord[]>([])
+
+onMounted(async () => {
+  try {
+    const data = await getConversationWords(USER_EMAIL, LANG)
+    leastUsedWords.value = data.words
+  } catch {
+    // Non-critical: the strip just stays empty/hidden.
+  }
+})
 
 // Changing level mid-conversation changes the system instruction the AI
 // gets on the next request, so the prior turns aren't meaningful context
@@ -82,8 +108,15 @@ async function send(): Promise<void> {
   scrollToBottom()
 
   try {
-    const data = await sendChatMessage({ lang: LANG, level: level.value, message: text, history })
+    const data = await sendChatMessage({
+      lang: LANG,
+      level: level.value,
+      message: text,
+      history,
+      user: USER_EMAIL,
+    })
     messages.value.push({ role: 'ai', content: data.reply })
+    if (data.conversation_words) leastUsedWords.value = data.conversation_words
   } catch (err) {
     notify('error', err instanceof Error ? err.message : 'Failed to reach the AI. Try again.')
   } finally {
@@ -173,6 +206,24 @@ async function send(): Promise<void> {
 
 .conversation-bubble-pending {
   color: var(--muted);
+}
+
+.conversation-word-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 0 16px 4px;
+}
+
+.conversation-word-chip {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  font-size: 13px;
 }
 
 .conversation-input-row {

@@ -1,0 +1,38 @@
+[
+  {
+    "text_id": "top-A0-NA-1-txt-01",
+    "number": 1,
+    "title": "El Anuncio del Tiempo",
+    "body": "Este es el **anuncio** del tiempo para hoy. El cielo está despejado en la **región**. Hace calor por la tarde."
+  },
+  {
+    "text_id": "top-A0-NA-1-txt-02",
+    "number": 2,
+    "title": "Alerta de Tormenta en la Costa",
+    "body": "Hay una **alerta** de **tormenta** en la **costa**. El viento es muy **fuerte** hoy. La lluvia **continúa** durante la noche."
+  },
+  {
+    "text_id": "top-A0-NA-1-txt-03",
+    "number": 3,
+    "title": "Niebla en la Región",
+    "body": "Una **niebla** **leve** cubre la **región** esta mañana. El sol no aparece todavía. La **niebla** desaparece antes del mediodía."
+  },
+  {
+    "text_id": "top-A0-NA-1-txt-04",
+    "number": 4,
+    "title": "La Temperatura de Hoy",
+    "body": "La **temperatura** **máxima** de hoy es de treinta grados. La **temperatura** **mínima** de la noche es de quince grados. El tiempo está soleado y agradable."
+  },
+  {
+    "text_id": "top-A0-NA-1-txt-05",
+    "number": 5,
+    "title": "El Pronóstico para la Próxima Semana",
+    "body": "El tiempo **previsto** para la **próxima** semana es bueno. Hay sol y calor en toda la **región**. La lluvia **prevista** para el fin de semana es **leve**."
+  },
+  {
+    "text_id": "top-A0-NA-1-txt-06",
+    "number": 6,
+    "title": "Un Nuevo Anuncio del Tiempo",
+    "body": "Este es el **próximo** **anuncio** del tiempo. Una **tormenta** **fuerte** llega a la **costa** esta noche. El viento **continúa** fuerte hasta la mañana."
+  }
+]
