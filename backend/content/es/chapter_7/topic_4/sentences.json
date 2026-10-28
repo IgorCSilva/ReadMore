@@ -1,0 +1,182 @@
+[
+  {
+    "id": "es-sent-1785",
+    "sentence": "La noticia es buena.",
+    "word_ids": ["es-wd-0058", "es-wd-0601", "es-wd-0017", "es-wd-0034"]
+  },
+  {
+    "id": "es-sent-1786",
+    "sentence": "Hay una noticia nueva.",
+    "word_ids": ["es-wd-0081", "es-wd-0077", "es-wd-0601", "es-wd-0203"]
+  },
+  {
+    "id": "es-sent-1787",
+    "sentence": "La noticia está aquí.",
+    "word_ids": ["es-wd-0058", "es-wd-0601", "es-wd-0255", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1788",
+    "sentence": "El titular es bueno.",
+    "word_ids": ["es-wd-0057", "es-wd-0602", "es-wd-0017", "es-wd-0006"]
+  },
+  {
+    "id": "es-sent-1789",
+    "sentence": "Hay un titular nuevo.",
+    "word_ids": ["es-wd-0081", "es-wd-0076", "es-wd-0602", "es-wd-0202"]
+  },
+  {
+    "id": "es-sent-1790",
+    "sentence": "El titular está allí.",
+    "word_ids": ["es-wd-0057", "es-wd-0602", "es-wd-0255", "es-wd-0079"]
+  },
+  {
+    "id": "es-sent-1791",
+    "sentence": "La noticia es importante.",
+    "word_ids": ["es-wd-0058", "es-wd-0601", "es-wd-0017", "es-wd-0603"]
+  },
+  {
+    "id": "es-sent-1792",
+    "sentence": "El problema es importante.",
+    "word_ids": ["es-wd-0057", "es-wd-0316", "es-wd-0017", "es-wd-0603"]
+  },
+  {
+    "id": "es-sent-1793",
+    "sentence": "Esto es importante.",
+    "word_ids": ["es-wd-0085", "es-wd-0017", "es-wd-0603"]
+  },
+  {
+    "id": "es-sent-1794",
+    "sentence": "El problema es grave.",
+    "word_ids": ["es-wd-0057", "es-wd-0316", "es-wd-0017", "es-wd-0604"]
+  },
+  {
+    "id": "es-sent-1795",
+    "sentence": "Eso es grave.",
+    "word_ids": ["es-wd-0086", "es-wd-0017", "es-wd-0604"]
+  },
+  {
+    "id": "es-sent-1796",
+    "sentence": "La noticia es grave.",
+    "word_ids": ["es-wd-0058", "es-wd-0601", "es-wd-0017", "es-wd-0604"]
+  },
+  {
+    "id": "es-sent-1797",
+    "sentence": "Esto es de última hora.",
+    "word_ids": ["es-wd-0085", "es-wd-0017", "es-wd-0023", "es-wd-0605"]
+  },
+  {
+    "id": "es-sent-1798",
+    "sentence": "La noticia es de última hora.",
+    "word_ids": ["es-wd-0058", "es-wd-0601", "es-wd-0017", "es-wd-0023", "es-wd-0605"]
+  },
+  {
+    "id": "es-sent-1799",
+    "sentence": "Todo esto es de última hora.",
+    "word_ids": ["es-wd-0010", "es-wd-0085", "es-wd-0017", "es-wd-0023", "es-wd-0605"]
+  },
+  {
+    "id": "es-sent-1800",
+    "sentence": "El problema ocurre aquí.",
+    "word_ids": ["es-wd-0057", "es-wd-0316", "es-wd-0606", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1801",
+    "sentence": "Eso ocurre allí.",
+    "word_ids": ["es-wd-0086", "es-wd-0606", "es-wd-0079"]
+  },
+  {
+    "id": "es-sent-1802",
+    "sentence": "Esto ocurre hoy.",
+    "word_ids": ["es-wd-0085", "es-wd-0606", "es-wd-0146"]
+  },
+  {
+    "id": "es-sent-1803",
+    "sentence": "El país gana hoy.",
+    "word_ids": ["es-wd-0057", "es-wd-0398", "es-wd-0607", "es-wd-0146"]
+  },
+  {
+    "id": "es-sent-1804",
+    "sentence": "Ella gana mucho.",
+    "word_ids": ["es-wd-0160", "es-wd-0607", "es-wd-0127"]
+  },
+  {
+    "id": "es-sent-1805",
+    "sentence": "Él gana aquí.",
+    "word_ids": ["es-wd-0159", "es-wd-0607", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1806",
+    "sentence": "El país pierde hoy.",
+    "word_ids": ["es-wd-0057", "es-wd-0398", "es-wd-0608", "es-wd-0146"]
+  },
+  {
+    "id": "es-sent-1807",
+    "sentence": "Ella pierde mucho.",
+    "word_ids": ["es-wd-0160", "es-wd-0608", "es-wd-0127"]
+  },
+  {
+    "id": "es-sent-1808",
+    "sentence": "Él pierde aquí.",
+    "word_ids": ["es-wd-0159", "es-wd-0608", "es-wd-0078"]
+  },
+  {
+    "id": "es-sent-1809",
+    "sentence": "El país anuncia esto.",
+    "word_ids": ["es-wd-0057", "es-wd-0398", "es-wd-0609", "es-wd-0085"]
+  },
+  {
+    "id": "es-sent-1810",
+    "sentence": "Ella anuncia el problema.",
+    "word_ids": ["es-wd-0160", "es-wd-0609", "es-wd-0057", "es-wd-0316"]
+  },
+  {
+    "id": "es-sent-1811",
+    "sentence": "Él anuncia eso.",
+    "word_ids": ["es-wd-0159", "es-wd-0609", "es-wd-0086"]
+  },
+  {
+    "id": "es-sent-1812",
+    "sentence": "La policía informa esto.",
+    "word_ids": ["es-wd-0058", "es-wd-0327", "es-wd-0610", "es-wd-0085"]
+  },
+  {
+    "id": "es-sent-1813",
+    "sentence": "Él informa el problema.",
+    "word_ids": ["es-wd-0159", "es-wd-0610", "es-wd-0057", "es-wd-0316"]
+  },
+  {
+    "id": "es-sent-1814",
+    "sentence": "Ella informa eso.",
+    "word_ids": ["es-wd-0160", "es-wd-0610", "es-wd-0086"]
+  },
+  {
+    "id": "es-sent-1815",
+    "sentence": "La policía confirma esto.",
+    "word_ids": ["es-wd-0058", "es-wd-0327", "es-wd-0611", "es-wd-0085"]
+  },
+  {
+    "id": "es-sent-1816",
+    "sentence": "Él confirma el problema.",
+    "word_ids": ["es-wd-0159", "es-wd-0611", "es-wd-0057", "es-wd-0316"]
+  },
+  {
+    "id": "es-sent-1817",
+    "sentence": "Ella confirma eso.",
+    "word_ids": ["es-wd-0160", "es-wd-0611", "es-wd-0086"]
+  },
+  {
+    "id": "es-sent-1818",
+    "sentence": "El problema es mundial.",
+    "word_ids": ["es-wd-0057", "es-wd-0316", "es-wd-0017", "es-wd-0612"]
+  },
+  {
+    "id": "es-sent-1819",
+    "sentence": "La noticia es mundial.",
+    "word_ids": ["es-wd-0058", "es-wd-0601", "es-wd-0017", "es-wd-0612"]
+  },
+  {
+    "id": "es-sent-1820",
+    "sentence": "Esto es mundial.",
+    "word_ids": ["es-wd-0085", "es-wd-0017", "es-wd-0612"]
+  }
+]

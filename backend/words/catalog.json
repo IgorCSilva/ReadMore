@@ -2963,6 +2963,138 @@
     {
       "word_id": "wd-0741",
       "filename": "next_feminine"
+    },
+    {
+      "word_id": "wd-0742",
+      "filename": "event"
+    },
+    {
+      "word_id": "wd-0743",
+      "filename": "concert"
+    },
+    {
+      "word_id": "wd-0744",
+      "filename": "fair"
+    },
+    {
+      "word_id": "wd-0745",
+      "filename": "festival"
+    },
+    {
+      "word_id": "wd-0746",
+      "filename": "band"
+    },
+    {
+      "word_id": "wd-0747",
+      "filename": "public"
+    },
+    {
+      "word_id": "wd-0748",
+      "filename": "free"
+    },
+    {
+      "word_id": "wd-0749",
+      "filename": "available_spot"
+    },
+    {
+      "word_id": "wd-0750",
+      "filename": "registration"
+    },
+    {
+      "word_id": "wd-0751",
+      "filename": "to_register"
+    },
+    {
+      "word_id": "wd-0752",
+      "filename": "central"
+    },
+    {
+      "word_id": "wd-0753",
+      "filename": "it_takes_place"
+    },
+    {
+      "word_id": "wd-0754",
+      "filename": "notice"
+    },
+    {
+      "word_id": "wd-0755",
+      "filename": "school"
+    },
+    {
+      "word_id": "wd-0756",
+      "filename": "community"
+    },
+    {
+      "word_id": "wd-0757",
+      "filename": "center"
+    },
+    {
+      "word_id": "wd-0758",
+      "filename": "library"
+    },
+    {
+      "word_id": "wd-0759",
+      "filename": "office"
+    },
+    {
+      "word_id": "wd-0760",
+      "filename": "schedule"
+    },
+    {
+      "word_id": "wd-0761",
+      "filename": "it_opens"
+    },
+    {
+      "word_id": "wd-0762",
+      "filename": "it_closes"
+    },
+    {
+      "word_id": "wd-0763",
+      "filename": "meeting"
+    },
+    {
+      "word_id": "wd-0764",
+      "filename": "headline"
+    },
+    {
+      "word_id": "wd-0765",
+      "filename": "important"
+    },
+    {
+      "word_id": "wd-0766",
+      "filename": "serious"
+    },
+    {
+      "word_id": "wd-0767",
+      "filename": "breaking_news"
+    },
+    {
+      "word_id": "wd-0768",
+      "filename": "it_occurs"
+    },
+    {
+      "word_id": "wd-0769",
+      "filename": "it_wins"
+    },
+    {
+      "word_id": "wd-0770",
+      "filename": "it_loses"
+    },
+    {
+      "word_id": "wd-0771",
+      "filename": "it_announces"
+    },
+    {
+      "word_id": "wd-0772",
+      "filename": "it_informs"
+    },
+    {
+      "word_id": "wd-0773",
+      "filename": "it_confirms"
+    },
+    {
+      "word_id": "wd-0774",
+      "filename": "global"
     }
   ]
 }

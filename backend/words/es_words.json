@@ -3466,5 +3466,209 @@
     "root_word_id": "wd-0741",
     "word": "próxima",
     "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0579",
+    "root_word_id": "wd-0742",
+    "word": "evento",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0580",
+    "root_word_id": "wd-0743",
+    "word": "concierto",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0581",
+    "root_word_id": "wd-0744",
+    "word": "feria",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0582",
+    "root_word_id": "wd-0745",
+    "word": "festival",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0583",
+    "root_word_id": "wd-0746",
+    "word": "banda",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0584",
+    "root_word_id": "wd-0747",
+    "word": "público",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0585",
+    "root_word_id": "wd-0748",
+    "word": "gratis",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0586",
+    "root_word_id": "wd-0749",
+    "word": "cupo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0587",
+    "root_word_id": "wd-0750",
+    "word": "inscripción",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0588",
+    "root_word_id": "wd-0751",
+    "word": "inscribirse",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0589",
+    "root_word_id": "wd-0752",
+    "word": "central",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0590",
+    "root_word_id": "wd-0753",
+    "word": "realiza",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0591",
+    "root_word_id": "wd-0754",
+    "word": "aviso",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0592",
+    "root_word_id": "wd-0755",
+    "word": "escuela",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0593",
+    "root_word_id": "wd-0756",
+    "word": "comunidad",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0594",
+    "root_word_id": "wd-0757",
+    "word": "centro",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0595",
+    "root_word_id": "wd-0758",
+    "word": "biblioteca",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0596",
+    "root_word_id": "wd-0759",
+    "word": "oficina",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0597",
+    "root_word_id": "wd-0760",
+    "word": "horario",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0598",
+    "root_word_id": "wd-0761",
+    "word": "abre",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0599",
+    "root_word_id": "wd-0762",
+    "word": "cierra",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0600",
+    "root_word_id": "wd-0763",
+    "word": "reunión",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0601",
+    "root_word_id": "wd-0235",
+    "word": "noticia",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "es-wd-0602",
+    "root_word_id": "wd-0764",
+    "word": "titular",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "es-wd-0603",
+    "root_word_id": "wd-0765",
+    "word": "importante",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0604",
+    "root_word_id": "wd-0766",
+    "word": "grave",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0605",
+    "root_word_id": "wd-0767",
+    "word": "última hora",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0606",
+    "root_word_id": "wd-0768",
+    "word": "ocurre",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0607",
+    "root_word_id": "wd-0769",
+    "word": "gana",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0608",
+    "root_word_id": "wd-0770",
+    "word": "pierde",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0609",
+    "root_word_id": "wd-0771",
+    "word": "anuncia",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0610",
+    "root_word_id": "wd-0772",
+    "word": "informa",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0611",
+    "root_word_id": "wd-0773",
+    "word": "confirma",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "es-wd-0612",
+    "root_word_id": "wd-0774",
+    "word": "mundial",
+    "gender_id": "not_apply"
   }
 ]

@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**El** médico **confirma** **el** diagnóstico."
+  },
+  {
+    "sentence_number": 2,
+    "content": "**Ella** **informa** sobre a **reunión**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "A doença **es** **grave**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "**Es** **importante** saber **eso** logo."
+  },
+  {
+    "sentence_number": 5,
+    "content": "A **titular** fala sobre **el** acidente."
+  },
+  {
+    "sentence_number": 6,
+    "content": "A crise **es** **mundial**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "Essa **titular** **no** **es** clara."
+  },
+  {
+    "sentence_number": 8,
+    "content": "**Eso** **es** **última hora**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "A **escuela** **informa** os pais."
+  },
+  {
+    "sentence_number": 10,
+    "content": "Esse **es** um **problema** **mundial**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "A empresa **anuncia** um **nuevo** produto."
+  },
+  {
+    "sentence_number": 12,
+    "content": "Essa **reunión** **es** **importante**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "**Gana** quem joga melhor."
+  },
+  {
+    "sentence_number": 14,
+    "content": "**El** rádio **anuncia** **el** **horario**."
+  },
+  {
+    "sentence_number": 15,
+    "content": "**Eso** **confirma** **todo**."
+  },
+  {
+    "sentence_number": 16,
+    "content": "**El** guia **informa** os turistas."
+  },
+  {
+    "sentence_number": 17,
+    "content": "Esse tipo **de** acidente **ocurre** **con** frequência."
+  },
+  {
+    "sentence_number": 18,
+    "content": "A **policía** **informa** os detalhes."
+  },
+  {
+    "sentence_number": 19,
+    "content": "**Eso** **ocurre** **en** qualquer **lugar**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**El** comunicado foi **de** **última hora**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "**El** jornal **informa** sobre **el** acidente."
+  },
+  {
+    "sentence_number": 22,
+    "content": "**El** erro **ocurre** **antes** do jogo."
+  },
+  {
+    "sentence_number": 23,
+    "content": "A **titular** **es** sobre **el** governo."
+  },
+  {
+    "sentence_number": 24,
+    "content": "Essa **información** **es** **importante** para **el** **país**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "Essa marca **es** conhecida **en el** cenário **mundial**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**Él** **anuncia** a decisão **ahora**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "A empresa **confirma** **el** **pago**."
+  },
+  {
+    "sentence_number": 28,
+    "content": "**El** time **pierde** **el** jogo."
+  },
+  {
+    "sentence_number": 29,
+    "content": "Essa falha **ocurre** **con** frequência."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**El** **problema** **ocurre** **sin** **aviso**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "Essa **noticia** **no** **es** **buena**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "**Ella** **anuncia** **el** resultado."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**Nadie** esperava aquela **noticia**."
+  },
+  {
+    "sentence_number": 34,
+    "content": "A mudança **ocurre** rapidamente."
+  },
+  {
+    "sentence_number": 35,
+    "content": "Essa situação **es** **grave**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "**Él** comentou a **noticia** **con** os amigos."
+  },
+  {
+    "sentence_number": 37,
+    "content": "**Todo** **eso** aconteceu **de** **última hora**."
+  },
+  {
+    "sentence_number": 38,
+    "content": "Essa doença **es** um **problema** **mundial**."
+  },
+  {
+    "sentence_number": 39,
+    "content": "**El** governo **anuncia** **una** **nueva** lei."
+  },
+  {
+    "sentence_number": 40,
+    "content": "**El** resultado **es** **importante** para **el** time."
+  },
+  {
+    "sentence_number": 41,
+    "content": "Foi um **aviso** **de** **última hora**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "**El** time **anuncia** **el** **nuevo** técnico."
+  },
+  {
+    "sentence_number": 43,
+    "content": "**Nuestro** time **pierde** sempre."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**Él** leu a **titular** rapidamente."
+  },
+  {
+    "sentence_number": 45,
+    "content": "**El** jornal publicou **eso** **en** **última hora**."
+  },
+  {
+    "sentence_number": 46,
+    "content": "A **titular** do jornal chamou atenção."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**El** time **gana** **el** jogo."
+  },
+  {
+    "sentence_number": 48,
+    "content": "Essa **titular** **es** **grande**."
+  },
+  {
+    "sentence_number": 49,
+    "content": "**El** presidente **anuncia** **el** plano."
+  },
+  {
+    "sentence_number": 50,
+    "content": "**Él** **pierde** **el** emprego."
+  },
+  {
+    "sentence_number": 51,
+    "content": "**El** ferimento foi **grave**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "Chegou um **alerta** **de** **última hora**."
+  },
+  {
+    "sentence_number": 53,
+    "content": "A **escuela** **anuncia** as férias."
+  },
+  {
+    "sentence_number": 54,
+    "content": "**El** **país** **pierde** dinheiro **con** **eso**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "**Ustedes** já viram a **noticia** **de** **hoy**?"
+  },
+  {
+    "sentence_number": 56,
+    "content": "**Él** **gana** a corrida."
+  },
+  {
+    "sentence_number": 57,
+    "content": "**El** resultado **confirma** a vitória."
+  },
+  {
+    "sentence_number": 58,
+    "content": "**Ella** **pierde** a paciência."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**Ella** ouviu a **noticia** pelo rádio."
+  },
+  {
+    "sentence_number": 60,
+    "content": "Essa **noticia** chegou **antes** do jogo."
+  },
+  {
+    "sentence_number": 61,
+    "content": "A **policía** **confirma** **el** acidente."
+  },
+  {
+    "sentence_number": 62,
+    "content": "**Ella** **confirma** a **reunión** **de** **hoy**."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**Eso** **ocurre** **todos** os dias."
+  },
+  {
+    "sentence_number": 64,
+    "content": "A copa **mundial** **empieza** **hoy**."
+  },
+  {
+    "sentence_number": 65,
+    "content": "A **noticia** deixou todo **mundo** preocupado."
+  },
+  {
+    "sentence_number": 66,
+    "content": "**Nada** **es** **más** **importante** que **eso**."
+  },
+  {
+    "sentence_number": 67,
+    "content": "Essa **reunión** **es** **importante**, **pero** longa."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**El** governo **informa** a população."
+  },
+  {
+    "sentence_number": 69,
+    "content": "**El** jogador **gana** respeito."
+  },
+  {
+    "sentence_number": 70,
+    "content": "**Eso** pode ser **grave**."
+  },
+  {
+    "sentence_number": 71,
+    "content": "**El** erro foi **grave**, **pero** corrigível."
+  },
+  {
+    "sentence_number": 72,
+    "content": "**No** **es** **nada** **grave**."
+  },
+  {
+    "sentence_number": 73,
+    "content": "**Ella** **gana** **el** prêmio este ano."
+  },
+  {
+    "sentence_number": 74,
+    "content": "**Él** disse que **eso** **es** **importante**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "**El** governo **confirma** **el** plano."
+  },
+  {
+    "sentence_number": 76,
+    "content": "**El** **problema** **es** **grave** para **el** **país**."
+  },
+  {
+    "sentence_number": 77,
+    "content": "Essa **titular** **tiene** um erro."
+  },
+  {
+    "sentence_number": 78,
+    "content": "A **noticia** saiu **en** **todos** os jornais."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**El** recorde **mundial** foi **roto**."
+  },
+  {
+    "sentence_number": 80,
+    "content": "**Yo** leio a **noticia** **con** atenção."
+  },
+  {
+    "sentence_number": 81,
+    "content": "Essa carta **informa** **todo**."
+  },
+  {
+    "sentence_number": 82,
+    "content": "**El** jogador **pierde** a bola."
+  },
+  {
+    "sentence_number": 83,
+    "content": "**Él** **confirma** a **información**."
+  },
+  {
+    "sentence_number": 84,
+    "content": "Essa **es** **una** questão **mundial**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "Essa decisão **es** **importante** para **el** **país**."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**Nuestro** time **gana** sempre."
+  },
+  {
+    "sentence_number": 87,
+    "content": "Essa crise **es** **más** **grave** que a anterior."
+  },
+  {
+    "sentence_number": 88,
+    "content": "Essa equipe **pierde** **con** frequência."
+  },
+  {
+    "sentence_number": 89,
+    "content": "**El** Brasil **gana** **el** campeonato."
+  },
+  {
+    "sentence_number": 90,
+    "content": "**Nuestra** equipe **gana** **hoy**."
+  },
+  {
+    "sentence_number": 91,
+    "content": "**El** **evento** **mundial** atraiu milhões."
+  },
+  {
+    "sentence_number": 92,
+    "content": "**El** acidente **ocurre** **cerca** daqui."
+  },
+  {
+    "sentence_number": 93,
+    "content": "**El** acidente foi **grave**."
+  },
+  {
+    "sentence_number": 94,
+    "content": "**Eso** **es** bastante **importante**."
+  },
+  {
+    "sentence_number": 95,
+    "content": "Essa **información** **es** **de** **última hora**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "A **titular** surpreendeu todo **mundo**."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**Ustedes** viram **eso** **de** **última hora**?"
+  },
+  {
+    "sentence_number": 98,
+    "content": "**Ustedes** leram a **titular** **de** **hoy**?"
+  },
+  {
+    "sentence_number": 99,
+    "content": "Quem **pierde** **no** desiste."
+  },
+  {
+    "sentence_number": 100,
+    "content": "**Él** **informa** a decisão à equipe."
+  }
+]
