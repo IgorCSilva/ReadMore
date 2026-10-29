@@ -112,4 +112,34 @@ describe('Sentences', () => {
       }
     })
   })
+
+  describe('French elision', () => {
+    it('resolves an elided pronoun ("m\'") to its base word ("me") for the balloon', async () => {
+      vi.mocked(api.getWords).mockResolvedValue({
+        lang: 'fr',
+        words: [
+          { word_id: 'fr-wd-0023', original: 'me', filename: 'me.png', sentence: '', auxiliar_sentence: 'Je me _____ Claire.', cue: 'Reflexive pronoun', gender_id: 'not_apply', particle_type: '' },
+          { word_id: 'fr-wd-0024', original: 'appelle', filename: 'appelle.png', sentence: '', auxiliar_sentence: 'Je _____ appelle Claire.', cue: 'To call', gender_id: 'not_apply', particle_type: '' },
+        ],
+      })
+      const topic = {
+        sentences: [{ sentence_number: 1, content: "Je **m'****appelle** Claire." }],
+      }
+      const wrapper = mount(Sentences, { attachTo: document.body })
+      try {
+        wrapper.vm.show(topic, 'es-fr')
+        await flushPromises()
+
+        const strongs = wrapper.findAll('.sentence-item-content strong')
+        expect(strongs.map((s) => s.text())).toEqual(["m'", 'appelle'])
+
+        strongs[0].element.closest('button')?.click()
+        await flushPromises()
+
+        expect(document.body.textContent).toContain('Je me _____ Claire.')
+      } finally {
+        wrapper.unmount()
+      }
+    })
+  })
 })

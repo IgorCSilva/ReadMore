@@ -1,0 +1,36 @@
+{
+  "chapter_1": {
+    "topic_1": {
+      "es": {
+        "hola": "bonjour",
+        "chao": "salut",
+        "y": "et",
+        "bueno": "bon",
+        "buena": "bonne",
+        "día": "jour",
+        "tarde": "après-midi",
+        "noche": "nuit",
+        "buenos días": "bonjour",
+        "buenas tardes": "bonjour",
+        "buenas noches": ["bonsoir", "bonne nuit"],
+        "bien": "bien",
+        "todo": "tout",
+        "cómo": "comment",
+        "tú": "tu",
+        "estoy": "vais",
+        "estás": "vas",
+        "nombre": "nom",
+        "mi": "mon",
+        "es": "est",
+        "yo": "je",
+        "me": "me",
+        "llamo": "appelle",
+        "de": "de",
+        "sí": "oui",
+        "no": "non",
+        "gracias": "merci",
+        "de nada": "de rien"
+      }
+    }
+  }
+}
