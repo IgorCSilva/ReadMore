@@ -52,3 +52,24 @@ def test_uses_the_korean_boundary_strategy_for_a_korean_target():
 
     assert match_word_ids("학교에 가요", words, "ko") == ["ko-wd-0001"]
     assert match_word_ids("중학교 학생이에요", words, "ko") == []
+
+
+def test_matches_a_french_word_elided_before_a_vowel():
+    # "me" elides to "m'" before a vowel-initial verb, so "je m'appelle"
+    # never contains the literal substring "me" — the French boundary
+    # strategy (domain/text_boundaries.py) must still count it as a use.
+    words = [_usage("fr-wd-0023", "me")]
+
+    assert match_word_ids("Je m'appelle Claire.", words, "fr") == ["fr-wd-0023"]
+
+
+def test_still_matches_an_unelided_french_word():
+    words = [_usage("fr-wd-0023", "me")]
+
+    assert match_word_ids("Elle me regarde.", words, "fr") == ["fr-wd-0023"]
+
+
+def test_does_not_elide_a_french_word_with_no_elision_form():
+    words = [_usage("fr-wd-0001", "bonjour")]
+
+    assert match_word_ids("Je m'appelle Claire.", words, "fr") == []

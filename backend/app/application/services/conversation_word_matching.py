@@ -21,9 +21,7 @@ def match_word_ids(
 ) -> list[str]:
     matched: list[str] = []
     for usage in words:
-        pattern = re.compile(
-            boundary_pattern(re.escape(usage.word), target_lang), re.IGNORECASE
-        )
+        pattern = re.compile(boundary_pattern(usage.word, target_lang), re.IGNORECASE)
         if pattern.search(message):
             matched.append(usage.word_id)
     return matched

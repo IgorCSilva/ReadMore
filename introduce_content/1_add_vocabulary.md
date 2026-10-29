@@ -4,12 +4,12 @@
 Check introduce_content/current_info.md file to know the target idiom, chapter and topic numbers.
 
 1. Resolve chapter/topic into a roadmap ID using the Section 7 table in
-   contents/language_reading_journey_phases/roadmap.md (chapter 1 = its first
+   roadmap/roadmap.md (chapter 1 = its first
    chapter group, topic 1 = the first topic under it — e.g. chapter=1/topic=1
    → A0-EL-1, "Greetings & Introducing Yourself"). State the resolved ID and
    its objective before doing anything else.
 
-2. Pull this topic's assignment from didactic_roadmap.md:
+2. Pull this topic's assignment from didactic_roadmap.md in roadmap/didactic_roadmap.md:
    - its thematic content, from roadmap.md's own topic description;
    - its structural items, from didactic_roadmap.md's "A0 — Per-Topic
      Breakdown" (or the matching level section if this falls outside A0/A1);
@@ -29,6 +29,13 @@ Check introduce_content/current_info.md file to know the target idiom, chapter a
    already exist (exact string match) anywhere else in <target>'s word lists — every other
    chapter/topic's words.json, not just earlier ones. Report explicitly if this check
    found nothing to exclude.
+
+   After updating words.json, verify with the checker script instead of relying solely
+   on manual review: run
+   `docker compose exec readmore python backend/scripts/check_word_duplicates.py <target> <chapter_N> <topic_N>`
+   (e.g. `docker compose exec readmore python backend/scripts/check_word_duplicates.py pt 1 2`).
+   If it reports duplicates, remove/resolve them in words.json and re-run the script.
+   Repeat until the script reports no duplicates before moving on.
 
 6. Expression completeness: if this topic's word list lets several already-listed
    words combine into a multi-word expression (e.g. "you" + "are" + "welcome"), check

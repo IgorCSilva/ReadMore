@@ -20,4 +20,4 @@ def test_synthesize_raises_for_a_language_with_no_configured_voice():
     client = EdgeTtsClient()
 
     with pytest.raises(TtsUpstreamError):
-        client.synthesize("bonjour", "fr")
+        client.synthesize("guten tag", "de")

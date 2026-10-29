@@ -1,7 +1,7 @@
 ## Add auxiliar sentences
 
-native: pt
-target: es
+native: es
+target: fr
 Check introduce_content/current_info.md file to know the chapter and topic numbers.
 
 Build one "mixin" example sentence per word/expression in this chapter/topic, in

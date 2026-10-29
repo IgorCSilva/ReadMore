@@ -1,12 +1,12 @@
 ## Create theme content
 
-native: pt
+native: es
 level: A1
 roadmap directory: backend/content/learning/theme/health
 chapter: EXE
-topic: 2
+topic: 3
 output directory: <roadmap directory>/<chapter>_<topic>
-target: es
+target: fr
 
 
 Based on the <roadmap directory>/roadmap.md, generate the content for the topic <topic> in chapter <chapter>. The content idiom level must be <level>. Structure the content to have a .md pattern.

@@ -20,6 +20,7 @@ _LANGUAGE_NAMES = {
     "es": "Spanish",
     "ko": "Korean",
     "zh": "Chinese",
+    "fr": "French",
 }
 
 

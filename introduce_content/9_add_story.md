@@ -1,7 +1,7 @@
 ## Add story
 
-native: pt
-target: es
+native: es
+target: fr
 
 Adapt the text below to have a identical structure to backend/content/pt-es/stories/b1/muddy_feet/text.json. You need to define the level from A1 to C2 and a folder name.
 If there are some emojis like 😊 you can remove them.
@@ -10,64 +10,27 @@ If there are some emojis like 😊 you can remove them.
 == Initial ==
 =============
 
-Pelusa, la gatita astronauta
 
-Una historia tierna sobre la amistad y la valentía, perfecta para leer antes de dormir. Acompaña a la pequeña Pelusa en su viaje a las estrellas, donde descubrirá que se pueden hacer nuevos amigos hasta en los lugares más lejanos.
------------------------------------
+Le Doux Voyage de Petit Nuage
 
-Pelusa era una gatita astronauta 🐱🚀
-Llevaba un casco redondo y brillante,
-y era toda una aventurera.
+Une invitation à la rêverie pour les tout-petits. Suivez un nuage tout doux dans sa promenade apaisante au-dessus de paysages familiers, entre champs de lavande et lacs miroitants. Une histoire tendre, idéale pour apaiser les enfants avant le dodo.
+--------------------------------
 
+Il était une fois Petit Nuage, qui flottait doucement dans le ciel bleu. Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux. ☁️
 
-Su nave estaba hecha con su cajita transportadora
-y tenía todo lo necesario para cruzar el espacio.
+Un jour, Petit Nuage décida de partir faire une grande promenade. Il glissa son corps vaporeux entre les montagnes et descendit vers un joli champ de fleurs. Là-bas, les papillons volaient au ralenti et les abeilles bourdonnaient doucement : Bzzzz, bzzzz. L'air sentait bon la lavande et le miel. Tout était si calme ! Petit Nuage se sentait heureux et léger. 🌸🐝
 
+Il continua de flotter jusqu'à un immense lac. L'eau était si claire qu'on y voyait le soleil se refléter comme dans un miroir magique. Petit Nuage descendit encore un peu, jusqu'à effleurer l'eau avec son petit bidou. L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes. 💧
 
-Un día, decidió viajar hasta Marte.
-La nave voló entre las estrellas y aterrizó muy despacito,
-con un sonido suave:
+Il s'amusa un moment, puis quelque chose attira son attention : des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger. « Quelle paix ! » pensa Petit Nuage. Il resta là à les regarder se laisser bercer par l'eau, tout comme lui se laissait bercer par le ciel. 🦆
 
-—pusssssshhhhhh—
+Un peu plus tard, il arriva au-dessus d'une forêt aux arbres immenses. Les arbres chuchotaient dans la brise légère et les oiseaux chantonnaient des mélodies apaisantes. Il décida de se reposer là un instant, accroché aux branches, profitant du vent et du chant des oiseaux. Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac. 🌳🐦
 
+Quand le soleil commença à se cacher derrière les montagnes, Petit Nuage sut qu'il était l'heure de rentrer à la maison. Il remonta doucement dans le ciel, admirant le jour qui disait au revoir avec des couleurs rose, orange et violette à l'horizon. Tout devenait silencieux. 🌅
 
-justo sobre el planeta rojo.
+Heureux et détendu, Petit Nuage alla se blottir au milieu des étoiles et ferma les yeux. « C'était une journée merveilleuse », pensa-t-il, en se laissant porter par le doux bercement de la nuit. ⭐️🌙
 
-Cuando Pelusa salió a explorar,
-vio algo moverse a lo lejos.
-
-
-¡Era un marciano! 👽
-
-El marciano se asustó muchísimo.
-Pelusa también se llevó un tremendo susto.
-
-
-Pelusa corrió y se metió rápido en su nave.
-El marciano corrió y se escondió detrás de una roca grande.
-
-
-Durante un rato,
-nadie se movió.
-
-
-Poco a poco, el marciano se asomó.
-Caminó despacio y se acercó con un regalo entre las manos.
-
-
-Era una roca de Marte,
-roja y brillante 🪨
-
-Entonces, Pelusa salió de su cajita.
-Buscó en su arenero espacial
-y le regaló una piedrita muy bonita.
-
-Se miraron con curiosidad
-y el miedo desapareció.
-
-Pelusa subió a su nave y regresó feliz a la Tierra 🌍
-con su roca de Marte,
-un recuerdo especial de su nuevo amigo del espacio ✨
+Et c'est ainsi que le nuage de coton s'endormit, flottant paisiblement, alors que le monde entier reposait en paix. 😴
 
 =========
 == End ==

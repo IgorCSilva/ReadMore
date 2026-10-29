@@ -1,5 +1,6 @@
 # Current info
 
-target: es
-chapter: 7
-topic: 4
+native: es
+target: fr
+chapter: 1
+topic: 1
