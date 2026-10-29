@@ -29,6 +29,25 @@ import TargetWordBalloon from '../../components/TargetWordBalloon.vue'
 // instead of all bolded words sharing the flat .sentence-item-content
 // strong { color: var(--accent) } fallback.
 
+// Content bolds elided French pronouns/articles on their own (e.g.
+// "**m'**appelle**" inside "je m'appelle") so each half of the contraction
+// stays independently clickable — but the elided surface form ("m'") never
+// matches the dictionary word it stands for ("me") in wordStyleMap, which is
+// keyed by exact surface spelling. This maps each elided form back to the
+// base word(s) to retry when the direct lookup misses, mirroring the
+// elisions domain/text_boundaries.py's French strategy already knows about.
+const FRENCH_ELISION_TO_BASE = {
+  "j'": ["je"],
+  "m'": ["me"],
+  "t'": ["te"],
+  "s'": ["se"],
+  "l'": ["le", "la"],
+  "n'": ["ne"],
+  "d'": ["de"],
+  "qu'": ["que"],
+  "c'": ["ce"],
+};
+
 let currentTopic = null;
 let show;
 const balloonRef = ref(null);
@@ -60,12 +79,21 @@ onMounted(() => {
     }
   }
 
+  function lookupWordStyle(word) {
+    const lower = word.toLowerCase();
+    if (wordStyleMap.has(lower)) return wordStyleMap.get(lower);
+    for (const base of FRENCH_ELISION_TO_BASE[lower] || []) {
+      if (wordStyleMap.has(base)) return wordStyleMap.get(base);
+    }
+    return undefined;
+  }
+
   function handleListClick(event) {
     const button = event.target.closest(".sentence-target-word");
     if (!button) return;
     event.stopPropagation();
     const word = button.dataset.word || "";
-    const info = wordStyleMap.get(word.toLowerCase()) || {};
+    const info = lookupWordStyle(word) || {};
     balloonRef.value?.showFor(button, {
       word,
       lang: targetLangCode || "en",
@@ -81,7 +109,7 @@ onMounted(() => {
   });
 
   function renderBoldSpan(word) {
-    const particleTypeId = wordStyleMap.get(word.toLowerCase())?.particleTypeId;
+    const particleTypeId = lookupWordStyle(word)?.particleTypeId;
     const particle = particleTypeId ? getParticle(particleTypeId) : null;
     const style = particle?.color ? ` style="color:${particle.color}"` : "";
     const displayText = escapeHtml(formatWordByParticle(word, particleTypeId));

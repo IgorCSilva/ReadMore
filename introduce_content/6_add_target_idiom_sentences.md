@@ -1,6 +1,6 @@
 ## Add target idiom natural sentences
 
-target: es
+target: fr
 Check introduce_content/current_info.md file to know the chapter and topic numbers.
 
 Now, generate simple natural sentences, following the pattern in
@@ -14,6 +14,15 @@ decision.
 - For Chinese (target: zh)
 Sentences with pure Chinese, using casual 你 per the register decision and
 only aspect particles/measure words already taught.
+
+- For French (target: fr)
+Sentences with pure French, no Spanish mixing. Use tu (informal) throughout, never vous —
+**[Register: tu (informal), decided 2026-10-29]**, locked for the whole course the same way
+Korean's 해요체 and Chinese's casual 你 are, since there's no per-sentence Spanish cue to
+derive it from. Apply correct elision (l'/d'/qu'/j'/n'/s'/m'/t'/c' before a vowel or mute h)
+and standard gender/number agreement on articles and adjectives; only use a contraction
+(au/du/aux/des) if it's already-taught vocabulary, per "Add mixed sentences"' rule — rephrase
+around it otherwise.
 
 ------------------------------------
 

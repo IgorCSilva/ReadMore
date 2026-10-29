@@ -22,6 +22,7 @@ _VOICES = {
     "es": "es-ES-ElviraNeural",
     "ko": "ko-KR-SunHiNeural",
     "zh": "zh-CN-XiaoxiaoNeural",
+    "fr": "fr-FR-DeniseNeural",
 }
 
 

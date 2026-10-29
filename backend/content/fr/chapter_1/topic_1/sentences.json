@@ -1,0 +1,302 @@
+[
+  {
+    "id": "fr-sent-0001",
+    "sentence": "Bonjour, comment vas-tu ?",
+    "word_ids": ["fr-wd-0001", "fr-wd-0014", "fr-wd-0016", "fr-wd-0015"]
+  },
+  {
+    "id": "fr-sent-0002",
+    "sentence": "Bonjour ! Je m'appelle Claire.",
+    "word_ids": ["fr-wd-0001", "fr-wd-0018", "fr-wd-0024"]
+  },
+  {
+    "id": "fr-sent-0003",
+    "sentence": "Bonjour, je suis très content aujourd'hui.",
+    "word_ids": ["fr-wd-0001", "fr-wd-0018", "fr-wd-0019"]
+  },
+  {
+    "id": "fr-sent-0004",
+    "sentence": "Salut, comment vas-tu ?",
+    "word_ids": ["fr-wd-0002", "fr-wd-0014", "fr-wd-0016", "fr-wd-0015"]
+  },
+  {
+    "id": "fr-sent-0005",
+    "sentence": "Salut ! Je m'appelle Hugo.",
+    "word_ids": ["fr-wd-0002", "fr-wd-0018", "fr-wd-0024"]
+  },
+  {
+    "id": "fr-sent-0006",
+    "sentence": "Salut, à bientôt !",
+    "word_ids": ["fr-wd-0002"]
+  },
+  {
+    "id": "fr-sent-0007",
+    "sentence": "Au revoir, à bientôt !",
+    "word_ids": ["fr-wd-0003"]
+  },
+  {
+    "id": "fr-sent-0008",
+    "sentence": "Au revoir et merci pour tout !",
+    "word_ids": ["fr-wd-0003", "fr-wd-0004", "fr-wd-0028", "fr-wd-0013"]
+  },
+  {
+    "id": "fr-sent-0009",
+    "sentence": "Au revoir, je dois partir.",
+    "word_ids": ["fr-wd-0003", "fr-wd-0018"]
+  },
+  {
+    "id": "fr-sent-0010",
+    "sentence": "J'aime le café et le thé.",
+    "word_ids": ["fr-wd-0004"]
+  },
+  {
+    "id": "fr-sent-0011",
+    "sentence": "Elle est grande et gentille.",
+    "word_ids": ["fr-wd-0020", "fr-wd-0004"]
+  },
+  {
+    "id": "fr-sent-0012",
+    "sentence": "Tout est bon et facile.",
+    "word_ids": ["fr-wd-0013", "fr-wd-0020", "fr-wd-0005", "fr-wd-0004"]
+  },
+  {
+    "id": "fr-sent-0013",
+    "sentence": "Ce gâteau est très bon.",
+    "word_ids": ["fr-wd-0020", "fr-wd-0005"]
+  },
+  {
+    "id": "fr-sent-0014",
+    "sentence": "Le repas est bon.",
+    "word_ids": ["fr-wd-0020", "fr-wd-0005"]
+  },
+  {
+    "id": "fr-sent-0015",
+    "sentence": "Cette tarte est bonne.",
+    "word_ids": ["fr-wd-0020", "fr-wd-0006"]
+  },
+  {
+    "id": "fr-sent-0016",
+    "sentence": "La soupe est bonne.",
+    "word_ids": ["fr-wd-0020", "fr-wd-0006"]
+  },
+  {
+    "id": "fr-sent-0017",
+    "sentence": "Elle est bonne en français.",
+    "word_ids": ["fr-wd-0020", "fr-wd-0006"]
+  },
+  {
+    "id": "fr-sent-0018",
+    "sentence": "Quel jour sommes-nous ?",
+    "word_ids": ["fr-wd-0007"]
+  },
+  {
+    "id": "fr-sent-0019",
+    "sentence": "C'est un beau jour.",
+    "word_ids": ["fr-wd-0020", "fr-wd-0007"]
+  },
+  {
+    "id": "fr-sent-0020",
+    "sentence": "Chaque jour est différent.",
+    "word_ids": ["fr-wd-0007", "fr-wd-0020"]
+  },
+  {
+    "id": "fr-sent-0021",
+    "sentence": "On se voit cet après-midi.",
+    "word_ids": ["fr-wd-0008"]
+  },
+  {
+    "id": "fr-sent-0022",
+    "sentence": "Je travaille tout l'après-midi.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0013", "fr-wd-0008"]
+  },
+  {
+    "id": "fr-sent-0023",
+    "sentence": "Bon après-midi !",
+    "word_ids": ["fr-wd-0005", "fr-wd-0008"]
+  },
+  {
+    "id": "fr-sent-0024",
+    "sentence": "Je dors huit heures chaque nuit.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0009"]
+  },
+  {
+    "id": "fr-sent-0025",
+    "sentence": "Bonne nuit ! Fais de beaux rêves.",
+    "word_ids": ["fr-wd-0011", "fr-wd-0009"]
+  },
+  {
+    "id": "fr-sent-0026",
+    "sentence": "La nuit est calme ici.",
+    "word_ids": ["fr-wd-0009", "fr-wd-0020"]
+  },
+  {
+    "id": "fr-sent-0027",
+    "sentence": "Bonsoir ! Comment vas-tu ?",
+    "word_ids": ["fr-wd-0010", "fr-wd-0014", "fr-wd-0016", "fr-wd-0015"]
+  },
+  {
+    "id": "fr-sent-0028",
+    "sentence": "Bonsoir à tous !",
+    "word_ids": ["fr-wd-0010"]
+  },
+  {
+    "id": "fr-sent-0029",
+    "sentence": "Il est tard, bonsoir.",
+    "word_ids": ["fr-wd-0020", "fr-wd-0010"]
+  },
+  {
+    "id": "fr-sent-0030",
+    "sentence": "Bonne nuit, à demain !",
+    "word_ids": ["fr-wd-0011"]
+  },
+  {
+    "id": "fr-sent-0031",
+    "sentence": "Je te souhaite une bonne nuit.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0011"]
+  },
+  {
+    "id": "fr-sent-0032",
+    "sentence": "Je vais bien, merci.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0017", "fr-wd-0012", "fr-wd-0028"]
+  },
+  {
+    "id": "fr-sent-0033",
+    "sentence": "Comment vas-tu aujourd'hui ?",
+    "word_ids": ["fr-wd-0014", "fr-wd-0016", "fr-wd-0015"]
+  },
+  {
+    "id": "fr-sent-0034",
+    "sentence": "Je suis de Paris.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0019", "fr-wd-0025"]
+  },
+  {
+    "id": "fr-sent-0035",
+    "sentence": "Tu es mon ami.",
+    "word_ids": ["fr-wd-0015", "fr-wd-0022"]
+  },
+  {
+    "id": "fr-sent-0036",
+    "sentence": "Mon nom est Paul.",
+    "word_ids": ["fr-wd-0022", "fr-wd-0021", "fr-wd-0020"]
+  },
+  {
+    "id": "fr-sent-0037",
+    "sentence": "Quel est ton nom ?",
+    "word_ids": ["fr-wd-0020", "fr-wd-0021"]
+  },
+  {
+    "id": "fr-sent-0038",
+    "sentence": "Mon nom est Sophie.",
+    "word_ids": ["fr-wd-0022", "fr-wd-0021", "fr-wd-0020"]
+  },
+  {
+    "id": "fr-sent-0039",
+    "sentence": "Je suis content, et toi ?",
+    "word_ids": ["fr-wd-0018", "fr-wd-0019", "fr-wd-0004"]
+  },
+  {
+    "id": "fr-sent-0040",
+    "sentence": "Je suis ici.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0019"]
+  },
+  {
+    "id": "fr-sent-0041",
+    "sentence": "Elle me regarde.",
+    "word_ids": ["fr-wd-0023"]
+  },
+  {
+    "id": "fr-sent-0042",
+    "sentence": "Tu me comprends ?",
+    "word_ids": ["fr-wd-0015", "fr-wd-0023"]
+  },
+  {
+    "id": "fr-sent-0043",
+    "sentence": "Il me parle souvent.",
+    "word_ids": ["fr-wd-0023"]
+  },
+  {
+    "id": "fr-sent-0044",
+    "sentence": "Oui, merci beaucoup.",
+    "word_ids": ["fr-wd-0026", "fr-wd-0028"]
+  },
+  {
+    "id": "fr-sent-0045",
+    "sentence": "Oui, je suis sûr.",
+    "word_ids": ["fr-wd-0026", "fr-wd-0018", "fr-wd-0019"]
+  },
+  {
+    "id": "fr-sent-0046",
+    "sentence": "Oui, bien sûr !",
+    "word_ids": ["fr-wd-0026", "fr-wd-0012"]
+  },
+  {
+    "id": "fr-sent-0047",
+    "sentence": "Non, merci.",
+    "word_ids": ["fr-wd-0027", "fr-wd-0028"]
+  },
+  {
+    "id": "fr-sent-0048",
+    "sentence": "Non, je ne suis pas fatigué.",
+    "word_ids": ["fr-wd-0027", "fr-wd-0018", "fr-wd-0019"]
+  },
+  {
+    "id": "fr-sent-0049",
+    "sentence": "Non, pas aujourd'hui.",
+    "word_ids": ["fr-wd-0027"]
+  },
+  {
+    "id": "fr-sent-0050",
+    "sentence": "Merci pour ton aide.",
+    "word_ids": ["fr-wd-0028"]
+  },
+  {
+    "id": "fr-sent-0051",
+    "sentence": "De rien, avec plaisir.",
+    "word_ids": ["fr-wd-0029"]
+  },
+  {
+    "id": "fr-sent-0052",
+    "sentence": "Merci beaucoup ! De rien.",
+    "word_ids": ["fr-wd-0028", "fr-wd-0029"]
+  },
+  {
+    "id": "fr-sent-0053",
+    "sentence": "De rien, c'est normal.",
+    "word_ids": ["fr-wd-0029", "fr-wd-0020"]
+  },
+  {
+    "id": "fr-sent-0054",
+    "sentence": "Je viens de Lyon.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0025"]
+  },
+  {
+    "id": "fr-sent-0055",
+    "sentence": "Il est de Marseille.",
+    "word_ids": ["fr-wd-0020", "fr-wd-0025"]
+  },
+  {
+    "id": "fr-sent-0056",
+    "sentence": "Merci de ton aide.",
+    "word_ids": ["fr-wd-0028", "fr-wd-0025"]
+  },
+  {
+    "id": "fr-sent-0057",
+    "sentence": "C'est bien, merci.",
+    "word_ids": ["fr-wd-0020", "fr-wd-0012", "fr-wd-0028"]
+  },
+  {
+    "id": "fr-sent-0058",
+    "sentence": "Je vais à Paris demain.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0017"]
+  },
+  {
+    "id": "fr-sent-0059",
+    "sentence": "Comment vas-tu ? Je vais bien.",
+    "word_ids": ["fr-wd-0014", "fr-wd-0016", "fr-wd-0015", "fr-wd-0018", "fr-wd-0017", "fr-wd-0012"]
+  },
+  {
+    "id": "fr-sent-0060",
+    "sentence": "Je m'appelle Léa.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0024"]
+  }
+]

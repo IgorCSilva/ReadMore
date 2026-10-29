@@ -8,6 +8,6 @@ describe('formatLanguagePairLabel', () => {
   })
 
   it('falls back to the raw code for an unmapped language', () => {
-    expect(formatLanguagePairLabel('fr-de')).toBe('fr → de')
+    expect(formatLanguagePairLabel('de-it')).toBe('de → it')
   })
 })

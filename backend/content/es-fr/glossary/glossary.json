@@ -1,0 +1,3340 @@
+{
+  "abeilles": {
+    "meaning": "Abejas; plural de 'abeille'.",
+    "examples": [
+      "Là-bas, les papillons volaient au ralenti et les abeilles bourdonnaient doucement :",
+      "Les abeilles volent de fleur en fleur."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "accroché": {
+    "meaning": "Enganchado, colgado; participio pasado de 'accrocher'.",
+    "examples": [
+      "Il décida de se reposer là un instant, accroché aux branches, profitant du vent et du chant des oiseaux.",
+      "Le tableau est accroché au mur."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "admirant": {
+    "meaning": "Admirando; gerundio de 'admirer'.",
+    "examples": [
+      "Il remonta doucement dans le ciel, admirant le jour qui disait au revoir avec des couleurs rose, orange et violette à l'horizon.",
+      "Elle marchait lentement, admirant le paysage."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "agréables": {
+    "meaning": "Agradables; plural de 'agréable'.",
+    "examples": [
+      "L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes.",
+      "Ce sont des souvenirs très agréables."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "désagréables"
+    ]
+  },
+  "ainsi": {
+    "meaning": "Así.",
+    "examples": [
+      "Et c'est ainsi que le nuage de coton s'endormit, flottant paisiblement, alors que le monde entier reposait en paix.",
+      "Ainsi, tout le monde était content."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "alla": {
+    "meaning": "Fue; pasado simple de 'aller' (il/elle).",
+    "examples": [
+      "Heureux et détendu, Petit Nuage alla se blottir au milieu des étoiles et ferma les yeux.",
+      "Il alla se coucher tôt ce soir-là."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "alors": {
+    "meaning": "Entonces.",
+    "examples": [
+      "Et c'est ainsi que le nuage de coton s'endormit, flottant paisiblement, alors que le monde entier reposait en paix.",
+      "Il faisait froid, alors elle a mis un manteau."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "apaisantes": {
+    "meaning": "Apacibles, relajantes; plural de 'apaisant'.",
+    "examples": [
+      "Les arbres chuchotaient dans la brise légère et les oiseaux chantonnaient des mélodies apaisantes.",
+      "La musique douce est apaisante avant de dormir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "apprends": {
+    "meaning": "Aprendes; presente de 'apprendre' (tú).",
+    "examples": [
+      "Apprends ces quatre mouvements, et tu peux faire beaucoup d'exercices.",
+      "Tu apprends vite quand tu pratiques souvent."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "arbres": {
+    "meaning": "Árboles; plural de 'arbre'.",
+    "examples": [
+      "Un peu plus tard, il arriva au-dessus d'une forêt aux arbres immenses.",
+      "La forêt est pleine de grands arbres."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "arriva": {
+    "meaning": "Llegó; pasado simple de 'arriver' (il/elle).",
+    "examples": [
+      "Un peu plus tard, il arriva au-dessus d'une forêt aux arbres immenses.",
+      "Le train arriva à l'heure."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "arrosant": {
+    "meaning": "Regando, mojando; gerundio de 'arroser'.",
+    "examples": [
+      "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
+      "Elle passait dans le jardin, arrosant les fleurs."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "as": {
+    "meaning": "Tienes; presente de 'avoir' (tú).",
+    "examples": [
+      "Tu as seulement besoin du poids de ton corps, ou d'haltères légers si tu en as.",
+      "Tu as une heure pour finir ton entraînement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "athlètes": {
+    "meaning": "Atletas; plural de 'athlète'.",
+    "examples": [
+      "Beaucoup de gens pensent que la musculation est seulement pour les jeunes ou les athlètes.",
+      "Les athlètes s'entraînent tous les jours."
+    ],
+    "synonyms": [
+      "sportifs"
+    ],
+    "antonyms": []
+  },
+  "attention": {
+    "meaning": "Atención.",
+    "examples": [
+      "Il s'amusa un moment, puis quelque chose attira son attention :",
+      "Fais attention en traversant la rue."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "attira": {
+    "meaning": "Atrajo; pasado simple de 'attirer' (il/elle).",
+    "examples": [
+      "Il s'amusa un moment, puis quelque chose attira son attention :",
+      "La lumière attira les papillons de nuit."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "au": {
+    "meaning": "Al; contracción de 'à' + 'le'.",
+    "examples": [
+      "Brûler plus d'énergie, même au repos.",
+      "Il va au gymnase chaque matin."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "au-dessus": {
+    "meaning": "Encima, por encima.",
+    "examples": [
+      "Un peu plus tard, il arriva au-dessus d'une forêt aux arbres immenses.",
+      "L'avion volait au-dessus des nuages."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "aurait": {
+    "meaning": "Tendría, habría; condicional de 'avoir' (il/elle).",
+    "examples": [
+      "Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
+      "On aurait dit qu'il allait pleuvoir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "aux": {
+    "meaning": "A los/a las; contracción de 'à' + 'les'.",
+    "examples": [
+      "Un peu plus tard, il arriva au-dessus d'une forêt aux arbres immenses.",
+      "Il parle aux enfants avec douceur."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "avait": {
+    "meaning": "Tenía, había; imperfecto de 'avoir' (il/elle).",
+    "examples": [
+      "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
+      "Elle avait très sommeil ce soir-là."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "avec": {
+    "meaning": "Con.",
+    "examples": [
+      "**Charnière de hanche** — tu plies au niveau des hanches, avec le dos droit.",
+      "Je mange avec mes amis."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "sans"
+    ]
+  },
+  "base": {
+    "meaning": "Base.",
+    "examples": [
+      "Les mouvements de base.",
+      "C'est la base de l'entraînement."
+    ],
+    "synonyms": [
+      "fondement"
+    ],
+    "antonyms": []
+  },
+  "bases": {
+    "meaning": "Bases; plural de 'base'.",
+    "examples": [
+      "Les bases de la musculation.",
+      "Les bases d'une bonne alimentation sont simples."
+    ],
+    "synonyms": [
+      "fondements"
+    ],
+    "antonyms": []
+  },
+  "beaucoup": {
+    "meaning": "Mucho.",
+    "examples": [
+      "Beaucoup de gens pensent que la musculation est seulement pour les jeunes ou les athlètes.",
+      "Elle a beaucoup d'énergie aujourd'hui."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "peu"
+    ]
+  },
+  "bercement": {
+    "meaning": "Mecimiento, vaivén.",
+    "examples": [
+      "« C'était une journée merveilleuse », pensa-t-il, en se laissant porter par le doux bercement de la nuit.",
+      "Le bercement du bateau l'a endormi."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "bercer": {
+    "meaning": "Mecer, acunar.",
+    "examples": [
+      "Il resta là à les regarder se laisser bercer par l'eau, tout comme lui se laissait bercer par le ciel.",
+      "Elle aimait bercer son bébé pour l'endormir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "besoin": {
+    "meaning": "Necesidad; en 'avoir besoin de' = necesitar.",
+    "examples": [
+      "Tu n'as pas besoin d'une salle de sport.",
+      "J'ai besoin de dormir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "bidou": {
+    "meaning": "Barriguita (forma cariñosa e infantil de 'ventre').",
+    "examples": [
+      "Petit Nuage descendit encore un peu, jusqu'à effleurer l'eau avec son petit bidou.",
+      "Le bébé a un petit bidou tout rond."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "bien": {
+    "meaning": "Bien.",
+    "examples": [
+      "L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes.",
+      "Tout s'est bien passé aujourd'hui."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "mal"
+    ]
+  },
+  "blanc": {
+    "meaning": "Blanco; masculino singular de 'blanc'.",
+    "examples": [
+      "Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
+      "Le mouton a une laine toute blanche."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "noir"
+    ]
+  },
+  "bleu": {
+    "meaning": "Azul; masculino singular de 'bleu'.",
+    "examples": [
+      "Il était une fois Petit Nuage, qui flottait doucement dans le ciel bleu.",
+      "Le ciel est bleu aujourd'hui."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "blottir": {
+    "meaning": "Acurrucarse; en 'se blottir' = acurrucarse, refugiarse.",
+    "examples": [
+      "Heureux et détendu, Petit Nuage alla se blottir au milieu des étoiles et ferma les yeux.",
+      "Le chat aime se blottir sous la couverture."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "bon": {
+    "meaning": "Bueno; masculino singular de 'bon'.",
+    "examples": [
+      "Un bon objectif est 2 à 3 séances de musculation par semaine, avec un jour de repos entre les séances.",
+      "C'est un bon exercice pour le dos."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "mauvais"
+    ]
+  },
+  "bonne": {
+    "meaning": "Buena; femenino singular de 'bon'.",
+    "examples": [
+      "La musculation est bonne pour tout le monde, à tout âge.",
+      "C'est une bonne idée."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "mauvaise"
+    ]
+  },
+  "bouge": {
+    "meaning": "Mueve/muevo; presente de 'bouger'.",
+    "examples": [
+      "Marche ou bouge les bras pendant 3 minutes.",
+      "Il bouge beaucoup pendant le cours."
+    ],
+    "synonyms": [
+      "remue"
+    ],
+    "antonyms": []
+  },
+  "bouger": {
+    "meaning": "Mover, moverse; infinitivo de 'bouger'.",
+    "examples": [
+      "Mieux bouger chaque jour.",
+      "J'aime bouger tous les matins."
+    ],
+    "synonyms": [
+      "remuer"
+    ],
+    "antonyms": []
+  },
+  "bourdonnaient": {
+    "meaning": "Zumbaban; imperfecto de 'bourdonner' (ils/elles).",
+    "examples": [
+      "Là-bas, les papillons volaient au ralenti et les abeilles bourdonnaient doucement :",
+      "Les mouches bourdonnaient près de la fenêtre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "branches": {
+    "meaning": "Ramas; plural de 'branche'.",
+    "examples": [
+      "Il décida de se reposer là un instant, accroché aux branches, profitant du vent et du chant des oiseaux.",
+      "L'oiseau est posé sur une des branches."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "bras": {
+    "meaning": "Brazo(s).",
+    "examples": [
+      "Tu as besoin d'espace pour bouger les bras et les jambes.",
+      "Il a mal au bras."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "brillantes": {
+    "meaning": "Brillantes; plural de 'brillant'.",
+    "examples": [
+      "L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes.",
+      "Les étoiles étaient brillantes cette nuit-là."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "brise": {
+    "meaning": "Brisa.",
+    "examples": [
+      "Les arbres chuchotaient dans la brise légère et les oiseaux chantonnaient des mélodies apaisantes.",
+      "Une brise légère soufflait sur la plage."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "brûler": {
+    "meaning": "Quemar.",
+    "examples": [
+      "Brûler plus d'énergie, même au repos",
+      "Courir aide à brûler des calories."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "buste": {
+    "meaning": "Torso, busto; en 'rowing buste penché' = remo con el torso inclinado.",
+    "examples": [
+      "| Rowing buste penché (avec un sac ou des haltères légers) | Tirer | 10 |",
+      "Le buste droit est important pour le dos."
+    ],
+    "synonyms": [
+      "torse"
+    ],
+    "antonyms": []
+  },
+  "bzzzz": {
+    "meaning": "Bzzzz; onomatopeya que imita el zumbido de un insecto.",
+    "examples": [
+      "Bzzzz, bzzzz.",
+      "On entendait un bzzzz constant près de la ruche."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "c'est": {
+    "meaning": "Es; contracción de 'ce' + 'est'.",
+    "examples": [
+      "Maintenant, c'est ton tour.",
+      "C'est un bon exercice."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "c'était": {
+    "meaning": "Era, fue; contracción de 'ce' + 'était'.",
+    "examples": [
+      "« C'était une journée merveilleuse », pensa-t-il, en se laissant porter par le doux bercement de la nuit.",
+      "C'était un beau matin de printemps."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "cacher": {
+    "meaning": "Esconder(se); en 'se cacher' = esconderse, ocultarse.",
+    "examples": [
+      "Quand le soleil commença à se cacher derrière les montagnes, Petit Nuage sut qu'il était l'heure de rentrer à la maison.",
+      "Le soleil commence à se cacher le soir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "calme": {
+    "meaning": "Tranquilo, calmado.",
+    "examples": [
+      "**Étape 1 :** Choisis un endroit calme.",
+      "La salle est très calme le matin."
+    ],
+    "synonyms": [
+      "tranquille"
+    ],
+    "antonyms": [
+      "agité"
+    ]
+  },
+  "canetons": {
+    "meaning": "Patitos; plural de 'caneton'.",
+    "examples": [
+      "des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger.",
+      "Les canetons suivent toujours leur mère."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "canne": {
+    "meaning": "Pata (hembra del pato); 'maman canne' = la pata mamá.",
+    "examples": [
+      "des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger.",
+      "La canne nage devant ses petits canetons."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "caresser": {
+    "meaning": "Acariciar.",
+    "examples": [
+      "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
+      "Elle aime caresser doucement son chat."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ce": {
+    "meaning": "Este/esto; demostrativo.",
+    "examples": [
+      "Ce n'est pas vrai.",
+      "Ce mouvement est facile."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "cela": {
+    "meaning": "Eso, esto.",
+    "examples": [
+      "L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes.",
+      "Cela me rend très heureux."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ces": {
+    "meaning": "Estos/estas; plural de 'ce'.",
+    "examples": [
+      "Apprends ces quatre mouvements, et tu peux faire beaucoup d'exercices.",
+      "Ces exercices sont simples."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "cette": {
+    "meaning": "Esta; femenino singular de 'ce'.",
+    "examples": [
+      "Utilise cette routine simple.",
+      "Cette séance dure 30 minutes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "chacun": {
+    "meaning": "Cada uno.",
+    "examples": [
+      "Fais 10 répétitions de chacun.",
+      "Chacun fait son propre rythme."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "chaise": {
+    "meaning": "Silla.",
+    "examples": [
+      "**Squat** — tu plies les genoux et les hanches, comme pour t'asseoir sur une chaise.",
+      "Assieds-toi sur la chaise."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "champ": {
+    "meaning": "Campo.",
+    "examples": [
+      "Il glissa son corps vaporeux entre les montagnes et descendit vers un joli champ de fleurs.",
+      "Les vaches broutent dans le champ."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "chant": {
+    "meaning": "Canto.",
+    "examples": [
+      "Il décida de se reposer là un instant, accroché aux branches, profitant du vent et du chant des oiseaux.",
+      "Le chant des oiseaux réveille le village."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "chantonnaient": {
+    "meaning": "Canturreaban; imperfecto de 'chantonner' (ils/elles).",
+    "examples": [
+      "Les arbres chuchotaient dans la brise légère et les oiseaux chantonnaient des mélodies apaisantes.",
+      "Les enfants chantonnaient en marchant vers l'école."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "chaque": {
+    "meaning": "Cada.",
+    "examples": [
+      "Mieux bouger chaque jour.",
+      "Fais chaque exercice ci-dessous."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "chargeant": {
+    "meaning": "Cargando; gerundio de 'charger'.",
+    "examples": [
+      "L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes.",
+      "Il traversait la cour, chargeant les sacs de sable."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "charnière": {
+    "meaning": "Bisagra; en 'charnière de hanche' = bisagra de cadera (hip hinge).",
+    "examples": [
+      "**Charnière de hanche** — tu plies au niveau des hanches, avec le dos droit.",
+      "La charnière de hanche travaille les muscles du dos et des jambes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "chatouillis": {
+    "meaning": "Cosquillas.",
+    "examples": [
+      "L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes.",
+      "Les chatouillis font toujours rire les enfants."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "choisis": {
+    "meaning": "Elige; imperativo/presente de 'choisir' (tú).",
+    "examples": [
+      "**Étape 1 :** Choisis un endroit calme.",
+      "Choisis une activité facile."
+    ],
+    "synonyms": [
+      "sélectionne"
+    ],
+    "antonyms": []
+  },
+  "chose": {
+    "meaning": "Cosa.",
+    "examples": [
+      "**Pousser** — tu pousses quelque chose loin de ton corps.",
+      "C'est une chose importante."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "chuchotaient": {
+    "meaning": "Susurraban; imperfecto de 'chuchoter' (ils/elles).",
+    "examples": [
+      "Les arbres chuchotaient dans la brise légère et les oiseaux chantonnaient des mélodies apaisantes.",
+      "Les enfants chuchotaient pour ne pas réveiller le bébé."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ci-dessous": {
+    "meaning": "A continuación, abajo.",
+    "examples": [
+      "**Étape 3 :** Fais chaque exercice ci-dessous.",
+      "Regarde le tableau ci-dessous."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "ci-dessus"
+    ]
+  },
+  "ciel": {
+    "meaning": "Cielo.",
+    "examples": [
+      "Il était une fois Petit Nuage, qui flottait doucement dans le ciel bleu.",
+      "Il n'y a pas un seul nuage dans le ciel."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "claire": {
+    "meaning": "Clara; femenino singular de 'clair'.",
+    "examples": [
+      "L'eau était si claire qu'on y voyait le soleil se refléter comme dans un miroir magique.",
+      "L'eau de la rivière est très claire."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "trouble"
+    ]
+  },
+  "clapotaient": {
+    "meaning": "Chapoteaban; imperfecto de 'clapoter' (ils/elles).",
+    "examples": [
+      "des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger.",
+      "Les vagues clapotaient doucement contre le bateau."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "comme": {
+    "meaning": "Como.",
+    "examples": [
+      "**Squat** — tu plies les genoux et les hanches, comme pour t'asseoir sur une chaise.",
+      "Il court comme un champion."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "commencer": {
+    "meaning": "Empezar, comenzar.",
+    "examples": [
+      "Tu n'as pas besoin de poids lourds pour commencer.",
+      "Il faut commencer doucement."
+    ],
+    "synonyms": [
+      "débuter"
+    ],
+    "antonyms": [
+      "terminer"
+    ]
+  },
+  "comment": {
+    "meaning": "Cómo.",
+    "examples": [
+      "des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger.",
+      "Elle lui a montré comment nager."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "commença": {
+    "meaning": "Comenzó, empezó; pasado simple de 'commencer' (il/elle).",
+    "examples": [
+      "Quand le soleil commença à se cacher derrière les montagnes, Petit Nuage sut qu'il était l'heure de rentrer à la maison.",
+      "La pluie commença à tomber au coucher du soleil."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "complète": {
+    "meaning": "Completa; femenino singular de 'complet'.",
+    "examples": [
+      "Ta routine complète de musculation.",
+      "Exemple de routine complète."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "incomplète"
+    ]
+  },
+  "construire": {
+    "meaning": "Construir.",
+    "examples": [
+      "Construire des muscles forts.",
+      "Il veut construire une maison."
+    ],
+    "synonyms": [
+      "bâtir"
+    ],
+    "antonyms": [
+      "détruire"
+    ]
+  },
+  "continua": {
+    "meaning": "Continuó; pasado simple de 'continuer' (il/elle).",
+    "examples": [
+      "Il continua de flotter jusqu'à un immense lac.",
+      "Elle continua sa route malgré la fatigue."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "corps": {
+    "meaning": "Cuerpo.",
+    "examples": [
+      "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
+      "Le corps a besoin de repos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "coton": {
+    "meaning": "Algodón.",
+    "examples": [
+      "Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
+      "Cette couverture est faite en coton très doux."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "couleurs": {
+    "meaning": "Colores; plural de 'couleur'.",
+    "examples": [
+      "Il remonta doucement dans le ciel, admirant le jour qui disait au revoir avec des couleurs rose, orange et violette à l'horizon.",
+      "Le coucher de soleil avait de belles couleurs."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "d'autres": {
+    "meaning": "De otros/otras; contracción de 'de' + 'autres'.",
+    "examples": [
+      "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
+      "Il y a d'autres exercices à essayer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "d'espace": {
+    "meaning": "De espacio; contracción de 'de' + 'espace'.",
+    "examples": [
+      "Tu as besoin d'espace pour bouger les bras et les jambes.",
+      "Cette pièce manque d'espace."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "d'exercices": {
+    "meaning": "De ejercicios; contracción de 'de' + 'exercices'.",
+    "examples": [
+      "Apprends ces quatre mouvements, et tu peux faire beaucoup d'exercices.",
+      "Ce livre parle d'exercices simples."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "d'haltères": {
+    "meaning": "De mancuernas/pesas; contracción de 'de' + 'haltères'.",
+    "examples": [
+      "Tu as seulement besoin du poids de ton corps, ou d'haltères légers si tu en as.",
+      "Il s'entraîne avec une paire d'haltères."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "d'une": {
+    "meaning": "De una; contracción de 'de' + 'une'.",
+    "examples": [
+      "Tu n'as pas besoin d'une salle de sport.",
+      "Il parle d'une nouvelle routine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "d'énergie": {
+    "meaning": "De energía; contracción de 'de' + 'énergie'.",
+    "examples": [
+      "Brûler plus d'énergie, même au repos.",
+      "Elle a beaucoup d'énergie aujourd'hui."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "dans": {
+    "meaning": "En, dentro de.",
+    "examples": [
+      "Haltère — un petit poids lourd que tu tiens dans la main.",
+      "Il range ses affaires dans son sac."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "de": {
+    "meaning": "De.",
+    "examples": [
+      "Les bases de la musculation",
+      "C'est le livre de mon ami."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "derrière": {
+    "meaning": "Detrás de.",
+    "examples": [
+      "des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger.",
+      "Le chat se cache derrière le canapé."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "des": {
+    "meaning": "Unos/unas, de los/de las; artículo partitivo o contracción de 'de' + 'les'.",
+    "examples": [
+      "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
+      "Il mange des fruits chaque jour."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "descendit": {
+    "meaning": "Bajó; pasado simple de 'descendre' (il/elle).",
+    "examples": [
+      "Il glissa son corps vaporeux entre les montagnes et descendit vers un joli champ de fleurs.",
+      "Il descendit lentement l'escalier."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "deux": {
+    "meaning": "Dos.",
+    "examples": [
+      "**Étape 5 :** Répète toute la routine deux fois.",
+      "Il a deux frères."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "devenait": {
+    "meaning": "Se volvía, se hacía; imperfecto de 'devenir' (il/elle).",
+    "examples": [
+      "Tout devenait silencieux.",
+      "Le ciel devenait de plus en plus sombre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "disait": {
+    "meaning": "Decía; imperfecto de 'dire' (il/elle).",
+    "examples": [
+      "Il remonta doucement dans le ciel, admirant le jour qui disait au revoir avec des couleurs rose, orange et violette à l'horizon.",
+      "Elle disait toujours bonjour avec le sourire."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "dit": {
+    "meaning": "Dicho; participio pasado de 'dire', también 'dit' presente (il/elle).",
+    "examples": [
+      "Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
+      "On aurait dit un vrai petit nuage de coton."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "dois-tu": {
+    "meaning": "Debes tú; presente de 'devoir' + 'tu' en pregunta con inversión.",
+    "examples": [
+      "À quelle fréquence dois-tu t'entraîner ?",
+      "Que dois-tu faire demain ?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "dos": {
+    "meaning": "Espalda.",
+    "examples": [
+      "**Charnière de hanche** — tu plies au niveau des hanches, avec le dos droit.",
+      "Elle a mal au dos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "doucement": {
+    "meaning": "Suavemente, despacio.",
+    "examples": [
+      "Il était une fois Petit Nuage, qui flottait doucement dans le ciel bleu.",
+      "Elle ferma la porte doucement pour ne pas réveiller le bébé."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "doux": {
+    "meaning": "Suave, dulce; masculino singular de 'doux'.",
+    "examples": [
+      "Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
+      "Ce tissu est très doux au toucher."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "dur"
+    ]
+  },
+  "droit": {
+    "meaning": "Recto, derecho.",
+    "examples": [
+      "**Charnière de hanche** — tu plies au niveau des hanches, avec le dos droit.",
+      "Garde le bras droit."
+    ],
+    "synonyms": [
+      "droite"
+    ],
+    "antonyms": [
+      "courbé"
+    ]
+  },
+  "du": {
+    "meaning": "Del; contracción de 'de' + 'le', o artículo partitivo.",
+    "examples": [
+      "En vieillissant, ton corps peut perdre du muscle.",
+      "Il boit du café le matin."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "débutant": {
+    "meaning": "Principiante.",
+    "examples": [
+      "Routine débutant au poids du corps.",
+      "C'est un exercice pour débutant."
+    ],
+    "synonyms": [
+      "novice"
+    ],
+    "antonyms": [
+      "expert"
+    ]
+  },
+  "décida": {
+    "meaning": "Decidió; pasado simple de 'décider' (il/elle).",
+    "examples": [
+      "Un jour, Petit Nuage décida de partir faire une grande promenade.",
+      "Il décida de rester encore un peu."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "détendu": {
+    "meaning": "Relajado; participio pasado de 'détendre' usado como adjetivo.",
+    "examples": [
+      "Heureux et détendu, Petit Nuage alla se blottir au milieu des étoiles et ferma les yeux.",
+      "Après le bain, le bébé était tout détendu."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "tendu"
+    ]
+  },
+  "effleurer": {
+    "meaning": "Rozar, tocar ligeramente.",
+    "examples": [
+      "Petit Nuage descendit encore un peu, jusqu'à effleurer l'eau avec son petit bidou.",
+      "La plume semblait effleurer le sol sans bruit."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "en": {
+    "meaning": "En (preposición), o pronombre que reemplaza 'de eso/de ello'.",
+    "examples": [
+      "En vieillissant, ton corps peut perdre du muscle.",
+      "Si tu en as, utilise des haltères légers."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "encore": {
+    "meaning": "Todavía, aún, otra vez.",
+    "examples": [
+      "Petit Nuage descendit encore un peu, jusqu'à effleurer l'eau avec son petit bidou.",
+      "Il veut encore jouer dehors."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "endroit": {
+    "meaning": "Lugar.",
+    "examples": [
+      "**Étape 1 :** Choisis un endroit calme.",
+      "C'est un bel endroit pour s'entraîner."
+    ],
+    "synonyms": [
+      "lieu"
+    ],
+    "antonyms": []
+  },
+  "entier": {
+    "meaning": "Entero; masculino singular de 'entier'.",
+    "examples": [
+      "Et c'est ainsi que le nuage de coton s'endormit, flottant paisiblement, alors que le monde entier reposait en paix.",
+      "Il a mangé le gâteau entier."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "entre": {
+    "meaning": "Entre.",
+    "examples": [
+      "Un bon objectif est 2 à 3 séances de musculation par semaine, avec un jour de repos entre les séances.",
+      "Il y a un jour de repos entre les séances."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "escaliers": {
+    "meaning": "Escaleras.",
+    "examples": [
+      "Porter des sacs, monter les escaliers et te lever facilement.",
+      "Il monte les escaliers tous les jours."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "est": {
+    "meaning": "Es/está; presente de 'être' (il/elle).",
+    "examples": [
+      "La **musculation** est un exercice qui rend tes muscles plus forts.",
+      "Il est fatigué après l'entraînement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "est-ce": {
+    "meaning": "Es (que); fórmula interrogativa con inversión ('qu'est-ce que', 'est-ce que').",
+    "examples": [
+      "Pourquoi est-ce important à tout âge ?",
+      "Est-ce que tu as fini ?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "et": {
+    "meaning": "Y.",
+    "examples": [
+      "Porter des sacs, monter les escaliers et te lever facilement.",
+      "Il mange et il boit."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "exemple": {
+    "meaning": "Ejemplo.",
+    "examples": [
+      "Exemple : une pompe.",
+      "Donne-moi un exemple."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "exercice": {
+    "meaning": "Ejercicio.",
+    "examples": [
+      "Exercice physique — Sujet 3 : Les bases de la musculation.",
+      "Fais cet exercice tous les jours."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "exercices": {
+    "meaning": "Ejercicios; plural de 'exercice'.",
+    "examples": [
+      "La plupart des exercices de musculation utilisent quatre mouvements de base.",
+      "Repose-toi pendant 1 minute entre les exercices."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "facilement": {
+    "meaning": "Fácilmente.",
+    "examples": [
+      "Porter des sacs, monter les escaliers et te lever facilement.",
+      "Il comprend facilement."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "difficilement"
+    ]
+  },
+  "faire": {
+    "meaning": "Hacer.",
+    "examples": [
+      "Apprends ces quatre mouvements, et tu peux faire beaucoup d'exercices.",
+      "Je veux faire du sport."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "fais": {
+    "meaning": "Haz/hago; imperativo/presente de 'faire' (tú).",
+    "examples": [
+      "**Étape 2 :** Fais un petit échauffement.",
+      "Fais chaque exercice ci-dessous."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "fait": {
+    "meaning": "Hecho; participio pasado de 'faire', en 'être fait de' = estar hecho de.",
+    "examples": [
+      "Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
+      "Ce pull est fait de laine douce."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ferma": {
+    "meaning": "Cerró; pasado simple de 'fermer' (il/elle).",
+    "examples": [
+      "Heureux et détendu, Petit Nuage alla se blottir au milieu des étoiles et ferma les yeux.",
+      "Elle ferma la fenêtre avant la pluie."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "feuilles": {
+    "meaning": "Hojas; plural de 'feuille'.",
+    "examples": [
+      "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
+      "Les feuilles tombent en automne."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "fit": {
+    "meaning": "Hizo; pasado simple de 'faire' (il/elle).",
+    "examples": [
+      "L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes.",
+      "Le vent fit danser les feuilles."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "fleurs": {
+    "meaning": "Flores; plural de 'fleur'.",
+    "examples": [
+      "Il glissa son corps vaporeux entre les montagnes et descendit vers un joli champ de fleurs.",
+      "Le jardin est plein de fleurs colorées."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "flottait": {
+    "meaning": "Flotaba; imperfecto de 'flotter' (il/elle).",
+    "examples": [
+      "Il était une fois Petit Nuage, qui flottait doucement dans le ciel bleu.",
+      "Le bateau flottait doucement sur le lac."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "flottant": {
+    "meaning": "Flotando; gerundio de 'flotter'.",
+    "examples": [
+      "Et c'est ainsi que le nuage de coton s'endormit, flottant paisiblement, alors que le monde entier reposait en paix.",
+      "Les feuilles descendaient la rivière, flottant tranquillement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "flotter": {
+    "meaning": "Flotar.",
+    "examples": [
+      "Il continua de flotter jusqu'à un immense lac.",
+      "Le papier peut flotter sur l'eau."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "fois": {
+    "meaning": "Vez.",
+    "examples": [
+      "**Étape 5 :** Répète toute la routine deux fois.",
+      "Puis répète la routine une fois de plus."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "fort": {
+    "meaning": "Fuerte; masculino singular de 'fort'.",
+    "examples": [
+      "Rester fort.",
+      "Il est très fort."
+    ],
+    "synonyms": [
+      "puissant"
+    ],
+    "antonyms": [
+      "faible"
+    ]
+  },
+  "forts": {
+    "meaning": "Fuertes; plural de 'fort'.",
+    "examples": [
+      "La **musculation** est un exercice qui rend tes muscles plus forts.",
+      "Ses bras sont forts."
+    ],
+    "synonyms": [
+      "puissants"
+    ],
+    "antonyms": [
+      "faibles"
+    ]
+  },
+  "forêt": {
+    "meaning": "Bosque.",
+    "examples": [
+      "Un peu plus tard, il arriva au-dessus d'une forêt aux arbres immenses.",
+      "Ils se sont promenés dans la forêt toute la matinée."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "fraîche": {
+    "meaning": "Fresca; femenino singular de 'frais'.",
+    "examples": [
+      "L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes.",
+      "L'eau de la source est toujours fraîche."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "chaude"
+    ]
+  },
+  "fraîches": {
+    "meaning": "Frescas; plural de 'fraîche'.",
+    "examples": [
+      "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
+      "Elle a acheté des fraises bien fraîches."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "fréquence": {
+    "meaning": "Frecuencia.",
+    "examples": [
+      "À quelle fréquence dois-tu t'entraîner ?",
+      "La fréquence des séances est importante."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "gainage": {
+    "meaning": "Trabajo de core, plancha; nombre de ejercicio (equivalente a 'Core' en la tabla).",
+    "examples": [
+      "| Planche | Gainage | 20 secondes |",
+      "Le gainage renforce les muscles du ventre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "garder": {
+    "meaning": "Guardar, mantener.",
+    "examples": [
+      "Garder ton équilibre.",
+      "Il faut garder une bonne posture."
+    ],
+    "synonyms": [
+      "maintenir"
+    ],
+    "antonyms": [
+      "perdre"
+    ]
+  },
+  "genoux": {
+    "meaning": "Rodillas.",
+    "examples": [
+      "**Squat** — tu plies les genoux et les hanches, comme pour t'asseoir sur une chaise.",
+      "Pompe (ou pompe sur les genoux)."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "gens": {
+    "meaning": "Gente, personas.",
+    "examples": [
+      "Beaucoup de gens pensent que la musculation est seulement pour les jeunes ou les athlètes.",
+      "Ces gens font du sport chaque matin."
+    ],
+    "synonyms": [
+      "personnes"
+    ],
+    "antonyms": []
+  },
+  "glissa": {
+    "meaning": "Deslizó, se deslizó; pasado simple de 'glisser' (il/elle).",
+    "examples": [
+      "Il glissa son corps vaporeux entre les montagnes et descendit vers un joli champ de fleurs.",
+      "Le canoë glissa silencieusement sur l'eau."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "gouttelettes": {
+    "meaning": "Gotitas; plural de 'gouttelette'.",
+    "examples": [
+      "L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes.",
+      "Des gouttelettes d'eau brillaient sur les feuilles."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "gouttes": {
+    "meaning": "Gotas; plural de 'goutte'.",
+    "examples": [
+      "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
+      "Les premières gouttes de pluie sont tombées."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "grande": {
+    "meaning": "Grande; femenino singular de 'grand'.",
+    "examples": [
+      "Un jour, Petit Nuage décida de partir faire une grande promenade.",
+      "Elle habite dans une grande maison."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "petite"
+    ]
+  },
+  "grandir": {
+    "meaning": "Crecer.",
+    "examples": [
+      "Tes muscles ont besoin de temps pour se reposer et grandir.",
+      "Les enfants grandissent vite."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "haltère": {
+    "meaning": "Mancuerna, pesa.",
+    "examples": [
+      "Haltère — un petit poids lourd que tu tiens dans la main.",
+      "Il s'entraîne avec un haltère."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "haltères": {
+    "meaning": "Mancuernas, pesas; plural de 'haltère'.",
+    "examples": [
+      "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
+      "Rowing buste penché avec un sac ou des haltères légers."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "hanche": {
+    "meaning": "Cadera.",
+    "examples": [
+      "**Charnière de hanche** — tu plies au niveau des hanches, avec le dos droit.",
+      "Un hip hinge ou un soulevé de terre travaille la hanche."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "hanches": {
+    "meaning": "Caderas; plural de 'hanche'.",
+    "examples": [
+      "**Squat** — tu plies les genoux et les hanches, comme pour t'asseoir sur une chaise.",
+      "Tu plies au niveau des hanches, avec le dos droit."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "heureux": {
+    "meaning": "Feliz; masculino singular de 'heureux'.",
+    "examples": [
+      "Petit Nuage se sentait heureux et léger.",
+      "Il est heureux de revoir ses amis."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "triste"
+    ]
+  },
+  "hinge": {
+    "meaning": "Bisagra; palabra inglesa usada en el nombre del ejercicio 'hip hinge'.",
+    "examples": [
+      "un hip hinge ou un soulevé de terre.",
+      "Le hip hinge travaille le bas du dos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "hip": {
+    "meaning": "Cadera; palabra inglesa usada en el nombre del ejercicio 'hip hinge'.",
+    "examples": [
+      "un hip hinge ou un soulevé de terre.",
+      "Le hip hinge est un exercice de base."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "il": {
+    "meaning": "Él; pronombre personal sujeto, 3ª persona masculina singular.",
+    "examples": [
+      "Il était une fois Petit Nuage, qui flottait doucement dans le ciel bleu.",
+      "Il joue dans le jardin avec son chien."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "immense": {
+    "meaning": "Inmenso; masculino/femenino singular de 'immense'.",
+    "examples": [
+      "Il continua de flotter jusqu'à un immense lac.",
+      "La mer est immense à perte de vue."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "immenses": {
+    "meaning": "Inmensos; plural de 'immense'.",
+    "examples": [
+      "Un peu plus tard, il arriva au-dessus d'une forêt aux arbres immenses.",
+      "Les montagnes immenses entouraient le village."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "important": {
+    "meaning": "Importante; masculino singular de 'important'.",
+    "examples": [
+      "Pourquoi est-ce important à tout âge ?",
+      "Il est important de bien dormir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "instant": {
+    "meaning": "Instante, momento.",
+    "examples": [
+      "Il décida de se reposer là un instant, accroché aux branches, profitant du vent et du chant des oiseaux.",
+      "Attends un instant, s'il te plaît."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "jambes": {
+    "meaning": "Piernas.",
+    "examples": [
+      "Tu as besoin d'espace pour bouger les bras et les jambes.",
+      "Elle a mal aux jambes après la course."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "jeunes": {
+    "meaning": "Jóvenes.",
+    "examples": [
+      "Beaucoup de gens pensent que la musculation est seulement pour les jeunes ou les athlètes.",
+      "Le sport n'est pas réservé aux jeunes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "joli": {
+    "meaning": "Bonito; masculino singular de 'joli'.",
+    "examples": [
+      "Il glissa son corps vaporeux entre les montagnes et descendit vers un joli champ de fleurs.",
+      "C'est un joli dessin d'enfant."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "laid"
+    ]
+  },
+  "jour": {
+    "meaning": "Día.",
+    "examples": [
+      "Mieux bouger chaque jour.",
+      "Prends un jour de repos après l'effort."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "journée": {
+    "meaning": "Día, jornada.",
+    "examples": [
+      "« C'était une journée merveilleuse », pensa-t-il, en se laissant porter par le doux bercement de la nuit.",
+      "Elle a passé une journée tranquille à la maison."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "jours": {
+    "meaning": "Días; plural de 'jour'.",
+    "examples": [
+      "Tu n'as pas besoin de t'entraîner tous les jours.",
+      "Il pleut depuis trois jours."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "jusqu'à": {
+    "meaning": "Hasta; contracción de 'jusque' + 'à'.",
+    "examples": [
+      "Il continua de flotter jusqu'à un immense lac.",
+      "Ils ont marché jusqu'à la rivière."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "l'air": {
+    "meaning": "El aire; contracción de 'le' + 'air'.",
+    "examples": [
+      "L'air sentait bon la lavande et le miel.",
+      "L'air est frais ce matin."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "l'eau": {
+    "meaning": "El agua; contracción de 'le' + 'eau'.",
+    "examples": [
+      "L'eau était si claire qu'on y voyait le soleil se refléter comme dans un miroir magique.",
+      "L'eau du lac est très froide."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "l'heure": {
+    "meaning": "La hora; contracción de 'le' + 'heure'.",
+    "examples": [
+      "Quand le soleil commença à se cacher derrière les montagnes, Petit Nuage sut qu'il était l'heure de rentrer à la maison.",
+      "C'est l'heure de dormir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "l'horizon": {
+    "meaning": "El horizonte; contracción de 'le' + 'horizon'.",
+    "examples": [
+      "Il remonta doucement dans le ciel, admirant le jour qui disait au revoir avec des couleurs rose, orange et violette à l'horizon.",
+      "Le soleil disparaît à l'horizon."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "la": {
+    "meaning": "La; artículo definido femenino singular.",
+    "examples": [
+      "Les bases de la musculation.",
+      "Il ferme la porte."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "lac": {
+    "meaning": "Lago.",
+    "examples": [
+      "Il continua de flotter jusqu'à un immense lac.",
+      "Ils ont nagé dans le lac tout l'après-midi."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "laissa": {
+    "meaning": "Dejó; pasado simple de 'laisser' (il/elle).",
+    "examples": [
+      "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
+      "Elle laissa la fenêtre ouverte toute la nuit."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "laissait": {
+    "meaning": "Dejaba; imperfecto de 'laisser' (il/elle).",
+    "examples": [
+      "Il resta là à les regarder se laisser bercer par l'eau, tout comme lui se laissait bercer par le ciel.",
+      "Il laissait toujours la porte ouverte pour le chat."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "laissant": {
+    "meaning": "Dejando; gerundio de 'laisser'.",
+    "examples": [
+      "« C'était une journée merveilleuse », pensa-t-il, en se laissant porter par le doux bercement de la nuit.",
+      "Elle partit, laissant un petit mot sur la table."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "laisser": {
+    "meaning": "Dejar.",
+    "examples": [
+      "Il resta là à les regarder se laisser bercer par l'eau, tout comme lui se laissait bercer par le ciel.",
+      "Il faut laisser le gâteau refroidir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "lavande": {
+    "meaning": "Lavanda.",
+    "examples": [
+      "L'air sentait bon la lavande et le miel.",
+      "Le champ de lavande sentait très bon."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "le": {
+    "meaning": "El; artículo definido masculino singular.",
+    "examples": [
+      "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
+      "Il ferme le livre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "les": {
+    "meaning": "Los/las; artículo definido plural.",
+    "examples": [
+      "Les bases de la musculation",
+      "Les exercices sont simples."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "leur": {
+    "meaning": "Les, su/sus; pronombre complemento o posesivo plural de 3ª persona.",
+    "examples": [
+      "des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger.",
+      "La mère apprend à ses enfants à lire, elle leur lit une histoire chaque soir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "lever": {
+    "meaning": "Levantar(se).",
+    "examples": [
+      "Porter des sacs, monter les escaliers et te lever facilement.",
+      "Il est difficile de se lever tôt."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "loin": {
+    "meaning": "Lejos.",
+    "examples": [
+      "**Pousser** — tu pousses quelque chose loin de ton corps.",
+      "Il habite loin d'ici."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "lourd": {
+    "meaning": "Pesado.",
+    "examples": [
+      "Haltère — un petit poids lourd que tu tiens dans la main.",
+      "Ce sac est trop lourd."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "lourds": {
+    "meaning": "Pesados; plural de 'lourd'.",
+    "examples": [
+      "Tu n'as pas besoin de poids lourds pour commencer.",
+      "Ces poids sont trop lourds pour moi."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "lui": {
+    "meaning": "Le, él; pronombre complemento o pronombre tónico de 3ª persona singular.",
+    "examples": [
+      "L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes.",
+      "Je lui ai offert un cadeau pour son anniversaire."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "là": {
+    "meaning": "Allí, ahí.",
+    "examples": [
+      "Il resta là à les regarder se laisser bercer par l'eau, tout comme lui se laissait bercer par le ciel.",
+      "Reste là, je reviens tout de suite."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "là-bas": {
+    "meaning": "Allá, por allí.",
+    "examples": [
+      "Là-bas, les papillons volaient au ralenti et les abeilles bourdonnaient doucement :",
+      "Les enfants jouent là-bas, près de l'arbre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "léger": {
+    "meaning": "Ligero; masculino singular de 'léger'.",
+    "examples": [
+      "Petit Nuage se sentait heureux et léger.",
+      "Ce sac est très léger à porter."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "lourd"
+    ]
+  },
+  "légers": {
+    "meaning": "Ligeros; plural de 'léger'.",
+    "examples": [
+      "Tu as seulement besoin du poids de ton corps, ou d'haltères légers si tu en as.",
+      "Prends des poids légers pour commencer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "légère": {
+    "meaning": "Ligera; femenino singular de 'léger'.",
+    "examples": [
+      "Les arbres chuchotaient dans la brise légère et les oiseaux chantonnaient des mélodies apaisantes.",
+      "Elle portait une robe légère en été."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "lourde"
+    ]
+  },
+  "magique": {
+    "meaning": "Mágico/mágica.",
+    "examples": [
+      "L'eau était si claire qu'on y voyait le soleil se refléter comme dans un miroir magique.",
+      "Cette forêt semble tout droit sortie d'un monde magique."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "main": {
+    "meaning": "Mano.",
+    "examples": [
+      "Haltère — un petit poids lourd que tu tiens dans la main.",
+      "Il tient le ballon dans sa main."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "maintenant": {
+    "meaning": "Ahora.",
+    "examples": [
+      "Maintenant, c'est ton tour.",
+      "Maintenant, il doit se reposer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "maison": {
+    "meaning": "Casa.",
+    "examples": [
+      "Quand le soleil commença à se cacher derrière les montagnes, Petit Nuage sut qu'il était l'heure de rentrer à la maison.",
+      "Ils rentrent à la maison avant la nuit."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "maman": {
+    "meaning": "Mamá.",
+    "examples": [
+      "des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger.",
+      "Maman prépare le dîner dans la cuisine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "manger": {
+    "meaning": "Comer.",
+    "examples": [
+      "des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger.",
+      "Les oiseaux cherchent de quoi manger."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "marche": {
+    "meaning": "Camina/marcho; imperativo/presente de 'marcher' (tú/yo).",
+    "examples": [
+      "Marche ou bouge les bras pendant 3 minutes.",
+      "Je marche tous les matins."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "merveilleuse": {
+    "meaning": "Maravillosa; femenino singular de 'merveilleux'.",
+    "examples": [
+      "« C'était une journée merveilleuse », pensa-t-il, en se laissant porter par le doux bercement de la nuit.",
+      "Nous avons passé une soirée merveilleuse."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "miel": {
+    "meaning": "Miel.",
+    "examples": [
+      "L'air sentait bon la lavande et le miel.",
+      "Les abeilles fabriquent du miel délicieux."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "mieux": {
+    "meaning": "Mejor.",
+    "examples": [
+      "Mieux bouger chaque jour",
+      "Tu dors mieux quand tu fais du sport."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "milieu": {
+    "meaning": "Medio, centro.",
+    "examples": [
+      "Heureux et détendu, Petit Nuage alla se blottir au milieu des étoiles et ferma les yeux.",
+      "La table est au milieu de la pièce."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "minute": {
+    "meaning": "Minuto.",
+    "examples": [
+      "**Étape 4 :** Repose-toi pendant 1 minute entre les exercices.",
+      "Attends une minute, s'il te plaît."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "minutes": {
+    "meaning": "Minutos; plural de 'minute'.",
+    "examples": [
+      "Marche ou bouge les bras pendant 3 minutes.",
+      "L'échauffement dure 5 minutes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "miroir": {
+    "meaning": "Espejo.",
+    "examples": [
+      "L'eau était si claire qu'on y voyait le soleil se refléter comme dans un miroir magique.",
+      "Elle se regarde dans le miroir avant de sortir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "moelleux": {
+    "meaning": "Mullido, esponjoso.",
+    "examples": [
+      "Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
+      "Ce coussin est très moelleux."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "moment": {
+    "meaning": "Momento, rato.",
+    "examples": [
+      "Il s'amusa un moment, puis quelque chose attira son attention :",
+      "Il s'est reposé un moment avant de repartir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "monde": {
+    "meaning": "Mundo; en 'tout le monde' = todo el mundo, todos.",
+    "examples": [
+      "La musculation est bonne pour tout le monde, à tout âge.",
+      "Tout le monde peut faire cet exercice."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "montagnes": {
+    "meaning": "Montañas; plural de 'montagne'.",
+    "examples": [
+      "Il glissa son corps vaporeux entre les montagnes et descendit vers un joli champ de fleurs.",
+      "On voit la neige sur les montagnes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "monter": {
+    "meaning": "Subir.",
+    "examples": [
+      "Porter des sacs, monter les escaliers et te lever facilement.",
+      "Elle aime monter à vélo."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "montrait": {
+    "meaning": "Mostraba, enseñaba; imperfecto de 'montrer' (il/elle).",
+    "examples": [
+      "des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger.",
+      "Le guide leur montrait le chemin."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "mots-clés": {
+    "meaning": "Palabras clave.",
+    "examples": [
+      "Mots-clés",
+      "Regarde la liste des mots-clés à la fin."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "mouvement": {
+    "meaning": "Movimiento.",
+    "examples": [
+      "Exercice | Mouvement | Répétitions.",
+      "Chaque mouvement travaille un muscle différent."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "mouvements": {
+    "meaning": "Movimientos; plural de 'mouvement'.",
+    "examples": [
+      "Les mouvements de base.",
+      "Apprends ces quatre mouvements, et tu peux faire beaucoup d'exercices."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "muscle": {
+    "meaning": "Músculo.",
+    "examples": [
+      "En vieillissant, ton corps peut perdre du muscle.",
+      "Ce muscle travaille pendant le squat."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "muscles": {
+    "meaning": "Músculos; plural de 'muscle'.",
+    "examples": [
+      "La **musculation** est un exercice qui rend tes muscles plus forts.",
+      "Tes muscles ont besoin de repos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "musculation": {
+    "meaning": "Musculación, entrenamiento de fuerza.",
+    "examples": [
+      "Les bases de la musculation",
+      "Elle fait de la musculation trois fois par semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "mélodies": {
+    "meaning": "Melodías; plural de 'mélodie'.",
+    "examples": [
+      "Les arbres chuchotaient dans la brise légère et les oiseaux chantonnaient des mélodies apaisantes.",
+      "Le pianiste jouait de belles mélodies."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "même": {
+    "meaning": "Mismo, incluso.",
+    "examples": [
+      "Brûler plus d'énergie, même au repos.",
+      "Il s'entraîne même quand il est fatigué."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "n'as": {
+    "meaning": "No tienes; forma negativa de 'avoir' (tú), con 'ne... pas'.",
+    "examples": [
+      "Tu n'as pas besoin d'une salle de sport.",
+      "Tu n'as pas besoin de poids lourds pour commencer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "n'est": {
+    "meaning": "No es; forma negativa de 'être' (il/elle), con 'ne... pas'.",
+    "examples": [
+      "Ce n'est pas vrai.",
+      "Ce n'est pas difficile."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "nageaient": {
+    "meaning": "Nadaban; imperfecto de 'nager' (ils/elles).",
+    "examples": [
+      "des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger.",
+      "Les poissons nageaient dans l'aquarium."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "niveau": {
+    "meaning": "Nivel.",
+    "examples": [
+      "**Charnière de hanche** — tu plies au niveau des hanches, avec le dos droit.",
+      "Adapte l'exercice à ton niveau."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "nuage": {
+    "meaning": "Nube.",
+    "examples": [
+      "Il était une fois Petit Nuage, qui flottait doucement dans le ciel bleu.",
+      "Un petit nuage blanc passait dans le ciel."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "nuit": {
+    "meaning": "Noche.",
+    "examples": [
+      "« C'était une journée merveilleuse », pensa-t-il, en se laissant porter par le doux bercement de la nuit.",
+      "Les étoiles brillent la nuit."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "objectif": {
+    "meaning": "Objetivo.",
+    "examples": [
+      "Un bon objectif est 2 à 3 séances de musculation par semaine, avec un jour de repos entre les séances.",
+      "Mon objectif est de m'entraîner trois fois par semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "oiseaux": {
+    "meaning": "Pájaros; plural de 'oiseau'.",
+    "examples": [
+      "Les arbres chuchotaient dans la brise légère et les oiseaux chantonnaient des mélodies apaisantes.",
+      "Les oiseaux chantent dès le lever du jour."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ont": {
+    "meaning": "Tienen; presente de 'avoir' (ellos/ellas).",
+    "examples": [
+      "Tes muscles ont besoin de temps pour se reposer et grandir.",
+      "Ils ont besoin de plus de temps."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "orange": {
+    "meaning": "Naranja; color, invariable.",
+    "examples": [
+      "Il remonta doucement dans le ciel, admirant le jour qui disait au revoir avec des couleurs rose, orange et violette à l'horizon.",
+      "Le ciel devenait orange au coucher du soleil."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "oreiller": {
+    "meaning": "Almohada.",
+    "examples": [
+      "Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
+      "Elle dort toujours avec deux oreillers."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "os": {
+    "meaning": "Hueso(s).",
+    "examples": [
+      "Protéger tes os.",
+      "Le calcium est bon pour les os."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ou": {
+    "meaning": "O.",
+    "examples": [
+      "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
+      "Choisis une activité : marcher ou courir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "paisiblement": {
+    "meaning": "Pacíficamente, tranquilamente.",
+    "examples": [
+      "Et c'est ainsi que le nuage de coton s'endormit, flottant paisiblement, alors que le monde entier reposait en paix.",
+      "Le village dormait paisiblement cette nuit-là."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "paix": {
+    "meaning": "Paz.",
+    "examples": [
+      "« Quelle paix ! » pensa Petit Nuage.",
+      "Après la tempête, un grand calme et une grande paix régnaient."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "papillons": {
+    "meaning": "Mariposas; plural de 'papillon'.",
+    "examples": [
+      "Là-bas, les papillons volaient au ralenti et les abeilles bourdonnaient doucement :",
+      "Des papillons colorés volaient autour des fleurs."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "par": {
+    "meaning": "Por.",
+    "examples": [
+      "Un bon objectif est 2 à 3 séances de musculation par semaine, avec un jour de repos entre les séances.",
+      "Il commence par un échauffement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "partir": {
+    "meaning": "Partir, irse.",
+    "examples": [
+      "Un jour, Petit Nuage décida de partir faire une grande promenade.",
+      "Il est temps de partir avant la nuit."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pas": {
+    "meaning": "No; partícula de negación junto con 'ne'.",
+    "examples": [
+      "Tu n'as pas besoin d'une salle de sport.",
+      "Ce n'est pas vrai."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "passage": {
+    "meaning": "Paso, pasaje; en 'au passage' = de paso.",
+    "examples": [
+      "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
+      "Le facteur salue toujours les voisins au passage."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "penché": {
+    "meaning": "Inclinado.",
+    "examples": [
+      "| Rowing buste penché (avec un sac ou des haltères légers) | Tirer | 10 |",
+      "Le buste penché travaille le dos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pendant": {
+    "meaning": "Durante.",
+    "examples": [
+      "Marche ou bouge les bras pendant 3 minutes.",
+      "Repose-toi pendant 1 minute entre les exercices."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pensa": {
+    "meaning": "Pensó; pasado simple de 'penser' (il/elle).",
+    "examples": [
+      "« Quelle paix ! » pensa Petit Nuage.",
+      "Elle pensa qu'il valait mieux rentrer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pensa-t-il": {
+    "meaning": "Pensó él; pasado simple de 'penser' (il) con inversión pronominal.",
+    "examples": [
+      "« C'était une journée merveilleuse », pensa-t-il, en se laissant porter par le doux bercement de la nuit.",
+      "« Quelle belle journée », pensa-t-il en souriant."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pensent": {
+    "meaning": "Piensan; presente de 'penser' (ellos/ellas).",
+    "examples": [
+      "Beaucoup de gens pensent que la musculation est seulement pour les jeunes ou les athlètes.",
+      "Certains pensent que c'est trop difficile."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "perdre": {
+    "meaning": "Perder.",
+    "examples": [
+      "En vieillissant, ton corps peut perdre du muscle.",
+      "On ne veut pas perdre de muscle en vieillissant."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "gagner"
+    ]
+  },
+  "petit": {
+    "meaning": "Pequeño.",
+    "examples": [
+      "**Étape 2 :** Fais un petit échauffement.",
+      "Prends un petit poids pour commencer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "petites": {
+    "meaning": "Pequeñas; plural de 'petite'.",
+    "examples": [
+      "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
+      "Elle a de toutes petites mains."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "peu": {
+    "meaning": "Poco.",
+    "examples": [
+      "Petit Nuage descendit encore un peu, jusqu'à effleurer l'eau avec son petit bidou.",
+      "Il reste encore un peu de temps."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "peut": {
+    "meaning": "Puede; presente de 'pouvoir' (il/elle).",
+    "examples": [
+      "En vieillissant, ton corps peut perdre du muscle.",
+      "Chacun peut commencer à son rythme."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "peux": {
+    "meaning": "Puedes; presente de 'pouvoir' (tú).",
+    "examples": [
+      "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
+      "Tu peux faire cet exercice à la maison."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "physique": {
+    "meaning": "Físico.",
+    "examples": [
+      "Exercice physique — Sujet 3 : Les bases de la musculation.",
+      "L'exercice physique améliore la santé."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "planche": {
+    "meaning": "Plancha; nombre de ejercicio isométrico.",
+    "examples": [
+      "| Planche | Gainage | 20 secondes |",
+      "La planche renforce le ventre et le dos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "plie": {
+    "meaning": "Dobla/doblo; presente de 'plier' (il/elle).",
+    "examples": [
+      "Charnière de hanche — un mouvement qui plie au niveau des hanches, avec le dos droit.",
+      "Il plie les genoux avant de sauter."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "plies": {
+    "meaning": "Doblas; presente de 'plier' (tú).",
+    "examples": [
+      "**Squat** — tu plies les genoux et les hanches, comme pour t'asseoir sur une chaise.",
+      "Tu plies les bras pendant cet exercice."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "plupart": {
+    "meaning": "La mayoría.",
+    "examples": [
+      "La plupart des exercices de musculation utilisent quatre mouvements de base.",
+      "La plupart des gens préfèrent marcher."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "plus": {
+    "meaning": "Más.",
+    "examples": [
+      "La **musculation** est un exercice qui rend tes muscles plus forts.",
+      "Elle veut devenir plus forte."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "poids": {
+    "meaning": "Peso.",
+    "examples": [
+      "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
+      "Elle soulève des poids légers."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pompe": {
+    "meaning": "Flexión de brazos, lagartija (push-up).",
+    "examples": [
+      "Exemple : une pompe.",
+      "Il fait vingt pompes chaque matin."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "porter": {
+    "meaning": "Llevar, cargar.",
+    "examples": [
+      "Porter des sacs, monter les escaliers et te lever facilement",
+      "Elle aime porter un sac léger pour marcher."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pour": {
+    "meaning": "Para.",
+    "examples": [
+      "Tu n'as pas besoin de poids lourds pour commencer.",
+      "Elle s'entraîne pour rester en forme."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pourquoi": {
+    "meaning": "Por qué.",
+    "examples": [
+      "Pourquoi est-ce important à tout âge ?",
+      "Pourquoi est-ce que tu t'entraînes le matin ?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pousse": {
+    "meaning": "Empuja/empujo; presente de 'pousser' (il/elle).",
+    "examples": [
+      "Pousser — un mouvement qui pousse quelque chose loin de ton corps.",
+      "Il pousse la porte pour entrer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pousser": {
+    "meaning": "Empujar.",
+    "examples": [
+      "**Pousser** — tu pousses quelque chose loin de ton corps.",
+      "La pompe est un bon exercice pour pousser."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pousses": {
+    "meaning": "Empujas; presente de 'pousser' (tú).",
+    "examples": [
+      "**Pousser** — tu pousses quelque chose loin de ton corps.",
+      "Tu pousses le sol avec tes mains."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pratique": {
+    "meaning": "Práctica.",
+    "examples": [
+      "Pratique : ta routine complète de musculation.",
+      "La pratique régulière améliore la force."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "profitant": {
+    "meaning": "Aprovechando; gerundio de 'profiter'.",
+    "examples": [
+      "Il décida de se reposer là un instant, accroché aux branches, profitant du vent et du chant des oiseaux.",
+      "Il lisait sur la terrasse, profitant du soleil."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "promenade": {
+    "meaning": "Paseo.",
+    "examples": [
+      "Un jour, Petit Nuage décida de partir faire une grande promenade.",
+      "Ils font une promenade dans le parc chaque dimanche."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "protéger": {
+    "meaning": "Proteger.",
+    "examples": [
+      "Protéger tes os.",
+      "Les bonnes chaussures protègent les genoux."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "puis": {
+    "meaning": "Luego, después.",
+    "examples": [
+      "Puis répète la routine une fois de plus.",
+      "Échauffe-toi, puis commence l'exercice."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "qu'est-ce": {
+    "meaning": "Qué (es); fórmula interrogativa 'qu'est-ce que'.",
+    "examples": [
+      "Qu'est-ce que la musculation ?",
+      "Qu'est-ce que tu fais ce soir ?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "qu'il": {
+    "meaning": "Que él; contracción de 'que' + 'il'.",
+    "examples": [
+      "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
+      "Je sais qu'il viendra demain."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "qu'on": {
+    "meaning": "Que uno, que se; contracción de 'que' + 'on'.",
+    "examples": [
+      "Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
+      "Il semble qu'on va bientôt arriver."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "quand": {
+    "meaning": "Cuando.",
+    "examples": [
+      "Quand le soleil commença à se cacher derrière les montagnes, Petit Nuage sut qu'il était l'heure de rentrer à la maison.",
+      "Quand il pleut, elle reste à la maison."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "quatre": {
+    "meaning": "Cuatro.",
+    "examples": [
+      "La plupart des exercices de musculation utilisent quatre mouvements de base.",
+      "Il y a quatre mouvements de base."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "que": {
+    "meaning": "Que.",
+    "examples": [
+      "Qu'est-ce que la musculation ?",
+      "Elle pense que c'est un bon exercice."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "quelle": {
+    "meaning": "Qué, cuál; femenino de 'quel'.",
+    "examples": [
+      "À quelle fréquence dois-tu t'entraîner ?",
+      "Quelle activité préfères-tu ?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "quelque": {
+    "meaning": "Algún/alguna; en 'quelque chose' = algo.",
+    "examples": [
+      "**Pousser** — tu pousses quelque chose loin de ton corps.",
+      "Il veut apprendre quelque chose de nouveau."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "qui": {
+    "meaning": "Que, quien; pronombre relativo.",
+    "examples": [
+      "La **musculation** est un exercice qui rend tes muscles plus forts.",
+      "C'est un exercice qui travaille tout le corps."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ralenti": {
+    "meaning": "Cámara lenta; en 'au ralenti' = a cámara lenta, despacio.",
+    "examples": [
+      "Là-bas, les papillons volaient au ralenti et les abeilles bourdonnaient doucement :",
+      "Les nageurs semblaient bouger au ralenti sous l'eau."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "rapportées": {
+    "meaning": "Traídas; participio pasado femenino plural de 'rapporter'.",
+    "examples": [
+      "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
+      "Les photos rapportées du voyage sont magnifiques."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "refléter": {
+    "meaning": "Reflejar.",
+    "examples": [
+      "L'eau était si claire qu'on y voyait le soleil se refléter comme dans un miroir magique.",
+      "Le lac semble refléter tout le ciel."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "regarder": {
+    "meaning": "Mirar.",
+    "examples": [
+      "Il resta là à les regarder se laisser bercer par l'eau, tout comme lui se laissait bercer par le ciel.",
+      "Elle aime regarder les étoiles le soir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "remonta": {
+    "meaning": "Volvió a subir, remontó; pasado simple de 'remonter' (il/elle).",
+    "examples": [
+      "Il remonta doucement dans le ciel, admirant le jour qui disait au revoir avec des couleurs rose, orange et violette à l'horizon.",
+      "Il remonta vite dans sa chambre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "rend": {
+    "meaning": "Hace, vuelve; presente de 'rendre' (il/elle).",
+    "examples": [
+      "La **musculation** est un exercice qui rend tes muscles plus forts.",
+      "Le sport rend la vie plus légère."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "rentrer": {
+    "meaning": "Volver, regresar (a casa).",
+    "examples": [
+      "Quand le soleil commença à se cacher derrière les montagnes, Petit Nuage sut qu'il était l'heure de rentrer à la maison.",
+      "Les enfants doivent rentrer avant la nuit."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "repos": {
+    "meaning": "Descanso.",
+    "examples": [
+      "Brûler plus d'énergie, même au repos.",
+      "Un jour de repos aide les muscles à récupérer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "reposait": {
+    "meaning": "Descansaba; imperfecto de 'reposer' (il/elle).",
+    "examples": [
+      "Et c'est ainsi que le nuage de coton s'endormit, flottant paisiblement, alors que le monde entier reposait en paix.",
+      "Le village reposait tranquillement sous la lune."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "repose-toi": {
+    "meaning": "Descánsate; imperativo pronominal de 'se reposer' (tú).",
+    "examples": [
+      "**Étape 4 :** Repose-toi pendant 1 minute entre les exercices.",
+      "Repose-toi bien avant la prochaine séance."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "reposer": {
+    "meaning": "Descansar; en 'se reposer' = descansarse.",
+    "examples": [
+      "Tes muscles ont besoin de temps pour se reposer et grandir.",
+      "Il est important de se reposer après l'effort."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "resta": {
+    "meaning": "Se quedó; pasado simple de 'rester' (il/elle).",
+    "examples": [
+      "Il resta là à les regarder se laisser bercer par l'eau, tout comme lui se laissait bercer par le ciel.",
+      "Il resta silencieux pendant tout le repas."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "rester": {
+    "meaning": "Quedarse, permanecer.",
+    "examples": [
+      "Rester fort.",
+      "Elle veut rester en forme toute l'année."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "revoir": {
+    "meaning": "Volver a ver; en 'au revoir' = adiós, hasta luego.",
+    "examples": [
+      "Il remonta doucement dans le ciel, admirant le jour qui disait au revoir avec des couleurs rose, orange et violette à l'horizon.",
+      "Elle a dit au revoir à ses amis avant de partir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "rose": {
+    "meaning": "Rosa; color.",
+    "examples": [
+      "Il remonta doucement dans le ciel, admirant le jour qui disait au revoir avec des couleurs rose, orange et violette à l'horizon.",
+      "Le ciel était rose ce soir-là."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "routine": {
+    "meaning": "Rutina.",
+    "examples": [
+      "Ta routine complète de musculation.",
+      "Il suit la même routine chaque semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "rowing": {
+    "meaning": "Remo; ejercicio de tirón (pull).",
+    "examples": [
+      "Exemple : un rowing.",
+      "Le rowing renforce le dos et les bras."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "répète": {
+    "meaning": "Repite/repito; imperativo/presente de 'répéter' (tú/il).",
+    "examples": [
+      "**Étape 5 :** Répète toute la routine deux fois.",
+      "Il répète la même série trois fois."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "répétitions": {
+    "meaning": "Repeticiones.",
+    "examples": [
+      "Fais 10 répétitions de chacun.",
+      "Fais trois séries de dix répétitions."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "s'amusa": {
+    "meaning": "Se divirtió; pasado simple de 's'amuser' (il/elle).",
+    "examples": [
+      "Il s'amusa un moment, puis quelque chose attira son attention :",
+      "Le chien s'amusa toute la journée dans le jardin."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "s'endormit": {
+    "meaning": "Se durmió; pasado simple de 's'endormir' (il/elle).",
+    "examples": [
+      "Et c'est ainsi que le nuage de coton s'endormit, flottant paisiblement, alors que le monde entier reposait en paix.",
+      "Le bébé s'endormit rapidement après son bain."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sac": {
+    "meaning": "Bolsa, mochila.",
+    "examples": [
+      "| Rowing buste penché (avec un sac ou des haltères légers) | Tirer | 10 |",
+      "Elle porte un sac rempli de livres."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sacs": {
+    "meaning": "Bolsas; plural de 'sac'.",
+    "examples": [
+      "Porter des sacs, monter les escaliers et te lever facilement",
+      "Il porte deux sacs lourds."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "salle": {
+    "meaning": "Sala; en 'salle de sport' = gimnasio.",
+    "examples": [
+      "Tu n'as pas besoin d'une salle de sport.",
+      "Il va à la salle de sport trois fois par semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "se": {
+    "meaning": "Se; pronombre reflexivo de la 3ª persona.",
+    "examples": [
+      "Tes muscles ont besoin de temps pour se reposer et grandir.",
+      "Il doit se reposer après l'entraînement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "secondes": {
+    "meaning": "Segundos.",
+    "examples": [
+      "| Planche | Gainage | 20 secondes |",
+      "Tiens la position pendant trente secondes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "semaine": {
+    "meaning": "Semana.",
+    "examples": [
+      "Un bon objectif est 2 à 3 séances de musculation par semaine, avec un jour de repos entre les séances.",
+      "Il s'entraîne trois fois par semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sentait": {
+    "meaning": "Olía, sentía; imperfecto de 'sentir' (il/elle).",
+    "examples": [
+      "L'air sentait bon la lavande et le miel.",
+      "La cuisine sentait bon le pain chaud."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "seulement": {
+    "meaning": "Solamente.",
+    "examples": [
+      "Beaucoup de gens pensent que la musculation est seulement pour les jeunes ou les athlètes.",
+      "Ce n'est pas seulement pour les athlètes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "si": {
+    "meaning": "Si.",
+    "examples": [
+      "Tu as seulement besoin du poids de ton corps, ou d'haltères légers si tu en as.",
+      "Repose-toi si tu es fatigué."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "silencieux": {
+    "meaning": "Silencioso; masculino singular de 'silencieux'.",
+    "examples": [
+      "Tout devenait silencieux.",
+      "Le musée était complètement silencieux."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "bruyant"
+    ]
+  },
+  "simple": {
+    "meaning": "Simple.",
+    "examples": [
+      "Utilise cette routine simple.",
+      "C'est un exercice simple pour commencer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "soleil": {
+    "meaning": "Sol.",
+    "examples": [
+      "L'eau était si claire qu'on y voyait le soleil se refléter comme dans un miroir magique.",
+      "Le soleil brille aujourd'hui."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "son": {
+    "meaning": "Su; posesivo masculino singular de 3ª persona.",
+    "examples": [
+      "Il glissa son corps vaporeux entre les montagnes et descendit vers un joli champ de fleurs.",
+      "Il porte son sac sur le dos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "soulevé": {
+    "meaning": "Levantamiento; en 'soulevé de terre' = peso muerto (deadlift).",
+    "examples": [
+      "un hip hinge ou un soulevé de terre.",
+      "Le soulevé de terre travaille le dos et les jambes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sport": {
+    "meaning": "Deporte.",
+    "examples": [
+      "Tu n'as pas besoin d'une salle de sport.",
+      "Il fait du sport tous les jours."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "squat": {
+    "meaning": "Sentadilla.",
+    "examples": [
+      "**Squat** — tu plies les genoux et les hanches, comme pour t'asseoir sur une chaise.",
+      "Le squat travaille les jambes et les fesses."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sujet": {
+    "meaning": "Tema, sujeto.",
+    "examples": [
+      "Exercice physique — Sujet 3 : Les bases de la musculation.",
+      "Ce sujet parle de l'entraînement de force."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sur": {
+    "meaning": "Sobre.",
+    "examples": [
+      "**Squat** — tu plies les genoux et les hanches, comme pour t'asseoir sur une chaise.",
+      "Pose tes mains sur le sol."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sut": {
+    "meaning": "Supo; pasado simple de 'savoir' (il/elle).",
+    "examples": [
+      "Quand le soleil commença à se cacher derrière les montagnes, Petit Nuage sut qu'il était l'heure de rentrer à la maison.",
+      "Elle sut tout de suite quoi faire."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "séances": {
+    "meaning": "Sesiones; plural de 'séance'.",
+    "examples": [
+      "Un bon objectif est 2 à 3 séances de musculation par semaine, avec un jour de repos entre les séances.",
+      "Il fait deux séances de sport par semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "t'aide": {
+    "meaning": "Te ayuda; presente de 'aider' + 'te' (il/elle).",
+    "examples": [
+      "La musculation t'aide à rester fort.",
+      "Cette routine t'aide à devenir plus fort."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "t'asseoir": {
+    "meaning": "Sentarte; infinitivo pronominal de 's'asseoir' (tú).",
+    "examples": [
+      "**Squat** — tu plies les genoux et les hanches, comme pour t'asseoir sur une chaise.",
+      "Tu dois t'asseoir doucement sur la chaise."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "t'entraîner": {
+    "meaning": "Entrenarte; infinitivo pronominal de 's'entraîner' (tú).",
+    "examples": [
+      "À quelle fréquence dois-tu t'entraîner ?",
+      "Tu dois t'entraîner deux fois par semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ta": {
+    "meaning": "Tu; posesivo femenino singular.",
+    "examples": [
+      "ta routine complète de musculation",
+      "Choisis ta routine préférée."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tard": {
+    "meaning": "Tarde.",
+    "examples": [
+      "Un peu plus tard, il arriva au-dessus d'une forêt aux arbres immenses.",
+      "Ils sont rentrés très tard hier soir."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "tôt"
+    ]
+  },
+  "te": {
+    "meaning": "Te; pronombre reflexivo/objeto de 2ª persona (tú).",
+    "examples": [
+      "Porter des sacs, monter les escaliers et te lever facilement.",
+      "Je te vois à la salle de sport demain."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "temps": {
+    "meaning": "Tiempo.",
+    "examples": [
+      "Tes muscles ont besoin de temps pour se reposer et grandir.",
+      "Il n'a pas beaucoup de temps pour s'entraîner."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tendre": {
+    "meaning": "Tierno/tierna.",
+    "examples": [
+      "Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
+      "Ce pain est encore tout tendre."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "dur"
+    ]
+  },
+  "terre": {
+    "meaning": "Tierra; en 'soulevé de terre' = peso muerto.",
+    "examples": [
+      "un hip hinge ou un soulevé de terre.",
+      "Le soulevé de terre est un exercice avancé."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tes": {
+    "meaning": "Tus; posesivo plural.",
+    "examples": [
+      "La **musculation** est un exercice qui rend tes muscles plus forts.",
+      "Protège tes articulations."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tiens": {
+    "meaning": "Tienes/sostén; presente/imperativo de 'tenir' (tú).",
+    "examples": [
+      "Haltère — un petit poids lourd que tu tiens dans la main.",
+      "Tiens la position pendant dix secondes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tire": {
+    "meaning": "Tira; presente de 'tirer' (il/elle).",
+    "examples": [
+      "Tirer — un mouvement qui tire quelque chose vers ton corps.",
+      "Il tire la corde vers lui."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tirer": {
+    "meaning": "Tirar, jalar.",
+    "examples": [
+      "**Tirer** — tu tires quelque chose vers ton corps.",
+      "Le rowing est un bon exercice pour tirer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tires": {
+    "meaning": "Tiras; presente de 'tirer' (tú).",
+    "examples": [
+      "**Tirer** — tu tires quelque chose vers ton corps.",
+      "Tu tires la corde avec les deux mains."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ton": {
+    "meaning": "Tu; posesivo masculino singular.",
+    "examples": [
+      "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
+      "Protège ton dos pendant l'exercice."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tour": {
+    "meaning": "Turno.",
+    "examples": [
+      "Maintenant, c'est ton tour.",
+      "C'est ton tour de choisir l'exercice."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tous": {
+    "meaning": "Todos; plural de 'tout'.",
+    "examples": [
+      "Tu n'as pas besoin de t'entraîner tous les jours.",
+      "Il s'entraîne tous les jours."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tout": {
+    "meaning": "Todo; en 'tout le monde' o 'à tout âge'.",
+    "examples": [
+      "Pourquoi est-ce important à tout âge ?",
+      "Il range tout avant de partir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "toute": {
+    "meaning": "Toda; femenino singular de 'tout'.",
+    "examples": [
+      "**Étape 5 :** Répète toute la routine deux fois.",
+      "Elle répète toute la série encore une fois."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "trouver": {
+    "meaning": "Encontrar.",
+    "examples": [
+      "des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger.",
+      "Il cherche son chemin pour trouver la gare."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tu": {
+    "meaning": "Tú.",
+    "examples": [
+      "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
+      "Tu peux commencer doucement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "un": {
+    "meaning": "Un; artículo indefinido masculino singular.",
+    "examples": [
+      "La **musculation** est un exercice qui rend tes muscles plus forts.",
+      "Fais un effort chaque jour."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "une": {
+    "meaning": "Una; artículo indefinido femenino singular.",
+    "examples": [
+      "une pompe.",
+      "C'est une bonne habitude."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "utilise": {
+    "meaning": "Usa/uso; imperativo/presente de 'utiliser' (tú/il).",
+    "examples": [
+      "Utilise cette routine simple.",
+      "Il utilise des haltères légers."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "utilisent": {
+    "meaning": "Usan; presente de 'utiliser' (ellos/ellas).",
+    "examples": [
+      "La plupart des exercices de musculation utilisent quatre mouvements de base.",
+      "Ils utilisent la même routine chaque semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "utiliser": {
+    "meaning": "Usar.",
+    "examples": [
+      "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
+      "Tu peux utiliser des bouteilles d'eau comme poids."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vaporeux": {
+    "meaning": "Vaporoso, etéreo.",
+    "examples": [
+      "Il glissa son corps vaporeux entre les montagnes et descendit vers un joli champ de fleurs.",
+      "Le tissu de la robe était léger et vaporeux."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vent": {
+    "meaning": "Viento.",
+    "examples": [
+      "Il décida de se reposer là un instant, accroché aux branches, profitant du vent et du chant des oiseaux.",
+      "Le vent souffle fort aujourd'hui."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vers": {
+    "meaning": "Hacia.",
+    "examples": [
+      "**Tirer** — tu tires quelque chose vers ton corps.",
+      "Il tire la corde vers lui."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vieillissant": {
+    "meaning": "Envejeciendo; gerundio de 'vieillir'.",
+    "examples": [
+      "En vieillissant, ton corps peut perdre du muscle.",
+      "En vieillissant, il faut bouger encore plus."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "violette": {
+    "meaning": "Violeta; color, femenino de 'violet'.",
+    "examples": [
+      "Il remonta doucement dans le ciel, admirant le jour qui disait au revoir avec des couleurs rose, orange et violette à l'horizon.",
+      "Elle portait une robe violette."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "volaient": {
+    "meaning": "Volaban; imperfecto de 'voler' (ils/elles).",
+    "examples": [
+      "Là-bas, les papillons volaient au ralenti et les abeilles bourdonnaient doucement :",
+      "Les oiseaux volaient très haut dans le ciel."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "voyait": {
+    "meaning": "Veía; imperfecto de 'voir' (il/elle).",
+    "examples": [
+      "L'eau était si claire qu'on y voyait le soleil se refléter comme dans un miroir magique.",
+      "On voyait les montagnes depuis la fenêtre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vrai": {
+    "meaning": "Verdadero.",
+    "examples": [
+      "Ce n'est pas vrai.",
+      "C'est vrai que le repos est important."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "faux"
+    ]
+  },
+  "y": {
+    "meaning": "Ahí, allí, en eso; pronombre adverbial.",
+    "examples": [
+      "L'eau était si claire qu'on y voyait le soleil se refléter comme dans un miroir magique.",
+      "Il y pense souvent depuis son voyage."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "yeux": {
+    "meaning": "Ojos; plural de 'œil'.",
+    "examples": [
+      "Heureux et détendu, Petit Nuage alla se blottir au milieu des étoiles et ferma les yeux.",
+      "Elle a de grands yeux bleus."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "à": {
+    "meaning": "A.",
+    "examples": [
+      "La musculation t'aide à rester fort.",
+      "Il commence à s'entraîner demain."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "âge": {
+    "meaning": "Edad.",
+    "examples": [
+      "Pourquoi est-ce important à tout âge ?",
+      "Le sport est bon à tout âge."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "échauffement": {
+    "meaning": "Calentamiento.",
+    "examples": [
+      "**Étape 2 :** Fais un petit échauffement.",
+      "Ne saute jamais l'échauffement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "équilibre": {
+    "meaning": "Equilibrio.",
+    "examples": [
+      "Garder ton équilibre.",
+      "Le yoga aide à garder l'équilibre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "était": {
+    "meaning": "Era, estaba; imperfecto de 'être' (il/elle).",
+    "examples": [
+      "Il était une fois Petit Nuage, qui flottait doucement dans le ciel bleu.",
+      "Le ciel était très clair ce matin-là."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "étape": {
+    "meaning": "Paso, etapa.",
+    "examples": [
+      "**Étape 1 :** Choisis un endroit calme.",
+      "Suis chaque étape de la routine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "étoiles": {
+    "meaning": "Estrellas; plural de 'étoile'.",
+    "examples": [
+      "Heureux et détendu, Petit Nuage alla se blottir au milieu des étoiles et ferma les yeux.",
+      "On voit beaucoup d'étoiles loin de la ville."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  }
+}

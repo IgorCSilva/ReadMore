@@ -1,7 +1,7 @@
 ## Add content in other files
 
-native: pt
-target: es
+native: es
+target: fr
 
 Check introduce_content/current_info.md file to know the chapter and topic numbers.
 

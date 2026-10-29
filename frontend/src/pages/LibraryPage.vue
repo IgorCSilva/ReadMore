@@ -186,7 +186,7 @@ onMounted(() => {
   // have its own accent for yet, rather than leaving data-lang unset.
   function setDataLang() {
     const [, target] = LANG.split("-");
-    const knownAccent = target === "es" || target === "ko" ? target : "en";
+    const knownAccent = target === "es" || target === "ko" || target === "zh" || target === "fr" ? target : "en";
     document.documentElement.setAttribute("data-lang", knownAccent);
   }
 

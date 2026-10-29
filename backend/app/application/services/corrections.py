@@ -84,9 +84,7 @@ def _build_matcher(pairs: _ReplacementPairs, target_lang: str) -> _Matcher:
         mapping.setdefault(variant, replacement)
     ordered_variants = sorted(mapping, key=len, reverse=True)
     pattern = re.compile(
-        "|".join(
-            boundary_pattern(re.escape(variant), target_lang) for variant in ordered_variants
-        )
+        "|".join(boundary_pattern(variant, target_lang) for variant in ordered_variants)
     )
     return pattern, mapping
 

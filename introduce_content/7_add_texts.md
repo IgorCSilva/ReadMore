@@ -1,6 +1,7 @@
 ## Add texts
 
-target: es
+target: fr
+
 Check introduce_content/current_info.md file to know the chapter and topic numbers.
 
 Medium, standalone reading/shadowing passages for this chapter/topic — the content

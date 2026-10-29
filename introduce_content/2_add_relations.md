@@ -1,6 +1,6 @@
 ## Add relations
 
-native: pt
+native: es
 
 Check introduce_content/current_info.md file to know the target idiom, chapter and topic numbers.
 
