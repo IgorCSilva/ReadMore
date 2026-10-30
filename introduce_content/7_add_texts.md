@@ -1,8 +1,6 @@
 ## Add texts
 
-target: fr
-
-Check introduce_content/current_info.md file to know the chapter and topic numbers.
+Check introduce_content/current_info.md file to know the native idiom, target idiom, chapter and topic numbers.
 
 Medium, standalone reading/shadowing passages for this chapter/topic — the content
 backend/app/domain/entities.py's Topic.texts (texts.json) feeds to the frontend's Shadowing

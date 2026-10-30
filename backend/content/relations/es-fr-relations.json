@@ -31,6 +31,36 @@
         "gracias": "merci",
         "de nada": "de rien"
       }
+    },
+    "topic_2": {
+      "es": {
+        "familia": "famille",
+        "padre": "père",
+        "madre": "mère",
+        "hijo": "fils",
+        "hija": "fille",
+        "hermano": "frère",
+        "hermana": "sœur",
+        "abuelo": "grand-père",
+        "abuela": "grand-mère",
+        "tío": "oncle",
+        "tía": "tante",
+        "primo": "cousin",
+        "prima": "cousine",
+        "esposo": "mari",
+        "esposa": "femme",
+        "su": ["son", "sa"],
+        "nosotros": "nous",
+        "nosotras": "nous",
+        "nuestro": "notre",
+        "nuestra": "notre",
+        "el": "le",
+        "la": "la",
+        "todos": "tous",
+        "todas": "toutes",
+        "con": "avec",
+        "sin": "sans"
+      }
     }
   }
 }

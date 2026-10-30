@@ -1,9 +1,6 @@
 ## Add content in other files
 
-native: es
-target: fr
-
-Check introduce_content/current_info.md file to know the chapter and topic numbers.
+Check introduce_content/current_info.md file to know the native idiom, target idiom, chapter and topic numbers.
 
 Run the prompt in backend/prompts/phase_words_adaptation.md with origin=<native>,
 target=<target>, chapter=<chapter>, topic=<topic>. It's already pair-agnostic — no

@@ -172,5 +172,185 @@
     "root_word_id": "wd-0072",
     "word": "de rien",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0030",
+    "root_word_id": "wd-0027",
+    "word": "le",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0031",
+    "root_word_id": "wd-0276",
+    "word": "la",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0032",
+    "root_word_id": "wd-0778",
+    "word": "ma",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0033",
+    "root_word_id": "wd-0779",
+    "word": "mes",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0034",
+    "root_word_id": "wd-0272",
+    "word": "son",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0035",
+    "root_word_id": "wd-0780",
+    "word": "sa",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0036",
+    "root_word_id": "wd-0084",
+    "word": "famille",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0037",
+    "root_word_id": "wd-0085",
+    "word": "mère",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0038",
+    "root_word_id": "wd-0086",
+    "word": "père",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0039",
+    "root_word_id": "wd-0089",
+    "word": "frère",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0040",
+    "root_word_id": "wd-0088",
+    "word": "sœur",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0041",
+    "root_word_id": "wd-0087",
+    "word": "parents",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0042",
+    "root_word_id": "wd-0093",
+    "word": "fils",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0043",
+    "root_word_id": "wd-0094",
+    "word": "fille",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0044",
+    "root_word_id": "wd-0095",
+    "word": "enfant",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0045",
+    "root_word_id": "wd-0091",
+    "word": "grand-père",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0046",
+    "root_word_id": "wd-0090",
+    "word": "grand-mère",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0047",
+    "root_word_id": "wd-0100",
+    "word": "oncle",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0048",
+    "root_word_id": "wd-0099",
+    "word": "tante",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0049",
+    "root_word_id": "wd-0101",
+    "word": "cousin",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0050",
+    "root_word_id": "wd-0271",
+    "word": "cousine",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0051",
+    "root_word_id": "wd-0098",
+    "word": "bébé",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0052",
+    "root_word_id": "wd-0096",
+    "word": "mari",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0053",
+    "root_word_id": "wd-0097",
+    "word": "femme",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0054",
+    "root_word_id": "wd-0019",
+    "word": "nous",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0055",
+    "root_word_id": "wd-0274",
+    "word": "notre",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0056",
+    "root_word_id": "wd-0277",
+    "word": "tous",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0057",
+    "root_word_id": "wd-0278",
+    "word": "toutes",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0058",
+    "root_word_id": "wd-0227",
+    "word": "avec",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0059",
+    "root_word_id": "wd-0279",
+    "word": "sans",
+    "gender_id": "not_apply"
   }
 ]
