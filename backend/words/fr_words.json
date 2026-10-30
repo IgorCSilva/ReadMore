@@ -352,5 +352,143 @@
     "root_word_id": "wd-0279",
     "word": "sans",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0060",
+    "root_word_id": "wd-0280",
+    "word": "maison",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0061",
+    "root_word_id": "wd-0281",
+    "word": "chambre",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0062",
+    "root_word_id": "wd-0282",
+    "word": "salon",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0063",
+    "root_word_id": "wd-0283",
+    "word": "cuisine",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0064",
+    "root_word_id": "wd-0284",
+    "word": "salle de bain",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0065",
+    "root_word_id": "wd-0285",
+    "word": "porte",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0066",
+    "root_word_id": "wd-0286",
+    "word": "fenêtre",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0067",
+    "root_word_id": "wd-0183",
+    "word": "table",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0068",
+    "root_word_id": "wd-0287",
+    "word": "chaise",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0069",
+    "root_word_id": "wd-0288",
+    "word": "lit",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0070",
+    "root_word_id": "wd-0289",
+    "word": "réfrigérateur",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0071",
+    "root_word_id": "wd-0290",
+    "word": "cuisinière",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0072",
+    "root_word_id": "wd-0047",
+    "word": "télévision",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0073",
+    "root_word_id": "wd-0781",
+    "word": "canapé",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0074",
+    "root_word_id": "wd-0782",
+    "word": "jardin",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0075",
+    "root_word_id": "wd-0291",
+    "word": "un",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0076",
+    "root_word_id": "wd-0292",
+    "word": "une",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0077",
+    "root_word_id": "wd-0294",
+    "word": "il y a",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0078",
+    "root_word_id": "wd-0297",
+    "word": "ça",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0079",
+    "root_word_id": "wd-0293",
+    "word": "a",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0080",
+    "root_word_id": "wd-0144",
+    "word": "dans",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0081",
+    "root_word_id": "wd-0065",
+    "word": "ici",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0082",
+    "root_word_id": "wd-0066",
+    "word": "là",
+    "gender_id": "not_apply"
   }
 ]

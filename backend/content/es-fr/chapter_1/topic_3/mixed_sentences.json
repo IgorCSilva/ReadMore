@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "Pusimos flores sobre **une** **table** pequeña."
+  },
+  {
+    "sentence_number": 2,
+    "content": "Ponemos los platos sobre **une** **table** redonda."
+  },
+  {
+    "sentence_number": 3,
+    "content": "Guarda los libros **là**, **dans** aquel estante alto."
+  },
+  {
+    "sentence_number": 4,
+    "content": "Compramos cortinas nuevas para **une** **chambre** pequeña."
+  },
+  {
+    "sentence_number": 5,
+    "content": "Compramos **une** **cuisinière** nueva ese invierno."
+  },
+  {
+    "sentence_number": 6,
+    "content": "Esa **chaise** **a** **un** cojín suave."
+  },
+  {
+    "sentence_number": 7,
+    "content": "**Dans** esta calle, cada **maison** **a** **un** **jardin**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "Esa **télévision** **a** **une** pantalla enorme."
+  },
+  {
+    "sentence_number": 9,
+    "content": "Elegimos **un** **canapé** azul para aquel **salon**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "Compramos **un** **canapé** cómodo para aquel apartamento."
+  },
+  {
+    "sentence_number": 11,
+    "content": "Dormimos juntos **dans** **un** **canapé** incómodo esa madrugada."
+  },
+  {
+    "sentence_number": 12,
+    "content": "Mandamos a limpiar **une** **chambre** completa ayer."
+  },
+  {
+    "sentence_number": 13,
+    "content": "Ese **lit** **a** **un** colchón nuevo."
+  },
+  {
+    "sentence_number": 14,
+    "content": "Movimos **un** **lit** pesado hasta otra **chambre**."
+  },
+  {
+    "sentence_number": 15,
+    "content": "Colgamos **une** **télévision** entera **dans** aquella pared."
+  },
+  {
+    "sentence_number": 16,
+    "content": "Compramos **une** **table** nueva para aquel comedor."
+  },
+  {
+    "sentence_number": 17,
+    "content": "Compramos **une** **chaise** cómoda para **une** oficina nueva."
+  },
+  {
+    "sentence_number": 18,
+    "content": "Mira **là**, ese árbol tan grande."
+  },
+  {
+    "sentence_number": 19,
+    "content": "Movimos **un** **canapé** pesado hasta otro **salon**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "Abrimos **une** **fenêtre** entera para que entrara aire fresco."
+  },
+  {
+    "sentence_number": 21,
+    "content": "Golpearon **une** **porte** vieja varias veces."
+  },
+  {
+    "sentence_number": 22,
+    "content": "Esa **cuisine** huele siempre a pan recién hecho."
+  },
+  {
+    "sentence_number": 23,
+    "content": "Esa **porte** cruje mucho cuando alguien entra."
+  },
+  {
+    "sentence_number": 24,
+    "content": "Guarda **ça** **dans** aquel cajón."
+  },
+  {
+    "sentence_number": 25,
+    "content": "Cortamos césped **dans** **un** **jardin** descuidado."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**Il y a** **une** **chaise** rota **dans** aquel patio."
+  },
+  {
+    "sentence_number": 27,
+    "content": "Regamos **un** **jardin** entero esta mañana."
+  },
+  {
+    "sentence_number": 28,
+    "content": "Esa **salle de bain** necesita **une** lámpara nueva."
+  },
+  {
+    "sentence_number": 29,
+    "content": "Ven **ici** **un** momento, por favor."
+  },
+  {
+    "sentence_number": 30,
+    "content": "Pintamos **une** **porte** entera **de** color verde."
+  },
+  {
+    "sentence_number": 31,
+    "content": "Esa **chambre** **a** vista al patio trasero."
+  },
+  {
+    "sentence_number": 32,
+    "content": "Esa **chaise** cruje cada vez que alguien se sienta."
+  },
+  {
+    "sentence_number": 33,
+    "content": "Ese **réfrigérateur** **a** dos puertas amplias."
+  },
+  {
+    "sentence_number": 34,
+    "content": "Esa **cuisinière** **a** cuatro quemadores."
+  },
+  {
+    "sentence_number": 35,
+    "content": "**Il y a** **un** **canapé** cubierto **dans** **une** manta gruesa."
+  },
+  {
+    "sentence_number": 36,
+    "content": "Esa **table** **a** cuatro patas firmes."
+  },
+  {
+    "sentence_number": 37,
+    "content": "Compré **ça** **dans** aquel mercado del pueblo."
+  },
+  {
+    "sentence_number": 38,
+    "content": "Arreglamos **un** **lit** viejo que chirriaba bastante."
+  },
+  {
+    "sentence_number": 39,
+    "content": "Pon las llaves **ici**, sobre aquella repisa."
+  },
+  {
+    "sentence_number": 40,
+    "content": "**Il y a** **un** **salon** muy amplio, todavía vacío."
+  },
+  {
+    "sentence_number": 41,
+    "content": "**Il y a** **une** **fenêtre** rota **dans** aquel ático."
+  },
+  {
+    "sentence_number": 42,
+    "content": "Remodelamos **une** **cuisine** entera ese invierno."
+  },
+  {
+    "sentence_number": 43,
+    "content": "Esa **fenêtre** **a** **un** marco verde recién pintado."
+  },
+  {
+    "sentence_number": 44,
+    "content": "Cambiamos **une** **fenêtre** entera ese invierno."
+  },
+  {
+    "sentence_number": 45,
+    "content": "**Il y a** **une** **cuisine** moderna, bastante equipada."
+  },
+  {
+    "sentence_number": 46,
+    "content": "Limpiamos **une** **cuisinière** entera por completo."
+  },
+  {
+    "sentence_number": 47,
+    "content": "Limpiamos **un** **réfrigérateur** entero por completo."
+  },
+  {
+    "sentence_number": 48,
+    "content": "Compramos **un** **réfrigérateur** enorme ese verano."
+  },
+  {
+    "sentence_number": 49,
+    "content": "Pintamos **une** **chambre** entera: quedó azul claro."
+  },
+  {
+    "sentence_number": 50,
+    "content": "Cambiamos **une** **porte** rota ese sábado pasado."
+  },
+  {
+    "sentence_number": 51,
+    "content": "Necesitamos **ça** para terminar esa reforma."
+  },
+  {
+    "sentence_number": 52,
+    "content": "Limpiamos **une** **table** entera antes **de** cenar."
+  },
+  {
+    "sentence_number": 53,
+    "content": "Esta **maison** **a** **une** **chambre** extra para invitados."
+  },
+  {
+    "sentence_number": 54,
+    "content": "Arreglamos **une** **chaise** vieja ese sábado pasado."
+  },
+  {
+    "sentence_number": 55,
+    "content": "Pintamos **un** **salon** entero **de** color blanco."
+  },
+  {
+    "sentence_number": 56,
+    "content": "Esa **fenêtre** deja pasar mucha luz cada mañana."
+  },
+  {
+    "sentence_number": 57,
+    "content": "Metemos las verduras **dans** **un** **réfrigérateur** nuevo."
+  },
+  {
+    "sentence_number": 58,
+    "content": "Vendimos **une** **télévision** vieja **dans** **un** mercado pequeño."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**Il y a** **un** **réfrigérateur** vacío **dans** **une** **cuisine** abandonada."
+  },
+  {
+    "sentence_number": 60,
+    "content": "Estrenamos **une** **cuisinière** eléctrica esta semana."
+  },
+  {
+    "sentence_number": 61,
+    "content": "**Il y a** **une** **salle de bain** pequeña junto al pasillo."
+  },
+  {
+    "sentence_number": 62,
+    "content": "Visitamos **une** **maison** muy antigua ese sábado pasado."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**Il y a** **une** **chambre** libre **dans** este piso."
+  },
+  {
+    "sentence_number": 64,
+    "content": "Vemos las noticias **dans** **une** **télévision** antigua."
+  },
+  {
+    "sentence_number": 65,
+    "content": "Ese **jardin** **a** flores **de** muchos colores."
+  },
+  {
+    "sentence_number": 66,
+    "content": "Cocinamos cada mañana **dans** **une** **cuisine** pequeña."
+  },
+  {
+    "sentence_number": 67,
+    "content": "Plantamos rosas **dans** **un** **jardin** pequeño."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**Il y a** **une** **table** vieja, cubierta **de** papeles."
+  },
+  {
+    "sentence_number": 69,
+    "content": "Pon las maletas **là**, junto a **une** **porte** grande."
+  },
+  {
+    "sentence_number": 70,
+    "content": "Metemos las verduras **dans** **un** **réfrigérateur** nuevo **dans** **une** **cuisine** amplia."
+  },
+  {
+    "sentence_number": 71,
+    "content": "Compramos **une** **maison** grande, luminosa."
+  },
+  {
+    "sentence_number": 72,
+    "content": "Miro **ça** detenidamente: parece muy antiguo."
+  },
+  {
+    "sentence_number": 73,
+    "content": "Ese **réfrigérateur** hace demasiado ruido durante las noches."
+  },
+  {
+    "sentence_number": 74,
+    "content": "Ellos viven **là**, muy lejos, **dans** otro pueblo."
+  },
+  {
+    "sentence_number": 75,
+    "content": "Compramos sábanas nuevas para **un** **lit** matrimonial."
+  },
+  {
+    "sentence_number": 76,
+    "content": "Trabajamos **ici** desde hace varios años."
+  },
+  {
+    "sentence_number": 77,
+    "content": "Guardamos toallas limpias **dans** **une** **salle de bain** compartida."
+  },
+  {
+    "sentence_number": 78,
+    "content": "Compramos **une** **télévision** nueva ese verano."
+  },
+  {
+    "sentence_number": 79,
+    "content": "Diseñamos **un** **jardin** nuevo ese verano."
+  },
+  {
+    "sentence_number": 80,
+    "content": "Vendimos **un** **canapé** viejo ese mes."
+  },
+  {
+    "sentence_number": 81,
+    "content": "**Il y a** **une** **cuisinière** fuera **de** servicio."
+  },
+  {
+    "sentence_number": 82,
+    "content": "Abrimos **une** **porte** antigua muy despacio."
+  },
+  {
+    "sentence_number": 83,
+    "content": "**Il y a** **une** **salle de bain** nueva **dans** este piso."
+  },
+  {
+    "sentence_number": 84,
+    "content": "Nos encontramos siempre **ici**, **dans** aquella esquina."
+  },
+  {
+    "sentence_number": 85,
+    "content": "Pon **ça** sobre esa repisa, por favor."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**Il y a** **une** **maison** abandonada **dans** esta calle."
+  },
+  {
+    "sentence_number": 87,
+    "content": "**Il y a** **un** **lit** pequeño para **un** niño."
+  },
+  {
+    "sentence_number": 88,
+    "content": "Ese **canapé** **a** cojines suaves, nuevos."
+  },
+  {
+    "sentence_number": 89,
+    "content": "Decoramos **une** **chambre** entera para esa fiesta."
+  },
+  {
+    "sentence_number": 90,
+    "content": "**Il y a** **une** **télévision** encendida, **de** volumen bajo."
+  },
+  {
+    "sentence_number": 91,
+    "content": "Deja los zapatos **ici**, junto a **une** **porte** pesada."
+  },
+  {
+    "sentence_number": 92,
+    "content": "Decoramos **un** **salon** moderno para las visitas."
+  },
+  {
+    "sentence_number": 93,
+    "content": "Reformamos **un** **salon** viejo ese verano pasado."
+  },
+  {
+    "sentence_number": 94,
+    "content": "Construyeron **une** **salle de bain** extra para los invitados."
+  },
+  {
+    "sentence_number": 95,
+    "content": "**Il y a** **une** **porte** pintada **dans** **un** tono rojo intenso."
+  },
+  {
+    "sentence_number": 96,
+    "content": "Limpiamos **une** **fenêtre** sucia cada semana."
+  },
+  {
+    "sentence_number": 97,
+    "content": "Siéntate **là**, justo **dans** aquel rincón."
+  },
+  {
+    "sentence_number": 98,
+    "content": "Nuestros vecinos construyeron **une** **maison** enorme muy cerca."
+  },
+  {
+    "sentence_number": 99,
+    "content": "Ese **salon** parece bastante acogedor."
+  },
+  {
+    "sentence_number": 100,
+    "content": "**Il y a** **un** **jardin** escondido tras ese edificio viejo."
+  }
+]

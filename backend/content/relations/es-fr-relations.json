@@ -61,6 +61,35 @@
         "con": "avec",
         "sin": "sans"
       }
+    },
+    "topic_3": {
+      "es": {
+        "casa": "maison",
+        "cuarto": "chambre",
+        "sala": "salon",
+        "cocina": "cuisine",
+        "baño": "salle de bain",
+        "puerta": "porte",
+        "ventana": "fenêtre",
+        "mesa": "table",
+        "silla": "chaise",
+        "cama": "lit",
+        "refrigerador": "réfrigérateur",
+        "estufa": "cuisinière",
+        "televisión": "télévision",
+        "un": "un",
+        "una": "une",
+        "aquí": "ici",
+        "allí": "là",
+        "tiene": "a",
+        "hay": "il y a",
+        "en la": "dans",
+        "en el": "dans",
+        "en": "dans",
+        "esto": "ça",
+        "eso": "ça",
+        "aquello": "ça"
+      }
     }
   }
 }

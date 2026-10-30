@@ -1,0 +1,676 @@
+[
+  {
+    "id": "fr-sent-0151",
+    "sentence": "La maison est très confortable.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0060",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0152",
+    "sentence": "Ma maison a un grand jardin.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0060",
+      "fr-wd-0079",
+      "fr-wd-0075",
+      "fr-wd-0074"
+    ]
+  },
+  {
+    "id": "fr-sent-0153",
+    "sentence": "Il y a une maison là-bas.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0076",
+      "fr-wd-0060",
+      "fr-wd-0082"
+    ]
+  },
+  {
+    "id": "fr-sent-0154",
+    "sentence": "La chambre est très calme.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0061",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0155",
+    "sentence": "Il y a un lit dans la chambre.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0075",
+      "fr-wd-0069",
+      "fr-wd-0080",
+      "fr-wd-0031",
+      "fr-wd-0061"
+    ]
+  },
+  {
+    "id": "fr-sent-0156",
+    "sentence": "Ma chambre a une grande fenêtre.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0061",
+      "fr-wd-0079",
+      "fr-wd-0076",
+      "fr-wd-0066"
+    ]
+  },
+  {
+    "id": "fr-sent-0157",
+    "sentence": "Le salon est très lumineux.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0062",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0158",
+    "sentence": "Il y a un canapé dans le salon.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0075",
+      "fr-wd-0073",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0062"
+    ]
+  },
+  {
+    "id": "fr-sent-0159",
+    "sentence": "Nous regardons la télévision dans le salon.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0031",
+      "fr-wd-0072",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0062"
+    ]
+  },
+  {
+    "id": "fr-sent-0160",
+    "sentence": "La cuisine est très propre.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0063",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0161",
+    "sentence": "Il y a une table dans la cuisine.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0076",
+      "fr-wd-0067",
+      "fr-wd-0080",
+      "fr-wd-0031",
+      "fr-wd-0063"
+    ]
+  },
+  {
+    "id": "fr-sent-0162",
+    "sentence": "Mon père prépare le café dans la cuisine.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0038",
+      "fr-wd-0030",
+      "fr-wd-0080",
+      "fr-wd-0031",
+      "fr-wd-0063"
+    ]
+  },
+  {
+    "id": "fr-sent-0163",
+    "sentence": "La salle de bain est très propre.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0064",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0164",
+    "sentence": "Il y a une fenêtre dans la salle de bain.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0076",
+      "fr-wd-0066",
+      "fr-wd-0080",
+      "fr-wd-0031",
+      "fr-wd-0064"
+    ]
+  },
+  {
+    "id": "fr-sent-0165",
+    "sentence": "Ma salle de bain a une grande porte.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0064",
+      "fr-wd-0079",
+      "fr-wd-0076",
+      "fr-wd-0065"
+    ]
+  },
+  {
+    "id": "fr-sent-0166",
+    "sentence": "La porte est fermée.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0065",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0167",
+    "sentence": "Il y a une porte dans la chambre.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0076",
+      "fr-wd-0065",
+      "fr-wd-0080",
+      "fr-wd-0031",
+      "fr-wd-0061"
+    ]
+  },
+  {
+    "id": "fr-sent-0168",
+    "sentence": "Ma sœur ferme la porte doucement.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0040",
+      "fr-wd-0031",
+      "fr-wd-0065"
+    ]
+  },
+  {
+    "id": "fr-sent-0169",
+    "sentence": "La fenêtre est ouverte.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0066",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0170",
+    "sentence": "Il y a une fenêtre dans le salon.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0076",
+      "fr-wd-0066",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0062"
+    ]
+  },
+  {
+    "id": "fr-sent-0171",
+    "sentence": "J'ouvre la fenêtre chaque matin.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0066"
+    ]
+  },
+  {
+    "id": "fr-sent-0172",
+    "sentence": "La table est très grande.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0067",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0173",
+    "sentence": "Il y a une chaise près de la table.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0076",
+      "fr-wd-0068",
+      "fr-wd-0025",
+      "fr-wd-0031",
+      "fr-wd-0067"
+    ]
+  },
+  {
+    "id": "fr-sent-0174",
+    "sentence": "Nous mangeons à la table.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0031",
+      "fr-wd-0067"
+    ]
+  },
+  {
+    "id": "fr-sent-0175",
+    "sentence": "La chaise est confortable.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0068",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0176",
+    "sentence": "Il y a une chaise dans la chambre.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0076",
+      "fr-wd-0068",
+      "fr-wd-0080",
+      "fr-wd-0031",
+      "fr-wd-0061"
+    ]
+  },
+  {
+    "id": "fr-sent-0177",
+    "sentence": "Mon frère répare la chaise.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0039",
+      "fr-wd-0031",
+      "fr-wd-0068"
+    ]
+  },
+  {
+    "id": "fr-sent-0178",
+    "sentence": "Le lit est très confortable.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0069",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0179",
+    "sentence": "Mon lit est grand et confortable.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0069",
+      "fr-wd-0020",
+      "fr-wd-0004"
+    ]
+  },
+  {
+    "id": "fr-sent-0180",
+    "sentence": "Je fais le lit chaque matin.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0069"
+    ]
+  },
+  {
+    "id": "fr-sent-0181",
+    "sentence": "Le réfrigérateur est vide.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0070",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0182",
+    "sentence": "Il y a de la glace dans le réfrigérateur.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0025",
+      "fr-wd-0031",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0070"
+    ]
+  },
+  {
+    "id": "fr-sent-0183",
+    "sentence": "Mon réfrigérateur est nouveau.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0070",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0184",
+    "sentence": "La cuisinière est électrique.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0071",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0185",
+    "sentence": "Il y a une cuisinière dans la cuisine.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0076",
+      "fr-wd-0071",
+      "fr-wd-0080",
+      "fr-wd-0031",
+      "fr-wd-0063"
+    ]
+  },
+  {
+    "id": "fr-sent-0186",
+    "sentence": "Ma cuisinière a quatre feux.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0071",
+      "fr-wd-0079"
+    ]
+  },
+  {
+    "id": "fr-sent-0187",
+    "sentence": "La télévision est allumée.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0072",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0188",
+    "sentence": "Il y a une télévision dans le salon.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0076",
+      "fr-wd-0072",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0062"
+    ]
+  },
+  {
+    "id": "fr-sent-0189",
+    "sentence": "Nous regardons la télévision ensemble.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0031",
+      "fr-wd-0072"
+    ]
+  },
+  {
+    "id": "fr-sent-0190",
+    "sentence": "Le canapé est très confortable.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0073",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0191",
+    "sentence": "Mon canapé est bleu et confortable.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0073",
+      "fr-wd-0020",
+      "fr-wd-0004"
+    ]
+  },
+  {
+    "id": "fr-sent-0192",
+    "sentence": "Nous dormons sur le canapé.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0030",
+      "fr-wd-0073"
+    ]
+  },
+  {
+    "id": "fr-sent-0193",
+    "sentence": "Le jardin est très beau.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0074",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0194",
+    "sentence": "Il y a un jardin derrière la maison.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0075",
+      "fr-wd-0074",
+      "fr-wd-0031",
+      "fr-wd-0060"
+    ]
+  },
+  {
+    "id": "fr-sent-0195",
+    "sentence": "Mon jardin a beaucoup de fleurs.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0074",
+      "fr-wd-0079",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0196",
+    "sentence": "J'ai un frère et une sœur.",
+    "word_ids": [
+      "fr-wd-0075",
+      "fr-wd-0039",
+      "fr-wd-0004",
+      "fr-wd-0076",
+      "fr-wd-0040"
+    ]
+  },
+  {
+    "id": "fr-sent-0197",
+    "sentence": "Il y a un oncle gentil.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0075",
+      "fr-wd-0047"
+    ]
+  },
+  {
+    "id": "fr-sent-0198",
+    "sentence": "C'est un bon ami.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0075",
+      "fr-wd-0005"
+    ]
+  },
+  {
+    "id": "fr-sent-0199",
+    "sentence": "Une table ronde est dans le salon.",
+    "word_ids": [
+      "fr-wd-0076",
+      "fr-wd-0067",
+      "fr-wd-0020",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0062"
+    ]
+  },
+  {
+    "id": "fr-sent-0200",
+    "sentence": "Il y a une tante formidable.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0076",
+      "fr-wd-0048"
+    ]
+  },
+  {
+    "id": "fr-sent-0201",
+    "sentence": "C'est une bonne idée.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0076",
+      "fr-wd-0006"
+    ]
+  },
+  {
+    "id": "fr-sent-0202",
+    "sentence": "Il y a un problème ici.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0075",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0203",
+    "sentence": "Il y a beaucoup de livres là-bas.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0025",
+      "fr-wd-0082"
+    ]
+  },
+  {
+    "id": "fr-sent-0204",
+    "sentence": "Il y a une fête chez nous.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0076",
+      "fr-wd-0054"
+    ]
+  },
+  {
+    "id": "fr-sent-0205",
+    "sentence": "Ça va bien, merci.",
+    "word_ids": [
+      "fr-wd-0078",
+      "fr-wd-0012",
+      "fr-wd-0028"
+    ]
+  },
+  {
+    "id": "fr-sent-0206",
+    "sentence": "J'aime ça beaucoup.",
+    "word_ids": [
+      "fr-wd-0078"
+    ]
+  },
+  {
+    "id": "fr-sent-0207",
+    "sentence": "Ça, c'est intéressant.",
+    "word_ids": [
+      "fr-wd-0078",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0208",
+    "sentence": "Elle a une grande maison.",
+    "word_ids": [
+      "fr-wd-0079",
+      "fr-wd-0076",
+      "fr-wd-0060"
+    ]
+  },
+  {
+    "id": "fr-sent-0209",
+    "sentence": "Mon oncle a un beau jardin.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0047",
+      "fr-wd-0079",
+      "fr-wd-0075",
+      "fr-wd-0074"
+    ]
+  },
+  {
+    "id": "fr-sent-0210",
+    "sentence": "Il a trois chats.",
+    "word_ids": [
+      "fr-wd-0079"
+    ]
+  },
+  {
+    "id": "fr-sent-0211",
+    "sentence": "Le livre est dans le salon.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0020",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0062"
+    ]
+  },
+  {
+    "id": "fr-sent-0212",
+    "sentence": "Les clés sont dans la cuisine.",
+    "word_ids": [
+      "fr-wd-0080",
+      "fr-wd-0031",
+      "fr-wd-0063"
+    ]
+  },
+  {
+    "id": "fr-sent-0213",
+    "sentence": "Les enfants jouent dans le jardin.",
+    "word_ids": [
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0074"
+    ]
+  },
+  {
+    "id": "fr-sent-0214",
+    "sentence": "Viens ici, s'il te plaît.",
+    "word_ids": [
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0215",
+    "sentence": "Mon frère habite ici.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0039",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0216",
+    "sentence": "Nous sommes ici ensemble.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0217",
+    "sentence": "Mets le livre là-bas.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0082"
+    ]
+  },
+  {
+    "id": "fr-sent-0218",
+    "sentence": "Ma sœur est là.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0040",
+      "fr-wd-0020",
+      "fr-wd-0082"
+    ]
+  },
+  {
+    "id": "fr-sent-0219",
+    "sentence": "Il y a un chat là-bas.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0075",
+      "fr-wd-0082"
+    ]
+  }
+]
