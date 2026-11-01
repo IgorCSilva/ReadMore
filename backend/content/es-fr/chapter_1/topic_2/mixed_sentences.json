@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**Le** **frère** mayor cuida **avec** paciencia."
+  },
+  {
+    "sentence_number": 2,
+    "content": "**Toutes** ayudan **sans** quejarse."
+  },
+  {
+    "sentence_number": 3,
+    "content": "**L'enfant** juega **avec** sus juguetes."
+  },
+  {
+    "sentence_number": 4,
+    "content": "**Sa** **tante** cocina postres deliciosos."
+  },
+  {
+    "sentence_number": 5,
+    "content": "**Le** **père** **et** **la** **mère** se aman mucho."
+  },
+  {
+    "sentence_number": 6,
+    "content": "**Sa** **grand-mère** teje **avec** cuidado."
+  },
+  {
+    "sentence_number": 7,
+    "content": "**Le** **père** prepara café cada mañana."
+  },
+  {
+    "sentence_number": 8,
+    "content": "**Sa** **sœur** estudia **avec** pasión."
+  },
+  {
+    "sentence_number": 9,
+    "content": "**Toutes** las primas se reúnen en Navidad."
+  },
+  {
+    "sentence_number": 10,
+    "content": "**Nous** cuidamos **avec** cariño."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**Son** **cousin** corre **sans** cansarse."
+  },
+  {
+    "sentence_number": 12,
+    "content": "**Notre** **frère** celebra hoy un cumpleaños."
+  },
+  {
+    "sentence_number": 13,
+    "content": "**Ma** **cousine** estudia **avec** dedicación."
+  },
+  {
+    "sentence_number": 14,
+    "content": "**Son** **cousin** juega **avec** entusiasmo."
+  },
+  {
+    "sentence_number": 15,
+    "content": "**Sa** **tante** borda **avec** paciencia."
+  },
+  {
+    "sentence_number": 16,
+    "content": "**Sa** **mère** prepara **le** desayuno **sans** prisa."
+  },
+  {
+    "sentence_number": 17,
+    "content": "**Le** **bébé** sonríe **avec** ternura."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**Mes** **parents** sonríen **avec** orgullo."
+  },
+  {
+    "sentence_number": 19,
+    "content": "**Sa** **femme** sonríe **avec** calma."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**Mes** **parents** celebran **avec** alegría."
+  },
+  {
+    "sentence_number": 21,
+    "content": "**Toutes** celebran juntas cada año."
+  },
+  {
+    "sentence_number": 22,
+    "content": "**Notre** **enfant** crece muy rápido."
+  },
+  {
+    "sentence_number": 23,
+    "content": "**L'oncle** cuenta chistes graciosos."
+  },
+  {
+    "sentence_number": 24,
+    "content": "**Ma** **grand-mère** cuenta recuerdos **avec** cariño."
+  },
+  {
+    "sentence_number": 25,
+    "content": "**Mes** **parents** cocinan **avec** amor."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**La** **famille** se reúne cada Navidad."
+  },
+  {
+    "sentence_number": 27,
+    "content": "**Le** **fils** estudia **sans** descanso."
+  },
+  {
+    "sentence_number": 28,
+    "content": "**Le** **grand-père** **et** **la** **grand-mère** viven juntos."
+  },
+  {
+    "sentence_number": 29,
+    "content": "**Le** **mari** trabaja mucho."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**L'enfant** duerme tranquilo."
+  },
+  {
+    "sentence_number": 31,
+    "content": "**Son** **oncle** trabaja mucho siempre, **et** **son** **cousin** también."
+  },
+  {
+    "sentence_number": 32,
+    "content": "**Sa** **femme** organiza **sans** estrés."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**Toutes** preparan comida juntas."
+  },
+  {
+    "sentence_number": 34,
+    "content": "**Son** **mari** cuida **avec** cariño **et** **sans** quejarse."
+  },
+  {
+    "sentence_number": 35,
+    "content": "**Sa** **cousine** canta **avec** emoción."
+  },
+  {
+    "sentence_number": 36,
+    "content": "**Son** **père** le enseña mucho."
+  },
+  {
+    "sentence_number": 37,
+    "content": "**Son** **bébé** duerme **avec** calma."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**Notre** **oncle** vive muy lejos, **et** **son** **grand-père** también."
+  },
+  {
+    "sentence_number": 39,
+    "content": "Lo cuida **avec** mucho cariño."
+  },
+  {
+    "sentence_number": 40,
+    "content": "**Nous** vivimos juntos en una casa grande."
+  },
+  {
+    "sentence_number": 41,
+    "content": "**Ma** **tante** vive **avec** **son** **mari**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "**La** **fille** canta canciones hermosas."
+  },
+  {
+    "sentence_number": 43,
+    "content": "**Nous** compartimos momentos felices."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**Tous** ayudan **avec** las tareas."
+  },
+  {
+    "sentence_number": 45,
+    "content": "Tiene un **bébé** hermoso."
+  },
+  {
+    "sentence_number": 46,
+    "content": "**Son** **fils** estudia medicina."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**Notre** **sœur** viaja **sans** problemas, **et** **son** **oncle** también **la** visita."
+  },
+  {
+    "sentence_number": 48,
+    "content": "**Tous** celebran **avec** alegría."
+  },
+  {
+    "sentence_number": 49,
+    "content": "**Sa** **grand-mère** vive **avec** sus nietos."
+  },
+  {
+    "sentence_number": 50,
+    "content": "**Son** **enfant** aprende rápido."
+  },
+  {
+    "sentence_number": 51,
+    "content": "**Notre** **famille** vive **avec** esperanza."
+  },
+  {
+    "sentence_number": 52,
+    "content": "**Son** **mari** cocina los domingos."
+  },
+  {
+    "sentence_number": 53,
+    "content": "**La** **mère** cocina **avec** mucho cariño."
+  },
+  {
+    "sentence_number": 54,
+    "content": "**Le** **grand-père** cuenta recuerdos **avec** humor."
+  },
+  {
+    "sentence_number": 55,
+    "content": "**Son** **enfant** juega **avec** alegría en casa."
+  },
+  {
+    "sentence_number": 56,
+    "content": "**Notre** **frère** crece cada año, **et** **son** **oncle** lo visita siempre."
+  },
+  {
+    "sentence_number": 57,
+    "content": "**Le** **fils** menor aprende **avec** curiosidad."
+  },
+  {
+    "sentence_number": 58,
+    "content": "**Le** **grand-père** **et** **la** **grand-mère** descansan juntos."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**Le** **fils** estudia **avec** mucho esfuerzo."
+  },
+  {
+    "sentence_number": 60,
+    "content": "**Son** **père** vive **avec** cariño."
+  },
+  {
+    "sentence_number": 61,
+    "content": "**Son** **fils** juega **avec** sus amigos."
+  },
+  {
+    "sentence_number": 62,
+    "content": "Tengo un **cousin** **et** una **cousine** que viven cerca."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**Son** **grand-père** cuenta historias increíbles."
+  },
+  {
+    "sentence_number": 64,
+    "content": "**Sa** **fille** pinta cuadros hermosos."
+  },
+  {
+    "sentence_number": 65,
+    "content": "**Toutes** bailan **avec** ritmo."
+  },
+  {
+    "sentence_number": 66,
+    "content": "**Son** **bébé** duerme tranquilo siempre."
+  },
+  {
+    "sentence_number": 67,
+    "content": "**Notre** **père** trabaja **avec** esfuerzo."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**La** **sœur** menor aprende **avec** entusiasmo."
+  },
+  {
+    "sentence_number": 69,
+    "content": "**La** **famille** celebra **avec** música."
+  },
+  {
+    "sentence_number": 70,
+    "content": "**Mes** **parents** viven muy cerca."
+  },
+  {
+    "sentence_number": 71,
+    "content": "**Ma** **famille** vive muy unida **et** feliz, **avec** **son** **enfant** siempre cerca."
+  },
+  {
+    "sentence_number": 72,
+    "content": "**Ma** **sœur** canta **avec** dulzura."
+  },
+  {
+    "sentence_number": 73,
+    "content": "**La** **fille** mayor cuida **avec** amor."
+  },
+  {
+    "sentence_number": 74,
+    "content": "**Ma** **tante** cocina **avec** sazón."
+  },
+  {
+    "sentence_number": 75,
+    "content": "**Notre** **tante** llama cada domingo."
+  },
+  {
+    "sentence_number": 76,
+    "content": "**Le** **bébé** ríe **avec** alegría."
+  },
+  {
+    "sentence_number": 77,
+    "content": "**Sa** **fille** sonríe siempre feliz."
+  },
+  {
+    "sentence_number": 78,
+    "content": "**Son** **oncle** pesca cada semana."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**La** **fille** pinta **avec** talento."
+  },
+  {
+    "sentence_number": 80,
+    "content": "**Nous** compartimos momentos **sans** fin."
+  },
+  {
+    "sentence_number": 81,
+    "content": "**Sa** **femme** sonríe **avec** dulzura."
+  },
+  {
+    "sentence_number": 82,
+    "content": "**Son** **mari** viaja mucho **sans** descanso."
+  },
+  {
+    "sentence_number": 83,
+    "content": "**Son** **cousin** vive **sans** problemas."
+  },
+  {
+    "sentence_number": 84,
+    "content": "**La** **femme** cocina delicioso."
+  },
+  {
+    "sentence_number": 85,
+    "content": "**Ma** **famille** crece cada año **avec** alegría."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**Sa** **sœur** estudia **avec** sus compañeros."
+  },
+  {
+    "sentence_number": 87,
+    "content": "**Mes** **parents** viajan **sans** parar."
+  },
+  {
+    "sentence_number": 88,
+    "content": "**Son** **enfant** cocina **avec** gusto."
+  },
+  {
+    "sentence_number": 89,
+    "content": "**Notre** **mère** siempre sonríe feliz."
+  },
+  {
+    "sentence_number": 90,
+    "content": "**Son** **frère** viaja mucho **sans** miedo."
+  },
+  {
+    "sentence_number": 91,
+    "content": "Vive **sans** miedo siempre."
+  },
+  {
+    "sentence_number": 92,
+    "content": "**Nous** celebramos siempre los cumpleaños juntos."
+  },
+  {
+    "sentence_number": 93,
+    "content": "**Sa** **femme** organiza fiestas maravillosas."
+  },
+  {
+    "sentence_number": 94,
+    "content": "**Sa** **cousine** viaja **sans** miedo."
+  },
+  {
+    "sentence_number": 95,
+    "content": "**Tous** los primos juegan juntos."
+  },
+  {
+    "sentence_number": 96,
+    "content": "**Ma** **mère** cocina **et** canta feliz."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**Ma** **cousine** estudia **avec** esmero."
+  },
+  {
+    "sentence_number": 98,
+    "content": "**Son** **frère** vive lejos, pero llama cada semana."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**Tous** comen juntos cada domingo."
+  },
+  {
+    "sentence_number": 100,
+    "content": "**Tous** ríen **avec** ganas."
+  }
+]

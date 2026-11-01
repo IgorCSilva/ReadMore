@@ -217,11 +217,16 @@ export interface StoryResponse {
 
 // Listing weight only (no sentences) — what /api/learning-topics returns
 // for every topic across every theme, grouped client-side by `theme`.
+// `theme` is the routing key (e.g. "health", shared across languages);
+// `theme_label`/`topic_group` are the display names in the target idiom
+// (e.g. "Salud"/"Nutrición"), read from the content's own JSON fields.
 export interface LearningTopicSummary {
   topic_id: string
   theme: string
   title: string
   level: string
+  theme_label: string
+  topic_group: string
 }
 
 export interface LearningTopicsResponse {
@@ -239,6 +244,8 @@ export interface LearningTopic {
   theme: string
   title: string
   level: string
+  theme_label: string
+  topic_group: string
   sentences: string[]
   glossary: Record<string, GlossaryEntry>
 }

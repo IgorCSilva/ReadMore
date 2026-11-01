@@ -1,8 +1,6 @@
 ## Add relations
 
-native: es
-
-Check introduce_content/current_info.md file to know the target idiom, chapter and topic numbers.
+Check introduce_content/current_info.md file to know the native idiom, target idiom, chapter and topic numbers.
 
 file: backend/content/<target>/chapter_<N>/topic_<M>/words.json
 
