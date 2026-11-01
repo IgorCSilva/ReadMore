@@ -160,12 +160,21 @@ class Story(StorySummary):
 class LearningTopicSummary:
     """Listing-weight info for one theme/learning content — just enough for
     /api/learning-topics to group every topic by theme without shipping its
-    full sentences."""
+    full sentences.
+
+    `theme` is the directory-key (e.g. "health") used for routing/lookup —
+    shared across every target language so the same theme lines up across
+    content trees. `theme_label`/`topic_group` are the display names in the
+    target idiom (e.g. "Salud"/"Nutrición" for es, "Santé"/"Nutrition" for
+    fr), read straight from each topic's own "theme"/"topic" JSON fields so
+    the UI never shows the English directory key to a learner."""
 
     topic_id: str
     theme: str
     title: str
     level: str
+    theme_label: str = ""
+    topic_group: str = ""
 
 
 @dataclass

@@ -1,0 +1,800 @@
+[
+  {
+    "id": "fr-sent-0061",
+    "sentence": "Le père prépare le petit-déjeuner.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0038",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0062",
+    "sentence": "Le frère aîné aide toujours.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0039"
+    ]
+  },
+  {
+    "id": "fr-sent-0063",
+    "sentence": "Le mari arrive bientôt.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0052"
+    ]
+  },
+  {
+    "id": "fr-sent-0064",
+    "sentence": "La mère chante une chanson.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0037"
+    ]
+  },
+  {
+    "id": "fr-sent-0065",
+    "sentence": "La sœur cadette apprend le français.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0040",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0066",
+    "sentence": "La famille se réunit chaque année.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0036"
+    ]
+  },
+  {
+    "id": "fr-sent-0067",
+    "sentence": "Ma mère cuisine très bien.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0037",
+      "fr-wd-0012"
+    ]
+  },
+  {
+    "id": "fr-sent-0068",
+    "sentence": "Ma sœur habite à Lyon.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0040"
+    ]
+  },
+  {
+    "id": "fr-sent-0069",
+    "sentence": "Ma tante adore jardiner.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0048"
+    ]
+  },
+  {
+    "id": "fr-sent-0070",
+    "sentence": "Mes parents habitent à Paris.",
+    "word_ids": [
+      "fr-wd-0033",
+      "fr-wd-0041"
+    ]
+  },
+  {
+    "id": "fr-sent-0071",
+    "sentence": "Mes amis arrivent demain.",
+    "word_ids": [
+      "fr-wd-0033"
+    ]
+  },
+  {
+    "id": "fr-sent-0072",
+    "sentence": "Mes parents me manquent déjà.",
+    "word_ids": [
+      "fr-wd-0033",
+      "fr-wd-0041",
+      "fr-wd-0023"
+    ]
+  },
+  {
+    "id": "fr-sent-0073",
+    "sentence": "Son père travaille beaucoup.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0038"
+    ]
+  },
+  {
+    "id": "fr-sent-0074",
+    "sentence": "Son frère étudie la médecine.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0039",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0075",
+    "sentence": "Son fils joue dans le jardin.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0042",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0076",
+    "sentence": "Sa mère prépare le dîner.",
+    "word_ids": [
+      "fr-wd-0035",
+      "fr-wd-0037",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0077",
+    "sentence": "Sa sœur chante bien.",
+    "word_ids": [
+      "fr-wd-0035",
+      "fr-wd-0040",
+      "fr-wd-0012"
+    ]
+  },
+  {
+    "id": "fr-sent-0078",
+    "sentence": "Sa fille apprend à lire.",
+    "word_ids": [
+      "fr-wd-0035",
+      "fr-wd-0043"
+    ]
+  },
+  {
+    "id": "fr-sent-0079",
+    "sentence": "Ma famille est très unie.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0036",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0080",
+    "sentence": "La famille de Pierre est grande.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0036",
+      "fr-wd-0025",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0081",
+    "sentence": "Notre famille se réunit à Noël.",
+    "word_ids": [
+      "fr-wd-0055",
+      "fr-wd-0036"
+    ]
+  },
+  {
+    "id": "fr-sent-0082",
+    "sentence": "Ma mère travaille à l'hôpital.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0037"
+    ]
+  },
+  {
+    "id": "fr-sent-0083",
+    "sentence": "La mère de Thomas est médecin.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0037",
+      "fr-wd-0025",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0084",
+    "sentence": "Sa mère chante très bien.",
+    "word_ids": [
+      "fr-wd-0035",
+      "fr-wd-0037",
+      "fr-wd-0012"
+    ]
+  },
+  {
+    "id": "fr-sent-0085",
+    "sentence": "Mon père travaille à Paris.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0038"
+    ]
+  },
+  {
+    "id": "fr-sent-0086",
+    "sentence": "Le père de Julie est ingénieur.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0038",
+      "fr-wd-0025",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0087",
+    "sentence": "Son père raconte toujours de belles histoires.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0038",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0088",
+    "sentence": "Mon frère habite à Lyon.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0039"
+    ]
+  },
+  {
+    "id": "fr-sent-0089",
+    "sentence": "Le frère de Marie est sympathique.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0039",
+      "fr-wd-0025",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0090",
+    "sentence": "Son frère et sa sœur sont proches.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0039",
+      "fr-wd-0004",
+      "fr-wd-0035",
+      "fr-wd-0040"
+    ]
+  },
+  {
+    "id": "fr-sent-0091",
+    "sentence": "Ma sœur adore la musique.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0040",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0092",
+    "sentence": "La sœur de Paul est médecin.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0040",
+      "fr-wd-0025",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0093",
+    "sentence": "Sa sœur chante dans un groupe.",
+    "word_ids": [
+      "fr-wd-0035",
+      "fr-wd-0040"
+    ]
+  },
+  {
+    "id": "fr-sent-0094",
+    "sentence": "Mes parents sont très gentils.",
+    "word_ids": [
+      "fr-wd-0033",
+      "fr-wd-0041"
+    ]
+  },
+  {
+    "id": "fr-sent-0095",
+    "sentence": "Mes parents aiment voyager ensemble.",
+    "word_ids": [
+      "fr-wd-0033",
+      "fr-wd-0041"
+    ]
+  },
+  {
+    "id": "fr-sent-0096",
+    "sentence": "Parents et enfants se retrouvent à Noël.",
+    "word_ids": [
+      "fr-wd-0041",
+      "fr-wd-0004"
+    ]
+  },
+  {
+    "id": "fr-sent-0097",
+    "sentence": "Mon fils apprend le français.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0042",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0098",
+    "sentence": "Le fils de Marc aime la musique.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0042",
+      "fr-wd-0025",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0099",
+    "sentence": "Son fils et sa fille jouent ensemble.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0042",
+      "fr-wd-0004",
+      "fr-wd-0035",
+      "fr-wd-0043"
+    ]
+  },
+  {
+    "id": "fr-sent-0100",
+    "sentence": "Ma fille apprend à lire.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0043"
+    ]
+  },
+  {
+    "id": "fr-sent-0101",
+    "sentence": "La fille de Sophie est adorable.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0043",
+      "fr-wd-0025",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0102",
+    "sentence": "Sa fille et son fils sont jumeaux.",
+    "word_ids": [
+      "fr-wd-0035",
+      "fr-wd-0043",
+      "fr-wd-0004",
+      "fr-wd-0034",
+      "fr-wd-0042"
+    ]
+  },
+  {
+    "id": "fr-sent-0103",
+    "sentence": "L'enfant joue dans le jardin.",
+    "word_ids": [
+      "fr-wd-0044",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0104",
+    "sentence": "Mon enfant apprend vite.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0044"
+    ]
+  },
+  {
+    "id": "fr-sent-0105",
+    "sentence": "Son enfant dort déjà.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0044"
+    ]
+  },
+  {
+    "id": "fr-sent-0106",
+    "sentence": "Mon grand-père raconte toujours de longues histoires.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0045",
+      "fr-wd-0038",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0107",
+    "sentence": "Le grand-père de Camille est pêcheur.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0045",
+      "fr-wd-0038",
+      "fr-wd-0025",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0108",
+    "sentence": "Son grand-père et sa grand-mère voyagent souvent.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0045",
+      "fr-wd-0038",
+      "fr-wd-0004",
+      "fr-wd-0035",
+      "fr-wd-0046",
+      "fr-wd-0037"
+    ]
+  },
+  {
+    "id": "fr-sent-0109",
+    "sentence": "Ma grand-mère cuisine très bien.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0046",
+      "fr-wd-0037",
+      "fr-wd-0012"
+    ]
+  },
+  {
+    "id": "fr-sent-0110",
+    "sentence": "La grand-mère de Nina habite à la campagne.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0046",
+      "fr-wd-0037",
+      "fr-wd-0025",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0111",
+    "sentence": "Sa grand-mère tricote chaque soir.",
+    "word_ids": [
+      "fr-wd-0035",
+      "fr-wd-0046",
+      "fr-wd-0037"
+    ]
+  },
+  {
+    "id": "fr-sent-0112",
+    "sentence": "L'oncle raconte toujours de bonnes blagues.",
+    "word_ids": [
+      "fr-wd-0047",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0113",
+    "sentence": "Mon oncle habite à Marseille.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0047"
+    ]
+  },
+  {
+    "id": "fr-sent-0114",
+    "sentence": "Son oncle et sa tante arrivent demain.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0047",
+      "fr-wd-0004",
+      "fr-wd-0035",
+      "fr-wd-0048"
+    ]
+  },
+  {
+    "id": "fr-sent-0115",
+    "sentence": "Ma tante aime beaucoup voyager.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0048"
+    ]
+  },
+  {
+    "id": "fr-sent-0116",
+    "sentence": "La tante de Hugo est professeure.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0048",
+      "fr-wd-0025",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0117",
+    "sentence": "Sa tante prépare toujours de bons gâteaux.",
+    "word_ids": [
+      "fr-wd-0035",
+      "fr-wd-0048",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0118",
+    "sentence": "Mon cousin habite à Toulouse.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0049"
+    ]
+  },
+  {
+    "id": "fr-sent-0119",
+    "sentence": "Le cousin de Léo aime la guitare.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0049",
+      "fr-wd-0025",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0120",
+    "sentence": "Son cousin et sa cousine arrivent ce soir.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0049",
+      "fr-wd-0004",
+      "fr-wd-0035",
+      "fr-wd-0050"
+    ]
+  },
+  {
+    "id": "fr-sent-0121",
+    "sentence": "Ma cousine habite à Nice.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0050"
+    ]
+  },
+  {
+    "id": "fr-sent-0122",
+    "sentence": "La cousine de Thomas est danseuse.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0050",
+      "fr-wd-0025",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0123",
+    "sentence": "Sa cousine chante merveilleusement bien.",
+    "word_ids": [
+      "fr-wd-0035",
+      "fr-wd-0050",
+      "fr-wd-0012"
+    ]
+  },
+  {
+    "id": "fr-sent-0124",
+    "sentence": "Le bébé dort paisiblement.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0051"
+    ]
+  },
+  {
+    "id": "fr-sent-0125",
+    "sentence": "Mon bébé sourit souvent.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0051"
+    ]
+  },
+  {
+    "id": "fr-sent-0126",
+    "sentence": "Son bébé pleure rarement.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0051"
+    ]
+  },
+  {
+    "id": "fr-sent-0127",
+    "sentence": "Mon mari travaille à Paris.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0052"
+    ]
+  },
+  {
+    "id": "fr-sent-0128",
+    "sentence": "Le mari de Camille est architecte.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0052",
+      "fr-wd-0025",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0129",
+    "sentence": "Son mari et sa femme voyagent beaucoup.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0052",
+      "fr-wd-0004",
+      "fr-wd-0035",
+      "fr-wd-0053"
+    ]
+  },
+  {
+    "id": "fr-sent-0130",
+    "sentence": "Ma femme adore la lecture.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0053",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0131",
+    "sentence": "La femme de Marc est avocate.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0053",
+      "fr-wd-0025",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0132",
+    "sentence": "Sa femme prépare toujours de bons plats.",
+    "word_ids": [
+      "fr-wd-0035",
+      "fr-wd-0053",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0133",
+    "sentence": "Nous habitons à Paris ensemble.",
+    "word_ids": [
+      "fr-wd-0054"
+    ]
+  },
+  {
+    "id": "fr-sent-0134",
+    "sentence": "Nous aimons beaucoup notre famille.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0055",
+      "fr-wd-0036"
+    ]
+  },
+  {
+    "id": "fr-sent-0135",
+    "sentence": "Nous partageons toujours de bons moments.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0136",
+    "sentence": "Notre famille est très unie.",
+    "word_ids": [
+      "fr-wd-0055",
+      "fr-wd-0036",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0137",
+    "sentence": "Notre mère nous soutient toujours.",
+    "word_ids": [
+      "fr-wd-0055",
+      "fr-wd-0037",
+      "fr-wd-0054"
+    ]
+  },
+  {
+    "id": "fr-sent-0138",
+    "sentence": "Notre père travaille beaucoup.",
+    "word_ids": [
+      "fr-wd-0055",
+      "fr-wd-0038"
+    ]
+  },
+  {
+    "id": "fr-sent-0139",
+    "sentence": "Tous mangent ensemble ce soir.",
+    "word_ids": [
+      "fr-wd-0056"
+    ]
+  },
+  {
+    "id": "fr-sent-0140",
+    "sentence": "Tous aiment cette tradition familiale.",
+    "word_ids": [
+      "fr-wd-0056"
+    ]
+  },
+  {
+    "id": "fr-sent-0141",
+    "sentence": "Tous arrivent toujours à l'heure.",
+    "word_ids": [
+      "fr-wd-0056"
+    ]
+  },
+  {
+    "id": "fr-sent-0142",
+    "sentence": "Toutes célèbrent ensemble ce jour.",
+    "word_ids": [
+      "fr-wd-0057",
+      "fr-wd-0007"
+    ]
+  },
+  {
+    "id": "fr-sent-0143",
+    "sentence": "Toutes préparent le repas ensemble.",
+    "word_ids": [
+      "fr-wd-0057",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0144",
+    "sentence": "Toutes arrivent avec le sourire.",
+    "word_ids": [
+      "fr-wd-0057",
+      "fr-wd-0058",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0145",
+    "sentence": "Je voyage avec plaisir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0146",
+    "sentence": "Son père part avec le sourire.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0038",
+      "fr-wd-0058",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0147",
+    "sentence": "Elle cuisine avec sa mère.",
+    "word_ids": [
+      "fr-wd-0058",
+      "fr-wd-0035",
+      "fr-wd-0037"
+    ]
+  },
+  {
+    "id": "fr-sent-0148",
+    "sentence": "Il part sans attendre.",
+    "word_ids": [
+      "fr-wd-0059"
+    ]
+  },
+  {
+    "id": "fr-sent-0149",
+    "sentence": "Elle vit sans soucis.",
+    "word_ids": [
+      "fr-wd-0059"
+    ]
+  },
+  {
+    "id": "fr-sent-0150",
+    "sentence": "Son frère voyage sans sa sœur.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0039",
+      "fr-wd-0059",
+      "fr-wd-0035",
+      "fr-wd-0040"
+    ]
+  }
+]

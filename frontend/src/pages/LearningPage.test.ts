@@ -33,21 +33,31 @@ describe('LearningPage', () => {
     vi.restoreAllMocks()
   })
 
-  it('groups topics by theme', async () => {
+  it('groups topics by theme label and sub-groups by topic group', async () => {
     vi.mocked(api.getLearningTopics).mockResolvedValue({
       lang: 'es',
       topics: [
-        { topic_id: 'NUT_1', theme: 'health', title: 'Macronutrientes', level: 'A1' },
-        { topic_id: 'EXE_1', theme: 'health', title: 'Ejercicio', level: 'A1' },
+        {
+          topic_id: 'NUT_1', theme: 'health', title: 'Macronutrientes', level: 'A1',
+          theme_label: 'Salud', topic_group: 'Nutrición',
+        },
+        {
+          topic_id: 'EXE_1', theme: 'health', title: 'Ejercicio', level: 'A1',
+          theme_label: 'Salud', topic_group: 'Ejercicio físico',
+        },
       ],
     })
 
     const { wrapper } = await mountPage()
     try {
-      expect(wrapper.findAll('.theme-heading').map((h) => h.text())).toEqual(['Health'])
+      expect(wrapper.findAll('.theme-heading').map((h) => h.text())).toEqual(['Salud'])
+      expect(wrapper.findAll('.topic-group-heading').map((h) => h.text())).toEqual([
+        'Ejercicio físico',
+        'Nutrición',
+      ])
       expect(wrapper.findAll('.topic-card').map((c) => c.text())).toEqual([
-        '(A1) Macronutrientes',
         '(A1) Ejercicio',
+        '(A1) Macronutrientes',
       ])
     } finally {
       wrapper.unmount()
@@ -57,7 +67,12 @@ describe('LearningPage', () => {
   it('links a topic card to its reader page, by theme and topic id', async () => {
     vi.mocked(api.getLearningTopics).mockResolvedValue({
       lang: 'es',
-      topics: [{ topic_id: 'NUT_1', theme: 'health', title: 'Macronutrientes', level: 'A1' }],
+      topics: [
+        {
+          topic_id: 'NUT_1', theme: 'health', title: 'Macronutrientes', level: 'A1',
+          theme_label: 'Salud', topic_group: 'Nutrición',
+        },
+      ],
     })
 
     const { wrapper, router } = await mountPage()

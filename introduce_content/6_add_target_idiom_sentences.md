@@ -1,7 +1,6 @@
 ## Add target idiom natural sentences
 
-target: fr
-Check introduce_content/current_info.md file to know the chapter and topic numbers.
+Check introduce_content/current_info.md file to know the native idiom, target idiom, chapter and topic numbers.
 
 Now, generate simple natural sentences, following the pattern in
 backend/content/es/chapter_<chapter>/topic_<topic>/sentences.json.

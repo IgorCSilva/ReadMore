@@ -1,8 +1,6 @@
 ## Add auxiliar sentences
 
-native: es
-target: fr
-Check introduce_content/current_info.md file to know the chapter and topic numbers.
+Check introduce_content/current_info.md file to know the native idiom, target idiom, chapter and topic numbers.
 
 Build one "mixin" example sentence per word/expression in this chapter/topic, in
 backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json.

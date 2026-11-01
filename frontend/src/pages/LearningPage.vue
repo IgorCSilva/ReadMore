@@ -11,16 +11,20 @@
     <p class="learning-empty" v-else-if="themes.length === 0">No content yet.</p>
 
     <div class="theme-group" v-else v-for="theme in themes" :key="theme">
-      <div class="theme-heading">{{ formatTheme(theme) }}</div>
+      <div class="theme-heading">{{ themeLabel(theme) }}</div>
 
-      <RouterLink
-        v-for="topic in topicsByTheme[theme]"
-        :key="topic.topic_id"
-        :to="{ name: 'learning-topic', params: { theme, topicId: topic.topic_id } }"
-        class="topic-card"
-      >
-        {{ topicLabel(topic) }}
-      </RouterLink>
+      <div class="topic-group" v-for="group in topicGroupsByTheme[theme]" :key="group.label">
+        <div class="topic-group-heading" v-if="group.label">{{ group.label }}</div>
+
+        <RouterLink
+          v-for="topic in group.topics"
+          :key="topic.topic_id"
+          :to="{ name: 'learning-topic', params: { theme, topicId: topic.topic_id } }"
+          class="topic-card"
+        >
+          {{ topicLabel(topic) }}
+        </RouterLink>
+      </div>
     </div>
   </div>
 </template>
@@ -48,9 +52,32 @@ const topicsByTheme = computed(() => {
 // fixed CEFR ladder, there's no fixed universe of themes to pre-list.
 const themes = computed(() => Object.keys(topicsByTheme.value).sort())
 
-function formatTheme(theme: string): string {
-  return theme.charAt(0).toUpperCase() + theme.slice(1)
+// Every topic in a theme shares the same theme_label (it's the same
+// content tree's own "theme" field), so the first topic's value stands in
+// for the whole group. Falls back to the routing key itself if a theme
+// somehow has no topics (shouldn't happen, themes is derived from them).
+function themeLabel(theme: string): string {
+  return topicsByTheme.value[theme]?.[0]?.theme_label || theme
 }
+
+// Sub-groups each theme's topics by topic_group (e.g. "Nutrición" vs.
+// "Ejercicio físico" within "Salud"), sorted alphabetically by label so the
+// order is stable regardless of glob/filesystem order. A topic with no
+// topic_group (content not yet carrying that field) lands in a labelless
+// group, rendered without a subheading rather than an empty one.
+const topicGroupsByTheme = computed(() => {
+  const result: Record<string, { label: string; topics: LearningTopicSummary[] }[]> = {}
+  for (const theme of themes.value) {
+    const byGroup: Record<string, LearningTopicSummary[]> = {}
+    for (const topic of topicsByTheme.value[theme]) {
+      ;(byGroup[topic.topic_group] ??= []).push(topic)
+    }
+    result[theme] = Object.keys(byGroup)
+      .sort()
+      .map((label) => ({ label, topics: byGroup[label] }))
+  }
+  return result
+})
 
 function topicLabel(topic: LearningTopicSummary): string {
   return `(${topic.level}) ${topic.title}`
@@ -116,7 +143,7 @@ onMounted(async () => {
 .theme-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
 }
 
 .theme-heading {
@@ -125,6 +152,21 @@ onMounted(async () => {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--muted);
+}
+
+.topic-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.topic-group-heading {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  opacity: 0.75;
 }
 
 .topic-card {
