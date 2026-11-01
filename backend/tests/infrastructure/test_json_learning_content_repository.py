@@ -27,20 +27,40 @@ def test_list_topics_returns_summaries_across_themes(tmp_path):
     content_dir = tmp_path / "content"
     _write_topic(
         content_dir, "es", "health", "NUT_1",
-        {"id": "NUT_1", "title": "Macronutrientes", "level": "A1", "sentences": []},
+        {
+            "id": "NUT_1", "theme": "salud", "topic": "nutrición",
+            "title": "Macronutrientes", "level": "A1", "sentences": [],
+        },
     )
     _write_topic(
         content_dir, "es", "health", "EXE_1",
-        {"id": "EXE_1", "title": "Ejercicio", "level": "A1", "sentences": []},
+        {
+            "id": "EXE_1", "theme": "salud", "topic": "ejercicio físico",
+            "title": "Ejercicio", "level": "A1", "sentences": [],
+        },
     )
     repository = JsonLearningContentRepository(content_dir)
 
     result = repository.list_topics("es")
 
-    assert {(t.topic_id, t.theme, t.title, t.level) for t in result} == {
-        ("NUT_1", "health", "Macronutrientes", "A1"),
-        ("EXE_1", "health", "Ejercicio", "A1"),
+    assert {(t.topic_id, t.theme, t.title, t.level, t.theme_label, t.topic_group) for t in result} == {
+        ("NUT_1", "health", "Macronutrientes", "A1", "salud", "nutrición"),
+        ("EXE_1", "health", "Ejercicio", "A1", "salud", "ejercicio físico"),
     }
+
+
+def test_list_topics_defaults_theme_label_when_json_has_no_theme_field(tmp_path):
+    content_dir = tmp_path / "content"
+    _write_topic(
+        content_dir, "fr", "health", "NUT_1",
+        {"id": "NUT_1", "title": "Macronutriments", "level": "A1", "sentences": []},
+    )
+    repository = JsonLearningContentRepository(content_dir)
+
+    result = repository.list_topics("fr")
+
+    assert result[0].theme_label == "Health"
+    assert result[0].topic_group == ""
 
 
 def test_list_topics_only_matches_the_requested_language_code(tmp_path):
@@ -69,6 +89,8 @@ def test_get_topic_returns_sentences_and_glossary(tmp_path):
         content_dir, "es", "health", "NUT_1",
         {
             "id": "NUT_1",
+            "theme": "salud",
+            "topic": "nutrición",
             "title": "Macronutrientes",
             "level": "A1",
             "sentences": ["# Nutrición", "", "Usa el método del plato."],
@@ -97,6 +119,8 @@ def test_get_topic_returns_sentences_and_glossary(tmp_path):
 
     assert topic.topic_id == "NUT_1"
     assert topic.theme == "health"
+    assert topic.theme_label == "salud"
+    assert topic.topic_group == "nutrición"
     assert topic.title == "Macronutrientes"
     assert topic.level == "A1"
     assert topic.sentences == ["# Nutrición", "", "Usa el método del plato."]

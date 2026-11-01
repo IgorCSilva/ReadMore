@@ -10,10 +10,19 @@ class LearningTopicSummaryDTO(BaseModel):
     theme: str
     title: str
     level: str
+    theme_label: str
+    topic_group: str
 
     @classmethod
     def from_entity(cls, topic: LearningTopicSummary) -> "LearningTopicSummaryDTO":
-        return cls(topic_id=topic.topic_id, theme=topic.theme, title=topic.title, level=topic.level)
+        return cls(
+            topic_id=topic.topic_id,
+            theme=topic.theme,
+            title=topic.title,
+            level=topic.level,
+            theme_label=topic.theme_label,
+            topic_group=topic.topic_group,
+        )
 
 
 class LearningTopicsResponse(BaseModel):
@@ -26,6 +35,8 @@ class LearningTopicDTO(BaseModel):
     theme: str
     title: str
     level: str
+    theme_label: str
+    topic_group: str
     sentences: list[str]
     glossary: dict[str, GlossaryEntryDTO]
 
@@ -36,6 +47,8 @@ class LearningTopicDTO(BaseModel):
             theme=topic.theme,
             title=topic.title,
             level=topic.level,
+            theme_label=topic.theme_label,
+            topic_group=topic.topic_group,
             sentences=topic.sentences,
             glossary={k: GlossaryEntryDTO.from_entity(v) for k, v in topic.glossary.items()},
         )

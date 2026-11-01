@@ -60,7 +60,12 @@ class JsonLearningContentRepository(LearningContentRepository):
             data = self._load_json(path)
             summaries.append(
                 LearningTopicSummary(
-                    topic_id=data["id"], theme=theme, title=data["title"], level=data["level"]
+                    topic_id=data["id"],
+                    theme=theme,
+                    title=data["title"],
+                    level=data["level"],
+                    theme_label=data.get("theme", theme.capitalize()),
+                    topic_group=data.get("topic", ""),
                 )
             )
         return summaries
@@ -86,6 +91,8 @@ class JsonLearningContentRepository(LearningContentRepository):
             theme=theme,
             title=data["title"],
             level=data["level"],
+            theme_label=data.get("theme", theme.capitalize()),
+            topic_group=data.get("topic", ""),
             sentences=sentences,
             glossary=glossary,
         )
