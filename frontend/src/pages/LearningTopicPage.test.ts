@@ -18,6 +18,8 @@ const TOPIC: LearningTopic = {
   theme: 'health',
   title: 'Macronutrientes',
   level: 'A1',
+  theme_label: 'Salud',
+  topic_group: 'Nutrición',
   sentences: ['Line one.', 'Line two.', '', 'Line three.'],
   glossary: {},
 }
