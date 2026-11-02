@@ -11,6 +11,12 @@ anchoring, which also keeps the match from firing mid-word (e.g. "학교" inside
 vowel/h, dropping their final letter and gluing an apostrophe straight onto
 the next word (e.g. "je" + "me" + "appelle" -> "je m'appelle") — a plain
 \\bme\\b never fires there either, since the literal substring "me" is gone.
+Japanese has the same no-trailing-boundary problem as Korean and for the same
+reason — particles (は/が/を/に/で/と/も/...) and verb/adjective endings glue
+directly onto the word they attach to with no space anywhere in the
+sentence, not just at particle junctions (e.g. "日本" + "に" -> "日本に") — so
+it reuses Korean's left-anchor-only approach, just over hiragana/katakana/
+kanji ranges instead of Hangul syllables.
 
 New target languages default to the Latin/space-delimited strategy; add an
 entry to _STRATEGIES only when a language's word-boundary rules genuinely
@@ -20,6 +26,11 @@ import re
 from typing import Callable
 
 _HANGUL_SYLLABLES = "가-힣"
+# Hiragana, katakana, and the CJK Unified Ideographs block covering the
+# kanji actually used in Japanese — enough to detect "is the character
+# right before this match itself Japanese script," same purpose
+# _HANGUL_SYLLABLES serves for Korean.
+_JAPANESE_SCRIPT = "぀-ヿ一-鿿"
 
 # Short French pronouns/articles that elide (drop their final vowel, glue an
 # apostrophe onto what follows) before a vowel or mute h. Keyed by the
@@ -39,6 +50,10 @@ def _korean_boundary(word: str) -> str:
     return rf"(?<![{_HANGUL_SYLLABLES}]){re.escape(word)}"
 
 
+def _japanese_boundary(word: str) -> str:
+    return rf"(?<![{_JAPANESE_SCRIPT}]){re.escape(word)}"
+
+
 def _french_boundary(word: str) -> str:
     plain = _latin_boundary(word)
     elision = _FRENCH_ELISIONS.get(word.lower())
@@ -49,6 +64,7 @@ def _french_boundary(word: str) -> str:
 
 _STRATEGIES: dict[str, Callable[[str], str]] = {
     "ko": _korean_boundary,
+    "ja": _japanese_boundary,
     "fr": _french_boundary,
 }
 

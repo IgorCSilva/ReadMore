@@ -50,6 +50,7 @@ applyStoredAccent()
     --accent-ko: #a374ff;    --accent-ko-soft: #2c2140;  --accent-ko-strong: #8a54f0;
     --accent-zh: #ff5470;    --accent-zh-soft: #3a1620;  --accent-zh-strong: #e63955;
     --accent-fr: #2fb8c4;    --accent-fr-soft: #14343a;  --accent-fr-strong: #1f98a3;
+    --accent-ja: #e6397f;    --accent-ja-soft: #3a1a2c;  --accent-ja-strong: #c42a6a;
   }
   @media (prefers-color-scheme: light) {
     :root {
@@ -66,6 +67,7 @@ applyStoredAccent()
       --accent-ko: #7c3fe0;    --accent-ko-soft: #f1e7ff;  --accent-ko-strong: #5f2bb8;
       --accent-zh: #d92b4e;    --accent-zh-soft: #fde5ea;  --accent-zh-strong: #b81f3f;
       --accent-fr: #0e8a96;    --accent-fr-soft: #dff5f7;  --accent-fr-strong: #0b6d77;
+      --accent-ja: #c2275f;    --accent-ja-soft: #fde6ef;  --accent-ja-strong: #9c1e4c;
     }
   }
 
@@ -98,6 +100,11 @@ applyStoredAccent()
     --accent: var(--accent-fr);
     --accent-soft: var(--accent-fr-soft);
     --accent-strong: var(--accent-fr-strong);
+  }
+  :root[data-lang="ja"] {
+    --accent: var(--accent-ja);
+    --accent-soft: var(--accent-ja-soft);
+    --accent-strong: var(--accent-ja-strong);
   }
   * { box-sizing: border-box; }
   html {

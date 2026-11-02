@@ -23,6 +23,18 @@ and standard gender/number agreement on articles and adjectives; only use a cont
 (au/du/aux/des) if it's already-taught vocabulary, per "Add mixed sentences"' rule — rephrase
 around it otherwise.
 
+- For Japanese (target: ja)
+Sentences with pure Japanese, every verb/copula in です/ます (polite) per the register
+decision — **[Register: です/ます (polite), decided 2026-11-01]**, locked for the whole
+course the same way Korean's 해요체 and French's tu are, since there's no per-sentence
+Portuguese cue to derive it from. Write in hiragana/katakana only, no kanji — **[Kanji
+policy: kana-only until furigana rendering exists, decided 2026-11-01]**, since a kanji
+with no reading aid is unreadable to a beginner and nothing in the app renders furigana
+yet. Particles (は/が/を/に/で/と/も) are invariant — unlike Korean's batchim-conditioned
+forms, there's no allomorph to choose, just the one written form for each grammatical
+role. A counted noun takes its counter (人/匹/冊/個/...) from the word's recorded value in
+pt-ja-relations.json, same mechanism as any measure-word/classifier language.
+
 ------------------------------------
 
 Then run backend/scripts/check_sentence_word_ids.py to verify every word_id in

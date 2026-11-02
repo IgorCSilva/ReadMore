@@ -1,0 +1,158 @@
+[
+  {
+    "word_id": "ja-wd-0001",
+    "root_word_id": "wd-0001",
+    "word": "こんにちは",
+    "pinyin": "konnichiwa"
+  },
+  {
+    "word_id": "ja-wd-0002",
+    "root_word_id": "wd-0005",
+    "word": "ありがとうございます",
+    "pinyin": "arigatou gozaimasu"
+  },
+  {
+    "word_id": "ja-wd-0003",
+    "root_word_id": "wd-0003",
+    "word": "さようなら",
+    "pinyin": "sayounara"
+  },
+  {
+    "word_id": "ja-wd-0004",
+    "root_word_id": "wd-0063",
+    "word": "と",
+    "pinyin": "to"
+  },
+  {
+    "word_id": "ja-wd-0005",
+    "root_word_id": "wd-0059",
+    "word": "いい",
+    "pinyin": "ii"
+  },
+  {
+    "word_id": "ja-wd-0006",
+    "root_word_id": "wd-0080",
+    "word": "ひる",
+    "pinyin": "hiru"
+  },
+  {
+    "word_id": "ja-wd-0007",
+    "root_word_id": "wd-0077",
+    "word": "ごご",
+    "pinyin": "gogo"
+  },
+  {
+    "word_id": "ja-wd-0008",
+    "root_word_id": "wd-0079",
+    "word": "よる",
+    "pinyin": "yoru"
+  },
+  {
+    "word_id": "ja-wd-0009",
+    "root_word_id": "wd-0362",
+    "word": "おはようございます",
+    "pinyin": "ohayou gozaimasu"
+  },
+  {
+    "word_id": "ja-wd-0010",
+    "root_word_id": "wd-0775",
+    "word": "こんばんは",
+    "pinyin": "konbanwa"
+  },
+  {
+    "word_id": "ja-wd-0011",
+    "root_word_id": "wd-0364",
+    "word": "おやすみなさい",
+    "pinyin": "oyasumi nasai"
+  },
+  {
+    "word_id": "ja-wd-0012",
+    "root_word_id": "wd-0263",
+    "word": "いろいろ",
+    "pinyin": "iroiro"
+  },
+  {
+    "word_id": "ja-wd-0013",
+    "root_word_id": "wd-0071",
+    "word": "げんき",
+    "pinyin": "genki"
+  },
+  {
+    "word_id": "ja-wd-0014",
+    "root_word_id": "wd-0051",
+    "word": "どう",
+    "pinyin": "dou"
+  },
+  {
+    "word_id": "ja-wd-0015",
+    "root_word_id": "wd-0013",
+    "word": "あなた",
+    "pinyin": "anata"
+  },
+  {
+    "word_id": "ja-wd-0016",
+    "root_word_id": "wd-0010",
+    "word": "です",
+    "pinyin": "desu"
+  },
+  {
+    "word_id": "ja-wd-0017",
+    "root_word_id": "wd-0009",
+    "word": "なまえ",
+    "pinyin": "namae"
+  },
+  {
+    "word_id": "ja-wd-0018",
+    "root_word_id": "wd-0783",
+    "word": "の",
+    "pinyin": "no"
+  },
+  {
+    "word_id": "ja-wd-0019",
+    "root_word_id": "wd-0007",
+    "word": "わたし",
+    "pinyin": "watashi"
+  },
+  {
+    "word_id": "ja-wd-0020",
+    "root_word_id": "wd-0015",
+    "word": "から",
+    "pinyin": "kara"
+  },
+  {
+    "word_id": "ja-wd-0021",
+    "root_word_id": "wd-0023",
+    "word": "はい",
+    "pinyin": "hai"
+  },
+  {
+    "word_id": "ja-wd-0022",
+    "root_word_id": "wd-0024",
+    "word": "いいえ",
+    "pinyin": "iie"
+  },
+  {
+    "word_id": "ja-wd-0023",
+    "root_word_id": "wd-0072",
+    "word": "どういたしまして",
+    "pinyin": "dou itashimashite"
+  },
+  {
+    "word_id": "ja-wd-0024",
+    "root_word_id": "wd-0381",
+    "word": "か",
+    "pinyin": "ka"
+  },
+  {
+    "word_id": "ja-wd-0025",
+    "root_word_id": "wd-0784",
+    "word": "は",
+    "pinyin": "wa"
+  },
+  {
+    "word_id": "ja-wd-0026",
+    "root_word_id": "wd-0265",
+    "word": "いいます",
+    "pinyin": "iimasu"
+  }
+]
