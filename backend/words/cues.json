@@ -638,7 +638,7 @@
   "pt_wd-0378": "Algo inesperado que causa espanto ou alegria.",
   "pt_wd-0379": "Um objeto que se dá a alguém, geralmente como sinal de carinho ou para comemorar algo.",
   "pt_wd-0380": "O pronome usado para indicar a ausência total de pessoas; 'pessoa nenhuma'.",
-  "pt_wd-0381": "A partícula gramatical chinesa colocada no final de uma frase para transformá-la em uma pergunta de sim ou não.",
+  "pt_wd-0381": "A partícula gramatical colocada no final de uma frase para transformá-la em uma pergunta de sim ou não.",
   "pt_wd-0382": "A partícula chinesa usada no final de uma frase para devolver a mesma pergunta a quem perguntou, equivalente a 'e você?'.",
   "pt_wd-0383": "Um ser humano em geral, sem especificar quem.",
   "pt_wd-0384": "Uma forma curta e casual de agradecer.",
@@ -1113,5 +1113,8 @@
   "es_wd-0293": "La forma del verbo 'tener' usada con él, ella o usted, en presente.",
   "es_wd-0144": "La preposición que indica que algo está dentro de un lugar.",
   "es_wd-0065": "Se refiere a este lugar, cerca de quien habla.",
-  "es_wd-0066": "Se refiere a aquel lugar, lejos de quien habla."
+  "es_wd-0066": "Se refiere a aquel lugar, lejos de quien habla.",
+  "pt_wd-0775": "Uma saudação usada para cumprimentar alguém à noite, ao encontrá-la (diferente da despedida usada antes de dormir).",
+  "pt_wd-0783": "A partícula que indica posse, usada entre o possuidor e aquilo que é possuído, com o sentido de 'de'.",
+  "pt_wd-0784": "A partícula que marca o tópico da frase, indicando o assunto sobre o qual se vai falar — usada sempre da mesma forma, independentemente de como a palavra anterior termina."
 }

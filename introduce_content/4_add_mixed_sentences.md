@@ -10,7 +10,8 @@ Each words/expressions must appear (bolded) at least 5 times across the 100 sent
 Whenever a sentence would otherwise contain a <native> word that has a <target> equivalent in backend/content/relations/<native>-<target>-relations.json — across the whole file, not just this topic — replace it with the bolded <target> word instead. Apply real <target> grammar when adapting, not a literal swap.
 - If <target> is es: la → el before a stressed-a feminine noun like agua; y → e only when the word immediately following starts with an i-/hi- sound, not just anywhere nearby in the sentence.
 - If <target> is fr: elision is mandatory, not optional house style — le/la/de/que/ne/se/me/te/ce/je always collapse to l'/d'/qu'/n'/s'/m'/t'/c'/j' before a vowel sound or mute h (e.g. never bold "**le** ami", always "**l'**ami"); this applies even when the un-elided word is the one actually taught, since elision is an orthographic rule of French, not a separate vocabulary item. Contractions (à+le→au, à+les→aux, de+le→du, de+les→des) are NOT automatic the same way — treat them like es's al/del under the next rule: only use one if au/du/aux/des has itself already been taught as vocabulary, otherwise rephrase around it (e.g. keep "de le" apart as separate taught words, or restructure the sentence) rather than contracting into an untaught form.
-Never introduce <target> forms that aren't in the taught vocabulary (e.g. no al, las, los if only singular el/la have been taught for es; no au/du/aux/des if only the uncontracted articles have been taught for fr) — rephrase instead of contracting.
+- If <target> is ja: this is a grammar restructuring, not a word-for-word swap — Japanese is SOV, so the taught verb/adjective+です always moves to the end of the sentence, and any Portuguese word it displaces (typically the copula) is dropped rather than left stranded. Every particle (は/が/を/に/で/と/も) required by the Japanese portion must be present in its one invariant written form (no allomorphy to choose, unlike Korean's batchim particles) and glued directly onto its host with no space — Japanese has no spaces between words at all, same handling as Chinese. A counted noun takes its counter (人/匹/冊/個/...) between the number and the noun, chosen from the host word's Japanese form recorded in pt-ja-relations.json, never guessed from the Portuguese spelling or omitted even when the host noun isn't taught yet. Write the Japanese portion in hiragana/katakana only — no kanji, per the kana-only decision in "Add target idiom natural sentences".
+Never introduce <target> forms that aren't in the taught vocabulary (e.g. no al, las, los if only singular el/la have been taught for es; no au/du/aux/des if only the uncontracted articles have been taught for fr; no untaught ja particle/counter/verb ending) — rephrase instead of contracting.
 Before finalizing, verify programmatically: exact sentence count, each word's occurrence count, no duplicate sentences, and no unbolded leftover word that had a mapped equivalent.
 
 The sentences must be located in: backend/content/<native>-<target>/chapter_N/topic_N/mixed_sentences.json.
@@ -42,6 +43,13 @@ every bolded French word/phrase instead: confirm each elidable word before a vow
 actually written elided (l'/d'/qu'/...), and that no untaught au/du/aux/des contraction
 slipped in. Flag to the user if this manual pass turns up enough recurring mistakes to be
 worth building a dedicated script for.
+
+If <target> is ja (or zh), also run backend/scripts/check_sentence_markers.py — `ja` is
+already registered in its `_NO_SPACE_LANGUAGES`/`_RELIABLE_LANGUAGES` sets, so no script
+changes are needed first. It catches a taught word/particle that leaked into a sentence
+without `**bold**` markers at all, which a `\b`-anchored check would miss since Japanese
+(like Chinese) has no spaces to anchor against:
+`python3 backend/scripts/check_sentence_markers.py <native>-ja {chapter number} {topic number}`
 
 Fix any reported mismatch before moving on. Note both scripts can only catch a
 native word/rule they can already see evidence for — a concept whose native
