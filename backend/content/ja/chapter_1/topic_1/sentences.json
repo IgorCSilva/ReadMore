@@ -1,0 +1,252 @@
+[
+  {
+    "id": "ja-sent-0001",
+    "sentence": "こんにちは.",
+    "word_ids": ["ja-wd-0001"]
+  },
+  {
+    "id": "ja-sent-0002",
+    "sentence": "あなた, こんにちは.",
+    "word_ids": ["ja-wd-0015", "ja-wd-0001"]
+  },
+  {
+    "id": "ja-sent-0003",
+    "sentence": "はい, こんにちは.",
+    "word_ids": ["ja-wd-0021", "ja-wd-0001"]
+  },
+  {
+    "id": "ja-sent-0004",
+    "sentence": "ありがとうございます.",
+    "word_ids": ["ja-wd-0002"]
+  },
+  {
+    "id": "ja-sent-0005",
+    "sentence": "あなた, ありがとうございます.",
+    "word_ids": ["ja-wd-0015", "ja-wd-0002"]
+  },
+  {
+    "id": "ja-sent-0006",
+    "sentence": "はい, ありがとうございます.",
+    "word_ids": ["ja-wd-0021", "ja-wd-0002"]
+  },
+  {
+    "id": "ja-sent-0007",
+    "sentence": "さようなら.",
+    "word_ids": ["ja-wd-0003"]
+  },
+  {
+    "id": "ja-sent-0008",
+    "sentence": "あなた, さようなら.",
+    "word_ids": ["ja-wd-0015", "ja-wd-0003"]
+  },
+  {
+    "id": "ja-sent-0009",
+    "sentence": "ありがとうございます, さようなら.",
+    "word_ids": ["ja-wd-0002", "ja-wd-0003"]
+  },
+  {
+    "id": "ja-sent-0010",
+    "sentence": "ひるとよる.",
+    "word_ids": ["ja-wd-0006", "ja-wd-0004", "ja-wd-0008"]
+  },
+  {
+    "id": "ja-sent-0011",
+    "sentence": "はいといいえ.",
+    "word_ids": ["ja-wd-0021", "ja-wd-0004", "ja-wd-0022"]
+  },
+  {
+    "id": "ja-sent-0012",
+    "sentence": "あなたとわたし.",
+    "word_ids": ["ja-wd-0015", "ja-wd-0004", "ja-wd-0019"]
+  },
+  {
+    "id": "ja-sent-0013",
+    "sentence": "いいです.",
+    "word_ids": ["ja-wd-0005", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0014",
+    "sentence": "いいですか?",
+    "word_ids": ["ja-wd-0005", "ja-wd-0016", "ja-wd-0024"]
+  },
+  {
+    "id": "ja-sent-0015",
+    "sentence": "いろいろはいいです.",
+    "word_ids": ["ja-wd-0012", "ja-wd-0025", "ja-wd-0005", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0016",
+    "sentence": "ひるはいいです.",
+    "word_ids": ["ja-wd-0006", "ja-wd-0025", "ja-wd-0005", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0017",
+    "sentence": "ひるとごご.",
+    "word_ids": ["ja-wd-0006", "ja-wd-0004", "ja-wd-0007"]
+  },
+  {
+    "id": "ja-sent-0018",
+    "sentence": "ごごはいいです.",
+    "word_ids": ["ja-wd-0007", "ja-wd-0025", "ja-wd-0005", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0019",
+    "sentence": "ごごとよる.",
+    "word_ids": ["ja-wd-0007", "ja-wd-0004", "ja-wd-0008"]
+  },
+  {
+    "id": "ja-sent-0020",
+    "sentence": "よるはいいです.",
+    "word_ids": ["ja-wd-0008", "ja-wd-0025", "ja-wd-0005", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0021",
+    "sentence": "おはようございます.",
+    "word_ids": ["ja-wd-0009"]
+  },
+  {
+    "id": "ja-sent-0022",
+    "sentence": "あなた, おはようございます.",
+    "word_ids": ["ja-wd-0015", "ja-wd-0009"]
+  },
+  {
+    "id": "ja-sent-0023",
+    "sentence": "はい, おはようございます.",
+    "word_ids": ["ja-wd-0021", "ja-wd-0009"]
+  },
+  {
+    "id": "ja-sent-0024",
+    "sentence": "こんばんは.",
+    "word_ids": ["ja-wd-0010"]
+  },
+  {
+    "id": "ja-sent-0025",
+    "sentence": "あなた, こんばんは.",
+    "word_ids": ["ja-wd-0015", "ja-wd-0010"]
+  },
+  {
+    "id": "ja-sent-0026",
+    "sentence": "ありがとうございます, こんばんは.",
+    "word_ids": ["ja-wd-0002", "ja-wd-0010"]
+  },
+  {
+    "id": "ja-sent-0027",
+    "sentence": "おやすみなさい.",
+    "word_ids": ["ja-wd-0011"]
+  },
+  {
+    "id": "ja-sent-0028",
+    "sentence": "あなた, おやすみなさい.",
+    "word_ids": ["ja-wd-0015", "ja-wd-0011"]
+  },
+  {
+    "id": "ja-sent-0029",
+    "sentence": "ありがとうございます, おやすみなさい.",
+    "word_ids": ["ja-wd-0002", "ja-wd-0011"]
+  },
+  {
+    "id": "ja-sent-0030",
+    "sentence": "いろいろです.",
+    "word_ids": ["ja-wd-0012", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0031",
+    "sentence": "いろいろはどうですか?",
+    "word_ids": ["ja-wd-0012", "ja-wd-0025", "ja-wd-0014", "ja-wd-0016", "ja-wd-0024"]
+  },
+  {
+    "id": "ja-sent-0032",
+    "sentence": "げんきです.",
+    "word_ids": ["ja-wd-0013", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0033",
+    "sentence": "あなたはげんきですか?",
+    "word_ids": ["ja-wd-0015", "ja-wd-0025", "ja-wd-0013", "ja-wd-0016", "ja-wd-0024"]
+  },
+  {
+    "id": "ja-sent-0034",
+    "sentence": "わたしはげんきです.",
+    "word_ids": ["ja-wd-0019", "ja-wd-0025", "ja-wd-0013", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0035",
+    "sentence": "どうですか?",
+    "word_ids": ["ja-wd-0014", "ja-wd-0016", "ja-wd-0024"]
+  },
+  {
+    "id": "ja-sent-0036",
+    "sentence": "げんきはどうですか?",
+    "word_ids": ["ja-wd-0013", "ja-wd-0025", "ja-wd-0014", "ja-wd-0016", "ja-wd-0024"]
+  },
+  {
+    "id": "ja-sent-0037",
+    "sentence": "わたしのなまえはマリアです.",
+    "word_ids": ["ja-wd-0019", "ja-wd-0018", "ja-wd-0017", "ja-wd-0025", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0038",
+    "sentence": "あなたのなまえはケンですか?",
+    "word_ids": ["ja-wd-0015", "ja-wd-0018", "ja-wd-0017", "ja-wd-0025", "ja-wd-0016", "ja-wd-0024"]
+  },
+  {
+    "id": "ja-sent-0039",
+    "sentence": "わたしのなまえはケンです.",
+    "word_ids": ["ja-wd-0019", "ja-wd-0018", "ja-wd-0017", "ja-wd-0025", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0040",
+    "sentence": "ポルトガルからです.",
+    "word_ids": ["ja-wd-0020", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0041",
+    "sentence": "にほんからです.",
+    "word_ids": ["ja-wd-0020", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0042",
+    "sentence": "わたしはポルトガルからです.",
+    "word_ids": ["ja-wd-0019", "ja-wd-0025", "ja-wd-0020", "ja-wd-0016"]
+  },
+  {
+    "id": "ja-sent-0043",
+    "sentence": "いいえ.",
+    "word_ids": ["ja-wd-0022"]
+  },
+  {
+    "id": "ja-sent-0044",
+    "sentence": "いいえ, ありがとうございます.",
+    "word_ids": ["ja-wd-0022", "ja-wd-0002"]
+  },
+  {
+    "id": "ja-sent-0045",
+    "sentence": "どういたしまして.",
+    "word_ids": ["ja-wd-0023"]
+  },
+  {
+    "id": "ja-sent-0046",
+    "sentence": "あなた, どういたしまして.",
+    "word_ids": ["ja-wd-0015", "ja-wd-0023"]
+  },
+  {
+    "id": "ja-sent-0047",
+    "sentence": "ありがとうございます. どういたしまして.",
+    "word_ids": ["ja-wd-0002", "ja-wd-0023"]
+  },
+  {
+    "id": "ja-sent-0048",
+    "sentence": "わたしのなまえはケンといいます.",
+    "word_ids": ["ja-wd-0019", "ja-wd-0018", "ja-wd-0017", "ja-wd-0025", "ja-wd-0004", "ja-wd-0026"]
+  },
+  {
+    "id": "ja-sent-0049",
+    "sentence": "なまえはマリアといいます.",
+    "word_ids": ["ja-wd-0017", "ja-wd-0025", "ja-wd-0004", "ja-wd-0026"]
+  },
+  {
+    "id": "ja-sent-0050",
+    "sentence": "あなたのなまえはケンといいますか?",
+    "word_ids": ["ja-wd-0015", "ja-wd-0018", "ja-wd-0017", "ja-wd-0025", "ja-wd-0004", "ja-wd-0026", "ja-wd-0024"]
+  }
+]

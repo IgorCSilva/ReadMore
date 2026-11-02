@@ -56,7 +56,9 @@ BOLD_SPLIT = re.compile(r"(\*\*.*?\*\*)")
 # qualifies even more strongly than Korean: it has no spaces between words
 # at all (Korean at least separates words, just not particles from their
 # host), so \b-anchored matching would miss real occurrences entirely.
-_NO_SPACE_LANGUAGES = {"ko", "zh"}
+# Japanese has no spaces either (hiragana/katakana/kanji run together just
+# like Hanzi), so it belongs in this set for the same reason as Chinese.
+_NO_SPACE_LANGUAGES = {"ko", "zh", "ja"}
 
 # Target languages whose script never coincides with the (Portuguese)
 # prose around it, so a bare occurrence of a taught word is unambiguously
@@ -64,8 +66,9 @@ _NO_SPACE_LANGUAGES = {"ko", "zh"}
 # Add a target here only once its script is confirmed distinct — a
 # Latin-script target sharing homographs with the origin language (es,
 # en, ...) would just produce false positives. Hanzi never coincides with
-# Latin script, same reasoning as Hangul.
-_RELIABLE_LANGUAGES = {"ko", "zh"}
+# Latin script, same reasoning as Hangul. Hiragana/katakana/kanji are
+# likewise never confusable with Latin-script Portuguese prose.
+_RELIABLE_LANGUAGES = {"ko", "zh", "ja"}
 
 
 def word_pattern(word, target_lang):
