@@ -10,27 +10,32 @@ If there are some emojis like 😊 you can remove them.
 == Initial ==
 =============
 
+Le Sourire Éclatant de Mina la Tigresse
 
-Le Doux Voyage de Petit Nuage
-
-Une invitation à la rêverie pour les tout-petits. Suivez un nuage tout doux dans sa promenade apaisante au-dessus de paysages familiers, entre champs de lavande et lacs miroitants. Une histoire tendre, idéale pour apaiser les enfants avant le dodo.
+Fini la peur du dentiste ! Rejoignez Mina, une petite tigresse curieuse, pour sa première visite chez le Docteur Zoé. Une histoire douce et ludique pour transformer le brossage des dents en une aventure amusante et naturelle. Idéal pour les 4-6 ans.
 --------------------------------
 
-Il était une fois Petit Nuage, qui flottait doucement dans le ciel bleu. Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux. ☁️
+Il était une fois, au cœur d'une jungle luxuriante, une petite tigresse espiègle nommée Mina 🐯. Elle vivait heureuse, passant ses journées à explorer la forêt et à faire des cabrioles avec ses amis. Un beau matin, sa maman lui annonça d'un ton joyeux : « Mina, aujourd'hui, c'est l'heure de ta première visite chez le dentiste ! »
 
-Un jour, Petit Nuage décida de partir faire une grande promenade. Il glissa son corps vaporeux entre les montagnes et descendit vers un joli champ de fleurs. Là-bas, les papillons volaient au ralenti et les abeilles bourdonnaient doucement : Bzzzz, bzzzz. L'air sentait bon la lavande et le miel. Tout était si calme ! Petit Nuage se sentait heureux et léger. 🌸🐝
+Mina écarquilla les yeux de surprise. Le dentiste ? Elle n'y avait jamais mis les pattes. Un peu intimidée, elle suivit sa maman jusqu'au cabinet. Là-bas l'attendait le Docteur Zoé 🐵, une guenon très sympathique avec un sourire radieux et des yeux pétillants de gentillesse. « Bienvenue, Mina ! » s'exclama-t-elle doucement. « Aujourd'hui, nous allons apprendre à chouchouter tes dents pour qu'elles restent fortes et en bonne santé. »
 
-Il continua de flotter jusqu'à un immense lac. L'eau était si claire qu'on y voyait le soleil se refléter comme dans un miroir magique. Petit Nuage descendit encore un peu, jusqu'à effleurer l'eau avec son petit bidou. L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes. 💧
+Le Docteur Zoé lui montra des petites tiges de bois souple et lui expliqua : « Regarde, ces petits bâtonnets sont parfaits pour nettoyer tes crocs. Le secret, c'est de frotter doucement en faisant des petits ronds. C'est comme ça qu'on chasse les saletés ! »
 
-Il s'amusa un moment, puis quelque chose attira son attention : des canetons nageaient et clapotaient derrière leur maman canne, qui leur montrait comment trouver à manger. « Quelle paix ! » pensa Petit Nuage. Il resta là à les regarder se laisser bercer par l'eau, tout comme lui se laissait bercer par le ciel. 🦆
+Mina, rassurée et curieuse, prit une tige et commença à s'exercer. Frotte, frotte, frotte ! Elle vit ses dents devenir de plus en plus brillantes dans le miroir.
 
-Un peu plus tard, il arriva au-dessus d'une forêt aux arbres immenses. Les arbres chuchotaient dans la brise légère et les oiseaux chantonnaient des mélodies apaisantes. Il décida de se reposer là un instant, accroché aux branches, profitant du vent et du chant des oiseaux. Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac. 🌳🐦
+Ensuite, Mina posa une question qui la turlupinait : « Et qu'est-ce que Maman utilise pour que sa bouche sente bon la fleur ? »
 
-Quand le soleil commença à se cacher derrière les montagnes, Petit Nuage sut qu'il était l'heure de rentrer à la maison. Il remonta doucement dans le ciel, admirant le jour qui disait au revoir avec des couleurs rose, orange et violette à l'horizon. Tout devenait silencieux. 🌅
+Le Docteur Zoé lui tendit alors une pâte verte à base de menthe sauvage et de plantes fraîches 🌱. « Ça, c'est pour la fraîcheur ! Cette pâte ne nettoie pas toute seule, mais elle rend l'haleine très agréable. Le plus important reste le brossage avec le bâtonnet. Et si tu utilises cette pâte, tu pourras faire plein de mousse rigolote ! » ajouta le médecin avec un clin d'œil.
 
-Heureux et détendu, Petit Nuage alla se blottir au milieu des étoiles et ferma les yeux. « C'était une journée merveilleuse », pensa-t-il, en se laissant porter par le doux bercement de la nuit. ⭐️🌙
+Mina goûta un tout petit peu de pâte. « Mmmh ! » fit-elle, ravie par la sensation de fraîcheur glacée qui envahissait sa bouche.
 
-Et c'est ainsi que le nuage de coton s'endormit, flottant paisiblement, alors que le monde entier reposait en paix. 😴
+« Pour les dents qui sont très serrées, comme tes canines, » continua le Docteur Zoé, « tu peux utiliser ce fil spécial. » Elle lui montra un fil solide, tissé avec la toile d'araignée la plus résistante de la jungle 🕸️. « C'est magique pour nettoyer entre les dents. »
+
+Mina essaya le fil, le passant délicatement entre ses crocs. Elle sentit immédiatement que tout était parfaitement propre. « Il faudra t'entraîner un peu à la maison avec Maman, mais tu verras, c'est très agréable d'avoir une dentition impeccable. »
+
+Avant de partir, le Docteur Zoé lui donna un dernier conseil : « N'oublie pas : on fait ça au moins deux fois par jour, et surtout le soir avant de dormir. Comme ça, ton sourire sera toujours prêt pour de nouvelles aventures ! »
+
+Depuis ce jour, Mina n'oubliait jamais sa routine. Chaque matin et chaque soir, avec ses bâtonnets, sa pâte aux plantes et son fil d'araignée, elle prenait soin de son grand sourire. Et c'est ainsi qu'elle devint la tigresse aux dents les plus étincelantes de toute la jungle ! 😁✨
 
 =========
 == End ==

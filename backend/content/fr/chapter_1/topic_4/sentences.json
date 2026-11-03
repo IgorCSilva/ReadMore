@@ -1,0 +1,827 @@
+[
+  {
+    "id": "fr-sent-0220",
+    "sentence": "Le matin, je me réveille tôt.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0023",
+      "fr-wd-0030",
+      "fr-wd-0083",
+      "fr-wd-0084"
+    ]
+  },
+  {
+    "id": "fr-sent-0221",
+    "sentence": "J'aime le matin calme.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0222",
+    "sentence": "Chaque matin, je prends un café.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0075",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0223",
+    "sentence": "Je me réveille à six heures.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0023",
+      "fr-wd-0084"
+    ]
+  },
+  {
+    "id": "fr-sent-0224",
+    "sentence": "Réveille-toi, il est tard !",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0084"
+    ]
+  },
+  {
+    "id": "fr-sent-0225",
+    "sentence": "Elle se réveille très tôt.",
+    "word_ids": [
+      "fr-wd-0084"
+    ]
+  },
+  {
+    "id": "fr-sent-0226",
+    "sentence": "Je me lève tout de suite.",
+    "word_ids": [
+      "fr-wd-0013",
+      "fr-wd-0018",
+      "fr-wd-0023",
+      "fr-wd-0025",
+      "fr-wd-0085"
+    ]
+  },
+  {
+    "id": "fr-sent-0227",
+    "sentence": "Lève-toi, le petit-déjeuner est prêt !",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0030",
+      "fr-wd-0085",
+      "fr-wd-0087",
+      "fr-wd-0105"
+    ]
+  },
+  {
+    "id": "fr-sent-0228",
+    "sentence": "Il se lève avant tout le monde.",
+    "word_ids": [
+      "fr-wd-0013",
+      "fr-wd-0030",
+      "fr-wd-0085"
+    ]
+  },
+  {
+    "id": "fr-sent-0229",
+    "sentence": "Je m'habille rapidement.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0086"
+    ]
+  },
+  {
+    "id": "fr-sent-0230",
+    "sentence": "Habille-toi vite, nous partons !",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0086"
+    ]
+  },
+  {
+    "id": "fr-sent-0231",
+    "sentence": "Il s'habille avec soin.",
+    "word_ids": [
+      "fr-wd-0058",
+      "fr-wd-0086"
+    ]
+  },
+  {
+    "id": "fr-sent-0232",
+    "sentence": "J'aime petit-déjeuner le matin.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0083",
+      "fr-wd-0087",
+      "fr-wd-0105"
+    ]
+  },
+  {
+    "id": "fr-sent-0233",
+    "sentence": "Je vais petit-déjeuner avant de sortir.",
+    "word_ids": [
+      "fr-wd-0017",
+      "fr-wd-0018",
+      "fr-wd-0025",
+      "fr-wd-0087",
+      "fr-wd-0100",
+      "fr-wd-0105"
+    ]
+  },
+  {
+    "id": "fr-sent-0234",
+    "sentence": "Petit-déjeuner fait partie de ma routine.",
+    "word_ids": [
+      "fr-wd-0025",
+      "fr-wd-0032",
+      "fr-wd-0087",
+      "fr-wd-0105"
+    ]
+  },
+  {
+    "id": "fr-sent-0235",
+    "sentence": "Je déjeune avec ma sœur.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0032",
+      "fr-wd-0040",
+      "fr-wd-0058",
+      "fr-wd-0088"
+    ]
+  },
+  {
+    "id": "fr-sent-0236",
+    "sentence": "Déjeune vite, nous sommes en retard !",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0088"
+    ]
+  },
+  {
+    "id": "fr-sent-0237",
+    "sentence": "Elle déjeune dans le parc le dimanche.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0080",
+      "fr-wd-0088"
+    ]
+  },
+  {
+    "id": "fr-sent-0238",
+    "sentence": "Je travaille tous les jours.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0056",
+      "fr-wd-0089"
+    ]
+  },
+  {
+    "id": "fr-sent-0239",
+    "sentence": "Travaille bien aujourd'hui !",
+    "word_ids": [
+      "fr-wd-0012",
+      "fr-wd-0089"
+    ]
+  },
+  {
+    "id": "fr-sent-0240",
+    "sentence": "Il travaille dans un bureau.",
+    "word_ids": [
+      "fr-wd-0075",
+      "fr-wd-0080",
+      "fr-wd-0089"
+    ]
+  },
+  {
+    "id": "fr-sent-0241",
+    "sentence": "Le soir, je lis un livre.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0075",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0242",
+    "sentence": "J'aime le soir calme.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0243",
+    "sentence": "Chaque soir, je dîne tôt.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0090",
+      "fr-wd-0091"
+    ]
+  },
+  {
+    "id": "fr-sent-0244",
+    "sentence": "Je dîne avec ma famille.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0032",
+      "fr-wd-0036",
+      "fr-wd-0058",
+      "fr-wd-0091"
+    ]
+  },
+  {
+    "id": "fr-sent-0245",
+    "sentence": "Dîne vite, le film commence !",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0091"
+    ]
+  },
+  {
+    "id": "fr-sent-0246",
+    "sentence": "Il dîne tard le vendredi.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0091"
+    ]
+  },
+  {
+    "id": "fr-sent-0247",
+    "sentence": "Je dors huit heures chaque nuit.",
+    "word_ids": [
+      "fr-wd-0009",
+      "fr-wd-0018",
+      "fr-wd-0092"
+    ]
+  },
+  {
+    "id": "fr-sent-0248",
+    "sentence": "Tu dors encore ? Il est tard !",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0020",
+      "fr-wd-0092"
+    ]
+  },
+  {
+    "id": "fr-sent-0249",
+    "sentence": "Le week-end, je dors tard.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0092"
+    ]
+  },
+  {
+    "id": "fr-sent-0250",
+    "sentence": "Je me réveille, puis je me lève.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0023",
+      "fr-wd-0084",
+      "fr-wd-0085",
+      "fr-wd-0093"
+    ]
+  },
+  {
+    "id": "fr-sent-0251",
+    "sentence": "D'abord je déjeune, puis je travaille.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0088",
+      "fr-wd-0089",
+      "fr-wd-0093"
+    ]
+  },
+  {
+    "id": "fr-sent-0252",
+    "sentence": "Il arrive, puis il travaille.",
+    "word_ids": [
+      "fr-wd-0089",
+      "fr-wd-0093"
+    ]
+  },
+  {
+    "id": "fr-sent-0253",
+    "sentence": "Je suis fatigué ce soir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0019",
+      "fr-wd-0090",
+      "fr-wd-0094"
+    ]
+  },
+  {
+    "id": "fr-sent-0254",
+    "sentence": "Il est fatigué après le travail.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0030",
+      "fr-wd-0094"
+    ]
+  },
+  {
+    "id": "fr-sent-0255",
+    "sentence": "Tu es fatigué après l'école ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0094"
+    ]
+  },
+  {
+    "id": "fr-sent-0256",
+    "sentence": "Il est important de se réveiller tôt.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0095"
+    ]
+  },
+  {
+    "id": "fr-sent-0257",
+    "sentence": "Il faut se réveiller avant sept heures.",
+    "word_ids": [
+      "fr-wd-0095"
+    ]
+  },
+  {
+    "id": "fr-sent-0258",
+    "sentence": "Se réveiller tôt est difficile le lundi.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0030",
+      "fr-wd-0095"
+    ]
+  },
+  {
+    "id": "fr-sent-0259",
+    "sentence": "Il est bon de se lever tôt.",
+    "word_ids": [
+      "fr-wd-0005",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0096"
+    ]
+  },
+  {
+    "id": "fr-sent-0260",
+    "sentence": "Il faut se lever vite le matin.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0083",
+      "fr-wd-0096"
+    ]
+  },
+  {
+    "id": "fr-sent-0261",
+    "sentence": "Se lever tard est agréable le dimanche.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0030",
+      "fr-wd-0096"
+    ]
+  },
+  {
+    "id": "fr-sent-0262",
+    "sentence": "Il est nécessaire de se doucher tous les jours.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0056",
+      "fr-wd-0097"
+    ]
+  },
+  {
+    "id": "fr-sent-0263",
+    "sentence": "Il faut se doucher avant de sortir.",
+    "word_ids": [
+      "fr-wd-0025",
+      "fr-wd-0097",
+      "fr-wd-0100"
+    ]
+  },
+  {
+    "id": "fr-sent-0264",
+    "sentence": "Se doucher le matin est rafraîchissant.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0030",
+      "fr-wd-0083",
+      "fr-wd-0097"
+    ]
+  },
+  {
+    "id": "fr-sent-0265",
+    "sentence": "Il est important de se brosser les dents après manger.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0098"
+    ]
+  },
+  {
+    "id": "fr-sent-0266",
+    "sentence": "Il faut se brosser les dents deux fois par jour.",
+    "word_ids": [
+      "fr-wd-0007",
+      "fr-wd-0098"
+    ]
+  },
+  {
+    "id": "fr-sent-0267",
+    "sentence": "Se brosser les dents est une bonne habitude.",
+    "word_ids": [
+      "fr-wd-0006",
+      "fr-wd-0020",
+      "fr-wd-0076",
+      "fr-wd-0098"
+    ]
+  },
+  {
+    "id": "fr-sent-0268",
+    "sentence": "Il est nécessaire de s'habiller vite le matin.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0030",
+      "fr-wd-0083",
+      "fr-wd-0099"
+    ]
+  },
+  {
+    "id": "fr-sent-0269",
+    "sentence": "Il faut s'habiller avant de sortir de la maison.",
+    "word_ids": [
+      "fr-wd-0025",
+      "fr-wd-0031",
+      "fr-wd-0060",
+      "fr-wd-0099",
+      "fr-wd-0100"
+    ]
+  },
+  {
+    "id": "fr-sent-0270",
+    "sentence": "Bien s'habiller est important pour le travail.",
+    "word_ids": [
+      "fr-wd-0012",
+      "fr-wd-0020",
+      "fr-wd-0030",
+      "fr-wd-0099"
+    ]
+  },
+  {
+    "id": "fr-sent-0271",
+    "sentence": "Je dois sortir tôt aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0100"
+    ]
+  },
+  {
+    "id": "fr-sent-0272",
+    "sentence": "Je vais sortir après le travail.",
+    "word_ids": [
+      "fr-wd-0017",
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0100"
+    ]
+  },
+  {
+    "id": "fr-sent-0273",
+    "sentence": "Il est difficile de sortir quand il pleut.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0100"
+    ]
+  },
+  {
+    "id": "fr-sent-0274",
+    "sentence": "Je veux aller avec toi.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0058",
+      "fr-wd-0101"
+    ]
+  },
+  {
+    "id": "fr-sent-0275",
+    "sentence": "Je dois aller à l'école tôt.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0101"
+    ]
+  },
+  {
+    "id": "fr-sent-0276",
+    "sentence": "Je préfère aller à pied.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0101"
+    ]
+  },
+  {
+    "id": "fr-sent-0277",
+    "sentence": "Je vais arriver tard aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0017",
+      "fr-wd-0018",
+      "fr-wd-0102"
+    ]
+  },
+  {
+    "id": "fr-sent-0278",
+    "sentence": "Il est important d'arriver à l'heure.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0102"
+    ]
+  },
+  {
+    "id": "fr-sent-0279",
+    "sentence": "Je préfère arriver tôt pour le travail.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0102"
+    ]
+  },
+  {
+    "id": "fr-sent-0280",
+    "sentence": "J'aime travailler en équipe.",
+    "word_ids": [
+      "fr-wd-0103"
+    ]
+  },
+  {
+    "id": "fr-sent-0281",
+    "sentence": "Je dois travailler tard aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0103"
+    ]
+  },
+  {
+    "id": "fr-sent-0282",
+    "sentence": "Je vais travailler à la maison demain.",
+    "word_ids": [
+      "fr-wd-0017",
+      "fr-wd-0018",
+      "fr-wd-0031",
+      "fr-wd-0060",
+      "fr-wd-0103"
+    ]
+  },
+  {
+    "id": "fr-sent-0283",
+    "sentence": "Je vais rentrer tôt aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0017",
+      "fr-wd-0018",
+      "fr-wd-0104"
+    ]
+  },
+  {
+    "id": "fr-sent-0284",
+    "sentence": "Je préfère rentrer à pied.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0104"
+    ]
+  },
+  {
+    "id": "fr-sent-0285",
+    "sentence": "Il est tard, je dois rentrer à la maison.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0020",
+      "fr-wd-0031",
+      "fr-wd-0060",
+      "fr-wd-0104"
+    ]
+  },
+  {
+    "id": "fr-sent-0286",
+    "sentence": "J'aime déjeuner avec mes amis.",
+    "word_ids": [
+      "fr-wd-0033",
+      "fr-wd-0058",
+      "fr-wd-0105"
+    ]
+  },
+  {
+    "id": "fr-sent-0287",
+    "sentence": "Je vais déjeuner à midi.",
+    "word_ids": [
+      "fr-wd-0017",
+      "fr-wd-0018",
+      "fr-wd-0105"
+    ]
+  },
+  {
+    "id": "fr-sent-0288",
+    "sentence": "Je dois déjeuner avant la réunion.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0031",
+      "fr-wd-0105"
+    ]
+  },
+  {
+    "id": "fr-sent-0289",
+    "sentence": "J'aime dîner tôt.",
+    "word_ids": [
+      "fr-wd-0106"
+    ]
+  },
+  {
+    "id": "fr-sent-0290",
+    "sentence": "Nous allons dîner ensemble ce soir.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0090",
+      "fr-wd-0106"
+    ]
+  },
+  {
+    "id": "fr-sent-0291",
+    "sentence": "Je préfère dîner à la maison.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0031",
+      "fr-wd-0060",
+      "fr-wd-0106"
+    ]
+  },
+  {
+    "id": "fr-sent-0292",
+    "sentence": "Il faut se reposer un peu.",
+    "word_ids": [
+      "fr-wd-0075",
+      "fr-wd-0107"
+    ]
+  },
+  {
+    "id": "fr-sent-0293",
+    "sentence": "Il est important de se reposer après le travail.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0030",
+      "fr-wd-0107"
+    ]
+  },
+  {
+    "id": "fr-sent-0294",
+    "sentence": "Se reposer le week-end est agréable.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0030",
+      "fr-wd-0107"
+    ]
+  },
+  {
+    "id": "fr-sent-0295",
+    "sentence": "J'aime lire avant de dormir.",
+    "word_ids": [
+      "fr-wd-0025",
+      "fr-wd-0108",
+      "fr-wd-0109"
+    ]
+  },
+  {
+    "id": "fr-sent-0296",
+    "sentence": "Je vais lire un nouveau livre.",
+    "word_ids": [
+      "fr-wd-0017",
+      "fr-wd-0018",
+      "fr-wd-0075",
+      "fr-wd-0108"
+    ]
+  },
+  {
+    "id": "fr-sent-0297",
+    "sentence": "Il est bon de lire tous les jours.",
+    "word_ids": [
+      "fr-wd-0005",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0056",
+      "fr-wd-0108"
+    ]
+  },
+  {
+    "id": "fr-sent-0298",
+    "sentence": "Je dois dormir huit heures.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0109"
+    ]
+  },
+  {
+    "id": "fr-sent-0299",
+    "sentence": "J'aime dormir tard le dimanche.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0109"
+    ]
+  },
+  {
+    "id": "fr-sent-0300",
+    "sentence": "Il est important de dormir bien.",
+    "word_ids": [
+      "fr-wd-0012",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0109"
+    ]
+  },
+  {
+    "id": "fr-sent-0301",
+    "sentence": "J'aime avoir une routine fixe.",
+    "word_ids": [
+      "fr-wd-0076",
+      "fr-wd-0110"
+    ]
+  },
+  {
+    "id": "fr-sent-0302",
+    "sentence": "Il est important d'avoir une bonne routine.",
+    "word_ids": [
+      "fr-wd-0006",
+      "fr-wd-0020",
+      "fr-wd-0076",
+      "fr-wd-0110"
+    ]
+  },
+  {
+    "id": "fr-sent-0303",
+    "sentence": "Je vais avoir plus de temps libre demain.",
+    "word_ids": [
+      "fr-wd-0017",
+      "fr-wd-0018",
+      "fr-wd-0025",
+      "fr-wd-0110"
+    ]
+  },
+  {
+    "id": "fr-sent-0304",
+    "sentence": "J'ai beaucoup à faire aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0111"
+    ]
+  },
+  {
+    "id": "fr-sent-0305",
+    "sentence": "Je dois faire mes devoirs avant de dormir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0025",
+      "fr-wd-0033",
+      "fr-wd-0109",
+      "fr-wd-0111"
+    ]
+  },
+  {
+    "id": "fr-sent-0306",
+    "sentence": "Je vais faire le déjeuner pour ma famille.",
+    "word_ids": [
+      "fr-wd-0017",
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0032",
+      "fr-wd-0036",
+      "fr-wd-0105",
+      "fr-wd-0111"
+    ]
+  },
+  {
+    "id": "fr-sent-0307",
+    "sentence": "Je me lève tôt.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0023",
+      "fr-wd-0085"
+    ]
+  },
+  {
+    "id": "fr-sent-0308",
+    "sentence": "Je me douche rapidement.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0023"
+    ]
+  },
+  {
+    "id": "fr-sent-0309",
+    "sentence": "Je me repose un peu le dimanche.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0023",
+      "fr-wd-0030",
+      "fr-wd-0075"
+    ]
+  }
+]

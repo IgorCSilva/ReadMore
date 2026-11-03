@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "Esta **riz** **est** bastante cara."
+  },
+  {
+    "sentence_number": 2,
+    "content": "Procuro **aimer** **boisson**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "Esta vez, «**je** **ne** **veux** **rien**»."
+  },
+  {
+    "sentence_number": 4,
+    "content": "Esta semana, «**je** **ne** **veux** **pas** **de** **viande**»."
+  },
+  {
+    "sentence_number": 5,
+    "content": "Otra **haricot** **est** dulce."
+  },
+  {
+    "sentence_number": 6,
+    "content": "Esta otra **œuf** **est** barata."
+  },
+  {
+    "sentence_number": 7,
+    "content": "Esa vecina sirve **beaucoup** **de** **viande**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "Aquella **haricot** **est** sabrosa."
+  },
+  {
+    "sentence_number": 9,
+    "content": "Al final, «**je** **ne** **veux** **rien**»."
+  },
+  {
+    "sentence_number": 10,
+    "content": "Aquella **fruit** **est** fresca."
+  },
+  {
+    "sentence_number": 11,
+    "content": "Procuro **boire** **lait**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "A veces, «**je** **ne** **veux** **rien**»."
+  },
+  {
+    "sentence_number": 13,
+    "content": "Él prepara **moins** **de** **lait**."
+  },
+  {
+    "sentence_number": 14,
+    "content": "Esta vez como **beaucoup** **de** **légume**."
+  },
+  {
+    "sentence_number": 15,
+    "content": "Esa cocinera prepara **moins** **de** **boisson**."
+  },
+  {
+    "sentence_number": 16,
+    "content": "Se antojan **café** **et** **pomme** juntos."
+  },
+  {
+    "sentence_number": 17,
+    "content": "Necesito **manger** **œuf**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**riz** **et** **haricot** son mis favoritos."
+  },
+  {
+    "sentence_number": 19,
+    "content": "Ese amigo trae **plus** **de** **légume**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "Intento **boire** **café**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "Nunca rechazo **moins** **de** **nourriture**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "Esta **café** **est** dulce."
+  },
+  {
+    "sentence_number": 23,
+    "content": "Esta **pomme** **est** amarga."
+  },
+  {
+    "sentence_number": 24,
+    "content": "Normalmente pido **peu** **de** **pomme**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "Esta **eau** **est** tibia."
+  },
+  {
+    "sentence_number": 26,
+    "content": "Esa **œuf** **est** sencilla."
+  },
+  {
+    "sentence_number": 27,
+    "content": "Mañana, «**je** **ne** **veux** **pas** **de** **riz**»."
+  },
+  {
+    "sentence_number": 28,
+    "content": "A veces preparo **beaucoup** **de** **lait**."
+  },
+  {
+    "sentence_number": 29,
+    "content": "Compro **viande** **et** **légume** cada semana."
+  },
+  {
+    "sentence_number": 30,
+    "content": "Prefiero **café** **avec** **lait**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "Esa cocinera sirve **œuf** **avec** **pain**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "Esta otra **pain** **est** helada."
+  },
+  {
+    "sentence_number": 33,
+    "content": "Aquella **lait** **est** barata."
+  },
+  {
+    "sentence_number": 34,
+    "content": "Otra **viande** **est** deliciosa."
+  },
+  {
+    "sentence_number": 35,
+    "content": "Intento **manger** **légume**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "Decidí **boire** **boisson**."
+  },
+  {
+    "sentence_number": 37,
+    "content": "Se antojan **eau** **et** **lait** juntos."
+  },
+  {
+    "sentence_number": 38,
+    "content": "Esta otra **nourriture** **est** exótica."
+  },
+  {
+    "sentence_number": 39,
+    "content": "Por suerte, «**je** **ne** **veux** **pas** **de** **fruit**»."
+  },
+  {
+    "sentence_number": 40,
+    "content": "Aquella **boisson** **est** popular."
+  },
+  {
+    "sentence_number": 41,
+    "content": "Necesito **manger** **fruit**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "Necesito **boire** **eau**."
+  },
+  {
+    "sentence_number": 43,
+    "content": "Prefiero **café** **avec** **pain**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "Prefiero **manger** **viande**."
+  },
+  {
+    "sentence_number": 45,
+    "content": "Esta otra **œuf** **est** bastante cara."
+  },
+  {
+    "sentence_number": 46,
+    "content": "Esta **légume** **est** dulce."
+  },
+  {
+    "sentence_number": 47,
+    "content": "Hoy mismo, «**je** **ne** **veux** **rien**»."
+  },
+  {
+    "sentence_number": 48,
+    "content": "Ahora mismo, «**je** **ne** **veux** **pas** **de** **haricot**»."
+  },
+  {
+    "sentence_number": 49,
+    "content": "Esa **nourriture** **est** sabrosa."
+  },
+  {
+    "sentence_number": 50,
+    "content": "Prefiero **viande** **avec** **pain**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "Esa **boisson** **est** helada."
+  },
+  {
+    "sentence_number": 52,
+    "content": "Casi nunca, «**je** **ne** **veux** **pas** **de** **boisson**»."
+  },
+  {
+    "sentence_number": 53,
+    "content": "Por ahora, «**je** **ne** **veux** **pas** **de** **café**»."
+  },
+  {
+    "sentence_number": 54,
+    "content": "Intento **aimer** **pomme**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "Decidí **aimer** **pain**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "Últimamente preparo **plus** **de** **fruit**."
+  },
+  {
+    "sentence_number": 57,
+    "content": "Compro **œuf** **et** **pain** cada semana."
+  },
+  {
+    "sentence_number": 58,
+    "content": "Esta **eau** **est** deliciosa."
+  },
+  {
+    "sentence_number": 59,
+    "content": "Esta vez, «**je** **ne** **veux** **pas** **d'****œuf**»."
+  },
+  {
+    "sentence_number": 60,
+    "content": "Cuando ya comí bastante, «**je** **ne** **veux** **rien**»."
+  },
+  {
+    "sentence_number": 61,
+    "content": "Esa **riz** **est** fresca."
+  },
+  {
+    "sentence_number": 62,
+    "content": "Prefiero **boire** **café**."
+  },
+  {
+    "sentence_number": 63,
+    "content": "Esa cocinera sirve **pain** **avec** **fruit**."
+  },
+  {
+    "sentence_number": 64,
+    "content": "Esa misma **nourriture** **est** barata."
+  },
+  {
+    "sentence_number": 65,
+    "content": "Esta vez preparo **riz** **avec** **légume**."
+  },
+  {
+    "sentence_number": 66,
+    "content": "Compramos **plus** **de** **nourriture**."
+  },
+  {
+    "sentence_number": 67,
+    "content": "Esa amiga prepara **beaucoup** **de** **riz**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "Actualmente compro **beaucoup** **d'****eau**."
+  },
+  {
+    "sentence_number": 69,
+    "content": "Esta otra **boisson** **est** casera."
+  },
+  {
+    "sentence_number": 70,
+    "content": "Hoy compro **peu** **de** **café**."
+  },
+  {
+    "sentence_number": 71,
+    "content": "Otra **café** **est** barata."
+  },
+  {
+    "sentence_number": 72,
+    "content": "Siempre que puedo, «**je** **ne** **veux** **pas** **de** **légume**»."
+  },
+  {
+    "sentence_number": 73,
+    "content": "Esta vez preparo **fruit** **avec** **pomme**."
+  },
+  {
+    "sentence_number": 74,
+    "content": "Esa misma **fruit** **est** tibia."
+  },
+  {
+    "sentence_number": 75,
+    "content": "Ese mercado vende **plus** **d'****œuf**."
+  },
+  {
+    "sentence_number": 76,
+    "content": "Esa **pain** **est** dulce."
+  },
+  {
+    "sentence_number": 77,
+    "content": "Esa **pomme** **est** helada."
+  },
+  {
+    "sentence_number": 78,
+    "content": "Otra **fruit** **est** amarga."
+  },
+  {
+    "sentence_number": 79,
+    "content": "Este mes, «**je** **ne** **veux** **pas** **de** **lait**»."
+  },
+  {
+    "sentence_number": 80,
+    "content": "Ella compra **moins** **d'****eau**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "Otra **viande** **est** bastante cara."
+  },
+  {
+    "sentence_number": 82,
+    "content": "Decidí **aimer** **viande**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "Otra **eau** **est** dulce."
+  },
+  {
+    "sentence_number": 84,
+    "content": "Esa **haricot** **est** bastante cara."
+  },
+  {
+    "sentence_number": 85,
+    "content": "Esta otra **légume** **est** amarga."
+  },
+  {
+    "sentence_number": 86,
+    "content": "Casi siempre pido **plus** **de** **pomme**."
+  },
+  {
+    "sentence_number": 87,
+    "content": "Prefiero **manger** **nourriture**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "Esta otra **boisson** **est** dulce."
+  },
+  {
+    "sentence_number": 89,
+    "content": "Compro **pain** **et** **fruit** cada semana."
+  },
+  {
+    "sentence_number": 90,
+    "content": "Esa cocinera sirve **viande** **avec** **légume**."
+  },
+  {
+    "sentence_number": 91,
+    "content": "Esta **eau** **est** exótica."
+  },
+  {
+    "sentence_number": 92,
+    "content": "Aquella **lait** **est** helada."
+  },
+  {
+    "sentence_number": 93,
+    "content": "**boisson** **et** **nourriture** son mis favoritos."
+  },
+  {
+    "sentence_number": 94,
+    "content": "Siempre pido **peu** **de** **pain**."
+  },
+  {
+    "sentence_number": 95,
+    "content": "Esta vez compro **peu** **de** **viande**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "Esta otra **pomme** **est** popular."
+  },
+  {
+    "sentence_number": 97,
+    "content": "Hoy, «**je** **ne** **veux** **pas** **de** **pain**»."
+  },
+  {
+    "sentence_number": 98,
+    "content": "Esa panadera prepara **peu** **de** **haricot**."
+  },
+  {
+    "sentence_number": 99,
+    "content": "Procuro **aimer** **nourriture**."
+  },
+  {
+    "sentence_number": 100,
+    "content": "Cada semana compran **moins** **de** **haricot**."
+  }
+]

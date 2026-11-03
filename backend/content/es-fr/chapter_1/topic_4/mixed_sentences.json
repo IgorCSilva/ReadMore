@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "Procuro **dîner** ligero, luego **se reposer** brevemente."
+  },
+  {
+    "sentence_number": 2,
+    "content": "Procuro **rentrer** pronto, luego **déjeuner** tranquilo."
+  },
+  {
+    "sentence_number": 3,
+    "content": "Tras ese viaje largo, llego **fatigué**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "Decidí **se réveiller** tranquilo, luego **se lever** despacio."
+  },
+  {
+    "sentence_number": 5,
+    "content": "Generalmente, «**je** **dîne**» temprano."
+  },
+  {
+    "sentence_number": 6,
+    "content": "Primero **me** **réveille**, **puis** desayuno algo ligero."
+  },
+  {
+    "sentence_number": 7,
+    "content": "Prefiero **se doucher** rápido, luego **se brosser les dents** cuidadosamente."
+  },
+  {
+    "sentence_number": 8,
+    "content": "Cuando llego agotado, «**je** **dors**» enseguida."
+  },
+  {
+    "sentence_number": 9,
+    "content": "Decidí **dîner** ligero, luego **se reposer** brevemente."
+  },
+  {
+    "sentence_number": 10,
+    "content": "Antes **de** **sortir**, «**je** **m'****habille**», siempre cómodo."
+  },
+  {
+    "sentence_number": 11,
+    "content": "Casi siempre, «**je** **dors**» temprano."
+  },
+  {
+    "sentence_number": 12,
+    "content": "Decidí **se doucher** rápido, luego **se brosser les dents** cuidadosamente."
+  },
+  {
+    "sentence_number": 13,
+    "content": "Apenas tengo hambre, «**je** **déjeune**» algo ligero."
+  },
+  {
+    "sentence_number": 14,
+    "content": "Casi siempre, «**je** **déjeune**» rápido cada mañana."
+  },
+  {
+    "sentence_number": 15,
+    "content": "Cada fin **de** semana, «**je** **dors**» más tiempo."
+  },
+  {
+    "sentence_number": 16,
+    "content": "Temprano, **me** **réveille** antes del amanecer."
+  },
+  {
+    "sentence_number": 17,
+    "content": "Casi siempre **me** **réveille** solo, naturalmente."
+  },
+  {
+    "sentence_number": 18,
+    "content": "Tras **travailler** tanto, quedo **fatigué**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "Cada mañana, «**je** **m'****habille** despacio»."
+  },
+  {
+    "sentence_number": 20,
+    "content": "Procuro **se doucher** rápido, luego **se brosser les dents** cuidadosamente."
+  },
+  {
+    "sentence_number": 21,
+    "content": "Necesito **sortir** temprano, luego **aller** despacio."
+  },
+  {
+    "sentence_number": 22,
+    "content": "Intento **sortir** temprano, luego **aller** despacio."
+  },
+  {
+    "sentence_number": 23,
+    "content": "Necesito **rentrer** pronto, luego **déjeuner** tranquilo."
+  },
+  {
+    "sentence_number": 24,
+    "content": "Antes **de** **petit-déjeuner**, «**je** **m'****habille**» despacio."
+  },
+  {
+    "sentence_number": 25,
+    "content": "Cada **matin**, preparo café antes **de** **sortir**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "Rápido, **me** **lève** apenas suena algún reloj."
+  },
+  {
+    "sentence_number": 27,
+    "content": "Durante cada **matin**, trabajo mejor."
+  },
+  {
+    "sentence_number": 28,
+    "content": "Intento **avoir** paciencia para **faire** las cosas despacio."
+  },
+  {
+    "sentence_number": 29,
+    "content": "Cada **soir**, reviso cuidadosamente mis pendientes."
+  },
+  {
+    "sentence_number": 30,
+    "content": "Necesito **dîner** ligero, luego **se reposer** brevemente."
+  },
+  {
+    "sentence_number": 31,
+    "content": "Prefiero **avoir** paciencia para **faire** las cosas despacio."
+  },
+  {
+    "sentence_number": 32,
+    "content": "Primero **me** **réveille**, **puis** **me** **lève** despacio."
+  },
+  {
+    "sentence_number": 33,
+    "content": "Al mediodía, «**je** **déjeune**» tranquilamente."
+  },
+  {
+    "sentence_number": 34,
+    "content": "Cada lunes, «**je** **travaille**» bastante animado."
+  },
+  {
+    "sentence_number": 35,
+    "content": "Tras agotarme bastante, «**je** **dors**» profundamente."
+  },
+  {
+    "sentence_number": 36,
+    "content": "Procuro **avoir** paciencia para **faire** las cosas despacio."
+  },
+  {
+    "sentence_number": 37,
+    "content": "Antes **de** **dormir**, «**je** **dors**» siempre tranquilo."
+  },
+  {
+    "sentence_number": 38,
+    "content": "Normalmente **me** **réveille**, **puis** **me** **lève** enseguida."
+  },
+  {
+    "sentence_number": 39,
+    "content": "Cada **soir**, apago las luces despacio."
+  },
+  {
+    "sentence_number": 40,
+    "content": "Decidí **sortir** temprano, luego **aller** despacio."
+  },
+  {
+    "sentence_number": 41,
+    "content": "Procuro **se réveiller** tranquilo, luego **se lever** despacio."
+  },
+  {
+    "sentence_number": 42,
+    "content": "Intento **rentrer** pronto, luego **déjeuner** tranquilo."
+  },
+  {
+    "sentence_number": 43,
+    "content": "Procuro **sortir** temprano, luego **aller** despacio."
+  },
+  {
+    "sentence_number": 44,
+    "content": "Procuro **arriver** puntual, luego **travailler** rápido también."
+  },
+  {
+    "sentence_number": 45,
+    "content": "Intento **se réveiller** tranquilo, luego **se lever** despacio."
+  },
+  {
+    "sentence_number": 46,
+    "content": "A veces, «**je** **dîne**» mientras escucho música."
+  },
+  {
+    "sentence_number": 47,
+    "content": "Durante cada verano, «**je** **travaille**» menos horas."
+  },
+  {
+    "sentence_number": 48,
+    "content": "Entre semana, «**je** **travaille**» desde temprano."
+  },
+  {
+    "sentence_number": 49,
+    "content": "Prefiero **lire** algo breve antes **de** **dormir**."
+  },
+  {
+    "sentence_number": 50,
+    "content": "Necesito **lire** algo breve antes **de** **dormir**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "Primero **travailler**, **puis** **se reposer** brevemente."
+  },
+  {
+    "sentence_number": 52,
+    "content": "Enseguida, **me** **lève** rápido."
+  },
+  {
+    "sentence_number": 53,
+    "content": "Prefiero **s'habiller** rápido antes **de** **petit-déjeuner**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "Despacio, **me** **lève** cada domingo."
+  },
+  {
+    "sentence_number": 55,
+    "content": "Decidí **lire** algo breve antes **de** **dormir**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "Procuro **s'habiller** rápido antes **de** **petit-déjeuner**."
+  },
+  {
+    "sentence_number": 57,
+    "content": "Durante cada semana, «**je** **déjeune**» muy rápido."
+  },
+  {
+    "sentence_number": 58,
+    "content": "Cuando llego cansado, «**je** **dîne**» rápido."
+  },
+  {
+    "sentence_number": 59,
+    "content": "Intento **arriver** puntual, luego **travailler** rápido también."
+  },
+  {
+    "sentence_number": 60,
+    "content": "Casi siempre, «**je** **travaille**» durante horas extra."
+  },
+  {
+    "sentence_number": 61,
+    "content": "Intento **dîner** ligero, luego **se reposer** brevemente."
+  },
+  {
+    "sentence_number": 62,
+    "content": "Prefiero **rentrer** pronto, luego **déjeuner** tranquilo."
+  },
+  {
+    "sentence_number": 63,
+    "content": "Prefiero **dîner** ligero, luego **se reposer** brevemente."
+  },
+  {
+    "sentence_number": 64,
+    "content": "Cada viernes, «**je** **dîne**» acompañado."
+  },
+  {
+    "sentence_number": 65,
+    "content": "Cada **matin**, reviso mis tareas pendientes."
+  },
+  {
+    "sentence_number": 66,
+    "content": "Intento **se doucher** rápido, luego **se brosser les dents** cuidadosamente."
+  },
+  {
+    "sentence_number": 67,
+    "content": "Normalmente, «**je** **m'****habille** rápido»."
+  },
+  {
+    "sentence_number": 68,
+    "content": "Procuro **lire** algo breve antes **de** **dormir**."
+  },
+  {
+    "sentence_number": 69,
+    "content": "**me** siento **fatigué** al final **de** cada jornada."
+  },
+  {
+    "sentence_number": 70,
+    "content": "Intento **s'habiller** rápido antes **de** **petit-déjeuner**."
+  },
+  {
+    "sentence_number": 71,
+    "content": "Prefiero **se réveiller** tranquilo, luego **se lever** despacio."
+  },
+  {
+    "sentence_number": 72,
+    "content": "Primero **me** **lève**, **puis** **se doucher** rápido."
+  },
+  {
+    "sentence_number": 73,
+    "content": "Cada domingo, «**je** **déjeune**» más tranquilo."
+  },
+  {
+    "sentence_number": 74,
+    "content": "Normalmente, termino cada semana bastante **fatigué**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "Apenas **me** **réveille**, abro los ojos despacio."
+  },
+  {
+    "sentence_number": 76,
+    "content": "Cada **soir**, reduzco bastante ese volumen."
+  },
+  {
+    "sentence_number": 77,
+    "content": "Intento **lire** algo breve antes **de** **dormir**."
+  },
+  {
+    "sentence_number": 78,
+    "content": "Entre silencio, «**je** **dors**» mucho mejor."
+  },
+  {
+    "sentence_number": 79,
+    "content": "Cada **matin**, escucho música tranquila."
+  },
+  {
+    "sentence_number": 80,
+    "content": "Cada domingo, «**je** **m'****habille**» tranquilamente."
+  },
+  {
+    "sentence_number": 81,
+    "content": "Normalmente, «**je** **travaille**» continuamente."
+  },
+  {
+    "sentence_number": 82,
+    "content": "Necesito **s'habiller** rápido antes **de** **petit-déjeuner**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "Necesito **se réveiller** tranquilo, luego **se lever** despacio."
+  },
+  {
+    "sentence_number": 84,
+    "content": "Durante cada **soir**, descanso bastante."
+  },
+  {
+    "sentence_number": 85,
+    "content": "Tras **se réveiller**, «**je** **déjeune**» enseguida."
+  },
+  {
+    "sentence_number": 86,
+    "content": "Prefiero **arriver** puntual, luego **travailler** rápido también."
+  },
+  {
+    "sentence_number": 87,
+    "content": "Finalmente **me** **lève**, **puis** empieza esa jornada."
+  },
+  {
+    "sentence_number": 88,
+    "content": "Al vestirme, digo: «**je** **m'****habille** rápido»."
+  },
+  {
+    "sentence_number": 89,
+    "content": "Decidí **s'habiller** rápido antes **de** **petit-déjeuner**."
+  },
+  {
+    "sentence_number": 90,
+    "content": "Siempre, «**je** **dîne**» ligero."
+  },
+  {
+    "sentence_number": 91,
+    "content": "Cada **soir** tranquilo, leo algo breve."
+  },
+  {
+    "sentence_number": 92,
+    "content": "Decidí **arriver** puntual, luego **travailler** rápido también."
+  },
+  {
+    "sentence_number": 93,
+    "content": "Decidí **avoir** paciencia para **faire** las cosas despacio."
+  },
+  {
+    "sentence_number": 94,
+    "content": "Necesito **se doucher** rápido, luego **se brosser les dents** cuidadosamente."
+  },
+  {
+    "sentence_number": 95,
+    "content": "Necesito **arriver** puntual, luego **travailler** rápido también."
+  },
+  {
+    "sentence_number": 96,
+    "content": "Necesito **avoir** paciencia para **faire** las cosas despacio."
+  },
+  {
+    "sentence_number": 97,
+    "content": "Esa jornada fue dura: **me** siento **fatigué**."
+  },
+  {
+    "sentence_number": 98,
+    "content": "Prefiero **sortir** temprano, luego **aller** despacio."
+  },
+  {
+    "sentence_number": 99,
+    "content": "Decidí **rentrer** pronto, luego **déjeuner** tranquilo."
+  },
+  {
+    "sentence_number": 100,
+    "content": "Cada **matin** distinto, salgo a correr temprano."
+  }
+]
