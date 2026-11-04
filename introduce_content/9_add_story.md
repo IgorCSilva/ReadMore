@@ -52,6 +52,15 @@ meaning in <native> with a grammatical note for conjugated forms, two examples (
 the story's own text, one freshly written), target-language synonyms/antonyms where
 natural, additive merge only, re-sorted keys. Exclude bare numerals, same as above.
 
+Also run the same homograph check described in "Create theme content" step 2 for every
+token that already has a glossary entry: stories introduce a lot of narrative/figurative
+usage (e.g. "cara" = face, used as a body part, vs. an existing "cara" entry meaning
+"expensive"; "pasta" = a toothpaste-like paste, vs. an existing entry meaning pasta/
+noodles) that a vocabulary-topic-only glossary may not cover yet. If this story's sentence
+uses a sense the existing entry doesn't capture, extend that entry into a numbered
+multi-sense one per step 3b there instead of adding a conflicting duplicate or leaving the
+mismatch in place.
+
 ### Affected files:
 
 - backend/content/<native>-<target>/glossary/glossary.json

@@ -2,10 +2,7 @@
   {
     "id": "fr-sent-0310",
     "sentence": "J'aime la nourriture simple.",
-    "word_ids": [
-      "fr-wd-0031",
-      "fr-wd-0112"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0112"]
   },
   {
     "id": "fr-sent-0311",
@@ -29,10 +26,7 @@
   {
     "id": "fr-sent-0313",
     "sentence": "J'aime la boisson fraîche.",
-    "word_ids": [
-      "fr-wd-0031",
-      "fr-wd-0113"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0113"]
   },
   {
     "id": "fr-sent-0314",
@@ -55,34 +49,22 @@
   {
     "id": "fr-sent-0316",
     "sentence": "J'aime l'eau fraîche.",
-    "word_ids": [
-      "fr-wd-0114"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0114"]
   },
   {
     "id": "fr-sent-0317",
     "sentence": "L'eau est froide.",
-    "word_ids": [
-      "fr-wd-0114",
-      "fr-wd-0020"
-    ]
+    "word_ids": ["fr-wd-0031", "fr-wd-0114", "fr-wd-0020"]
   },
   {
     "id": "fr-sent-0318",
     "sentence": "Je bois l'eau chaque matin.",
-    "word_ids": [
-      "fr-wd-0018",
-      "fr-wd-0114",
-      "fr-wd-0083"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0114", "fr-wd-0083"]
   },
   {
     "id": "fr-sent-0319",
     "sentence": "J'aime le café chaud.",
-    "word_ids": [
-      "fr-wd-0030",
-      "fr-wd-0115"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0115"]
   },
   {
     "id": "fr-sent-0320",
@@ -108,10 +90,7 @@
   {
     "id": "fr-sent-0322",
     "sentence": "J'aime le lait froid.",
-    "word_ids": [
-      "fr-wd-0030",
-      "fr-wd-0116"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0116"]
   },
   {
     "id": "fr-sent-0323",
@@ -138,10 +117,7 @@
   {
     "id": "fr-sent-0325",
     "sentence": "J'aime le pain frais.",
-    "word_ids": [
-      "fr-wd-0030",
-      "fr-wd-0117"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0117"]
   },
   {
     "id": "fr-sent-0326",
@@ -167,10 +143,7 @@
   {
     "id": "fr-sent-0328",
     "sentence": "J'aime le riz chaud.",
-    "word_ids": [
-      "fr-wd-0030",
-      "fr-wd-0118"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0118"]
   },
   {
     "id": "fr-sent-0329",
@@ -196,10 +169,7 @@
   {
     "id": "fr-sent-0331",
     "sentence": "J'aime le haricot noir.",
-    "word_ids": [
-      "fr-wd-0030",
-      "fr-wd-0119"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0119"]
   },
   {
     "id": "fr-sent-0332",
@@ -227,10 +197,7 @@
   {
     "id": "fr-sent-0334",
     "sentence": "J'aime la viande grillée.",
-    "word_ids": [
-      "fr-wd-0031",
-      "fr-wd-0120"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0120"]
   },
   {
     "id": "fr-sent-0335",
@@ -256,9 +223,7 @@
   {
     "id": "fr-sent-0337",
     "sentence": "J'aime l'œuf frit.",
-    "word_ids": [
-      "fr-wd-0121"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0121"]
   },
   {
     "id": "fr-sent-0338",
@@ -283,10 +248,7 @@
   {
     "id": "fr-sent-0340",
     "sentence": "J'aime le fruit frais.",
-    "word_ids": [
-      "fr-wd-0030",
-      "fr-wd-0122"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0122"]
   },
   {
     "id": "fr-sent-0341",
@@ -311,10 +273,7 @@
   {
     "id": "fr-sent-0343",
     "sentence": "J'aime la pomme rouge.",
-    "word_ids": [
-      "fr-wd-0031",
-      "fr-wd-0123"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0123"]
   },
   {
     "id": "fr-sent-0344",
@@ -339,10 +298,7 @@
   {
     "id": "fr-sent-0346",
     "sentence": "J'aime le légume vert.",
-    "word_ids": [
-      "fr-wd-0030",
-      "fr-wd-0124"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0124"]
   },
   {
     "id": "fr-sent-0347",
@@ -383,13 +339,7 @@
   {
     "id": "fr-sent-0350",
     "sentence": "Il est bon d'aimer la nourriture simple.",
-    "word_ids": [
-      "fr-wd-0020",
-      "fr-wd-0005",
-      "fr-wd-0125",
-      "fr-wd-0031",
-      "fr-wd-0112"
-    ]
+    "word_ids": ["fr-wd-0020", "fr-wd-0005", "fr-wd-0025", "fr-wd-0125", "fr-wd-0031", "fr-wd-0112"]
   },
   {
     "id": "fr-sent-0351",
@@ -425,13 +375,7 @@
   {
     "id": "fr-sent-0354",
     "sentence": "J'aime manger le riz le soir.",
-    "word_ids": [
-      "fr-wd-0126",
-      "fr-wd-0030",
-      "fr-wd-0118",
-      "fr-wd-0030",
-      "fr-wd-0090"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0126", "fr-wd-0030", "fr-wd-0118", "fr-wd-0030", "fr-wd-0090"]
   },
   {
     "id": "fr-sent-0355",
@@ -446,20 +390,12 @@
   {
     "id": "fr-sent-0356",
     "sentence": "Il faut boire l'eau fraîche chaque jour.",
-    "word_ids": [
-      "fr-wd-0127",
-      "fr-wd-0114",
-      "fr-wd-0007"
-    ]
+    "word_ids": ["fr-wd-0127", "fr-wd-0031", "fr-wd-0114", "fr-wd-0007"]
   },
   {
     "id": "fr-sent-0357",
     "sentence": "J'aime boire le café chaud.",
-    "word_ids": [
-      "fr-wd-0127",
-      "fr-wd-0030",
-      "fr-wd-0115"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0127", "fr-wd-0030", "fr-wd-0115"]
   },
   {
     "id": "fr-sent-0358",
@@ -520,12 +456,7 @@
   {
     "id": "fr-sent-0363",
     "sentence": "Je ne bois pas d'eau froide.",
-    "word_ids": [
-      "fr-wd-0018",
-      "fr-wd-0129",
-      "fr-wd-0130",
-      "fr-wd-0114"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0129", "fr-wd-0130", "fr-wd-0025", "fr-wd-0114"]
   },
   {
     "id": "fr-sent-0364",
@@ -553,12 +484,7 @@
   {
     "id": "fr-sent-0366",
     "sentence": "Je ne bois pas d'eau froide.",
-    "word_ids": [
-      "fr-wd-0018",
-      "fr-wd-0129",
-      "fr-wd-0130",
-      "fr-wd-0114"
-    ]
+    "word_ids": ["fr-wd-0018", "fr-wd-0129", "fr-wd-0130", "fr-wd-0025", "fr-wd-0114"]
   },
   {
     "id": "fr-sent-0367",
