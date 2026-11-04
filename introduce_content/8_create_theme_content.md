@@ -4,7 +4,7 @@ native: es
 level: A1
 roadmap directory: backend/content/learning/theme/health
 chapter: EXE
-topic: 3
+topic: 5
 output directory: <roadmap directory>/<chapter>_<topic>
 target: fr
 
@@ -43,6 +43,15 @@ as missing Study-modal entries a learner would actually hit.
    {word_or_phrase: entry} map, keyed by exact normalized surface form — not lemma, so
    "bebe" and "bebas" each need their own entry even though they share a root "beber").
 
+   Also check tokens that already HAVE an entry: read the entry's `meaning` and compare it
+   against how the word is actually used in this topic's sentence. Spanish is full of
+   homographs where the same surface form covers an unrelated sense — a noun vs. a
+   conjugated verb form (e.g. "lata" the tin can vs. "lata" the subjunctive of "latir";
+   "cocina" the kitchen vs. "Cocina" the imperative of "cocinar"; "cara" expensive vs.
+   "cara" face; "cuenta" from "darse cuenta" vs. "cuenta" = "counts/matters"). If the
+   existing single meaning doesn't cover the sense used here, don't overwrite it — expand
+   it into a numbered multi-sense entry (see step 3b).
+
 3. For each missing token, add an entry matching the file's existing schema exactly:
 
 {
@@ -56,15 +65,37 @@ as missing Study-modal entries a learner would actually hit.
   }
 }
 
-   Keep the merge additive — never remove or edit an existing key, even if it looks like it
-   could be improved; this file accumulates across every topic/story sharing the pair.
+   Keep the merge additive — never remove or edit an existing key just because it looks
+   like it could be improved; this file accumulates across every topic/story sharing the
+   pair. The one exception is the homograph case from step 2: when a sense actually used
+   here is missing from an existing entry, extend that entry rather than leaving the gap.
+
+3b. To extend an existing entry with a new sense, renumber `meaning` and `examples` so
+    each sense is tagged "(1)", "(2)", etc. — append the new sense as the next number and
+    prefix every pre-existing example with "(1)" (do this even if the original entry had
+    no numbering yet). Prefix `synonyms`/`antonyms` entries the same way whenever more than
+    one sense has any. Pull at least one example for the new sense straight from this
+    topic's own content. For example, turning a kitchen-only "cocina" entry into one that
+    also covers the "Cocina el arroz..." imperative used in this topic:
+
+{
+  "cocina": {
+    "meaning": "(1) Cozinha. (2) Cozinhe; imperativo de 'cocinar'.",
+    "examples": [
+      "(1) Toma un alimento empacado de tu cocina.",
+      "(2) Cocina el arroz en agua por 20 minutos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  }
+}
 
 4. Re-sort the file's top-level keys alphabetically after merging (the file is maintained
    in sorted order) and write it back with the same ensure_ascii=False, indent=2 formatting
    as the existing file.
 
-Output: the list of newly added glossary keys, and confirmation no existing key was
-altered.
+Output: the list of newly added glossary keys, any existing keys extended with a new
+numbered sense (step 3b) and why, and confirmation no other existing key was altered.
 
 ### Affected files:
 

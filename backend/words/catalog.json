@@ -3135,6 +3135,34 @@
     {
       "word_id": "wd-0784",
       "filename": "topic_marker"
+    },
+    {
+      "word_id": "wd-0785",
+      "filename": "i_get_dressed"
+    },
+    {
+      "word_id": "wd-0786",
+      "filename": "i_have_lunch"
+    },
+    {
+      "word_id": "wd-0787",
+      "filename": "i_work"
+    },
+    {
+      "word_id": "wd-0788",
+      "filename": "i_have_dinner"
+    },
+    {
+      "word_id": "wd-0789",
+      "filename": "i_sleep"
+    },
+    {
+      "word_id": "wd-0790",
+      "filename": "tired"
+    },
+    {
+      "word_id": "wd-0791",
+      "filename": "pre_verb_negation_marker"
     }
   ]
 }

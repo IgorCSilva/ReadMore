@@ -490,5 +490,323 @@
     "root_word_id": "wd-0066",
     "word": "là",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0083",
+    "root_word_id": "wd-0076",
+    "word": "matin",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0084",
+    "root_word_id": "wd-0315",
+    "word": "réveille",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0085",
+    "root_word_id": "wd-0316",
+    "word": "lève",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0086",
+    "root_word_id": "wd-0785",
+    "word": "habille",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0087",
+    "root_word_id": "wd-0305",
+    "word": "petit-déjeuner",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0088",
+    "root_word_id": "wd-0786",
+    "word": "déjeune",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0089",
+    "root_word_id": "wd-0787",
+    "word": "travaille",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0090",
+    "root_word_id": "wd-0078",
+    "word": "soir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0091",
+    "root_word_id": "wd-0788",
+    "word": "dîne",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0092",
+    "root_word_id": "wd-0789",
+    "word": "dors",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0093",
+    "root_word_id": "wd-0233",
+    "word": "puis",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0094",
+    "root_word_id": "wd-0790",
+    "word": "fatigué",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0095",
+    "root_word_id": "wd-0300",
+    "word": "se réveiller",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0096",
+    "root_word_id": "wd-0301",
+    "word": "se lever",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0097",
+    "root_word_id": "wd-0302",
+    "word": "se doucher",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0098",
+    "root_word_id": "wd-0303",
+    "word": "se brosser les dents",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0099",
+    "root_word_id": "wd-0304",
+    "word": "s'habiller",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0100",
+    "root_word_id": "wd-0306",
+    "word": "sortir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0101",
+    "root_word_id": "wd-0056",
+    "word": "aller",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0102",
+    "root_word_id": "wd-0307",
+    "word": "arriver",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0103",
+    "root_word_id": "wd-0308",
+    "word": "travailler",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0104",
+    "root_word_id": "wd-0309",
+    "word": "rentrer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0105",
+    "root_word_id": "wd-0310",
+    "word": "déjeuner",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0106",
+    "root_word_id": "wd-0311",
+    "word": "dîner",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0107",
+    "root_word_id": "wd-0312",
+    "word": "se reposer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0108",
+    "root_word_id": "wd-0313",
+    "word": "lire",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0109",
+    "root_word_id": "wd-0314",
+    "word": "dormir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0110",
+    "root_word_id": "wd-0053",
+    "word": "avoir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0111",
+    "root_word_id": "wd-0318",
+    "word": "faire",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0112",
+    "root_word_id": "wd-0319",
+    "word": "nourriture",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0113",
+    "root_word_id": "wd-0320",
+    "word": "boisson",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0114",
+    "root_word_id": "wd-0171",
+    "word": "eau",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0115",
+    "root_word_id": "wd-0172",
+    "word": "café",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0116",
+    "root_word_id": "wd-0180",
+    "word": "lait",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0117",
+    "root_word_id": "wd-0174",
+    "word": "pain",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0118",
+    "root_word_id": "wd-0175",
+    "word": "riz",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0119",
+    "root_word_id": "wd-0321",
+    "word": "haricot",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0120",
+    "root_word_id": "wd-0176",
+    "word": "viande",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0121",
+    "root_word_id": "wd-0178",
+    "word": "œuf",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0122",
+    "root_word_id": "wd-0181",
+    "word": "fruit",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0123",
+    "root_word_id": "wd-0242",
+    "word": "pomme",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0124",
+    "root_word_id": "wd-0182",
+    "word": "légume",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0125",
+    "root_word_id": "wd-0054",
+    "word": "aimer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0126",
+    "root_word_id": "wd-0223",
+    "word": "manger",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0127",
+    "root_word_id": "wd-0322",
+    "word": "boire",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0128",
+    "root_word_id": "wd-0055",
+    "word": "veux",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0129",
+    "root_word_id": "wd-0791",
+    "word": "ne",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0130",
+    "root_word_id": "wd-0064",
+    "word": "pas",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0131",
+    "root_word_id": "wd-0323",
+    "word": "rien",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0132",
+    "root_word_id": "wd-0254",
+    "word": "beaucoup",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0133",
+    "root_word_id": "wd-0256",
+    "word": "peu",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0134",
+    "root_word_id": "wd-0324",
+    "word": "plus",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0135",
+    "root_word_id": "wd-0325",
+    "word": "moins",
+    "gender_id": "not_apply"
   }
 ]

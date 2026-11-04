@@ -90,6 +90,58 @@
         "eso": "ça",
         "aquello": "ça"
       }
+    },
+    "topic_4": {
+      "es": {
+        "despertarse": "se réveiller",
+        "levantarse": "se lever",
+        "ducharse": "se doucher",
+        "cepillarse los dientes": "se brosser les dents",
+        "vestirse": "s'habiller",
+        "desayunar": "petit-déjeuner",
+        "salir": "sortir",
+        "ir": "aller",
+        "llegar": "arriver",
+        "trabajar": "travailler",
+        "volver": "rentrer",
+        "almorzar": "déjeuner",
+        "cenar": "dîner",
+        "descansar": "se reposer",
+        "leer": "lire",
+        "dormir": "dormir",
+        "despierto": "réveille",
+        "levanto": "lève",
+        "después": "puis",
+        "tener": "avoir",
+        "hacer": "faire",
+        "me": "me"
+      }
+    },
+    "topic_5": {
+      "es": {
+        "comida": "nourriture",
+        "bebida": "boisson",
+        "agua": "eau",
+        "café": "café",
+        "leche": "lait",
+        "pan": "pain",
+        "arroz": "riz",
+        "frijol": "haricot",
+        "carne": "viande",
+        "huevo": "œuf",
+        "fruta": "fruit",
+        "manzana": "pomme",
+        "verdura": "légume",
+        "gustar": "aimer",
+        "comer": "manger",
+        "beber": "boire",
+        "quiero": "veux",
+        "nada": "rien",
+        "mucho": "beaucoup",
+        "poco": "peu",
+        "más": "plus",
+        "menos": "moins"
+      }
     }
   }
 }
