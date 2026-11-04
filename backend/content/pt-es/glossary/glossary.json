@@ -3062,14 +3062,16 @@
     "antonyms": []
   },
   "cara": {
-    "meaning": "Cara; feminino de 'caro'.",
+    "meaning": "(1) Cara; feminino de 'caro'. (2) Cara; rosto (substantivo).",
     "examples": [
-      "Por Qué la Comida Saludable Parece Cara",
-      "Esta chaqueta es muy cara."
+      "(1) Por Qué la Comida Saludable Parece Cara",
+      "(1) Esta chaqueta es muy cara.",
+      "(2) Una brisa suave le pasa por la cara.",
+      "(2) Ella tiene una cara muy alegre."
     ],
     "synonyms": [],
     "antonyms": [
-      "barata"
+      "(1) barata"
     ]
   },
   "caras": {
@@ -3546,10 +3548,12 @@
     ]
   },
   "cocina": {
-    "meaning": "Cozinha (de 'cocinar').",
+    "meaning": "(1) Cozinha. (2) Cozinhe; imperativo de 'cocinar'.",
     "examples": [
-      "Cocina el arroz en agua por 20 minutos.",
-      "Cocina el pollo en una sartén."
+      "(1) Toma un alimento empacado de tu cocina.",
+      "(1) Mi cocina es pequeña pero muy práctica.",
+      "(2) Cocina el arroz en agua por 20 minutos.",
+      "(2) Cocina el pollo en una sartén."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4586,10 +4590,12 @@
     "antonyms": []
   },
   "cuenta": {
-    "meaning": "Usado em 'darse cuenta' ('perceber-se').",
+    "meaning": "(1) Usado em 'darse cuenta' ('perceber-se'). (2) Conta, importa; terceira pessoa do singular de 'contar'.",
     "examples": [
-      "Mateo se dio cuenta de que Valentina no podía jugar.",
-      "Antes de que te des cuenta, van a jugar juntos."
+      "(1) Mateo se dio cuenta de que Valentina no podía jugar.",
+      "(1) Antes de que te des cuenta, van a jugar juntos.",
+      "(2) Cualquier movimiento cuenta.",
+      "(2) Cada decisión pequeña cuenta al final del día."
     ],
     "synonyms": [],
     "antonyms": []
@@ -9792,10 +9798,12 @@
     "antonyms": []
   },
   "lata": {
-    "meaning": "Lata.",
+    "meaning": "(1) Lata. (2) Bata; forma do subjuntivo de 'latir' (o coração bater).",
     "examples": [
-      "1 lata de tomates",
-      "Abro una lata de atún para el almuerzo."
+      "(1) 1 lata de tomates",
+      "(1) Abro una lata de atún para el almuerzo.",
+      "(2) El cardio es un ejercicio que hace que tu corazón lata más rápido.",
+      "(2) Quiero que mi corazón lata con fuerza después de correr."
     ],
     "synonyms": [],
     "antonyms": []
@@ -13193,10 +13201,12 @@
     "antonyms": []
   },
   "pasta": {
-    "meaning": "Massa (macarrão).",
+    "meaning": "(1) Massa (macarrão). (2) Pasta; substância pastosa (ex.: pasta de dente).",
     "examples": [
-      "La pasta es un carbohidrato.",
-      "Cocina la pasta en agua caliente."
+      "(1) La pasta es un carbohidrato.",
+      "(1) Cocina la pasta en agua caliente.",
+      "(2) La Dra. Lila le entregó una pasta hecha de menta.",
+      "(2) Compré una pasta nueva para limpiar los dientes."
     ],
     "synonyms": [],
     "antonyms": []

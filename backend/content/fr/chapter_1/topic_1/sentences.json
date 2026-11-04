@@ -7,7 +7,7 @@
   {
     "id": "fr-sent-0002",
     "sentence": "Bonjour ! Je m'appelle Claire.",
-    "word_ids": ["fr-wd-0001", "fr-wd-0018", "fr-wd-0024"]
+    "word_ids": ["fr-wd-0001", "fr-wd-0018", "fr-wd-0023", "fr-wd-0024"]
   },
   {
     "id": "fr-sent-0003",
@@ -22,7 +22,7 @@
   {
     "id": "fr-sent-0005",
     "sentence": "Salut ! Je m'appelle Hugo.",
-    "word_ids": ["fr-wd-0002", "fr-wd-0018", "fr-wd-0024"]
+    "word_ids": ["fr-wd-0002", "fr-wd-0018", "fr-wd-0023", "fr-wd-0024"]
   },
   {
     "id": "fr-sent-0006",
@@ -47,7 +47,7 @@
   {
     "id": "fr-sent-0010",
     "sentence": "J'aime le café et le thé.",
-    "word_ids": ["fr-wd-0004"]
+    "word_ids": ["fr-wd-0018", "fr-wd-0004"]
   },
   {
     "id": "fr-sent-0011",
@@ -122,7 +122,7 @@
   {
     "id": "fr-sent-0025",
     "sentence": "Bonne nuit ! Fais de beaux rêves.",
-    "word_ids": ["fr-wd-0011", "fr-wd-0009"]
+    "word_ids": ["fr-wd-0011"]
   },
   {
     "id": "fr-sent-0026",
@@ -297,6 +297,6 @@
   {
     "id": "fr-sent-0060",
     "sentence": "Je m'appelle Léa.",
-    "word_ids": ["fr-wd-0018", "fr-wd-0024"]
+    "word_ids": ["fr-wd-0018", "fr-wd-0023", "fr-wd-0024"]
   }
 ]

@@ -72,8 +72,8 @@ This is the table of contents for the "Good Health" learning theme. It lists **c
 | Physical Exercise | EXE-1 | Benefits of Exercise & Getting Started | Done |
 | Physical Exercise | EXE-2 | Cardio Fundamentals | Done |
 | Physical Exercise | EXE-3 | Strength Training Basics | Done |
-| Physical Exercise | EXE-4 | Flexibility & Mobility | Not Started |
-| Physical Exercise | EXE-5 | Building a Sustainable Routine | Not Started |
+| Physical Exercise | EXE-4 | Flexibility & Mobility | Done |
+| Physical Exercise | EXE-5 | Building a Sustainable Routine | Done |
 | Physical Exercise | EXE-6 | Exercise for Desk Workers & Sedentary Lifestyles | Not Started |
 | Physical Exercise | EXE-7 | Recovery & Injury Prevention | Not Started |
 | Physical Exercise | EXE-8 | Tracking Progress & Staying Motivated | Not Started |

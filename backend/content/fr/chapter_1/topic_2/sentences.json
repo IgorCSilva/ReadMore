@@ -180,10 +180,7 @@
   {
     "id": "fr-sent-0082",
     "sentence": "Ma mère travaille à l'hôpital.",
-    "word_ids": [
-      "fr-wd-0032",
-      "fr-wd-0037"
-    ]
+    "word_ids": ["fr-wd-0032", "fr-wd-0037", "fr-wd-0030"]
   },
   {
     "id": "fr-sent-0083",
@@ -397,74 +394,37 @@
   {
     "id": "fr-sent-0106",
     "sentence": "Mon grand-père raconte toujours de longues histoires.",
-    "word_ids": [
-      "fr-wd-0022",
-      "fr-wd-0045",
-      "fr-wd-0038",
-      "fr-wd-0025"
-    ]
+    "word_ids": ["fr-wd-0022", "fr-wd-0045", "fr-wd-0025"]
   },
   {
     "id": "fr-sent-0107",
     "sentence": "Le grand-père de Camille est pêcheur.",
-    "word_ids": [
-      "fr-wd-0030",
-      "fr-wd-0045",
-      "fr-wd-0038",
-      "fr-wd-0025",
-      "fr-wd-0020"
-    ]
+    "word_ids": ["fr-wd-0030", "fr-wd-0045", "fr-wd-0025", "fr-wd-0020"]
   },
   {
     "id": "fr-sent-0108",
     "sentence": "Son grand-père et sa grand-mère voyagent souvent.",
-    "word_ids": [
-      "fr-wd-0034",
-      "fr-wd-0045",
-      "fr-wd-0038",
-      "fr-wd-0004",
-      "fr-wd-0035",
-      "fr-wd-0046",
-      "fr-wd-0037"
-    ]
+    "word_ids": ["fr-wd-0034", "fr-wd-0045", "fr-wd-0004", "fr-wd-0035", "fr-wd-0046"]
   },
   {
     "id": "fr-sent-0109",
     "sentence": "Ma grand-mère cuisine très bien.",
-    "word_ids": [
-      "fr-wd-0032",
-      "fr-wd-0046",
-      "fr-wd-0037",
-      "fr-wd-0012"
-    ]
+    "word_ids": ["fr-wd-0032", "fr-wd-0046", "fr-wd-0012"]
   },
   {
     "id": "fr-sent-0110",
     "sentence": "La grand-mère de Nina habite à la campagne.",
-    "word_ids": [
-      "fr-wd-0031",
-      "fr-wd-0046",
-      "fr-wd-0037",
-      "fr-wd-0025",
-      "fr-wd-0031"
-    ]
+    "word_ids": ["fr-wd-0031", "fr-wd-0046", "fr-wd-0025", "fr-wd-0031"]
   },
   {
     "id": "fr-sent-0111",
     "sentence": "Sa grand-mère tricote chaque soir.",
-    "word_ids": [
-      "fr-wd-0035",
-      "fr-wd-0046",
-      "fr-wd-0037"
-    ]
+    "word_ids": ["fr-wd-0035", "fr-wd-0046"]
   },
   {
     "id": "fr-sent-0112",
     "sentence": "L'oncle raconte toujours de bonnes blagues.",
-    "word_ids": [
-      "fr-wd-0047",
-      "fr-wd-0025"
-    ]
+    "word_ids": ["fr-wd-0030", "fr-wd-0047", "fr-wd-0025"]
   },
   {
     "id": "fr-sent-0113",
@@ -716,9 +676,7 @@
   {
     "id": "fr-sent-0141",
     "sentence": "Tous arrivent toujours à l'heure.",
-    "word_ids": [
-      "fr-wd-0056"
-    ]
+    "word_ids": ["fr-wd-0056", "fr-wd-0031"]
   },
   {
     "id": "fr-sent-0142",

@@ -61,6 +61,20 @@ const OPTION_COUNT = 8;
 // (e.g. "un día", see backend/words/es_words.json) as separator-split.
 const LETTER_RE = /[\p{L}\p{M}]/u;
 
+// Short French pronouns/articles that elide (drop their final vowel, glue
+// an apostrophe onto what follows) before a vowel or mute h — e.g.
+// "je" + "aime" -> "j'aime". The literal spelling "je" never appears in
+// that sentence, so without this, findWordMatch below would never find a
+// taught word_id for "je" there. Mirrors
+// backend/app/domain/text_boundaries.py's _FRENCH_ELISIONS (duplicated
+// here, same as Sentences.vue's own FRENCH_ELISION_TO_BASE, since nothing
+// is shared between the backend and frontend).
+const FRENCH_ELISIONS = {
+  je: "j'", me: "m'", te: "t'", se: "s'",
+  le: "l'", la: "l'", ne: "n'", de: "d'",
+  que: "qu'", ce: "c'",
+};
+
 function escapeRegExp(str) {
   return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
@@ -71,13 +85,23 @@ function escapeRegExp(str) {
 // misplace a boundary inside an accented word like "día". `needle` can
 // itself contain spaces (multi-word vocabulary entries like "un día"),
 // which a per-token match couldn't represent at all.
+//
+// When `needle` has a French elision form, the elided surface (e.g. "j'")
+// is also accepted. It only needs a clean boundary on its left — the
+// right side is, by definition, glued straight onto the next word.
 function findWordMatch(haystack, needle) {
-  const pattern = new RegExp(escapeRegExp(needle), "giu");
+  const elision = FRENCH_ELISIONS[needle.toLowerCase()];
+  const pattern = elision
+    ? new RegExp(`${escapeRegExp(needle)}|${escapeRegExp(elision)}`, "giu")
+    : new RegExp(escapeRegExp(needle), "giu");
   let match;
   while ((match = pattern.exec(haystack))) {
+    const isElided = elision && match[0].toLowerCase() === elision.toLowerCase();
     const before = haystack[match.index - 1];
     const after = haystack[match.index + match[0].length];
-    if (!(before && LETTER_RE.test(before)) && !(after && LETTER_RE.test(after))) {
+    const beforeOk = !(before && LETTER_RE.test(before));
+    const afterOk = isElided || !(after && LETTER_RE.test(after));
+    if (beforeOk && afterOk) {
       return match;
     }
     pattern.lastIndex = match.index + 1;

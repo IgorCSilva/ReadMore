@@ -1,0 +1,638 @@
+[
+  {
+    "id": "fr-sent-0310",
+    "sentence": "J'aime la nourriture simple.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0112"]
+  },
+  {
+    "id": "fr-sent-0311",
+    "sentence": "La nourriture est délicieuse aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0112",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0312",
+    "sentence": "Je mange la nourriture avec plaisir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0031",
+      "fr-wd-0112",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0313",
+    "sentence": "J'aime la boisson fraîche.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0113"]
+  },
+  {
+    "id": "fr-sent-0314",
+    "sentence": "La boisson est froide.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0113",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0315",
+    "sentence": "Je bois la boisson lentement.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0031",
+      "fr-wd-0113"
+    ]
+  },
+  {
+    "id": "fr-sent-0316",
+    "sentence": "J'aime l'eau fraîche.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0114"]
+  },
+  {
+    "id": "fr-sent-0317",
+    "sentence": "L'eau est froide.",
+    "word_ids": ["fr-wd-0031", "fr-wd-0114", "fr-wd-0020"]
+  },
+  {
+    "id": "fr-sent-0318",
+    "sentence": "Je bois l'eau chaque matin.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0114", "fr-wd-0083"]
+  },
+  {
+    "id": "fr-sent-0319",
+    "sentence": "J'aime le café chaud.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0115"]
+  },
+  {
+    "id": "fr-sent-0320",
+    "sentence": "Le café est bon le matin.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0115",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0030",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0321",
+    "sentence": "Je bois le café rapidement.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0115"
+    ]
+  },
+  {
+    "id": "fr-sent-0322",
+    "sentence": "J'aime le lait froid.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0116"]
+  },
+  {
+    "id": "fr-sent-0323",
+    "sentence": "Le lait est bon le soir.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0116",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0030",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0324",
+    "sentence": "Je bois le lait chaque soir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0116",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0325",
+    "sentence": "J'aime le pain frais.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0117"]
+  },
+  {
+    "id": "fr-sent-0326",
+    "sentence": "Le pain est bon ce matin.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0117",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0327",
+    "sentence": "Je mange le pain avec plaisir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0117",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0328",
+    "sentence": "J'aime le riz chaud.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0118"]
+  },
+  {
+    "id": "fr-sent-0329",
+    "sentence": "Le riz est délicieux.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0118",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0330",
+    "sentence": "Je mange le riz avec la viande.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0118",
+      "fr-wd-0058",
+      "fr-wd-0031",
+      "fr-wd-0120"
+    ]
+  },
+  {
+    "id": "fr-sent-0331",
+    "sentence": "J'aime le haricot noir.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0119"]
+  },
+  {
+    "id": "fr-sent-0332",
+    "sentence": "Le haricot est bon le dimanche.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0119",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0333",
+    "sentence": "Je mange le haricot avec le riz.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0119",
+      "fr-wd-0058",
+      "fr-wd-0030",
+      "fr-wd-0118"
+    ]
+  },
+  {
+    "id": "fr-sent-0334",
+    "sentence": "J'aime la viande grillée.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0120"]
+  },
+  {
+    "id": "fr-sent-0335",
+    "sentence": "La viande est fraîche aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0120",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0336",
+    "sentence": "Je mange la viande avec le riz.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0031",
+      "fr-wd-0120",
+      "fr-wd-0058",
+      "fr-wd-0030",
+      "fr-wd-0118"
+    ]
+  },
+  {
+    "id": "fr-sent-0337",
+    "sentence": "J'aime l'œuf frit.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0121"]
+  },
+  {
+    "id": "fr-sent-0338",
+    "sentence": "L'œuf est bon le matin.",
+    "word_ids": [
+      "fr-wd-0121",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0030",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0339",
+    "sentence": "Je mange l'œuf chaque jour.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0121",
+      "fr-wd-0007"
+    ]
+  },
+  {
+    "id": "fr-sent-0340",
+    "sentence": "J'aime le fruit frais.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0122"]
+  },
+  {
+    "id": "fr-sent-0341",
+    "sentence": "Le fruit est délicieux.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0122",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0342",
+    "sentence": "Je mange le fruit après le déjeuner.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0122",
+      "fr-wd-0030",
+      "fr-wd-0105"
+    ]
+  },
+  {
+    "id": "fr-sent-0343",
+    "sentence": "J'aime la pomme rouge.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0031", "fr-wd-0123"]
+  },
+  {
+    "id": "fr-sent-0344",
+    "sentence": "La pomme est fraîche.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0123",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0345",
+    "sentence": "Je mange la pomme après le dîner.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0031",
+      "fr-wd-0123",
+      "fr-wd-0030",
+      "fr-wd-0106"
+    ]
+  },
+  {
+    "id": "fr-sent-0346",
+    "sentence": "J'aime le légume vert.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0030", "fr-wd-0124"]
+  },
+  {
+    "id": "fr-sent-0347",
+    "sentence": "Le légume est bon le soir.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0124",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0030",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0348",
+    "sentence": "Je mange le légume avec le riz.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0124",
+      "fr-wd-0058",
+      "fr-wd-0030",
+      "fr-wd-0118"
+    ]
+  },
+  {
+    "id": "fr-sent-0349",
+    "sentence": "Aimer le café est commun le matin.",
+    "word_ids": [
+      "fr-wd-0125",
+      "fr-wd-0030",
+      "fr-wd-0115",
+      "fr-wd-0020",
+      "fr-wd-0030",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0350",
+    "sentence": "Il est bon d'aimer la nourriture simple.",
+    "word_ids": ["fr-wd-0020", "fr-wd-0005", "fr-wd-0025", "fr-wd-0125", "fr-wd-0031", "fr-wd-0112"]
+  },
+  {
+    "id": "fr-sent-0351",
+    "sentence": "Tu dois aimer le riz pour bien manger.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0125",
+      "fr-wd-0030",
+      "fr-wd-0118",
+      "fr-wd-0012",
+      "fr-wd-0126"
+    ]
+  },
+  {
+    "id": "fr-sent-0352",
+    "sentence": "Manger le matin est important.",
+    "word_ids": [
+      "fr-wd-0126",
+      "fr-wd-0030",
+      "fr-wd-0083",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0353",
+    "sentence": "Il faut manger le pain avant qu'il soit froid.",
+    "word_ids": [
+      "fr-wd-0126",
+      "fr-wd-0030",
+      "fr-wd-0117"
+    ]
+  },
+  {
+    "id": "fr-sent-0354",
+    "sentence": "J'aime manger le riz le soir.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0126", "fr-wd-0030", "fr-wd-0118", "fr-wd-0030", "fr-wd-0090"]
+  },
+  {
+    "id": "fr-sent-0355",
+    "sentence": "Boire le matin aide à se réveiller.",
+    "word_ids": [
+      "fr-wd-0127",
+      "fr-wd-0030",
+      "fr-wd-0083",
+      "fr-wd-0095"
+    ]
+  },
+  {
+    "id": "fr-sent-0356",
+    "sentence": "Il faut boire l'eau fraîche chaque jour.",
+    "word_ids": ["fr-wd-0127", "fr-wd-0031", "fr-wd-0114", "fr-wd-0007"]
+  },
+  {
+    "id": "fr-sent-0357",
+    "sentence": "J'aime boire le café chaud.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0127", "fr-wd-0030", "fr-wd-0115"]
+  },
+  {
+    "id": "fr-sent-0358",
+    "sentence": "Je veux le pain maintenant.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0030",
+      "fr-wd-0117"
+    ]
+  },
+  {
+    "id": "fr-sent-0359",
+    "sentence": "Je veux manger la viande ce soir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0126",
+      "fr-wd-0031",
+      "fr-wd-0120",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0360",
+    "sentence": "Tu veux boire le lait ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0128",
+      "fr-wd-0127",
+      "fr-wd-0030",
+      "fr-wd-0116"
+    ]
+  },
+  {
+    "id": "fr-sent-0361",
+    "sentence": "Je ne mange pas de viande.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0129",
+      "fr-wd-0130",
+      "fr-wd-0025",
+      "fr-wd-0120"
+    ]
+  },
+  {
+    "id": "fr-sent-0362",
+    "sentence": "Tu ne veux pas de café ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0129",
+      "fr-wd-0128",
+      "fr-wd-0130",
+      "fr-wd-0025",
+      "fr-wd-0115"
+    ]
+  },
+  {
+    "id": "fr-sent-0363",
+    "sentence": "Je ne bois pas d'eau froide.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0129", "fr-wd-0130", "fr-wd-0025", "fr-wd-0114"]
+  },
+  {
+    "id": "fr-sent-0364",
+    "sentence": "Je ne mange pas de viande.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0129",
+      "fr-wd-0130",
+      "fr-wd-0025",
+      "fr-wd-0120"
+    ]
+  },
+  {
+    "id": "fr-sent-0365",
+    "sentence": "Tu ne veux pas de café ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0129",
+      "fr-wd-0128",
+      "fr-wd-0130",
+      "fr-wd-0025",
+      "fr-wd-0115"
+    ]
+  },
+  {
+    "id": "fr-sent-0366",
+    "sentence": "Je ne bois pas d'eau froide.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0129", "fr-wd-0130", "fr-wd-0025", "fr-wd-0114"]
+  },
+  {
+    "id": "fr-sent-0367",
+    "sentence": "Je ne veux rien ce soir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0129",
+      "fr-wd-0128",
+      "fr-wd-0131",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0368",
+    "sentence": "Il ne mange rien le matin.",
+    "word_ids": [
+      "fr-wd-0129",
+      "fr-wd-0131",
+      "fr-wd-0030",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0369",
+    "sentence": "Tu ne bois rien avant de dormir ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0129",
+      "fr-wd-0131",
+      "fr-wd-0025",
+      "fr-wd-0109"
+    ]
+  },
+  {
+    "id": "fr-sent-0370",
+    "sentence": "Je mange beaucoup de pain.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0132",
+      "fr-wd-0025",
+      "fr-wd-0117"
+    ]
+  },
+  {
+    "id": "fr-sent-0371",
+    "sentence": "Il boit beaucoup de café.",
+    "word_ids": [
+      "fr-wd-0132",
+      "fr-wd-0025",
+      "fr-wd-0115"
+    ]
+  },
+  {
+    "id": "fr-sent-0372",
+    "sentence": "Tu manges beaucoup de riz.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0132",
+      "fr-wd-0025",
+      "fr-wd-0118"
+    ]
+  },
+  {
+    "id": "fr-sent-0373",
+    "sentence": "Je mange peu de viande.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0133",
+      "fr-wd-0025",
+      "fr-wd-0120"
+    ]
+  },
+  {
+    "id": "fr-sent-0374",
+    "sentence": "Elle boit peu de lait.",
+    "word_ids": [
+      "fr-wd-0133",
+      "fr-wd-0025",
+      "fr-wd-0116"
+    ]
+  },
+  {
+    "id": "fr-sent-0375",
+    "sentence": "Tu manges peu le matin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0133",
+      "fr-wd-0030",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0376",
+    "sentence": "Je veux plus de pain.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0134",
+      "fr-wd-0025",
+      "fr-wd-0117"
+    ]
+  },
+  {
+    "id": "fr-sent-0377",
+    "sentence": "Il mange plus de riz que moi.",
+    "word_ids": [
+      "fr-wd-0134",
+      "fr-wd-0025",
+      "fr-wd-0118"
+    ]
+  },
+  {
+    "id": "fr-sent-0378",
+    "sentence": "Tu bois plus de café que moi ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0134",
+      "fr-wd-0025",
+      "fr-wd-0115"
+    ]
+  },
+  {
+    "id": "fr-sent-0379",
+    "sentence": "Je mange moins de viande maintenant.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0135",
+      "fr-wd-0025",
+      "fr-wd-0120"
+    ]
+  },
+  {
+    "id": "fr-sent-0380",
+    "sentence": "Elle boit moins de café le soir.",
+    "word_ids": [
+      "fr-wd-0135",
+      "fr-wd-0025",
+      "fr-wd-0115",
+      "fr-wd-0030",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0381",
+    "sentence": "Tu manges moins que moi.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0135"
+    ]
+  }
+]
