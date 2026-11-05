@@ -279,10 +279,20 @@ onMounted(() => {
       if (!match) continue;
       const start = cursor + match.index;
       const end = start + match[0].length;
+      const matchedText = sentence.slice(start, end);
+      const elision = FRENCH_ELISIONS[expected.word.toLowerCase()];
+      const isElided = elision && matchedText.toLowerCase() === elision.toLowerCase();
+      // The apostrophe in an elided match (e.g. "l'" for "le") marks where
+      // the word was cut, not the word itself -- keep it as plain
+      // connecting punctuation instead of swallowing it into the
+      // blank/revealed span ("l'hôpital" -> "__'hôpital", not "__hôpital").
+      const wordPart = isElided ? matchedText.slice(0, -1) : matchedText;
+      const trailingPunct = isElided ? matchedText.slice(-1) : "";
       html += escapeHtml(sentence.slice(cursor, start));
       html += mode === "blanks"
         ? `<span class="phrase-blank">____</span>`
-        : `<strong class="phrase-revealed-word" style="color:var(--accent-strong)">${escapeHtml(sentence.slice(start, end))}</strong>`;
+        : `<strong class="phrase-revealed-word" style="color:var(--accent-strong)">${escapeHtml(wordPart)}</strong>`;
+      html += escapeHtml(trailingPunct);
       cursor = end;
     }
     html += escapeHtml(sentence.slice(cursor));
