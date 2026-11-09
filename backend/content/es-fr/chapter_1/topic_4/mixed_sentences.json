@@ -1,7 +1,7 @@
 [
   {
     "sentence_number": 1,
-    "content": "Procuro **dîner** ligero, luego **se reposer** brevemente."
+    "content": "Procuro **dîner** ligero, luego **me** **reposer** brevemente."
   },
   {
     "sentence_number": 2,
@@ -13,7 +13,7 @@
   },
   {
     "sentence_number": 4,
-    "content": "Decidí **se réveiller** tranquilo, luego **se lever** despacio."
+    "content": "Decidí **me** **réveiller** tranquilo, luego **me** **lever** despacio."
   },
   {
     "sentence_number": 5,
@@ -25,7 +25,7 @@
   },
   {
     "sentence_number": 7,
-    "content": "Prefiero **se doucher** rápido, luego **se brosser les dents** cuidadosamente."
+    "content": "Prefiero **me** **doucher** rápido, luego **me** **brosser les dents** cuidadosamente."
   },
   {
     "sentence_number": 8,
@@ -33,7 +33,7 @@
   },
   {
     "sentence_number": 9,
-    "content": "Decidí **dîner** ligero, luego **se reposer** brevemente."
+    "content": "Decidí **dîner** ligero, luego **me** **reposer** brevemente."
   },
   {
     "sentence_number": 10,
@@ -45,7 +45,7 @@
   },
   {
     "sentence_number": 12,
-    "content": "Decidí **se doucher** rápido, luego **se brosser les dents** cuidadosamente."
+    "content": "Decidí **me** **doucher** rápido, luego **me** **brosser les dents** cuidadosamente."
   },
   {
     "sentence_number": 13,
@@ -77,7 +77,7 @@
   },
   {
     "sentence_number": 20,
-    "content": "Procuro **se doucher** rápido, luego **se brosser les dents** cuidadosamente."
+    "content": "Procuro **me** **doucher** rápido, luego **me** **brosser les dents** cuidadosamente."
   },
   {
     "sentence_number": 21,
@@ -117,7 +117,7 @@
   },
   {
     "sentence_number": 30,
-    "content": "Necesito **dîner** ligero, luego **se reposer** brevemente."
+    "content": "Necesito **dîner** ligero, luego **me** **reposer** brevemente."
   },
   {
     "sentence_number": 31,
@@ -161,7 +161,7 @@
   },
   {
     "sentence_number": 41,
-    "content": "Procuro **se réveiller** tranquilo, luego **se lever** despacio."
+    "content": "Procuro **me** **réveiller** tranquilo, luego **me** **lever** despacio."
   },
   {
     "sentence_number": 42,
@@ -177,7 +177,7 @@
   },
   {
     "sentence_number": 45,
-    "content": "Intento **se réveiller** tranquilo, luego **se lever** despacio."
+    "content": "Intento **me** **réveiller** tranquilo, luego **me** **lever** despacio."
   },
   {
     "sentence_number": 46,
@@ -201,7 +201,7 @@
   },
   {
     "sentence_number": 51,
-    "content": "Primero **travailler**, **puis** **se reposer** brevemente."
+    "content": "Primero **travailler**, **puis** **me** **reposer** brevemente."
   },
   {
     "sentence_number": 52,
@@ -209,7 +209,7 @@
   },
   {
     "sentence_number": 53,
-    "content": "Prefiero **s'habiller** rápido antes **de** **petit-déjeuner**."
+    "content": "Prefiero **m'****habiller** rápido antes **de** **petit-déjeuner**."
   },
   {
     "sentence_number": 54,
@@ -221,7 +221,7 @@
   },
   {
     "sentence_number": 56,
-    "content": "Procuro **s'habiller** rápido antes **de** **petit-déjeuner**."
+    "content": "Procuro **m'****habiller** rápido antes **de** **petit-déjeuner**."
   },
   {
     "sentence_number": 57,
@@ -241,7 +241,7 @@
   },
   {
     "sentence_number": 61,
-    "content": "Intento **dîner** ligero, luego **se reposer** brevemente."
+    "content": "Intento **dîner** ligero, luego **me** **reposer** brevemente."
   },
   {
     "sentence_number": 62,
@@ -249,7 +249,7 @@
   },
   {
     "sentence_number": 63,
-    "content": "Prefiero **dîner** ligero, luego **se reposer** brevemente."
+    "content": "Prefiero **dîner** ligero, luego **me** **reposer** brevemente."
   },
   {
     "sentence_number": 64,
@@ -261,7 +261,7 @@
   },
   {
     "sentence_number": 66,
-    "content": "Intento **se doucher** rápido, luego **se brosser les dents** cuidadosamente."
+    "content": "Intento **me** **doucher** rápido, luego **me** **brosser les dents** cuidadosamente."
   },
   {
     "sentence_number": 67,
@@ -277,15 +277,15 @@
   },
   {
     "sentence_number": 70,
-    "content": "Intento **s'habiller** rápido antes **de** **petit-déjeuner**."
+    "content": "Intento **m'****habiller** rápido antes **de** **petit-déjeuner**."
   },
   {
     "sentence_number": 71,
-    "content": "Prefiero **se réveiller** tranquilo, luego **se lever** despacio."
+    "content": "Prefiero **me** **réveiller** tranquilo, luego **me** **lever** despacio."
   },
   {
     "sentence_number": 72,
-    "content": "Primero **me** **lève**, **puis** **se doucher** rápido."
+    "content": "Primero **me** **lève**, **puis** **me** **doucher** rápido."
   },
   {
     "sentence_number": 73,
@@ -325,11 +325,11 @@
   },
   {
     "sentence_number": 82,
-    "content": "Necesito **s'habiller** rápido antes **de** **petit-déjeuner**."
+    "content": "Necesito **m'****habiller** rápido antes **de** **petit-déjeuner**."
   },
   {
     "sentence_number": 83,
-    "content": "Necesito **se réveiller** tranquilo, luego **se lever** despacio."
+    "content": "Necesito **me** **réveiller** tranquilo, luego **me** **lever** despacio."
   },
   {
     "sentence_number": 84,
@@ -337,7 +337,7 @@
   },
   {
     "sentence_number": 85,
-    "content": "Tras **se réveiller**, «**je** **déjeune**» enseguida."
+    "content": "Tras **me** **réveiller**, «**je** **déjeune**» enseguida."
   },
   {
     "sentence_number": 86,
@@ -353,7 +353,7 @@
   },
   {
     "sentence_number": 89,
-    "content": "Decidí **s'habiller** rápido antes **de** **petit-déjeuner**."
+    "content": "Decidí **m'****habiller** rápido antes **de** **petit-déjeuner**."
   },
   {
     "sentence_number": 90,
@@ -373,7 +373,7 @@
   },
   {
     "sentence_number": 94,
-    "content": "Necesito **se doucher** rápido, luego **se brosser les dents** cuidadosamente."
+    "content": "Necesito **me** **doucher** rápido, luego **me** **brosser les dents** cuidadosamente."
   },
   {
     "sentence_number": 95,

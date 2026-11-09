@@ -566,31 +566,31 @@
   {
     "word_id": "fr-wd-0095",
     "root_word_id": "wd-0300",
-    "word": "se réveiller",
+    "word": "réveiller",
     "gender_id": "not_apply"
   },
   {
     "word_id": "fr-wd-0096",
     "root_word_id": "wd-0301",
-    "word": "se lever",
+    "word": "lever",
     "gender_id": "not_apply"
   },
   {
     "word_id": "fr-wd-0097",
     "root_word_id": "wd-0302",
-    "word": "se doucher",
+    "word": "doucher",
     "gender_id": "not_apply"
   },
   {
     "word_id": "fr-wd-0098",
     "root_word_id": "wd-0303",
-    "word": "se brosser les dents",
+    "word": "brosser les dents",
     "gender_id": "not_apply"
   },
   {
     "word_id": "fr-wd-0099",
     "root_word_id": "wd-0304",
-    "word": "s'habiller",
+    "word": "habiller",
     "gender_id": "not_apply"
   },
   {
@@ -638,7 +638,7 @@
   {
     "word_id": "fr-wd-0107",
     "root_word_id": "wd-0312",
-    "word": "se reposer",
+    "word": "reposer",
     "gender_id": "not_apply"
   },
   {

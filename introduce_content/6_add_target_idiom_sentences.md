@@ -37,6 +37,15 @@ pt-ja-relations.json, same mechanism as any measure-word/classifier language.
 
 ------------------------------------
 
+Reflexive verbs: since the taught word itself is stored as a bare infinitive without its
+own pronoun (per 1_add_vocabulary.md's convention — e.g. "réveiller", not "se réveiller"),
+these 3 sentences per word should vary which pronoun accompanies it to reflect real usage
+(e.g. one 1st-person "je me réveille", one 3rd-person "elle se réveille", one impersonal
+"il est bon de se réveiller") rather than defaulting to "se" in all three. This doesn't
+affect `word_ids`: `check_sentence_word_ids.py` below only checks that the bare verb
+spelling appears somewhere in the sentence as its own whole word, regardless of which
+pronoun precedes it, so any grammatically-correct pronoun choice passes.
+
 Then run backend/scripts/check_sentence_word_ids.py to verify every word_id in
 these new sentences actually matches a word present in its own sentence text —
 nothing else in the pipeline catches a wrong-but-structurally-valid id (e.g. one
