@@ -56,10 +56,19 @@ decomposition — compose it into one string instead.
    currently in <file>'s list — that's a gap to close via rule 5, not an
    acceptable "functional, slightly-loose" match.
 
-4. If a native word/expression has no equivalent that
+4. Reflexive verbs are an exception to rule 3's "match the native key's form" — if the
+   native key is a reflexive-marked infinitive (e.g. Spanish "despertarse"), the stored
+   value is still the BARE infinitive without its own pronoun (e.g. French "réveiller",
+   never "se réveiller"), matching how 1_add_vocabulary.md already listed it in
+   <target>/chapter_N/topic_N/words.json. Do not add <target>'s reflexive pronoun back in
+   here just because the native key carries one — the pronoun is composed per-sentence
+   in "4_add_mixed_sentences.md", not fixed in the relation.
+
+5. If a native word/expression has no equivalent that
    can be composed from <file>'s current list, that is a vocabulary gap in
    <target>'s own words.json, not a reason to skip the relation: add the
-   missing word (in the correct grammatical form per rule 4) to
+   missing word (in the correct grammatical form per rule 3, or bare-infinitive per
+   rule 4 if it's reflexive) to
    <target>/chapter_N/topic_N/words.json first, then map it. Only leave a
    native word unmapped, and flag it explicitly in your report, if you
    cannot find or construct any reasonable idiom word for the concept at

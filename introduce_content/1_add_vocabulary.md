@@ -51,6 +51,21 @@ Check introduce_content/current_info.md file to know the target idiom, chapter a
    it does not need its own entry.
 
   
+7. Reflexive verbs: if <target> marks a reflexive verb's dictionary/infinitive citation
+   form with a pronoun (e.g. Spanish's "-se" suffix: "despertarse"; French's "se "/"s'"
+   prefix: "se réveiller", "s'habiller"), list the word WITHOUT that pronoun instead
+   ("despertar", "réveiller"). The pronoun isn't a fixed part of the word — it's a
+   separate morpheme that must agree with whatever subject actually uses the verb in a
+   given sentence (Spanish me/te/se/nos/os/se; French me/te/se/nous/vous/se), so baking
+   in one fixed pronoun (almost always 3rd-person "se", since that's the dictionary
+   form) silently produces wrong grammar the moment the verb is used with a different
+   subject (e.g. a 1st-person sentence needs "me", not "se" — see the es-fr chapter_1/
+   topic_4 "se reposer"/"me reposer" bug this convention was written to prevent). The
+   pronoun gets supplied per-occurrence by whichever step writes the actual sentence
+   (see "4_add_mixed_sentences.md", "6_add_target_idiom_sentences.md", "7_add_texts.md"),
+   never fixed here. Flag each reflexive verb as such in your step output so step 2
+   (relations) and step 3 (word/cue adaptation) carry the same bare-infinitive spelling
+   through, instead of each one re-adding a pronoun independently.
 
 Output: the updated words list for <target>/chapter_N/topic_N/words.json, and for each
 added word/expression, a one-line reason tagged either [thematic] (from

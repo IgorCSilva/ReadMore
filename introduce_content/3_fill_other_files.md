@@ -28,6 +28,16 @@ this chapter/topic (already authored by "Add vocabulary" above), and will:
 This step does not touch backend/content/relations/<native>-<target>-relations.json —
 that's built separately by the "Add relations" prompt above, run on its own.
 
+Reflexive verbs: as of this writing, phase_words_adaptation.md's own Section 5 (word
+spelling) and Section 6 (cue house style) don't yet document the bare-infinitive
+convention from 1_add_vocabulary.md — if this topic's word list includes a reflexive verb,
+explicitly remind the phase when invoking it: store the word WITHOUT its reflexive
+pronoun (e.g. "réveiller", not "se réveiller"), and write a cue that both names it as
+reflexive and states that the pronoun must be supplied to match the subject (see
+backend/words/cues.json's "es_wd-0300"/"es_wd-0312" etc. for the house-style wording this
+produced). Don't let the phase default to the dictionary's "se"-prefixed citation form
+just because that's the most natural-looking spelling.
+
 Never let this step touch `texts.json` or `exercises.json` — words/catalog/sentences/cues
 and the topic shell + word_ids.json only, per phase_words_adaptation.md's own scope.
 
