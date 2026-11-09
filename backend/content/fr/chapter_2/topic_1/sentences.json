@@ -1,0 +1,242 @@
+[
+  {
+    "id": "fr-sent-0466",
+    "sentence": "Il est mon frère aîné.",
+    "word_ids": ["fr-wd-0164", "fr-wd-0020", "fr-wd-0022", "fr-wd-0039"]
+  },
+  {
+    "id": "fr-sent-0467",
+    "sentence": "Il vit à Barcelone.",
+    "word_ids": ["fr-wd-0164"]
+  },
+  {
+    "id": "fr-sent-0468",
+    "sentence": "Il habite ici.",
+    "word_ids": ["fr-wd-0164", "fr-wd-0081"]
+  },
+  {
+    "id": "fr-sent-0469",
+    "sentence": "Elle est professeure de mathématiques.",
+    "word_ids": ["fr-wd-0165", "fr-wd-0020", "fr-wd-0025"]
+  },
+  {
+    "id": "fr-sent-0470",
+    "sentence": "Elle habite près de ma maison.",
+    "word_ids": ["fr-wd-0165", "fr-wd-0025", "fr-wd-0032", "fr-wd-0060"]
+  },
+  {
+    "id": "fr-sent-0471",
+    "sentence": "Elle et moi étudions ensemble.",
+    "word_ids": ["fr-wd-0165"]
+  },
+  {
+    "id": "fr-sent-0472",
+    "sentence": "Ils habitent dans la même rue.",
+    "word_ids": ["fr-wd-0166", "fr-wd-0080", "fr-wd-0031"]
+  },
+  {
+    "id": "fr-sent-0473",
+    "sentence": "Ils travaillent dans le même endroit.",
+    "word_ids": ["fr-wd-0166", "fr-wd-0080", "fr-wd-0030"]
+  },
+  {
+    "id": "fr-sent-0474",
+    "sentence": "Ils arrivent toujours à l'heure.",
+    "word_ids": ["fr-wd-0166", "fr-wd-0148"]
+  },
+  {
+    "id": "fr-sent-0475",
+    "sentence": "Elles sont sœurs.",
+    "word_ids": ["fr-wd-0167"]
+  },
+  {
+    "id": "fr-sent-0476",
+    "sentence": "Elles étudient dans la même école.",
+    "word_ids": ["fr-wd-0167", "fr-wd-0080", "fr-wd-0031"]
+  },
+  {
+    "id": "fr-sent-0477",
+    "sentence": "Elles arrivent toujours ensemble.",
+    "word_ids": ["fr-wd-0167"]
+  },
+  {
+    "id": "fr-sent-0478",
+    "sentence": "Vous habitez près d'ici ?",
+    "word_ids": ["fr-wd-0168", "fr-wd-0081"]
+  },
+  {
+    "id": "fr-sent-0479",
+    "sentence": "Vous travaillez beaucoup.",
+    "word_ids": ["fr-wd-0168", "fr-wd-0132"]
+  },
+  {
+    "id": "fr-sent-0480",
+    "sentence": "À quelle heure arrivez-vous ?",
+    "word_ids": ["fr-wd-0148", "fr-wd-0168"]
+  },
+  {
+    "id": "fr-sent-0481",
+    "sentence": "Il va à son travail très tôt.",
+    "word_ids": ["fr-wd-0164", "fr-wd-0169", "fr-wd-0034"]
+  },
+  {
+    "id": "fr-sent-0482",
+    "sentence": "Elle va à l'école tous les jours.",
+    "word_ids": ["fr-wd-0165", "fr-wd-0169", "fr-wd-0056"]
+  },
+  {
+    "id": "fr-sent-0483",
+    "sentence": "Où va-t-il ?",
+    "word_ids": ["fr-wd-0169", "fr-wd-0164"]
+  },
+  {
+    "id": "fr-sent-0484",
+    "sentence": "Elle sort de la maison à une heure.",
+    "word_ids": ["fr-wd-0165", "fr-wd-0170", "fr-wd-0025", "fr-wd-0031", "fr-wd-0060", "fr-wd-0076", "fr-wd-0148"]
+  },
+  {
+    "id": "fr-sent-0485",
+    "sentence": "Il sort tôt le lundi.",
+    "word_ids": ["fr-wd-0164", "fr-wd-0170", "fr-wd-0030", "fr-wd-0156"]
+  },
+  {
+    "id": "fr-sent-0486",
+    "sentence": "Mon frère sort avec ses amis.",
+    "word_ids": ["fr-wd-0022", "fr-wd-0039", "fr-wd-0170", "fr-wd-0058"]
+  },
+  {
+    "id": "fr-sent-0487",
+    "sentence": "Il arrive en retard presque tous les jours.",
+    "word_ids": ["fr-wd-0164", "fr-wd-0171", "fr-wd-0056"]
+  },
+  {
+    "id": "fr-sent-0488",
+    "sentence": "Elle arrive à l'heure à la réunion.",
+    "word_ids": ["fr-wd-0165", "fr-wd-0171", "fr-wd-0148", "fr-wd-0031"]
+  },
+  {
+    "id": "fr-sent-0489",
+    "sentence": "Le train arrive à neuf heures.",
+    "word_ids": ["fr-wd-0030", "fr-wd-0171", "fr-wd-0146"]
+  },
+  {
+    "id": "fr-sent-0490",
+    "sentence": "Mon père travaille dans une banque.",
+    "word_ids": ["fr-wd-0022", "fr-wd-0038", "fr-wd-0172", "fr-wd-0080", "fr-wd-0076"]
+  },
+  {
+    "id": "fr-sent-0491",
+    "sentence": "Elle travaille beaucoup tous les jours.",
+    "word_ids": ["fr-wd-0165", "fr-wd-0172", "fr-wd-0132", "fr-wd-0056"]
+  },
+  {
+    "id": "fr-sent-0492",
+    "sentence": "Il travaille de lundi à vendredi.",
+    "word_ids": ["fr-wd-0164", "fr-wd-0172", "fr-wd-0025", "fr-wd-0156", "fr-wd-0160"]
+  },
+  {
+    "id": "fr-sent-0493",
+    "sentence": "Il rentre à la maison très fatigué.",
+    "word_ids": ["fr-wd-0164", "fr-wd-0173", "fr-wd-0031", "fr-wd-0060", "fr-wd-0094"]
+  },
+  {
+    "id": "fr-sent-0494",
+    "sentence": "Elle rentre de son travail à six heures.",
+    "word_ids": ["fr-wd-0165", "fr-wd-0173", "fr-wd-0025", "fr-wd-0034", "fr-wd-0143"]
+  },
+  {
+    "id": "fr-sent-0495",
+    "sentence": "Mon frère rentre demain de son voyage.",
+    "word_ids": ["fr-wd-0022", "fr-wd-0039", "fr-wd-0173", "fr-wd-0152", "fr-wd-0025", "fr-wd-0034"]
+  },
+  {
+    "id": "fr-sent-0496",
+    "sentence": "Elle lit un livre avant de dormir.",
+    "word_ids": ["fr-wd-0165", "fr-wd-0174", "fr-wd-0075", "fr-wd-0179", "fr-wd-0025", "fr-wd-0109"]
+  },
+  {
+    "id": "fr-sent-0497",
+    "sentence": "Il lit le journal le matin.",
+    "word_ids": ["fr-wd-0164", "fr-wd-0174", "fr-wd-0030", "fr-wd-0176"]
+  },
+  {
+    "id": "fr-sent-0498",
+    "sentence": "Mon grand-père lit tous les jours.",
+    "word_ids": ["fr-wd-0022", "fr-wd-0045", "fr-wd-0174", "fr-wd-0056"]
+  },
+  {
+    "id": "fr-sent-0499",
+    "sentence": "Il dîne, puis il regarde la télévision.",
+    "word_ids": ["fr-wd-0164", "fr-wd-0091", "fr-wd-0093", "fr-wd-0175"]
+  },
+  {
+    "id": "fr-sent-0500",
+    "sentence": "Elle regarde la télévision avec sa famille.",
+    "word_ids": ["fr-wd-0165", "fr-wd-0175", "fr-wd-0058", "fr-wd-0035", "fr-wd-0036"]
+  },
+  {
+    "id": "fr-sent-0501",
+    "sentence": "Mon frère regarde la télévision chaque samedi.",
+    "word_ids": ["fr-wd-0022", "fr-wd-0039", "fr-wd-0175", "fr-wd-0161"]
+  },
+  {
+    "id": "fr-sent-0502",
+    "sentence": "Je bois mon café le matin.",
+    "word_ids": ["fr-wd-0018", "fr-wd-0022", "fr-wd-0115", "fr-wd-0176"]
+  },
+  {
+    "id": "fr-sent-0503",
+    "sentence": "Elle fait de l'exercice le matin.",
+    "word_ids": ["fr-wd-0165", "fr-wd-0025", "fr-wd-0176"]
+  },
+  {
+    "id": "fr-sent-0504",
+    "sentence": "Le matin, la maison est calme.",
+    "word_ids": ["fr-wd-0176", "fr-wd-0031", "fr-wd-0060", "fr-wd-0020"]
+  },
+  {
+    "id": "fr-sent-0505",
+    "sentence": "J'étudie l'après-midi.",
+    "word_ids": ["fr-wd-0177"]
+  },
+  {
+    "id": "fr-sent-0506",
+    "sentence": "Il se repose l'après-midi.",
+    "word_ids": ["fr-wd-0164", "fr-wd-0177"]
+  },
+  {
+    "id": "fr-sent-0507",
+    "sentence": "L'après-midi, le soleil est très fort.",
+    "word_ids": ["fr-wd-0177", "fr-wd-0030", "fr-wd-0020"]
+  },
+  {
+    "id": "fr-sent-0508",
+    "sentence": "Nous dînons ensemble le soir.",
+    "word_ids": ["fr-wd-0178"]
+  },
+  {
+    "id": "fr-sent-0509",
+    "sentence": "Elle lit le soir.",
+    "word_ids": ["fr-wd-0165", "fr-wd-0174", "fr-wd-0178"]
+  },
+  {
+    "id": "fr-sent-0510",
+    "sentence": "Le soir, la ville est belle.",
+    "word_ids": ["fr-wd-0178", "fr-wd-0031", "fr-wd-0020"]
+  },
+  {
+    "id": "fr-sent-0511",
+    "sentence": "Avant de dormir, je lis un peu.",
+    "word_ids": ["fr-wd-0179", "fr-wd-0025", "fr-wd-0109", "fr-wd-0018", "fr-wd-0075", "fr-wd-0133"]
+  },
+  {
+    "id": "fr-sent-0512",
+    "sentence": "J'arrive avant tout le monde.",
+    "word_ids": ["fr-wd-0171", "fr-wd-0179", "fr-wd-0013", "fr-wd-0030"]
+  },
+  {
+    "id": "fr-sent-0513",
+    "sentence": "Avant, j'habitais dans une autre ville.",
+    "word_ids": ["fr-wd-0179", "fr-wd-0080", "fr-wd-0076"]
+  }
+]
