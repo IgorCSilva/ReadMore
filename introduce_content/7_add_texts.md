@@ -32,6 +32,12 @@ a <native>-<target> pair directory, and takes no `native` input.
    Each text's title is written in <target> too, never in <native> — titles aren't exempt
    from the pure-<target> rule just because they're short.
 
+   Reflexive verbs: bold only the verb itself (e.g. "il doit se **lever**"), never the
+   reflexive pronoun that precedes it — the pronoun still has to be grammatically correct
+   for whichever subject the text actually uses (je→me, tu→te, il/elle/on→se, nous→nous,
+   vous→vous, ils/elles→se), it's just not part of this word's own bolded/taught spelling,
+   per 1_add_vocabulary.md's bare-infinitive convention.
+
    If contents/<native-language>_<target-language>/task_language_reading/texts/<level>/
    <roadmap-id>/ already holds a reference set of scenarios for this exact topic (authored
    for a different pair's mixed-language reading track), reuse its scenario ideas (who's

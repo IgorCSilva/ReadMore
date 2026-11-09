@@ -74,7 +74,15 @@ word is a ready-made, pre-verified mixin example.
 
    one key per word/expression from step 1's list, in that same order.
 
-8. After resolving each word (reused or freshly written), re-check it against step 1's
+8. Reflexive verbs: this word's own bolded span is only the bare verb tag itself (e.g.
+   "**réveiller**"), never an adjacent reflexive pronoun. A qualifying reused sentence may
+   correctly pair it with "se" (3rd-person/impersonal subject) or "me"/"te"/etc.
+   (1st/2nd-person subject, per "4_add_mixed_sentences.md"'s pronoun-agreement rule) —
+   that pronoun is either plain unbolded grammar or a separately-taught word, and either
+   way it stays outside this entry's own highlighting, same as any other
+   already-known neighbor word per step 3's isolation rule.
+
+9. After resolving each word (reused or freshly written), re-check it against step 1's
    own list plus common sense: confirm no other NEW (this-chapter/topic) target word list
    word leaked in alongside the intended one.
 
