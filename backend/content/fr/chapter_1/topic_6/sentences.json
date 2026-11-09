@@ -1,0 +1,736 @@
+[
+  {
+    "id": "fr-sent-0382",
+    "sentence": "Le score est zéro à zéro.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0020",
+      "fr-wd-0136"
+    ]
+  },
+  {
+    "id": "fr-sent-0383",
+    "sentence": "Tu comptes à partir de zéro.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0025",
+      "fr-wd-0136"
+    ]
+  },
+  {
+    "id": "fr-sent-0384",
+    "sentence": "Il reste zéro euro sur mon compte.",
+    "word_ids": [
+      "fr-wd-0136",
+      "fr-wd-0155",
+      "fr-wd-0022"
+    ]
+  },
+  {
+    "id": "fr-sent-0385",
+    "sentence": "J'ai un frère et deux sœurs.",
+    "word_ids": [
+      "fr-wd-0137",
+      "fr-wd-0039",
+      "fr-wd-0004",
+      "fr-wd-0139"
+    ]
+  },
+  {
+    "id": "fr-sent-0386",
+    "sentence": "Tu as un euro dans la poche.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0137",
+      "fr-wd-0155",
+      "fr-wd-0080",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0387",
+    "sentence": "Un plus un font deux.",
+    "word_ids": [
+      "fr-wd-0137",
+      "fr-wd-0134",
+      "fr-wd-0139"
+    ]
+  },
+  {
+    "id": "fr-sent-0388",
+    "sentence": "J'ai une sœur et un frère.",
+    "word_ids": [
+      "fr-wd-0138",
+      "fr-wd-0040",
+      "fr-wd-0004",
+      "fr-wd-0137",
+      "fr-wd-0039"
+    ]
+  },
+  {
+    "id": "fr-sent-0389",
+    "sentence": "Tu as une minute pour décider.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0138",
+      "fr-wd-0149"
+    ]
+  },
+  {
+    "id": "fr-sent-0390",
+    "sentence": "Il reste une semaine avant mon départ.",
+    "word_ids": [
+      "fr-wd-0138",
+      "fr-wd-0163",
+      "fr-wd-0022"
+    ]
+  },
+  {
+    "id": "fr-sent-0391",
+    "sentence": "J'ai deux chats à la maison.",
+    "word_ids": [
+      "fr-wd-0139",
+      "fr-wd-0031",
+      "fr-wd-0060"
+    ]
+  },
+  {
+    "id": "fr-sent-0392",
+    "sentence": "Tu as deux minutes pour te préparer.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0139"
+    ]
+  },
+  {
+    "id": "fr-sent-0393",
+    "sentence": "Il y a deux solutions possibles.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0139"
+    ]
+  },
+  {
+    "id": "fr-sent-0394",
+    "sentence": "J'ai trois cousins en France.",
+    "word_ids": [
+      "fr-wd-0140"
+    ]
+  },
+  {
+    "id": "fr-sent-0395",
+    "sentence": "Tu arrives dans trois minutes.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0080",
+      "fr-wd-0140"
+    ]
+  },
+  {
+    "id": "fr-sent-0396",
+    "sentence": "Il est trois heures.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0140"
+    ]
+  },
+  {
+    "id": "fr-sent-0397",
+    "sentence": "La table a quatre chaises.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0067",
+      "fr-wd-0079",
+      "fr-wd-0141"
+    ]
+  },
+  {
+    "id": "fr-sent-0398",
+    "sentence": "Tu as quatre messages aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0141",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0399",
+    "sentence": "Il reste quatre jours avant mon examen.",
+    "word_ids": [
+      "fr-wd-0141",
+      "fr-wd-0022"
+    ]
+  },
+  {
+    "id": "fr-sent-0400",
+    "sentence": "J'ai cinq doigts à chaque main.",
+    "word_ids": [
+      "fr-wd-0142"
+    ]
+  },
+  {
+    "id": "fr-sent-0401",
+    "sentence": "Tu as cinq minutes de retard.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0142",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0402",
+    "sentence": "Il reste cinq euros sur la table.",
+    "word_ids": [
+      "fr-wd-0142",
+      "fr-wd-0031",
+      "fr-wd-0067"
+    ]
+  },
+  {
+    "id": "fr-sent-0403",
+    "sentence": "Le train arrive à six heures.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0143"
+    ]
+  },
+  {
+    "id": "fr-sent-0404",
+    "sentence": "Tu as six ans de plus que moi.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0143",
+      "fr-wd-0025",
+      "fr-wd-0134"
+    ]
+  },
+  {
+    "id": "fr-sent-0405",
+    "sentence": "Il reste six jours avant la fête.",
+    "word_ids": [
+      "fr-wd-0143",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0406",
+    "sentence": "Une semaine a sept jours.",
+    "word_ids": [
+      "fr-wd-0138",
+      "fr-wd-0163",
+      "fr-wd-0079",
+      "fr-wd-0144"
+    ]
+  },
+  {
+    "id": "fr-sent-0407",
+    "sentence": "Tu dors sept heures chaque nuit.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0092",
+      "fr-wd-0144",
+      "fr-wd-0009"
+    ]
+  },
+  {
+    "id": "fr-sent-0408",
+    "sentence": "Il reste sept minutes avant le film.",
+    "word_ids": [
+      "fr-wd-0144",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0409",
+    "sentence": "Je travaille huit heures par jour.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0089",
+      "fr-wd-0145",
+      "fr-wd-0007"
+    ]
+  },
+  {
+    "id": "fr-sent-0410",
+    "sentence": "Tu as huit ans de plus que moi.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0145",
+      "fr-wd-0025",
+      "fr-wd-0134"
+    ]
+  },
+  {
+    "id": "fr-sent-0411",
+    "sentence": "Il reste huit jours avant mon anniversaire.",
+    "word_ids": [
+      "fr-wd-0145",
+      "fr-wd-0022"
+    ]
+  },
+  {
+    "id": "fr-sent-0412",
+    "sentence": "Le magasin ouvre à neuf heures.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0146"
+    ]
+  },
+  {
+    "id": "fr-sent-0413",
+    "sentence": "Tu as neuf messages non lus.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0146",
+      "fr-wd-0027"
+    ]
+  },
+  {
+    "id": "fr-sent-0414",
+    "sentence": "Il reste neuf jours avant l'examen.",
+    "word_ids": [
+      "fr-wd-0146"
+    ]
+  },
+  {
+    "id": "fr-sent-0415",
+    "sentence": "Je compte jusqu'à dix.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0147"
+    ]
+  },
+  {
+    "id": "fr-sent-0416",
+    "sentence": "Tu as dix ans de plus que moi.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0147",
+      "fr-wd-0025",
+      "fr-wd-0134"
+    ]
+  },
+  {
+    "id": "fr-sent-0417",
+    "sentence": "Il reste dix minutes avant le début.",
+    "word_ids": [
+      "fr-wd-0147",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0418",
+    "sentence": "J'arrive dans une heure.",
+    "word_ids": [
+      "fr-wd-0080",
+      "fr-wd-0138",
+      "fr-wd-0148"
+    ]
+  },
+  {
+    "id": "fr-sent-0419",
+    "sentence": "Tu dois arriver à l'heure.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0102",
+      "fr-wd-0148"
+    ]
+  },
+  {
+    "id": "fr-sent-0420",
+    "sentence": "Il attend depuis une heure.",
+    "word_ids": [
+      "fr-wd-0138",
+      "fr-wd-0148"
+    ]
+  },
+  {
+    "id": "fr-sent-0421",
+    "sentence": "Attends une minute, s'il te plaît.",
+    "word_ids": [
+      "fr-wd-0138",
+      "fr-wd-0149"
+    ]
+  },
+  {
+    "id": "fr-sent-0422",
+    "sentence": "Je reviens dans une minute.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0080",
+      "fr-wd-0138",
+      "fr-wd-0149"
+    ]
+  },
+  {
+    "id": "fr-sent-0423",
+    "sentence": "Chaque minute compte aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0149",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0424",
+    "sentence": "Je dois partir maintenant.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0150"
+    ]
+  },
+  {
+    "id": "fr-sent-0425",
+    "sentence": "Tu peux commencer maintenant.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0150"
+    ]
+  },
+  {
+    "id": "fr-sent-0426",
+    "sentence": "Il est trop tard maintenant.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0150"
+    ]
+  },
+  {
+    "id": "fr-sent-0427",
+    "sentence": "Je me sens bien aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0023",
+      "fr-wd-0012",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0428",
+    "sentence": "Tu as beaucoup de travail aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0132",
+      "fr-wd-0025",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0429",
+    "sentence": "Il fait beau aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0430",
+    "sentence": "Je pars en voyage demain.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0152"
+    ]
+  },
+  {
+    "id": "fr-sent-0431",
+    "sentence": "Tu as un examen demain.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0137",
+      "fr-wd-0152"
+    ]
+  },
+  {
+    "id": "fr-sent-0432",
+    "sentence": "Il arrive demain matin.",
+    "word_ids": [
+      "fr-wd-0152",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0433",
+    "sentence": "Combien ça coûte ici ?",
+    "word_ids": [
+      "fr-wd-0153",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0434",
+    "sentence": "Tu sais combien ça coûte ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0153"
+    ]
+  },
+  {
+    "id": "fr-sent-0435",
+    "sentence": "Combien ça coûte exactement ?",
+    "word_ids": [
+      "fr-wd-0153"
+    ]
+  },
+  {
+    "id": "fr-sent-0436",
+    "sentence": "Le prix est trop élevé.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0154",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0437",
+    "sentence": "Tu connais le prix de la robe ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0030",
+      "fr-wd-0154",
+      "fr-wd-0025",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0438",
+    "sentence": "Le prix a beaucoup augmenté.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0154",
+      "fr-wd-0079",
+      "fr-wd-0132"
+    ]
+  },
+  {
+    "id": "fr-sent-0439",
+    "sentence": "Ça coûte un euro.",
+    "word_ids": [
+      "fr-wd-0078",
+      "fr-wd-0137",
+      "fr-wd-0155"
+    ]
+  },
+  {
+    "id": "fr-sent-0440",
+    "sentence": "Tu as un euro ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0137",
+      "fr-wd-0155"
+    ]
+  },
+  {
+    "id": "fr-sent-0441",
+    "sentence": "L'euro est utilisé en France.",
+    "word_ids": [
+      "fr-wd-0155",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0442",
+    "sentence": "Je travaille lundi.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0089",
+      "fr-wd-0156"
+    ]
+  },
+  {
+    "id": "fr-sent-0443",
+    "sentence": "Tu as cours lundi matin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0156",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0444",
+    "sentence": "Il revient lundi prochain.",
+    "word_ids": [
+      "fr-wd-0156"
+    ]
+  },
+  {
+    "id": "fr-sent-0445",
+    "sentence": "J'ai rendez-vous mardi.",
+    "word_ids": [
+      "fr-wd-0157"
+    ]
+  },
+  {
+    "id": "fr-sent-0446",
+    "sentence": "Tu pars mardi matin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0157",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0447",
+    "sentence": "Il arrive mardi soir.",
+    "word_ids": [
+      "fr-wd-0157",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0448",
+    "sentence": "Je n'ai pas cours mercredi.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0130",
+      "fr-wd-0158"
+    ]
+  },
+  {
+    "id": "fr-sent-0449",
+    "sentence": "Tu reviens mercredi soir.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0158",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0450",
+    "sentence": "Il finit son travail mercredi.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0158"
+    ]
+  },
+  {
+    "id": "fr-sent-0451",
+    "sentence": "Je pars en voyage jeudi.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0159"
+    ]
+  },
+  {
+    "id": "fr-sent-0452",
+    "sentence": "Tu as un examen jeudi.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0137",
+      "fr-wd-0159"
+    ]
+  },
+  {
+    "id": "fr-sent-0453",
+    "sentence": "Il revient jeudi matin.",
+    "word_ids": [
+      "fr-wd-0159",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0454",
+    "sentence": "Je termine le travail vendredi.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0030",
+      "fr-wd-0160"
+    ]
+  },
+  {
+    "id": "fr-sent-0455",
+    "sentence": "Tu es libre vendredi soir ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0160",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0456",
+    "sentence": "Il part en vacances vendredi.",
+    "word_ids": [
+      "fr-wd-0160"
+    ]
+  },
+  {
+    "id": "fr-sent-0457",
+    "sentence": "Je me repose samedi.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0023",
+      "fr-wd-0161"
+    ]
+  },
+  {
+    "id": "fr-sent-0458",
+    "sentence": "Tu fais de l'exercice samedi.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0025",
+      "fr-wd-0161"
+    ]
+  },
+  {
+    "id": "fr-sent-0459",
+    "sentence": "Il travaille même le samedi.",
+    "word_ids": [
+      "fr-wd-0089",
+      "fr-wd-0030",
+      "fr-wd-0161"
+    ]
+  },
+  {
+    "id": "fr-sent-0460",
+    "sentence": "Je visite ma famille dimanche.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0032",
+      "fr-wd-0036",
+      "fr-wd-0162"
+    ]
+  },
+  {
+    "id": "fr-sent-0461",
+    "sentence": "Tu dors tard le dimanche.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0092",
+      "fr-wd-0030",
+      "fr-wd-0162"
+    ]
+  },
+  {
+    "id": "fr-sent-0462",
+    "sentence": "Il ne travaille jamais le dimanche.",
+    "word_ids": [
+      "fr-wd-0129",
+      "fr-wd-0089",
+      "fr-wd-0030",
+      "fr-wd-0162"
+    ]
+  },
+  {
+    "id": "fr-sent-0463",
+    "sentence": "Ma semaine est très occupée.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0163",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0464",
+    "sentence": "Il travaille toute la semaine.",
+    "word_ids": [
+      "fr-wd-0089",
+      "fr-wd-0031",
+      "fr-wd-0163"
+    ]
+  },
+  {
+    "id": "fr-sent-0465",
+    "sentence": "Une semaine passe très vite.",
+    "word_ids": [
+      "fr-wd-0138",
+      "fr-wd-0163"
+    ]
+  }
+]

@@ -59,6 +59,42 @@ word is a ready-made, pre-verified mixin example.
    across these fallback entries — don't reuse the same native sentence shell for more
    than one of them.
 
+   The word must be USED in its real grammatical role inside a situation, never
+   referenced as the object of a meta-verb about language itself. Reject any fallback
+   sentence whose subject is the act of saying/writing/learning the word rather than
+   whatever the word actually means — these look grammatical but hand the reader zero
+   semantic context (this was a real recurring bug: e.g. "Repitió varias veces la
+   expresión **veux**." gives no clue that veux means "want"). Concretely, do not write
+   any sentence shaped like:
+   - "Pronunció / escribió / anotó / subrayó / memorizó ... la palabra/el término/la
+     expresión **X**."
+   - "Repitió varias veces la expresión **X**." / "Preguntó cómo se pronuncia/escribe **X**."
+   - "Buscó en el diccionario qué significa **X**." / "El profesor explicó cómo se usa **X**."
+   - "**X** significa .../quiere decir .../es el nombre que se da a ..." or "en <native>,
+     **X** quiere decir ..." — this is a translation exercise wearing a sentence costume,
+     the exact thing the paragraph above already bans, just dressed as a fact rather than
+     a question.
+   - "Usan/dicen **X** en lugar de / en vez de <native-word>." — same problem: the
+     sentence's entire content is the gloss, not a situation.
+   - Litmus test: if the sentence would still make just as much sense with "la palabra
+     [any other word]" swapped in for **X**, it isn't illustrating X — it's illustrating
+     the verb "repetir"/"memorizar"/"significar". Reread every fallback sentence against
+     this test before accepting it.
+
+   Instead, give the word a real subject/object/situation the way the surrounding
+   native-language words already do, so meaning is inferable from context without
+   translation: if X is a verb, give it a subject and (if transitive) an object —
+   "No **veux** café, gracias" makes "veux" legible as "want" through the refusal-plus-
+   object; "Jamás dice **non**" makes "non" legible through the discourse context. If X
+   is a function word (negation, quantifier, conjunction, degree adverb), build the one
+   native-language clause the way its target grammar actually puts it to work, instead of
+   naming it as a grammar topic — for a negation particle, write the negated clause
+   itself, don't write a sentence *about* negation. This is harder for abstract/
+   grammatical words than for concrete nouns — that difficulty is exactly why the
+   meta-commentary shortcut is tempting; resist it anyway. If a genuinely natural,
+   context-bearing sentence can't be built for a word even after trying this, report it
+   as unresolved (see "Output" below) instead of settling for a meta-commentary sentence.
+
 6. Before writing, check whether
    backend/content/auxiliar_sentences/<native>-<target>/chapter_<chapter>/topic_<topic>/sentences.json
    already exists (create the directory path if it doesn't). If it exists, read it first —
