@@ -142,6 +142,60 @@
         "más": "plus",
         "menos": "moins"
       }
+    },
+    "topic_6": {
+      "es": {
+        "cero": "zéro",
+        "uno": "un",
+        "una": "une",
+        "dos": "deux",
+        "tres": "trois",
+        "cuatro": "quatre",
+        "cinco": "cinq",
+        "seis": "six",
+        "siete": "sept",
+        "ocho": "huit",
+        "nueve": "neuf",
+        "diez": "dix",
+        "hora": "heure",
+        "minuto": "minute",
+        "ahora": "maintenant",
+        "hoy": "aujourd'hui",
+        "mañana": "demain",
+        "cuánto cuesta": "combien ça coûte",
+        "precio": "prix",
+        "peso": "euro",
+        "lunes": "lundi",
+        "martes": "mardi",
+        "miércoles": "mercredi",
+        "jueves": "jeudi",
+        "viernes": "vendredi",
+        "sábado": "samedi",
+        "domingo": "dimanche",
+        "semana": "semaine"
+      }
+    }
+  },
+  "chapter_2": {
+    "topic_1": {
+      "es": {
+        "él": "il",
+        "ella": "elle",
+        "ellos": "ils",
+        "ellas": "elles",
+        "ustedes": "vous",
+        "va": "va",
+        "sale": "sort",
+        "llega": "arrive",
+        "trabaja": "travaille",
+        "vuelve": "rentre",
+        "lee": "lit",
+        "ve la televisión": "regarde la télévision",
+        "por la mañana": "le matin",
+        "por la tarde": "l'après-midi",
+        "por la noche": "le soir",
+        "antes": "avant"
+      }
     }
   }
 }

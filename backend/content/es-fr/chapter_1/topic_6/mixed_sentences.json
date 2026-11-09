@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "Ese banco vende **euro** a buen cambio."
+  },
+  {
+    "sentence_number": 2,
+    "content": "Tengo **quatre** compañeros nuevos."
+  },
+  {
+    "sentence_number": 3,
+    "content": "Faltan **neuf** páginas para terminar ese libro."
+  },
+  {
+    "sentence_number": 4,
+    "content": "Esta **semaine** incluye **lundi**, **mardi**, **mercredi**, **jeudi**, **vendredi**, **samedi** **et** **dimanche**."
+  },
+  {
+    "sentence_number": 5,
+    "content": "Guardé **six** fotos nuevas ese mismo momento."
+  },
+  {
+    "sentence_number": 6,
+    "content": "Ese tren llega a las **cinq**, dentro **de** media **heure**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "Esa cuenta bancaria marca **zéro**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "Guardé **sept** fotos nuevas **aujourd'hui**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "Esa reunión dura **cinq** **minute** exactos."
+  },
+  {
+    "sentence_number": 10,
+    "content": "Tengo **cinq** mascotas distintas."
+  },
+  {
+    "sentence_number": 11,
+    "content": "Trabajo **six** días **et** descanso **un** **jour** cada **semaine**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "¿**Combien ça coûte** ese examen? Faltan **huit** días para presentarlo."
+  },
+  {
+    "sentence_number": 13,
+    "content": "Faltan **deux** ejercicios para ese examen."
+  },
+  {
+    "sentence_number": 14,
+    "content": "Falta **une** página para terminar ese examen."
+  },
+  {
+    "sentence_number": 15,
+    "content": "Compré **quatre** entradas a mitad **de** **prix** para ese partido."
+  },
+  {
+    "sentence_number": 16,
+    "content": "Cada **vendredi** salgo temprano del trabajo."
+  },
+  {
+    "sentence_number": 17,
+    "content": "Reservé **une** cita médica para **demain**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "Esa clase dura **une** **heure** **et** treinta **minute**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "Esa reunión quedó fijada para **mercredi** a las **neuf**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**Maintenant** descanso bastante cada **samedi**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "Cumplo **dix** años **demain**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "¿**Combien ça coûte** esta mochila?"
+  },
+  {
+    "sentence_number": 23,
+    "content": "Esa fiesta empieza a las **six** **et** termina a las **dix**."
+  },
+  {
+    "sentence_number": 24,
+    "content": "Esa clase empieza a las **trois**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "Compré **dix** boletos para ese equipo."
+  },
+  {
+    "sentence_number": 26,
+    "content": "Pago usando **une** moneda antigua."
+  },
+  {
+    "sentence_number": 27,
+    "content": "Ese examen final será **jeudi** próximo."
+  },
+  {
+    "sentence_number": 28,
+    "content": "Compro revistas nuevas por **trois** **euro**."
+  },
+  {
+    "sentence_number": 29,
+    "content": "Esa **semaine** tuvo **sept** días ocupados."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**Maintenant** tengo **neuf** mensajes nuevos **aujourd'hui**."
+  },
+  {
+    "sentence_number": 31,
+    "content": "Tengo examen cada **mardi** **et** **jeudi**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "**Maintenant** tengo **sept** vecinos nuevos."
+  },
+  {
+    "sentence_number": 33,
+    "content": "Cada **semaine** reviso esa agenda **et** planifico **sept** días completos."
+  },
+  {
+    "sentence_number": 34,
+    "content": "Compro **trois** boletos a buen **prix** para ese viaje."
+  },
+  {
+    "sentence_number": 35,
+    "content": "Faltan **sept** ejercicios para ese examen."
+  },
+  {
+    "sentence_number": 36,
+    "content": "Cada **lundi** empiezo ese trabajo."
+  },
+  {
+    "sentence_number": 37,
+    "content": "Cada **mercredi** reviso esos correos."
+  },
+  {
+    "sentence_number": 38,
+    "content": "Ese equipo ganó **neuf** partidos seguidos."
+  },
+  {
+    "sentence_number": 39,
+    "content": "**Aujourd'hui** celebro ese cumpleaños."
+  },
+  {
+    "sentence_number": 40,
+    "content": "Tengo **un** vecino que vive lejos."
+  },
+  {
+    "sentence_number": 41,
+    "content": "Falta **une** **semaine** para ese examen."
+  },
+  {
+    "sentence_number": 42,
+    "content": "Esa reunión empieza a las **quatre**, dentro **d'****une** **heure**."
+  },
+  {
+    "sentence_number": 43,
+    "content": "Ese examen dura **trois** horas exactas."
+  },
+  {
+    "sentence_number": 44,
+    "content": "Compré **cinq** boletos para ese equipo."
+  },
+  {
+    "sentence_number": 45,
+    "content": "Esa tienda abre **mardi**, **vendredi** **et** **samedi** solamente."
+  },
+  {
+    "sentence_number": 46,
+    "content": "Tengo **trois** mascotas nuevas."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**Maintenant** empieza esa reunión."
+  },
+  {
+    "sentence_number": 48,
+    "content": "Cada **dimanche** disfruto **d'****un** buen libro."
+  },
+  {
+    "sentence_number": 49,
+    "content": "Ese marcador terminó **zéro** a **zéro**."
+  },
+  {
+    "sentence_number": 50,
+    "content": "Compro **une** entrada extra para ese partido."
+  },
+  {
+    "sentence_number": 51,
+    "content": "Esa clase empieza a las **huit**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "Dame **une** **minute**, por favor."
+  },
+  {
+    "sentence_number": 53,
+    "content": "Esa **semaine** contiene **sept** días."
+  },
+  {
+    "sentence_number": 54,
+    "content": "Esa **semaine** va **de** **lundi** a **dimanche**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "Tengo cita **lundi** próximo."
+  },
+  {
+    "sentence_number": 56,
+    "content": "¿**Combien ça coûte** esa fiesta? Faltan **dix** días para celebrarla."
+  },
+  {
+    "sentence_number": 57,
+    "content": "Compré **six** boletos para ese cine."
+  },
+  {
+    "sentence_number": 58,
+    "content": "Faltan **quatre** días para ese cumpleaños."
+  },
+  {
+    "sentence_number": 59,
+    "content": "Ese vuelo sale a las **huit**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "Cada **jeudi** entreno **avec** ese equipo."
+  },
+  {
+    "sentence_number": 61,
+    "content": "**Demain** viajo a París."
+  },
+  {
+    "sentence_number": 62,
+    "content": "Esperé **une** **heure** completa afuera."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**Demain** empieza ese curso nuevo."
+  },
+  {
+    "sentence_number": 64,
+    "content": "Compro **un** boleto para ese tren."
+  },
+  {
+    "sentence_number": 65,
+    "content": "¿**Combien ça coûte** ese collar?"
+  },
+  {
+    "sentence_number": 66,
+    "content": "Compré **sept** boletos para ese viaje."
+  },
+  {
+    "sentence_number": 67,
+    "content": "Ese curso empieza **demain** **et** dura **quatre** semanas."
+  },
+  {
+    "sentence_number": 68,
+    "content": "Cada **dimanche** visito a ese vecino."
+  },
+  {
+    "sentence_number": 69,
+    "content": "Guardo **un** billete nuevo dentro **de** esa cartera."
+  },
+  {
+    "sentence_number": 70,
+    "content": "¿**Combien ça coûte** esa clase que termina a las **six**?"
+  },
+  {
+    "sentence_number": 71,
+    "content": "Esa tienda cierra cada **mercredi**."
+  },
+  {
+    "sentence_number": 72,
+    "content": "Compré **neuf** boletos para ese concierto."
+  },
+  {
+    "sentence_number": 73,
+    "content": "Compré boletos para **deux** conciertos este mes."
+  },
+  {
+    "sentence_number": 74,
+    "content": "Compré **huit** boletos para esa fiesta."
+  },
+  {
+    "sentence_number": 75,
+    "content": "Ese examen dura **dix** **minute** exactos."
+  },
+  {
+    "sentence_number": 76,
+    "content": "Compré **deux** boletos para ese concierto."
+  },
+  {
+    "sentence_number": 77,
+    "content": "Esa tienda vende relojes desde **cinq** **euro**, **un** buen **prix**."
+  },
+  {
+    "sentence_number": 78,
+    "content": "Cambié billetes por **euro** antes **de** viajar."
+  },
+  {
+    "sentence_number": 79,
+    "content": "Pagué **cinq** **euro** por ese libro."
+  },
+  {
+    "sentence_number": 80,
+    "content": "Ese vuelo sale a las **quatre**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "Ese **café** cuesta **deux** **euro**."
+  },
+  {
+    "sentence_number": 82,
+    "content": "Ese boleto muestra **un** **prix** alto."
+  },
+  {
+    "sentence_number": 83,
+    "content": "Ese collar muestra **un** **prix** sorprendente."
+  },
+  {
+    "sentence_number": 84,
+    "content": "Trabajo **lundi**, **mardi**, **mercredi**, **jeudi** **et** **vendredi**; descanso **samedi** **et** **dimanche**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "Tengo **cinq** **euro** guardados."
+  },
+  {
+    "sentence_number": 86,
+    "content": "Falta **une** **minute** para que empiece esa película."
+  },
+  {
+    "sentence_number": 87,
+    "content": "Ese equipo cuenta **avec** **six** jugadores."
+  },
+  {
+    "sentence_number": 88,
+    "content": "Empiezo a contar desde **zéro** otra vez."
+  },
+  {
+    "sentence_number": 89,
+    "content": "Guardé **huit** fotos nuevas ese mismo momento."
+  },
+  {
+    "sentence_number": 90,
+    "content": "Esa reunión empieza a las **neuf**."
+  },
+  {
+    "sentence_number": 91,
+    "content": "**Maintenant** debo decidir rápido."
+  },
+  {
+    "sentence_number": 92,
+    "content": "Cada **mardi** tengo **une** cita médica."
+  },
+  {
+    "sentence_number": 93,
+    "content": "Ese vuelo sale cada **vendredi** **et** **samedi**."
+  },
+  {
+    "sentence_number": 94,
+    "content": "Esperé **trois** **heure** seguidas afuera."
+  },
+  {
+    "sentence_number": 95,
+    "content": "Tengo **zéro** mensajes nuevos **aujourd'hui**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "Ese código secreto empieza desde **zéro**."
+  },
+  {
+    "sentence_number": 97,
+    "content": "Faltan **six** páginas para terminar ese libro."
+  },
+  {
+    "sentence_number": 98,
+    "content": "**Aujourd'hui** empieza ese curso."
+  },
+  {
+    "sentence_number": 99,
+    "content": "Tengo **deux** gatos nuevos."
+  },
+  {
+    "sentence_number": 100,
+    "content": "Guardo unos **euro** dentro **de** esa cartera."
+  }
+]
