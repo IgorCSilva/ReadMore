@@ -1,0 +1,783 @@
+[
+  {
+    "id": "fr-sent-0568",
+    "sentence": "Que veux-tu manger ce soir ?",
+    "word_ids": [
+      "fr-wd-0198",
+      "fr-wd-0128",
+      "fr-wd-0015",
+      "fr-wd-0126",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0569",
+    "sentence": "Que dire de cette situation ?",
+    "word_ids": [
+      "fr-wd-0198",
+      "fr-wd-0213",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0570",
+    "sentence": "Qu'est-ce que tu fais demain ?",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0198",
+      "fr-wd-0015",
+      "fr-wd-0152"
+    ]
+  },
+  {
+    "id": "fr-sent-0571",
+    "sentence": "Qui est à la porte ?",
+    "word_ids": [
+      "fr-wd-0199",
+      "fr-wd-0020",
+      "fr-wd-0031",
+      "fr-wd-0065"
+    ]
+  },
+  {
+    "id": "fr-sent-0572",
+    "sentence": "Qui veut venir avec moi ?",
+    "word_ids": [
+      "fr-wd-0199",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0573",
+    "sentence": "Je ne sais pas qui a téléphoné.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0129",
+      "fr-wd-0130",
+      "fr-wd-0199",
+      "fr-wd-0079"
+    ]
+  },
+  {
+    "id": "fr-sent-0574",
+    "sentence": "Je veux me présenter poliment.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0023",
+      "fr-wd-0200"
+    ]
+  },
+  {
+    "id": "fr-sent-0575",
+    "sentence": "Elle veut se présenter à son nouveau voisin.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0215",
+      "fr-wd-0200",
+      "fr-wd-0034",
+      "fr-wd-0204",
+      "fr-wd-0217"
+    ]
+  },
+  {
+    "id": "fr-sent-0576",
+    "sentence": "Il est poli de se présenter avant de parler.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0215",
+      "fr-wd-0200",
+      "fr-wd-0179",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0577",
+    "sentence": "Je veux connaître mon nouveau voisin.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0201",
+      "fr-wd-0022",
+      "fr-wd-0204",
+      "fr-wd-0217"
+    ]
+  },
+  {
+    "id": "fr-sent-0578",
+    "sentence": "Tu veux connaître cette ville ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0128",
+      "fr-wd-0201"
+    ]
+  },
+  {
+    "id": "fr-sent-0579",
+    "sentence": "Il est agréable de connaître beaucoup de gens.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0201",
+      "fr-wd-0132",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0580",
+    "sentence": "Je vais demander son nom.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0017",
+      "fr-wd-0202",
+      "fr-wd-0034",
+      "fr-wd-0021"
+    ]
+  },
+  {
+    "id": "fr-sent-0581",
+    "sentence": "Tu peux demander où il habite.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0202",
+      "fr-wd-0212",
+      "fr-wd-0164"
+    ]
+  },
+  {
+    "id": "fr-sent-0582",
+    "sentence": "Elle ose demander une question difficile.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0202",
+      "fr-wd-0076"
+    ]
+  },
+  {
+    "id": "fr-sent-0583",
+    "sentence": "Je dois répondre à sa question.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0203",
+      "fr-wd-0035"
+    ]
+  },
+  {
+    "id": "fr-sent-0584",
+    "sentence": "Tu dois répondre vite cette fois.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0203"
+    ]
+  },
+  {
+    "id": "fr-sent-0585",
+    "sentence": "Il est difficile de répondre sans réfléchir.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0203",
+      "fr-wd-0059"
+    ]
+  },
+  {
+    "id": "fr-sent-0586",
+    "sentence": "J'ai un nouveau voisin très sympa.",
+    "word_ids": [
+      "fr-wd-0075",
+      "fr-wd-0204",
+      "fr-wd-0217"
+    ]
+  },
+  {
+    "id": "fr-sent-0587",
+    "sentence": "Ce travail est complètement nouveau pour moi.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0204"
+    ]
+  },
+  {
+    "id": "fr-sent-0588",
+    "sentence": "Tu aimes ton nouveau quartier ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0204"
+    ]
+  },
+  {
+    "id": "fr-sent-0589",
+    "sentence": "J'ai une nouvelle amie à l'école.",
+    "word_ids": [
+      "fr-wd-0076",
+      "fr-wd-0205",
+      "fr-wd-0207"
+    ]
+  },
+  {
+    "id": "fr-sent-0590",
+    "sentence": "Cette nouvelle étape commence bien.",
+    "word_ids": [
+      "fr-wd-0205",
+      "fr-wd-0012"
+    ]
+  },
+  {
+    "id": "fr-sent-0591",
+    "sentence": "Ta nouvelle voisine est très gentille.",
+    "word_ids": [
+      "fr-wd-0205",
+      "fr-wd-0218",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0592",
+    "sentence": "Mon ami arrive demain matin.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0206",
+      "fr-wd-0171",
+      "fr-wd-0152",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0593",
+    "sentence": "Tu as un bon ami ici ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0075",
+      "fr-wd-0005",
+      "fr-wd-0206",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0594",
+    "sentence": "Cet ami me connaît depuis longtemps.",
+    "word_ids": [
+      "fr-wd-0206",
+      "fr-wd-0023"
+    ]
+  },
+  {
+    "id": "fr-sent-0595",
+    "sentence": "Mon amie habite près de chez moi.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0207",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0596",
+    "sentence": "Tu connais bien cette amie ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0012",
+      "fr-wd-0207"
+    ]
+  },
+  {
+    "id": "fr-sent-0597",
+    "sentence": "Cette amie sourit toujours beaucoup.",
+    "word_ids": [
+      "fr-wd-0207",
+      "fr-wd-0132"
+    ]
+  },
+  {
+    "id": "fr-sent-0598",
+    "sentence": "Enchanté, je m'appelle Paul.",
+    "word_ids": [
+      "fr-wd-0208",
+      "fr-wd-0018",
+      "fr-wd-0024"
+    ]
+  },
+  {
+    "id": "fr-sent-0599",
+    "sentence": "Il est enchanté de connaître son voisin.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0208",
+      "fr-wd-0025",
+      "fr-wd-0201",
+      "fr-wd-0034",
+      "fr-wd-0217"
+    ]
+  },
+  {
+    "id": "fr-sent-0600",
+    "sentence": "Je suis enchanté de te rencontrer.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0019",
+      "fr-wd-0208",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0601",
+    "sentence": "Enchantée, dit-elle avec un sourire.",
+    "word_ids": [
+      "fr-wd-0209",
+      "fr-wd-0165",
+      "fr-wd-0058",
+      "fr-wd-0075",
+      "fr-wd-0214"
+    ]
+  },
+  {
+    "id": "fr-sent-0602",
+    "sentence": "Elle est enchantée de connaître sa nouvelle voisine.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0020",
+      "fr-wd-0209",
+      "fr-wd-0025",
+      "fr-wd-0201",
+      "fr-wd-0035",
+      "fr-wd-0205",
+      "fr-wd-0218"
+    ]
+  },
+  {
+    "id": "fr-sent-0603",
+    "sentence": "Je suis enchantée de te revoir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0019",
+      "fr-wd-0209",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0604",
+    "sentence": "Elle sourit, et il sourit également.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0004",
+      "fr-wd-0164",
+      "fr-wd-0210"
+    ]
+  },
+  {
+    "id": "fr-sent-0605",
+    "sentence": "Moi également, je veux venir.",
+    "word_ids": [
+      "fr-wd-0210",
+      "fr-wd-0018",
+      "fr-wd-0128"
+    ]
+  },
+  {
+    "id": "fr-sent-0606",
+    "sentence": "Il a salué, et j'ai salué également.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0079",
+      "fr-wd-0004",
+      "fr-wd-0210"
+    ]
+  },
+  {
+    "id": "fr-sent-0607",
+    "sentence": "Je veux aussi connaître ton ami.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0211",
+      "fr-wd-0201",
+      "fr-wd-0206"
+    ]
+  },
+  {
+    "id": "fr-sent-0608",
+    "sentence": "Elle aussi habite dans ce quartier.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0211",
+      "fr-wd-0080"
+    ]
+  },
+  {
+    "id": "fr-sent-0609",
+    "sentence": "Tu viens aussi à la fête ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0211",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0610",
+    "sentence": "Où habites-tu maintenant ?",
+    "word_ids": [
+      "fr-wd-0212",
+      "fr-wd-0015",
+      "fr-wd-0150"
+    ]
+  },
+  {
+    "id": "fr-sent-0611",
+    "sentence": "Je ne sais pas où il travaille.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0129",
+      "fr-wd-0130",
+      "fr-wd-0212",
+      "fr-wd-0164",
+      "fr-wd-0089"
+    ]
+  },
+  {
+    "id": "fr-sent-0612",
+    "sentence": "D'où vient ton ami ?",
+    "word_ids": [
+      "fr-wd-0212",
+      "fr-wd-0206"
+    ]
+  },
+  {
+    "id": "fr-sent-0613",
+    "sentence": "Je ne sais pas quoi dire.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0129",
+      "fr-wd-0130",
+      "fr-wd-0213"
+    ]
+  },
+  {
+    "id": "fr-sent-0614",
+    "sentence": "Tu peux dire bonjour poliment.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0213",
+      "fr-wd-0001"
+    ]
+  },
+  {
+    "id": "fr-sent-0615",
+    "sentence": "Il est difficile de dire la vérité.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0213",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0616",
+    "sentence": "Elle aime sourire à tout le monde.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0214",
+      "fr-wd-0013",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0617",
+    "sentence": "Tu peux sourire un peu plus.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0214",
+      "fr-wd-0075",
+      "fr-wd-0133",
+      "fr-wd-0134"
+    ]
+  },
+  {
+    "id": "fr-sent-0618",
+    "sentence": "Il est bon de sourire même quand c'est difficile.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0025",
+      "fr-wd-0214",
+      "fr-wd-0184",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0619",
+    "sentence": "Il se repose un peu après le travail.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0215",
+      "fr-wd-0075",
+      "fr-wd-0133",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0620",
+    "sentence": "Elle se réveille tôt chaque matin.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0215",
+      "fr-wd-0084",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0621",
+    "sentence": "Comment se nomme ce nouveau quartier ?",
+    "word_ids": [
+      "fr-wd-0014",
+      "fr-wd-0215",
+      "fr-wd-0216",
+      "fr-wd-0204"
+    ]
+  },
+  {
+    "id": "fr-sent-0622",
+    "sentence": "Elle se nomme Claire.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0215",
+      "fr-wd-0216"
+    ]
+  },
+  {
+    "id": "fr-sent-0623",
+    "sentence": "Comment se nomme ton nouveau voisin ?",
+    "word_ids": [
+      "fr-wd-0014",
+      "fr-wd-0215",
+      "fr-wd-0216",
+      "fr-wd-0204",
+      "fr-wd-0217"
+    ]
+  },
+  {
+    "id": "fr-sent-0624",
+    "sentence": "Ce village se nomme ainsi depuis longtemps.",
+    "word_ids": [
+      "fr-wd-0215",
+      "fr-wd-0216"
+    ]
+  },
+  {
+    "id": "fr-sent-0625",
+    "sentence": "Mon voisin est très sympathique.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0217",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0626",
+    "sentence": "Tu connais bien ton voisin ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0012",
+      "fr-wd-0217"
+    ]
+  },
+  {
+    "id": "fr-sent-0627",
+    "sentence": "Ce voisin salue toujours tout le monde.",
+    "word_ids": [
+      "fr-wd-0217",
+      "fr-wd-0013",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0628",
+    "sentence": "Ma voisine arrive demain après-midi.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0218",
+      "fr-wd-0171",
+      "fr-wd-0152",
+      "fr-wd-0008"
+    ]
+  },
+  {
+    "id": "fr-sent-0629",
+    "sentence": "Cette voisine discute souvent avec moi.",
+    "word_ids": [
+      "fr-wd-0218",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0630",
+    "sentence": "Tu parles souvent avec ta voisine ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0058",
+      "fr-wd-0218"
+    ]
+  },
+  {
+    "id": "fr-sent-0631",
+    "sentence": "Un inconnu a frappé à la porte hier soir.",
+    "word_ids": [
+      "fr-wd-0075",
+      "fr-wd-0219",
+      "fr-wd-0079",
+      "fr-wd-0031",
+      "fr-wd-0065",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0632",
+    "sentence": "Il est prudent de ne pas parler à un inconnu.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0129",
+      "fr-wd-0130",
+      "fr-wd-0075",
+      "fr-wd-0219"
+    ]
+  },
+  {
+    "id": "fr-sent-0633",
+    "sentence": "Cet inconnu semble perdu dans le quartier.",
+    "word_ids": [
+      "fr-wd-0219",
+      "fr-wd-0080",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0634",
+    "sentence": "Une inconnue m'a souri dans la rue.",
+    "word_ids": [
+      "fr-wd-0076",
+      "fr-wd-0220",
+      "fr-wd-0079",
+      "fr-wd-0080",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0635",
+    "sentence": "Elle était une inconnue avant cette fête.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0076",
+      "fr-wd-0220",
+      "fr-wd-0179"
+    ]
+  },
+  {
+    "id": "fr-sent-0636",
+    "sentence": "Cette inconnue cherche son chemin.",
+    "word_ids": [
+      "fr-wd-0220",
+      "fr-wd-0034"
+    ]
+  },
+  {
+    "id": "fr-sent-0637",
+    "sentence": "Je veux discuter avec toi ce soir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0221",
+      "fr-wd-0058",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0638",
+    "sentence": "Tu aimes discuter de politique ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0221",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0639",
+    "sentence": "Il est agréable de discuter avec de bons amis.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0221",
+      "fr-wd-0058",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0640",
+    "sentence": "Je dois saluer mon voisin chaque matin.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0222",
+      "fr-wd-0022",
+      "fr-wd-0217",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0641",
+    "sentence": "Tu peux saluer tout le monde poliment.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0222",
+      "fr-wd-0013",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0642",
+    "sentence": "Il est important de saluer en arrivant.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0222"
+    ]
+  },
+  {
+    "id": "fr-sent-0643",
+    "sentence": "C'est la première fois que je viens ici.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0031",
+      "fr-wd-0223",
+      "fr-wd-0198",
+      "fr-wd-0018",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0644",
+    "sentence": "C'était notre première fois ensemble.",
+    "word_ids": [
+      "fr-wd-0055",
+      "fr-wd-0223"
+    ]
+  },
+  {
+    "id": "fr-sent-0645",
+    "sentence": "Je me souviens de notre première fois à Paris.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0023",
+      "fr-wd-0025",
+      "fr-wd-0055",
+      "fr-wd-0223"
+    ]
+  }
+]

@@ -12,7 +12,10 @@
         "noche": "nuit",
         "buenos días": "bonjour",
         "buenas tardes": "bonjour",
-        "buenas noches": ["bonsoir", "bonne nuit"],
+        "buenas noches": [
+          "bonsoir",
+          "bonne nuit"
+        ],
         "bien": "bien",
         "todo": "tout",
         "cómo": "comment",
@@ -49,7 +52,10 @@
         "prima": "cousine",
         "esposo": "mari",
         "esposa": "femme",
-        "su": ["son", "sa"],
+        "su": [
+          "son",
+          "sa"
+        ],
         "nosotros": "nous",
         "nosotras": "nous",
         "nuestro": "notre",
@@ -195,6 +201,62 @@
         "por la tarde": "l'après-midi",
         "por la noche": "le soir",
         "antes": "avant"
+      }
+    },
+    "topic_2": {
+      "es": {
+        "entonces": "alors",
+        "de repente": "soudain",
+        "pero": "mais",
+        "porque": "parce que",
+        "cuando": "quand",
+        "un día": "un jour",
+        "encontrar": "trouver",
+        "ver": "voir",
+        "oír": "entendre",
+        "abrir": "ouvrir",
+        "cerrar": "fermer",
+        "entrar": "entrer",
+        "suceder": "passer",
+        "aparecer": "apparaître",
+        "desaparecer": "disparaître",
+        "sorpresa": "surprise",
+        "regalo": "cadeau",
+        "nadie": "personne"
+      }
+    },
+    "topic_3": {
+      "es": {
+        "qué": "que",
+        "quién": "qui",
+        "presentarse": "présenter",
+        "conocer": "connaître",
+        "preguntar": "demander",
+        "responder": "répondre",
+        "nuevo": "nouveau",
+        "nueva": "nouvelle",
+        "amigo": "ami",
+        "amiga": "amie",
+        "mucho gusto": [
+          "enchanté",
+          "enchantée"
+        ],
+        "encantado": "enchanté",
+        "encantada": "enchantée",
+        "igualmente": "également",
+        "también": "aussi",
+        "dónde": "où",
+        "decir": "dire",
+        "sonreír": "sourire",
+        "se": "se",
+        "llama": "nomme",
+        "vecino": "voisin",
+        "vecina": "voisine",
+        "desconocido": "inconnu",
+        "desconocida": "inconnue",
+        "conversar": "discuter",
+        "saludar": "saluer",
+        "primera vez": "première fois"
       }
     }
   }
