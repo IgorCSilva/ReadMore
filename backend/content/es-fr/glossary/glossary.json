@@ -219,6 +219,15 @@
       "ennuyeux"
     ]
   },
+  "améliorent": {
+    "meaning": "Mejoran; presente de 'améliorer' (ils/elles).",
+    "examples": [
+      "Elles améliorent ta concentration quand tu te rassois.",
+      "Ces habitudes améliorent ta santé."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "annoncèrent": {
     "meaning": "Anunciaron; pasado simple de 'annoncer' (ils/elles).",
     "examples": [
@@ -355,6 +364,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "arrière": {
+    "meaning": "Atrás, hacia atrás.",
+    "examples": [
+      "Fais rouler tes épaules en arrière, puis en avant",
+      "Recule un peu vers l'arrière."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "avant"
+    ]
+  },
   "arrosant": {
     "meaning": "Regando, mojando; gerundio de 'arroser'.",
     "examples": [
@@ -396,6 +416,37 @@
     "examples": [
       "**Étape 1 :** Trouve un endroit calme avec assez d'espace pour bouger.",
       "Il a assez de temps pour s'étirer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "assis": {
+    "meaning": "Sentado; participio/adjetivo de 'asseoir', masculino singular.",
+    "examples": [
+      "Assis bien droit, tourne ton buste à gauche, puis à droite.",
+      "Il reste assis toute la journée au bureau."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "debout"
+    ]
+  },
+  "assise": {
+    "meaning": "Sentada; femenino singular de 'asseoir' (participio/adjetivo).",
+    "examples": [
+      "Torsion assise",
+      "Elle reste assise toute la matinée."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "debout"
+    ]
+  },
+  "assises": {
+    "meaning": "Sentadas; participio/adjetivo de 'asseoir', femenino plural.",
+    "examples": [
+      "Beaucoup de personnes restent assises pendant de nombreuses heures chaque jour.",
+      "Elles sont assises depuis trois heures."
     ],
     "synonyms": [],
     "antonyms": []
@@ -983,6 +1034,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "bureau": {
+    "meaning": "Oficina; también escritorio (mueble).",
+    "examples": [
+      "Elles restent assises à un bureau, dans une voiture ou sur un canapé.",
+      "Mon bureau est près de la fenêtre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "buste": {
     "meaning": "Torso, busto; en 'rowing buste penché' = remo con el torso inclinado.",
     "examples": [
@@ -1103,6 +1163,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "canapé": {
+    "meaning": "Sofá.",
+    "examples": [
+      "Elles restent assises à un bureau, dans une voiture ou sur un canapé.",
+      "Le chat dort sur le canapé."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "canetons": {
     "meaning": "Patitos; plural de 'caneton'.",
     "examples": [
@@ -1208,6 +1277,15 @@
     "examples": [
       "L'eau était bien fraîche et cela lui fit des chatouillis agréables, tout en le chargeant de gouttelettes brillantes.",
       "Cela me rend très heureux."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "cercle": {
+    "meaning": "Círculo.",
+    "examples": [
+      "Fais lentement tourner ta tête en cercle",
+      "Les enfants forment un cercle."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1373,6 +1451,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "chargée": {
+    "meaning": "Cargada, ocupada; femenino de 'chargé'.",
+    "examples": [
+      "Ton corps a besoin de bouger, même pendant une journée de travail chargée.",
+      "C'est une semaine très chargée."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "calme"
+    ]
   },
   "charnière": {
     "meaning": "Bisagra; en 'charnière de hanche' = bisagra de cadera (hip hinge).",
@@ -1674,11 +1763,29 @@
     "synonyms": [],
     "antonyms": []
   },
+  "concentration": {
+    "meaning": "Concentración.",
+    "examples": [
+      "Elles améliorent ta concentration quand tu te rassois.",
+      "Il a besoin de silence pour sa concentration."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "conseil": {
     "meaning": "Consejo.",
     "examples": [
       "Avant de partir, le Docteur Zoé lui donna un dernier conseil : « N'oublie pas : on fait ça au moins deux fois par jour, et surtout le soir avant de dormir. Comme ça, ton sourire sera toujours prêt pour de nouvelles aventures ! »",
       "Merci pour ce bon conseil."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "conseils": {
+    "meaning": "Consejos; plural de 'conseil'.",
+    "examples": [
+      "Conseils simples pour la posture :",
+      "Merci pour tes conseils."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1750,6 +1857,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "corrige-la": {
+    "meaning": "Corrígela; imperativo de 'corriger' + pronombre 'la' (tú).",
+    "examples": [
+      "Corrige-la si tu remarques que tu t'avachis.",
+      "Si tu vois une erreur, corrige-la vite."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "coton": {
     "meaning": "Algodón.",
     "examples": [
@@ -1795,6 +1911,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "courbé": {
+    "meaning": "Encorvado, curvado; participio/adjetivo de 'courber'.",
+    "examples": [
+      "Garde ton dos droit, pas courbé",
+      "Il marche avec le dos courbé."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "droit"
+    ]
+  },
   "courir": {
     "meaning": "Correr.",
     "examples": [
@@ -1813,6 +1940,17 @@
     "synonyms": [],
     "antonyms": [
       "long"
+    ]
+  },
+  "courte": {
+    "meaning": "Corta; femenino de 'court'.",
+    "examples": [
+      "Une micro-pause, c'est une pause très courte, juste une ou deux minutes.",
+      "C'est une histoire très courte."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "longue"
     ]
   },
   "crocs": {
@@ -1847,6 +1985,15 @@
     "examples": [
       "Il était une fois un petit garçon nommé Léo. À trois ans, Léo vivait dans une maison remplie de rires et de tendresse avec sa maman et son papa. Ce qu'il aimait par-dessus tout, c'était construire des tours vertigineuses avec ses cubes, faire de la peinture avec beaucoup de couleurs, et écouter des histoires magiques avant de dormir.",
       "Il construit une tour avec ses cubes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "cuisine": {
+    "meaning": "Cocina.",
+    "examples": [
+      "Marche un peu, même juste jusqu'à la cuisine ou la fenêtre.",
+      "Elle prépare le dîner dans la cuisine."
     ],
     "synonyms": [],
     "antonyms": []
@@ -2301,6 +2448,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "doigts": {
+    "meaning": "Dedos; plural de 'doigt'.",
+    "examples": [
+      "Tends un bras, tire doucement tes doigts vers toi",
+      "Elle a de longs doigts fins."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "dois-tu": {
     "meaning": "Debes tú; presente de 'devoir' + 'tu' en pregunta con inversión.",
     "examples": [
@@ -2331,6 +2487,15 @@
     "examples": [
       "— C'est normal d'avoir un peu peur, mon chéri. Mais tu sais quoi ? L'amour, c'est magique : ça ne se divise pas comme un gâteau, ça se multiplie ! Nous aurons encore plus d'amour à donner.",
       "Ils ont encore plus d'amour à donner."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "dont": {
+    "meaning": "Cuyo/a, del/de la cual; pronombre relativo.",
+    "examples": [
+      "La posture, c'est la façon dont tu tiens ton corps.",
+      "C'est le livre dont je parle."
     ],
     "synonyms": [],
     "antonyms": []
@@ -2440,6 +2605,17 @@
       "courbé"
     ]
   },
+  "droite": {
+    "meaning": "Derecha.",
+    "examples": [
+      "Assis bien droit, tourne ton buste à gauche, puis à droite.",
+      "La boulangerie est à droite."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "gauche"
+    ]
+  },
   "du": {
     "meaning": "Del; contracción de 'de' + 'le', o artículo partitivo.",
     "examples": [
@@ -2454,6 +2630,15 @@
     "examples": [
       "# Exercice physique — Sujet 5 : Construire une routine durable",
       "Il veut créer une habitude durable."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "durée": {
+    "meaning": "Duración.",
+    "examples": [
+      "| Étirement | Comment le faire | Durée |",
+      "Quelle est la durée du voyage ?"
     ],
     "synonyms": [],
     "antonyms": []
@@ -2574,6 +2759,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "elles": {
+    "meaning": "Ellas; pronombre personal femenino plural.",
+    "examples": [
+      "Elles restent assises à un bureau, dans une voiture ou sur un canapé.",
+      "Elles arrivent demain matin."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "en": {
     "meaning": "En (preposición), o pronombre que reemplaza 'de eso/de ello'.",
     "examples": [
@@ -2590,6 +2784,17 @@
       "Il veut encore jouer dehors."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "endolori": {
+    "meaning": "Dolorido; adjetivo masculino.",
+    "examples": [
+      "Se sentir tendu ou endolori dans les muscles ou les articulations",
+      "Il a le dos endolori après le match."
+    ],
+    "synonyms": [
+      "douloureux"
+    ],
     "antonyms": []
   },
   "endroit": {
@@ -2936,6 +3141,26 @@
     "examples": [
       "— Je sais que tu voulais lui montrer ton amour, mais Mila est très fragile, comme une petite fleur. Il faut être très doux avec elle.",
       "Il faut être très doux avec un bébé."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "façon": {
+    "meaning": "Manera, forma.",
+    "examples": [
+      "La posture, c'est la façon dont tu tiens ton corps.",
+      "Il parle d'une façon calme."
+    ],
+    "synonyms": [
+      "manière"
+    ],
+    "antonyms": []
+  },
+  "fenêtre": {
+    "meaning": "Ventana.",
+    "examples": [
+      "Marche un peu, même juste jusqu'à la cuisine ou la fenêtre.",
+      "Ouvre la fenêtre, il fait chaud."
     ],
     "synonyms": [],
     "antonyms": []
@@ -3287,6 +3512,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "gauche": {
+    "meaning": "Izquierda.",
+    "examples": [
+      "Assis bien droit, tourne ton buste à gauche, puis à droite.",
+      "Tourne à gauche au prochain coin de rue."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "droite"
+    ]
+  },
   "genoux": {
     "meaning": "Rodillas.",
     "examples": [
@@ -3477,11 +3713,49 @@
     "synonyms": [],
     "antonyms": []
   },
+  "haut": {
+    "meaning": "Alto, arriba.",
+    "examples": [
+      "Lève-toi, tends tes bras bien haut",
+      "Mets le livre bien haut sur l'étagère."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "bas"
+    ]
+  },
+  "hauteur": {
+    "meaning": "Altura.",
+    "examples": [
+      "Garde ton écran à la hauteur des yeux",
+      "La table a une bonne hauteur."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "hebdomadaire": {
     "meaning": "Semanal.",
     "examples": [
       "## Construire ton programme hebdomadaire",
       "Voici mon programme hebdomadaire."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "heure": {
+    "meaning": "Hora.",
+    "examples": [
+      "Vérifie ta posture plusieurs fois chaque heure.",
+      "Quelle heure est-il ?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "heures": {
+    "meaning": "Horas; plural de 'heure'.",
+    "examples": [
+      "Beaucoup de personnes restent assises pendant de nombreuses heures chaque jour.",
+      "Le cours dure deux heures."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4193,6 +4467,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "levées": {
+    "meaning": "Levantadas; femenino plural de 'levé'.",
+    "examples": [
+      "Garde tes épaules relâchées, pas levées",
+      "Les mains levées, elle attend son tour."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "librement": {
     "meaning": "Libremente.",
     "examples": [
@@ -4207,6 +4490,15 @@
     "examples": [
       "À partir de ce jour, Léo apprit à être le plus doux des grands frères. Il chantait « Fais dodo, Colas mon p'tit frère » (en changeant les paroles pour Mila, bien sûr) quand elle était réveillée, créant un lien unique entre eux.",
       "Un lien unique se créa entre les deux frères."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "liste": {
+    "meaning": "Lista.",
+    "examples": [
+      "Fais deux ou trois étirements de la liste ci-dessous.",
+      "Écris ta liste de courses."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4228,6 +4520,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "long": {
+    "meaning": "Largo; masculino singular de 'long'.",
+    "examples": [
+      "Un mouvement qui rend un muscle plus long et plus détendu",
+      "Le chemin est très long."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "court"
+    ]
   },
   "longtemps": {
     "meaning": "Mucho tiempo.",
@@ -4296,6 +4599,15 @@
     "examples": [
       "Là-bas, les papillons volaient au ralenti et les abeilles bourdonnaient doucement :",
       "Les enfants jouent là-bas, près de l'arbre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "lève-toi": {
+    "meaning": "Levántate; imperativo de 'se lever' (tú).",
+    "examples": [
+      "Une bonne règle : lève-toi et bouge pendant une ou deux minutes toutes les 30 à 60 minutes.",
+      "Lève-toi, c'est l'heure de partir."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4486,6 +4798,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "manque": {
+    "meaning": "Falta; sustantivo, o presente de 'manquer' (il/elle).",
+    "examples": [
+      "Un manque d'énergie",
+      "Il y a un manque de temps aujourd'hui."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "excès"
+    ]
+  },
   "marche": {
     "meaning": "Camina/marcho; imperativo/presente de 'marcher' (tú/yo).",
     "examples": [
@@ -4547,6 +4870,33 @@
     "examples": [
       "— Et si le bébé prend mes jouets ? demanda Léo, inquiet.",
       "Je garderai mes jouets préférés."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "mets": {
+    "meaning": "Pon, pones; imperativo/presente de 'mettre' (tú).",
+    "examples": [
+      "Mets un rappel chaque heure.",
+      "Mets ton manteau, il fait froid."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "micro-pause": {
+    "meaning": "Micro-pausa; pausa muy corta.",
+    "examples": [
+      "Une micro-pause, c'est une pause très courte, juste une ou deux minutes.",
+      "Prends une micro-pause avant de continuer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "micro-pauses": {
+    "meaning": "Micro-pausas; plural de 'micro-pause'.",
+    "examples": [
+      "Les micro-pauses aident ton corps de façon simple :",
+      "Fais des micro-pauses toutes les heures."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4653,6 +5003,15 @@
     "examples": [
       "# Exercice physique — Sujet 4 : Souplesse et mobilité",
       "La mobilité aide à prévenir les blessures."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "modes": {
+    "meaning": "Modos, formas; plural de 'mode' (femenino: manera).",
+    "examples": [
+      "Exercices pour les travailleurs de bureau et les modes de vie sédentaires",
+      "Il y a plusieurs modes de vie possibles."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5046,6 +5405,15 @@
     "examples": [
       "**Charnière de hanche** — tu plies au niveau des hanches, avec le dos droit.",
       "Adapte l'exercice à ton niveau."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "nombreuses": {
+    "meaning": "Numerosas; femenino plural de 'nombreux'.",
+    "examples": [
+      "Beaucoup de personnes restent assises pendant de nombreuses heures chaque jour.",
+      "Elle a de nombreuses amies."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5480,6 +5848,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "pause": {
+    "meaning": "Pausa, descanso.",
+    "examples": [
+      "Une micro-pause, c'est une pause très courte, juste une ou deux minutes.",
+      "On fait une pause de dix minutes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "pauses": {
+    "meaning": "Pausas; plural de 'pause'.",
+    "examples": [
+      "Pratique : étirements et pauses mouvement pour le bureau",
+      "Fais plusieurs pauses pendant la journée."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "peinture": {
     "meaning": "Pintura.",
     "examples": [
@@ -5558,6 +5944,15 @@
     "meaning": "Pierdes; presente de 'perdre' (tu).",
     "examples": [
       "L'épuisement arrive quand tu fais trop d'exercice, sans assez de repos. Tu te sens fatigué, tu as mal aux muscles, et tu perds ta motivation."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "personnes": {
+    "meaning": "Personas; plural de 'personne' (sustantivo; no confundir con 'personne' = nadie).",
+    "examples": [
+      "Beaucoup de personnes restent assises pendant de nombreuses heures chaque jour.",
+      "Plusieurs personnes attendent dans la salle."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5699,6 +6094,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "plat": {
+    "meaning": "Plano; aquí: adjetivo (a plat = plano/aplanado); también 'plato' (comida).",
+    "examples": [
+      "Garde tes pieds bien à plat sur le sol",
+      "Pose le livre bien à plat sur la table."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "plein": {
     "meaning": "Lleno; aquí 'plein de' = lleno de, muchos.",
     "examples": [
@@ -5789,11 +6193,29 @@
     "synonyms": [],
     "antonyms": []
   },
+  "plusieurs": {
+    "meaning": "Varios/as.",
+    "examples": [
+      "Vérifie ta posture plusieurs fois chaque heure.",
+      "Il a plusieurs amis à Paris."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "poids": {
     "meaning": "Peso.",
     "examples": [
       "Tu peux utiliser le poids de ton corps, ou tu peux utiliser des **haltères** ou d'autres poids.",
       "Elle soulève des poids légers."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "poignet": {
+    "meaning": "Muñeca (parte del brazo).",
+    "examples": [
+      "Étirement du poignet",
+      "Il s'est fait mal au poignet."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5855,6 +6277,15 @@
     "examples": [
       "- **Étirement statique** — tu maintiens un étirement immobile. Exemple : toucher tes pieds et rester dans cette position. Bon après l'exercice, ou à n'importe quel moment de la journée.",
       "Garde cette position pendant 20 secondes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "posture": {
+    "meaning": "Postura.",
+    "examples": [
+      "La posture, c'est la façon dont tu tiens ton corps.",
+      "Elle a une très bonne posture."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6010,6 +6441,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "problème": {
+    "meaning": "Problema.",
+    "examples": [
+      "Pourquoi rester assis trop longtemps est un problème",
+      "Ce n'est pas un problème grave."
+    ],
+    "synonyms": [
+      "souci"
+    ],
+    "antonyms": []
+  },
   "problèmes": {
     "meaning": "Problemas.",
     "examples": [
@@ -6067,6 +6509,15 @@
     "antonyms": [
       "sale"
     ]
+  },
+  "protège": {
+    "meaning": "Protege; presente de 'protéger' (il/elle).",
+    "examples": [
+      "Une bonne posture protège ton dos et ton cou.",
+      "Ce manteau te protège du froid."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "protéger": {
     "meaning": "Proteger.",
@@ -6363,6 +6814,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "raides": {
+    "meaning": "Rígidas, tensas; plural de 'raide'.",
+    "examples": [
+      "Des épaules raides",
+      "Ses jambes sont raides après la course."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "raideur": {
     "meaning": "Rigidez.",
     "examples": [
@@ -6381,11 +6841,38 @@
     "synonyms": [],
     "antonyms": []
   },
+  "rappel": {
+    "meaning": "Recordatorio.",
+    "examples": [
+      "Mets un rappel chaque heure.",
+      "J'ai reçu un rappel pour le rendez-vous."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "rapportées": {
     "meaning": "Traídas; participio pasado femenino plural de 'rapporter'.",
     "examples": [
       "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
       "Les photos rapportées du voyage sont magnifiques."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "rassieds-toi": {
+    "meaning": "Siéntate de nuevo; imperativo de 'se rasseoir' (tú).",
+    "examples": [
+      "Rassieds-toi avec une bonne posture.",
+      "Rassieds-toi, le film continue."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "rassois": {
+    "meaning": "Te sientas de nuevo; presente de 'se rasseoir' (tú).",
+    "examples": [
+      "Elles améliorent ta concentration quand tu te rassois.",
+      "Tu te rassois après la pause."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6449,6 +6936,28 @@
     "examples": [
       "Il resta là à les regarder se laisser bercer par l'eau, tout comme lui se laissait bercer par le ciel.",
       "Elle aime regarder les étoiles le soir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "relâchées": {
+    "meaning": "Relajadas; femenino plural de 'relâché'.",
+    "examples": [
+      "Garde tes épaules relâchées, pas levées",
+      "Ses mains sont relâchées le long du corps."
+    ],
+    "synonyms": [
+      "détendues"
+    ],
+    "antonyms": [
+      "tendues"
+    ]
+  },
+  "remarques": {
+    "meaning": "Notas, observas; presente de 'remarquer' (tú).",
+    "examples": [
+      "Corrige-la si tu remarques que tu t'avachis.",
+      "Tu remarques souvent les petits détails."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6548,6 +7057,15 @@
     "examples": [
       "**Étape 4 :** Repose-toi pendant 1 minute entre les exercices.",
       "Repose-toi bien avant la prochaine séance."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "reposent": {
+    "meaning": "Descansan; presente de 'reposer' (ils/elles).",
+    "examples": [
+      "Elles reposent tes yeux",
+      "Les vacances reposent le corps et l'esprit."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6704,6 +7222,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "rouler": {
+    "meaning": "Rodar; aquí: hacer rodar (los hombros).",
+    "examples": [
+      "Fais rouler tes épaules en arrière, puis en avant",
+      "Le ballon continue à rouler."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "routine": {
     "meaning": "Rutina.",
     "examples": [
@@ -6722,11 +7249,29 @@
     "synonyms": [],
     "antonyms": []
   },
+  "règle": {
+    "meaning": "Regla.",
+    "examples": [
+      "Une bonne règle : lève-toi et bouge pendant une ou deux minutes toutes les 30 à 60 minutes.",
+      "C'est une règle simple à suivre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "récupérer": {
     "meaning": "Recuperar(se).",
     "examples": [
       "Utilise l'étirement dynamique pour t'échauffer. Utilise l'étirement statique pour récupérer ou te détendre.",
       "Il faut du temps pour récupérer après l'effort."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "réduisent": {
+    "meaning": "Reducen; presente de 'réduire' (ils/elles).",
+    "examples": [
+      "Elles réduisent la raideur",
+      "Ces exercices réduisent le stress."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7236,6 +7781,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "sol": {
+    "meaning": "Suelo.",
+    "examples": [
+      "Garde tes pieds bien à plat sur le sol",
+      "Le ballon est tombé sur le sol."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "soleil": {
     "meaning": "Sol.",
     "examples": [
@@ -7262,6 +7816,15 @@
     "examples": [
       "Il glissa son corps vaporeux entre les montagnes et descendit vers un joli champ de fleurs.",
       "Il porte son sac sur le dos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sonne": {
+    "meaning": "Sonne, suena; presente de 'sonner' (il/elle).",
+    "examples": [
+      "Quand le rappel sonne, lève-toi de ta chaise.",
+      "Le téléphone sonne encore."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7523,6 +8086,28 @@
     "synonyms": [],
     "antonyms": []
   },
+  "sédentaire": {
+    "meaning": "Sedentario/a.",
+    "examples": [
+      "Sédentaire — rester assis la plupart du temps, sans beaucoup bouger",
+      "Un mode de vie sédentaire n'est pas bon pour la santé."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "actif"
+    ]
+  },
+  "sédentaires": {
+    "meaning": "Sedentarios/as; plural de 'sédentaire'.",
+    "examples": [
+      "Exercices pour les travailleurs de bureau et les modes de vie sédentaires",
+      "Beaucoup de personnes ont des habitudes sédentaires."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "actifs"
+    ]
+  },
   "sûr": {
     "meaning": "Seguro; aquí 'bien sûr' = por supuesto.",
     "examples": [
@@ -7566,6 +8151,15 @@
     "examples": [
       "**Squat** — tu plies les genoux et les hanches, comme pour t'asseoir sur une chaise.",
       "Tu dois t'asseoir doucement sur la chaise."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "t'avachis": {
+    "meaning": "Te desplomas/encorvas; presente de 's'avachir' (tú) + pronombre 'te'.",
+    "examples": [
+      "Corrige-la si tu remarques que tu t'avachis.",
+      "Ne t'avachis pas sur ta chaise."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7677,6 +8271,15 @@
     "examples": [
       "Il était une fois un petit garçon nommé Léo. À trois ans, Léo vivait dans une maison remplie de rires et de tendresse avec sa maman et son papa. Ce qu'il aimait par-dessus tout, c'était construire des tours vertigineuses avec ses cubes, faire de la peinture avec beaucoup de couleurs, et écouter des histoires magiques avant de dormir.",
       "Il vivait dans une maison pleine de tendresse."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tends": {
+    "meaning": "Extiende, tiendes; imperativo/presente de 'tendre' (tú).",
+    "examples": [
+      "Tends un bras, tire doucement tes doigts vers toi",
+      "Tends la main pour attraper le ballon."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7821,6 +8424,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "torsion": {
+    "meaning": "Torsión.",
+    "examples": [
+      "Torsion assise",
+      "Ce mouvement demande une légère torsion du dos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "total": {
     "meaning": "Total.",
     "examples": [
@@ -7853,6 +8465,15 @@
     "examples": [
       "Maintenant, c'est ton tour.",
       "C'est ton tour de choisir l'exercice."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "tourne": {
+    "meaning": "Gira; imperativo/presente de 'tourner' (tú/il/elle).",
+    "examples": [
+      "Assis bien droit, tourne ton buste à gauche, puis à droite.",
+      "Tourne la page, s'il te plaît."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7902,6 +8523,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "toutes": {
+    "meaning": "Todas; femenino plural de 'tout'.",
+    "examples": [
+      "Une bonne règle : lève-toi et bouge pendant une ou deux minutes toutes les 30 à 60 minutes.",
+      "Toutes les filles sont arrivées."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "travail": {
     "meaning": "Trabajo.",
     "examples": [
@@ -7909,6 +8539,17 @@
       "Le travail de mobilité prend seulement dix minutes."
     ],
     "synonyms": [],
+    "antonyms": []
+  },
+  "travailleurs": {
+    "meaning": "Trabajadores; plural de 'travailleur'.",
+    "examples": [
+      "Exercices pour les travailleurs de bureau et les modes de vie sédentaires",
+      "Les travailleurs du bureau restent souvent assis toute la journée."
+    ],
+    "synonyms": [
+      "employés"
+    ],
     "antonyms": []
   },
   "trois": {
@@ -8276,6 +8917,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "voiture": {
+    "meaning": "Coche, carro.",
+    "examples": [
+      "Elles restent assises à un bureau, dans une voiture ou sur un canapé.",
+      "Il va au travail en voiture."
+    ],
+    "synonyms": [
+      "auto"
+    ],
+    "antonyms": []
+  },
   "voitures": {
     "meaning": "Coches, autos (juguete).",
     "examples": [
@@ -8355,6 +9007,15 @@
     "examples": [
       "Pourtant, après quelques jours, Léo se rendit compte que Mila n'était pas vraiment une partenaire de jeu idéale. Elle dormait tout le temps et pleurait souvent.",
       "Mila n'était pas vraiment une partenaire de jeu idéale."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vérifie": {
+    "meaning": "Verifica; imperativo/presente de 'vérifier' (tú).",
+    "examples": [
+      "Vérifie ta posture plusieurs fois chaque heure.",
+      "Vérifie la porte avant de partir."
     ],
     "synonyms": [],
     "antonyms": []
@@ -8452,6 +9113,15 @@
     "examples": [
       "Il était une fois un petit garçon nommé Léo. À trois ans, Léo vivait dans une maison remplie de rires et de tendresse avec sa maman et son papa. Ce qu'il aimait par-dessus tout, c'était construire des tours vertigineuses avec ses cubes, faire de la peinture avec beaucoup de couleurs, et écouter des histoires magiques avant de dormir.",
       "Il aime écouter des histoires avant de dormir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "écran": {
+    "meaning": "Pantalla.",
+    "examples": [
+      "Garde ton écran à la hauteur des yeux",
+      "Il regarde l'écran de son téléphone."
     ],
     "synonyms": [],
     "antonyms": []
