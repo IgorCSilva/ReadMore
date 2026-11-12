@@ -1336,5 +1336,149 @@
     "root_word_id": "wd-0404",
     "word": "première fois",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0224",
+    "root_word_id": "wd-0406",
+    "word": "chien",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0225",
+    "root_word_id": "wd-0407",
+    "word": "chat",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0226",
+    "root_word_id": "wd-0405",
+    "word": "animal",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0227",
+    "root_word_id": "wd-0410",
+    "word": "courir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0228",
+    "root_word_id": "wd-0412",
+    "word": "jouer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0229",
+    "root_word_id": "wd-0793",
+    "word": "sauter",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0230",
+    "root_word_id": "wd-0413",
+    "word": "aboyer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0231",
+    "root_word_id": "wd-0414",
+    "word": "miauler",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0232",
+    "root_word_id": "wd-0062",
+    "word": "petit",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0233",
+    "root_word_id": "wd-0409",
+    "word": "petite",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0234",
+    "root_word_id": "wd-0061",
+    "word": "grand",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0235",
+    "root_word_id": "wd-0794",
+    "word": "grande",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0236",
+    "root_word_id": "wd-0795",
+    "word": "heureux",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0237",
+    "root_word_id": "wd-0796",
+    "word": "triste",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0238",
+    "root_word_id": "wd-0797",
+    "word": "balle",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0239",
+    "root_word_id": "wd-0423",
+    "word": "parc",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0240",
+    "root_word_id": "wd-0798",
+    "word": "vite",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0241",
+    "root_word_id": "wd-0799",
+    "word": "ensemble",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0242",
+    "root_word_id": "wd-0408",
+    "word": "oiseau",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0243",
+    "root_word_id": "wd-0411",
+    "word": "marcher",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0244",
+    "root_word_id": "wd-0415",
+    "word": "voler",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0245",
+    "root_word_id": "wd-0416",
+    "word": "arrêter",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0246",
+    "root_word_id": "wd-0417",
+    "word": "près",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0247",
+    "root_word_id": "wd-0143",
+    "word": "loin",
+    "gender_id": "not_apply"
   }
 ]

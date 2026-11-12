@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**La** **porte** **est** **petite**."
+  },
+  {
+    "sentence_number": 2,
+    "content": "**Le** **chat** empieza a **miauler** fuerte **aussi**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "**La** **chaise** **est** **petite** **aussi**."
+  },
+  {
+    "sentence_number": 4,
+    "content": "**Le** **chat** **non** quiere **arrêter** **de** **miauler**."
+  },
+  {
+    "sentence_number": 5,
+    "content": "**Mon** **chat** puede **sauter** **vite**."
+  },
+  {
+    "sentence_number": 6,
+    "content": "**Le** **chien** quiere **jouer** **avec** **la** **balle**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "**Il** **a** **un** **oiseau** **petit**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "**Mon** **chien** puede **sauter** **beaucoup**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "**Mon** **chat** **est** **grand**."
+  },
+  {
+    "sentence_number": 10,
+    "content": "**L'****animal** **petit** juega **avec** **la** **balle**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**La** **table** **est** **petite**."
+  },
+  {
+    "sentence_number": 12,
+    "content": "**L'****oiseau** **non** puede **voler** **loin** **aujourd'hui**."
+  },
+  {
+    "sentence_number": 13,
+    "content": "Esa **sœur** **a** **un** **animal** **heureux**."
+  },
+  {
+    "sentence_number": 14,
+    "content": "**Mon** **chat** juega **près** del **parc**."
+  },
+  {
+    "sentence_number": 15,
+    "content": "**Le** **chien** quiere **aboyer** **et** **le** **chat** quiere **miauler**."
+  },
+  {
+    "sentence_number": 16,
+    "content": "**Mon** **oiseau** quiere **voler** **loin**."
+  },
+  {
+    "sentence_number": 17,
+    "content": "**Le** **chien** está **triste** **parce que** **le** **chat** está **loin**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**Mon** **chat** **non** quiere **arrêter** **de** **jouer** **avec** **la** **balle**."
+  },
+  {
+    "sentence_number": 19,
+    "content": "**Le** **chat** está **heureux** **parce que** **le** **chien** está **près**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**Mon** **oiseau** quiere **voler** **près** **de** **mon** **parc**."
+  },
+  {
+    "sentence_number": 21,
+    "content": "**Elle** **a** **un** **animal** **petit**."
+  },
+  {
+    "sentence_number": 22,
+    "content": "**L'****oiseau** vive **loin** **de** **la** **maison** **grande**."
+  },
+  {
+    "sentence_number": 23,
+    "content": "**Nous** tenemos **un** **chien** **grand**."
+  },
+  {
+    "sentence_number": 24,
+    "content": "**Elle** quiere **marcher** **loin** **de** **sa** **maison**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "**Mon** **oncle** **a** **un** **chien** **grand** **et** **un** **chat** **petit**."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**L'****animal** **non** quiere **arrêter** **de** **sauter**."
+  },
+  {
+    "sentence_number": 27,
+    "content": "**Mon** **chat** **et** **mon** **chien** juegan **ensemble** **dans** **un** **parc**."
+  },
+  {
+    "sentence_number": 28,
+    "content": "**Le** **chien** quiere **jouer** **près** **de** **la** **maison**."
+  },
+  {
+    "sentence_number": 29,
+    "content": "**L'****oiseau** parece **triste** **aussi**."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**Le** **chien** empieza a **aboyer** fuerte."
+  },
+  {
+    "sentence_number": 31,
+    "content": "**Le** **parc** **est** **petit** **aussi**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "**Mon** **oiseau** parece **triste** **aujourd'hui**."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**Le** **chat** parece **heureux** **loin** del **chien**."
+  },
+  {
+    "sentence_number": 34,
+    "content": "**Le** **parc** **est** **grand**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "**Le** **chien** **et** **l'****oiseau** viven **ensemble** **dans** **un** **parc**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "Ese **oiseau** quiere **voler** **loin**."
+  },
+  {
+    "sentence_number": 37,
+    "content": "**Le** **chien** corre **dans** **un** **parc**."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**La** **balle** **est** **petite**."
+  },
+  {
+    "sentence_number": 39,
+    "content": "**Le** **chien** **et** **l'****oiseau** juegan **ensemble** **dans** **un** jardín."
+  },
+  {
+    "sentence_number": 40,
+    "content": "Ese **oiseau** quiere **voler** **près**."
+  },
+  {
+    "sentence_number": 41,
+    "content": "**Mon** **chien** quiere **marcher** **près** **et** **courir** **loin**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "**Mon** **chat** empieza a **miauler**."
+  },
+  {
+    "sentence_number": 43,
+    "content": "**Mon** **chien** **est** **petit**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**Mon** **frère** **a** **un** **chien** **petit**."
+  },
+  {
+    "sentence_number": 45,
+    "content": "**Mon** **chien** **non** quiere **arrêter** **de** **courir**."
+  },
+  {
+    "sentence_number": 46,
+    "content": "**L'****animal** **grand** vive **loin**."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**Mon** **chien** quiere **courir** **et** **sauter** **dans** **un** **parc**."
+  },
+  {
+    "sentence_number": 48,
+    "content": "**La** **porte** **est** **grande** **aussi**."
+  },
+  {
+    "sentence_number": 49,
+    "content": "**La** **fenêtre** **est** **grande**."
+  },
+  {
+    "sentence_number": 50,
+    "content": "Ese **animal** puede **courir** muy **vite**."
+  },
+  {
+    "sentence_number": 51,
+    "content": "Ese **chat** parece **triste** **aussi**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "**Mon** **chat** **non** quiere **arrêter** **de** **jouer**."
+  },
+  {
+    "sentence_number": 53,
+    "content": "**Tu** tienes **un** **chat** **grand**."
+  },
+  {
+    "sentence_number": 54,
+    "content": "**Le** **chien** corre **et** **le** **chat** quiere **marcher**."
+  },
+  {
+    "sentence_number": 55,
+    "content": "**Mon** **chien** **est** **heureux** **et** **grand**."
+  },
+  {
+    "sentence_number": 56,
+    "content": "Ese **frère** **a** **un** **chat** **triste**."
+  },
+  {
+    "sentence_number": 57,
+    "content": "**L'****animal** **et** **la** **balle** están **près**."
+  },
+  {
+    "sentence_number": 58,
+    "content": "**Mon** **chien** **non** quiere **arrêter** **de** **courir** **loin**."
+  },
+  {
+    "sentence_number": 59,
+    "content": "Ese **chien** parece **triste** **sans** **son** **chat**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "**Je** tengo **un** **chien** **petit**."
+  },
+  {
+    "sentence_number": 61,
+    "content": "**L'****animal** está **loin** del **parc**."
+  },
+  {
+    "sentence_number": 62,
+    "content": "**Le** **chat** duerme **loin** del **chien**."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**Mon** **chat** quiere **courir** **près**."
+  },
+  {
+    "sentence_number": 64,
+    "content": "**La** **balle** **est** **grande**."
+  },
+  {
+    "sentence_number": 65,
+    "content": "Esa **tante** **a** **un** **chat** que quiere **miauler**."
+  },
+  {
+    "sentence_number": 66,
+    "content": "**Mon** **chat** quiere **marcher** **près** **de** **mon** **chien**."
+  },
+  {
+    "sentence_number": 67,
+    "content": "**Mon** **oncle** **a** **un** **chien** que quiere **aboyer**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**Mon** **chat** quiere **marcher** **loin** **et** **sauter** **près**."
+  },
+  {
+    "sentence_number": 69,
+    "content": "**Nous** tenemos **un** **chat** **heureux**."
+  },
+  {
+    "sentence_number": 70,
+    "content": "**Mon** **animal** favorito **est** **un** **chien** **grand**."
+  },
+  {
+    "sentence_number": 71,
+    "content": "**Mon** **chien** empieza a **aboyer**."
+  },
+  {
+    "sentence_number": 72,
+    "content": "**Tu** tienes **une** **balle** **grande** **et** **un** **chat** **petit**."
+  },
+  {
+    "sentence_number": 73,
+    "content": "**La** **famille** **est** **grande**."
+  },
+  {
+    "sentence_number": 74,
+    "content": "**Mon** **oiseau** vive **près** **de** **la** **maison** **petite**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "**Le** **chat** quiere **jouer** **loin** **de** **la** **maison**."
+  },
+  {
+    "sentence_number": 76,
+    "content": "**Il** quiere **courir** **près** **de** **sa** **maison**."
+  },
+  {
+    "sentence_number": 77,
+    "content": "**Le** **chien** **et** **le** **chat** están **près** **de** **la** **balle**."
+  },
+  {
+    "sentence_number": 78,
+    "content": "**Mon** **chien** **et** **mon** **chat** corren **ensemble** cada **jour**."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**La** **cuisine** **est** **petite**."
+  },
+  {
+    "sentence_number": 80,
+    "content": "**Vous** tienen **un** **chat** **triste**."
+  },
+  {
+    "sentence_number": 81,
+    "content": "**Mon** **chien** puede **courir** **vite**."
+  },
+  {
+    "sentence_number": 82,
+    "content": "Ese **animal** parece **triste**."
+  },
+  {
+    "sentence_number": 83,
+    "content": "**Mon** **chien** parece **heureux** **et** **mon** **chat** parece **triste**."
+  },
+  {
+    "sentence_number": 84,
+    "content": "**Je** tengo **un** **chien** **heureux**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "**Mon** **chien** quiere **courir** **loin**."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**Le** **chien** **non** quiere **arrêter** **d'****aboyer**."
+  },
+  {
+    "sentence_number": 87,
+    "content": "**La** **maison** **est** **grande** **mais** **le** **parc** **est** **petit**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "Esa **tante** **a** **une** **balle** **petite** para **son** **chat**."
+  },
+  {
+    "sentence_number": 89,
+    "content": "**Mon** **chat** quiere **jouer** **et** **sauter** **aussi**."
+  },
+  {
+    "sentence_number": 90,
+    "content": "**L'****oiseau** quiere **voler** **près** **de** **la** **maison**."
+  },
+  {
+    "sentence_number": 91,
+    "content": "¿**Où** está **mon** **oiseau**?"
+  },
+  {
+    "sentence_number": 92,
+    "content": "**Le** **chat** quiere **jouer** **avec** **la** **balle** **aussi**."
+  },
+  {
+    "sentence_number": 93,
+    "content": "**L'****animal** parece **heureux** **aujourd'hui**."
+  },
+  {
+    "sentence_number": 94,
+    "content": "**L'****oiseau** puede **voler** muy **vite**."
+  },
+  {
+    "sentence_number": 95,
+    "content": "Ese **animal** puede **sauter** muy **vite** **aussi**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "**Mon** **chien** **et** **mon** **chat** están **heureux**."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**Je** tengo **une** **balle** **petite** **et** **un** **chien** **grand**."
+  },
+  {
+    "sentence_number": 98,
+    "content": "**Le** **chien** corre **près** del **parc** **aussi**."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**L'****oiseau** **non** quiere **arrêter** **de** **voler**."
+  },
+  {
+    "sentence_number": 100,
+    "content": "**Le** **chien** **et** **le** **chat** juegan **ensemble**."
+  }
+]
