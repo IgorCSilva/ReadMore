@@ -393,6 +393,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "articulation": {
+    "meaning": "Articulación (parte del cuerpo donde se unen los huesos).",
+    "examples": [
+      "Un gonflement dans une articulation ou un muscle.",
+      "Mon genou est une articulation importante pour marcher."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "articulations": {
     "meaning": "Articulaciones.",
     "examples": [
@@ -515,6 +524,28 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "augmente": {
+    "meaning": "Aumenta; presente de 'augmenter' (il/elle).",
+    "examples": [
+      "Sauter l'échauffement ou le retour au calme augmente ton risque de blessure.",
+      "Le stress augmente souvent avant un examen."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "diminue"
+    ]
+  },
+  "augmenter": {
+    "meaning": "Aumentar.",
+    "examples": [
+      "Avant ton entraînement, fais 5 minutes de mouvement léger pour augmenter ton rythme cardiaque.",
+      "Elle veut augmenter sa vitesse de course."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "diminuer"
+    ]
   },
   "aujourd'hui": {
     "meaning": "Hoy.",
@@ -815,6 +846,15 @@
     "examples": [
       "- Un risque plus élevé de blessure",
       "Il s'est reposé pour éviter une blessure."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "blessures": {
+    "meaning": "Lesiones, heridas; plural de 'blessure'.",
+    "examples": [
+      "Des blessures",
+      "Les blessures au dos sont fréquentes chez les sportifs."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1209,6 +1249,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "cardiaque": {
+    "meaning": "Cardíaco; aquí en 'rythme cardiaque' = ritmo cardíaco.",
+    "examples": [
+      "Il réveille tes muscles et augmente lentement ton rythme cardiaque.",
+      "Le médecin vérifie mon rythme cardiaque."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "cardio": {
     "meaning": "Cardio, ejercicio cardiovascular.",
     "examples": [
@@ -1259,6 +1308,15 @@
     "examples": [
       "Sans travail de mobilité, ton corps peut devenir raide. Un corps raide peut causer :",
       "Un mauvais étirement peut causer une douleur."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "causé": {
+    "meaning": "Causado; participio pasado de 'causer'.",
+    "examples": [
+      "Un dommage à ton corps causé par l'exercice ou le mouvement.",
+      "Ce problème est causé par le manque de sommeil."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1694,6 +1752,18 @@
     "synonyms": [],
     "antonyms": []
   },
+  "commence": {
+    "meaning": "Comienza/empieza; imperativo de 'commencer' (tú), o presente (il/elle).",
+    "examples": [
+      "Commence ton entraînement.",
+      "Commence par un petit échauffement."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "arrête",
+      "termine"
+    ]
+  },
   "commencer": {
     "meaning": "Empezar, comenzar.",
     "examples": [
@@ -1790,6 +1860,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "constante": {
+    "meaning": "Constante; femenino singular de 'constant'.",
+    "examples": [
+      "Une fatigue constante",
+      "Il ressent une douleur constante au genou."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "variable"
+    ]
+  },
   "construire": {
     "meaning": "Construir.",
     "examples": [
@@ -1827,6 +1908,18 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "continue": {
+    "meaning": "Continúa; presente de 'continuer' (il/elle), o imperativo (tú).",
+    "examples": [
+      "Une douleur qui continue après l'arrêt.",
+      "Ne continue pas malgré une douleur vive."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "arrête",
+      "s'arrête"
+    ]
   },
   "continuer": {
     "meaning": "Continuar.",
@@ -2149,6 +2242,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "d'échauffement": {
+    "meaning": "De calentamiento; forma elidida de 'de' + 'échauffement'.",
+    "examples": [
+      "Fais 3 ou 4 mouvements dynamiques de la liste d'échauffement ci-dessous.",
+      "Voici un exercice d'échauffement simple."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "d'énergie": {
     "meaning": "De energía; contracción de 'de' + 'énergie'.",
     "examples": [
@@ -2311,6 +2413,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "deviennent": {
+    "meaning": "Se vuelven; presente de 'devenir' (ils/elles).",
+    "examples": [
+      "C'est comme ça que tes muscles deviennent plus forts.",
+      "Les jours deviennent plus courts en hiver."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "devient": {
+    "meaning": "Se vuelve; presente de 'devenir' (il/elle).",
+    "examples": [
+      "Ta performance devient pire, pas meilleure.",
+      "Le ciel devient gris avant la pluie."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "devint": {
     "meaning": "Se convirtió, llegó a ser; pasado simple de 'devenir' (il/elle).",
     "examples": [
@@ -2337,6 +2457,17 @@
     "synonyms": [],
     "antonyms": [
       "facile"
+    ]
+  },
+  "difficiles": {
+    "meaning": "Difíciles; plural de 'difficile'.",
+    "examples": [
+      "Fais cette routine chaque fois que tu fais de l'exercice, pas seulement les jours difficiles.",
+      "Ces exercices sont difficiles pour les débutants."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "faciles"
     ]
   },
   "différente": {
@@ -2374,6 +2505,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "direction": {
+    "meaning": "Dirección; aquí 'chaque direction' = cada dirección.",
+    "examples": [
+      "Rotations des bras — 30 secondes chaque direction.",
+      "Il tourne la tête dans chaque direction lentement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "dis": {
     "meaning": "Di, dime; imperativo de 'dire' (tu).",
     "examples": [
@@ -2391,6 +2531,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "disparaissent": {
+    "meaning": "Desaparecen; presente de 'disparaître' (ils/elles).",
+    "examples": [
+      "De petites douleurs ne disparaissent pas.",
+      "Les symptômes disparaissent après quelques jours."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "apparaissent"
+    ]
   },
   "dit": {
     "meaning": "Dicho; participio pasado de 'dire', también 'dit' presente (il/elle).",
@@ -2466,6 +2617,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "dommage": {
+    "meaning": "Daño.",
+    "examples": [
+      "Un dommage à ton corps causé par l'exercice ou le mouvement.",
+      "La tempête a causé beaucoup de dommages."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "donna": {
     "meaning": "Dio; pasado simple de 'donner' (il/elle).",
     "examples": [
@@ -2514,6 +2674,15 @@
     "examples": [
       "Il était une fois un petit garçon nommé Léo. À trois ans, Léo vivait dans une maison remplie de rires et de tendresse avec sa maman et son papa. Ce qu'il aimait par-dessus tout, c'était construire des tours vertigineuses avec ses cubes, faire de la peinture avec beaucoup de couleurs, et écouter des histoires magiques avant de dormir.",
       "Il aime écouter une histoire avant de dormir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "dors": {
+    "meaning": "Duermes; presente de 'dormir' (tu).",
+    "examples": [
+      "Tu dors mal.",
+      "Tu dors huit heures chaque nuit."
     ],
     "synonyms": [],
     "antonyms": []
@@ -2634,6 +2803,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "dure": {
+    "meaning": "Dura; presente de 'durer' (il/elle).",
+    "examples": [
+      "Un bon échauffement dure 5 à 10 minutes.",
+      "Le cours dure une heure."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "durée": {
     "meaning": "Duración.",
     "examples": [
@@ -2652,6 +2830,17 @@
     "synonyms": [],
     "antonyms": [
       "statique"
+    ]
+  },
+  "dynamiques": {
+    "meaning": "Dinámicos; plural de 'dynamique'.",
+    "examples": [
+      "Fais 3 ou 4 mouvements dynamiques de la liste d'échauffement ci-dessous.",
+      "Ce sont des exercices très dynamiques."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "statiques"
     ]
   },
   "début": {
@@ -2677,6 +2866,15 @@
     "antonyms": [
       "expert"
     ]
+  },
+  "déchirures": {
+    "meaning": "Desgarros, rasgaduras; plural de 'déchirure'.",
+    "examples": [
+      "Tes muscles ont de petites déchirures.",
+      "Les déchirures musculaires guérissent avec le repos."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "décida": {
     "meaning": "Decidió; pasado simple de 'décider' (il/elle).",
@@ -2854,6 +3052,19 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "entraînement": {
+    "meaning": "Entrenamiento.",
+    "examples": [
+      "Utilise ce modèle simple avant et après ton prochain entraînement.",
+      "Mon entraînement dure une heure."
+    ],
+    "synonyms": [
+      "exercice"
+    ],
+    "antonyms": [
+      "repos"
+    ]
   },
   "entre": {
     "meaning": "Entre.",
@@ -3058,6 +3269,18 @@
       "difficilement"
     ]
   },
+  "faible": {
+    "meaning": "Débil, bajo/a.",
+    "examples": [
+      "Une faible performance",
+      "Il se sent faible après la maladie."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "fort",
+      "forte"
+    ]
+  },
   "faire": {
     "meaning": "Hacer.",
     "examples": [
@@ -3112,9 +3335,10 @@
     "antonyms": []
   },
   "fatigue": {
-    "meaning": "Se cansa; presente de 'se fatiguer' (il/elle).",
+    "meaning": "(1) Se cansa; presente de 'se fatiguer' (il/elle). (2) Fatiga, cansancio (sustantivo).",
     "examples": [
-      "Si tu fais seulement un type chaque jour, ton corps se fatigue toujours de la même manière. Cela peut causer un **épuisement**."
+      "(1) Si tu fais seulement un type chaque jour, ton corps se fatigue toujours de la même manière. Cela peut causer un **épuisement**.",
+      "(2) Une fatigue constante"
     ],
     "synonyms": [],
     "antonyms": []
@@ -3578,6 +3802,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "gonflement": {
+    "meaning": "Hinchazón.",
+    "examples": [
+      "Un gonflement dans une articulation ou un muscle.",
+      "Le gonflement a diminué après le repos."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "gouttelettes": {
     "meaning": "Gotitas; plural de 'gouttelette'.",
     "examples": [
@@ -3920,6 +4153,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "importants": {
+    "meaning": "Importantes; masculino plural de 'important'.",
+    "examples": [
+      "Pourquoi les jours de repos sont importants",
+      "Ce sont des conseils très importants."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "inclinaison": {
     "meaning": "Inclinación.",
     "examples": [
@@ -3928,6 +4170,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "inclure": {
+    "meaning": "Incluir.",
+    "examples": [
+      "Un bon échauffement dure 5 à 10 minutes. Il peut inclure :",
+      "Ce plan peut inclure plusieurs activités."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "exclure"
+    ]
   },
   "infinie": {
     "meaning": "Infinita.",
@@ -3946,6 +4199,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "instable": {
+    "meaning": "Inestable.",
+    "examples": [
+      "Une articulation qui se sent instable.",
+      "Le sol est instable ici."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "stable"
+    ]
   },
   "instant": {
     "meaning": "Instante, momento.",
@@ -3969,6 +4233,15 @@
     "meaning": "Intimidada; participio pasado de 'intimider' (femenino).",
     "examples": [
       "Mina écarquilla les yeux de surprise. Le dentiste ? Elle n'y avait jamais mis les pattes. Un peu intimidée, elle suivit sa maman jusqu'au cabinet. Là-bas l'attendait le Docteur Zoé, une guenon très sympathique avec un sourire radieux et des yeux pétillants de gentillesse. « Bienvenue, Mina ! » s'exclama-t-elle doucement. « Aujourd'hui, nous allons apprendre à chouchouter tes dents pour qu'elles restent fortes et en bonne santé. »"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ischio-jambiers": {
+    "meaning": "Isquiotibiales (músculos de la parte posterior del muslo).",
+    "examples": [
+      "Étirement des ischio-jambiers",
+      "Les ischio-jambiers sont souvent raides le matin."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4054,6 +4327,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "jogging": {
+    "meaning": "Trote, footing.",
+    "examples": [
+      "Une marche légère ou un petit jogging",
+      "Il fait du jogging tous les matins."
+    ],
+    "synonyms": [
+      "course à pied"
+    ],
+    "antonyms": []
+  },
   "joli": {
     "meaning": "Bonito; masculino singular de 'joli'.",
     "examples": [
@@ -4109,6 +4393,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "jour de repos": {
+    "meaning": "Día de descanso; día sin ejercicio intenso para permitir la recuperación del cuerpo.",
+    "examples": [
+      "Un jour de repos est un jour sans exercice intense.",
+      "Le dimanche est mon jour de repos préféré."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "jour d'entraînement"
+    ]
   },
   "journée": {
     "meaning": "Día, jornada.",
@@ -4218,6 +4513,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "l'arrêt": {
+    "meaning": "La parada, el paro; forma elidida de 'le' + 'arrêt'.",
+    "examples": [
+      "Une douleur qui continue après l'arrêt.",
+      "Il a besoin d'un arrêt complet pour récupérer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "l'attendait": {
     "meaning": "La esperaba; forma elidida de 'la' + 'attendait' (imperfecto de 'attendre', il/elle).",
     "examples": [
@@ -4302,6 +4606,15 @@
     "examples": [
       "Léo resta pensif. Avoir un petit frère ou une petite sœur... Il ne savait pas trop ce que cela voulait dire. Ce soir-là, blotti dans son lit, il serra fort son doudou préféré, Monsieur Pompon le lapin, et lui chuchota à l'oreille :",
       "Il lui chuchota un secret à l'oreille."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "l'échauffement": {
+    "meaning": "El calentamiento; forma elidida de 'le' + 'échauffement'.",
+    "examples": [
+      "Sauter l'échauffement ou le retour au calme augmente ton risque de blessure.",
+      "N'oublie pas l'échauffement avant de courir."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4431,6 +4744,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "lente": {
+    "meaning": "Lenta; femenino singular de 'lent'.",
+    "examples": [
+      "Une marche lente",
+      "La musique est lente et calme."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "rapide"
+    ]
+  },
   "lentement": {
     "meaning": "Lentamente.",
     "examples": [
@@ -4439,6 +4763,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "lents": {
+    "meaning": "Lentos; masculino plural de 'lent'.",
+    "examples": [
+      "Des squats lents au poids du corps",
+      "Ce sont des mouvements lents et contrôlés."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "rapides"
+    ]
   },
   "les": {
     "meaning": "Los/las; artículo definido plural.",
@@ -4751,6 +5086,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "malgré": {
+    "meaning": "A pesar de.",
+    "examples": [
+      "Ne continue pas malgré une douleur vive.",
+      "Il a couru malgré la pluie."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "maman": {
     "meaning": "Mamá.",
     "examples": [
@@ -4810,10 +5154,11 @@
     ]
   },
   "marche": {
-    "meaning": "Camina/marcho; imperativo/presente de 'marcher' (tú/yo).",
+    "meaning": "(1) Camina/marcho; imperativo/presente de 'marcher' (tú/yo). (2) Marcha, caminata (sustantivo).",
     "examples": [
-      "Marche ou bouge les bras pendant 3 minutes.",
-      "Je marche tous les matins."
+      "(1) Marche ou bouge les bras pendant 3 minutes.",
+      "(1) Je marche tous les matins.",
+      "(2) Une marche légère ou un petit jogging"
     ],
     "synonyms": [],
     "antonyms": []
@@ -4836,6 +5181,17 @@
     "synonyms": [],
     "antonyms": [
       "soir"
+    ]
+  },
+  "meilleure": {
+    "meaning": "Mejor; femenino singular de 'meilleur'.",
+    "examples": [
+      "Ta performance devient pire, pas meilleure.",
+      "C'est une meilleure solution."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "pire"
     ]
   },
   "menthe": {
@@ -5012,6 +5368,15 @@
     "examples": [
       "Exercices pour les travailleurs de bureau et les modes de vie sédentaires",
       "Il y a plusieurs modes de vie possibles."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "modèle": {
+    "meaning": "Modelo.",
+    "examples": [
+      "Modèle de routine d'échauffement et de retour au calme",
+      "Utilise ce modèle simple avant et après ton prochain entraînement."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5948,6 +6313,26 @@
     "synonyms": [],
     "antonyms": []
   },
+  "performance": {
+    "meaning": "Rendimiento, desempeño.",
+    "examples": [
+      "Une faible performance",
+      "Ta performance devient pire, pas meilleure."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "permet": {
+    "meaning": "Permite; presente de 'permettre' (il/elle).",
+    "examples": [
+      "Le repos permet à tes muscles de se réparer.",
+      "Ce logiciel permet de créer des graphiques."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "empêche"
+    ]
+  },
   "personnes": {
     "meaning": "Personas; plural de 'personne' (sustantivo; no confundir con 'personne' = nadie).",
     "examples": [
@@ -6029,6 +6414,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "phase": {
+    "meaning": "Fase, etapa.",
+    "examples": [
+      "Phase | Mouvement | Temps",
+      "La récupération est une phase importante de l'entraînement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "physique": {
     "meaning": "Físico.",
     "examples": [
@@ -6046,6 +6440,18 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "pire": {
+    "meaning": "Peor.",
+    "examples": [
+      "Ta performance devient pire, pas meilleure.",
+      "La situation devient pire chaque jour."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "meilleur",
+      "meilleure"
+    ]
   },
   "pivoter": {
     "meaning": "Pivotar, girar.",
@@ -6228,6 +6634,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "poitrine": {
+    "meaning": "Pecho.",
+    "examples": [
+      "Étirement de la poitrine",
+      "Il ressent une tension dans la poitrine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "pompe": {
     "meaning": "Flexión de brazos, lagartija (push-up).",
     "examples": [
@@ -6371,6 +6786,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "premiers": {
+    "meaning": "Primeros; masculino plural de 'premier'.",
+    "examples": [
+      "Reconnaître le surentraînement et les premiers signes de blessure",
+      "Ce sont les premiers jours de l'entraînement."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "derniers"
+    ]
+  },
   "première": {
     "meaning": "Primera.",
     "examples": [
@@ -6461,6 +6887,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "prochain": {
+    "meaning": "Próximo.",
+    "examples": [
+      "Utilise ce modèle simple avant et après ton prochain entraînement.",
+      "À la semaine prochaine !"
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "dernier"
+    ]
+  },
   "profitant": {
     "meaning": "Aprovechando; gerundio de 'profiter'.",
     "examples": [
@@ -6469,6 +6906,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "profonde": {
+    "meaning": "Profunda; femenino singular de 'profond'.",
+    "examples": [
+      "Une respiration profonde",
+      "Elle prend une respiration profonde avant de parler."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "superficielle"
+    ]
   },
   "profondément": {
     "meaning": "Profundamente.",
@@ -6551,6 +6999,15 @@
     "examples": [
       "Léo resta pensif. Avoir un petit frère ou une petite sœur... Il ne savait pas trop ce que cela voulait dire. Ce soir-là, blotti dans son lit, il serra fort son doudou préféré, Monsieur Pompon le lapin, et lui chuchota à l'oreille :",
       "Il serra fort son doudou préféré."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "prévention": {
+    "meaning": "Prevención.",
+    "examples": [
+      "Récupération et prévention des blessures",
+      "La prévention est meilleure que le traitement."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6904,6 +7361,24 @@
     ],
     "antonyms": []
   },
+  "reconnaître": {
+    "meaning": "Reconocer.",
+    "examples": [
+      "Reconnaître le surentraînement et les premiers signes de blessure",
+      "Il est important de reconnaître ses limites."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "redevenir": {
+    "meaning": "Volver a ser, volver a estar.",
+    "examples": [
+      "Il aide ton rythme cardiaque à redevenir normal lentement.",
+      "Après le repos, il va redevenir fort."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "refléter": {
     "meaning": "Reflejar.",
     "examples": [
@@ -7079,6 +7554,24 @@
     "synonyms": [],
     "antonyms": []
   },
+  "reposes": {
+    "meaning": "Te reposas, descansas; presente de 'se reposer' (tu).",
+    "examples": [
+      "Si tu ne te reposes jamais, ton corps ne peut pas se réparer.",
+      "Tu te reposes bien ce week-end ?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "respiration": {
+    "meaning": "Respiración.",
+    "examples": [
+      "Une respiration profonde",
+      "La respiration profonde aide à se détendre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "respire": {
     "meaning": "Respira; imperativo/presente de 'respirer' (tu).",
     "examples": [
@@ -7121,6 +7614,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "retour au calme": {
+    "meaning": "Vuelta a la calma, enfriamiento (cool-down); fase final del ejercicio con movimientos lentos para que el cuerpo vuelva a su estado normal.",
+    "examples": [
+      "Un retour au calme est un mouvement léger après l'exercice.",
+      "Après la course, elle fait toujours un bon retour au calme."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "échauffement"
+    ]
   },
   "revoir": {
     "meaning": "Volver a ver; en 'au revoir' = adiós, hasta luego.",
@@ -7249,11 +7753,29 @@
     "synonyms": [],
     "antonyms": []
   },
+  "rythme": {
+    "meaning": "Ritmo; aquí 'rythme cardiaque' = ritmo cardíaco.",
+    "examples": [
+      "Il réveille tes muscles et augmente lentement ton rythme cardiaque.",
+      "Le rythme de la musique est rapide."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "règle": {
     "meaning": "Regla.",
     "examples": [
       "Une bonne règle : lève-toi et bouge pendant une ou deux minutes toutes les 30 à 60 minutes.",
       "C'est une règle simple à suivre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "récupération": {
+    "meaning": "Recuperación.",
+    "examples": [
+      "Récupération et prévention des blessures",
+      "La récupération musculaire prend du temps."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7330,6 +7852,17 @@
     ],
     "antonyms": [
       "fragile"
+    ]
+  },
+  "réveille": {
+    "meaning": "Despierta; presente de 'réveiller' (il/elle).",
+    "examples": [
+      "Il réveille tes muscles et augmente lentement ton rythme cardiaque.",
+      "Le bruit réveille le bébé."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "endort"
     ]
   },
   "réveiller": {
@@ -7524,6 +8057,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "sauter": {
+    "meaning": "Saltar; aquí 'sauter l'échauffement' = saltarse el calentamiento.",
+    "examples": [
+      "Sauter l'échauffement ou le retour au calme augmente ton risque de blessure.",
+      "Ne saute pas le petit-déjeuner."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "sauvage": {
     "meaning": "Salvaje.",
     "examples": [
@@ -7605,10 +8147,11 @@
     "antonyms": []
   },
   "sens": {
-    "meaning": "Sentido, dirección.",
+    "meaning": "(1) Sentido, dirección. (2) Te sientes; presente de 'se sentir' (tú).",
     "examples": [
-      "| Rotation des épaules | Épaules | 10 rotations dans chaque sens |",
-      "Tourne dans l'autre sens."
+      "(1) | Rotation des épaules | Épaules | 10 rotations dans chaque sens |",
+      "(1) Tourne dans l'autre sens.",
+      "(2) Tu te sens fatigué tout le temps"
     ],
     "synonyms": [],
     "antonyms": []
@@ -7617,6 +8160,15 @@
     "meaning": "Sensación.",
     "examples": [
       "Mina goûta un tout petit peu de pâte. « Mmmh ! » fit-elle, ravie par la sensation de fraîcheur glacée qui envahissait sa bouche."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sent": {
+    "meaning": "Se siente; presente de 'se sentir' (il/elle).",
+    "examples": [
+      "Une articulation qui se sent instable.",
+      "Elle se sent fatiguée aujourd'hui."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7721,6 +8273,15 @@
     "examples": [
       "Tu as seulement besoin du poids de ton corps, ou d'haltères légers si tu en as.",
       "Repose-toi si tu es fatigué."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "signes": {
+    "meaning": "Señales, signos; plural de 'signe'.",
+    "examples": [
+      "Surveille ces signes de surentraînement.",
+      "Les signes de fatigue sont faciles à reconnaître."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7958,6 +8519,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "squats": {
+    "meaning": "Sentadillas.",
+    "examples": [
+      "Des squats lents au poids du corps",
+      "Les squats renforcent les jambes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "statique": {
     "meaning": "Estático/a.",
     "examples": [
@@ -8039,6 +8609,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "surentraînement": {
+    "meaning": "Sobreentrenamiento.",
+    "examples": [
+      "Le surentraînement arrive quand tu fais trop d'exercice sans assez de repos.",
+      "Le surentraînement peut causer des blessures."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "surprise": {
     "meaning": "Sorpresa.",
     "examples": [
@@ -8053,6 +8632,15 @@
     "examples": [
       "— Vous pourrez en partager certains, mais tu garderas tes trésors rien que pour toi, rassura son papa. Et surtout, tu pourras lui apprendre plein de bêtises... euh, je veux dire, plein de jeux ! Tu seras son héros.",
       "Et surtout, tu seras son héros."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "surveille": {
+    "meaning": "Vigila, observa; imperativo de 'surveiller' (tú), o presente (tú).",
+    "examples": [
+      "Surveille ces signes de surentraînement.",
+      "Surveille ta posture pendant l'exercice."
     ],
     "synonyms": [],
     "antonyms": []
@@ -8907,6 +9495,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "vive": {
+    "meaning": "Viva, intensa; femenino singular de 'vif'.",
+    "examples": [
+      "Une douleur vive pendant le mouvement",
+      "Ne continue pas malgré une douleur vive."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "légère"
+    ]
   },
   "vois": {
     "meaning": "Veo, ves; presente de 'voir' (je/tu).",

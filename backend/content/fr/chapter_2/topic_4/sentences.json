@@ -1,0 +1,747 @@
+[
+  {
+    "id": "fr-sent-0646",
+    "sentence": "Le chien dort sous la table.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0224",
+      "fr-wd-0031",
+      "fr-wd-0067"
+    ]
+  },
+  {
+    "id": "fr-sent-0647",
+    "sentence": "Mon chien aime courir dans le jardin.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0224",
+      "fr-wd-0227",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0074"
+    ]
+  },
+  {
+    "id": "fr-sent-0648",
+    "sentence": "Tu promènes ton chien chaque matin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0224",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0649",
+    "sentence": "Le chat dort sur le canapé.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0225",
+      "fr-wd-0073"
+    ]
+  },
+  {
+    "id": "fr-sent-0650",
+    "sentence": "Mon chat aime jouer avec la balle.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0225",
+      "fr-wd-0228",
+      "fr-wd-0058",
+      "fr-wd-0031",
+      "fr-wd-0238"
+    ]
+  },
+  {
+    "id": "fr-sent-0651",
+    "sentence": "Tu joues avec ton chat chaque soir.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0058",
+      "fr-wd-0225",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0652",
+    "sentence": "Cet animal vit dans la forêt.",
+    "word_ids": [
+      "fr-wd-0226",
+      "fr-wd-0080",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0653",
+    "sentence": "L'animal est très heureux aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0226",
+      "fr-wd-0020",
+      "fr-wd-0236",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0654",
+    "sentence": "Tu aimes observer cet animal dans le zoo.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0226",
+      "fr-wd-0080",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0655",
+    "sentence": "Le chien aime courir vite.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0224",
+      "fr-wd-0227",
+      "fr-wd-0240"
+    ]
+  },
+  {
+    "id": "fr-sent-0656",
+    "sentence": "Nous allons courir ensemble ce soir.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0227",
+      "fr-wd-0241",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0657",
+    "sentence": "Tu préfères courir le matin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0227",
+      "fr-wd-0176"
+    ]
+  },
+  {
+    "id": "fr-sent-0658",
+    "sentence": "Le chat adore jouer avec une balle.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0225",
+      "fr-wd-0228",
+      "fr-wd-0058",
+      "fr-wd-0076",
+      "fr-wd-0238"
+    ]
+  },
+  {
+    "id": "fr-sent-0659",
+    "sentence": "Les enfants veulent jouer dans le parc.",
+    "word_ids": [
+      "fr-wd-0228",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0239"
+    ]
+  },
+  {
+    "id": "fr-sent-0660",
+    "sentence": "Tu aimes jouer avec ton chien le soir.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0228",
+      "fr-wd-0058",
+      "fr-wd-0224",
+      "fr-wd-0178"
+    ]
+  },
+  {
+    "id": "fr-sent-0661",
+    "sentence": "Le chat essaie de sauter sur la table.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0225",
+      "fr-wd-0025",
+      "fr-wd-0229",
+      "fr-wd-0031",
+      "fr-wd-0067"
+    ]
+  },
+  {
+    "id": "fr-sent-0662",
+    "sentence": "Mon chien adore sauter dans l'eau.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0224",
+      "fr-wd-0229",
+      "fr-wd-0080",
+      "fr-wd-0114"
+    ]
+  },
+  {
+    "id": "fr-sent-0663",
+    "sentence": "Tu dois sauter par-dessus la balle.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0229",
+      "fr-wd-0031",
+      "fr-wd-0238"
+    ]
+  },
+  {
+    "id": "fr-sent-0664",
+    "sentence": "Le chien commence à aboyer.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0224",
+      "fr-wd-0230"
+    ]
+  },
+  {
+    "id": "fr-sent-0665",
+    "sentence": "Mon chien n'arrête pas d'aboyer la nuit.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0224",
+      "fr-wd-0130",
+      "fr-wd-0230",
+      "fr-wd-0031",
+      "fr-wd-0009"
+    ]
+  },
+  {
+    "id": "fr-sent-0666",
+    "sentence": "Tu entends ton chien aboyer dans le jardin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0224",
+      "fr-wd-0230",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0074"
+    ]
+  },
+  {
+    "id": "fr-sent-0667",
+    "sentence": "Le chat commence à miauler.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0225",
+      "fr-wd-0231"
+    ]
+  },
+  {
+    "id": "fr-sent-0668",
+    "sentence": "Mon chat aime miauler le matin.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0225",
+      "fr-wd-0231",
+      "fr-wd-0176"
+    ]
+  },
+  {
+    "id": "fr-sent-0669",
+    "sentence": "Tu entends ton chat miauler près de la porte.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0225",
+      "fr-wd-0231",
+      "fr-wd-0246",
+      "fr-wd-0025",
+      "fr-wd-0031",
+      "fr-wd-0065"
+    ]
+  },
+  {
+    "id": "fr-sent-0670",
+    "sentence": "Le chien est petit.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0224",
+      "fr-wd-0020",
+      "fr-wd-0232"
+    ]
+  },
+  {
+    "id": "fr-sent-0671",
+    "sentence": "J'ai un petit chat noir.",
+    "word_ids": [
+      "fr-wd-0075",
+      "fr-wd-0232",
+      "fr-wd-0225"
+    ]
+  },
+  {
+    "id": "fr-sent-0672",
+    "sentence": "Tu as un petit jardin très joli.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0075",
+      "fr-wd-0232",
+      "fr-wd-0074"
+    ]
+  },
+  {
+    "id": "fr-sent-0673",
+    "sentence": "La balle est petite.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0238",
+      "fr-wd-0020",
+      "fr-wd-0233"
+    ]
+  },
+  {
+    "id": "fr-sent-0674",
+    "sentence": "J'ai une petite sœur adorable.",
+    "word_ids": [
+      "fr-wd-0076",
+      "fr-wd-0233",
+      "fr-wd-0040"
+    ]
+  },
+  {
+    "id": "fr-sent-0675",
+    "sentence": "Ta maison est petite mais confortable.",
+    "word_ids": [
+      "fr-wd-0060",
+      "fr-wd-0020",
+      "fr-wd-0233",
+      "fr-wd-0182"
+    ]
+  },
+  {
+    "id": "fr-sent-0676",
+    "sentence": "Le chien est très grand.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0224",
+      "fr-wd-0020",
+      "fr-wd-0234"
+    ]
+  },
+  {
+    "id": "fr-sent-0677",
+    "sentence": "Mon frère est grand et fort.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0039",
+      "fr-wd-0020",
+      "fr-wd-0234",
+      "fr-wd-0004"
+    ]
+  },
+  {
+    "id": "fr-sent-0678",
+    "sentence": "Tu habites dans un grand appartement.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0080",
+      "fr-wd-0075",
+      "fr-wd-0234"
+    ]
+  },
+  {
+    "id": "fr-sent-0679",
+    "sentence": "La maison est grande.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0060",
+      "fr-wd-0020",
+      "fr-wd-0235"
+    ]
+  },
+  {
+    "id": "fr-sent-0680",
+    "sentence": "Ma famille est grande et joyeuse.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0036",
+      "fr-wd-0020",
+      "fr-wd-0235",
+      "fr-wd-0004"
+    ]
+  },
+  {
+    "id": "fr-sent-0681",
+    "sentence": "Tu as une grande chambre.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0076",
+      "fr-wd-0235",
+      "fr-wd-0061"
+    ]
+  },
+  {
+    "id": "fr-sent-0682",
+    "sentence": "Mon chien est très heureux.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0224",
+      "fr-wd-0020",
+      "fr-wd-0236"
+    ]
+  },
+  {
+    "id": "fr-sent-0683",
+    "sentence": "Mon chat semble heureux aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0225",
+      "fr-wd-0236",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0684",
+    "sentence": "Tu es heureux quand ton chien joue dans le jardin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0236",
+      "fr-wd-0184",
+      "fr-wd-0224",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0074"
+    ]
+  },
+  {
+    "id": "fr-sent-0685",
+    "sentence": "Le chat semble triste ce soir.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0225",
+      "fr-wd-0237",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0686",
+    "sentence": "Mon oiseau est triste sans sa famille.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0242",
+      "fr-wd-0020",
+      "fr-wd-0237",
+      "fr-wd-0059",
+      "fr-wd-0035",
+      "fr-wd-0036"
+    ]
+  },
+  {
+    "id": "fr-sent-0687",
+    "sentence": "Tu es triste quand ton animal est malade.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0237",
+      "fr-wd-0184",
+      "fr-wd-0226",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0688",
+    "sentence": "Le chien court après la balle.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0224",
+      "fr-wd-0031",
+      "fr-wd-0238"
+    ]
+  },
+  {
+    "id": "fr-sent-0689",
+    "sentence": "J'ai une balle rouge pour mon chat.",
+    "word_ids": [
+      "fr-wd-0076",
+      "fr-wd-0238",
+      "fr-wd-0022",
+      "fr-wd-0225"
+    ]
+  },
+  {
+    "id": "fr-sent-0690",
+    "sentence": "Tu lances la balle très loin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0031",
+      "fr-wd-0238",
+      "fr-wd-0247"
+    ]
+  },
+  {
+    "id": "fr-sent-0691",
+    "sentence": "Le chien joue dans le parc.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0224",
+      "fr-wd-0080",
+      "fr-wd-0239"
+    ]
+  },
+  {
+    "id": "fr-sent-0692",
+    "sentence": "Nous allons souvent dans le parc le matin.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0239",
+      "fr-wd-0176"
+    ]
+  },
+  {
+    "id": "fr-sent-0693",
+    "sentence": "Tu aimes marcher dans le parc avec ton chien.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0243",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0239",
+      "fr-wd-0058",
+      "fr-wd-0224"
+    ]
+  },
+  {
+    "id": "fr-sent-0694",
+    "sentence": "Le chat court très vite.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0225",
+      "fr-wd-0240"
+    ]
+  },
+  {
+    "id": "fr-sent-0695",
+    "sentence": "Mon chien mange toujours vite.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0224",
+      "fr-wd-0240"
+    ]
+  },
+  {
+    "id": "fr-sent-0696",
+    "sentence": "Tu marches trop vite pour moi.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0240"
+    ]
+  },
+  {
+    "id": "fr-sent-0697",
+    "sentence": "Le chien et le chat jouent ensemble.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0224",
+      "fr-wd-0004",
+      "fr-wd-0225",
+      "fr-wd-0241"
+    ]
+  },
+  {
+    "id": "fr-sent-0698",
+    "sentence": "Nous marchons ensemble chaque matin.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0241",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0699",
+    "sentence": "Tu veux courir ensemble avec moi.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0128",
+      "fr-wd-0227",
+      "fr-wd-0241",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0700",
+    "sentence": "L'oiseau vole très haut.",
+    "word_ids": [
+      "fr-wd-0242"
+    ]
+  },
+  {
+    "id": "fr-sent-0701",
+    "sentence": "Mon oiseau chante chaque matin.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0242",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0702",
+    "sentence": "Tu entends l'oiseau chanter dans le jardin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0242",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0074"
+    ]
+  },
+  {
+    "id": "fr-sent-0703",
+    "sentence": "Le chien aime marcher près de la maison.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0224",
+      "fr-wd-0243",
+      "fr-wd-0246",
+      "fr-wd-0025",
+      "fr-wd-0031",
+      "fr-wd-0060"
+    ]
+  },
+  {
+    "id": "fr-sent-0704",
+    "sentence": "Nous aimons marcher ensemble le soir.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0243",
+      "fr-wd-0241",
+      "fr-wd-0178"
+    ]
+  },
+  {
+    "id": "fr-sent-0705",
+    "sentence": "Tu préfères marcher plutôt que courir.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0243",
+      "fr-wd-0198",
+      "fr-wd-0227"
+    ]
+  },
+  {
+    "id": "fr-sent-0706",
+    "sentence": "L'oiseau commence à voler.",
+    "word_ids": [
+      "fr-wd-0242",
+      "fr-wd-0244"
+    ]
+  },
+  {
+    "id": "fr-sent-0707",
+    "sentence": "Mon oiseau aime voler très haut.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0242",
+      "fr-wd-0244"
+    ]
+  },
+  {
+    "id": "fr-sent-0708",
+    "sentence": "Tu regardes l'oiseau voler dans le ciel.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0242",
+      "fr-wd-0244",
+      "fr-wd-0080",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0709",
+    "sentence": "Le chien ne veut pas arrêter de courir.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0224",
+      "fr-wd-0129",
+      "fr-wd-0130",
+      "fr-wd-0245",
+      "fr-wd-0025",
+      "fr-wd-0227"
+    ]
+  },
+  {
+    "id": "fr-sent-0710",
+    "sentence": "Le chat refuse d'arrêter de miauler.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0225",
+      "fr-wd-0245",
+      "fr-wd-0025",
+      "fr-wd-0231"
+    ]
+  },
+  {
+    "id": "fr-sent-0711",
+    "sentence": "Tu dois arrêter de jouer maintenant.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0245",
+      "fr-wd-0025",
+      "fr-wd-0228",
+      "fr-wd-0150"
+    ]
+  },
+  {
+    "id": "fr-sent-0712",
+    "sentence": "Le parc est tout près de chez moi.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0239",
+      "fr-wd-0020",
+      "fr-wd-0013",
+      "fr-wd-0246",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0713",
+    "sentence": "Mon chien reste près de moi.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0224",
+      "fr-wd-0246",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0714",
+    "sentence": "Tu habites près de notre parc.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0246",
+      "fr-wd-0025",
+      "fr-wd-0055",
+      "fr-wd-0239"
+    ]
+  },
+  {
+    "id": "fr-sent-0715",
+    "sentence": "Le parc est loin de chez moi.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0239",
+      "fr-wd-0020",
+      "fr-wd-0247",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0716",
+    "sentence": "Mon oiseau vole très loin aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0242",
+      "fr-wd-0247",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0717",
+    "sentence": "Tu habites loin de l'école.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0247",
+      "fr-wd-0025"
+    ]
+  }
+]

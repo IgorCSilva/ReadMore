@@ -258,6 +258,29 @@
         "saludar": "saluer",
         "primera vez": "première fois"
       }
+    },
+    "topic_4": {
+      "es": {
+        "animal": "animal",
+        "perro": "chien",
+        "gato": "chat",
+        "pájaro": "oiseau",
+        "pequeño": "petit",
+        "pequeña": "petite",
+        "grande": [
+          "grand",
+          "grande"
+        ],
+        "correr": "courir",
+        "andar": "marcher",
+        "jugar": "jouer",
+        "ladrar": "aboyer",
+        "maullar": "miauler",
+        "volar": "voler",
+        "parar": "arrêter",
+        "cerca": "près",
+        "lejos": "loin"
+      }
     }
   }
 }
