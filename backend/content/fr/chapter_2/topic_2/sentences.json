@@ -1,0 +1,567 @@
+[
+  {
+    "id": "fr-sent-0514",
+    "sentence": "J'avais faim, alors j'ai mangé une pomme.",
+    "word_ids": [
+      "fr-wd-0180",
+      "fr-wd-0076",
+      "fr-wd-0123"
+    ]
+  },
+  {
+    "id": "fr-sent-0515",
+    "sentence": "Il pleuvait, alors elle est restée à la maison.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0180",
+      "fr-wd-0165",
+      "fr-wd-0020",
+      "fr-wd-0031",
+      "fr-wd-0060"
+    ]
+  },
+  {
+    "id": "fr-sent-0516",
+    "sentence": "Tu es fatigué, alors repose-toi un peu.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0094",
+      "fr-wd-0180",
+      "fr-wd-0075",
+      "fr-wd-0133"
+    ]
+  },
+  {
+    "id": "fr-sent-0517",
+    "sentence": "Soudain, le téléphone a sonné.",
+    "word_ids": [
+      "fr-wd-0181",
+      "fr-wd-0030",
+      "fr-wd-0079"
+    ]
+  },
+  {
+    "id": "fr-sent-0518",
+    "sentence": "Nous marchions tranquillement, soudain la pluie a commencé.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0181",
+      "fr-wd-0031",
+      "fr-wd-0079"
+    ]
+  },
+  {
+    "id": "fr-sent-0519",
+    "sentence": "Soudain, le chat a sauté sur la table.",
+    "word_ids": [
+      "fr-wd-0181",
+      "fr-wd-0030",
+      "fr-wd-0079",
+      "fr-wd-0031",
+      "fr-wd-0067"
+    ]
+  },
+  {
+    "id": "fr-sent-0520",
+    "sentence": "Je veux sortir, mais il pleut.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0100",
+      "fr-wd-0182",
+      "fr-wd-0164"
+    ]
+  },
+  {
+    "id": "fr-sent-0521",
+    "sentence": "Elle est gentille, mais très timide.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0020",
+      "fr-wd-0182"
+    ]
+  },
+  {
+    "id": "fr-sent-0522",
+    "sentence": "Il a faim, mais il n'y a pas de pain.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0079",
+      "fr-wd-0182",
+      "fr-wd-0164",
+      "fr-wd-0079",
+      "fr-wd-0130",
+      "fr-wd-0025",
+      "fr-wd-0117"
+    ]
+  },
+  {
+    "id": "fr-sent-0523",
+    "sentence": "Elle reste à la maison parce que son chat est malade.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0031",
+      "fr-wd-0060",
+      "fr-wd-0183",
+      "fr-wd-0034",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0524",
+    "sentence": "Il a fermé la fenêtre parce que le vent soufflait fort.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0079",
+      "fr-wd-0031",
+      "fr-wd-0066",
+      "fr-wd-0183",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0525",
+    "sentence": "Je suis content parce que j'ai trouvé mon cadeau.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0019",
+      "fr-wd-0183",
+      "fr-wd-0022",
+      "fr-wd-0196"
+    ]
+  },
+  {
+    "id": "fr-sent-0526",
+    "sentence": "Quand il pleut, je reste à la maison.",
+    "word_ids": [
+      "fr-wd-0184",
+      "fr-wd-0164",
+      "fr-wd-0018",
+      "fr-wd-0031",
+      "fr-wd-0060"
+    ]
+  },
+  {
+    "id": "fr-sent-0527",
+    "sentence": "Elle sourit quand elle voit ses amis.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0184",
+      "fr-wd-0165"
+    ]
+  },
+  {
+    "id": "fr-sent-0528",
+    "sentence": "Quand j'étais enfant, j'habitais à la campagne.",
+    "word_ids": [
+      "fr-wd-0184",
+      "fr-wd-0044",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0529",
+    "sentence": "Un jour, j'ai trouvé une lettre ancienne dans le jardin.",
+    "word_ids": [
+      "fr-wd-0185",
+      "fr-wd-0076",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0074"
+    ]
+  },
+  {
+    "id": "fr-sent-0530",
+    "sentence": "Un jour, je veux visiter beaucoup de pays.",
+    "word_ids": [
+      "fr-wd-0185",
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0132",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0531",
+    "sentence": "Un jour normal, elle se réveille tôt et travaille.",
+    "word_ids": [
+      "fr-wd-0185",
+      "fr-wd-0165",
+      "fr-wd-0084",
+      "fr-wd-0004",
+      "fr-wd-0172"
+    ]
+  },
+  {
+    "id": "fr-sent-0532",
+    "sentence": "Je dois trouver mes clés avant de partir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0186",
+      "fr-wd-0033",
+      "fr-wd-0179",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0533",
+    "sentence": "Il est difficile de trouver un bon appartement.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0186",
+      "fr-wd-0075",
+      "fr-wd-0005"
+    ]
+  },
+  {
+    "id": "fr-sent-0534",
+    "sentence": "Elle espère trouver un travail intéressant bientôt.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0186",
+      "fr-wd-0075"
+    ]
+  },
+  {
+    "id": "fr-sent-0535",
+    "sentence": "Je veux voir ce film ce soir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0187",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0536",
+    "sentence": "Il est agréable de voir ses amis le week-end.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0187",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0537",
+    "sentence": "Elle peut voir la mer depuis sa fenêtre.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0187",
+      "fr-wd-0031",
+      "fr-wd-0035",
+      "fr-wd-0066"
+    ]
+  },
+  {
+    "id": "fr-sent-0538",
+    "sentence": "Je peux entendre la pluie sur le toit.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0188",
+      "fr-wd-0031",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0539",
+    "sentence": "Il est difficile d'entendre quelque chose ici.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0188",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0540",
+    "sentence": "Nous pouvons entendre la musique chez le voisin.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0188",
+      "fr-wd-0031",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0541",
+    "sentence": "Je dois ouvrir la fenêtre, il fait chaud.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0189",
+      "fr-wd-0031",
+      "fr-wd-0066",
+      "fr-wd-0164"
+    ]
+  },
+  {
+    "id": "fr-sent-0542",
+    "sentence": "Elle essaie d'ouvrir la porte doucement.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0189",
+      "fr-wd-0031",
+      "fr-wd-0065"
+    ]
+  },
+  {
+    "id": "fr-sent-0543",
+    "sentence": "Il est facile d'ouvrir cette boîte.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0189"
+    ]
+  },
+  {
+    "id": "fr-sent-0544",
+    "sentence": "Je dois fermer la porte avant de sortir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0190",
+      "fr-wd-0031",
+      "fr-wd-0065",
+      "fr-wd-0179",
+      "fr-wd-0025",
+      "fr-wd-0100"
+    ]
+  },
+  {
+    "id": "fr-sent-0545",
+    "sentence": "Il est important de fermer la fenêtre la nuit.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0190",
+      "fr-wd-0031",
+      "fr-wd-0066",
+      "fr-wd-0031",
+      "fr-wd-0009"
+    ]
+  },
+  {
+    "id": "fr-sent-0546",
+    "sentence": "Elle va fermer le magasin à neuf heures.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0169",
+      "fr-wd-0190",
+      "fr-wd-0030",
+      "fr-wd-0146"
+    ]
+  },
+  {
+    "id": "fr-sent-0547",
+    "sentence": "Je veux entrer dans ce café.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0191",
+      "fr-wd-0080",
+      "fr-wd-0115"
+    ]
+  },
+  {
+    "id": "fr-sent-0548",
+    "sentence": "Il hésite avant d'entrer dans la salle.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0179",
+      "fr-wd-0191",
+      "fr-wd-0080",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0549",
+    "sentence": "Elle préfère entrer par la porte principale.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0191",
+      "fr-wd-0031",
+      "fr-wd-0065"
+    ]
+  },
+  {
+    "id": "fr-sent-0550",
+    "sentence": "Il va se passer quelque chose d'étrange ce soir.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0169",
+      "fr-wd-0192",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0551",
+    "sentence": "Personne ne sait ce qui va se passer.",
+    "word_ids": [
+      "fr-wd-0197",
+      "fr-wd-0129",
+      "fr-wd-0169",
+      "fr-wd-0192"
+    ]
+  },
+  {
+    "id": "fr-sent-0552",
+    "sentence": "Qu'est-ce qui a pu se passer hier soir ?",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0079",
+      "fr-wd-0192",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0553",
+    "sentence": "Soudain, une lumière a commencé à apparaître.",
+    "word_ids": [
+      "fr-wd-0181",
+      "fr-wd-0076",
+      "fr-wd-0079",
+      "fr-wd-0193"
+    ]
+  },
+  {
+    "id": "fr-sent-0554",
+    "sentence": "Il semble qu'une ombre va apparaître bientôt.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0076",
+      "fr-wd-0169",
+      "fr-wd-0193"
+    ]
+  },
+  {
+    "id": "fr-sent-0555",
+    "sentence": "Elle espère voir une étoile apparaître dans le ciel.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0187",
+      "fr-wd-0076",
+      "fr-wd-0193",
+      "fr-wd-0080",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0556",
+    "sentence": "Le soleil commence à disparaître derrière les montagnes.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0194"
+    ]
+  },
+  {
+    "id": "fr-sent-0557",
+    "sentence": "La douleur va disparaître dans quelques jours.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0169",
+      "fr-wd-0194",
+      "fr-wd-0080"
+    ]
+  },
+  {
+    "id": "fr-sent-0558",
+    "sentence": "Il est triste de voir ses vieux jouets disparaître.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0187",
+      "fr-wd-0194"
+    ]
+  },
+  {
+    "id": "fr-sent-0559",
+    "sentence": "Quelle surprise de te voir ici !",
+    "word_ids": [
+      "fr-wd-0195",
+      "fr-wd-0025",
+      "fr-wd-0187",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0560",
+    "sentence": "Elle a préparé une surprise pour son anniversaire.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0079",
+      "fr-wd-0076",
+      "fr-wd-0195",
+      "fr-wd-0034"
+    ]
+  },
+  {
+    "id": "fr-sent-0561",
+    "sentence": "La surprise était vraiment agréable.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0195"
+    ]
+  },
+  {
+    "id": "fr-sent-0562",
+    "sentence": "Je t'ai acheté un cadeau pour ton anniversaire.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0075",
+      "fr-wd-0196"
+    ]
+  },
+  {
+    "id": "fr-sent-0563",
+    "sentence": "Le cadeau était caché dans le tiroir.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0196",
+      "fr-wd-0080",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0564",
+    "sentence": "Tu préfères quel cadeau pour Noël ?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0196"
+    ]
+  },
+  {
+    "id": "fr-sent-0565",
+    "sentence": "Personne ne répond à la porte.",
+    "word_ids": [
+      "fr-wd-0197",
+      "fr-wd-0129",
+      "fr-wd-0031",
+      "fr-wd-0065"
+    ]
+  },
+  {
+    "id": "fr-sent-0566",
+    "sentence": "Il n'y a personne dans la maison.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0079",
+      "fr-wd-0197",
+      "fr-wd-0080",
+      "fr-wd-0031",
+      "fr-wd-0060"
+    ]
+  },
+  {
+    "id": "fr-sent-0567",
+    "sentence": "Personne ne sait la réponse.",
+    "word_ids": [
+      "fr-wd-0197",
+      "fr-wd-0129",
+      "fr-wd-0031"
+    ]
+  }
+]

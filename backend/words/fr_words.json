@@ -1072,5 +1072,269 @@
     "root_word_id": "wd-0354",
     "word": "avant",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0180",
+    "root_word_id": "wd-0365",
+    "word": "alors",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0181",
+    "root_word_id": "wd-0366",
+    "word": "soudain",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0182",
+    "root_word_id": "wd-0367",
+    "word": "mais",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0183",
+    "root_word_id": "wd-0368",
+    "word": "parce que",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0184",
+    "root_word_id": "wd-0217",
+    "word": "quand",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0185",
+    "root_word_id": "wd-0369",
+    "word": "un jour",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0186",
+    "root_word_id": "wd-0370",
+    "word": "trouver",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0187",
+    "root_word_id": "wd-0074",
+    "word": "voir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0188",
+    "root_word_id": "wd-0371",
+    "word": "entendre",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0189",
+    "root_word_id": "wd-0372",
+    "word": "ouvrir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0190",
+    "root_word_id": "wd-0373",
+    "word": "fermer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0191",
+    "root_word_id": "wd-0374",
+    "word": "entrer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0192",
+    "root_word_id": "wd-0375",
+    "word": "passer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0193",
+    "root_word_id": "wd-0376",
+    "word": "apparaître",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0194",
+    "root_word_id": "wd-0377",
+    "word": "disparaître",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0195",
+    "root_word_id": "wd-0378",
+    "word": "surprise",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0196",
+    "root_word_id": "wd-0379",
+    "word": "cadeau",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0197",
+    "root_word_id": "wd-0380",
+    "word": "personne",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0198",
+    "root_word_id": "wd-0006",
+    "word": "que",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0199",
+    "root_word_id": "wd-0050",
+    "word": "qui",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0200",
+    "root_word_id": "wd-0387",
+    "word": "présenter",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0201",
+    "root_word_id": "wd-0231",
+    "word": "connaître",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0202",
+    "root_word_id": "wd-0388",
+    "word": "demander",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0203",
+    "root_word_id": "wd-0389",
+    "word": "répondre",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0204",
+    "root_word_id": "wd-0390",
+    "word": "nouveau",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0205",
+    "root_word_id": "wd-0391",
+    "word": "nouvelle",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0206",
+    "root_word_id": "wd-0081",
+    "word": "ami",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0207",
+    "root_word_id": "wd-0392",
+    "word": "amie",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0208",
+    "root_word_id": "wd-0393",
+    "word": "enchanté",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0209",
+    "root_word_id": "wd-0394",
+    "word": "enchantée",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0210",
+    "root_word_id": "wd-0395",
+    "word": "également",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0211",
+    "root_word_id": "wd-0070",
+    "word": "aussi",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0212",
+    "root_word_id": "wd-0049",
+    "word": "où",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0213",
+    "root_word_id": "wd-0396",
+    "word": "dire",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0214",
+    "root_word_id": "wd-0397",
+    "word": "sourire",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0215",
+    "root_word_id": "wd-0266",
+    "word": "se",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0216",
+    "root_word_id": "wd-0267",
+    "word": "nomme",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0217",
+    "root_word_id": "wd-0398",
+    "word": "voisin",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0218",
+    "root_word_id": "wd-0399",
+    "word": "voisine",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0219",
+    "root_word_id": "wd-0400",
+    "word": "inconnu",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0220",
+    "root_word_id": "wd-0401",
+    "word": "inconnue",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0221",
+    "root_word_id": "wd-0402",
+    "word": "discuter",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0222",
+    "root_word_id": "wd-0403",
+    "word": "saluer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0223",
+    "root_word_id": "wd-0404",
+    "word": "première fois",
+    "gender_id": "not_apply"
   }
 ]
