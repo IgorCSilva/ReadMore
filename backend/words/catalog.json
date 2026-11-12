@@ -3167,6 +3167,34 @@
     {
       "word_id": "wd-0792",
       "filename": "euro"
+    },
+    {
+      "word_id": "wd-0793",
+      "filename": "jump"
+    },
+    {
+      "word_id": "wd-0794",
+      "filename": "big_feminine"
+    },
+    {
+      "word_id": "wd-0795",
+      "filename": "happy"
+    },
+    {
+      "word_id": "wd-0796",
+      "filename": "sad"
+    },
+    {
+      "word_id": "wd-0797",
+      "filename": "ball"
+    },
+    {
+      "word_id": "wd-0798",
+      "filename": "quickly"
+    },
+    {
+      "word_id": "wd-0799",
+      "filename": "together"
     }
   ]
 }
