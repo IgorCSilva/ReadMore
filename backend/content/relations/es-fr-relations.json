@@ -282,5 +282,43 @@
         "lejos": "loin"
       }
     }
+  },
+  "chapter_3": {
+    "topic_1": {
+      "es": {
+        "calle": "rue",
+        "avenida": "avenue",
+        "esquina": "coin",
+        "cuadra": "pâté de maisons",
+        "plaza": "place",
+        "parque": "parc",
+        "banco": [
+          "banc",
+          "banque"
+        ],
+        "semáforo": "feu",
+        "camino": "chemin",
+        "dirección": "direction",
+        "mapa": "carte",
+        "lugar": "endroit",
+        "izquierda": "à gauche",
+        "derecha": "à droite",
+        "derecho": "tout droit",
+        "frente a": "en face",
+        "entre": "entre",
+        "dónde": "où",
+        "cómo": "comment",
+        "a": "à",
+        "por": "par",
+        "aquí": "ici",
+        "allí": "là",
+        "está": "est",
+        "seguir": "continuer",
+        "cruzar": "traverser",
+        "doblar": "tourner",
+        "llegar": "arriver",
+        "pasar": "passer"
+      }
+    }
   }
 }

@@ -1480,5 +1480,137 @@
     "root_word_id": "wd-0143",
     "word": "loin",
     "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0248",
+    "root_word_id": "wd-0428",
+    "word": "à gauche",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0249",
+    "root_word_id": "wd-0429",
+    "word": "à droite",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0250",
+    "root_word_id": "wd-0430",
+    "word": "tout droit",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0251",
+    "root_word_id": "wd-0418",
+    "word": "rue",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0252",
+    "root_word_id": "wd-0420",
+    "word": "coin",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0253",
+    "root_word_id": "wd-0438",
+    "word": "tourner",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0254",
+    "root_word_id": "wd-0436",
+    "word": "continuer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0255",
+    "root_word_id": "wd-0437",
+    "word": "traverser",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0256",
+    "root_word_id": "wd-0431",
+    "word": "en face",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0257",
+    "root_word_id": "wd-0425",
+    "word": "feu",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0258",
+    "root_word_id": "wd-0433",
+    "word": "à",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0259",
+    "root_word_id": "wd-0434",
+    "word": "par",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0260",
+    "root_word_id": "wd-0432",
+    "word": "entre",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0261",
+    "root_word_id": "wd-0419",
+    "word": "avenue",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0262",
+    "root_word_id": "wd-0422",
+    "word": "place",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0263",
+    "root_word_id": "wd-0421",
+    "word": "pâté de maisons",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0264",
+    "root_word_id": "wd-0424",
+    "word": "banc",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0265",
+    "root_word_id": "wd-0800",
+    "word": "banque",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0266",
+    "root_word_id": "wd-0210",
+    "word": "chemin",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0267",
+    "root_word_id": "wd-0426",
+    "word": "direction",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0268",
+    "root_word_id": "wd-0140",
+    "word": "carte",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0269",
+    "root_word_id": "wd-0427",
+    "word": "endroit",
+    "gender_id": "masculine"
   }
 ]
