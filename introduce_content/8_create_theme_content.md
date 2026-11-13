@@ -4,7 +4,7 @@ native: es
 level: A1
 roadmap directory: backend/content/learning/theme/health
 chapter: EXE
-topic: 6
+topic: 7
 output directory: <roadmap directory>/<chapter>_<topic>
 target: fr
 
