@@ -2,5 +2,7 @@
 
 native: es
 target: fr
-chapter: 2
-topic: 4
+
+level: A0
+chapter: 3
+topic: 1

@@ -1,0 +1,663 @@
+[
+  {
+    "id": "fr-sent-0718",
+    "sentence": "La banque est à gauche de la place.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0265",
+      "fr-wd-0020",
+      "fr-wd-0248",
+      "fr-wd-0025",
+      "fr-wd-0031",
+      "fr-wd-0262"
+    ]
+  },
+  {
+    "id": "fr-sent-0719",
+    "sentence": "Je tourne à gauche à ce coin.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0248",
+      "fr-wd-0258",
+      "fr-wd-0252"
+    ]
+  },
+  {
+    "id": "fr-sent-0720",
+    "sentence": "Tu dois aller à gauche pour traverser.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0101",
+      "fr-wd-0248",
+      "fr-wd-0255"
+    ]
+  },
+  {
+    "id": "fr-sent-0721",
+    "sentence": "Le banc est à droite de l'avenue.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0264",
+      "fr-wd-0020",
+      "fr-wd-0249",
+      "fr-wd-0025",
+      "fr-wd-0261"
+    ]
+  },
+  {
+    "id": "fr-sent-0722",
+    "sentence": "Je tourne à droite après le feu.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0249",
+      "fr-wd-0030",
+      "fr-wd-0257"
+    ]
+  },
+  {
+    "id": "fr-sent-0723",
+    "sentence": "Tu continues à droite jusqu'à la banque.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0249",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0265"
+    ]
+  },
+  {
+    "id": "fr-sent-0724",
+    "sentence": "Cette rue continue tout droit.",
+    "word_ids": [
+      "fr-wd-0251",
+      "fr-wd-0250"
+    ]
+  },
+  {
+    "id": "fr-sent-0725",
+    "sentence": "Je marche tout droit vers la place.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0250",
+      "fr-wd-0031",
+      "fr-wd-0262"
+    ]
+  },
+  {
+    "id": "fr-sent-0726",
+    "sentence": "Tu dois continuer tout droit jusqu'à ce feu.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0254",
+      "fr-wd-0250",
+      "fr-wd-0258",
+      "fr-wd-0257"
+    ]
+  },
+  {
+    "id": "fr-sent-0727",
+    "sentence": "Cette rue est très longue.",
+    "word_ids": [
+      "fr-wd-0251",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0728",
+    "sentence": "J'habite dans une petite rue.",
+    "word_ids": [
+      "fr-wd-0080",
+      "fr-wd-0076",
+      "fr-wd-0233",
+      "fr-wd-0251"
+    ]
+  },
+  {
+    "id": "fr-sent-0729",
+    "sentence": "Tu traverses la rue avec attention.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0031",
+      "fr-wd-0251",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0730",
+    "sentence": "La banque est à ce coin.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0265",
+      "fr-wd-0020",
+      "fr-wd-0258",
+      "fr-wd-0252"
+    ]
+  },
+  {
+    "id": "fr-sent-0731",
+    "sentence": "Il y a un banc à ce coin.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0075",
+      "fr-wd-0264",
+      "fr-wd-0258",
+      "fr-wd-0252"
+    ]
+  },
+  {
+    "id": "fr-sent-0732",
+    "sentence": "Tu tournes à ce coin pour arriver.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0258",
+      "fr-wd-0252",
+      "fr-wd-0102"
+    ]
+  },
+  {
+    "id": "fr-sent-0733",
+    "sentence": "Tu dois tourner à gauche ici.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0253",
+      "fr-wd-0248",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0734",
+    "sentence": "Je préfère tourner à droite.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0253",
+      "fr-wd-0249"
+    ]
+  },
+  {
+    "id": "fr-sent-0735",
+    "sentence": "Nous allons tourner avant la banque.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0253",
+      "fr-wd-0179",
+      "fr-wd-0031",
+      "fr-wd-0265"
+    ]
+  },
+  {
+    "id": "fr-sent-0736",
+    "sentence": "Tu dois continuer tout droit.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0254",
+      "fr-wd-0250"
+    ]
+  },
+  {
+    "id": "fr-sent-0737",
+    "sentence": "Je préfère continuer par cette rue.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0254",
+      "fr-wd-0259",
+      "fr-wd-0251"
+    ]
+  },
+  {
+    "id": "fr-sent-0738",
+    "sentence": "Nous allons continuer jusqu'à la place.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0254",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0262"
+    ]
+  },
+  {
+    "id": "fr-sent-0739",
+    "sentence": "Tu dois traverser la rue avec attention.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0255",
+      "fr-wd-0031",
+      "fr-wd-0251",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0740",
+    "sentence": "Je veux traverser cette avenue.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0255",
+      "fr-wd-0261"
+    ]
+  },
+  {
+    "id": "fr-sent-0741",
+    "sentence": "Nous allons traverser la place ensemble.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0255",
+      "fr-wd-0031",
+      "fr-wd-0262",
+      "fr-wd-0241"
+    ]
+  },
+  {
+    "id": "fr-sent-0742",
+    "sentence": "La banque est en face de la place.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0265",
+      "fr-wd-0020",
+      "fr-wd-0256",
+      "fr-wd-0025",
+      "fr-wd-0031",
+      "fr-wd-0262"
+    ]
+  },
+  {
+    "id": "fr-sent-0743",
+    "sentence": "J'habite en face de ce parc.",
+    "word_ids": [
+      "fr-wd-0256",
+      "fr-wd-0025",
+      "fr-wd-0239"
+    ]
+  },
+  {
+    "id": "fr-sent-0744",
+    "sentence": "Le banc est en face de l'avenue.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0264",
+      "fr-wd-0020",
+      "fr-wd-0256",
+      "fr-wd-0025",
+      "fr-wd-0261"
+    ]
+  },
+  {
+    "id": "fr-sent-0745",
+    "sentence": "Le feu est rouge.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0257",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0746",
+    "sentence": "Tu dois tourner après le feu.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0253",
+      "fr-wd-0030",
+      "fr-wd-0257"
+    ]
+  },
+  {
+    "id": "fr-sent-0747",
+    "sentence": "Il y a un feu à ce coin.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0075",
+      "fr-wd-0257",
+      "fr-wd-0258",
+      "fr-wd-0252"
+    ]
+  },
+  {
+    "id": "fr-sent-0748",
+    "sentence": "Je vais à la banque.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0017",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0265"
+    ]
+  },
+  {
+    "id": "fr-sent-0749",
+    "sentence": "Nous allons à pied jusqu'à la place.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0258",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0262"
+    ]
+  },
+  {
+    "id": "fr-sent-0750",
+    "sentence": "Tu arrives à l'heure.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0258",
+      "fr-wd-0148"
+    ]
+  },
+  {
+    "id": "fr-sent-0751",
+    "sentence": "Je passe par cette rue chaque jour.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0259",
+      "fr-wd-0251",
+      "fr-wd-0007"
+    ]
+  },
+  {
+    "id": "fr-sent-0752",
+    "sentence": "Tu dois passer par la place.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0192",
+      "fr-wd-0259",
+      "fr-wd-0031",
+      "fr-wd-0262"
+    ]
+  },
+  {
+    "id": "fr-sent-0753",
+    "sentence": "Nous allons par ce chemin.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0259",
+      "fr-wd-0266"
+    ]
+  },
+  {
+    "id": "fr-sent-0754",
+    "sentence": "La banque est entre la place et l'avenue.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0265",
+      "fr-wd-0020",
+      "fr-wd-0260",
+      "fr-wd-0031",
+      "fr-wd-0262",
+      "fr-wd-0004",
+      "fr-wd-0261"
+    ]
+  },
+  {
+    "id": "fr-sent-0755",
+    "sentence": "Le banc est entre deux arbres.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0264",
+      "fr-wd-0020",
+      "fr-wd-0260",
+      "fr-wd-0139"
+    ]
+  },
+  {
+    "id": "fr-sent-0756",
+    "sentence": "Tu marches entre ces deux rues.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0260",
+      "fr-wd-0139"
+    ]
+  },
+  {
+    "id": "fr-sent-0757",
+    "sentence": "Cette avenue est très longue.",
+    "word_ids": [
+      "fr-wd-0261",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0758",
+    "sentence": "J'habite dans une grande avenue.",
+    "word_ids": [
+      "fr-wd-0080",
+      "fr-wd-0076",
+      "fr-wd-0235",
+      "fr-wd-0261"
+    ]
+  },
+  {
+    "id": "fr-sent-0759",
+    "sentence": "Tu traverses l'avenue avec attention.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0261",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0760",
+    "sentence": "Cette place est très grande.",
+    "word_ids": [
+      "fr-wd-0262",
+      "fr-wd-0020",
+      "fr-wd-0235"
+    ]
+  },
+  {
+    "id": "fr-sent-0761",
+    "sentence": "Les enfants jouent sur la place.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0262"
+    ]
+  },
+  {
+    "id": "fr-sent-0762",
+    "sentence": "Tu traverses la place chaque matin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0031",
+      "fr-wd-0262",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0763",
+    "sentence": "Ce pâté de maisons est très calme.",
+    "word_ids": [
+      "fr-wd-0263",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0764",
+    "sentence": "La banque est dans ce pâté de maisons.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0265",
+      "fr-wd-0020",
+      "fr-wd-0080",
+      "fr-wd-0263"
+    ]
+  },
+  {
+    "id": "fr-sent-0765",
+    "sentence": "Tu dois traverser ce pâté de maisons.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0255",
+      "fr-wd-0263"
+    ]
+  },
+  {
+    "id": "fr-sent-0766",
+    "sentence": "Ce banc est en bois.",
+    "word_ids": [
+      "fr-wd-0264",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0767",
+    "sentence": "Je m'assois sur ce banc chaque jour.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0264",
+      "fr-wd-0007"
+    ]
+  },
+  {
+    "id": "fr-sent-0768",
+    "sentence": "Il y a un banc près de la banque.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0075",
+      "fr-wd-0264",
+      "fr-wd-0246",
+      "fr-wd-0025",
+      "fr-wd-0031",
+      "fr-wd-0265"
+    ]
+  },
+  {
+    "id": "fr-sent-0769",
+    "sentence": "Cette banque ouvre à neuf heures.",
+    "word_ids": [
+      "fr-wd-0265",
+      "fr-wd-0258",
+      "fr-wd-0146"
+    ]
+  },
+  {
+    "id": "fr-sent-0770",
+    "sentence": "Je vais à la banque pour retirer de l'argent.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0017",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0265",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0771",
+    "sentence": "Tu dois aller à la banque avant midi.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0101",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0265",
+      "fr-wd-0179"
+    ]
+  },
+  {
+    "id": "fr-sent-0772",
+    "sentence": "Ce chemin mène à la place.",
+    "word_ids": [
+      "fr-wd-0266",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0262"
+    ]
+  },
+  {
+    "id": "fr-sent-0773",
+    "sentence": "Je préfère prendre ce chemin.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0266"
+    ]
+  },
+  {
+    "id": "fr-sent-0774",
+    "sentence": "Tu connais bien ce chemin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0012",
+      "fr-wd-0266"
+    ]
+  },
+  {
+    "id": "fr-sent-0775",
+    "sentence": "Cette direction est correcte.",
+    "word_ids": [
+      "fr-wd-0267",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0776",
+    "sentence": "Je cherche la bonne direction.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0031",
+      "fr-wd-0006",
+      "fr-wd-0267"
+    ]
+  },
+  {
+    "id": "fr-sent-0777",
+    "sentence": "Tu dois changer de direction.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0025",
+      "fr-wd-0267"
+    ]
+  },
+  {
+    "id": "fr-sent-0778",
+    "sentence": "Cette carte montre toute la ville.",
+    "word_ids": [
+      "fr-wd-0268",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0779",
+    "sentence": "J'utilise cette carte pour trouver le chemin.",
+    "word_ids": [
+      "fr-wd-0268",
+      "fr-wd-0186",
+      "fr-wd-0030",
+      "fr-wd-0266"
+    ]
+  },
+  {
+    "id": "fr-sent-0780",
+    "sentence": "Tu dois regarder la carte avant de partir.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0031",
+      "fr-wd-0268",
+      "fr-wd-0179",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0781",
+    "sentence": "Cet endroit est très calme.",
+    "word_ids": [
+      "fr-wd-0269",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0782",
+    "sentence": "Je connais un bel endroit près d'ici.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0075",
+      "fr-wd-0269",
+      "fr-wd-0246",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0783",
+    "sentence": "Tu trouves facilement cet endroit.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0269"
+    ]
+  }
+]
