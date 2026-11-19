@@ -319,6 +319,51 @@
         "llegar": "arriver",
         "pasar": "passer"
       }
+    },
+    "topic_2": {
+      "es": {
+        "autobús": "bus",
+        "carro": "voiture",
+        "taxi": "taxi",
+        "tren": "train",
+        "metro": "métro",
+        "avión": "avion",
+        "bicicleta": "vélo",
+        "estación": "gare",
+        "parada": "arrêt",
+        "pasajero": "passager",
+        "conductor": "conducteur",
+        "boleto": "billet",
+        "embarcar": "monter",
+        "desembarcar": "descendre",
+        "viajar": "voyager",
+        "partir": "partir",
+        "manejar": "conduire",
+        "transporte": "transport"
+      }
+    },
+    "topic_3": {
+      "es": {
+        "aeropuerto": "aéroport",
+        "llegada": "arrivée",
+        "salida": "départ",
+        "vuelo": "vol",
+        "terminal": "terminal",
+        "andén": "quai",
+        "puerta": "porte",
+        "atrasado": "retardé",
+        "atrasada": "retardée",
+        "abierto": "ouvert",
+        "abierta": "ouverte",
+        "cerrado": "fermé",
+        "cerrada": "fermée",
+        "entrada": "entrée",
+        "equipaje": "bagage",
+        "documento": "document",
+        "seguridad": "sécurité",
+        "información": "information",
+        "aduana": "douane"
+      }
     }
   }
 }

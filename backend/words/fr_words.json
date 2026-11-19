@@ -1612,5 +1612,281 @@
     "root_word_id": "wd-0427",
     "word": "endroit",
     "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0270",
+    "root_word_id": "wd-0441",
+    "word": "train",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0271",
+    "root_word_id": "wd-0209",
+    "word": "bus",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0272",
+    "root_word_id": "wd-0440",
+    "word": "voiture",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0273",
+    "root_word_id": "wd-0443",
+    "word": "avion",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0274",
+    "root_word_id": "wd-0801",
+    "word": "bateau",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0275",
+    "root_word_id": "wd-0444",
+    "word": "vélo",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0276",
+    "root_word_id": "wd-0041",
+    "word": "taxi",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0277",
+    "root_word_id": "wd-0442",
+    "word": "métro",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0278",
+    "root_word_id": "wd-0802",
+    "word": "à pied",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0279",
+    "root_word_id": "wd-0453",
+    "word": "partir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0280",
+    "root_word_id": "wd-0450",
+    "word": "monter",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0281",
+    "root_word_id": "wd-0451",
+    "word": "descendre",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0282",
+    "root_word_id": "wd-0803",
+    "word": "prendre",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0283",
+    "root_word_id": "wd-0454",
+    "word": "conduire",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0284",
+    "root_word_id": "wd-0449",
+    "word": "billet",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0285",
+    "root_word_id": "wd-0483",
+    "word": "voyage",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0286",
+    "root_word_id": "wd-0446",
+    "word": "arrêt",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0287",
+    "root_word_id": "wd-0760",
+    "word": "horaire",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0288",
+    "root_word_id": "wd-0445",
+    "word": "gare",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0289",
+    "root_word_id": "wd-0447",
+    "word": "passager",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0290",
+    "root_word_id": "wd-0448",
+    "word": "conducteur",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0291",
+    "root_word_id": "wd-0452",
+    "word": "voyager",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0292",
+    "root_word_id": "wd-0455",
+    "word": "transport",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0293",
+    "root_word_id": "wd-0456",
+    "word": "aéroport",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0294",
+    "root_word_id": "wd-0459",
+    "word": "vol",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0295",
+    "root_word_id": "wd-0457",
+    "word": "arrivée",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0296",
+    "root_word_id": "wd-0458",
+    "word": "départ",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0297",
+    "root_word_id": "wd-0804",
+    "word": "embarquement",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0298",
+    "root_word_id": "wd-0805",
+    "word": "carte d'embarquement",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0299",
+    "root_word_id": "wd-0499",
+    "word": "passeport",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0300",
+    "root_word_id": "wd-0469",
+    "word": "bagage",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0301",
+    "root_word_id": "wd-0461",
+    "word": "quai",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0302",
+    "root_word_id": "wd-0471",
+    "word": "sécurité",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0303",
+    "root_word_id": "wd-0464",
+    "word": "ouvert",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0304",
+    "root_word_id": "wd-0465",
+    "word": "ouverte",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0305",
+    "root_word_id": "wd-0466",
+    "word": "fermé",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0306",
+    "root_word_id": "wd-0467",
+    "word": "fermée",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0307",
+    "root_word_id": "wd-0806",
+    "word": "annulé",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0308",
+    "root_word_id": "wd-0807",
+    "word": "annulée",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0309",
+    "root_word_id": "wd-0462",
+    "word": "retardé",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0310",
+    "root_word_id": "wd-0463",
+    "word": "retardée",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0311",
+    "root_word_id": "wd-0460",
+    "word": "terminal",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0312",
+    "root_word_id": "wd-0468",
+    "word": "entrée",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0313",
+    "root_word_id": "wd-0470",
+    "word": "document",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0314",
+    "root_word_id": "wd-0472",
+    "word": "information",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0315",
+    "root_word_id": "wd-0473",
+    "word": "douane",
+    "gender_id": "feminine"
   }
 ]

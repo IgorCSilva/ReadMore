@@ -3199,6 +3199,34 @@
     {
       "word_id": "wd-0800",
       "filename": "bank"
+    },
+    {
+      "word_id": "wd-0801",
+      "filename": "boat"
+    },
+    {
+      "word_id": "wd-0802",
+      "filename": "on_foot"
+    },
+    {
+      "word_id": "wd-0803",
+      "filename": "to_take"
+    },
+    {
+      "word_id": "wd-0804",
+      "filename": "boarding"
+    },
+    {
+      "word_id": "wd-0805",
+      "filename": "boarding_pass"
+    },
+    {
+      "word_id": "wd-0806",
+      "filename": "cancelled"
+    },
+    {
+      "word_id": "wd-0807",
+      "filename": "cancelled_feminine"
     }
   ]
 }

@@ -55,6 +55,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "activité": {
+    "meaning": "Actividad.",
+    "examples": [
+      "- **Suivi d'habitudes** — un outil simple qui montre si tu as fait une activité",
+      "Elle fait une activité sportive chaque semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "admirant": {
     "meaning": "Admirando; gerundio de 'admirer'.",
     "examples": [
@@ -272,6 +281,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "application": {
+    "meaning": "Aplicación.",
+    "examples": [
+      "- Une application sur ton téléphone",
+      "J'utilise une application pour suivre mon sommeil."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "apprenait": {
     "meaning": "Aprendía; imperfecto de 'apprendre' (il/elle).",
     "examples": [
@@ -393,6 +411,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "arrêter": {
+    "meaning": "Detener(se), parar; infinitivo de 'arrêter'.",
+    "examples": [
+      "- **Endurance** : Peux-tu marcher, courir ou faire du vélo plus longtemps sans arrêter ?",
+      "Il doit arrêter de fumer."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "continuer"
+    ]
+  },
   "articulation": {
     "meaning": "Articulación (parte del cuerpo donde se unen los huesos).",
     "examples": [
@@ -416,6 +445,15 @@
     "examples": [
       "Tu as seulement besoin du poids de ton corps, ou d'haltères légers si tu en as.",
       "Tu as une heure pour finir ton entraînement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "as-tu": {
+    "meaning": "¿Tienes...?; presente de 'avoir' (tú) en pregunta invertida.",
+    "examples": [
+      "| Jour | As-tu fait de l'exercice ? | Note |",
+      "As-tu une minute pour parler ?"
     ],
     "synonyms": [],
     "antonyms": []
@@ -516,6 +554,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "au-delà": {
+    "meaning": "Más allá (de).",
+    "examples": [
+      "## Façons de mesurer les progrès au-delà de la balance",
+      "Il y a une vie au-delà du travail."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "au-dessus": {
     "meaning": "Encima, por encima.",
     "examples": [
@@ -610,6 +657,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "autres": {
+    "meaning": "Otros/otras; plural de 'autre'.",
+    "examples": [
+      "La balance est seulement un outil. Essaie aussi ces autres façons :",
+      "Essaie ces autres exercices demain."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "aux": {
     "meaning": "A los/a las; contracción de 'à' + 'les'.",
     "examples": [
@@ -700,6 +756,15 @@
     "examples": [
       "- Te baisser facilement",
       "Elle se baisse pour toucher le sol."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "balance": {
+    "meaning": "Balanza, báscula.",
+    "examples": [
+      "Quand tu fais de l'exercice, il est facile de regarder seulement la balance. Mais la balance ne montre pas tout.",
+      "La balance indique ton poids chaque matin."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1181,6 +1246,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "calendrier": {
+    "meaning": "Calendario.",
+    "examples": [
+      "- Un calendrier avec une marque chaque jour d'exercice",
+      "J'écris mes rendez-vous sur le calendrier."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "calme": {
     "meaning": "Tranquilo, calmado.",
     "examples": [
@@ -1281,6 +1355,15 @@
     "examples": [
       "Il laissa les feuilles caresser son corps tout doux, les arrosant au passage des petites gouttes fraîches qu'il avait rapportées du lac.",
       "Elle aime caresser doucement son chat."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "carnet": {
+    "meaning": "Cuaderno, libreta.",
+    "examples": [
+      "- Une simple liste de vérification dans un carnet",
+      "Elle note ses idées dans un carnet."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1447,11 +1530,38 @@
     "synonyms": [],
     "antonyms": []
   },
+  "change": {
+    "meaning": "Cambia; presente de 'changer' (il/elle).",
+    "examples": [
+      "Ton corps change de plusieurs façons. Tu peux devenir plus fort.",
+      "Le temps change vite en automne."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "changeant": {
     "meaning": "Cambiando; gerundio de 'changer'.",
     "examples": [
       "À partir de ce jour, Léo apprit à être le plus doux des grands frères. Il chantait « Fais dodo, Colas mon p'tit frère » (en changeant les paroles pour Mila, bien sûr) quand elle était réveillée, créant un lien unique entre eux.",
       "Il chantait en changeant un peu les paroles."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "changement": {
+    "meaning": "Cambio.",
+    "examples": [
+      "- **Photos** : Est-ce que les photos de progrès montrent un changement ?",
+      "Un petit changement peut faire une grande différence."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "changements": {
+    "meaning": "Cambios; plural de 'changement'.",
+    "examples": [
+      "Ces changements comptent aussi.",
+      "Les changements de saison affectent mon humeur."
     ],
     "synonyms": [],
     "antonyms": []
@@ -1677,6 +1787,15 @@
       "ci-dessus"
     ]
   },
+  "ci-dessus": {
+    "meaning": "Arriba, más arriba (referencia a un texto anterior).",
+    "examples": [
+      "**Étape 1 :** Choisis une méthode de suivi dans la liste ci-dessus (par exemple, la force ou l'énergie).",
+      "Regarde la liste ci-dessus avant de commencer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "ciel": {
     "meaning": "Cielo.",
     "examples": [
@@ -1824,6 +1943,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "comptent": {
+    "meaning": "Cuentan, importan; presente de 'compter' (ils/elles).",
+    "examples": [
+      "Ces changements comptent aussi.",
+      "Les petites victoires comptent aussi."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "comptine": {
     "meaning": "Canción infantil, rima.",
     "examples": [
@@ -1856,6 +1984,15 @@
     "examples": [
       "Conseils simples pour la posture :",
       "Merci pour tes conseils."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "constant": {
+    "meaning": "Constante; masculino singular de 'constant'.",
+    "examples": [
+      "## Rester constant",
+      "Il est constant dans son entraînement."
     ],
     "synonyms": [],
     "antonyms": []
@@ -2118,6 +2255,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "célèbre": {
+    "meaning": "Celebra; imperativo de 'célébrer' (tu). (Homónimo del adjetivo 'célèbre' = famoso/a.)",
+    "examples": [
+      "- Célèbre les petites victoires, pas seulement les grandes",
+      "On célèbre son anniversaire aujourd'hui."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "côté": {
     "meaning": "Lado.",
     "examples": [
@@ -2211,6 +2357,15 @@
     "examples": [
       "Apprends ces quatre mouvements, et tu peux faire beaucoup d'exercices.",
       "Ce livre parle d'exercices simples."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "d'habitudes": {
+    "meaning": "De hábitos; forma elidida de 'de' + 'habitudes'.",
+    "examples": [
+      "Un **suivi d'habitudes** est un outil simple.",
+      "Un suivi d'habitudes aide à rester motivé."
     ],
     "synonyms": [],
     "antonyms": []
@@ -2470,6 +2625,15 @@
       "faciles"
     ]
   },
+  "différemment": {
+    "meaning": "Diferentemente, de manera diferente.",
+    "examples": [
+      "- **Vêtements** : Est-ce que tes vêtements te vont différemment ?",
+      "Chaque personne réagit différemment au stress."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "différente": {
     "meaning": "Diferente; femenino singular de 'différent'.",
     "examples": [
@@ -2635,9 +2799,10 @@
     "antonyms": []
   },
   "donne": {
-    "meaning": "Da; imperativo de 'donner' (tu).",
+    "meaning": "(1) Da; imperativo de 'donner' (tu). (2) Da; presente de 'donner' (il/elle).",
     "examples": [
-      "**Étape 2 :** Donne à chaque jour actif un objectif principal : cardio, musculation ou mobilité."
+      "(1) **Étape 2 :** Donne à chaque jour actif un objectif principal : cardio, musculation ou mobilité.",
+      "(2) Marquer un suivi d'habitudes te donne une petite récompense."
     ],
     "synonyms": [],
     "antonyms": []
@@ -2683,6 +2848,15 @@
     "examples": [
       "Tu dors mal.",
       "Tu dors huit heures chaque nuit."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "dors-tu": {
+    "meaning": "¿Duermes...?; presente de 'dormir' (tú) en pregunta invertida.",
+    "examples": [
+      "- **Sommeil** : Dors-tu mieux après les jours d'exercice ?",
+      "Dors-tu assez cette semaine ?"
     ],
     "synonyms": [],
     "antonyms": []
@@ -3006,6 +3180,15 @@
     ],
     "antonyms": []
   },
+  "endurance": {
+    "meaning": "Resistencia.",
+    "examples": [
+      "- **Endurance** : Peux-tu marcher, courir ou faire du vélo plus longtemps sans arrêter ?",
+      "La course à pied améliore ton endurance."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "enfin": {
     "meaning": "Por fin, finalmente.",
     "examples": [
@@ -3083,6 +3266,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "envie": {
+    "meaning": "Ganas, deseo; en 'avoir envie de' = tener ganas de, o 'donner envie de' = dar ganas de.",
+    "examples": [
+      "- **Motivation** — le sentiment qui te donne envie de faire quelque chose",
+      "J'ai envie de faire du sport aujourd'hui."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "environ": {
     "meaning": "Aproximadamente, alrededor de.",
     "examples": [
@@ -3112,6 +3304,15 @@
     "antonyms": [
       "sage"
     ]
+  },
+  "essaie": {
+    "meaning": "Intenta, prueba; imperativo de 'essayer' (tu).",
+    "examples": [
+      "La balance est seulement un outil. Essaie aussi ces autres façons :",
+      "Essaie cette nouvelle routine cette semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "essaya": {
     "meaning": "Probó, intentó; pasado simple de 'essayer' (il/elle).",
@@ -3317,10 +3518,11 @@
     "antonyms": []
   },
   "fait": {
-    "meaning": "Hecho; participio pasado de 'faire', en 'être fait de' = estar hecho de.",
+    "meaning": "(1) Hecho; participio pasado de 'faire', en 'être fait de' = estar hecho de. (2) Hecho; participio pasado de 'faire' con el auxiliar 'avoir' (haber hecho algo).",
     "examples": [
-      "Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
-      "Ce pull est fait de laine douce."
+      "(1) Il était fait de coton blanc, si tendre et si doux qu'on aurait dit un oreiller tout moelleux.",
+      "(1) Ce pull est fait de laine douce.",
+      "(2) Il t'aide à voir si tu as fait de l'exercice, pas combien de poids tu as perdu."
     ],
     "synonyms": [],
     "antonyms": []
@@ -3380,6 +3582,15 @@
     ],
     "antonyms": []
   },
+  "façons": {
+    "meaning": "Maneras, formas; plural de 'façon'.",
+    "examples": [
+      "Ton corps change de plusieurs façons.",
+      "Il y a plusieurs façons de rester motivé."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "fenêtre": {
     "meaning": "Ventana.",
     "examples": [
@@ -3416,6 +3627,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "fiables": {
+    "meaning": "Fiables, confiables; plural de 'fiable'.",
+    "examples": [
+      "Les habitudes sont plus fiables que la motivation.",
+      "Ces habitudes sont fiables sur le long terme."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "fier": {
     "meaning": "Orgulloso.",
     "examples": [
@@ -3442,6 +3662,17 @@
     ],
     "synonyms": [],
     "antonyms": []
+  },
+  "finir": {
+    "meaning": "Terminar, acabar.",
+    "examples": [
+      "- Commence avec des petits objectifs que tu peux vraiment finir",
+      "Tu dois finir ton entraînement avant midi."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "commencer"
+    ]
   },
   "fit": {
     "meaning": "Hizo; pasado simple de 'faire' (il/elle).",
@@ -3533,10 +3764,11 @@
     "antonyms": []
   },
   "force": {
-    "meaning": "Fuerzas / (en imperativo negativo) fuerces; de 'forcer' (tu).",
+    "meaning": "(1) Fuerzas / (en imperativo negativo) fuerces; de 'forcer' (tu). (2) Fuerza; sustantivo femenino, en el sentido de fortaleza física.",
     "examples": [
-      "**Étape 4 :** Ne force pas un étirement. Une légère tension est normale. La douleur ne l'est pas.",
-      "Ne force pas trop pendant l'étirement."
+      "(1) **Étape 4 :** Ne force pas un étirement. Une légère tension est normale. La douleur ne l'est pas.",
+      "(1) Ne force pas trop pendant l'étirement.",
+      "(2) **Force** : Peux-tu lever plus de poids ou faire plus de répétitions que le mois dernier ?"
     ],
     "synonyms": [],
     "antonyms": []
@@ -3857,6 +4089,17 @@
       "petite"
     ]
   },
+  "grandes": {
+    "meaning": "Grandes; femenino plural de 'grand'.",
+    "examples": [
+      "- Célèbre les petites victoires, pas seulement les grandes",
+      "Les grandes victoires demandent du temps."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "petites"
+    ]
+  },
   "grandir": {
     "meaning": "Crecer.",
     "examples": [
@@ -3906,6 +4149,24 @@
     "examples": [
       "— Mamie vient habiter avec nous ? demanda Léo, les yeux pétillants.",
       "Sa mamie ne va pas habiter avec eux."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "habitude": {
+    "meaning": "Hábito, costumbre.",
+    "examples": [
+      "## Pratique : habitude de suivi des progrès hebdomadaire",
+      "C'est une bonne habitude à garder."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "habitudes": {
+    "meaning": "Hábitos; plural de 'habitude'.",
+    "examples": [
+      "## Le suivi des habitudes",
+      "Tes habitudes influencent ta santé."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4049,6 +4310,15 @@
     "examples": [
       "Léo hocha la tête. Il s'approcha de Mila et, avec une infinie délicatesse, il lui caressa la joue du bout du doigt. Mila arrêta de pleurer et fixa son frère avec curiosité.",
       "Léo hocha la tête pour dire oui."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "humeur": {
+    "meaning": "Humor, estado de ánimo.",
+    "examples": [
+      "- **Humeur** : Te sens-tu plus calme ou plus heureux ?",
+      "Le sport améliore mon humeur."
     ],
     "synonyms": [],
     "antonyms": []
@@ -4619,6 +4889,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "l'énergie": {
+    "meaning": "La energía; forma elidida de 'la' + 'énergie'.",
+    "examples": [
+      "**Étape 1 :** Choisis une méthode de suivi dans la liste ci-dessus (par exemple, la force ou l'énergie).",
+      "L'énergie revient après une bonne nuit de sommeil."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "l'épuisement": {
     "meaning": "El agotamiento; forma elidida de 'le' + 'épuisement'.",
     "examples": [
@@ -4764,6 +5043,17 @@
     "synonyms": [],
     "antonyms": []
   },
+  "lentes": {
+    "meaning": "Lentas; femenino plural de 'lent'.",
+    "examples": [
+      "Cela t'aide à voir de vrais résultats, même pendant les semaines lentes.",
+      "Pendant les semaines lentes, reste patient."
+    ],
+    "synonyms": [],
+    "antonyms": [
+      "rapides"
+    ]
+  },
   "lents": {
     "meaning": "Lentos; masculino plural de 'lent'.",
     "examples": [
@@ -4825,6 +5115,15 @@
     "examples": [
       "À partir de ce jour, Léo apprit à être le plus doux des grands frères. Il chantait « Fais dodo, Colas mon p'tit frère » (en changeant les paroles pour Mila, bien sûr) quand elle était réveillée, créant un lien unique entre eux.",
       "Un lien unique se créa entre les deux frères."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "ligne": {
+    "meaning": "Línea, renglón.",
+    "examples": [
+      "Remplis une ligne chaque jour.",
+      "Écris une ligne dans ton journal chaque soir."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5153,6 +5452,15 @@
       "excès"
     ]
   },
+  "manques": {
+    "meaning": "Faltas, pierdes; presente de 'manquer' (tú).",
+    "examples": [
+      "- Si tu manques un jour, n'abandonne pas. Recommence le jour suivant.",
+      "Si tu manques une séance, ce n'est pas grave."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "marche": {
     "meaning": "(1) Camina/marcho; imperativo/presente de 'marcher' (tú/yo). (2) Marcha, caminata (sustantivo).",
     "examples": [
@@ -5163,11 +5471,38 @@
     "synonyms": [],
     "antonyms": []
   },
+  "marcher": {
+    "meaning": "Caminar.",
+    "examples": [
+      "- **Endurance** : Peux-tu marcher, courir ou faire du vélo plus longtemps sans arrêter ?",
+      "J'aime marcher dans le parc le matin."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "mardi": {
     "meaning": "Martes.",
     "examples": [
       "| Mardi | Musculation |",
       "Mardi, je fais de la musculation."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "marque": {
+    "meaning": "Marca; sustantivo femenino, o presente de 'marquer' (il/elle).",
+    "examples": [
+      "- Un calendrier avec une marque chaque jour d'exercice",
+      "Elle marque chaque jour d'exercice sur son calendrier."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "marquer": {
+    "meaning": "Marcar.",
+    "examples": [
+      "Marquer un suivi d'habitudes te donne une petite récompense.",
+      "Marquer tes progrès aide à rester motivé."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5226,6 +5561,24 @@
     "examples": [
       "— Et si le bébé prend mes jouets ? demanda Léo, inquiet.",
       "Je garderai mes jouets préférés."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "mesurer": {
+    "meaning": "Medir.",
+    "examples": [
+      "## Façons de mesurer les progrès au-delà de la balance",
+      "Il est utile de mesurer ses progrès chaque mois."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "mesures": {
+    "meaning": "Mides; presente de 'mesurer' (tú).",
+    "examples": [
+      "**Suivre ses progrès** signifie que tu notes ou mesures tes changements avec le temps.",
+      "Comment mesures-tu tes progrès ?"
     ],
     "synonyms": [],
     "antonyms": []
@@ -5497,6 +5850,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "montre": {
+    "meaning": "Muestra; presente de 'montrer' (il/elle).",
+    "examples": [
+      "Mais la balance ne montre pas tout.",
+      "Cette photo montre un grand changement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "montrent": {
     "meaning": "Muestran; presente de 'montrer' (ils/elles).",
     "examples": [
@@ -5520,6 +5882,15 @@
     "examples": [
       "L'épuisement arrive quand tu fais trop d'exercice, sans assez de repos. Tu te sens fatigué, tu as mal aux muscles, et tu perds ta motivation.",
       "Elle a beaucoup de motivation aujourd'hui."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "motivé": {
+    "meaning": "Motivado; participio pasado/adjetivo masculino de 'motiver'.",
+    "examples": [
+      "# Exercice physique — Sujet 8 : suivre ses progrès et rester motivé",
+      "Il reste motivé même les jours difficiles."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5641,11 +6012,29 @@
     "synonyms": [],
     "antonyms": []
   },
+  "méthode": {
+    "meaning": "Método.",
+    "examples": [
+      "**Étape 1 :** Choisis une méthode de suivi dans la liste ci-dessus (par exemple, la force ou l'énergie).",
+      "Cette méthode est simple à suivre."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "même": {
     "meaning": "Mismo, incluso.",
     "examples": [
       "Brûler plus d'énergie, même au repos.",
       "Il s'entraîne même quand il est fatigué."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "n'abandonne": {
+    "meaning": "No abandones; imperativo negativo de 'abandonner' (tu).",
+    "examples": [
+      "- Si tu manques un jour, n'abandonne pas. Recommence le jour suivant.",
+      "Même si c'est difficile, n'abandonne pas."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5774,6 +6163,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "nombre": {
+    "meaning": "Número, cantidad.",
+    "examples": [
+      "- **Série** — le nombre de jours ou de semaines où tu fais quelque chose de suite",
+      "Le nombre de jours actifs augmente chaque semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "nombreuses": {
     "meaning": "Numerosas; femenino plural de 'nombreux'.",
     "examples": [
@@ -5814,6 +6212,33 @@
     "examples": [
       "**Étape 4 :** Ne force pas un étirement. Une légère tension est normale. La douleur ne l'est pas.",
       "Une légère tension est normale pendant l'étirement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "note": {
+    "meaning": "Nota; sustantivo femenino.",
+    "examples": [
+      "| Jour | As-tu fait de l'exercice ? | Note |",
+      "Écris une note après chaque séance."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "noter": {
+    "meaning": "Anotar, apuntar.",
+    "examples": [
+      "- **Suivre ses progrès** — noter ou mesurer tes changements avec le temps",
+      "Il est utile de noter ses progrès chaque semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "notes": {
+    "meaning": "Anotas, apuntas; presente de 'noter' (tú).",
+    "examples": [
+      "**Suivre ses progrès** signifie que tu notes ou mesures tes changements avec le temps.",
+      "Tu notes tes résultats dans un carnet."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5887,6 +6312,15 @@
     "examples": [
       "Un bon objectif est 2 à 3 séances de musculation par semaine, avec un jour de repos entre les séances.",
       "Mon objectif est de m'entraîner trois fois par semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "objectifs": {
+    "meaning": "Objetivos; plural de 'objectif'.",
+    "examples": [
+      "- Commence avec des petits objectifs que tu peux vraiment finir",
+      "Fixe des objectifs réalistes pour ce mois."
     ],
     "synonyms": [],
     "antonyms": []
@@ -5972,11 +6406,29 @@
     "synonyms": [],
     "antonyms": []
   },
+  "outil": {
+    "meaning": "Herramienta.",
+    "examples": [
+      "La balance est seulement un outil.",
+      "Un carnet est un bon outil pour suivre tes habitudes."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "ouvrit": {
     "meaning": "Abrió; pasado simple de 'ouvrir' (il/elle).",
     "examples": [
       "Mila ouvrit ses petits yeux et sembla lui faire un sourire. À cet instant précis, Léo sentit une petite chaleur agréable dans son cœur.",
       "Mila ouvrit ses petits yeux doucement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "où": {
+    "meaning": "Donde, o cuando; pronombre relativo (temporal en 'le jour où' = el día en que).",
+    "examples": [
+      "**Étape 3 :** Chaque jour où tu fais de l'exercice, fais une marque.",
+      "Le jour où tu commences, note la date."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6111,6 +6563,15 @@
     "examples": [
       "À partir de ce jour, Léo apprit à être le plus doux des grands frères. Il chantait « Fais dodo, Colas mon p'tit frère » (en changeant les paroles pour Mila, bien sûr) quand elle était réveillée, créant un lien unique entre eux.",
       "Il changea un peu les paroles de la chanson."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "part": {
+    "meaning": "Se va, parte; presente de 'partir' (il/elle).",
+    "examples": [
+      "La motivation vient et part.",
+      "Elle part tôt pour aller courir."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6313,6 +6774,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "perdu": {
+    "meaning": "Perdido; participio pasado de 'perdre'.",
+    "examples": [
+      "Il t'aide à voir si tu as fait de l'exercice, pas combien de poids tu as perdu.",
+      "J'ai perdu ma motivation cette semaine, mais je continue."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "performance": {
     "meaning": "Rendimiento, desempeño.",
     "examples": [
@@ -6414,11 +6884,38 @@
     "synonyms": [],
     "antonyms": []
   },
+  "peux-tu": {
+    "meaning": "¿Puedes...?; presente de 'pouvoir' (tú) en pregunta invertida.",
+    "examples": [
+      "- **Force** : Peux-tu lever plus de poids ou faire plus de répétitions que le mois dernier ?",
+      "Peux-tu courir plus longtemps qu'avant ?"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "phase": {
     "meaning": "Fase, etapa.",
     "examples": [
       "Phase | Mouvement | Temps",
       "La récupération est une phase importante de l'entraînement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "photos": {
+    "meaning": "Fotos; plural de 'photo'.",
+    "examples": [
+      "- **Photos** : Est-ce que les photos de progrès montrent un changement ?",
+      "Les photos montrent tes progrès avec le temps."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "phrase": {
+    "meaning": "Frase, oración.",
+    "examples": [
+      "**Étape 4 :** À la fin de la semaine, écris une phrase sur tes progrès.",
+      "Écris une phrase simple sur ta journée."
     ],
     "synonyms": [],
     "antonyms": []
@@ -6938,6 +7435,15 @@
     ],
     "antonyms": []
   },
+  "progrès": {
+    "meaning": "Progreso(s); sustantivo masculino invariable.",
+    "examples": [
+      "# Exercice physique — Sujet 8 : suivre ses progrès et rester motivé",
+      "Tes progrès sont visibles après un mois."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "promenade": {
     "meaning": "Paseo.",
     "examples": [
@@ -7361,6 +7867,15 @@
     ],
     "antonyms": []
   },
+  "recommence": {
+    "meaning": "Recomienza, vuelve a empezar; imperativo de 'recommencer' (tu).",
+    "examples": [
+      "- Si tu manques un jour, n'abandonne pas. Recommence le jour suivant.",
+      "Si tu échoues, recommence demain."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "reconnaître": {
     "meaning": "Reconocer.",
     "examples": [
@@ -7451,6 +7966,15 @@
     "examples": [
       "Il était une fois un petit garçon nommé Léo. À trois ans, Léo vivait dans une maison remplie de rires et de tendresse avec sa maman et son papa. Ce qu'il aimait par-dessus tout, c'était construire des tours vertigineuses avec ses cubes, faire de la peinture avec beaucoup de couleurs, et écouter des histoires magiques avant de dormir.",
       "Il vivait dans une maison remplie de rires."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "remplis": {
+    "meaning": "Llena, completa; imperativo de 'remplir' (tu).",
+    "examples": [
+      "Remplis une ligne chaque jour.",
+      "Remplis ce tableau chaque semaine."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7771,6 +8295,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "récompense": {
+    "meaning": "Recompensa.",
+    "examples": [
+      "Marquer un suivi d'habitudes te donne une petite récompense.",
+      "Chaque petite victoire mérite une récompense."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "récupération": {
     "meaning": "Recuperación.",
     "examples": [
@@ -7794,6 +8327,15 @@
     "examples": [
       "Elles réduisent la raideur",
       "Ces exercices réduisent le stress."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "régulièrement": {
+    "meaning": "Regularmente.",
+    "examples": [
+      "- **Constant** — faire quelque chose régulièrement, encore et encore",
+      "Il s'entraîne régulièrement depuis un mois."
     ],
     "synonyms": [],
     "antonyms": []
@@ -7854,6 +8396,15 @@
       "fragile"
     ]
   },
+  "résultats": {
+    "meaning": "Resultados; plural de 'résultat'.",
+    "examples": [
+      "Cela t'aide à voir de vrais résultats, même pendant les semaines lentes.",
+      "Les résultats arrivent avec le temps et la patience."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "réveille": {
     "meaning": "Despierta; presente de 'réveiller' (il/elle).",
     "examples": [
@@ -7870,6 +8421,15 @@
     "examples": [
       "- Le matin, pour réveiller ton corps",
       "Un bon étirement peut réveiller le corps."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "réveillé": {
+    "meaning": "Despierto; participio pasado/adjetivo masculino de 'réveiller'.",
+    "examples": [
+      "- **Énergie** : Te sens-tu plus réveillé pendant la journée ?",
+      "Je me sens réveillé après une bonne nuit de sommeil."
     ],
     "synonyms": [],
     "antonyms": []
@@ -8129,6 +8689,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "semaines": {
+    "meaning": "Semanas; plural de 'semaine'.",
+    "examples": [
+      "Cela t'aide à voir de vrais résultats, même pendant les semaines lentes.",
+      "Après quelques semaines, tu verras des résultats."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "sembla": {
     "meaning": "Pareció; pasado simple de 'sembler' (il/elle).",
     "examples": [
@@ -8152,6 +8721,15 @@
       "(1) | Rotation des épaules | Épaules | 10 rotations dans chaque sens |",
       "(1) Tourne dans l'autre sens.",
       "(2) Tu te sens fatigué tout le temps"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sens-tu": {
+    "meaning": "¿Sientes...?; presente de 'sentir' (tú) en pregunta invertida, con 'te'.",
+    "examples": [
+      "- **Énergie** : Te sens-tu plus réveillé pendant la journée ?",
+      "Te sens-tu fatigué après l'entraînement ?"
     ],
     "synonyms": [],
     "antonyms": []
@@ -8186,6 +8764,15 @@
     "meaning": "Huela; subjuntivo presente de 'sentir' (il/elle).",
     "examples": [
       "Ensuite, Mina posa une question qui la turlupinait : « Et qu'est-ce que Maman utilise pour que sa bouche sente bon la fleur ? »"
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "sentiment": {
+    "meaning": "Sentimiento.",
+    "examples": [
+      "- **Motivation** — le sentiment qui te donne envie de faire quelque chose",
+      "La fierté est un sentiment agréable après l'effort."
     ],
     "synonyms": [],
     "antonyms": []
@@ -8286,6 +8873,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "signifie": {
+    "meaning": "Significa; presente de 'signifier' (il/elle).",
+    "examples": [
+      "**Suivre ses progrès** signifie que tu notes ou mesures tes changements avec le temps.",
+      "Rester motivé signifie continuer même les jours difficiles."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "silencieux": {
     "meaning": "Silencioso; masculino singular de 'silencieux'.",
     "examples": [
@@ -8371,6 +8967,15 @@
     "antonyms": [
       "fragile"
     ]
+  },
+  "sommeil": {
+    "meaning": "Sueño.",
+    "examples": [
+      "- **Sommeil** : Dors-tu mieux après les jours d'exercice ?",
+      "Un bon sommeil aide à récupérer après l'exercice."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "son": {
     "meaning": "Su; posesivo masculino singular de 3ª persona.",
@@ -8556,6 +9161,33 @@
     "synonyms": [],
     "antonyms": []
   },
+  "suite": {
+    "meaning": "Seguido, consecutivo; en 'de suite' = de seguido/consecutivos.",
+    "examples": [
+      "- Suis ta **série** (combien de jours ou de semaines de suite)",
+      "Il a couru trois jours de suite."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "suivant": {
+    "meaning": "Siguiente; masculino singular de 'suivant'.",
+    "examples": [
+      "- Si tu manques un jour, n'abandonne pas. Recommence le jour suivant.",
+      "Rendez-vous le jour suivant pour continuer."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "suivi": {
+    "meaning": "Seguimiento; sustantivo masculino.",
+    "examples": [
+      "## Le suivi des habitudes",
+      "Le suivi de tes habitudes prend seulement une minute."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "suivit": {
     "meaning": "Siguió; pasado simple de 'suivre' (il/elle).",
     "examples": [
@@ -8695,6 +9327,15 @@
     "antonyms": [
       "actifs"
     ]
+  },
+  "série": {
+    "meaning": "Serie, racha.",
+    "examples": [
+      "- Suis ta **série** (combien de jours ou de semaines de suite)",
+      "Elle a une série de dix jours d'exercice."
+    ],
+    "synonyms": [],
+    "antonyms": []
   },
   "sûr": {
     "meaning": "Seguro; aquí 'bien sûr' = por supuesto.",
@@ -9433,6 +10074,15 @@
     "synonyms": [],
     "antonyms": []
   },
+  "victoires": {
+    "meaning": "Victorias; plural de 'victoire'.",
+    "examples": [
+      "- Célèbre les petites victoires, pas seulement les grandes",
+      "Chaque petite victoire compte."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "vie": {
     "meaning": "Vida.",
     "examples": [
@@ -9507,6 +10157,15 @@
       "légère"
     ]
   },
+  "voir": {
+    "meaning": "Ver.",
+    "examples": [
+      "Cela t'aide à voir de vrais résultats, même pendant les semaines lentes.",
+      "C'est motivant de voir ses progrès chaque semaine."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "vois": {
     "meaning": "Veo, ves; presente de 'voir' (je/tu).",
     "examples": [
@@ -9541,6 +10200,15 @@
     "examples": [
       "Là-bas, les papillons volaient au ralenti et les abeilles bourdonnaient doucement :",
       "Les oiseaux volaient très haut dans le ciel."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vont": {
+    "meaning": "Van, quedan, sientan (ropa); presente de 'aller' (ils/elles).",
+    "examples": [
+      "- **Vêtements** : Est-ce que tes vêtements te vont différemment ?",
+      "Ces vêtements lui vont bien."
     ],
     "synonyms": [],
     "antonyms": []
@@ -9610,11 +10278,56 @@
     "synonyms": [],
     "antonyms": []
   },
+  "vrais": {
+    "meaning": "Verdaderos; masculino plural de 'vrai'.",
+    "examples": [
+      "Cela t'aide à voir de vrais résultats, même pendant les semaines lentes.",
+      "Ce sont de vrais progrès, pas seulement de la chance."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vélo": {
+    "meaning": "Bicicleta; en 'faire du vélo' = andar en bicicleta.",
+    "examples": [
+      "- **Endurance** : Peux-tu marcher, courir ou faire du vélo plus longtemps sans arrêter ?",
+      "Il fait du vélo chaque dimanche matin."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vérification": {
+    "meaning": "Verificación, revisión.",
+    "examples": [
+      "- Une simple liste de vérification dans un carnet",
+      "Fais une vérification de tes objectifs chaque mois."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
   "vérifie": {
     "meaning": "Verifica; imperativo/presente de 'vérifier' (tú).",
     "examples": [
       "Vérifie ta posture plusieurs fois chaque heure.",
       "Vérifie la porte avant de partir."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vérifie-les": {
+    "meaning": "Verifícalos/revísalos; imperativo de 'vérifier' (tu) + pronombre 'les'.",
+    "examples": [
+      "Choisis deux ou trois de ces façons. Vérifie-les chaque semaine ou deux.",
+      "Note tes objectifs et vérifie-les chaque dimanche."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "vêtements": {
+    "meaning": "Ropa; plural de 'vêtement'.",
+    "examples": [
+      "- **Vêtements** : Est-ce que tes vêtements te vont différemment ?",
+      "Ses vêtements sont plus confortables maintenant."
     ],
     "synonyms": [],
     "antonyms": []
@@ -9738,6 +10451,15 @@
     "examples": [
       "- Un risque plus élevé de blessure",
       "Un risque élevé de blessure justifie un bon échauffement."
+    ],
+    "synonyms": [],
+    "antonyms": []
+  },
+  "énergie": {
+    "meaning": "Energía.",
+    "examples": [
+      "- **Énergie** : Te sens-tu plus réveillé pendant la journée ?",
+      "Le sport te donne plus d'énergie pendant la journée."
     ],
     "synonyms": [],
     "antonyms": []
