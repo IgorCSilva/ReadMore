@@ -76,7 +76,7 @@ This is the table of contents for the "Good Health" learning theme. It lists **c
 | Physical Exercise | EXE-5 | Building a Sustainable Routine | Done |
 | Physical Exercise | EXE-6 | Exercise for Desk Workers & Sedentary Lifestyles | Done |
 | Physical Exercise | EXE-7 | Recovery & Injury Prevention | Done |
-| Physical Exercise | EXE-8 | Tracking Progress & Staying Motivated | Not Started |
+| Physical Exercise | EXE-8 | Tracking Progress & Staying Motivated | Done |
 | Sleep | SLP-1 | Sleep Fundamentals | Not Started |
 | Sleep | SLP-2 | Sleep Hygiene Basics | Not Started |
 | Sleep | SLP-3 | Building a Bedtime Routine | Not Started |

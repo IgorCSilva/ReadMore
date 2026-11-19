@@ -1,0 +1,702 @@
+[
+  {
+    "id": "fr-sent-0784",
+    "sentence": "Le train arrive à la gare à huit heures.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0270",
+      "fr-wd-0171",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0288",
+      "fr-wd-0258",
+      "fr-wd-0145"
+    ]
+  },
+  {
+    "id": "fr-sent-0785",
+    "sentence": "Tu prends le train pour voyager loin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0030",
+      "fr-wd-0270",
+      "fr-wd-0291",
+      "fr-wd-0247"
+    ]
+  },
+  {
+    "id": "fr-sent-0786",
+    "sentence": "Ce train est confortable et rapide.",
+    "word_ids": [
+      "fr-wd-0270",
+      "fr-wd-0020",
+      "fr-wd-0004"
+    ]
+  },
+  {
+    "id": "fr-sent-0787",
+    "sentence": "Le bus arrive dans cinq minutes.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0271",
+      "fr-wd-0171",
+      "fr-wd-0080",
+      "fr-wd-0142"
+    ]
+  },
+  {
+    "id": "fr-sent-0788",
+    "sentence": "Tu attends le bus à l'arrêt.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0030",
+      "fr-wd-0271",
+      "fr-wd-0258",
+      "fr-wd-0286"
+    ]
+  },
+  {
+    "id": "fr-sent-0789",
+    "sentence": "Ce bus est toujours plein le matin.",
+    "word_ids": [
+      "fr-wd-0271",
+      "fr-wd-0020",
+      "fr-wd-0176"
+    ]
+  },
+  {
+    "id": "fr-sent-0790",
+    "sentence": "Cette voiture est très rapide.",
+    "word_ids": [
+      "fr-wd-0272",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0791",
+    "sentence": "Tu conduis la voiture avec prudence.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0031",
+      "fr-wd-0272",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0792",
+    "sentence": "Ma voiture est garée près de la maison.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0272",
+      "fr-wd-0020",
+      "fr-wd-0246",
+      "fr-wd-0025",
+      "fr-wd-0031",
+      "fr-wd-0060"
+    ]
+  },
+  {
+    "id": "fr-sent-0793",
+    "sentence": "L'avion part à midi.",
+    "word_ids": [
+      "fr-wd-0273",
+      "fr-wd-0258"
+    ]
+  },
+  {
+    "id": "fr-sent-0794",
+    "sentence": "Tu voyages en avion pour la première fois.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0273",
+      "fr-wd-0031",
+      "fr-wd-0223"
+    ]
+  },
+  {
+    "id": "fr-sent-0795",
+    "sentence": "Cet avion est très grand.",
+    "word_ids": [
+      "fr-wd-0273",
+      "fr-wd-0020",
+      "fr-wd-0234"
+    ]
+  },
+  {
+    "id": "fr-sent-0796",
+    "sentence": "Le bateau arrive dans le port.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0274",
+      "fr-wd-0171",
+      "fr-wd-0080",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0797",
+    "sentence": "Tu prends le bateau pour traverser la mer.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0030",
+      "fr-wd-0274",
+      "fr-wd-0255",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0798",
+    "sentence": "Ce bateau est très grand.",
+    "word_ids": [
+      "fr-wd-0274",
+      "fr-wd-0020",
+      "fr-wd-0234"
+    ]
+  },
+  {
+    "id": "fr-sent-0799",
+    "sentence": "Mon vélo est neuf.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0275",
+      "fr-wd-0020",
+      "fr-wd-0146"
+    ]
+  },
+  {
+    "id": "fr-sent-0800",
+    "sentence": "Tu voyages à vélo aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0258",
+      "fr-wd-0275",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0801",
+    "sentence": "Son vélo est rouge et rapide.",
+    "word_ids": [
+      "fr-wd-0034",
+      "fr-wd-0275",
+      "fr-wd-0020",
+      "fr-wd-0004"
+    ]
+  },
+  {
+    "id": "fr-sent-0802",
+    "sentence": "Le taxi arrive rapidement.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0276",
+      "fr-wd-0171"
+    ]
+  },
+  {
+    "id": "fr-sent-0803",
+    "sentence": "Tu prends un taxi pour aller à la gare.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0075",
+      "fr-wd-0276",
+      "fr-wd-0101",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0288"
+    ]
+  },
+  {
+    "id": "fr-sent-0804",
+    "sentence": "Ce taxi est très cher.",
+    "word_ids": [
+      "fr-wd-0276",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0805",
+    "sentence": "Le métro arrive toutes les cinq minutes.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0277",
+      "fr-wd-0171",
+      "fr-wd-0057",
+      "fr-wd-0142"
+    ]
+  },
+  {
+    "id": "fr-sent-0806",
+    "sentence": "Tu prends le métro pour aller en ville.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0030",
+      "fr-wd-0277",
+      "fr-wd-0101"
+    ]
+  },
+  {
+    "id": "fr-sent-0807",
+    "sentence": "Ce métro est très rapide.",
+    "word_ids": [
+      "fr-wd-0277",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0808",
+    "sentence": "Tu vas à l'école à pied.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0016",
+      "fr-wd-0258",
+      "fr-wd-0278"
+    ]
+  },
+  {
+    "id": "fr-sent-0809",
+    "sentence": "Je rentre à pied après le travail.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0173",
+      "fr-wd-0278",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0810",
+    "sentence": "Nous préférons aller à pied aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0054",
+      "fr-wd-0101",
+      "fr-wd-0278",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0811",
+    "sentence": "Tu dois partir avant midi.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0279",
+      "fr-wd-0179"
+    ]
+  },
+  {
+    "id": "fr-sent-0812",
+    "sentence": "Je vais partir dans cinq minutes.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0017",
+      "fr-wd-0279",
+      "fr-wd-0080",
+      "fr-wd-0142"
+    ]
+  },
+  {
+    "id": "fr-sent-0813",
+    "sentence": "Il est important de partir à l'heure.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0279",
+      "fr-wd-0258",
+      "fr-wd-0148"
+    ]
+  },
+  {
+    "id": "fr-sent-0814",
+    "sentence": "Tu dois monter dans le train rapidement.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0280",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0270"
+    ]
+  },
+  {
+    "id": "fr-sent-0815",
+    "sentence": "Je vais monter dans le bus maintenant.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0017",
+      "fr-wd-0280",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0271",
+      "fr-wd-0150"
+    ]
+  },
+  {
+    "id": "fr-sent-0816",
+    "sentence": "Il faut monter avant le départ.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0280",
+      "fr-wd-0179",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0817",
+    "sentence": "Tu dois descendre à la prochaine gare.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0281",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0288"
+    ]
+  },
+  {
+    "id": "fr-sent-0818",
+    "sentence": "Je vais descendre de ce train bientôt.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0017",
+      "fr-wd-0281",
+      "fr-wd-0025",
+      "fr-wd-0270"
+    ]
+  },
+  {
+    "id": "fr-sent-0819",
+    "sentence": "Il faut descendre ici pour le bus.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0281",
+      "fr-wd-0081",
+      "fr-wd-0030",
+      "fr-wd-0271"
+    ]
+  },
+  {
+    "id": "fr-sent-0820",
+    "sentence": "Tu dois prendre un taxi maintenant.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0282",
+      "fr-wd-0075",
+      "fr-wd-0276",
+      "fr-wd-0150"
+    ]
+  },
+  {
+    "id": "fr-sent-0821",
+    "sentence": "Je vais prendre le métro ce matin.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0017",
+      "fr-wd-0282",
+      "fr-wd-0030",
+      "fr-wd-0277",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0822",
+    "sentence": "Il est bon de prendre le bus parfois.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0025",
+      "fr-wd-0282",
+      "fr-wd-0030",
+      "fr-wd-0271"
+    ]
+  },
+  {
+    "id": "fr-sent-0823",
+    "sentence": "Tu dois conduire avec prudence.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0283",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0824",
+    "sentence": "Je vais conduire la voiture demain.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0017",
+      "fr-wd-0283",
+      "fr-wd-0031",
+      "fr-wd-0272",
+      "fr-wd-0152"
+    ]
+  },
+  {
+    "id": "fr-sent-0825",
+    "sentence": "Il est important de conduire lentement ici.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0283",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0826",
+    "sentence": "Ce billet coûte cher.",
+    "word_ids": [
+      "fr-wd-0284"
+    ]
+  },
+  {
+    "id": "fr-sent-0827",
+    "sentence": "Tu achètes un billet pour le train.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0075",
+      "fr-wd-0284",
+      "fr-wd-0030",
+      "fr-wd-0270"
+    ]
+  },
+  {
+    "id": "fr-sent-0828",
+    "sentence": "Mon billet est dans mon sac.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0284",
+      "fr-wd-0020",
+      "fr-wd-0080",
+      "fr-wd-0022"
+    ]
+  },
+  {
+    "id": "fr-sent-0829",
+    "sentence": "Ce voyage est très long.",
+    "word_ids": [
+      "fr-wd-0285",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0830",
+    "sentence": "Notre voyage commence demain.",
+    "word_ids": [
+      "fr-wd-0055",
+      "fr-wd-0285",
+      "fr-wd-0152"
+    ]
+  },
+  {
+    "id": "fr-sent-0831",
+    "sentence": "Tu aimes ce voyage en famille.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0285",
+      "fr-wd-0036"
+    ]
+  },
+  {
+    "id": "fr-sent-0832",
+    "sentence": "Cet arrêt est près de la gare.",
+    "word_ids": [
+      "fr-wd-0286",
+      "fr-wd-0020",
+      "fr-wd-0246",
+      "fr-wd-0025",
+      "fr-wd-0031",
+      "fr-wd-0288"
+    ]
+  },
+  {
+    "id": "fr-sent-0833",
+    "sentence": "Tu attends à cet arrêt chaque matin.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0258",
+      "fr-wd-0286",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0834",
+    "sentence": "Le bus arrive à cet arrêt bientôt.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0271",
+      "fr-wd-0171",
+      "fr-wd-0258",
+      "fr-wd-0286"
+    ]
+  },
+  {
+    "id": "fr-sent-0835",
+    "sentence": "Cet horaire change chaque semaine.",
+    "word_ids": [
+      "fr-wd-0287",
+      "fr-wd-0163"
+    ]
+  },
+  {
+    "id": "fr-sent-0836",
+    "sentence": "Tu regardes l'horaire avant de partir.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0287",
+      "fr-wd-0179",
+      "fr-wd-0025",
+      "fr-wd-0279"
+    ]
+  },
+  {
+    "id": "fr-sent-0837",
+    "sentence": "Cet horaire est très utile.",
+    "word_ids": [
+      "fr-wd-0287",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0838",
+    "sentence": "Cette gare est très grande.",
+    "word_ids": [
+      "fr-wd-0288",
+      "fr-wd-0020",
+      "fr-wd-0235"
+    ]
+  },
+  {
+    "id": "fr-sent-0839",
+    "sentence": "Tu attends ton ami à la gare.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0206",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0288"
+    ]
+  },
+  {
+    "id": "fr-sent-0840",
+    "sentence": "Le train arrive à la gare bientôt.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0270",
+      "fr-wd-0171",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0288"
+    ]
+  },
+  {
+    "id": "fr-sent-0841",
+    "sentence": "Ce passager attend patiemment.",
+    "word_ids": [
+      "fr-wd-0289"
+    ]
+  },
+  {
+    "id": "fr-sent-0842",
+    "sentence": "Tu es un passager prudent.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0075",
+      "fr-wd-0289"
+    ]
+  },
+  {
+    "id": "fr-sent-0843",
+    "sentence": "Le passager monte dans le train.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0289",
+      "fr-wd-0080",
+      "fr-wd-0030",
+      "fr-wd-0270"
+    ]
+  },
+  {
+    "id": "fr-sent-0844",
+    "sentence": "Ce conducteur conduit très bien.",
+    "word_ids": [
+      "fr-wd-0290",
+      "fr-wd-0012"
+    ]
+  },
+  {
+    "id": "fr-sent-0845",
+    "sentence": "Tu es un bon conducteur.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0075",
+      "fr-wd-0005",
+      "fr-wd-0290"
+    ]
+  },
+  {
+    "id": "fr-sent-0846",
+    "sentence": "Le conducteur arrête le bus ici.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0290",
+      "fr-wd-0030",
+      "fr-wd-0271",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0847",
+    "sentence": "Tu aimes voyager en train.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0291",
+      "fr-wd-0270"
+    ]
+  },
+  {
+    "id": "fr-sent-0848",
+    "sentence": "Je vais voyager cet été.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0017",
+      "fr-wd-0291"
+    ]
+  },
+  {
+    "id": "fr-sent-0849",
+    "sentence": "Il est agréable de voyager en bateau.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0291",
+      "fr-wd-0274"
+    ]
+  },
+  {
+    "id": "fr-sent-0850",
+    "sentence": "Ce transport est très rapide.",
+    "word_ids": [
+      "fr-wd-0292",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0851",
+    "sentence": "Tu utilises le transport public chaque jour.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0030",
+      "fr-wd-0292",
+      "fr-wd-0007"
+    ]
+  },
+  {
+    "id": "fr-sent-0852",
+    "sentence": "Le transport en commun est pratique ici.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0292",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  }
+]
