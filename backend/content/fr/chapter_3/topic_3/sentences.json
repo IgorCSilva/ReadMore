@@ -1,0 +1,682 @@
+[
+  {
+    "id": "fr-sent-0853",
+    "sentence": "Tu arrives à l'aéroport avec ta valise.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0258",
+      "fr-wd-0293",
+      "fr-wd-0058"
+    ]
+  },
+  {
+    "id": "fr-sent-0854",
+    "sentence": "L'aéroport est très moderne et grand.",
+    "word_ids": [
+      "fr-wd-0293",
+      "fr-wd-0020",
+      "fr-wd-0004",
+      "fr-wd-0234"
+    ]
+  },
+  {
+    "id": "fr-sent-0855",
+    "sentence": "Il est important d'arriver tôt à l'aéroport.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0102",
+      "fr-wd-0258",
+      "fr-wd-0293"
+    ]
+  },
+  {
+    "id": "fr-sent-0856",
+    "sentence": "Ton vol part dans une heure.",
+    "word_ids": [
+      "fr-wd-0294",
+      "fr-wd-0080",
+      "fr-wd-0076",
+      "fr-wd-0148"
+    ]
+  },
+  {
+    "id": "fr-sent-0857",
+    "sentence": "Tu prends un vol direct pour Paris.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0075",
+      "fr-wd-0294"
+    ]
+  },
+  {
+    "id": "fr-sent-0858",
+    "sentence": "Ce vol est très long et fatigant.",
+    "word_ids": [
+      "fr-wd-0294",
+      "fr-wd-0020",
+      "fr-wd-0004"
+    ]
+  },
+  {
+    "id": "fr-sent-0859",
+    "sentence": "Tu attends l'arrivée de ton ami.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0295",
+      "fr-wd-0025",
+      "fr-wd-0206"
+    ]
+  },
+  {
+    "id": "fr-sent-0860",
+    "sentence": "L'arrivée de ce train est prévue à midi.",
+    "word_ids": [
+      "fr-wd-0295",
+      "fr-wd-0025",
+      "fr-wd-0270",
+      "fr-wd-0020",
+      "fr-wd-0258"
+    ]
+  },
+  {
+    "id": "fr-sent-0861",
+    "sentence": "Il est content de voir l'arrivée de sa famille.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0187",
+      "fr-wd-0295",
+      "fr-wd-0025",
+      "fr-wd-0035",
+      "fr-wd-0036"
+    ]
+  },
+  {
+    "id": "fr-sent-0862",
+    "sentence": "Ton départ est prévu pour demain matin.",
+    "word_ids": [
+      "fr-wd-0296",
+      "fr-wd-0020",
+      "fr-wd-0152",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0863",
+    "sentence": "Tu dois confirmer l'heure de ton départ.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0148",
+      "fr-wd-0025",
+      "fr-wd-0296"
+    ]
+  },
+  {
+    "id": "fr-sent-0864",
+    "sentence": "Le départ de ce vol est retardé.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0296",
+      "fr-wd-0025",
+      "fr-wd-0294",
+      "fr-wd-0020",
+      "fr-wd-0309"
+    ]
+  },
+  {
+    "id": "fr-sent-0865",
+    "sentence": "L'embarquement commence dans dix minutes.",
+    "word_ids": [
+      "fr-wd-0297",
+      "fr-wd-0080",
+      "fr-wd-0147"
+    ]
+  },
+  {
+    "id": "fr-sent-0866",
+    "sentence": "Tu dois te présenter pour l'embarquement.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0200",
+      "fr-wd-0297"
+    ]
+  },
+  {
+    "id": "fr-sent-0867",
+    "sentence": "Il est temps de commencer l'embarquement.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0297"
+    ]
+  },
+  {
+    "id": "fr-sent-0868",
+    "sentence": "Tu dois montrer ta carte d'embarquement.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0298"
+    ]
+  },
+  {
+    "id": "fr-sent-0869",
+    "sentence": "Ma carte d'embarquement est dans mon sac.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0298",
+      "fr-wd-0020",
+      "fr-wd-0080",
+      "fr-wd-0022"
+    ]
+  },
+  {
+    "id": "fr-sent-0870",
+    "sentence": "Il faut imprimer la carte d'embarquement avant le départ.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0031",
+      "fr-wd-0298",
+      "fr-wd-0179",
+      "fr-wd-0030",
+      "fr-wd-0296"
+    ]
+  },
+  {
+    "id": "fr-sent-0871",
+    "sentence": "Tu dois présenter ton passeport ici.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0200",
+      "fr-wd-0299",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0872",
+    "sentence": "Mon passeport est encore valide.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0299",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0873",
+    "sentence": "Il est interdit de voyager sans passeport.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0025",
+      "fr-wd-0291",
+      "fr-wd-0059",
+      "fr-wd-0299"
+    ]
+  },
+  {
+    "id": "fr-sent-0874",
+    "sentence": "Tu dois enregistrer ton bagage maintenant.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0300",
+      "fr-wd-0150"
+    ]
+  },
+  {
+    "id": "fr-sent-0875",
+    "sentence": "Mon bagage est resté dans l'avion.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0300",
+      "fr-wd-0020",
+      "fr-wd-0080",
+      "fr-wd-0273"
+    ]
+  },
+  {
+    "id": "fr-sent-0876",
+    "sentence": "Il faut surveiller son bagage à l'aéroport.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0034",
+      "fr-wd-0300",
+      "fr-wd-0258",
+      "fr-wd-0293"
+    ]
+  },
+  {
+    "id": "fr-sent-0877",
+    "sentence": "Tu attends ton train sur le quai.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0270",
+      "fr-wd-0030",
+      "fr-wd-0301"
+    ]
+  },
+  {
+    "id": "fr-sent-0878",
+    "sentence": "Le quai numéro trois est très loin.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0301",
+      "fr-wd-0140",
+      "fr-wd-0020",
+      "fr-wd-0247"
+    ]
+  },
+  {
+    "id": "fr-sent-0879",
+    "sentence": "Il faut traverser le quai rapidement.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0255",
+      "fr-wd-0030",
+      "fr-wd-0301"
+    ]
+  },
+  {
+    "id": "fr-sent-0880",
+    "sentence": "Tu passes par la sécurité avant d'embarquer.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0259",
+      "fr-wd-0031",
+      "fr-wd-0302",
+      "fr-wd-0179"
+    ]
+  },
+  {
+    "id": "fr-sent-0881",
+    "sentence": "La sécurité vérifie chaque bagage.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0302",
+      "fr-wd-0300"
+    ]
+  },
+  {
+    "id": "fr-sent-0882",
+    "sentence": "Il est normal d'attendre longtemps à la sécurité.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0302"
+    ]
+  },
+  {
+    "id": "fr-sent-0883",
+    "sentence": "Le magasin est ouvert toute la journée.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0020",
+      "fr-wd-0303",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0884",
+    "sentence": "Tu trouves ce guichet encore ouvert?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0303"
+    ]
+  },
+  {
+    "id": "fr-sent-0885",
+    "sentence": "Il reste ouvert même tard le soir.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0303",
+      "fr-wd-0178"
+    ]
+  },
+  {
+    "id": "fr-sent-0886",
+    "sentence": "La porte est ouverte maintenant.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0065",
+      "fr-wd-0020",
+      "fr-wd-0304",
+      "fr-wd-0150"
+    ]
+  },
+  {
+    "id": "fr-sent-0887",
+    "sentence": "Cette fenêtre reste ouverte toute la nuit.",
+    "word_ids": [
+      "fr-wd-0066",
+      "fr-wd-0304",
+      "fr-wd-0031",
+      "fr-wd-0009"
+    ]
+  },
+  {
+    "id": "fr-sent-0888",
+    "sentence": "Ta valise est ouverte sur le lit.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0304",
+      "fr-wd-0030",
+      "fr-wd-0069"
+    ]
+  },
+  {
+    "id": "fr-sent-0889",
+    "sentence": "Le bureau est fermé aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0020",
+      "fr-wd-0305",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0890",
+    "sentence": "Ce magasin reste fermé le dimanche.",
+    "word_ids": [
+      "fr-wd-0305",
+      "fr-wd-0030",
+      "fr-wd-0162"
+    ]
+  },
+  {
+    "id": "fr-sent-0891",
+    "sentence": "Il est fermé depuis une heure.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0305",
+      "fr-wd-0076",
+      "fr-wd-0148"
+    ]
+  },
+  {
+    "id": "fr-sent-0892",
+    "sentence": "La porte est fermée à clé.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0065",
+      "fr-wd-0020",
+      "fr-wd-0306",
+      "fr-wd-0258"
+    ]
+  },
+  {
+    "id": "fr-sent-0893",
+    "sentence": "Cette boutique reste fermée le lundi.",
+    "word_ids": [
+      "fr-wd-0306",
+      "fr-wd-0030",
+      "fr-wd-0156"
+    ]
+  },
+  {
+    "id": "fr-sent-0894",
+    "sentence": "Ta valise est fermée correctement.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0306"
+    ]
+  },
+  {
+    "id": "fr-sent-0895",
+    "sentence": "Ton vol est annulé à cause de la pluie.",
+    "word_ids": [
+      "fr-wd-0294",
+      "fr-wd-0020",
+      "fr-wd-0307",
+      "fr-wd-0258",
+      "fr-wd-0025",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0896",
+    "sentence": "Ce voyage est complètement annulé.",
+    "word_ids": [
+      "fr-wd-0285",
+      "fr-wd-0020",
+      "fr-wd-0307"
+    ]
+  },
+  {
+    "id": "fr-sent-0897",
+    "sentence": "Il est annulé sans aucune explication.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0307",
+      "fr-wd-0059"
+    ]
+  },
+  {
+    "id": "fr-sent-0898",
+    "sentence": "Ta réservation est annulée ce matin.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0308",
+      "fr-wd-0083"
+    ]
+  },
+  {
+    "id": "fr-sent-0899",
+    "sentence": "Cette réunion est annulée aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0308",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-0900",
+    "sentence": "Elle est annulée à la dernière minute.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0020",
+      "fr-wd-0308",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0149"
+    ]
+  },
+  {
+    "id": "fr-sent-0901",
+    "sentence": "Ton vol est retardé d'une heure.",
+    "word_ids": [
+      "fr-wd-0294",
+      "fr-wd-0020",
+      "fr-wd-0309",
+      "fr-wd-0076",
+      "fr-wd-0148"
+    ]
+  },
+  {
+    "id": "fr-sent-0902",
+    "sentence": "Ce train est souvent retardé.",
+    "word_ids": [
+      "fr-wd-0270",
+      "fr-wd-0020",
+      "fr-wd-0309"
+    ]
+  },
+  {
+    "id": "fr-sent-0903",
+    "sentence": "Il est retardé par le mauvais temps.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0309",
+      "fr-wd-0259",
+      "fr-wd-0030"
+    ]
+  },
+  {
+    "id": "fr-sent-0904",
+    "sentence": "Ta connexion est retardée ce soir.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0310",
+      "fr-wd-0090"
+    ]
+  },
+  {
+    "id": "fr-sent-0905",
+    "sentence": "Cette arrivée est toujours retardée.",
+    "word_ids": [
+      "fr-wd-0295",
+      "fr-wd-0020",
+      "fr-wd-0310"
+    ]
+  },
+  {
+    "id": "fr-sent-0906",
+    "sentence": "Elle est retardée par la tempête.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0020",
+      "fr-wd-0310",
+      "fr-wd-0259",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0907",
+    "sentence": "Tu cherches le bon terminal.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0030",
+      "fr-wd-0005",
+      "fr-wd-0311"
+    ]
+  },
+  {
+    "id": "fr-sent-0908",
+    "sentence": "Ce terminal est très moderne.",
+    "word_ids": [
+      "fr-wd-0311",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0909",
+    "sentence": "Il faut changer de terminal rapidement.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0025",
+      "fr-wd-0311"
+    ]
+  },
+  {
+    "id": "fr-sent-0910",
+    "sentence": "Tu trouves l'entrée facilement.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0312"
+    ]
+  },
+  {
+    "id": "fr-sent-0911",
+    "sentence": "Cette entrée est réservée pour les passagers.",
+    "word_ids": [
+      "fr-wd-0312",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0912",
+    "sentence": "Il attend près de l'entrée principale.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0246",
+      "fr-wd-0025",
+      "fr-wd-0312"
+    ]
+  },
+  {
+    "id": "fr-sent-0913",
+    "sentence": "Tu dois signer ce document important.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0313"
+    ]
+  },
+  {
+    "id": "fr-sent-0914",
+    "sentence": "Ce document reste dans mon sac.",
+    "word_ids": [
+      "fr-wd-0313",
+      "fr-wd-0080",
+      "fr-wd-0022"
+    ]
+  },
+  {
+    "id": "fr-sent-0915",
+    "sentence": "Il faut présenter un document valide.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0200",
+      "fr-wd-0075",
+      "fr-wd-0313"
+    ]
+  },
+  {
+    "id": "fr-sent-0916",
+    "sentence": "Tu demandes l'information à ce comptoir.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0314",
+      "fr-wd-0258"
+    ]
+  },
+  {
+    "id": "fr-sent-0917",
+    "sentence": "Cette information est très utile.",
+    "word_ids": [
+      "fr-wd-0314",
+      "fr-wd-0020"
+    ]
+  },
+  {
+    "id": "fr-sent-0918",
+    "sentence": "Il cherche une information précise.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0076",
+      "fr-wd-0314"
+    ]
+  },
+  {
+    "id": "fr-sent-0919",
+    "sentence": "Tu passes par la douane rapidement.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0259",
+      "fr-wd-0031",
+      "fr-wd-0315"
+    ]
+  },
+  {
+    "id": "fr-sent-0920",
+    "sentence": "La douane vérifie chaque valise.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0315"
+    ]
+  },
+  {
+    "id": "fr-sent-0921",
+    "sentence": "Il attend longtemps à la douane.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0315"
+    ]
+  }
+]

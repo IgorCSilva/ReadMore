@@ -1,0 +1,44 @@
+[
+  {
+    "text_id": "top-A0-TR-3-txt-01",
+    "number": 1,
+    "title": "Un Matin à l'Aéroport",
+    "body": "Léa arrive à l'**aéroport** tôt le matin. Elle cherche le bon **terminal** pour son **vol**. Elle montre son **passeport** et sa **carte d'embarquement**. Elle passe par la **sécurité** sans problème. Puis elle attend l'**embarquement** près de la porte."
+  },
+  {
+    "text_id": "top-A0-TR-3-txt-02",
+    "number": 2,
+    "title": "Un Vol Retardé",
+    "body": "Marc attend son **vol** pour Paris. Son **vol** est **retardé** d'une heure. Il regarde l'écran et il voit le nouveau **départ**. Puis l'**embarquement** commence et il monte dans l'avion."
+  },
+  {
+    "text_id": "top-A0-TR-3-txt-03",
+    "number": 3,
+    "title": "Une Réservation Annulée",
+    "body": "Sophie a une réservation pour un **vol** vers Madrid. Sa réservation est **annulée** à cause de la tempête. Le **vol** est complètement **annulé** pour aujourd'hui. Elle cherche un autre **vol** pour demain."
+  },
+  {
+    "text_id": "top-A0-TR-3-txt-04",
+    "number": 4,
+    "title": "Sur le Quai de la Gare",
+    "body": "Tom attend son train sur le **quai** numéro trois. Il regarde l'heure de l'**arrivée** de son train. Le train arrive enfin et les passagers montent. Tom trouve sa place et il est content de ce voyage."
+  },
+  {
+    "text_id": "top-A0-TR-3-txt-05",
+    "number": 5,
+    "title": "Un Bureau Fermé",
+    "body": "Claire arrive au bureau d'**information** de l'**aéroport**. Le bureau est **fermé** à cette heure. Elle trouve une autre **entrée** **ouverte** un peu plus loin. Là, le guichet est **ouvert** et un agent répond à ses questions."
+  },
+  {
+    "text_id": "top-A0-TR-3-txt-06",
+    "number": 6,
+    "title": "Au Contrôle de Douane",
+    "body": "Paul passe par la **douane** avec son **bagage**. Un agent demande son **document** d'identité. Paul montre son **passeport** et il répond aux questions. Après ce contrôle, il sort de l'**aéroport**."
+  },
+  {
+    "text_id": "top-A0-TR-3-txt-07",
+    "number": 7,
+    "title": "La Porte d'Embarquement",
+    "body": "Léo attend l'**embarquement** pour son **vol** vers Rome. La porte d'**embarquement** est **ouverte** maintenant. La porte voisine est **fermée** depuis une heure. L'**arrivée** de son avion est **retardée** par le mauvais temps."
+  }
+]

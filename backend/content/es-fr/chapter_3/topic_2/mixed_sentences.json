@@ -1,0 +1,402 @@
+[
+  {
+    "sentence_number": 1,
+    "content": "**Avant** **de** **partir**, compramos **le** **billet**."
+  },
+  {
+    "sentence_number": 2,
+    "content": "**Notre** **voyage** empieza este **lundi**."
+  },
+  {
+    "sentence_number": 3,
+    "content": "Prefiero **prendre** **l'****avion** para viajes largos."
+  },
+  {
+    "sentence_number": 4,
+    "content": "**Le** **train** **va** **partir** pronto."
+  },
+  {
+    "sentence_number": 5,
+    "content": "Necesito **descendre** **de** **la** **voiture** **ici** mismo."
+  },
+  {
+    "sentence_number": 6,
+    "content": "**Le** **passager** olvidó **son** **billet** **dans** **le** **train**."
+  },
+  {
+    "sentence_number": 7,
+    "content": "**Avant** **de** **descendre**, guardé **mon** **billet**."
+  },
+  {
+    "sentence_number": 8,
+    "content": "Caminar **à pied** **est** **plus** sano que **prendre** **la** **voiture**."
+  },
+  {
+    "sentence_number": 9,
+    "content": "**Le** **taxi** cobró **plus** **de** lo esperado."
+  },
+  {
+    "sentence_number": 10,
+    "content": "**Le** **transport** público **arrive** siempre **de** **nuit**."
+  },
+  {
+    "sentence_number": 11,
+    "content": "**Le** **métro** **arrive** cada pocos minutos."
+  },
+  {
+    "sentence_number": 12,
+    "content": "**Notre** **ami** aprendió **à** **conduire** **la** **voiture** este año."
+  },
+  {
+    "sentence_number": 13,
+    "content": "Preferimos **monter** **dans** **le** **train** ya."
+  },
+  {
+    "sentence_number": 14,
+    "content": "**L'****horaire** **de** **la** **nouvelle** **gare** **est** **plus** claro."
+  },
+  {
+    "sentence_number": 15,
+    "content": "**Le** **bateau** **nous** llevó **à** otro puerto **sans** problema."
+  },
+  {
+    "sentence_number": 16,
+    "content": "Vamos **à pied** **parce que** **le** **bus** **non** llegó."
+  },
+  {
+    "sentence_number": 17,
+    "content": "Decidió **prendre** **le** **taxi** **parce que** llovía **beaucoup**."
+  },
+  {
+    "sentence_number": 18,
+    "content": "**Est** difícil **descendre** **dans** **une** ciudad lejana."
+  },
+  {
+    "sentence_number": 19,
+    "content": "**Le** **métro** quedó lleno **de** **passager** esta **matin**."
+  },
+  {
+    "sentence_number": 20,
+    "content": "**Un** **taxi** **nous** llevó **à** **la** **gare** rápido."
+  },
+  {
+    "sentence_number": 21,
+    "content": "Decidió **descendre** **de** **la** **voiture** temprano."
+  },
+  {
+    "sentence_number": 22,
+    "content": "Preferimos **voyager** **de** **nuit**."
+  },
+  {
+    "sentence_number": 23,
+    "content": "Preferimos **monter** **dans** **l'****avion** ya."
+  },
+  {
+    "sentence_number": 24,
+    "content": "**Son** **voyage** **à** **la** playa duró **une** **semaine**."
+  },
+  {
+    "sentence_number": 25,
+    "content": "Decidió usar **un** **vélo** para **arriver** **plus** rápido."
+  },
+  {
+    "sentence_number": 26,
+    "content": "**Son** **nouveau** **vélo** **est** muy ligero."
+  },
+  {
+    "sentence_number": 27,
+    "content": "**Le** **passager** decidió **descendre** **à** **l'****arrêt** final."
+  },
+  {
+    "sentence_number": 28,
+    "content": "Prefiero **le** **vélo** para **aller** **à** **la** **gare**."
+  },
+  {
+    "sentence_number": 29,
+    "content": "Prefiero **monter** **dans** **le** **métro** vacío."
+  },
+  {
+    "sentence_number": 30,
+    "content": "**Le** **transport** público **est** barato **dans** esta ciudad."
+  },
+  {
+    "sentence_number": 31,
+    "content": "Preferimos **partir** justo **quand** llegue **le** **passager**."
+  },
+  {
+    "sentence_number": 32,
+    "content": "**Le** **conducteur** conoce **bien** **le** **chemin** **à** **la** **gare**."
+  },
+  {
+    "sentence_number": 33,
+    "content": "**Son** **billet** quedó olvidado **dans** **la** **voiture**."
+  },
+  {
+    "sentence_number": 34,
+    "content": "Decidió **conduire** **la** **voiture** hasta **la** **gare**."
+  },
+  {
+    "sentence_number": 35,
+    "content": "**Le** **transport** **par** **train** **est** **plus** rápido que **par** **voiture**."
+  },
+  {
+    "sentence_number": 36,
+    "content": "Prefiero **prendre** **le** **métro** **le** **matin**."
+  },
+  {
+    "sentence_number": 37,
+    "content": "**Le** **bus** **va** **partir** **sans** **le** **passager**."
+  },
+  {
+    "sentence_number": 38,
+    "content": "**L'****horaire** cambia **quand** llueve **beaucoup**."
+  },
+  {
+    "sentence_number": 39,
+    "content": "Nunca aprendí **à** **conduire** **un** **bus**."
+  },
+  {
+    "sentence_number": 40,
+    "content": "**Le** **train** **de** **le** **matin** siempre **arrive** lleno."
+  },
+  {
+    "sentence_number": 41,
+    "content": "**L'****horaire** **de** **la** **gare** cambia cada **lundi**."
+  },
+  {
+    "sentence_number": 42,
+    "content": "Prefiero **partir** **dans** **le** **train** **plus** temprano."
+  },
+  {
+    "sentence_number": 43,
+    "content": "Prefiere **le** **vélo** **et** **non** **le** **bus**."
+  },
+  {
+    "sentence_number": 44,
+    "content": "**Un** **taxi** cuesta **plus** **de** lo normal siempre."
+  },
+  {
+    "sentence_number": 45,
+    "content": "Decidió **descendre** **à** **l'****arrêt** siguiente."
+  },
+  {
+    "sentence_number": 46,
+    "content": "Decidió **prendre** **la** **voiture** para **aller** **à** **la** **gare**."
+  },
+  {
+    "sentence_number": 47,
+    "content": "**Avant** **de** **monter**, revisé **mon** **billet** **deux** veces."
+  },
+  {
+    "sentence_number": 48,
+    "content": "Decidió **partir** **sans** revisar **l'****horaire**."
+  },
+  {
+    "sentence_number": 49,
+    "content": "**Le** **passager** espera **à** **l'****arrêt** **sans** impaciencia."
+  },
+  {
+    "sentence_number": 50,
+    "content": "**Le** **transport** público **est** muy útil **dans** esta ciudad."
+  },
+  {
+    "sentence_number": 51,
+    "content": "Revisé **l'****horaire** **avant** **de** comprar **le** **billet**."
+  },
+  {
+    "sentence_number": 52,
+    "content": "**Le** **vélo** **est** rápido **et** barato para moverse."
+  },
+  {
+    "sentence_number": 53,
+    "content": "Compré **le** **billet** **de** **train** rápido."
+  },
+  {
+    "sentence_number": 54,
+    "content": "Prefiero **descendre** **à** **la** **gare** central."
+  },
+  {
+    "sentence_number": 55,
+    "content": "Preferimos **monter** **dans** **le** **bus** ya."
+  },
+  {
+    "sentence_number": 56,
+    "content": "**Il y a** **un** **arrêt** **près** **de** **ma** **maison**."
+  },
+  {
+    "sentence_number": 57,
+    "content": "Prefiere **voyager** solo algunas veces."
+  },
+  {
+    "sentence_number": 58,
+    "content": "Decidió **partir** temprano cada **matin**."
+  },
+  {
+    "sentence_number": 59,
+    "content": "**Le** **conducteur** espera **à** **l'****arrêt** cada **matin**."
+  },
+  {
+    "sentence_number": 60,
+    "content": "Decidimos **monter** **dans** **le** **bateau** **sans** esperar **plus**."
+  },
+  {
+    "sentence_number": 61,
+    "content": "Hablamos sobre **le** **transport** público **avant** **le** **voyage**."
+  },
+  {
+    "sentence_number": 62,
+    "content": "**Le** **bateau** **arrive** cada **matin** **sans** falta."
+  },
+  {
+    "sentence_number": 63,
+    "content": "**Mon** **cousin** sabe **conduire** muy **bien**."
+  },
+  {
+    "sentence_number": 64,
+    "content": "**Le** **conducteur** **de** **le** **bus** llegó pronto."
+  },
+  {
+    "sentence_number": 65,
+    "content": "**Son** **vélo** **est** roto **dans** **le** garaje."
+  },
+  {
+    "sentence_number": 66,
+    "content": "Decidimos **voyager** **sans** maletas pesadas."
+  },
+  {
+    "sentence_number": 67,
+    "content": "Llegamos **à** **la** **gare** justo **avant** **de** **partir**."
+  },
+  {
+    "sentence_number": 68,
+    "content": "**L'****avion** **arrive** muy temprano."
+  },
+  {
+    "sentence_number": 69,
+    "content": "Quiere **voyager** **avant** **de** empezar **le** trabajo."
+  },
+  {
+    "sentence_number": 70,
+    "content": "Contamos **tout** sobre **le** **voyage** al **rentrer**."
+  },
+  {
+    "sentence_number": 71,
+    "content": "**Le** **train** **arrive** **à** **la** **gare** rápido."
+  },
+  {
+    "sentence_number": 72,
+    "content": "Prefiere **aller** **à pied** **quand** **le** **voyage** **est** corto."
+  },
+  {
+    "sentence_number": 73,
+    "content": "**Le** **conducteur** sabe **conduire** **avec** mucha calma."
+  },
+  {
+    "sentence_number": 74,
+    "content": "Hablamos **de** **le** **transport** público **avant** **de** **partir**."
+  },
+  {
+    "sentence_number": 75,
+    "content": "**L'****horaire** **de** **le** **bus** cambia cada **semaine**."
+  },
+  {
+    "sentence_number": 76,
+    "content": "**L'****avion** salió **plus** temprano **de** lo previsto."
+  },
+  {
+    "sentence_number": 77,
+    "content": "Perdí **mon** **billet** **entre** **la** **gare** **et** **l'****arrêt**."
+  },
+  {
+    "sentence_number": 78,
+    "content": "**Le** **voyage** fue cómodo **et** rápido esta vez."
+  },
+  {
+    "sentence_number": 79,
+    "content": "**Le** **taxi** **arrive** rápido siempre."
+  },
+  {
+    "sentence_number": 80,
+    "content": "Nos gusta **prendre** **le** **métro** siempre."
+  },
+  {
+    "sentence_number": 81,
+    "content": "Cada **voyage** enseña algo diferente sobre **nous** mismos."
+  },
+  {
+    "sentence_number": 82,
+    "content": "Prefiero caminar **à pied** **quand** **le** clima **est** agradable."
+  },
+  {
+    "sentence_number": 83,
+    "content": "Prefiero **prendre** **l'****avion** **plus** temprano."
+  },
+  {
+    "sentence_number": 84,
+    "content": "**Me** gusta **voyager** cada verano **avec** **ma** **famille**."
+  },
+  {
+    "sentence_number": 85,
+    "content": "Prefiero **prendre** **un** **taxi** si llueve **beaucoup**."
+  },
+  {
+    "sentence_number": 86,
+    "content": "**Est** peligroso **conduire** **quand** **il y a** niebla espesa."
+  },
+  {
+    "sentence_number": 87,
+    "content": "Camina **à pied** **à** **la** **gare** cada **matin**."
+  },
+  {
+    "sentence_number": 88,
+    "content": "**Un** **passager** amable **me** ayudó **à** **trouver** **l'****arrêt**."
+  },
+  {
+    "sentence_number": 89,
+    "content": "**Le** **voyage** **par** **bateau** fue muy tranquilo."
+  },
+  {
+    "sentence_number": 90,
+    "content": "**La** **voiture** **de** **mon** **père** **est** vieja **mais** segura."
+  },
+  {
+    "sentence_number": 91,
+    "content": "Nos gusta **voyager** juntos **quand** podemos."
+  },
+  {
+    "sentence_number": 92,
+    "content": "Esperamos **le** **bus** justo **à** **l'****arrêt**."
+  },
+  {
+    "sentence_number": 93,
+    "content": "Preferimos **monter** **dans** **le** **train** temprano."
+  },
+  {
+    "sentence_number": 94,
+    "content": "Prefiero **prendre** **le** **bateau** para **voyager** **plus** rápido."
+  },
+  {
+    "sentence_number": 95,
+    "content": "**Un** **nouveau** **conducteur** maneja **le** **bus** **aujourd'hui**."
+  },
+  {
+    "sentence_number": 96,
+    "content": "**Est** necesario **partir** **avant** **de** que cierre **la** **gare**."
+  },
+  {
+    "sentence_number": 97,
+    "content": "**Elle** prefiere **descendre** **à** **la** **gare** **plus** cercana."
+  },
+  {
+    "sentence_number": 98,
+    "content": "**Le** **passager** decide **monter** rápido."
+  },
+  {
+    "sentence_number": 99,
+    "content": "**L'****arrêt** quedó muy **près** **de** **la** **gare**."
+  },
+  {
+    "sentence_number": 100,
+    "content": "**Une** **voiture** roja pasó justo **en face** **de** **la** **gare**."
+  }
+]
