@@ -1,0 +1,542 @@
+[
+  {
+    "id": "fr-sent-0979",
+    "sentence": "Tu as besoin d'aide.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0340",
+      "fr-wd-0335"
+    ]
+  },
+  {
+    "id": "fr-sent-0980",
+    "sentence": "Elle demande de l'aide.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0025",
+      "fr-wd-0335"
+    ]
+  },
+  {
+    "id": "fr-sent-0981",
+    "sentence": "Il faut de l'aide ici.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0025",
+      "fr-wd-0335",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0982",
+    "sentence": "Au secours! J'ai un problème.",
+    "word_ids": [
+      "fr-wd-0336",
+      "fr-wd-0075",
+      "fr-wd-0339"
+    ]
+  },
+  {
+    "id": "fr-sent-0983",
+    "sentence": "Elle crie «au secours» fort.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0336"
+    ]
+  },
+  {
+    "id": "fr-sent-0984",
+    "sentence": "Il crie au secours dans la rue.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0336",
+      "fr-wd-0080",
+      "fr-wd-0031",
+      "fr-wd-0251"
+    ]
+  },
+  {
+    "id": "fr-sent-0985",
+    "sentence": "Tu es perdu dans la ville.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0337",
+      "fr-wd-0080",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0986",
+    "sentence": "Il est perdu ici.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0337",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0987",
+    "sentence": "Mon ami est perdu.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0206",
+      "fr-wd-0020",
+      "fr-wd-0337"
+    ]
+  },
+  {
+    "id": "fr-sent-0988",
+    "sentence": "Tu es perdue dans la ville.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0338",
+      "fr-wd-0080",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0989",
+    "sentence": "Elle est perdue ici.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0020",
+      "fr-wd-0338",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0990",
+    "sentence": "Ma sœur est perdue.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0040",
+      "fr-wd-0020",
+      "fr-wd-0338"
+    ]
+  },
+  {
+    "id": "fr-sent-0991",
+    "sentence": "Tu as un problème?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0075",
+      "fr-wd-0339"
+    ]
+  },
+  {
+    "id": "fr-sent-0992",
+    "sentence": "Il y a un problème ici.",
+    "word_ids": [
+      "fr-wd-0077",
+      "fr-wd-0075",
+      "fr-wd-0339",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-0993",
+    "sentence": "Elle a un grand problème.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0079",
+      "fr-wd-0075",
+      "fr-wd-0234",
+      "fr-wd-0339"
+    ]
+  },
+  {
+    "id": "fr-sent-0994",
+    "sentence": "Tu dois avoir confiance.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0110"
+    ]
+  },
+  {
+    "id": "fr-sent-0995",
+    "sentence": "Il faut avoir de la patience.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0110",
+      "fr-wd-0025",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-0996",
+    "sentence": "Elle veut avoir de l'aide.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0110",
+      "fr-wd-0025",
+      "fr-wd-0335"
+    ]
+  },
+  {
+    "id": "fr-sent-0997",
+    "sentence": "Tu as besoin de repos.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0340",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-0998",
+    "sentence": "Il a besoin d'un médecin.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0079",
+      "fr-wd-0340",
+      "fr-wd-0075"
+    ]
+  },
+  {
+    "id": "fr-sent-0999",
+    "sentence": "Elle a besoin de toi.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0079",
+      "fr-wd-0340",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-1000",
+    "sentence": "Tu viens de Paris?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-1001",
+    "sentence": "Il parle de son voyage.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0025",
+      "fr-wd-0034",
+      "fr-wd-0285"
+    ]
+  },
+  {
+    "id": "fr-sent-1002",
+    "sentence": "Elle a besoin de calme.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0079",
+      "fr-wd-0340",
+      "fr-wd-0025"
+    ]
+  },
+  {
+    "id": "fr-sent-1003",
+    "sentence": "Tu dois pouvoir m'aider.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0341"
+    ]
+  },
+  {
+    "id": "fr-sent-1004",
+    "sentence": "Il faut pouvoir rester calme.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0341"
+    ]
+  },
+  {
+    "id": "fr-sent-1005",
+    "sentence": "Elle veut pouvoir voyager seule.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0341",
+      "fr-wd-0291"
+    ]
+  },
+  {
+    "id": "fr-sent-1006",
+    "sentence": "Pouvez-vous répéter, s'il vous plaît?",
+    "word_ids": [
+      "fr-wd-0342",
+      "fr-wd-0168",
+      "fr-wd-0347",
+      "fr-wd-0344"
+    ]
+  },
+  {
+    "id": "fr-sent-1007",
+    "sentence": "Vous pouvez m'aider maintenant.",
+    "word_ids": [
+      "fr-wd-0168",
+      "fr-wd-0342",
+      "fr-wd-0150"
+    ]
+  },
+  {
+    "id": "fr-sent-1008",
+    "sentence": "Pouvez-vous m'indiquer l'hôpital?",
+    "word_ids": [
+      "fr-wd-0342",
+      "fr-wd-0168",
+      "fr-wd-0350"
+    ]
+  },
+  {
+    "id": "fr-sent-1009",
+    "sentence": "Excusez-moi, je suis perdu.",
+    "word_ids": [
+      "fr-wd-0343",
+      "fr-wd-0018",
+      "fr-wd-0019",
+      "fr-wd-0337"
+    ]
+  },
+  {
+    "id": "fr-sent-1010",
+    "sentence": "Elle dit «excusez-moi» poliment.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0343"
+    ]
+  },
+  {
+    "id": "fr-sent-1011",
+    "sentence": "Excusez-moi, où est l'hôpital?",
+    "word_ids": [
+      "fr-wd-0343",
+      "fr-wd-0212",
+      "fr-wd-0020",
+      "fr-wd-0350"
+    ]
+  },
+  {
+    "id": "fr-sent-1012",
+    "sentence": "Un café, s'il vous plaît.",
+    "word_ids": [
+      "fr-wd-0075",
+      "fr-wd-0115",
+      "fr-wd-0344"
+    ]
+  },
+  {
+    "id": "fr-sent-1013",
+    "sentence": "De l'aide, s'il vous plaît.",
+    "word_ids": [
+      "fr-wd-0025",
+      "fr-wd-0335",
+      "fr-wd-0344"
+    ]
+  },
+  {
+    "id": "fr-sent-1014",
+    "sentence": "Un moment, s'il vous plaît.",
+    "word_ids": [
+      "fr-wd-0075",
+      "fr-wd-0344"
+    ]
+  },
+  {
+    "id": "fr-sent-1015",
+    "sentence": "Tu comprends cette phrase?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0345"
+    ]
+  },
+  {
+    "id": "fr-sent-1016",
+    "sentence": "Tu ne comprends pas le problème.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0129",
+      "fr-wd-0345",
+      "fr-wd-0130",
+      "fr-wd-0030",
+      "fr-wd-0339"
+    ]
+  },
+  {
+    "id": "fr-sent-1017",
+    "sentence": "Pourquoi tu ne comprends pas?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0129",
+      "fr-wd-0345",
+      "fr-wd-0130"
+    ]
+  },
+  {
+    "id": "fr-sent-1018",
+    "sentence": "Tu sais la réponse?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0346",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-1019",
+    "sentence": "Tu ne sais pas où aller.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0129",
+      "fr-wd-0346",
+      "fr-wd-0130",
+      "fr-wd-0212",
+      "fr-wd-0101"
+    ]
+  },
+  {
+    "id": "fr-sent-1020",
+    "sentence": "Tu sais parler français?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0346"
+    ]
+  },
+  {
+    "id": "fr-sent-1021",
+    "sentence": "Tu dois répéter la phrase.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0347",
+      "fr-wd-0031"
+    ]
+  },
+  {
+    "id": "fr-sent-1022",
+    "sentence": "Il faut répéter lentement.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0347"
+    ]
+  },
+  {
+    "id": "fr-sent-1023",
+    "sentence": "Elle veut répéter son nom.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0347",
+      "fr-wd-0034",
+      "fr-wd-0021"
+    ]
+  },
+  {
+    "id": "fr-sent-1024",
+    "sentence": "Tu as perdu ton passeport?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0337",
+      "fr-wd-0299"
+    ]
+  },
+  {
+    "id": "fr-sent-1025",
+    "sentence": "Il faut montrer ton passeport.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0299"
+    ]
+  },
+  {
+    "id": "fr-sent-1026",
+    "sentence": "Elle cherche son passeport partout.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0034",
+      "fr-wd-0299"
+    ]
+  },
+  {
+    "id": "fr-sent-1027",
+    "sentence": "Tu as vu mon portable?",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0022",
+      "fr-wd-0348"
+    ]
+  },
+  {
+    "id": "fr-sent-1028",
+    "sentence": "Il a perdu son portable.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0079",
+      "fr-wd-0337",
+      "fr-wd-0034",
+      "fr-wd-0348"
+    ]
+  },
+  {
+    "id": "fr-sent-1029",
+    "sentence": "Elle cherche son portable partout.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0034",
+      "fr-wd-0348"
+    ]
+  },
+  {
+    "id": "fr-sent-1030",
+    "sentence": "Tu dois appeler la police.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0031",
+      "fr-wd-0349"
+    ]
+  },
+  {
+    "id": "fr-sent-1031",
+    "sentence": "Il faut parler à la police.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0349"
+    ]
+  },
+  {
+    "id": "fr-sent-1032",
+    "sentence": "Elle cherche la police maintenant.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0031",
+      "fr-wd-0349",
+      "fr-wd-0150"
+    ]
+  },
+  {
+    "id": "fr-sent-1033",
+    "sentence": "Tu dois aller à l'hôpital.",
+    "word_ids": [
+      "fr-wd-0015",
+      "fr-wd-0101",
+      "fr-wd-0258",
+      "fr-wd-0350"
+    ]
+  },
+  {
+    "id": "fr-sent-1034",
+    "sentence": "Il faut aller à l'hôpital vite.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0101",
+      "fr-wd-0258",
+      "fr-wd-0350",
+      "fr-wd-0240"
+    ]
+  },
+  {
+    "id": "fr-sent-1035",
+    "sentence": "Elle est à l'hôpital maintenant.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0020",
+      "fr-wd-0258",
+      "fr-wd-0350",
+      "fr-wd-0150"
+    ]
+  }
+]
