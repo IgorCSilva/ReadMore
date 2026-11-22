@@ -1,0 +1,38 @@
+[
+  {
+    "text_id": "top-A0-TR-4-txt-01",
+    "number": 1,
+    "title": "Une Réservation en Ligne",
+    "body": "Léa veut **réserver** une chambre d'**hôtel**. Elle fait sa **réservation** **en ligne** avec son ordinateur. Elle choisit la **date** de son voyage. Après quelques minutes, sa **réservation** est **confirmée**."
+  },
+  {
+    "text_id": "top-A0-TR-4-txt-02",
+    "number": 2,
+    "title": "Un Message de l'Agence de Voyage",
+    "body": "Marc travaille avec une **agence de voyage** pour organiser son départ. L'**agence de voyage** envoie un **message** de **confirmation**. Le **message** donne le **numéro** de **réservation** et le **code** secret. Marc note ce **numéro** et ce **code** avec attention."
+  },
+  {
+    "text_id": "top-A0-TR-4-txt-03",
+    "number": 3,
+    "title": "Une Date Indisponible",
+    "body": "Sophie cherche une **date** pour son voyage. Cette **date** est **indisponible** pour l'**hôtel**. Elle regarde une autre **date**. Cette nouvelle **date** est **disponible**, et Sophie veut **confirmer** sa **réservation**."
+  },
+  {
+    "text_id": "top-A0-TR-4-txt-04",
+    "number": 4,
+    "title": "Le Paiement de la Réservation",
+    "body": "Tom veut **payer** sa **réservation** **en ligne**. Il utilise une carte pour le **paiement**. Le **paiement** est **confirmé** en quelques secondes. Tom reçoit un **message** de **confirmation**."
+  },
+  {
+    "text_id": "top-A0-TR-4-txt-05",
+    "number": 5,
+    "title": "Le Choix de la Destination",
+    "body": "Léo choisit sa **destination** pour l'été. Il regarde une **agence de voyage** près de chez lui. L'agent propose un bon voyage pour cette **destination**. Léo veut **réserver** son billet rapidement."
+  },
+  {
+    "text_id": "top-A0-TR-4-txt-06",
+    "number": 6,
+    "title": "Un Message de Confirmation",
+    "body": "Bonjour ! Ta **réservation** est **confirmée**. Ton **numéro** de **réservation** est cinq. Tu peux **recevoir** ton **code** par **message**. Tu peux **payer** avant la **date** de ce départ."
+  }
+]

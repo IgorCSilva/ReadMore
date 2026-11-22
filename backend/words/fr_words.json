@@ -1888,5 +1888,215 @@
     "root_word_id": "wd-0473",
     "word": "douane",
     "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0316",
+    "root_word_id": "wd-0474",
+    "word": "réservation",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0317",
+    "root_word_id": "wd-0475",
+    "word": "réserver",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0318",
+    "root_word_id": "wd-0476",
+    "word": "date",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0319",
+    "root_word_id": "wd-0478",
+    "word": "confirmé",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0320",
+    "root_word_id": "wd-0479",
+    "word": "confirmée",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0321",
+    "root_word_id": "wd-0477",
+    "word": "confirmer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0322",
+    "root_word_id": "wd-0481",
+    "word": "disponible",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0323",
+    "root_word_id": "wd-0482",
+    "word": "indisponible",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0324",
+    "root_word_id": "wd-0102",
+    "word": "numéro",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0325",
+    "root_word_id": "wd-0205",
+    "word": "payer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0326",
+    "root_word_id": "wd-0487",
+    "word": "paiement",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0327",
+    "root_word_id": "wd-0808",
+    "word": "en ligne",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0328",
+    "root_word_id": "wd-0040",
+    "word": "hôtel",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0329",
+    "root_word_id": "wd-0486",
+    "word": "message",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0330",
+    "root_word_id": "wd-0613",
+    "word": "recevoir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0331",
+    "root_word_id": "wd-0809",
+    "word": "agence de voyage",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0332",
+    "root_word_id": "wd-0480",
+    "word": "confirmation",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0333",
+    "root_word_id": "wd-0484",
+    "word": "destination",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0334",
+    "root_word_id": "wd-0485",
+    "word": "code",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0335",
+    "root_word_id": "wd-0488",
+    "word": "aide",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0336",
+    "root_word_id": "wd-0489",
+    "word": "au secours",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0337",
+    "root_word_id": "wd-0490",
+    "word": "perdu",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0338",
+    "root_word_id": "wd-0491",
+    "word": "perdue",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0339",
+    "root_word_id": "wd-0492",
+    "word": "problème",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0340",
+    "root_word_id": "wd-0493",
+    "word": "besoin",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0341",
+    "root_word_id": "wd-0494",
+    "word": "pouvoir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0342",
+    "root_word_id": "wd-0497",
+    "word": "pouvez",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0343",
+    "root_word_id": "wd-0150",
+    "word": "excusez-moi",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0344",
+    "root_word_id": "wd-0004",
+    "word": "s'il vous plaît",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0345",
+    "root_word_id": "wd-0495",
+    "word": "comprends",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0346",
+    "root_word_id": "wd-0496",
+    "word": "sais",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0347",
+    "root_word_id": "wd-0498",
+    "word": "répéter",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0348",
+    "root_word_id": "wd-0500",
+    "word": "portable",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0349",
+    "root_word_id": "wd-0239",
+    "word": "police",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0350",
+    "root_word_id": "wd-0501",
+    "word": "hôpital",
+    "gender_id": "masculine"
   }
 ]
