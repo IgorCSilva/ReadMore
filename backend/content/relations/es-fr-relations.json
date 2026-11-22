@@ -364,6 +364,47 @@
         "información": "information",
         "aduana": "douane"
       }
+    },
+    "topic_4": {
+      "es": {
+        "reserva": "réservation",
+        "reservar": "réserver",
+        "fecha": "date",
+        "confirmar": "confirmer",
+        "confirmado": "confirmé",
+        "confirmada": "confirmée",
+        "confirmación": "confirmation",
+        "disponible": "disponible",
+        "indisponible": "indisponible",
+        "viaje": "voyage",
+        "destino": "destination",
+        "número": "numéro",
+        "código": "code",
+        "mensaje": "message",
+        "pago": "paiement",
+        "pagar": "payer"
+      }
+    },
+    "topic_5": {
+      "es": {
+        "ayuda": "aide",
+        "socorro": "au secours",
+        "perdido": "perdu",
+        "perdida": "perdue",
+        "problema": "problème",
+        "necesitar": "avoir besoin de",
+        "poder": "pouvoir",
+        "disculpe": "excusez-moi",
+        "por favor": "s'il vous plaît",
+        "entiendo": "comprends",
+        "sé": "sais",
+        "puede": "pouvez",
+        "repetir": "répéter",
+        "pasaporte": "passeport",
+        "celular": "portable",
+        "policía": "police",
+        "hospital": "hôpital"
+      }
     }
   }
 }

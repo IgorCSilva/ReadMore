@@ -1,0 +1,77 @@
+[
+  { "id": "fr-sent-0922", "sentence": "Ta réservation est confirmée.", "word_ids": ["fr-wd-0316", "fr-wd-0020", "fr-wd-0320"] },
+  { "id": "fr-sent-0923", "sentence": "Il faut confirmer ta réservation avant le départ.", "word_ids": ["fr-wd-0164", "fr-wd-0321", "fr-wd-0316", "fr-wd-0179", "fr-wd-0030", "fr-wd-0296"] },
+  { "id": "fr-sent-0924", "sentence": "Cette réservation est pour deux personnes.", "word_ids": ["fr-wd-0316", "fr-wd-0020", "fr-wd-0139"] },
+
+  { "id": "fr-sent-0925", "sentence": "Tu dois réserver l'hôtel maintenant.", "word_ids": ["fr-wd-0015", "fr-wd-0317", "fr-wd-0328", "fr-wd-0150"] },
+  { "id": "fr-sent-0926", "sentence": "Il faut réserver avant le voyage.", "word_ids": ["fr-wd-0164", "fr-wd-0317", "fr-wd-0179", "fr-wd-0030", "fr-wd-0285"] },
+  { "id": "fr-sent-0927", "sentence": "Nous voulons réserver une table ce soir.", "word_ids": ["fr-wd-0054", "fr-wd-0317", "fr-wd-0076", "fr-wd-0067", "fr-wd-0090"] },
+
+  { "id": "fr-sent-0928", "sentence": "Quelle est la date de ce voyage?", "word_ids": ["fr-wd-0020", "fr-wd-0031", "fr-wd-0318", "fr-wd-0025", "fr-wd-0285"] },
+  { "id": "fr-sent-0929", "sentence": "Cette date est confirmée.", "word_ids": ["fr-wd-0318", "fr-wd-0020", "fr-wd-0320"] },
+  { "id": "fr-sent-0930", "sentence": "Il faut choisir une date disponible.", "word_ids": ["fr-wd-0164", "fr-wd-0076", "fr-wd-0318", "fr-wd-0322"] },
+
+  { "id": "fr-sent-0931", "sentence": "Ton vol est confirmé.", "word_ids": ["fr-wd-0294", "fr-wd-0020", "fr-wd-0319"] },
+  { "id": "fr-sent-0932", "sentence": "Il est confirmé maintenant.", "word_ids": ["fr-wd-0164", "fr-wd-0020", "fr-wd-0319", "fr-wd-0150"] },
+  { "id": "fr-sent-0933", "sentence": "Le paiement est confirmé.", "word_ids": ["fr-wd-0030", "fr-wd-0326", "fr-wd-0020", "fr-wd-0319"] },
+
+  { "id": "fr-sent-0934", "sentence": "Sa réservation est confirmée.", "word_ids": ["fr-wd-0035", "fr-wd-0316", "fr-wd-0020", "fr-wd-0320"] },
+  { "id": "fr-sent-0935", "sentence": "Ta date est confirmée.", "word_ids": ["fr-wd-0318", "fr-wd-0020", "fr-wd-0320"] },
+  { "id": "fr-sent-0936", "sentence": "La destination est confirmée.", "word_ids": ["fr-wd-0031", "fr-wd-0333", "fr-wd-0020", "fr-wd-0320"] },
+
+  { "id": "fr-sent-0937", "sentence": "Tu dois confirmer ton vol.", "word_ids": ["fr-wd-0015", "fr-wd-0321", "fr-wd-0294"] },
+  { "id": "fr-sent-0938", "sentence": "Il faut confirmer la date.", "word_ids": ["fr-wd-0164", "fr-wd-0321", "fr-wd-0031", "fr-wd-0318"] },
+  { "id": "fr-sent-0939", "sentence": "Elle veut confirmer sa réservation.", "word_ids": ["fr-wd-0165", "fr-wd-0321", "fr-wd-0035", "fr-wd-0316"] },
+
+  { "id": "fr-sent-0940", "sentence": "L'hôtel est disponible aujourd'hui.", "word_ids": ["fr-wd-0328", "fr-wd-0020", "fr-wd-0322", "fr-wd-0151"] },
+  { "id": "fr-sent-0941", "sentence": "Cette date est disponible.", "word_ids": ["fr-wd-0318", "fr-wd-0020", "fr-wd-0322"] },
+  { "id": "fr-sent-0942", "sentence": "Le vol est disponible maintenant.", "word_ids": ["fr-wd-0030", "fr-wd-0294", "fr-wd-0020", "fr-wd-0322", "fr-wd-0150"] },
+
+  { "id": "fr-sent-0943", "sentence": "L'hôtel est indisponible aujourd'hui.", "word_ids": ["fr-wd-0328", "fr-wd-0020", "fr-wd-0323", "fr-wd-0151"] },
+  { "id": "fr-sent-0944", "sentence": "Cette date est indisponible.", "word_ids": ["fr-wd-0318", "fr-wd-0020", "fr-wd-0323"] },
+  { "id": "fr-sent-0945", "sentence": "Le vol est indisponible maintenant.", "word_ids": ["fr-wd-0030", "fr-wd-0294", "fr-wd-0020", "fr-wd-0323", "fr-wd-0150"] },
+
+  { "id": "fr-sent-0946", "sentence": "Quel est le numéro de la réservation?", "word_ids": ["fr-wd-0020", "fr-wd-0030", "fr-wd-0324", "fr-wd-0025", "fr-wd-0031", "fr-wd-0316"] },
+  { "id": "fr-sent-0947", "sentence": "Ton numéro de vol est cinq.", "word_ids": ["fr-wd-0324", "fr-wd-0025", "fr-wd-0294", "fr-wd-0020", "fr-wd-0142"] },
+  { "id": "fr-sent-0948", "sentence": "Il faut noter ce numéro.", "word_ids": ["fr-wd-0164", "fr-wd-0324"] },
+
+  { "id": "fr-sent-0949", "sentence": "Tu dois payer en ligne.", "word_ids": ["fr-wd-0015", "fr-wd-0325", "fr-wd-0327"] },
+  { "id": "fr-sent-0950", "sentence": "Il faut payer avant le départ.", "word_ids": ["fr-wd-0164", "fr-wd-0325", "fr-wd-0179", "fr-wd-0030", "fr-wd-0296"] },
+  { "id": "fr-sent-0951", "sentence": "Elle veut payer avec une carte.", "word_ids": ["fr-wd-0165", "fr-wd-0325", "fr-wd-0058", "fr-wd-0076", "fr-wd-0268"] },
+
+  { "id": "fr-sent-0952", "sentence": "Ton paiement est confirmé.", "word_ids": ["fr-wd-0326", "fr-wd-0020", "fr-wd-0319"] },
+  { "id": "fr-sent-0953", "sentence": "Il faut vérifier ce paiement.", "word_ids": ["fr-wd-0164", "fr-wd-0326"] },
+  { "id": "fr-sent-0954", "sentence": "Le paiement est disponible en ligne.", "word_ids": ["fr-wd-0030", "fr-wd-0326", "fr-wd-0020", "fr-wd-0322", "fr-wd-0327"] },
+
+  { "id": "fr-sent-0955", "sentence": "Tu peux réserver en ligne.", "word_ids": ["fr-wd-0015", "fr-wd-0317", "fr-wd-0327"] },
+  { "id": "fr-sent-0956", "sentence": "Il faut payer en ligne.", "word_ids": ["fr-wd-0164", "fr-wd-0325", "fr-wd-0327"] },
+  { "id": "fr-sent-0957", "sentence": "Cette réservation est en ligne.", "word_ids": ["fr-wd-0316", "fr-wd-0020", "fr-wd-0327"] },
+
+  { "id": "fr-sent-0958", "sentence": "L'hôtel est très grand.", "word_ids": ["fr-wd-0328", "fr-wd-0020", "fr-wd-0234"] },
+  { "id": "fr-sent-0959", "sentence": "Ton hôtel est près de l'aéroport.", "word_ids": ["fr-wd-0328", "fr-wd-0020", "fr-wd-0246", "fr-wd-0025", "fr-wd-0293"] },
+  { "id": "fr-sent-0960", "sentence": "Il faut chercher un bon hôtel.", "word_ids": ["fr-wd-0164", "fr-wd-0075", "fr-wd-0005", "fr-wd-0328"] },
+
+  { "id": "fr-sent-0961", "sentence": "Tu as reçu un message?", "word_ids": ["fr-wd-0015", "fr-wd-0075", "fr-wd-0329"] },
+  { "id": "fr-sent-0962", "sentence": "Ce message est important.", "word_ids": ["fr-wd-0329", "fr-wd-0020"] },
+  { "id": "fr-sent-0963", "sentence": "Il faut lire ce message.", "word_ids": ["fr-wd-0164", "fr-wd-0108", "fr-wd-0329"] },
+
+  { "id": "fr-sent-0964", "sentence": "Tu dois recevoir la confirmation.", "word_ids": ["fr-wd-0015", "fr-wd-0330", "fr-wd-0031", "fr-wd-0332"] },
+  { "id": "fr-sent-0965", "sentence": "Il faut recevoir le code avant demain.", "word_ids": ["fr-wd-0164", "fr-wd-0330", "fr-wd-0030", "fr-wd-0334", "fr-wd-0179", "fr-wd-0152"] },
+  { "id": "fr-sent-0966", "sentence": "Elle va recevoir son paiement.", "word_ids": ["fr-wd-0165", "fr-wd-0169", "fr-wd-0330", "fr-wd-0034", "fr-wd-0326"] },
+
+  { "id": "fr-sent-0967", "sentence": "L'agence de voyage est fermée aujourd'hui.", "word_ids": ["fr-wd-0331", "fr-wd-0020", "fr-wd-0306", "fr-wd-0151"] },
+  { "id": "fr-sent-0968", "sentence": "Il faut appeler l'agence de voyage.", "word_ids": ["fr-wd-0164", "fr-wd-0331"] },
+  { "id": "fr-sent-0969", "sentence": "Cette agence de voyage est très sérieuse.", "word_ids": ["fr-wd-0331", "fr-wd-0020"] },
+
+  { "id": "fr-sent-0970", "sentence": "Tu as reçu la confirmation?", "word_ids": ["fr-wd-0015", "fr-wd-0031", "fr-wd-0332"] },
+  { "id": "fr-sent-0971", "sentence": "Cette confirmation est importante.", "word_ids": ["fr-wd-0332", "fr-wd-0020"] },
+  { "id": "fr-sent-0972", "sentence": "Il faut garder cette confirmation.", "word_ids": ["fr-wd-0164", "fr-wd-0332"] },
+
+  { "id": "fr-sent-0973", "sentence": "Quelle est ta destination?", "word_ids": ["fr-wd-0020", "fr-wd-0333"] },
+  { "id": "fr-sent-0974", "sentence": "Cette destination est loin.", "word_ids": ["fr-wd-0333", "fr-wd-0020", "fr-wd-0247"] },
+  { "id": "fr-sent-0975", "sentence": "Il faut choisir une destination.", "word_ids": ["fr-wd-0164", "fr-wd-0076", "fr-wd-0333"] },
+
+  { "id": "fr-sent-0976", "sentence": "Quel est le code de réservation?", "word_ids": ["fr-wd-0020", "fr-wd-0030", "fr-wd-0334", "fr-wd-0025", "fr-wd-0316"] },
+  { "id": "fr-sent-0977", "sentence": "Il faut noter ce code.", "word_ids": ["fr-wd-0164", "fr-wd-0334"] },
+  { "id": "fr-sent-0978", "sentence": "Ton code est confirmé.", "word_ids": ["fr-wd-0334", "fr-wd-0020", "fr-wd-0319"] }
+]
