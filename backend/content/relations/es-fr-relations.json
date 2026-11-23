@@ -406,5 +406,29 @@
         "hospital": "hôpital"
       }
     }
+  },
+  "chapter_4": {
+    "topic_1": {
+      "es": {
+        "navidad": "noël",
+        "año nuevo": "nouvel an",
+        "pascua": "pâques",
+        "cumpleaños": "anniversaire",
+        "fiesta": "fête",
+        "tradición": "tradition",
+        "celebrar": "célébrer",
+        "decorar": "décorer",
+        "bailar": "danser",
+        "cantar": "chanter",
+        "invitar": "inviter",
+        "regalar": "offrir",
+        "reunirse": "réunir",
+        "pastel": "gâteau",
+        "vela": "bougie",
+        "globo": "ballon",
+        "invitado": "invité",
+        "invitada": "invitée"
+      }
+    }
   }
 }
