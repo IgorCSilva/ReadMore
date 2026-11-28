@@ -36,7 +36,12 @@
         </button>
 
         <div class="topic-parts" v-if="expandedTopicId === topic.topic_id">
-          <div class="part" v-for="(part, index) in partsForTopic(topic)" :key="index">
+          <div
+            class="part"
+            v-for="(part, index) in partsForTopic(topic)"
+            :key="index"
+            :id="partElementId(topic.topic_id, index)"
+          >
             <button type="button" class="part-header" @click="togglePart(index)">
               <span class="part-label">{{ part.label }}</span>
               <span class="part-chevron" :class="{ expanded: expandedPartIndex === index }">›</span>
@@ -58,7 +63,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref } from 'vue'
+import { nextTick, onMounted, ref } from 'vue'
 import { useRouter } from 'vue-router'
 import { getChapters, getReinforcementWords, getUser, getWords } from '../shared/api'
 import { cacheKey, writeCache } from '../shared/cache'
@@ -135,6 +140,14 @@ async function toggleTopic(chapter, topic) {
 
 function togglePart(index) {
   expandedPartIndex.value = expandedPartIndex.value === index ? null : index
+}
+
+// Keyed by topic_id + array index (not just index, since the same index
+// means different parts across topics) — lets the "Finish" redirect below
+// scroll straight to the part it just expanded instead of landing at the
+// page top and leaving the user to scroll down and find it themselves.
+function partElementId(topicId, index) {
+  return `home-part-${topicId}-${index}`
 }
 
 function logout() {
@@ -300,6 +313,15 @@ onMounted(async () => {
         break
       }
     }
+
+    // Reinforcement affects partsForTopic's output (it can add a "Review"
+    // part), so the DOM only reflects the final part list — and has the id
+    // below to scroll to — once that load above has settled and Vue has
+    // re-rendered.
+    await nextTick()
+    document
+      .getElementById(partElementId(pending.topicId, pending.partIndex))
+      ?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 })
 </script>

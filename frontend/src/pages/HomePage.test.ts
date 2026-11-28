@@ -527,6 +527,10 @@ describe('HomePage', () => {
   })
 
   it('expands the requested topic/part on mount, from a pending PartFlowPage handoff', async () => {
+    const scrollIntoView = vi.fn()
+    // jsdom has no layout engine and doesn't implement scrollIntoView at all.
+    Element.prototype.scrollIntoView = scrollIntoView
+
     requestHomeExpansion({ topicId: 't1', partIndex: 1 })
     const { wrapper } = await mountReady()
     try {
@@ -535,10 +539,15 @@ describe('HomePage', () => {
       expect(wrapper.get('.part-body').get('.part-words').text()).toBe('word6, word7') // Part 2's words
     } finally {
       wrapper.unmount()
+      // @ts-expect-error - removing the jsdom-only stub added above
+      delete Element.prototype.scrollIntoView
     }
   })
 
   it('loads reinforcement words for a topic pre-expanded via a pending PartFlowPage handoff (not just on a manual click)', async () => {
+    const scrollIntoView = vi.fn()
+    Element.prototype.scrollIntoView = scrollIntoView
+
     requestHomeExpansion({ topicId: 't1', partIndex: 1 })
     vi.mocked(api.getChapters).mockResolvedValue({ lang: 'pt-en', chapters: CHAPTERS })
     vi.mocked(api.getWords).mockResolvedValue({ lang: 'pt-en', words: [...WORDS, ...REINFORCEMENT_WORDS] })
@@ -556,10 +565,15 @@ describe('HomePage', () => {
       expect(body.get('.part-word-reinforce').text()).toBe('reinforce3, reinforce4')
     } finally {
       wrapper.unmount()
+      // @ts-expect-error - removing the jsdom-only stub added above
+      delete Element.prototype.scrollIntoView
     }
   })
 
   it('only consumes the pending expansion once, not on a later plain visit', async () => {
+    const scrollIntoView = vi.fn()
+    Element.prototype.scrollIntoView = scrollIntoView
+
     requestHomeExpansion({ topicId: 't1', partIndex: 1 })
     const first = await mountReady()
     first.wrapper.unmount()
@@ -569,6 +583,27 @@ describe('HomePage', () => {
       expect(wrapper.find('.topic-parts').exists()).toBe(false)
     } finally {
       wrapper.unmount()
+      // @ts-expect-error - removing the jsdom-only stub added above
+      delete Element.prototype.scrollIntoView
+    }
+  })
+
+  it('scrolls the newly expanded part into view after a pending PartFlowPage handoff, instead of leaving the user at the page top', async () => {
+    const scrollIntoView = vi.fn()
+    Element.prototype.scrollIntoView = scrollIntoView
+
+    requestHomeExpansion({ topicId: 't1', partIndex: 1 })
+    const { wrapper } = await mountReady()
+    try {
+      const part2 = wrapper.findAll('.part')[1]
+      expect(part2.attributes('id')).toBe('home-part-t1-1')
+      expect(scrollIntoView).toHaveBeenCalledTimes(1)
+      expect(scrollIntoView).toHaveBeenCalledWith({ behavior: 'smooth', block: 'start' })
+      expect(scrollIntoView.mock.contexts[0]).toBe(part2.element)
+    } finally {
+      wrapper.unmount()
+      // @ts-expect-error - removing the jsdom-only stub added above
+      delete Element.prototype.scrollIntoView
     }
   })
 })

@@ -36,6 +36,8 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import { ttsUrl } from '../../shared/api'
+import { speechLocaleFor } from '../../shared/languages'
 import { loadUserWords } from '../../shared/userWords'
 
 // New tab: shows a word's picture (or its cue, if no image file exists) and
@@ -97,6 +99,33 @@ function shuffle(items) {
 
 function uniqueWordCount(entries) {
   return new Set(entries.map((e) => e.word)).size;
+}
+
+// ---- Audio, mirrors Dictation.vue's speakWord/speakWordLocal fallback. ----
+
+function targetLangCode() {
+  const [, target] = LANG.split("-");
+  return target || LANG;
+}
+
+function speakLocal(text, langCode) {
+  if (!("speechSynthesis" in window) || !text) return;
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = speechLocaleFor(langCode);
+  window.speechSynthesis.speak(utterance);
+}
+
+function playAudio(text) {
+  if (!text) return;
+  const langCode = targetLangCode();
+  const audio = new Audio(ttsUrl(text, langCode));
+  audio.addEventListener("error", () => speakLocal(text, langCode));
+  // Wrapped in Promise.resolve() rather than calling audio.play().catch()
+  // directly: every real browser's play() returns a Promise, but jsdom's
+  // (used by this component's tests) returns undefined, which would throw
+  // synchronously on .catch().
+  Promise.resolve(audio.play()).catch(() => speakLocal(text, langCode));
 }
 
 let USER_EMAIL = null;
@@ -243,6 +272,11 @@ onMounted(() => {
       correct?.btn.classList.add("quiz-option-reveal");
     }
 
+    // Always the entry's own word, never option.word — a wrong pick should
+    // still reinforce what the picture actually depicts, not what the user
+    // mistakenly clicked.
+    playAudio(entry.word);
+
     advanceTimer = window.setTimeout(advance, 1000);
   }
 
@@ -350,9 +384,10 @@ onMounted(() => {
   // entire language pair's word catalog — `rawWords` is a plain Word[]
   // (from getWords()), not the topic/user-progress-filtered shape `show()`
   // consumes, so this bypasses loadUserWords/transformAndFilter entirely.
-  showCatalog = (rawWords, { optionCount = 6, startPosition = 1 } = {}) => {
+  showCatalog = (rawWords, { optionCount = 6, startPosition = 1, lang } = {}) => {
     OPTION_COUNT = optionCount;
     CATALOG_MODE = true;
+    if (lang) LANG = lang;
     WORDS = buildCatalogEntries(rawWords);
     index = 0;
     setLoading(false);
