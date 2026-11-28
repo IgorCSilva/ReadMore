@@ -1,0 +1,553 @@
+[
+  {
+    "id": "fr-sent-1036",
+    "sentence": "Noël est aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0351",
+      "fr-wd-0020",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-1037",
+    "sentence": "Mon Noël est ici.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0351",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1038",
+    "sentence": "Je veux un bon Noël.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0075",
+      "fr-wd-0005",
+      "fr-wd-0351"
+    ]
+  },
+  {
+    "id": "fr-sent-1039",
+    "sentence": "Le nouvel an est demain.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0352",
+      "fr-wd-0020",
+      "fr-wd-0152"
+    ]
+  },
+  {
+    "id": "fr-sent-1040",
+    "sentence": "Mon nouvel an est bon.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0352",
+      "fr-wd-0020",
+      "fr-wd-0005"
+    ]
+  },
+  {
+    "id": "fr-sent-1041",
+    "sentence": "Je veux un bon nouvel an.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0075",
+      "fr-wd-0005",
+      "fr-wd-0352"
+    ]
+  },
+  {
+    "id": "fr-sent-1042",
+    "sentence": "Pâques est ici.",
+    "word_ids": [
+      "fr-wd-0353",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1043",
+    "sentence": "Pâques est demain.",
+    "word_ids": [
+      "fr-wd-0353",
+      "fr-wd-0020",
+      "fr-wd-0152"
+    ]
+  },
+  {
+    "id": "fr-sent-1044",
+    "sentence": "Pâques est aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0353",
+      "fr-wd-0020",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-1045",
+    "sentence": "Mon anniversaire est aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0354",
+      "fr-wd-0020",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-1046",
+    "sentence": "L'anniversaire est demain.",
+    "word_ids": [
+      "fr-wd-0354",
+      "fr-wd-0020",
+      "fr-wd-0152"
+    ]
+  },
+  {
+    "id": "fr-sent-1047",
+    "sentence": "Je veux un bon anniversaire.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0075",
+      "fr-wd-0005",
+      "fr-wd-0354"
+    ]
+  },
+  {
+    "id": "fr-sent-1048",
+    "sentence": "La fête est aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0355",
+      "fr-wd-0020",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-1049",
+    "sentence": "Ma fête est ici.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0355",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1050",
+    "sentence": "Je veux une grande fête.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0076",
+      "fr-wd-0235",
+      "fr-wd-0355"
+    ]
+  },
+  {
+    "id": "fr-sent-1051",
+    "sentence": "La tradition est bonne.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0356",
+      "fr-wd-0020",
+      "fr-wd-0006"
+    ]
+  },
+  {
+    "id": "fr-sent-1052",
+    "sentence": "Ma tradition est ici.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0356",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1053",
+    "sentence": "Je veux une nouvelle tradition.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0076",
+      "fr-wd-0205",
+      "fr-wd-0356"
+    ]
+  },
+  {
+    "id": "fr-sent-1054",
+    "sentence": "Je veux célébrer.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0357"
+    ]
+  },
+  {
+    "id": "fr-sent-1055",
+    "sentence": "Je veux célébrer l'anniversaire.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0357",
+      "fr-wd-0354"
+    ]
+  },
+  {
+    "id": "fr-sent-1056",
+    "sentence": "Il est bon de célébrer.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0025",
+      "fr-wd-0357"
+    ]
+  },
+  {
+    "id": "fr-sent-1057",
+    "sentence": "Je veux décorer.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0358"
+    ]
+  },
+  {
+    "id": "fr-sent-1058",
+    "sentence": "Je veux décorer avec un ballon.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0358",
+      "fr-wd-0058",
+      "fr-wd-0075",
+      "fr-wd-0366"
+    ]
+  },
+  {
+    "id": "fr-sent-1059",
+    "sentence": "Il est bon de décorer.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0025",
+      "fr-wd-0358"
+    ]
+  },
+  {
+    "id": "fr-sent-1060",
+    "sentence": "Je veux danser.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0359"
+    ]
+  },
+  {
+    "id": "fr-sent-1061",
+    "sentence": "Je veux danser à la fête.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0359",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0355"
+    ]
+  },
+  {
+    "id": "fr-sent-1062",
+    "sentence": "Il est bon de danser.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0025",
+      "fr-wd-0359"
+    ]
+  },
+  {
+    "id": "fr-sent-1063",
+    "sentence": "Je veux chanter.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0360"
+    ]
+  },
+  {
+    "id": "fr-sent-1064",
+    "sentence": "Je veux chanter à la fête.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0360",
+      "fr-wd-0258",
+      "fr-wd-0031",
+      "fr-wd-0355"
+    ]
+  },
+  {
+    "id": "fr-sent-1065",
+    "sentence": "Il est bon de chanter.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0025",
+      "fr-wd-0360"
+    ]
+  },
+  {
+    "id": "fr-sent-1066",
+    "sentence": "Je veux inviter.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0361"
+    ]
+  },
+  {
+    "id": "fr-sent-1067",
+    "sentence": "Je veux inviter un ami.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0361",
+      "fr-wd-0075",
+      "fr-wd-0206"
+    ]
+  },
+  {
+    "id": "fr-sent-1068",
+    "sentence": "Il est bon d'inviter.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0361"
+    ]
+  },
+  {
+    "id": "fr-sent-1069",
+    "sentence": "Je veux offrir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0362"
+    ]
+  },
+  {
+    "id": "fr-sent-1070",
+    "sentence": "Je veux offrir un gâteau.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0362",
+      "fr-wd-0075",
+      "fr-wd-0364"
+    ]
+  },
+  {
+    "id": "fr-sent-1071",
+    "sentence": "Il est bon d'offrir.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0362"
+    ]
+  },
+  {
+    "id": "fr-sent-1072",
+    "sentence": "Je veux me réunir.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0023",
+      "fr-wd-0363"
+    ]
+  },
+  {
+    "id": "fr-sent-1073",
+    "sentence": "Elle va se réunir.",
+    "word_ids": [
+      "fr-wd-0165",
+      "fr-wd-0169",
+      "fr-wd-0215",
+      "fr-wd-0363"
+    ]
+  },
+  {
+    "id": "fr-sent-1074",
+    "sentence": "Il est bon de se réunir.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0025",
+      "fr-wd-0215",
+      "fr-wd-0363"
+    ]
+  },
+  {
+    "id": "fr-sent-1075",
+    "sentence": "Le gâteau est grand.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0364",
+      "fr-wd-0020",
+      "fr-wd-0234"
+    ]
+  },
+  {
+    "id": "fr-sent-1076",
+    "sentence": "Mon gâteau est ici.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0364",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1077",
+    "sentence": "Je veux un bon gâteau.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0075",
+      "fr-wd-0005",
+      "fr-wd-0364"
+    ]
+  },
+  {
+    "id": "fr-sent-1078",
+    "sentence": "La bougie est ici.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0365",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1079",
+    "sentence": "Ma bougie est nouvelle.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0365",
+      "fr-wd-0020",
+      "fr-wd-0205"
+    ]
+  },
+  {
+    "id": "fr-sent-1080",
+    "sentence": "Je veux une grande bougie.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0076",
+      "fr-wd-0235",
+      "fr-wd-0365"
+    ]
+  },
+  {
+    "id": "fr-sent-1081",
+    "sentence": "Le ballon est grand.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0366",
+      "fr-wd-0020",
+      "fr-wd-0234"
+    ]
+  },
+  {
+    "id": "fr-sent-1082",
+    "sentence": "Mon ballon est ici.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0366",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1083",
+    "sentence": "Je veux un nouveau ballon.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0075",
+      "fr-wd-0204",
+      "fr-wd-0366"
+    ]
+  },
+  {
+    "id": "fr-sent-1084",
+    "sentence": "L'invité est ici.",
+    "word_ids": [
+      "fr-wd-0367",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1085",
+    "sentence": "Mon invité est bon.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0367",
+      "fr-wd-0020",
+      "fr-wd-0005"
+    ]
+  },
+  {
+    "id": "fr-sent-1086",
+    "sentence": "Je veux un grand invité.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0075",
+      "fr-wd-0234",
+      "fr-wd-0367"
+    ]
+  },
+  {
+    "id": "fr-sent-1087",
+    "sentence": "L'invitée est ici.",
+    "word_ids": [
+      "fr-wd-0368",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1088",
+    "sentence": "Mon invitée est bonne.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0368",
+      "fr-wd-0020",
+      "fr-wd-0006"
+    ]
+  },
+  {
+    "id": "fr-sent-1089",
+    "sentence": "Je veux une nouvelle invitée.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0076",
+      "fr-wd-0205",
+      "fr-wd-0368"
+    ]
+  }
+]

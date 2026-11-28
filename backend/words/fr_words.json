@@ -2098,5 +2098,221 @@
     "root_word_id": "wd-0501",
     "word": "hôpital",
     "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0351",
+    "root_word_id": "wd-0502",
+    "word": "noël",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0352",
+    "root_word_id": "wd-0503",
+    "word": "nouvel an",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0353",
+    "root_word_id": "wd-0504",
+    "word": "pâques",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0354",
+    "root_word_id": "wd-0107",
+    "word": "anniversaire",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0355",
+    "root_word_id": "wd-0505",
+    "word": "fête",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0356",
+    "root_word_id": "wd-0506",
+    "word": "tradition",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0357",
+    "root_word_id": "wd-0507",
+    "word": "célébrer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0358",
+    "root_word_id": "wd-0508",
+    "word": "décorer",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0359",
+    "root_word_id": "wd-0509",
+    "word": "danser",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0360",
+    "root_word_id": "wd-0510",
+    "word": "chanter",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0361",
+    "root_word_id": "wd-0511",
+    "word": "inviter",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0362",
+    "root_word_id": "wd-0512",
+    "word": "offrir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0363",
+    "root_word_id": "wd-0513",
+    "word": "réunir",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0364",
+    "root_word_id": "wd-0514",
+    "word": "gâteau",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0365",
+    "root_word_id": "wd-0515",
+    "word": "bougie",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0366",
+    "root_word_id": "wd-0516",
+    "word": "ballon",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0367",
+    "root_word_id": "wd-0517",
+    "word": "invité",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0368",
+    "root_word_id": "wd-0518",
+    "word": "invitée",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0369",
+    "root_word_id": "wd-0528",
+    "word": "couteau",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0370",
+    "root_word_id": "wd-0527",
+    "word": "fourchette",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0371",
+    "root_word_id": "wd-0526",
+    "word": "cuillère",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0372",
+    "root_word_id": "wd-0192",
+    "word": "assiette",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0373",
+    "root_word_id": "wd-0199",
+    "word": "serviette",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0374",
+    "root_word_id": "wd-0810",
+    "word": "main",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0375",
+    "root_word_id": "wd-0523",
+    "word": "coutume",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0376",
+    "root_word_id": "wd-0519",
+    "word": "poli",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0377",
+    "root_word_id": "wd-0520",
+    "word": "polie",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0378",
+    "root_word_id": "wd-0521",
+    "word": "impoli",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0379",
+    "root_word_id": "wd-0522",
+    "word": "impolie",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0380",
+    "root_word_id": "wd-0811",
+    "word": "respecter",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0381",
+    "root_word_id": "wd-0812",
+    "word": "remercier",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0382",
+    "root_word_id": "wd-0813",
+    "word": "attendre",
+    "gender_id": "not_apply"
+  },
+  {
+    "word_id": "fr-wd-0383",
+    "root_word_id": "wd-0524",
+    "word": "règle",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0384",
+    "root_word_id": "wd-0525",
+    "word": "manières",
+    "gender_id": "feminine"
+  },
+  {
+    "word_id": "fr-wd-0385",
+    "root_word_id": "wd-0529",
+    "word": "permis",
+    "gender_id": "masculine"
+  },
+  {
+    "word_id": "fr-wd-0386",
+    "root_word_id": "wd-0530",
+    "word": "interdit",
+    "gender_id": "masculine"
   }
 ]
