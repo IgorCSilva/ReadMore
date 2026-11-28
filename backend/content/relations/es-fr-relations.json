@@ -429,6 +429,24 @@
         "invitado": "invité",
         "invitada": "invitée"
       }
+    },
+    "topic_2": {
+      "es": {
+        "educado": "poli",
+        "educada": "polie",
+        "maleducado": "impoli",
+        "maleducada": "impolie",
+        "costumbre": "coutume",
+        "regla": "règle",
+        "modales": "manières",
+        "plato": "assiette",
+        "servilleta": "serviette",
+        "cuchara": "cuillère",
+        "tenedor": "fourchette",
+        "cuchillo": "couteau",
+        "permitido": "permis",
+        "prohibido": "interdit"
+      }
     }
   }
 }

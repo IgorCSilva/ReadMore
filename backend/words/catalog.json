@@ -3235,6 +3235,22 @@
     {
       "word_id": "wd-0809",
       "filename": "travel_agency"
+    },
+    {
+      "word_id": "wd-0810",
+      "filename": "hand"
+    },
+    {
+      "word_id": "wd-0811",
+      "filename": "to_respect"
+    },
+    {
+      "word_id": "wd-0812",
+      "filename": "to_thank"
+    },
+    {
+      "word_id": "wd-0813",
+      "filename": "to_wait"
     }
   ]
 }

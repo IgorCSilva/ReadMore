@@ -1,0 +1,533 @@
+[
+  {
+    "id": "fr-sent-1090",
+    "sentence": "Le couteau est grand.",
+    "word_ids": [
+      "fr-wd-0030",
+      "fr-wd-0369",
+      "fr-wd-0020",
+      "fr-wd-0234"
+    ]
+  },
+  {
+    "id": "fr-sent-1091",
+    "sentence": "Mon couteau est ici.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0369",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1092",
+    "sentence": "Je veux un nouveau couteau.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0075",
+      "fr-wd-0204",
+      "fr-wd-0369"
+    ]
+  },
+  {
+    "id": "fr-sent-1093",
+    "sentence": "La fourchette est petite.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0370",
+      "fr-wd-0020",
+      "fr-wd-0233"
+    ]
+  },
+  {
+    "id": "fr-sent-1094",
+    "sentence": "Ma fourchette est ici.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0370",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1095",
+    "sentence": "Je veux une nouvelle fourchette.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0076",
+      "fr-wd-0205",
+      "fr-wd-0370"
+    ]
+  },
+  {
+    "id": "fr-sent-1096",
+    "sentence": "La cuillère est grande.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0371",
+      "fr-wd-0020",
+      "fr-wd-0235"
+    ]
+  },
+  {
+    "id": "fr-sent-1097",
+    "sentence": "Ma cuillère est ici.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0371",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1098",
+    "sentence": "Je veux une bonne cuillère.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0076",
+      "fr-wd-0006",
+      "fr-wd-0371"
+    ]
+  },
+  {
+    "id": "fr-sent-1099",
+    "sentence": "L'assiette est grande.",
+    "word_ids": [
+      "fr-wd-0372",
+      "fr-wd-0020",
+      "fr-wd-0235"
+    ]
+  },
+  {
+    "id": "fr-sent-1100",
+    "sentence": "Mon assiette est ici.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0372",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1101",
+    "sentence": "Je veux une nouvelle assiette.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0076",
+      "fr-wd-0205",
+      "fr-wd-0372"
+    ]
+  },
+  {
+    "id": "fr-sent-1102",
+    "sentence": "La serviette est bonne.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0373",
+      "fr-wd-0020",
+      "fr-wd-0006"
+    ]
+  },
+  {
+    "id": "fr-sent-1103",
+    "sentence": "Ma serviette est ici.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0373",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1104",
+    "sentence": "Je veux une nouvelle serviette.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0076",
+      "fr-wd-0205",
+      "fr-wd-0373"
+    ]
+  },
+  {
+    "id": "fr-sent-1105",
+    "sentence": "La main est petite.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0374",
+      "fr-wd-0020",
+      "fr-wd-0233"
+    ]
+  },
+  {
+    "id": "fr-sent-1106",
+    "sentence": "Ma main est ici.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0374",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1107",
+    "sentence": "Je veux une grande main.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0076",
+      "fr-wd-0235",
+      "fr-wd-0374"
+    ]
+  },
+  {
+    "id": "fr-sent-1108",
+    "sentence": "La coutume est bonne.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0375",
+      "fr-wd-0020",
+      "fr-wd-0006"
+    ]
+  },
+  {
+    "id": "fr-sent-1109",
+    "sentence": "Ma coutume est ici.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0375",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1110",
+    "sentence": "Je veux une nouvelle coutume.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0076",
+      "fr-wd-0205",
+      "fr-wd-0375"
+    ]
+  },
+  {
+    "id": "fr-sent-1111",
+    "sentence": "Mon frère est poli.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0039",
+      "fr-wd-0020",
+      "fr-wd-0376"
+    ]
+  },
+  {
+    "id": "fr-sent-1112",
+    "sentence": "Mon ami est poli.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0206",
+      "fr-wd-0020",
+      "fr-wd-0376"
+    ]
+  },
+  {
+    "id": "fr-sent-1113",
+    "sentence": "L'invité est poli.",
+    "word_ids": [
+      "fr-wd-0367",
+      "fr-wd-0020",
+      "fr-wd-0376"
+    ]
+  },
+  {
+    "id": "fr-sent-1114",
+    "sentence": "Ma sœur est polie.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0040",
+      "fr-wd-0020",
+      "fr-wd-0377"
+    ]
+  },
+  {
+    "id": "fr-sent-1115",
+    "sentence": "Mon amie est polie.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0207",
+      "fr-wd-0020",
+      "fr-wd-0377"
+    ]
+  },
+  {
+    "id": "fr-sent-1116",
+    "sentence": "L'invitée est polie.",
+    "word_ids": [
+      "fr-wd-0368",
+      "fr-wd-0020",
+      "fr-wd-0377"
+    ]
+  },
+  {
+    "id": "fr-sent-1117",
+    "sentence": "Mon cousin est impoli.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0049",
+      "fr-wd-0020",
+      "fr-wd-0378"
+    ]
+  },
+  {
+    "id": "fr-sent-1118",
+    "sentence": "Mon grand-père est impoli.",
+    "word_ids": [
+      "fr-wd-0022",
+      "fr-wd-0045",
+      "fr-wd-0020",
+      "fr-wd-0378"
+    ]
+  },
+  {
+    "id": "fr-sent-1119",
+    "sentence": "L'invité est impoli.",
+    "word_ids": [
+      "fr-wd-0367",
+      "fr-wd-0020",
+      "fr-wd-0378"
+    ]
+  },
+  {
+    "id": "fr-sent-1120",
+    "sentence": "Ma cousine est impolie.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0050",
+      "fr-wd-0020",
+      "fr-wd-0379"
+    ]
+  },
+  {
+    "id": "fr-sent-1121",
+    "sentence": "Ma grand-mère est impolie.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0046",
+      "fr-wd-0020",
+      "fr-wd-0379"
+    ]
+  },
+  {
+    "id": "fr-sent-1122",
+    "sentence": "L'invitée est impolie.",
+    "word_ids": [
+      "fr-wd-0368",
+      "fr-wd-0020",
+      "fr-wd-0379"
+    ]
+  },
+  {
+    "id": "fr-sent-1123",
+    "sentence": "Je veux respecter.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0380"
+    ]
+  },
+  {
+    "id": "fr-sent-1124",
+    "sentence": "Je veux respecter la règle.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0380",
+      "fr-wd-0031",
+      "fr-wd-0383"
+    ]
+  },
+  {
+    "id": "fr-sent-1125",
+    "sentence": "Il est bon de respecter.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0025",
+      "fr-wd-0380"
+    ]
+  },
+  {
+    "id": "fr-sent-1126",
+    "sentence": "Je veux remercier.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0381"
+    ]
+  },
+  {
+    "id": "fr-sent-1127",
+    "sentence": "Je veux remercier mon ami.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0381",
+      "fr-wd-0022",
+      "fr-wd-0206"
+    ]
+  },
+  {
+    "id": "fr-sent-1128",
+    "sentence": "Il est bon de remercier.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0025",
+      "fr-wd-0381"
+    ]
+  },
+  {
+    "id": "fr-sent-1129",
+    "sentence": "Je veux attendre.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0382"
+    ]
+  },
+  {
+    "id": "fr-sent-1130",
+    "sentence": "Je veux attendre ici.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0382",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1131",
+    "sentence": "Il est bon d'attendre.",
+    "word_ids": [
+      "fr-wd-0164",
+      "fr-wd-0020",
+      "fr-wd-0005",
+      "fr-wd-0382"
+    ]
+  },
+  {
+    "id": "fr-sent-1132",
+    "sentence": "La règle est bonne.",
+    "word_ids": [
+      "fr-wd-0031",
+      "fr-wd-0383",
+      "fr-wd-0020",
+      "fr-wd-0006"
+    ]
+  },
+  {
+    "id": "fr-sent-1133",
+    "sentence": "Ma règle est ici.",
+    "word_ids": [
+      "fr-wd-0032",
+      "fr-wd-0383",
+      "fr-wd-0020",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1134",
+    "sentence": "Je veux une nouvelle règle.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0076",
+      "fr-wd-0205",
+      "fr-wd-0383"
+    ]
+  },
+  {
+    "id": "fr-sent-1135",
+    "sentence": "Mes manières sont bonnes.",
+    "word_ids": [
+      "fr-wd-0033",
+      "fr-wd-0384"
+    ]
+  },
+  {
+    "id": "fr-sent-1136",
+    "sentence": "Tes manières sont bonnes.",
+    "word_ids": [
+      "fr-wd-0384"
+    ]
+  },
+  {
+    "id": "fr-sent-1137",
+    "sentence": "Je veux de bonnes manières.",
+    "word_ids": [
+      "fr-wd-0018",
+      "fr-wd-0128",
+      "fr-wd-0025",
+      "fr-wd-0384"
+    ]
+  },
+  {
+    "id": "fr-sent-1138",
+    "sentence": "C'est permis.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0385"
+    ]
+  },
+  {
+    "id": "fr-sent-1139",
+    "sentence": "C'est permis ici.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0385",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1140",
+    "sentence": "C'est permis aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0385",
+      "fr-wd-0151"
+    ]
+  },
+  {
+    "id": "fr-sent-1141",
+    "sentence": "C'est interdit.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0386"
+    ]
+  },
+  {
+    "id": "fr-sent-1142",
+    "sentence": "C'est interdit ici.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0386",
+      "fr-wd-0081"
+    ]
+  },
+  {
+    "id": "fr-sent-1143",
+    "sentence": "C'est interdit aujourd'hui.",
+    "word_ids": [
+      "fr-wd-0020",
+      "fr-wd-0386",
+      "fr-wd-0151"
+    ]
+  }
+]

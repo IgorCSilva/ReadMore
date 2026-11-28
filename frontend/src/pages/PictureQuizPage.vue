@@ -31,7 +31,7 @@ onMounted(async () => {
     const data = await getWords(getLangPair())
     const panel = document.getElementById('topic-quiz-panel')
     if (panel) panel.style.display = 'flex'
-    quizRef.value?.showCatalog(data.words || [])
+    quizRef.value?.showCatalog(data.words || [], { lang: getLangPair() })
   } catch (err) {
     error.value = err instanceof Error ? err.message : 'unknown error'
   } finally {
